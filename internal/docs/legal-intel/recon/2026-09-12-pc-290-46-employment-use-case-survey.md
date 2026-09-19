@@ -705,9 +705,14 @@ practitioner sources across twenty-two years, and none can cite a case construin
 
 ## 5. Cited but unverified, and one probable conflation
 
-### 5.1 "Walker v. Ronin Staffing / UCLA Health" — no trace; likely a conflation
+### 5.1 "Walker v. Ronin Staffing / UCLA Health" — **resolved (2026-09-19 lodge)**
 
-The request lists "*Walker v. Ronin Staffing / UCLA Health* (complaint pleads § 290.46, filed
+**Update:** Dkts. 1, 14, 16, and 16-1 are now in the portfolio at
+`/documents/matter-29/walker-v-ronin-staffing/`. Complaint pleads § 290.46(j)(2)(E);
+Stanzick signed Sterling's answer; Sterling dismissed without prejudice Oct. 29, 2024.
+This is **not** *Walker v. Fred Meyer*, 953 F.3d 1082.
+
+The request originally listed "*Walker v. Ronin Staffing / UCLA Health* (complaint pleads § 290.46, filed
 2024)." **I found nothing.** No docket, no caption, no news report, no practitioner mention.
 Searches on the party names, the staffing agency, UCLA Health, § 290.46, and 2024 returned
 UCLA-admissions and UCLA-Health-malpractice matters with no relation to the registry statute.

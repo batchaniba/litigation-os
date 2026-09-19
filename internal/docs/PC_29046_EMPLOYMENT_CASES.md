@@ -301,10 +301,14 @@ statutory cause and allowed the alleged statutory violation to serve as a UCL
 
 C.D. Cal. No. 2:24-cv-05669-CBM-SSC.
 Hon. Consuelo B. Marshall; M.J. Stephanie S. Christensen.
-Active through September 2026.
+Filed July 3, 2024.
 
-**Status: docket verified; operative § 290.46 pleading/ruling not fully
-verified in this research.**
+**Status: PRIMARY VERIFIED** for Dkts. 1, 14, 16, and 16-1 in the portfolio at
+`/documents/matter-29/walker-v-ronin-staffing/` and the Frederick–Stanzick
+Playbook `sources/2-24-cv-05669-Walker-v-Ronin/`. Complaint pleads
+§ 290.46(j)(2)(E), Fair Chance, FCRA, and UCL (Ray Kim). Stanzick signed
+Sterling's answer (Sep. 12, 2024). Sterling dismissed without prejudice
+(Oct. 29, 2024). **Not** *Walker v. Fred Meyer*, 953 F.3d 1082 (ICRAA).
 
 No located § 290.46 merits ruling. Do not cite Walker as precedent.
 

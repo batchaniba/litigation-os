@@ -8,7 +8,7 @@ This is the playbook. Identity/role intelligence and lodged comparator briefs li
 |---|---|
 | [`PLAYBOOK.md`](PLAYBOOK.md) | Read this. Two-desk comparison, *Lerma* (Frederick) and *Carrillo* (Stanzick) argument inventories, the seam. |
 | [`cases.json`](cases.json) | Append-only machine cards. One object per docket. |
-| [`sources/`](sources/) | Lodged PACER prints. Not served on the public site. Seeded: *Lerma* Frederick MTD packet (Dkts. 24, 24-1, 27, 36); *Carrillo* set (Dkts. 1, 15, 19, 27, 55–59, 62, 64, 64-1). |
+| [`sources/`](sources/) | Lodged PACER prints. Not served on the public site. Seeded: *Lerma* Frederick MTD packet; *Carrillo* set; *Walker v. Ronin* (Dkts. 1, 14, 16, 16-1). |
 
 *Carrillo* is also cataloged at `/documents/matter-29/carrillo-v-vons/`. The full *Lerma* docket (69 PDFs) already lives at `/documents/matter-29/lerma-v-amazon/` — do not PACER-pull it again. Playbook `sources/` copies are the counsel-research lodge.
 

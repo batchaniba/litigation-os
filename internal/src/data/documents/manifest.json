@@ -6527,6 +6527,26 @@
       "path": "/documents/matter-29/carrillo-v-vons/Dkt 64-1 - Exhibit A - Federal Court Order (Sep 15, 2026).pdf",
       "size": 628141,
       "sha256": "cca2b93dfcb69a1a3f3c8926d6975c2e8971016e16abe6a5a87ec49559e9a65a"
+    },
+    {
+      "path": "/documents/matter-29/walker-v-ronin-staffing/Dkt 01 - Class Action Complaint (Jul 3, 2024).pdf",
+      "size": 590623,
+      "sha256": "1ad15d840b32fb611524cce95bb21772225741bd720451384b7a1b63f318d3f9"
+    },
+    {
+      "path": "/documents/matter-29/walker-v-ronin-staffing/Dkt 14 - Sterling Infosystems Answer to Complaint (Sep 12, 2024).pdf",
+      "size": 177133,
+      "sha256": "aa08995514042021df20b7d3aeacf847d1d60104bc55d71c74916f2414f7d4c1"
+    },
+    {
+      "path": "/documents/matter-29/walker-v-ronin-staffing/Dkt 16 - Stipulation to Dismiss Sterling Without Prejudice (Oct 29, 2024).pdf",
+      "size": 87668,
+      "sha256": "ea0e7ed35e614c75a5e3b9552742ac3a94058b525a4d84b38ae315851b584f6f"
+    },
+    {
+      "path": "/documents/matter-29/walker-v-ronin-staffing/Dkt 16-1 - Order Dismissing Sterling Infosystems Without Prejudice (Oct 29, 2024).pdf",
+      "size": 73318,
+      "sha256": "90a7a6f04f45386ecfb397831b623caf97d0ff142d5d5ea1ab99696553ffcb5a"
     }
   ]
 }

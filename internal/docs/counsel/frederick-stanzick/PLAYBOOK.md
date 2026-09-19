@@ -67,6 +67,12 @@ Read this before forecasting Accurate's September 22 paper. These are the argume
 
 Drury is first chair on the signature block. Stanzick is the California name. Treat Dkt. 57 as **her** paper for Matter 29 purposes — she signed it — but do not assume she is the sole drafter.
 
+### *Walker v. Ronin* — answer, then Sterling is gone (Oct. 29, 2024)
+
+Ray Kim class complaint (Jul. 3, 2024), C.D. Cal. **2:24-cv-05669-CBM-SSC**: § 290.46, Fair Chance, FCRA, UCL against **Ronin Staffing / UCLA Health**, with **Sterling** as CRA. Stanzick signed Sterling's **answer (Dkt. 14, Sep. 12, 2024)**. **Seven weeks later**, Kim and Sterling stipulated to dismiss Sterling **without prejudice** (Dkts. 16, 16-1). No MTD, no class-cert brief, no § 290.46 merits ruling.
+
+**Use:** Same Kim + Stanzick pairing as *Carrillo*, different posture — **early CRA exit** after answer, not a litigated class-cert record. Do not read Sterling's dismissal as a Stanzick "win on the law"; read it as **entity removal / settlement shape**. Papers: `/documents/matter-29/walker-v-ronin-staffing/`.
+
 ### N.D. California mechanics — the *Boyer* laboratory
 
 In *Boyer v. First Advantage* (N.D. Cal.), Stanzick handled removal mechanics: notice of removal, corporate disclosure, interested-entity certification, magistrate consent/declination, ADR certification. First Advantage **answered**, then litigated through ADR toward SJ / class-cert. A September 22 **answer** would still fit that pattern. *Carrillo* shows she will also brief a full Rule 23 opposition when the case gets there. Those are not the same moment.
@@ -236,6 +242,7 @@ Watch for:
 
 ## Changelog
 
+- 2026-09-19: *Walker v. Ronin* lodged (Dkts. 1, 14, 16, 16-1) — Kim complaint; Stanzick answer; Sterling dismissed without prejudice.
 - 2026-09-19: *Carrillo* expanded — Dkts. 15, 19, 27, 62, 64, 64-1 (answers, protective order, class-cert transcript, Vons RJN).
 - 2026-09-19: *Lerma* Frederick packet transferred (Dkts. 24, 24-1, 27, 36). Catalog gap closed on Dkt. 24-1 and Dkt. 27. Desk 2 rewritten from his signed brief, not the Vons analog.
 - 2026-09-19: Playbook space created. *Carrillo* Dkts. 1, 55–59 lodged. Stanzick's Asurint opposition read and inventoried. Matter 29 pointer folder now redirects here.
