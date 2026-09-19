@@ -3,6 +3,8 @@
 
 **Compiled 2026-09-12. This is the briefing spine.** Doctrinal research memorandum; not legal advice; requester is pro se.
 
+**Sept. 19 supplement:** `2026-09-19-matter-28-mtd-prep.md` — inventory of what was already on disk, plus closed holes (PLRA parolee, § 3008(d)(2) text, *Gross*, *Horn*, *Sullivan*, 15 C.C.R. § 3574, Van Dine cite-check). Do not replace this file with that one.
+
 It folds four same-day Shannon drafts into one sequence: the five-track memo (PR #763, merged), the vendor-damages catalog (PR #764), the Matter 5 docket addendum (PR #766), the res judicata kill (PR #767), and the 12(b)(6) survey that landed on PR #765 next to the § 290.46 employment work. Where those drafts conflict, this file says so and picks.
 
 Martinez named the first paper on September 11: res judicata plus insufficiency. Answer still **September 21**. Do not dismiss.
@@ -14,6 +16,7 @@ Martinez named the first paper on September 11: res judicata plus insufficiency.
 | If you need | Open |
 |---|---|
 | The opposition sequence and the holding that stays dead | **This file** |
+| Closed Sept. 12 holes (PLRA, § 3008(d)(2), *Gross*, *Horn*, Van Dine cites) | `2026-09-19-matter-28-mtd-prep.md` |
 | Claim-by-claim 12(b)(6) depth (state action, Monell, QI, Bane, fraud, RICO) | `2026-09-12-matter-28-case-law.md` (#763) |
 | Van Dine’s seven previewed grounds, tested one by one | `2026-09-12-matter-28-hope-smith-12b6-survey.md` (#765 Shannon half) |
 | Every located SOMP-vendor damages case, and the *Chavez* 2021 QI trap | `internal/docs/HOPE_SMITH_SOMP_CASES.md` (#764) |
@@ -261,6 +264,7 @@ None of the research PRs corrected the dashboard. Still wrong if pasted into an 
 | 12(b)(6) survey | #765 Shannon half | Kept as `2026-09-12-matter-28-hope-smith-12b6-survey.md`. Seven-grounds appendix. |
 | § 290.46 employment-use survey + sweep scripts | #765 other half | **Not absorbed.** That is Matter 26. Leave #765 open for it. |
 | Res judicata kill | #767 (this PR) | Replaced by this file. |
+| Sept. 19 MTD-prep supplement | this pass | `2026-09-19-matter-28-mtd-prep.md`. Closes UNIFIED § 14 holes that change a Monday opposition. |
 
 ---
 
@@ -285,21 +289,24 @@ Existence checked on CourtListener `type=o` (unauthenticated) 2026-09-12 unless 
 | *Chavez v. Robinson* | 12 F.4th 978 (9th Cir. 2021) | QI **granted**; do not cite as denial | #764 PRIMARY (CDN PDF) |
 | *Merrill v. Mental Health Sys.* | S.D. Cal. 3:16-cv-01090 (Sept. 13, 2016) | Most dangerous state-action analog | #763 PRIMARY |
 | *Schreiber Distrib.* | 806 F.2d 1393 (9th Cir. **1986**) | Leave to amend, not 2004 | #765 |
-| *Diaz v. Gates* | 420 F.3d 897 (9th Cir. 2005) (en banc) | RICO standing for lost wages | #765. Verify before filing |
-| *Medical Marijuana v. Horn* | No. 23-365 (U.S. Apr. 2, 2025) | Same, personal-injury-derived property loss | #765. Verify before filing |
+| *Diaz v. Gates* | 420 F.3d 897 (9th Cir. 2005) (en banc) | RICO standing for lost wages | #765. *Horn* confirms the no-personal-injury-bar side |
+| *Medical Marijuana v. Horn* | 604 U.S. ___ (Apr. 2, 2025) | No antecedent-personal-injury bar. Does **not** decide that “business” includes employment | PRIMARY slip op. (2026-09-19) |
 
 ---
 
 ## 14. Still open
 
+Closed on 2026-09-19 (see `2026-09-19-matter-28-mtd-prep.md`): PLRA parolee / *Page* / *Talamantes*; § 3008(d)(2) text + 15 C.C.R. § 3574; *Gross v. Samudio* retrieved and distinguished; *Rawson* cert denied Oct. 4, 2021; *Horn* slip op. verified (narrower than the survey); *Sullivan* cite-checked (do not use as a demurrer-as-judgment case); Van Dine's *Ariz. Students' Ass'n*, *DZ Reserve*, *Zetz*, *Cedric Kushner* existence-checked.
+
+Still open:
+
 1. Whether a notice of appeal was filed in Matter 5 — irrelevant if there is no judgment.
-2. *Sullivan v. Delta Air Lines*, 15 Cal.4th 288 (1997) — when an order may be treated as a judgment. Cite-check.
-3. *Patsy* U.S. Reports PDF; PLRA “prisoner” definition as applied to a parolee.
-4. *Valvo* / *Beazell* / *Sartor* / *Lippert* full text.
-5. *Dwyer* order PDF. Loree attribution stays parked.
-6. Whether Van Dine moves for a judgment in Dept. 10A. Watch the Stockton portal.
-7. Matter 6 still undisclosed on the Matter 28 docket.
-8. Lodge the Sep. 12 register-of-actions prints and the minute-order PDF onto the `documents` branch (`npm run documents:push`). #765 § 1.7 and #766 both asked. Not in this PR — the PDF is not on `origin/documents`.
-9. CourtListener authenticated sweep (`sweep-matter28.mjs` on #765) did not run. GitHub Actions spending limit tripped at 18:25 UTC on September 12. Re-run when billing clears.
+2. *Valvo* / *Beazell* / *Sartor* / *Lippert* / *Patsy* full-text PDFs. *Valvo* existence reconfirmed.
+3. *Dwyer* evidentiary-hearing transcript. Endorsed order is Exhibit B to the Matter 19 habeas; Loree attribution stays inside Judge Hill's recitation.
+4. Whether Van Dine moves for a judgment in Dept. 10A. Watch the Stockton portal. Re-pull the register the morning the opposition is drafted.
+5. Matter 6 still undisclosed on the Matter 28 docket.
+6. Lodge the Sept. 12 register-of-actions prints and the minute-order PDF onto the documents store (`npm run documents:push`).
+7. CourtListener authenticated sweep (`sweep-matter28.mjs`) — token unset on this pass; unauthenticated search ran instead. *Merrill* subsequent history still unverified.
+8. Whether an MTD is on file the morning of Sept. 21 — RECAP as of Sept. 19 still ends at Dkt. 14.
 
 Nothing here changes the September 21 answer, the October 15 CMC statement, or the October 22 CMC. No PACER was accessed. Nothing was filed.
