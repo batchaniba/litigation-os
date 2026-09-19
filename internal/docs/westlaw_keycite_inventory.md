@@ -274,22 +274,22 @@ First: _Regents v. Roth, 408 U.S. 564_ · Last: _2019 WL 6619348_
 |[ ]|178|Quinn v. Coulton, 121 Cal.App.5th 1124|VERIFIED|26|4||||
 |[ ]|179|Williams v. Sacramento River Cats Baseball Club, 40 Cal.App.5th 280|VERIFIED|26|4||||
 |[ ]|180|2018 WL 1567796|UNVERIFIED|26|3||||
-|[ ]|181|2024 WL 6473762|UNVERIFIED|26|3||||
-|[ ]|182|Abrego Abrego v. Dow Chemical Co, 443 F.3d 676|UNVERIFIED|29|3||||
+|[ ]|181|2024 WL 6473762|VERIFIED (Volusia door, 2026-09-19 ~15:21 PDT) — no flag, Negative Treatment (0)|26|3|N|KEEP|Resolves to Hodge v. Image International Manufacturing, LLC, No. 5:24-cv-01970-HDV-(SPx) (C.D. Cal. Dec. 4, 2024). Negative Treatment (0), History (0), Citing References (0).|
+|[ ]|182|Abrego Abrego v. Dow Chemical Co, 443 F.3d 676|VERIFIED (Volusia door, 2026-09-19 ~15:21 PDT) — YELLOW flag|29|3|Y|KEEP|YELLOW: 12 "Distinguished by" + 2 "Followed with Reservations by" (Neg. Treatment 14; "Most Negative" Carvalho v. Equifax, 629 F.3d 876 (9th Cir. 2010)) — all plain peripheral CAFA mass-action removal distinctions; none challenge Abrego Abrego's core holding. KeyCite-list level; no passage read needed. Westlaw name: Abrego Abrego v. The Dow Chemical Co. (9th Cir. Apr. 4, 2006).|
 
 ## Session 10 — rows 183-202 (20 cites)
 
 |done|#|Search|Status|Matters|Uses|Flag N/Y/R|Keep/Drop|Notes|
 |---|---|---|---|---|---|---|---|---|
 |[ ]|183|Accardi v. Shaughnessy, 347 U.S. 260|VERIFIED|19|3||||
-|[ ]|184|Alfaro v. Superior Ct, 58 Cal.App.5th 371|UNVERIFIED|26|3||||
+|[ ]|184|Alfaro v. Superior Ct, 58 Cal.App.5th 371|VERIFIED (Volusia door, 2026-09-19 ~15:21 PDT) — no flag, Negative Treatment (0)|26|3|N|KEEP|Alfaro v. Superior Court (Cal. Ct. App., 1st Dist., Div. 5, Dec. 9, 2020). Negative Treatment (0), History (1).|
 |[ ]|185|Ashelman v. Pope, 793 F.2d 1072|VERIFIED|33|3||||
 |[ ]|186|Bily v. Arthur Young, 3 Cal.4th 370|VERIFIED|5, 12|3||||
 |[ ]|187|Board of Pardons v. Allen, 482 U.S. 369|VERIFIED|19|3||||
 |[ ]|188|California v. Acevedo, 500 U.S. 565|VERIFIED|32|3||||
 |[ ]|189|California v. Carney, 471 U.S. 386|VERIFIED|32|3||||
-|[ ]|190|Cardenas v. Cnty. of Tehama, 476 F. Supp. 3d 1055|UNVERIFIED|26|3||||
-|[ ]|191|Conroy v. Regents of, 45 Cal.4th 1244|UNVERIFIED|26|3||||
+|[ ]|190|Cardenas v. Cnty. of Tehama, 476 F. Supp. 3d 1055|VERIFIED (Volusia door, 2026-09-19 ~15:21 PDT) — no flag, Negative Treatment (0)|26|3|N|KEEP|Cardenas v. County of Tehama (E.D. Cal. Aug. 4, 2020). Negative Treatment (0), History (2).|
+|[ ]|191|Conroy v. Regents of, 45 Cal.4th 1244|VERIFIED (Volusia door, 2026-09-19 ~15:21 PDT) — YELLOW flag|26|3|Y|KEEP|YELLOW: "Distinguished by" Miles v. National Union Fire Ins. Co. of Pittsburgh, PA (S.D. Cal. Dec. 8, 2009) on a collateral point; core holding intact. KeyCite-list level. Westlaw name: Conroy v. Regents of University of California (Cal. Apr. 6, 2009).|
 |[ ]|192|Franklin v. Murphy, 745 F.2d 1221|VERIFIED|7, 18, 24, 32, 33|3||||
 |[ ]|193|Gantt v. Sentry Insurance, 1 Cal.4th 1083|VERIFIED|27|3||||
 |[ ]|194|Gonzales v. CarMax Auto Superstores, 840 F.3d 644|VERIFIED|26|3||||
@@ -297,7 +297,7 @@ First: _Regents v. Roth, 408 U.S. 564_ · Last: _2019 WL 6619348_
 |[ ]|196|In re Clark, 5 Cal.4th 750|VERIFIED|19|3||||
 |[ ]|197|In re Marzec, 25 Cal.2d 794|VERIFIED|19|3||||
 |[ ]|198|In re Sturm, 11 Cal.3d 258|VERIFIED|19|3||||
-|[ ]|199|Khan v. CitiMortgage, 975 F. Supp. 2d 1127|UNVERIFIED|26|3||||
+|[x]|199|Khan v. CitiMortgage, 975 F. Supp. 2d 1127|VERIFIED (Volusia door, 2026-09-19 ~15:21 PDT); operative passage in treating document READ|26|3|Y|KEEP (with caution)|YELLOW: "Declined to Follow by" Melendez v. U.S. Bank National Association, 2015 WL 12866246 (C.D. Cal. Dec. 3, 2015) — "Most Negative," headnote 9. Melendez (non-binding district court) declined to follow Khan's holding that the statute of frauds bars promissory-estoppel claims based on oral loan-modification promises, citing Cal. Civ. Code sec. 1698(d): "nothing in this section precludes ... estoppel." Operative passage read (2015 WL 12866246, at *5): "With the exception of Khan, a case that is not binding on this Court ... none of these cases hold that the statute of frauds can serve as a bar to a promissory estoppel claim." Do not cite Khan alone for the SOF-bars-estoppel proposition. Westlaw name: Khan v. CitiMortgage, Inc. (E.D. Cal. Sept. 30, 2013).|
 |[ ]|200|Loehr v. Ventura County Community College Dist, 147 Cal.App.3d 1071|VERIFIED|14, 20, 32|3||||
 |[ ]|201|Miller v. Gammie, 335 F.3d 889|VERIFIED|33|3||||
 |[ ]|202|Mireles v. Waco, 502 U.S. 9|VERIFIED|7, 32, 33|3||||
@@ -306,15 +306,15 @@ First: _Regents v. Roth, 408 U.S. 564_ · Last: _2019 WL 6619348_
 
 |done|#|Search|Status|Matters|Uses|Flag N/Y/R|Keep/Drop|Notes|
 |---|---|---|---|---|---|---|---|---|
-|[ ]|203|Napear v. Bonneville Int’l Corp, 669 F. Supp. 3d 948|UNVERIFIED|26|3||||
+|[ ]|203|Napear v. Bonneville Int’l Corp, 669 F. Supp. 3d 948|VERIFIED (Volusia door, 2026-09-19 ~15:21 PDT) — no flag, Negative Treatment (0)|26|3|N|KEEP|Napear v. Bonneville International Corporation (E.D. Cal. Apr. 20, 2023). Negative Treatment (0), History (5), Citing References (71).|
 |[ ]|204|New York v. Class, 475 U.S. 106|VERIFIED|32|3||||
 |[ ]|205|Orosco v. Napolitano, 598 F.3d 222|VERIFIED|2, 24, 32|3||||
 |[ ]|206|Owens v. Huntling, 115 F.2d 160|VERIFIED|26|3||||
-|[ ]|207|Parrino v. FHP, 146 F.3d 699|UNVERIFIED|29|3||||
-|[ ]|208|Quiroz v. Seventh Ave. Ctr, 140 Cal.App.4th 1256|UNVERIFIED|26|3||||
-|[ ]|209|Rubio v. Capital One Bank, 572 F. Supp. 2d 1157|UNVERIFIED|26|3||||
-|[ ]|210|Saleh v. Nike, 562 F. Supp. 3d 503|UNVERIFIED|26|3||||
-|[ ]|211|Shvarts v. Budget Group, 81 Cal.App.4th 1153|UNVERIFIED|26|3||||
+|[x]|207|Parrino v. FHP, 146 F.3d 699|VERIFIED (Volusia door, 2026-09-19 ~15:21 PDT); operative passage in treating document READ|29|3|R|REPLACE ON REMOVAL-UNANIMITY USE|RED: "Superseded by Statute as Stated in" Rueda Vidal v. Bolton, 822 F. App'x 643, at *644-45 (9th Cir. filed Sept. 23, 2020), HNs 2-4 — supersession is "on other grounds": ONLY Parrino's removal-unanimity holdings are superseded; the incorporation-by-reference/judicial-notice doctrine (HNs 21-22), which Rueda Vidal itself cites (146 F.3d at 706), is intact. Operative passage read. Westlaw name: Parrino v. FHP, Inc. (9th Cir. June 12, 1998, as amended July 28, 1998). Negative Treatment (486), all "Superseded by Statute as Stated in."|
+|[ ]|208|Quiroz v. Seventh Ave. Ctr, 140 Cal.App.4th 1256|VERIFIED (Volusia door, 2026-09-19 ~15:21 PDT) — YELLOW flag|26|3|Y|KEEP|YELLOW: 1 "Declined to Extend by" (Walnut Producers of California v. Diamond Foods, Inc., 114 Cal.Rptr.3d 449 (Cal.App. 3 Dist. Aug. 16, 2010) — "Most Negative," HN 27) + 6 "Distinguished by" — all peripheral to Quiroz's core holding. KeyCite-list level. Westlaw name: Quiroz v. Seventh Ave. Center (Cal. Ct. App., 6th Dist., June 27, 2006).|
+|[x]|209|Rubio v. Capital One Bank, 572 F. Supp. 2d 1157|VERIFIED (Volusia door, 2026-09-19 ~15:21 PDT); operative passage in treating document READ|26|3|R|REPLACE|RED: Negative Direct History — "Affirmed in Part, Reversed in Part and Remanded" by Rubio v. Capital One Bank, 613 F.3d 1195 (9th Cir. July 21, 2010). The 9th Circuit REVERSED dismissal of the TILA claim (613 F.3d at 1203: TILA/Reg Z require clear-and-conspicuous, non-misleading APR disclosures in the Schumer Box) and the UCL claim (at 1205); breach-of-contract dismissal AFFIRMED (at 1206). Operative passage read. Do NOT cite the district-court opinion for TILA or UCL holdings — cite 613 F.3d 1195. Westlaw name: Rubio v. Capital One Bank (USA), N.A. (C.D. Cal. Aug. 11, 2008).|
+|[ ]|210|Saleh v. Nike, 562 F. Supp. 3d 503|VERIFIED (Volusia door, 2026-09-19 ~15:21 PDT) — YELLOW flag|26|3|Y|KEEP|YELLOW: 2 "Declined to Extend by" (incl. "Most Negative" Moody v. C2 Educational Systems Inc., 742 F.Supp.3d 1072 (C.D. Cal. July 25, 2024), HN 32) + 6 "Distinguished by" — all CIPA sec. 631 session-replay peripherals, none challenge Saleh's core holding. KeyCite-list level. Westlaw name: Saleh v. Nike, Inc. (C.D. Cal. Sept. 27, 2021).|
+|[ ]|211|Shvarts v. Budget Group, 81 Cal.App.4th 1153|VERIFIED (Volusia door, 2026-09-19 ~15:21 PDT) — YELLOW flag|26|3|Y|KEEP|YELLOW: 2 "Distinguished by" (incl. "Most Negative" Sepanossian v. National Ready Mixed Concrete Co., 315 Cal.Rptr.3d 373 (Cal.App. 2 Dist. Nov. 15, 2023), HN 14) — both peripheral; core holding intact. KeyCite-list level. Westlaw name: Shvarts v. Budget Group, Inc. (Cal. Ct. App., 2d Dist., Div. 4, June 29, 2000).|
 |[ ]|212|Smith v. State Farm Mutual Automobile Ins. Co, 93 Cal.App.4th 700|UNVERIFIED|26|3||||
 |[ ]|213|Soliman v. Philip Morris Inc, 311 F.3d 966|VERIFIED|26|3||||
 |[ ]|214|Station & Auto. Repair Ass’n v. Am. Home Assur. Co, 62 Cal.App.4th 1166|UNVERIFIED|26|3||||
@@ -445,7 +445,7 @@ First: _Regents v. Roth, 408 U.S. 564_ · Last: _2019 WL 6619348_
 |[ ]|314|Sosinsky v. Grant, 6 Cal.App.4th 1548|VERIFIED|5|4||||
 |[ ]|315|Wright v. State of California, 122 Cal.App.4th 659|VERIFIED|5, 10|4||||
 |[ ]|316|Brodheim v. Cry, 584 F.3d 1262|VERIFIED|3, 18, 30|3||||
-|[ ]|317|Day v. Sharp, 50 Cal.App.3d 904|UNVERIFIED|5|3||||
+|[ ]|317|Day v. Sharp, 50 Cal.App.3d 904|VERIFIED (Volusia door, 2026-09-19 ~15:21 PDT) — YELLOW flag; treating-document passage PENDING|5|3|Y|KEEP (passage read pending)|YELLOW: "Disagreement Recognized by" Hendrickson v. Woody, LLC, 2016 WL 1043051 (Cal.App. 4 Dist. Mar. 16, 2016) — "Most Negative," HNs 3-4 (judicial notice of court records; hearsay allegations not noticed as true) — touches Day's judicial-notice holding; 3 peripheral "Distinguished by." KeyCite-list level complete; the Hendrickson operative passage could NOT be read — quota wall ("Document Limit Reached") hit on that document. Re-run needed. Westlaw name: Day v. Sharp, 50 Cal.App.3d 904, 123 Cal.Rptr. 918 (Cal. Ct. App., 2d Dist., Div. 3, Aug. 26, 1975).|
 |[ ]|318|England v. Louisiana State Bd, 375 U.S. 411|VERIFIED|9|3||||
 |[ ]|319|Foster v. Sexton, 61 Cal.App.5th 998|UNVERIFIED|5|3||||
 |[ ]|320|In re Faucette, 253 Cal.App.2d 338|UNVERIFIED|9|3||||
