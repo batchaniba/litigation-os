@@ -1,0 +1,1735 @@
+     Case 8:25-cv-00191-SRM-KES        Document 55   Filed 01/14/26   Page 1 of 30 Page ID
+                                             #:796
+
+
+
+ 1 RAY KIM LAW, APC
+   Raymond Y. Kim (SBN 251210)
+ 2 112 E. Amerige Avenue, Suite 240
+   Fullerton, CA 92832
+ 3 Telephone: 833-729-5529
+   Facsimile: 833-972-9546
+ 4 E-mail:     ray@raykimlaw.com
+ 5 Attorneys for Plaintiffs
+   Roberto Sandoval Carrillo,
+ 6 and others similarly situated
+
+ 7
+                              UNITED STATES DISTRICT COURT
+ 8
+                            CENTRAL DISTRICT OF CALIFORNIA
+ 9
+
+10                                               ) Case No.: 8:25-cv-00191-SRM-KES
+   ROBERTO SANDOVAL CARRILLO,
+                                                 )
+11 individually and on behalf of all others      )
+   similarly situated,                           ) PLAINTIFF’S MOTION FOR
+12                                               ) CLASS CERTIFICATION
+                                                 )
+13                       Plaintiffs,             )
+           vs.                                   ) Date:       April 15, 2026
+14                                               ) Time:       1:30 p.m.
+                                                 )
+15 THE VONS COMPANIES, INC.; ONE                 ) Ctrm:       5D
+      SOURCE TECHNOLOGY LLC d/b/a                ) Judge:      Hon. Serena R. Murillo
+16                                               )
+      ASURINT, and DOES 1-5.
+                                                 )
+17                                               ) [Filed concurrently with Declaration of
+           Defendants.                           ) Roberto Sandoval Carrillo; Declaration
+18                                               ) of Raymond Y. Kim; and [Proposed]
+                                                 )
+19                                                 Order]
+20
+
+21
+
+22
+
+23
+
+24
+
+25
+
+26
+
+27
+
+28
+
+
+            PLAINTIFF’S NOTICE OF MOTION AND MOTION FOR CLASS CERTIFICATION
+     Case 8:25-cv-00191-SRM-KES     Document 55     Filed 01/14/26   Page 2 of 30 Page ID
+                                          #:797
+
+
+
+ 1                          NOTICE OF MOTION AND MOTION
+ 2 TO THE PARTIES AND THEIR ATTORNEYS OF RECORD:
+
+ 3         PLEASE TAKE NOTICE THAT on Wednesday, April 15, 2026, at 1:30 p.m., in
+ 4 Courtroom 5D of the above-entitled Court, located at First Street Courthouse, 350 W. 1st
+
+ 5 Street, 6th Floor, Los Angeles, California 90012, plaintiff Roberto Sandoval (“Plaintiff”)
+
+ 6 will, and hereby do, move for an order granting certification under Rules 23(a), (b)(2)
+
+ 7 and (b)(3) of the following classes:
+
+ 8         Megan’s Law Class: All persons in California who applied for
+ 9         employment with Vons and were denied employment as a result of
+           Vons’ use of information disclosed in the Megan’s Law Website,
+10         during the relevant statute of limitations period.
+11
+           Fair Chance Class: All persons in California who applied for
+12         employment with Vons and were denied employment as a result of their
+           conviction history.
+13
+
+14         FCRA Class: All persons in California who applied for employment
+           with Vons and on whom Asurint conducted a background search and
+15         furnished a consumer report containing sex offender registry
+16         information from the Megan’s Law Website that was used by Vons
+           and/or Asurint for employment decisions, during the relevant statute of
+17         limitations period.
+18
+
+19         This motion will be made on the grounds that the prerequisites of Rule
+20 23(a)—numerosity, commonality, typicality and adequacy—are satisfied, as are
+
+21 the requirements of Rule 23(b)(2)-(3), as questions of law and fact common to the
+
+22 class predominate over any questions affecting individual members, use of the
+
+23 class action device is superior to a multitude of individual actions, and injunctive
+
+24 relief is appropriate with respect to the classes as a whole. Plaintiff also will and
+
+25 hereby does move the Court to appoint him as the representative of the Classes
+
+26 and to appoint Ray Kim Law, APC as class counsel.
+
+27
+
+28
+
+
+            PLAINTIFF’S NOTICE OF MOTION AND MOTION FOR CLASS CERTIFICATION
+     Case 8:25-cv-00191-SRM-KES   Document 55     Filed 01/14/26   Page 3 of 30 Page ID
+                                        #:798
+
+
+
+ 1 This motion is made following the conference of counsel pursuant to L.R. 7-3 which took
+
+ 2 place throughout August to December 2025. Defendants The Vons Companies, Inc.
+
+ 3 (“Vons”) and One Source Technology LLC, d/b/a Asurint (“Asurint”).
+
+ 4         This motion is based upon this Notice of Motion and Motion and Memorandum of
+ 5 Points and Authorities, the Declaration of Roberto Sandoval Carrillo, Declaration of
+
+ 6 Raymond Y. Kim, all exhibits and appendices to such documents, the pleadings and other
+
+ 7 documents on file in this action, and any argument that may be presented to the Court.
+
+ 8
+
+ 9 Dated: January 14, 2026               RAY KIM LAW, APC
+10
+                                         /s/ Raymond Y. Kim
+11                                       Raymond Y. Kim
+                                         Attorneys for Plaintiff
+12                                       Roberto Sandoval Carrillo
+13
+
+14
+
+15
+
+16
+
+17
+
+18
+
+19
+
+20
+
+21
+
+22
+
+23
+
+24
+
+25
+
+26
+
+27
+
+28
+
+                                         –2–
+            PLAINTIFF’S NOTICE OF MOTION AND MOTION FOR CLASS CERTIFICATION
+     Case 8:25-cv-00191-SRM-KES       Document 55      Filed 01/14/26    Page 4 of 30 Page ID
+                                            #:799
+
+
+
+ 1                                            CONTENTS
+
+ 2                                                                               INTRODUCTION
+           1
+ 3
+           STATEMENT OF FACTS                                                                 2
+ 4
+           A.    Aspyr Is A Video Game Publisher That Licenses The Rights To Older,
+ 5               Preexisting Games And Re-Releases Them On Different Gaming Platforms,
+                 Such As KOTOR II For The Nintendo Switch         Error! Bookmark not defined.
+ 6
+           B.    KOTOR II Is Released In 2004 For Xbox In An Unfinished State; “Modders”
+ 7
+                 Extract The Unreleased Content, Add Their Own Content And Create The
+ 8               Sith Lords Restored Content Mod, a/k/a “RCM”    Error! Bookmark not defined.
+
+ 9         C.    In July 2022, One Month After The Release Of KOTOR II, Lucasfilm Games
+                 Notifies Aspyr That The DLC Is Not Approved For Release And All
+10               Marketing Activity Is To Stop                   Error! Bookmark not defined.
+
+11         PROCEDURAL HISTORY                                      Error! Bookmark not defined.
+
+12         LEGAL STANDARD                                                                     5
+13         ARGUMENT                                                                           6
+14         A.    The Proposed Classes Are Adequately Defined And Ascertainable                6
+15         B.    The Proposed Classes Satisfy the Requirements of Rule 23(a) Error! Bookmark not
+                 defined.
+16
+
+17
+                 1.     Numerosity.                                                           6
+
+18               2.     Commonality.                                                          7
+
+19               3.     Typicality.                                                           8
+
+20               4.     Adequacy of Representation.              Error! Bookmark not defined.
+
+21         C.    The Requirements of Rule 23(b) are Satisfied.                               17
+
+22               1.     Questions of Law and Fact Predominate Over Individual
+                        Questions.                                                           19
+23
+                 2.     A Class Action Is Superior to Other Methods of Adjudication          22
+24
+           D.    The Court Should Certify The California Class Under Rule 23(b)(2) For
+25               Injunctive Relief Ordering Aspyr To Remove The KOTOR II Trailer             24
+26         CONCLUSION                                                                        25
+27
+
+28
+
+                                         –3–
+            PLAINTIFF’S NOTICE OF MOTION AND MOTION FOR CLASS CERTIFICATION
+     Case 8:25-cv-00191-SRM-KES    Document 55     Filed 01/14/26   Page 5 of 30 Page ID
+                                         #:800
+
+
+
+ 1                                        INTRODUCTION
+ 2         Through this Motion for Class Certification, pursuant to Federal Rule of Civil
+ 3 Procedure 23(a), (b)(2) and (b)(3), Plaintiff Roberto Sandoval Carrillo (“Plaintiff”) seeks
+
+ 4 to certify three separate classes under (i) California Megan’s Law, Penal Code § 290.46
+
+ 5 (“Megan’s Law”); (ii) California Fair Chance Act, Government Code § 12952 (“Fair
+
+ 6 Chance Act”); and (iii) federal Fair Credit Reporting Act (“FCRA”), 15 U.S.C. §
+
+ 7 1681b(b)(2), respectively. The Megan’s Law prohibits employers from using sex
+
+ 8 offender registry information disclosed in the California Department of Justice Megan’s
+
+ 9 Law site (“SOR information”) for employment purposes. The Megan’s Law Class should
+
+10 be certified because Vons has already identified the Megan’s Law Class members, and
+
+11 the predominant, common issue is whether Vons violated the Megan’s Law by
+
+12 considering SOR information in violation of the Megan’s Law with respect to these
+
+13 prospective employees. The Fair Chance Act requires Vons to conduct an individualized
+
+14 assessment of whether applicants’ convictions have a direct and adverse relationship with
+
+15 the specific duties of the job. The Fair Chance Class should be certified because Vons has
+
+16 identified all 901 Fair Chance Class members and the predominant, common issue is
+
+17 whether Vons failed to conduct an individualized assessment with respect to these class
+
+18 members’ applications and conviction backgrounds. Other than self-serving deposition
+
+19 testimony, Vons has produced absolutely no records showing that it conducted an
+
+20 individualized assessment with respect to Plaintiff or anyone else’s conviction histories.
+
+21 In fact, the class data produced by Vons shows that it has not hired a single person with
+
+22 SOR information in their background reports, and not even a single person with a certain
+
+23 conviction history. Lastly, the FCRA allows a consumer reporting agency like Asurint to
+
+24 furnish a consumer report “only if … information from the consumer report will not be
+
+25 used in violation of any applicable Federal or State equal employment opportunity law or
+
+26 regulation[.]” The FCRA Class should be certified against Asurint because Vons has
+
+27 already identified the 43 persons who are members of the FCRA Class. The predominant,
+
+28 common issue is whether Asurint violated the FCRA by furnishing background reports
+
+
+            PLAINTIFF’S NOTICE OF MOTION AND MOTION FOR CLASS CERTIFICATION
+     Case 8:25-cv-00191-SRM-KES     Document 55     Filed 01/14/26   Page 6 of 30 Page ID
+                                          #:801
+
+
+
+ 1 with SOR information knowing that Vons was using that information in violation of the
+
+ 2 Megan’s Law. As set forth below, the Court should certify all three damages classes
+
+ 3 under Rule 23(a) and 23(b)(3). Lastly, given the uniform, ongoing violations, the Court
+
+ 4 should certify injunctive relief classes pursuant to Rule 23(b)(2) to ensure defendants
+
+ 5 cease their unlawful conduct. Accordingly, Plaintiff respectfully requests that the Court
+
+ 6 certify the Megan’s Law Class, Fair Chance Class, and FCRA Class and appoint Plaintiff
+
+ 7 as the class representative, and appoint Ray Kim Law, APC as counsel for the classes.
+
+ 8                                     STATEMENT OF FACTS
+ 9         In 1998, Plaintiff obtained his B.A. in History from San Francisco State
+10 University. After obtaining his degree, Plaintiff moved to Southern California and
+
+11 obtained his teaching credential in 2000 and was student teaching for middle school and
+
+12 high school classes during that time. Declaration of Roberto Sandoval Carrillo (“Carrillo
+
+13 Decl.”), ¶ 2. For many years until December 2015, Plaintiff worked as an educator in the
+
+14 Sweetwater Union High School District. Plaintiff is also a musician, and during that time
+
+15 Plaintiff also pursued a music career, obtained a certificate from the Berkeley College of
+
+16 Music, and added music as a subject to his teaching credential as a supplemental subject.
+
+17 Plaintiff is a musician in two bands, “Electrovot” and “Pain Love n’ War.” Id., ¶ 3, Exs.
+
+18 A, B. In 2016, Plaintiff was charged with possessing explicit material of a minor and was
+
+19 convicted in 2017. Due to the conviction, Plaintiff appears as a registered sex offender on
+
+20 the Megan’s Law Website, along with information about the basis for his convictions.
+
+21 Plaintiff spent five years in prison and was released in October 2022. Id. ¶ 4. Plaintiff
+
+22 deeply regrets his actions. He has made every effort to rebuild and redefine himself by
+
+23 working diligently to become a productive member of his community. While under the
+
+24 influence of alcohol Plaintiff tends to exercise bad judgment. Plaintiff recognizes this,
+
+25 and as a result in 2025 Plaintiff voluntarily asked his probation officer to have a full
+
+26 abstinence condition placed on his probationary guidelines. Id. ¶ 5. Since the charge,
+
+27 Plaintiff obtained a paralegal certificate from University of San Diego and has been
+
+28 working to obtain a certificate in Labor Studies from Los Angeles Trade Technical
+
+                                         –2–
+            PLAINTIFF’S NOTICE OF MOTION AND MOTION FOR CLASS CERTIFICATION
+     Case 8:25-cv-00191-SRM-KES     Document 55      Filed 01/14/26   Page 7 of 30 Page ID
+                                          #:802
+
+
+
+ 1 College with the goal of obtaining a union job. Plaintiff has also sought to find
+
+ 2 employment and make a living, but employers like Vons have made it difficult, even
+
+ 3 though Plaintiff is overqualified for many of the positions he has applied for. Id. ¶ 6.
+
+ 4         In January 2023 Plaintiff applied for a deli clerk position with Vons. Vons gave
+ 5 him a conditional offer of employment, and Plaintiff began work in early January 2023.
+
+ 6 As a deli clerk Plaintiff stood behind the deli counter taking food orders, measuring,
+
+ 7 cooking, and serving food, cleaning the deli area, and generally offering great customer
+
+ 8 service. Plaintiff really enjoyed the job and his colleagues. Id. ¶¶ 7-8. On January 24,
+
+ 9 Asurint sent him an email stating it is reporting “criminal or other public record
+
+10 information” that may be adverse to Plaintiff, and Vons is “using such public record
+
+11 information to determine [his] eligibility for employment.” Id. ¶ 9, Ex. C. On or about
+
+12 February 28, Asurint completed its investigation and prepared a written background
+
+13 report on Plaintiff. Asurint’s background report includes conviction information from the
+
+14 Megans Law website.
+
+15
+
+16
+
+17
+
+18
+
+19
+
+20
+
+21 Id. ¶¶ 10-11, Ex. D. On February 28, Plaintiff received an email from Vons and Asurint
+
+22 entitled “Pre-Adverse Action” stating that Vons intends to make an adverse action
+
+23 decision based on Plaintiff’s SOR information in his background report. Id., ¶ 12, Ex. E.
+
+24         On March 6, after back and forth email communications with Asurint, Plaintiff
+25 emailed Vons and Asurint twice, explaining that Plaintiff was not a “hands on offender”
+
+26 and had been convicted of receiving explicit images of minors, Plaintiff had been under
+
+27 the influence of alcohol at the time, and he did not pose a threat to the public. Plaintiff
+
+28 also provided mitigating and rehabilitation evidence, including letters from former
+
+                                         –3–
+            PLAINTIFF’S NOTICE OF MOTION AND MOTION FOR CLASS CERTIFICATION
+     Case 8:25-cv-00191-SRM-KES     Document 55     Filed 01/14/26   Page 8 of 30 Page ID
+                                          #:803
+
+
+
+ 1 colleagues and a former therapist attesting to his character and fitness and a Certificate of
+
+ 2 Achievement for completing the Dual Diagnosis Residential Drug Abuse Treatment
+
+ 3 Program in July 2022. Id. ¶ 13, Ex. F. That same day Vons responded via email, “I have
+
+ 4 no access to background checks and I am not informed when an applicant fails to pass. I
+
+ 5 do not have the ability to override your background check. You will need to go through
+
+ 6 Asurint.” Id. ¶ 14, Ex. G.
+
+ 7         The following day on March 7, 2023, Plaintiff emailed Vons at a different email
+ 8 address. In the email Plaintiff explained, among other things, that “Plaintiff worked as a
+
+ 9 high school teacher for 15 years, and there were never any incidents of misconduct,” and
+
+10 provided the School District’s phone number so Vons could verify his statement. Plaintiff
+
+11 also provided the same mitigating and rehabilitation evidence Plaintiff had submitted in
+
+12 his March 6 email to Vons and Asurint. Id. ¶ 15, Ex. H. That same day on March 7,
+
+13 Plaintiff received an email from Vons and Asurint with the subject, “Adverse Action
+
+14 Notification.” The Adverse Action Notice stated that his employment was terminated
+
+15 based on the SOR information found in the background report. Id. ¶ 16, Ex. I. In response
+
+16 to the Adverse Action Notice, on March 8 and 10 Plaintiff emailed Vons inquiring
+
+17 whether Plaintiff could apply for other positions, such as an overnight stocking clerk.
+
+18 Vons did not respond. Id. ¶ 17, Ex. J. Based on Vons’ responses to his emails and the
+
+19 timing of the Adverse Action Notice, it is clear that Vons did not conduct an
+
+20 individualized assessment of whether Plaintiff’s conviction history had a direct and
+
+21 adverse relationship with the specific duties of a Vons deli clerk. Vons did not even
+
+22 consider the fact that Plaintiff had been successfully working at Vons as a deli clerk for
+
+23 two months and had been excelling in his position, so much so that the general manager,
+
+24 Laura, told him Plaintiff could use her as a reference for future employment. In addition,
+
+25 his direct supervisor, Holly, also told him to get assistance from the union and use her as
+
+26 a reference. If Vons would give him a fair chance at employment, Plaintiff would like to
+
+27 apply again to work for Vons. Id. ¶ 19. Against this backdrop, on January 31, 2025
+
+28
+
+                                         –4–
+            PLAINTIFF’S NOTICE OF MOTION AND MOTION FOR CLASS CERTIFICATION
+     Case 8:25-cv-00191-SRM-KES      Document 55     Filed 01/14/26    Page 9 of 30 Page ID
+                                           #:804
+
+
+
+ 1 Plaintiff filed the class action complaint in this action, seeking to certify the Megan’s
+
+ 2 Law Class, Fair Chance Class and FCRA Class. See Complaint, Dkt. No. 1, ¶ 28.
+
+ 3                                        LEGAL STANDARD
+ 4         The primary objectives of Rule 23 is the efficient resolution of the claims or
+ 5 liabilities of many individuals in a single action as well as the elimination of repetitious
+
+ 6 litigation and possibly inconsistent adjudication. See Califano v. Yamaki, 442 U.S. 682,
+
+ 7 700-01 (1979); C. Wright, A.Miller & M. Kane, Federal Prac. & Proc. Civil 2d at § 1754
+
+ 8 (1986). District courts are afforded broad discretion in determining whether an action
+
+ 9 should be certified. Montgomery v. Rumsfield, 572 F.2d 250, 255 (9th Cir. 1978). Rule
+
+10 23 outlines a two-step process for determining whether class certification is appropriate.
+
+11 First, Rule 23(a) sets forth four conjunctive prerequisites that must be met for any class:
+
+12 (1) the class is so numerous that joinder of all members is impracticable, (2) there are
+
+13 questions of law or fact common to the class, (3) the claims or defenses of the
+
+14 representative parties are typical of the claims or defenses of the class, and (4) the
+
+15 representative parties will fairly and adequately protect the interests of the class. See Fed.
+
+16 R. Civ. P. 23(a); Hanon v. Dataproducts Corp., 976 F.2d 497, 508 (9th Cir. 1992).
+
+17         “In determining the propriety of a class action, the question is not whether the
+18 plaintiff or plaintiffs have stated a cause of action or will prevail on the merits, but rather
+
+19 whether the requirements of Rule 23 are met.” Eisen v. Carlisle & Jacquelin, 417 U.S.
+
+20 156, 178 (U.S. 1974) (emphasis added). “[Plaintiff]t is well established that for purposes
+
+21 of class certification, the moving party does not need to establish a likelihood of
+
+22 prevailing on the merits.” McKenzie v. Fed. Express Corp., 275 F.R.D. 290, 297 (C.D.
+
+23 Cal. 2011). “Sometimes the issues are plain enough from the pleadings to determine
+
+24 whether the interests of the absent parties are fairly encompassed within the named
+
+25 plaintiff’s claim…” General Telephone Co. of Sw. v. Falcon, 457 U.S. 147, 160 (1982).
+
+26 “[Plaintiff]t remains relatively clear an ultimate adjudication on the merits of plaintiffs’
+
+27 claims is inappropriate, and any inquiry into the merits must be strictly limited to
+
+28 evaluating plaintiffs’ allegations to determine whether they satisfy Rule 23.” Lee v.
+
+                                         –5–
+            PLAINTIFF’S NOTICE OF MOTION AND MOTION FOR CLASS CERTIFICATION
+ Case 8:25-cv-00191-SRM-KES        Document 55 Filed 01/14/26        Page 10 of 30 Page ID
+                                         #:805
+
+
+
+ 1 Stonebridge Life Ins. Co., 289 F.R.D. 292, 294 (N.D. Cal. 2013) (citing Ellis v. Costco
+
+ 2 Wholesale Corp., 657 F.3d 970, 983 n.8 (9th Cir. 2011). “Any doubts regarding the
+
+ 3 propriety of class certification generally should be resolved in favor of certification.”
+
+ 4 Wolph v. Acer Am. Corp., 272 F.R.D. 477, 481 (N.D. Cal. 2011) (citation omitted).
+
+ 5 Individualized damages are not a bar to class certification. Leyva v. Medline Indus. Inc.,
+
+ 6 716 F.3d 510, 513-14 (9th Cir. 2013). Similarly, “[m]anageability concerns must be
+
+ 7 weighed against the alternatives and will rarely, if ever, be sufficient to prevent
+
+ 8 certification of a class.” Bowerman v. FieldAsset Servs., Inc., 242 F. 22 Supp. 3d 910,
+
+ 9 933 (N.D. Cal. 2017).
+
+10                                            ARGUMENT
+11 A.     All Three Classes Satisfy Rule 23(a)’s Requirements Of Numerosity,
+12        Commonality, Typicality, And Adequacy
+13        1.     The Megan’s Law Class Satisfies Rule 23(a)’s Requirements
+14               a.    Numerosity
+15        Rule 23(a)(l) requires that the class be “so numerous that joinder of all members is
+16 impracticable.” Fed. R. Civ. P. 23(a)(l). “‘Impracticability’ does not mean
+
+17 ‘impossibility,’ but only the difficulty or inconvenience of joining all members of the
+
+18 class.’” Jane Doe v. Nielsen, 357 F. Supp. 3d 972,988 (N.D. Cal. 2018) (quoting Harris
+
+19 v. Palm Springs Alpine Estates, Inc., 329 F.2d 909, 913-914 (9th Cir. 1964)). “In
+
+20 general, courts find the numerosity requirement satisfied when a class includes at least 40
+
+21 members.” Holly v. Alta Newport Hosp., Inc., 612 F. Supp. 3d 1017, 1027 (C.D. Cal.
+
+22 2020) (citing Rannis v. Recchia, 380 F. App'x 646, 650–51 (9th Cir. 2010)). Here, there
+
+23 are over forty (40) persons who were denied employment as a result of Vons’ use of
+
+24 information disclosed in the Megan’s Law Website. Kim Decl., ¶¶ 14-16. In addition,
+
+25 Vons stipulated that “Vons shall not challenge numerosity with respect to the Megan’s
+
+26 Law Class as defined in paragraph 28 of the Class Action Complaint.” Order on Second
+
+27 Telephonic Discovery Conference, Dkt. No. 51, at 2. As a result, numerosity is satisfied
+
+28 for the Megan’s Law Class.
+
+                                        –6–
+           PLAINTIFF’S NOTICE OF MOTION AND MOTION FOR CLASS CERTIFICATION
+ Case 8:25-cv-00191-SRM-KES       Document 55 Filed 01/14/26       Page 11 of 30 Page ID
+                                        #:806
+
+
+
+ 1              b.     Commonality
+ 2        The commonality “requirement is met if there are ‘questions of law and fact
+ 3 common to the class.’ ‘Where the circumstances of each particular class member vary but
+
+ 4 retain a common core of factual or legal issues with the rest of the class, commonality
+
+ 5 exists.’” Evon v. L. Offs. of Sidney Mickell, 688 F.3d 1015, 1029 (9th Cir. 2012) (citing
+
+ 6 Parra v. Bashas', Inc., 536 F.3d 975, 978–79 (9th Cir.2008)). “So long as there is ‘even
+
+ 7 a single common question,’ a would-be class can satisfy the commonality requirement of
+
+ 8 Rule 23(a)(2).” Wang v. Chinese Daily News, Inc., 737 F.3d 538, 544 (9th Cir. 2013);
+
+ 9 see also Alcantar v. Hobart Service, 800 F.3d 1047, 1052 (9th Cir. 2015); Ellis v. Costco
+
+10 Wholesale Corp., 657 F.3d 970, 981 (9th Cir. 2011) (noting that not all questions of fact
+
+11 and law in the litigation need to be common).
+
+12        In this case, common questions of law and fact exist regarding the Megan’s Law
+13 Class. The Megan’s Law mandates the California Department of Justice (“CA DOJ”) to
+
+14 notify the public about specified registered sex offenders. CA Megan’s Law Website,
+
+15 (https://www.meganslaw.ca.gov/AboutMegansLaw/SummaryOfMegansLaw). The
+
+16 Megan’s Law site contains information about persons convicted of specified sex crimes,
+
+17 including their picture, address, physical description and date of birth. Cal. Pen. Code
+
+18 290.46(b). “Although sex offender registration is not considered a form of punishment
+
+19 under the state or federal Constitution, it imposes a ‘substantial’ and ‘onerous’ burden…
+
+20 When it becomes publicly known that a person is a registered sex offender, the person
+
+21 may be at risk of losing employment, and may have difficulty finding a place to live.”
+
+22 People v. Hofsheier, 37 Cal. 4th 1185, 1197 (2006), overruled on other grounds by
+
+23 Johnson v. Dep't of Just., 60 Cal. 4th 871 (2015). Consequently, the Megan’s Law
+
+24 expressly prohibits employers from using SOR information for employment purposes:
+
+25        Except as authorized under paragraph (1) or any other provision of law,
+          use of any information that is disclosed pursuant to this section for
+26
+          purposes relating to any of the following is prohibited:… Employment.
+27
+
+28
+
+                                       –7–
+          PLAINTIFF’S NOTICE OF MOTION AND MOTION FOR CLASS CERTIFICATION
+ Case 8:25-cv-00191-SRM-KES          Document 55 Filed 01/14/26      Page 12 of 30 Page ID
+                                           #:807
+
+
+
+ 1 Cal. Penal Code § 290.46(j)(2)(E); § 33:13. California, 5 Emp. Coord. Employment
+
+ 2 Practices § 33:13 (“Pursuant to the state’s Megan’s Law … use of any information on the
+
+ 3 Megan’s Law website to make employment decisions is prohibited[.]”). The prohibition
+
+ 4 reflects the Legislature deliberate policy choice to balance public safety against misuse
+
+ 5 and perpetual punishment.
+
+ 6        Here, the principal common question is whether Vons used SOR information from
+ 7 in denying employment to Plaintiff and the members of the Megan’s Law Class.
+
+ 8 Additional common questions include: (a) whether Vons’ practice of relying on registry
+
+ 9 information violates the Megan’s Law; (b) whether Vons acted knowingly, oppressively,
+
+10 or maliciously in violating the Megan’s Law; (c) whether Plaintiff and the other members
+
+11 of the Megan’s Law Class are entitled to actual, statutory, punitive or other forms of
+
+12 damages, and other monetary relief; and (d) whether Plaintiff and the other members of
+
+13 the Megan’s Law Class are entitled to equitable relief, including but not limited to public
+
+14 injunctive relief. See Complaint, Prayer for Relief. Notably, Vons has not hired anyone
+
+15 with a sex crime conviction since January 2021. Kim Decl., ¶¶ 16-17. Thus, regardless
+
+16 of how a factfinder might ultimately answer these questions on the merits, those answers
+
+17 must be resolved on a class-wide basis. Thus, commonality is satisfied.
+
+18               c.     Typicality
+19        Rule 23(a) requires that “the claims or defenses of the representative
+20 parties are typical of the claims or defenses of the class.” Fed. R. Civ. P. 23(a)(3).
+
+21 Representative claims are typical if they are “reasonably co-extensive with those of
+
+22 absent class members; they need not be substantially identical.” Rodriguez v. Hayes, 591
+
+23 F.3d 1105, 1124 (9th Cir. 2010) (quotation marks omitted). The requirement is “satisfied
+
+24 when each class member’s claim arises from the same course of events, and each class
+
+25 member makes similar legal arguments to prove the defendant’s liability.” Id. (quotation
+
+26 marks omitted). The purpose of the typicality requirement is to assure that the interests of
+
+27 the class representatives align with the interests of the class. Wolin v. Jaguar Land Rover
+
+28 N. Am., LLC, 617 F.3d 1168, 1175 (9th Cir. 2010). The interests and claims of named
+
+                                        –8–
+           PLAINTIFF’S NOTICE OF MOTION AND MOTION FOR CLASS CERTIFICATION
+ Case 8:25-cv-00191-SRM-KES         Document 55 Filed 01/14/26       Page 13 of 30 Page ID
+                                          #:808
+
+
+
+ 1 plaintiffs and class members need not be identical so long as their claims are based on the
+
+ 2 same legal or remedial theory. Differing fact situations of the class members do not
+
+ 3 defeat typicality. Wolin, 617 F.3d at 1175.
+
+ 4         Here, Plaintiff’s claims are co-extensive with Megan’s Law Class members’
+ 5 claims. The Megan’s Law prohibits the use of registry information for employment
+
+ 6 purposes. Plaintiff and Megan’s Law Class Members were each denied employment as a
+
+ 7 result of SOR informatoin contained in their background reports. In fact, after receiving a
+
+ 8 conditional job offer from Vons members of the Megan’s Law Class, including Plaintiff,
+
+ 9 received an Adverse Action Notice stating that the offer of employment had been
+
+10 withdrawn due to registry information in their background reports. In the Adverse Action
+
+11 Notices Vons stated in pertinent part:
+
+12         Dear Applicant,
+13
+           We are writing to inform you that your conditional offer of employment,
+14         transfer or promotion with Vons/Pavilions has been withdrawn.
+15         This decision was influenced in whole or in part by a pre-employment
+16         screening report prepared by Asurint. Please note that Asurint did not
+           make this employment decision on behalf of our company. This decision
+17         was made pursuant to Vons/Pavilions hiring policies.
+18
+           We have identified the following convictions on your report to be job-
+19         related:
+20         Sex Offender
+21
+           The decision to withdrawal [sic] the employment offer is based on the
+22         fact that one or more convictions were found during the pre-
+23         employment screening process[.]
+
+24
+     Kim Decl., ¶ 18; Carrillo Decl., ¶ 16, Ex. I (emphasis added). Plaintiff and at least 40
+25
+     other persons received substantively identical Adverse Action Notices and were denied
+26
+     employment by Vons based on SOR information contained in their background reports.
+27
+     Kim Decl., ¶¶ 14-18. Thus, Plaintiff’s claims are typical.
+28
+
+                                         –9–
+            PLAINTIFF’S NOTICE OF MOTION AND MOTION FOR CLASS CERTIFICATION
+ Case 8:25-cv-00191-SRM-KES        Document 55 Filed 01/14/26        Page 14 of 30 Page ID
+                                         #:809
+
+
+
+ 1        2.     The Fair Chance Class Satisfies Rule 23(a)’s Requirements
+ 2               a.     Numerosity
+ 3        The Fair Chance Class is defined as: “All persons in California who applied for
+ 4 employment with Vons and were denied employment as a result of their
+
+ 5 conviction history.” Complaint, ¶ 28. There are “approximately 901 persons in
+
+ 6 California through September 2025 with conviction histories who applied for
+
+ 7 employment, went through the background check process, and were denied employment
+
+ 8 with Responding Party, which includes Vons and Pavilions banner stores.” Kim Decl.,
+
+ 9 ¶¶ 20-25. As a result, numerosity is satisfied for the Fair Chance Class.
+
+10               b.     Commonality
+11        The Fair Chance Act, codified at Government Code § 12952, provides that “[a]n
+12 employer that intends to deny an applicant a position of employment solely or in part
+
+13 because of the applicant’s conviction history shall make an individualized assessment of
+
+14 whether the applicant’s conviction history has a direct and adverse relationship with the
+
+15 specific duties of the job that justify denying the applicant the position.” Cal. Gov. Code
+
+16 § 12952(c). In making the assessment, the employer must “consider all the following: (i)
+
+17 The nature and gravity of the offense or conduct. (ii) The time that has passed since the
+
+18 offense or conduct and completion of the sentence. (iii) The nature of the job held or
+
+19 sought.” Id. The regulations enforcing the Fair Chance Act describe the “requirements”
+
+20 the employer must follow “[i]f an employer intends to deny an applicant the employment
+
+21 position they were conditionally offered based solely or in part on the applicant's
+
+22 conviction history.” 2 C.C.R. § 11017.1(c). The California Civil Rights Division
+
+23 (“CRD”) defined “individualized assessment” as “a reasoned, evidence-based
+
+24 determination of whether the applicant's conviction history has a direct and adverse
+
+25 relationship with the specific duties of the job that justify denying the applicant the
+
+26 position.” Id. In regulation Section 11017.1(c), the CRD mandates the following:
+
+27        The individualized assessment must include, at a minimum, consideration of
+28        the following factors:
+
+                                        – 10 –
+           PLAINTIFF’S NOTICE OF MOTION AND MOTION FOR CLASS CERTIFICATION
+ Case 8:25-cv-00191-SRM-KES       Document 55 Filed 01/14/26        Page 15 of 30 Page ID
+                                        #:810
+
+
+
+ 1        (i) The nature and gravity of the offense or conduct. Consideration of this
+ 2        factor may include but is not limited to:
+                 (Plaintiff) The specific personal conduct of the applicant that resulted
+ 3               in the conviction;
+ 4               (II) Whether the harm was to property or people;
+                 (III) The degree of the harm (e.g., amount of loss in theft);
+ 5               (IV) The permanence of the harm;
+ 6               (V) The context in which the offense occurred;
+                 (VI) Whether a disability, including but not limited to a past drug
+ 7               addiction or mental impairment, contributed to the offense or conduct,
+ 8               and if so, whether the likelihood of harm arising from similar conduct
+                 could be sufficiently mitigated or eliminated by a reasonable
+ 9               accommodation, or whether the disability has been mitigated or
+10               eliminated by treatment or otherwise;
+                 (VII) Whether trauma, domestic or dating violence, sexual assault,
+11               stalking, human trafficking, duress, or other similar factors
+12               contributed to the offense or conduct; and/or
+                 (VIII) The age of the applicant when the conduct occurred.
+13        (ii) The time that has passed since the offense or conduct and/or completion
+14        of the sentence. Consideration of this factor may include but is not limited
+          to:
+15               (Plaintiff) The amount of time that has passed since the conduct
+16               underlying the conviction, which may significantly predate the
+                 conviction itself; and/or
+17               (II) When the conviction led to incarceration, the amount of time that
+18               has passed since the applicant's release from incarceration.
+          (iii) The nature of the job held or sought. Consideration of this factor may
+19        include but is not limited to:
+20               (Plaintiff) The specific duties of the job;
+                 (II) Whether the context in which the conviction occurred is likely to
+21               arise in the workplace; and/or
+22               (III) Whether the type or degree of harm that resulted from the
+                 conviction is likely to occur in the workplace.
+23
+
+24 2 C.C.R. § 11017.1(c). “To the extent that any evidence of rehabilitation or mitigating
+
+25 circumstances… is voluntarily provided by the applicant… that evidence must be
+
+26 considered as part of the initial individualized assessment. 2 C.C.R. § 11017.1(c); Cal.
+
+27 Gov. Code § 12952(c)(4). In addition, “[t]he employer shall consider any information
+
+28
+
+                                       – 11 –
+          PLAINTIFF’S NOTICE OF MOTION AND MOTION FOR CLASS CERTIFICATION
+ Case 8:25-cv-00191-SRM-KES        Document 55 Filed 01/14/26       Page 16 of 30 Page ID
+                                         #:811
+
+
+
+ 1 submitted by the applicant before making a final decision regarding whether or not to
+
+ 2 rescind the conditional offer of employment.” 2 C.C.R. § 11017.1(c)(3).
+
+ 3        Here, the principal common question with respect to the Fair Chance Class is
+ 4 whether Vons conducted an individualized assessment for Plaintiff and Fair Chance Class
+
+ 5 members according to Section 12952(c) and Regulation 11017.1. Additional common
+
+ 6 questions include: (a) whether Albertsons’ Standard Operating Procedures apply here; (b)
+
+ 7 whether Albertsons’ Standard Operating Procedures satisfy the Fair Chance Act and the
+
+ 8 CRD’s enforcing regulations requirements for conducting individualized assessment; and
+
+ 9 (c) whether Vons should be ordered to change its Fair Chance Act procedures to comply
+
+10 with the Fair Chance Act in the future. There is no evidence showing that Vons
+
+11 conducted an individualized assessment with respect to Plaintiff’s conditional job offer or
+
+12 any other Fair Chance Class members.
+
+13        Plaintiff had worked at Vons as a deli clerk for several weeks from January to
+14 March 2023, before Vons sent Plaintiff the Adverse Action Notice on March 7, 2023.
+
+15 But there is no evidence Vons considered Plaintiff’s successful employment with Vons
+
+16 for those weeks. Plaintiff submitted mitigating evidence, including referral letters and a
+
+17 Certificate of Achievement for completing the Dual Diagnosis Residential Drug Abuse
+
+18 Treatment Program in July 2022. Carrillo Decl., ¶¶ 13, 15, Exs. F and H. Vons did not
+
+19 consider this information, and instead responded, “Plaintiff have no access to background
+
+20 checks and Plaintiff am not informed when an applicant fails to pass. Plaintiff do not
+
+21 have the ability to override your background check. You will need to go through
+
+22 Asurint.” Carrillo Decl., ¶ 14 Ex. G. Plaintiff had been convicted of possessing explicit
+
+23 material of a minor in 2017. Plaintiff did not commit any crime towards another person or
+
+24 property. Vons did not consider this information in rescinding Plaintiff’s conditional
+
+25 offer. Plaintiff had also requested a different position at Vons, as an “overnight stocking
+
+26 clerk.” Id., ¶ 17, Ex. J. Vons did not consider this request either.
+
+27        Vons has produced absolutely zero business records showing that it conducted an
+28 individualized assessment of Plaintiff or anyone else. Kim Decl., ¶¶ 20-25. Vons simply
+
+                                        – 12 –
+           PLAINTIFF’S NOTICE OF MOTION AND MOTION FOR CLASS CERTIFICATION
+ Case 8:25-cv-00191-SRM-KES        Document 55 Filed 01/14/26      Page 17 of 30 Page ID
+                                         #:812
+
+
+
+ 1 produced a single document from Albertsons, entitled “Standard Operating Procedures
+
+ 2 Regarding Use and Review of Retail Job Applicants’ Criminal Conviction Histories –
+
+ 3 California” (“Standard Operating Procedures”). Kim Decl., ¶ 22, Ex. 10. These
+
+ 4 Albertsons’ Standard Operating Procedures do not show that Vons conducted any
+
+ 5 individualized assessments, for Plaintiff or any Fair Chance Class members. Indeed,
+
+ 6 Vons has gone on record stating that it is not affiliated with Albertsons for purposes of
+
+ 7 hiring. In response to Plaintiff’s written discovery requests, Vons responded:
+
+ 8        Responding Party does not employ employees of Albertsons Companies,
+ 9        Inc., Albertsons, Safeway Inc., or Andronico’s. Moreover, the putative
+10        class alleged in Plaintiff’s complaint only seeks to include employees of
+11        The Vons Companies, Inc. Therefore, information related to Albertsons
+12        Companies, Albertsons, Safeway Inc., or Andronico’s is irrelevant and not
+13        reasonably calculated to lead to the discovery of admissible evidence.
+14 Kim Decl., ¶ 22, Ex. 8. In an email Vons’ counsel also stated, “Albertsons, Safeway, and
+
+15 Andronicos are not associated with The Vons Companies, Inc. The Vons Companies,
+
+16 Inc. is the entity Mr. Carrillo was hired by and is the entity sued. He was never employed
+
+17 by the Albertsons Companies, Safeway, or Andronicos.” Id., 23, Ex. 9. Thus, Vons’
+
+18 production of Albertsons’ Standard Operating Procedures does not show it conducted
+
+19 individualized assessments of Plaintiff or of anyone else.
+
+20        Relatedly, even if Vons did apply Albertsons’ Standard Operating Procedures,
+21 there lays a common question of whether compliance with the Procedures even satisfies
+
+22 the Fair Chance Act and its implementing regulation. Albertsons’ Standard Operating
+
+23 Procedures merely parrot the language of the Fair Chance Act, Section 12952(c). Kim
+
+24 Decl., ¶ 22, Ex. 10. Nothing in the procedures provides steps for employees to follow or
+
+25 includes guidelines or tips for conducting individualized assessments. Id. In addition, the
+
+26 Standard Operating Procedures are undated, and it is unclear whether they were in effect
+
+27 for Vons in 2023 when Vons rescinded Plaintiff’s conditional job offer. Whether
+
+28 Albertsons’ Standard Operating Procedures on their face satisfy the Fair Chance Act’s
+
+                                       – 13 –
+          PLAINTIFF’S NOTICE OF MOTION AND MOTION FOR CLASS CERTIFICATION
+ Case 8:25-cv-00191-SRM-KES         Document 55 Filed 01/14/26     Page 18 of 30 Page ID
+                                          #:813
+
+
+
+ 1 and the CRD’s regulations requirements and whether they were used by Vons to conduct
+
+ 2 individualized assessments during the applicable time period are common issues
+
+ 3 impacting all Fair Chance Class members, and these issues should be determined on a
+
+ 4 class basis.
+
+ 5         Thus, regardless of how a factfinder might ultimately answer these questions on
+ 6 the merits, those answers must be resolved through this litigation on a class-wide basis.
+
+ 7 Thus, commonality is satisfied for the Fair Chance Class.
+
+ 8                c.   Typicality
+ 9        Here, Plaintiff’s Fair Chance Act claim arises from the same course of events as
+10 the class members. Plaintiff claims that Vons obtained background reports disclosing a
+
+11 criminal conviction but failed to conduct an individualized assessment for him and the
+
+12 Fair Chance Class members. Plaintiff along with 900 other prospective employees were
+
+13 denied employment based on their conviction history. Kim Decl., ¶ 26, Ex. 6. In
+
+14 response to Plaintiff’s request for documents “showing the results of YOUR
+
+15 individualized assessments” for the 900 prospective employees who were denied
+
+16 employment based on their conviction history, Vons responded, “Responding Party does
+
+17 not have responsive documents other than the types of documents identified in its
+
+18 supplemental response to Request for Production 14 and will not provide that information
+
+19 as it is overbroad and seeks merits-based discovery.” Id. In response to RFP No. 14,
+
+20 Vons merely produced the Pre-Adverse Action Notice and Adverse Action Notice sent to
+
+21 Plaintiff, mitigating evidence submitted by Plaintiff in response to the Pre-Adverse
+
+22 Action Notice, and Plaintiff’s post-conditional offer responses to a questionnaire. Kim
+
+23 Decl., ¶ 24. There is no question all 901 Fair Chance Class members, including Plaintiff,
+
+24 were either all not individually assessed or assessed based on the same defective Standard
+
+25 Operating Procedures. Thus, Plaintiff’s claims are typical of the Fair Chance Class
+
+26 members’ claims.
+
+27        3.      The FCRA Class Satisfies Rule 23(a)’s Requirements
+28                a.   Numerosity
+
+                                       – 14 –
+          PLAINTIFF’S NOTICE OF MOTION AND MOTION FOR CLASS CERTIFICATION
+ Case 8:25-cv-00191-SRM-KES       Document 55 Filed 01/14/26       Page 19 of 30 Page ID
+                                        #:814
+
+
+
+ 1        The FCRA Class is defined as: “All persons in California who applied for
+ 2 employment with Vons and on whom Asurint conducted a background search and
+
+ 3 furnished a consumer report containing sex offender registry information from the
+
+ 4 Megan’s Law Website that was used by Vons and/or Asurint for employment decisions,
+
+ 5 during the relevant statute of limitations period.” Complaint, ¶ 28. Here, there are
+
+ 6 “approximately 43 persons in California through September 2025 who appeared on the
+
+ 7 Megan’s Law Website and who applied for employment, went through the background
+
+ 8 check process, and were denied employment with [Vons], which includes Vons and
+
+ 9 Pavilions banner stores.” Kim Decl., ¶ 26, Ex. 6. Thus, numerosity is satisfied.
+
+10              b.     Commonality
+11        The FCRA, Section 1681b(b)(1), provides that “[a] consumer reporting agency
+12 may furnish a consumer report for employment purposes only if--… information from the
+
+13 consumer report will not be used in violation of any applicable Federal or State equal
+
+14 employment opportunity law or regulation[.]” In the Complaint, Plaintiff alleges that
+
+15 Asurint furnished consumer reports to Vons with knowledge that the information from
+
+16 the consumer report will be used in violation of the law, including California’s Megan’s
+
+17 Law. Complaint, Dkt. No. 1, ¶ 65.
+
+18        The Services Agreement governing the relationship between Vons and Asurint,
+19 expressly states, “[Asurint] shall not return Sex Offender Registry information in the
+
+20 states of California and Nevada.” Kim Decl., ¶ 28. The Agreement was signed in 2011.
+
+21 However, in 2012 an Addendum was signed which provided that Asurint will provide sex
+
+22 offender registry information at $400.00 per background check. Id.
+
+23        On January 24, 2023 Asurint sent Plaintiff an email stating that “Asurint, a
+24 consumer reporting agency, is reporting criminal or other public record information” to
+
+25 Vons, and Vons will use that information “to determine your eligibility for employment,
+
+26 promotion, reassignment, and/or retention,” even though the only criminal information in
+
+27 the background report is from the Megan’s Law registry. Carrillo Decl., Ex. C. On
+
+28 February 28, 2023, Vons sent Plaintiff a Pre-Adverse Action Notice email stating:
+
+                                       – 15 –
+          PLAINTIFF’S NOTICE OF MOTION AND MOTION FOR CLASS CERTIFICATION
+ Case 8:25-cv-00191-SRM-KES       Document 55 Filed 01/14/26       Page 20 of 30 Page ID
+                                        #:815
+
+
+
+ 1        In evaluating your conditional offer of employment, transfer or promotion
+ 2        with Vons/Pavilions, we received the enclosed screening report that we
+ 3        procured with your authorization from Asurint. This notification is
+ 4        provided because an adverse employment decision (e.g. the withdrawal of
+ 5        a conditional offer of employment, transfer or promotion) may be based,
+ 6        in whole or in part, on this screening report or on information regarding
+ 7        past criminal convictions that you identified during the application
+ 8        process. Please carefully review the screening report. We have identified
+ 9        the following convictions on your report to be job-related:
+10        Sex Offender
+11 Id. ¶ 12, Ex. E (emphasis in original). On March 7, 2023, Vons sent Plaintiff an Adverse
+
+12 Action Notice, stating:
+
+13        We are writing to inform you that your conditional offer of employment,
+14        transfer or promotion with Vons/Pavilions has been withdrawn.
+15        This decision was influenced in whole or in part by a pre-employment
+16        screening report prepared by Asurint. Please note that Asurint did not make
+17        this employment decision on behalf of our company. This decision was
+18        made pursuant to Vons/Pavilions hiring policies.
+19        We have identified the following convictions on your report to be job-
+20        related:
+21        Sex Offender
+22        The decision to withdrawal the employment offer is based on the fact that
+23        one or more convictions were found during the pre-employment screening
+24        process that Vons/Pavilions considers related to the job duties of the
+25        position to which you applied.
+26 Id., ¶ 16, Ex. I. Asurint knew that Vons was using the Megan’s Law registry information
+
+27 for unlawful means, yet continued to send Vons background reports containing SOR
+
+28 information. Here, the principal common question with respect to the FCRA Class is
+
+                                       – 16 –
+          PLAINTIFF’S NOTICE OF MOTION AND MOTION FOR CLASS CERTIFICATION
+ Case 8:25-cv-00191-SRM-KES          Document 55 Filed 01/14/26      Page 21 of 30 Page ID
+                                           #:816
+
+
+
+ 1 whether Asurint conducted a background search and furnished a consumer report
+
+ 2 containing sex offender registry information from the Megan’s Law Website knowing
+
+ 3 that the information would be unlawfully used by Vons for employment decisions.
+
+ 4 Additional common questions include: (a) whether such conduct is a violation of FCRA
+
+ 5 Section 1681b(b)(1); and (b) whether Asurint should be enjoined from engaging in such
+
+ 6 conduct in the future. Thus, regardless of how a factfinder might ultimately decide these
+
+ 7 questions on the merits, the answers should be resolved on a class-wide basis. Thus,
+
+ 8 commonality is satisfied for the FCRA Class.
+
+ 9               c.     Typicality
+10        Here, Plaintiff’s FCRA claim arises from the same course of events as the class
+11 members. Plaintiff claims that Asurint provided Vons background reports with SOR
+
+12 information knowing that Vons was using them in violation of the Megan’s Law. Asurint
+
+13 generated and provided Vons with more than forty background reports of California
+
+14 residents, including Plaintiff, who Vons denied employment as a result of the SOR
+
+15 information contained therein. All of these Fair Chance Act class members received the
+
+16 same Adverse Action Notice, which shows Vons rescinded the conditional employment
+
+17 offers based on the SOR information contained in the reports. Thus, Plaintiff’s claims are
+
+18 typical of the FCRA Class members’ claims.
+
+19 B.     Plaintiff And His Counsel Are Adequate Representatives
+20        Rule 23(a)(4) requires that “the representative parties will fairly and adequately
+21 protect the interests of the class.” Fed. R. Civ. P. 23(a)(4). “ In making this
+
+22 determination, courts must consider two questions: ‘(1) do the named plaintiffs and their
+
+23 counsel have any conflicts of interest with other class members and (2) will the named
+
+24 plaintiffs and their counsel prosecute the action vigorously on behalf of the class?’”
+
+25 Evon, 688 F.3d at 1031. Factual differences in the merits of the named plaintiff’s
+
+26 underlying claims do not affect their ability to vigorously represent the class. Wolin,
+
+27 617 F.3d at 1175. “Only conflicts that are fundamental to the suit and that go to the heart
+
+28
+
+                                        – 17 –
+           PLAINTIFF’S NOTICE OF MOTION AND MOTION FOR CLASS CERTIFICATION
+ Case 8:25-cv-00191-SRM-KES        Document 55 Filed 01/14/26       Page 22 of 30 Page ID
+                                         #:817
+
+
+
+ 1 of the litigation” may defeat adequacy of representation. In re Online DVD-Rental
+
+ 2 Antitrust Litig., 779 F.3d 934, 942 (9th Cir. 2015) (citation omitted).
+
+ 3        Here, Plaintiff’s interests are aligned with those of all class members, because
+ 4 class members have also been harmed by the same misconduct: Vons’ use of SOR
+
+ 5 information in making employment decisions, Vons’ failure to give prospective
+
+ 6 employees with conviction histories a fair shot at employment by failing to conduct an
+
+ 7 individualized assessment of their fitness for the particular job and categorically denying
+
+ 8 them employment, and Asurint’s generation and provision of consumer background
+
+ 9 reports with SOR information to Vons knowing that Vons will use the consumer reports
+
+10 for unlawful purposes, i.e. in violation of the Megan’s Law. Thus, Plaintiff has no
+
+11 conflicts with the other class members. Further, Plaintiff will continue to prosecute this
+
+12 action vigorously on behalf of the classes. Plaintiff has been, and continues to be, a very
+
+13 actively engaged participant in this litigation, taking time to thoroughly investigate his
+
+14 claims, search for, gather and review hundreds of pages of email communications with
+
+15 his probation officer and employment related documents, taking time away from work to
+
+16 prepare for and appear in-person for his deposition, staying abreast of developments in
+
+17 the case and regularly communicating with counsel, being very responsive to his
+
+18 counsel’s communications, and submitting a declaration in connection with the instant
+
+19 motion for class certification. Carrillo Decl., ¶ 20. Further, with his legal background
+
+20 and continuous pursuit of academic goals, Plaintiff has been particularly helpful in
+
+21 pursuing the class claims. Id. ¶ 6. Accordingly, Plaintiff is uniquely adequate and
+
+22 qualified to be appointed as the class representative.
+
+23        Proposed class counsel has likewise demonstrated their adequacy. Raymond Y.
+24 Kim of Ray Kim Law, APC, a former “big firm” lawyer of fifteen years and partner at
+
+25 Holland & Knight LLP, has handled consumer protection and FCRA related claims for
+
+26 over seventeen years, has litigated class actions for seventeen years, and has dedicated a
+
+27 significant time and effort to vigorously investigate, plead, and pursue these claims on
+
+28 behalf of the classes. Mr. Kim has been appointed as lead counsel in class actions
+
+                                        – 18 –
+           PLAINTIFF’S NOTICE OF MOTION AND MOTION FOR CLASS CERTIFICATION
+ Case 8:25-cv-00191-SRM-KES        Document 55 Filed 01/14/26       Page 23 of 30 Page ID
+                                         #:818
+
+
+
+ 1 numerous times. Ray Kim Law, APC is qualified under Rule 23(g) to continue to
+
+ 2 represent the class. See, e.g., Ramirez v. Greenpoint Mortg. Funding, Inc., 268 F.R.D.
+
+ 3 627, 643 (N.D. Cal. 2010); Kim Decl. ¶¶ 2-5.
+
+ 4 C.     All Three Classes Satisfy The Requirements of Rule 23(b)(3)
+ 5        For each of the three classes, common questions predominate over questions
+ 6 affecting individual plaintiffs and a class action is superior to other means of adjudicating
+
+ 7 all three claims at issue. Fed. R. Civ. P. 23(b)(3).
+
+ 8        1.     Common Questions Predominate Over Individual Ones
+ 9        The predominance inquiry under Rule 23(b)(3) requires the court to ask “whether
+10 the common, aggregation-enabling, issues in the case are more prevalent or important
+
+11 than the non-common, aggregation-defeating, individual issues.” Tyson Foods, Inc. v.
+
+12 Bouaphakeo, 577 U.S. 442, 453 (2016) (quotation and citation omitted). “When one or
+
+13 more of the central issues in the action are common to the class and can be said to
+
+14 predominate, the action may be considered proper under Rule 23(b)(3) even though other
+
+15 important matters will have to be tried separately.” Id. (quotation and citation omitted).
+
+16 “ The requirements of Rule 23(b)(3) overlap with the requirements of Rule 23(a): the
+
+17 plaintiffs must prove that there are ‘questions of law or fact common to class members’
+
+18 that can be determined in one stroke, in order to prove that such common questions
+
+19 predominate over individualized ones. Therefore, courts must consider cases examining
+
+20 both subsections in performing a Rule 23(b)(3) analysis.” Olean Wholesale Grocery
+
+21 Cooperative, Inc. v. Bumble Bee Foods, LLC, 31 F.4th 651, 663-64 (2022). Rule
+
+22 23(b)(3) “does not require a plaintiff seeking class certification to prove that each
+
+23 ‘elemen[t] of [her] claim [is] susceptible to classwide proof.’” Amgen Inc. v. Connecticut
+
+24 Ret. Plans & Tr. Funds, 568 U.S. 455, 133 S. Ct. 1184, 1196 (2013) (citation omitted)
+
+25 (emphasis in original). “[P]redominance in employment cases is rarely defeated on the
+
+26 grounds of differences among employees so long as liability arises from a common
+
+27 practice or policy of an employer. Accordingly, some courts have noted that the presence
+
+28
+
+                                        – 19 –
+           PLAINTIFF’S NOTICE OF MOTION AND MOTION FOR CLASS CERTIFICATION
+ Case 8:25-cv-00191-SRM-KES       Document 55 Filed 01/14/26       Page 24 of 30 Page ID
+                                        #:819
+
+
+
+ 1 of a company policy or practice is a strong indication that common issues predominate.”
+
+ 2 7 Newberg and Rubenstein on Class Actions § 23:33 (6th ed. 2025) (citations omitted).
+
+ 3              a.     Megan’s Law Class
+ 4        With respect to the Megan’s Law Class, the predominating, common question is
+ 5 whether Vons used SOR information for employment purposes. As expressly stated in its
+
+ 6 Adverse Action Notices, the SOR information contained in the background reports
+
+ 7 “influenced” Vons’ employment decision, and its decision was “based on the fact that”
+
+ 8 that SOR information was contained in the background report. Kim Decl., ¶¶ 18-19;
+
+ 9 Carrillo Decl., ¶ 16, Ex. Plaintiff. Each of the Megan’s Law Class members received the
+
+10 substantively identical Adverse Action Notice stating that their SOR information was the
+
+11 reason they were denied employment. Kim Decl., ¶¶ 18-19. What is more, Vons denied
+
+12 employment to all prospective employees with SOR information in their background
+
+13 reports. Kim Decl., ¶¶ 16-17. Therefore, common issues predominate over individual
+
+14 issues with respect to the Megan’s Law Class.
+
+15              b.     Fair Chance Class
+16        With respect to the Fair Chance Class, the predominating, common question is
+17 whether prospective employees with conviction histories received individualized
+
+18 assessments of their fitness for particular jobs, in compliance with the Fair Chance Act
+
+19 the CRD’s regulations, or whether Vons just categorically denied them employment due
+
+20 to their conviction histories. While Vons will argue that whether or not an individualized
+
+21 assessment was conducted is an individualized issue, here Vons has not produced a
+
+22 scintilla of evidence to support a finding that it conducts individualized assessment. See
+
+23 supra Sec. IV.A.2.b. Vons has not produced a single business record reflecting an
+
+24 individualized assessment for Plaintiff or anyone else. Vons has no policies or
+
+25 procedures, training manuals, or anything else showing it uses any form of individualized
+
+26 assessment. It merely produced Albertsons’ Standard Operating Procedures, which are
+
+27 undated and Vons has expressly disavowed as irrelevant to Vons’ hiring practices. What
+
+28 is more, the common questions of: (i) whether Albertsons’ Standard Operating
+
+                                       – 20 –
+          PLAINTIFF’S NOTICE OF MOTION AND MOTION FOR CLASS CERTIFICATION
+ Case 8:25-cv-00191-SRM-KES        Document 55 Filed 01/14/26        Page 25 of 30 Page ID
+                                         #:820
+
+
+
+ 1 Procedures apply here; (b) whether Albertsons’ Standard Operating Procedures satisfy the
+
+ 2 Fair Chance Act and the CRD’s enforcing regulations requirements for conducting
+
+ 3 individualized assessment; and (c) whether Vons should be ordered to change its Fair
+
+ 4 Chance Act procedures to comply with the Fair Chance Act in the future predominate.
+
+ 5               c.     FCRA Class
+ 6        With respect to the FCRA Class, the predominating, common question is Asurint’s
+ 7 generated and provided consumer background reports with SOR information to Vons
+
+ 8 knowing that Vons will use the consumer reports for unlawful purposes, i.e. in violation
+
+ 9 of the Megan’s Law. In its Second Supplemental Responses, Vons responded, inter alia,
+
+10 “There are approximately 43 persons in California through September 2025 who
+
+11 appeared on the Megan’s Law Website and who applied for employment, went through
+
+12 the background check process, and were denied employment with Responding Party,
+
+13 which includes Vons and Pavilions banner stores.” See Kim Decl., Exhibit 6, at Second
+
+14 Supplemental Response to Interrogatories, at No. 8. The question of whether or not
+
+15 Asurint’s provision of background reports to Vons is a merits inquiry, which has no
+
+16 bearing on class certification this stage. Thus, predominance is easily satisfied with
+
+17 respect to the FCRA Class.
+
+18               d.     Damages May Be Determined On A Classwide Basis
+19        “[Plaintiff]t is black letter law that individualized damage calculations do not
+20 render common liability issues non-predominant. Thus, post-Wal-Mart, in Tyson Foods
+
+21 v. Bouaphakeo—a class action involving allegations of unpaid overtime wages—the
+
+22 Supreme Court restated the settled proposition that ‘damages or some affirmative
+
+23 defenses peculiar to some individual class members’ do not defeat certification ‘when
+
+24 one or more of the central issues in the action are common to the class and can be said to
+
+25 predominate.’” 7 Newberg and Rubenstein on Class Actions § 23:33 (6th ed. 2025)
+
+26 (citing, e.g., Vaquero v. Ashley Furniture Industries, Inc., 824 F.3d 1150, 1155, 94 Fed.
+
+27 R. Serv. 3d 1947 (9th Cir. 2016) (holding that the trial court did not abuse its discretion in
+
+28 finding the predominance requirement satisfied notwithstanding individualized damages
+
+                                        – 21 –
+           PLAINTIFF’S NOTICE OF MOTION AND MOTION FOR CLASS CERTIFICATION
+ Case 8:25-cv-00191-SRM-KES        Document 55 Filed 01/14/26       Page 26 of 30 Page ID
+                                         #:821
+
+
+
+ 1 calculations). In fact, the Ninth Circuit recently explained that the plaintiff need not even
+
+ 2 show an existence of classwide damages. Lytle v. Nutramax Lab'ys, Inc., 114 F.4th 1011,
+
+ 3 1025, 1028 (9th Cir. 2024) (“Nor is there a requirement that class action plaintiffs
+
+ 4 actually prove that classwide damages exist in order to obtain class certification.”), cert.
+
+ 5 denied, No. 24-576, 2025 WL 663695 (U.S. Mar. 3, 2025).
+
+ 6        Here, with respect to the Megan’s Law Class, Plaintiff will demonstrate liability
+ 7 through common proof that the Vons used SOR information in denying Plaintiff and
+
+ 8 Megan’s Law Class members employment. Whether each class member may recover
+
+ 9 damages based on their conditional job offer, statutory damages of no less than $250, or a
+
+10 civil penalty up to $25,000.00 is not a bar to finding predominance. With respect to the
+
+11 Fair Chance Class, Plaintiff will demonstrate liability through common proof that the
+
+12 Vons failed to conduct individualized assessments and categorically denied employment
+
+13 for applicants with convictions. In addition to actual damages and statutory damages,
+
+14 Plaintiff also seeks injunctive relief, including Fair Chance Act compliant individualized
+
+15 assessments, Vons’ revision of its own hiring policies and procedures, implementation of
+
+16 Fair Chance Act compliant training, and prospective compliance monitoring. With
+
+17 respect to the FCRA Class, Plaintiff will demonstrate liability through common proof that
+
+18 the Asurint generated and provided background reports to Vons with SOR information,
+
+19 knowing that Vons was using the background reports in violation of the Megans’ Law.
+
+20 Pursuant to the FCRA, on behalf of the FCRA Class Plaintiff will seek actual damages,
+
+21 statutory damages of $1,000 per FCRA Class member, punitive damages, and an
+
+22 injunction that Asurint cease providing Vons with background reports containing SOR
+
+23 information knowing that Vons uses that information for employment purposes.
+
+24        2.     A Class Action Is The Superior Methods of Adjudication
+25        The second question in establishing predominance of a common question is
+26 whether the class action is superior to other methods of adjudicating the controversy.
+
+27 Just Film, Inc. v. Buono, 847 F.3d 1108, 1123 (9th Cir. 2017). “In determining
+
+28
+
+                                        – 22 –
+           PLAINTIFF’S NOTICE OF MOTION AND MOTION FOR CLASS CERTIFICATION
+ Case 8:25-cv-00191-SRM-KES         Document 55 Filed 01/14/26       Page 27 of 30 Page ID
+                                          #:822
+
+
+
+ 1 superiority, courts must consider the four factors of Rule 23(b)(3).” Zinser v. Accufix
+
+ 2 Research Institute, Inc., 253 F.3d 1180, 1190 (9th Cir. 2001).
+
+ 3        The first factor requires analysis of “the class members’ interests in individually
+ 4 controlling the prosecution or defense of separate actions.” Fed. R. Civ. P. 3(b)(3)(A).
+
+ 5 “In cases involving multiple claims for relatively small individual sums, class actions are
+
+ 6 superior because they ‘permit the plaintiffs to pool claims which would be uneconomical
+
+ 7 to litigate individually.’” Vvanti v. O'Reilly Auto Enters., LLC, No. 2:19-CV-02407-
+
+ 8 WLH-JPR, 2023 WL 4445531, at *12 (C.D. Cal. July 10, 2023). Where, as here,
+
+ 9 “damages suffered by each putative class member are not large, this factor weighs in
+
+10 favor of certifying a class action.” Zinser, 253 F.3d at 1190; Rai v. Santa Clara Valley
+
+11 Transp. Auth., 308 F.R.D. 245, 265 (N.D. Cal. 2015). In this case, the damages suffered
+
+12 by each Class member is relatively small compared to the burden and expense of
+
+13 individual prosecution, which could run hundreds of thousands of dollars per case.
+
+14 Vvanti, 2023 WL 4445531, at *12 (in wage and hour class action, finding recovery of
+
+15 several thousand dollars is “‘small when compared to the expense and burden of
+
+16 litigation,’ such that individuals have a low interest in litigating the alleged wage claim
+
+17 violation and might not have interest at all outside of a class action.”).
+
+18        The second factor considers “the extent and nature of any litigation concerning the
+19 controversy already begun by or against class members.” Fed. R. Civ. P. 23(b)(3)(B).
+
+20 This factor weighs in favor of class certification because no pending litigation concerning
+
+21 the Megan’s Law, Fair Chance Act, or FCRA Section 1681b(b) against Vons or Asurint
+
+22 exists. Gomez v. J. Jacobo Farm Lab. Contractor, Inc., 334 F.R.D. 234, 270 (E.D. Cal.
+
+23 2019) (finding predominance because “there does not appear to be any other already-
+
+24 pending litigation concerning the controversy.”) (citations omitted). The third factor
+
+25 examines “the desirability or undesirability of concentrating the litigation of the claims in
+
+26 the particular forum.” Fed. R. Civ. P. 23(b)(3)(D). Here, “judicial economy would be
+
+27 served by concentrating the many class members’ claims into one forum and one case, as
+
+28 opposed to multiple forums and dozens or hundreds of individualized cases.” Gomez,
+
+                                        – 23 –
+           PLAINTIFF’S NOTICE OF MOTION AND MOTION FOR CLASS CERTIFICATION
+ Case 8:25-cv-00191-SRM-KES          Document 55 Filed 01/14/26        Page 28 of 30 Page ID
+                                           #:823
+
+
+
+ 1 334 F.R.D. at 270. Plaintiff is a California resident bringing two California statutory
+
+ 2 claims and a federal FCRA claims on behalf of California residents, against Vons, who is
+
+ 3 headquartered in California, and Asurint, who regularly does business in California.
+
+ 4         The final factor requires that the court consider “the likely difficulties in managing
+ 5 a class action.” Fed. R. Civ. P. 23(b)(3)(D). “Manageability concerns must be weighed
+
+ 6 against the alternatives and ‘will rarely, if ever, be…sufficient to prevent certification of
+
+ 7 a class.’” Campbell v. PricewaterhouseCoopers, LLP, 253 F.R.D. 586, 605 (E.D. Cal.
+
+ 8 2008) (quoting Klay v. Humana, Inc., 382 F.3d 1241, 1272 (11th Cir. 2004)). Here, class
+
+ 9 certification presents no insurmountable case management problems and, in fact, serves
+
+10 the interests of judicial economy. Class certification will avoid needless expenditure of
+
+11 time, effort, and money in pursuing individual lawsuits and the potential for inconsistent
+
+12 outcomes. Accordingly, Plaintiff’s proposed class mechanism is the superior means for
+
+13 addressing the issues raised in this action.
+
+14 D.      The Court Should Certify The California Class Under Rule 23(b)(2) For
+15         Injunctive Relief
+16         California’s UCL and FEHA provide for injunctive relief. Cal. Bus. & Prof. Code
+17   § 17203; Cal. Gov Code § 12965. Rule 23(b)(2) “inquiry does not require an
+18   examination of the viability or bases of the class members’ claims for relief, does not
+19   require that the issues common to the class satisfy a Rule 23(b)(3)-like predominance
+20   test, and does not require a finding that all members of the class have suffered identical
+21   injuries.” Parsons v. Ryan, 754 F.3d 657, 688 (9th Cir. 2014). Instead, class certification
+22   under Rule 23(b)(2) is appropriate when “the party opposing the class has acted or
+23   refused to act on grounds that apply generally to the class, so that final injunctive relief
+24   or corresponding declaratory relief is appropriate respecting the class as a whole.” Fed.
+25   R. Civ. P. 23 (b)(2). “It is sufficient if class members complain of a pattern or practice
+26   that is generally applicable to the class as a whole” and a class may be certified “[e]ven if
+27   some class members have not been injured by the challenged practice.” Walters v. Reno,
+28   145 F.3d 1032, 1047 (9th Cir. 1998); see Hart v. Colvin, 310 F.R.D. 427, 438 (N.D. Cal.
+
+                                        – 24 –
+           PLAINTIFF’S NOTICE OF MOTION AND MOTION FOR CLASS CERTIFICATION
+ Case 8:25-cv-00191-SRM-KES          Document 55 Filed 01/14/26        Page 29 of 30 Page ID
+                                           #:824
+
+
+
+ 1   2015). Moreover, “[i]n contrast to Rule 23(b)(3) classes, the focus is not on the claims of
+ 2   individual class members, but rather whether [defendant] has engaged in a ‘common
+ 3   policy.’” In re Yahoo Mail Litig., 308 F.R.D. at 599. And “questions of manageability
+ 4   and judicial economy are irrelevant to 23(b)(2) class actions.” Sidibe v. Sutter Health,
+ 5   No. 12-CV-04854, 2019 WL 5295062, at *29 (N.D. Cal. Oct. 18, 2019). Accordingly, as
+ 6   the Ninth Circuit held, Rule 23(b)(2) is “unquestionably satisfied when members of a
+ 7   putative class seek uniform injunctive or declaratory relief from policies or practices that
+ 8   are generally applicable to the class as a whole.” Parsons, 754 F.3d at 688; see Ries v. AZ
+ 9   Beverages USA LLC, 287 F.R.D. 523, 541 (N.D. Cal. 2012) (“This case exemplifies the
+10   kind of action that may be appropriate for certification under Rule 23(b)(2), at least
+11   insofar as plaintiffs request: (1) declaratory relief that the alleged practices are unlawful,
+12   and (2) injunctive relief prohibiting defendants from continuing them.”).
+13         Pursuant to the UCL and the FEHA, Plaintiffs seek a uniform injunctive relief in
+14 the form of an order: (i) prohibiting Vons from using SOR information in its
+
+15 employment decisions, by barring Vons from procuring background reports from Asurint
+
+16 with SOR information (as it originally did in 2011) or some other reasonable, effective
+
+17 method; (ii) mandating that Vons create and implement its own Fair Chance Act
+
+18 compliant individualized assessments that comply with CRD regulation 2 C.C.R. §
+
+19 11017.1(c), Vons’ revision of its own hiring policies and procedures, implementation of
+
+20 Fair Chance Act compliant training, and prospective compliance monitoring; and (iii)
+
+21 prohibiting Asurint from generating and providing Vons with background reports
+
+22 containing SOR with knowledge that Vons uses the background reports in violation of
+
+23 the Megan’s Law.
+
+24                                            CONCLUSION
+25         Based on the foregoing, Plaintiff respectfully requests that the Court certify the
+26 Megan’s Law Class, Fair Chance Class, FCRA Class, and appoint Plaintiff and Ray Kim
+
+27 Law APC as representatives of the classes.
+
+28
+
+                                        – 25 –
+           PLAINTIFF’S NOTICE OF MOTION AND MOTION FOR CLASS CERTIFICATION
+ Case 8:25-cv-00191-SRM-KES    Document 55 Filed 01/14/26    Page 30 of 30 Page ID
+                                     #:825
+
+
+
+ 1
+     Dated: January 14, 2026          RAY KIM LAW, APC
+ 2
+
+ 3                                    /s/ Raymond Y. Kim
+                                      Raymond Y. Kim
+ 4                                    Attorneys for Plaintiff
+                                      Roberto Sandoval Carrillo
+ 5
+
+ 6
+
+ 7
+
+ 8
+
+ 9
+
+10
+
+11
+
+12
+
+13
+
+14
+
+15
+
+16
+
+17
+
+18
+
+19
+
+20
+
+21
+
+22
+
+23
+
+24
+
+25
+
+26
+
+27
+
+28
+
+                                        – 26 –
+           PLAINTIFF’S NOTICE OF MOTION AND MOTION FOR CLASS CERTIFICATION
+
