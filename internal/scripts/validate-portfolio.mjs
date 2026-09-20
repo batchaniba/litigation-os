@@ -20,7 +20,13 @@ import path from "node:path";
 import { execSync } from "node:child_process";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import { loadMatters, MATTERS_DIR } from "./load-matters.mjs";
-import { EVENTS_FILE } from "./lib/matter-layout.mjs";
+import { EVENTS_FILE, listMatterSources } from "./lib/matter-layout.mjs";
+import {
+  collectPublishStripIssues,
+  loadPhoneTapPaths,
+  publishMatterFromDir,
+} from "./lib/publish-matter.mjs";
+import { buildSeedSql } from "../../workers/doc-api/seed.mjs";
 import { MATTER_LIFECYCLES, archivedFromLifecycle, isTerminalLifecycle } from "./matter-lifecycle.mjs";
 import {
   MATTER_PHASES,
@@ -945,6 +951,47 @@ const crossMatter = JSON.parse(
         if (!inCluster.has(number)) {
           errors.push(`crossMatter party ${party.name} references matter ${number} outside its cluster.`);
         }
+      }
+    }
+  }
+}
+
+// ---------- publish strip (SPA artifacts + D1 seed) ----------
+{
+  const phoneTapPaths = loadPhoneTapPaths(REPO_ROOT);
+  const sources = listMatterSources(MATTERS_DIR).filter((source) => source.layout === "split");
+  for (const source of sources) {
+    const published = publishMatterFromDir(source.dir, { phoneTapPaths });
+    const sourceMatter = cases.find((row) => row.number === published.number);
+    for (const issue of collectPublishStripIssues({ published, sourceMatter })) {
+      fail(issue);
+    }
+  }
+  const seedSql = buildSeedSql({ repoRoot: REPO_ROOT });
+  for (const issue of collectPublishStripIssues({
+    artifactText: seedSql,
+    artifactLabel: "D1 seed SQL",
+  })) {
+    fail(issue);
+  }
+  const summariesPath = path.join(MATTERS_DIR, "summaries.json");
+  if (fs.existsSync(summariesPath)) {
+    for (const issue of collectPublishStripIssues({
+      artifactText: fs.readFileSync(summariesPath, "utf8"),
+      artifactLabel: "summaries.json",
+    })) {
+      fail(issue);
+    }
+  }
+  const publishRoot = path.join(MATTERS_DIR, "publish");
+  if (fs.existsSync(publishRoot)) {
+    for (const name of fs.readdirSync(publishRoot)) {
+      if (!name.endsWith(".json")) continue;
+      for (const issue of collectPublishStripIssues({
+        artifactText: fs.readFileSync(path.join(publishRoot, name), "utf8"),
+        artifactLabel: `publish/${name}`,
+      })) {
+        fail(issue);
       }
     }
   }

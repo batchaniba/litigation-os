@@ -79,9 +79,12 @@ at that URL and gets read-only tools over the same store: `listMatters`,
 `GET /doc/<sha256>` download URL), and `readDocumentText` (returns the
 document's extracted text inline, paginated — the preferred way for an
 external model to *read* a document, so it never has to fetch PDF bytes over
-HTTP). This is the preferred way for an external model to fetch documents:
-no R2 keys, no repo clone, no credentials of any kind. Local agents with
-`R2_*` keep using `npm run docs:fetch` and the query interface.
+HTTP). Public Worker MCP/REST stays open-read but only filing-safe data
+(the `publishMatter()` projection: identity, public docket rows, court-facing
+clocks, filed / phone-tap PDFs). Laptop `npm run mcp` / `npm run q` keep the
+full case graph. This is the preferred way for an external model to fetch
+documents: no R2 keys, no repo clone, no credentials of any kind. Local
+agents with `R2_*` keep using `npm run docs:fetch` and the query interface.
 
 ## No GitHub Actions
 
@@ -96,7 +99,7 @@ Laptop replacements (never paste keys into chat; other AIs get the Worker URL, n
 - CourtListener: `npm run court:sync -- --bootstrap` (token in gitignored `.env`)
 - R2 bytes + path index: `npm run documents:push` (`R2_*` from `~/.config/r2/env`)
 - Worker: `cd workers/doc-api && wrangler deploy`
-- D1: `node workers/doc-api/seed.mjs > seed.sql`, then POST `/admin/reseed`
+- D1: `node workers/doc-api/seed.mjs > seed.sql` (publish projection), then POST `/admin/reseed`
 - Dependencies: `npm run deps:outdated` / `npm run deps:update` (do not restore Dependabot; it runs on Actions runners). Optional PR factory is the Mend Renovate GitHub App + `.github/renovate.json`, not a workflow.
 
 Production deploys are the Vercel Deploy Hook from the Cloudflare cron, not

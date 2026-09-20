@@ -4,14 +4,14 @@ import { cases } from "../data/matters";
 import { buildQueue, yourQueue } from "../../scripts/lib/next-actions.mjs";
 import { clocksToUpcomingEvents } from "../../scripts/lib/upcoming-from-clocks.mjs";
 
-const clockModules = import.meta.glob("../data/matters/*/clocks.json", { eager: true });
+const publishModules = import.meta.glob("../data/matters/publish/*.json", { eager: true });
 
 function clocksByMatterFromGlob() {
   const byMatter = new Map();
-  for (const [file, mod] of Object.entries(clockModules)) {
-    const match = file.match(/\/(\d{2})\/clocks\.json$/);
+  for (const [file, mod] of Object.entries(publishModules)) {
+    const match = file.match(/\/(\d{2})\.json$/);
     if (!match) continue;
-    const clocks = mod?.default;
+    const clocks = mod?.default?.clocks;
     byMatter.set(Number(match[1]), Array.isArray(clocks) ? clocks : []);
   }
   return byMatter;

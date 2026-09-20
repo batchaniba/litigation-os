@@ -112,7 +112,7 @@ const fuse = route((env, params) => fuseData(env, params.get("days")));
 
 // --- admin: D1 self-reseed --------------------------------------------------
 // POST /admin/reseed with `Authorization: Bearer <RESEED_SECRET>` and the
-// seed.sql text as the body (one `INSERT ...;` per line, see seed.mjs).
+// seed.sql text as the body (DELETE + INSERT lines, see seed.mjs).
 // Applies the statements to the D1 binding in small batches, so the
 // `d1-reseed.yml` workflow can keep D1 in sync with the repo after every
 // portfolio-data merge. Fail-closed: 503 when RESEED_SECRET is not
@@ -127,7 +127,7 @@ async function handleReseed(request, env) {
   const statements = body
     .split("\n")
     .map((l) => l.trim())
-    .filter((l) => /^INSERT\s/i.test(l));
+    .filter((l) => /^(INSERT|DELETE)\s/i.test(l));
   let applied = 0;
   for (let i = 0; i < statements.length; i += 50) {
     const chunk = statements.slice(i, i + 50);

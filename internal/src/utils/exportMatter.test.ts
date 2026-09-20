@@ -71,7 +71,7 @@ describe("coverageSection and crossMatterSection", () => {
   it("renders insurance limits for a matter that has them", () => {
     const insured = [...Array(40).keys()].map((n) => n + 1).find((n) => coverageForMatter(n));
     expect(insured, "portfolio should have at least one insured matter").toBeDefined();
-    const section = coverageSection({ ...baseMatter, number: insured! });
+    const section = coverageSection({ ...baseMatter, number: insured!, policy_limits: "$1M / $5M" });
     expect(section).toContain("## Insurance coverage on file");
     expect(section).toContain("per incident");
     expect(section).toContain("**Carrier:**");

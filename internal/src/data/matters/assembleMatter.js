@@ -1,6 +1,6 @@
-// Assemble a split matter folder into the legacy Matter shape the SPA,
-// validator, and summaries still consume. Agents should fetch the sibling
-// files directly; this projection exists so the dashboard does not fork.
+// Assemble a split matter folder into the laptop Matter shape. Validator,
+// summaries' source graph, and `npm run q` still consume this. The SPA and
+// D1 seed do not — they go through publishMatter() so strategy/PII never ships.
 //
 // Schema is a contract (same shape), not a speed limit. events.jsonl is
 // append-only. Never invent a docket number. filed is a field.
