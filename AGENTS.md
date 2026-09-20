@@ -14,6 +14,12 @@ Crawl this repo as a graph. Do not reconstruct a docket from README or from `sta
 3. People, clusters, citations: `internal/src/data/index/{people,clusters,citations}.json`.
 4. Schema and limits: `internal/src/data/index/schema.json`.
 
+## Clusters (two systems — do not mix)
+
+**Numbered buckets** (`matter.json` `cluster`, integers 1–6): thematic UI/README groups. Truth is [`internal/src/data/clusters.js`](internal/src/data/clusters.js). README Case Cluster headings and the contents TOC are generated from that file plus each matter's `cluster` field. Example: **3 = Employment Violations** (Matter 26); **5 = Consumer Fraud / Defective Vehicle** (Matter 12). Do not learn the map from an old README — a prior inversion had those two swapped. `npm run q getNumberedClusters` / MCP `getNumberedClusters`.
+
+**Named graph** (`internal/src/data/index/clusters.json`, sourced from `crossMatter.json`): slug ids such as `chp-nov2024` and `megan-law-employment`. These are cross-matter link graphs, not bucket numbers. `getClusters` returns this graph. A named id is never a substitute for `matter.cluster`. Older recon memos that say "Cluster 5" for screening/employment were written against the inverted README; the numbered map above controls.
+
 ## Truth
 
 - Never treat README as live.

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router";
 import { cases } from "../data/matters";
-import { CLUSTERS } from "../data/clusters";
+import { CLUSTERS, formatMatterRanges } from "../data/clusters";
 import { damages_table } from "../data/damages";
 import { jurisdictions } from "../data/portfolioMeta";
 import { headline_coverage, formatLimit } from "../data/coverage";
@@ -35,20 +35,8 @@ for (const c of cases) {
   courtCounts[c.court] = (courtCounts[c.court] || 0) + 1;
 }
 
-const formatRanges = (nums) => {
-  if (!nums.length) return "—";
-  const sorted = [...nums].sort((a, b) => a - b);
-  const ranges = [];
-  let start = sorted[0], end = sorted[0];
-  for (let i = 1; i < sorted.length; i++) {
-    if (sorted[i] === end + 1) { end = sorted[i]; }
-    else { ranges.push(start === end ? `${start}` : `${start}–${end}`); start = end = sorted[i]; }
-  }
-  ranges.push(start === end ? `${start}` : `${start}–${end}`);
-  return ranges.join(", ");
-};
 const clusterMattersStr = Object.fromEntries(
-  CLUSTERS.map((cl) => [cl.n, formatRanges(clusterNumberLists[cl.n])]),
+  CLUSTERS.map((cl) => [cl.n, formatMatterRanges(clusterNumberLists[cl.n])]),
 );
 
 const moderateExposure = formatCurrency(

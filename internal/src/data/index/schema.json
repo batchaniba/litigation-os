@@ -51,7 +51,11 @@
         "lifecycle": { "type": "string" },
         "proceeding": { "type": "string" },
         "phase": { "type": "string" },
-        "cluster": { "type": "integer" },
+        "cluster": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "Numbered thematic bucket (1–6). Truth: internal/src/data/clusters.js. Not a named-graph slug from index/clusters.json."
+        },
         "related": {
           "type": "array",
           "items": { "type": "integer" }

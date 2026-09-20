@@ -43,9 +43,9 @@ for relative `out` paths in `fetchDocument`.
 
 ## Tools
 
-18 tools: 11 reads (`getMatter`, `listMatters`, `upcomingDeadlines`,
+19 tools: 12 reads (`getMatter`, `listMatters`, `upcomingDeadlines`,
 `getTimeline`, `getFuseBoard`, `fetchDocument`, `searchDocuments`,
-`getCounselDossier`, `getJudgeDossier`, `getClusters`, `getMatterDocs`)
+`getCounselDossier`, `getJudgeDossier`, `getClusters`, `getNumberedClusters`, `getMatterDocs`)
 and 7 writes (`recordTimelineEvent`, `retireUpcomingEvent`, `setNextClock`,
 `updateMatterIdentity`, `catalogDocument`, `scaffoldMatter`,
 `splitMatter`). Writes validate before touching disk and land on the

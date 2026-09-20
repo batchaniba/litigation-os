@@ -14,6 +14,7 @@ import {
   getCounselDossier,
   getJudgeDossier,
   getClusters,
+  getNumberedClusters,
   getMatterDocs,
 } from "./lib/query.mjs";
 import {
@@ -37,6 +38,7 @@ const OPS = {
   getCounselDossier: { fn: getCounselDossier, args: ["name"] },
   getJudgeDossier: { fn: getJudgeDossier, args: ["name"] },
   getClusters: { fn: getClusters },
+  getNumberedClusters: { fn: getNumberedClusters },
   getMatterDocs: { fn: getMatterDocs, args: ["n"] },
   // --- writes (Stage 1b): validated before touching disk ---
   recordTimelineEvent: { fn: recordTimelineEvent, opts: true, json: ["matters"], bool: ["upcoming", "filed"] },

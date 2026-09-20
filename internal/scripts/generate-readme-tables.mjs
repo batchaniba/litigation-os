@@ -8,11 +8,13 @@
 //   - internal/src/data/timeline.json    (status-label derivation; archive)
 //   - internal/src/data/damages.js       (damages summary + aggregates)
 //   - internal/src/data/lawyerFees.js    (attorney-fees cluster table)
+//   - internal/src/data/clusters.js      (numbered Case Cluster TOC + headings)
 //
 // Markers (HTML comments) in README.md delimit regenerable blocks:
 //   <!-- PORTFOLIO:<NAME>:START -->
 //   ...
 //   <!-- PORTFOLIO:<NAME>:END -->
+// Numbered Case Cluster TOC + headings: CASE_CLUSTER_TOC, CLUSTER_HEADING_1..6.
 //
 // Usage:
 //   npm run generate:readme           # write README.md
@@ -28,6 +30,12 @@ import { clocksToUpcomingEvents } from "./lib/upcoming-from-clocks.mjs";
 import { isSettledLifecycle, lifecycleLabel, readmeBucket } from "./matter-lifecycle.mjs";
 import { effectiveStatusLabel } from "./status-label.mjs";
 import { formatMatterRefs, parseMatterRefs } from "../src/utils/matterRefs.js";
+import {
+  CLUSTERS,
+  buildClusterToc,
+  clusterHeadingBlock,
+  mattersByNumberedCluster,
+} from "./lib/numbered-clusters.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const REPO_ROOT = path.resolve(__dirname, "..", "..");
@@ -323,6 +331,8 @@ const citationScoreboard = citationVerification
     ].join("\n");
 
 let readme = fs.readFileSync(README, "utf8");
+const { byCluster } = mattersByNumberedCluster(cases);
+const clusterToc = buildClusterToc(cases);
 const replacements = {
   OVERVIEW_TABLE: overviewTable,
   CLOSED_COUNT_NOTE: closedCountNote,
@@ -332,7 +342,15 @@ const replacements = {
   DAMAGES_SUMMARY: damagesTable,
   ATTORNEY_FEES: attorneyFeesBlock,
   CITATION_SCOREBOARD: citationScoreboard,
+  CASE_CLUSTER_TOC: clusterToc,
 };
+
+for (const cl of CLUSTERS) {
+  replacements[`CLUSTER_HEADING_${cl.n}`] = clusterHeadingBlock(
+    cl.n,
+    byCluster.get(cl.n) ?? [],
+  );
+}
 
 for (const [name, body] of Object.entries(replacements)) {
   readme = replaceBlock(readme, name, body);

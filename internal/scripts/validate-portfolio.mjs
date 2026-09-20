@@ -43,6 +43,7 @@ import { loadRegistry, registryByPath } from "./lib/document-registry.mjs";
 import { pdfReadableProblem } from "./lib/pdfMagic.mjs";
 import { matterRefsInclude, parseMatterRefs } from "../src/utils/matterRefs.js";
 import { ACTORS } from "./lib/next-actions.mjs";
+import { collectNumberedClusterIssues } from "./lib/numbered-clusters.mjs";
 import { isFederalMatter } from "./courtlistener/courts.mjs";
 import { hasResolvableDocketNumber } from "./courtlistener/docket-number.mjs";
 import {
@@ -953,6 +954,21 @@ const crossMatter = JSON.parse(
         }
       }
     }
+  }
+}
+
+// ---------- numbered buckets vs named graph ----------
+{
+  const readmeText = fs.readFileSync(path.join(REPO_ROOT, "README.md"), "utf8");
+  const namedIndex = JSON.parse(
+    fs.readFileSync(path.join(REPO_ROOT, "internal/src/data/index/clusters.json"), "utf8"),
+  );
+  for (const issue of collectNumberedClusterIssues({
+    matters: cases,
+    readme: readmeText,
+    namedClusters: [...(namedIndex.clusters ?? []), ...(crossMatter.clusters ?? [])],
+  })) {
+    fail(issue);
   }
 }
 

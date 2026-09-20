@@ -50,7 +50,8 @@ portfolio directly instead of shelling out.
 | `searchDocuments` | `(query) -> .txt sidecar hits` | `search-documents.py` | wrap |
 | `getCounselDossier` | `(name) -> dossier` | `internal/docs/legal-intel/counsel/` | new |
 | `getJudgeDossier` | `(name) -> dossier` | `internal/docs/legal-intel/judges/` | new |
-| `getClusters` | `() -> cluster map` | `index/clusters.json` | wrap |
+| `getClusters` | `() -> named graph` | `index/clusters.json` (slugs; not `matter.cluster`) | wrap |
+| `getNumberedClusters` | `() -> numbered buckets` | `clusters.js` + `matter.cluster` | new |
 | `getMatterDocs` | `(n) -> manifest entries for matter` | `documents/manifest.json` | new |
 
 Notes:

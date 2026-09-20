@@ -721,6 +721,9 @@ export const lawyer_fees_summary = {
   },
   totalEstimatedHours: { low: 3097.8, high: 5205.2, mid: 4144 },
   totalEstimatedCost: { low: 867384, high: 1457456, mid: 1160320 },
+  // Fee-analysis rollups, not the numbered portfolio buckets in clusters.js.
+  // cluster3 here is a combined billing group (consumer-fraud + employment),
+  // not numbered bucket 3 (Employment Violations).
   byCluster: {
     cluster1: { label: "CHP / DUI / DMV", matters: [1, 2, 7, 8, 20, 24, 32, 33], costLow: 172676, costMid: 230272, costHigh: 287868 },
     cluster2: { label: "Parole Retaliation / HOPE", matters: [3, 4, 5, 6, 11, 13, 14, 15, 16, 17, 18, 21, 28, 30, 34], costLow: 469672, costMid: 619192, costHigh: 772912 },
