@@ -31,6 +31,7 @@
     "documents:seed": "node internal/scripts/documents-store.mjs seed",
     "extract:matter1": "node internal/scripts/extract-matter-pdfs.mjs",
     "fuse:board": "node internal/scripts/generate-fuse-board.mjs",
+    "gate": "node internal/scripts/portfolio-gate.mjs",
     "generate:readme": "node internal/scripts/generate-readme-tables.mjs",
     "guard:pr": "node internal/scripts/guard-pr-merge.mjs",
     "index:build": "python3 internal/scripts/build-document-index.py",

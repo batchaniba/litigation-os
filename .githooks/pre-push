@@ -1,52 +1,21 @@
 #!/bin/sh
 # Local gate. GitHub Actions CI was removed (Sep 2026) — this is the only
-# automated check between a commit and main. It is the same set of checks
-# the old build-and-validate job ran, minus the bundle: lint, typecheck,
-# portfolio data validation, golden damages math, the unit suite (which
-# carries the prose ceilings), and the fabricated-citation gate.
+# automated check between a commit and main. Shared implementation:
+#   internal/scripts/portfolio-gate.mjs
+#   npm run gate
 #
-# Bypass for a genuine emergency:  SKIP_PORTFOLIO_GATE=1 git push
+# Fail-closed: missing node_modules or python3 refuses the push.
+# Bypass (feature branch only): SKIP_PORTFOLIO_GATE=EMERGENCY git push
+# A push that updates refs/heads/main cannot bypass — use a PR.
 # Installed by `npm run prepare` (core.hooksPath = .githooks).
 set -e
-
-[ "${SKIP_PORTFOLIO_GATE:-}" = "1" ] && exit 0
 
 repo_root="$(git rev-parse --show-toplevel)"
 cd "$repo_root"
 
-# Only gate pushes that carry commits to a code branch. Branch deletes and
-# the PDF store (documents:push writes refs/heads/documents directly) skip.
-gate=0
-while read -r _local_ref local_sha remote_ref _remote_sha; do
-  case "$local_sha" in 0000000000000000000000000000000000000000) continue ;; esac
-  case "$remote_ref" in refs/heads/documents) continue ;; esac
-  gate=1
-done
-[ "$gate" -eq 0 ] && exit 0
-
-if [ ! -d node_modules ]; then
-  echo "pre-push: node_modules missing — gate skipped. Run npm install, then npm run validate." >&2
-  exit 0
+if ! command -v node >/dev/null 2>&1; then
+  echo "pre-push: node not found — install Node.js, then npm install && npm run gate." >&2
+  exit 1
 fi
 
-# No PDF tree on disk (fresh clone, sandbox)? Validate document paths against
-# the committed manifest, exactly as the old CI job did.
-if [ -z "$(ls -d internal/public/documents/matter-* 2>/dev/null)" ]; then
-  export PORTFOLIO_SKIP_DISK_DOCS=1
-fi
-export VITE_COPY_DOCUMENTS=0
-
-step() { printf 'pre-push: %s\n' "$1"; }
-
-step "lint";               npm run -s lint
-step "typecheck";          npm run -s typecheck
-step "validate-portfolio"; node internal/scripts/validate-portfolio.mjs
-step "golden damages";     node internal/scripts/test-golden.mjs
-step "unit suite";         npx vitest run --reporter=dot
-if command -v python3 >/dev/null 2>&1; then
-  step "citation gate";    python3 internal/scripts/verify-citations.py --check
-else
-  echo "pre-push: python3 not found — citation gate skipped" >&2
-fi
-
-echo "pre-push: gate passed"
+exec node internal/scripts/portfolio-gate.mjs --hook
