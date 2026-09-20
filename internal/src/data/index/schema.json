@@ -95,7 +95,8 @@
         "kind": { "type": "string" },
         "status": {
           "type": "string",
-          "enum": ["open", "set", "contingent", "vacated", "satisfied", "undated"]
+          "enum": ["open", "set", "contingent", "vacated", "satisfied"],
+          "description": "Stored clocks.json / D1 status. overdue is derived from date + open/set, never stored. undated is unused — a null date with open or contingent is the undated row."
         },
         "source_dkt": { "type": ["integer", "null"] },
         "title": { "type": "string" }

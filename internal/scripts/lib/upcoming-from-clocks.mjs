@@ -1,39 +1,28 @@
 // Live calendar from clocks.json. timeline.json is the archive.
 // Pure: no fs. Node loaders live in load-clocks.mjs; the SPA reads published clocks.
+// Stored statuses live in clock-status.mjs. `overdue` is derived only.
 
 import { dateKeyFromLabel, dateLabelFromKey } from "./next-actions.mjs";
+import {
+  CLOCK_RANK,
+  DEAD_CLOCK_STATUS_SET,
+  isClockOverdue,
+  isDeadClock,
+} from "./clock-status.mjs";
 
-export const DEAD_CLOCK_STATUSES = new Set(["vacated", "satisfied"]);
-
-export const CLOCK_STATUSES = new Set([
-  "open",
-  "set",
-  "overdue",
-  "contingent",
-  "undated",
-  "vacated",
-  "satisfied",
-]);
-
-export const CLOCK_RANK = {
-  open: 0,
-  set: 0,
-  overdue: 0,
-  contingent: 2,
-  undated: 3,
-  vacated: 9,
-  satisfied: 9,
-};
-
-export function isDeadClock(clock) {
-  return DEAD_CLOCK_STATUSES.has(clock?.status);
-}
+export {
+  CLOCK_RANK,
+  CLOCK_STATUSES,
+  isClockOverdue,
+  isDeadClock,
+} from "./clock-status.mjs";
+export const DEAD_CLOCK_STATUSES = DEAD_CLOCK_STATUS_SET;
 
 export function isContingentUndated(clock) {
   return clock?.status === "contingent" && !clock?.date;
 }
 
-/** open/set/overdue, and contingent only when dated. Vacated/satisfied out. */
+/** open/set, and contingent only when dated. Vacated/satisfied/legacy-closed out. */
 export function isLiveClock(clock) {
   if (!clock || typeof clock !== "object") return false;
   if (isDeadClock(clock)) return false;
@@ -85,7 +74,7 @@ export function clocksToUpcomingEvents(clocksByMatter, options = {}) {
         if (!existing.actor && clock.actor) existing.actor = clock.actor;
         continue;
       }
-      const overdue = Boolean(dated && today && clock.date < today && clock.status !== "contingent");
+      const overdue = isClockOverdue(clock, today);
       const dateLabel = clockDateLabel(clock);
       const row = {
         date: dateLabel || (dated ? clock.date : "undated"),
@@ -96,6 +85,7 @@ export function clocksToUpcomingEvents(clocksByMatter, options = {}) {
       };
       if (clock.actor) row.actor = clock.actor;
       if (clock.source) row.source = clock.source;
+      // Derived display on the generated upcoming row — not a stored clocks.json status.
       if (overdue) row.status = "overdue";
       groups.set(key, row);
     }
@@ -132,12 +122,13 @@ export function nextFromClocks(clocks, today) {
   const dated = live.find((c) => c.date);
   const chosen = dated ?? live[0] ?? null;
   if (!chosen) return { next_clock: null, overdue: false };
-  const overdue = Boolean(chosen.date && chosen.date < today && chosen.status !== "contingent");
+  const overdue = isClockOverdue(chosen, today);
   return {
     next_clock: {
       id: chosen.id,
       date: chosen.date ?? null,
       kind: chosen.kind,
+      // Derived index chip only. clocks.json keeps the stored status.
       status: overdue ? "overdue" : chosen.status,
       title: chosen.title,
       source_dkt: chosen.source_dkt ?? null,

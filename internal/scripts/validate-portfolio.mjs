@@ -46,6 +46,7 @@ import { ACTORS } from "./lib/next-actions.mjs";
 import { collectNumberedClusterIssues } from "./lib/numbered-clusters.mjs";
 import { isFederalMatter } from "./courtlistener/courts.mjs";
 import { hasResolvableDocketNumber } from "./courtlistener/docket-number.mjs";
+import { clockStatusIssue } from "./lib/clock-status.mjs";
 import {
   DOCUMENTS_ROOT,
   PUBLIC_ROOT,
@@ -180,7 +181,9 @@ function checkSplitHardRules(dir, tag) {
     if (row.source_dkt != null && !Number.isInteger(row.source_dkt)) {
       fail(`${tag}: clocks.json[${i}] source_dkt must be an integer or null — do not invent a docket number`);
     }
-    // Overdue is a fact. Do not fail the schema because a clock's date has passed.
+    const statusIssue = clockStatusIssue(row.status, `${tag}: clocks.json[${i}]`);
+    if (statusIssue) fail(statusIssue);
+    // Overdue is a derived fact (date + open/set). Do not fail because a date has passed.
   }
 }
 

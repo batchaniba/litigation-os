@@ -20,7 +20,10 @@ CREATE TABLE IF NOT EXISTS clocks (
   title         TEXT,
   date          TEXT,     -- YYYY-MM-DD
   kind          TEXT,     -- deadline | hearing | expiry | conference | ...
-  status        TEXT      -- open | satisfied | retired | cancelled | vacated
+  status        TEXT      -- open | set | contingent | vacated | satisfied
+  -- overdue is derived (date + open/set), never stored.
+  -- Legacy D1 aliases retired/cancelled/canceled map to vacated; run the
+  -- operator UPDATE in workers/doc-api/README.md before or with reseed.
 );
 -- Existing D1 keeps working: queries fall back when the column is absent.
 -- To backfill it: wrangler d1 execute litigation-portfolio --remote \

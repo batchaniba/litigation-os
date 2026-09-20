@@ -124,7 +124,7 @@ function toClocks(timeline, number) {
         date,
         date_label: row.date ?? null,
         kind: row.type ?? "event",
-        status: date ? "open" : "undated",
+        status: "open",
         source_dkt: inferDocketNumber(row.source ?? "", row.event ?? ""),
         title: String(row.event ?? "").slice(0, GRAPH_LIMITS.indexNextClockTitleChars),
         actor: row.actor ?? null,
