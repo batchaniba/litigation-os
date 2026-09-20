@@ -496,7 +496,8 @@ npm run report:prose          # advisory word-count / docket-log report (not a s
 npm run generate:readme       # regenerate marked README tables from portfolio data
 npm run lint                  # ESLint over internal/src + internal/scripts
 npm run lint:fix              # ...and auto-fix what is safely fixable
-npm run validate              # lint + summaries + upcoming + README + schema + citations:check + tests
+npm run gate                  # same six steps as pre-push (lint, typecheck, validate-portfolio, golden, vitest, citation)
+npm run validate              # fuller check: lint + generated-file --check + schema + citations:check + coverage
 npm run citations:index       # rebuild page-keyed citation index from PDFs
 npm run citations:verify      # rebuild verification ledger
 npm run citations:check       # known-bad gate (also run by validate)
@@ -574,7 +575,7 @@ Vercel builds with `VITE_COPY_DOCUMENTS=0` and `PORTFOLIO_SKIP_DISK_DOCS=1` so t
 
 **GitHub Pages** is no longer deployed. Phone taps are the `/{slug}.pdf` copies on Vercel. New PDFs from `npm run documents:push` go to R2 (when `R2_*` is set) and to the `documents` branch as a cold backup. The Worker serves `/documents/<path>` after the path index is published. `vite.config.js` keeps the `GITHUB_PAGES` base-path switch for a manual Pages build if one is ever needed.
 
-**Pre-push gate.** There are no GitHub Actions workflows. `.githooks/pre-push` is the only automated check before `main`: lint, typecheck, `validate-portfolio`, golden damages math, the unit suite, and the fabricated-citation gate. `npm run prepare` installs it. `SKIP_PORTFOLIO_GATE=1 git push` bypasses it for emergencies only. Branch protection on `main` must **not** require status checks; nothing reports any.
+**Pre-push gate.** There are no GitHub Actions workflows. `.githooks/pre-push` and `npm run gate` run the same fail-closed checks before `main`: lint, typecheck, `validate-portfolio`, golden damages math, the unit suite, and the fabricated-citation gate. `npm run prepare` installs the hook (`core.hooksPath = .githooks`). Missing `node_modules` or `python3` refuses the push. `SKIP_PORTFOLIO_GATE=EMERGENCY git push` may skip the hook on a feature branch only; a push that updates `refs/heads/main` cannot bypass. Branch protection on `main` should require a PR and block force pushes; it must **not** require Actions status checks (there are none). See [WORKFLOW_NOTES.md](.github/WORKFLOW_NOTES.md).
 
 **Dependencies.** Do not restore Dependabot (it runs on Actions runners). Weekly: `npm run deps:outdated`, then `npm run deps:update` for in-range npm. Optional PR factory is the Mend Renovate GitHub App using `.github/renovate.json` — see [WORKFLOW_NOTES.md](.github/WORKFLOW_NOTES.md).
 

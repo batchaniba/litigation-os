@@ -107,12 +107,13 @@ current mailing packet. See `internal/docs/DOCUMENT_STORE.md`.
 
 ### Where the gate went
 
-The checks the old CI job ran now run in `.githooks/pre-push`: lint, typecheck,
-`validate-portfolio`, golden damages math, the unit suite, and the
-fabricated-citation gate. The committed `vercel.json` drift check is covered
+The checks the old CI job ran now run in `.githooks/pre-push` / `npm run gate`:
+lint, typecheck, `validate-portfolio`, golden damages math, the unit suite, and
+the fabricated-citation gate. The committed `vercel.json` drift check is covered
 by the pre-commit hook regenerating the file whenever the short-link catalog
-changes. Branch protection on `main` must not require status checks; nothing
-reports any.
+changes. Branch protection on `main` should require a PR and block force
+pushes; it must not require status checks (nothing reports any). Checklist:
+`.github/WORKFLOW_NOTES.md`.
 
 ## Deploying now
 

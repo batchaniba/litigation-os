@@ -96,10 +96,15 @@ agents with `R2_*` keep using `npm run docs:fetch` and the query interface.
 ## No GitHub Actions
 
 Do not add `.github/workflows/`. The spending limit already refuses every job.
-The checks the old CI job ran live in the `pre-push` hook (installed by
-`npm run prepare`): lint, typecheck, `validate-portfolio`, golden damages math,
-the unit suite, and the fabricated-citation gate. Before opening a PR, run
-`npm run validate` yourself and say so in the PR body.
+The checks the old CI job ran live in the fail-closed `pre-push` hook (installed
+by `npm run prepare`) and in `npm run gate` (same steps, shared
+`internal/scripts/portfolio-gate.mjs`): lint, typecheck, `validate-portfolio`,
+golden damages math, the unit suite, and the fabricated-citation gate. Missing
+`node_modules` or `python3` refuses the push. `SKIP_PORTFOLIO_GATE=EMERGENCY`
+may skip the hook on a feature branch only — a push that updates
+`refs/heads/main` cannot bypass. Before opening a PR, run `npm run gate`
+(matches the hook) or `npm run validate` (adds coverage and generated-file
+checks) and say so in the PR body.
 
 Laptop replacements (never paste keys into chat; other AIs get the Worker URL, not `R2_*`):
 
@@ -118,7 +123,8 @@ per-push; see `internal/docs/VERCEL_DEPLOYS.md`.
 
 **Node (.mjs)** — the build/validation/sync pipeline. These run in the git
 hooks and `npm run` scripts:
-- `validate-portfolio.mjs` — data validation (pre-push gate)
+- `validate-portfolio.mjs` — data validation (pre-push / `npm run gate`)
+- `portfolio-gate.mjs` — fail-closed local gate (`npm run gate` / `.githooks/pre-push`)
 - `sync-*.mjs` — derived data generation (registry, manifest, summaries, upcoming, short-links)
 - `documents-store.mjs` — `npm run documents:pull -- --matter N` (R2 when `R2_*` is set, else the git branch). `documents:push` updates the cold `documents` branch and, with credentials, PUTs PDFs + the path index to R2. Phone-tap slug PDFs stay on `main` until a public `/documents/...` origin returns 200.
 - `r2-upload.mjs` / `lib/r2-client.mjs` — PDF bytes + `index/path-to-sha256.json` → R2 (called by `documents:push`)

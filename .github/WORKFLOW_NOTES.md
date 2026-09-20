@@ -5,7 +5,8 @@
 This repository uses a multi-stage data pipeline to keep the interactive litigation portfolio in sync across the SPA bundle, README documentation, and validation gates.
 
 There are **no GitHub Actions workflows**. Do not add `.github/workflows/`.
-The spending limit already refuses every job. The gate is `.githooks/pre-push`.
+The spending limit already refuses every job. The gate is `.githooks/pre-push`
+and `npm run gate` (same steps; shared `internal/scripts/portfolio-gate.mjs`).
 
 ## Data Sync Scripts
 
@@ -35,17 +36,18 @@ These scripts are **load-bearing** and ensure data consistency:
 - **Output**: `upcoming.json` — filtered subset of timeline events
 - **Failure mode**: If stale, upcoming deadlines won't appear on the dashboard
 
-#### 3. `npm run validate` (the gate)
-- **When**: By hand before a PR. The `pre-push` hook runs the same checks (minus coverage thresholds) on every push to a code branch; there is no CI.
-- **What it does**: Comprehensive portfolio integrity checks:
-  - Validates matter JSON schema (required fields, types, lifecycle/phase consistency)
-  - Checks timeline references (all matter numbers exist)
-  - Verifies document paths (all referenced files exist on disk)
-  - Cross-references damages.js and lawyerFees.js (no orphaned or missing entries)
-  - Reports orphan documents and missing `filed` status
-  - Re-checks that summaries.json, upcoming.json, and README are current
-- **Why**: Prevents silent data corruption. A missing document or broken reference should fail the build.
-- **Failure mode**: The push is refused; fix the issue (or `SKIP_PORTFOLIO_GATE=1` for a genuine emergency)
+#### 3. `npm run gate` / `npm run validate`
+- **When**: `npm run gate` before a push or PR — same six steps as `.githooks/pre-push`. `npm run validate` is the fuller local check (generated-file `--check` plus coverage). There is no CI.
+- **What `npm run gate` does** (fail-closed; hook and script share `internal/scripts/portfolio-gate.mjs`):
+  1. `npm run lint`
+  2. `npm run typecheck`
+  3. `node internal/scripts/validate-portfolio.mjs`
+  4. `node internal/scripts/test-golden.mjs`
+  5. `npx vitest run --reporter=dot`
+  6. `python3 internal/scripts/verify-citations.py --check`
+- **What `validate-portfolio` checks**: matter JSON schema, timeline references, document paths (disk or committed manifest when `PORTFOLIO_SKIP_DISK_DOCS=1`), damages/fees/coverage cross-checks, stale summaries/upcoming/README.
+- **Why**: Prevents silent data corruption. A missing document, broken reference, or fabricated cite should fail the push.
+- **Failure mode**: The push is refused. Missing `node_modules` or `python3` is a refusal, not a skip. `SKIP_PORTFOLIO_GATE=EMERGENCY` may skip the hook on a **feature branch only**; a push that updates `refs/heads/main` cannot bypass. `SKIP_PORTFOLIO_GATE=1` is ignored.
 
 #### 4. `npm run generate:readme` (README sync)
 - **When**: Manually run by developer (not automatic)
@@ -80,7 +82,8 @@ These are optional and not part of the build pipeline:
 
 There is **no CI** and no `.github/workflows/`. GitHub Actions was dropped in
 September 2026 (billing; the remaining jobs then failed with “Actions budget
-is preventing further use”) and the gate is `.githooks/pre-push`:
+is preventing further use”) and the gate is `.githooks/pre-push` /
+`npm run gate`:
 
 ```
 1. npm run lint
@@ -91,9 +94,27 @@ is preventing further use”) and the gate is `.githooks/pre-push`:
 6. python3 internal/scripts/verify-citations.py --check
 ```
 
+The hook is fail-closed: missing `node_modules` or `python3` exits 1.
 `PORTFOLIO_SKIP_DISK_DOCS=1` is set automatically when the PDF tree is not on
-disk. Production deploys are scheduled from a Cloudflare Worker, not from
-pushes; see `internal/docs/VERCEL_DEPLOYS.md`.
+disk (manifest mode — not a gate skip). Production deploys are scheduled from
+a Cloudflare Worker, not from pushes; see `internal/docs/VERCEL_DEPLOYS.md`.
+
+### Branch protection (GitHub settings)
+
+`main` must not be a free-for-all from the web UI. Configure this in GitHub
+**Settings → Branches → Branch protection rule** for `main`. Still **no**
+`.github/workflows/` and **no** required Actions status checks — nothing
+reports any.
+
+- [ ] Require a pull request before merging into `main`
+- [ ] Do not allow force pushes
+- [ ] Do not allow deletions of `main`
+- [ ] Do **not** require status checks (there are none; Actions is off)
+- [ ] Do **not** add workflow YAML to invent those checks
+
+The local hook still runs on every laptop/agent push to a code branch.
+`SKIP_PORTFOLIO_GATE=EMERGENCY` cannot push to `main`; emergencies go through
+a feature branch and a PR.
 
 Laptop jobs that used to be Actions:
 
@@ -139,11 +160,11 @@ that is unacceptable, stay on the laptop commands.
 
 ## Testing
 
-Tests run in the pre-push hook and locally:
+Tests run in the pre-push hook / `npm run gate` and locally:
 
 ```bash
-npm run test          # Run once
-npm run test:watch    # Watch mode
+npm run gate          # Same six steps as pre-push
+npm run test          # Unit suite only
 ```
 
 ### Test Coverage
@@ -156,22 +177,25 @@ Tests validate:
 
 ## Troubleshooting
 
-### "npm run validate failed" / pre-push refused
+### "npm run gate failed" / pre-push refused
 
 **Common causes:**
-1. Matter JSON file missing a required field → Fix the JSON file
-2. Document path doesn't exist → Add the file or update the reference
-3. summaries.json is stale → Run `npm run sync:summaries`
-4. upcoming.json is stale → Run `npm run sync:upcoming`
-5. README.md tables are out of sync → Run `npm run generate:readme`
-6. Matter number referenced in timeline doesn't exist → Check timeline.json
+1. `node_modules` missing → `npm install`, then `npm run gate` (the hook no longer skips)
+2. `python3` missing → install Python 3; the citation gate is required
+3. `SKIP_PORTFOLIO_GATE=EMERGENCY` on a push to `main` → push a feature branch and open a PR
+4. Matter JSON file missing a required field → Fix the JSON file
+5. Document path doesn't exist → Add the file or update the reference
+6. summaries.json is stale → Run `npm run sync:summaries`
+7. upcoming.json is stale → Run `npm run sync:upcoming`
+8. README.md tables are out of sync → Run `npm run generate:readme`
+9. Matter number referenced in timeline doesn't exist → Check timeline.json
 
 **To fix locally:**
 ```bash
 npm run sync:summaries
 npm run sync:upcoming
 npm run generate:readme
-npm run validate
+npm run gate
 ```
 
 ### Production is stale
@@ -190,7 +214,7 @@ Run `npm run generate:readme` to regenerate README tables from current matter da
 ```
 Developer commits (pre-commit hook syncs registry/manifest/README/vercel.json)
        ↓
-Developer pushes (pre-push hook)
+Developer pushes (pre-push hook / npm run gate)
        ↓
   Lint + typecheck pass?
        ↓ YES
