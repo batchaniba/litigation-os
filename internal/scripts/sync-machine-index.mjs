@@ -71,6 +71,7 @@ const indexMatters = matters.map((m) => {
   };
 });
 
+// Named cross-matter graph (slug ids). Not the numbered buckets in clusters.js.
 const clusters = (cross.clusters ?? []).map((c) => ({
   id: c.id,
   label: c.label,

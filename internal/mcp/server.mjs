@@ -32,7 +32,7 @@ const TOOLS = [
     schema: {
       lifecycle: { type: "string" },
       phase: { type: "string" },
-      cluster: { type: "integer" },
+      cluster: { type: "integer", description: "Numbered bucket from clusters.js, not a named-graph slug" },
     },
   },
   {
@@ -91,8 +91,16 @@ const TOOLS = [
   },
   {
     name: "getClusters",
-    description: "The cluster map.",
+    description:
+      "Named cross-matter graph (slug ids such as chp-nov2024). Not matter.cluster numbers — use getNumberedClusters for those.",
     fn: () => query.getClusters(),
+    schema: {},
+  },
+  {
+    name: "getNumberedClusters",
+    description:
+      "Numbered thematic buckets (1–6). Truth is clusters.js + matter.json cluster. 3 = Employment, 5 = Consumer Fraud.",
+    fn: () => query.getNumberedClusters(),
     schema: {},
   },
   {

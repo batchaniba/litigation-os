@@ -12,6 +12,10 @@ import { todayKey, dateKeyFromLabel } from "./next-actions.mjs";
 import { paddedMatterNumber } from "./matter-layout.mjs";
 import { getObject, keyForSha256 } from "./r2-client.mjs";
 import { REPO_ROOT } from "./root.mjs";
+import {
+  CLUSTERS as NUMBERED_CLUSTERS,
+  CLUSTER_LABELS as NUMBERED_CLUSTER_LABELS,
+} from "../../src/data/clusters.js";
 const readJSON = (rel) => JSON.parse(fs.readFileSync(path.join(REPO_ROOT, rel), "utf8"));
 
 let _index = null;
@@ -219,9 +223,18 @@ export function getJudgeDossier(name) {
   return readDossier("judges", name);
 }
 
-/** Cluster map. */
+/** Named cross-matter graph (slug ids). Not matter.cluster numbers. */
 export function getClusters() {
   return clusters();
+}
+
+/** Numbered thematic buckets. Truth: clusters.js + matter.json `cluster`. */
+export function getNumberedClusters() {
+  return {
+    source: "internal/src/data/clusters.js",
+    clusters: NUMBERED_CLUSTERS,
+    labels: NUMBERED_CLUSTER_LABELS,
+  };
 }
 
 /** Manifest entries for one matter's documents. */
