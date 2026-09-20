@@ -1,10 +1,9 @@
 import { memo } from "react";
 import { Link } from "react-router";
 import { GOLD, BORDER_BLUE } from "../../constants";
-import { StatusBadge, ClusterBadge, TypeBadge, ArchiveBadge, ProceedingBadge, PhaseBadge, PolicyLimitsBadge } from "../Badges";
+import { StatusBadge, ClusterBadge, TypeBadge, ArchiveBadge, ProceedingBadge, PhaseBadge } from "../Badges";
 import { ServiceTracker } from "../ServiceTracker";
 import { CollapsibleProse } from "../ui/CollapsibleProse";
-import { coverageForMatter } from "../../data/coverage";
 import { useMatter } from "../../hooks/useMatter";
 import { formatMatterPath } from "../../utils/formatters";
 import { isArchivedMatter } from "../../utils/matterLifecycle";
@@ -115,7 +114,6 @@ function MatterCardImpl({ matter: summary, isOpen, onToggle }: MatterCardProps) 
             <ProceedingBadge proceeding={c.proceeding} />
             <PhaseBadge phase={c.phase} />
             <StatusBadge status={effectiveStatusLabel(c)} lifecycle={c.lifecycle} />
-            <PolicyLimitsBadge limits={c.policy_limits} coverage={coverageForMatter(c.number)} />
             {isArchivedMatter(c) && <ArchiveBadge />}
           </div>
           {c.note && (
@@ -146,7 +144,7 @@ function MatterCardImpl({ matter: summary, isOpen, onToggle }: MatterCardProps) 
           <div style={{ marginTop: 18 }}>
             <div className="detail-label">Causes of Action</div>
             <div className="matter-card-pills">
-              {c.causes.map((ca, i) => (
+              {(c.causes ?? []).map((ca, i) => (
                 <span key={i} className="matter-card-pill" style={{ background: "var(--navy-subtle-bg)", color: "var(--secondary-text)", border: `1px solid ${BORDER_BLUE}30` }}>{ca}</span>
               ))}
             </div>
@@ -156,34 +154,50 @@ function MatterCardImpl({ matter: summary, isOpen, onToggle }: MatterCardProps) 
             <div className="matter-card-loading" style={{ color: "var(--subtle-text)" }}>Loading full matter record…</div>
           ) : (
             <>
-              <div style={{ marginTop: 18 }}>
-                <div className="detail-label">Key Facts</div>
-                <CollapsibleProse text={c.key_facts} label="key facts" style={{ color: "var(--muted-text)", lineHeight: 1.7 }} />
-              </div>
+              {c.key_facts ? (
+                <div style={{ marginTop: 18 }}>
+                  <div className="detail-label">Key Facts</div>
+                  <CollapsibleProse text={c.key_facts} label="key facts" style={{ color: "var(--muted-text)", lineHeight: 1.7 }} />
+                </div>
+              ) : null}
 
-              <div className="grid-2" style={{ marginTop: 18 }}>
-                <div>
-                  <div className="detail-label">Procedural Status</div>
-                  <CollapsibleProse text={c.procedural_status} label="procedural status" style={{ color: "var(--muted-text)", lineHeight: 1.6 }} />
+              {(c.procedural_status || c.damages || c.risk) ? (
+                <div className="grid-2" style={{ marginTop: 18 }}>
+                  {c.procedural_status ? (
+                    <div>
+                      <div className="detail-label">Procedural Status</div>
+                      <CollapsibleProse text={c.procedural_status} label="procedural status" style={{ color: "var(--muted-text)", lineHeight: 1.6 }} />
+                    </div>
+                  ) : null}
+                  {(c.damages || c.risk) ? (
+                    <div>
+                      {c.damages ? (
+                        <>
+                          <div className="detail-label">Estimated Damages</div>
+                          <p className="detail-copy" style={{ color: "#34D399", fontSize: 15, fontWeight: 700, margin: "0 0 12px" }}>{c.damages}</p>
+                        </>
+                      ) : null}
+                      {c.risk ? (
+                        <>
+                          <div className="detail-label">Risk / Defense Notes</div>
+                          <CollapsibleProse text={c.risk} label="risk notes" style={{ color: "#F59E0B", lineHeight: 1.6 }} />
+                        </>
+                      ) : null}
+                    </div>
+                  ) : null}
                 </div>
-                <div>
-                  <div className="detail-label">Estimated Damages</div>
-                  <p className="detail-copy" style={{ color: "#34D399", fontSize: 15, fontWeight: 700, margin: "0 0 12px" }}>{c.damages}</p>
-                  {c.risk && <>
-                    <div className="detail-label">Risk / Defense Notes</div>
-                    <CollapsibleProse text={c.risk} label="risk notes" style={{ color: "#F59E0B", lineHeight: 1.6 }} />
-                  </>}
-                </div>
-              </div>
+              ) : null}
 
-              <div style={{ marginTop: 18 }}>
-                <div className="detail-label">Key Evidence</div>
-                <div className="matter-card-pills">
-                  {(c.evidence ?? []).map((ev, i) => (
-                    <span key={i} className="matter-card-pill" style={{ background: "var(--cluster-pill-bg)", color: "var(--cluster-pill-color)", border: "1px solid var(--cluster-pill-border)" }}>{ev}</span>
-                  ))}
+              {c.evidence?.length ? (
+                <div style={{ marginTop: 18 }}>
+                  <div className="detail-label">Key Evidence</div>
+                  <div className="matter-card-pills">
+                    {c.evidence.map((ev, i) => (
+                      <span key={i} className="matter-card-pill" style={{ background: "var(--cluster-pill-bg)", color: "var(--cluster-pill-color)", border: "1px solid var(--cluster-pill-border)" }}>{ev}</span>
+                    ))}
+                  </div>
                 </div>
-              </div>
+              ) : null}
             </>
           )}
 
@@ -200,6 +214,6 @@ function MatterCardImpl({ matter: summary, isOpen, onToggle }: MatterCardProps) 
   );
 }
 
-/** Expanding one card used to re-render all 33, each re-deriving its status
- *  badge. Only the two cards whose isOpen actually flipped re-render now. */
+/** Expanding one card used to re-render every matter, each re-deriving its
+ *  status badge. Only the two cards whose isOpen actually flipped re-render now. */
 export const MatterCard = memo(MatterCardImpl);

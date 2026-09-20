@@ -124,20 +124,48 @@ export interface CourtListenerBinding {
   alert_id?: number;
 }
 
-/** Full matter record lazy-loaded from NN.json on expand/detail. */
-export interface Matter extends MatterSummary {
-  /** Full procedural narrative. Grows over the life of the matter — render it
-   *  in a prose section, never in a badge or a fixed-width cell. Not shipped
-   *  in the shell summary bundle. */
+export interface PublicDocketRow {
+  dkt: number | null;
+  filed: true;
+  title: string;
+  path: string;
+  date?: string;
+}
+
+export interface PublicClock {
+  date: string;
+  kind: string;
   status: string;
-  key_facts: string;
+  title: string;
+  actor?: string;
+}
+
+export interface PublicPerson {
+  name: string;
+  kind: "counsel" | "judge" | string;
+  firm?: string;
+  role?: string;
+  attorney_id?: number;
+  bar?: string;
+}
+
+/** Full matter record lazy-loaded from the publish projection on expand/detail.
+ *  Strategy fields (key_facts, damages, risk, …) are laptop-only and omitted
+ *  from the public record. */
+export interface Matter extends MatterSummary {
+  /** Full procedural narrative. Laptop graph only — omitted from publish. */
+  status?: string;
+  key_facts?: string;
   /** Procedural judgment / posture context — chronology lives in timeline.json. */
-  procedural_status: string;
-  damages: string;
-  risk: string;
-  evidence: string[];
-  /** Resolved for UI by `loadMatter` (raw NN.json may omit redundant labels). */
+  procedural_status?: string;
+  damages?: string;
+  risk?: string;
+  evidence?: string[];
+  /** Resolved for UI by `loadMatter` (public records use the filename). */
   documents?: PortfolioDocument[];
+  docket?: PublicDocketRow[];
+  clocks?: PublicClock[];
+  people?: PublicPerson[];
 }
 
 export interface DocumentIndexEntry {

@@ -2,7 +2,7 @@
 
 # Interactive Litigation Portfolio
 
-An interactive, single-page litigation dashboard for **Brendan Ngehsi Newanforbi**, Pro Se / In Propria Persona. The portfolio tracks 40 civil matters across federal and California state courts, providing a structured view of case status, procedural history, damages exposure, and overarching legal theories.
+An interactive, single-page litigation dashboard for **Brendan Ngehsi Newanforbi**, Pro Se / In Propria Persona. The public site is a filings-and-redacted-docket view of **41** civil matters across federal and California state courts. Strategy memos, settlement figures, and personal contact information stay on the laptop graph.
 
 **Live site:** [interactive-litigation-portfolio.vercel.app](https://interactive-litigation-portfolio.vercel.app)
 
@@ -60,7 +60,7 @@ All current and future matters follow the [Stipulation Defense — Plaintiff-Fir
 
 > **Housing status:** Homeless since July 2, 2026 — a direct consequence of a retaliatory inter-county parole transfer (Stockton → Santa Clara) imposed immediately after filing Matter 15 (*Newanforbi v. CDCR, et al.*). The transfer caused loss of Stockton family housing; Matters 3, 9, and 19 are also potential retaliatory predicate acts.
 >
-> **Cost of self-representation:** All 40 matters are self-litigated. Estimated equivalent private-counsel cost: **$844,144–$1,410,976** (see [Attorney Fees Analysis](#attorney-fees-analysis)).
+> **Cost of self-representation:** All 41 matters are self-litigated. Estimated equivalent private-counsel cost: **$844,144–$1,410,976** (see [Attorney Fees Analysis](#attorney-fees-analysis)).
 
 [↑ Contents](#contents)
 
@@ -383,7 +383,7 @@ Plaintiff is representing himself pro se across all 40 matters. The figures belo
 - **CI:** none. The `pre-push` hook runs the gate locally; see [Local Development](#local-development).
 - **Fonts:** Cormorant Garamond (headings), DM Sans (UI)
 - **Styling:** `internal/src/styles/app.css` + component styles
-- **Matter data:** `internal/src/data/matters/NN/` (split: identity + sibling tables). Index: `internal/src/data/index/matters.json`. Shell uses `summaries.json`; full records lazy-load. Structured fields (prefer over parsing prose `status`):
+- **Matter data:** `internal/src/data/matters/NN/` (split: identity + sibling tables). Index: `internal/src/data/index/matters.json`. The open SPA and D1 seed both run `publishMatter()` — shell `summaries.json` plus lazy `publish/NN.json`. Laptop `loadMatters()` / `npm run q` keep the full graph. Structured fields (prefer over parsing prose `status`):
   - `lifecycle` — disposition: `active` | `pre_filing` | `settled` | `dismissed` | `abandoned` | `closed`
   - `proceeding` — track: `state_civil` | `federal_civil` | `mandate` | `habeas`
   - `phase` — current stage on that track (e.g. `demurrer`, `fr_pending`, `under_submission`, `responsive_deadline`; `terminal` when disposed)
@@ -558,4 +558,4 @@ Vercel builds with `VITE_COPY_DOCUMENTS=0` and `PORTFOLIO_SKIP_DISK_DOCS=1` so t
 
 ---
 
-*Confidential — Attorney Work Product*
+*Public filings and a redacted docket view. The open Vercel site and Worker reads ship captions, court-facing clocks, and filed / phone-tap PDFs only. The full case graph stays laptop-only (`npm run q` / `npm run mcp`).*

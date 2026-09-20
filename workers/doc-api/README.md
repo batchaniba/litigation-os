@@ -18,7 +18,7 @@ by design, there is nowhere to leak them from.
 | `src/auth.mjs` | Scoped bearer-token auth. Tokens live only as SHA-256 hashes inside the `API_KEYS` Worker secret; scope `r` / `rw`. Resolves what a caller may do; surfaces gate with `requireRead` / `requireWrite`. |
 | `src/writes.mjs` | Write data layer (C/U/D): R2 byte put/delete, D1 upsert/patch/delete over matters, clocks, and the document manifest, plus best-effort `recordAudit`. |
 | `schema.sql` | Idempotent D1 schema: `matters`, `clocks`, `documents`, and the `audit` trail. |
-| `seed.mjs` | Node script → stdout. Reads repo JSON (split `matters/NN/` preferred, legacy `NN.json` fallback, folded `next_clock` from the index, documents from the manifest) and emits idempotent INSERTs. Never writes to the repo. |
+| `seed.mjs` | Node script → stdout. Runs the same `publishMatter()` projection as the SPA (identity, court-facing clocks, filed / phone-tap PDFs) and emits idempotent DELETE + INSERTs. Never writes to the repo. Laptop `npm run mcp` keeps the full graph. |
 
 ## Deploy
 
@@ -43,9 +43,24 @@ portfolio-data merge to `main` it regenerates `seed.sql` (`node seed.mjs`)
 and POSTs it to `/admin/reseed` with the `RESEED_SECRET` bearer. The
 endpoint applies the statements idempotently in batches of 50 and is
 fail-closed (503 when the secret isn't configured, 403 on mismatch).
-Manual re-seed still works: `node seed.mjs > seed.sql`, then POST the file
-(or paste chunks into the D1 console — keep pastes ≤ ~80KB with no `--`
-comment lines; the console strips newlines).
+Manual re-seed (required after this publish-strip lands, so live D1 drops
+strategy clocks, unfiled drafts, and settlement chips):
+
+```bash
+cd workers/doc-api
+node seed.mjs > seed.sql
+# Preferred when RESEED_SECRET is set on the Worker:
+curl -X POST https://litigation-doc-api.ss8sxswwkt.workers.dev/admin/reseed \
+  -H "Authorization: Bearer $RESEED_SECRET" \
+  --data-binary @seed.sql
+# Or apply the SQL directly:
+wrangler d1 execute litigation-portfolio --remote --file=schema.sql
+wrangler d1 execute litigation-portfolio --remote --file=seed.sql
+```
+
+Then smoke-check `GET /matters`, `GET /fuse`, and `GET /matters/29`:
+computed SOL backstops, `$35,000` / final-demand chips, `EMAIL_DRAFT_*`,
+and unfiled screening-ID PDFs must be gone. Laptop `npm run mcp` is unchanged.
 
 Re-seed after the manifest or matter data changes (`node seed.mjs` again —
 statements are idempotent). Cron times in `wrangler.toml` are UTC
@@ -100,7 +115,11 @@ and gets a plain JSON response — no SSE stream, no session ids. Protocol
 versions negotiated: `2025-06-18`, `2025-03-26`, `2024-11-05`. CORS is open
 (`*`) so browser-based clients (Claude/ChatGPT web connectors) can call it.
 
-**Read tools.** Eight tools, mirroring the stdio server in
+Reads stay open and filing-safe: D1 is seeded from `publishMatter()`, not
+the laptop graph. The stdio server in `internal/mcp` (`npm run mcp`) is the
+full-graph laptop client — do not treat the two MCP endpoints as equivalent.
+
+**Read tools.** Eight tools, mirroring the *shape* of the stdio server in
 `internal/mcp` and the `npm run q` ops, backed by the same D1/R2 bindings:
 
 | Tool | Args | Returns |

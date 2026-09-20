@@ -33,15 +33,17 @@ describe("document registry", () => {
     expect(resolved.label).not.toBe(getRegistryEntry(path).label);
   });
 
-  it("loadMatter returns resolved document labels for hub matters", async () => {
+  it("loadMatter returns only published filed/phone-tap PDFs with path labels", async () => {
     const matter = await loadMatter(33);
     expect(matter.documents?.length).toBeGreaterThan(0);
+    expect(matter).not.toHaveProperty("key_facts");
     for (const doc of matter.documents ?? []) {
       expect(doc.path).toMatch(/^\/documents\//);
+      expect(doc.path).toMatch(/\.pdf$/i);
+      expect(doc.filed).toBe(true);
       expect(doc.label.trim()).not.toBe("");
+      expect(doc.label).not.toMatch(/@gmail\.com/i);
     }
-    const arrest = matter.documents.find((d) => d.path.endsWith("Arrest Report.pdf"));
-    expect(arrest?.label).toBe(getRegistryEntry(arrest.path).label);
   });
 
   it("resolveDocuments maps empty input to []", () => {

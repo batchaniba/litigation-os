@@ -1,6 +1,9 @@
 #!/usr/bin/env node
 // Portfolio MCP server (stdio transport) — Stage 2 of the API boundary.
 // Same operations as `npm run q`, richer transport for agent clients.
+// Laptop-only: this process reads the full case graph (key_facts, damages,
+// events, counsel dossiers). The public Worker MCP at
+// litigation-doc-api.ss8sxswwkt.workers.dev/mcp is the filing-safe subset.
 //
 //   node internal/mcp/server.mjs
 //

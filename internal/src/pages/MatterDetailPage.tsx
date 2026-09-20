@@ -6,8 +6,6 @@ import { ServiceTracker } from "../components/ServiceTracker";
 import { MatterSummary } from "../components/matters/MatterSummary";
 import { CollapsibleProse } from "../components/ui/CollapsibleProse";
 import { CrossMatterPanel } from "../components/matters/CrossMatterPanel";
-import { CoverageTower } from "../components/CoverageTower";
-import { coverageForMatter } from "../data/coverage";
 import { getMatterSummary } from "../data/matters";
 import { useMatter } from "../hooks/useMatter";
 import { ROUTES } from "../routes";
@@ -74,15 +72,15 @@ export function MatterDetailPage() {
 
   const activity = matterActivity(matter.number);
   const documentGroups = groupDocuments(matter.documents);
-  const coverage = coverageForMatter(matter.number);
   // CrossMatterPanel renders null without a cluster, so the rail has to ask the
   // same question before advertising a link to it.
   const hasCrossMatter = Boolean(clusterForMatter(matter.number));
+  const hasExposure = Boolean(matter.damages || matter.risk);
 
   const sections: RailSection[] = [
     { id: "matter-overview", label: "Overview" },
     { id: "matter-details", label: "The matter" },
-    { id: "matter-exposure", label: "Exposure" },
+    ...(hasExposure ? [{ id: "matter-exposure", label: "Exposure" }] : []),
     ...(hasCrossMatter ? [{ id: "matter-cross", label: "Cross-matter" }] : []),
     { id: "matter-record", label: "Record" },
   ];
@@ -132,27 +130,28 @@ export function MatterDetailPage() {
             <DetailSection label="Court assignment"><p className="detail-copy detail-copy-secondary">{matter.judge}<br />Filed: {matter.filed}</p></DetailSection>
           </div>
           <DetailSection label="Claims"><p className="detail-copy detail-copy-secondary">{matter.claims}</p></DetailSection>
-          <DetailSection label="Causes of action">
-            <div className="matter-detail-pills">{matter.causes.map((cause) => <span key={cause} className="matter-detail-pill cause">{cause}</span>)}</div>
-          </DetailSection>
-          <DetailSection label="Key evidence">
-            <div className="matter-detail-pills">{matter.evidence.map((evidence) => <span key={evidence} className="matter-detail-pill evidence">{evidence}</span>)}</div>
-          </DetailSection>
-          <DetailSection label="Key facts"><CollapsibleProse text={matter.key_facts} label="key facts" className="detail-copy-muted" lines={6} /></DetailSection>
-          <DetailSection label="Procedural status"><CollapsibleProse text={matter.procedural_status} label="procedural status" className="detail-copy-muted" lines={6} /></DetailSection>
+          {(matter.causes ?? []).length ? (
+            <DetailSection label="Causes of action">
+              <div className="matter-detail-pills">{matter.causes.map((cause) => <span key={cause} className="matter-detail-pill cause">{cause}</span>)}</div>
+            </DetailSection>
+          ) : null}
+          {matter.evidence?.length ? (
+            <DetailSection label="Key evidence">
+              <div className="matter-detail-pills">{matter.evidence.map((evidence) => <span key={evidence} className="matter-detail-pill evidence">{evidence}</span>)}</div>
+            </DetailSection>
+          ) : null}
+          {matter.key_facts ? <DetailSection label="Key facts"><CollapsibleProse text={matter.key_facts} label="key facts" className="detail-copy-muted" lines={6} /></DetailSection> : null}
+          {matter.procedural_status ? <DetailSection label="Procedural status"><CollapsibleProse text={matter.procedural_status} label="procedural status" className="detail-copy-muted" lines={6} /></DetailSection> : null}
         </PanelGroup>
 
-        <PanelGroup id="matter-exposure" title="Exposure">
-          <DetailSection label="Estimated damages and risk">
-            <p className="detail-copy matter-detail-damages">{matter.damages}</p>
-            <CollapsibleProse text={matter.risk} label="risk notes" className="matter-detail-risk" lines={6} />
-          </DetailSection>
-          {coverage && (
-            <DetailSection label="Insurance coverage on file">
-              <CoverageTower record={coverage} variant="panel" linkToMatter={false} />
+        {hasExposure ? (
+          <PanelGroup id="matter-exposure" title="Exposure">
+            <DetailSection label="Estimated damages and risk">
+              {matter.damages ? <p className="detail-copy matter-detail-damages">{matter.damages}</p> : null}
+              {matter.risk ? <CollapsibleProse text={matter.risk} label="risk notes" className="matter-detail-risk" lines={6} /> : null}
             </DetailSection>
-          )}
-        </PanelGroup>
+          </PanelGroup>
+        ) : null}
 
         <CrossMatterPanel matter={matter.number} />
 

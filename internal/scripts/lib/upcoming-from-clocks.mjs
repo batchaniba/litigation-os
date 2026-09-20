@@ -1,5 +1,5 @@
 // Live calendar from clocks.json. timeline.json is the archive.
-// Pure: no fs. Node loaders live in load-clocks.mjs; the SPA globs clocks.json.
+// Pure: no fs. Node loaders live in load-clocks.mjs; the SPA reads published clocks.
 
 import { dateKeyFromLabel, dateLabelFromKey } from "./next-actions.mjs";
 

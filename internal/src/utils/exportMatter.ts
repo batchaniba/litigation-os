@@ -5,6 +5,9 @@ import { coverageForMatter, formatLimit } from "../data/coverage";
 /** Policy limits belong in the export — this is the text that gets pasted into
  *  a demand letter, where the collectable figure carries the most weight. */
 export function coverageSection(matter: Matter): string {
+  // Public publish records omit policy_limits; do not pull the laptop
+  // coverage table into an export from the open site.
+  if (!matter.policy_limits) return "";
   const coverage = coverageForMatter(matter.number);
   if (!coverage) return "";
   const incidents = Math.ceil(coverage.aggregate / coverage.perIncident);
@@ -62,7 +65,7 @@ export function matterMarkdown(matter: Matter, next?: TimelineEvent, recent?: Ti
 
 **Case number:** ${matter.case_no}  
 **Court:** ${matter.court}  
-**Status:** ${matter.status}  
+**Status:** ${matter.status_label || matter.status || matter.phase}  
 **Judge:** ${matter.judge}  
 **Filed:** ${matter.filed}
 
@@ -78,21 +81,22 @@ ${matter.claims}
 
 ## Causes of action
 
-${matter.causes.map((cause) => `- ${cause}`).join("\n")}
-
+${(matter.causes ?? []).map((cause) => `- ${cause}`).join("\n")}
+${matter.key_facts ? `
 ## Key facts
 
 ${matter.key_facts}
-
+` : ""}${matter.procedural_status ? `
 ## Procedural status
 
 ${matter.procedural_status}
-
+` : ""}${matter.damages || matter.risk ? `
 ## Damages and risk
-
+${matter.damages ? `
 **Estimated damages:** ${matter.damages}
-
-${matter.risk}
+` : ""}
+${matter.risk ?? ""}
+` : ""}
 ${coverageSection(matter)}
 ## Documents
 

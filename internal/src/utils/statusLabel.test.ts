@@ -140,10 +140,10 @@ describe("statusLabel derivation", () => {
   });
 
   it("uses status_label overrides when present", () => {
-    const matter = cases.find((item) => item.number === 22)!;
+    const matter = cases.find((item) => item.number === 1)!;
     expect(matter.status_label).toBeTruthy();
-    expect(effectiveStatusLabel(matter, { events: eventsFor(22) })).toBe(matter.status_label);
-    expect(deriveStatusLabel(matter, { events: eventsFor(22) })).toBe("Settled");
+    expect(effectiveStatusLabel(matter, { events: eventsFor(1) })).toBe(matter.status_label);
+    expect(deriveStatusLabel(cases.find((item) => item.number === 22)!, { events: eventsFor(22) })).toBe("Settled");
   });
 
   it("produces an effective label ≤ 60 chars for every matter", () => {

@@ -1,78 +1,75 @@
 #!/usr/bin/env node
 // ==========================================================
-// Build light matter summaries for the SPA shell bundle.
+// Build the filing-safe SPA snapshots from the single publish projection.
 //
-// Full prose (status, key_facts, procedural_status, damages, risk, evidence)
-// and document lists stay in the split matter folder (lazy-loaded on expand/detail).
-// Document labels resolve through documents/registry.json (path is the id).
-// Shell badges use status_label / effectiveStatusLabel instead of status.
-// A slim document-index.json is generated for global search.
+//   summaries.json          — shell list/search identity
+//   document-index.json     — public filed / phone-tap PDFs only
+//   publish/NN.json         — lazy matter records (same shape as D1 seed)
+//
+// Full prose stays in the split laptop folders. Do not glob those into Vite.
 //
 // Usage:
-//   npm run sync:summaries           # write summaries + document-index
+//   npm run sync:summaries           # write summaries + publish records
 //   npm run sync:summaries -- --check  # exit 1 if out of date
 // ==========================================================
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { loadMatters, MATTERS_DIR } from "./load-matters.mjs";
-import { loadRegistry, registryByPath, resolveDocumentRef } from "./lib/document-registry.mjs";
+import { listMatterSources } from "./lib/matter-layout.mjs";
+import {
+  REPO_ROOT,
+  labelFromPublicPath,
+  loadPhoneTapPaths,
+  publishDir,
+  publishMatterFromDir,
+} from "./lib/publish-matter.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const OUT = path.join(MATTERS_DIR, "summaries.json");
 const DOC_INDEX = path.join(MATTERS_DIR, "document-index.json");
+const PUBLISH_ROOT = path.join(MATTERS_DIR, "publish");
 const checkOnly = process.argv.includes("--check");
-const registry = loadRegistry();
-const registryPaths = registryByPath(registry);
 
-const HEAVY = new Set([
-  // Full procedural narrative — lazy-load with the split folder. Shell uses
-  // status_label / effectiveStatusLabel instead.
-  "status",
-  "key_facts",
-  "procedural_status",
-  "damages",
-  "risk",
-  "evidence",
-  "documents",
-  "__sourceFile",
-  "__sourceDir",
-  "__layout",
-]);
+// Validate the laptop graph first (schema), then project.
+loadMatters();
 
-function toSummary(matter) {
-  const summary = {};
-  for (const [key, value] of Object.entries(matter)) {
-    if (HEAVY.has(key)) continue;
-    summary[key] = value;
-  }
-  summary.evidenceCount = Array.isArray(matter.evidence) ? matter.evidence.length : 0;
-  summary.documentCount = Array.isArray(matter.documents) ? matter.documents.length : 0;
-  return summary;
+const phoneTapPaths = loadPhoneTapPaths(REPO_ROOT);
+const sources = listMatterSources(MATTERS_DIR).filter((source) => source.layout === "split");
+const publishedMatters = sources.map((source) => publishMatterFromDir(source.dir, { phoneTapPaths }));
+
+function toSummary(published) {
+  const { docket: _docket, clocks: _clocks, documents, people: _people, ...identity } = published;
+  return {
+    ...identity,
+    evidenceCount: 0,
+    documentCount: Array.isArray(documents) ? documents.length : 0,
+  };
 }
 
-function toDocIndex(matters) {
+function toDocIndex(publishedList) {
   const entries = [];
-  for (const matter of matters) {
-    for (const doc of matter.documents ?? []) {
+  for (const published of publishedList) {
+    for (const doc of published.documents ?? []) {
       if (!doc?.path) continue;
-      const resolved = resolveDocumentRef(doc, registryPaths);
-      if (!resolved?.label) continue;
       entries.push({
-        matter: matter.number,
-        label: resolved.label,
-        path: resolved.path,
+        matter: published.number,
+        label: labelFromPublicPath(doc.path),
+        path: doc.path,
       });
     }
   }
   return entries;
 }
 
-const matters = loadMatters();
-const summaries = matters.map(toSummary);
-const docIndex = toDocIndex(matters);
+const summaries = publishedMatters.map(toSummary);
+const docIndex = toDocIndex(publishedMatters);
 const summaryPayload = `${JSON.stringify(summaries, null, 2)}\n`;
 const docPayload = `${JSON.stringify(docIndex, null, 2)}\n`;
+const publishPayloads = publishedMatters.map((published) => ({
+  filePath: publishDir(MATTERS_DIR, published.number),
+  body: `${JSON.stringify(published, null, 2)}\n`,
+}));
 
 function checkFile(filePath, expected, label) {
   if (!fs.existsSync(filePath)) {
@@ -88,15 +85,31 @@ function checkFile(filePath, expected, label) {
 if (checkOnly) {
   checkFile(OUT, summaryPayload, "internal/src/data/matters/summaries.json");
   checkFile(DOC_INDEX, docPayload, "internal/src/data/matters/document-index.json");
+  for (const { filePath, body } of publishPayloads) {
+    checkFile(filePath, body, path.relative(process.cwd(), filePath));
+  }
   console.log(
-    `OK — summaries.json (${summaries.length} matters) and document-index.json (${docIndex.length} docs) are current.`,
+    `OK — summaries.json (${summaries.length} matters), document-index.json (${docIndex.length} public docs), ` +
+      `and publish/${publishedMatters.length} records are current.`,
   );
   process.exit(0);
 }
 
+fs.mkdirSync(PUBLISH_ROOT, { recursive: true });
+const keep = new Set(publishPayloads.map((row) => path.basename(row.filePath)));
+for (const name of fs.readdirSync(PUBLISH_ROOT)) {
+  if (name.endsWith(".json") && !keep.has(name)) {
+    fs.unlinkSync(path.join(PUBLISH_ROOT, name));
+  }
+}
+
 fs.writeFileSync(OUT, summaryPayload);
 fs.writeFileSync(DOC_INDEX, docPayload);
+for (const { filePath, body } of publishPayloads) {
+  fs.writeFileSync(filePath, body);
+}
 console.log(
-  `Wrote ${path.relative(process.cwd(), OUT)} (${summaries.length} matters, ${summaryPayload.length} bytes) and ` +
-    `${path.relative(process.cwd(), DOC_INDEX)} (${docIndex.length} docs, ${docPayload.length} bytes).`,
+  `Wrote ${path.relative(process.cwd(), OUT)} (${summaries.length} matters, ${summaryPayload.length} bytes), ` +
+    `${path.relative(process.cwd(), DOC_INDEX)} (${docIndex.length} public docs, ${docPayload.length} bytes), ` +
+    `and ${publishPayloads.length} publish records.`,
 );
