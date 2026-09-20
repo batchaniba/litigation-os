@@ -36,7 +36,7 @@ describe("buildCheckOutput / truncateLog", () => {
       sha: "c".repeat(40),
     });
     expect(out.summary).toMatch(/1500s/);
-    expect(out.summary).toMatch(/fail-closed/);
+    expect(out.summary).toMatch(/Fail-closed/);
   });
 
   it("truncates long logs", () => {

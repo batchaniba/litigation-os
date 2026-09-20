@@ -31,9 +31,10 @@ export function buildCheckOutput({
     };
   }
   const why = reason || "gate failed";
+  const timedOut = /timeout|no result within/i.test(why);
   const timeoutNote =
-    timeoutMs && /timeout/i.test(why)
-      ? ` No result within ${Math.round(timeoutMs / 1000)}s (fail-closed).`
+    timeoutMs && timedOut
+      ? ` Fail-closed after ${Math.round(timeoutMs / 1000)}s.`
       : "";
   return {
     title: `${CHECK_NAME} failed`,
