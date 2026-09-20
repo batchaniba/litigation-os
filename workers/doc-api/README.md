@@ -78,19 +78,45 @@ then the legacy sha256-PK `documents` table. Path-addressed bytes carry
 be re-filed under a new sha256) and an inline `Content-Disposition`
 filename; hash-addressed `/doc/<sha256>` bytes stay immutable.
 
-Clocks carry a `status` (`open | satisfied | retired | cancelled |
-vacated`, seeded from `clocks.json`). `/upcoming` and the folded
-`next_clock_*` exclude non-open clocks, so satisfied/retired/vacated rows no
-longer leak into the fuse board. On a D1 that predates the column the
-queries fall back to the unfiltered form; to backfill:
+Clocks carry a stored `status` (`open | set | contingent | vacated |
+satisfied`, seeded from `clocks.json`). That list lives in
+`internal/scripts/lib/clock-status.mjs` — do not restate a fourth copy.
+`overdue` is derived from date + open/set (Worker JSON has an `overdue`
+boolean); it is never a D1 or `clocks.json` status. `/upcoming` and the
+folded `next_clock_*` exclude closed clocks (`vacated` / `satisfied`), so
+those rows do not leak into the fuse board. On a D1 that predates the
+column the queries fall back to the unfiltered form.
+
+### Operator: remap leftover D1 aliases, then reseed
+
+`retired` / `cancelled` / `canceled` were Worker-comment leftovers, not
+live `clocks.json` values. If any D1 row still has them, they mean the
+clock was withdrawn, not completed → `vacated`. `overdue` / `undated`,
+if they leaked into D1, are still live → `open`. This environment does
+not have `RESEED_SECRET`; run the SQL on the laptop:
+
+```sql
+-- One-time remap of legacy status strings. Safe to re-run.
+UPDATE clocks SET status = 'vacated'
+ WHERE lower(status) IN ('retired', 'cancelled', 'canceled');
+UPDATE clocks SET status = 'open'
+ WHERE lower(status) IN ('overdue', 'undated', 'superseded');
+SELECT status, COUNT(*) FROM clocks GROUP BY status;
+```
 
 ```bash
 wrangler d1 execute litigation-portfolio --remote \
   --command "ALTER TABLE clocks ADD COLUMN status TEXT"   # ignore duplicate-column
 wrangler d1 execute litigation-portfolio --remote --file=schema.sql
+# After the UPDATE above (or instead of it, if you prefer a full replace):
 node seed.mjs > seed.sql
 wrangler d1 execute litigation-portfolio --remote --file=seed.sql
 ```
+
+A full reseed `DELETE`s `clocks` and re-inserts from repo JSON (already
+canonical). The UPDATE is for an existing D1 you are not reseeding yet.
+Worker `/upcoming` still treats `retired`/`cancelled` as closed until
+those rows are remapped, so an unmigrated D1 cannot leak them as live.
 
 ## Verified (2026-09-17)
 

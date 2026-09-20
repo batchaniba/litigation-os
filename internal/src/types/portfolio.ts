@@ -132,10 +132,13 @@ export interface PublicDocketRow {
   date?: string;
 }
 
+/** Stored clocks.json / D1 status. overdue is derived, never stored. See clock-status.mjs. */
+export type StoredClockStatus = "open" | "set" | "contingent" | "vacated" | "satisfied";
+
 export interface PublicClock {
   date: string;
   kind: string;
-  status: string;
+  status: StoredClockStatus;
   title: string;
   actor?: string;
 }

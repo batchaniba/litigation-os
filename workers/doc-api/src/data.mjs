@@ -1,4 +1,5 @@
 import { documentsKeyFromUrl, sha256ForPath } from "./documents.mjs";
+import { CLOSED_CLOCK_SQL, isClosedClockStatus } from "../../../internal/scripts/lib/clock-status.mjs";
 
 // Shared data layer for the litigation-doc-api Worker: R2 + D1 access and
 // the portfolio query operations. Used by the REST routes (index.mjs) and
@@ -41,12 +42,12 @@ export function parseDays(value, fallback = 14) {
   return Math.min(90, Math.max(1, Math.round(days)));
 }
 
-// Clock statuses that no longer count as "upcoming". The D1 clocks table may
-// predate the status column — every query that filters on it falls back to
-// the unfiltered form when the column is absent.
-const CLOSED_CLOCK_SQL = "('satisfied','retired','cancelled','canceled','vacated')";
-const CLOSED_CLOCK = new Set(["satisfied", "retired", "cancelled", "canceled", "vacated"]);
-const isClosedStatus = (s) => CLOSED_CLOCK.has(String(s ?? "open").toLowerCase());
+// Clock statuses that no longer count as "upcoming". Canonical stored list is
+// open | set | contingent | vacated | satisfied (clock-status.mjs). SQL also
+// excludes unmigrated retired/cancelled/canceled aliases (treated as vacated).
+// The D1 clocks table may predate the status column — every query that filters
+// on it falls back to the unfiltered form when the column is absent.
+const isClosedStatus = isClosedClockStatus;
 const noStatusColumn = (e) => /no such column/i.test(e?.message ?? "");
 
 function cleanSha(sha) {

@@ -9,6 +9,8 @@
 //
 // Public Worker / MCP reads stay open, but only this filing-safe subset lands
 // in D1. The laptop graph (npm run q / npm run mcp) is not this file.
+// Clock status is open | set | contingent | vacated | satisfied
+// (internal/scripts/lib/clock-status.mjs). overdue is derived, never seeded.
 
 import fs from "node:fs";
 import path from "node:path";
@@ -19,8 +21,7 @@ import {
   loadPhoneTapPaths,
   publishMatterFromDir,
 } from "../../internal/scripts/lib/publish-matter.mjs";
-
-const CLOSED_CLOCK = new Set(["satisfied", "retired", "cancelled", "canceled", "vacated"]);
+import { isClosedClockStatus } from "../../internal/scripts/lib/clock-status.mjs";
 
 const readJSON = (p) => JSON.parse(fs.readFileSync(p, "utf8"));
 const lit = (v) =>
@@ -32,7 +33,7 @@ const lit = (v) =>
 
 const nextOpenClock = (clocks) => {
   const open = (clocks ?? []).filter(
-    (c) => c && c.date && !CLOSED_CLOCK.has(String(c.status ?? "open").toLowerCase()),
+    (c) => c && c.date && !isClosedClockStatus(c.status),
   );
   open.sort(
     (a, b) => String(a.date).localeCompare(String(b.date)) || String(a.title ?? "").localeCompare(String(b.title ?? "")),

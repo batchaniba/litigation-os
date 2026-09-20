@@ -25,6 +25,7 @@ Crawl this repo as a graph. Do not reconstruct a docket from README or from `sta
 - Never treat README as live.
 - Never invent a docket number. If `dkt` is null, say so.
 - `clocks.json` or index `next_clock` wins over prose. Vacated clocks are not live.
+- Clock `status` is `open | set | contingent | vacated | satisfied` (`internal/scripts/lib/clock-status.mjs`). `overdue` is derived from date + open/set, never stored. Do not store `retired`, `cancelled`, or `undated`.
 - `events.jsonl` is append-only. Do not rewrite it.
 - Operative pleading is the docket row with `"operative": true`. ASK vs CRB name-conform packets: CRB supersedes; they are not two cases.
 - PDF bytes live in Cloudflare R2 (`litigation-documents` bucket, key `sha256/<first2>/<rest>.pdf` — deterministic from the manifest sha256). Draft or replace a file under `internal/public/documents/matter-NN/`; `npm run documents:push` (needs `R2_*`) PUTs the bytes and rewrites `index/path-to-sha256.json` so the same `/documents/...` path serves the new object. Fetch one with `npm run docs:fetch <sha256>` (bytes are re-hashed client-side). Search `.txt` / `.meta.json` sidecars on this branch. Pre-extracted text sidecars live at `text/<first2>/<rest>.txt` in the same bucket (poppler `pdftotext -layout`; `internal/scripts/extract-doc-text.mjs` backfills, `r2-upload.mjs` keeps them in sync) and are served by the Worker's `readDocumentText` MCP tool. The `documents` branch is a cold backup.

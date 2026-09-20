@@ -17,7 +17,7 @@ import { loadSplitMatter, paddedMatterNumber } from "./matter-layout.mjs";
 import { MATTER_LIFECYCLES } from "../matter-lifecycle.mjs";
 import { MATTER_PHASES } from "../matter-proceeding.mjs";
 import { keyForSha256 } from "./r2-client.mjs";
-import { DEAD_CLOCK_STATUSES } from "./upcoming-from-clocks.mjs";
+import { DEAD_CLOCK_STATUS_SET, OPEN_CLOCK_STATUS_SET, clockStatusIssue } from "./clock-status.mjs";
 import { REPO_ROOT } from "./root.mjs";
 import { matterByNumber } from "./query.mjs";
 
@@ -241,7 +241,7 @@ export function retireUpcomingEvent({ matter, date, reason } = {}) {
     const clockRel = `${splitDirRel(n)}/clocks.json`;
     const clocks = readJSON(clockRel);
     const liveOnDay = clocks.filter(
-      (c) => c.date === key && !DEAD_CLOCK_STATUSES.has(c.status),
+      (c) => c.date === key && !DEAD_CLOCK_STATUS_SET.has(c.status),
     );
     let matched = liveOnDay;
     if (liveOnDay.length > 1) {
@@ -277,7 +277,7 @@ export function retireUpcomingEvent({ matter, date, reason } = {}) {
   return { ok: true, policy: WRITE_POLICY, retired: { matter: n, date: orig.date, event: orig.event, reason } };
 }
 
-const LIVE_CLOCK = new Set(["open", "set"]);
+const LIVE_CLOCK = OPEN_CLOCK_STATUS_SET;
 
 /** Set (or replace by id) a matter's next clock. Split matters write
  *  clocks.json; legacy matters delegate to recordTimelineEvent — the event
@@ -301,6 +301,8 @@ export function setNextClock({
   if (!id || !String(id).trim()) fail("id is required");
   if (!kind || !String(kind).trim()) fail("kind is required");
   if (!title || !String(title).trim()) fail("title is required");
+  const statusIssue = clockStatusIssue(status, "setNextClock");
+  if (statusIssue) fail(statusIssue);
   const { key } = parseDateInput(date);
 
   if (m.layout !== "split") {
@@ -341,7 +343,7 @@ export function setNextClock({
       );
       if (conflict) {
         if (supersedes === conflict.id) {
-          conflict.status = "superseded";
+          conflict.status = "vacated";
           conflict.superseded_by = id;
         } else {
           fail(
