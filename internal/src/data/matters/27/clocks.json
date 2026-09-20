@@ -4,11 +4,12 @@
     "date": "2026-09-18",
     "date_label": "Sep. 18, 2026",
     "kind": "deadline",
-    "status": "open",
+    "status": "satisfied",
     "source_dkt": null,
-    "title": "EXPIRES \u2014 $25,000 final early global settlement demand in Newanforbi v. Randstad US, LLC et al. (26CV199902), sent Sept. 12, 2026, 8:00 a.m. Expires\u2026",
+    "title": "EXPIRES — $25,000 final early global settlement demand in Newanforbi v. Randstad US, LLC et al. (26CV199902), sent Sept. 12, 2026, 8:00 a.m. Expires…",
     "actor": "you",
-    "source": "/documents/matter-27/Gmail - $25k Global Demand Sent Sep 12 and Williams Stipulation Ask (Sep 14 2026).pdf"
+    "source": "/documents/matter-27/Gmail - $25k Global Demand Sent Sep 12 and Williams Stipulation Ask (Sep 14 2026).pdf",
+    "retired_reason": "Binding $25,000 final early global settlement demand lapsed 5:00 p.m. PT Sep. 18, 2026. Williams Sep. 17 agreement-in-principle still needs a written release. Next clock is Randstad answer Sep. 25."
   },
   {
     "id": "27-deadline-2",
@@ -17,7 +18,7 @@
     "kind": "deadline",
     "status": "vacated",
     "source_dkt": null,
-    "title": "CRC 3.110(h) \u2014 obtain a default judgment as to Randstad US, LLC within 45 days after entry of default (entered Sep. 16, 2026), unless the court grants more\u2026",
+    "title": "CRC 3.110(h) — obtain a default judgment as to Randstad US, LLC within 45 days after entry of default (entered Sep. 16, 2026), unless the court grants more…",
     "actor": "you",
     "source": "/documents/matter-27/CIV-100 Request for Entry of Default - Randstad US LLC (Default Entered, Filed Sep 16 2026).pdf"
   },
@@ -28,7 +29,7 @@
     "kind": "deadline",
     "status": "open",
     "source_dkt": null,
-    "title": "Case Management Conference, Newanforbi v. Randstad US LLC and RK Logistics Group, Inc. (Matter 27) \u2014 Hon. Thomas Weathers, Dept. 20, Rene C. Davidson\u2026",
+    "title": "Case Management Conference, Newanforbi v. Randstad US LLC and RK Logistics Group, Inc. (Matter 27) — Hon. Thomas Weathers, Dept. 20, Rene C. Davidson…",
     "actor": "you",
     "source": "/documents/matter-27/Notice of Amount of Punitive Damages Sought (CCP 425.115) - Randstad US LLC (Aug 4 2026).pdf"
   },
@@ -39,7 +40,7 @@
     "kind": "deadline",
     "status": "open",
     "source_dkt": null,
-    "title": "Randstad US, LLC to file and serve its response to the Complaint \u2014 per Stipulation to Set Aside and Vacate Entry of Default, entered Sep. 17, 2026 (Newanforbi v. Randstad US, LLC et al., 26CV199902)",
+    "title": "Randstad US, LLC to file and serve its response to the Complaint — per Stipulation to Set Aside and Vacate Entry of Default, entered Sep. 17, 2026 (Newanforbi v. Randstad US, LLC et al., 26CV199902)",
     "actor": "opposing",
     "source": "/documents/matter-27/Stipulation to Set Aside and Vacate Entry of Default (Executed, Entered Sep 17 2026).pdf"
   }

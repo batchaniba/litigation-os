@@ -4,11 +4,12 @@
     "date": "2026-09-17",
     "date_label": "Sep. 17, 2026",
     "kind": "deadline",
-    "status": "open",
+    "status": "satisfied",
     "source_dkt": null,
     "title": "WATCH — First Advantage saliva-drug-test schedule for TaskUs Holdings, Inc. expires 11:49 a.m. Eastern (Schedule ID 96558696; LabCorp-Milpitas). A missed…",
     "actor": "you",
-    "source": "/documents/matter-40/First Advantage Screening Notification - TaskUs Holdings Saliva Drug Test (Sep 14 2026).pdf"
+    "source": "/documents/matter-40/First Advantage Screening Notification - TaskUs Holdings Saliva Drug Test (Sep 14 2026).pdf",
+    "retired_reason": "First Advantage saliva-drug-test schedule expired 11:49 a.m. Eastern Sep. 17, 2026 (Schedule ID 96558696). Watch window closed. Sep. 23 start hold remains."
   },
   {
     "id": "40-deadline-2",

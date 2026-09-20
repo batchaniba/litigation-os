@@ -1,6 +1,6 @@
 {
-  "round": "2026-08-09 Round 4 \u2014 portfolio P0 (batches A\u2013D; LACW WL correction); Round 5 multisource (CourtListener + CAP); Round 5b Matter 28 full funnel; Round 6 spot-check of the Matter 33 conformed complaint (3:26-cv-08272-LJC, Dkt. 1) page-43 immunity sentence; Round 7 authorities cited in the Serrato IFP screening order (Matter 24, Dkt. 5) after OCR made that scan searchable; Round 8 \u2014 OCR tranche (16 plaintiff filings + court orders: Matters 5/12/15/25/26/33, Barocio opinion); Round 9 \u2014 Matter 24 Serrato Opp v4 final citation/quotation verification pass (2026-08-27); Round 10 \u2014 Matter 26 hybrid UPS MTD opposition (Claude structure + Cursor caution), 2026-08-28; Round 11 \u2014 P0 plaintiff-only queue after OCR-alias index rebuild (Matters 25/26/32/33 plus remaining portfolio P0), 2026-09-06",
-  "method": "Round 4: WebSearch after Richardson(+) / Leman(\u2212) controls. Round 5: CourtListener /api/rest/v4/search/ + CAP static.case.law for controls/high-risk. Round 5b: all Matter 28 indexed authorities through lookup-citations.py --matter 28 (\u2192 citation_lookup_matter28.json). Justia Cloudflare-blocked; Scholar unreliable; api.case.law JSON and CL citation-lookup need auth. Existence FOUND does not clear prior MISCHARACTERIZED/MISCITED proposition problems. Table-page F.3d pins can host multiple dispositions \u2014 do not treat first CL hit as unique. Round 7: the June 29, 2026 Serrato IFP/screening order was an image-only scan contributing nothing to the index until internal/scripts/ocr-text-layer.py added a text layer; its authorities were then probed through lookup-citations.py (\u2192 citation_lookup_serrato_order.json) behind the same Richardson(+) / Leman(\u2212) controls. These are a court's own citations, so they carry role court_order and never enter the plaintiff-only P0/P1 queues. Round 8: after ocr-text-layer.py on the 16-document plaintiff_filing/court_order tranche, probed new P0 Matter 12/15 authorities (citation_lookup_matter12_p0.json) and Barocio screening-order authorities (citation_lookup_barocio_order.json). McCorkle manually confirmed on CourtListener when CAP lacked cal2d/70. Round 9: Matter 24 Opposition v4 \u2014 npm citations:index + citations:lookup:matter --matter 24 (\u2192 citation_lookup_matter24.json); quote needles checked against CAP static.case.law HTML (Whittlestone/Lopez/Noll/Perry/Twombly/Iqbal/Wade/Knievel/Erickson/Ford) and CA9 PDF (Capp); fixed Garity miscitation, Whittlestone non-opinion paraphrase, Perry/Twombly wording, and removed unused Lewis/Shanks TOA entries; Bureerong manually FOUND on CL+CAP. Round 10: Matter 26 hybrid opposition \u2014 npm citations:index + citations:lookup:matter --matter 26 (\u2192 citation_lookup_matter26.json); Cal. App. 5th pins for Williams (40 Cal. App. 5th 280) and Quinn (121 Cal. App. 5th 1124) confirmed by direct CourtListener search when the reporter probe missed (CAP static lacks those volumes). Mendoza quotes checked against the published opinion (anti-SLAPP; 1658-59). Cel-Tech 183 quote is UPS's own. Round 11: build-citation-index.py OCR_PAGE_FIXES (Califomia/DUl/MedinOy/TorreSy/Knudsen/Devenpeck 3 U.S.\u2192543 U.S. etc.) dropped P0 70\u219254; lookup-citations.py \u2192 citation_lookup_p0.json (FOUND 28, CAPTION_MISMATCH 14, PARTIAL 3, NOT_FOUND 7, UNKNOWN 2); overlay-citation-lookups.py folded FOUND + same-case OCR mismatches + Gonzalez/Hertz PARTIAL into VERIFIED (existence only) and marked both Devenpeck mispins MISCITED (real case is 543 U.S. 146). NOT_FOUND/UNKNOWN left UNVERIFIED (a miss is not a fabrication). Controls were not re-probed this pass.",
+  "round": "2026-08-09 Round 4 \u2014 portfolio P0 (batches A\u2013D; LACW WL correction); Round 5 multisource (CourtListener + CAP); Round 5b Matter 28 full funnel; Round 6 spot-check of the Matter 33 conformed complaint (3:26-cv-08272-LJC, Dkt. 1) page-43 immunity sentence; Round 7 authorities cited in the Serrato IFP screening order (Matter 24, Dkt. 5) after OCR made that scan searchable; Round 8 \u2014 OCR tranche (16 plaintiff filings + court orders: Matters 5/12/15/25/26/33, Barocio opinion); Round 9 \u2014 Matter 24 Serrato Opp v4 final citation/quotation verification pass (2026-08-27); Round 10 \u2014 Matter 26 hybrid UPS MTD opposition (Claude structure + Cursor caution), 2026-08-28; Round 11 \u2014 P0 plaintiff-only queue after OCR-alias index rebuild (Matters 25/26/32/33 plus remaining portfolio P0), 2026-09-06; Round 12 \u2014 Matter 28 UNIFIED KeyCite treatment overlay (Westlaw Patron Access, 2026-09-19)",
+  "method": "Round 4: WebSearch after Richardson(+) / Leman(\u2212) controls. Round 5: CourtListener /api/rest/v4/search/ + CAP static.case.law for controls/high-risk. Round 5b: all Matter 28 indexed authorities through lookup-citations.py --matter 28 (\u2192 citation_lookup_matter28.json). Justia Cloudflare-blocked; Scholar unreliable; api.case.law JSON and CL citation-lookup need auth. Existence FOUND does not clear prior MISCHARACTERIZED/MISCITED proposition problems. Table-page F.3d pins can host multiple dispositions \u2014 do not treat first CL hit as unique. Round 7: the June 29, 2026 Serrato IFP/screening order was an image-only scan contributing nothing to the index until internal/scripts/ocr-text-layer.py added a text layer; its authorities were then probed through lookup-citations.py (\u2192 citation_lookup_serrato_order.json) behind the same Richardson(+) / Leman(\u2212) controls. These are a court's own citations, so they carry role court_order and never enter the plaintiff-only P0/P1 queues. Round 8: after ocr-text-layer.py on the 16-document plaintiff_filing/court_order tranche, probed new P0 Matter 12/15 authorities (citation_lookup_matter12_p0.json) and Barocio screening-order authorities (citation_lookup_barocio_order.json). McCorkle manually confirmed on CourtListener when CAP lacked cal2d/70. Round 9: Matter 24 Opposition v4 \u2014 npm citations:index + citations:lookup:matter --matter 24 (\u2192 citation_lookup_matter24.json); quote needles checked against CAP static.case.law HTML (Whittlestone/Lopez/Noll/Perry/Twombly/Iqbal/Wade/Knievel/Erickson/Ford) and CA9 PDF (Capp); fixed Garity miscitation, Whittlestone non-opinion paraphrase, Perry/Twombly wording, and removed unused Lewis/Shanks TOA entries; Bureerong manually FOUND on CL+CAP. Round 10: Matter 26 hybrid opposition \u2014 npm citations:index + citations:lookup:matter --matter 26 (\u2192 citation_lookup_matter26.json); Cal. App. 5th pins for Williams (40 Cal. App. 5th 280) and Quinn (121 Cal. App. 5th 1124) confirmed by direct CourtListener search when the reporter probe missed (CAP static lacks those volumes). Mendoza quotes checked against the published opinion (anti-SLAPP; 1658-59). Cel-Tech 183 quote is UPS's own. Round 11: build-citation-index.py OCR_PAGE_FIXES (Califomia/DUl/MedinOy/TorreSy/Knudsen/Devenpeck 3 U.S.\u2192543 U.S. etc.) dropped P0 70\u219254; lookup-citations.py \u2192 citation_lookup_p0.json (FOUND 28, CAPTION_MISMATCH 14, PARTIAL 3, NOT_FOUND 7, UNKNOWN 2); overlay-citation-lookups.py folded FOUND + same-case OCR mismatches + Gonzalez/Hertz PARTIAL into VERIFIED (existence only) and marked both Devenpeck mispins MISCITED (real case is 543 U.S. 146). NOT_FOUND/UNKNOWN left UNVERIFIED (a miss is not a fabrication). Controls were not re-probed this pass. Round 12: KeyCite flags from legal-intel/recon/2026-09-19-matter-28-keycite-westlaw.md over the 27 unique UNIFIED citations. Treatment, not existence. Yellow \u2260 MISCITED. Four deep-dives KEEP (Perez / DKN / Neal / Costello). Chavez v. Robinson, 12 F.4th 978 stays MISCHARACTERIZED \u2014 KeyCite NONE does not clear the QI-reversal proposition error. Overlay does not rewrite prior bad statuses.",
   "controls": {
     "positive": {
       "citation": "Richardson v. McKnight, 521 U.S. 399 (1997)",
@@ -2999,6 +2999,225 @@
       "source": "Round 11 CourtListener + CAP lookup",
       "notes": "Existence only. Pin 319 F.3d 672 is White v. FCI USA, Inc.. Sources: https://www.courtlistener.com/opinion/29940/white-v-fci-usa-inc/ ; https://static.case.law/f3d/319/html/0672-01.html. Characterization still needs opinion text.",
       "round": "11-p0-ocr-alias"
+    },
+    {
+      "citation": "Goddard v. Security Title Insurance & Guarantee Co., 14 Cal. 2d 47 (1939)",
+      "status": "VERIFIED",
+      "source": "Round 12 KeyCite overlay \u2014 Matter 28 UNIFIED (Westlaw Patron Access 2026-09-19)",
+      "notes": "Round 12 KeyCite: YELLOW (distinguished-by noise). Name confirmed. KEEP.",
+      "round": "12-keycite-unified",
+      "keycite": "YELLOW"
+    },
+    {
+      "citation": "Berri v. Superior Court, 43 Cal. 2d 856 (1955)",
+      "status": "VERIFIED",
+      "source": "Round 12 KeyCite overlay \u2014 Matter 28 UNIFIED (Westlaw Patron Access 2026-09-19)",
+      "notes": "Round 12 KeyCite: YELLOW (distinguished-by noise). Name confirmed. KEEP.",
+      "round": "12-keycite-unified",
+      "keycite": "YELLOW"
+    },
+    {
+      "citation": "Valvo v. University of Southern California, 67 Cal. App. 3d 887 (1977)",
+      "status": "VERIFIED",
+      "source": "Round 12 KeyCite overlay \u2014 Matter 28 UNIFIED (Westlaw Patron Access 2026-09-19)",
+      "notes": "Round 12 KeyCite: YELLOW (distinguished-by noise). Name confirmed. KEEP.",
+      "round": "12-keycite-unified",
+      "keycite": "YELLOW"
+    },
+    {
+      "citation": "Taylor v. Sturgell, 553 U.S. 880 (2008)",
+      "status": "VERIFIED",
+      "source": "Round 12 KeyCite overlay \u2014 Matter 28 UNIFIED (Westlaw Patron Access 2026-09-19)",
+      "notes": "Canonical SCOTUS nonparty-preclusion / virtual-representation rejection. Round 12 KeyCite: YELLOW (not-followed / declined-to-extend). KEEP.",
+      "round": "12-keycite-unified",
+      "keycite": "YELLOW"
+    },
+    {
+      "citation": "Allen v. McCurry, 449 U.S. 90 (1980)",
+      "status": "VERIFIED",
+      "source": "Round 12 KeyCite overlay \u2014 Matter 28 UNIFIED (Westlaw Patron Access 2026-09-19)",
+      "notes": "Round 12 KeyCite: YELLOW (not-followed / declined-to-extend). Name confirmed. KEEP.",
+      "round": "12-keycite-unified",
+      "keycite": "YELLOW"
+    },
+    {
+      "citation": "Migra v. Warren City School Dist. Bd. of Educ., 465 U.S. 75 (1984)",
+      "status": "VERIFIED",
+      "source": "Round 12 KeyCite overlay \u2014 Matter 28 UNIFIED (Westlaw Patron Access 2026-09-19)",
+      "notes": "Round 12 KeyCite: YELLOW (declined-to-extend). Name confirmed. KEEP.",
+      "round": "12-keycite-unified",
+      "keycite": "YELLOW"
+    },
+    {
+      "citation": "Semtek Intern. Inc. v. Lockheed Martin Corp., 531 U.S. 497 (2001)",
+      "status": "VERIFIED",
+      "source": "Round 12 KeyCite overlay \u2014 Matter 28 UNIFIED (Westlaw Patron Access 2026-09-19)",
+      "notes": "Round 12 KeyCite: YELLOW (not-followed-as-dicta / declined-to-extend). Name confirmed. KEEP.",
+      "round": "12-keycite-unified",
+      "keycite": "YELLOW"
+    },
+    {
+      "citation": "Costello v. United States, 365 U.S. 265 (1961)",
+      "status": "VERIFIED",
+      "source": "Round 12 KeyCite overlay \u2014 Matter 28 UNIFIED (Westlaw Patron Access 2026-09-19)",
+      "notes": "Round 12 KeyCite: YELLOW. Deep-dive KEEP \u2014 U.S. v. Daifullah, 11 F.4th 888 (8th Cir. 2021) doubts only the loose 'jurisdictional' label for the affidavit rule, not the Rule 41(b) precondition\u2260merits holding at 284\u201388.",
+      "round": "12-keycite-unified",
+      "keycite": "YELLOW"
+    },
+    {
+      "citation": "DKN Holdings LLC v. Faerber, 61 Cal. 4th 813 (2015)",
+      "status": "VERIFIED",
+      "source": "Round 12 KeyCite overlay \u2014 Matter 28 UNIFIED (Westlaw Patron Access 2026-09-19)",
+      "notes": "Round 12 KeyCite: YELLOW. Deep-dive KEEP \u2014 Samara v. Matar, 5 Cal.5th 322 (2018) does not cut the privity holding at 824\u201326; Samara quotes it favorably.",
+      "round": "12-keycite-unified",
+      "keycite": "YELLOW"
+    },
+    {
+      "citation": "Boeken v. Philip Morris USA, Inc., 48 Cal. 4th 788 (2010)",
+      "status": "VERIFIED",
+      "source": "Round 12 KeyCite overlay \u2014 Matter 28 UNIFIED (Westlaw Patron Access 2026-09-19)",
+      "notes": "Round 12 KeyCite: YELLOW (distinguished-by noise). Name confirmed. KEEP.",
+      "round": "12-keycite-unified",
+      "keycite": "YELLOW"
+    },
+    {
+      "citation": "Keidatz v. Albany, 39 Cal. 2d 826 (1952)",
+      "status": "VERIFIED",
+      "source": "Round 12 KeyCite overlay \u2014 Matter 28 UNIFIED (Westlaw Patron Access 2026-09-19)",
+      "notes": "Round 12 KeyCite: YELLOW (distinguished-by noise). Name confirmed. KEEP.",
+      "round": "12-keycite-unified",
+      "keycite": "YELLOW"
+    },
+    {
+      "citation": "Beazell v. Schrader, 59 Cal. 2d 577 (1963)",
+      "status": "VERIFIED",
+      "source": "Round 12 KeyCite overlay \u2014 Matter 28 UNIFIED (Westlaw Patron Access 2026-09-19)",
+      "notes": "Round 12 KeyCite: YELLOW (distinguished-by noise). Name confirmed. KEEP.",
+      "round": "12-keycite-unified",
+      "keycite": "YELLOW"
+    },
+    {
+      "citation": "Sartor v. Superior Court, 136 Cal. App. 3d 322 (1982)",
+      "status": "VERIFIED",
+      "source": "Round 12 KeyCite overlay \u2014 Matter 28 UNIFIED (Westlaw Patron Access 2026-09-19)",
+      "notes": "Round 12 KeyCite: YELLOW (declined-to-extend). Name confirmed. KEEP.",
+      "round": "12-keycite-unified",
+      "keycite": "YELLOW"
+    },
+    {
+      "citation": "Sullivan v. Delta Air Lines, Inc., 15 Cal. 4th 288 (1997)",
+      "status": "VERIFIED",
+      "source": "Round 12 KeyCite overlay \u2014 Matter 28 UNIFIED (Westlaw Patron Access 2026-09-19)",
+      "notes": "Round 12 KeyCite: YELLOW (not-followed / declined-to-extend). Name confirmed. KEEP.",
+      "round": "12-keycite-unified",
+      "keycite": "YELLOW"
+    },
+    {
+      "citation": "Perez v. City of San Bruno, 27 Cal. 3d 875 (1980)",
+      "status": "VERIFIED",
+      "source": "Round 12 KeyCite overlay \u2014 Matter 28 UNIFIED (Westlaw Patron Access 2026-09-19)",
+      "notes": "Round 12 KeyCite: YELLOW. Deep-dive KEEP \u2014 'superseded by statute' (Sanders / Pitzen via Rosse) is the small-claims collateral-estoppel exception, not the prematurity\u2260merits holding at 882\u201383.",
+      "round": "12-keycite-unified",
+      "keycite": "YELLOW"
+    },
+    {
+      "citation": "Chavez v. Robinson, 817 F.3d 1162 (9th Cir. 2016)",
+      "status": "VERIFIED",
+      "source": "Round 12 KeyCite overlay \u2014 Matter 28 UNIFIED (Westlaw Patron Access 2026-09-19)",
+      "notes": "Round 12 KeyCite: NONE (no negative treatment). Name confirmed. 2016 opinion. Distinct from 12 F.4th 978.",
+      "round": "12-keycite-unified",
+      "keycite": "NONE"
+    },
+    {
+      "citation": "Diaz v. Gates, 420 F.3d 897 (9th Cir. 2005)",
+      "status": "VERIFIED",
+      "source": "Round 12 KeyCite overlay \u2014 Matter 28 UNIFIED (Westlaw Patron Access 2026-09-19)",
+      "notes": "Round 12 KeyCite: YELLOW (out-of-circuit disagreement). Name confirmed. KEEP.",
+      "round": "12-keycite-unified",
+      "keycite": "YELLOW"
+    },
+    {
+      "citation": "Kay v. City of Rancho Palos Verdes, 504 F.3d 803 (9th Cir. 2007)",
+      "status": "VERIFIED",
+      "source": "Round 12 KeyCite overlay \u2014 Matter 28 UNIFIED (Westlaw Patron Access 2026-09-19)",
+      "notes": "Round 12 KeyCite: YELLOW (one declined-to-extend). Name confirmed. KEEP.",
+      "round": "12-keycite-unified",
+      "keycite": "YELLOW"
+    },
+    {
+      "citation": "Kildare v. Saenz, 325 F.3d 1078 (9th Cir. 2003)",
+      "status": "VERIFIED",
+      "source": "Round 12 KeyCite overlay \u2014 Matter 28 UNIFIED (Westlaw Patron Access 2026-09-19)",
+      "notes": "Round 12 KeyCite: YELLOW (called-into-doubt / distinguished). Name confirmed. KEEP.",
+      "round": "12-keycite-unified",
+      "keycite": "YELLOW"
+    },
+    {
+      "citation": "Neal v. Shimoda, 131 F. 3d 818",
+      "status": "VERIFIED",
+      "source": "Round 12 KeyCite overlay \u2014 Matter 28 UNIFIED (Westlaw Patron Access 2026-09-19)",
+      "notes": "Real at 131 F.3d 818 (9th Cir. 1997). Round 12 KeyCite: YELLOW. Deep-dive KEEP \u2014 Garcia v. Henry, 13 Fed.Appx. 579 (9th Cir. 2001) (unpublished) disagrees only on the burden of proof at designation hearings, which Neal left open at 831 n.14.",
+      "round": "12-keycite-unified",
+      "keycite": "YELLOW"
+    },
+    {
+      "citation": "Gonzales v. California Department of Corrections, 739 F.3d 1226 (9th Cir. 2014)",
+      "status": "VERIFIED",
+      "source": "Round 12 KeyCite overlay \u2014 Matter 28 UNIFIED (Westlaw Patron Access 2026-09-19)",
+      "notes": "Round 12 KeyCite: YELLOW (distinguished-by). Name confirmed. KEEP.",
+      "round": "12-keycite-unified",
+      "keycite": "YELLOW"
+    },
+    {
+      "citation": "Furnace v. Giurbino, 838 F.3d 1019 (9th Cir. 2016)",
+      "status": "VERIFIED",
+      "source": "Round 12 KeyCite overlay \u2014 Matter 28 UNIFIED (Westlaw Patron Access 2026-09-19)",
+      "notes": "Round 12 KeyCite: YELLOW (distinguished-by). Name confirmed. KEEP.",
+      "round": "12-keycite-unified",
+      "keycite": "YELLOW"
+    },
+    {
+      "citation": "Franklin & Franklin v. 7-Eleven Owners for Fair Franchising, 85 Cal. App. 4th 1168 (2000)",
+      "status": "VERIFIED",
+      "source": "Round 12 KeyCite overlay \u2014 Matter 28 UNIFIED (Westlaw Patron Access 2026-09-19)",
+      "notes": "Round 12 KeyCite: YELLOW (distinguished-by). Name confirmed. KEEP.",
+      "round": "12-keycite-unified",
+      "keycite": "YELLOW"
+    },
+    {
+      "citation": "Anza v. Ideal Steel Supply Corp., 547 U.S. 451 (2006)",
+      "status": "VERIFIED",
+      "source": "Round 12 KeyCite overlay \u2014 Matter 28 UNIFIED (Westlaw Patron Access 2026-09-19)",
+      "notes": "Round 12 KeyCite: YELLOW (declined-to-extend). Name confirmed. KEEP.",
+      "round": "12-keycite-unified",
+      "keycite": "YELLOW"
+    },
+    {
+      "citation": "Cedric Kushner Promotions, Ltd. v. King, 533 U.S. 158 (2001)",
+      "status": "VERIFIED",
+      "source": "Round 12 KeyCite overlay \u2014 Matter 28 UNIFIED (Westlaw Patron Access 2026-09-19)",
+      "notes": "Round 12 KeyCite: YELLOW (not-followed / declined-to-extend). Name confirmed. KEEP.",
+      "round": "12-keycite-unified",
+      "keycite": "YELLOW"
+    },
+    {
+      "citation": "Swift v. California, 384 F. 3d 1184",
+      "status": "VERIFIED",
+      "source": "Round 12 KeyCite overlay \u2014 Matter 28 UNIFIED (Westlaw Patron Access 2026-09-19)",
+      "notes": "Real at 384 F.3d 1184 (9th Cir. 2004). Round 12 KeyCite: YELLOW (distinguished-by). KEEP.",
+      "round": "12-keycite-unified",
+      "keycite": "YELLOW"
+    },
+    {
+      "citation": "Chavez v. Robinson, 12 F. 4th 978",
+      "status": "MISCHARACTERIZED",
+      "source": "Round 12 KeyCite overlay \u2014 Matter 28 UNIFIED (Westlaw Patron Access 2026-09-19)",
+      "notes": "Round 5 Matter 28: 12 F.4th 978 exists (Daniel Chavez v. David Robinson). Prior MISCHARACTERIZED stands \u2014 existence OK, proposition not. Round 12 KeyCite: NONE (no negative treatment). Treatment-clean does not clear the QI-denial-reversal proposition error. Do not claim the Ninth Circuit reversed a QI denial; it affirmed dismissal.",
+      "round": "12-keycite-unified",
+      "keycite": "NONE",
+      "sources": [
+        "https://www.courtlistener.com/opinion/5296812/daniel-chavez-v-david-robinson/"
+      ]
     }
   ],
   "multisourceConfirmation": {
