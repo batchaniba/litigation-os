@@ -49,7 +49,7 @@ A comprehensive guide for building single-page data-heavy dashboards using the S
 
 ### Deployment
 - **Hosting:** Vercel (production). GitHub Pages is not deployed.
-- **Gate:** `.githooks/pre-push` / `npm run gate`. No GitHub Actions.
+- **Gate:** `.githooks/pre-push` / `npm run gate`. Phase 2 remote Check Run is `workers/portfolio-gate/` (`portfolio-gate`). No GitHub Actions.
 - **Production:** Cloudflare `vercel-deploy-cron` POSTs the Vercel Deploy Hook when `main` is ahead.
 - **Build Output:** `dist/` folder
 
@@ -413,7 +413,7 @@ export default defineConfig({
 ```
 
 **Deploy:**
-- There is no GitHub Actions. Gate is `.githooks/pre-push` / `npm run gate`.
+- There is no GitHub Actions. Local gate is `.githooks/pre-push` / `npm run gate`. Remote Check Run is `workers/portfolio-gate/`.
 - Vercel production is the Deploy Hook cron (`internal/workers/vercel-deploy-cron/`).
 - Worker: `cd workers/doc-api && wrangler deploy` on the laptop.
 

@@ -1,0 +1,14 @@
+{
+  "name": "ilp-portfolio-gate",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Phase 2 Cloudflare Worker + Container that posts the portfolio-gate Check Run",
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "dev": "wrangler dev --enable-containers=false"
+  },
+  "dependencies": {
+    "@cloudflare/containers": "^0.3.7"
+  }
+}

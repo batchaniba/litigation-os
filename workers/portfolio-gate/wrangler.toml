@@ -1,0 +1,38 @@
+# Phase 2 remote portfolio-gate.
+# Containers config matches https://developers.cloudflare.com/containers/get-started/
+# (fetched 2026-09-20): containers + durable_objects + migrations.new_sqlite_classes.
+# Instance types: https://developers.cloudflare.com/containers/platform-details/limits/
+
+name = "ilp-portfolio-gate"
+main = "src/index.mjs"
+compatibility_date = "2026-09-20"
+
+# standard-2 = 1 vCPU / 6 GiB / 12 GB disk — npm ci + vitest will OOM on lite/basic.
+[[containers]]
+class_name = "GateRunner"
+image = "./Dockerfile"
+max_instances = 3
+instance_type = "standard-2"
+
+[[durable_objects.bindings]]
+name = "GATE_RUNNER"
+class_name = "GateRunner"
+
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = [ "GateRunner" ]
+
+[observability]
+enabled = true
+
+# Secrets are NOT stored here. Operator sets them after creating the GitHub App:
+#   wrangler secret put GITHUB_APP_ID
+#   wrangler secret put GITHUB_APP_PRIVATE_KEY
+#   wrangler secret put GITHUB_WEBHOOK_SECRET
+#   wrangler secret put GITHUB_APP_INSTALLATION_ID   # optional if every webhook includes installation.id
+[vars]
+GITHUB_REPO = "newanforbi/interactive-litigation-portfolio"
+# Locked Check Run name — branch protection requires this exact string.
+CHECK_NAME = "portfolio-gate"
+# Fail-closed wall clock (25 minutes). No result → Check Run conclusion `failure`.
+GATE_TIMEOUT_MS = "1500000"

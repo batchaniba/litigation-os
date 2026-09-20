@@ -1,0 +1,11 @@
+# Local wrangler only. Copy to `.dev.vars` and fill in.
+# NEVER commit real App secrets. `.dev.vars` is wrangler-local and not a filing.
+#
+#   cp dev.vars.example .dev.vars
+#   npm install
+#   npx wrangler dev --enable-containers=false
+
+GITHUB_APP_ID = "123456"
+GITHUB_APP_PRIVATE_KEY = "-----BEGIN PRIVATE KEY-----\n…\n-----END PRIVATE KEY-----"
+GITHUB_WEBHOOK_SECRET = "paste-openssl-rand-hex-32-output"
+GITHUB_APP_INSTALLATION_ID = "12345678"

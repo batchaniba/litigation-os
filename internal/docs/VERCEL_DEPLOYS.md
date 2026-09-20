@@ -111,8 +111,9 @@ The checks the old CI job ran now run in `.githooks/pre-push` / `npm run gate`:
 lint, typecheck, `validate-portfolio`, golden damages math, the unit suite, and
 the fabricated-citation gate. The committed `vercel.json` drift check is covered
 by the pre-commit hook regenerating the file whenever the short-link catalog
-changes. Branch protection on `main` should require a PR and block force
-pushes; it must not require status checks (nothing reports any). Checklist:
+changes. Branch protection on `main` should require a PR, block force
+pushes, and — after `workers/portfolio-gate/` is deployed — require the
+Worker-posted Check Run `portfolio-gate` (not an Actions job). Checklist:
 `.github/WORKFLOW_NOTES.md`.
 
 ## Deploying now

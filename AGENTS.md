@@ -102,7 +102,9 @@ by `npm run prepare`) and in `npm run gate` (same steps, shared
 golden damages math, the unit suite, and the fabricated-citation gate. Missing
 `node_modules` or `python3` refuses the push. `SKIP_PORTFOLIO_GATE=EMERGENCY`
 may skip the hook on a feature branch only — a push that updates
-`refs/heads/main` cannot bypass. Before opening a PR, run `npm run gate`
+`refs/heads/main` cannot bypass. Phase 2 remote status is the Cloudflare
+Worker in `workers/portfolio-gate/` (GitHub App + Containers, Check Run
+`portfolio-gate`); still no Actions YAML. Before opening a PR, run `npm run gate`
 (matches the hook) or `npm run validate` (adds coverage and generated-file
 checks) and say so in the PR body.
 
@@ -111,6 +113,7 @@ Laptop replacements (never paste keys into chat; other AIs get the Worker URL, n
 - CourtListener: `npm run court:sync -- --bootstrap` (token in gitignored `.env`)
 - R2 bytes + path index: `npm run documents:push` (`R2_*` from `~/.config/r2/env`)
 - Worker: `cd workers/doc-api && wrangler deploy`
+- Phase 2 portfolio-gate: `cd workers/portfolio-gate && wrangler deploy` (operator App secrets; runbook in that README)
 - D1: `node workers/doc-api/seed.mjs > seed.sql` (publish projection), then POST `/admin/reseed`
 - Dependencies: `npm run deps:outdated` / `npm run deps:update` (do not restore Dependabot; it runs on Actions runners). Optional PR factory is the Mend Renovate GitHub App + `.github/renovate.json`, not a workflow.
 
