@@ -5,8 +5,11 @@
 This repository uses a multi-stage data pipeline to keep the interactive litigation portfolio in sync across the SPA bundle, README documentation, and validation gates.
 
 There are **no GitHub Actions workflows**. Do not add `.github/workflows/`.
-The spending limit already refuses every job. The gate is `.githooks/pre-push`
-and `npm run gate` (same steps; shared `internal/scripts/portfolio-gate.mjs`).
+The spending limit already refuses every job. The **local** gate is
+`.githooks/pre-push` and `npm run gate` (same steps; shared
+`internal/scripts/portfolio-gate.mjs`). The **Phase 2 remote** gate is the
+Cloudflare Worker + Container in `workers/portfolio-gate/`, which posts the
+GitHub Check Run named `portfolio-gate` on PRs whose base is `main`.
 
 ## Data Sync Scripts
 
@@ -37,7 +40,7 @@ These scripts are **load-bearing** and ensure data consistency:
 - **Failure mode**: If stale, upcoming deadlines won't appear on the dashboard
 
 #### 3. `npm run gate` / `npm run validate`
-- **When**: `npm run gate` before a push or PR — same six steps as `.githooks/pre-push`. `npm run validate` is the fuller local check (generated-file `--check` plus coverage). There is no CI.
+- **When**: `npm run gate` before a push or PR — same six steps as `.githooks/pre-push`. `npm run validate` is the fuller local check (generated-file `--check` plus coverage). Remote CI is the Phase 2 Worker (`workers/portfolio-gate/`), not Actions.
 - **What `npm run gate` does** (fail-closed; hook and script share `internal/scripts/portfolio-gate.mjs`):
   1. `npm run lint`
   2. `npm run typecheck`
@@ -80,10 +83,13 @@ These are optional and not part of the build pipeline:
 
 ## Workflow Files
 
-There is **no CI** and no `.github/workflows/`. GitHub Actions was dropped in
-September 2026 (billing; the remaining jobs then failed with “Actions budget
-is preventing further use”) and the gate is `.githooks/pre-push` /
-`npm run gate`:
+There is **no GitHub Actions CI** and no `.github/workflows/`. GitHub Actions
+was dropped in September 2026 (billing; the remaining jobs then failed with
+“Actions budget is preventing further use”). The local gate is
+`.githooks/pre-push` / `npm run gate`. Phase 2 remote status is the
+Cloudflare Worker in `workers/portfolio-gate/` (GitHub App + Containers),
+which posts Check Run `portfolio-gate`. Do not add workflow YAML to invent
+an Actions job.
 
 ```
 1. npm run lint
@@ -99,17 +105,41 @@ The hook is fail-closed: missing `node_modules` or `python3` exits 1.
 disk (manifest mode — not a gate skip). Production deploys are scheduled from
 a Cloudflare Worker, not from pushes; see `internal/docs/VERCEL_DEPLOYS.md`.
 
+### Phase 2 remote gate (Cloudflare Worker — not Actions)
+
+After the operator creates the GitHub App and deploys
+`workers/portfolio-gate/` (runbook in that directory's `README.md`):
+
+1. GitHub sends `pull_request` webhooks only; the Worker ignores any base
+   other than `main`.
+2. The Worker creates a pending Check Run named exactly `portfolio-gate`.
+3. A Container clones the head SHA, runs `npm ci` then `npm run gate` with
+   `PORTFOLIO_SKIP_DISK_DOCS=1` and `VITE_COPY_DOCUMENTS=0`.
+4. The Check Run is patched success or **failure**. Fail-closed: webhook
+   HMAC failure (401, no success path), Container cannot start, or no
+   result within **25 minutes** (`GATE_TIMEOUT_MS`) → conclusion `failure`,
+   never `neutral`.
+
+One run per SHA. A new `synchronize` cancels older pending runs on the
+previous SHA. Optional `check_run` rerequest is supported for this check
+name on a main-targeting PR.
+
+Do not add `.github/workflows/`. Do not point branch protection at an
+Actions job.
+
 ### Branch protection (GitHub settings)
 
 `main` must not be a free-for-all from the web UI. Configure this in GitHub
 **Settings → Branches → Branch protection rule** for `main`. Still **no**
-`.github/workflows/` and **no** required Actions status checks — nothing
-reports any.
+`.github/workflows/`. The required check is posted by the Worker, not by
+Actions.
 
 - [ ] Require a pull request before merging into `main`
 - [ ] Do not allow force pushes
 - [ ] Do not allow deletions of `main`
-- [ ] Do **not** require status checks (there are none; Actions is off)
+- [ ] Require status checks to pass → add exactly **`portfolio-gate`**
+      (after the Worker is deployed; before that, the check does not exist)
+- [ ] Do **not** require any Actions check (Actions is off)
 - [ ] Do **not** add workflow YAML to invent those checks
 
 The local hook still runs on every laptop/agent push to a code branch.
@@ -123,6 +153,7 @@ Laptop jobs that used to be Actions:
 | CourtListener sync | `npm run court:sync -- --bootstrap` |
 | R2 upload + path index | `npm run documents:push` |
 | Worker deploy | `cd workers/doc-api && wrangler deploy` |
+| Phase 2 portfolio-gate | `cd workers/portfolio-gate && wrangler deploy` (after App secrets; see that README) |
 | D1 reseed | `node workers/doc-api/seed.mjs > seed.sql` then POST `/admin/reseed` |
 | Dependency report | `npm run deps:outdated` |
 | In-range npm bump | `npm run deps:update` |
@@ -226,7 +257,11 @@ Developer pushes (pre-push hook / npm run gate)
        ↓ YES
   Golden math + unit suite + citation gate pass?
        ↓ YES
-  Push accepted → PR → main
+  Push accepted → PR targeting main
+       ↓
+Phase 2 Worker posts Check Run `portfolio-gate` (Container runs npm run gate)
+       ↓
+Required check green → merge to main
        ↓
 Cloudflare cron (4x/day) sees main ahead of production → POSTs Vercel Deploy Hook
        ↓

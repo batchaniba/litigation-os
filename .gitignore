@@ -37,6 +37,9 @@ internal/public/documents/**
 .env.*
 !.env.example
 
+# Wrangler local secrets (portfolio-gate and other workers).
+**/.dev.vars
+
 # Generated at build time (prebuild). Do not commit.
 # (vercel.json is also generated — by sync:short-links — but IS committed:
 # Vercel reads git.deploymentEnabled from the repo at push time.)
