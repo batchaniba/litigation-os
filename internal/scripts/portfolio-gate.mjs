@@ -25,6 +25,9 @@ export function runPortfolioGate({
   env = process.env,
   nodeModulesExists,
   python3Available,
+  nodeVersion = process.versions.node,
+  enginesRange,
+  nvmrcVersion,
   matterDirNames = [],
   runStep,
   log = console.log,
@@ -54,7 +57,13 @@ export function runPortfolioGate({
     }
   }
 
-  const preflight = checkPrerequisites({ nodeModulesExists, python3Available });
+  const preflight = checkPrerequisites({
+    nodeModulesExists,
+    python3Available,
+    nodeVersion,
+    enginesRange,
+    nvmrcVersion,
+  });
   if (!preflight.ok) {
     logErr(preflight.message);
     return 1;
@@ -87,6 +96,23 @@ function nodeModulesPresent(root) {
 
 function python3Present() {
   return spawnSync("python3", ["--version"], { stdio: "ignore" }).status === 0;
+}
+
+// engines.node is the contract; .nvmrc is only quoted in the error message.
+function declaredEngines(root) {
+  try {
+    return JSON.parse(fs.readFileSync(path.join(root, "package.json"), "utf8")).engines?.node;
+  } catch {
+    return undefined;
+  }
+}
+
+function nvmrcPin(root) {
+  try {
+    return fs.readFileSync(path.join(root, ".nvmrc"), "utf8").trim() || undefined;
+  } catch {
+    return undefined;
+  }
 }
 
 function listMatterDirs(root) {
@@ -128,6 +154,9 @@ function main() {
     env: process.env,
     nodeModulesExists: nodeModulesPresent(repoRoot),
     python3Available: python3Present(),
+    nodeVersion: process.versions.node,
+    enginesRange: declaredEngines(repoRoot),
+    nvmrcVersion: nvmrcPin(repoRoot),
     matterDirNames: listMatterDirs(repoRoot),
     runStep: spawnStep,
   });
