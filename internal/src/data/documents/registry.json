@@ -137,6 +137,26 @@
       "ownerMatter": 3
     },
     {
+      "path": "/documents/matter-05/1032_Declaration.pdf",
+      "label": "Declaration ISO Opposition to Demurrer (STK-CV-UF-2026-1032) — court-file scan",
+      "ownerMatter": 5
+    },
+    {
+      "path": "/documents/matter-05/1032_Evidentiary_Objection.pdf",
+      "label": "Plaintiff's Evidentiary Objections to Defendants' RJN (STK-CV-UF-2026-1032) — court-file scan",
+      "ownerMatter": 5
+    },
+    {
+      "path": "/documents/matter-05/1032_Opposition.pdf",
+      "label": "Plaintiff's Opposition to Demurrer (STK-CV-UF-2026-1032) — court-file scan",
+      "ownerMatter": 5
+    },
+    {
+      "path": "/documents/matter-05/1032_Plaintiffs_Request_for_Judicial_Notice.pdf",
+      "label": "Plaintiff's Request for Judicial Notice ISO Opposition (STK-CV-UF-2026-1032) — court-file scan",
+      "ownerMatter": 5
+    },
+    {
       "path": "/documents/matter-05/BBS Complaint Palacios LMFT 44555.pdf",
       "label": "BBS Complaint — Palacios LMFT 44555",
       "ownerMatter": 5
@@ -209,6 +229,11 @@
     {
       "path": "/documents/matter-05/FAC_STK-CV-UF-2026-1032.pdf",
       "label": "First Amended Complaint (filed Apr. 22, 2026)",
+      "ownerMatter": 5
+    },
+    {
+      "path": "/documents/matter-05/FAC_STKCVUF20261032.pdf",
+      "label": "First Amended Complaint (STK-CV-UF-2026-1032) — court-file scan",
       "ownerMatter": 5
     },
     {
@@ -2642,6 +2667,11 @@
       "ownerMatter": 28
     },
     {
+      "path": "/documents/matter-28/evidence/Discharge_Review_Report.pdf",
+      "label": "CDCR Form 1502-DR Discharge Review Report — BF3571 Newanforbi",
+      "ownerMatter": 28
+    },
+    {
       "path": "/documents/matter-28/Exhibit A Cover - ECF Help Desk - Smith (N.D. Cal. 3-26-cv-07504-LJC) (September 14, 2026).pdf",
       "label": "Exhibit A Cover - ECF Help Desk - Smith (N.D. Cal. 3-26-cv-07504-LJC) (September 14, 2026)",
       "ownerMatter": 28
@@ -2809,6 +2839,16 @@
     {
       "path": "/documents/matter-28/Renewed Motion Protective Order NDCA (cite-corrected draft).pdf",
       "label": "Renewed Motion for Protective Order — cite-corrected draft (strips Dunford; re-pins Condit quote to Foltz; not yet filed)",
+      "ownerMatter": 28
+    },
+    {
+      "path": "/documents/matter-28/research/2024092402EONSOTApproval.pdf",
+      "label": "OAL Emergency Sex Offender Treatment approval (2024092402EONSOTApproval, Sept. 24, 2024)",
+      "ownerMatter": 28
+    },
+    {
+      "path": "/documents/matter-28/research/AdoptedRegulationsSexOffenderTreatment002.pdf",
+      "label": "OAL Certificate of Compliance — Cal. Code Regs. tit. 15, § 3574 (AdoptedRegulationsSexOffenderTreatment002)",
       "ownerMatter": 28
     },
     {

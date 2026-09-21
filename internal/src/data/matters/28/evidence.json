@@ -117,5 +117,26 @@
     "path": null,
     "what_it_proves": "West v. Atkins, 487 U.S. 42 (1988) — state-actor doctrine for CDCR contractors",
     "transcript_path": null
+  },
+  {
+    "id": "e18",
+    "label": "CDCR Form 1502-DR Discharge Review Report — BF3571 Newanforbi (Discharge Denied/No Action; incorporates HOPE non-completion)",
+    "path": "/documents/matter-28/evidence/Discharge_Review_Report.pdf",
+    "what_it_proves": "CDCR Form 1502-DR Discharge Review Report — BF3571 Newanforbi. Agency record showing treatment-based predicate for Discharge Denied/No Action.",
+    "transcript_path": null
+  },
+  {
+    "id": "e19",
+    "label": "OAL Certificate of Compliance — Cal. Code Regs. tit. 15, § 3574 (Sex Offender Treatment)",
+    "path": "/documents/matter-28/research/AdoptedRegulationsSexOffenderTreatment002.pdf",
+    "what_it_proves": "OAL certificate of compliance for 15 CCR § 3574 — treatment completion and parole discharge are legally separate decisions.",
+    "transcript_path": null
+  },
+  {
+    "id": "e20",
+    "label": "OAL Emergency Sex Offender Treatment approval (Sept. 24, 2024)",
+    "path": "/documents/matter-28/research/2024092402EONSOTApproval.pdf",
+    "what_it_proves": "OAL emergency SOT approval (2024092402EONSOTApproval, Sept. 24, 2024) — emergency rulemaking that preceded the adopted § 3574 package.",
+    "transcript_path": null
   }
 ]
