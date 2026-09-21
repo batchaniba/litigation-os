@@ -429,6 +429,7 @@ export function catalogDocument({
     fail("matter label override must differ from the registry canonical label (or omit it)");
   }
   const r2Key = keyForSha256(sha256.toLowerCase());
+  const layout = matterByNumber(n).layout;
 
   const manifest = readJSON("internal/src/data/documents/manifest.json");
   const hash = sha256.toLowerCase();
@@ -449,20 +450,37 @@ export function catalogDocument({
   } else {
     registry.documents.push({ path: docPath, label, ownerMatter: n });
   }
-  const rel = matterFileRel(n);
-  const data = readJSON(rel);
-  data.documents ??= [];
-  const matHit = data.documents.find((d) => d.path === docPath);
+
   const matEntry = { path: docPath, filed: !!filed };
   if (matterLabel !== undefined) matEntry.label = matterLabel;
-  if (matHit) Object.assign(matHit, matEntry);
-  else data.documents.push(matEntry);
-  data.last_updated = todayKey();
-  validateIdentityWrite(n, matterByNumber(n).layout, data);
 
-  writeJSON("internal/src/data/documents/manifest.json", manifest);
-  writeJSON("internal/src/data/documents/registry.json", registry);
-  writeJSON(rel, data);
+  // Split matters keep inventory in documents.json (identity cap on matter.json).
+  // Legacy flat files still store documents[] on the matter record.
+  if (layout === "split") {
+    const docsRel = `${splitDirRel(n)}/documents.json`;
+    const docs = fs.existsSync(path.join(REPO_ROOT, docsRel)) ? readJSON(docsRel) : [];
+    if (!Array.isArray(docs)) fail(`matter ${n} documents.json must be an array`);
+    const matHit = docs.find((d) => d.path === docPath);
+    if (matHit) Object.assign(matHit, matEntry);
+    else docs.push(matEntry);
+    writeJSON("internal/src/data/documents/manifest.json", manifest);
+    writeJSON("internal/src/data/documents/registry.json", registry);
+    writeJSON(docsRel, docs);
+    bumpLastUpdated(n);
+    validateIdentityWrite(n, layout, readJSON(matterFileRel(n)));
+  } else {
+    const rel = matterFileRel(n);
+    const data = readJSON(rel);
+    data.documents ??= [];
+    const matHit = data.documents.find((d) => d.path === docPath);
+    if (matHit) Object.assign(matHit, matEntry);
+    else data.documents.push(matEntry);
+    data.last_updated = todayKey();
+    validateIdentityWrite(n, layout, data);
+    writeJSON("internal/src/data/documents/manifest.json", manifest);
+    writeJSON("internal/src/data/documents/registry.json", registry);
+    writeJSON(rel, data);
+  }
   return { ok: true, policy: WRITE_POLICY, r2Key, path: docPath };
 }
 
