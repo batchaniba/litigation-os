@@ -1,6 +1,6 @@
 {
   "generated": false,
-  "note": "Scoped classification for the twin-doc / runbook set. legal-intel/ and counsel dossiers are analysis and are not gated here yet.",
+  "note": "Scoped classification for the twin-doc / runbook set. legal-intel/ and counsel dossiers are analysis and are not gated here yet. Matter-count gate applies only to non-retired derived files.",
   "kinds": ["derived", "runbook", "analysis"],
   "docs": [
     {
@@ -16,8 +16,9 @@
     },
     {
       "path": "internal/docs/CITATION_INDEX.md",
-      "doc_kind": "derived",
-      "source": "internal/docs/citation_index.json"
+      "doc_kind": "analysis",
+      "as_of": "2026-09-19",
+      "note": "Generated companion exists, but the markdown still quotes the July 24-matter audit. Flip to derived when that sentence is generated away."
     },
     {
       "path": "internal/docs/CITATION_VERIFICATION.md",
@@ -36,8 +37,8 @@
     },
     {
       "path": "internal/docs/LAWYER_FEES_CALCULATOR.md",
-      "doc_kind": "derived",
-      "source": "internal/docs/lawyer_fees_calculator.json"
+      "doc_kind": "analysis",
+      "as_of": "2026-07-11"
     },
     {
       "path": "internal/docs/MATTER_12_POST_JUDGMENT_READINESS.md",
