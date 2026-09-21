@@ -1,0 +1,28 @@
+# Cloudflare Pages project for the SPA host.
+#
+# Locked product preference: keep the Vercel project slug on Cloudflare's
+# analogue of *.vercel.app. Dashboard project name MUST be this string so
+# the preview host is:
+#   https://interactive-litigation-portfolio.pages.dev
+#
+# Phase 1 scaffolding only. This file does not cut over DNS, does not
+# retarget vercel-deploy-cron, and does not delete the Vercel project.
+# Production remains Vercel until Phase 3. Operator runbook:
+#   internal/docs/CLOUDFLARE_PAGES.md
+#
+# Git-integration build settings live in the Cloudflare dashboard (Pages
+# does not read the build command from this file). Contract:
+#   Node 22  (.nvmrc → 22.22.2; matches package.json engines + jsdom)
+#   Install  npm ci   (set SKIP_DEPENDENCY_INSTALL=1 so Pages does not
+#                      also run npm install — see language-support-and-tools)
+#   Build    npm run build   (prebuild runs sync:derived)
+#   Output   dist            (Vite default; confirmed in vite.config.js —
+#                            no custom build.outDir)
+#
+# pages_build_output_dir makes Wrangler treat this as a Pages project
+# (https://developers.cloudflare.com/pages/functions/wrangler-configuration/).
+# Do not add Worker-only keys such as `main`.
+
+name = "interactive-litigation-portfolio"
+pages_build_output_dir = "./dist"
+compatibility_date = "2026-09-21"

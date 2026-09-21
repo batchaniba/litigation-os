@@ -3,12 +3,20 @@
 // Short public PDF taps → long Content-Disposition filenames.
 //
 // Catalog: internal/public/short-links.json
-// Writes:  vercel.json  and  internal/public/{slug}/index.html
+// Writes:  vercel.json
+//          internal/public/_redirects
+//          internal/public/_headers
+//          internal/public/_routes.json
+//          internal/public/{slug}/index.html
 //
 // vercel.json is COMMITTED (it carries git.deploymentEnabled, which Vercel
-// must read from the repo at push time); the slug landings are gitignored
-// and rebuilt by prebuild. The pre-commit hook re-runs this script when the
-// catalog changes, and CI fails if the committed vercel.json is stale.
+// must read from the repo at push time); the Pages files are committed so
+// `npm run sync:short-links -- --check` can fail on drift, and Vite copies
+// them from internal/public/ into dist/. Slug landings are gitignored and
+// rebuilt by prebuild. The pre-commit hook re-runs this script when the
+// catalog changes.
+//
+// One source of truth: do not hand-maintain a second redirect catalog.
 //
 // Usage:
 //   npm run sync:short-links
@@ -18,23 +26,22 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { loadManifest, manifestByPath, skipDiskDocs } from "./lib/document-store.mjs";
-import { vercelSpaRewrites } from "./lib/documents-branch.mjs";
+import {
+  buildPagesHeaders,
+  buildPagesRedirects,
+  buildPagesRoutesJson,
+  buildVercelJson,
+} from "./lib/spa-host.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const REPO_ROOT = path.resolve(__dirname, "../..");
 const CATALOG = path.join(REPO_ROOT, "internal/public/short-links.json");
 const VERCEL = path.join(REPO_ROOT, "vercel.json");
+const PAGES_REDIRECTS = path.join(REPO_ROOT, "internal/public/_redirects");
+const PAGES_HEADERS = path.join(REPO_ROOT, "internal/public/_headers");
+const PAGES_ROUTES = path.join(REPO_ROOT, "internal/public/_routes.json");
 const PUBLIC_ROOT = path.join(REPO_ROOT, "internal/public");
 const checkOnly = process.argv.includes("--check");
-
-function contentDisposition(downloadName) {
-  const quoted = downloadName.replace(/\\/g, "\\\\").replace(/"/g, '\\"');
-  const encoded = encodeURIComponent(downloadName).replace(
-    /[()]/g,
-    (ch) => `%${ch.charCodeAt(0).toString(16).toUpperCase()}`,
-  );
-  return `attachment; filename="${quoted}"; filename*=UTF-8''${encoded}`;
-}
 
 function landingHtml(link) {
   const href = `../${link.slug}.pdf`;
@@ -67,32 +74,6 @@ function escapeHtml(value) {
     .replaceAll("<", "&lt;")
     .replaceAll(">", "&gt;")
     .replaceAll('"', "&quot;");
-}
-
-function buildVercelJson(links) {
-  const redirects = [];
-  const headers = [];
-  for (const link of links) {
-    const dest = `/${link.slug}.pdf`;
-    redirects.push({ source: `/${link.slug}`, destination: dest, permanent: false });
-    redirects.push({ source: `/${link.slug}/`, destination: dest, permanent: false });
-    headers.push({
-      source: dest,
-      headers: [{ key: "Content-Disposition", value: contentDisposition(link.downloadName) }],
-    });
-  }
-  return {
-    $schema: "https://openapi.vercel.sh/vercel.json",
-    // Production is deployed by the scheduled Deploy Hook
-    // (internal/workers/vercel-deploy-cron/), not by every push to main.
-    // Vercel reads this key from the committed file at push time, which is
-    // why vercel.json is tracked even though this script regenerates it.
-    // See internal/docs/VERCEL_DEPLOYS.md.
-    git: { deploymentEnabled: false },
-    redirects,
-    headers,
-    rewrites: vercelSpaRewrites(),
-  };
 }
 
 if (!fs.existsSync(CATALOG)) {
@@ -146,7 +127,12 @@ for (const link of links) {
   }
 }
 
-const vercelPayload = `${JSON.stringify(buildVercelJson(links), null, 2)}\n`;
+const outputs = [
+  { file: VERCEL, body: `${JSON.stringify(buildVercelJson(links), null, 2)}\n` },
+  { file: PAGES_REDIRECTS, body: buildPagesRedirects(links) },
+  { file: PAGES_HEADERS, body: buildPagesHeaders(links) },
+  { file: PAGES_ROUTES, body: `${JSON.stringify(buildPagesRoutesJson(), null, 2)}\n` },
+];
 const htmlFiles = links.map((link) => ({
   file: path.join(PUBLIC_ROOT, link.slug, "index.html"),
   body: landingHtml(link),
@@ -159,8 +145,8 @@ function differs(file, body) {
 
 if (checkOnly) {
   const stale = [];
-  if (!fs.existsSync(VERCEL) || fs.readFileSync(VERCEL, "utf8") !== vercelPayload) {
-    stale.push("vercel.json");
+  for (const { file, body } of outputs) {
+    if (differs(file, body)) stale.push(path.relative(process.cwd(), file));
   }
   for (const { file, body } of htmlFiles) {
     if (differs(file, body)) stale.push(path.relative(process.cwd(), file));
@@ -169,15 +155,17 @@ if (checkOnly) {
     console.error(`Short-link outputs stale (${stale.join(", ")}) — run npm run sync:short-links`);
     process.exit(1);
   }
-  console.log(`OK — ${links.length} short link(s) in sync.`);
+  console.log(`OK — ${links.length} short link(s) in sync (Vercel + Pages).`);
   process.exit(0);
 }
 
-fs.writeFileSync(VERCEL, vercelPayload);
+for (const { file, body } of outputs) {
+  fs.writeFileSync(file, body);
+}
 for (const { file, body } of htmlFiles) {
   fs.mkdirSync(path.dirname(file), { recursive: true });
   fs.writeFileSync(file, body);
 }
 console.log(
-  `Wrote ${path.relative(process.cwd(), VERCEL)} and ${htmlFiles.length} landing page(s) (${links.length} short link(s)).`,
+  `Wrote ${path.relative(process.cwd(), VERCEL)}, Pages _redirects/_headers/_routes.json, and ${htmlFiles.length} landing page(s) (${links.length} short link(s)).`,
 );

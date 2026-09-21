@@ -78,6 +78,7 @@ const ROOT_ALLOWED_FILES = new Set([
   "tsconfig.json",
   "vercel.json",
   "vite.config.js",
+  "wrangler.toml",
 ]);
 
 function checkRepoRootIsClean() {

@@ -7,7 +7,7 @@
 //   summaries.json         ← matter JSON
 //   document-index.json    ← matter JSON + registry
 //   upcoming.json          ← clocks.json (open/set, dated, including overdue)
-//   vercel.json / slugs    ← short-links.json
+//   vercel.json / Pages _redirects+_headers+_routes / slugs  ← short-links.json
 //   README.md tables       ← matters + clocks + damages
 //
 // Usage: npm run sync:all

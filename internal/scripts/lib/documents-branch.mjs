@@ -11,18 +11,16 @@ import {
   walkFiles,
 } from "./document-store.mjs";
 import { getObject, isConfigured as r2IsConfigured, keyForSha256 } from "./r2-client.mjs";
+import {
+  DOCUMENTS_ORIGIN,
+  DOCUMENTS_WORKER_ORIGIN,
+  PAGES_DOCUMENTS_ORIGIN,
+} from "./documents-origin.mjs";
+
+export { DOCUMENTS_ORIGIN, DOCUMENTS_WORKER_ORIGIN, PAGES_DOCUMENTS_ORIGIN };
 
 export const DOCUMENTS_BRANCH = "documents";
 export const DOCUMENTS_GIT_PREFIX = "internal/public/documents";
-
-/**
- * Public documents origin. Vercel rewrites /documents/:path* here.
- * Bytes are R2; this hostname is the Worker that maps path → sha256.
- */
-export const DOCUMENTS_ORIGIN =
-  "https://litigation-doc-api.ss8sxswwkt.workers.dev/documents";
-/** @deprecated alias — Pages no longer serves the library. */
-export const PAGES_DOCUMENTS_ORIGIN = DOCUMENTS_ORIGIN;
 
 export function vercelSpaRewrites() {
   return [

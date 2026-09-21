@@ -17,10 +17,11 @@ printf '%s\n' "$staged" | grep -Eq '^(internal/src/data/(timeline\.json|matters/
 index_changed=0
 printf '%s\n' "$staged" | grep -Eq '^(internal/src/data/(timeline\.json|matters/|crossMatter\.json)|internal/scripts/sync-machine-index\.mjs)' && index_changed=1
 
-# vercel.json is generated from the short-link catalog but committed, because
-# Vercel reads git.deploymentEnabled from the repo at push time.
+# vercel.json and Pages _redirects/_headers/_routes.json are generated from
+# the short-link catalog but committed (Vercel reads git.deploymentEnabled
+# from the repo at push time; Pages --check needs the committed files).
 vercel_changed=0
-printf '%s\n' "$staged" | grep -Eq '^(internal/public/short-links\.json|internal/scripts/sync-short-links\.mjs|internal/scripts/lib/documents-branch\.mjs)$' && vercel_changed=1
+printf '%s\n' "$staged" | grep -Eq '^(internal/public/short-links\.json|internal/scripts/sync-short-links\.mjs|internal/scripts/lib/(documents-branch|documents-origin|spa-host)\.mjs)$' && vercel_changed=1
 
 [ "$docs_changed" -eq 0 ] && [ "$readme_changed" -eq 0 ] && [ "$vercel_changed" -eq 0 ] && [ "$index_changed" -eq 0 ] && exit 0
 
@@ -60,7 +61,7 @@ if [ "$readme_changed" -eq 1 ]; then
 fi
 
 if [ "$vercel_changed" -eq 1 ]; then
-  echo "pre-commit: short-link catalog staged — regenerating vercel.json"
+  echo "pre-commit: short-link catalog staged — regenerating vercel.json and Pages redirects"
   npm run sync:short-links
-  git add -- vercel.json
+  git add -- vercel.json internal/public/_redirects internal/public/_headers internal/public/_routes.json
 fi

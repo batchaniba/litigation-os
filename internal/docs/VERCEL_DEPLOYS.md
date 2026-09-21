@@ -15,6 +15,11 @@ Three layers fix that. The first is dashboard-only; the other two live here.
 | **Ignored Build Step** → `bash internal/scripts/vercel-ignore-build.sh` | dashboard field + repo script | no preview builds; no `main` build unless a build input changed |
 | `git.deploymentEnabled: false` + scheduled Deploy Hook | `vercel.json` + `internal/workers/vercel-deploy-cron/` | pushes create no deployments at all; production advances on a cron |
 
+Phase 1 of the Pages migration (`internal/docs/CLOUDFLARE_PAGES.md`) is a
+**parallel** `interactive-litigation-portfolio.pages.dev` smoke host. It does
+not replace this document, does not retarget the cron, and does not cut over
+DNS. Keep `git.deploymentEnabled: false` here.
+
 ## Dashboard settings (one time)
 
 Project → **Settings → Build and Deployment**
@@ -54,6 +59,11 @@ live), `Content-Disposition` headers, the `/documents/*` rewrite target, and
 ```json
 "git": { "deploymentEnabled": false }
 ```
+
+The same command also writes Cloudflare Pages `_redirects` / `_headers` /
+`_routes.json` under `internal/public/` (Vite copies them into `dist/`). One
+catalog; do not hand-maintain a second list. See
+`internal/docs/CLOUDFLARE_PAGES.md`.
 
 Vercel reads that key from the repository at push time, so the file must be
 committed even though it is generated. The pre-commit hook re-runs the

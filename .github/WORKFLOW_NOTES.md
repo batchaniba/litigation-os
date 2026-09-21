@@ -243,7 +243,7 @@ Run `npm run generate:readme` to regenerate README tables from current matter da
 ## Data Flow Diagram
 
 ```
-Developer commits (pre-commit hook syncs registry/manifest/README/vercel.json)
+Developer commits (pre-commit hook syncs registry/manifest/README/vercel.json/Pages _redirects)
        ↓
 Developer pushes (pre-push hook / npm run gate)
        ↓
