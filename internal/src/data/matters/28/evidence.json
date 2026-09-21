@@ -50,30 +50,30 @@
   },
   {
     "id": "e08",
-    "label": "HOPE RFA No. 4 and No. 18 admissions (blanket retention policy and billing rates)",
-    "path": null,
-    "what_it_proves": "HOPE RFA No. 4 and No. 18 admissions (blanket retention policy and billing rates)",
+    "label": "HOPE RFA Set One (served) — sha cfe3f3c0…; path still labeled DRFT in store. Key ADMITs: RFA 4 (every CTM continued treatment / no completion rec); RFA 3 (status to CDCR every CTM); RFA 9 (no material change after §3574(f)(1)); RFA 18 (“partially completed” homework in 3043/1502-DR); RFA 22 (revenue drops on discharge); RFA 25 (Aug 2025 “when you start complaining…”)",
+    "path": "/documents/matter-05/DRFT HOPE resp plntf RFA1.pdf",
+    "what_it_proves": "Corporate admissions: continued-treatment recommendations at every CTM; CDCR reporting channel; no post-§3574(f)(1) practice change; partial-homework characterizations to CDCR; discharge reduces HOPE revenue; Palacios complaining-line statement at Aug 2025 CTM.",
     "transcript_path": null
   },
   {
     "id": "e09",
-    "label": "Palacios RFA Nos. 6 and 8 admissions (supervision/compliance reporting)",
-    "path": null,
-    "what_it_proves": "Palacios RFA Nos. 6 and 8 admissions (supervision/compliance reporting)",
+    "label": "Palacios RFA Set One (served Jun 8, 2026) — sha 0e4a4f47…. Key ADMITs: RFA 1 (Site Director w/ ambiguity obj); RFA 4 (CTMs attended); RFA 6 (never recommended completion at those CTMs); RFA 8 (never gave Bernadette TCP); RFA 11–12 (“disruptive” / “ringleader”); RFA 16 (“when you start complaining…”); RFA 28 (no CDL-friendly schedule); RFA 29 (pre-Aug complaints)",
+    "path": "/documents/matter-05/PALACIOS resp plntf RFA1 (NEWpal) (060826).pdf",
+    "what_it_proves": "Individual admissions tying Palacios to Stockton supervision, never-recommend-completion at attended CTMs, Aug 2025 CTM pejoratives, pre-complaint protected activity, and no schedule accommodation.",
     "transcript_path": null
   },
   {
     "id": "e10",
-    "label": "HOPE SROG Nos. 11 and 14 responses (treatment protocol and criteria)",
-    "path": null,
-    "what_it_proves": "HOPE SROG Nos. 11 and 14 responses (treatment protocol and criteria)",
+    "label": "HOPE SROG Set One responses (Jun 15, 2026) — Block I refrain at every CTM; claims unaware of Dwyer / §3574(f)(1); Palacios Clinical Director",
+    "path": "/documents/matter-05/HOPE resp plntf SROGS1 (NEWpal) (061526).pdf",
+    "what_it_proves": "Interrogatory answers supporting Monell/policy and completion-criteria themes; tension with RFA 9 admit of no post-§3574 change.",
     "transcript_path": null
   },
   {
     "id": "e11",
     "label": "Philadelphia Indemnity Policy No. 067968 ($1M per-incident / $5M aggregate)",
     "path": null,
-    "what_it_proves": "Philadelphia Indemnity Policy No. 067968 ($1M per-incident / $5M aggregate)",
+    "what_it_proves": "Philadelphia Indemnity Policy No. 067968 ($1M per-incident / $5M aggregate); named insured Hope Psychotherapy, Inc / Shannon Smith (see PHCP decl pages).",
     "transcript_path": null
   },
   {
@@ -116,6 +116,13 @@
     "label": "West v. Atkins, 487 U.S. 42 (1988) — state-actor doctrine for CDCR contractors",
     "path": null,
     "what_it_proves": "West v. Atkins, 487 U.S. 42 (1988) — state-actor doctrine for CDCR contractors",
+    "transcript_path": null
+  },
+  {
+    "id": "e18",
+    "label": "Palacios SROG Set One (Jun 12, 2026) — CTM attendance list incl. Aug 19, 2025; never recommended completion",
+    "path": "/documents/matter-05/PALACIOS resp plntf SROGS1 (NEWpal) (061226).pdf",
+    "what_it_proves": "Corroborates Palacios RFA 4/6 with CTM-by-CTM attendance and never-recommend-completion answers.",
     "transcript_path": null
   }
 ]
