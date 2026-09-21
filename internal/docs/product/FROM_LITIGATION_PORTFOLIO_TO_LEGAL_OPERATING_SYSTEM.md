@@ -4,6 +4,7 @@
 **Scope:** Software-engineering maturity, product readiness, and UI evolution  
 **Audience:** Repository agents, maintainers, product designers, and future contributors  
 **Source of truth:** This document records the current product direction. Implementation belongs in separate, reviewable PRs.
+**Audit basis:** [`ENGINEERING_MATURITY_AUDIT_2026-09-21.md`](ENGINEERING_MATURITY_AUDIT_2026-09-21.md) — a read-only architecture and maturity audit against `main` @ `f4716cd`. Corrections it produced are applied below and itemized in that document's "Roadmap delta" section.
 
 ## Executive thesis
 
@@ -23,12 +24,14 @@ As of September 21, 2026:
 - 1,629 manifest-tracked files
 - Approximately 1.04 GB of tracked document inventory
 - 1,190 canonical document-registry paths
-- 164 operational script files
+- 222 operational script files (88 Node `.mjs` + 134 Python `.py`; 41 shared `lib/` modules)
 - 54 package commands
 - CourtListener synchronization and citation infrastructure
 - R2/D1 document infrastructure and an MCP document API
 - Typed repository mutations, validation gates, document sidecars, deadline clocks, evidence stores, and cross-matter intelligence
-- No enforced GitHub Actions status checks on pull requests
+- A remote `portfolio-gate` Check Run already exists (`workers/portfolio-gate/`: GitHub App + Cloudflare Containers, locked check name, 25-minute fail-closed timeout, own test suite)
+- Branch protection is configured on `main`, but `required_status_checks` is **not enabled**, `required_approving_review_count` is **0**, and `enforce_admins` is **false** — so the check is advisory and merges are unblocked
+- No GitHub Actions, by standing policy (`AGENTS.md`: do not add `.github/workflows/`)
 
 ## Maturity assessment
 
@@ -47,6 +50,14 @@ As of September 21, 2026:
 | Multi-user readiness | 2/10 | 8/10 |
 
 The system is approximately a Level 3 operational platform in capability, Level 2 in reliability, and Level 1 as a multi-user product.
+
+The audit regrades three rows downward and adds one dimension this table omits:
+
+| Dimension | This table | Audit | Why |
+| --- | ---: | ---: | --- |
+| CI enforcement | 3/10 | **2/10** | The machinery exists and is switched off, which is worse than absent — it produces the appearance of a control |
+| Data integrity | 6.5/10 | **5/10** | 195 manifest entries assert files that cannot be retrieved |
+| Recovery and backups | — | **3.5/10** | Not scored here. 195 entries plus 27 root files have no second copy, and no restore drill has been run |
 
 ## Product position
 
@@ -98,6 +109,10 @@ The public surface should communicate professional identity and selected results
 - Navy, gold, off-white, crest, and formal legal typography
 
 ### Private workspace
+
+A correction from the audit on the premise here. The concern that the UI mixes public storytelling, private operations, and adversarial presentation is only partly right. `routes.ts` exposes nine nav items, and **Deadlines, Documents, Evidence, and Research are not among them** — even though `CalendarTab`, `DeadlineCalculatorTab`, `ServiceTracker`, `CoverageTower`, `NextActionsPanel`, `CrossMatterTab`, `GlobalSearchDialog`, and `SavedViews` are all built. There is also no authentication anywhere in the SPA, so everything shipped is public by construction.
+
+So private operations are not competing with the public surface so much as absent from it: the operator workspace has been built as a CLI (`npm run q`, `npm run next`, `npm run mcp`) and needs a UI. That is a cheaper problem than untangling three audiences, and it means the work below is mostly exposure rather than invention.
 
 The private product surface should prioritize action:
 
@@ -167,23 +182,27 @@ Every operation should return a review card containing:
 
 ### P0 — Reliability foundation
 
-**P0.1 Required CI**
+**P0.0 Document-store recoverability** *(added by audit — precedes everything)*
 
-Create GitHub Actions that run on every PR:
+195 manifest entries (138.4 MB) have no retrievable bytes in R2, and 27 of the 41 root PDFs have no bytes in R2 by content hash. `internal/public/documents/**` is gitignored, so for those files the only copy in version control is the root copy, and the only other copy is the laptop. Nothing detects this.
 
-- Lint
-- Typecheck
-- Unit tests
-- Schema validation
-- Generated-file drift checks
-- Registry and manifest checks
-- Document-sidecar checks
-- Citation known-bad gate
-- Golden tests
+- Add a coverage check: every manifest entry must resolve to bytes in R2
+- Use ranged `GET` — the Worker answers `405` to `HEAD`, which is indistinguishable from absent
+- Run `npm run sync:manifest` and `npm run documents:push`, then confirm full coverage
+- Only then remove the root binaries (see P0.4)
 
-Require successful checks before merge.
+**Acceptance:** zero manifest entries without bytes in R2, and the check fails closed when that regresses.
 
-**Acceptance:** A PR cannot merge when canonical data, generated artifacts, tests, or document inventories disagree.
+**P0.1 Enforce the gate that already exists**
+
+Do **not** create GitHub Actions. `AGENTS.md` forbids `.github/workflows/`, the spending limit refuses every job, and the remote check is already built: `workers/portfolio-gate/` runs the same steps as the `pre-push` hook through a GitHub App and Cloudflare Containers, under the locked Check Run name `portfolio-gate`.
+
+The gap is enforcement and determinism, not capability:
+
+- The runner fails on capacity rather than on check content — `max_instances = 3` produces `Maximum number of running container instances exceeded`. Raise or queue against that limit, add retry with backoff, and distinguish infrastructure failure from check failure
+- Then enable `required_status_checks` for `portfolio-gate`, set `required_approving_review_count` to 1, and enable `enforce_admins`
+
+**Acceptance:** no PR merges to `main` while the Check Run is failing or absent — including for admins and for agents holding a token.
 
 **P0.2 Canonical-data boundary**
 
@@ -199,12 +218,22 @@ Replace multi-step document cataloging with one idempotent operation.
 
 **P0.4 Repository hygiene**
 
-- Remove root-level PDF clutter
+- Remove root-level PDF clutter — **but only after P0.0 confirms the bytes exist in R2.** 27 of the 41 root files currently have no second copy anywhere; deleting them first destroys the only tracked copy of live Matter 05 discovery responses and demurrer briefing
 - Finish the Git-to-object-store boundary
-- Prevent new binaries from landing outside approved locations
+- Prevent new binaries from landing outside approved locations — the blanket `.pdf`/`.docx` bypass in `checkRepoRootIsClean()` is closed, and `internal/src/data/index/root-quarantine.json` is the explicit allowlist that must drain to empty
 - Define retention and archival rules
 
-**Acceptance:** A clean clone contains code, metadata, and intentionally retained artifacts without an uncontrolled root document dump.
+**Acceptance:** A clean clone contains code, metadata, and intentionally retained artifacts without an uncontrolled root document dump, and the quarantine ledger is empty.
+
+**P0.5 Environment-independent gate results** *(added by audit)*
+
+The same tree currently yields 2,832 `validate-portfolio` failures without a hydrated document store and 334 with one, and the unit suite reports 52 unhandled errors and "no tests" on a Node major below `engines.node`. A gate whose verdict depends on local disk or runtime cannot be required, which makes this a prerequisite for P0.1.
+
+- Default `validate-portfolio` to manifest mode; make disk mode an explicit opt-in
+- Report which mode produced the verdict
+- Keep the Node-major preflight guard
+
+**Acceptance:** identical verdict from the container, a clean sandbox, and the laptop on the same commit.
 
 ### P1 — Operational hardening
 
@@ -224,15 +253,26 @@ Display:
 
 **P1.2 Transactional mutation service**
 
-Move repository mutations behind a reusable service boundary with validation, locking, idempotency keys, and append-only audit records.
+Note what already exists: `internal/scripts/lib/mutate.mjs` provides eight validated operations (`recordTimelineEvent`, `retireUpcomingEvent`, `setNextClock`, `updateMatterIdentity`, `catalogDocument`, `scaffoldMatter`, `splitMatter`) that validate before touching disk and land changes on the working tree for review. `q.mjs` exposes 19 ops. This item is therefore not "build a mutation layer" but:
+
+- Add locking and idempotency keys to the existing ops
+- Add an append-only agent-action log — proposal, sources, diff, validation result, approver — kept distinct from `events.jsonl`, which records case events rather than agent activity
 
 **P1.3 Shared primitives**
 
-Replace repeated matter-specific scripts with reusable filing, service, deadline, document, citation, and evidence operations.
+Narrow this item. Do **not** deduplicate the pleading generators: `matter37-home-depot-complaint.py` and `matter38-swift-complaint.py` are both exactly 1,179 lines and 1,170 of those lines differ, because they are pleading prose rather than copy-paste. Shared mechanism already exists and is widely imported (`signature_stamp` in 69 generators, `pleading_paper` in 46, `pdf_packet` in 24).
 
-**P1.4 Recovery and observability**
+Extract reusable service, deadline, document, citation, and evidence helpers only.
 
-Add structured logs, retryable background jobs, backup/restore procedures, failure alerts, and migration checks.
+**P1.4 Observability**
+
+Add structured logs, retryable background jobs, failure alerts, and migration checks.
+
+Backup and restore has moved to **P0.0** — it is an open critical risk, not P1 hardening. A documented and executed restore drill belongs there.
+
+**P1.0 Deploy-configuration truth** *(added by audit)*
+
+`workers/doc-api/wrangler.toml` commits `database_id = "REPLACE_WITH_D1_DATABASE_ID"` while the deployed Worker serves D1-backed reads, so the committed configuration cannot reproduce the running system. Establish one source of truth for deploy configuration and document any value that is intentionally set out of band.
 
 ### P2 — Product extraction
 
@@ -251,7 +291,19 @@ Extract reusable packages without moving live litigation data:
 
 ### P3 — Multi-user pilot
 
-Build the minimum secure product layer:
+**P3.0 Professional-responsibility layer** *(added by audit — precedes any pilot)*
+
+The technical list below is close to complete. The professional list is missing entirely, and no amount of infrastructure substitutes for it:
+
+- Conflicts checking before a matter is created, with an attestation record
+- Ethical walls enforced by permissions, not convention
+- A reviewed position on the unauthorized-practice-of-law boundary — this is the reason self-represented litigants are a hazardous first segment rather than an obvious one
+- Legal hold, retention, and deletion controls per tenant
+- A documented malpractice / errors-and-omissions posture
+
+Also note a capability that should **not** generalize: opposing-counsel dossiers under `internal/docs/counsel/` are legitimate research for one pro-se litigant, but as a multi-tenant feature they become cross-firm intelligence aggregation, carrying privacy, reputational, and possibly ethical exposure. Keep them portfolio-specific.
+
+Then build the minimum secure product layer:
 
 - Authentication
 - Organizations and workspaces
@@ -301,6 +353,8 @@ Future agents building from this plan should:
 7. Preserve the existing public site and live litigation workflows unless the PR explicitly migrates them.
 8. Update this roadmap only when a decision, priority, status, or acceptance criterion changes.
 
+Items 2, 3, and 5 are currently unenforceable: `required_status_checks` is not enabled, required reviews are set to 0, and `enforce_admins` is false, so any actor holding a token — including an agent — can merge a failing branch to `main` unreviewed. After P0.1 they become enforced rather than advisory. Until then, treat them as honor-system rules and state in each PR body which validation actually ran.
+
 ## Non-goals for the next phase
 
 - Rewriting the application from scratch
@@ -314,22 +368,27 @@ Future agents building from this plan should:
 
 ## Near-term implementation order
 
-1. Required GitHub Actions and branch protections
-2. Canonical/derived file classification
-3. Atomic document ingestion
-4. Root binary cleanup and storage boundary
-5. System-health dashboard
-6. Transactional mutations and audit log
-7. Shared domain packages
-8. Public/private UI separation
-9. Blank-workspace product prototype
-10. Controlled multi-user pilot
+Reordered by the audit. The governing principle: nothing is recoverable-loss-safe until step 1, and no later step sticks until step 3, because every improvement merges through a gate that currently cannot block anything.
+
+1. **R2 coverage check** — make the 195 unbacked manifest entries visible and fail-closed (P0.0)
+2. **Gate determinism** — conclude on check content, not container capacity (P0.1, P0.5)
+3. **Enable required checks, one review, and admin enforcement** (P0.1)
+4. **Push the missing bytes, then remove the root binaries** (P0.0, P0.4)
+5. **Canonical/derived classification and a generator registry** (P0.2)
+6. **System-health surface** — promoted, because a red gate survived 75 commits and a 195-file gap survived unnoticed (P1.1)
+7. **Atomic document ingestion** (P0.3)
+8. **Locking, idempotency, and the agent-action audit log on the existing mutation layer** (P1.2)
+9. **Public/private UI boundary** (UI direction)
+10. **Narrow shared primitives** — not the pleading generators (P1.3)
+11. **Blank-workspace product prototype** (P2)
+12. **Professional-responsibility layer, then a controlled multi-user pilot** (P3.0, P3)
 
 ## Decision standard
 
 A proposed feature should advance at least one of these outcomes:
 
 - Reduces procedural risk
+- Reduces the risk of unrecoverable loss
 - Improves data integrity
 - Saves operator time
 - Increases auditability
