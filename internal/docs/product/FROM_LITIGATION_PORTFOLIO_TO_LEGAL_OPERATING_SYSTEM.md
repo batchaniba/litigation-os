@@ -606,3 +606,94 @@ No production credential should be accepted by development code. Every schema mi
 For a small private pilot, budget approximately **$100–$400 per month** for base infrastructure (Neon + Clerk + Vercel + Sentry + Resend + Workers/R2/Queues + burst `standard-2` containers), excluding usage-variable AI, OCR, and document-processing compute. At 10–25 active users, use **$500–$2,000 per month** as an operating-planning range until measured workloads replace estimates.
 
 These are planning bands, not procurement commitments. Record actual cost per ingested document, active matter, and retained user from the first pilot.
+
+### Explicit deferrals
+
+Do not introduce the following during the private-prototype phase:
+
+- Kubernetes
+- A microservice fleet
+- A native mobile application
+- A dedicated vector database
+- Elasticsearch
+- Multiple AI providers
+- Enterprise SSO
+- SOC 2 certification work
+- Mass-market billing
+- GitHub Actions in this repository
+- Treating OpenAI (or any model vendor) as the product interface
+- Parallel vendors serving the same infrastructure role
+- Loading the Newanforbi matter graph into a shared tenant database
+
+### P3 → P4 exit criteria
+
+- Staging restore tested in the last 90 days
+- Ingest is idempotent (same PDF does not double-catalog)
+- Every write has an actor and an approval
+- Public site cannot see operator routes
+- One design partner completed a matter without this git repo
+- Written UPL, conflicts, retention, incident, and subprocessors list
+
+## Agent contribution protocol
+
+Future agents building from this plan should:
+
+1. Reference the roadmap item being implemented.
+2. Create a scoped branch and reviewable PR.
+3. Avoid combining litigation-data changes with product-infrastructure changes.
+4. Identify canonical and derived files before editing.
+5. Run the strongest available validation suite.
+6. Record blockers without weakening invariants.
+7. Preserve the existing public site and live litigation workflows unless the PR explicitly migrates them.
+8. Update this roadmap only when a decision, priority, status, or acceptance criterion changes.
+
+Items 2, 3, and 5 are currently unenforceable: `required_status_checks` is not enabled, required reviews are set to 0, and `enforce_admins` is false, so any actor holding a token — including an agent — can merge a failing branch to `main` unreviewed. After P0.1 they become enforced rather than advisory. Until then, treat them as honor-system rules and state in each PR body which validation actually ran.
+
+## Non-goals for the next phase
+
+- Rewriting the application from scratch
+- Building every Clio feature
+- Supporting every court and jurisdiction
+- Launching mass-market billing
+- Replacing attorney judgment with autonomous filing
+- Adding more dashboard tabs without a validated user need
+- Treating generic chat as the product interface
+- Moving live portfolio data into an immature product database
+
+## Near-term implementation order
+
+Reordered by the audit. The governing principle: nothing is recoverable-loss-safe until step 1, and no later step sticks until step 3, because every improvement merges through a gate that currently cannot block anything.
+
+1. **R2 coverage check** — make the 195 unbacked manifest entries visible and fail-closed (P0.0)
+2. **Gate determinism** — conclude on check content, not container capacity (P0.1, P0.5)
+3. **Enable required checks, one review, and admin enforcement** (P0.1)
+4. **Push the missing bytes, then remove the root binaries** (P0.0, P0.4)
+5. **Canonical/derived classification and a generator registry** (P0.2)
+6. **System-health surface** — promoted, because a red gate survived 75 commits and a 195-file gap survived unnoticed (P1.1)
+7. **Atomic document ingestion** (P0.3)
+8. **Locking, idempotency, and the agent-action audit log on the existing mutation layer** (P1.2)
+9. **Public/private UI boundary** (UI direction)
+10. **Narrow shared primitives** — not the pleading generators (P1.3)
+11. **Blank-workspace product prototype** (P2)
+12. **Professional-responsibility layer, then a controlled multi-user pilot** (P3.0, P3)
+
+## Decision standard
+
+A proposed feature should advance at least one of these outcomes:
+
+- Reduces procedural risk
+- Reduces the risk of unrecoverable loss
+- Improves data integrity
+- Saves operator time
+- Increases auditability
+- Makes agent actions safer
+- Generalizes a proven workflow
+- Improves onboarding or repeated use
+
+If it does none of these, it should not outrank reliability work.
+
+## End state
+
+The target is not merely a more polished portfolio.
+
+The target is a litigation operating system in which documents, deadlines, evidence, claims, authorities, people, and agent actions form one source-grounded, auditable graph—and in which the human operator retains control over every consequential action.
