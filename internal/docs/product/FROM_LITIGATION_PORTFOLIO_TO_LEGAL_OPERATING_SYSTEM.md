@@ -397,3 +397,116 @@ Use Cloudflare as the infrastructure spine, not as the entire application platfo
 | Document storage | R2 buckets `litigation-documents-prod` and `…-staging`; tenant prefix `t/{orgId}/sha256/…` | Originals, OCR text, sidecars, exports. Upload-only, never deletes | Second backup target before external customer data |
 | Product database | Neon Postgres (RDS Postgres acceptable later) | Orgs, members, matters, permissions, clocks, evidence links, document metadata, approvals, audit. PITR on | Read replicas and pooling when connections or isolation demand it |
 | Public / lightweight index | Cloudflare D1 (keep) | Current publish projection (`publishMatter`) and public document API | Never the sole source of truth for a permissions-heavy product |
+| Job transport | Cloudflare Queues | Dispatch, retry, batching, dead-letter for ingest and extraction | Partition by workload when backlogs appear |
+| Durable orchestration | Cloudflare Workflows | Resumable ingest, reconcile, human-review checkpoints | Only for jobs that outlive a request |
+| Heavy document compute | One Cloudflare Container running the existing Python tools | OCRmyPDF, PyMuPDF, `verify-citations.py`, packet processing | Scale that one worker; no microservice fleet |
+| Authentication | Clerk Organizations | Invites, sessions, roles `owner` / `attorney` / `staff` / `readonly` | Clerk Enterprise SSO first; WorkOS only if a signed buyer needs an IdP Clerk cannot satisfy |
+| Models | One API (OpenAI or Anthropic) behind typed operations | Extraction, classification, chronology. Output is a review card, never a silent write | Second provider only for a measured capability, reliability, or cost advantage |
+| Agent surface | Existing `q.mjs` / `mutate.mjs` catalog over HTTP + MCP | Approve / revise / reject. Anonymous `tools/list` must not advertise writes | — |
+| Search | Postgres full-text on extracted text; pgvector only if a measured retrieval gap appears | Matter and document retrieval | Dedicated search vendor only after measured Postgres limits |
+| Email | Resend (pick one; do not also run Postmark) | Invites, job failures, deadline digest | — |
+| Errors | Sentry (operator app + Worker) + Cloudflare logs | Frontend, API, job, ingest failures | Log warehouse when incident volume justifies it |
+| Product analytics | None at P3 start | — | PostHog at P4 or when you cannot explain churn |
+| Billing | None at P3 | — | Stripe when the first invoice exists |
+| Secrets | 1Password (humans) + Wrangler secrets + Vercel / Neon env | Separate development, staging, and production. Never chat | — |
+| Backups | Neon PITR + R2 versioning or object lock + quarterly restore drill | A backup that has not been restored is not a backup | Independent secondary copy before paying customers |
+| Staging | Separate Worker + R2 + Neon branch + Clerk instance | Synthetic PDFs only until a DPA is signed | — |
+
+```
+Public (Vercel) ──publishMatter──► Worker + D1 + signed R2 reads
+Operator (Vercel, Clerk session)
+        │
+        ▼
+Workers API ──► Neon Postgres
+        ├──► R2 (tenant prefix)
+        ├──► Queue / Workflow ──► Container (OCR / cite / extract)
+        │                              └── model API (optional)
+        └──► MCP / typed ops ──► approval row ──► apply
+```
+
+GitHub remains code plus this reference portfolio. The gate Worker remains how `main` is protected.
+
+### Product-system boundary
+
+The reference portfolio remains in Git and continues using its established R2/D1 and agent workflows. Customer runtime state belongs in PostgreSQL and R2. Product extraction must not move live Newanforbi matter data into the new tenant model.
+
+| Today | P3 fate |
+| --- | --- |
+| `matters/NN/*.json` | Schema inspiration; not imported into a shared tenant database |
+| `clocks.json` status enum | Same enum in Postgres |
+| `mutate.mjs` / `q.mjs` | API handlers; add idempotency key + approval id |
+| `events.jsonl` | `case_events` table, still append-only |
+| Agent-action log (P1.2) | `agent_actions` table (proposal, diff, validator, actor) |
+| R2 `sha256/…` | Keep content addressing; prefix tenant |
+| `verify-citations.py --check` | Same binary inside the container job |
+| `portfolio-gate` | Unchanged mechanism; required on `main` |
+| Versus header / `internal/docs/counsel/` | Portfolio site only |
+| Pleading generators | Portfolio only |
+
+A normal request should follow this path:
+
+1. The browser calls the authenticated Workers API.
+2. The API authorizes the user against organization and matter membership.
+3. Transactional metadata is read or written in PostgreSQL.
+4. Document bytes are written to R2 under immutable content-addressed keys with a tenant prefix.
+5. Queue messages dispatch OCR, extraction, citation, or indexing work.
+6. The document worker writes derived artifacts to R2 and structured results to PostgreSQL.
+7. Consequential agent proposals remain pending until a human approves them through a typed operation.
+
+Matter ACL: organization default plus per-matter grants. Ethical wall = explicit deny list, not a comment in `AGENTS.md`. Conflicts check is a blocking create-matter step with an attestation row (P3.0).
+
+### Tenant isolation, audit, and conflicts
+
+The table above names PostgreSQL as the tenant system of record. "Organization default plus per-matter grants" is a policy statement; the following is how it becomes testable.
+
+**Row-level security, not application filtering.** Every tenant-scoped table carries `tenant_id` and enables RLS with `FORCE`, so the policy binds the table owner too:
+
+```sql
+alter table matters enable row level security;
+alter table matters force row level security;
+
+create policy tenant_isolation on matters
+  using (tenant_id = current_setting('app.tenant_id')::uuid);
+
+-- Ethical wall: per-matter grants inside one organization
+create policy matter_acl on matters
+  using (id in (select matter_id from matter_access
+                where user_id = current_setting('app.user_id')::uuid));
+```
+
+`app.tenant_id` is set per connection from the verified session, never from a request parameter. The API connects as a non-superuser role.
+
+**The isolation test is the deliverable, not the policy.** A suite that authenticates as organization A and attempts to read every tenant-scoped table as organization B, asserting zero rows, is what answers a buyer's security questionnaire. Ship it with the schema, not after it.
+
+**Audit must be tamper-evident, not merely append-only.**
+
+```sql
+create table audit (
+  id         bigserial primary key,
+  tenant_id  uuid not null,
+  actor      text not null,
+  action     text not null,
+  payload    jsonb not null,
+  prev_hash  bytea,
+  row_hash   bytea not null,      -- sha256(prev_hash || payload)
+  at         timestamptz not null default now()
+);
+revoke update, delete on audit from app_role;
+```
+
+Append-only by permission, chained by hash. `events.jsonl` already has the first property; the chain adds "this record was not altered afterwards," which is the property that matters in a dispute. Add the chain to `mutate.mjs` under P1.2 — cheap now, expensive to backfill.
+
+**Conflicts (P3.0) needs a mechanism, not just a checkpoint.** Tenant-scoped fuzzy match with `pg_trgm` across every party and adverse party in the organization, run before matter creation, with the result — hit or clean — written to `audit` as the attestation. A conflicts check that leaves no record is not a conflicts check.
+
+### Model layer
+
+The stack table leaves the provider open. The contract below is provider-neutral and stands on its own; the binding after it is the recommended default and is the open decision.
+
+| Rule | Implementation |
+| --- | --- |
+| Typed operations, not a chatbot | Map the `q.mjs` / `mutate.mjs` catalog one-to-one onto tool definitions. No agent framework — that catalog is already the right abstraction |
+| Schema-valid arguments | `strict: true` on every tool (`additionalProperties: false` plus `required`). The API-level twin of "validate before touching disk" |
+| Extraction returns structure | Structured outputs (`output_config.format`), not prose parsing |
+| Every proposal is reviewable | The model writes an approval row, never a table |
+
+**Recommended binding — Anthropic.** Rates are per million tokens, current as of this writing; verify before budgeting.
