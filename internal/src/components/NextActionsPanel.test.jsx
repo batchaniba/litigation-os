@@ -2,6 +2,7 @@ import { describe, expect, it } from "vitest";
 import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { MemoryRouter } from "react-router";
+import { ThemeContext, THEMES } from "../ThemeContext";
 import { NextActionsPanel } from "./NextActionsPanel";
 import { clipEvent, daysLabel } from "../utils/nextActionsView";
 
@@ -18,12 +19,14 @@ const item = (over = {}) => ({
   ...over,
 });
 
-const renderPanel = (queue, mineOnly = false) => {
+const renderPanel = (queue, mineOnly = false, theme = THEMES.dark) => {
   const onMineOnlyChange = () => undefined;
   return render(
-    <MemoryRouter>
-      <NextActionsPanel queue={queue} mineOnly={mineOnly} onMineOnlyChange={onMineOnlyChange} />
-    </MemoryRouter>,
+    <ThemeContext.Provider value={theme}>
+      <MemoryRouter>
+        <NextActionsPanel queue={queue} mineOnly={mineOnly} onMineOnlyChange={onMineOnlyChange} />
+      </MemoryRouter>
+    </ThemeContext.Provider>,
   );
 };
 
@@ -61,7 +64,16 @@ describe("NextActionsPanel", () => {
         action: "meet & confer",
       }),
     ],
-    undated: [],
+    undated: [
+      {
+        date: "Oct. 2026",
+        event: "Month-only service window",
+        matters: [12],
+        action: "serve",
+        actor: "you",
+        actorSource: "inferred",
+      },
+    ],
     gaps: [
       { number: 31, caption: "Newanforbi v. First Advantage LLC", case_no: null, status_label: "Pre-filing" },
     ],
@@ -70,10 +82,10 @@ describe("NextActionsPanel", () => {
   it("leads with the ranked queue and keeps opposing clocks visible", () => {
     renderPanel(queue);
     expect(screen.getByRole("heading", { name: "What’s next" })).toBeTruthy();
-    expect(screen.getByText("Next 3 days")).toBeTruthy();
+    expect(screen.getAllByText("Next 3 days").length).toBeGreaterThan(0);
     expect(screen.getByText(/Initial disclosures/)).toBeTruthy();
     expect(screen.getByText(/UPS reply deadline/)).toBeTruthy();
-    expect(screen.getByText("opposing")).toBeTruthy();
+    expect(screen.getByText(/opposing/i)).toBeTruthy();
     expect(screen.getByRole("link", { name: "Matter 24" })).toHaveAttribute("href", "/matters/24");
   });
 
@@ -89,11 +101,38 @@ describe("NextActionsPanel", () => {
     const user = userEvent.setup();
     const seen = [];
     render(
-      <MemoryRouter>
-        <NextActionsPanel queue={queue} mineOnly={false} onMineOnlyChange={(value) => seen.push(value)} />
-      </MemoryRouter>,
+      <ThemeContext.Provider value={THEMES.dark}>
+        <MemoryRouter>
+          <NextActionsPanel queue={queue} mineOnly={false} onMineOnlyChange={(value) => seen.push(value)} />
+        </MemoryRouter>
+      </ThemeContext.Provider>,
     );
     await user.click(screen.getByLabelText("My desk only"));
     expect(seen).toEqual([true]);
+  });
+
+  it("empty state when nothing is dated, undated, or drifting", () => {
+    renderPanel({ horizonDays: 30, items: [], undated: [], gaps: [] });
+    expect(screen.getByText("Nothing dated in the next 30 days.")).toBeTruthy();
+    expect(screen.queryByText(/First Advantage/)).toBeNull();
+  });
+
+  it("keeps undated rows and expands a card without hiding the event", async () => {
+    const user = userEvent.setup();
+    renderPanel(queue);
+    expect(screen.getByText("Not on one calendar day")).toBeTruthy();
+    expect(screen.getByText(/Month-only service window/)).toBeTruthy();
+
+    const toggle = screen.getByRole("button", { name: /Initial disclosures/ });
+    expect(toggle).toHaveAttribute("aria-expanded", "false");
+    await user.click(toggle);
+    expect(toggle).toHaveAttribute("aria-expanded", "true");
+    expect(screen.getByText("Inferred from the event text — verify.")).toBeTruthy();
+  });
+
+  it("renders under the light theme tokens", () => {
+    renderPanel(queue, false, THEMES.light);
+    expect(screen.getByRole("heading", { name: "What’s next" })).toBeTruthy();
+    expect(screen.getByLabelText("My desk only")).toBeTruthy();
   });
 });

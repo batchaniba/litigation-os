@@ -1,18 +1,41 @@
+import { useState } from "react";
 import { Link } from "react-router";
+import { GOLD } from "../constants";
+import { useTheme } from "../ThemeContext";
 import { clipEvent, daysLabel } from "../utils/nextActionsView";
+import {
+  ContextNote,
+  ExpandChevron,
+  Eyebrow,
+  MatterBadge,
+  SANS,
+  SERIF,
+  SectionHeading,
+  StatusPill,
+  bodyText,
+  cardShell,
+  fieldLabel,
+} from "./ui/portfolioChrome";
+
+const RED = "#dc2626";
+const AMBER = "#d97706";
+const BLUE = "#0284c7";
+const SLATE = "#64748b";
+const GREEN = "#16a34a";
 
 const BANDS = [
-  ["overdue", "Past due"],
-  ["critical", "Next 3 days"],
-  ["soon", "This week"],
-  ["upcoming", "Next 30 days"],
+  ["overdue", "Past due", RED],
+  ["critical", "Next 3 days", AMBER],
+  ["soon", "This week", BLUE],
+  ["upcoming", "Next 30 days", SLATE],
 ];
 
-const ACTOR_LABEL = {
-  you: "your desk",
-  unknown: "your desk",
-  opposing: "opposing",
-  agency: "court / agency",
+const ACTOR_PILL = {
+  you: { color: GREEN, label: "Your desk" },
+  unknown: { color: GREEN, label: "Your desk" },
+  opposing: { color: SLATE, label: "Opposing" },
+  agency: { color: SLATE, label: "Court / agency" },
+  court: { color: SLATE, label: "Court / agency" },
 };
 
 function groupVisible(items, mineOnly) {
@@ -21,143 +44,393 @@ function groupVisible(items, mineOnly) {
     if (!mineOnly) return true;
     return item.actor === "you" || item.actor === "unknown";
   });
-  return BANDS.map(([key, label]) => ({
+  return BANDS.map(([key, label, color]) => ({
     key,
     label,
+    color,
     items: visible.filter((item) => item.urgency === key),
-  })).filter((band) => band.items.length > 0);
+  }));
+}
+
+function isYours(item) {
+  return item.actor === "you" || item.actor === "unknown";
 }
 
 export function NextActionsPanel({ queue, mineOnly, onMineOnlyChange }) {
+  const theme = useTheme();
   const bands = groupVisible(queue.items, mineOnly);
+  const populated = bands.filter((band) => band.items.length > 0);
   const gaps = queue.gaps ?? [];
-  const undated = (queue.undated ?? []).filter((item) => {
-    if (!mineOnly) return true;
-    return item.actor === "you" || item.actor === "unknown";
-  });
+  const undated = (queue.undated ?? []).filter((item) => (mineOnly ? isYours(item) : true));
+  const empty = populated.length === 0 && gaps.length === 0 && undated.length === 0;
 
   return (
-    <section className="dashboard-panel next-actions" aria-labelledby="next-actions-heading">
-      <div className="next-actions-header">
-        <h3 id="next-actions-heading" className="dashboard-heading">What’s next</h3>
-        <label className="next-actions-filter">
+    <section aria-labelledby="next-actions-heading" style={{ marginBottom: 36 }}>
+      <div
+        style={{
+          display: "flex",
+          flexWrap: "wrap",
+          alignItems: "flex-start",
+          justifyContent: "space-between",
+          gap: 16,
+          marginBottom: 28,
+        }}
+      >
+        <div>
+          <Eyebrow>Docket queue</Eyebrow>
+          <h2
+            id="next-actions-heading"
+            style={{ fontSize: 28, fontWeight: 700, color: theme.heading, margin: "0 0 6px" }}
+          >
+            What’s next
+          </h2>
+          <p
+            style={{
+              fontFamily: SANS,
+              fontSize: 13,
+              color: theme.mutedText,
+              margin: 0,
+              maxWidth: 620,
+            }}
+          >
+            Past due first, then the next {queue.horizonDays} days. Confirm against the docket
+            before relying on a date.
+          </p>
+        </div>
+        <label
+          style={{
+            display: "inline-flex",
+            alignItems: "center",
+            gap: 8,
+            fontFamily: SANS,
+            fontSize: 12,
+            fontWeight: 600,
+            color: theme.mutedText,
+            cursor: "pointer",
+            paddingTop: 6,
+          }}
+        >
           <input
             type="checkbox"
             checked={mineOnly}
             onChange={(event) => onMineOnlyChange(event.target.checked)}
+            style={{ accentColor: GOLD }}
           />
           My desk only
         </label>
       </div>
 
-      {bands.length === 0 && gaps.length === 0 && undated.length === 0 ? (
-        <p className="next-actions-empty">Nothing dated in the next {queue.horizonDays} days.</p>
+      <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginBottom: empty ? 16 : 32 }}>
+        {bands.map((band) => (
+          <SummaryPill
+            key={band.key}
+            label={band.label}
+            count={band.items.length}
+            color={band.color}
+            theme={theme}
+          />
+        ))}
+      </div>
+
+      {empty ? (
+        <div
+          style={{
+            background: theme.cardBg,
+            border: `1px solid ${theme.cardBorder}`,
+            borderRadius: 10,
+            padding: "18px 24px",
+            marginBottom: 24,
+            fontFamily: SANS,
+            fontSize: 13,
+            color: theme.mutedText,
+            lineHeight: 1.6,
+          }}
+        >
+          Nothing dated in the next {queue.horizonDays} days.
+        </div>
       ) : null}
 
-      {bands.map((band) => (
-        <div key={band.key} className={`next-actions-band is-${band.key}`}>
-          <h4 className="next-actions-band-label">{band.label}</h4>
-          <ul className="next-actions-list">
-            {band.items.map((item) => {
-              const matter = item.matters[0];
-              const inferred = item.actorSource === "inferred";
-              return (
-                <li key={`${item.dateKey}-${matter}-${item.event.slice(0, 40)}`} className="next-actions-item">
-                  <div className="next-actions-when">
-                    <span className="next-actions-date">{item.date}</span>
-                    <span className="next-actions-days">{daysLabel(item.daysOut)}</span>
-                  </div>
-                  <div className="next-actions-body">
-                    <p className="next-actions-event" title={item.event}>{clipEvent(item.event)}</p>
-                    <div className="next-actions-meta">
-                      {matter != null ? (
-                        <Link className="next-actions-matter" to={`/matters/${matter}`}>
-                          Matter {matter}
-                        </Link>
-                      ) : null}
-                      <span className="next-actions-action">{item.action}</span>
-                      <span
-                        className={`next-actions-actor is-${item.actor}`}
-                        title={inferred ? "Inferred from the event text — verify" : undefined}
-                      >
-                        {ACTOR_LABEL[item.actor] ?? item.actor}
-                        {inferred ? " · inferred" : null}
-                      </span>
-                      {item.source ? (
-                        <a className="next-actions-source" href={item.source} target="_blank" rel="noreferrer">
-                          source PDF
-                        </a>
-                      ) : null}
-                      {item.verified_at ? (
-                        <span className="next-actions-verified" title={`Source: ${item.source_type || "unknown"} · Confidence: ${item.confidence || "unknown"}`}>
-                          verified {item.verified_at}
-                        </span>
-                      ) : null}
-                      {item.precedentPeers?.length ? (
-                        <span className="next-actions-peers">
-                          also{" "}
-                          {item.precedentPeers.map((peer, index) => (
-                            <span key={peer}>
-                              {index > 0 ? ", " : null}
-                              <Link to={`/matters/${peer}`}>M{peer}</Link>
-                            </span>
-                          ))}
-                        </span>
-                      ) : null}
-                    </div>
-                  </div>
-                </li>
-              );
-            })}
-          </ul>
-        </div>
+      {populated.map((band) => (
+        <BandSection
+          key={band.key}
+          headingId={`next-actions-band-${band.key}`}
+          label={band.label}
+          color={band.color}
+          count={band.items.length}
+        >
+          {band.items.map((item) => (
+            <ActionCard
+              key={`${item.dateKey}-${item.matters[0]}-${item.event.slice(0, 40)}`}
+              item={item}
+              color={band.color}
+              theme={theme}
+            />
+          ))}
+        </BandSection>
       ))}
 
       {undated.length > 0 ? (
-        <div className="next-actions-band is-undated">
-          <h4 className="next-actions-band-label">Not on one calendar day</h4>
-          <ul className="next-actions-list">
-            {undated.map((item) => (
-              <li key={`${item.date}-${item.event.slice(0, 40)}`} className="next-actions-item">
-                <div className="next-actions-when">
-                  <span className="next-actions-date">{item.date}</span>
-                </div>
-                <p className="next-actions-event" title={item.event}>{clipEvent(item.event)}</p>
-              </li>
-            ))}
-          </ul>
-        </div>
+        <BandSection
+          headingId="next-actions-band-undated"
+          label="Not on one calendar day"
+          color={GOLD}
+          count={undated.length}
+        >
+          {undated.map((item) => (
+            <ActionCard
+              key={`${item.date}-${item.event.slice(0, 40)}`}
+              item={item}
+              color={GOLD}
+              theme={theme}
+            />
+          ))}
+        </BandSection>
       ) : null}
 
       {gaps.length > 0 ? (
-        <div className="next-actions-gaps">
-          <h4 className="dashboard-subheading">No dated next step</h4>
-          <p className="next-actions-gaps-copy">
-            Active or pre-filing matters with nothing on the calendar. These are drifting.
-          </p>
-          <ul className="next-actions-gap-list">
-            {gaps.map((gap) => (
-              <li key={gap.number}>
-                <Link className="next-actions-gap" to={`/matters/${gap.number}`}>
-                  <span className="dashboard-matter-badge">Matter {gap.number}</span>
-                  <span className="next-actions-gap-caption">
-                    {gap.caption}
-                    {gap.case_no ? ` (${gap.case_no})` : ""}
-                  </span>
-                  {gap.status_label ? (
-                    <span className="next-actions-gap-status">{gap.status_label}</span>
-                  ) : null}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </div>
+        <BandSection
+          headingId="next-actions-band-gaps"
+          label="No dated next step"
+          color={GOLD}
+          count={gaps.length}
+          unit="matters"
+          intro={
+            <p
+              style={{
+                fontFamily: SANS,
+                fontSize: 13,
+                color: theme.mutedText,
+                margin: "0 0 14px",
+                lineHeight: 1.6,
+              }}
+            >
+              Active or pre-filing matters with nothing on the calendar. These are drifting.
+            </p>
+          }
+        >
+          {gaps.map((gap) => (
+            <GapCard key={gap.number} gap={gap} theme={theme} />
+          ))}
+        </BandSection>
       ) : null}
 
-      <p className="next-actions-caveat">
+      <ContextNote theme={theme} title="On the calendar">
         Dates as recorded in the portfolio. Confirm against the docket before relying on one.
-        Same ranking as <code>npm run next</code>.
-      </p>
+        Same ranking as <code style={{ fontSize: "0.95em" }}>npm run next</code>.
+      </ContextNote>
     </section>
+  );
+}
+
+function SummaryPill({ label, count, color, theme }) {
+  return (
+    <div
+      style={{
+        background: theme.cardBg,
+        border: `1px solid ${color}44`,
+        borderRadius: 10,
+        padding: "16px 24px",
+        borderTop: `3px solid ${color}`,
+      }}
+    >
+      <div
+        style={{
+          fontFamily: SANS,
+          fontSize: 9,
+          fontWeight: 700,
+          letterSpacing: 3,
+          textTransform: "uppercase",
+          color,
+          marginBottom: 6,
+        }}
+      >
+        {label}
+      </div>
+      <div
+        style={{
+          fontFamily: SERIF,
+          fontSize: 32,
+          fontWeight: 700,
+          color: theme.heading,
+          lineHeight: 1,
+        }}
+      >
+        {count}
+      </div>
+    </div>
+  );
+}
+
+function BandSection({ headingId, label, color, count, unit, intro, children }) {
+  return (
+    <div style={{ marginBottom: 32 }}>
+      <SectionHeading label={label} color={color} count={count} unit={unit} headingId={headingId} />
+      {intro}
+      <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>{children}</div>
+    </div>
+  );
+}
+
+function ActionCard({ item, color, theme }) {
+  const [open, setOpen] = useState(false);
+  const matter = item.matters?.[0];
+  const inferred = item.actorSource === "inferred";
+  const actor = ACTOR_PILL[item.actor] ?? { color: SLATE, label: item.actor };
+  const compact = String(item.event ?? "").replace(/\s+/g, " ").trim();
+  const clipped = clipEvent(item.event);
+  const actorTitle = inferred ? "Inferred from the event text — verify" : undefined;
+  const actorText = inferred ? `${actor.label} · inferred` : actor.label;
+
+  return (
+    <div style={cardShell(theme, { open, color })}>
+      <div style={{ display: "flex", alignItems: "stretch" }}>
+        <div style={{ display: "flex", alignItems: "center", padding: "18px 0 18px 24px" }}>
+          <MatterBadge
+            className="next-actions-matter"
+            matter={matter}
+            color={color}
+            to={matter != null ? `/matters/${matter}` : undefined}
+          />
+        </div>
+        <button
+          type="button"
+          className="next-actions-expand"
+          onClick={() => setOpen((value) => !value)}
+          aria-expanded={open}
+          style={{
+            flex: 1,
+            minWidth: 0,
+            padding: "18px 24px 18px 18px",
+            cursor: "pointer",
+            display: "flex",
+            alignItems: "center",
+            gap: 18,
+            flexWrap: "wrap",
+            background: "transparent",
+            border: "none",
+            textAlign: "left",
+            color: "inherit",
+            font: "inherit",
+            lineHeight: "inherit",
+          }}
+        >
+          <div style={{ flex: 1, minWidth: 200 }}>
+            <div style={{ fontSize: 16, fontWeight: 700, color: theme.heading, marginBottom: 3 }}>
+              {clipped}
+            </div>
+            <div style={{ fontFamily: SANS, fontSize: 12, color: theme.subtleText }}>
+              {item.daysOut != null ? daysLabel(item.daysOut) : "Not a single calendar day"}
+            </div>
+          </div>
+          <StatusPill color={color}>{item.action}</StatusPill>
+          <StatusPill color={actor.color} title={actorTitle}>
+            {actorText}
+          </StatusPill>
+          <div
+            style={{
+              fontFamily: SANS,
+              fontSize: 12,
+              color: theme.mutedText,
+              whiteSpace: "nowrap",
+            }}
+          >
+            {item.date}
+          </div>
+          <ExpandChevron open={open} theme={theme} />
+        </button>
+      </div>
+
+      {open ? (
+        <div style={{ padding: "0 24px 24px", borderTop: `1px solid ${theme.cardBorder}` }}>
+          <div style={{ paddingTop: 18 }}>
+            <div style={fieldLabel}>Event</div>
+            <p style={{ ...bodyText(theme), lineHeight: 1.7 }}>{compact}</p>
+            {inferred ? (
+              <>
+                <div style={fieldLabel}>Actor</div>
+                <p style={bodyText(theme)}>
+                  {actor.label}. Inferred from the event text — verify.
+                </p>
+              </>
+            ) : null}
+            {item.source ? (
+              <>
+                <div style={fieldLabel}>Source</div>
+                <p style={bodyText(theme)}>
+                  <a
+                    href={item.source}
+                    target="_blank"
+                    rel="noreferrer"
+                    style={{ color: GOLD, fontWeight: 600, textDecoration: "none" }}
+                  >
+                    source PDF
+                  </a>
+                </p>
+              </>
+            ) : null}
+            {item.verified_at ? (
+              <>
+                <div style={fieldLabel}>Verified</div>
+                <p
+                  style={bodyText(theme)}
+                  title={`Source: ${item.source_type || "unknown"} · Confidence: ${item.confidence || "unknown"}`}
+                >
+                  verified {item.verified_at}
+                </p>
+              </>
+            ) : null}
+            {item.precedentPeers?.length ? (
+              <>
+                <div style={fieldLabel}>Also</div>
+                <p style={bodyText(theme)}>
+                  {item.precedentPeers.map((peer, index) => (
+                    <span key={peer}>
+                      {index > 0 ? ", " : null}
+                      <Link
+                        to={`/matters/${peer}`}
+                        style={{ color: GOLD, fontWeight: 700, textDecoration: "none" }}
+                      >
+                        M{peer}
+                      </Link>
+                    </span>
+                  ))}
+                </p>
+              </>
+            ) : null}
+          </div>
+        </div>
+      ) : null}
+    </div>
+  );
+}
+
+function GapCard({ gap, theme }) {
+  return (
+    <Link
+      to={`/matters/${gap.number}`}
+      className="next-actions-gap"
+      aria-label={`Matter ${gap.number}${gap.caption ? `: ${gap.caption}` : ""}`}
+      style={{
+        ...cardShell(theme, { color: GOLD }),
+        display: "flex",
+        alignItems: "center",
+        gap: 18,
+        flexWrap: "wrap",
+        padding: "18px 24px",
+        textDecoration: "none",
+        color: "inherit",
+      }}
+    >
+      <MatterBadge matter={gap.number} color={GOLD} />
+      <div style={{ flex: 1, minWidth: 200 }}>
+        <div style={{ fontSize: 16, fontWeight: 700, color: theme.heading, marginBottom: 3 }}>
+          {gap.caption}
+        </div>
+        <div style={{ fontFamily: SANS, fontSize: 12, color: theme.subtleText }}>
+          {gap.case_no || "No case number yet"}
+        </div>
+      </div>
+      {gap.status_label ? <StatusPill color={GOLD}>{gap.status_label}</StatusPill> : null}
+    </Link>
   );
 }
