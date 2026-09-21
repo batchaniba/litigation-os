@@ -22,7 +22,7 @@ month; a handful of Vercel builds would exhaust it.
 | `internal/src/data/documents/manifest.json` | Physical inventory: path → size + sha256 |
 | `internal/public/documents/README.md` | How to pull / push the store |
 | `internal/public/short-links.json` | Phone-tap slugs |
-| `internal/public/{slug}.pdf` | Vercel-hosted tap copies — keep until R2 returns 200 |
+| `internal/public/{slug}.pdf` | Hosted tap copies (Vercel production; Pages `*.pages.dev` in Phase 1) — keep until R2 returns 200 |
 
 ## Working set — do not pull the whole room
 
@@ -94,7 +94,10 @@ npm run documents:push
 
 Vercel rewrites `/documents/:path*` to
 `https://litigation-doc-api.ss8sxswwkt.workers.dev/documents/:path*`.
-That returns PDF bytes only after the Worker is deployed with this path
+Cloudflare Pages cannot 200-proxy that external origin from `_redirects`
+(same-origin only — see `internal/docs/CLOUDFLARE_PAGES.md`); Phase 1 uses
+`functions/documents/[[path]].js` plus `_routes.json` instead. That returns
+PDF bytes only after the Worker is deployed with this path
 route **and** the path index is in R2. Phone taps stay as
 `internal/public/{slug}.pdf` copies until that origin returns HTTP 200
 for the Serrato FAC and a current mailing packet. Do not point them at

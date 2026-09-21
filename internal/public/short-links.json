@@ -1,5 +1,5 @@
 {
-  "doc": "Phone-tappable PDF links. Vercel rejects some court-style paths as redirect destinations (parentheses, especially '(b)'). Serve an identical copy at /{slug}.pdf and set Content-Disposition to the portfolio filename so Save As keeps the long name. After editing this file run: node internal/scripts/sync-short-links.mjs",
+  "doc": "Phone-tappable PDF links. Vercel rejects some court-style paths as redirect destinations (parentheses, especially '(b)'). Serve an identical copy at /{slug}.pdf and set Content-Disposition to the portfolio filename so Save As keeps the long name. After editing this file run: node internal/scripts/sync-short-links.mjs (writes vercel.json and Pages _redirects/_headers/_routes.json from this catalog — do not hand-maintain a second list).",
   "links": [
     {
       "slug": "fedex-consent",

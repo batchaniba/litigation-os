@@ -31,9 +31,12 @@ function copyPublicExceptDocuments() {
 // dist/version.json records which commit a deployment was built from. The
 // scheduled deploy worker (internal/workers/vercel-deploy-cron/) compares it
 // with main's HEAD and only fires the Deploy Hook when production is behind.
-// Vercel exposes the SHA in env; local builds ask git. GITHUB_SHA is a leftover fallback.
+// Vercel exposes the SHA in env; Cloudflare Pages injects CF_PAGES_COMMIT_SHA
+// (https://developers.cloudflare.com/pages/configuration/build-configuration/).
+// Local builds ask git. GITHUB_SHA is a leftover fallback.
 function buildCommitInfo() {
   const sha =
+    process.env.CF_PAGES_COMMIT_SHA ||
     process.env.VERCEL_GIT_COMMIT_SHA ||
     process.env.GITHUB_SHA ||
     (() => {
@@ -43,7 +46,11 @@ function buildCommitInfo() {
         return null
       }
     })()
-  const ref = process.env.VERCEL_GIT_COMMIT_REF || process.env.GITHUB_REF_NAME || null
+  const ref =
+    process.env.CF_PAGES_BRANCH ||
+    process.env.VERCEL_GIT_COMMIT_REF ||
+    process.env.GITHUB_REF_NAME ||
+    null
   return { sha, ref, builtAt: new Date().toISOString() }
 }
 
@@ -59,9 +66,11 @@ function writeVersionJson() {
   }
 }
 
-// GitHub Pages serves this as a project site at /interactive-litigation-portfolio/,
-// while Vercel serves it from the domain root. The GH Pages workflow sets
-// GITHUB_PAGES=true at build time; Vercel builds leave it unset.
+// GitHub Pages (if ever rebuilt) would serve this as a project site at
+// /interactive-litigation-portfolio/. Vercel production and Cloudflare Pages
+// (Phase 1: interactive-litigation-portfolio.pages.dev) both serve from `/`.
+// The old GH Pages workflow set GITHUB_PAGES=true; leave it unset on Vercel
+// and Cloudflare Pages. See internal/docs/CLOUDFLARE_PAGES.md.
 export default defineConfig({
   plugins: [
     react({ jsxRuntime: 'automatic' }),

@@ -118,7 +118,9 @@ Laptop replacements (never paste keys into chat; other AIs get the Worker URL, n
 - Dependencies: `npm run deps:outdated` / `npm run deps:update` (do not restore Dependabot; it runs on Actions runners). Optional PR factory is the Mend Renovate GitHub App + `.github/renovate.json`, not a workflow.
 
 Production deploys are the Vercel Deploy Hook from the Cloudflare cron, not
-per-push; see `internal/docs/VERCEL_DEPLOYS.md`.
+per-push; see `internal/docs/VERCEL_DEPLOYS.md`. Phase 1 Cloudflare Pages
+scaffolding (`interactive-litigation-portfolio.pages.dev`) is smoke-only and
+does not retarget that cron; see `internal/docs/CLOUDFLARE_PAGES.md`.
 
 ## Runtime boundary: Python vs Node
 

@@ -46,6 +46,20 @@ export default tseslint.config(
     },
   },
 
+  // Cloudflare Pages Functions (Workers runtime).
+  {
+    files: ["functions/**/*.js"],
+    extends: [js.configs.recommended],
+    languageOptions: {
+      ecmaVersion: 2022,
+      sourceType: "module",
+      globals: { ...globals.worker, ...globals.serviceworker },
+    },
+    rules: {
+      "no-unused-vars": ["error", { argsIgnorePattern: "^_", varsIgnorePattern: "^_" }],
+    },
+  },
+
   // Node: build, sync, and portfolio-validation scripts.
   {
     files: ["internal/scripts/**/*.mjs", "*.config.js", "*.config.mjs"],
