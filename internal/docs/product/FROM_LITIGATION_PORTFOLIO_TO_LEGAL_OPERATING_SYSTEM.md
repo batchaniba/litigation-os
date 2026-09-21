@@ -288,3 +288,112 @@ Extract reusable packages without moving live litigation data:
 - UI component system
 
 **P2-E Court model de-typing** *(added by audit)* — `CourtKey` is a closed union of six courts and the holiday tables are keyed to the same six, so adding a court is a type change rather than a configuration row. Convert it to a `courts` table and make `matter.court` a foreign key instead of free text. This is the smallest change that makes the deadline engine — the strongest transferable asset here — usable by a second tenant, and it precedes the blank-workspace prototype. See "Two current defects to fix during migration, not after."
+
+**Acceptance:** A new blank workspace can create a matter, ingest documents, extract deadlines, and preserve an audit trail without importing the Newanforbi portfolio — and a court the portfolio does not litigate in can be added without a code change.
+
+### P3 — Multi-user pilot
+
+**P3.0 Professional-responsibility layer** *(added by audit — precedes any pilot)*
+
+The technical list below is close to complete. The professional list is missing entirely, and no amount of infrastructure substitutes for it:
+
+- Conflicts checking before a matter is created, with an attestation record
+- Ethical walls enforced by permissions, not convention
+- A reviewed position on the unauthorized-practice-of-law boundary — this is the reason self-represented litigants are a hazardous first segment rather than an obvious one
+- Legal hold, retention, and deletion controls per tenant
+- A documented malpractice / errors-and-omissions posture
+
+Also note a capability that should **not** generalize: opposing-counsel dossiers under `internal/docs/counsel/` are legitimate research for one pro-se litigant, but as a multi-tenant feature they become cross-firm intelligence aggregation, carrying privacy, reputational, and possibly ethical exposure. Keep them portfolio-specific.
+
+Then build the minimum secure product layer:
+
+- Authentication
+- Organizations and workspaces
+- Matter-level permissions
+- Tenant-isolated database and object storage
+- Encryption and secrets management
+- Immutable audit logs
+- Retention and deletion controls
+- Background-job retries
+- Schema migrations
+- Error reporting
+- Human approval boundaries
+
+Pilot with two or three serious users.
+
+Measure:
+
+- Time to create a matter
+- Deadlines caught
+- Classification accuracy
+- Documents successfully ingested
+- Agent recommendations accepted
+- Corrections required
+- Weekly retained use
+
+## Product data architecture
+
+The product should use a database and object storage rather than Git as the customer runtime:
+
+- PostgreSQL for normalized matter records, permissions, events, deadlines, document metadata, and audit state
+- Object storage for original documents and generated artifacts
+- Background queues for extraction, OCR, citation work, synchronization, and agent jobs
+- Search index for document text and matter retrieval
+- Typed API or operation layer for all writes
+- Git retained for code, schemas, migrations, policy definitions, fixtures, and the reference portfolio
+
+## Recommended product stack
+
+P3 is a private design-partner workspace. P4 is the same spine once someone pays. Neither is the next 30 days (P0). Do not stand up this stack to run an R2 coverage check.
+
+### Stack summary (locked)
+
+Locked choices from the maturity audit for the P3/P4 product path. The detailed tables below remain the working design notes; when they disagree with this summary, this summary wins.
+
+One-liner: **Cloudflare (Pages + Workers + Queues + R2) · Postgres+RLS (Neon or Hyperdrive) · Clerk/WorkOS · Stripe · Sentry · typed AI review queue** — portfolio Git remains the gold-sample, not the multi-tenant store.
+
+| Layer | Choice | Why |
+| --- | --- | --- |
+| Compute / API | Cloudflare Workers (+ Queues / Cron Triggers) | Already run doc-api, portfolio-gate, deploy cron |
+| Object storage | R2 with per-tenant prefix `tenants/{id}/sha256/…` | Content-addressed model already trusted |
+| Relational DB | Postgres with RLS — prefer **Neon** or **Hyperdrive → Postgres** (D1 only for publish cache, not multi-tenant SoR) | Orgs, matters, clocks, audit, conflicts |
+| Auth | Clerk or WorkOS | Small employment firms; don't build auth |
+| Private web | Vite/React → Cloudflare Pages | Phase 1 already pointed here |
+| Public site | Same Pages project, publish projection only (#901 strip) | Separate routes/host if needed |
+| Search | Postgres FTS + R2 text sidecars first; Vectorize/OpenSearch later only if needed | Don't buy Elastic on day one |
+| Jobs | Cloudflare Queues + Consumers + DLQ | ingest, OCR, cite, docket sync |
+| OCR / extract | Keep existing extract pipeline; paid OCR only for scans (Azure Document Intelligence or Google Document AI) | |
+| Docket sync | CourtListener (keep) + manual upload | |
+| AI | Typed ops over mutate-style API; Workers AI and/or one frontier API behind a review queue — **no product chat box** | |
+| Email | Resend or Postmark | |
+| Observability | Cloudflare Analytics + Sentry + structured Worker logs | |
+| Billing (P4) | Stripe | |
+| E&O / compliance | Counsel-drafted policies before any tenant PII | P4-00 gate |
+
+**Portfolio-only forever:** live Newanforbi Git tree as reference; counsel dossiers; plaintiff-first stipulation locks; matter-specific pleading generators; public adversarial storytelling as *your* site, not the product default.
+
+**Explicitly not needed for P3/P4:** Clio/MyCase dependency; Kubernetes / full AWS; replacing R2 with S3 "for enterprise"; a second monorepo rewrite before package extract works.
+
+**Sequencing:** P3 packages + blank tenant on Postgres+R2 while portfolio stays on Git → P4-00 professional-responsibility layer → P4-01 orgs + RLS + per-tenant R2 + immutable audit → P4-02 pilots with 2–3 employment plaintiff firms.
+
+Decision rules:
+
+- Cloudflare is the edge, object store, jobs, and merge gate. It is not the system of record for tenants.
+- Git stays the Newanforbi laboratory. Customer data never lands in this repository.
+- Writes go through typed operations and human approval. The product interface is not a chatbot.
+- No `.github/workflows/` in this repository. Remote CI remains `workers/portfolio-gate/` under the locked Check Run name `portfolio-gate`.
+- Counsel dossiers, the public versus header, and the pleading generators stay portfolio-only.
+
+### P3 — pilot stack (2–3 users; synthetic documents, then one firm)
+
+Use Cloudflare as the infrastructure spine, not as the entire application platform. Preserve the current Vercel deployment during the pilot; migration is justified only when operating simplicity or cost clearly improves.
+
+| Layer | P3 pick | Responsibility | Scale trigger |
+| --- | --- | --- | --- |
+| Public site | Existing React/Vite app on Vercel | Current portfolio origin; no Pages migration | Move only if consolidating onto Cloudflare materially reduces complexity |
+| Operator app | Same Vite/React codebase, separate origin + Clerk session (`app.` vs public host) | Authenticated workspace; split shells, not a rewrite | — |
+| Edge API | Cloudflare Workers on the `litigation-doc-api` lineage | Authorization, signed R2 URLs, webhooks, rate limits, MCP gateway | Split services only when deploy or reliability boundaries demand it |
+| Merge / CI | Existing `ilp-portfolio-gate` Containers + required Check Run `portfolio-gate` | Same steps as `pre-push`. Do **not** add GitHub Actions | Raise container concurrency when PRs queue, not by adding Actions |
+| Document storage | R2 buckets `litigation-documents-prod` and `…-staging`; tenant prefix `t/{orgId}/sha256/…` | Originals, OCR text, sidecars, exports. Upload-only, never deletes | Second backup target before external customer data |
+| Product database | Neon Postgres (RDS Postgres acceptable later) | Orgs, members, matters, permissions, clocks, evidence links, document metadata, approvals, audit. PITR on | Read replicas and pooling when connections or isolation demand it |
+| Public / lightweight index | Cloudflare D1 (keep) | Current publish projection (`publishMatter`) and public document API | Never the sole source of truth for a permissions-heavy product |
