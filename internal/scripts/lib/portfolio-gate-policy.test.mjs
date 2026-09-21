@@ -1,6 +1,7 @@
 import { describe, expect, it } from "vitest";
 import { runPortfolioGate } from "../portfolio-gate.mjs";
 import {
+  checkNodeVersion,
   checkPrerequisites,
   decideHookAction,
   EMERGENCY_BYPASS,
@@ -140,6 +141,43 @@ describe("checkPrerequisites / disk-docs mode", () => {
     });
     expect(message).toMatch(/npm install/);
     expect(message).toMatch(/npm run gate/);
+  });
+
+  it("refuses a Node major below engines.node before any step runs", () => {
+    const { ok, message } = checkPrerequisites({
+      nodeModulesExists: true,
+      python3Available: true,
+      nodeVersion: "20.20.1",
+      enginesRange: ">=22.22.0",
+      nvmrcVersion: "22.22.2",
+    });
+    expect(ok).toBe(false);
+    expect(message).toMatch(/20\.20\.1/);
+    expect(message).toMatch(/22\.22\.0/);
+    expect(message).toMatch(/nvm use/);
+  });
+
+  it("wins over node_modules so a wrong Node is reported first", () => {
+    const { message } = checkPrerequisites({
+      nodeModulesExists: false,
+      python3Available: true,
+      nodeVersion: "20.20.1",
+      enginesRange: ">=22.22.0",
+    });
+    expect(message).toMatch(/engines\.node/);
+    expect(message).not.toMatch(/npm install/);
+  });
+
+  it("accepts the declared major and anything newer", () => {
+    for (const nodeVersion of ["22.22.0", "22.22.2", "24.0.0"]) {
+      expect(checkNodeVersion({ nodeVersion, enginesRange: ">=22.22.0" }).ok).toBe(true);
+    }
+  });
+
+  it("does not enforce when the range or version is unreadable", () => {
+    expect(checkNodeVersion({ nodeVersion: "20.20.1", enginesRange: undefined }).ok).toBe(true);
+    expect(checkNodeVersion({ nodeVersion: undefined, enginesRange: ">=22.22.0" }).ok).toBe(true);
+    expect(checkPrerequisites({ nodeModulesExists: true, python3Available: true }).ok).toBe(true);
   });
 
   it("auto-selects manifest mode when no matter-* PDF tree is present", () => {

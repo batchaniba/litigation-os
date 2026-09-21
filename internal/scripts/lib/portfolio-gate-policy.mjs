@@ -111,7 +111,56 @@ export function decideHookAction({ lines, skipValue }) {
   return { action: "run", reason: "gate required" };
 }
 
-export function checkPrerequisites({ nodeModulesExists, python3Available }) {
+/**
+ * Lowest Node major that satisfies an `engines.node` range such as ">=22.22.0".
+ * Returns null when the range cannot be read, so a malformed field degrades to
+ * "do not enforce" rather than refusing every run.
+ */
+export function minimumNodeMajor(enginesRange) {
+  const match = String(enginesRange ?? "").match(/(\d+)/);
+  return match ? Number(match[1]) : null;
+}
+
+export function nodeMajor(version) {
+  const match = String(version ?? "").match(/(\d+)/);
+  return match ? Number(match[1]) : null;
+}
+
+/**
+ * The unit suite runs in jsdom, which throws
+ * `webidl.util.markAsUncloneable is not a function` on Node majors below the
+ * declared engine. That surfaces as 52 unhandled errors and "no tests" — a
+ * false catastrophic failure rather than an honest one. Refuse early instead.
+ */
+export function checkNodeVersion({ nodeVersion, enginesRange, nvmrcVersion }) {
+  const required = minimumNodeMajor(enginesRange);
+  const actual = nodeMajor(nodeVersion);
+  if (required === null || actual === null || actual >= required) {
+    return { ok: true, message: "" };
+  }
+  const pin = nvmrcVersion ? ` (.nvmrc pins ${nvmrcVersion})` : "";
+  return {
+    ok: false,
+    message:
+      `portfolio-gate: Node ${nodeVersion} does not satisfy engines.node ` +
+      `"${enginesRange}"${pin}. The jsdom unit suite reports "no tests" plus ` +
+      `unhandled webidl errors on older majors, so gate results would be ` +
+      `misleading. Run \`nvm use\`, then npm run gate.`,
+  };
+}
+
+export function checkPrerequisites({
+  nodeModulesExists,
+  python3Available,
+  nodeVersion,
+  enginesRange,
+  nvmrcVersion,
+}) {
+  // Version first: a wrong Node major makes every later step untrustworthy.
+  const node = checkNodeVersion({ nodeVersion, enginesRange, nvmrcVersion });
+  if (!node.ok) {
+    return node;
+  }
   if (!nodeModulesExists) {
     return {
       ok: false,
