@@ -204,6 +204,9 @@ without Docker.
 
 ## Files
 
+<!-- smoke-test: verify portfolio-gate check run -->
+
+
 | Path | Role |
 |---|---|
 | `src/index.mjs` | Worker `fetch` + exported `GateRunner` class |
