@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "fileCount": 1522,
-  "totalBytes": 979978011,
+  "fileCount": 1530,
+  "totalBytes": 1006479683,
   "files": [
     {
       "path": "/documents/_form-library/ao239-blank-template.pdf",
@@ -754,6 +754,26 @@
       "sha256": "79dcc2f7aa89815448ccce030fae24ee98f80af55704865ec4670173252de666"
     },
     {
+      "path": "/documents/matter-05/1032_Declaration.pdf",
+      "size": 1036744,
+      "sha256": "142db5af1515b51d505d4dd832a5435fac056f29fdb9327e70709555403d9e66"
+    },
+    {
+      "path": "/documents/matter-05/1032_Evidentiary_Objection.pdf",
+      "size": 879507,
+      "sha256": "b284929003754dca1cca22be0b44f20e1b03bdbae53cc91aacb723c3bcc83c93"
+    },
+    {
+      "path": "/documents/matter-05/1032_Opposition.pdf",
+      "size": 2956810,
+      "sha256": "42c79e85e0c4fe49fa1de06c5ca5945580630a9cf8c88d4834aec6ed03f582f2"
+    },
+    {
+      "path": "/documents/matter-05/1032_Plaintiffs_Request_for_Judicial_Notice.pdf",
+      "size": 13486526,
+      "sha256": "4219f41d7017fde661503e36dfb93329d663f5092705e74852c6105abf2ad046"
+    },
+    {
       "path": "/documents/matter-05/BBS Complaint Palacios LMFT 44555.pdf",
       "size": 360521,
       "sha256": "ee882927ef72b55b208416234bcf205abc59c7f71427514fafecdc44b7190a2c"
@@ -827,6 +847,11 @@
       "path": "/documents/matter-05/FAC_STK-CV-UF-2026-1032.pdf",
       "size": 211364,
       "sha256": "16b68957649f578e4b43c5eacdab3fc643d25f734cf640895a653419c6c9085d"
+    },
+    {
+      "path": "/documents/matter-05/FAC_STKCVUF20261032.pdf",
+      "size": 3441435,
+      "sha256": "9d45361160a7a611919ac6332e7176afb9cc99e15d1da1dd085194d8f361cde5"
     },
     {
       "path": "/documents/matter-05/Fee Waiver - Newanforbi v. Palacios, et al..pdf",
@@ -3319,6 +3344,11 @@
       "sha256": "d9b4df35415f0ce6c810096043094541ff6aa3aec0f27b95eb148d04d9491bdd"
     },
     {
+      "path": "/documents/matter-28/evidence/Discharge_Review_Report.pdf",
+      "size": 757513,
+      "sha256": "cad3afb94b84c34f9103752f6bd72b5812d0f50b87745d706304ed8cffc44bd5"
+    },
+    {
       "path": "/documents/matter-28/Exhibit A Cover - ECF Help Desk - Smith (N.D. Cal. 3-26-cv-07504-LJC) (September 14, 2026).pdf",
       "size": 2074,
       "sha256": "4c40c246aee5e553320acd2eefb71c8685b6fac07fb80676df5e16a0c86a88ae"
@@ -3487,6 +3517,16 @@
       "path": "/documents/matter-28/Renewed Motion Protective Order NDCA (cite-corrected draft).pdf",
       "size": 31376,
       "sha256": "ab076273ddb8d658c81785f21b897af373f741ed4704ca75d0e67e81df6ed1fd"
+    },
+    {
+      "path": "/documents/matter-28/research/2024092402EONSOTApproval.pdf",
+      "size": 1393719,
+      "sha256": "e7711565b7caa89e45988dcb61fe61cc15f93897254ef2c28d298edbd620cee4"
+    },
+    {
+      "path": "/documents/matter-28/research/AdoptedRegulationsSexOffenderTreatment002.pdf",
+      "size": 2549418,
+      "sha256": "84c17b27eeb67a98f6cb1e358fde79c0a42424659c3f1c48d66673f80f1ea018"
     },
     {
       "path": "/documents/matter-28/research/Cal. Code Regs. Tit. 15 sec. 3574 - Sex Offender Treatment.pdf",

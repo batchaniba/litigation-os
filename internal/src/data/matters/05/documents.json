@@ -135,5 +135,40 @@
   {
     "path": "/documents/matter-05/Tentative Ruling on Demurrer RTF - Jul 10 2026.pdf",
     "filed": true
+  },
+  {
+    "path": "/documents/matter-05/FAC_STKCVUF20261032.pdf",
+    "filed": true
+  },
+  {
+    "path": "/documents/matter-05/1032_Opposition.pdf",
+    "filed": true
+  },
+  {
+    "path": "/documents/matter-05/1032_Declaration.pdf",
+    "filed": true
+  },
+  {
+    "path": "/documents/matter-05/1032_Evidentiary_Objection.pdf",
+    "filed": true
+  },
+  {
+    "path": "/documents/matter-05/1032_Plaintiffs_Request_for_Judicial_Notice.pdf",
+    "filed": true
+  },
+  {
+    "path": "/documents/matter-28/research/AdoptedRegulationsSexOffenderTreatment002.pdf",
+    "filed": false,
+    "label": "OAL Certificate of Compliance — 15 CCR § 3574 (cross-link from Matter 28 research)"
+  },
+  {
+    "path": "/documents/matter-28/research/2024092402EONSOTApproval.pdf",
+    "filed": false,
+    "label": "OAL emergency SOT approval (Sept. 24, 2024) — cross-link from Matter 28 research"
+  },
+  {
+    "path": "/documents/matter-28/evidence/Discharge_Review_Report.pdf",
+    "filed": false,
+    "label": "CDCR Form 1502-DR Discharge Review Report — BF3571 Newanforbi (Matter 28 evidence copy)"
   }
 ]
