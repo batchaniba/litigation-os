@@ -83,6 +83,7 @@ Live source survey (controls, star pagination, cliffs, traps): `internal/docs/CI
 | `internal/docs/citation_known_bad_debt.json` | Allowed pre-existing fabrications |
 | `internal/docs/citation_audit.json` | July + Matter 28 hand audit |
 | `internal/docs/MATTER_28_SAFE_CITE_LIST.md` | Matter 28 page-keyed safe/do-not-use |
+| `internal/docs/WESTLAW_PORTFOLIO_QUEUE.md` | Unique KeyCite queue (20-view sessions). `python3 internal/scripts/build-westlaw-queue.py` |
 | `internal/docs/citation_verification_sources.json` | Case-law source catalog (wired / opt-in / gap) |
 | `internal/docs/CITATION_SOURCE_SURVEY.md` | Live free-source survey (2026-09-19) |
 | `internal/docs/WESTLAW_PATRON_ACCESS.md` | Library remote door + session hygiene |

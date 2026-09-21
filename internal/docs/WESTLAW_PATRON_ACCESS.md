@@ -94,6 +94,8 @@ handling existence + pin verification from free sources.
 7. **Feed results back** into the matter's verification notes so the next draft
    doesn't re-check the same cases.
 
+See also: the live portfolio KeyCite queue — [`WESTLAW_PORTFOLIO_QUEUE.md`](WESTLAW_PORTFOLIO_QUEUE.md) and the printable [`WESTLAW_PORTFOLIO_QUEUE.pdf`](WESTLAW_PORTFOLIO_QUEUE.pdf) (`python3 internal/scripts/build-westlaw-queue.py && python3 internal/scripts/render-westlaw-queue-pdf.py`).
+
 ## Provenance
 
 - Live browser session 2026-09-19 (~02:08–02:15 PDT): library-route sign-in with
