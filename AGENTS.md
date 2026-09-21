@@ -41,7 +41,6 @@ Cap the first fetch, not the case. Numbers live in `GRAPH_LIMITS` (`assembleMatt
 
 ## Standing locks
 
-- Skip GitHub PR **#666**.
 - Actual stipulations / extensions / stays: read `internal/docs/STIPULATION_DEFENSE.md`. Plaintiff-first. Do not import that voice into ordinary Plaintiff papers.
 - Email close after the valediction:
 
