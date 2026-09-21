@@ -33,16 +33,16 @@
     "type": "summons",
     "title": "Summons + Complaint - Newanforbi v. Palacios, et al. ",
     "path": "/documents/matter-05/Summons + Complaint - Newanforbi v. Palacios, et al. .pdf",
-    "filed": false
+    "filed": true
   },
   {
     "dkt": null,
-    "date": null,
-    "filer": "defendant",
+    "date": "2026-05-22",
+    "filer": "plaintiff",
     "type": "opposition",
     "title": "Opposition to Demurrer Pal",
     "path": "/documents/matter-05/Opposition to Demurrer Pal.pdf",
-    "filed": false
+    "filed": true
   },
   {
     "dkt": null,
@@ -51,7 +51,7 @@
     "type": "opposition",
     "title": "Declaration Pal ISO Opposition",
     "path": "/documents/matter-05/Declaration Pal ISO Opposition.pdf",
-    "filed": false
+    "filed": true
   },
   {
     "dkt": null,
@@ -60,7 +60,7 @@
     "type": "opposition",
     "title": "RJN Pal ISO Opposition",
     "path": "/documents/matter-05/RJN Pal ISO Opposition.pdf",
-    "filed": false
+    "filed": true
   },
   {
     "dkt": null,
@@ -69,7 +69,7 @@
     "type": "order",
     "title": "Stipulated Protective Order SIGNED",
     "path": "/documents/matter-05/Stipulated Protective Order SIGNED.pdf",
-    "filed": false
+    "filed": true
   },
   {
     "dkt": null,
@@ -78,7 +78,7 @@
     "type": "reply",
     "title": "Demurrer-Reply (NEWpal) (070726)",
     "path": "/documents/matter-05/Demurrer-Reply (NEWpal) (070726).pdf",
-    "filed": false
+    "filed": true
   },
   {
     "dkt": null,
@@ -87,15 +87,33 @@
     "type": "reply",
     "title": "Demurrer-Reply Decl (NEWpal) (070726)",
     "path": "/documents/matter-05/Demurrer-Reply Decl (NEWpal) (070726).pdf",
-    "filed": false
+    "filed": true
   },
   {
     "dkt": null,
-    "date": null,
-    "filer": "defendant",
-    "type": "amended_complaint",
+    "date": "2026-07-15",
+    "filer": "court",
+    "type": "order",
     "title": "Order Sustaining Demurrer to FAC WOLA - Jul 15 2026",
     "path": "/documents/matter-05/Order Sustaining Demurrer to FAC WOLA - Jul 15 2026.pdf",
-    "filed": false
+    "filed": true
+  },
+  {
+    "dkt": null,
+    "date": "2026-07-15",
+    "filer": "court",
+    "type": "order",
+    "title": "Minute Order - Demurrer Sustained WOLA (Jul 15 2026)",
+    "path": "/documents/matter-05/Minute Order - Demurrer Sustained WOLA (Jul 15 2026).pdf",
+    "filed": true
+  },
+  {
+    "dkt": null,
+    "date": "2026-07-10",
+    "filer": "court",
+    "type": "order",
+    "title": "Tentative Ruling on Demurrer RTF - Jul 10 2026",
+    "path": "/documents/matter-05/Tentative Ruling on Demurrer RTF - Jul 10 2026.pdf",
+    "filed": true
   }
 ]
