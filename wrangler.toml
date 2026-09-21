@@ -18,6 +18,11 @@
 #   Build    npm run build   (prebuild runs sync:derived)
 #   Output   dist            (Vite default; confirmed in vite.config.js —
 #                            no custom build.outDir)
+# Dashboard env (Production + Preview):
+#   SKIP_DEPENDENCY_INSTALL=1
+#   VITE_COPY_DOCUMENTS=0
+#   PORTFOLIO_SKIP_DISK_DOCS=1
+#   NODE_VERSION=22.22.2
 #
 # pages_build_output_dir makes Wrangler treat this as a Pages project
 # (https://developers.cloudflare.com/pages/functions/wrangler-configuration/).

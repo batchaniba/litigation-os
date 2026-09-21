@@ -83,7 +83,11 @@ if (!fs.existsSync(CATALOG)) {
 
 const catalog = JSON.parse(fs.readFileSync(CATALOG, "utf8"));
 const links = catalog.links;
-const skipDisk = skipDiskDocs();
+// Hosted builds never have the 660 MB documents tree. Vercel already sets
+// PORTFOLIO_SKIP_DISK_DOCS; Pages injects CF_PAGES=1. Treat either as skip
+// so prebuild does not require the PDFs that live on R2 / origin/documents.
+const skipDisk =
+  skipDiskDocs() || Boolean(process.env.CF_PAGES) || Boolean(process.env.VERCEL);
 const documentManifestByPath = manifestByPath(loadManifest());
 if (!Array.isArray(links) || links.length === 0) {
   console.error("short-links.json must have a non-empty links array");

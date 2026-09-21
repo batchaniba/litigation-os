@@ -38,7 +38,7 @@ Verified in-repo (not assumed):
 | Root directory | `/` (repository root) | SPA lives at the repo root, not a monorepo subfolder. |
 | Framework preset | React (Vite) | Build command `npm run build`, output `dist`. |
 | `base` | `/` | Leave `GITHUB_PAGES` unset. Vercel and Pages both serve from the domain root. |
-| Do not copy the PDF library | `VITE_COPY_DOCUMENTS=0` | Same as CI. Bytes come from the Worker via `/documents/*`. Phone-tap slugs stay as `internal/public/{slug}.pdf` in the artifact. |
+| Do not copy the PDF library | `VITE_COPY_DOCUMENTS=0` and `PORTFOLIO_SKIP_DISK_DOCS=1` | Same as Vercel. Bytes come from the Worker via `/documents/*`. Phone-tap slugs stay as `internal/public/{slug}.pdf` in the artifact. `sync:short-links` also treats `CF_PAGES=1` as skip-disk so a forgotten dashboard flag does not fail `prebuild`. |
 
 `wrangler.toml` at the repo root records `name` and
 `pages_build_output_dir = "./dist"`. Git-integration **build command / Node /
@@ -74,6 +74,7 @@ is set because `prebuild` runs it.
    |---|---|
    | `SKIP_DEPENDENCY_INSTALL` | `1` |
    | `VITE_COPY_DOCUMENTS` | `0` |
+   | `PORTFOLIO_SKIP_DISK_DOCS` | `1` *(same as Vercel — `prebuild` / `sync:short-links` checks catalog sources against the committed manifest. `CF_PAGES=1` also triggers this.)* |
    | `NODE_VERSION` | `22.22.2` *(belt and suspenders with `.nvmrc`)* |
 
 6. **Throttle builds before the first flood.** Git integration deploys on
