@@ -18,6 +18,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { execSync } from "node:child_process";
+import { classifyRootEntries } from "./lib/root-quarantine.mjs";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import { loadMatters, MATTERS_DIR } from "./load-matters.mjs";
 import { EVENTS_FILE, listMatterSources } from "./lib/matter-layout.mjs";
@@ -81,18 +82,38 @@ const ROOT_ALLOWED_FILES = new Set([
   "wrangler.toml",
 ]);
 
-function checkRepoRootIsClean() {
-  for (const entry of fs.readdirSync(REPO_ROOT, { withFileTypes: true })) {
-    if (!entry.isFile()) continue;
-    if (entry.name.startsWith(".")) continue;
-    if (ROOT_ALLOWED_FILES.has(entry.name)) continue;
-    // Allow transient or uncommitted office files in root if created by uploads/agents
-    if (entry.name.endsWith(".pdf") || entry.name.endsWith(".docx")) continue;
-    fail(
-      `repository root has stray file "${entry.name}" — move it into ` +
-        `internal/public/documents/matter-NN/ (or internal/assets/)`,
-    );
+const ROOT_QUARANTINE_PATH = path.join(REPO_ROOT, "internal/src/data/index/root-quarantine.json");
+
+function loadRootQuarantine() {
+  try {
+    return JSON.parse(fs.readFileSync(ROOT_QUARANTINE_PATH, "utf8"));
+  } catch {
+    // A missing or unreadable ledger must not soften the rule: with no
+    // allowlist, every root document is a stray.
+    return { files: [] };
   }
+}
+
+function checkRepoRootIsClean() {
+  const entries = fs.readdirSync(REPO_ROOT, { withFileTypes: true }).map((entry) => {
+    let size;
+    if (entry.isFile()) {
+      try {
+        size = fs.statSync(path.join(REPO_ROOT, entry.name)).size;
+      } catch {
+        size = undefined;
+      }
+    }
+    return { name: entry.name, isFile: entry.isFile(), size };
+  });
+
+  const { errors: rootErrors, warnings: rootWarnings } = classifyRootEntries({
+    entries,
+    allowedFiles: ROOT_ALLOWED_FILES,
+    quarantine: loadRootQuarantine(),
+  });
+  for (const message of rootErrors) fail(message);
+  for (const message of rootWarnings) warn(message);
 }
 
 const errors = [];

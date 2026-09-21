@@ -1,0 +1,336 @@
+{
+  "generated": "2026-09-21",
+  "note": "Tracked PDFs/DOCX sitting at the repository root that predate the root-cleanliness rule. This ledger is an allowlist, not an approval: anything at root NOT listed here fails the gate. Entries are removed as files are filed into internal/public/documents/ and pushed to R2. Every unfiled entry belongs to Matter 05 (Newanforbi v. Palacios et al.), confirmed by Plaintiff. Do not delete a root file until its bytes exist in R2 -- internal/public/documents/ is gitignored, so the root copy is the only one in version control.",
+  "remaining": 41,
+  "remainingBytes": 161556807,
+  "files": [
+    {
+      "name": "1032_Declaration.pdf",
+      "size": 1036744,
+      "sha256": "142db5af1515b51d505d4dd832a5435fac056f29fdb9327e70709555403d9e66",
+      "status": "registered",
+      "destination": "/documents/matter-05/1032_Declaration.pdf",
+      "matter": 5
+    },
+    {
+      "name": "1032_Evidentiary_Objection.pdf",
+      "size": 879507,
+      "sha256": "b284929003754dca1cca22be0b44f20e1b03bdbae53cc91aacb723c3bcc83c93",
+      "status": "registered",
+      "destination": "/documents/matter-05/1032_Evidentiary_Objection.pdf",
+      "matter": 5
+    },
+    {
+      "name": "1032_Opposition.pdf",
+      "size": 2956810,
+      "sha256": "42c79e85e0c4fe49fa1de06c5ca5945580630a9cf8c88d4834aec6ed03f582f2",
+      "status": "registered",
+      "destination": "/documents/matter-05/1032_Opposition.pdf",
+      "matter": 5
+    },
+    {
+      "name": "1032_Plaintiffs_Request_for_Judicial_Notice.pdf",
+      "size": 13486526,
+      "sha256": "4219f41d7017fde661503e36dfb93329d663f5092705e74852c6105abf2ad046",
+      "status": "registered",
+      "destination": "/documents/matter-05/1032_Plaintiffs_Request_for_Judicial_Notice.pdf",
+      "matter": 5
+    },
+    {
+      "name": "1032_TentativeRuling_ProbateNote_rtf.pdf",
+      "size": 83763,
+      "sha256": "ebad60e121b404e2904127471b347afdd4ad805d0fadbde20d5757d3f70b3612",
+      "status": "unfiled",
+      "destination": "/documents/matter-05/1032_TentativeRuling_ProbateNote_rtf.pdf",
+      "matter": 5
+    },
+    {
+      "name": "1_HOPE_Clinical_Operational_Manual_9_24_24_225349_pg_1_to_90.pdf",
+      "size": 11786729,
+      "sha256": "cfdf2238003522782b689a7f9b3f36dace0c8815e8372c665f90ec0fa903e4d6",
+      "status": "unfiled",
+      "destination": "/documents/matter-05/1_HOPE_Clinical_Operational_Manual_9_24_24_225349_pg_1_to_90.pdf",
+      "matter": 5
+    },
+    {
+      "name": "1_HOPE_Clinical_Operational_Manual_9_24_24_225349_pg_91_to_125.pdf",
+      "size": 4991467,
+      "sha256": "2861a95be415e8c280c2b55d7f8ad9f500b3545698979b5c9c2bc726a713339d",
+      "status": "unfiled",
+      "destination": "/documents/matter-05/1_HOPE_Clinical_Operational_Manual_9_24_24_225349_pg_91_to_125.pdf",
+      "matter": 5
+    },
+    {
+      "name": "1_PHCP06796815_Rdctd_131_pdf.pdf",
+      "size": 4247516,
+      "sha256": "5dbdfba7a018e003e3e2c9efcf0c4435e2aa1a34b8c83b705ffd637af1a103a2",
+      "status": "unfiled",
+      "destination": "/documents/matter-05/1_PHCP06796815_Rdctd_131_pdf.pdf",
+      "matter": 5
+    },
+    {
+      "name": "2024092402EONSOTApproval.pdf",
+      "size": 1393719,
+      "sha256": "e7711565b7caa89e45988dcb61fe61cc15f93897254ef2c28d298edbd620cee4",
+      "status": "registered",
+      "destination": "/documents/matter-28/research/2024092402EONSOTApproval.pdf",
+      "matter": 28
+    },
+    {
+      "name": "2_HOPE_Maintenance_Curriculum_350434.pdf",
+      "size": 8988431,
+      "sha256": "f35c3fee0907d7cfe14edac2ac776ddd0a23fbbbb9ed7b04b10ae884bf44dbf5",
+      "status": "unfiled",
+      "destination": "/documents/matter-05/2_HOPE_Maintenance_Curriculum_350434.pdf",
+      "matter": 5
+    },
+    {
+      "name": "2_HOPE_Maintenance_Curriculum_350434__pdf.pdf",
+      "size": 8988441,
+      "sha256": "ffcab3eb1c57d1244035a5f51b4009fa529d9a7065e8e9b143daadc18d248e02",
+      "status": "unfiled",
+      "destination": "/documents/matter-05/2_HOPE_Maintenance_Curriculum_350434__pdf.pdf",
+      "matter": 5
+    },
+    {
+      "name": "2_PHSD1838240007_Rdctd_32104_pdf.pdf",
+      "size": 9989291,
+      "sha256": "8d45119d7fc8daec1152f33864b0117e15b61f994122721d929f4d4328acc85e",
+      "status": "unfiled",
+      "destination": "/documents/matter-05/2_PHSD1838240007_Rdctd_32104_pdf.pdf",
+      "matter": 5
+    },
+    {
+      "name": "3_HOPE_Prgrm_Emply_Hndbk_2023_435485_pdf.pdf",
+      "size": 8563870,
+      "sha256": "e9822fc1fc123c803a2ae212809b6c05b2a0ce545237bb0e99efc8ee93a7dc05",
+      "status": "unfiled",
+      "destination": "/documents/matter-05/3_HOPE_Prgrm_Emply_Hndbk_2023_435485_pdf.pdf",
+      "matter": 5
+    },
+    {
+      "name": "4_HOPE_Prprtry_Trtmnt_Mnul_2_18_2019_486537.pdf",
+      "size": 6550502,
+      "sha256": "e06c6753d4c21ca70afeb9e3180067a382fb657a43fa151b92dacfa10d595727",
+      "status": "unfiled",
+      "destination": "/documents/matter-05/4_HOPE_Prprtry_Trtmnt_Mnul_2_18_2019_486537.pdf",
+      "matter": 5
+    },
+    {
+      "name": "5_CD_Job_Description_538542_pdf.pdf",
+      "size": 584783,
+      "sha256": "992405852c5f90a31b5a22973d18881ba79b226653ff0d8302091eda62e1c23c",
+      "status": "unfiled",
+      "destination": "/documents/matter-05/5_CD_Job_Description_538542_pdf.pdf",
+      "matter": 5
+    },
+    {
+      "name": "AdoptedRegulationsSexOffenderTreatment002.pdf",
+      "size": 2549418,
+      "sha256": "84c17b27eeb67a98f6cb1e358fde79c0a42424659c3f1c48d66673f80f1ea018",
+      "status": "registered",
+      "destination": "/documents/matter-28/research/AdoptedRegulationsSexOffenderTreatment002.pdf",
+      "matter": 28
+    },
+    {
+      "name": "Block_1_Homework_105138_pdt.pdf",
+      "size": 1572702,
+      "sha256": "a3137ea310b57410a980142ab39a82bfc200af18e6fd936e30f46a66d425be20",
+      "status": "unfiled",
+      "destination": "/documents/matter-05/Block_1_Homework_105138_pdt.pdf",
+      "matter": 5
+    },
+    {
+      "name": "Collateral_NotesComm_139199_pdf.pdf",
+      "size": 2918814,
+      "sha256": "1b5f7f108ba80c111661a9171cec92ed4c6207aac839c1743ea8e94c2bb820ba",
+      "status": "unfiled",
+      "destination": "/documents/matter-05/Collateral_NotesComm_139199_pdf.pdf",
+      "matter": 5
+    },
+    {
+      "name": "DemurrerDecl_NEWpal_052226.pdf",
+      "size": 440940,
+      "sha256": "b96d66cf3def118537e5cb0aa21bd9f597049cc73dea6ce08ce33d7904a2bb57",
+      "status": "unfiled",
+      "destination": "/documents/matter-05/DemurrerDecl_NEWpal_052226.pdf",
+      "matter": 5
+    },
+    {
+      "name": "DemurrerNEWpal_052226.pdf",
+      "size": 2823688,
+      "sha256": "bdae878a43e286328f3d54065f1df3245510673908cc77f489842314a24a1bb1",
+      "status": "unfiled",
+      "destination": "/documents/matter-05/DemurrerNEWpal_052226.pdf",
+      "matter": 5
+    },
+    {
+      "name": "DemurrerPO_NEWpal_052226.pdf",
+      "size": 420899,
+      "sha256": "2cc970d8626fba79a6472732a6665d1a571b35c65076c601b1551986b2489d27",
+      "status": "unfiled",
+      "destination": "/documents/matter-05/DemurrerPO_NEWpal_052226.pdf",
+      "matter": 5
+    },
+    {
+      "name": "DemurrerReply_Decl_NEWpal_070726.pdf",
+      "size": 853097,
+      "sha256": "57d0e0b128474700c9bb496d548ca5458e53c837cfdcf112b9c6aac5edda2ff6",
+      "status": "unfiled",
+      "destination": "/documents/matter-05/DemurrerReply_Decl_NEWpal_070726.pdf",
+      "matter": 5
+    },
+    {
+      "name": "DemurrerReply_NEWpal_070726.pdf",
+      "size": 1464791,
+      "sha256": "4922ea3b6029ddca898b229f5fec6642e611ed055100a939dd116d795318b7db",
+      "status": "unfiled",
+      "destination": "/documents/matter-05/DemurrerReply_NEWpal_070726.pdf",
+      "matter": 5
+    },
+    {
+      "name": "Discharge_Review_Report.pdf",
+      "size": 757513,
+      "sha256": "cad3afb94b84c34f9103752f6bd72b5812d0f50b87745d706304ed8cffc44bd5",
+      "status": "registered",
+      "destination": "/documents/matter-28/evidence/Discharge_Review_Report.pdf",
+      "matter": 28
+    },
+    {
+      "name": "FAC_STKCVUF20261032.pdf",
+      "size": 3441435,
+      "sha256": "9d45361160a7a611919ac6332e7176afb9cc99e15d1da1dd085194d8f361cde5",
+      "status": "registered",
+      "destination": "/documents/matter-05/FAC_STKCVUF20261032.pdf",
+      "matter": 5
+    },
+    {
+      "name": "HOPE_resp_plntf_FROGS1_NEWpal_061526.pdf",
+      "size": 3237137,
+      "sha256": "991d705b9a2f265974dc40de7546b3ba1ec69d4c881cf7269c9bf1c18f3ac188",
+      "status": "unfiled",
+      "destination": "/documents/matter-05/HOPE_resp_plntf_FROGS1_NEWpal_061526.pdf",
+      "matter": 5
+    },
+    {
+      "name": "HOPE_resp_plntf_RFP1_newpal_061526.pdf",
+      "size": 6092967,
+      "sha256": "61eb67ba48399bff38218a2b61525ba82110b0ff094813b163a7efa0ece3a613",
+      "status": "unfiled",
+      "destination": "/documents/matter-05/HOPE_resp_plntf_RFP1_newpal_061526.pdf",
+      "matter": 5
+    },
+    {
+      "name": "HOPE_resp_plntf_SROGS1_NEWpal_061526.pdf",
+      "size": 6254470,
+      "sha256": "afad1241d86a7d4eeee447ea567a0ef8e091389cd80c9d356bbcdda49dd1e5b3",
+      "status": "unfiled",
+      "destination": "/documents/matter-05/HOPE_resp_plntf_SROGS1_NEWpal_061526.pdf",
+      "matter": 5
+    },
+    {
+      "name": "Homework_200223_pdf.pdf",
+      "size": 1329128,
+      "sha256": "310e7f2ff4a5d44ad883f1b62fbbf3265ca637cee108c181bed681a5aa3041c2",
+      "status": "unfiled",
+      "destination": "/documents/matter-05/Homework_200223_pdf.pdf",
+      "matter": 5
+    },
+    {
+      "name": "Hw_Audit_3_2026_224_paf.pdf",
+      "size": 189961,
+      "sha256": "aaf89e1dc23468377497c211fe2decb4f33e92bae53b1dc0027fe22232457dcf",
+      "status": "unfiled",
+      "destination": "/documents/matter-05/Hw_Audit_3_2026_224_paf.pdf",
+      "matter": 5
+    },
+    {
+      "name": "Minute_Order_rtf.pdf",
+      "size": 139349,
+      "sha256": "ceb1a47885c31d4ca6b0829d5b9a04cb44bac03b3e440aee248fd7ba828f973a",
+      "status": "unfiled",
+      "destination": "/documents/matter-05/Minute_Order_rtf.pdf",
+      "matter": 5
+    },
+    {
+      "name": "PALACIOS_resp_plntf_FROGS1_NEWpal_061526.pdf",
+      "size": 3618404,
+      "sha256": "16af7c0161ce6e450a84ba975315b8923ec808cea27d55f8c67085c6fc7ee895",
+      "status": "unfiled",
+      "destination": "/documents/matter-05/PALACIOS_resp_plntf_FROGS1_NEWpal_061526.pdf",
+      "matter": 5
+    },
+    {
+      "name": "PALACIOS_resp_plntf_RFP1_NEWpal_061526.pdf",
+      "size": 5161017,
+      "sha256": "eb102151f12d88cbe57248481610c3922060264951c9f219d88e48e7b347f065",
+      "status": "unfiled",
+      "destination": "/documents/matter-05/PALACIOS_resp_plntf_RFP1_NEWpal_061526.pdf",
+      "matter": 5
+    },
+    {
+      "name": "PALACIOS_resp_plntf_SROGS1_NEWpal_061226.pdf",
+      "size": 4474578,
+      "sha256": "3fbcf7af81f89fa17d75f190343f21589de824460728f7b93efdc7f67776b52f",
+      "status": "unfiled",
+      "destination": "/documents/matter-05/PALACIOS_resp_plntf_SROGS1_NEWpal_061226.pdf",
+      "matter": 5
+    },
+    {
+      "name": "Palacios_Email_Thread_pg_1_to_90.pdf",
+      "size": 10934370,
+      "sha256": "ca17f320e837f36c642dfaf37ced1f9c44063cbc4f9bcf2754ce24f6bb1f5b04",
+      "status": "unfiled",
+      "destination": "/documents/matter-05/Palacios_Email_Thread_pg_1_to_90.pdf",
+      "matter": 5
+    },
+    {
+      "name": "Palacios_Email_Thread_pg_91_to_121.pdf",
+      "size": 3433874,
+      "sha256": "3ba6242bde40b43d7db422384d37c5b96fa9302b1d52aa00ad65a3eaced15584",
+      "status": "unfiled",
+      "destination": "/documents/matter-05/Palacios_Email_Thread_pg_91_to_121.pdf",
+      "matter": 5
+    },
+    {
+      "name": "Petitionagainstcaparoletreatmentrequirements.pdf",
+      "size": 5679546,
+      "sha256": "16eb79b78156cd788a3c427e5552c55523c7f3ba5856bbba3c48ec2d00025d38",
+      "status": "unfiled",
+      "destination": "/documents/matter-05/Petitionagainstcaparoletreatmentrequirements.pdf",
+      "matter": 5
+    },
+    {
+      "name": "Phase_2_Block_2__Interpersonal_Relationships_Sexual_SelfRegulation.pdf",
+      "size": 6374072,
+      "sha256": "f767877563ff56ea868dadf646c863fad841d295c7c712b8ffdafa6f0feceb0a",
+      "status": "unfiled",
+      "destination": "/documents/matter-05/Phase_2_Block_2__Interpersonal_Relationships_Sexual_SelfRegulation.pdf",
+      "matter": 5
+    },
+    {
+      "name": "SIGNED_Stipulation_and__PROPOSEDOrder_Extending_Time_ToRespond_To_Complaint.pdf",
+      "size": 198653,
+      "sha256": "f3cacbfeab0cd1c2a7c0249b1087eb8a543975987ab25949cd5f355ef29c5e5c",
+      "status": "unfiled",
+      "destination": "/documents/matter-05/SIGNED_Stipulation_and__PROPOSEDOrder_Extending_Time_ToRespond_To_Complaint.pdf",
+      "matter": 5
+    },
+    {
+      "name": "SROG_Set_Two_HOPE_NEWpal_.pdf",
+      "size": 1362220,
+      "sha256": "ae910c21384f80bd8bebce476373f90bb6bdc50bec7cc0a9b6891cb3598f6fe3",
+      "status": "unfiled",
+      "destination": "/documents/matter-05/SROG_Set_Two_HOPE_NEWpal_.pdf",
+      "matter": 5
+    },
+    {
+      "name": "SROG_Set_Two_PALACIOS_NEWpal_.pdf",
+      "size": 1305665,
+      "sha256": "85dcbfef4d20b7a67c4c7747cc8de1968a00acc00ba853c842fbfa56579dc523",
+      "status": "unfiled",
+      "destination": "/documents/matter-05/SROG_Set_Two_PALACIOS_NEWpal_.pdf",
+      "matter": 5
+    }
+  ]
+}
