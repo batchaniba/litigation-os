@@ -4,17 +4,17 @@ import { GOLD } from "../constants";
 import { useTheme } from "../ThemeContext";
 import { clipEvent, daysLabel } from "../utils/nextActionsView";
 import {
+  BodyText,
+  CardFrame,
   ContextNote,
   ExpandChevron,
   Eyebrow,
+  FieldLabel,
   MatterBadge,
   SANS,
   SERIF,
   SectionHeading,
   StatusPill,
-  bodyText,
-  cardShell,
-  fieldLabel,
 } from "./ui/portfolioChrome";
 
 const RED = "#dc2626";
@@ -282,7 +282,7 @@ function ActionCard({ item, color, theme }) {
   const actorText = inferred ? `${actor.label} · inferred` : actor.label;
 
   return (
-    <div style={cardShell(theme, { open, color })}>
+    <CardFrame theme={theme} open={open} color={color}>
       <div style={{ display: "flex", alignItems: "stretch" }}>
         <div style={{ display: "flex", alignItems: "center", padding: "18px 0 18px 24px" }}>
           <MatterBadge
@@ -343,20 +343,20 @@ function ActionCard({ item, color, theme }) {
       {open ? (
         <div style={{ padding: "0 24px 24px", borderTop: `1px solid ${theme.cardBorder}` }}>
           <div style={{ paddingTop: 18 }}>
-            <div style={fieldLabel}>Event</div>
-            <p style={{ ...bodyText(theme), lineHeight: 1.7 }}>{compact}</p>
+            <FieldLabel>Event</FieldLabel>
+            <BodyText theme={theme} style={{ lineHeight: 1.7 }}>{compact}</BodyText>
             {inferred ? (
               <>
-                <div style={fieldLabel}>Actor</div>
-                <p style={bodyText(theme)}>
+                <FieldLabel>Actor</FieldLabel>
+                <BodyText theme={theme}>
                   {actor.label}. Inferred from the event text — verify.
-                </p>
+                </BodyText>
               </>
             ) : null}
             {item.source ? (
               <>
-                <div style={fieldLabel}>Source</div>
-                <p style={bodyText(theme)}>
+                <FieldLabel>Source</FieldLabel>
+                <BodyText theme={theme}>
                   <a
                     href={item.source}
                     target="_blank"
@@ -365,24 +365,24 @@ function ActionCard({ item, color, theme }) {
                   >
                     source PDF
                   </a>
-                </p>
+                </BodyText>
               </>
             ) : null}
             {item.verified_at ? (
               <>
-                <div style={fieldLabel}>Verified</div>
-                <p
-                  style={bodyText(theme)}
+                <FieldLabel>Verified</FieldLabel>
+                <BodyText
+                  theme={theme}
                   title={`Source: ${item.source_type || "unknown"} · Confidence: ${item.confidence || "unknown"}`}
                 >
                   verified {item.verified_at}
-                </p>
+                </BodyText>
               </>
             ) : null}
             {item.precedentPeers?.length ? (
               <>
-                <div style={fieldLabel}>Also</div>
-                <p style={bodyText(theme)}>
+                <FieldLabel>Also</FieldLabel>
+                <BodyText theme={theme}>
                   {item.precedentPeers.map((peer, index) => (
                     <span key={peer}>
                       {index > 0 ? ", " : null}
@@ -394,24 +394,26 @@ function ActionCard({ item, color, theme }) {
                       </Link>
                     </span>
                   ))}
-                </p>
+                </BodyText>
               </>
             ) : null}
           </div>
         </div>
       ) : null}
-    </div>
+    </CardFrame>
   );
 }
 
 function GapCard({ gap, theme }) {
   return (
-    <Link
+    <CardFrame
+      as={Link}
       to={`/matters/${gap.number}`}
       className="next-actions-gap"
       aria-label={`Matter ${gap.number}${gap.caption ? `: ${gap.caption}` : ""}`}
+      theme={theme}
+      color={GOLD}
       style={{
-        ...cardShell(theme, { color: GOLD }),
         display: "flex",
         alignItems: "center",
         gap: 18,
@@ -431,6 +433,6 @@ function GapCard({ gap, theme }) {
         </div>
       </div>
       {gap.status_label ? <StatusPill color={GOLD}>{gap.status_label}</StatusPill> : null}
-    </Link>
+    </CardFrame>
   );
 }

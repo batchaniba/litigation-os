@@ -137,14 +137,22 @@ export function ExpandChevron({ open, theme }) {
   );
 }
 
-export function cardShell(theme, { open = false, color } = {}) {
-  return {
-    background: theme.cardBg,
-    borderRadius: 10,
-    border: `1px solid ${open && color ? `${color}60` : theme.cardBorder}`,
-    overflow: "hidden",
-    transition: "border-color 0.2s",
-  };
+export function CardFrame({ theme, open = false, color, as: Tag = "div", style, children, ...rest }) {
+  return (
+    <Tag
+      style={{
+        background: theme.cardBg,
+        borderRadius: 10,
+        border: `1px solid ${open && color ? `${color}60` : theme.cardBorder}`,
+        overflow: "hidden",
+        transition: "border-color 0.2s",
+        ...style,
+      }}
+      {...rest}
+    >
+      {children}
+    </Tag>
+  );
 }
 
 /** Gold (or tinted) left-border note used under Opinions / Outcomes lists. */
@@ -189,20 +197,38 @@ export function ContextNote({ theme, color = GOLD, title, children }) {
   );
 }
 
-export const fieldLabel = {
-  fontFamily: SANS,
-  fontSize: 10,
-  fontWeight: 700,
-  letterSpacing: 2,
-  textTransform: "uppercase",
-  color: GOLD,
-  marginBottom: 6,
-};
+export function FieldLabel({ children }) {
+  return (
+    <div
+      style={{
+        fontFamily: SANS,
+        fontSize: 10,
+        fontWeight: 700,
+        letterSpacing: 2,
+        textTransform: "uppercase",
+        color: GOLD,
+        marginBottom: 6,
+      }}
+    >
+      {children}
+    </div>
+  );
+}
 
-export const bodyText = (theme) => ({
-  fontFamily: SANS,
-  fontSize: 13,
-  color: theme.secondaryText,
-  lineHeight: 1.6,
-  margin: "0 0 14px",
-});
+export function BodyText({ theme, title, style, children }) {
+  return (
+    <p
+      title={title}
+      style={{
+        fontFamily: SANS,
+        fontSize: 13,
+        color: theme.secondaryText,
+        lineHeight: 1.6,
+        margin: "0 0 14px",
+        ...style,
+      }}
+    >
+      {children}
+    </p>
+  );
+}

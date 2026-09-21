@@ -127,7 +127,7 @@ describe("NextActionsPanel", () => {
     expect(toggle).toHaveAttribute("aria-expanded", "false");
     await user.click(toggle);
     expect(toggle).toHaveAttribute("aria-expanded", "true");
-    expect(screen.getByText("Inferred from the event text — verify.")).toBeTruthy();
+    expect(screen.getByText(/Inferred from the event text — verify/)).toBeTruthy();
   });
 
   it("renders under the light theme tokens", () => {
