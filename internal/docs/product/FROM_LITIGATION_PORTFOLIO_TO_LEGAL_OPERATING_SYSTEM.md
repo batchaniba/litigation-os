@@ -143,3 +143,148 @@ Every matter should expose:
 
 - Overview
 - Docket
+- Deadlines
+- Documents
+- Evidence
+- Claims
+- Parties and counsel
+- Research
+- Strategy
+- Activity log
+
+The matter header should show only caption, case number, court, judge, phase, next deadline, last verification, and primary action.
+
+### AI operations interface
+
+Expose typed operations rather than a generic chat box:
+
+- Ingest documents
+- Reconcile docket
+- Extract deadlines
+- Verify citations
+- Build evidence map
+- Compare pleadings
+- Audit service
+- Generate matter summary
+- Identify contradictions
+- Prepare research queue
+
+Every operation should return a review card containing:
+
+- Proposed changes
+- Sources and provenance
+- Confidence or unresolved questions
+- Files and records affected
+- Validation results
+- Approve, revise, or reject controls
+
+## Priority roadmap
+
+### P0 — Reliability foundation
+
+**P0.0 Document-store recoverability** *(added by audit — precedes everything)*
+
+195 manifest entries (138.4 MB) have no retrievable bytes in R2, and 27 of the 41 root PDFs have no bytes in R2 by content hash. `internal/public/documents/**` is gitignored, so for those files the only copy in version control is the root copy, and the only other copy is the laptop. Nothing detects this.
+
+- Add a coverage check: every manifest entry must resolve to bytes in R2
+- Use ranged `GET` — the Worker answers `405` to `HEAD`, which is indistinguishable from absent
+- Run `npm run sync:manifest` and `npm run documents:push`, then confirm full coverage
+- Only then remove the root binaries (see P0.4)
+
+**Acceptance:** zero manifest entries without bytes in R2, and the check fails closed when that regresses.
+
+**P0.1 Enforce the gate that already exists**
+
+Do **not** create GitHub Actions. `AGENTS.md` forbids `.github/workflows/`, the spending limit refuses every job, and the remote check is already built: `workers/portfolio-gate/` runs the same steps as the `pre-push` hook through a GitHub App and Cloudflare Containers, under the locked Check Run name `portfolio-gate`.
+
+The gap is enforcement and determinism, not capability:
+
+- The runner fails on capacity rather than on check content — `max_instances = 3` produces `Maximum number of running container instances exceeded`. Raise or queue against that limit, add retry with backoff, and distinguish infrastructure failure from check failure
+- Then enable `required_status_checks` for `portfolio-gate`, set `required_approving_review_count` to 1, and enable `enforce_admins`
+
+**Acceptance:** no PR merges to `main` while the Check Run is failing or absent — including for admins and for agents holding a token.
+
+**P0.2 Canonical-data boundary**
+
+Classify every repository data file as canonical, derived, analysis, runbook, or artifact. Document which command owns each derived file.
+
+**Acceptance:** Every generated file has one deterministic generator and can be deleted and reproduced from canonical state.
+
+**P0.3 Atomic document ingestion**
+
+Replace multi-step document cataloging with one idempotent operation.
+
+**Acceptance:** Re-running the same ingest creates no duplicates; partial failure leaves no catalog, storage, sidecar, or matter-membership drift.
+
+**P0.4 Repository hygiene**
+
+- Remove root-level PDF clutter — **but only after P0.0 confirms the bytes exist in R2.** 27 of the 41 root files currently have no second copy anywhere; deleting them first destroys the only tracked copy of live Matter 05 discovery responses and demurrer briefing
+- Finish the Git-to-object-store boundary
+- Prevent new binaries from landing outside approved locations — the blanket `.pdf`/`.docx` bypass in `checkRepoRootIsClean()` is closed, and `internal/src/data/index/root-quarantine.json` is the explicit allowlist that must drain to empty
+- Define retention and archival rules
+
+**Acceptance:** A clean clone contains code, metadata, and intentionally retained artifacts without an uncontrolled root document dump, and the quarantine ledger is empty.
+
+**P0.5 Environment-independent gate results** *(added by audit)*
+
+The same tree currently yields 2,832 `validate-portfolio` failures without a hydrated document store and 334 with one, and the unit suite reports 52 unhandled errors and "no tests" on a Node major below `engines.node`. A gate whose verdict depends on local disk or runtime cannot be required, which makes this a prerequisite for P0.1.
+
+- Default `validate-portfolio` to manifest mode; make disk mode an explicit opt-in
+- Report which mode produced the verdict
+- Keep the Node-major preflight guard
+
+**Acceptance:** identical verdict from the container, a clean sandbox, and the laptop on the same commit.
+
+### P1 — Operational hardening
+
+**P1.1 System-health dashboard**
+
+Display:
+
+- Catalog drift
+- Worker and object-store availability
+- Failed document extraction
+- Missing or empty sidecars
+- Unresolved citations
+- Stale matter summaries
+- Deadline contradictions
+- Referenced but unavailable documents
+- Last successful synchronization
+
+**P1.2 Transactional mutation service**
+
+Note what already exists: `internal/scripts/lib/mutate.mjs` provides eight validated operations (`recordTimelineEvent`, `retireUpcomingEvent`, `setNextClock`, `updateMatterIdentity`, `catalogDocument`, `scaffoldMatter`, `splitMatter`) that validate before touching disk and land changes on the working tree for review. `q.mjs` exposes 19 ops. This item is therefore not "build a mutation layer" but:
+
+- Add locking and idempotency keys to the existing ops
+- Add an append-only agent-action log — proposal, sources, diff, validation result, approver — kept distinct from `events.jsonl`, which records case events rather than agent activity
+
+**P1.3 Shared primitives**
+
+Narrow this item. Do **not** deduplicate the pleading generators: `matter37-home-depot-complaint.py` and `matter38-swift-complaint.py` are both exactly 1,179 lines and 1,170 of those lines differ, because they are pleading prose rather than copy-paste. Shared mechanism already exists and is widely imported (`signature_stamp` in 69 generators, `pleading_paper` in 46, `pdf_packet` in 24).
+
+Extract reusable service, deadline, document, citation, and evidence helpers only.
+
+**P1.4 Observability**
+
+Add structured logs, retryable background jobs, failure alerts, and migration checks.
+
+Backup and restore has moved to **P0.0** — it is an open critical risk, not P1 hardening. A documented and executed restore drill belongs there.
+
+**P1.0 Deploy-configuration truth** *(added by audit)*
+
+`workers/doc-api/wrangler.toml` commits `database_id = "REPLACE_WITH_D1_DATABASE_ID"` while the deployed Worker serves D1-backed reads, so the committed configuration cannot reproduce the running system. Establish one source of truth for deploy configuration and document any value that is intentionally set out of band.
+
+### P2 — Product extraction
+
+Extract reusable packages without moving live litigation data:
+
+- Domain model
+- Document ingestion
+- Deadline engine
+- Citation engine
+- Agent operations
+- Audit log
+- Search and retrieval
+- UI component system
+
+**P2-E Court model de-typing** *(added by audit)* — `CourtKey` is a closed union of six courts and the holiday tables are keyed to the same six, so adding a court is a type change rather than a configuration row. Convert it to a `courts` table and make `matter.court` a foreign key instead of free text. This is the smallest change that makes the deadline engine — the strongest transferable asset here — usable by a second tenant, and it precedes the blank-workspace prototype. See "Two current defects to fix during migration, not after."
