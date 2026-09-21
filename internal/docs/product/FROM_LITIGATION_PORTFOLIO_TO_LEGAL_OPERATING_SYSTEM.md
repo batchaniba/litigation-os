@@ -510,3 +510,99 @@ The stack table leaves the provider open. The contract below is provider-neutral
 | Every proposal is reviewable | The model writes an approval row, never a table |
 
 **Recommended binding — Anthropic.** Rates are per million tokens, current as of this writing; verify before budgeting.
+
+| Use | Model | Rate |
+| --- | --- | --- |
+| Extraction, chronology, agent operations | `claude-opus-5` (1M context) | $5 in / $25 out |
+| Bulk classification and triage only | `claude-haiku-4-5` (200K context) | $1 in / $5 out |
+
+Three API features map onto commitments this document already makes:
+
+- **Document citations.** `citations: {enabled: true}` on a document block returns `page_location` spans (`start_page_number` / `end_page_number`) for each cited passage — the document → page → assertion provenance chain this roadmap promises, available rather than built. Send PDFs where a page citation must be produced; use the cheaper `.txt` sidecars (99.3% coverage on stored documents) for search and summarization, accepting the loss of page anchors.
+- **Batch API.** 50% cost, suited to the 484 UNVERIFIED authorities and any extraction backfill.
+- **Prompt caching.** Cache matter context across operations on one matter; confirm with `usage.cache_read_input_tokens`.
+
+Use adaptive thinking (`thinking: {type: "adaptive"}`); fixed `budget_tokens` is removed on current models and is rejected.
+
+**Estimate, not a measurement:** a 20-page PDF is roughly 30K input tokens; extraction at ~2K output is about $0.20 per document on `claude-opus-5`, so 500 documents per month lands near $100, or half that through Batch. Model spend is not the binding constraint at pilot scale — Postgres, document compute, and counsel are. Record actual cost per ingested document from the first pilot rather than carrying this estimate forward.
+
+### Two current defects to fix during migration, not after
+
+Both are verified in the audit, and both become permanent if the migration copies the current shape.
+
+**1. The object key is PDF-only.** The tenant prefix above (`t/{orgId}/sha256/…`) preserves the existing scheme, and that scheme hardcodes `.pdf` (`keyForSha256`), serves `content-type: application/pdf` unconditionally, and is fed by an upload path documented as "local PDFs → R2." The result is that 299 manifest entries — 141 `.txt`, 103 `.json`, 17 `.docx`, 35 images, 1 `.xlsx` — are 100% absent from R2. That is not a backlog; it is a structural impossibility, and it is why the P0.0 acceptance criterion had to be split by cause. The product key must carry the extension and the stored content type:
+
+```
+t/{orgId}/sha256/<first2>/<rest><ext>      bytes, with content-type metadata
+t/{orgId}/text/<first2>/<rest>.txt         extracted text
+```
+
+Do this once, inside the tenant-prefix migration. Fixing it later means rewriting keys underneath customer data.
+
+**2. Courts are a type, not data.** `CourtKey` in `internal/src/utils/deadlineMath/types.ts` is a closed union of exactly six courts — the six this portfolio litigates in — and the holiday tables are keyed to the same six. The deadline engine is the strongest transferable asset in the repository, yet adding a seventh California superior court is currently a TypeScript change rather than a configuration row. California has 58.
+
+Add to the product-system boundary: `CourtKey` union → a `courts` table (jurisdiction, forum, holiday calendar, court-day rules), with `matter.court` a foreign key instead of free text. This is the smallest change that converts the deadline engine from a personal tool into a product primitive, and it belongs in P2 extraction, ahead of any second tenant.
+
+**Scope note on docket sync.** Docket reconciliation does not generalize the way deadline computation does: CourtListener covers 7 of 41 matters and 0 of 19 state-court matters, because RECAP is PACER-derived and California superior courts are not in it. The rule-cited computation in `deadlineMath/` requires no external service and does transfer. For any state-court customer, product claims should rest on the computation and its provenance, not on docket synchronization.
+
+### P4 — add only when money or a second org forces it
+
+| Layer | Pick | Trigger |
+| --- | --- | --- |
+| Billing | Stripe + Clerk org metadata | First invoice |
+| Product analytics | PostHog | Cannot explain why people stay or leave |
+| SSO | Clerk Enterprise SSO (WorkOS only if Clerk cannot satisfy the buyer) | First firm with an IdP requirement |
+| Legal hold / retention | Tenant settings in Postgres + R2 object lock | First employment-firm customer |
+| Observability | Sentry performance + Cloudflare trace + queue-lag alerts | First missed ingest SLA |
+| Security review | Independent pentest + dependency audit | Before a third paying org |
+| Paper | Cyber liability, ToS, privacy notice, DPA, subprocessors list | Before any non-synthetic client file in production |
+| Compliance | Start SOC 2; do not claim certified | Buyer questionnaire that needs a timeline |
+
+### Environment strategy
+
+Maintain three isolated environments:
+
+- **Development:** synthetic fixtures, local tooling, disposable database, and non-production buckets.
+- **Staging:** production-shaped infrastructure with synthetic or specifically approved test documents.
+- **Production:** customer data, separately scoped credentials, backups, retention controls, and alerting. The live Newanforbi portfolio may keep using the current R2/D1 path until a deliberate cutover.
+
+No production credential should be accepted by development code. Every schema migration and deployment must run against staging first.
+
+### Backup and recovery standard
+
+- PostgreSQL point-in-time recovery plus scheduled encrypted exports
+- R2 lifecycle rules and an independent secondary copy for production documents
+- Versioned infrastructure and migration definitions in Git
+- Quarterly restore drills with measured recovery time and documented results
+- Tenant export and deletion procedures tested before a multi-user pilot
+
+### Acquisition sequence
+
+**Not this stack (P0, already owned)**
+
+- R2 coverage check, gate-runner determinism, required Check Run, then root-PDF removal
+- Laptop `R2_*` and Wrangler secrets stay where they are. Do not buy Clerk or Neon to make `main` safe
+
+**Private prototype (start of P3)**
+
+- Keep Vercel and the existing Cloudflare deployment
+- Add Neon, Clerk Organizations, one processing container, Sentry, Resend, and staging
+- Use PostgreSQL search before buying a dedicated search product
+- Use synthetic data until tenant isolation and restore tests pass
+
+**Controlled pilot**
+
+- Add queue-backed retries, tenant exports, retention controls, and an independent security review
+- Pilot with two or three solo or small plaintiff-side firms — not SRLs, pending the P3.0 UPL memo
+- Measure time-to-matter, successful ingestion, deadlines caught, recommendation acceptance, corrections, and weekly retention
+
+**Commercial launch (P4)**
+
+- Add Stripe, PostHog, customer-facing administration, formal support and incident processes, contractual documents, and enterprise identity only when demanded
+- Introduce additional infrastructure from observed constraints rather than anticipated scale
+
+### Planning range
+
+For a small private pilot, budget approximately **$100–$400 per month** for base infrastructure (Neon + Clerk + Vercel + Sentry + Resend + Workers/R2/Queues + burst `standard-2` containers), excluding usage-variable AI, OCR, and document-processing compute. At 10–25 active users, use **$500–$2,000 per month** as an operating-planning range until measured workloads replace estimates.
+
+These are planning bands, not procurement commitments. Record actual cost per ingested document, active matter, and retained user from the first pilot.
