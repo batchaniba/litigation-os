@@ -1,9 +1,9 @@
 {
-  "generated": "2026-09-12",
+  "generated": "2026-09-21",
   "damages_totals": {
-    "conservative": 1485672,
-    "moderate": 3612072,
-    "aggressive": 7998272
+    "conservative": 1455672,
+    "moderate": 3523072,
+    "aggressive": 7793272
   },
   "damages_row_count": 20,
   "note": "If this test fails, the damages math or data changed. Update the golden file intentionally via: node internal/scripts/generate-golden.mjs"
