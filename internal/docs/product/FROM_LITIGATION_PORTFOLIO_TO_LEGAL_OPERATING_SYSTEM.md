@@ -1,45 +1,145 @@
 # From Litigation Portfolio to Legal Operating System
 
-**Status:** Proposed roadmap (RESTORE IN PROGRESS)
+**Status:** Proposed roadmap  
+**Scope:** Software-engineering maturity, product readiness, and UI evolution  
+**Audience:** Repository agents, maintainers, product designers, and future contributors  
+**Source of truth:** This document records the current product direction. Implementation belongs in separate, reviewable PRs.
+**Audit basis:** [`ENGINEERING_MATURITY_AUDIT_2026-09-21.md`](ENGINEERING_MATURITY_AUDIT_2026-09-21.md) — a read-only architecture and maturity audit against `main` @ `f4716cd`. Corrections it produced are applied below and itemized in that document's "Roadmap delta" section.
 
-> **Integrity note (2026-09-21 PT):** This file was accidentally truncated during an automated MCP write on `codex/product-maturity-roadmap`.  
-> Full body before damage: commit `aee9f844` / blob `ca5fc65f`.  
-> Complete restored bytes (with stack summary below already applied) are staged as `_restore_chunks/00.md`…`04.md` (concatenate in order) and locally verified SHA-256 `bd61293fa0f091abb5f101043ec5e1eb4094b08bbfac6f1e1615aba1af192e3c`.  
-> Delete `_mcp_size_probe_DELETE_ME.md` and `_restore_chunks/` after reassembly.
+## Executive thesis
 
-## Recommended product stack
+The Interactive Litigation Portfolio is already a sophisticated single-operator litigation system. It is not yet a dependable multi-user legal product.
 
-P3 is a private design-partner workspace. P4 is the same spine once someone pays. Neither is the next 30 days (P0). Do not stand up this stack to run an R2 coverage check.
+Capability is ahead of reliability.
 
-### Stack summary (locked)
+The next phase is not primarily about adding features. It is about hardening the existing machine, separating public presentation from private operations, extracting reusable domain primitives, and exposing the repository's agent capabilities through a controlled product interface.
 
-Locked choices from the maturity audit for the P3/P4 product path. The detailed tables below remain the working design notes; when they disagree with this summary, this summary wins.
+The repository should remain the operational laboratory and reference implementation. The commercial product should be extracted from its repeatable operating model rather than treating the repository itself as the customer database.
 
-One-liner: **Cloudflare (Pages + Workers + Queues + R2) · Postgres+RLS (Neon or Hyperdrive) · Clerk/WorkOS · Stripe · Sentry · typed AI review queue** — portfolio Git remains the gold-sample, not the multi-tenant store.
+## Current baseline
 
-| Layer | Choice | Why |
-| --- | --- | --- |
-| Compute / API | Cloudflare Workers (+ Queues / Cron Triggers) | Already run doc-api, portfolio-gate, deploy cron |
-| Object storage | R2 with per-tenant prefix `tenants/{id}/sha256/…` | Content-addressed model already trusted |
-| Relational DB | Postgres with RLS — prefer **Neon** or **Hyperdrive → Postgres** (D1 only for publish cache, not multi-tenant SoR) | Orgs, matters, clocks, audit, conflicts |
-| Auth | Clerk or WorkOS | Small employment firms; don't build auth |
-| Private web | Vite/React → Cloudflare Pages | Phase 1 already pointed here |
-| Public site | Same Pages project, publish projection only (#901 strip) | Separate routes/host if needed |
-| Search | Postgres FTS + R2 text sidecars first; Vectorize/OpenSearch later only if needed | Don't buy Elastic on day one |
-| Jobs | Cloudflare Queues + Consumers + DLQ | ingest, OCR, cite, docket sync |
-| OCR / extract | Keep existing extract pipeline; paid OCR only for scans (Azure Document Intelligence or Google Document AI) | |
-| Docket sync | CourtListener (keep) + manual upload | |
-| AI | Typed ops over mutate-style API; Workers AI and/or one frontier API behind a review queue — **no product chat box** | |
-| Email | Resend or Postmark | |
-| Observability | Cloudflare Analytics + Sentry + structured Worker logs | |
-| Billing (P4) | Stripe | |
-| E&O / compliance | Counsel-drafted policies before any tenant PII | P4-00 gate |
+As of September 21, 2026:
 
-**Portfolio-only forever:** live Newanforbi Git tree as reference; counsel dossiers; plaintiff-first stipulation locks; matter-specific pleading generators; public adversarial storytelling as *your* site, not the product default.
+- 41 structured matters, all using the split-matter architecture
+- 1,629 manifest-tracked files
+- Approximately 1.04 GB of tracked document inventory
+- 1,190 canonical document-registry paths
+- 222 operational script files (88 Node `.mjs` + 134 Python `.py`; 41 shared `lib/` modules)
+- 54 package commands
+- CourtListener synchronization and citation infrastructure
+- R2/D1 document infrastructure and an MCP document API
+- Typed repository mutations, validation gates, document sidecars, deadline clocks, evidence stores, and cross-matter intelligence
+- A remote `portfolio-gate` Check Run already exists (`workers/portfolio-gate/`: GitHub App + Cloudflare Containers, locked check name, 25-minute fail-closed timeout, own test suite)
+- Branch protection is configured on `main`, but `required_status_checks` is **not enabled**, `required_approving_review_count` is **0**, and `enforce_admins` is **false** — so the check is advisory and merges are unblocked
+- No GitHub Actions, by standing policy (`AGENTS.md`: do not add `.github/workflows/`)
 
-**Explicitly not needed for P3/P4:** Clio/MyCase dependency; Kubernetes / full AWS; replacing R2 with S3 "for enterprise"; a second monorepo rewrite before package extract works.
+## Maturity assessment
 
-**Sequencing:** P3 packages + blank tenant on Postgres+R2 while portfolio stays on Git → P4-00 professional-responsibility layer → P4-01 orgs + RLS + per-tenant R2 + immutable audit → P4-02 pilots with 2–3 employment plaintiff firms.
+| Dimension | Current | Target |
+| --- | ---: | ---: |
+| Domain model | 8.5/10 | 9.5/10 |
+| Automation | 8.5/10 | 9.5/10 |
+| AI-agent design | 9/10 | 9.5/10 |
+| Testing and validation | 7/10 | 9/10 |
+| CI enforcement | 3/10 | 9/10 |
+| Data integrity | 6.5/10 | 9/10 |
+| Maintainability | 6/10 | 8.5/10 |
+| Deployment and operations | 6.5/10 | 9/10 |
+| Security and permissions | 5/10 | 9/10 |
+| Product UX | 6/10 | 8.5/10 |
+| Multi-user readiness | 2/10 | 8/10 |
 
+The system is approximately a Level 3 operational platform in capability, Level 2 in reliability, and Level 1 as a multi-user product.
 
-Decision rules: see commit `aee9f844` for the full detailed tables (P3 pilot stack, tenant isolation, model layer, P4 triggers, etc.) until this file is fully reassembled from `_restore_chunks/` or `aee9f844`+insert.
+The audit regrades three rows downward and adds one dimension this table omits:
+
+| Dimension | This table | Audit | Why |
+| --- | ---: | ---: | --- |
+| CI enforcement | 3/10 | **2/10** | The machinery exists and is switched off, which is worse than absent — it produces the appearance of a control |
+| Data integrity | 6.5/10 | **5/10** | 195 manifest entries assert files that cannot be retrieved |
+| Recovery and backups | — | **3.5/10** | Not scored here. 195 entries plus 27 root files have no second copy, and no restore drill has been run |
+
+## Product position
+
+Do not build another general-purpose Clio clone.
+
+The strongest position is:
+
+> An AI-native litigation command system that turns case documents into a structured, auditable matter graph.
+
+The initial customer wedge should be:
+
+- Solo plaintiff lawyers
+- Small civil-rights and employment firms
+- Legal clinics with document-heavy portfolios
+- High-capability self-represented litigants
+
+The product's repeatable jobs are:
+
+- Create a structured matter from uploaded documents and docket records
+- Extract and reconcile procedural deadlines
+- Connect evidence to allegations, claims, parties, and filings
+- Verify citations and build research queues
+- Detect missing documents, contradictory facts, and stale procedural data
+- Preserve source provenance and an auditable activity history
+- Allow typed AI operations subject to human review
+
+## Architecture principles
+
+1. **Canonical records first.** Matter data and document metadata are authoritative. README tables, indexes, summaries, registries, and dashboards are derived.
+2. **Typed mutations only.** Agents should use validated operations instead of editing generated JSON directly.
+3. **Transactional ingestion.** Hashing, deduplication, storage, sidecar creation, registration, matter attachment, indexing, and availability checks succeed or fail together.
+4. **Git is not the binary store.** Git should retain code, structured metadata, text extraction, and small artifacts. Object storage should own PDFs and other large binaries.
+5. **Review before consequence.** Agent-proposed changes must show sources, files affected, validation results, and a reviewable diff.
+6. **Public and private surfaces are separate.** Public storytelling and private litigation operations must not compete inside one interface.
+7. **Every important operation is observable.** Failures, drift, stale data, unavailable documents, and synchronization status must be visible.
+8. **The current portfolio remains protected.** Product extraction must not destabilize live litigation operations.
+
+## UI direction
+
+### Public portfolio
+
+The public surface should communicate professional identity and selected results:
+
+- Selected matters and filings
+- Outcomes and published opinions
+- Portfolio statistics
+- Professional branding
+- Carefully selected opposing-counsel context
+- Navy, gold, off-white, crest, and formal legal typography
+
+### Private workspace
+
+A correction from the audit on the premise here. The concern that the UI mixes public storytelling, private operations, and adversarial presentation is only partly right. `routes.ts` exposes nine nav items, and **Deadlines, Documents, Evidence, and Research are not among them** — even though `CalendarTab`, `DeadlineCalculatorTab`, `ServiceTracker`, `CoverageTower`, `NextActionsPanel`, `CrossMatterTab`, `GlobalSearchDialog`, and `SavedViews` are all built. There is also no authentication anywhere in the SPA, so everything shipped is public by construction.
+
+So private operations are not competing with the public surface so much as absent from it: the operator workspace has been built as a CLI (`npm run q`, `npm run next`, `npm run mcp`) and needs a UI. That is a cheaper problem than untangling three audiences, and it means the work below is mostly exposure rather than invention.
+
+The private product surface should prioritize action:
+
+- Home
+- Matters
+- Deadlines
+- Documents
+- Evidence
+- Research
+- People and organizations
+- Agents
+- System health
+
+The top bar should provide global search, add-document, create-matter, notifications, and workspace controls.
+
+The private dashboard should lead with:
+
+1. Action queue
+2. Upcoming and overdue deadlines
+3. Data-integrity exceptions
+4. Active matters
+5. Recent activity
+6. Portfolio analytics
+
+### Matter workspace
+
+Every matter should expose:
+
+- Overview
+- Docket
