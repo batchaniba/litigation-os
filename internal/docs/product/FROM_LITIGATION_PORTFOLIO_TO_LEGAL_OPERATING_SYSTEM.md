@@ -340,6 +340,104 @@ The product should use a database and object storage rather than Git as the cust
 - Typed API or operation layer for all writes
 - Git retained for code, schemas, migrations, policy definitions, fixtures, and the reference portfolio
 
+
+## Recommended product stack
+
+Use Cloudflare as the infrastructure spine, not as the entire application platform. Preserve the current Vercel deployment during the pilot; migration is justified only when operating simplicity or cost clearly improves.
+
+| Layer | Pilot choice | Responsibility | Scale trigger |
+| --- | --- | --- | --- |
+| Web application | Existing React/Vite application on Vercel | Public portfolio and authenticated operator workspace | Move only if consolidating deployment onto Cloudflare materially reduces complexity |
+| Edge API | Cloudflare Workers | API endpoints, authorization enforcement, signed document access, webhook intake, rate limiting, and MCP gateway | Split services only when deployment or reliability boundaries demand it |
+| Document storage | Cloudflare R2 | Original documents, OCR text, sidecars, exports, and generated artifacts | Add replication or a second backup target before external customer data |
+| Product database | Managed PostgreSQL | Organizations, users, memberships, matters, permissions, deadlines, evidence, document metadata, and audit records | Add read replicas, connection pooling, and stronger tenant isolation as load requires |
+| Existing lightweight index | Cloudflare D1 | Preserve the current portfolio projection and document API where it is already effective | Do not make D1 the sole source of truth for the multi-user product |
+| Job transport | Cloudflare Queues | Reliable dispatch, retry, batching, and dead-letter handling for ingestion and extraction jobs | Partition queues by workload when backlogs or priority classes appear |
+| Durable orchestration | Cloudflare Workflows | Resumable multi-step ingestion, reconciliation, and human-review workflows | Introduce only for jobs that outlive a normal request or require checkpoints |
+| Heavy document compute | One containerized Python worker | OCRmyPDF, PyMuPDF, image conversion, packet processing, and CPU/memory-heavy extraction | Add workers horizontally; avoid a microservice fleet |
+| Authentication | Clerk Organizations | Sessions, invitations, organizations, and initial role management | Add WorkOS or equivalent when enterprise SSO becomes a signed-customer requirement |
+| AI services | OpenAI API behind an internal provider interface | Structured extraction, comparison, summarization, chronology work, and source-grounded agent operations | Add a second provider only for a measured capability, reliability, or cost advantage |
+| Search | PostgreSQL full-text search plus pgvector | Matter and document retrieval without a separate search platform | Add dedicated search infrastructure only after measured Postgres limits |
+| Error monitoring | Sentry plus Cloudflare logs | Frontend, API, job, and ingestion failures | Add centralized log warehousing when incident volume justifies it |
+| Transactional email | Postmark or Resend | Invitations, processing failures, deadline notices, and export delivery | Select one; do not operate both |
+| Product analytics | PostHog | Activation, workflow completion, retention, and feature usage | Add at the controlled-pilot stage, not before the core workflow works |
+| Billing | Stripe | Subscriptions, invoices, and usage-based charges | Add when the product begins charging, not during internal hardening |
+| Secrets | 1Password plus GitHub, Vercel, and Cloudflare environment secrets | Human credential custody and environment-specific runtime secrets | Maintain separate development, staging, and production scopes |
+
+### Product-system boundary
+
+The reference portfolio remains in Git and continues using its established R2/D1 and agent workflows. Customer runtime state belongs in PostgreSQL and R2. Product extraction must not move live Newanforbi matter data into the new tenant model.
+
+A normal request should follow this path:
+
+1. The browser calls the authenticated Workers API.
+2. The API authorizes the user against organization and matter membership.
+3. Transactional metadata is read or written in PostgreSQL.
+4. Document bytes are written to R2 under immutable content-addressed keys.
+5. Queue messages dispatch OCR, extraction, citation, or indexing work.
+6. The document worker writes derived artifacts to R2 and structured results to PostgreSQL.
+7. Consequential agent proposals remain pending until a human approves them through a typed operation.
+
+### Environment strategy
+
+Maintain three isolated environments:
+
+- **Development:** synthetic fixtures, local tooling, disposable database, and non-production buckets.
+- **Staging:** production-shaped infrastructure with synthetic or specifically approved test documents.
+- **Production:** customer and portfolio data, separately scoped credentials, backups, retention controls, and alerting.
+
+No production credential should be accepted by development code. Every schema migration and deployment must run against staging first.
+
+### Backup and recovery standard
+
+- PostgreSQL point-in-time recovery plus scheduled encrypted exports
+- R2 lifecycle rules and an independent secondary copy for production documents
+- Versioned infrastructure and migration definitions in Git
+- Quarterly restore drills with measured recovery time and documented results
+- Tenant export and deletion procedures tested before a multi-user pilot
+
+### Acquisition sequence
+
+**Private prototype**
+
+- Keep Vercel and the existing Cloudflare deployment
+- Add managed PostgreSQL, authentication, one processing worker, error monitoring, and staging
+- Use PostgreSQL search before buying a dedicated search product
+- Use synthetic data until tenant isolation and restore tests pass
+
+**Controlled pilot**
+
+- Add transactional email, product analytics, queue-backed retries, tenant exports, retention controls, and security review
+- Pilot with two or three solo or small plaintiff-side firms
+- Measure time-to-matter, successful ingestion, deadlines caught, recommendation acceptance, corrections, and weekly retention
+
+**Commercial launch**
+
+- Add Stripe, customer-facing administration, formal support and incident processes, contractual documents, and enterprise identity only when demanded
+- Introduce additional infrastructure from observed constraints rather than anticipated scale
+
+### Planning range
+
+For a small private pilot, budget approximately **$100–$400 per month** for base infrastructure, excluding usage-variable AI, OCR, and document-processing compute. At 10–25 active users, use **$500–$2,000 per month** as an operating-planning range until measured workloads replace estimates.
+
+These are planning bands, not procurement commitments. Record actual cost per ingested document, active matter, and retained user from the first pilot.
+
+### Explicit deferrals
+
+Do not introduce the following during the private-prototype phase:
+
+- Kubernetes
+- A microservice fleet
+- A native mobile application
+- A dedicated vector database
+- Elasticsearch
+- Multiple AI providers
+- Enterprise SSO
+- SOC 2 certification work
+- Mass-market billing
+- Parallel vendors serving the same infrastructure role
+
+
 ## Agent contribution protocol
 
 Future agents building from this plan should:
