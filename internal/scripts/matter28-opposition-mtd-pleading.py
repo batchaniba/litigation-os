@@ -29,7 +29,9 @@ SCRIPT_DIR = Path(__file__).resolve().parent
 sys.path.insert(0, str(SCRIPT_DIR / "lib"))
 sys.path.insert(0, str(SCRIPT_DIR))
 
-from pleading_paper import CONTENT_LEFT, PleadingPaper  # noqa: E402
+from pleading_paper import (  # noqa: E402
+    CONTENT_LEFT, CONTENT_RIGHT, CONTENT_WIDTH, PleadingPaper,
+)
 from signature_stamp import SIGNATURE_PATH, SIGNATURE_NATIVE_PX  # noqa: E402
 
 REPO_ROOT = SCRIPT_DIR.parent.parent
@@ -51,8 +53,9 @@ COURT_LINE1 = "UNITED STATES DISTRICT COURT"
 COURT_LINE2 = "NORTHERN DISTRICT OF CALIFORNIA"
 
 SIG_IMG_W_PX, SIG_IMG_H_PX = SIGNATURE_NATIVE_PX
-SIG_WIDTH = 160
+SIG_WIDTH = 235          # enlarged sign-off stamp
 SIG_RIGHT_OFFSET = 28
+SIG_HEIGHT_SCALE = 1.25
 
 ATTORNEY_BLOCK = [
     ("BRENDAN NGEHSI NEWANFORBI", "Times-Bold", 12),
@@ -304,7 +307,58 @@ def signature_block() -> str:
     )
 
 
-def render(out_path: Path) -> int:
+def is_toc_entry(ctype: str, text: str):
+    """Roman section headers and lettered (A.-H.) argument subheads are the
+    Table-of-Contents entries; the numbered sub-subheads are not listed."""
+    if ctype == H:
+        return ("roman", text)
+    if ctype == S and re.match(r"^[A-H]\.\s", text):
+        return ("letter", text)
+    return None
+
+
+def toc_row(d, label: str, page_str: str, bold: bool = False, indent: float = 0,
+            num_reserve: float = 30) -> None:
+    """Draw one TOC line: label (wrapped if long) + dot leader + right page no.
+    The page number reserves a FIXED width so label wrapping -- and therefore
+    the TOC's total line count -- is identical whether the number is 1 or 2
+    digits. That stability is what makes the two-pass page numbers correct."""
+    c = d.c
+    fn = "Times-Bold" if bold else "Times-Roman"
+    size = 12
+    left_x = CONTENT_LEFT + indent
+    right_x = CONTENT_RIGHT
+    avail = CONTENT_WIDTH - indent - num_reserve - 6
+    words = label.split(" ")
+    lines, cur = [], ""
+    for w in words:
+        t = (cur + " " + w).strip()
+        if c.stringWidth(t, fn, size) > avail and cur:
+            lines.append(cur)
+            cur = w
+        else:
+            cur = t
+    if cur:
+        lines.append(cur)
+    for i, ln in enumerate(lines):
+        d._ensure_line()
+        y = d._line_y(d.current_line)
+        c.setFont(fn, size)
+        c.drawString(left_x, y, ln)
+        if i == len(lines) - 1:
+            c.setFont("Times-Roman", size)
+            c.drawRightString(right_x, y, page_str)
+            label_end = left_x + c.stringWidth(ln, fn, size) + 4
+            num_w = c.stringWidth(page_str, "Times-Roman", size)
+            leader_end = right_x - num_w - 4
+            if leader_end > label_end:
+                dw = c.stringWidth(". ", "Times-Roman", size)
+                ndots = max(0, int((leader_end - label_end) / dw))
+                c.drawString(label_end, y, ". " * ndots)
+        d.current_line += 1
+
+
+def render(out_path: Path, toc_pages: dict, capture: dict | None = None) -> int:
     out_path.parent.mkdir(parents=True, exist_ok=True)
     d = PleadingPaper(str(out_path), doc_title_footer=DOC_TITLE_FOOTER)
 
@@ -332,13 +386,32 @@ def render(out_path: Path) -> int:
     )
     d.blank_line()
 
+    # --- TABLE OF CONTENTS (within the document, after the caption) ---
+    d.ensure_space(4)
+    d.write_line("TABLE OF CONTENTS", bold=True, center=True)
+    d.blank_line()
+    for ctype, text in CONTENT:
+        te = is_toc_entry(ctype, text)
+        if not te:
+            continue
+        level, label = te
+        pg = str(toc_pages.get(label, "0"))
+        toc_row(d, label, pg, bold=(level == "roman"),
+                indent=(0 if level == "roman" else 18))
+    d.blank_line()
+
+    # --- BODY ---
     for c_type, text in CONTENT:
         if c_type == H:
             d.ensure_space(4)
+            if capture is not None:
+                capture[text] = d.page_num
             d.write_line(text, bold=True, center=True)
             d.blank_line()
         elif c_type == S:
             d.ensure_space(6)
+            if capture is not None and re.match(r"^[A-H]\.\s", text):
+                capture[text] = d.page_num
             d.write_wrapped(f"<<b:{italicize_cases(text)}>>", first_indent=0)
             d.blank_line()
         elif c_type == P:
@@ -354,6 +427,7 @@ def render(out_path: Path) -> int:
             d.draw_signature_image(
                 SIGNATURE_PATH, SIG_IMG_W_PX, SIG_IMG_H_PX, line,
                 width=SIG_WIDTH, right_margin_offset=SIG_RIGHT_OFFSET,
+                height_scale=SIG_HEIGHT_SCALE,
             )
             d.write_line(line, right=True, right_margin_offset=SIG_RIGHT_OFFSET)
         else:
@@ -361,17 +435,24 @@ def render(out_path: Path) -> int:
     d.blank_line()
 
     d.save()
-    pages = getattr(d, "page_num", getattr(d, "page_number", "?"))
-    print(f"Wrote {out_path} ({out_path.stat().st_size} bytes, {pages} pages)")
-    return out_path.stat().st_size
+    print(f"Wrote {out_path} ({out_path.stat().st_size} bytes, {d.page_num} pages)")
+    return d.page_num
 
 
 def main() -> None:
     if not Path(SIGNATURE_PATH).is_file():
         raise SystemExit(f"Missing universal signature: {SIGNATURE_PATH}")
-    targets = list(OUT_PATHS) + [SCRATCH_OUT]
-    for out in targets:
-        render(out)
+    # Pass 1: capture the page each TOC entry lands on (TOC present w/ placeholders).
+    capture: dict = {}
+    tmp = SCRATCH_OUT.parent / "_toc_pass1.pdf"
+    render(tmp, {}, capture=capture)
+    try:
+        tmp.unlink()
+    except OSError:
+        pass
+    # Pass 2: render final with real TOC page numbers.
+    for out in list(OUT_PATHS) + [SCRATCH_OUT]:
+        render(out, capture)
     print("NOTE: not yet e-filed/served. Verify pins before filing (see review notes).")
 
 
