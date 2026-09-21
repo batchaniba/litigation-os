@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "fileCount": 1530,
-  "totalBytes": 1006479683,
+  "fileCount": 1629,
+  "totalBytes": 1036189241,
   "files": [
     {
       "path": "/documents/_form-library/ao239-blank-template.pdf",
@@ -3704,6 +3704,21 @@
       "sha256": "7dcaf81a5f439533bf2af71db6c9d477af2de8f620e46941e502dd0bbd6c9dd3"
     },
     {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 15 - Vons Answer to Class Action Complaint (Apr 8, 2025).meta.json",
+      "size": 301,
+      "sha256": "cc25f7d6ad0aa0788d81d5b222cd3a84dc19ed2f88806ec0c579fbb7a826a8fd"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 15 - Vons Answer to Class Action Complaint (Apr 8, 2025).pdf",
+      "size": 204962,
+      "sha256": "b516472fe6b9da2556429b7367b3e2fdf285390499b954f58f223f5790929060"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 15 - Vons Answer to Class Action Complaint (Apr 8, 2025).txt",
+      "size": 49585,
+      "sha256": "e4941233433182662c3cc5d4ab4ef44806782785a4be425e27b4385acc916970"
+    },
+    {
       "path": "/documents/matter-29/carrillo-v-vons/Dkt 15 - Vons Answer to Complaint (Apr 8, 2025).meta.json",
       "size": 316,
       "sha256": "9634097eadf810f74c8a08989f905a9cf8cfd19a96f2bbab56e71888427af6d1"
@@ -3717,6 +3732,21 @@
       "path": "/documents/matter-29/carrillo-v-vons/Dkt 15 - Vons Answer to Complaint (Apr 8, 2025).txt",
       "size": 49585,
       "sha256": "e4941233433182662c3cc5d4ab4ef44806782785a4be425e27b4385acc916970"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 19 - Asurint Answer and Affirmative Defenses - Stanzick (May 30, 2025).meta.json",
+      "size": 330,
+      "sha256": "0a972859bb497a8301ef200894369de2d46ac9fdf5bf39db022c00e2a1b310e1"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 19 - Asurint Answer and Affirmative Defenses - Stanzick (May 30, 2025).pdf",
+      "size": 227933,
+      "sha256": "55b800369cfc832694cf110617c09b5dbc21ace60d1d5f66fe2f272cb2d81076"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 19 - Asurint Answer and Affirmative Defenses - Stanzick (May 30, 2025).txt",
+      "size": 89302,
+      "sha256": "027c23d8577d9f103c83619f65166e8c8b66ec044cc2e60dfd36ba804bac3bff"
     },
     {
       "path": "/documents/matter-29/carrillo-v-vons/Dkt 19 - Asurint Answer to Complaint (May 30, 2025).meta.json",
@@ -3854,6 +3884,261 @@
       "sha256": "221a7fb0d047c95ede17ae772dcf0adbe8b0df8efaaf3186e40d08faf4a35b69"
     },
     {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 56-10 - Ex 9 Carrillo Mitigation Email to Albertsons (Mar 6, 2023) (Filed Feb 18, 2026).meta.json",
+      "size": 359,
+      "sha256": "a8c2a613fce3c9ce01af065fd4f5e094dcf4b0b14b95c3e5ee267e1f18af1431"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 56-10 - Ex 9 Carrillo Mitigation Email to Albertsons (Mar 6, 2023) (Filed Feb 18, 2026).pdf",
+      "size": 2647113,
+      "sha256": "6426e71ef48876ecb63dd540f7a37e8ec4c37af62e4449b88389649a4f779483"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 56-10 - Ex 9 Carrillo Mitigation Email to Albertsons (Mar 6, 2023) (Filed Feb 18, 2026).txt",
+      "size": 12709,
+      "sha256": "4415c657f32f42d52277128d492d5a1deb67b18115702d482807b9cb72317994"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 56-11 - Ex 10 Adverse Action Notice Asurint (Mar 8, 2023) (Filed Feb 18, 2026).meta.json",
+      "size": 355,
+      "sha256": "cb6aa90436097c6ad27d1c7af87f9df06837938933243143f79651db135a78c5"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 56-11 - Ex 10 Adverse Action Notice Asurint (Mar 8, 2023) (Filed Feb 18, 2026).pdf",
+      "size": 936664,
+      "sha256": "b28549cb4226d0e46d3f33538adc182f6649b8dbbf581491d29a7732de097530"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 56-11 - Ex 10 Adverse Action Notice Asurint (Mar 8, 2023) (Filed Feb 18, 2026).txt",
+      "size": 4083,
+      "sha256": "68e04830275e792554adab00a40d33cc94609f32c4518a7fb7427c0f4428cde0"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 56-12 - Declaration of Courtney Jones ISO Vons Opposition (Feb 18, 2026).meta.json",
+      "size": 348,
+      "sha256": "7e22e5fee605da4c93d06ae7233262ccaeb77a6f1d3925921218abc0fa68fc1a"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 56-12 - Declaration of Courtney Jones ISO Vons Opposition (Feb 18, 2026).pdf",
+      "size": 417204,
+      "sha256": "ea482669a2e1dabd66ff680e853fd2a109ce89b78ebd35f28c7da6ba86221329"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 56-12 - Declaration of Courtney Jones ISO Vons Opposition (Feb 18, 2026).txt",
+      "size": 10125,
+      "sha256": "b0330a06cee967e52ffc0215be35cb1130ec66855c7c4a9188ec683a4047dfa2"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 56-13 - Vons Request for Judicial Notice ISO Opposition (Feb 18, 2026).meta.json",
+      "size": 343,
+      "sha256": "52aa0b5b72b13d751abece69dd96249bc3452406877f758a4cc512dff5149207"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 56-13 - Vons Request for Judicial Notice ISO Opposition (Feb 18, 2026).pdf",
+      "size": 151069,
+      "sha256": "d72c7643a70aee0c7101c47bb736444466b70064688f80e6b745f7ad6656d303"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 56-13 - Vons Request for Judicial Notice ISO Opposition (Feb 18, 2026).txt",
+      "size": 12759,
+      "sha256": "21917bfdaa81ac9cc47d507bcb7bb05e70953743bb5e49fc32d4daf5b7a4ae60"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 56-14 - Ex A Criminal Judgment 3-16-cr-01694 (Aug 31, 2017) (Filed Feb 18, 2026).meta.json",
+      "size": 353,
+      "sha256": "0cc00a86441ffb70cb25dbe126d590cc3c19005d007dc835fc32e5b761b223b1"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 56-14 - Ex A Criminal Judgment 3-16-cr-01694 (Aug 31, 2017) (Filed Feb 18, 2026).pdf",
+      "size": 2144955,
+      "sha256": "e52f24c380a13ce8b40bf0a9d27495646e4ee3651b2b016fdf1e261f50952827"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 56-14 - Ex A Criminal Judgment 3-16-cr-01694 (Aug 31, 2017) (Filed Feb 18, 2026).txt",
+      "size": 21529,
+      "sha256": "0daae9478fa020d47de123a900a1ef9c537373101b63c9af495faff0ba44b279"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 56-15 - Ex B Criminal Case Filing 3-16-cr-01694 (Filed Feb 18, 2026).meta.json",
+      "size": 345,
+      "sha256": "3129377727c6ea0bfa4d7d34a7ef60d80b5585dcc204d137e1101c2fe75349c9"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 56-15 - Ex B Criminal Case Filing 3-16-cr-01694 (Filed Feb 18, 2026).pdf",
+      "size": 1518454,
+      "sha256": "d8685b189d87da07e68f2885eeffc20e9c8cbbb1130a7c770dd5595b6da647fe"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 56-15 - Ex B Criminal Case Filing 3-16-cr-01694 (Filed Feb 18, 2026).txt",
+      "size": 46026,
+      "sha256": "217a3c6c8a2a82cc41d598d79d93a0cdfe52f179ea08cbf8ee8d9f2d212efa15"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 56-16 - Ex C Status Hearing Transcript USA v Sandoval (Jan 24, 2025) (Filed Feb 18, 2026).meta.json",
+      "size": 370,
+      "sha256": "042dd0c98a0c138e136e1a40201b14284f51334800da1f2f282770513f4f3db3"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 56-16 - Ex C Status Hearing Transcript USA v Sandoval (Jan 24, 2025) (Filed Feb 18, 2026).pdf",
+      "size": 855855,
+      "sha256": "a8ccfd4ad2678102f35598cb48001bc2effc881393363032993d64c036e4db22"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 56-16 - Ex C Status Hearing Transcript USA v Sandoval (Jan 24, 2025) (Filed Feb 18, 2026).txt",
+      "size": 39349,
+      "sha256": "88601565f1f74df541d9714e225d1ebce3f9db8820a3de695f7ae50b249df109"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 56-17 - Ex D Faretta Hearing Transcript USA v Sandoval (Feb 7, 2025) (Filed Feb 18, 2026).meta.json",
+      "size": 371,
+      "sha256": "d5fe2317c2ca64eaa116ea0ec90a9034710564b18a24920b929298ed5951130d"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 56-17 - Ex D Faretta Hearing Transcript USA v Sandoval (Feb 7, 2025) (Filed Feb 18, 2026).pdf",
+      "size": 848387,
+      "sha256": "806e6029d3123fe718b8627c8cf6a7c61b0811074ae30fd365970f07d82d7f5d"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 56-17 - Ex D Faretta Hearing Transcript USA v Sandoval (Feb 7, 2025) (Filed Feb 18, 2026).txt",
+      "size": 35115,
+      "sha256": "456c01fb4843f7f173f79ee757d41b6df90edc4cd097a62d3ab8ba5387bea1eb"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 56-18 - Ex E Ninth Circuit Memorandum USA v Sandoval (Jan 2, 2026) (Filed Feb 18, 2026).meta.json",
+      "size": 366,
+      "sha256": "4648b4c0af74afd7a1a8a069271773832d9f1cff8a846f3dbbfa0241225b1cf3"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 56-18 - Ex E Ninth Circuit Memorandum USA v Sandoval (Jan 2, 2026) (Filed Feb 18, 2026).pdf",
+      "size": 777870,
+      "sha256": "0743eed6d5e651a1a5293f542fe9c8b28146a689afb8b07dc9af1a5a42279f12"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 56-18 - Ex E Ninth Circuit Memorandum USA v Sandoval (Jan 2, 2026) (Filed Feb 18, 2026).txt",
+      "size": 4108,
+      "sha256": "45a77bcce34594f7cdd4d2e408cc8ea1f42a49fd6aeb464966308eb1a4db5170"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 56-19 - Ex F Probation Form 12B Modify Supervision (Aug 28, 2025) (Filed Feb 18, 2026).meta.json",
+      "size": 360,
+      "sha256": "eb9b224e97ad08086c341e98936a99dd3a7f952068600d8c118675d84baafae1"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 56-19 - Ex F Probation Form 12B Modify Supervision (Aug 28, 2025) (Filed Feb 18, 2026).pdf",
+      "size": 1328995,
+      "sha256": "e675feacc9b3d15c2f83c94d0e9685a83b0b681acec73edcafaafba8b312f70a"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 56-19 - Ex F Probation Form 12B Modify Supervision (Aug 28, 2025) (Filed Feb 18, 2026).txt",
+      "size": 7940,
+      "sha256": "48f47aa9c91ed48bad870d0d463d7250183492a643e450f1dd346d84b20504e5"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 56-2 - Ex 1 Vons SOP Criminal Conviction Histories California (Feb 18, 2026).meta.json",
+      "size": 368,
+      "sha256": "4fdc5b4a964a7990505cb89f6b17dcef1aeefbd2f133ae68ef7a812c1bcd4bee"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 56-2 - Ex 1 Vons SOP Criminal Conviction Histories California (Feb 18, 2026).pdf",
+      "size": 858192,
+      "sha256": "739802d241be951a565dc78849ac065fbe9fb31ee845364d014e38df7a9c6cd8"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 56-2 - Ex 1 Vons SOP Criminal Conviction Histories California (Feb 18, 2026).txt",
+      "size": 6018,
+      "sha256": "8112cb1437db81631395910526453f6f10c5c8f703fe9e2442aa4f4d65040452"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 56-3 - Ex 2 Deposition of Toni North PMK Vons (Oct 29, 2025) (Filed Feb 18, 2026).meta.json",
+      "size": 355,
+      "sha256": "01f582f5bfb1d0659158033677e28bf6aabd253ca0c345eedd7da2c902ee04ad"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 56-3 - Ex 2 Deposition of Toni North PMK Vons (Oct 29, 2025) (Filed Feb 18, 2026).pdf",
+      "size": 964995,
+      "sha256": "afbfcf3b8d81f8692c4b70bfcd45923bd0f9df7048e091ad43af481242e7f311"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 56-3 - Ex 2 Deposition of Toni North PMK Vons (Oct 29, 2025) (Filed Feb 18, 2026).txt",
+      "size": 59010,
+      "sha256": "26242e0c1ad6dfff3c4597b8d55d891bf5e68085f825b2e50aeb46f9342fd7a1"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 56-5 - Ex 4 Vons Second Supplemental Responses to Interrogatories Set One (Feb 18, 2026).meta.json",
+      "size": 369,
+      "sha256": "14230f4096bed7704f154e7ba6c020e649032670da65e2040081e81fb08c0d6a"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 56-5 - Ex 4 Vons Second Supplemental Responses to Interrogatories Set One (Feb 18, 2026).pdf",
+      "size": 863323,
+      "sha256": "5c7799ccd2343a16d60b7a46efebb77ca87e87574854722e2eecdb1cb67b8cc0"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 56-5 - Ex 4 Vons Second Supplemental Responses to Interrogatories Set One (Feb 18, 2026).txt",
+      "size": 67915,
+      "sha256": "14b0e0cc331caf726b4bf28d61cb7ff3aadfc1ecdafe8510b6f2a566bd8f7484"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 56-6 - Ex 5 Video Deposition of Roberto Sandoval Carrillo (Oct 23, 2025) (Filed Feb 18, 2026).meta.json",
+      "size": 367,
+      "sha256": "9262d16516b5d97d6d48c82fed2d6926bccbd2b17aed4b50aceebeb73e7b3aa0"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 56-6 - Ex 5 Video Deposition of Roberto Sandoval Carrillo (Oct 23, 2025) (Filed Feb 18, 2026).pdf",
+      "size": 927120,
+      "sha256": "43c15192467eb447ad848cea77fc4bd352b7ea4c6a991004511fa36c372d208d"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 56-6 - Ex 5 Video Deposition of Roberto Sandoval Carrillo (Oct 23, 2025) (Filed Feb 18, 2026).txt",
+      "size": 52977,
+      "sha256": "db6dd768b5577e6c0ca03f971e30ee16ad831157667b2e2fedecf98721b727c2"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 56-7 - Ex 6 Carrillo Candidate Profile REDACTED (Feb 18, 2026).meta.json",
+      "size": 346,
+      "sha256": "f13b16d4d74fb7397f0eaab1d85b2a1dd8925363c81e03af4deedfe25c340480"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 56-7 - Ex 6 Carrillo Candidate Profile REDACTED (Feb 18, 2026).pdf",
+      "size": 1269347,
+      "sha256": "ba48bf0421ee51a49cb75b1ba83b7dac60a74d50f9c6cedc05906eb16f46cfe5"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 56-7 - Ex 6 Carrillo Candidate Profile REDACTED (Feb 18, 2026).txt",
+      "size": 30647,
+      "sha256": "2c429f94611dde072b028a35bd40f407151f1ae4653b97b7499b9602da4973e8"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 56-8 - Ex 7 Legendary Service Commitment (Feb 18, 2026).meta.json",
+      "size": 337,
+      "sha256": "181c819b43d6f6355a8a3d1b4acddea1f530e29205cb4c4d315e0d32c365522e"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 56-8 - Ex 7 Legendary Service Commitment (Feb 18, 2026).pdf",
+      "size": 707758,
+      "sha256": "002766df3210a7e1e4d61dbc16b8c48d39b877a414745d21693f2dace080c2a5"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 56-8 - Ex 7 Legendary Service Commitment (Feb 18, 2026).txt",
+      "size": 3219,
+      "sha256": "60a0a5d5b9b7dbbe7768f888c84851094e0eef918e473ee4614f1942c19832c2"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 56-9 - Ex 8 Pre-Adverse Action Notice Asurint (Feb 28, 2023) (Filed Feb 18, 2026).meta.json",
+      "size": 354,
+      "sha256": "05410c1e4a61129c6e28a625da3359fa89ce9b43d7036227cfe4a9319260c07c"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 56-9 - Ex 8 Pre-Adverse Action Notice Asurint (Feb 28, 2023) (Filed Feb 18, 2026).pdf",
+      "size": 1068703,
+      "sha256": "6ebfa1f82f1bb543e3abbe88b46f1ff5347b853dedd1e6c2d0c9988b8d49ea3e"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 56-9 - Ex 8 Pre-Adverse Action Notice Asurint (Feb 28, 2023) (Filed Feb 18, 2026).txt",
+      "size": 6740,
+      "sha256": "9bb7938c665947102dd41a4bba8fced2263acb8428e4a847e3dba5f1299ba90b"
+    },
+    {
       "path": "/documents/matter-29/carrillo-v-vons/Dkt 57 - Asurint Opposition to Class Certification - Stanzick (Feb 18, 2026).meta.json",
       "size": 405,
       "sha256": "da31cc5988736ad2663cb87ff811cbdca8afd38ae8bb858437a6274c64ba74fb"
@@ -3959,6 +4244,36 @@
       "sha256": "497815daa4ebcfbd468e6f266ff65fbf26a8eba2fc097a2bd7d8bd58f61938fb"
     },
     {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 62 - Transcript of Motion Hearing (Apr 15, 2026) (Filed May 29, 2026).meta.json",
+      "size": 328,
+      "sha256": "e6015c8aec4dffb43e709ed06d564e2f498e674cf847685ffc87849a8285b5aa"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 62 - Transcript of Motion Hearing (Apr 15, 2026) (Filed May 29, 2026).pdf",
+      "size": 217181,
+      "sha256": "2fb4fb00ca41af1f9eba4b5b964c36cd4022b777a1a3077bf81be1b614f29855"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 62 - Transcript of Motion Hearing (Apr 15, 2026) (Filed May 29, 2026).txt",
+      "size": 80735,
+      "sha256": "497815daa4ebcfbd468e6f266ff65fbf26a8eba2fc097a2bd7d8bd58f61938fb"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 64 - Vons Additional Request for Judicial Notice (Sep 15, 2026).meta.json",
+      "size": 315,
+      "sha256": "c22625fbdf082f7550c5d31d7f74dcee14a9730c2fd55a82f336b38404bab403"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 64 - Vons Additional Request for Judicial Notice (Sep 15, 2026).pdf",
+      "size": 59524,
+      "sha256": "860b3f719280a890e0b97da90266bf96a853ff86cf677c747eafe98753db8838"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 64 - Vons Additional Request for Judicial Notice (Sep 15, 2026).txt",
+      "size": 10569,
+      "sha256": "875b91ca6039a41d5f5e43925f743752dcac613034a1c74ddcc764b686146f60"
+    },
+    {
       "path": "/documents/matter-29/carrillo-v-vons/Dkt 64 - Vons Request for Judicial Notice ISO Class Cert Opposition (Sep 15, 2026).meta.json",
       "size": 335,
       "sha256": "29a8cc95f2e46992a1091ac4c1c3fea921de396918d0d633471c4452c629aa5b"
@@ -3985,6 +4300,21 @@
     },
     {
       "path": "/documents/matter-29/carrillo-v-vons/Dkt 64-1 - Exhibit A - Federal Court Order (Sep 15, 2026).txt",
+      "size": 5746,
+      "sha256": "094585a2103ca92d36bea7159db08ff8ea9cba1989a331fd175bfc2e5b94d002"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 64-1 - Exhibit A to Vons Additional RJN (Sep 15, 2026).meta.json",
+      "size": 322,
+      "sha256": "3a1703c2639151fcd60279e92480818d0fcd73cf0f3facfe4eb776a1181fcd99"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 64-1 - Exhibit A to Vons Additional RJN (Sep 15, 2026).pdf",
+      "size": 628141,
+      "sha256": "cca2b93dfcb69a1a3f3c8926d6975c2e8971016e16abe6a5a87ec49559e9a65a"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 64-1 - Exhibit A to Vons Additional RJN (Sep 15, 2026).txt",
       "size": 5746,
       "sha256": "094585a2103ca92d36bea7159db08ff8ea9cba1989a331fd175bfc2e5b94d002"
     },
@@ -5359,6 +5689,21 @@
       "sha256": "d801d64d4f54b786aaf64b7666a80af0fd7adc00554d91aa90005af113645a14"
     },
     {
+      "path": "/documents/matter-29/varela-v-accurate/Dkt 01-1 - Civil Cover Sheet (Jan 21, 2026).meta.json",
+      "size": 469,
+      "sha256": "bf445f4d0e0b8b7ac811ec9c8ba8dfae6e22958a52e840fd3d61c3463bba453a"
+    },
+    {
+      "path": "/documents/matter-29/varela-v-accurate/Dkt 01-1 - Civil Cover Sheet (Jan 21, 2026).pdf",
+      "size": 3770120,
+      "sha256": "134ba22452a107068f0293e1aef01b2b844eab34cdd00818411e30c1c6041d85"
+    },
+    {
+      "path": "/documents/matter-29/varela-v-accurate/Dkt 01-1 - Civil Cover Sheet (Jan 21, 2026).txt",
+      "size": 1082,
+      "sha256": "cb4822c723ab18d0135d0f3ebef5bd5cf8bbcf9dd37c30e1729330c9983c528d"
+    },
+    {
       "path": "/documents/matter-29/varela-v-accurate/Dkt 13 - Defendant's Answer and Affirmative Defenses (Mar 30, 2026).meta.json",
       "size": 558,
       "sha256": "63e78e0f462abd9b92e84af5d3771ef45b3d3744eb43c0ec71007cebd18a4c4a"
@@ -5464,6 +5809,21 @@
       "sha256": "629293987fdac16b05111b981209b77efb84586c63f994a232931a254d53813a"
     },
     {
+      "path": "/documents/matter-29/walker-v-ronin-staffing/Dkt 14 - Sterling Answer and Affirmative Defenses - Stanzick (Sep 12, 2024).meta.json",
+      "size": 374,
+      "sha256": "07bae7983cc69d358253fde81641891b98314fd91bbbde1c2015dcd7247325ed"
+    },
+    {
+      "path": "/documents/matter-29/walker-v-ronin-staffing/Dkt 14 - Sterling Answer and Affirmative Defenses - Stanzick (Sep 12, 2024).pdf",
+      "size": 177133,
+      "sha256": "aa08995514042021df20b7d3aeacf847d1d60104bc55d71c74916f2414f7d4c1"
+    },
+    {
+      "path": "/documents/matter-29/walker-v-ronin-staffing/Dkt 14 - Sterling Answer and Affirmative Defenses - Stanzick (Sep 12, 2024).txt",
+      "size": 84011,
+      "sha256": "38b1fbfd1a0904165215e29183ca887656890eade89641a69bb33a871f56b115"
+    },
+    {
       "path": "/documents/matter-29/walker-v-ronin-staffing/Dkt 14 - Sterling Infosystems Answer to Complaint (Sep 12, 2024).meta.json",
       "size": 350,
       "sha256": "8bee3427b7022a7ba45ddb93e5f2bc80500edc2b6021c7baa2cc3b312d197760"
@@ -5505,6 +5865,21 @@
     },
     {
       "path": "/documents/matter-29/walker-v-ronin-staffing/Dkt 16-1 - Order Dismissing Sterling Infosystems Without Prejudice (Oct 29, 2024).txt",
+      "size": 2232,
+      "sha256": "84d283240cdc27f9da16e07a7efed0dcbe515b0033414ded31b6ab5c21891799"
+    },
+    {
+      "path": "/documents/matter-29/walker-v-ronin-staffing/Dkt 16-1 - Proposed Order Dismissing Sterling Without Prejudice (Oct 29, 2024).meta.json",
+      "size": 385,
+      "sha256": "bfa7d8d7e001b31f0fea62d2a10c427d153c9401ee19a39a580f6a6cb0a40d27"
+    },
+    {
+      "path": "/documents/matter-29/walker-v-ronin-staffing/Dkt 16-1 - Proposed Order Dismissing Sterling Without Prejudice (Oct 29, 2024).pdf",
+      "size": 73318,
+      "sha256": "90a7a6f04f45386ecfb397831b623caf97d0ff142d5d5ea1ab99696553ffcb5a"
+    },
+    {
+      "path": "/documents/matter-29/walker-v-ronin-staffing/Dkt 16-1 - Proposed Order Dismissing Sterling Without Prejudice (Oct 29, 2024).txt",
       "size": 2232,
       "sha256": "84d283240cdc27f9da16e07a7efed0dcbe515b0033414ded31b6ab5c21891799"
     },
@@ -6164,6 +6539,21 @@
       "sha256": "ef504353bbbaae36b2d317f447a7e7d98c73ab6e89a86166c5bf934745794dcc"
     },
     {
+      "path": "/documents/matter-32/ndcal/Dkt 05 - First Amended Complaint (Filed Aug 17 2026) (alternate scan).meta.json",
+      "size": 302,
+      "sha256": "6ccfe402187bc7a0322b998600766637b39b96eb4945940c85ddb8735829c939"
+    },
+    {
+      "path": "/documents/matter-32/ndcal/Dkt 05 - First Amended Complaint (Filed Aug 17 2026) (alternate scan).pdf",
+      "size": 1325711,
+      "sha256": "f1548757316ec77d7048dc402059e0cf6f4c5bfc8f2b9fc43d0a7ee0c2de07ea"
+    },
+    {
+      "path": "/documents/matter-32/ndcal/Dkt 05 - First Amended Complaint (Filed Aug 17 2026) (alternate scan).txt",
+      "size": 46894,
+      "sha256": "a51876a5ca6e6a41e4044eced6f27e59f9b2550ec208e5ea3cf69108abd36390"
+    },
+    {
       "path": "/documents/matter-32/ndcal/Dkt 05-1 - Proof of Service of Summons - Jose Melano (Filed Aug 17 2026).pdf",
       "size": 61384,
       "sha256": "483061394ce55a14c277ac29e999504bb62f78cd4cb6af45a8865ae8c88312e4"
@@ -6209,6 +6599,21 @@
       "sha256": "baeab402d7bbc0e3c801e0fc3511c061f8b30c66d81e8a1b685442c238412426"
     },
     {
+      "path": "/documents/matter-32/ndcal/Dkt 17 Packet - Request for Clerk Entry of Default Meza-Gonzalez and Melano (Sep 18 2026).meta.json",
+      "size": 340,
+      "sha256": "25658988b340b6f18a074a2eb484db75ac1d2cf286d1dc75db183f8468e381f6"
+    },
+    {
+      "path": "/documents/matter-32/ndcal/Dkt 17 Packet - Request for Clerk Entry of Default Meza-Gonzalez and Melano (Sep 18 2026).pdf",
+      "size": 1988118,
+      "sha256": "95ceeea690c42976ea29fdfbacf7b926fe862bd74baf326b39341ca2a9cf41e7"
+    },
+    {
+      "path": "/documents/matter-32/ndcal/Dkt 17 Packet - Request for Clerk Entry of Default Meza-Gonzalez and Melano (Sep 18 2026).txt",
+      "size": 17240,
+      "sha256": "dfae002d665766380bca9674cb8feb6746b31618007cbf0c74b2fb2bfc2f41fd"
+    },
+    {
       "path": "/documents/matter-32/ndcal/DRAFT - Exhibit A Cover Page - Serrato Related-Cases Admin Motion.pdf",
       "size": 2268,
       "sha256": "f5a0eece4dd61cde16428edd9dcd92446eeea715050a61443d9440aa872ae7cc"
@@ -6217,6 +6622,36 @@
       "path": "/documents/matter-32/ndcal/DRAFT - Notice of Filing of Administrative Motion to Relate Cases (Meza-Gonzalez).pdf",
       "size": 6292,
       "sha256": "2900ef58cf1bc6a13ca3c4fad5644d4b91318c8495c3519914b5838a9a1dda0c"
+    },
+    {
+      "path": "/documents/matter-32/ndcal/Draft - Request for Clerk Entry of Default Meza-Gonzalez and Melano (Sep 18 2026).meta.json",
+      "size": 323,
+      "sha256": "c4a8d5857eab212dfdbbe40c6d3867f5962194cf1a2b5d183ae4066837cffa99"
+    },
+    {
+      "path": "/documents/matter-32/ndcal/Draft - Request for Clerk Entry of Default Meza-Gonzalez and Melano (Sep 18 2026).pdf",
+      "size": 600332,
+      "sha256": "aac10b3eb29c88d300705604d889218a415d06c6f8d770b0fa7a742127ed480c"
+    },
+    {
+      "path": "/documents/matter-32/ndcal/Draft - Request for Clerk Entry of Default Meza-Gonzalez and Melano (Sep 18 2026).txt",
+      "size": 14595,
+      "sha256": "7f76a0bc51520ea5c0fbc3989add8cb482f1b7cbf2e3d9ec3d97923e27e43e51"
+    },
+    {
+      "path": "/documents/matter-32/ndcal/Draft - Request for Clerk Entry of Default Meza-Gonzalez and Melano with Proposed Form Note (Sep 18 2026).meta.json",
+      "size": 352,
+      "sha256": "19c1683d4f7a4457cfd1c79c53d591f72603fbe6f054ba6bb3472b1b2624c725"
+    },
+    {
+      "path": "/documents/matter-32/ndcal/Draft - Request for Clerk Entry of Default Meza-Gonzalez and Melano with Proposed Form Note (Sep 18 2026).pdf",
+      "size": 600582,
+      "sha256": "411cf8ca3097852bd270e426830ea39da7b6aee87090dcf5a11ce71538d8473b"
+    },
+    {
+      "path": "/documents/matter-32/ndcal/Draft - Request for Clerk Entry of Default Meza-Gonzalez and Melano with Proposed Form Note (Sep 18 2026).txt",
+      "size": 14705,
+      "sha256": "67e5345933961388e7b9ede03944719a057bf616a6b89a6f4de75a7605738b4b"
     },
     {
       "path": "/documents/matter-32/ndcal/EMAIL_DRAFT_Li_CCP_41520_Mailing_Meza.txt",
@@ -6367,6 +6802,21 @@
       "path": "/documents/matter-32/ndcal/Order Granting Administrative Motion to Relate Cases - Serrato and Meza (Aug 24 2026).pdf",
       "size": 238343,
       "sha256": "8a5aea498ae2abbcc65cb2cb13f1659220cf216f33cd7475f99bbe5cec6ff005"
+    },
+    {
+      "path": "/documents/matter-32/ndcal/PACER Docket Report - N.D. Cal. 4-26-cv-08271-ASK (Meza served, Sep 2026).meta.json",
+      "size": 305,
+      "sha256": "9450d39db814d250c164be96f38d45db54ed0c1220a1c955fd34a72a607a472e"
+    },
+    {
+      "path": "/documents/matter-32/ndcal/PACER Docket Report - N.D. Cal. 4-26-cv-08271-ASK (Meza served, Sep 2026).pdf",
+      "size": 183656,
+      "sha256": "4e46cb82a9bbf5fb94ac9ca39ac7d9154e6efbdc36347044bec35e7e7f517f08"
+    },
+    {
+      "path": "/documents/matter-32/ndcal/PACER Docket Report - N.D. Cal. 4-26-cv-08271-ASK (Meza served, Sep 2026).txt",
+      "size": 9863,
+      "sha256": "9a883341ce73edb86f224af0f0171d8f2b12d21a359e29d9335f5c2f87dedc64"
     },
     {
       "path": "/documents/matter-32/ndcal/Proof of Service - Administrative Motion DAG Li to Accept Service (Meza-Gonzalez) (Sep 1 2026).pdf",
@@ -6729,6 +7179,21 @@
       "sha256": "4738ed34ae890feb346785046ba06af191d3f6918e220b2e3923c65f3cc63792"
     },
     {
+      "path": "/documents/matter-33/ndcal/Gmail - McMahon requests 5-day extension on MTS response (Sep 18 2026) (alternate print).meta.json",
+      "size": 342,
+      "sha256": "a696accc1afe6b82ca186cc32939d0793c236355febe01a924df15a862bd28d9"
+    },
+    {
+      "path": "/documents/matter-33/ndcal/Gmail - McMahon requests 5-day extension on MTS response (Sep 18 2026) (alternate print).pdf",
+      "size": 47602,
+      "sha256": "15290c097f92ee21b22cba9e7991c67548a85d739aece27feefa7d98809f1c6d"
+    },
+    {
+      "path": "/documents/matter-33/ndcal/Gmail - McMahon requests 5-day extension on MTS response (Sep 18 2026) (alternate print).txt",
+      "size": 1770,
+      "sha256": "8e9215a86992bf4fd65bd56ca9bf730d59b33a8c98e8e12bf0a513d715740279"
+    },
+    {
       "path": "/documents/matter-33/ndcal/Gmail - RE request to stipulate to docket name correction - McMahon (Sep 10 2026).pdf",
       "size": 59757,
       "sha256": "4d6ae5a56031328391b744725b84cd942a1d960b69029684d3cc991a75364f59"
@@ -6772,6 +7237,21 @@
       "path": "/documents/matter-33/ndcal/Notice of Filing of Supplemental Administrative Motion to Relate Cases (Aug 21 2026).pdf",
       "size": 6460,
       "sha256": "5da7ef904b5087498a744bf51911f00b8a5cd0d1beb3694a62bafdd3bd2b4275"
+    },
+    {
+      "path": "/documents/matter-33/ndcal/PACER Docket History - N.D. Cal. 3-26-cv-08272-LJC (as of Sep 10 2026).meta.json",
+      "size": 303,
+      "sha256": "5ac75cfeffd79d8bccea375e7ef11b798d6c9ddd0bf5b0f8c3c4ad749feb9b3a"
+    },
+    {
+      "path": "/documents/matter-33/ndcal/PACER Docket History - N.D. Cal. 3-26-cv-08272-LJC (as of Sep 10 2026).pdf",
+      "size": 112647,
+      "sha256": "e97d392f5dcf491622136eb27b0f03181dd2bda3ef55a2f5d63e104de0db4493"
+    },
+    {
+      "path": "/documents/matter-33/ndcal/PACER Docket History - N.D. Cal. 3-26-cv-08272-LJC (as of Sep 10 2026).txt",
+      "size": 4462,
+      "sha256": "80ef678b21e46df9d15ad4e5b52ec8d3940c43b8430f16f0a65dea34f87a4f00"
     },
     {
       "path": "/documents/matter-33/ndcal/PACER Docket Report - N.D. Cal. 3-26-cv-08272-LJC (Sep 9 2026).pdf",
@@ -7432,6 +7912,21 @@
       "path": "/documents/matter-39/Verified Complaint - Ngwa Nforbi v Best Buy Co Inc (Sep 8 2026).pdf",
       "size": 290362,
       "sha256": "dc5cf3976d65ae7d0e30a6b355d82d08873025bb0dc9b16ca541b20dc0e94bec"
+    },
+    {
+      "path": "/documents/matter-40/Complaint - Ngwa Nforbi v Uber Technologies Inc (N.D. Cal.) (Sep 24 2026).meta.json",
+      "size": 306,
+      "sha256": "22c9a8401884d8942564780b52db3c4a4c9b6181e9a52fea6766c287b68091de"
+    },
+    {
+      "path": "/documents/matter-40/Complaint - Ngwa Nforbi v Uber Technologies Inc (N.D. Cal.) (Sep 24 2026).pdf",
+      "size": 291184,
+      "sha256": "e166d1ad098390f75b42fa6c6ad18179d567ddab0a99d6557ff1b8df3ca52e6e"
+    },
+    {
+      "path": "/documents/matter-40/Complaint - Ngwa Nforbi v Uber Technologies Inc (N.D. Cal.) (Sep 24 2026).txt",
+      "size": 50887,
+      "sha256": "172f61eb2d216b12eef88b587b2a0fe44fff0f773abca0cc1e997cabe34794b8"
     },
     {
       "path": "/documents/matter-40/First Advantage Invite - TaskUs Background Screening (Sep 14 2026).pdf",
