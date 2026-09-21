@@ -40,10 +40,15 @@ Verified in-repo (not assumed):
 | `base` | `/` | Leave `GITHUB_PAGES` unset. Vercel and Pages both serve from the domain root. |
 | Do not copy the PDF library | `VITE_COPY_DOCUMENTS=0` and `PORTFOLIO_SKIP_DISK_DOCS=1` | Same as Vercel. Bytes come from the Worker via `/documents/*`. Phone-tap slugs stay as `internal/public/{slug}.pdf` in the artifact. `sync:short-links` also treats `CF_PAGES=1` as skip-disk so a forgotten dashboard flag does not fail `prebuild`. |
 
-`wrangler.toml` at the repo root records `name` and
-`pages_build_output_dir = "./dist"`. Git-integration **build command / Node /
-env vars** are dashboard fields; Pages does not take those from Wrangler
+`wrangler.toml` at the repo root records `name`,
+`pages_build_output_dir = "./dist"`, and the top-level `[vars]` table.
+Git-integration **build command** is a dashboard field; Pages does not take
+it from Wrangler
 ([Wrangler configuration](https://developers.cloudflare.com/pages/functions/wrangler-configuration/)).
+**Env vars are NOT dashboard fields while `wrangler.toml` exists** — the
+dashboard refuses plain variables ("managed through wrangler.toml"), so the
+four contract vars live in `[vars]`, which applies to both Production and
+Preview.
 
 System env Pages injects (do not set by hand): `CI`, `CF_PAGES=1`,
 `CF_PAGES_COMMIT_SHA`, `CF_PAGES_BRANCH`, `CF_PAGES_URL`. `vite.config.js`
@@ -68,7 +73,7 @@ is set because `prebuild` runs it.
    | Root directory | *(empty / repository root)* |
    | Build system | v3 |
 
-5. **Environment variables** (Production **and** Preview):
+5. **Environment variables** (Production **and** Preview — via `wrangler.toml` `[vars]`, not the dashboard):
 
    | Name | Value |
    |---|---|

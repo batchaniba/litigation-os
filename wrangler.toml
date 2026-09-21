@@ -12,17 +12,15 @@
 #
 # Git-integration build settings live in the Cloudflare dashboard (Pages
 # does not read the build command from this file). Contract:
-#   Node 22  (.nvmrc → 22.22.2; matches package.json engines + jsdom)
-#   Install  npm ci   (set SKIP_DEPENDENCY_INSTALL=1 so Pages does not
+#   Node 22  (.nvmrc -> 22.22.2; matches package.json engines + jsdom)
+#   Install  npm ci   (SKIP_DEPENDENCY_INSTALL=1 so Pages does not
 #                      also run npm install — see language-support-and-tools)
 #   Build    npm run build   (prebuild runs sync:derived)
 #   Output   dist            (Vite default; confirmed in vite.config.js —
 #                            no custom build.outDir)
-# Dashboard env (Production + Preview):
-#   SKIP_DEPENDENCY_INSTALL=1
-#   VITE_COPY_DOCUMENTS=0
-#   PORTFOLIO_SKIP_DISK_DOCS=1
-#   NODE_VERSION=22.22.2
+# Env (Production + Preview) lives in [vars] below, NOT the dashboard:
+# the dashboard refuses plain env vars while this file exists ("managed
+# through wrangler.toml"). Top-level [vars] apply to both environments.
 #
 # pages_build_output_dir makes Wrangler treat this as a Pages project
 # (https://developers.cloudflare.com/pages/functions/wrangler-configuration/).
@@ -31,3 +29,9 @@
 name = "interactive-litigation-portfolio"
 pages_build_output_dir = "./dist"
 compatibility_date = "2026-09-21"
+
+[vars]
+SKIP_DEPENDENCY_INSTALL = "1"
+VITE_COPY_DOCUMENTS = "0"
+PORTFOLIO_SKIP_DISK_DOCS = "1"
+NODE_VERSION = "22.22.2"
