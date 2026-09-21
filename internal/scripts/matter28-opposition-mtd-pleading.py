@@ -327,7 +327,7 @@ def toc_row(d, label: str, page_str: str, bold: bool = False, indent: float = 0,
     fn = "Times-Bold" if bold else "Times-Roman"
     size = 12
     left_x = CONTENT_LEFT + indent
-    right_x = CONTENT_RIGHT
+    right_x = CONTENT_RIGHT - 8   # small gap so page nos. don't kiss the right rule
     avail = CONTENT_WIDTH - indent - num_reserve - 6
     words = label.split(" ")
     lines, cur = [], ""
