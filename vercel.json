@@ -75,6 +75,16 @@
       "permanent": false
     },
     {
+      "source": "/meza-clerk-default",
+      "destination": "/meza-clerk-default.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/meza-clerk-default/",
+      "destination": "/meza-clerk-default.pdf",
+      "permanent": false
+    },
+    {
       "source": "/habeas-discharge",
       "destination": "/habeas-discharge.pdf",
       "permanent": false
@@ -596,6 +606,15 @@
         {
           "key": "Content-Disposition",
           "value": "attachment; filename=\"Administrative Motion Packet - DAG Li to Accept Service for Meza-Gonzalez (N.D. Cal. 4-26-cv-08271-ASK) (Sep 1 2026).pdf\"; filename*=UTF-8''Administrative%20Motion%20Packet%20-%20DAG%20Li%20to%20Accept%20Service%20for%20Meza-Gonzalez%20%28N.D.%20Cal.%204-26-cv-08271-ASK%29%20%28Sep%201%202026%29.pdf"
+        }
+      ]
+    },
+    {
+      "source": "/meza-clerk-default.pdf",
+      "headers": [
+        {
+          "key": "Content-Disposition",
+          "value": "attachment; filename=\"Request for Clerk Entry of Default Packet - Meza-Gonzalez and Melano (N.D. Cal. 4-26-cv-08271-ASK) (Sep 18 2026).pdf\"; filename*=UTF-8''Request%20for%20Clerk%20Entry%20of%20Default%20Packet%20-%20Meza-Gonzalez%20and%20Melano%20%28N.D.%20Cal.%204-26-cv-08271-ASK%29%20%28Sep%2018%202026%29.pdf"
         }
       ]
     },
