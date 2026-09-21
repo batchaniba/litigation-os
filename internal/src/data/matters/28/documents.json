@@ -259,5 +259,42 @@
   {
     "path": "/documents/matter-28/PACER Deadlines-Hearings - N.D. Cal. 3-26-cv-07504-LJC (Sep 4 2026).pdf",
     "filed": false
+  },
+  {
+    "path": "/documents/matter-28/research/AdoptedRegulationsSexOffenderTreatment002.pdf",
+    "filed": false
+  },
+  {
+    "path": "/documents/matter-28/research/2024092402EONSOTApproval.pdf",
+    "filed": false
+  },
+  {
+    "path": "/documents/matter-28/evidence/Discharge_Review_Report.pdf",
+    "filed": false
+  },
+  {
+    "path": "/documents/matter-05/FAC_STKCVUF20261032.pdf",
+    "filed": true,
+    "label": "State-court FAC (STK-CV-UF-2026-1032) — court-file scan from Matter 5"
+  },
+  {
+    "path": "/documents/matter-05/1032_Opposition.pdf",
+    "filed": true,
+    "label": "State-court opposition to demurrer (STK-CV-UF-2026-1032) — court-file scan from Matter 5"
+  },
+  {
+    "path": "/documents/matter-05/1032_Declaration.pdf",
+    "filed": true,
+    "label": "State-court declaration ISO opposition (STK-CV-UF-2026-1032) — court-file scan from Matter 5"
+  },
+  {
+    "path": "/documents/matter-05/1032_Evidentiary_Objection.pdf",
+    "filed": true,
+    "label": "State-court evidentiary objections to defendants' RJN (STK-CV-UF-2026-1032) — court-file scan from Matter 5"
+  },
+  {
+    "path": "/documents/matter-05/1032_Plaintiffs_Request_for_Judicial_Notice.pdf",
+    "filed": true,
+    "label": "State-court RJN ISO opposition (STK-CV-UF-2026-1032) — court-file scan from Matter 5"
   }
 ]
