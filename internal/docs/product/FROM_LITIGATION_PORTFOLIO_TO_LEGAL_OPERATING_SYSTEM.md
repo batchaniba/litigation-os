@@ -287,7 +287,9 @@ Extract reusable packages without moving live litigation data:
 - Search and retrieval
 - UI component system
 
-**Acceptance:** A new blank workspace can create a matter, ingest documents, extract deadlines, and preserve an audit trail without importing the Newanforbi portfolio.
+**P2-E Court model de-typing** *(added by audit)* — `CourtKey` is a closed union of six courts and the holiday tables are keyed to the same six, so adding a court is a type change rather than a configuration row. Convert it to a `courts` table and make `matter.court` a foreign key instead of free text. This is the smallest change that makes the deadline engine — the strongest transferable asset here — usable by a second tenant, and it precedes the blank-workspace prototype. See "Two current defects to fix during migration, not after."
+
+**Acceptance:** A new blank workspace can create a matter, ingest documents, extract deadlines, and preserve an audit trail without importing the Newanforbi portfolio — and a court the portfolio does not litigate in can be added without a code change.
 
 ### P3 — Multi-user pilot
 
@@ -422,6 +424,96 @@ A normal request should follow this path:
 7. Consequential agent proposals remain pending until a human approves them through a typed operation.
 
 Matter ACL: organization default plus per-matter grants. Ethical wall = explicit deny list, not a comment in `AGENTS.md`. Conflicts check is a blocking create-matter step with an attestation row (P3.0).
+
+### Tenant isolation, audit, and conflicts
+
+The table above names PostgreSQL as the tenant system of record. "Organization default plus per-matter grants" is a policy statement; the following is how it becomes testable.
+
+**Row-level security, not application filtering.** Every tenant-scoped table carries `tenant_id` and enables RLS with `FORCE`, so the policy binds the table owner too:
+
+```sql
+alter table matters enable row level security;
+alter table matters force row level security;
+
+create policy tenant_isolation on matters
+  using (tenant_id = current_setting('app.tenant_id')::uuid);
+
+-- Ethical wall: per-matter grants inside one organization
+create policy matter_acl on matters
+  using (id in (select matter_id from matter_access
+                where user_id = current_setting('app.user_id')::uuid));
+```
+
+`app.tenant_id` is set per connection from the verified session, never from a request parameter. The API connects as a non-superuser role.
+
+**The isolation test is the deliverable, not the policy.** A suite that authenticates as organization A and attempts to read every tenant-scoped table as organization B, asserting zero rows, is what answers a buyer's security questionnaire. Ship it with the schema, not after it.
+
+**Audit must be tamper-evident, not merely append-only.**
+
+```sql
+create table audit (
+  id         bigserial primary key,
+  tenant_id  uuid not null,
+  actor      text not null,
+  action     text not null,
+  payload    jsonb not null,
+  prev_hash  bytea,
+  row_hash   bytea not null,      -- sha256(prev_hash || payload)
+  at         timestamptz not null default now()
+);
+revoke update, delete on audit from app_role;
+```
+
+Append-only by permission, chained by hash. `events.jsonl` already has the first property; the chain adds "this record was not altered afterwards," which is the property that matters in a dispute. Add the chain to `mutate.mjs` under P1.2 — cheap now, expensive to backfill.
+
+**Conflicts (P3.0) needs a mechanism, not just a checkpoint.** Tenant-scoped fuzzy match with `pg_trgm` across every party and adverse party in the organization, run before matter creation, with the result — hit or clean — written to `audit` as the attestation. A conflicts check that leaves no record is not a conflicts check.
+
+### Model layer
+
+The stack table leaves the provider open. The contract below is provider-neutral and stands on its own; the binding after it is the recommended default and is the open decision.
+
+| Rule | Implementation |
+| --- | --- |
+| Typed operations, not a chatbot | Map the `q.mjs` / `mutate.mjs` catalog one-to-one onto tool definitions. No agent framework — that catalog is already the right abstraction |
+| Schema-valid arguments | `strict: true` on every tool (`additionalProperties: false` plus `required`). The API-level twin of "validate before touching disk" |
+| Extraction returns structure | Structured outputs (`output_config.format`), not prose parsing |
+| Every proposal is reviewable | The model writes an approval row, never a table |
+
+**Recommended binding — Anthropic.** Rates are per million tokens, current as of this writing; verify before budgeting.
+
+| Use | Model | Rate |
+| --- | --- | --- |
+| Extraction, chronology, agent operations | `claude-opus-5` (1M context) | $5 in / $25 out |
+| Bulk classification and triage only | `claude-haiku-4-5` (200K context) | $1 in / $5 out |
+
+Three API features map onto commitments this document already makes:
+
+- **Document citations.** `citations: {enabled: true}` on a document block returns `page_location` spans (`start_page_number` / `end_page_number`) for each cited passage — the document → page → assertion provenance chain this roadmap promises, available rather than built. Send PDFs where a page citation must be produced; use the cheaper `.txt` sidecars (99.3% coverage on stored documents) for search and summarization, accepting the loss of page anchors.
+- **Batch API.** 50% cost, suited to the 484 UNVERIFIED authorities and any extraction backfill.
+- **Prompt caching.** Cache matter context across operations on one matter; confirm with `usage.cache_read_input_tokens`.
+
+Use adaptive thinking (`thinking: {type: "adaptive"}`); fixed `budget_tokens` is removed on current models and is rejected.
+
+**Estimate, not a measurement:** a 20-page PDF is roughly 30K input tokens; extraction at ~2K output is about $0.20 per document on `claude-opus-5`, so 500 documents per month lands near $100, or half that through Batch. Model spend is not the binding constraint at pilot scale — Postgres, document compute, and counsel are. Record actual cost per ingested document from the first pilot rather than carrying this estimate forward.
+
+### Two current defects to fix during migration, not after
+
+Both are verified in the audit, and both become permanent if the migration copies the current shape.
+
+**1. The object key is PDF-only.** The tenant prefix above (`t/{orgId}/sha256/…`) preserves the existing scheme, and that scheme hardcodes `.pdf` (`keyForSha256`), serves `content-type: application/pdf` unconditionally, and is fed by an upload path documented as "local PDFs → R2." The result is that 299 manifest entries — 141 `.txt`, 103 `.json`, 17 `.docx`, 35 images, 1 `.xlsx` — are 100% absent from R2. That is not a backlog; it is a structural impossibility, and it is why the P0.0 acceptance criterion had to be split by cause. The product key must carry the extension and the stored content type:
+
+```
+t/{orgId}/sha256/<first2>/<rest><ext>      bytes, with content-type metadata
+t/{orgId}/text/<first2>/<rest>.txt         extracted text
+```
+
+Do this once, inside the tenant-prefix migration. Fixing it later means rewriting keys underneath customer data.
+
+**2. Courts are a type, not data.** `CourtKey` in `internal/src/utils/deadlineMath/types.ts` is a closed union of exactly six courts — the six this portfolio litigates in — and the holiday tables are keyed to the same six. The deadline engine is the strongest transferable asset in the repository, yet adding a seventh California superior court is currently a TypeScript change rather than a configuration row. California has 58.
+
+Add to the product-system boundary: `CourtKey` union → a `courts` table (jurisdiction, forum, holiday calendar, court-day rules), with `matter.court` a foreign key instead of free text. This is the smallest change that converts the deadline engine from a personal tool into a product primitive, and it belongs in P2 extraction, ahead of any second tenant.
+
+**Scope note on docket sync.** Docket reconciliation does not generalize the way deadline computation does: CourtListener covers 7 of 41 matters and 0 of 19 state-court matters, because RECAP is PACER-derived and California superior courts are not in it. The rule-cited computation in `deadlineMath/` requires no external service and does transfer. For any state-court customer, product claims should rest on the computation and its provenance, not on docket synchronization.
 
 ### P4 — add only when money or a second org forces it
 
