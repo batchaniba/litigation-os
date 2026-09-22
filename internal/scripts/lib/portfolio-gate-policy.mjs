@@ -17,6 +17,11 @@ export const GATE_STEPS = [
     argv: ["node", "internal/scripts/validate-portfolio.mjs"],
   },
   {
+    id: "doc-kind",
+    label: "doc-kind",
+    argv: ["node", "internal/scripts/check-doc-kind.mjs"],
+  },
+  {
     id: "golden-damages",
     label: "golden damages",
     argv: ["node", "internal/scripts/test-golden.mjs"],

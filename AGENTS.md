@@ -25,6 +25,7 @@ Crawl this repo as a graph. Do not reconstruct a docket from README or from `sta
 - Never treat README as live.
 - Never invent a docket number. If `dkt` is null, say so.
 - `clocks.json` or index `next_clock` wins over prose. Vacated clocks are not live.
+- Derived docs (`doc_kind: derived` in `internal/src/data/index/doc-kind.json`) are projections, not clocks. Live deadlines live in `clocks.json`. Do not reconstruct a calendar from `internal/docs/DEADLINE_AUDIT.md` or any other prose sweep. `npm run check:doc-kind` / the gate enforce this for classified files.
 - Clock `status` is `open | set | contingent | vacated | satisfied` (`internal/scripts/lib/clock-status.mjs`). `overdue` is derived from date + open/set, never stored. Do not store `retired`, `cancelled`, or `undated`.
 - `events.jsonl` is append-only. Do not rewrite it.
 - Operative pleading is the docket row with `"operative": true`. ASK vs CRB name-conform packets: CRB supersedes; they are not two cases.
@@ -98,7 +99,7 @@ Do not add `.github/workflows/`. The spending limit already refuses every job.
 The checks the old CI job ran live in the fail-closed `pre-push` hook (installed
 by `npm run prepare`) and in `npm run gate` (same steps, shared
 `internal/scripts/portfolio-gate.mjs`): lint, typecheck, `validate-portfolio`,
-golden damages math, the unit suite, and the fabricated-citation gate. Missing
+`check-doc-kind`, golden damages math, the unit suite, and the fabricated-citation gate. Missing
 `node_modules` or `python3` refuses the push. `SKIP_PORTFOLIO_GATE=EMERGENCY`
 may skip the hook on a feature branch only — a push that updates
 `refs/heads/main` cannot bypass. Phase 2 remote status is the Cloudflare
@@ -128,6 +129,7 @@ does not retarget that cron; see `internal/docs/CLOUDFLARE_PAGES.md`.
 **Node (.mjs)** — the build/validation/sync pipeline. These run in the git
 hooks and `npm run` scripts:
 - `validate-portfolio.mjs` — data validation (pre-push / `npm run gate`)
+- `check-doc-kind.mjs` — classified `internal/docs/` files (`doc-kind.json`)
 - `portfolio-gate.mjs` — fail-closed local gate (`npm run gate` / `.githooks/pre-push`)
 - `sync-*.mjs` — derived data generation (registry, manifest, summaries, upcoming, short-links)
 - `documents-store.mjs` — `npm run documents:pull -- --matter N` (R2 when `R2_*` is set, else the git branch). `documents:push` updates the cold `documents` branch and, with credentials, PUTs PDFs + the path index to R2. Phone-tap slug PDFs stay on `main` until a public `/documents/...` origin returns 200.

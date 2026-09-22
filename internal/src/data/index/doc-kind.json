@@ -1,0 +1,91 @@
+{
+  "generated": false,
+  "note": "Scoped classification for the twin-doc / runbook set. legal-intel/ and counsel dossiers are analysis and are not gated here yet. Matter-count gate applies only to non-retired derived files.",
+  "kinds": ["derived", "runbook", "analysis"],
+  "docs": [
+    {
+      "path": "internal/docs/DEADLINE_AUDIT.md",
+      "doc_kind": "derived",
+      "retired": true,
+      "source": "internal/src/data/matters/*/clocks.json"
+    },
+    {
+      "path": "internal/docs/CITATION_AUDIT.md",
+      "doc_kind": "analysis",
+      "as_of": "2026-08-09"
+    },
+    {
+      "path": "internal/docs/CITATION_INDEX.md",
+      "doc_kind": "analysis",
+      "as_of": "2026-09-19",
+      "note": "Generated companion exists, but the markdown still quotes the July 24-matter audit. Flip to derived when that sentence is generated away."
+    },
+    {
+      "path": "internal/docs/CITATION_VERIFICATION.md",
+      "doc_kind": "derived",
+      "source": "internal/docs/citation_verification.json"
+    },
+    {
+      "path": "internal/docs/CONSISTENCY_AUDIT.md",
+      "doc_kind": "analysis",
+      "as_of": "2026-07-14"
+    },
+    {
+      "path": "internal/docs/CROSS_MATTER_RISK_INDEX.md",
+      "doc_kind": "analysis",
+      "as_of": "2026-07-14"
+    },
+    {
+      "path": "internal/docs/LAWYER_FEES_CALCULATOR.md",
+      "doc_kind": "analysis",
+      "as_of": "2026-07-11"
+    },
+    {
+      "path": "internal/docs/MATTER_12_POST_JUDGMENT_READINESS.md",
+      "doc_kind": "analysis",
+      "as_of": "2026-08-01"
+    },
+    {
+      "path": "internal/docs/PDF_SOURCE_AUDIT.md",
+      "doc_kind": "analysis",
+      "as_of": "2026-07-14"
+    },
+    {
+      "path": "internal/docs/WESTLAW_PORTFOLIO_QUEUE.md",
+      "doc_kind": "derived",
+      "source": "internal/docs/westlaw_portfolio_queue.json"
+    },
+    {
+      "path": "internal/docs/API_OPERATIONS.md",
+      "doc_kind": "runbook"
+    },
+    {
+      "path": "internal/docs/CLOUDFLARE_PAGES.md",
+      "doc_kind": "runbook"
+    },
+    {
+      "path": "internal/docs/COURTLISTENER.md",
+      "doc_kind": "runbook"
+    },
+    {
+      "path": "internal/docs/DOCUMENT_STORE.md",
+      "doc_kind": "runbook"
+    },
+    {
+      "path": "internal/docs/FUSE_BOARD.md",
+      "doc_kind": "runbook"
+    },
+    {
+      "path": "internal/docs/VERCEL_DEPLOYS.md",
+      "doc_kind": "runbook"
+    },
+    {
+      "path": "internal/docs/WESTLAW_PATRON_ACCESS.md",
+      "doc_kind": "runbook"
+    },
+    {
+      "path": "internal/docs/STIPULATION_DEFENSE.md",
+      "doc_kind": "analysis"
+    }
+  ]
+}

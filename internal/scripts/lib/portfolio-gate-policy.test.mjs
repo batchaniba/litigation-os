@@ -29,6 +29,7 @@ describe("GATE_STEPS", () => {
       "lint",
       "typecheck",
       "validate-portfolio",
+      "doc-kind",
       "golden-damages",
       "unit-suite",
       "citation-gate",
