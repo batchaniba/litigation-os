@@ -16,9 +16,21 @@
     "date": "2026-10-05",
     "date_label": "Oct. 5, 2026",
     "kind": "deadline",
+    "status": "satisfied",
+    "source_dkt": 15,
+    "title": "SATISFIED — Opposition to Motion to Dismiss (CM/ECF Response Deadline 10/05/2026). Paper is in transit; courthouse arrival September 23, 2026. Do not treat as ECF-filed until clerk-stamped.",
+    "actor": "you",
+    "source": "/documents/matter-28/Proof of Service - SLB Accepted Service for Smith and HOPE (N.D. Cal. 3-26-cv-07504-LJC) (Sep 2 2026).pdf",
+    "retired_reason": "Plaintiff reports the opposition is complete and will arrive at the courthouse on September 23, 2026. CM/ECF due date remains 10/05/2026; this clock is satisfied as a work item, not as a stamped filing."
+  },
+  {
+    "id": "28-deadline-7",
+    "date": "2026-09-23",
+    "date_label": "Sep. 23, 2026",
+    "kind": "deadline",
     "status": "open",
     "source_dkt": 15,
-    "title": "Opposition to Motion to Dismiss due — Newanforbi v. Smith / HOPE (3:26-cv-07504-LJC). CM/ECF Response Deadline (Mandatory) 10/05/2026.",
+    "title": "WATCH — Opposition paper arrives at N.D. Cal. courthouse. Confirm clerk stamp / ECF docket entry before treating as filed. Do not treat as filed on the strength of transit alone.",
     "actor": "you",
     "source": "/documents/matter-28/Proof of Service - SLB Accepted Service for Smith and HOPE (N.D. Cal. 3-26-cv-07504-LJC) (Sep 2 2026).pdf"
   },
