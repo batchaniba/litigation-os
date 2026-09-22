@@ -29,9 +29,32 @@ SCRIPT_DIR = Path(__file__).resolve().parent
 sys.path.insert(0, str(SCRIPT_DIR / "lib"))
 sys.path.insert(0, str(SCRIPT_DIR))
 
+import math  # noqa: E402
+
 from pleading_paper import (  # noqa: E402
-    CONTENT_LEFT, CONTENT_RIGHT, CONTENT_WIDTH, PleadingPaper,
+    CONTENT_LEFT, CONTENT_RIGHT, CONTENT_WIDTH, FONT_SIZE, LINE_SPACING,
+    NUM_LINES, PleadingPaper,
 )
+
+# --- footnotes ---------------------------------------------------------------
+# True bottom-of-page footnotes. Markers are placed inline in the body text as
+# [[FN<n>]]; the note text prints single-spaced at the foot of the page the
+# marker lands on, under a short rule. FN_SIZE/FN_LEAD keep notes visually
+# subordinate to the double-spaced body.
+FN_SIZE = 9.5
+FN_LEAD = 12.0
+FN_TEXT_INDENT = 13.0
+FN_RULE_W = 144.0  # 2-inch separator rule
+
+FN_TEXT = {
+    1: "Because Defendants' packet contains no judgment, the Court need not reach "
+       "the remaining defects. Were a judgment of dismissal later entered, however, "
+       "preclusion would still fail: the order adjudicates no issue on its face, "
+       "exhaustion is not an element of Plaintiff's federal claims, and Smith was "
+       "never a party.",
+    2: "Defendants cite Drawsand at “1227.” The pertinent discussion is at "
+       "1127; the opinion contains no page 1227.",
+}
 from signature_stamp import SIGNATURE_PATH, SIGNATURE_NATIVE_PX  # noqa: E402
 
 REPO_ROOT = SCRIPT_DIR.parent.parent
@@ -215,7 +238,7 @@ CONTENT = [
     (S, "1. Exhibit C is not a final judgment and therefore cannot preclude either Defendant."),
     (P, "Defendants attach no judgment. Exhibit C is titled as an order, directs that a demurrer be sustained without leave to amend, and contains no dismissal language. That distinction is dispositive. California requires a dismissal to be entered in writing as a judgment. Cal. Code Civ. Proc. § 581d. \"Until entry of judgment, a ruling on a demurrer is not res judicata and may be reconsidered and changed by the trial court.\" Valvo v. University of Southern California, 67 Cal. App. 3d 887, 892 n.3 (1977). Consistently, an order sustaining a demurrer without leave to amend is not appealable because it is not the final judgment. Berri v. Superior Court, 43 Cal. 2d 856, 860 (1955)."),
     (P, "The unusual form of Exhibit C reinforces rather than changes that result. \"PROPOSED\" was crossed out in the caption when the judge signed it, but each page still bears the proposed-order footer. The document also bears \"FILE BY FAX.\" Those features may show that the lodged proposal became an entered order; they do not convert the order into a judgment of dismissal. Nor does the May 22 proof of service establish service--or even existence--of a later judgment. On the materials Defendants presented, the state action never reached the final disposition required for claim preclusion."),
-    (P, "This defect applies to both HOPE and Smith. Plaintiff does not argue that every demurrer ruling is forever incapable of preclusive effect. He argues the narrower point established by Defendants' packet: no ensuing judgment is before this Court."),
+    (P, "This defect applies to both HOPE and Smith. Plaintiff does not argue that every demurrer ruling is forever incapable of preclusive effect. He argues the narrower point established by Defendants' packet: no ensuing judgment is before this Court.[[FN1]]"),
     (S, "2. The generic order establishes no issue that was actually and necessarily decided."),
     (P, "Issue preclusion requires a determination of the identical issue that was actually litigated, necessarily decided, final, and asserted against a party or privy. DKN Holdings, 61 Cal. 4th at 825. Exhibit C cannot satisfy those requirements. Defendants urged four grounds: causation, failure to exhaust, habeas as the asserted vehicle, and failure to state a claim. The order adopts none of them. It states only that the first amended complaint \"fails to allege facts sufficient to state any cause of action.\" It contains no finding about the truth of Plaintiff's allegations, Smith's conduct, the blanket policy, state action, or any federal element."),
     (P, "Goddard v. Security Title Insurance & Guarantee Co., 14 Cal. 2d 47 (1939), does not supply the missing finding. Goddard explains that the effect of a judgment following a general demurrer depends on the defect adjudicated: a judgment may reach the merits where the pleading establishes an absolute bar, but not where the defect is formal or curable by a different pleading. Id. at 52-53. Here, there is no judgment and no identified basis from which this Court could determine what issue, if any, the state court necessarily resolved."),
@@ -224,7 +247,7 @@ CONTENT = [
     (S, "3. Defendants have not established that Smith is in privity with a state-court party for the conduct alleged here."),
     (P, "Smith was not a party to the state case. Defendants therefore must establish privity, which under California law requires more than a relationship label. It requires an identity or community of interest, adequate representation of the nonparty's interest in the first action, and circumstances making it fair to bind the nonparty. DKN Holdings, 61 Cal. 4th at 826. The California Supreme Court has cautioned that jointly liable actors are not automatically privies merely because a plaintiff previously sued one of them. Id. at 824-26."),
     (P, "Neither of Defendants' principal authorities establishes privity on these pleadings. In Scott, the prior and later defendants were federal employees who all participated in the same challenged agency inquiry; the Ninth Circuit described privity among officers of the same government with respect to the same issue. 746 F.2d at 1378. Here, the Complaint attributes distinct personal conduct to Smith: she allegedly possessed exclusive policy authority, approved and maintained the statewide rule, issued a September 2024 manual perpetuating it, personally assigned work to Plaintiff, received direct notice, and declined to correct the policy. ECF No. 1 ¶¶ 12, 42-44, 54."),
-    (P, "Drawsand v. F.F. Properties, L.L.P., 866 F. Supp. 2d 1110 (N.D. Cal. 2011), is likewise distinguishable. Defendants cite page \"1227,\" but the pertinent discussion appears at page 1127. There, the earlier dismissal with prejudice was a final judgment, the employer and employees were sued over the same property and the same conduct, and the complaint itself alleged that the employees acted within the course and scope of employment. Id. at 1127. Here, the necessary final judgment is absent, and whether the prior HOPE defendants represented Smith's interests concerning her distinct, individual policy conduct is not established by the complaint or RJN."),
+    (P, "Drawsand v. F.F. Properties, L.L.P., 866 F. Supp. 2d 1110, 1127 (N.D. Cal. 2011),[[FN2]] is likewise distinguishable. There, the earlier dismissal with prejudice was a final judgment, the employer and employees were sued over the same property and the same conduct, and the complaint itself alleged that the employees acted within the course and scope of employment. Id. at 1127. Here, the necessary final judgment is absent, and whether the prior HOPE defendants represented Smith's interests concerning her distinct, individual policy conduct is not established by the complaint or RJN."),
     (P, "At minimum, privity presents a fact question. It cannot be resolved against Plaintiff under the Scott standard where the relevant facts are disputed or undeveloped."),
     (S, "4. Defendants' own entity descriptions do not support dismissal."),
     (P, "The federal motion captions \"HOPE Program, A Licensed Clinical Social Worker Professional Corporation (sued and served as HOPE Psychotherapy, Inc.).\" The state-court caption in Exhibit C identifies \"HOPE PSYCHOTHERAPY, INC., d/b/a HOPE PROGRAM, a California corporation.\" Defendants cannot use the first formulation to suggest a distinct or misnamed federal entity while relying on the second to establish automatic party identity."),
@@ -358,11 +381,148 @@ def toc_row(d, label: str, page_str: str, bold: bool = False, indent: float = 0,
         d.current_line += 1
 
 
+def _fontfor(style: str) -> str:
+    return {"b": "Times-Bold", "i": "Times-Italic",
+            "bi": "Times-BoldItalic"}.get(style, "Times-Roman")
+
+
 def render(out_path: Path, toc_pages: dict, capture: dict | None = None) -> int:
     out_path.parent.mkdir(parents=True, exist_ok=True)
     d = PleadingPaper(str(out_path), doc_title_footer=DOC_TITLE_FOOTER)
-
     c = d.c
+
+    # Pre-wrap each footnote's text once (used for reservation + drawing).
+    fn_avail = CONTENT_WIDTH - FN_TEXT_INDENT - 6
+    fn_wrapped = {
+        n: d._wrap_segments(d._parse_segments(italicize_cases(t)), fn_avail, 0, FN_SIZE)
+        for n, t in FN_TEXT.items()
+    }
+
+    # Per-page footnote state.
+    page_fn: list = []       # [(num, wrapped_lines)] buffered for the current page
+    reserved_lines = [0]     # grid lines held at the page foot (list = mutable cell)
+
+    def reserved_for(notes) -> int:
+        if not notes:
+            return 0
+        pts = 8 + 2 + 4  # body->rule gap, rule, rule->first note
+        for _num, wl in notes:
+            pts += len(wl) * FN_LEAD + 4
+        return int(math.ceil(pts / LINE_SPACING)) + 1  # +1 safety line
+
+    def flush() -> None:
+        if not page_fn:
+            reserved_lines[0] = 0
+            return
+        top_line = NUM_LINES - reserved_lines[0]
+        y = d._line_y(top_line) + 8
+        c.setLineWidth(0.5)
+        c.line(CONTENT_LEFT, y, CONTENT_LEFT + FN_RULE_W, y)
+        y -= (4 + FN_SIZE)
+        for num, wl in page_fn:
+            c.setFont("Times-Roman", FN_SIZE - 2.0)
+            c.drawString(CONTENT_LEFT, y + FN_SIZE * 0.36, str(num))
+            for line in wl:
+                x = CONTENT_LEFT + FN_TEXT_INDENT
+                for word, style in line:
+                    fnt = _fontfor(style)
+                    c.setFont(fnt, FN_SIZE)
+                    c.drawString(x, y, word)
+                    x += c.stringWidth(word, fnt, FN_SIZE)
+                y -= FN_LEAD
+            y -= 4
+        page_fn.clear()
+        reserved_lines[0] = 0
+
+    def bbreak(extra: int = 1) -> None:
+        if d.current_line + reserved_lines[0] + extra > NUM_LINES:
+            flush()
+            d.start_new_page()
+
+    def draw_center(text: str, bold: bool = True) -> None:
+        bbreak(1)
+        c.setFont("Times-Bold" if bold else "Times-Roman", FONT_SIZE)
+        c.drawCentredString(CONTENT_LEFT + CONTENT_WIDTH / 2,
+                            d._line_y(d.current_line), text)
+        d.current_line += 1
+
+    def blank() -> None:
+        bbreak(1)
+        d.current_line += 1
+
+    def atomize(text: str, base_bold: bool):
+        atoms = []
+        for chunk, style in d._parse_segments(text):
+            st = "b" if (base_bold and style == "r") else style
+            for part in re.split(r"(\[\[FN\d+\]\])", chunk):
+                m = re.fullmatch(r"\[\[FN(\d+)\]\]", part)
+                if m:
+                    atoms.append(("MARK", int(m.group(1))))
+                elif part:
+                    for w in part.split(" "):
+                        if w:
+                            atoms.append(("W", w, st))
+        return atoms
+
+    def wrap_atoms(atoms, avail, first_indent):
+        lines, cur, x = [], [], first_indent
+        for a in atoms:
+            if a[0] == "W":
+                w, st = a[1], a[2]
+                fnt = _fontfor(st)
+                piece = w if not cur else " " + w
+                ww = c.stringWidth(piece, fnt, FONT_SIZE)
+                if x + ww > avail and cur:
+                    lines.append(cur)
+                    cur, x = [], 0
+                    piece = w
+                    ww = c.stringWidth(piece, fnt, FONT_SIZE)
+                cur.append(("W", piece, st))
+                x += ww
+            else:
+                cur.append(("MARK", a[1]))
+                x += c.stringWidth(str(a[1]), "Times-Roman", FONT_SIZE * 0.72)
+        if cur:
+            lines.append(cur)
+        return lines
+
+    def draw_para(text: str, first_indent: float = 36, indent: float = 0,
+                  bold: bool = False) -> None:
+        atoms = atomize(text, bold)
+        avail = CONTENT_WIDTH - indent - 16
+        lines = wrap_atoms(atoms, avail, first_indent)
+        for i, line in enumerate(lines):
+            for it in line:
+                if it[0] != "MARK":
+                    continue
+                num = it[1]
+                notes = page_fn + [(num, fn_wrapped[num])]
+                need = reserved_for(notes)
+                if d.current_line + need + 1 > NUM_LINES:
+                    flush()
+                    d.start_new_page()
+                    notes = [(num, fn_wrapped[num])]
+                    need = reserved_for(notes)
+                page_fn.clear()
+                page_fn.extend(notes)
+                reserved_lines[0] = need
+            bbreak(1)
+            y = d._line_y(d.current_line)
+            x = CONTENT_LEFT + indent + (first_indent if i == 0 else 0)
+            for it in line:
+                if it[0] == "W":
+                    fnt = _fontfor(it[2])
+                    c.setFont(fnt, FONT_SIZE)
+                    c.drawString(x, y, it[1])
+                    x += c.stringWidth(it[1], fnt, FONT_SIZE)
+                else:
+                    sz = FONT_SIZE * 0.72
+                    c.setFont("Times-Roman", sz)
+                    c.drawString(x, y + FONT_SIZE * 0.32, str(it[1]))
+                    x += c.stringWidth(str(it[1]), "Times-Roman", sz)
+            d.current_line += 1
+
+    # --- front matter (no footnotes here; library primitives are fine) ---
     atty_y = d._line_y(0)
     atty_lh = 15
     for i, (text, font, size) in enumerate(ATTORNEY_BLOCK):
@@ -400,27 +560,32 @@ def render(out_path: Path, toc_pages: dict, capture: dict | None = None) -> int:
                 indent=(0 if level == "roman" else 18))
     d.blank_line()
 
-    # --- BODY ---
+    # --- BODY (footnote-aware custom renderer) ---
     for c_type, text in CONTENT:
         if c_type == H:
-            d.ensure_space(4)
+            if d.current_line + reserved_lines[0] + 4 > NUM_LINES:
+                flush()
+                d.start_new_page()
             if capture is not None:
                 capture[text] = d.page_num
-            d.write_line(text, bold=True, center=True)
-            d.blank_line()
+            draw_center(text, bold=True)
+            blank()
         elif c_type == S:
-            d.ensure_space(6)
+            if d.current_line + reserved_lines[0] + 6 > NUM_LINES:
+                flush()
+                d.start_new_page()
             if capture is not None and re.match(r"^[A-H]\.\s", text):
                 capture[text] = d.page_num
-            d.write_wrapped(f"<<b:{italicize_cases(text)}>>", first_indent=0)
-            d.blank_line()
+            draw_para(italicize_cases(text), first_indent=0, bold=True)
+            blank()
         elif c_type == P:
-            d.write_wrapped(italicize_cases(text), first_indent=36)
-            d.blank_line()
+            draw_para(italicize_cases(text), first_indent=36)
+            blank()
         elif c_type == L:
-            d.write_wrapped("- " + italicize_cases(text), indent=36, first_indent=0)
-            d.blank_line()
+            draw_para("- " + italicize_cases(text), indent=36, first_indent=0)
+            blank()
 
+    flush()  # draw any footnote still pending on the final body page
     d.ensure_space(9)
     for line in signature_block().split("\n"):
         if line.startswith("_") and os.path.isfile(SIGNATURE_PATH):
