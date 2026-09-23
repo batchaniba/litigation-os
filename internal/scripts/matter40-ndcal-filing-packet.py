@@ -340,7 +340,7 @@ def build_summons(target: dict) -> Path:
 # ------------------------------------------------ AO 240 IFP (short form)
 # Mirrors the Serrato application (Matter 24, ECF No. 2, granted ECF No. 5,
 # Jun 29 2026) answer for answer, at Plaintiff's direction.
-IFP_CASH = "43.00"
+IFP_CASH = "105.00"
 
 
 def build_ifp(src: Path) -> Path:
