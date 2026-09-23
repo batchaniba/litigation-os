@@ -46,6 +46,13 @@ and registry denials only as a co-defendant's pleaded positions that cannot
 resolve a Rule 12(b)(6) motion, and adds the admission to the UCL amendment
 proffer. Accurate's defenses are not briefed. VERIFY ECF No. 21 paragraph pins.
 
+KeyCite pass (Westlaw, Sep. 22, 2026): all 14 cases kept. Lee gets the
+"overruled on other grounds by Galbraith" parenthetical (red flag concerns
+heightened pleading, not the 688-90 record-scope holding). Lerma now cites
+2023 WL 4681571. Lopez kept for leave to amend; its red flag (Singleton v.
+Gates, 2026 WL 1494029) was not readable -- read Singleton before filing.
+Brief re-dated September 22, 2026; POS September 23, 2026.
+
 Every authority is in internal/docs/citation_index.json (Iqbal, Starr, Erickson,
 Lee, Khoja, Hill, Sonner, Guzman, Lopez) or is Amazon's own authority cited to
 distinguish it (Brahmana, Estate of Hearst, Saleh, In re Yahoo Mail), or is the
@@ -72,24 +79,24 @@ REPO_ROOT = SCRIPT_DIR.parent.parent
 
 OUT_PATHS = [
     REPO_ROOT / "internal" / "public" / "documents" / "matter-29"
-    / "Opposition to Amazon MTD - Pleading Paper (Sep 23 2026).pdf",
+    / "Opposition to Amazon MTD - Pleading Paper (Sep 22 2026).pdf",
 ]
 ORDER_OUT = (
     REPO_ROOT / "internal" / "public" / "documents" / "matter-29"
-    / "Proposed Order - Amazon MTD (Sep 23 2026).pdf"
+    / "Proposed Order - Amazon MTD (Sep 22 2026).pdf"
 )
 ORDER_SCRATCH_OUT = Path(
     "/tmp/claude-0/-home-user-interactive-litigation-portfolio/"
     "fde9b68e-7f08-5546-b231-a91ce9f193c5/scratchpad/"
-    "Proposed-Order-Amazon-MTD-Sep23.pdf"
+    "Proposed-Order-Amazon-MTD-Sep22.pdf"
 )
 SCRATCH_OUT = Path(
     "/tmp/claude-0/-home-user-interactive-litigation-portfolio/"
     "fde9b68e-7f08-5546-b231-a91ce9f193c5/scratchpad/"
-    "Opposition-to-Amazon-MTD-Sep23.pdf"
+    "Opposition-to-Amazon-MTD-Sep22.pdf"
 )
 
-SIGN_OFF_DATE = "September 23, 2026"
+SIGN_OFF_DATE = "September 22, 2026"
 
 DOC_TITLE_FOOTER = (
     "PLAINTIFF'S OPPOSITION TO AMAZON'S MOTION TO DISMISS -- "
@@ -153,6 +160,7 @@ CASE_ITALICS = sorted(
         "Sonner v. Premier Nutrition Corp.",
         "Lerma v. Amazon.com Services, LLC",
         "Lee v. City of Los Angeles",
+        "Galbraith v. County of Santa Clara",
         "In re Yahoo Mail Litigation",
         "Brahmana v. Henard",
         "Erickson v. Pardus",
@@ -237,9 +245,9 @@ CONTENT = [
     (H, "V. ARGUMENT"),
 
     (S, "A. The Motion Must Be Decided on the Complaint, and It Does Not Reach Claims One Through Four."),
-    (P, """Review under Rule 12(b)(6) is limited to the Complaint, documents properly incorporated by reference, and matters properly subject to judicial notice. Lee v. City of Los Angeles, 250 F.3d 668, 688-90 (9th Cir. 2001). Even when a document is judicially noticeable, disputed facts within it may not be accepted as true. Khoja v. Orexigen Therapeutics, Inc., 899 F.3d 988, 999-1003 (9th Cir. 2018)."""),
+    (P, """Review under Rule 12(b)(6) is limited to the Complaint, documents properly incorporated by reference, and matters properly subject to judicial notice. Lee v. City of Los Angeles, 250 F.3d 668, 688-90 (9th Cir. 2001), overruled on other grounds by Galbraith v. County of Santa Clara, 307 F.3d 1119 (9th Cir. 2002). Even when a document is judicially noticeable, disputed facts within it may not be accepted as true. Khoja v. Orexigen Therapeutics, Inc., 899 F.3d 988, 999-1003 (9th Cir. 2018)."""),
     (P, """Amazon submits nothing outside the pleadings -- no background report, no declaration, no status record, and no request for judicial notice. Its first footnote nonetheless asserts that the report remains unfinished because certain California court records are difficult to obtain, and that no adverse action has been taken. Mot. 1 n.1. That is unsupported attorney argument, and it cannot displace the pleaded allegations. Accordingly, the motion must be decided on the Complaint and materials properly considered under Rule 12(b)(6)."""),
-    (P, """That posture distinguishes Lerma v. Amazon.com Services, LLC, No. 8:22-cv-01727-FWS-JDE (C.D. Cal. May 26, 2023), which the Complaint describes. Compl. ¶¶ 31-33. As the Complaint alleges, the court in that case resolved the source of the disqualifying information on the background report itself, which was before the court and which showed court-record sourcing and no registry hit. Id. ¶ 32. Here, Amazon has placed no report in the record, and Plaintiff alleges that he has demanded it and not received it. Id. ¶ 29. For purposes of this motion, the Court therefore takes the Complaint's alternative allegations about the source of the registry information as true."""),
+    (P, """That posture distinguishes Lerma v. Amazon.com Services, LLC, No. 8:22-cv-01727-FWS-JDE, 2023 WL 4681571 (C.D. Cal. May 26, 2023), which the Complaint describes. Compl. ¶¶ 31-33. As the Complaint alleges, the court in that case resolved the source of the disqualifying information on the background report itself, which was before the court and which showed court-record sourcing and no registry hit. Id. ¶ 32. Here, Amazon has placed no report in the record, and Plaintiff alleges that he has demanded it and not received it. Id. ¶ 29. For purposes of this motion, the Court therefore takes the Complaint's alternative allegations about the source of the registry information as true."""),
     (P, """Accurate's answer does not change that analysis. Accurate admits that Plaintiff's screening remains pending and denies reporting registry information. ECF No. 21 ¶¶ 23, 29-30, 42-44. A co-defendant's pleaded denials are not evidence and cannot resolve Amazon's Rule 12(b)(6) motion; the Complaint's well-pleaded allegations are accepted as true, and neither defendant has placed a background report before the Court."""),
     (P, """Nor does the motion reach Claims One through Four. Amazon moved against only the Fifth, Sixth, and Seventh Claims, and its footnote comments on the remaining claims request no relief. Those claims are not presented for decision, and the order on this motion should not be read to address them."""),
 
@@ -302,8 +310,8 @@ AUTHORITIES = [
     ("Cases", "Hill v. National Collegiate Athletic Ass'n, 7 Cal. 4th 1 (1994)", r"\bHill\b"),
     ("Cases", "In re Yahoo Mail Litigation, 7 F. Supp. 3d 1016 (N.D. Cal. 2014)", r"Yahoo"),
     ("Cases", "Khoja v. Orexigen Therapeutics, Inc., 899 F.3d 988 (9th Cir. 2018)", r"Khoja"),
-    ("Cases", "Lee v. City of Los Angeles, 250 F.3d 668 (9th Cir. 2001)", r"Lee v\. City"),
-    ("Cases", "Lerma v. Amazon.com Services, LLC, No. 8:22-cv-01727-FWS-JDE (C.D. Cal. May 26, 2023)", r"\bLerma\b"),
+    ("Cases", "Lee v. City of Los Angeles, 250 F.3d 668 (9th Cir. 2001), overruled on other grounds by Galbraith v. County of Santa Clara, 307 F.3d 1119 (9th Cir. 2002)", r"Lee v\. City"),
+    ("Cases", "Lerma v. Amazon.com Services, LLC, No. 8:22-cv-01727-FWS-JDE, 2023 WL 4681571 (C.D. Cal. May 26, 2023)", r"\bLerma\b"),
     ("Cases", "Lopez v. Smith, 203 F.3d 1122 (9th Cir. 2000) (en banc)", r"\bLopez\b"),
     ("Cases", "Saleh v. Nike, Inc., 562 F. Supp. 3d 503 (C.D. Cal. 2021)", r"\bSaleh\b"),
     ("Cases", "Sonner v. Premier Nutrition Corp., 971 F.3d 834 (9th Cir. 2020)", r"\bSonner\b"),

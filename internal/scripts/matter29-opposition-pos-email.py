@@ -5,7 +5,7 @@ Amazon's Motion to Dismiss.
 Newanforbi v. Amazon.com Services, LLC, et al., N.D. Cal. No. 4:26-cv-09249-ASK.
 
 Plaintiff serves the Opposition on counsel of record for both defendants by
-electronic mail on September 24, 2026, with the [Proposed] Order. Uses the house four-border Proof of
+electronic mail on September 23, 2026, with the [Proposed] Order. Uses the house four-border Proof of
 Service (lib/proof_of_service) with the universal signature stamped. Nothing
 mailed.
 
@@ -38,12 +38,12 @@ ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / (
     "public/documents/matter-29/"
     "Proof of Service by Email - Opposition to Amazon MTD "
-    "(N.D. Cal. 4-26-cv-09249-ASK) (Sep 24 2026).pdf"
+    "(N.D. Cal. 4-26-cv-09249-ASK) (Sep 23 2026).pdf"
 )
 SCRATCH_OUT = Path(
     "/tmp/claude-0/-home-user-interactive-litigation-portfolio/"
     "fde9b68e-7f08-5546-b231-a91ce9f193c5/scratchpad/"
-    "Proof-of-Service-by-Email-Opposition-to-Amazon-MTD-Sep24.pdf"
+    "Proof-of-Service-by-Email-Opposition-to-Amazon-MTD-Sep23.pdf"
 )
 
 CASE = "4:26-cv-09249-ASK"
@@ -63,7 +63,7 @@ def pos_fields() -> ProofOfServiceFields:
         defendant_role="Defendants",
         case_number=CASE,
         title="PROOF OF SERVICE",
-        service_date="September 24, 2026",
+        service_date="September 23, 2026",
         document_title=(
             "PLAINTIFF'S OPPOSITION TO DEFENDANT AMAZON.COM SERVICES LLC'S "
             "MOTION TO DISMISS PLAINTIFF'S FIFTH, SIXTH, AND SEVENTH CLAIMS FOR RELIEF; "
