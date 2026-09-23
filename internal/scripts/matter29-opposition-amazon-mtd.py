@@ -3,8 +3,9 @@
 """
 Matter 29 -- Plaintiff's Opposition to Amazon.com Services LLC's Motion to
 Dismiss the Fifth, Sixth, and Seventh Claims (N.D. Cal. No. 4:26-cv-09249-ASK),
-with Table of Contents, Table of Authorities, and Proof of Service by e-mail,
-rendered on portfolio pleading paper with the canonical signature.
+with Table of Contents and Table of Authorities, rendered on portfolio
+pleading paper with the canonical signature. The Proof of Service is the house
+form, generated separately by matter29-opposition-pos-email.py.
 
   python3 internal/scripts/matter29-opposition-amazon-mtd.py
 
@@ -22,7 +23,7 @@ Revision (Sep. 23, 2026) applied to the reviewed 8-page draft:
     alternative-pleading section, limited-scope request for any privacy
     dismissal, leave-to-amend section, Rule 12(a)(4) fence
   - Front matter on its own pages so the TOC no longer splits across page 1
-  - Dated September 22, 2026; POS by e-mail dated September 23, 2026
+  - Dated September 22, 2026 (POS: matter29-opposition-pos-email.py, Sep. 23)
 
 Every authority is in internal/docs/citation_index.json (Iqbal, Starr, Erickson,
 Lee, Khoja, Hill, Sonner, Guzman, Lopez) or is Amazon's own authority cited to
@@ -50,17 +51,15 @@ REPO_ROOT = SCRIPT_DIR.parent.parent
 
 OUT_PATHS = [
     REPO_ROOT / "internal" / "public" / "documents" / "matter-29"
-    / "Opposition to Amazon MTD with POS - Pleading Paper (Sep 22 2026).pdf",
+    / "Opposition to Amazon MTD - Pleading Paper (Sep 22 2026).pdf",
 ]
 SCRATCH_OUT = Path(
     "/tmp/claude-0/-home-user-interactive-litigation-portfolio/"
     "fde9b68e-7f08-5546-b231-a91ce9f193c5/scratchpad/"
-    "Opposition-to-Amazon-MTD-with-POS-Sep22.pdf"
+    "Opposition-to-Amazon-MTD-Sep22.pdf"
 )
 
 SIGN_OFF_DATE = "September 22, 2026"
-SERVICE_DATE = "September 23, 2026"
-EXECUTION_PLACE = "Stockton, California"
 
 DOC_TITLE_FOOTER = (
     "PLAINTIFF'S OPPOSITION TO AMAZON'S MOTION TO DISMISS -- "
@@ -68,10 +67,6 @@ DOC_TITLE_FOOTER = (
 )
 COURT_LINE1 = "UNITED STATES DISTRICT COURT"
 COURT_LINE2 = "NORTHERN DISTRICT OF CALIFORNIA"
-DOC_NAME = (
-    "PLAINTIFF'S OPPOSITION TO DEFENDANT AMAZON.COM SERVICES LLC'S MOTION "
-    "TO DISMISS PLAINTIFF'S FIFTH, SIXTH, AND SEVENTH CLAIMS FOR RELIEF"
-)
 
 SIG_IMG_W_PX, SIG_IMG_H_PX = SIGNATURE_NATIVE_PX
 SIG_WIDTH = 235
@@ -290,12 +285,6 @@ AUTHORITIES = [
 ]
 TOA_CATEGORIES = ["Cases", "Constitutional Provisions", "Statutes", "Rules"]
 
-SERVICE_LIST = [
-    ("For Defendant Amazon.com Services LLC (Morgan, Lewis & Bockius LLP): Andrew P. "
-     "Frederick, andrew.frederick@morganlewis.com; Douglass G. Brown, douglass.brown@morganlewis.com", []),
-    ("For Defendant Accurate Background, LLC (Seyfarth Shaw LLP): Jasmine J. Stanzick, "
-     "jstanzick@seyfarth.com; John W. Drury, jdrury@seyfarth.com", []),
-]
 
 
 def signature_lines(date: str) -> list[str]:
@@ -448,39 +437,6 @@ def render(out_path: Path, toc_pages: dict, toa_pages: dict, meta: dict) -> None
             d.blank_line()
     draw_signature(d, signature_lines(SIGN_OFF_DATE))
     meta["body_end"] = d.page_num
-
-    # --- Proof of Service (own page) ---
-    d.start_new_page()
-    d.write_line("PROOF OF SERVICE", bold=True, center=True)
-    d.write_line("Newanforbi v. Amazon.com Services, LLC, et al., Case No. 4:26-cv-09249-ASK (N.D. Cal.)",
-                 center=True, size=11)
-    d.write_wrapped("I, Brendan Ngehsi Newanforbi, declare:", first_indent=0)
-    for para in [
-        "1. I am over eighteen years of age and am the Plaintiff in this action, appearing in propria persona. My address is 1455 Cat Tail Drive, Stockton, California 95204, and my e-mail address is bnn.cdl@gmail.com.",
-        f"2. On {SERVICE_DATE}, I served {DOC_NAME} by electronic mail, transmitting a PDF copy from bnn.cdl@gmail.com to each of the following persons at the e-mail address listed:",
-    ]:
-        d.write_wrapped(para, first_indent=36)
-        if para.startswith("1."):
-            d.blank_line()
-    for group, names in SERVICE_LIST:
-        d.write_wrapped(group, indent=36, first_indent=0)
-        for name in names:
-            d.write_line(name, indent=72)
-    d.blank_line()
-    d.write_wrapped(
-        "3. I did not receive, within a reasonable time after the transmission, any electronic "
-        "message or other indication that the transmission was unsuccessful.",
-        first_indent=36,
-    )
-    d.write_wrapped(
-        "I declare under penalty of perjury under the laws of the United States of America that "
-        f"the foregoing is true and correct. Executed on {SERVICE_DATE}, at {EXECUTION_PLACE}.",
-        first_indent=36,
-    )
-    draw_signature(d, [
-        "___________________________________",
-        "BRENDAN NGEHSI NEWANFORBI",
-    ])
 
     d.save()
     meta["pages"] = d.page_num
