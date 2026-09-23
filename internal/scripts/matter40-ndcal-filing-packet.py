@@ -64,13 +64,18 @@ DEFENDANTS_FULL = (
     "TASKUS USA, LLC; and DOES 1 through 20, inclusive"
 )
 
+# Service addresses are the California agents for service of process (CA SOS:
+# Uber Technologies, Inc. No. 3318029; TaskUs Holdings, Inc. No. 3828721;
+# TaskUs USA, LLC No. 201729810166 -- all C T Corporation System, Glendale).
+# Confirm each on bizfile before the clerk issues the summonses.
 SUMMONS_TARGETS = [
     {
         "slug": "Uber Technologies Inc",
         "address": [
             "Uber Technologies, Inc.",
-            "1725 3rd Street",
-            "San Francisco, CA 94158",
+            "c/o C T Corporation System, Registered Agent",
+            "330 N. Brand Blvd., Suite 700",
+            "Glendale, CA 91203",
         ],
     },
     {
