@@ -3,9 +3,10 @@
 """
 Matter 29 -- Plaintiff's Opposition to Amazon.com Services LLC's Motion to
 Dismiss the Fifth, Sixth, and Seventh Claims (N.D. Cal. No. 4:26-cv-09249-ASK),
-with Table of Contents and Table of Authorities, rendered on portfolio
-pleading paper with the canonical signature. The Proof of Service is the house
-form, generated separately by matter29-opposition-pos-email.py.
+with Table of Contents and Table of Authorities, plus a [Proposed] Order that
+tracks the Conclusion, rendered on portfolio pleading paper with the canonical
+signature. The Proof of Service is the house form, generated separately by
+matter29-opposition-pos-email.py.
 
   python3 internal/scripts/matter29-opposition-amazon-mtd.py
 
@@ -24,6 +25,20 @@ Revision (Sep. 23, 2026) applied to the reviewed 8-page draft:
     dismissal, leave-to-amend section, Rule 12(a)(4) fence
   - Front matter on its own pages so the TOC no longer splits across page 1
   - Dated September 22, 2026 (POS: matter29-opposition-pos-email.py, Sep. 23)
+
+Second review pass (Sep. 23, 2026):
+  - Hill "sensitive and confidential" confronted directly; theory rests on
+    restricted use, context, consent scope, and harm, not confidentiality
+  - "nullify" softened; statute informs norms but does not supply every element
+  - Countervailing-interest point no longer framed as an affirmative defense;
+    "high bar" paragraph no longer says the Court cannot dismiss
+  - "Unrebutted" -> Court takes the alternative source allegations as true
+  - Lerma characterized through Compl. paras. 31-33, not the foreign order
+  - Rule 12(d) conversion and Rule 12(a)(4) sentences removed from the brief
+  - UCL heading and opener reworded; redundant hearing paragraph removed
+  - Non-breaking spaces keep pin cites on one line; "misuse" emphasized
+  - [Proposed] Order added; brief dated Sep. 23, POS Sep. 24
+  - In re Facebook Internet Tracking stays out (off-point; not indexed)
 
 Every authority is in internal/docs/citation_index.json (Iqbal, Starr, Erickson,
 Lee, Khoja, Hill, Sonner, Guzman, Lopez) or is Amazon's own authority cited to
@@ -51,15 +66,24 @@ REPO_ROOT = SCRIPT_DIR.parent.parent
 
 OUT_PATHS = [
     REPO_ROOT / "internal" / "public" / "documents" / "matter-29"
-    / "Opposition to Amazon MTD - Pleading Paper (Sep 22 2026).pdf",
+    / "Opposition to Amazon MTD - Pleading Paper (Sep 23 2026).pdf",
 ]
+ORDER_OUT = (
+    REPO_ROOT / "internal" / "public" / "documents" / "matter-29"
+    / "Proposed Order - Amazon MTD (Sep 23 2026).pdf"
+)
+ORDER_SCRATCH_OUT = Path(
+    "/tmp/claude-0/-home-user-interactive-litigation-portfolio/"
+    "fde9b68e-7f08-5546-b231-a91ce9f193c5/scratchpad/"
+    "Proposed-Order-Amazon-MTD-Sep23.pdf"
+)
 SCRATCH_OUT = Path(
     "/tmp/claude-0/-home-user-interactive-litigation-portfolio/"
     "fde9b68e-7f08-5546-b231-a91ce9f193c5/scratchpad/"
-    "Opposition-to-Amazon-MTD-Sep22.pdf"
+    "Opposition-to-Amazon-MTD-Sep23.pdf"
 )
 
-SIGN_OFF_DATE = "September 22, 2026"
+SIGN_OFF_DATE = "September 23, 2026"
 
 DOC_TITLE_FOOTER = (
     "PLAINTIFF'S OPPOSITION TO AMAZON'S MOTION TO DISMISS -- "
@@ -169,6 +193,13 @@ def italicize_cases(text: str) -> str:
     return out
 
 
+def nb(text: str) -> str:
+    """Glue pin cites together with non-breaking spaces."""
+    text = re.sub(r"(¶¶?|§) ", "\\1\u00a0", text)
+    text = re.sub(r"\b(Compl\.|Mot\.|Id\.|id\.) (?=[¶\d])", "\\1\u00a0", text)
+    return text
+
+
 # ==========================================================
 # BODY CONTENT
 # ==========================================================
@@ -184,7 +215,7 @@ CONTENT = [
 
     (H, "II. INTRODUCTION"),
     (P, """Amazon's motion is limited. Plaintiff pleads seven causes of action, but Amazon moves only against the Fifth Claim for invasion of privacy, the Sixth Claim under California's Unfair Competition Law (UCL), and the Seventh Claim for intentional infliction of emotional distress (IIED). It does not move against the First Claim under Penal Code section 290.46(j)(2)(E), the Second Claim under the California Fair Chance Act, the Third Claim under the Fair Credit Reporting Act (FCRA), or the Fourth Claim under the Investigative Consumer Reporting Agencies Act (ICRAA). The merits of Claims One through Four are therefore not presented for decision, and Accurate Background has not joined the motion."""),
-    (P, """The motion should be denied as to the Fifth Claim. Amazon treats that claim as an assertion that public registry information is secret. Plaintiff alleges something narrower: a protected interest in freedom from the use of registry information to deny employment -- the specific use California expressly prohibits. The statutory restriction applies only to information that is already public; if public availability ended the inquiry, the restriction would protect nothing. California's enactment supplies the legal and social norms that inform each element under Hill v. National Collegiate Athletic Ass'n, 7 Cal. 4th 1 (1994)."""),
+    (P, """The motion should be denied as to the Fifth Claim. Amazon treats that claim as an assertion that public registry information is secret. Plaintiff alleges something narrower: a protected interest in freedom from the use of registry information to deny employment -- the specific use California expressly prohibits. Indeed, the statutory restriction exists only because the information is public; public availability therefore cannot be the end of the analysis. California's enactment supplies the legal and social norms that inform each element under Hill v. National Collegiate Athletic Ass'n, 7 Cal. 4th 1 (1994)."""),
     (P, """Plaintiff does not oppose dismissal of the Sixth Claim as against Amazon only, provided the dismissal is without prejudice. Plaintiff does not defend lost wages or ordinary employment benefits as UCL restitution. Any dismissal would rest on federal equitable jurisdiction under Sonner v. Premier Nutrition Corp., 971 F.3d 834 (9th Cir. 2020), not on the merits of the statutory predicates Amazon has not challenged. Under Guzman v. Polaris Industries Inc., 49 F.4th 1308 (9th Cir. 2022), such a dismissal should be without prejudice."""),
     (P, """Plaintiff likewise does not oppose dismissal of the Seventh Claim as against Amazon only, without prejudice. That limited non-opposition is not an adoption of Amazon's characterization of the claim as a routine twenty-day delay. It preserves Plaintiff's ability to seek leave under Rule 15 if the Accurate Background report, Amazon's decision record, or discovery supplies facts bearing on outrageousness and severe distress."""),
     (P, """Finally, Amazon's footnote about the status of the background report is unsupported attorney argument. The motion must be decided on the Complaint, and it cannot yield a ruling on the four claims Amazon did not challenge."""),
@@ -201,22 +232,23 @@ CONTENT = [
     (H, "V. ARGUMENT"),
 
     (S, "A. The Motion Must Be Decided on the Complaint, and It Does Not Reach Claims One Through Four."),
-    (P, """Review under Rule 12(b)(6) is limited to the Complaint, documents properly incorporated by reference, and matters properly subject to judicial notice. Lee v. City of Los Angeles, 250 F.3d 668, 688-90 (9th Cir. 2001). Even when a document is judicially noticeable, disputed facts within it may not be accepted as true. Khoja v. Orexigen Therapeutics, Inc., 899 F.3d 988, 999-1003 (9th Cir. 2018). And if matters outside the pleadings are presented and not excluded, the motion must be treated as one for summary judgment, with a reasonable opportunity for all parties to present pertinent material. Fed. R. Civ. P. 12(d)."""),
-    (P, """Amazon submits nothing outside the pleadings -- no background report, no declaration, no status record, and no request for judicial notice. Its first footnote nonetheless asserts that the report remains unfinished because certain California court records are difficult to obtain, and that no adverse action has been taken. Mot. 1 n.1. Those assertions are not in the record and are not judicially noticeable. The motion lives or dies on the Complaint."""),
-    (P, """That posture distinguishes the case the Complaint itself describes, Lerma v. Amazon.com Services, LLC, No. 8:22-cv-01727-FWS-JDE (C.D. Cal.). See Compl. ¶¶ 31-33. There, the court resolved the source of the disqualifying information on the background report, which was properly before it and which showed court-record sourcing and no registry hit. Lerma, ECF No. 36 (C.D. Cal. May 26, 2023); Compl. ¶ 32. Here, Amazon has placed no report before the Court, and Plaintiff alleges that he has demanded it and not received it. Compl. ¶ 29. The allegations of registry use therefore stand unrebutted on this motion."""),
-    (P, """Nor does the motion reach Claims One through Four. Amazon moved against only the Fifth, Sixth, and Seventh Claims, and its footnote comments on the remaining claims request no relief. Plaintiff therefore does not brief those claims, and the order on this motion should not be read to address them. Amazon's time to respond to them is governed by Rule 12(a)(4)."""),
+    (P, """Review under Rule 12(b)(6) is limited to the Complaint, documents properly incorporated by reference, and matters properly subject to judicial notice. Lee v. City of Los Angeles, 250 F.3d 668, 688-90 (9th Cir. 2001). Even when a document is judicially noticeable, disputed facts within it may not be accepted as true. Khoja v. Orexigen Therapeutics, Inc., 899 F.3d 988, 999-1003 (9th Cir. 2018)."""),
+    (P, """Amazon submits nothing outside the pleadings -- no background report, no declaration, no status record, and no request for judicial notice. Its first footnote nonetheless asserts that the report remains unfinished because certain California court records are difficult to obtain, and that no adverse action has been taken. Mot. 1 n.1. That is unsupported attorney argument, and it cannot displace the pleaded allegations. Accordingly, the motion must be decided on the Complaint and materials properly considered under Rule 12(b)(6)."""),
+    (P, """That posture distinguishes Lerma v. Amazon.com Services, LLC, No. 8:22-cv-01727-FWS-JDE (C.D. Cal. May 26, 2023), which the Complaint describes. Compl. ¶¶ 31-33. As the Complaint alleges, the court in that case resolved the source of the disqualifying information on the background report itself, which was before the court and which showed court-record sourcing and no registry hit. Id. ¶ 32. Here, Amazon has placed no report in the record, and Plaintiff alleges that he has demanded it and not received it. Id. ¶ 29. For purposes of this motion, the Court therefore takes the Complaint's alternative allegations about the source of the registry information as true."""),
+    (P, """Nor does the motion reach Claims One through Four. Amazon moved against only the Fifth, Sixth, and Seventh Claims, and its footnote comments on the remaining claims request no relief. Those claims are not presented for decision, and the order on this motion should not be read to address them."""),
 
     (S, "B. Plaintiff's Fifth Claim for Invasion of Privacy Is Adequately Pleaded."),
     (P, """A claim for invasion of the California constitutional right of privacy requires a legally protected privacy interest, a reasonable expectation of privacy under the circumstances, and a serious invasion. Hill, 7 Cal. 4th at 35-37; Cal. Const. art. I, § 1. Whether a reasonable expectation exists and whether an invasion is serious are mixed questions of law and fact; they may be decided as a matter of law only where the undisputed facts show no reasonable expectation or an insubstantial impact on privacy interests. Hill, 7 Cal. 4th at 40. Amazon's arguments on each element answer a secrecy claim Plaintiff has not brought."""),
 
     (S, "1. The asserted interest is freedom from the prohibited use of registry information, not secrecy."),
     (P, """Amazon argues that Plaintiff has no privacy interest in public criminal records or information displayed on a government website. Mot. 5. But the Complaint does not allege that the registry listing is confidential. It alleges an interest in the information "insofar as that information is used for purposes expressly prohibited by Penal Code § 290.46(j)(2)." Compl. ¶ 73. The alleged invasion is the use of registry information to deny employment. Id. ¶¶ 74-75."""),
-    (P, """Hill defines informational privacy as the interest in precluding the "dissemination or misuse" of sensitive and confidential information. 7 Cal. 4th at 35 (emphasis added). The definition reaches misuse, not only disclosure. And the Legislature has identified the misuse at issue here. Absent a statutory exception, Penal Code section 290.46(j)(2)(E) prohibits the use of registry information disclosed under that section for purposes relating to employment -- including, as alleged here, to deny it -- and section 290.46(j)(4)(A) gives the person harmed a private civil remedy. That enactment bears directly on whether the asserted interest is legally protected and on the social norms governing the challenged use."""),
+    (P, """Hill defines informational privacy as the interest in precluding the "dissemination or <<i:misuse>>" of sensitive and confidential information. 7 Cal. 4th at 35 (emphasis added). Plaintiff does not contend that his registry listing is confidential; Amazon is correct that it is publicly accessible. The claim does not depend on confidentiality. It depends on restricted use, context, the scope of consent, and resulting harm -- the considerations that inform whether an expectation of privacy is reasonable and an invasion serious. Id. at 35-37."""),
+    (P, """The Legislature has identified the misuse at issue here. Absent a statutory exception, Penal Code section 290.46(j)(2)(E) prohibits the use of registry information disclosed under that section for purposes relating to employment -- including, as alleged here, to deny it -- and section 290.46(j)(4)(A) gives the person harmed a private civil remedy. That enactment bears on whether the asserted interest is legally protected and on the social norms governing the challenged use."""),
     (P, """At minimum, the statutory prohibition and its express civil remedy supply concrete legal and social norms relevant to the contextual Hill inquiry; they foreclose dismissal based solely on the public availability of the underlying information."""),
 
     (S, "2. Amazon's public-record authorities do not address a statutory use restriction."),
     (P, """Amazon relies on Brahmana v. Henard, 2010 WL 11488727, at *4 (N.D. Cal. Nov. 12, 2010), and Estate of Hearst, 67 Cal. App. 3d 777, 782 (1977). Mot. 5. As Amazon presents them, those decisions establish that court records and information about criminal convictions on a government website are publicly accessible. Plaintiff does not dispute that proposition. Neither decision addresses a statute that restricts a particular use of otherwise-public information, and neither involved a use that the Legislature has made independently actionable."""),
-    (P, """The distinction is not a technicality. Section 290.46(j)(2) governs information "disclosed pursuant to this section" -- information that is, by definition, public. The Legislature chose to publish registry information for protective purposes while forbidding its use for employment and other enumerated purposes. A rule that public availability defeats any privacy interest would nullify that choice. Public availability is relevant to the Hill analysis, but it does not categorically dispose of a claim premised on the statutorily prohibited use of public information."""),
+    (P, """The distinction is not a technicality. Section 290.46(j)(2) governs information "disclosed pursuant to this section" -- information that is, by definition, public. The Legislature chose to publish registry information for protective purposes while restricting its use for employment and other enumerated purposes. Public availability is therefore relevant, but it is not necessarily dispositive of the distinct theory pleaded here: that Defendants used registry-derived information for a purpose California expressly prohibits. Section 290.46(j) informs the objective expectations and social norms relevant under Hill, even though the statute does not itself establish every constitutional element."""),
 
     (S, "3. General authorization for a background check is not consent to the alleged prohibited use."),
     (P, """Amazon next argues that because Plaintiff applied, completed onboarding paperwork, and received an offer conditioned on a background check, he consented to the check and cannot claim a reasonable expectation of privacy. Mot. 5. That argument equates awareness of a background check with consent to every possible source and use. The Complaint does not support that expansion. It alleges that the offer was conditioned on a background check and that Plaintiff later opted into text-message communications from Accurate. Compl. ¶¶ 8, 20. It does not allege that Plaintiff authorized Defendants to use registry information to deny employment in violation of section 290.46(j)(2)(E)."""),
@@ -224,7 +256,7 @@ CONTENT = [
 
     (S, "4. The Complaint plausibly alleges a serious invasion, and the balancing Amazon seeks is premature."),
     (P, """Seriousness is evaluated through the invasion's nature, scope, and actual or potential impact. Hill, 7 Cal. 4th at 37. Plaintiff alleges more than abstract access to a public listing. He alleges the use of registry information for the precise employment purpose California forbids, resulting in the loss of a specific, dated job without the required notices or any opportunity to respond. Compl. ¶¶ 22-25, 75-76. A use the Legislature has singled out for prohibition and made privately actionable is, at a minimum, plausibly an egregious breach of the social norms underlying the privacy right."""),
-    (P, """Amazon's reliance on the "high bar" language of In re Yahoo Mail Litigation, 7 F. Supp. 3d 1016, 1038 (N.D. Cal. 2014), does not change the analysis. That language describes the ultimate showing a plaintiff must make; it does not authorize the Court to weigh the seriousness of an invasion on disputed facts at the pleading stage. Hill, 7 Cal. 4th at 40. Nor has Amazon identified any countervailing interest. Under Hill, a defendant may defeat a privacy claim by showing that the invasion is justified because it substantively furthers countervailing interests, but that is an affirmative defense the defendant must plead and prove. Id. It is not a ground for dismissal of a complaint that identifies both the information at issue and the specific prohibited use."""),
+    (P, """Amazon's reliance on the "high bar" language of In re Yahoo Mail Litigation, 7 F. Supp. 3d 1016, 1038 (N.D. Cal. 2014), does not change the analysis. Privacy claims can be dismissed at the pleading stage, but dismissal is unwarranted where, as here, the pleaded circumstances plausibly support seriousness and the relevant context remains fact-dependent. See Hill, 7 Cal. 4th at 40. Any asserted countervailing interest likewise requires a fact-specific justification analysis. Id. On the pleaded allegations, Amazon identifies no basis to resolve that analysis against Plaintiff at the Rule 12 stage, and the Complaint alleges a use the Legislature has already labeled wrongful. Seriousness is at least plausible."""),
     (P, """The same alleged conduct underlies the First Claim under section 290.46(j)(2)(E). Amazon's decision not to move against that claim is not a concession that a violation occurred, but it places the statutory merits outside this motion. The question here is narrower: assuming the pleaded prohibited use, do the allegations satisfy Hill? At the Rule 12 stage, they plausibly do."""),
 
     (S, "5. Alternative allegations about the source of the registry information are permitted."),
@@ -233,8 +265,8 @@ CONTENT = [
     (S, "6. Any dismissal of the Fifth Claim should be without prejudice and limited to the constitutional claim."),
     (P, """If the Court nonetheless concludes that the constitutional claim is deficient, the dismissal should be without prejudice and with leave to amend. Lopez, 203 F.3d at 1127, 1130. It should also be limited to the constitutional claim. Amazon did not move against the First Claim, and a ruling on the Hill elements would not determine whether registry information was used in violation of section 290.46(j)(2)(E) or whether section 290.46(j)(4)(A) affords relief."""),
 
-    (S, "C. The Sixth Claim Should Be Dismissed, If at All, as Against Amazon Only and Without Prejudice."),
-    (P, """Amazon argues that the UCL claim must be dismissed because the UCL affords only equitable relief and the Complaint does not allege that Plaintiff lacks an adequate legal remedy. Mot. 3-4. Plaintiff does not oppose dismissal on that ground as against Amazon only, provided the dismissal is without prejudice. Plaintiff also clarifies that he does not defend lost wages or ordinary employment benefits as UCL restitution; those sums are sought, if recoverable, as legal damages under other claims."""),
+    (S, "C. If the Court Dismisses the Sixth Claim Against Amazon, the Dismissal Should Be Without Prejudice."),
+    (P, """Amazon argues that the UCL claim must be dismissed because the UCL affords only equitable relief and the Complaint does not allege that Plaintiff lacks an adequate legal remedy. Mot. 3-4. Plaintiff does not oppose dismissal of the Sixth Claim against Amazon on the presently pleaded equitable-relief theory, provided that dismissal is without prejudice and does not adjudicate the underlying statutory predicates. Plaintiff also clarifies that he does not defend lost wages or ordinary employment benefits as UCL restitution; those sums are sought, if recoverable, as legal damages under other claims."""),
     (P, """A Sonner disposition does not adjudicate the UCL predicates. The UCL count borrows the alleged section 290.46, FCRA, and ICRAA violations, Compl. ¶ 79, and Amazon has not moved against those claims. The present motion therefore does not place their merits before the Court."""),
     (P, """Under Guzman, if the Court concludes that equitable jurisdiction is absent, dismissal should be without prejudice rather than an adjudication of the UCL claim's substantive predicates. 49 F.4th at 1313-15. Plaintiff asks only that the order say so: a dismissal without prejudice, without adjudicating the UCL claim's substantive merits."""),
     (P, """Alternatively, if the Court permits amendment, Plaintiff can plead the continuing status of the screening and application, the prospective harms that damages cannot prevent, the precise injunction sought, and why monetary relief cannot supply that relief. Sonner addressed equitable restitution for past harm. 971 F.3d at 844. The Complaint alleges that the screening remains in "Pending" status, Compl. ¶ 23 -- a point Amazon's motion does not dispute, see Mot. 1 n.1. Plaintiff therefore requests either dismissal without prejudice under Guzman or leave to amend under Rule 15(a)(2)."""),
@@ -265,7 +297,7 @@ AUTHORITIES = [
     ("Cases", "In re Yahoo Mail Litigation, 7 F. Supp. 3d 1016 (N.D. Cal. 2014)", r"Yahoo"),
     ("Cases", "Khoja v. Orexigen Therapeutics, Inc., 899 F.3d 988 (9th Cir. 2018)", r"Khoja"),
     ("Cases", "Lee v. City of Los Angeles, 250 F.3d 668 (9th Cir. 2001)", r"Lee v\. City"),
-    ("Cases", "Lerma v. Amazon.com Services, LLC, No. 8:22-cv-01727-FWS-JDE, ECF No. 36 (C.D. Cal. May 26, 2023)", r"\bLerma\b"),
+    ("Cases", "Lerma v. Amazon.com Services, LLC, No. 8:22-cv-01727-FWS-JDE (C.D. Cal. May 26, 2023)", r"\bLerma\b"),
     ("Cases", "Lopez v. Smith, 203 F.3d 1122 (9th Cir. 2000) (en banc)", r"\bLopez\b"),
     ("Cases", "Saleh v. Nike, Inc., 562 F. Supp. 3d 503 (C.D. Cal. 2021)", r"\bSaleh\b"),
     ("Cases", "Sonner v. Premier Nutrition Corp., 971 F.3d 834 (9th Cir. 2020)", r"\bSonner\b"),
@@ -277,9 +309,7 @@ AUTHORITIES = [
     ("Statutes", "Cal. Penal Code § 290.46(j)(2)", r"290\.46\(j\)\(2\)|section 290\.46,"),
     ("Statutes", "Cal. Penal Code § 290.46(j)(4)(A)", r"290\.46\(j\)\(4\)\(A\)"),
     ("Rules", "Fed. R. Civ. P. 8(d)(2)-(3)", r"8\(d\)"),
-    ("Rules", "Fed. R. Civ. P. 12(a)(4)", r"12\(a\)\(4\)"),
     ("Rules", "Fed. R. Civ. P. 12(b)(6)", r"12\(b\)\(6\)"),
-    ("Rules", "Fed. R. Civ. P. 12(d)", r"12\(d\)"),
     ("Rules", "Fed. R. Civ. P. 15(a)(2)", r"15\(a\)\(2\)|Rule 15\b"),
     ("Rules", "Civil L.R. 7-4(a)(3)", r"7-4\(a\)\(3\)"),
 ]
@@ -384,13 +414,6 @@ def render(out_path: Path, toc_pages: dict, toa_pages: dict, meta: dict) -> None
     d.write_line(COURT_LINE2, bold=True, center=True)
     d.blank_line()
     d.draw_caption_block(CAPTION_LEFT, CAPTION_RIGHT, caption_size=10, tight_lh=13, boxed=True)
-    d.blank_line()
-    d.write_wrapped(
-        "Hearing Date: November 18, 2026, at 1:30 p.m., in Courtroom 4, 3rd Floor, "
-        "before the Honorable Ajay S. Krishnan, United States District Court for the "
-        "Northern District of California, 1301 Clay Street, Oakland, CA 94612.",
-        first_indent=0,
-    )
 
     # --- Table of Contents (own page) ---
     d.start_new_page()
@@ -430,16 +453,76 @@ def render(out_path: Path, toc_pages: dict, toa_pages: dict, meta: dict) -> None
             d.write_wrapped(f"<<b:{text}>>", first_indent=0)
             d.blank_line()
         elif c_type == P:
-            d.write_wrapped(italicize_cases(text), first_indent=36)
+            d.write_wrapped(italicize_cases(nb(text)), first_indent=36)
             d.blank_line()
         elif c_type == L:
-            d.write_wrapped(italicize_cases(text), indent=36, first_indent=0)
+            d.write_wrapped(italicize_cases(nb(text)), indent=36, first_indent=0)
             d.blank_line()
     draw_signature(d, signature_lines(SIGN_OFF_DATE))
     meta["body_end"] = d.page_num
 
     d.save()
     meta["pages"] = d.page_num
+
+
+ORDER_CAPTION_RIGHT = [
+    ("Case No. 4:26-cv-09249-ASK", False, False),
+    ("", False, False),
+    ("[PROPOSED] ORDER ON", True, False),
+    ("DEFENDANT AMAZON.COM", True, False),
+    ("SERVICES LLC'S MOTION TO", True, False),
+    ("DISMISS PLAINTIFF'S FIFTH,", True, False),
+    ("SIXTH, AND SEVENTH CLAIMS", True, False),
+    ("FOR RELIEF (DKT. 19)", True, False),
+    ("", False, False),
+    ("Judge: Hon. Ajay S. Krishnan", False, False),
+]
+
+ORDER_PARAS = [
+    """Having considered Defendant Amazon.com Services LLC's Motion to Dismiss Plaintiff's Fifth, Sixth, and Seventh Claims for Relief (Dkt. 19), the papers filed in support of and in opposition to the motion, and the record, the Court ORDERS as follows:""",
+    """1.  The motion is DENIED as to the Fifth Claim for invasion of privacy under article I, section 1 of the California Constitution.""",
+    """2.  The motion is GRANTED as to the Sixth Claim under Business and Professions Code section 17200, as against Amazon only. The Sixth Claim is DISMISSED as against Amazon WITHOUT PREJUDICE. This dismissal rests on the absence of federal equitable jurisdiction and does not adjudicate the merits of the claim or of its statutory predicates.""",
+    """3.  The motion is GRANTED as to the Seventh Claim for intentional infliction of emotional distress, as against Amazon only. The Seventh Claim is DISMISSED as against Amazon WITHOUT PREJUDICE to Plaintiff later seeking leave to amend.""",
+    """4.  This Order does not address or adjudicate Plaintiff's First, Second, Third, or Fourth Claims for Relief, and it does not dismiss any claim against Defendant Accurate Background, LLC.""",
+    """5.  Amazon shall answer the Complaint's remaining claims against it within fourteen (14) days after entry of this Order. Fed. R. Civ. P. 12(a)(4)(A).""",
+]
+
+
+def render_proposed_order(out_path: Path) -> int:
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+    d = PleadingPaper(
+        str(out_path),
+        doc_title_footer="[PROPOSED] ORDER ON AMAZON'S MOTION TO DISMISS -- "
+                         "NEWANFORBI v. AMAZON.COM SERVICES, LLC (N.D. Cal.)",
+    )
+    c = d.c
+    atty_y = d._line_y(0)
+    for i, (text, font, size) in enumerate(ATTORNEY_BLOCK):
+        c.setFont(font, size)
+        c.drawString(CONTENT_LEFT, atty_y - i * 15, text)
+    d.current_line = 4
+    d.blank_line()
+    d.write_line(COURT_LINE1, bold=True, center=True)
+    d.write_line(COURT_LINE2, bold=True, center=True)
+    d.blank_line()
+    d.draw_caption_block(CAPTION_LEFT, ORDER_CAPTION_RIGHT, caption_size=10, tight_lh=13, boxed=True)
+    d.blank_line()
+    d.write_line("[PROPOSED] ORDER", bold=True, center=True)
+    d.blank_line()
+    for i, para in enumerate(ORDER_PARAS):
+        d.write_wrapped(nb(para), first_indent=36 if i == 0 else 0)
+        d.blank_line()
+    d.ensure_space(9)
+    d.write_line("IT IS SO ORDERED.", bold=True)
+    d.blank_line()
+    d.write_line("Dated: ________________")
+    d.blank_line()
+    d.blank_line()
+    d.write_line("________________________________________", right=True, right_margin_offset=SIG_RIGHT_OFFSET)
+    d.write_line("HON. AJAY S. KRISHNAN", right=True, right_margin_offset=SIG_RIGHT_OFFSET)
+    d.write_line("United States Magistrate Judge", right=True, right_margin_offset=SIG_RIGHT_OFFSET)
+    d.save()
+    return d.page_num
 
 
 def find_toa_pages(pdf_path: Path, body_start: int, body_end: int) -> dict:
@@ -478,6 +561,9 @@ def main() -> None:
         meta = {}
         render(out, toc, toa, meta)
         print(f"Wrote {out} ({meta['pages']} pages; body pp. {meta['body_start']}-{meta['body_end']})")
+    for out in (ORDER_OUT, ORDER_SCRATCH_OUT):
+        n = render_proposed_order(out)
+        print(f"Wrote {out} ({n} pages)")
     try:
         tmp.unlink()
     except OSError:
