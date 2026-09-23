@@ -16,6 +16,7 @@
 #
 # Never write Plaintiff's DOB or SSN into this script or the repo. Enclosure A
 # leaves them blank to be completed by hand before mailing.
+# Quotes Accurate's Answer (ECF No. 21 at 10:3-4, 12:14), verified against the filed copy.
 # Accurate's defenses are not argued here; this is a consumer-rights request
 # and a preservation notice, not a brief.
 # ==========================================================
@@ -142,9 +143,11 @@ def file_demand():
         "regardless of how it is stored, as of the date Accurate receives this letter. 15 U.S.C. "
         "&sect;&sect; 1681a(g), 1681g(a)(1). It does not depend on whether Accurate has completed, "
         "finalized, or furnished a &ldquo;consumer report&rdquo; or &ldquo;investigative consumer "
-        "report.&rdquo; Accurate&rsquo;s answer in the pending action states that my screening "
-        "remains pending. Information gathered for a pending screening is still part of my file, "
-        "and this request reaches it.", body))
+        "report.&rdquo; In its Answer in the pending action, Accurate admits that my &ldquo;consumer "
+        "report is pending,&rdquo; ECF No. 21 at 10:3&ndash;4, while denying that it has &ldquo;completed "
+        "a consumer report regarding Plaintiff,&rdquo; <i>id.</i> at 12:14. Whatever the report&rsquo;s "
+        "status, the information Accurate has gathered about me is part of my file, and this request "
+        "reaches it.", body))
 
     s.append(Paragraph("Please disclose:", heading))
     numbered(s, [
