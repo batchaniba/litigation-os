@@ -44,7 +44,9 @@ Accurate answer update (Sep. 23, 2026): Accurate answered (ECF No. 21) and
 did not join. Brief notes that procedurally, cites the "pending" admission
 and registry denials only as a co-defendant's pleaded positions that cannot
 resolve a Rule 12(b)(6) motion, and adds the admission to the UCL amendment
-proffer. Accurate's defenses are not briefed. VERIFY ECF No. 21 paragraph pins.
+proffer. Accurate's defenses are not briefed. ECF No. 21 cited by page:line
+(10:1-5 pending; 12:13-16 and 18:17-19 registry denials), verified against the
+filed Answer.
 
 KeyCite pass (Westlaw, Sep. 22, 2026): all 14 cases kept. Lee gets the
 "overruled on other grounds by Galbraith" parenthetical (red flag concerns
@@ -211,6 +213,7 @@ def nb(text: str) -> str:
     """Glue pin cites together with non-breaking spaces."""
     text = re.sub(r"(¶¶?|§) ", "\\1\u00a0", text)
     text = re.sub(r"\b(Compl\.|Mot\.|Id\.|id\.|No\.) (?=[¶\d])", "\\1\u00a0", text)
+    text = re.sub(r"\bat (?=\d+:\d)", "at\u00a0", text)
     return text
 
 
@@ -248,7 +251,7 @@ CONTENT = [
     (P, """Review under Rule 12(b)(6) is limited to the Complaint, documents properly incorporated by reference, and matters properly subject to judicial notice. Lee v. City of Los Angeles, 250 F.3d 668, 688-90 (9th Cir. 2001), overruled on other grounds by Galbraith v. County of Santa Clara, 307 F.3d 1119 (9th Cir. 2002). Even when a document is judicially noticeable, disputed facts within it may not be accepted as true. Khoja v. Orexigen Therapeutics, Inc., 899 F.3d 988, 999-1003 (9th Cir. 2018)."""),
     (P, """Amazon submits nothing outside the pleadings -- no background report, no declaration, no status record, and no request for judicial notice. Its first footnote nonetheless asserts that the report remains unfinished because certain California court records are difficult to obtain, and that no adverse action has been taken. Mot. 1 n.1. That is unsupported attorney argument, and it cannot displace the pleaded allegations. Accordingly, the motion must be decided on the Complaint and materials properly considered under Rule 12(b)(6)."""),
     (P, """That posture distinguishes Lerma v. Amazon.com Services, LLC, No. 8:22-cv-01727-FWS-JDE, 2023 WL 4681571 (C.D. Cal. May 26, 2023), which the Complaint describes. Compl. ¶¶ 31-33. As the Complaint alleges, the court in that case resolved the source of the disqualifying information on the background report itself, which was before the court and which showed court-record sourcing and no registry hit. Id. ¶ 32. Here, Amazon has placed no report in the record, and Plaintiff alleges that he has demanded it and not received it. Id. ¶ 29. For purposes of this motion, the Court therefore takes the Complaint's alternative allegations about the source of the registry information as true."""),
-    (P, """Accurate's answer does not change that analysis. Accurate admits that Plaintiff's screening remains pending and denies reporting registry information. ECF No. 21 ¶¶ 23, 29-30, 42-44. A co-defendant's pleaded denials are not evidence and cannot resolve Amazon's Rule 12(b)(6) motion; the Complaint's well-pleaded allegations are accepted as true, and neither defendant has placed a background report before the Court."""),
+    (P, """Accurate's Answer does not change that analysis. Accurate admits that Plaintiff's consumer report remains pending and denies reporting registry information. ECF No. 21 at 10:1-5, 12:13-16, 18:17-19. A co-defendant's pleaded denials are not evidence and cannot resolve Amazon's Rule 12(b)(6) motion; the Complaint's well-pleaded allegations are accepted as true, and neither defendant has placed a background report before the Court."""),
     (P, """Nor does the motion reach Claims One through Four. Amazon moved against only the Fifth, Sixth, and Seventh Claims, and its footnote comments on the remaining claims request no relief. Those claims are not presented for decision, and the order on this motion should not be read to address them."""),
 
     (S, "B. Plaintiff's Fifth Claim for Invasion of Privacy Is Adequately Pleaded."),
@@ -283,7 +286,7 @@ CONTENT = [
     (P, """Amazon argues that the UCL claim must be dismissed because the UCL affords only equitable relief and the Complaint does not allege that Plaintiff lacks an adequate legal remedy. Mot. 3-4. Plaintiff does not oppose dismissal of the Sixth Claim against Amazon on the presently pleaded equitable-relief theory, provided that dismissal is without prejudice and does not adjudicate the underlying statutory predicates. Plaintiff also clarifies that he does not defend lost wages or ordinary employment benefits as UCL restitution; those sums are sought, if recoverable, as legal damages under other claims."""),
     (P, """A Sonner disposition does not adjudicate the UCL predicates. The UCL count borrows the alleged section 290.46, FCRA, and ICRAA violations, Compl. ¶ 79, and Amazon has not moved against those claims."""),
     (P, """Under Guzman, if the Court concludes that equitable jurisdiction is absent, dismissal should be without prejudice rather than an adjudication of the UCL claim's substantive predicates. 49 F.4th at 1313-15. Plaintiff asks only that the order say so: a dismissal without prejudice, without adjudicating the UCL claim's substantive merits."""),
-    (P, """Alternatively, if the Court permits amendment, Plaintiff can plead the continuing status of the screening and application, the prospective harms that damages cannot prevent, the precise injunction sought, and why monetary relief cannot supply that relief. Sonner addressed equitable restitution for past harm. 971 F.3d at 844. The Complaint alleges that the screening remains in "Pending" status, Compl. ¶ 23 -- a point Amazon's motion does not dispute, see Mot. 1 n.1, and that Accurate's answer admits, ECF No. 21 ¶ 23. Plaintiff therefore requests either dismissal without prejudice under Guzman or leave to amend under Rule 15(a)(2)."""),
+    (P, """Alternatively, if the Court permits amendment, Plaintiff can plead the continuing status of the screening and application, the prospective harms that damages cannot prevent, the precise injunction sought, and why monetary relief cannot supply that relief. Sonner addressed equitable restitution for past harm. 971 F.3d at 844. The Complaint alleges that the screening remains in "Pending" status, Compl. ¶ 23 -- a point Amazon's motion does not dispute, see Mot. 1 n.1, and that Accurate's Answer admits, ECF No. 21 at 10:1-5. Plaintiff therefore requests either dismissal without prejudice under Guzman or leave to amend under Rule 15(a)(2)."""),
 
     (S, "D. Plaintiff Does Not Oppose Dismissal of the Seventh Claim as Against Amazon Only and Without Prejudice."),
     (P, """Plaintiff does not oppose dismissal of the IIED claim as against Amazon only. That limited non-opposition does not adopt Amazon's reduction of the alleged course of conduct to a routine twenty-day delay. The Complaint also alleges removal of a confirmed shift one day before training, withholding of the report and required notices, prohibited use of registry information, and resulting distress. Compl. ¶¶ 22-25, 84-87."""),
