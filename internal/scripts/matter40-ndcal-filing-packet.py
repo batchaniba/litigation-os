@@ -312,6 +312,7 @@ def build_certification() -> Path:
 
 
 # ------------------------------------------------------------- AO 440 summons
+PLAINTIFF_ADDRESS_TOP = 491.0
 def build_summons(target: dict) -> Path:
     out = _out(f"Summons AO 440 - {target['slug']}")
     doc = fitz.open(FORMS / "ao440-blank-template.pdf")
@@ -332,6 +333,12 @@ def build_summons(target: dict) -> Path:
     for page in doc:
         for w in page.widgets():
             if page.number == 0 and w.field_name in values:
+                if w.field_name == "Plaintiff address":
+                    # Template box starts at y=483, above the "whose name and
+                    # address are:" line (490-502), so the name overprints
+                    # the paragraph. Start it level with that line instead.
+                    r = w.rect
+                    w.rect = fitz.Rect(r.x0, PLAINTIFF_ADDRESS_TOP, r.x1, r.y1 - 4)
                 value, size = values[w.field_name]
                 _set(w, value, size)
         for w in list(page.widgets()):
