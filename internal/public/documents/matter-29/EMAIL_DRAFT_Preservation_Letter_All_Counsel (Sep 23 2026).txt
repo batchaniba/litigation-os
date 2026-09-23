@@ -1,0 +1,20 @@
+To: Jasmine J. Stanzick <jstanzick@seyfarth.com>; John W. Drury <jdrury@seyfarth.com>; Andrew P. Frederick <andrew.frederick@morganlewis.com>; Douglass G. Brown <douglass.brown@morganlewis.com>
+Subject: Newanforbi v. Amazon.com Services, LLC, et al., No. 4:26-cv-09249-ASK - Preservation Letter
+
+Attach: Preservation Letter - Accurate Background and Amazon (Sep 23 2026).pdf
+
+---
+
+Counsel:
+
+Attached is a letter concerning preservation of documents and electronically stored information in this action. Please confirm within ten days that a litigation hold covering the listed categories is in place.
+
+Thank you,
+
+Brendan Ngwa Nforbi
+Plaintiff, In Propria Persona
+
+---
+Note to self (do not send this footer):
+- Attach the PDF. Do not paste the letter into the email body. No links.
+- Log the send in Matter 29 events.
