@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "fileCount": 1629,
-  "totalBytes": 1036189241,
+  "fileCount": 1656,
+  "totalBytes": 1040317853,
   "files": [
     {
       "path": "/documents/_form-library/ao239-blank-template.pdf",
@@ -7914,6 +7914,51 @@
       "sha256": "dc5cf3976d65ae7d0e30a6b355d82d08873025bb0dc9b16ca541b20dc0e94bec"
     },
     {
+      "path": "/documents/matter-40/Certification of Conflicts and Interested Entities or Persons - Ngwa Nforbi v Uber Technologies Inc (N.D. Cal.) (Sep 23 2026).meta.json",
+      "size": 377,
+      "sha256": "486b3e3e12f51b2ec65913ab7e4486d01a6848110d1f2f79635d61471dd4704a"
+    },
+    {
+      "path": "/documents/matter-40/Certification of Conflicts and Interested Entities or Persons - Ngwa Nforbi v Uber Technologies Inc (N.D. Cal.) (Sep 23 2026).pdf",
+      "size": 196434,
+      "sha256": "540aae5d61c22307f9f23909441a7c274e5cc4120da0dcf7dc4af8fdad7c8223"
+    },
+    {
+      "path": "/documents/matter-40/Certification of Conflicts and Interested Entities or Persons - Ngwa Nforbi v Uber Technologies Inc (N.D. Cal.) (Sep 23 2026).txt",
+      "size": 1532,
+      "sha256": "7c6c2faef4656fe8498193cdf0bf932881db1698dee49b9d156bbca728eb9cf0"
+    },
+    {
+      "path": "/documents/matter-40/Civil Cover Sheet JS-CAND 44 - Ngwa Nforbi v Uber Technologies Inc (N.D. Cal.) (Sep 23 2026).meta.json",
+      "size": 333,
+      "sha256": "2eed1d904bd3005ea0ba3d9b768b9252f16a0c352e0f84c8e3bcd52168ebdebf"
+    },
+    {
+      "path": "/documents/matter-40/Civil Cover Sheet JS-CAND 44 - Ngwa Nforbi v Uber Technologies Inc (N.D. Cal.) (Sep 23 2026).pdf",
+      "size": 1204470,
+      "sha256": "e27ae3058b57866c4b3319d8df9546178cee21418f7f2c4a67ce0a79a17ac79a"
+    },
+    {
+      "path": "/documents/matter-40/Civil Cover Sheet JS-CAND 44 - Ngwa Nforbi v Uber Technologies Inc (N.D. Cal.) (Sep 23 2026).txt",
+      "size": 11443,
+      "sha256": "d8fca860b923643fb9d8e196e4fe69b2f6d75b7ff7cebf3f201db10b4e49929d"
+    },
+    {
+      "path": "/documents/matter-40/Complaint - Ngwa Nforbi v Uber Technologies Inc (N.D. Cal.) (Sep 23 2026).meta.json",
+      "size": 305,
+      "sha256": "bf79d86cdc2a8d9b0e1eb11af8caee2638260a6679047296053dafacb0a66ac9"
+    },
+    {
+      "path": "/documents/matter-40/Complaint - Ngwa Nforbi v Uber Technologies Inc (N.D. Cal.) (Sep 23 2026).pdf",
+      "size": 296375,
+      "sha256": "d210575a7492b5028fce4bc816f4a9c9227199249b77e84c4cfb6a17a7fc6a70"
+    },
+    {
+      "path": "/documents/matter-40/Complaint - Ngwa Nforbi v Uber Technologies Inc (N.D. Cal.) (Sep 23 2026).txt",
+      "size": 47194,
+      "sha256": "698fbc9f79cb5a7a8d442e1f5a6ae575abc3129484887850feae266e9ba53cd9"
+    },
+    {
       "path": "/documents/matter-40/Complaint - Ngwa Nforbi v Uber Technologies Inc (N.D. Cal.) (Sep 24 2026).meta.json",
       "size": 306,
       "sha256": "22c9a8401884d8942564780b52db3c4a4c9b6181e9a52fea6766c287b68091de"
@@ -7927,6 +7972,36 @@
       "path": "/documents/matter-40/Complaint - Ngwa Nforbi v Uber Technologies Inc (N.D. Cal.) (Sep 24 2026).txt",
       "size": 50887,
       "sha256": "172f61eb2d216b12eef88b587b2a0fe44fff0f773abca0cc1e997cabe34794b8"
+    },
+    {
+      "path": "/documents/matter-40/Complete Filing Packet - Ngwa Nforbi v Uber Technologies Inc (N.D. Cal.) (Sep 23 2026).meta.json",
+      "size": 320,
+      "sha256": "c2986725adf0cb060f7933c1d3392e4a8f5087e4e1493e50794d31f6da2f06f9"
+    },
+    {
+      "path": "/documents/matter-40/Complete Filing Packet - Ngwa Nforbi v Uber Technologies Inc (N.D. Cal.) (Sep 23 2026).pdf",
+      "size": 1514803,
+      "sha256": "78519f9a8b861dc02a9770f553707477b99c2fd272c65c247628080347cc89c1"
+    },
+    {
+      "path": "/documents/matter-40/Complete Filing Packet - Ngwa Nforbi v Uber Technologies Inc (N.D. Cal.) (Sep 23 2026).txt",
+      "size": 72062,
+      "sha256": "2ad5431571e0c8c2eb67552e8dbfb868caf62b5d8bb43d01f3e2df8c42a9b4f1"
+    },
+    {
+      "path": "/documents/matter-40/Consent to Magistrate Judge Jurisdiction - Ngwa Nforbi v Uber Technologies Inc (N.D. Cal.) (Sep 23 2026).meta.json",
+      "size": 364,
+      "sha256": "823b9c8033f054729b177bc035b4305f694685bb7213d8dc1065ab46324a1308"
+    },
+    {
+      "path": "/documents/matter-40/Consent to Magistrate Judge Jurisdiction - Ngwa Nforbi v Uber Technologies Inc (N.D. Cal.) (Sep 23 2026).pdf",
+      "size": 368173,
+      "sha256": "a415f374313ad9f22994955e5052a05be091c1df138b475e8680e900e100b964"
+    },
+    {
+      "path": "/documents/matter-40/Consent to Magistrate Judge Jurisdiction - Ngwa Nforbi v Uber Technologies Inc (N.D. Cal.) (Sep 23 2026).txt",
+      "size": 1367,
+      "sha256": "555bc1ca1354daa7a3049d11dd07f37618c478f09e902d249f17f5a707ed1b7b"
     },
     {
       "path": "/documents/matter-40/First Advantage Invite - TaskUs Background Screening (Sep 14 2026).pdf",
@@ -7949,6 +8024,21 @@
       "sha256": "a65113f4aad37759095465d468163daadba65a9c99be058a8c2a67a09c223aa9"
     },
     {
+      "path": "/documents/matter-40/IFP Application AO 240 - Ngwa Nforbi v Uber Technologies Inc (N.D. Cal.) (Sep 23 2026).meta.json",
+      "size": 331,
+      "sha256": "082527cedac6550c6527cc98bdecbbb3b8a47ac2736a1be3676013bb9a681452"
+    },
+    {
+      "path": "/documents/matter-40/IFP Application AO 240 - Ngwa Nforbi v Uber Technologies Inc (N.D. Cal.) (Sep 23 2026).pdf",
+      "size": 297745,
+      "sha256": "368ee4362e3550db130b3ce3849dc084109e5d80de215f7228196c23e8ae89e4"
+    },
+    {
+      "path": "/documents/matter-40/IFP Application AO 240 - Ngwa Nforbi v Uber Technologies Inc (N.D. Cal.) (Sep 23 2026).txt",
+      "size": 3106,
+      "sha256": "36d413f8d913416f2f2d3a9935f2cda930024c4ad5bd63275f61e6807594d887"
+    },
+    {
       "path": "/documents/matter-40/Offer Letter - Teammate Team Lead QA (Sep 14 2026).pdf",
       "size": 29653,
       "sha256": "bddfdce5ddcf5262c1466885d58e513ca4aaaa3fd3ed3de3b8fcad286a248092"
@@ -7962,6 +8052,51 @@
       "path": "/documents/matter-40/Review Your Offer Letter - Uber AV Teammate (Sep 14 2026).pdf",
       "size": 71061,
       "sha256": "d2b971dedbe902842524199743ff387917a61929b59907054df53bed9af0559a"
+    },
+    {
+      "path": "/documents/matter-40/Summons AO 440 - TaskUs Holdings Inc - Ngwa Nforbi v Uber Technologies Inc (N.D. Cal.) (Sep 23 2026).meta.json",
+      "size": 360,
+      "sha256": "f4e33a0546a350f0d78511fe35007ce7af0308c563e3f51b9668d351c31445be"
+    },
+    {
+      "path": "/documents/matter-40/Summons AO 440 - TaskUs Holdings Inc - Ngwa Nforbi v Uber Technologies Inc (N.D. Cal.) (Sep 23 2026).pdf",
+      "size": 34469,
+      "sha256": "33fb00f27234e1d722ebf50de76369d77ec4b63e54461e147b97e2d8724608c8"
+    },
+    {
+      "path": "/documents/matter-40/Summons AO 440 - TaskUs Holdings Inc - Ngwa Nforbi v Uber Technologies Inc (N.D. Cal.) (Sep 23 2026).txt",
+      "size": 2470,
+      "sha256": "65bfa9c385c412d5d3615c6ba3062009d8a3c081e6bbfad4824d7f28a2d4fd0e"
+    },
+    {
+      "path": "/documents/matter-40/Summons AO 440 - TaskUs USA LLC - Ngwa Nforbi v Uber Technologies Inc (N.D. Cal.) (Sep 23 2026).meta.json",
+      "size": 349,
+      "sha256": "9eb42329123cc39d94769f10f405644d41ade643772f9279c3ce09572267962e"
+    },
+    {
+      "path": "/documents/matter-40/Summons AO 440 - TaskUs USA LLC - Ngwa Nforbi v Uber Technologies Inc (N.D. Cal.) (Sep 23 2026).pdf",
+      "size": 34459,
+      "sha256": "61af4a0d5e3434ce2dc83ca69daebaaf48adae23578fefcbaa463fbc3239519d"
+    },
+    {
+      "path": "/documents/matter-40/Summons AO 440 - TaskUs USA LLC - Ngwa Nforbi v Uber Technologies Inc (N.D. Cal.) (Sep 23 2026).txt",
+      "size": 2464,
+      "sha256": "ba424a477d87c58089ba8457a0632eb08435b129f5d7362fcffc5e5d82e6eb69"
+    },
+    {
+      "path": "/documents/matter-40/Summons AO 440 - Uber Technologies Inc - Ngwa Nforbi v Uber Technologies Inc (N.D. Cal.) (Sep 23 2026).meta.json",
+      "size": 364,
+      "sha256": "1a8f4afa08402731c0faad2b21f2246004d430dc7c464911a650cedb86880343"
+    },
+    {
+      "path": "/documents/matter-40/Summons AO 440 - Uber Technologies Inc - Ngwa Nforbi v Uber Technologies Inc (N.D. Cal.) (Sep 23 2026).pdf",
+      "size": 34471,
+      "sha256": "b1b116f3732d0b0d39d8076c779a4633e3a5ff4b48c077ced885e6cd3d16ee9e"
+    },
+    {
+      "path": "/documents/matter-40/Summons AO 440 - Uber Technologies Inc - Ngwa Nforbi v Uber Technologies Inc (N.D. Cal.) (Sep 23 2026).txt",
+      "size": 2472,
+      "sha256": "5b728add3dce1f2e4d343e072468aa021395e016a66873e2bd9b4772acbb26fa"
     },
     {
       "path": "/documents/matter-40/TaskUs - CA SOS BIZFILE Search Results (Sep 14 2026).pdf",
