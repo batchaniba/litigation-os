@@ -1,0 +1,23 @@
+To: Cynthia G. Lawrence <cynthia@sims-law.net>; Blaze Van Dine <blaze@sims-law.net>; Eric T. Martinez <emartinez@sims-law.net>
+Cc: SLB@sims-law.net; slb-eservice@sims-law.net
+Subject: Newanforbi v. Smith, et al., No. 3:26-cv-07504-LJC - [Proposed] Order Denying Defendants' Motion to Dismiss
+
+Attach: Proposed Order Denying MTD with POS (N.D. Cal. 3-26-cv-07504-LJC) (Sep 24 2026).pdf
+
+---
+
+Counsel:
+
+Attached please find Plaintiff's [Proposed] Order Denying Defendants' Motion to Dismiss (ECF No. 15), submitted in connection with Plaintiff's opposition served on September 22, 2026, together with a proof of service.
+
+Thank you,
+
+Brendan Ngwa Nforbi
+Plaintiff, In Propria Persona
+
+---
+Note to self (do not send this footer):
+- Send on September 24, 2026. The proof of service certifies e-mail service that day.
+- Attach the PDF. Do not paste the order into the email body. No links.
+- File the order with, or right after, the opposition so the Court sees them together.
+- Log the send in Matter 28 events.
