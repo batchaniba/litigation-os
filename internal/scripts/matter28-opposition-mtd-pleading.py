@@ -114,7 +114,7 @@ CAPTION_RIGHT = [
     ("DEFENDANTS' MOTION TO", True, False),
     ("DISMISS", True, False),
     ("", False, False),
-    ("Date: October 20, 2026", False, False),
+    ("Date: October 27, 2026", False, False),
     ("Time: 10:30 a.m.", False, False),
     ("Courtroom: G, 15th Floor", False, False),
     ("Judge: Hon. Lisa J. Cisneros", False, False),
@@ -539,9 +539,10 @@ def render(out_path: Path, toc_pages: dict, capture: dict | None = None) -> int:
     d.blank_line()
 
     d.write_wrapped(
-        "Hearing Date: October 20, 2026, at 10:30 a.m., in Courtroom G, 15th Floor, "
-        "before the Honorable Lisa J. Cisneros, United States District Court for the "
-        "Northern District of California.",
+        "Hearing Date: October 27, 2026, at 10:30 a.m., in Courtroom G, San Francisco "
+        "courthouse, before the Honorable Lisa J. Cisneros, United States District "
+        "Court for the Northern District of California (continued from October 20, 2026, "
+        "per ECF No. 22).",
         first_indent=0,
     )
     d.blank_line()
