@@ -1,0 +1,2757 @@
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   
+ 
+ 
+ 
+ 
+JS-CAND 44 (Rev. 04-2025 
+CIVIL COVER SHEET - for people without lawyers only 
+See Civil Local Rule 3-2 (amended April 28, 2025), which requires the filing of a civil cover sheet only by those unrepresented by counsel.
+II.
+BASIS OF JURISDICTION (Place an “X” in One Box Only) 
+1 
+U.S. Government Plaintiff 
+2 
+U.S. Government Defendant 
+3 
+Federal Question 
+(U.S. Government Not a Party)
+IV.
+NATURE OF SUIT (Place an “X” in One Box Only) 
+CONTRACT 
+TORTS 
+FORFEITURE/PENALTY 
+BANKRUPTCY 
+OTHER STATUTES 
+110 Insurance 
+120 Marine 
+130 Miller Act 
+140 Negotiable Instrument 
+150 Recovery of Overpayment
+ & Enforcement of 
+Judgment
+151 Medicare Act 
+152 Recovery of Defaulted 
+Student Loans 
+(Excludes Veterans) 
+153 Recovery of 
+Overpayment 
+of Veteran’s Benefits 
+160 Stockholders’ Suits 
+190 Other Contract 
+195 Contract Product Liability 
+196 Franchise 
+PERSONAL INJURY 
+310 Airplane 
+315 Airplane Product Liability 
+320 Assault, Libel & Slander 
+330 Federal Employers’ 
+Liability 
+340 Marine 
+345 Marine Product Liability 
+350 Motor Vehicle 
+355 Motor Vehicle Product 
+Liability 
+360 Other Personal Injury 
+362 Personal Injury -Medical 
+Malpractice 
+PERSONAL INJURY 
+365 Personal Injury – Product 
+Liability 
+367 Health Care/ 
+Pharmaceutical Personal 
+Injury Product Liability 
+368 Asbestos Personal Injury 
+Product Liability 
+PERSONAL PROPERTY 
+370 Other Fraud 
+371 Truth in Lending 
+380 Other Personal Property 
+Damage 
+385 Property Damage Product 
+Liability 
+625 Drug Related Seizure of 
+Property 21 USC § 881 
+690 Other 
+422 Appeal 28 USC § 158 
+423 Withdrawal 28 USC 
+§ 157 
+375 False Claims Act 
+376 Qui Tam (31 USC 
+§ 3729(a))
+400 State Reapportionment 
+410 Antitrust 
+430 Banks and Banking 
+450 Commerce 
+460 Deportation 
+470 Racketeer Influenced & 
+Corrupt Organizations 
+480 Consumer Credit 
+485 Telephone Consumer 
+Protection Act 
+490 Cable/Sat TV 
+850 Securities/Commodities/ 
+Exchange 
+890 Other Statutory Actions 
+891 Agricultural Acts 
+893 Environmental Matters 
+895 Freedom of Information 
+Act 
+896 Arbitration 
+899 Administrative Procedure 
+Act/Review or Appeal of 
+Agency Decision 
+950 Constitutionality of State 
+Statutes 
+LABOR 
+PROPERTY RIGHTS 
+710 Fair Labor Standards Act 
+720 Labor/Management 
+Relations 
+740 Railway Labor Act 
+751 Family and Medical 
+Leave Act 
+790 Other Labor Litigation 
+791 Employee Retirement 
+Income Security Act 
+820 Copyrights 
+830 Patent 
+835 Patent─Abbreviated New 
+Drug Application 
+840 Trademark 
+880 Defend Trade Secrets
+  Act of 2016 
+SOCIAL SECURITY 
+861 HIA (1395ff) 
+862 Black Lung (923) 
+863 DIWC/DIWW (405(g)) 
+864 SSID Title XVI 
+865 RSI (405(g)) 
+IMMIGRATION 
+462 Naturalization 
+Application 
+465 Other Immigration 
+Actions 
+CIVIL RIGHTS 
+PRISONER PETITIONS 
+440 Other Civil Rights 
+441 Voting 
+442 Employment 
+443 Housing/ 
+Accommodations 
+445 Amer. w/Disabilities– 
+Employment 
+446 Amer. w/Disabilities–Other 
+448 Education 
+HABEAS CORPUS 
+463 Alien Detainee 
+510 Motions to Vacate 
+Sentence 
+530 General 
+535 Death Penalty 
+OTHER 
+540 Mandamus & Other 
+550 Civil Rights 
+555 Prison Condition 
+560 Civil Detainee– 
+Conditions of 
+Confinement 
+REAL PROPERTY 
+FEDERAL TAX SUITS 
+210 Land Condemnation 
+220 Foreclosure 
+230 Rent Lease & Ejectment 
+240 Torts to Land 
+245 Tort Product Liability 
+290 All Other Real Property 
+870 Taxes (U.S. Plaintiff or 
+Defendant) 
+871 IRS–Third Party 
+26 U.S.C. § 7609 
+V.
+ORIGIN (Place an “X” in One Box Only) 
+Transferred from Another District  
+Multidistrict Litigation–Transfer 
+Original Proceeding 
+Removed from State Court 
+Reinstated or Reopened 
+Multidistrict Litigation–Direct File 
+VII.
+REQUESTED IN COMPLAINT
+VIII. RELATED CASE(S) OR MDL CASE
+Provide case name(s), number(s), and presiding judge(s).
+IX.
+DIVISIONAL ASSIGNMENT pursuant to Civil Local Rule 3-2
+SAN FRANCISCO/OAKLAND 
+SAN JOSE 
+EUREKA-MCKINLEYVILLE 
+DATE 
+SIGNATURE OF ATTORNEY OR PRO SE LITIGANT 
+Check if the complaint contains a jury demand.
+Check if the complaint contains a monetary demand. Amount:  $
+Check if the complaint seeks class action status under Fed. R. Civ. P. 23.
+Check if the complaint seeks a nationwide injunction or Administrative Procedure Act vacatur.
+III.
+CAUSE OF ACTION
+Cite the U.S. Statute under which you are filing: (Use jurisdictional statutes only for diversity)
+Brief description of case: 
+4 
+Diversity 
+VI. FOR DIVERSITY CASES ONLY:
+CITIZENSHIP OF PRINCIPAL PARTIES
+(Place an “X” in One Box for Plaintiff and One Box for Defendant) 
+Plaintiff   Defendant
+Citizen of California
+Citizen of Another State
+Citizen or Subject of a Foreign Country
+Incorporated or Principal Place of Business In California
+Incorporated and Principal Place of Business In Another State 
+Foreign Nation
+I. PLAINTIFF(S)
+County of Residence of First Listed Plaintiff:
+Leave blank in cases where United States is plaintiff. 
+Attorney or Pro Se Litigant Information (Firm Name, Address, and Telephone Number)
+DEFENDANT(S)
+County of Residence of First Listed Defendant:
+Use ONLY in cases where United States is plaintiff. 
+Defendant's Attorney's Name and Contact Information (if known) 
+ (Place an “X” in One Box Only) 
+Remanded from Appellate Court 
+Ngwa Nforbi, Brendan
+San Joaquin
+Ngwa Nforbi, Brendan (pro se), 1455 Cat Tail Drive, Stockton, CA 95204; (209) 
+801-4442
+Uber Technologies, Inc.; TaskUs Holdings, Inc.; TaskUs USA, LLC; Does 1-20
+San Francisco
+Unknown
+3
+None
+09/23/2026
+3
+15 U.S.C. § 1681b(b)(2)(A), (b)(3)(A) (Fair Credit Reporting Act)
+FCRA employment-screening disclosure / pre-adverse-action violations
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+JS-CAND 44 (rev. 12/2024) 
+COMPLETING THE CIVIL COVER SHEET
+Complete the form as follows:
+I.
+Plaintiffs-Defendants. Enter names (last, first, middle initial) of plaintiff and defendant. If the plaintiff or defendant is a government agency, use the 
+full name or standard abbreviations. If the plaintiff or defendant is an official within a government agency, identify first the agency and then the 
+official, giving both name and title.
+County of Residence. For each civil case filed, except U.S. plaintiff cases, enter the name of the county where the first listed plaintiff resides at the 
+time of filing. In U.S. plaintiff cases, enter the name of the county in which the first listed defendant resides at the time of filing. In land 
+condemnation cases, the county of residence of the “defendant” is the location of the tract of land involved.
+Attorney/Pro Se Litigant Information. Enter the firm name, address, telephone number, and email for attorney of record or pro se litigant. If there 
+are several individuals, list them on an attachment.
+II.
+Jurisdiction. Under Federal Rule of Civil Procedure 8(a), pleadings must establish the basis of jurisdiction. If multiple bases for jurisdiction apply, 
+prioritize them in the order listed:
+(1)
+United States plaintiff. Jurisdiction based on 28 U.S.C. §§ 1345 and 1348 for suits filed by the United States, its agencies or officers.
+(2)
+United States defendant. Applies when the United States, its agencies, or officers are defendants.
+(3)
+Federal question. Select this option when jurisdiction is based on 28 U.S.C. § 1331 for cases involving the U.S. Constitution, its amendments, 
+federal laws, or treaties (but use choices 1 or 2 if the United States is a party).
+(4)
+Diversity of citizenship. Select this option when jurisdiction is based on 28 U.S.C. § 1332 for cases between citizens of different states and 
+complete Section VI to specify the parties’ citizenship. Note: Federal question jurisdiction takes precedence over diversity jurisdiction.
+III. Cause of Action. Enter the statute directly related to the cause of action and give a brief description of the cause. Do not cite jurisdictional statutes 
+unless jurisdiction is based on diversity. Example: U.S. Civil Statute: 47 U.S.C. § 553. Brief Description: Unauthorized reception of cable service.
+IV. Nature of Suit.  Check one of the boxes. If the case fits more than one nature of suit, select the most definitive or predominant.
+V.
+Origin.  Check one of the boxes:
+(1)
+Original Proceedings. Cases originating in the United States district courts.
+(2)
+Removed from State Court. Proceedings initiated in state courts may be removed to the district courts under Title 28 U.S.C. § 1441. When the 
+petition for removal is granted, check this box.
+(3)
+Remanded from Appellate Court. Check this box for cases remanded to the district court for further action, using the date of remand as the 
+filing date.
+(4)
+Reinstated or Reopened. Check this box for cases reinstated or reopened in the district court. Use the reopening date as the filing date.
+(5)
+Transferred from Another District. Check this box for cases transferred under Title 28 U.S.C. § 1404(a). Do not use this for within-district 
+transfers or multidistrict litigation (MDL) transfers.
+(6)
+Multidistrict Litigation Transfer. Check this box when a multidistrict (MDL) case is transferred into the district under authority of Title 28
+U.S.C. § 1407.
+(7)
+Multidistrict Litigation Direct File. Check this box when a multidistrict litigation case is filed in the same district as the Master MDL docket.
+VI. Residence (citizenship) of Principal Parties. Mark for each principal party only if jurisdiction is based on diversity of citizenship.
+VII. Requested in Complaint.
+(1)
+Jury demand. Check this box if plaintiff's complaint demanded a jury trial.
+(2)
+Monetary demand. For cases demanding monetary relief, check this box and enter the actual dollar amount being demanded.
+(3)
+Class action. Check this box if plaintiff is filing a class action under Federal Rule of Civil Procedure 23.
+(4)
+Nationwide injunction. Check this box if plaintiff is seeking a nationwide injunction or nationwide vacatur pursuant to the Administrative 
+Procedures Act.
+VIII.
+Related Cases. If there are related pending case(s), provide the case name(s) and number(s) and the name(s) of the presiding judge(s). If a short-
+form MDL complaint is being filed, furnish the MDL case name and number.
+IX. Divisional Assignment. Identify the divisional venue according to Civil Local Rule 3-2: “the county in which a substantial part of the events or 
+omissions which give rise to the claim occurred or in which a substantial part of the property that is the subject of the action is situated.” Note that 
+case assignment is made without regard for division in the following case types: Property Rights (Patent, Trademark and Copyright), Prisoner 
+Petitions, Securities Class Actions, Anti-Trust, Bankruptcy, Social Security, and Tax.
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+Page 1
+COMPLAINT FOR DAMAGES -- NGWA NFORBI v. UBER TECHNOLOGIES, INC., ET AL. (N.D. Cal.)
+BRENDAN NGWA NFORBI
+Plaintiff, In Propria Persona
+1455 Cat Tail Drive
+Stockton, California 95204
+Telephone: (209) 801-4442
+E-mail: bnn.cdl@gmail.com
+UNITED STATES DISTRICT COURT
+NORTHERN DISTRICT OF CALIFORNIA
+BRENDAN NGWA NFORBI,
+Case No. _________________
+                          Plaintiff,
+COMPLAINT FOR DAMAGES
+       v.
+(1) FCRA, 15 U.S.C. § 1681b(b)(2)(A);
+(2) ICRAA, Civ. Code §§ 1786.16,
+UBER TECHNOLOGIES, INC., a
+      1786.50;
+Delaware corporation; TASKUS
+(3) FCRA, 15 U.S.C. § 1681b(b)(3)(A);
+HOLDINGS, INC., a Delaware
+(4) Penal Code § 290.46(j)(2)(E),
+corporation; TASKUS USA, LLC, a
+      (j)(4)(A);
+Delaware limited liability company;
+(5) ICRAA, Civ. Code §§ 1786.40,
+and DOES 1 through 20, inclusive,
+      1786.50
+                          Defendants.
+DEMAND FOR JURY TRIAL
+Plaintiff BRENDAN NGWA NFORBI, appearing in propria persona, alleges:
+I.
+NATURE OF THE ACTION
+1. This action concerns an employment background-screening process for a written,
+accepted temporary-employment offer on the Uber AV Teammate campaign in San Jose,
+California -- including Defendants' procurement of a consumer report without the required
+standalone disclosures, and their post-report withholding of that accepted assignment after
+First Advantage furnished California-registry-sourced information.
+2. On September 14, 2026, TaskUs, LLC issued Plaintiff a written Offer of Temporary
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+Page 2
+COMPLAINT FOR DAMAGES -- NGWA NFORBI v. UBER TECHNOLOGIES, INC., ET AL. (N.D. Cal.)
+Employment for a Teammate position at $22.00 per hour, production hours 2PM-11PM, with
+an anticipated September 23, 2026 start and an assignment expected to run through on or
+around December 4, 2026. Plaintiff accepted the offer.
+3. The WorkDay offer communication identified the assignment as Uber AV
+Teammate (SJ: 09/23/2026), requisition R_2608_10812, candidate C261051599.
+4. The onboarding documents used multiple TaskUs entities. The written offer named
+TaskUs, LLC. The United States Background Consent Form directed screening information to
+TaskUs USA, LLC. TaskUs Holdings, Inc. was the counterparty on other onboarding
+documents and was later identified by First Advantage as the employment-report recipient.
+5. On September 14, 2026, First Advantage Background Services Corp. ("First
+Advantage") initiated employment screening through Profile Advantage, Order
+WPS-361214148.
+6. The written offer itself stated that "[t]he Company will provide required standalone
+disclosures and obtain required authorizations before obtaining a consumer or investigative
+consumer report." The preserved onboarding packet includes a United States Background
+Consent Form. That form is a consent/release document authorizing release of screening
+information to TaskUs USA, LLC. It is not a standalone disclosure consisting solely of the
+disclosure required by 15 U.S.C. § 1681b(b)(2)(A), and it does not itself supply the
+pre-procurement content required by Civil Code § 1786.16. Plaintiff did not receive, before
+procurement, a separate compliant FCRA or ICRAA standalone disclosure.
+7. At approximately 10:20 a.m. PDT on September 14, the Profile Advantage portal
+showed several screening components complete, while the felony-including-misdemeanor
+component and PRINSOS, First Advantage's national sex-offender component, remained In
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+Page 3
+COMPLAINT FOR DAMAGES -- NGWA NFORBI v. UBER TECHNOLOGIES, INC., ET AL. (N.D. Cal.)
+Progress.
+8. At 11:24 a.m. on September 14, TaskUs Talent Acquisition Operations emailed
+Plaintiff that his scheduled start was being placed on a "standard administrative hold while
+final onboarding reviews are completed, including the processing of your background
+screening report." The email stated that the application remained pending.
+9. The September 14 hold is important context. Plaintiff does not allege that the hold
+itself was adverse action based on the completed California-registry result. The relevant
+registry component had not yet been furnished as a completed result.
+10. On September 15, 2026, First Advantage issued a consumer disclosure stating that
+public-record information concerning Plaintiff was being reported to TASKUS HOLDINGS
+INC USA, Client Account 417722USA.
+11. The enclosed national sex offender registry component of Order WPS-361214148
+states, verbatim: "SOURCE OF RECORD: CALIFORNIA SEX OFFENDER REGISTRY.
+SENTENCE: REGISTERED SEX OFFENDER."
+12. Plaintiff therefore alleges as known fact -- not on information and belief -- that
+First Advantage furnished employment-screening information expressly sourced to the
+California Sex Offender Registry. That information is information disclosed pursuant to Penal
+Code § 290.46.
+13. First Advantage's September 15 cover letter stated that the reported results
+themselves do not constitute acceptance or rejection and that an employment decision would
+come from the requesting organization.
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+Page 4
+COMPLAINT FOR DAMAGES -- NGWA NFORBI v. UBER TECHNOLOGIES, INC., ET AL. (N.D. Cal.)
+14. First Advantage separately administered a saliva drug-test product for TaskUs
+Holdings, Inc., Schedule ID 96558696. The schedule named a collection site but set no
+appointment. On September 16, 2026, Plaintiff went to that site to provide the sample. Site
+staff turned him away because walk-ins were not accepted and no appointment existed for
+him, and directed him to the scheduling number in First Advantage's email. Minutes later First
+Advantage emailed Plaintiff and TaskUs that the schedule "could not be successfully
+completed." Plaintiff called that number one minute after the email arrived and could not
+reach anyone. The schedule then expired before the collection site opened on September 17.
+15. The saliva schedule lapsed inside First Advantage's own scheduling process after
+Plaintiff appeared to test -- not through any refusal by Plaintiff -- and it lapsed after the
+September 14 background-report hold and after the September 15 furnishing of the
+California-registry-sourced report. Whether Defendants now treat it as an independent
+employment reason is a causation question distinct from whether Defendants procured the
+report lawfully and whether they actually used California-registry information for an
+employment decision.
+16. After September 15, 2026, Defendants maintained the administrative hold, did not
+restore the September 23 Uber AV Teammate start, did not issue a new start date, and did not
+issue a Fair Chance restoration or individualized assessment stating that California-registry
+information was disregarded. On September 23, 2026 -- the anticipated start date and the first
+day of scheduled orientation -- Plaintiff was not permitted to begin. The accepted assignment
+was withheld and effectively rescinded.
+17. Before that post-report withholding, the persons taking and maintaining the
+adverse action did not provide Plaintiff both a copy of Order WPS-361214148 and the written
+Summary of Rights required by 15 U.S.C. § 1681b(b)(3)(A).
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+Page 5
+COMPLAINT FOR DAMAGES -- NGWA NFORBI v. UBER TECHNOLOGIES, INC., ET AL. (N.D. Cal.)
+18. The California-registry-sourced component was a substantial factor in the
+post-report employment decision. The September 14 hold identified the background screening
+report as controlling release of the start; the report that then arrived expressly sourced the
+sex-offender component to the California Sex Offender Registry; and the start was never
+restored after that report was furnished.
+19. Uber Technologies, Inc. is named because the only assignment offered was Uber's
+branded AV Teammate campaign and because -- on information and belief grounded in the
+campaign documents alleged below -- Uber set, specified, or approved the First Advantage
+search criteria and screening package used for that campaign, including the national
+sex-offender components that returned California-registry SOURCE OF RECORD
+information, and shared control over start authorization. Uber is not sued merely because its
+name appears on WorkDay.
+20. First Advantage is the consumer reporting agency that generated Order
+WPS-361214148. It is not named as a defendant in this Complaint. Plaintiff reserves all claims
+against First Advantage arising from its furnishing of California-registry-sourced employment
+reports.
+II.
+JURISDICTION AND VENUE
+21. This Court has federal-question jurisdiction under 28 U.S.C. § 1331 because
+Counts One and Three arise under the Fair Credit Reporting Act, 15 U.S.C. § 1681 et seq.
+22. This Court has supplemental jurisdiction under 28 U.S.C. § 1367(a) over Counts
+Two, Four, and Five because they arise from the same onboarding, screening order, report,
+hold, and withheld start.
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+Page 6
+COMPLAINT FOR DAMAGES -- NGWA NFORBI v. UBER TECHNOLOGIES, INC., ET AL. (N.D. Cal.)
+23. Plaintiff has Article III standing. He alleges concrete injuries to the privacy and
+information-control interests protected by the employment-screening statutes and a concrete
+economic injury from the loss and withholding of the accepted Uber AV Teammate
+assignment at the documented $22.00 hourly rate (production hours 2PM-11PM) and the
+associated $1,000 retention-bonus opportunity. He sues as a prospective employee adversely
+affected by an employment decision within the meaning of 15 U.S.C. § 1681a(k)(1)(B)(ii).
+24. Venue is proper in this District under 28 U.S.C. § 1391(b)(1) and (b)(2). A
+substantial part of the events giving rise to the claims occurred here: the offered assignment
+was USA - San Jose - San Jose (Delivery); the WorkDay campaign was Uber AV Teammate
+(SJ: 09/23/2026); orientation was scheduled at 1631 N. 1st Street, Suite 200, San Jose;
+production was identified at 3030 Corvin Drive, Santa Clara; the saliva collection site was in
+Milpitas; and Defendants sought to place Plaintiff into Northern District operations. Uber is
+headquartered in San Francisco and resides in this District.
+25. Intra-district assignment. Under Civil Local Rule 3-2(c) and (e), the action arises in
+Santa Clara County. Plaintiff states those venue facts so the Clerk may assign the action
+accordingly.
+III.
+PARTIES
+26. Plaintiff Brendan Ngwa Nforbi is a natural person and California resident. He is a
+person as to whom information is disclosed through California's Megan's Law internet website
+operated under Penal Code § 290.46.
+27. Defendant TaskUs Holdings, Inc. ("TaskUs Holdings") is a Delaware corporation
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+Page 7
+COMPLAINT FOR DAMAGES -- NGWA NFORBI v. UBER TECHNOLOGIES, INC., ET AL. (N.D. Cal.)
+registered in California, Entity No. 3828721, with California registered agent C T Corporation
+System. First Advantage identified TASKUS HOLDINGS INC USA, Client Account Number
+417722USA, at 1650 Independence Drive, Ste 100, New Braunfels, Texas -- the same street
+address on the offer letter -- as the recipient account for Order WPS-361214148. TaskUs
+Holdings is the named employer on the First Advantage saliva-drug-test order and the Adobe
+Sign / NDA counterparty on the onboarding packet.
+28. Defendant TaskUs USA, LLC ("TaskUs USA") is an active Delaware limited
+liability company registered in California, Entity No. 201729810166. Plaintiff's September 14
+United States Background Consent Form identifies TaskUs USA as a recipient of screening
+information.
+29. The written Offer of Temporary Employment was issued in the name of TaskUs,
+LLC. California Secretary of State records reviewed on September 14 reflected TaskUs, LLC,
+Entity No. 200826810086, as Converted Out. Plaintiff does not treat the former California
+entity or its last-listed agent as the service target for the active TaskUs enterprise. TaskUs,
+LLC's role is pleaded in the facts and among the DOES.
+30. The use of different TaskUs entities in the offer, authorization, report-recipient
+account, NDA, drug-test order, and arbitration documents makes the allocation of
+procurement and decision authority information primarily within Defendants' possession.
+Plaintiff pleads alternative and overlapping responsibility among TaskUs Holdings, TaskUs
+USA, and presently unidentified TaskUs entities as permitted by Rule 8(d). Plaintiff does not
+allege alter ego merely from common branding.
+31. Defendant Uber Technologies, Inc. ("Uber") is a Delaware corporation that does
+business in this District, including autonomous-vehicle and delivery operations in Santa Clara
+County. The offered assignment was expressly identified as Uber AV Teammate, requisition
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+Page 8
+COMPLAINT FOR DAMAGES -- NGWA NFORBI v. UBER TECHNOLOGIES, INC., ET AL. (N.D. Cal.)
+R_2608_10812. "Uber AV" is a campaign title, not a separate legal entity named as a
+defendant.
+32. Plaintiff does not allege that Uber became a statutory user of the report merely
+because its name appeared on the campaign. Uber's liability under Counts Three and Four is
+asserted because -- on information and belief grounded in the facts alleged in Sections IV
+through X -- Uber set, specified, or approved the First Advantage search criteria and screening
+package for Uber AV Teammate placements (including national sex-offender / PRINSOS /
+NSOR components), shared control over start authorization, and received the benefit of
+TaskUs's hold and non-restoration pending that report.
+33. Plaintiff is ignorant of the true names and capacities of DOES 1 through 20 and
+will amend when ascertained. DOES include TaskUs, LLC; TaskUs, Inc.; any other TaskUs
+affiliate that procured, adjudicated, or used the report or issued the hold; any Uber operating
+affiliate that directed the AV Teammate placement or screening; and any person who received,
+accessed, or used the California-registry-sourced information for an employment purpose on
+this hire.
+IV.
+THE ACCEPTED UBER AV TEAMMATE ASSIGNMENT
+34. On September 14, 2026, at approximately 6:50 a.m., WorkDay emailed Plaintiff
+from taskus@myworkday.com: "Congratulations! We are pleased to make you an offer for the
+Uber AV Teammate (SJ: 09/23/2026) position."
+35. The same day, TaskUs, LLC issued a written Offer of Temporary Employment
+stating, among other things:
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+Page 9
+COMPLAINT FOR DAMAGES -- NGWA NFORBI v. UBER TECHNOLOGIES, INC., ET AL. (N.D. Cal.)
+•  hiring employer: TaskUs, LLC;
+•  position: Teammate;
+•  base pay: $22.00 per hour, non-exempt;
+•  location: USA - San Jose - San Jose (Delivery);
+•  production hours: 2PM - 11PM;
+•  anticipated assignment: September 23, 2026 through on or around December 4,
+2026;
+•  retention bonus: $1,000 if still employed in good standing on December 4, 2026;
+•  employment at-will and contingent on job-related background screening and a
+Fair Chance Act process for conviction history; and
+•  screening usually takes two weeks and employment may begin while screening
+is pending.
+36. Plaintiff accepted the offer the same day. The Adobe Acrobat Sign signature
+request for that offer packet was sent by John Malones (john.malones@taskus.com) on
+September 14, 2026, at approximately 6:55 a.m. Plaintiff completed the Adobe Sign packet
+the same morning (completion notice Reply-To: John Malones / TaskUs Holdings Inc) at
+approximately 8:21 a.m. PDT and signed the United States Background Consent Form, the
+TaskUs Holdings, Inc. non-disclosure / invention-assignment agreement, and related
+onboarding documents.
+37. DLSE Form 2810.5 identified TaskUs, LLC as the hiring employer. It did not list
+Uber as the entity for whom the work would be performed. That wage-notice fact does not
+negate Uber's end-client role on the Uber-branded campaign as alleged herein.
+38. The only assignment offered was the Uber AV Teammate campaign. Without
+Uber's campaign, there was no Teammate placement for Plaintiff to accept.
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+Page 10
+COMPLAINT FOR DAMAGES -- NGWA NFORBI v. UBER TECHNOLOGIES, INC., ET AL. (N.D. Cal.)
+39. At approximately 6:51 a.m. the same day, TA Ops US emailed Plaintiff "Action
+Required Today" onboarding tasks that separately listed Workday, Adobe Sign, I-9, the First
+Advantage background check, and the drug test -- treating the consumer-report screen and the
+saliva product as distinct items.
+V.
+PROCUREMENT OF ORDER WPS-361214148
+40. On September 14, 2026, at approximately 6:50 a.m., First Advantage emailed
+Plaintiff from do_not_reply@fadv.com inviting him to start a Profile Advantage background
+check (invite key GK5HGWELSS).
+41. The same day, Profile Advantage opened Order WPS-361214148 (portal candidate
+name Brendan Ngwanforbi).
+42. Order WPS-361214148 was a "consumer report" within the meaning of 15 U.S.C.
+§ 1681a(d): a written communication by First Advantage, a consumer reporting agency,
+bearing on Plaintiff's character, general reputation, and mode of living -- including the
+national sex-offender registry component -- that was furnished and used for employment
+purposes.
+43. The report was procured for employment purposes. TaskUs Holdings and TaskUs
+USA procured or caused the report to be procured and received or were entitled to receive its
+results. Their exact contractual allocation is information primarily within Defendants'
+knowledge and is pleaded in the alternative under Rule 8(d).
+44. The written Offer of Temporary Employment stated that the Company would
+provide required standalone disclosures and obtain required authorizations before obtaining a
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+Page 11
+COMPLAINT FOR DAMAGES -- NGWA NFORBI v. UBER TECHNOLOGIES, INC., ET AL. (N.D. Cal.)
+consumer or investigative consumer report.
+45. Plaintiff's preserved documents include a United States Background Consent Form
+permitting release of screening information to TaskUs USA, LLC. That form is a
+release/consent. It does not itself contain all of the content required of a standalone FCRA
+disclosure and does not itself identify all information required by Civil Code § 1786.16.
+46. Before procurement, Defendants did not provide Plaintiff a separate compliant
+document that consisted solely of the disclosure required by 15 U.S.C. § 1681b(b)(2)(A) and
+that informed him that a consumer report could be obtained for employment purposes --
+notwithstanding the offer's promise that such standalone disclosures would be provided.
+47. Before procurement, Defendants likewise did not provide Plaintiff a compliant
+ICRAA standalone disclosure identifying the investigative consumer reporting agency
+actually conducting the investigation and providing the required California-specific
+information.
+48. As of approximately 10:20 a.m. PDT on September 14, 2026, the portal showed:
+•  Completed: MVR; Federal Felony And Misdemeanor; PRICPGS; FADV
+National Criminal File; Social Security Verification;
+•  In Progress: Felony Including Misdemeanor; PRINSOS.
+49. The portal stated the report was not viewable until the order completed. A
+component marked Completed is not itself a result and is not a registry hit. As of the 10:20
+a.m. snapshot -- about one hour before the hold email -- the sex-offender component had not
+finished.
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+Page 12
+COMPLAINT FOR DAMAGES -- NGWA NFORBI v. UBER TECHNOLOGIES, INC., ET AL. (N.D. Cal.)
+VI.
+THE SEPTEMBER 14 HOLD IS CONTEXT,
+NOT THE COMPLETED-REPORT ADVERSE ACTION
+50. On September 14, 2026, at 11:24 a.m., TA Ops US (taops.us@taskus.com),
+copying Liz Ramirez (liz.ramirez02@taskus.com), emailed Plaintiff "Important Update
+Regarding Your Application with TaskUs."
+51. The email stated that TaskUs had placed Plaintiff's start date on a "standard
+administrative hold while final onboarding reviews are completed, including the processing of
+your background screening report," that the scheduled start must be adjusted pending
+completion of that process, that Plaintiff should monitor First Advantage (Customer Support
+800-888-5773), and that the application "remains in a pending status."
+52. That email is in Plaintiff's possession and will be produced as appropriate. It is not
+a First Advantage pre-adverse notice. It did not enclose a copy of a consumer report. It did not
+enclose a written Summary of Rights.
+53. At the time of that message, the portal reflected that PRINSOS remained In
+Progress. Plaintiff therefore does not plead that the September 14 hold was an adverse action
+based on the completed California-registry result.
+54. The hold instead establishes that the background screening process was an
+identified condition affecting release of Plaintiff's accepted start and supplies context for
+evaluating what happened after the completed report was furnished.
+55. The hold contradicted the offer's statement that employment may begin while
+screening is pending.
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+Page 13
+COMPLAINT FOR DAMAGES -- NGWA NFORBI v. UBER TECHNOLOGIES, INC., ET AL. (N.D. Cal.)
+VII.
+FIRST ADVANTAGE FURNISHED
+CALIFORNIA-REGISTRY-SOURCED INFORMATION
+56. On September 15, 2026, First Advantage issued a consumer disclosure letter to
+Plaintiff at his Stockton address. The letter advised that First Advantage was reporting
+public-record information concerning Plaintiff to TASKUS HOLDINGS INC USA, 1650
+Independence Dr., Ste 100, New Braunfels, TX 78132-3832.
+57. That consumer disclosure, including the enclosed registry component, is in
+Plaintiff's possession and will be produced as appropriate.
+58. The enclosed national sex offender registry component of Order WPS-361214148
+states, among other things:
+•  Record Source: NATIONAL SEX OFFENDER REGISTRY;
+•  Type of Search: NATIONAL SEX OFFENDER REGISTRY SEARCH-DEPT
+OF JUSTICE;
+•  Date of Search: 09/14/2026;
+•  Name on File: NGWANFORBI, BRENDAN NGEHSI; and
+•  Sentence: SOURCE OF RECORD: CALIFORNIA SEX OFFENDER
+REGISTRY. SENTENCE: REGISTERED SEX OFFENDER.
+59. Plaintiff therefore possesses a document directly attributing the sex-offender
+component to the California Sex Offender Registry.
+60. Procurement and furnishing do not, standing alone, establish actionable "use"
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+Page 14
+COMPLAINT FOR DAMAGES -- NGWA NFORBI v. UBER TECHNOLOGIES, INC., ET AL. (N.D. Cal.)
+under Penal Code § 290.46(j)(2)(E). Count Four is based on actual employment use after the
+report was received -- the post-report maintenance of the hold and the never-restored start --
+not on First Advantage's transmission alone.
+VIII.
+THE COMPLETED ADVERSE ACTION --
+POST-REPORT NON-RESTORATION
+61. After First Advantage furnished Order WPS-361214148 to TASKUS HOLDINGS
+INC USA on September 15, 2026, Defendants had the consumer report that the September 14
+hold had been waiting on.
+62. From September 15 through the anticipated September 23 start, Defendants:
+•  maintained the administrative hold;
+•  did not restore the September 23 Uber AV Teammate start;
+•  did not issue a new start date;
+•  did not provide Plaintiff a copy of Order WPS-361214148 and a written
+Summary of Rights before maintaining that hold and withholding the assignment;
+•  did not advise Plaintiff under Civil Code § 1786.40, at the time of the
+employment denial or withholding, that an investigative consumer report had been
+obtained, or supply First Advantage's name and address; and
+•  did not issue a Fair Chance notice or individualized assessment stating that
+California-registry information was disregarded.
+63. The completed adverse employment action alleged in this Complaint is therefore
+the post-furnishing withholding and effective rescission of the accepted assignment. The
+September 14 hold is the employer's own writing that the background report controlled the
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+Page 15
+COMPLAINT FOR DAMAGES -- NGWA NFORBI v. UBER TECHNOLOGIES, INC., ET AL. (N.D. Cal.)
+start. The September 15 disclosure is the report that then arrived, expressly sourced to the
+California Sex Offender Registry. The September 23 start date arrived without restoration.
+64. Freezing an accepted start date, placing the application in pending status,
+maintaining that freeze after the report arrived, and withholding the Uber AV Teammate
+assignment are adverse employment actions -- employment decisions adversely affecting a
+prospective employee within the meaning of 15 U.S.C. § 1681a(k)(1)(B)(ii) -- and purposes
+relating to employment within the meaning of Penal Code § 290.46(j).
+65. No Defendant has identified to Plaintiff any reason for the hold other than the
+background screening report.
+IX.
+THE SALIVA SCHEDULE WAS SEPARATE, LATER, AND
+LAPSED IN FIRST ADVANTAGE'S OWN PROCESS
+66. On September 14, 2026, at approximately 8:49 a.m. Pacific, First Advantage
+separately ordered a Saliva Drug Test Full Service NonDOT for employer TaskUs Holdings,
+Inc. (Schedule ID 96558696; LabCorp Web COC Order Registration Number 610727488).
+The designated collection site was LabCorp-Milpitas in Walgreens, 342 W. Calaveras
+Boulevard, Milpitas, California. The schedule was set to expire September 17, 2026, at 11:49
+a.m. Eastern.
+67. Page 9 of the offer packet is a California medical release for that drug/alcohol
+product "as facilitated by First Advantage and/or its network of authorized laboratories." That
+authorization is not a consumer-report disclosure and is not Order WPS-361214148.
+68. First Advantage emailed reminders for Schedule ID 96558696 on September 15,
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+Page 16
+COMPLAINT FOR DAMAGES -- NGWA NFORBI v. UBER TECHNOLOGIES, INC., ET AL. (N.D. Cal.)
+2026, at 9:02 a.m., and September 16, 2026, at 9:57 a.m. Each was addressed to Plaintiff and
+to taops-bgvglobal@taskus.com. Neither set an appointment. Under "Appointment Details,"
+each stated only: "Contact site to determine appointment requirements." Each listed the site's
+hours as "M-F 9am-11:30am, 1:30pm-3pm."
+69. On September 16, 2026, at approximately 3:00 p.m., Plaintiff went to
+LabCorp-Milpitas in Walgreens to provide the saliva sample. The staff member at the
+collection site told him: "We do not accept walk-ins and we do not have any scheduled
+appointments for you. Please call the number in the email to schedule an appointment."
+70. At 3:05 p.m. the same day, First Advantage emailed "Employment Screening:
+Action Required" to Plaintiff and to taops-bgvglobal@taskus.com. It stated: "Your
+confirmation could not be successfully completed. Please call the First Advantage Corporation
+Scheduling Center @ 866-682-4166 to schedule your appointment immediately."
+71. At 3:06 p.m., one minute after that email, Plaintiff called the First Advantage
+Scheduling Center at (866) 682-4166. The call lasted approximately two minutes. Plaintiff
+was unable to reach anyone.
+72. The schedule expired on September 17, 2026, at 11:49 a.m. Eastern -- 8:49 a.m.
+Pacific -- before the collection site's posted 9:00 a.m. opening that morning. No collection
+window remained on September 17.
+73. The saliva schedule therefore lapsed within First Advantage's own scheduling
+process: the site would not collect without an appointment, First Advantage had set none, and
+Plaintiff could not reach anyone at the scheduling line he was directed to call. Plaintiff did not
+refuse or decline the test. TaskUs was copied on each schedule notice, including the
+September 16 Action Required message.
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+Page 17
+COMPLAINT FOR DAMAGES -- NGWA NFORBI v. UBER TECHNOLOGIES, INC., ET AL. (N.D. Cal.)
+74. Plaintiff does not collapse the saliva product into the consumer report.
+75. The September 14 hold:
+•  issued on September 14 at 11:24 a.m., two days before Plaintiff went to the
+collection site;
+•  expressly named the background screening report;
+•  did not name the saliva test; and
+•  remained operative after First Advantage furnished the
+California-registry-sourced report on September 15 -- still one day before the saliva
+schedule lapsed.
+76. A later lapse in First Advantage's saliva scheduling cannot, at the pleading stage,
+erase the employer's own September 14 writing or the September 15
+California-registry-sourced report. Plaintiff alleges that the California-registry-sourced
+information in Order WPS-361214148 was a substantial factor in Defendants' post-report
+freezing and withholding of the accepted Uber AV Teammate assignment.
+X.
+UBER AS END CLIENT / JOINT EMPLOYER
+77. Every candidate-facing WorkDay communication that announced the offer
+identified the position as Uber AV Teammate, not a generic TaskUs role.
+78. The requisition identifier is R_2608_10812 / C261051599 -- Uber AV Teammate
+(SJ: 09/23/2026).
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+Page 18
+COMPLAINT FOR DAMAGES -- NGWA NFORBI v. UBER TECHNOLOGIES, INC., ET AL. (N.D. Cal.)
+79. The anticipated work was San Jose delivery on Uber's AV campaign. The offer
+packet supplied orientation at 1631 N. 1st Street, Suite 200, San Jose, a production depot at
+3030 Corvin Drive, Santa Clara, and closed-course training in Sonoma -- locations of the work
+to be performed for Uber's campaign, not generic TaskUs office work.
+80. TaskUs Holdings and TaskUs USA functioned as the staffing / payroll / offer-letter
+/ consent / report-recipient enterprise. Uber functioned as the end client whose branded
+campaign created the temporary need for Teammates and whose Northern District operations
+would receive Plaintiff's labor.
+81. On information and belief, grounded in the offer packet, the WorkDay campaign
+title and requisition, the September 14 hold, and the September 15 consumer disclosure:
+•  Uber directed or approved the Uber AV Teammate requisition, headcount, San
+Jose location, and September 23, 2026 start cohort;
+•  Uber set, specified, or approved the First Advantage search criteria and screening
+package TaskUs ordered for Uber AV Teammate placements -- including the
+national sex-offender / PRINSOS / NSOR search components that returned the
+California Sex Offender Registry SOURCE OF RECORD line on Order
+WPS-361214148;
+•  TaskUs ran that package as the staffing vendor for Uber's campaign;
+•  Uber received, was entitled to receive, or caused TaskUs to obtain and use First
+Advantage screening results -- including the California-registry-sourced
+component -- before authorizing Plaintiff's start on Uber's campaign;
+•  TaskUs's September 14 hold pending the background report, and the
+post-September 15 non-restoration, were taken in the course of staffing Uber's
+campaign and for Uber's benefit; and
+•  Uber and the TaskUs defendants are joint employers and/or agents of one
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+Page 19
+COMPLAINT FOR DAMAGES -- NGWA NFORBI v. UBER TECHNOLOGIES, INC., ET AL. (N.D. Cal.)
+another with respect to the hiring decision on this placement.
+82. Uber's campaign created the only job offered. The First Advantage package run for
+that campaign returned California-registry SOURCE OF RECORD information. TaskUs froze
+the start pending that report and never restored it after the report arrived.
+83. Penal Code § 290.46(j)(2)(E) prohibits use of § 290.46-disclosed information "for
+purposes relating to employment." Using that information to freeze or deny placement onto
+Uber's AV Teammate campaign is such a purpose, whether the offer letter is on TaskUs
+letterhead or Uber's.
+84. The Form 2810.5's naming of TaskUs, LLC is a wage-notice fact. It does not
+preclude Uber's liability under Penal Code § 290.46(j) or the FCRA as end client and joint
+employer on the Uber AV Teammate campaign.
+XI.
+NO STATUTORY AUTHORIZATION; NO PRE-ADVERSE PACKET
+BEFORE THE COMPLETED ADVERSE ACTION
+85. The use alleged was not "to protect a person at risk" within the meaning of Penal
+Code § 290.46(j)(1). Plaintiff is unaware of any other provision of law authorizing Defendants
+to use information disclosed pursuant to Penal Code § 290.46 for this Teammate / Uber AV
+delivery assignment.
+86. Before taking and completing adverse action based in whole or in part on Order
+WPS-361214148 -- specifically, before maintaining the hold and withholding the assignment
+after that report was furnished -- Defendants did not provide Plaintiff a copy of the First
+Advantage consumer report and a written Summary of Rights as required by 15 U.S.C. §
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+Page 20
+COMPLAINT FOR DAMAGES -- NGWA NFORBI v. UBER TECHNOLOGIES, INC., ET AL. (N.D. Cal.)
+1681b(b)(3)(A).
+87. Defendants did not, at the time of the employment denial or withholding, advise
+Plaintiff under Civil Code § 1786.40 that an investigative consumer report had been obtained,
+or supply First Advantage's name and address.
+88. The offer referenced a Fair Chance Act process for conviction history. Defendants
+did not provide Plaintiff a Fair Chance notice restoring the start or an individualized
+assessment stating that California-registry information was disregarded.
+XII.
+DAMAGES
+89. Plaintiff lost an accepted temporary assignment at $22.00 per hour, production
+hours 2PM-11PM, from September 23, 2026 through on or around December 4, 2026, and lost
+the opportunity to earn the $1,000 retention bonus if still employed in good standing on
+December 4, 2026.
+90. Those offer terms supply a concrete, non-speculative damages floor for the rate and
+window. This Complaint does not assume an unguaranteed 40-hour schedule. The precise
+hour count and any overtime will be proved according to the assignment schedule and proof at
+trial.
+91. Plaintiff also seeks nonduplicative statutory, actual, exemplary, punitive, fee, cost,
+and interest remedies authorized by the surviving claims.
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+Page 21
+COMPLAINT FOR DAMAGES -- NGWA NFORBI v. UBER TECHNOLOGIES, INC., ET AL. (N.D. Cal.)
+XIII.
+COUNT ONE
+Fair Credit Reporting Act -- 15 U.S.C. § 1681b(b)(2)(A)
+(Against TaskUs Holdings, TaskUs USA, and the Procuring DOE Defendants)
+92. Plaintiff realleges paragraphs 1 through 91.
+93. Plaintiff was a consumer. Order WPS-361214148 was a consumer report under 15
+U.S.C. § 1681a(d) as alleged in paragraph 42. The TaskUs defendants procured or caused that
+consumer report to be procured for employment purposes.
+94. Section 1681b(b)(2)(A) requires a clear and conspicuous written disclosure, made
+before procurement, in a document consisting solely of the disclosure, that a consumer report
+may be obtained for employment purposes, together with written authorization.
+95. Before procurement, Defendants did not provide Plaintiff a compliant standalone
+disclosure satisfying § 1681b(b)(2)(A). The preserved United States Background Consent
+Form is a consent/release, not that standalone disclosure. The offer's own promise that
+required standalone disclosures would be provided before obtaining a consumer or
+investigative consumer report was not kept.
+96. Defendants nevertheless caused First Advantage to procure and furnish Order
+WPS-361214148.
+97. The violation was at least negligent under 15 U.S.C. § 1681o. On proof concerning
+Defendants' standardized screening architecture and compliance procedures, it was willful
+under 15 U.S.C. § 1681n.
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+Page 22
+COMPLAINT FOR DAMAGES -- NGWA NFORBI v. UBER TECHNOLOGIES, INC., ET AL. (N.D. Cal.)
+98. Plaintiff seeks relief authorized by 15 U.S.C. §§ 1681n and 1681o, without
+duplicative recovery.
+XIV.
+COUNT TWO
+California Investigative Consumer Reporting Agencies Act --
+Pre-Procurement Disclosure, Civil Code §§ 1786.16, 1786.50
+(Against TaskUs Holdings, TaskUs USA, and the Procuring DOE Defendants)
+99. Plaintiff realleges paragraphs 1 through 91.
+100. The First Advantage Profile Advantage employment background report (Order
+WPS-361214148) was an investigative consumer report under ICRAA: a consumer report
+bearing on Plaintiff's character, general reputation, personal characteristics, and mode of living
+-- including registry status -- obtained through database and public-record compilation for
+employment. Civil Code § 1786.2(c) defines "investigative consumer report" to reach such
+information "obtained through any means."
+101. Civil Code § 1786.16 requires specified clear and conspicuous pre-procurement
+disclosures in a document consisting solely of the disclosure, including identification of the
+investigative consumer reporting agency conducting the investigation and California-specific
+information concerning the nature and scope of the investigation and consumer rights.
+102. The preserved TaskUs onboarding documents did not provide Plaintiff the
+required § 1786.16 standalone disclosure before First Advantage procured Order
+WPS-361214148.
+103. Defendants nevertheless procured or caused the investigative consumer report to
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+Page 23
+COMPLAINT FOR DAMAGES -- NGWA NFORBI v. UBER TECHNOLOGIES, INC., ET AL. (N.D. Cal.)
+be prepared and furnished.
+104. Plaintiff seeks the remedies authorized by Civil Code § 1786.50 according to
+proof, including actual damages or the statutory amount where available, costs and attorney's
+fees where recoverable, and punitive damages upon proof of grossly negligent or willful
+noncompliance.
+XV.
+COUNT THREE
+Fair Credit Reporting Act -- 15 U.S.C. § 1681b(b)(3)(A)
+(Against TaskUs Holdings, TaskUs USA, Uber, and the
+Post-Report User DOE Defendants)
+105. Plaintiff realleges paragraphs 1 through 91.
+106. Order WPS-361214148 was a consumer report used for employment purposes.
+107. After First Advantage furnished Order WPS-361214148 to TASKUS
+HOLDINGS INC USA on September 15, 2026, Defendants used that report for employment
+purposes by maintaining the September 14 hold, refusing to restore the September 23 start,
+and withholding or rescinding the accepted Uber AV Teammate assignment. The September
+23 start date arrived without restoration.
+108. Those post-furnishing acts were adverse actions based in whole or in part on the
+consumer report -- employment decisions adversely affecting a prospective employee within
+the meaning of 15 U.S.C. § 1681a(k)(1)(B)(ii).
+109. Before taking those post-furnishing adverse actions, Defendants did not provide
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+Page 24
+COMPLAINT FOR DAMAGES -- NGWA NFORBI v. UBER TECHNOLOGIES, INC., ET AL. (N.D. Cal.)
+Plaintiff a copy of that report and the written Summary of Rights required by §
+1681b(b)(3)(A).
+110. The September 14 hold is not pleaded as the completed-report adverse action; it is
+context showing that report processing affected release of the start, and part of a continuous
+adverse-action sequence that matured when the report arrived and the start was never restored.
+111. The saliva schedule does not supply a lawful independent basis for those actions.
+As alleged in paragraphs 69 through 71, Plaintiff appeared at the designated collection site and
+called the number he was directed to call; the schedule lapsed in First Advantage's own
+process, after the report had been furnished.
+112. Uber's liability on this Count rests on the joint-employer / package-specification
+and start-authorization facts alleged in Section X, not on campaign branding alone.
+113. The count is timely. The completed adverse action occurred on and after
+September 15, 2026, and crystallized on September 23, 2026, when the start date arrived
+without restoration.
+114. Noncompliance was at least negligent under 15 U.S.C. § 1681o. On proof, it was
+willful under 15 U.S.C. § 1681n: Defendants are sophisticated users of employment consumer
+reports; TaskUs operates high-volume background screening as a standard part of its staffing
+business; the offer packet invoked a Fair Chance Act process; First Advantage's own
+September 15 package identified the document as a consumer disclosure of public-record
+information being reported to TASKUS HOLDINGS INC USA; and Defendants nonetheless
+completed the withholding without the required pre-adverse copy and Summary of Rights.
+115. Plaintiff seeks relief authorized by 15 U.S.C. §§ 1681n and 1681o according to
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+Page 25
+COMPLAINT FOR DAMAGES -- NGWA NFORBI v. UBER TECHNOLOGIES, INC., ET AL. (N.D. Cal.)
+proof.
+XVI.
+COUNT FOUR
+Unauthorized Employment Use of Information Disclosed
+Pursuant to Penal Code § 290.46 -- Penal Code § 290.46(j)(2)(E), (j)(4)(A)
+(Against TaskUs Holdings, TaskUs USA, Uber, and the
+Actual-Use DOE Defendants)
+116. Plaintiff realleges paragraphs 1 through 91.
+117. Plaintiff is a person as to whom information is disclosed through California's
+Megan's Law internet website.
+118. Section 290.46(j)(2)(E) prohibits use of information disclosed pursuant to §
+290.46 for purposes relating to employment, except as authorized under § 290.46(j)(1) or any
+other provision of law.
+119. First Advantage furnished to TaskUs Holdings Inc USA, on Order
+WPS-361214148, information concerning Plaintiff whose sex-offender component expressly
+states SOURCE OF RECORD: CALIFORNIA SEX OFFENDER REGISTRY.
+120. That information is information disclosed pursuant to Penal Code § 290.46.
+Plaintiff does not ask the Court to infer the source. The Sentence field states it.
+121. Plaintiff does not base this Count on ordinary court-record conviction information
+and does not allege that mere republication by First Advantage, standing alone, is the
+prohibited employment use.
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+Page 26
+COMPLAINT FOR DAMAGES -- NGWA NFORBI v. UBER TECHNOLOGIES, INC., ET AL. (N.D. Cal.)
+122. After receiving the report, Defendants actually used that
+California-registry-sourced information for purposes relating to employment by maintaining
+the administrative hold pending the background screening report, refusing to restore the
+September 23 Uber AV Teammate start, and withholding or rescinding Plaintiff's accepted
+assignment after the report -- with its California-registry SOURCE OF RECORD line -- was
+in their hands.
+123. The California-registry-sourced information was a substantial factor in those
+employment actions. The September 14 hold named the background screening report as a
+basis for freezing the start. The report that then arrived contained the California-registry
+SOURCE OF RECORD line. The start was never restored.
+124. Uber used, caused the use of, or is jointly liable for the use of that information for
+purposes relating to employment on its Uber AV Teammate campaign, as end client and joint
+employer -- including by setting or approving the search criteria that caused the
+California-registry-sourced component to be ordered and by receiving the benefit of TaskUs's
+hold and non-restoration pending that report.
+125. The use was not to protect a person at risk under § 290.46(j)(1), and Plaintiff is
+unaware of any other law authorizing use of § 290.46-disclosed information for this
+assignment.
+126. The use occurred on and after September 15, 2026. This action is timely.
+127. Defendants thereby violated Penal Code § 290.46(j)(2)(E).
+128. Plaintiff seeks the remedies authorized by § 290.46(j)(4)(A): actual damages, and
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+Page 27
+COMPLAINT FOR DAMAGES -- NGWA NFORBI v. UBER TECHNOLOGIES, INC., ET AL. (N.D. Cal.)
+any amount determined by the jury or the Court not exceeding three times the actual damages
+and not less than $250, plus attorney's fees, exemplary damages, and costs as authorized --
+without duplicative recovery.
+129. Plaintiff does not presently seek preventive relief under § 290.46(j)(4)(B).
+130. This Count is limited to use of information disclosed pursuant to § 290.46, as
+shown by the SOURCE OF RECORD field on Order WPS-361214148.
+XVII.
+COUNT FIVE
+ICRAA Adverse-Employment Notice -- Civil Code §§ 1786.40, 1786.50
+(Against TaskUs Holdings, TaskUs USA, and the Denial-Actor DOE Defendants)
+131. Plaintiff realleges paragraphs 1 through 91.
+132. Order WPS-361214148 was an investigative consumer report under Civil Code §
+1786.2(c) as alleged in paragraph 100.
+133. Defendants denied, withheld, or refused to proceed with Plaintiff's accepted
+employment under circumstances in which they had obtained the First Advantage
+investigative consumer report. The September 23 start date arrived without restoration.
+134. At the time of that employment denial or withholding, Defendants did not provide
+the § 1786.40 advice -- including First Advantage's name and address.
+135. The § 1786.40 omission alleged here is separate from the FCRA pre-adverse
+omission alleged in Count Three. First Advantage's September 15 consumer disclosure to
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+Page 28
+COMPLAINT FOR DAMAGES -- NGWA NFORBI v. UBER TECHNOLOGIES, INC., ET AL. (N.D. Cal.)
+Plaintiff is not Defendants' contemporaneous § 1786.40 advice at the time they withheld the
+assignment.
+136. Plaintiff seeks the remedies authorized by Civil Code § 1786.50 according to
+proof.
+XVIII.
+PRAYER FOR RELIEF
+WHEREFORE, Plaintiff requests:
+A. Actual and compensatory damages according to proof, including the value of the
+accepted $22.00-per-hour assignment (production hours 2PM-11PM) for the
+September 23 through on or around December 4, 2026 window and the $1,000
+retention-bonus opportunity, without inventing an unguaranteed hour count;
+B. Relief authorized by 15 U.S.C. §§ 1681n and 1681o;
+C. Relief authorized by Civil Code § 1786.50;
+D. Relief authorized by Penal Code § 290.46(j)(4)(A);
+E. Punitive or exemplary damages where authorized and supported by proof;
+F. Taxable costs and attorney's fees where authorized by statute or rule;
+G. Prejudgment and postjudgment interest as allowed by law; and
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+Page 29
+COMPLAINT FOR DAMAGES -- NGWA NFORBI v. UBER TECHNOLOGIES, INC., ET AL. (N.D. Cal.)
+H. Such other nonduplicative relief as the Court deems proper.
+XIX.
+DEMAND FOR JURY TRIAL
+Pursuant to Federal Rule of Civil Procedure 38(b) and Civil Local Rule 3-6, Plaintiff
+demands trial by jury on all issues so triable.
+Dated: September 23, 2026
+Respectfully submitted,
+___________________________________
+BRENDAN NGWA NFORBI
+Plaintiff, In Propria Persona
+
+AO 240  (Rev. 07/10) Application to Proceed in District Court Without Prepaying Fees or Costs (Short Form)
+UNITED STATES DISTRICT COURT
+for the
+__________ District of __________
+)
+)
+)
+)
+)
+Plaintiff/Petitioner
+v.
+Civil Action No. 
+Defendant/Respondent
+APPLICATION TO PROCEED IN DISTRICT COURT WITHOUT PREPAYING FEES OR COSTS 
+(Short Form)
+I am a plaintiff or petitioner in this case and declare that I am unable to pay the costs of these proceedings and
+that I am entitled to the relief requested.
+In support of this application, I answer the following questions under penalty of perjury:
+1. If incarcerated. I am being held at:
+.
+If employed there, or have an account in the institution, I have attached to this document a statement certified by the
+appropriate institutional officer showing all receipts, expenditures, and balances during the last six months for any
+institutional account in my name.  I am also submitting a similar statement from any other institution where I was
+incarcerated during the last six months.
+2. If not incarcerated.  If I am employed, my employer’s name and address are: 
+My gross pay or wages are:   $
+, and my take-home pay or wages are:   $
+per
+  (specify pay period)
+.
+3. Other Income. In the past 12 months, I have received income from the following sources (check all that apply):
+(a) Business, profession, or other self-employment
+’ Yes
+’ No
+(b) Rent payments, interest, or dividends
+’ Yes
+’ No
+(c) Pension, annuity, or life insurance payments
+’ Yes
+’ No
+(d) Disability, or worker’s compensation payments
+’ Yes
+’ No
+(e) Gifts, or inheritances
+’ Yes
+’ No
+(f) Any other sources
+’ Yes
+’ No
+If you answered “Yes” to any question above, describe below or on separate pages each source of money and
+state the amount that you received and what you expect to receive in the future.
+        Northern District of California
+BRENDAN NGWA NFORBI
+UBER TECHNOLOGIES, INC., et al.
+N/A
+N/A
+N/A
+N/A
+N/A
+3
+3
+3
+3
+3
+3
+N/A
+
+AO 240  (Rev. 07/10) Application to Proceed in District Court Without Prepaying Fees or Costs (Short Form)
+4.  Amount of money that I have in cash or in a checking or savings account:   $
+.
+5.  Any automobile, real estate, stock, bond, security, trust, jewelry, art work, or other financial instrument or
+thing of value that I own, including any item of value held in someone else’s name (describe the property and its approximate
+value):
+6. Any housing, transportation, utilities, or loan payments, or other regular monthly expenses (describe and provide
+the amount of the monthly expense):
+7.  Names (or, if under 18, initials only) of all persons who are dependent on me for support, my relationship
+with each person, and how much I contribute to their support:
+8.  Any debts or financial obligations (describe the amounts owed and to whom they are payable):
+Declaration:  I declare under penalty of perjury that the above information is true and understand that a false
+statement may result in a dismissal of my claims.
+Date:
+Applicant’s signature
+Printed name
+43.00
+None.
+None.
+None.
+None.
+09/23/2026
+Brendan Ngwa Nforbi
+
+UNITED STATES DISTRICT COURT 
+NORTHERN DISTRICT OF CALIFORNIA 
+ 
+ 
+Plaintiff(s), 
+v. 
+ 
+ 
+Defendant(s). 
+Case No.   
+ 
+ 
+CONSENT OR DECLINATION  
+TO MAGISTRATE JUDGE 
+JURISDICTION 
+ 
+ 
+INSTRUCTIONS: Please indicate below by checking one of the two boxes whether you (if you 
+are the party) or the party you represent (if you are an attorney in the case) choose(s) to consent 
+or decline to magistrate judge jurisdiction in this matter. Sign this form below your selection. 
+ 
+☐ CONSENT to Magistrate Judge Jurisdiction 
+ 
+In accordance with the provisions of 28 U.S.C. § 636(c), I voluntarily consent to have a 
+United States magistrate judge conduct all further proceedings in this case, including trial and 
+entry of final judgment. I understand that appeal from the judgment shall be taken directly to the 
+United States Court of Appeals for the Ninth Circuit. 
+ 
+OR 
+ 
+☐ DECLINE Magistrate Judge Jurisdiction 
+ 
+In accordance with the provisions of 28 U.S.C. § 636(c), I decline to have a United States 
+magistrate judge conduct all further proceedings in this case and I hereby request that this case be 
+reassigned to a United States district judge. 
+ 
+DATE: _______________, 20____ 
+NAME:  
+ 
+ 
+  
+ 
+ 
+ 
+Signature 
+ 
+ 
+COUNSEL FOR 
+(OR “PRO SE”):  
+ 
+ 
+BRENDAN NGWA NFORBI
+UBER TECHNOLOGIES, INC., et al.
+3
+September 23
+26
+Brendan Ngwa Nforbi
+PRO SE
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+Page 1
+PLAINTIFF'S CIVIL L.R. 3-15 CERTIFICATION -- NGWA NFORBI v. UBER TECHNOLOGIES, INC., ET AL.
+BRENDAN NGWA NFORBI
+Plaintiff, In Propria Persona
+1455 Cat Tail Drive
+Stockton, California 95204
+Telephone: (209) 801-4442
+E-mail: bnn.cdl@gmail.com
+UNITED STATES DISTRICT COURT
+NORTHERN DISTRICT OF CALIFORNIA
+BRENDAN NGWA NFORBI,
+Case No. _________________
+                          Plaintiff,
+PLAINTIFF'S CERTIFICATION OF
+CONFLICTS AND INTERESTED
+       v.
+ENTITIES OR PERSONS
+UBER TECHNOLOGIES, INC.; TASKUS
+[Civil L.R. 3-15]
+HOLDINGS, INC.; TASKUS USA, LLC;
+and DOES 1 through 20, inclusive,
+                          Defendants.
+Pursuant to Civil L.R. 3-15, the undersigned certifies that as of this date, there is no
+conflict or interest (other than the named parties) to report.
+Plaintiff is a natural person appearing in propria persona. He has no parent corporation,
+no publicly held corporation owns any interest in him, and no person or entity is funding the
+prosecution of this action or has a financial interest in its outcome. This action is not in federal
+court on the basis of diversity of citizenship under 28 U.S.C. § 1332(a).
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+Page 2
+PLAINTIFF'S CIVIL L.R. 3-15 CERTIFICATION -- NGWA NFORBI v. UBER TECHNOLOGIES, INC., ET AL.
+Dated: September 23, 2026
+Respectfully submitted,
+___________________________________
+BRENDAN NGWA NFORBI
+Plaintiff, In Propria Persona
+
+AO 440 (Rev. 06/12)  Summons in a Civil Action
+UNITED STATES DISTRICT COURT
+for the
+__________ District of __________ 
+)
+)
+)
+)
+)
+)
+)
+)
+)
+)
+)
+)
+Plaintiff(s)
+v.
+Civil Action No.
+Defendant(s)
+SUMMONS IN A CIVIL ACTION
+To: (Defendant’s name and address)
+A lawsuit has been filed against you.
+Within 21 days after service of this summons on you (not counting the day you received it) — or 60 days if you
+are the United States or a United States agency, or an officer or employee of the United States described in Fed. R. Civ.
+P. 12 (a)(2) or (3) — you must serve on the plaintiff an answer to the attached complaint or a motion under Rule 12 of
+the Federal Rules of Civil Procedure.  The answer or motion must be served on the plaintiff or plaintiff’s attorney,
+whose name and address are:
+If you fail to respond, judgment by default will be entered against you for the relief demanded in the complaint. 
+You also must file your answer or motion with the court.
+CLERK OF COURT
+Date:
+Signature of Clerk or Deputy Clerk
+        Northern District of California
+BRENDAN NGWA NFORBI
+UBER TECHNOLOGIES, INC.; TASKUS HOLDINGS, 
+INC.; TASKUS USA, LLC; and DOES 1 through 20, 
+inclusive
+Uber Technologies, Inc.
+1725 3rd Street
+San Francisco, CA 94158
+Brendan Ngwa Nforbi
+Plaintiff, In Propria Persona
+1455 Cat Tail Drive
+Stockton, CA 95204
+(209) 801-4442
+
+AO 440 (Rev. 06/12)  Summons in a Civil Action (Page 2)
+Civil Action No.
+PROOF OF SERVICE
+(This section should not be filed with the court unless required by Fed. R. Civ. P. 4 (l))
+This summons for (name of individual and title, if any)
+was received by me on (date)
+.
+’ I personally served the summons on the individual at (place)
+on (date)
+; or
+’ I left the summons at the individual’s residence or usual place of abode with (name)
+, a person of suitable age and discretion who resides there,
+on (date)
+, and mailed a copy to the individual’s last known address; or
+’ I served the summons on (name of individual)
+, who is
+ designated by law to accept service of process on behalf of (name of organization)
+on (date)
+; or
+’ I returned the summons unexecuted because
+; or
+’ Other (specify):
+.
+My fees are $
+for travel and $
+for services, for a total of $
+.
+I declare under penalty of perjury that this information is true.
+Date:
+Server’s signature
+Printed name and title
+Server’s address
+Additional information regarding attempted service, etc:
+0.00
+
+AO 440 (Rev. 06/12)  Summons in a Civil Action
+UNITED STATES DISTRICT COURT
+for the
+__________ District of __________ 
+)
+)
+)
+)
+)
+)
+)
+)
+)
+)
+)
+)
+Plaintiff(s)
+v.
+Civil Action No.
+Defendant(s)
+SUMMONS IN A CIVIL ACTION
+To: (Defendant’s name and address)
+A lawsuit has been filed against you.
+Within 21 days after service of this summons on you (not counting the day you received it) — or 60 days if you
+are the United States or a United States agency, or an officer or employee of the United States described in Fed. R. Civ.
+P. 12 (a)(2) or (3) — you must serve on the plaintiff an answer to the attached complaint or a motion under Rule 12 of
+the Federal Rules of Civil Procedure.  The answer or motion must be served on the plaintiff or plaintiff’s attorney,
+whose name and address are:
+If you fail to respond, judgment by default will be entered against you for the relief demanded in the complaint. 
+You also must file your answer or motion with the court.
+CLERK OF COURT
+Date:
+Signature of Clerk or Deputy Clerk
+        Northern District of California
+BRENDAN NGWA NFORBI
+UBER TECHNOLOGIES, INC.; TASKUS HOLDINGS, 
+INC.; TASKUS USA, LLC; and DOES 1 through 20, 
+inclusive
+TaskUs Holdings, Inc.
+c/o C T Corporation System, Registered Agent
+330 N. Brand Blvd., Suite 700
+Glendale, CA 91203
+Brendan Ngwa Nforbi
+Plaintiff, In Propria Persona
+1455 Cat Tail Drive
+Stockton, CA 95204
+(209) 801-4442
+
+AO 440 (Rev. 06/12)  Summons in a Civil Action (Page 2)
+Civil Action No.
+PROOF OF SERVICE
+(This section should not be filed with the court unless required by Fed. R. Civ. P. 4 (l))
+This summons for (name of individual and title, if any)
+was received by me on (date)
+.
+’ I personally served the summons on the individual at (place)
+on (date)
+; or
+’ I left the summons at the individual’s residence or usual place of abode with (name)
+, a person of suitable age and discretion who resides there,
+on (date)
+, and mailed a copy to the individual’s last known address; or
+’ I served the summons on (name of individual)
+, who is
+ designated by law to accept service of process on behalf of (name of organization)
+on (date)
+; or
+’ I returned the summons unexecuted because
+; or
+’ Other (specify):
+.
+My fees are $
+for travel and $
+for services, for a total of $
+.
+I declare under penalty of perjury that this information is true.
+Date:
+Server’s signature
+Printed name and title
+Server’s address
+Additional information regarding attempted service, etc:
+0.00
+
+AO 440 (Rev. 06/12)  Summons in a Civil Action
+UNITED STATES DISTRICT COURT
+for the
+__________ District of __________ 
+)
+)
+)
+)
+)
+)
+)
+)
+)
+)
+)
+)
+Plaintiff(s)
+v.
+Civil Action No.
+Defendant(s)
+SUMMONS IN A CIVIL ACTION
+To: (Defendant’s name and address)
+A lawsuit has been filed against you.
+Within 21 days after service of this summons on you (not counting the day you received it) — or 60 days if you
+are the United States or a United States agency, or an officer or employee of the United States described in Fed. R. Civ.
+P. 12 (a)(2) or (3) — you must serve on the plaintiff an answer to the attached complaint or a motion under Rule 12 of
+the Federal Rules of Civil Procedure.  The answer or motion must be served on the plaintiff or plaintiff’s attorney,
+whose name and address are:
+If you fail to respond, judgment by default will be entered against you for the relief demanded in the complaint. 
+You also must file your answer or motion with the court.
+CLERK OF COURT
+Date:
+Signature of Clerk or Deputy Clerk
+        Northern District of California
+BRENDAN NGWA NFORBI
+UBER TECHNOLOGIES, INC.; TASKUS HOLDINGS, 
+INC.; TASKUS USA, LLC; and DOES 1 through 20, 
+inclusive
+TaskUs USA, LLC
+c/o C T Corporation System, Registered Agent
+330 N. Brand Blvd., Suite 700
+Glendale, CA 91203
+Brendan Ngwa Nforbi
+Plaintiff, In Propria Persona
+1455 Cat Tail Drive
+Stockton, CA 95204
+(209) 801-4442
+
+AO 440 (Rev. 06/12)  Summons in a Civil Action (Page 2)
+Civil Action No.
+PROOF OF SERVICE
+(This section should not be filed with the court unless required by Fed. R. Civ. P. 4 (l))
+This summons for (name of individual and title, if any)
+was received by me on (date)
+.
+’ I personally served the summons on the individual at (place)
+on (date)
+; or
+’ I left the summons at the individual’s residence or usual place of abode with (name)
+, a person of suitable age and discretion who resides there,
+on (date)
+, and mailed a copy to the individual’s last known address; or
+’ I served the summons on (name of individual)
+, who is
+ designated by law to accept service of process on behalf of (name of organization)
+on (date)
+; or
+’ I returned the summons unexecuted because
+; or
+’ Other (specify):
+.
+My fees are $
+for travel and $
+for services, for a total of $
+.
+I declare under penalty of perjury that this information is true.
+Date:
+Server’s signature
+Printed name and title
+Server’s address
+Additional information regarding attempted service, etc:
+0.00

@@ -9,11 +9,13 @@ Builds, dated and signed:
   3. Plaintiff's Civil L.R. 3-15 Certification of Conflicts and Interested
      Entities or Persons;
   4. AO 440 Summons in a Civil Action (proposed, for issuance) — one each
-     for Uber Technologies, Inc., TaskUs Holdings, Inc., TaskUs USA, LLC.
+     for Uber Technologies, Inc., TaskUs Holdings, Inc., TaskUs USA, LLC;
+  5. AO 240 IFP application (short form), with --ao240 — mirrors the Serrato
+     application answer for answer at Plaintiff's direction;
+  6. Complete Filing Packet — cover sheet, complaint, IFP, consent, 3-15,
+     summonses, in that order.
 
-The complaint itself is matter40-uber-complaint.py. The IFP application is
-built separately because its financial answers need Plaintiff's current
-figures.
+The complaint itself is matter40-uber-complaint.py (run it first).
 
 Cover-sheet name order follows the JS-CAND 44 instruction (Last, First).
 Nature of Suit 480 (Consumer Credit) is the JS-44 code for FCRA claims.
@@ -21,7 +23,8 @@ Division: San Jose — the complaint pleads Santa Clara County under Civil
 L.R. 3-2(c), (e).
 
     python3 internal/scripts/matter40-ndcal-filing-packet.py \\
-        --js-cand /path/to/JS-CAND-44_fillable_04-2025.pdf
+        --js-cand /path/to/JS-CAND-44_fillable_04-2025.pdf \\
+        --ao240 /path/to/ao240.pdf
 """
 
 from __future__ import annotations
@@ -334,9 +337,67 @@ def build_summons(target: dict) -> Path:
     return out
 
 
+# ------------------------------------------------ AO 240 IFP (short form)
+# Mirrors the Serrato application (Matter 24, ECF No. 2, granted ECF No. 5,
+# Jun 29 2026) answer for answer, at Plaintiff's direction.
+IFP_CASH = "43.00"
+
+
+def build_ifp(src: Path) -> Path:
+    out = _out("IFP Application AO 240")
+    doc = fitz.open(src)
+    text = {
+        "Plaintiff": (PLAINTIFF_CAPS, 10),
+        "Defendant": (DEFENDANTS_SHORT, 10),
+        "Case_Num": ("", None),
+        "Location held": ("N/A", 10),
+        "Employer's name and address": ("N/A", 10),
+        "Gross pay amount": ("N/A", 10),
+        "Take-home pay amount": ("N/A", 10),
+        "Specify pay period": ("N/A", 10),
+        "Amount and source of other income": ("N/A", 10),
+        "Amount of money in cash/checking/savings": (IFP_CASH, 10),
+        "Value of property owned": ("None.", 10),
+        "Monthly expenses": ("None.", 10),
+        "Dependents, and how much paid for support": ("None.", 10),
+        "Other financial debts or obligations": ("None.", 10),
+        "Date2": (EXEC_DATE_NUM, 10),
+        "Applicant'sSignature": ("", None),
+        "Applican'tsNameTitle": (PLAINTIFF_MIXED, 10),
+    }
+    sig_rect = None
+    for page in doc:
+        for w in page.widgets():
+            name = w.field_name
+            if name == "District Information":
+                w.field_value = "        Northern District of California"
+                w.update()
+            elif name in text:
+                value, size = text[name]
+                _set(w, value, size)
+                if name == "Applicant'sSignature":
+                    sig_rect = (page.number, fitz.Rect(w.rect))
+            elif name.startswith("Check Box"):
+                # Questions 3(a)-(f): every answer "No".
+                w.field_value = w.on_state() if w.on_state() == "No" else "Off"
+                w.update()
+        for w in list(page.widgets()):
+            if w.field_name.startswith("Button."):
+                page.delete_widget(w)
+    doc.bake(annots=True, widgets=True)
+    if sig_rect is None:
+        raise SystemExit("AO 240: signature field not found")
+    pno, r = sig_rect
+    stamp_on_pdf_line(doc[pno], r.x0 + 30, r.x0 + 170, r.y1 - 1, whiteout=False)
+    doc.save(out, garbage=4, deflate=True)
+    doc.close()
+    return out
+
+
 def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--js-cand", required=True, help="Blank JS-CAND 44 fillable PDF")
+    ap.add_argument("--ao240", help="Blank AO 240 fillable PDF")
     args = ap.parse_args()
     outs = [
         build_cover_sheet(Path(args.js_cand)),
@@ -344,6 +405,23 @@ def main() -> None:
         build_certification(),
         *[build_summons(t) for t in SUMMONS_TARGETS],
     ]
+    if args.ao240:
+        outs.append(build_ifp(Path(args.ao240)))
+    complaint = OUT_DIR / (
+        "Complaint - Ngwa Nforbi v Uber Technologies Inc (N.D. Cal.)"
+        " (Sep 23 2026).pdf"
+    )
+    if complaint.is_file():
+        # cover sheet, complaint, [IFP], consent, 3-15, summonses
+        order = [outs[0], complaint] + outs[6:7] + outs[1:6]
+        packet = fitz.open()
+        for part in order:
+            with fitz.open(part) as src:
+                packet.insert_pdf(src)
+        pk = _out("Complete Filing Packet")
+        packet.save(pk, garbage=4, deflate=True)
+        packet.close()
+        outs.append(pk)
     for o in outs:
         print(f"Generated: {o}")
 
