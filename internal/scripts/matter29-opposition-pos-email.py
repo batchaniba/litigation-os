@@ -46,6 +46,15 @@ SCRATCH_OUT = Path(
     "Proof-of-Service-by-Email-Opposition-to-Amazon-MTD-Sep23.pdf"
 )
 
+DOCS = ROOT / "public/documents/matter-29"
+OPP_PLEADING = DOCS / "Opposition to Amazon MTD - Pleading Paper (Sep 22 2026).pdf"
+PROPOSED_ORDER = DOCS / "Proposed Order - Amazon MTD (Sep 22 2026).pdf"
+OUT_UNIFIED = DOCS / (
+    "Opposition to Amazon MTD with Proposed Order and POS - Unified "
+    "(N.D. Cal. 4-26-cv-09249-ASK) (Sep 22 2026).pdf"
+)
+UNIFIED_SCRATCH_OUT = SCRATCH_OUT.with_name("Opposition-Proposed-Order-POS-Unified-Sep22.pdf")
+
 CASE = "4:26-cv-09249-ASK"
 PLAINTIFF = "BRENDAN NGEHSI NEWANFORBI"
 SERVER = "Brendan Ngehsi Newanforbi"
@@ -87,12 +96,37 @@ def pos_fields() -> ProofOfServiceFields:
     )
 
 
+def merge_packet(pos_path: Path) -> None:
+    """Opposition, then [Proposed] Order, then this POS, as one filing packet.
+    Run matter29-opposition-amazon-mtd.py first so the first two exist."""
+    try:
+        import pymupdf
+    except ImportError:
+        print("pymupdf unavailable - skipped unified packet")
+        return
+    missing = [p for p in (OPP_PLEADING, PROPOSED_ORDER) if not p.is_file()]
+    if missing:
+        print(f"Missing {missing} - run matter29-opposition-amazon-mtd.py; skipped merge")
+        return
+    merged = pymupdf.open()
+    for src in (OPP_PLEADING, PROPOSED_ORDER, pos_path):
+        doc = pymupdf.open(src)
+        merged.insert_pdf(doc)
+        doc.close()
+    for out in (OUT_UNIFIED, UNIFIED_SCRATCH_OUT):
+        out.parent.mkdir(parents=True, exist_ok=True)
+        merged.save(out)
+        print(f"Wrote {out} ({merged.page_count} pages)")
+    merged.close()
+
+
 def main() -> None:
     if not Path(SIGNATURE_PATH).is_file():
         raise SystemExit(f"Missing signature: {SIGNATURE_PATH}")
     for out in (OUT, SCRATCH_OUT):
         path = build_proof_of_service(out, pos_fields())
         print(f"Wrote {path} ({path.stat().st_size} bytes)")
+    merge_packet(OUT)
 
 
 if __name__ == "__main__":
