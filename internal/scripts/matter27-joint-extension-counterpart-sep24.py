@@ -19,8 +19,10 @@ redlined settlement agreement's payment window. RK's date is recited as
 unchanged. Randstad's current date was set by the September 17, 2026 order,
 so a proposed order is lodged; it is no broader than the stipulation.
 
-Rendered UNSIGNED. Plaintiff signs his own paper only after Randstad
-returns the settlement agreement signed. Set
+Rendered UNSIGNED. If Plaintiff signs before Randstad countersigns the
+settlement agreement, the counterpart is delivered in escrow: ¶ 7 lets
+Randstad file only after executing the agreement, and filing is its
+representation that it has. Set
 SIGNED = True only after he says it goes.
 
   python3 internal/scripts/matter27-joint-extension-counterpart-sep24.py
@@ -122,8 +124,10 @@ STIP_PARAS = (
     "stipulation continues the response deadline only. It is not a stay of "
     "discovery.",
     "7. As consideration for this single extension, Randstad shall file this "
-    "stipulation and the proposed order lodged with it within one court day "
-    "after receiving Plaintiff's signed counterpart. Randstad shall not file a declaration under Code of Civil "
+    "stipulation and the proposed order lodged with it on or before September "
+    "25, 2026, and only after Randstad has executed the parties' written "
+    "settlement agreement. Randstad's filing of this stipulation constitutes "
+    "its representation that it has done so. Randstad shall not file a declaration under Code of Civil "
     "Procedure section 430.41, subdivision (a)(2), or section 435.5, "
     "subdivision (a)(2), to obtain an automatic extension of the October 14, "
     "2026 date, and shall not seek any further extension of its time to "
