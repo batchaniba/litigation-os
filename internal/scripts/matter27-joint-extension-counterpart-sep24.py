@@ -114,7 +114,7 @@ STIP_PARAS = (
     "subdivision (a)(2); any further extension requires a court order on a "
     "showing of good cause.",
     "6. This is a single extension. It does not alter any other date set by "
-    "Court order, including the December 17, 2026 case management conference. "
+    "Court order, including the January 12, 2027 initial case management conference. "
     "No further extension is implied. Any additional extension would need to "
     "be agreed separately, in writing, and presented to the Court. It does not "
     "waive any defense, objection, or right of any party, including "
@@ -148,7 +148,7 @@ ORDER_PARAS = (
     "Logistics Group, Inc.'s deadline remains October 14, 2026, and is "
     "unchanged by this Order.",
     "3. This is a single extension. It does not alter any other date set by "
-    "Court order, including the December 17, 2026 case management conference. "
+    "Court order, including the January 12, 2027 initial case management conference. "
     "No further extension is implied. Randstad US, LLC shall not obtain any "
     "further extension, including by declaration under Code of Civil "
     "Procedure section 430.41, subdivision (a)(2), or section 435.5, "

@@ -24,14 +24,14 @@
   },
   {
     "id": "27-deadline-3",
-    "date": "2026-12-17",
-    "date_label": "Dec. 17, 2026",
+    "date": "2027-01-12",
+    "time": "15:00",
+    "tz": "America/Los_Angeles",
     "kind": "deadline",
     "status": "open",
-    "source_dkt": null,
-    "title": "Case Management Conference, Newanforbi v. Randstad US LLC and RK Logistics Group, Inc. (Matter 27) — Hon. Thomas Weathers, Dept. 20, Rene C. Davidson…",
-    "actor": "you",
-    "source": "/documents/matter-27/Notice of Amount of Punitive Damages Sought (CCP 425.115) - Randstad US LLC (Aug 4 2026).pdf"
+    "source": "/documents/matter-27/Notice of Case Rescheduling - Initial CMC Moved to Jan 12 2027 (Sep 22 2026).pdf",
+    "title": "Initial Case Management Conference, Newanforbi v. Randstad US, LLC et al. (26CV199902) — 3:00 PM, Dept. 20, Hon. Thomas Weathers, Rene C. Davidson Courthouse. Rescheduled from Dec. 17, 2026 by the clerk's Notice of Case Rescheduling or Relocation dated Sep. 22, 2026 (D. Kinney).",
+    "actor": "you"
   },
   {
     "id": "27-deadline-4",
