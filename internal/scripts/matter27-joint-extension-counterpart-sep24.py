@@ -108,7 +108,10 @@ STIP_PARAS = (
     "Randstad US, LLC only, through and including October 14, 2026.",
     "5. This extension does not apply to Defendant The RK Logistics Group, "
     "Inc. or to any other party. RK Logistics' deadline remains October 14, "
-    "2026, and is unchanged by this stipulation.",
+    "2026, and is unchanged by this stipulation. RK Logistics has used the "
+    "automatic extension under Code of Civil Procedure section 430.41, "
+    "subdivision (a)(2); any further extension requires a court order on a "
+    "showing of good cause.",
     "6. This is a single extension. It does not alter any other date set by "
     "Court order, including the December 17, 2026 case management conference. "
     "No further extension is implied. Any additional extension would need to "
@@ -117,10 +120,13 @@ STIP_PARAS = (
     "Plaintiff's right to seek default if no timely response is filed. This "
     "stipulation continues the response deadline only. It is not a stay of "
     "discovery.",
-    "7. As consideration for this single extension, Randstad shall promptly "
-    "file this stipulation and the proposed order lodged with it, and shall "
-    "not seek any further extension of its time to respond except by order of "
-    "the Court.",
+    "7. As consideration for this single extension, Randstad shall file this "
+    "stipulation and the proposed order lodged with it on or before September "
+    "25, 2026. Randstad shall not file a declaration under Code of Civil "
+    "Procedure section 430.41, subdivision (a)(2), or section 435.5, "
+    "subdivision (a)(2), to obtain an automatic extension of the October 14, "
+    "2026 date, and shall not seek any further extension of its time to "
+    "respond except by order of the Court.",
     "8. This stipulation is made under California Rules of Court, rule "
     "3.110(d), and Code of Civil Procedure section 1054. Because Randstad's "
     "current deadline was set by the Court's September 17, 2026 order, a "
@@ -142,7 +148,10 @@ ORDER_PARAS = (
     "unchanged by this Order.",
     "3. This is a single extension. It does not alter any other date set by "
     "Court order, including the December 17, 2026 case management conference. "
-    "No further extension is implied.",
+    "No further extension is implied. Randstad US, LLC shall not obtain any "
+    "further extension, including by declaration under Code of Civil "
+    "Procedure section 430.41, subdivision (a)(2), or section 435.5, "
+    "subdivision (a)(2), except by further order of the Court.",
     "4. Nothing in the stipulation or this Order waives any defense, "
     "objection, or right of any party, including Plaintiff's right to seek "
     "default if no timely response is filed.",
