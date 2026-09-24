@@ -23,7 +23,7 @@ Rendered UNSIGNED. If Plaintiff signs before Randstad countersigns the
 settlement agreement, the counterpart is delivered in escrow: ¶ 7 lets
 Randstad file only after executing the agreement, and filing is its
 representation that it has. Set
-SIGNED = True only after he says it goes.
+STIP_SIGNED=1 only after he says it goes.
 
   python3 internal/scripts/matter27-joint-extension-counterpart-sep24.py
 """
@@ -41,33 +41,34 @@ from pleading_paper import CONTENT_LEFT, PleadingPaper  # noqa: E402
 
 ROOT = SCRIPT_DIR.parent
 MATTER27 = ROOT / "public/documents/matter-27"
+TAG = ", Signed" if os.environ.get("STIP_SIGNED") == "1" else ""
 OUT_STIP = MATTER27 / (
     "Stipulation to Extend Time for Randstad to Respond "
-    "(Plaintiff Counterpart, Sep 24 2026).pdf"
+    f"(Plaintiff Counterpart{TAG}, Sep 24 2026).pdf"
 )
 OUT_STIP_DOCX = MATTER27 / (
     "Stipulation to Extend Time for Randstad to Respond "
-    "(Plaintiff Counterpart, Sep 24 2026).docx"
+    f"(Plaintiff Counterpart{TAG}, Sep 24 2026).docx"
 )
 OUT_ORDER = MATTER27 / (
     "[Proposed] Order Extending Time for Randstad to Respond "
-    "(Plaintiff Counterpart, Sep 24 2026).pdf"
+    f"(Plaintiff Counterpart{TAG}, Sep 24 2026).pdf"
 )
 OUT_ORDER_DOCX = MATTER27 / (
     "[Proposed] Order Extending Time for Randstad to Respond "
-    "(Plaintiff Counterpart, Sep 24 2026).docx"
+    f"(Plaintiff Counterpart{TAG}, Sep 24 2026).docx"
 )
 OUT_COMBINED = MATTER27 / (
     "Stipulation and Proposed Order Extending Time for Randstad to Respond "
-    "(Plaintiff Counterpart, Sep 24 2026).pdf"
+    f"(Plaintiff Counterpart{TAG}, Sep 24 2026).pdf"
 )
 OUT_COMBINED_DOCX = MATTER27 / (
     "Stipulation and Proposed Order Extending Time for Randstad to Respond "
-    "(Plaintiff Counterpart, Sep 24 2026).docx"
+    f"(Plaintiff Counterpart{TAG}, Sep 24 2026).docx"
 )
 
-# Unsigned until Plaintiff approves. Then set SIGNED = True and EXEC_DATE.
-SIGNED = False
+# Unsigned until Plaintiff approves; STIP_SIGNED=1 renders his /s/ copy.
+SIGNED = os.environ.get("STIP_SIGNED") == "1"
 EXEC_DATE = "September 24, 2026" if SIGNED else "September ___, 2026"
 CASE_NO = "26CV199902"
 STIP_FOOTER = (
