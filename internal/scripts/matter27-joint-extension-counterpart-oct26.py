@@ -14,8 +14,9 @@ the counterpart extends both defendants to October 26 — no later.
 
 Filing is conditioned on Randstad executing the settlement agreement; filing
 is Randstad's representation that it has. Neither defendant may take an
-automatic extension (§ 430.41(a)(2) / § 435.5(a)(2)). Tod C. Gurney signs
-for RK Logistics.
+automatic extension (§ 430.41(a)(2) / § 435.5(a)(2)). Only Plaintiff and
+Randstad sign; Plaintiff consents to the same date for RK Logistics, which
+need not sign or file anything.
 
 Rendered UNSIGNED unless STIP_SIGNED=1, set only after Plaintiff says it goes.
 
@@ -38,27 +39,27 @@ MATTER27 = ROOT / "public/documents/matter-27"
 TAG = ", Signed" if os.environ.get("STIP_SIGNED") == "1" else ""
 OUT_STIP = MATTER27 / (
     "Stipulation to Extend Time for Defendants to Respond "
-    f"(Plaintiff Counterpart{TAG}, Oct 26 Joint, Sep 24 2026).pdf"
+    f"(Plaintiff Counterpart{TAG}, Oct 26, Sep 24 2026).pdf"
 )
 OUT_STIP_DOCX = MATTER27 / (
     "Stipulation to Extend Time for Defendants to Respond "
-    f"(Plaintiff Counterpart{TAG}, Oct 26 Joint, Sep 24 2026).docx"
+    f"(Plaintiff Counterpart{TAG}, Oct 26, Sep 24 2026).docx"
 )
 OUT_ORDER = MATTER27 / (
     "[Proposed] Order Extending Time for Defendants to Respond "
-    f"(Plaintiff Counterpart{TAG}, Oct 26 Joint, Sep 24 2026).pdf"
+    f"(Plaintiff Counterpart{TAG}, Oct 26, Sep 24 2026).pdf"
 )
 OUT_ORDER_DOCX = MATTER27 / (
     "[Proposed] Order Extending Time for Defendants to Respond "
-    f"(Plaintiff Counterpart{TAG}, Oct 26 Joint, Sep 24 2026).docx"
+    f"(Plaintiff Counterpart{TAG}, Oct 26, Sep 24 2026).docx"
 )
 OUT_COMBINED = MATTER27 / (
     "Stipulation and Proposed Order Extending Time for Defendants to Respond "
-    f"(Plaintiff Counterpart{TAG}, Oct 26 Joint, Sep 24 2026).pdf"
+    f"(Plaintiff Counterpart{TAG}, Oct 26, Sep 24 2026).pdf"
 )
 OUT_COMBINED_DOCX = MATTER27 / (
     "Stipulation and Proposed Order Extending Time for Defendants to Respond "
-    f"(Plaintiff Counterpart{TAG}, Oct 26 Joint, Sep 24 2026).docx"
+    f"(Plaintiff Counterpart{TAG}, Oct 26, Sep 24 2026).docx"
 )
 
 # Unsigned until Plaintiff approves; STIP_SIGNED=1 renders his /s/ copy.
@@ -66,7 +67,7 @@ SIGNED = os.environ.get("STIP_SIGNED") == "1"
 EXEC_DATE = "September 24, 2026" if SIGNED else "September ___, 2026"
 CASE_NO = "26CV199902"
 STIP_FOOTER = (
-    "JOINT STIPULATION TO EXTEND TIME -- NEWANFORBI v. RANDSTAD US, LLC "
+    "STIPULATION TO EXTEND TIME -- NEWANFORBI v. RANDSTAD US, LLC "
     f"(Alameda {CASE_NO})"
 )
 ORDER_FOOTER = (
@@ -101,9 +102,11 @@ STIP_PARAS = (
     "documented and paid. This stipulation is made only to allow that to "
     "occur. It is not a settlement, a release, or a dismissal, and it does not "
     "alter any term of the settlement.",
-    "4. The parties agree to extend the time for Randstad US, LLC and The RK "
-    "Logistics Group, Inc. to answer, demur, or otherwise respond to the "
-    "Complaint through and including October 26, 2026.",
+    "4. The parties agree to extend the time for Randstad US, LLC to answer, "
+    "demur, or otherwise respond to the Complaint through and including "
+    "October 26, 2026. Plaintiff consents to the same extension for The RK "
+    "Logistics Group, Inc., through and including October 26, 2026. RK "
+    "Logistics is not required to sign or file this stipulation.",
     "5. This is a single extension. It does not alter any other date set by "
     "Court order, including the January 12, 2027 initial case management "
     "conference. No further extension is implied. Neither Defendant shall file "
@@ -114,11 +117,10 @@ STIP_PARAS = (
     "defense, objection, or right of any party, including Plaintiff's right to "
     "seek default if no timely response is filed. It is not a stay of "
     "discovery.",
-    "6. Defendants shall file this stipulation and the proposed order lodged "
+    "6. Randstad shall file this stipulation and the proposed order lodged "
     "with it on or before September 25, 2026, and only after Randstad has "
-    "executed the parties' written settlement agreement. Defendants' filing of "
-    "this stipulation constitutes their representation that Randstad has done "
-    "so.",
+    "executed the parties' written settlement agreement. Randstad's filing of "
+    "this stipulation constitutes its representation that it has done so.",
     "7. This stipulation is made under California Rules of Court, rule "
     "3.110(d), and Code of Civil Procedure sections 430.41, subdivision (a)(2), "
     "and 1054. Because Randstad's current deadline was set by the Court's "
@@ -129,10 +131,10 @@ STIP_PARAS = (
 )
 
 ORDER_PARAS = (
-    "The Court has considered the Joint Stipulation of Plaintiff Brendan "
-    "Ngehsi Newanforbi and Defendants Randstad US, LLC and The RK Logistics "
-    "Group, Inc. to extend Defendants' time to respond to the Complaint. IT IS "
-    "ORDERED:",
+    "The Court has considered the Stipulation of Plaintiff Brendan Ngehsi "
+    "Newanforbi and Defendant Randstad US, LLC, with Plaintiff's consent as to "
+    "Defendant The RK Logistics Group, Inc., to extend Defendants' time to "
+    "respond to the Complaint. IT IS ORDERED:",
     "1. The time for Defendants Randstad US, LLC and The RK Logistics Group, "
     "Inc. to answer, demur, or otherwise respond to the Complaint is extended "
     "through and including October 26, 2026.",
@@ -202,15 +204,6 @@ def _counsel_sign_block(d: PleadingPaper) -> None:
     d.write_line("Kabat Chapman & Ozmer LLP", right=True, right_margin_offset=20)
     d.write_line("Attorneys for Defendant", right=True, right_margin_offset=20)
     d.write_line("Randstad US, LLC", right=True, right_margin_offset=20)
-    d.blank_line()
-    d.ensure_space(7)
-    d.write_line("Dated: ________________")
-    d.blank_line()
-    d.write_line(SIG_LINE, right=True, right_margin_offset=20)
-    d.write_line("TOD C. GURNEY (SBN 199813)", bold=True, right=True, right_margin_offset=20)
-    d.write_line("Garcia & Gurney, ALC", right=True, right_margin_offset=20)
-    d.write_line("Attorneys for Defendant", right=True, right_margin_offset=20)
-    d.write_line("The RK Logistics Group, Inc.", right=True, right_margin_offset=20)
 
 
 def build_stipulation(path: Path) -> None:
@@ -222,9 +215,9 @@ def build_stipulation(path: Path) -> None:
         [
             (f"Case No. {CASE_NO}", False, False),
             ("", False, False),
-            ("JOINT STIPULATION TO EXTEND", True, False),
-            ("TIME FOR DEFENDANTS", True, False),
-            ("TO RESPOND TO THE COMPLAINT", True, False),
+            ("STIPULATION TO EXTEND TIME", True, False),
+            ("FOR DEFENDANTS TO RESPOND", True, False),
+            ("TO THE COMPLAINT", True, False),
             ("[Cal. Rules of Court, rule 3.110(d);", True, False),
             ("Code Civ. Proc., § 1054]", True, False),
             ("", False, False),
@@ -233,13 +226,13 @@ def build_stipulation(path: Path) -> None:
             ("[Proposed] Order lodged concurrently", False, False),
         ],
     )
-    d.write_line("JOINT STIPULATION TO EXTEND TIME", bold=True, center=True)
+    d.write_line("STIPULATION TO EXTEND TIME", bold=True, center=True)
     d.write_line("(Randstad US, LLC and The RK Logistics Group, Inc.)", bold=True, center=True)
     d.blank_line()
     d.write_wrapped(
         "Plaintiff Brendan Ngehsi Newanforbi, appearing in propria persona, and "
-        "Defendants Randstad US, LLC and The RK Logistics Group, Inc., through "
-        "their respective counsel of record, stipulate as follows:",
+        "Defendant Randstad US, LLC, through its counsel of record, stipulate "
+        "as follows:",
         first_indent=0,
     )
     d.blank_line()
@@ -400,7 +393,7 @@ def _docx_caption(doc, add_para, set_run, Pt, right_lines):
 
 def build_stip_docx(path: Path) -> None:
     doc, add_para, set_run, Inches, Pt, _align = _docx_common(
-        path, f"Case No. {CASE_NO}  —  JOINT STIPULATION TO EXTEND TIME (Defendants)"
+        path, f"Case No. {CASE_NO}  —  STIPULATION TO EXTEND TIME (Defendants)"
     )
     _docx_caption(
         doc,
@@ -410,9 +403,9 @@ def build_stip_docx(path: Path) -> None:
         [
             (f"Case No. {CASE_NO}", False),
             ("", False),
-            ("JOINT STIPULATION TO EXTEND", True),
-            ("TIME FOR DEFENDANTS", True),
-            ("TO RESPOND TO THE COMPLAINT", True),
+            ("STIPULATION TO EXTEND TIME", True),
+            ("FOR DEFENDANTS TO RESPOND", True),
+            ("TO THE COMPLAINT", True),
             ("[Cal. Rules of Court, rule 3.110(d);", True),
             ("Code Civ. Proc., § 1054]", True),
             ("", False),
@@ -420,14 +413,14 @@ def build_stip_docx(path: Path) -> None:
             ("Dept. 20", False),
         ],
     )
-    add_para(doc, "JOINT STIPULATION TO EXTEND TIME", bold=True, center=True)
+    add_para(doc, "STIPULATION TO EXTEND TIME", bold=True, center=True)
     add_para(doc, "(Randstad US, LLC and The RK Logistics Group, Inc.)", bold=True, center=True)
     add_para(doc, "")
     add_para(
         doc,
         "Plaintiff Brendan Ngehsi Newanforbi, appearing in propria persona, and "
-        "Defendants Randstad US, LLC and The RK Logistics Group, Inc., through "
-        "their respective counsel of record, stipulate as follows:",
+        "Defendant Randstad US, LLC, through its counsel of record, stipulate "
+        "as follows:",
         double=True,
     )
     for text in STIP_PARAS:
@@ -448,14 +441,6 @@ def build_stip_docx(path: Path) -> None:
     add_para(doc, "Kabat Chapman & Ozmer LLP", right=True)
     add_para(doc, "Attorneys for Defendant", right=True)
     add_para(doc, "Randstad US, LLC", right=True)
-    add_para(doc, "")
-    add_para(doc, "Dated: ________________")
-    add_para(doc, "")
-    add_para(doc, SIG_LINE, right=True)
-    add_para(doc, "TOD C. GURNEY (SBN 199813)", bold=True, right=True)
-    add_para(doc, "Garcia & Gurney, ALC", right=True)
-    add_para(doc, "Attorneys for Defendant", right=True)
-    add_para(doc, "The RK Logistics Group, Inc.", right=True)
     doc.save(str(path))
 
 
