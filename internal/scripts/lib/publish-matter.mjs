@@ -28,6 +28,9 @@ export const COURT_FACING_KINDS = new Set([
 const COURT_TITLE_RE =
   /\b(hearing|case management conference|\bcmc\b|status conference|pretrial scheduling|trial|oral argument|order to show cause|\bosc\b)\b/i;
 const DEMAND_OR_MONEY_RE = /\$[\d,.]+|\bfinal demand\b|\bdemand expir|\bsettlement posture\b/i;
+/** Settlement mechanics that must stay internal even without a dollar sign. */
+export const SETTLEMENT_TERMS_RE =
+  /\bsettlement (?:sum|payments?|amount|checks?)\b|\bagreement in principle\b|\bsettled for\b/i;
 
 /** Keys that must never appear on a published matter object (any depth except clock.status). */
 export const PUBLISH_DENIED_KEYS = new Set([
@@ -98,12 +101,14 @@ export function isPdfPath(docPath) {
 export function isCourtFacingClock(clock) {
   if (!clock || typeof clock !== "object") return false;
   if (!clock.date) return false;
+  if (clock.private === true) return false;
   const kind = String(clock.kind ?? "").toLowerCase();
   if (COURT_FACING_KINDS.has(kind)) return true;
   const dkt = clock.source_dkt;
   if (dkt != null && Number(dkt) > 0) return true;
   const title = String(clock.title ?? "");
   if (DEMAND_OR_MONEY_RE.test(title)) return false;
+  if (SETTLEMENT_TERMS_RE.test(title)) return false;
   if (COURT_TITLE_RE.test(title)) return true;
   if (clock.actor === "opposing" && /\b(response|answer|plead)\b/i.test(title)) return true;
   return false;
@@ -142,6 +147,7 @@ function publishStatusLabel(label) {
   if (typeof label !== "string" || !label.trim()) return undefined;
   const cleaned = sanitizePublicText(label.trim());
   if (DEMAND_OR_MONEY_RE.test(cleaned)) return undefined;
+  if (SETTLEMENT_TERMS_RE.test(cleaned)) return undefined;
   return cleaned;
 }
 
@@ -335,7 +341,26 @@ const LEAK_VALUE_RES = [
   { id: "key_facts_field", re: /"key_facts"/ },
   { id: "pilot_settlement_figure", re: /\$35,000/ },
   { id: "final_demand", re: /final demand/i },
+  ...settlementLeakPatterns(),
 ];
+
+/** Patterns for settlement figures and terms. Shared with the bundle/README scan. */
+export function settlementLeakPatterns() {
+  return [
+    { id: "settlement_dollar_figure", re: /\bsettle\w*[^"$\n.;]{0,80}\$\s?\d[\d,]{2,}|\$\s?\d[\d,]{2,}(?:\.\d\d)?[^"$\n.;]{0,80}\bsettle/i },
+    { id: "settlement_terms", re: SETTLEMENT_TERMS_RE },
+    { id: "settlement_amount_field", re: /type:\s*["']settlement["'][\s\S]{0,300}?\bamount:\s*[1-9]/ },
+    { id: "demand_amount_field", re: /\bdemand_amount:\s*[1-9]/ },
+  ];
+}
+
+/** Settlement-only scan for files outside the publish projection (bundled data, README). */
+export function collectSettlementLeakIssues(label, text) {
+  const hay = String(text ?? "");
+  return settlementLeakPatterns()
+    .filter(({ re }) => re.test(hay))
+    .map(({ id }) => `${label}: settlement figure or term (${id}) in a public surface`);
+}
 
 function distinctiveSnippet(text) {
   if (typeof text !== "string") return null;
