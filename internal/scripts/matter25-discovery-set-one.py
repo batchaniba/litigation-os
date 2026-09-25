@@ -434,30 +434,6 @@ def build_notice(args, tmp):
     finish(d, body, final, "Rule 45(a)(4) Notice of Subpoena to First Advantage, with Subpoena and Attachments", args, tmp)
 
 
-def build_amended_pos(args, tmp):
-    """Amended proof for Sets One served Sep. 25, 2026: the original proofs
-    recited Stockton; the envelopes were deposited in San Jose."""
-    final = OUT_DIR / "06 - Amended Proof of Service - Discovery Set One (San Jose).pdf"
-    fields = ProofOfServiceFields(
-        plaintiff_line="BRENDAN NGEHSI NEWANFORBI",
-        plaintiff_role="Plaintiff",
-        defendant_lines=["FEDERAL EXPRESS CORPORATION; and", "DOES 1 through 10, inclusive"],
-        defendant_role="Defendants",
-        case_number=CASE_NO,
-        district_line=DISTRICT_EDCAL,
-        title="AMENDED PROOF OF SERVICE",
-        service_date=args.date,
-        document_title="Plaintiff's First Sets of Interrogatories, Requests for Admission, and Requests for Production to Defendant FedEx (Set One)",
-        mailing_location=args.mailed_from,
-        recipients=list(SERVICE_ADDRESSEES),
-        server_name="Brendan Ngehsi Newanforbi",
-        stamp_signature=args.stamp_signature,
-        signature_on_second_page=True,
-    )
-    build_proof_of_service(final, fields)
-    print(f"wrote {final.relative_to(ROOT)}")
-
-
 # ----------------------------------------------------------------- subpoena issuance
 
 FORMS_DIR = OUT_DIR / "forms"
@@ -604,7 +580,6 @@ def main() -> None:
     ap.add_argument("--mailed-from", default="Stockton, California")
     ap.add_argument("--by-email", action="store_true", help="proofs recite email service (only with written consent)")
     ap.add_argument("--stamp-signature", action="store_true", help="apply the canonical signature stamp")
-    ap.add_argument("--amended-pos", action="store_true", help="also build 06, the amended proof of service for Sets One")
     ap.add_argument("--subpoena-compliance", default="11/02/2026 10:00 a.m. ET", help="AO 88B production date/time")
     ap.add_argument("--set-two", action="store_true", help="also build 11-13, the held Set Two")
     args = ap.parse_args()
@@ -615,8 +590,6 @@ def main() -> None:
         tmp = Path(t)
         for fn in (build_rogs, build_rfas, build_rfps, build_attachments, build_notice):
             fn(args, tmp)
-        if args.amended_pos:
-            build_amended_pos(args, tmp)
         build_clerk_letter(args, tmp)
         build_ao88b(args, tmp)
         if args.set_two:

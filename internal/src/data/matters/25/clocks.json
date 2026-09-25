@@ -27,8 +27,8 @@
     "date": "2026-10-29",
     "tz": "America/Los_Angeles",
     "kind": "deadline",
-    "status": "open",
-    "title": "FedEx responses due to Plaintiff's Interrogatories, RFAs, and RFPs (Set One), served by mail from San Jose Sep. 25, 2026: 30 days = Sun. Oct. 25 -> Mon. Oct. 26 (Rule 6(a)(1)(C)) + 3 mail days (Rule 6(d)) = Thu. Oct. 29, 2026. RFAs not answered by then are deemed admitted (Rule 36(a)(3)). If FedEx relies on written email-service consent, it may treat Oct. 26 as its date; the later mail date controls here.",
+    "status": "contingent",
+    "title": "CONTINGENT — FedEx responses to Plaintiff's Interrogatories, RFAs, and RFPs (Set One). Not yet served by mail as of Sep. 25, 2026. Recompute on service: 30 days after service (Rule 6(a)), + 3 days if served by mail (Rule 6(d)). Oct. 29 is a placeholder (mail on Sep. 25). RFAs are deemed admitted if not answered in time (Rule 36(a)(3)).",
     "actor": "you"
   }
 ]
