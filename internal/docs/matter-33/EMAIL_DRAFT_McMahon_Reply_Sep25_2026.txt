@@ -14,7 +14,7 @@ I replied on September 22 and declined. Given your injury, I have reconsidered. 
 - The November 12, 2026 hearing and case management conference, the October 22 ADR and Rule 26(f) deadline, and the November 5 disclosures and joint statement deadline are unchanged.
 - This is a single extension. No further extension is implied, and no party waives any right, defense, or objection.
 
-Because this changes the briefing on a noticed motion, I understand it needs a Civil L.R. 6-2 stipulated request and proposed order, with your declaration on the reason. I have signed the attached stipulation and proposed order myself. Please file the PDF, add the declaration Civil L.R. 6-2(a) requires, and send me the conformed copy. I do not authorize you or anyone at your office to apply, reproduce, or file my signature on any other version. Please leave my signature block blank on any version you prepare.
+Because this changes the briefing on a noticed motion, I understand it needs a Civil L.R. 6-2 stipulated request and proposed order, with your declaration on the reason. Please prepare a stipulation and proposed order on these terms and circulate it to me for review and signature. I will sign it myself once I have reviewed the final version. Please do not apply, reproduce, or file my signature, and leave my signature block blank. Once it is signed, please file it with your declaration and send me the conformed copy.
 
 2. The difference between the Complaint and the First Amended Complaint
 
@@ -42,14 +42,11 @@ Thank you,
 Brendan Ngwa Nforbi
 Plaintiff, In Propria Persona
 
-Attachment:
-  Stipulated Request to Extend Time for Defendant Gordon to Oppose Motion to Strike (Dkt. 17) and Proposed Order (Plaintiff Counterpart, Sep 25 2026).pdf
-
 ---
 Note to self (do not send until he says it goes):
 - He asked for five days for "DMV" (Sep. 18, 12:54 p.m.). Plaintiff chose three weeks from Sep. 25 instead: through Oct. 16. That is the agreed number; do not go past it. Gordon only unless Plaintiff chooses to add Candelaria; the joint brief question is his call.
 - Tigno is no longer on this matter. McMahon only; no cc.
-- The PDF counterpart still has to be generated from the .md and signed by hand before this goes. Do not send the email without the attachment.
+- Plaintiff chose to have McMahon draft and circulate the stipulation (Sep. 25). No attachment. When his draft arrives, check it line by line against the terms in STIPULATION_COUNTERPART_DMV_Opposition_Extension_Sep25_2026.md before signing: Oct. 16 (not later), Gordon only unless changed, reply Oct. 23, nothing else moves, single extension, rights reserved, no /s/ applied for Plaintiff.
 - The Sep. 30 reply date belongs to Plaintiff; it moves to Oct. 23 only once the Court enters the order.
 - Paragraph 4 offers to meet and confer. It does not concede that Dkt. 17 violated the standing order. Do not add language that does.
 - Paragraph 5: decide before 5:00 p.m. PT today whether to let the $50K offer lapse or extend it. The draft lets it lapse.

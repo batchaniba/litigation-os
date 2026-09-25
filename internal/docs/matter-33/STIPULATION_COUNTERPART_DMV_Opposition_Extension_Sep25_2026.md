@@ -8,7 +8,7 @@ Worked examples (locked terms): `.claude/skills/stipulation-defense/SKILL.md`
 House counterparts: Matter 29 Amazon (Aug. 31, 2026) and Accurate (Sep. 1, 2026); Matter 27 Randstad (Sep. 14, 2026).
 Failure mode: Matter 24 Serrato Dkt. 22 — do not expand their ask.
 
-**Posture:** Plaintiff drafts. McMahon sent no paper. His request (Sep. 18, 12:54 p.m.) was an email: "Please let me know if DMV can have 5 additional days to respond." Plaintiff declined Sep. 22. On Sep. 25 Plaintiff chose to give three weeks from that day instead: through Oct. 16, 2026. That is the agreed number; do not write a later date. Tigno is no longer on this matter; counsel is McMahon only. He signs his own paper. Counsel may not affix his `/s/`.
+**Posture:** On Sep. 25 Plaintiff chose to have McMahon draft and circulate the stipulation for his signature. This file is now the term sheet his draft is checked against, not a paper to send. Do not sign his draft until every term below matches or is better for Plaintiff; if it does not, return this version as the counterpart. McMahon sent no paper yet. His request (Sep. 18, 12:54 p.m.) was an email: "Please let me know if DMV can have 5 additional days to respond." Plaintiff declined Sep. 22. On Sep. 25 Plaintiff chose to give three weeks from that day instead: through Oct. 16, 2026. That is the agreed number; do not write a later date. Tigno is no longer on this matter; counsel is McMahon only. He signs his own paper. Counsel may not affix his `/s/`.
 
 **Clock rule:** Defense clock — the number Plaintiff agreed, three weeks from Sep. 25, and no more: Sep. 23 → **Oct. 16, 2026**. Plaintiff clock — the reply is not compressed; it runs seven days from the extended opposition date (Civil L.R. 7-3(c)): **Oct. 23, 2026**, still 20 days before the Nov. 12 hearing. The Nov. 12 hearing and CMC stay where they are.
 
@@ -105,6 +105,10 @@ United States Magistrate Judge
 `internal/docs/matter-33/EMAIL_DRAFT_McMahon_Reply_Sep25_2026.txt`
 
 ---
+
+## When his draft arrives
+
+Check: Gordon only (unless Plaintiff chose both); through and including Oct. 16, 2026, not later and no "or such later date"; Plaintiff reply Oct. 23, 2026; Nov. 12 hearing/CMC, Oct. 22, and Nov. 5 unchanged; no extension of time to respond to the FAC; single extension; rights and default reserved; no good-cause admission by Plaintiff; no conformed `/s/ Brendan Ngwa Nforbi` and no 5-1(i) attestation for his signature; caption Hon. Lisa J. Cisneros, 3:26-cv-08272-LJC; the proposed order is no broader than the stipulation. Anything off: return this version as the counterpart.
 
 ## If they refuse the counterpart
 
