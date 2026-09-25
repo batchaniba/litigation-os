@@ -1,17 +1,16 @@
 To: William.McMahon@doj.ca.gov
-Cc: fiel.tigno@doj.ca.gov
-Subject: Re: $50K Settlement Offer — Nforbi v. Candelaria et al., No. 3:26-cv-08272-LJC — five-day extension (DMV opposition to Dkt. 17)
+Subject: Re: $50K Settlement Offer — Nforbi v. Candelaria et al., No. 3:26-cv-08272-LJC — extension of DMV opposition to Dkt. 17 through October 16
 
 Mr. McMahon:
 
 Thank you for your email. I hope your recovery is going well.
 
-1. Your request for five additional days
+1. Your request for additional time
 
-I replied on September 22 and declined. Given your injury, I have reconsidered. I will agree to the five days you asked for, on these terms:
+I replied on September 22 and declined. Given your injury, I have reconsidered. You asked for five additional days. So that you have time to recover, I will agree to three weeks from today instead, on these terms:
 
-- Defendant Steve Gordon (DMV), as you requested, may file and serve an opposition to my motion to strike (Dkt. 17) through and including September 28, 2026.
-- My reply is due October 5, 2026, seven days after that date (Civil L.R. 7-3(c)).
+- Defendant Steve Gordon (DMV), as you requested, may file and serve an opposition to my motion to strike (Dkt. 17) through and including October 16, 2026.
+- My reply is due October 23, 2026, seven days after that date (Civil L.R. 7-3(c)).
 - The November 12, 2026 hearing and case management conference, the October 22 ADR and Rule 26(f) deadline, and the November 5 disclosures and joint statement deadline are unchanged.
 - This is a single extension. No further extension is implied, and no party waives any right, defense, or objection.
 
@@ -33,7 +32,7 @@ The Sacramento County Sheriff served Ms. Candelaria and Director Gordon on Augus
 
 4. Meeting and conferring
 
-I am glad to meet and confer about the motion to strike and the answer. I am available by phone or Zoom on Monday, September 28, or Tuesday, September 29, between 10:00 a.m. and 4:00 p.m. Pacific. If those times do not work while you are recovering, Fiel Tigno or another attorney at your office is welcome to take the call.
+I am glad to meet and confer about the motion to strike and the answer. I am available by phone or Zoom any weekday between 10:00 a.m. and 4:00 p.m. Pacific. I would ask that we speak on or before October 9, 2026, a week before your opposition is due. Please let me know a time that works for you while you are recovering.
 
 5. Settlement
 
@@ -48,9 +47,10 @@ Attachment:
 
 ---
 Note to self (do not send until he says it goes):
-- He asked for five days for "DMV" (Sep. 18, 12:54 p.m.). Five days only: Sep. 23 -> Sep. 28. Gordon only unless Plaintiff chooses to add Candelaria; the joint brief question is his call.
+- He asked for five days for "DMV" (Sep. 18, 12:54 p.m.). Plaintiff chose three weeks from Sep. 25 instead: through Oct. 16. That is the agreed number; do not go past it. Gordon only unless Plaintiff chooses to add Candelaria; the joint brief question is his call.
+- Tigno is no longer on this matter. McMahon only; no cc.
 - The PDF counterpart still has to be generated from the .md and signed by hand before this goes. Do not send the email without the attachment.
-- The Sep. 30 reply date belongs to Plaintiff; it moves to Oct. 5 only once the Court enters the order.
+- The Sep. 30 reply date belongs to Plaintiff; it moves to Oct. 23 only once the Court enters the order.
 - Paragraph 4 offers to meet and confer. It does not concede that Dkt. 17 violated the standing order. Do not add language that does.
 - Paragraph 5: decide before 5:00 p.m. PT today whether to let the $50K offer lapse or extend it. The draft lets it lapse.
 - No GitHub or repo URL in the email or the attachment.
