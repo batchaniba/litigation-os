@@ -38,6 +38,9 @@ Discovery opens when the Rule 26(f) conference ends (Fed. R. Civ. P. 26(d)(1)).
 
 ## Rule 45 subpoena to First Advantage (takes a few extra days)
 
+**Ready-made (from PR #936, adapted):** `07 - Request to Clerk...` (signed letter) and `08 - Proposed AO 88B...`, filled on the official Rev. 02/14 form (blank copy in `forms/`), left unsigned for the Clerk. Mail the Clerk: 07 + 08 + doc 04 + a self-addressed stamped envelope. The compliance date defaults to **Nov. 2, 2026, 10:00 a.m. ET**. If the Clerk is slow, rebuild with `--subpoena-compliance "MM/DD/2026 10:00 a.m. ET"` so First Advantage gets at least 14 days after service. The place of compliance is First Advantage's Atlanta office (within 100 miles of where it does business), with mail/email production allowed. That avoids a Rule 45(c)(2)(A) objection.
+
+
 A party without a lawyer cannot issue a subpoena. The clerk must (Rule 45(a)(3)).
 
 1. **Get a signed blank AO 88B** ("Subpoena to Produce Documents, Information, or Objects…") from the E.D. Cal. clerk, Sacramento: Robert T. Matsui U.S. Courthouse, 501 I Street. Ask in person or by mail with a short request letter (confirm the room number and procedure with the clerk's office).
@@ -53,9 +56,20 @@ A party without a lawyer cannot issue a subpoena. The clerk must (Rule 45(a)(3))
 6. **Identifiers:** never put your DOB or SSN in anything to Kray. If First Advantage needs them to locate your file, send them only to First Advantage, separately.
 7. **If First Advantage objects or asks for a protective order,** don't argue by email. Meet and confer by phone, then use Judge Riordan's informal two-page letter procedure if needed.
 
+## Set Two (HOLD, docs 11–13)
+
+Drafted from the best of PR #936, not served:
+- **Interrogatories 19–20.** Did you give the same answers on the applications where FedEx hired you? Who accessed the report? These use the last interrogatories under the 25 limit.
+- **RFAs 27–33.** FedEx never asked you to explain; no pre-Mar. 19, 2025 document says the answer alone disqualified you; FedEx first raised misrepresentation after suit; no law barred hiring you; no unaccompanied work with minors (statutory phrasing); First Advantage warned FedEx about registry use; the job was filled.
+- **RFPs 26–33.** Native application with audit fields, report-access logs, misrepresentation policy, discovery-date documents, prior-answer comparisons, First Advantage warnings, the replacement hire, insurance.
+
+Suggested timing: serve after the Oct. 8 conference and FedEx's initial disclosures, or sooner if you want the answers before the settlement conference. Rebuild with `--set-two --date "<service date>"` and rename out of HOLD when you serve.
+
+**Left out of #936 on purpose:** its Attachment A printed your date of birth (served on FedEx and saved in the repo), its blank form lived under `internal/public/documents/` (the published tree), and its RFA on the PC 220(a)(1) conviction feeds the § 432.7 argument.
+
 ## Numbers
 - Interrogatories: 18. Counting discrete subparts (Nos. 2, 4, and 17), about 22–23, still under the 25 limit (Rule 33(a)(1)). Only 2–3 remain for a second set, so spend them carefully.
-- Requests for admission: 26. Requests for production: 25. Subpoena requests: 9.
+- Requests for admission: 26. Requests for production: 25. Subpoena requests: 13 (added from #936: search terms and chain of transmission, FedEx-user audit logs, manual-review and reinvestigation records, registry-use warnings given to FedEx, First Advantage handlers).
 - Merged from PR #935: First Advantage account/search IDs, litigation hold, the § 290.46(j)(2)(E) contention interrogatory, jury-demand RFAs, prior-file RFA, Fair Chance Act and Workday in the RFPs, notice drafts and distribution lists, pricing redaction, the registered agent, the cc, the memorial email, and the 48-hour hold rule. Deliberately left out: #935's RFA on the PC 220(a)(1) conviction (it feeds the Labor Code § 432.7 argument), its pure-law RFAs (Rule 36 doesn't allow them), and its magistrate-consent interrogatory (the docket answers it).
 
 ## Reminder
