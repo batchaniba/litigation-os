@@ -43,6 +43,7 @@ Cap the first fetch, not the case. Numbers live in `GRAPH_LIMITS` (`assembleMatt
 ## Standing locks
 
 - Actual stipulations / extensions / stays: read `internal/docs/STIPULATION_DEFENSE.md`. Plaintiff-first. Do not import that voice into ordinary Plaintiff papers.
+- Settlement demands, counters, and calls: read `internal/docs/settlement/SETTLEMENT_REANCHOR_MEMO.md` first. No move without a defense number; write the walk-away before sending.
 - Email close after the valediction:
 
 ```
