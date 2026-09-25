@@ -1,6 +1,6 @@
 {
   "generated": true,
-  "today": "2026-09-24",
+  "today": "2026-09-25",
   "matters": [
     {
       "number": 1,
@@ -879,15 +879,15 @@
       "proceeding": "state_civil",
       "phase": "responsive_deadline",
       "next_clock": {
-        "id": "27-deadline-4",
-        "date": "2026-09-25",
+        "id": "27-deadline-5",
+        "date": "2026-10-09",
         "kind": "deadline",
         "status": "open",
-        "title": "Randstad US, LLC to file and serve its response to the Complaint — per Stipulation to Set Aside and Vacate Entry of Default, entered Sep. 17, 2026 (Newanforbi v. Randstad US, LLC et al., 26CV199902)",
+        "title": "WATCH — Randstad settlement payment due: 14 calendar days after the Sep. 25, 2026 Effective Date. Checks by tracked overnight courier; tracking number to be emailed on dispatch. Confirm receipt and clearing.",
         "source_dkt": null
       },
       "overdue": false,
-      "last_updated": "2026-09-19",
+      "last_updated": "2026-09-25",
       "files": [
         "claims.json",
         "clocks.json",
