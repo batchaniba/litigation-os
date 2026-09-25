@@ -28,6 +28,14 @@ Discovery opens when the Rule 26(f) conference ends (Fed. R. Civ. P. 26(d)(1)).
    - Requests for admission are **deemed admitted** if FedEx doesn't answer on time (Rule 36(a)(3)).
    - Calendar the date in `clocks.json` once served.
 
+## Status (Sep. 25, 2026)
+
+- Docs 01–03 were served Sep. 25 by mail from San Jose and by email. FedEx responses are due **Oct. 29, 2026**.
+- The served proofs recited Stockton. Send **06 (Amended Proof of Service, San Jose)** with the `00b` email.
+- The repo PDFs are the signed (stamped) San Jose versions:
+  `python3 internal/scripts/matter25-discovery-set-one.py --stamp-signature --mailed-from "San Jose, California" --amended-pos`
+- **Doc 05 (notice of subpoena) is dated Sep. 25 but isn't served yet.** Rebuild it with `--date "<the day you send it>"` (and `--mailed-from` if different) once the clerk issues the AO 88B, so its date and proof are accurate.
+
 ## Rule 45 subpoena to First Advantage (takes a few extra days)
 
 A party without a lawyer cannot issue a subpoena. The clerk must (Rule 45(a)(3)).
