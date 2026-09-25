@@ -35,7 +35,9 @@ Discovery opens when the Rule 26(f) conference ends (Fed. R. Civ. P. 26(d)(1)).
   `--also-email` makes each proof recite mail **and** a same-day email. Mail and email on the same day, or rebuild with the real date.
 - If Kray consented to email service **in writing**, emailing is service on the day sent; add `--by-email` for proofs that recite email instead of mail.
 - Response deadline = 30 days after service (+3 days if the service that counts is mail). Tell Claude the date and method and it will set the Matter 25 clock.
-- Doc 05 (notice of subpoena) likewise gets the actual date once the clerk issues the AO 88B.
+- **Doc 05 (notice of subpoena) is a HOLD copy:** unsigned, undated, with a blank proof, because the subpoena hasn't been issued. When the Clerk returns the signed AO 88B and you're ready to send it to Kray, render the served version:
+  `python3 internal/scripts/matter25-discovery-set-one.py --stamp-signature --mailed-from "San Jose, California" --also-email --notice-date "<date you send it>"`
+  That replaces the HOLD file with `05 - Rule 45(a)(4) Notice of Subpoena to FedEx.pdf`. Attach the issued subpoena and doc 04, mail and email the same day, then serve First Advantage.
 
 ## Rule 45 subpoena to First Advantage (takes a few extra days)
 

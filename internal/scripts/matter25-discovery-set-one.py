@@ -247,7 +247,7 @@ def numbered(d: PleadingPaper, label: str, items: list[str]) -> None:
 
 def signature(d: PleadingPaper, date: str, stamp: bool) -> None:
     d.ensure_space(11)
-    d.write_line(f"Dated: {date}")
+    d.write_line(f"Dated: {date}" if date else "Dated: ____________________, 2026")
     d.blank_line()
     d.write_respectfully_submitted()
     if stamp:
@@ -439,7 +439,23 @@ def build_attachments(args, tmp):
 
 
 def build_notice(args, tmp):
-    final = OUT_DIR / "05 - Rule 45(a)(4) Notice of Subpoena to FedEx.pdf"
+    """Rule 45(a)(4) notice. Served only after the Clerk issues the subpoena,
+    so it renders as an unsigned, undated HOLD copy (blank proof) unless
+    --notice-date gives the day it is actually sent."""
+    import argparse as _ap
+    ready = bool(args.notice_date)
+    nargs = _ap.Namespace(**vars(args))
+    nargs.date = args.notice_date or ""
+    if not ready:
+        nargs.stamp_signature = False
+        nargs.mailed_from = ""
+    stale = OUT_DIR / ("05 - HOLD - Rule 45(a)(4) Notice of Subpoena to FedEx (unsigned, undated).pdf" if ready
+                       else "05 - Rule 45(a)(4) Notice of Subpoena to FedEx.pdf")
+    if stale.exists():
+        stale.unlink()
+    final = OUT_DIR / ("05 - Rule 45(a)(4) Notice of Subpoena to FedEx.pdf" if ready
+                       else "05 - HOLD - Rule 45(a)(4) Notice of Subpoena to FedEx (unsigned, undated).pdf")
+    args = nargs
     body = tmp / "05.pdf"
     d = PleadingPaper(str(body), doc_title_footer=f"NOTICE OF SUBPOENA TO NONPARTY FIRST ADVANTAGE -- {CAPTION_NAME}")
     header(d, right_block(["NOTICE OF SUBPOENA TO", "PRODUCE DOCUMENTS TO", "NONPARTY FIRST ADVANTAGE", "BACKGROUND SERVICES CORP."], ["(Fed. R. Civ. P. 45(a)(4))"]),
@@ -530,6 +546,7 @@ def main() -> None:
     ap.add_argument("--by-email", action="store_true", help="proofs recite email service only (requires written consent)")
     ap.add_argument("--also-email", action="store_true", help="proofs recite mail AND same-day email transmission")
     ap.add_argument("--stamp-signature", action="store_true", help="apply the canonical signature stamp")
+    ap.add_argument("--notice-date", default="", help="date the Rule 45(a)(4) notice is actually sent; omit to render 05 as an unsigned HOLD copy")
     ap.add_argument("--subpoena-compliance", default="11/02/2026 10:00 a.m. ET", help="AO 88B production date/time")
     args = ap.parse_args()
     if args.stamp_signature and not Path(SIGNATURE_PATH).is_file():
