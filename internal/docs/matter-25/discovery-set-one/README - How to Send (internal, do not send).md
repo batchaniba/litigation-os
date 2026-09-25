@@ -6,6 +6,7 @@ Internal checklist. Do not send this file.
 
 Discovery opens when the Rule 26(f) conference ends (Fed. R. Civ. P. 26(d)(1)).
 
+0. **Right after the call, send the memorial email** (`00a - 26(f) Memorial Email...`). Fill in what was actually agreed. It fixes the discovery-open date and any email-service consent in writing before anyone remembers it differently.
 1. **Sign** docs 01, 02, 03 and 05 in ink, or type `/s/ Brendan Ngehsi Newanforbi` on the signature line. Rule 26(g) requires a signature on every discovery request.
 2. **Serve 01–03 on Kray today**:
    - First-class mail to 2601 Main Street, Suite 1100, Irvine, CA 92614. Fill in and sign the proof of service at the end of each document.
@@ -21,18 +22,21 @@ A party without a lawyer cannot issue a subpoena. The clerk must (Rule 45(a)(3))
 
 1. **Get a signed blank AO 88B** ("Subpoena to Produce Documents, Information, or Objects…") from the E.D. Cal. clerk, Sacramento: Robert T. Matsui U.S. Courthouse, 501 I Street. Ask in person or by mail with a short request letter (confirm the room number and procedure with the clerk's office).
 2. **Fill in the AO 88B:**
-   - To: First Advantage Background Services Corp., c/o its registered agent. Look it up on the California Secretary of State bizfile site.
+   - To: First Advantage Background Services Corp., c/o its registered agent. PR #935 lists CSC – Lawyers Incorporating Service, 2710 Gateway Oaks Drive, Suite 150N, Sacramento, CA 95833 (the same CSC office used for Randstad). **Confirm on the California Secretary of State bizfile site before service.** A courtesy copy by mail to First Advantage's Consumer Center, P.O. Box 105292, Atlanta, GA 30348-5292, is fine but is not service.
    - "Production": check the box and write "See Attachment A."
    - Place: 1455 Cat Tail Drive, Stockton, CA 95204, or electronic delivery to bnn.cdl@gmail.com.
    - Date/time: at least 14 days after you expect it to be served. Suggest about 30 days, e.g. **Nov. 2, 2026, 10:00 a.m.** This keeps the place of compliance within Rule 45(c)(2)(A); production by mail satisfies it.
    - Attach doc 04 (Attachments A and B).
 3. **Notice first (Rule 45(a)(4)):** before serving First Advantage, serve Kray with doc 05 plus a copy of the completed subpoena and attachments. Mail it, or email if she consented.
 4. **Serve First Advantage:** someone **18 or older who is not you** must deliver it (Rule 45(b)(1)), usually a registered process server. For a documents-only subpoena, no witness fee is required. That person completes the proof of service on page 2 of the AO 88B.
-5. **If First Advantage objects or asks for a protective order,** don't argue by email. Meet and confer by phone, then use Judge Riordan's informal two-page letter procedure if needed.
+5. **Hold rule:** if Kray commits in writing to a date for producing the First Advantage report, you may hold the subpoena 48 hours against that commitment. The party requests (01–03) go out regardless.
+6. **Identifiers:** never put your DOB or SSN in anything to Kray. If First Advantage needs them to locate your file, send them only to First Advantage, separately.
+7. **If First Advantage objects or asks for a protective order,** don't argue by email. Meet and confer by phone, then use Judge Riordan's informal two-page letter procedure if needed.
 
 ## Numbers
-- Interrogatories: 18 served. Counting discrete subparts (Nos. 2 and 4), still under the 25 limit (Rule 33(a)(1)). About 4–6 remain for a second set.
-- Requests for admission: 23. Requests for production: 23. Subpoena requests: 9.
+- Interrogatories: 18. Counting discrete subparts (Nos. 2, 4, and 17), about 22–23, still under the 25 limit (Rule 33(a)(1)). Only 2–3 remain for a second set, so spend them carefully.
+- Requests for admission: 26. Requests for production: 25. Subpoena requests: 9.
+- Merged from PR #935: First Advantage account/search IDs, litigation hold, the § 290.46(j)(2)(E) contention interrogatory, jury-demand RFAs, prior-file RFA, Fair Chance Act and Workday in the RFPs, notice drafts and distribution lists, pricing redaction, the registered agent, the cc, the memorial email, and the 48-hour hold rule. Deliberately left out: #935's RFA on the PC 220(a)(1) conviction (it feeds the Labor Code § 432.7 argument), its pure-law RFAs (Rule 36 doesn't allow them), and its magistrate-consent interrogatory (the docket answers it).
 
 ## Reminder
 Discovery runs both ways. FedEx will serve its own requests and notice your deposition. Pin down the facts on your prior FedEx applications before answering anything under oath.
