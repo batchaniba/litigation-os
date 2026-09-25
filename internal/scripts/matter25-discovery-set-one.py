@@ -190,7 +190,7 @@ RFPS = [
 ]
 
 FA_REQS = [
-    "Each consumer report and investigative consumer report concerning Plaintiff that You prepared for, or furnished to, Federal Express Corporation, FedEx Ground Package System, Inc., or any other FedEx entity (together, \"FedEx\") at any time from January 1, 2019 through the present, in every version and in the form furnished, including all component results and updates.",
+    "Each consumer report and investigative consumer report concerning Plaintiff that You prepared for, or furnished to, Federal Express Corporation, FedEx Ground Package System, Inc., or any other FedEx entity (together, \"FedEx\") at any time, in every version and in the form furnished, including all component results and updates.",
     "For each report in Request No. 1, all records of each criminal-history and sex offender registry search performed, including: the vendor, database, or website queried (for example, the National Sex Offender Public Website, the California Department of Justice Megan's Law website, or another source); the jurisdiction, query, and search terms used; the retrieval method; the raw result returned; the \"source of record\" information; the date and time retrieved; and the chain of transmission from the source to FedEx.",
     "Order records for each report in Request No. 1, including the package ordered, each component, the requesting FedEx user or account, and the dates ordered and completed.",
     "All records of any adjudication, scoring, or eligibility determination applied to each report in Request No. 1, including the \"client criteria\" or matrix applied and the resulting score.",
