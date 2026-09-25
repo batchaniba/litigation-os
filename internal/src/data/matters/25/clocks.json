@@ -4,11 +4,12 @@
     "date": "2026-09-24",
     "date_label": "Sep. 24, 2026",
     "kind": "deadline",
-    "status": "open",
+    "status": "satisfied",
     "source_dkt": 8,
     "title": "WATCH — FedEx status reports in Newanforbi v. Federal Express Corporation (E.D. Cal. 2:26-cv-02881-DAD-SCR). Dkt. 8: not later than 14 days before the Oct. 8…",
     "actor": "you",
-    "source": "/documents/matter-25/Dkt 08 - Order Setting Status Conference (Filed Sep 8 2026).pdf"
+    "source": "/documents/matter-25/Dkt 08 - Order Setting Status Conference (Filed Sep 8 2026).pdf",
+    "retired_reason": "FedEx filed its status report (Dkt. 10) Sep. 24, 2026. Plaintiff mailed his Sep. 14; confirm its docket number on PACER."
   },
   {
     "id": "25-hearing-2",

@@ -810,15 +810,15 @@
       "proceeding": "federal_civil",
       "phase": "cmc",
       "next_clock": {
-        "id": "25-deadline-1",
-        "date": "2026-09-24",
-        "kind": "deadline",
+        "id": "25-hearing-2",
+        "date": "2026-10-08",
+        "kind": "hearing",
         "status": "open",
-        "title": "WATCH — FedEx status reports in Newanforbi v. Federal Express Corporation (E.D. Cal. 2:26-cv-02881-DAD-SCR). Dkt. 8: not later than 14 days before the Oct. 8…",
+        "title": "HEARING — Status (Pretrial Scheduling) Conference in Newanforbi v. Federal Express Corporation (E.D. Cal. 2:26-cv-02881-DAD-SCR), Thursday, October 8, 2026,…",
         "source_dkt": 8
       },
       "overdue": false,
-      "last_updated": "2026-09-16",
+      "last_updated": "2026-09-24",
       "files": [
         "claims.json",
         "clocks.json",
