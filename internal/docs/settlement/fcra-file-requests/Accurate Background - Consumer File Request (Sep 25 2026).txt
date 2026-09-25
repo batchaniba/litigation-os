@@ -1,5 +1,5 @@
 DRAFT — not sent. Matter 29 (Newanforbi v. Amazon.com Services, LLC et al., N.D. Cal. 4:26-cv-09249-ASK).
-Purpose: obtain the actual Accurate report and decision trail before pricing the § 290.46 theory (see ../SETTLEMENT_ANCHORS.md; Lerma caution).
+Purpose: obtain the actual Accurate report and decision trail before pricing the § 290.46 theory (see ../SETTLEMENT_REANCHOR_MEMO.md; Lerma caution).
 Before mailing: fill the bracketed identifiers; send certified mail, return receipt; keep a copy and the receipt. Accurate is represented (Seyfarth / Stanzick) — cc counsel as shown so the request is not treated as an end-run. Keep the request neutral; no settlement talk in this letter.
 Address source: Accurate's own disclosure paperwork in the Matter 29 file (7515 Irvine Center Dr., Irvine, CA 92618; Disputes@accuratebackground.com). Confirm before mailing.
 
@@ -37,7 +37,7 @@ Please provide:
 
 1. All information in my file at the time of this request, including every consumer report and investigative consumer report prepared about me, in the form delivered to each recipient.
 2. The sources of that information, including, for each item, the database, website, court, or registry searched and the date it was searched (§ 1681g(a)(2); Civ. Code § 1786.10).
-3. The identity of each person that procured a report about me for employment purposes during the two years preceding this request, with dates (§ 1681g(a)(3)(A)(i)), including any report furnished to or for Amazon.com Services, LLC in or about July 2026.
+3. The identity of each person that procured a report about me for employment purposes during the two years preceding this request, with dates (§ 1681g(a)(3)(A)(i)), including any report furnished to or for Amazon.com Services, LLC in or about July 2026 (screening ID Y94611404).
 4. Any sex-offender registry, National Sex Offender Public Website, or Megan's Law website search or result, and any adjudication, "needs review," or client-criteria score applied to it.
 5. Any notes, status history, or communications with the requesting employer reflected in my file, including the date the report was completed and delivered.
 
