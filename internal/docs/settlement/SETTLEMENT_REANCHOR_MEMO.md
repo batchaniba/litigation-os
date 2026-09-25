@@ -74,7 +74,7 @@ All figures are gross settlement amounts:
 
 | Track | Open | Early / pre-event | After trigger | Walk-away (private) | Number goes out when |
 |---|---|---|---|---|---|
-| **UPS** (26) | None before Oct. 7. The $250,000 demand (Aug. 31) lapsed Sep. 14 with no counter. Do not return to the $85,000 pre-filing figure. | — | Motion denied: open **$150,000**, target **$85,000–$125,000**. Granted with leave: reprice down. | $40,000 | After Delaney's Oct. 7 ruling, and only if the motion is denied |
+| **UPS** (26) | None until Delaney rules. The $250,000 demand (Aug. 31) lapsed Sep. 14 with no counter. Do not return to the $85,000 pre-filing figure. | — | Motion denied: open **$150,000**, target **$85,000–$125,000**. Granted with leave: reprice down. | $40,000 | After Delaney rules on the submitted motion (the Oct. 7 hearing was vacated Sep. 24 under L.R. 230(g); no ruling date), and only if the motion is denied |
 | **FedEx** (25) | **$175,000–$225,000** | **$75,000–$125,000**, pre-report only | First Advantage report ties the denial to a California-registry source: **$100,000–$150,000** | $40,000. Under $40,000 after a registry-source report is a sale. | At or after the Oct. 8 conference and the report demand, or the settlement conference requested for the week of Nov. 2 |
 | **Amazon** (29) | Keep the Aug. 31 **$250,000** Amazon-only letter | **$40,000–$90,000** (their early zone, not ours) | Verified registry use or a clean FCRA/ICRAA/Fair Chance Act record: **$100,000–$150,000**. Stretch to **$150,000–$300,000** only with the report in hand. | **$100,000** if the Accurate report hits; **$40,000** on Fair Chance Act alone | After Amazon's responsive motion is decided |
 | **Accurate** (29) | **$150,000** (Plaintiff re-anchor, Sep. 25) | **$15,000–$35,000** (nuisance band) | Screening ID Y94611404 shows a registry-source furnishing: **$40,000–$75,000** | ~$15,000. Weigh any Rule 68 offer above it against trial-after-costs before rejecting. | After the FCRA file request comes back |
@@ -113,7 +113,7 @@ Before any number goes out, confirm and show Plaintiff each of these:
 | Now | FCRA file requests | Mail both drafts in [`fcra-file-requests/`](fcra-file-requests/) (Accurate for Matter 29; First Advantage for Matters 25/26). |
 | Now, parallel | Matter 20 | Press for the completed I-918B. |
 | Now, parallel | FedEx, Amazon/Accurate | Open talks on records, not assumptions: ask for the report, decision records, and source attribution. |
-| After Oct. 7 | UPS | First number, off Delaney's order. |
+| After Delaney's ruling (under submission since Sep. 24; no date) | UPS | First number, off Delaney's order. |
 | After Oct. 8 conference / report | FedEx | Reprice off the First Advantage report. |
 | After the Accurate report / Amazon's motion ruling | Amazon + Accurate | Joint talks allowed, but **separately allocated dollars on separate lines** |
 | After Oct. 20 | Smith / HOPE | First firm cash band |
@@ -184,7 +184,7 @@ Every term sheet:
   - release scope;
   - result;
   - the rule it produces for the next negotiation.
-- **Update this memo** the day any of these rules: Delaney (Oct. 7), the FedEx conference (Oct. 8), Cisneros (Oct. 20), Candelaria (Nov. 12), Breyer (Nov. 20), or Amazon's motion.
+- **Update this memo** the day any of these rules: Delaney (UPS motion, under submission), the FedEx conference (Oct. 8), Cisneros (Oct. 20), Candelaria (Nov. 12), Breyer (Nov. 20), or Amazon's motion.
 - Also update it when the Accurate or First Advantage file arrives.
 
 ## 11. Facts to confirm before relying on them

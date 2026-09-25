@@ -1,6 +1,6 @@
 {
   "generated": true,
-  "today": "2026-09-20",
+  "today": "2026-09-24",
   "matters": [
     {
       "number": 1,
@@ -637,11 +637,11 @@
         "id": "20-deadline-4",
         "date": "2026-09-20",
         "kind": "deadline",
-        "status": "open",
+        "status": "overdue",
         "title": "AMENDMENT DUE (optional) — if Petitioner elects to amend Count 4, file and serve an amended Petition within 20 days of notice of entry of the August 29, 2026…",
         "source_dkt": null
       },
-      "overdue": false,
+      "overdue": true,
       "last_updated": "2026-09-16",
       "files": [
         "claims.json",
@@ -846,17 +846,10 @@
       "same_incident": null,
       "lifecycle": "active",
       "proceeding": "federal_civil",
-      "phase": "mtd_briefing",
-      "next_clock": {
-        "id": "26-deadline-3",
-        "date": "2026-09-21",
-        "kind": "deadline",
-        "status": "open",
-        "title": "28 U.S.C. §1447(c) remand window closes (computed) — Newanforbi v. United Parcel Service, Inc., USDC E.D. Cal. No. 1:26-at-03195. Thirty days from the Aug. 20,…",
-        "source_dkt": 1
-      },
+      "phase": "fr_pending",
+      "next_clock": null,
       "overdue": false,
-      "last_updated": "2026-09-17",
+      "last_updated": "2026-09-24",
       "files": [
         "claims.json",
         "clocks.json",
@@ -922,17 +915,17 @@
       "same_incident": null,
       "lifecycle": "active",
       "proceeding": "federal_civil",
-      "phase": "responsive_deadline",
+      "phase": "mtd_briefing",
       "next_clock": {
-        "id": "28-deadline-1",
-        "date": "2026-09-21",
+        "id": "28-deadline-7",
+        "date": "2026-09-23",
         "kind": "deadline",
-        "status": "open",
-        "title": "Responsive pleading deadline (computed) — Shannon Smith, LCSW, and HOPE Psychotherapy, Inc., Newanforbi v. Shannon Smith, LCSW, CEO, et al.…",
-        "source_dkt": null
+        "status": "overdue",
+        "title": "WATCH — Opposition paper arrives at N.D. Cal. courthouse. Confirm clerk stamp / ECF docket entry before treating as filed. Do not treat as filed on the strength of transit alone.",
+        "source_dkt": 15
       },
-      "overdue": false,
-      "last_updated": "2026-09-20",
+      "overdue": true,
+      "last_updated": "2026-09-22",
       "files": [
         "claims.json",
         "clocks.json",
@@ -965,11 +958,11 @@
         "id": "29-deadline-4",
         "date": "2026-09-22",
         "kind": "deadline",
-        "status": "open",
+        "status": "overdue",
         "title": "Accurate Background LLC responsive pleading deadline (extended) — Newanforbi v. Amazon.com Services, LLC et al. (Matter 29, N.D. Cal. No. 4:26-cv-09249-ASK).…",
         "source_dkt": 7
       },
-      "overdue": false,
+      "overdue": true,
       "last_updated": "2026-09-18",
       "files": [
         "claims.json",
@@ -1110,11 +1103,11 @@
         "id": "33-deadline-1",
         "date": "2026-09-22",
         "kind": "deadline",
-        "status": "open",
+        "status": "overdue",
         "title": "WATCH — Defendants' consent or declination to magistrate-judge jurisdiction due in Nforbi v. Candelaria et al. (3:26-cv-08272-LJC). Set by Dkt. 12 (Sep. 8,…",
         "source_dkt": 12
       },
-      "overdue": false,
+      "overdue": true,
       "last_updated": "2026-09-18",
       "files": [
         "claims.json",
@@ -1355,11 +1348,11 @@
         "id": "40-deadline-2",
         "date": "2026-09-23",
         "kind": "deadline",
-        "status": "open",
+        "status": "overdue",
         "title": "WATCH — Anticipated TaskUs, LLC start date (Teammate; orientation 1631 N 1st Street, Suite 200, San Jose, Sep. 23–25; production depot 3030 Corvin Drive, Santa…",
         "source_dkt": null
       },
-      "overdue": false,
+      "overdue": true,
       "last_updated": "2026-09-19",
       "files": [
         "claims.json",
