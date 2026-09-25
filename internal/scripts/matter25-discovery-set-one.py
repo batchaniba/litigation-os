@@ -114,6 +114,8 @@ ROGS = [
     "State whether any FedEx employee or agent accessed the California Megan's Law website or NSOPW concerning Plaintiff, and if so identify who, when, and for what purpose.",
     "State whether and when FedEx issued a litigation hold covering Plaintiff's application files, the Report, and communications with First Advantage, identify the custodians it covers, and state whether any document or electronically stored information concerning those subjects has been deleted, discarded, or lost since March 1, 2025, describing any such loss.",
     "If You contend that California Penal Code section 290.46(j)(2)(E) does not apply to the Adverse Action (including because any Registry Information came through the National Sex Offender Public Website or another source rather than the California Megan's Law website), state every factual basis for that contention and identify the documents supporting it.",
+    "For each application identified in response to Interrogatory No. 8 that resulted in FedEx hiring or on-boarding Plaintiff, state whether You contend Plaintiff gave the same or a materially similar answer to each question You identified in response to Interrogatory No. 4, and state whether FedEx hired or on-boarded Plaintiff after receiving that answer.",
+    "Identify each person who accessed, viewed, downloaded, or received the Report or any component of it, and state the date and purpose of each access known to You.",
 ]
 
 RFAS = [
@@ -143,6 +145,13 @@ RFAS = [
     "Admit that You possess personnel, recruiting, or onboarding records for Plaintiff other than those for the application that ended in March 2025.",
     "Admit that Plaintiff's complaint, filed in San Joaquin County Superior Court before removal, demanded a jury trial on all issues.",
     "Admit that Plaintiff has not consented to a trial without a jury in this action.",
+    "Admit that, before the Adverse Action, You did not ask Plaintiff to explain or correct any application answer that You now contend was a misrepresentation.",
+    "Admit that You possess no document created before March 19, 2025 stating that an answer on Plaintiff's application, standing alone, required rejecting him.",
+    "Admit that You first contended that Plaintiff's application contained a material misrepresentation after Plaintiff filed this action.",
+    "Admit that no law categorically prohibited You from hiring Plaintiff for the position for which he was considered in 2025.",
+    "Admit that the position for which Plaintiff was considered in 2025 did not require him to work directly and in an unaccompanied setting with minor children on more than an incidental and occasional basis.",
+    "Admit that First Advantage supplied You, with the Report or under its service agreement with You, a notice concerning restrictions on the use of sex offender registry information in employment decisions in California.",
+    "Admit that the position for which Plaintiff was considered in 2025 was filled by another person.",
 ]
 
 RFPS = [
@@ -171,6 +180,14 @@ RFPS = [
     "All documents identified, referred to, or relied on in Your answers to Plaintiff's First Set of Interrogatories.",
     "All written or recorded statements of any witness concerning the facts of this action.",
     "All documents You obtain from any third party, by subpoena or otherwise, concerning Plaintiff or this action.",
+    "A native or readable export of Plaintiff's 2025 application, including every question, answer, certification, timestamp, revision, and audit field.",
+    "Audit logs showing when, how, and by whom the Report or any component of it was ordered, received, displayed, accessed, downloaded, transmitted, or evaluated.",
+    "Each policy, standard, rubric, or instruction in effect from January through March 2025 that defines a material application misrepresentation or prescribes the consequences of one.",
+    "All documents showing when You first identified each alleged misrepresentation in Plaintiff's application and what action You took because of it.",
+    "All documents comparing or relating any answer on Plaintiff's 2025 application to any answer he gave on an earlier application to FedEx.",
+    "Every warning, notice, compliance material, or term that First Advantage supplied to You concerning permissible or prohibited uses of the Report or of sex offender registry information, including California Penal Code section 290.46.",
+    "Documents sufficient to show whether, when, and at what pay rate and expected hours the position for which Plaintiff was considered in 2025 was filled, with personal identifiers of any nonparty redacted.",
+    "Any insurance agreement under which an insurer may be liable to satisfy all or part of a judgment in this action, or to indemnify or reimburse payments made to satisfy it (Fed. R. Civ. P. 26(a)(1)(A)(iv)).",
 ]
 
 FA_REQS = [
@@ -506,74 +523,6 @@ def build_clerk_letter(args, tmp):
     print(f"wrote {final.relative_to(ROOT)}")
 
 
-# ----------------------------------------------------------------- Set Two (HOLD)
-
-ROGS_2 = [
-    "For each application identified in response to Interrogatory No. 8 that resulted in FedEx hiring or on-boarding Plaintiff, state whether You contend Plaintiff gave the same or a materially similar answer to each question You identified in response to Interrogatory No. 4, and state whether FedEx hired or on-boarded Plaintiff after receiving that answer.",
-    "Identify each person who accessed, viewed, downloaded, or received the Report or any component of it, and state the date and purpose of each access known to You.",
-]
-RFAS_2 = [
-    "Admit that, before the Adverse Action, You did not ask Plaintiff to explain or correct any application answer that You now contend was a misrepresentation.",
-    "Admit that You possess no document created before March 19, 2025 stating that an answer on Plaintiff's application, standing alone, required rejecting him.",
-    "Admit that You first contended that Plaintiff's application contained a material misrepresentation after Plaintiff filed this action.",
-    "Admit that no law categorically prohibited You from hiring Plaintiff for the position for which he was considered in 2025.",
-    "Admit that the position for which Plaintiff was considered in 2025 did not require him to work directly and in an unaccompanied setting with minor children on more than an incidental and occasional basis.",
-    "Admit that First Advantage supplied You, with the Report or under its service agreement with You, a notice concerning restrictions on the use of sex offender registry information in employment decisions in California.",
-    "Admit that the position for which Plaintiff was considered in 2025 was filled by another person.",
-]
-RFPS_2 = [
-    "A native or readable export of Plaintiff's 2025 application, including every question, answer, certification, timestamp, revision, and audit field.",
-    "Audit logs showing when, how, and by whom the Report or any component of it was ordered, received, displayed, accessed, downloaded, transmitted, or evaluated.",
-    "Each policy, standard, rubric, or instruction in effect from January through March 2025 that defines a material application misrepresentation or prescribes the consequences of one.",
-    "All documents showing when You first identified each alleged misrepresentation in Plaintiff's application and what action You took because of it.",
-    "All documents comparing or relating any answer on Plaintiff's 2025 application to any answer he gave on an earlier application to FedEx.",
-    "Every warning, notice, compliance material, or term that First Advantage supplied to You concerning permissible or prohibited uses of the Report or of sex offender registry information, including California Penal Code section 290.46.",
-    "Documents sufficient to show whether, when, and at what pay rate and expected hours the position for which Plaintiff was considered in 2025 was filled, with personal identifiers of any nonparty redacted.",
-    "Any insurance agreement under which an insurer may be liable to satisfy all or part of a judgment in this action, or to indemnify or reimburse payments made to satisfy it (Fed. R. Civ. P. 26(a)(1)(A)(iv)).",
-]
-
-
-def _set_two(args, tmp, fname, footer, right, title, intro, items, label, start, pos_title):
-    final = OUT_DIR / fname
-    body = tmp / (fname[:2] + ".pdf")
-    d = PleadingPaper(str(body), doc_title_footer=f"{footer} -- {CAPTION_NAME}")
-    header(d, right_block(right, ["Propounding Party: Plaintiff", "Responding Party: Defendant", "  Federal Express Corporation", "Set No.: Two"]), title)
-    para(d, "TO DEFENDANT FEDERAL EXPRESS CORPORATION AND ITS ATTORNEY OF RECORD:", first_indent=0)
-    for t in intro:
-        para(d, t)
-    para(d, "The Definitions and Instructions in Plaintiff's corresponding Set One, served September 25, 2026, apply to this set and are incorporated by reference.")
-    heading(d, {"INTERROGATORY": "INTERROGATORIES", "REQUEST FOR ADMISSION": "REQUESTS FOR ADMISSION", "REQUEST FOR PRODUCTION": "DOCUMENTS REQUESTED"}[label])
-    for i, text in enumerate(items, start):
-        d.ensure_space(3)
-        d.write_line(f"{label} NO. {i}:", bold=True)
-        d.write_wrapped(text, first_indent=36)
-        d.blank_line()
-    signature(d, args.date, args.stamp_signature)
-    finish(d, body, final, pos_title, args, tmp)
-
-
-def build_set_two(args, tmp):
-    _set_two(args, tmp, "11 - HOLD - Plaintiff Second Set of Interrogatories to FedEx (Set Two).pdf",
-             "PLAINTIFF'S SECOND SET OF INTERROGATORIES",
-             ["PLAINTIFF'S SECOND SET OF", "INTERROGATORIES TO", "DEFENDANT FEDERAL EXPRESS", "CORPORATION"],
-             ["PLAINTIFF'S SECOND SET OF INTERROGATORIES", "TO DEFENDANT FEDERAL EXPRESS CORPORATION"],
-             ["Under Federal Rules of Civil Procedure 26 and 33, Plaintiff requests that Defendant Federal Express Corporation answer each interrogatory below separately and fully, in writing and under oath, within thirty (30) days after service (plus three days if service is by mail under Rule 6(d))."],
-             ROGS_2, "INTERROGATORY", 19, "Plaintiff's Second Set of Interrogatories to Defendant FedEx (Set Two)")
-    _set_two(args, tmp, "12 - HOLD - Plaintiff Second Set of Requests for Admission to FedEx (Set Two).pdf",
-             "PLAINTIFF'S SECOND SET OF REQUESTS FOR ADMISSION",
-             ["PLAINTIFF'S SECOND SET OF", "REQUESTS FOR ADMISSION TO", "DEFENDANT FEDERAL EXPRESS", "CORPORATION"],
-             ["PLAINTIFF'S SECOND SET OF REQUESTS FOR ADMISSION", "TO DEFENDANT FEDERAL EXPRESS CORPORATION"],
-             ["Under Federal Rules of Civil Procedure 26 and 36, Plaintiff requests that Defendant Federal Express Corporation admit the truth of each matter below, in writing, within thirty (30) days after service (plus three days if service is by mail under Rule 6(d)).",
-              "<<b:Notice under Rule 36(a)(3):>> each matter is admitted unless, within the time allowed, You serve a written answer or objection addressed to it, signed by You or Your attorney."],
-             RFAS_2, "REQUEST FOR ADMISSION", 27, "Plaintiff's Second Set of Requests for Admission to Defendant FedEx (Set Two)")
-    _set_two(args, tmp, "13 - HOLD - Plaintiff Second Set of Requests for Production to FedEx (Set Two).pdf",
-             "PLAINTIFF'S SECOND SET OF REQUESTS FOR PRODUCTION",
-             ["PLAINTIFF'S SECOND SET OF", "REQUESTS FOR PRODUCTION OF", "DOCUMENTS TO DEFENDANT", "FEDERAL EXPRESS CORPORATION"],
-             ["PLAINTIFF'S SECOND SET OF REQUESTS FOR PRODUCTION OF", "DOCUMENTS TO DEFENDANT FEDERAL EXPRESS CORPORATION"],
-             ["Under Federal Rules of Civil Procedure 26 and 34, Plaintiff requests that Defendant Federal Express Corporation serve a written response within thirty (30) days after service (plus three days if service is by mail under Rule 6(d)), and produce the documents requested below at that time or by another reasonable date stated in the response, in the place and manner stated in Set One."],
-             RFPS_2, "REQUEST FOR PRODUCTION", 26, "Plaintiff's Second Set of Requests for Production to Defendant FedEx (Set Two)")
-
-
 def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--date", default="September 25, 2026")
@@ -581,7 +530,6 @@ def main() -> None:
     ap.add_argument("--by-email", action="store_true", help="proofs recite email service (only with written consent)")
     ap.add_argument("--stamp-signature", action="store_true", help="apply the canonical signature stamp")
     ap.add_argument("--subpoena-compliance", default="11/02/2026 10:00 a.m. ET", help="AO 88B production date/time")
-    ap.add_argument("--set-two", action="store_true", help="also build 11-13, the held Set Two")
     args = ap.parse_args()
     if args.stamp_signature and not Path(SIGNATURE_PATH).is_file():
         raise SystemExit(f"Missing universal signature: {SIGNATURE_PATH}")
@@ -592,8 +540,6 @@ def main() -> None:
             fn(args, tmp)
         build_clerk_letter(args, tmp)
         build_ao88b(args, tmp)
-        if args.set_two:
-            build_set_two(args, tmp)
 
 
 if __name__ == "__main__":
