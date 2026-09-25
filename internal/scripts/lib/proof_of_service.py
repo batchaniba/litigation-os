@@ -76,6 +76,9 @@ class ProofOfServiceFields:
     # Default recites first-class mail. Set True when service was by email
     # (no postage, no envelope, no United States Mail).
     by_email: bool = False
+    # Mail service plus a same-day email transmission to the listed address.
+    # Recites both; the mail recital stays operative. Ignored when by_email.
+    also_email: bool = False
 
 
 def _hline(c: canvas.Canvas, x0: float, x1: float, y: float, width: float = 0.7) -> None:
@@ -374,9 +377,19 @@ def build_proof_of_service(path: Path | str, fields: ProofOfServiceFields) -> Pa
             "envelope in the United States Mail at ",
             fields.mailing_location,
             "(Location of Mailing)",
-            ":",
+            ";" if fields.also_email else ":",
         )
         y -= LEADING * 1.8
+        if fields.also_email:
+            c.setFont("Times-Roman", FS)
+            for line in _wrap_lines(
+                "and, on the same date, by transmitting a true copy by electronic mail "
+                "(PDF attachments) to the e-mail address hereinafter listed:",
+                INNER_R - INNER_L,
+            ):
+                c.drawString(INNER_L, y, line)
+                y -= LEADING
+            y -= LEADING * 0.6
         list_heading = "(List Name and Address of Each Defendant or Attorney Served)"
 
     c.setFont("Times-Bold", FS)

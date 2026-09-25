@@ -115,7 +115,6 @@ ROGS = [
     "State whether and when FedEx issued a litigation hold covering Plaintiff's application files, the Report, and communications with First Advantage, identify the custodians it covers, and state whether any document or electronically stored information concerning those subjects has been deleted, discarded, or lost since March 1, 2025, describing any such loss.",
     "If You contend that California Penal Code section 290.46(j)(2)(E) does not apply to the Adverse Action (including because any Registry Information came through the National Sex Offender Public Website or another source rather than the California Megan's Law website), state every factual basis for that contention and identify the documents supporting it.",
     "For each application identified in response to Interrogatory No. 8 that resulted in FedEx hiring or on-boarding Plaintiff, state whether You contend Plaintiff gave the same or a materially similar answer to each question You identified in response to Interrogatory No. 4, and state whether FedEx hired or on-boarded Plaintiff after receiving that answer.",
-    "Identify each person who accessed, viewed, downloaded, or received the Report or any component of it, and state the date and purpose of each access known to You.",
 ]
 
 RFAS = [
@@ -140,11 +139,11 @@ RFAS = [
     "Admit that You employed Plaintiff at least once before January 2025.",
     "Admit that You conducted, or caused First Advantage to conduct, a background check on Plaintiff in connection with at least one period of Prior Employment.",
     "Admit that You hired Plaintiff at least once before January 2025 after receiving a background report about him.",
-    "Admit that You did not send Plaintiff a copy of the Report within three business days after You received it.",
+    "Admit that You did not provide Plaintiff a complete copy of the Report before the adverse-action notice dated on or about March 19, 2025.",
     "Admit that You have no written policy, in effect between January 1, 2024 and March 31, 2025, that prohibits using Registry Information in hiring decisions for positions in California.",
     "Admit that You possess personnel, recruiting, or onboarding records for Plaintiff other than those for the application that ended in March 2025.",
-    "Admit that Plaintiff's complaint, filed in San Joaquin County Superior Court before removal, demanded a jury trial on all issues.",
-    "Admit that Plaintiff has not consented to a trial without a jury in this action.",
+    "Admit that, before the Adverse Action, You created no written, job-specific assessment explaining how hiring Plaintiff would place an identifiable person at risk.",
+    "Admit that, before the Adverse Action, You did not notify Plaintiff that You were relying on California Penal Code section 290.46(j)(1).",
     "Admit that, before the Adverse Action, You did not ask Plaintiff to explain or correct any application answer that You now contend was a misrepresentation.",
     "Admit that You possess no document created before March 19, 2025 stating that an answer on Plaintiff's application, standing alone, required rejecting him.",
     "Admit that You first contended that Plaintiff's application contained a material misrepresentation after Plaintiff filed this action.",
@@ -178,8 +177,8 @@ RFPS = [
     "Documents sufficient to show the date, scope, and recipients of any litigation hold covering Plaintiff's application files, the Report, or communications with First Advantage.",
     "All documents concerning any background check performed on Plaintiff in connection with any period of Prior Employment.",
     "All documents identified, referred to, or relied on in Your answers to Plaintiff's First Set of Interrogatories.",
-    "All written or recorded statements of any witness concerning the facts of this action.",
-    "All documents You obtain from any third party, by subpoena or otherwise, concerning Plaintiff or this action.",
+    "All nonprivileged written or recorded statements of any witness concerning the facts of this action.",
+    "All nonprivileged documents obtained from a third party that You reviewed, relied on, or may use to support a claim or defense in this action.",
     "A native or readable export of Plaintiff's 2025 application, including every question, answer, certification, timestamp, revision, and audit field.",
     "Audit logs showing when, how, and by whom the Report or any component of it was ordered, received, displayed, accessed, downloaded, transmitted, or evaluated.",
     "Each policy, standard, rubric, or instruction in effect from January through March 2025 that defines a material application misrepresentation or prescribes the consequences of one.",
@@ -296,6 +295,7 @@ def pos(out: Path, doc_title: str, args) -> Path:
         server_name="Brendan Ngehsi Newanforbi",
         stamp_signature=args.stamp_signature,
         by_email=args.by_email,
+        also_email=args.also_email,
     )
     return build_proof_of_service(out, fields)
 
@@ -325,7 +325,7 @@ def build_rogs(args, tmp):
         "2. Any objection must be stated with specificity (Rule 33(b)(4)). If You object to part of an interrogatory, answer the rest.",
         "3. If You answer by reference to business records under Rule 33(d), identify the records by Bates number in enough detail for Plaintiff to locate them as readily as You could.",
         "4. If You withhold information on a claim of privilege, describe it as required by Rule 26(b)(5)(A).",
-        "5. These interrogatories are continuing. Supplement Your answers as required by Rule 26(e).",
+        "5. You must supplement or correct Your answers as required by Rule 26(e).",
     ]:
         para(d, t, first_indent=0)
     definitions(d)
@@ -369,7 +369,7 @@ def build_rfps(args, tmp):
     para(d, "<<b:Place and manner of production:>> by delivery of copies to Plaintiff at 1455 Cat Tail Drive, Stockton, California 95204, or by secure electronic delivery to bnn.cdl@gmail.com.")
     heading(d, "INSTRUCTIONS")
     for t in [
-        "1. Produce documents in Your possession, custody, or control, including documents held by Your affiliates, agents, and vendors (including First Advantage) that You have the legal right or practical ability to obtain.",
+        "1. Produce documents in Your possession, custody, or control, including documents that You have the legal right to obtain on demand from Your affiliates, agents, or vendors (including First Advantage).",
         "2. Produce electronically stored information as searchable PDF, except that spreadsheets, audit logs, and applicant-tracking-system data should be produced in native or other reasonably usable form with metadata showing dates and authors (Rule 34(b)(1)(C), (b)(2)(E)).",
         "3. Organize and label documents to correspond to the requests, or produce them as kept in the usual course of business (Rule 34(b)(2)(E)(i)). Bates-number each page.",
         "4. For each request, state whether responsive documents are being withheld on the basis of any objection (Rule 34(b)(2)(C)). For any document withheld as privileged, serve the information required by Rule 26(b)(5)(A) with the production, not at the close of discovery.",
@@ -527,7 +527,8 @@ def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--date", default="September 25, 2026")
     ap.add_argument("--mailed-from", default="Stockton, California")
-    ap.add_argument("--by-email", action="store_true", help="proofs recite email service (only with written consent)")
+    ap.add_argument("--by-email", action="store_true", help="proofs recite email service only (requires written consent)")
+    ap.add_argument("--also-email", action="store_true", help="proofs recite mail AND same-day email transmission")
     ap.add_argument("--stamp-signature", action="store_true", help="apply the canonical signature stamp")
     ap.add_argument("--subpoena-compliance", default="11/02/2026 10:00 a.m. ET", help="AO 88B production date/time")
     args = ap.parse_args()

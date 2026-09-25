@@ -31,7 +31,8 @@ Discovery opens when the Rule 26(f) conference ends (Fed. R. Civ. P. 26(d)(1)).
 ## Status
 
 - **Not yet mailed.** When you mail docs 01–03, rebuild first so each attached proof of service shows the real mailing date and city:
-  `python3 internal/scripts/matter25-discovery-set-one.py --stamp-signature --date "<mailing date>" --mailed-from "San Jose, California"`
+  `python3 internal/scripts/matter25-discovery-set-one.py --stamp-signature --date "<mailing date>" --mailed-from "San Jose, California" --also-email`
+  `--also-email` makes each proof recite mail **and** a same-day email. Mail and email on the same day, or rebuild with the real date.
 - If Kray consented to email service **in writing**, emailing is service on the day sent; add `--by-email` for proofs that recite email instead of mail.
 - Response deadline = 30 days after service (+3 days if the service that counts is mail). Tell Claude the date and method and it will set the Matter 25 clock.
 - Doc 05 (notice of subpoena) likewise gets the actual date once the clerk issues the AO 88B.
@@ -65,8 +66,17 @@ Because nothing had been mailed, the held Set Two was folded into Set One:
 
 **Left out of #936 on purpose:** its Attachment A printed your date of birth (served on FedEx and saved in the repo), its blank form lived under `internal/public/documents/` (the published tree), and its RFA on the PC 220(a)(1) conviction feeds the § 432.7 argument.
 
+## Review edits (Sep. 25, 2026)
+
+- RFA 22 now asks whether FedEx gave you a complete copy of the report before the Mar. 19, 2025 adverse action. The "three business days" version was the wrong clock.
+- RFAs 25–26 (jury demand, already on the record) replaced with person-at-risk RFAs: no written job-specific risk assessment; no notice to you that FedEx was relying on § 290.46(j)(1).
+- RFP 24 limited to nonprivileged witness statements. RFP 25 narrowed to nonprivileged third-party documents FedEx reviewed, relied on, or may use.
+- RFP Instruction 1 uses the Ninth Circuit "legal right to obtain on demand" control test (not "practical ability").
+- Interrogatory Instruction 5: must supplement or correct under Rule 26(e).
+- Proofs: one per set (each set stands alone if later used in a motion, e.g. to deem RFAs admitted), each reciting mail from San Jose and same-day email.
+
 ## Numbers
-- Interrogatories: 20. Counting discrete subparts (Nos. 2, 4, and 17), about 23–24, at the edge of the 25 limit (Rule 33(a)(1)). No more interrogatories without FedEx's agreement or leave of court. FedEx may argue the subparts put you over; if so, the fix is to agree which to answer, not to withdraw the set.
+- Interrogatories: 19 (old No. 20, who accessed the report, cut; RFP 27 access logs covers it). Counting discrete subparts (Nos. 2, 4, 6, 8, 17), about 22–24, under the 25 limit (Rule 33(a)(1)).
 - Requests for admission: 33. Requests for production: 33. Subpoena requests: 13 (added from #936: search terms and chain of transmission, FedEx-user audit logs, manual-review and reinvestigation records, registry-use warnings given to FedEx, First Advantage handlers).
 - Merged from PR #935: First Advantage account/search IDs, litigation hold, the § 290.46(j)(2)(E) contention interrogatory, jury-demand RFAs, prior-file RFA, Fair Chance Act and Workday in the RFPs, notice drafts and distribution lists, pricing redaction, the registered agent, the cc, the memorial email, and the 48-hour hold rule. Deliberately left out: #935's RFA on the PC 220(a)(1) conviction (it feeds the Labor Code § 432.7 argument), its pure-law RFAs (Rule 36 doesn't allow them), and its magistrate-consent interrogatory (the docket answers it).
 
