@@ -1,0 +1,56 @@
+To: William.McMahon@doj.ca.gov
+Cc: fiel.tigno@doj.ca.gov
+Subject: Re: $50K Settlement Offer — Nforbi v. Candelaria et al., No. 3:26-cv-08272-LJC — five-day extension (DMV opposition to Dkt. 17)
+
+Mr. McMahon:
+
+Thank you for your email. I hope your recovery is going well.
+
+1. Your request for five additional days
+
+I replied on September 22 and declined. Given your injury, I have reconsidered. I will agree to the five days you asked for, on these terms:
+
+- Defendant Steve Gordon (DMV), as you requested, may file and serve an opposition to my motion to strike (Dkt. 17) through and including September 28, 2026.
+- My reply is due October 5, 2026, seven days after that date (Civil L.R. 7-3(c)).
+- The November 12, 2026 hearing and case management conference, the October 22 ADR and Rule 26(f) deadline, and the November 5 disclosures and joint statement deadline are unchanged.
+- This is a single extension. No further extension is implied, and no party waives any right, defense, or objection.
+
+Because this changes the briefing on a noticed motion, I understand it needs a Civil L.R. 6-2 stipulated request and proposed order, with your declaration on the reason. I have signed the attached stipulation and proposed order myself. Please file the PDF, add the declaration Civil L.R. 6-2(a) requires, and send me the conformed copy. I do not authorize you or anyone at your office to apply, reproduce, or file my signature on any other version. Please leave my signature block blank on any version you prepare.
+
+2. The difference between the Complaint and the First Amended Complaint
+
+The First Amended Complaint (Dkt. 6, filed August 17, 2026) supersedes the original Complaint (Dkt. 1) in full, whatever the differences. Lacey v. Maricopa County, 693 F.3d 896, 927 (9th Cir. 2012) (en banc). The changes are substantive, not clerical. Among them:
+
+- The claims go from five to four. The former Count III (clear absence of jurisdiction) is removed, and Count I is now pleaded as denial of an impartial adjudicator rather than structural bias.
+- The FAC pleads Ms. Candelaria's conduct at my January 24, 2025 hearing measured against the DMV's post-2022 reforms (FAC ¶¶ 71–72), rather than a structural challenge alone.
+- Several passages in the original are removed, including the related-case venue theory and the passages relying on the Serrato screening order.
+- The prayer for relief is restated: the minimum damages figures are removed, suspension-period lost wages are pleaded at more than $121,000, the SR-22 period is pleaded through approximately May 2029, and the injunctive relief is narrowed.
+- The pleading is renumbered from 136 paragraphs to 125, so paragraph-by-paragraph responses to Dkt. 1 do not line up with Dkt. 6.
+
+3. Service
+
+The Sacramento County Sheriff served Ms. Candelaria and Director Gordon on August 14, 2026 at the DMV Legal Affairs Division, and the executed return was filed August 18 (Dkt. 7). I served the First Amended Complaint on both defendants by mail on August 21, 2026, and the proof of service was filed August 26 (Dkt. 9). The September 4 answer (Dkt. 11) was filed on behalf of Ms. Candelaria in her individual capacity and raised no objection to service. See Fed. R. Civ. P. 12(h)(1).
+
+4. Meeting and conferring
+
+I am glad to meet and confer about the motion to strike and the answer. I am available by phone or Zoom on Monday, September 28, or Tuesday, September 29, between 10:00 a.m. and 4:00 p.m. Pacific. If those times do not work while you are recovering, Fiel Tigno or another attorney at your office is welcome to take the call.
+
+5. Settlement
+
+This stipulation does not extend or respond to my September 14 settlement offer, which expires at 5:00 p.m. Pacific today, September 25, 2026.
+
+Thank you,
+Brendan Ngwa Nforbi
+Plaintiff, In Propria Persona
+
+Attachment:
+  Stipulated Request to Extend Time for Defendant Gordon to Oppose Motion to Strike (Dkt. 17) and Proposed Order (Plaintiff Counterpart, Sep 25 2026).pdf
+
+---
+Note to self (do not send until he says it goes):
+- He asked for five days for "DMV" (Sep. 18, 12:54 p.m.). Five days only: Sep. 23 -> Sep. 28. Gordon only unless Plaintiff chooses to add Candelaria; the joint brief question is his call.
+- The PDF counterpart still has to be generated from the .md and signed by hand before this goes. Do not send the email without the attachment.
+- The Sep. 30 reply date belongs to Plaintiff; it moves to Oct. 5 only once the Court enters the order.
+- Paragraph 4 offers to meet and confer. It does not concede that Dkt. 17 violated the standing order. Do not add language that does.
+- Paragraph 5: decide before 5:00 p.m. PT today whether to let the $50K offer lapse or extend it. The draft lets it lapse.
+- No GitHub or repo URL in the email or the attachment.
