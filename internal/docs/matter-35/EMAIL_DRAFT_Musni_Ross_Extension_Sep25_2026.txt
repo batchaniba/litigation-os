@@ -1,0 +1,32 @@
+To: rmusni@vmbllp.com
+Cc: fshryock@vmbllp.com; alei@vmbllp.com
+Subject: Re: Brendan Ngwa Nforbi v. Ross Stores, Inc., et al. — 15-day extension (Santa Clara No. 26CV501995)
+
+Ms. Musni:
+
+Thank you for your email and for introducing your office.
+
+I agree to the 15-day extension you requested under California Rules of Court, rule 3.110(d), for Ross Stores, Inc. and Ross Dress for Less, Inc. to respond to the Verified Complaint, on these terms:
+
+- The extension is 15 days beyond each defendant's current 30-day response date. Please confirm in your reply the date each of your clients was served and the resulting response date, so that we both have the same calendar date in writing.
+- It applies to Ross Stores, Inc. and Ross Dress for Less, Inc. only. It does not apply to any other defendant.
+- This is a single extension. No further extension is implied.
+- The February 11, 2027 case management conference and every other date set by the Court are unchanged.
+- It does not waive any claim, defense, objection, or right of any party, including my right to request entry of default if no timely response is filed.
+
+If your clients have not yet been formally served, I am glad to send you a Notice and Acknowledgment of Receipt (Code Civ. Proc., § 415.30) for each defendant instead. In that case, the 15 days would run from the 30-day response date that follows your signed acknowledgment.
+
+If you prepare a written stipulation, please send it to me for review and signature before filing. Please do not apply, reproduce, or file my signature, and leave my signature block blank.
+
+Thank you,
+Brendan Ngwa Nforbi
+Plaintiff, In Propria Persona
+
+---
+Note to self (do not send until he says it goes):
+- Portfolio (last updated Sep. 17) shows neither Ross entity served; the CT Corp service task is due ~Oct. 25. If they were served, record the date in parties.json and write the calendar date (service + 30 + 15, rolled past a weekend or holiday) into the stipulation.
+- CRC 3.110(d) allows one 15-day stipulated extension without leave of court. Plaintiff agreed to 15; do not go past it.
+- Section 415.30 acceptance saves the CT Corp fee and fixes the service date on paper. Acknowledgment service is complete on the date they sign it.
+- Their draft, if any, is counsel's draft: check the date, both named entities only, CMC unchanged, default reserved, no conformed /s/ for Plaintiff, caption 26CV501995 / Hon. Vince Parrett, Dept. 16.
+- The Request to Correct Case Title (submitted Sep. 10) is still pending. The caption should read Ngwa Nforbi v. Ross Stores, Inc., et al.
+- No GitHub or repo URL in the email.
