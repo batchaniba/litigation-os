@@ -2,14 +2,26 @@
 
 Internal checklist. Do not send this file.
 
+## Rebuilding the PDFs
+
+The documents are on the portfolio's pleading paper (`internal/scripts/lib/pleading_paper.py`), with a proof of service from `proof_of_service.py` attached to docs 01, 02, 03 and 05. To change the date, city, or service method, rebuild:
+
+```
+python3 internal/scripts/matter25-discovery-set-one.py --date "September 25, 2026" --mailed-from "Stockton, California"
+```
+
+- `--by-email`: the proofs recite email service instead of mail. Use it only after Kray consents to email service in writing.
+- `--stamp-signature`: applies your canonical signature stamp to the documents and proofs. Signature lines print blank by default because signing discovery is a Rule 26(g) certification. Review first, then either sign by hand or rebuild with this flag.
+- Needs `reportlab`, `pypdf`, `numpy`, and `pillow`.
+
 ## After the Rule 26(f) call (Sep. 25, 2026)
 
 Discovery opens when the Rule 26(f) conference ends (Fed. R. Civ. P. 26(d)(1)).
 
 0. **Right after the call, send the memorial email** (`00a - 26(f) Memorial Email...`). Fill in what was actually agreed. It fixes the discovery-open date and any email-service consent in writing before anyone remembers it differently.
-1. **Sign** docs 01, 02, 03 and 05 in ink, or type `/s/ Brendan Ngehsi Newanforbi` on the signature line. Rule 26(g) requires a signature on every discovery request.
+1. **Sign** docs 01, 02, 03 and 05 and their attached proofs of service: in ink, or rebuild with `--stamp-signature`. Rule 26(g) requires a signature on every discovery request.
 2. **Serve 01–03 on Kray today**:
-   - First-class mail to 2601 Main Street, Suite 1100, Irvine, CA 92614. Fill in and sign the proof of service at the end of each document.
+   - First-class mail to 2601 Main Street, Suite 1100, Irvine, CA 92614. The proof of service is already filled in (date, Stockton, Kray's address). Rebuild with `--date` / `--mailed-from` if either changes.
    - Email a courtesy copy with the cover email (`00 - Cover Email...`). Email counts as service only if Kray consents **in writing**. Ask for that on the call. If she consents, check the email box on the proofs instead of the mail box.
 3. **Do not file** discovery requests with the court (E.D. Cal. L.R. 250.2–250.4). Keep the signed originals and proofs.
 4. **Response deadlines:** 30 days after service, plus 3 days if served by mail. Served Sep. 25: 30 days lands on Sunday, Oct. 25, which rolls to **Mon., Oct. 26, 2026** (Rule 6(a)(1)(C)). That's the deadline if you emailed with written consent. If you mailed, Rule 6(d) adds 3 days after that, so the deadline is **Thu., Oct. 29, 2026**. Recount if you serve on a different day.
