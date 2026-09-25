@@ -7,7 +7,9 @@
 
 ## Purpose
 
-Use the expected $25,000 Randstad/RK settlement as a completed-matter reference point, not as a new ceiling or a default price for other cases. Treat the funds as unavailable until received and cleared. Do not accept a discounted number elsewhere merely to accelerate cash flow.
+The $25,000 Randstad/RK result is a lesson in underpricing, not a reference point for any other case. I negotiated badly on this matter and need to improve the process that led to the result. Do not use $25,000 as a valuation benchmark, anchor, floor, ceiling, or default target for another case.
+
+Treat the funds as unavailable until received and cleared. Do not accept a discounted number elsewhere merely to accelerate cash flow. For every remaining matter, set the opening, target range, private reservation point, non-cash terms, and release scope before responding to an offer. Reassess only when the evidence or procedural posture materially changes.
 
 This is a portfolio sequencing and negotiation plan. Each matter's positions are provisional and must be refreshed against the operative pleadings, actual motion rulings, available admissible evidence, damages support, release terms, and current procedural posture before a number is communicated.
 
@@ -33,7 +35,7 @@ These ranges are working brackets, not predictions of recovery. Statutory remedi
 4. **Reprice Shannon/HOPE and federal Serrato after their motion rulings:** do not choose a firm cash close number before knowing what claims remain.
 5. **Handle Candelaria with the related DMV incident claims:** determine the requested record remedy and allocate overlapping wage loss before any global number is used.
 
-## Controls to prevent another underpriced close
+## Controls to improve negotiation
 
 - **Separate anchor, target, and private reservation point.** This document supplies only proposed openings and working resolution brackets. It does not establish a walk-away floor. Set the reservation point privately for each matter before responding to an offer; never send it to the opposing party.
 - **No unearned discount.** Do not lower a demand without an identifiable exchange, such as prompt verified payment, a materially narrower release, valuable non-cash relief, or avoided litigation cost supported by the current record. Record the exchange and its value.
@@ -43,6 +45,7 @@ These ranges are working brackets, not predictions of recovery. Statutory remedi
 - **Price non-monetary relief.** Certification, correction of a record, vacatur, rehire, reference terms, and other relief must be written, objectively verifiable, assigned a value, and given a completion deadline.
 - **Use payment and release gates.** Require a complete written agreement signed by all necessary parties, definite payment timing, tax allocation language reviewed for accuracy, and a remedy for late or failed payment. Dismiss claims only after funds clear and required non-cash relief is complete, unless the chosen structure provides an equally reliable enforceable sequence.
 - **Verify authority and scope.** Confirm every defendant and released affiliate is bound, define released claims precisely, and avoid releasing unrelated claims by default.
+- **Debrief every settlement.** Record the opening, concessions, timing pressure, exchanged terms, release scope, and result. Identify which decisions gave away value and convert them into a rule for the next negotiation.
 - **Reassess ranges.** At each material litigation event, update liability evidence, causation, damages, defenses, coverage/collectability, procedural posture, and release value before communicating a new number.
 
 ## Matter-specific proof gates
