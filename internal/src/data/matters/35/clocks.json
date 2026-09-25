@@ -1,12 +1,23 @@
 [
   {
+    "id": "35-deadline-5",
+    "date": "2026-09-30",
+    "date_label": "Sep. 30, 2026",
+    "kind": "deadline",
+    "status": "open",
+    "source_dkt": null,
+    "title": "WATCH — Ross Stores, Inc. and Ross Dress for Less, Inc. response to the Verified Complaint due in Matter 35 (26CV501995): 30 days from Aug. 31, 2026 personal service on CT Corp (CCP § 412.20(a)(3)). Counsel (Vogl Meredith, Musni) asked Sep. 25 for one 15-day CRC 3.110(d) extension; Plaintiff agrees → Oct. 15, 2026 once confirmed in writing. Default right reserved.",
+    "actor": "opposing",
+    "source": null
+  },
+  {
     "id": "35-deadline-1",
     "date": "2026-10-25",
     "date_label": "Oct. 25, 2026",
     "kind": "deadline",
-    "status": "open",
+    "status": "satisfied",
     "source_dkt": null,
-    "title": "OPEN TASK — Serve Ross Stores, Inc. and Ross Dress for Less, Inc. in Matter 35 (26CV501995) with the Verified Complaint, issued Summons, ADR Information Sheet,…",
+    "title": "SATISFIED — Both Ross entities personally served Aug. 31, 2026 via C T Corporation System (POS-010s signed Sep. 11, 2026). Service task for Matter 35 (26CV501995) complete; file the POS-010s if not already on file.",
     "actor": "you",
     "source": "/documents/matter-35/SUM-100 Summons (ISSUED, Filed Aug 26 2026) - 26CV501995.pdf"
   },

@@ -5,17 +5,17 @@
       "name": "Ross Stores, Inc.",
       "title": "Corporate Defendant (agent for service — C T Corporation System, info. and belief)",
       "location": "Glendale, CA (C T Corporation System)",
-      "served": false,
-      "dateServed": null,
-      "note": "Serve Complaint + issued Summons + ADR Information Sheet + clerk-stamped CV-5012 by ~Oct. 25, 2026 (60 days from Aug. 26 filing); then file POS-010."
+      "served": true,
+      "dateServed": "August 31, 2026, 12:11 p.m. (personal service on C T Corporation System, registered agent, by serving Angelica Bautista, Agent, 330 N. Brand Blvd., Ste. 700, Glendale — CCP § 416.10)",
+      "note": "POS-010 signed Sep. 11, 2026 by Sarah Thompson, registered process server No. 6679 (Los Angeles), L.A. Process Servers; fee $60.00; invoice #9401 (Sep. 12, $75.00 total). Served: Summons, Complaint, ADR package, Civil Lawsuit Notice. Response due Sep. 30, 2026 (CCP § 412.20(a)(3)); Oct. 15, 2026 if the CRC 3.110(d) 15-day extension counsel requested Sep. 25 is confirmed in writing. File the POS-010 if not already on file."
     },
     {
       "name": "Ross Dress for Less, Inc.",
       "title": "Corporate Defendant (agent for service — C T Corporation System, info. and belief)",
       "location": "Glendale, CA (C T Corporation System)",
-      "served": false,
-      "dateServed": null,
-      "note": "Same service packet and deadline as Ross Stores, Inc."
+      "served": true,
+      "dateServed": "August 31, 2026, 12:11 p.m. (personal service on C T Corporation System, registered agent, by serving Angelica Bautista, Agent, 330 N. Brand Blvd., Ste. 700, Glendale — CCP § 416.10)",
+      "note": "POS-010 signed Sep. 11, 2026 by Sarah Thompson, registered process server No. 6679 (Los Angeles), L.A. Process Servers; fee $15.00; invoice #9401 (Sep. 12, $75.00 total). Served: Summons, Complaint, ADR package, Civil Lawsuit Notice. Response due Sep. 30, 2026 (CCP § 412.20(a)(3)); Oct. 15, 2026 if the CRC 3.110(d) 15-day extension counsel requested Sep. 25 is confirmed in writing. File the POS-010 if not already on file."
     }
   ]
 }
