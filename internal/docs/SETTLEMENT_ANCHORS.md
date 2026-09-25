@@ -31,7 +31,7 @@ The file's own default prove-up for Randstad alone was **$45,543.70**. Two defen
 
 | Track | Opening | Target | Walk-away | When a number goes out |
 |---|---|---|---|---|
-| **Accurate** (29) | $60,000 | $25,000–$35,000 | ~$15,000 — weigh any Rule 68 offer above it against trial-after-costs before rejecting | Now, after the FCRA file request |
+| **Accurate** (29) | $150,000 (re-anchored Sep. 25 by Plaintiff; was $60,000) | $25,000–$35,000 | ~$15,000 — weigh any Rule 68 offer above it against trial-after-costs before rejecting | Now, after the FCRA file request |
 | **FedEx** (25) | $150,000 | $60,000–$90,000; $90,000–$125,000 if the First Advantage report shows registry as the sole basis | $40,000 (file's conservative) | Settlement conference requested for the week of Nov. 2, or earlier if FedEx asks |
 | **UPS** (26) | $150,000 | $60,000–$90,000 | $40,000 | Only after the Oct. 7 ruling, and only if the MTD is denied; reprice down if granted with leave |
 | **Amazon** (29) | $250,000 (Aug. 31 demand stands) | $50,000–$90,000; $100,000+ if the Accurate report shows registry sourcing | $30,000 | After its responsive motion is decided |
