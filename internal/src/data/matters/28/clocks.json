@@ -4,11 +4,12 @@
     "date": "2026-09-21",
     "date_label": "Sep. 21, 2026",
     "kind": "deadline",
-    "status": "open",
+    "status": "satisfied",
     "source_dkt": null,
     "title": "Responsive pleading deadline (computed) — Shannon Smith, LCSW, and HOPE Psychotherapy, Inc., Newanforbi v. Shannon Smith, LCSW, CEO, et al.…",
     "actor": "opposing",
-    "source": "/documents/matter-28/Proof of Service - SLB Accepted Service for Smith and HOPE (N.D. Cal. 3-26-cv-07504-LJC) (Sep 2 2026).pdf"
+    "source": "/documents/matter-28/Proof of Service - SLB Accepted Service for Smith and HOPE (N.D. Cal. 3-26-cv-07504-LJC) (Sep 2 2026).pdf",
+    "retired_reason": "Defendants responded by filing their Rule 12(b)(6) motion to dismiss, ECF No. 15, on September 21, 2026."
   },
   {
     "id": "28-deadline-2",
@@ -31,5 +32,27 @@
     "title": "Initial Case Management Conference — Newanforbi v. Shannon Smith, LCSW, CEO, et al. (3:26-cv-07504), 1:30 PM, Hon. Lisa J. Cisneros, San Francisco…",
     "actor": "you",
     "source": "/documents/matter-28/Service Packet Emailed to SLB (Issued Summons Complaint Dkt 1-1 Dkt 4 Dkt 11) (Aug 31 2026).pdf"
+  },
+  {
+    "id": "28-deadline-4",
+    "date": "2026-10-05",
+    "date_label": "Oct. 5, 2026",
+    "kind": "deadline",
+    "status": "open",
+    "source_dkt": 15,
+    "title": "Plaintiff's opposition to Defendants' Rule 12(b)(6) motion to dismiss (ECF No. 15) due — Newanforbi v. Shannon Smith, LCSW, CEO, et al. (3:26-cv-07504-LJC).",
+    "actor": "you"
+  },
+  {
+    "id": "28-hearing-5",
+    "date": "2026-10-20",
+    "date_label": "Oct. 20, 2026",
+    "time": "10:30",
+    "tz": "America/Los_Angeles",
+    "kind": "hearing",
+    "status": "open",
+    "source_dkt": 15,
+    "title": "HEARING — Defendants' Rule 12(b)(6) motion to dismiss (ECF No. 15), Newanforbi v. Shannon Smith, LCSW, CEO, et al. (3:26-cv-07504-LJC), 10:30 a.m., Courtroom G, 15th Floor, before Magistrate Judge Lisa J. Cisneros.",
+    "actor": "you"
   }
 ]
