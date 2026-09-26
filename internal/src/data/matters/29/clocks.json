@@ -37,22 +37,24 @@
     "date": "2026-09-22",
     "date_label": "Sep. 22, 2026",
     "kind": "deadline",
-    "status": "open",
+    "status": "satisfied",
     "source_dkt": 7,
     "title": "Accurate Background LLC responsive pleading deadline (extended) — Newanforbi v. Amazon.com Services, LLC et al. (Matter 29, N.D. Cal. No. 4:26-cv-09249-ASK).…",
     "actor": "opposing",
-    "source": "/documents/matter-29/Dkt 07 - Stipulation to Extend Time for Accurate Background to Respond (Filed Sep 2 2026).pdf"
+    "source": "/documents/matter-29/Dkt 07 - Stipulation to Extend Time for Accurate Background to Respond (Filed Sep 2 2026).pdf",
+    "retired_reason": "Accurate Background filed its Answer, ECF No. 21, on September 22, 2026."
   },
   {
     "id": "29-deadline-5",
     "date": "2026-09-22",
     "date_label": "Sep. 22, 2026",
     "kind": "deadline",
-    "status": "open",
+    "status": "satisfied",
     "source_dkt": 6,
     "title": "Amazon.com Services, LLC responsive pleading deadline (extended) — Newanforbi v. Amazon.com Services, LLC et al. (Matter 29, N.D. Cal. No. 4:26-cv-09249-ASK).…",
     "actor": "opposing",
-    "source": "/documents/matter-29/Dkt 06 - Stipulation to Extend Time for Amazon to Respond (Filed Sep 1 2026).pdf"
+    "source": "/documents/matter-29/Dkt 06 - Stipulation to Extend Time for Amazon to Respond (Filed Sep 1 2026).pdf",
+    "retired_reason": "Amazon responded by filing a partial Rule 12(b)(6) motion to dismiss on September 22, 2026."
   },
   {
     "id": "29-deadline-6",
@@ -64,5 +66,37 @@
     "title": "28 U.S.C. §1447(c) remand window closes (computed) — Newanforbi v. Amazon.com Services, LLC et al., USDC N.D. Cal. No. 3:26-cv-09249-ASK. Thirty days from the…",
     "actor": "you",
     "source": "/documents/matter-29/Dkt 01 - Notice of Removal (Filed Aug 31 2026).pdf"
+  },
+  {
+    "id": "29-deadline-7",
+    "date": "2026-10-06",
+    "date_label": "Oct. 6, 2026",
+    "kind": "deadline",
+    "status": "open",
+    "source_dkt": null,
+    "title": "Plaintiff's opposition to Amazon.com Services LLC's partial motion to dismiss due — Newanforbi v. Amazon.com Services, LLC et al. (4:26-cv-09249-ASK).",
+    "actor": "you"
+  },
+  {
+    "id": "29-deadline-8",
+    "date": "2026-10-13",
+    "date_label": "Oct. 13, 2026",
+    "kind": "deadline",
+    "status": "open",
+    "source_dkt": null,
+    "title": "WATCH — Amazon.com Services LLC's reply in support of its partial motion to dismiss due — Newanforbi v. Amazon.com Services, LLC et al. (4:26-cv-09249-ASK).",
+    "actor": "opposing"
+  },
+  {
+    "id": "29-hearing-9",
+    "date": "2026-11-18",
+    "date_label": "Nov. 18, 2026",
+    "time": "13:30",
+    "tz": "America/Los_Angeles",
+    "kind": "hearing",
+    "status": "open",
+    "source_dkt": null,
+    "title": "HEARING — Amazon.com Services LLC's partial motion to dismiss, Newanforbi v. Amazon.com Services, LLC et al. (4:26-cv-09249-ASK), 1:30 p.m., Courtroom 4, 3rd Floor, before Magistrate Judge Ajay S. Krishnan.",
+    "actor": "you"
   }
 ]
