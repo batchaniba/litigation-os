@@ -1344,16 +1344,9 @@
       "lifecycle": "pre_filing",
       "proceeding": "state_civil",
       "phase": "pre_filing",
-      "next_clock": {
-        "id": "40-deadline-2",
-        "date": "2026-09-23",
-        "kind": "deadline",
-        "status": "overdue",
-        "title": "WATCH — Anticipated TaskUs, LLC start date (Teammate; orientation 1631 N 1st Street, Suite 200, San Jose, Sep. 23–25; production depot 3030 Corvin Drive, Santa…",
-        "source_dkt": null
-      },
-      "overdue": true,
-      "last_updated": "2026-09-19",
+      "next_clock": null,
+      "overdue": false,
+      "last_updated": "2026-09-23",
       "files": [
         "claims.json",
         "clocks.json",

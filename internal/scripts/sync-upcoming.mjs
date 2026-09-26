@@ -17,18 +17,13 @@ import { MATTERS_DIR } from "./load-matters.mjs";
 import { loadAllClocks } from "./lib/load-clocks.mjs";
 import { todayKey } from "./lib/next-actions.mjs";
 import { clocksToUpcomingEvents } from "./lib/upcoming-from-clocks.mjs";
-import { settlementLeakPatterns } from "./lib/publish-matter.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const DATA_DIR = path.resolve(__dirname, "../src/data");
 const OUT = path.join(DATA_DIR, "upcoming.json");
 const checkOnly = process.argv.includes("--check");
 
-// upcoming.json ships in the SPA shell: withhold settlement figures and payment
-// mechanics (they stay in clocks.json and the laptop tools).
-const upcoming = clocksToUpcomingEvents(loadAllClocks(MATTERS_DIR), { today: todayKey(), excludePrivate: true }).filter(
-  (event) => !settlementLeakPatterns().some(({ re }) => re.test(JSON.stringify(event))),
-);
+const upcoming = clocksToUpcomingEvents(loadAllClocks(MATTERS_DIR), { today: todayKey() });
 const payload = `${JSON.stringify(upcoming, null, 2)}\n`;
 
 if (checkOnly) {

@@ -4,12 +4,11 @@
     "date": "2026-10-07",
     "date_label": "Oct. 7, 2026",
     "kind": "hearing",
-    "status": "vacated",
+    "status": "open",
     "source_dkt": 10,
     "title": "HEARING — Defendant UPS's Rule 12(b)(6) Motion to Dismiss (ECF No. 9), Newanforbi v. United Parcel Service, Inc. (2:26-cv-02847-DAD-CKD), 10:00 a.m., Courtroom…",
     "actor": "you",
-    "source": "/documents/matter-26/PACER Deadlines-Hearings - E.D. Cal. 2-26-cv-02847-DAD-CKD (Sep 4 2026).pdf",
-    "retired_reason": "Vacated by Sep. 24, 2026 minute order (Delaney, L.R. 230(g)); motion under submission without argument."
+    "source": "/documents/matter-26/PACER Deadlines-Hearings - E.D. Cal. 2-26-cv-02847-DAD-CKD (Sep 4 2026).pdf"
   },
   {
     "id": "26-deadline-2",
@@ -28,11 +27,10 @@
     "date": "2026-09-21",
     "date_label": "Sep. 21, 2026",
     "kind": "deadline",
-    "status": "satisfied",
+    "status": "open",
     "source_dkt": 1,
     "title": "28 U.S.C. §1447(c) remand window closes (computed) — Newanforbi v. United Parcel Service, Inc., USDC E.D. Cal. No. 1:26-at-03195. Thirty days from the Aug. 20,…",
     "actor": "you",
-    "source": "/documents/matter-26/Dkt 01 - Notice of Removal as Docketed, E.D. Cal. Sacramento (Aug 20 2026).pdf",
-    "retired_reason": "Remand window closed Sep. 21, 2026 with no motion, as planned (no remand sought). Not a live clock."
+    "source": "/documents/matter-26/Dkt 01 - Notice of Removal as Docketed, E.D. Cal. Sacramento (Aug 20 2026).pdf"
   }
 ]

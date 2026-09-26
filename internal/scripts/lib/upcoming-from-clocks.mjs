@@ -56,9 +56,6 @@ function clockDateLabel(clock) {
  */
 export function clocksToUpcomingEvents(clocksByMatter, options = {}) {
   const includeUndated = options.includeUndated === true;
-  // Public outputs (upcoming.json, README) pass excludePrivate: clocks marked
-  // private: true (e.g. confidential settlement mechanics) stay in the laptop tools.
-  const excludePrivate = options.excludePrivate === true;
   const today = options.today;
   const groups = new Map();
 
@@ -67,7 +64,6 @@ export function clocksToUpcomingEvents(clocksByMatter, options = {}) {
     if (!Number.isInteger(matter)) continue;
     for (const clock of clocks ?? []) {
       if (!isLiveClock(clock)) continue;
-      if (excludePrivate && clock.private === true) continue;
       const dated = Boolean(clock.date);
       if (!dated && !includeUndated) continue;
       const key = mergeKey(clock);

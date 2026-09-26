@@ -1,6 +1,6 @@
 {
   "number": 25,
-  "last_updated": "2026-09-24",
+  "last_updated": "2026-09-16",
   "caption": "Newanforbi v. Federal Express Corporation",
   "case_no": "2:26-cv-02881-DAD-SCR",
   "court": "USDC E.D. Cal. (Sacramento Div.)",
@@ -10,8 +10,8 @@
     "docket_url": "/docket/74699765/ps-newanforbi-v-federal-express-corp/"
   },
   "claims": "PC §290.46(j)(2)(E) Violation, Failure to Hire (Tameny), ICRAA, Invasion of Privacy, Negligence Per Se, UCL §17200",
-  "status": "FedEx filed its status report Sep. 24 (Dkt. 10): fact cutoff Jun. 25, 2027; trial Oct. 26, 2027; asks for a bench trial (Plaintiff demanded a jury); settlement conference only after discovery and before a judge other than Riordan; defense theme is material misrepresentation on the application. Plaintiff mailed his report Sep. 14 (confirm docket number). Answer is Dkt. 4. Zoom Oct. 8, 11:00 a.m. Roadmap: internal/docs/matter-25/.",
-  "status_label": "Both reports in; Zoom Oct. 8 (Riordan)",
+  "status": "PACER 09/08 history confirms the Aug. 31 answer is Dkt. 4. Dkt. 8's 'ECF No. 5' is a miscite — Dkt. 5 is a magistrate consent/decline. Plaintiff mailed the Dkt. 8 status report September 14, 2026 (not yet clerk-stamped). FedEx still owes its report by September 24. Zoom Oct. 8. Pull Dkts. 5–7 before treating the Sep. 1 mailing as unfiled.",
+  "status_label": "Report mailed Sep. 14; Zoom Oct. 8",
   "lifecycle": "active",
   "proceeding": "federal_civil",
   "phase": "cmc",

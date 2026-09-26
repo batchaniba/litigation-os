@@ -2,7 +2,6 @@ import { describe, expect, it } from "vitest";
 import {
   collectDeniedKeyPaths,
   collectPublishStripIssues,
-  collectSettlementLeakIssues,
   isCourtFacingClock,
   publishMatter,
   sanitizePublicText,
@@ -212,30 +211,5 @@ describe("collectPublishStripIssues", () => {
     const poisoned = { ...publishMatter(fixture()), key_facts: SECRET_FACTS };
     const issues = collectPublishStripIssues({ published: poisoned });
     expect(issues.some((row) => row.includes("key_facts"))).toBe(true);
-  });
-});
-
-describe("settlement figures stay internal", () => {
-  it("does not publish private or settlement-mechanics clocks", () => {
-    const base = { date: "2026-10-26", kind: "deadline", actor: "opposing" };
-    expect(isCourtFacingClock({ ...base, title: "Response deadline for Randstad" })).toBe(true);
-    expect(isCourtFacingClock({ ...base, title: "Response deadline for Randstad", private: true })).toBe(false);
-    expect(isCourtFacingClock({ ...base, title: "Response due; settlement payment outside date" })).toBe(false);
-  });
-
-  it("flags settlement dollar figures and amount fields", () => {
-    const hit = (text) => collectSettlementLeakIssues("t", text).length > 0;
-    expect(hit("Pilot settled for $35,000")).toBe(true);
-    expect(hit("$85,000 global settlement offer rejected")).toBe(true);
-    expect(hit('type: "settlement", status: "SETTLED", amount: 35000')).toBe(true);
-    expect(hit("demand_amount: 55000")).toBe(true);
-    expect(hit("Agreement in principle reached")).toBe(true);
-  });
-
-  it("leaves ordinary text alone", () => {
-    const hit = (text) => collectSettlementLeakIssues("t", text).length > 0;
-    expect(hit("Matter 22 settled July 14, 2026. Matters 32 and 33 plead damages exceeding $214,000")).toBe(false);
-    expect(hit("meet and confer regarding early settlement, ADR process selection")).toBe(false);
-    expect(hit('type: "settlement", amount: 0, confidential: true')).toBe(false);
   });
 });

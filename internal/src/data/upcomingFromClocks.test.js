@@ -98,14 +98,3 @@ describe("upcoming from clocks", () => {
     expect(next_clock.date).toBe("2026-09-01");
   });
 });
-
-describe("private clocks", () => {
-  it("are dropped only when excludePrivate is set", () => {
-    const clocks = { 27: [
-      { id: "a", date: "2026-10-09", kind: "deadline", status: "open", title: "Private watch", private: true },
-      { id: "b", date: "2026-10-26", kind: "deadline", status: "open", title: "Response deadline" },
-    ] };
-    expect(clocksToUpcomingEvents(clocks, { today: "2026-09-25" }).map((e) => e.event)).toEqual(["Private watch", "Response deadline"]);
-    expect(clocksToUpcomingEvents(clocks, { today: "2026-09-25", excludePrivate: true }).map((e) => e.event)).toEqual(["Response deadline"]);
-  });
-});

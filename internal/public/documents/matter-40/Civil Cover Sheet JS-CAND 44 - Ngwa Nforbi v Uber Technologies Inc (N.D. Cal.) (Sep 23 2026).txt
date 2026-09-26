@@ -1,0 +1,731 @@
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   
+ 
+ 
+ 
+ 
+JS-CAND 44 (Rev. 04-2025 
+CIVIL COVER SHEET - for people without lawyers only 
+See Civil Local Rule 3-2 (amended April 28, 2025), which requires the filing of a civil cover sheet only by those unrepresented by counsel.
+II.
+BASIS OF JURISDICTION (Place an “X” in One Box Only) 
+1 
+U.S. Government Plaintiff 
+2 
+U.S. Government Defendant 
+3 
+Federal Question 
+(U.S. Government Not a Party)
+IV.
+NATURE OF SUIT (Place an “X” in One Box Only) 
+CONTRACT 
+TORTS 
+FORFEITURE/PENALTY 
+BANKRUPTCY 
+OTHER STATUTES 
+110 Insurance 
+120 Marine 
+130 Miller Act 
+140 Negotiable Instrument 
+150 Recovery of Overpayment
+ & Enforcement of 
+Judgment
+151 Medicare Act 
+152 Recovery of Defaulted 
+Student Loans 
+(Excludes Veterans) 
+153 Recovery of 
+Overpayment 
+of Veteran’s Benefits 
+160 Stockholders’ Suits 
+190 Other Contract 
+195 Contract Product Liability 
+196 Franchise 
+PERSONAL INJURY 
+310 Airplane 
+315 Airplane Product Liability 
+320 Assault, Libel & Slander 
+330 Federal Employers’ 
+Liability 
+340 Marine 
+345 Marine Product Liability 
+350 Motor Vehicle 
+355 Motor Vehicle Product 
+Liability 
+360 Other Personal Injury 
+362 Personal Injury -Medical 
+Malpractice 
+PERSONAL INJURY 
+365 Personal Injury – Product 
+Liability 
+367 Health Care/ 
+Pharmaceutical Personal 
+Injury Product Liability 
+368 Asbestos Personal Injury 
+Product Liability 
+PERSONAL PROPERTY 
+370 Other Fraud 
+371 Truth in Lending 
+380 Other Personal Property 
+Damage 
+385 Property Damage Product 
+Liability 
+625 Drug Related Seizure of 
+Property 21 USC § 881 
+690 Other 
+422 Appeal 28 USC § 158 
+423 Withdrawal 28 USC 
+§ 157 
+375 False Claims Act 
+376 Qui Tam (31 USC 
+§ 3729(a))
+400 State Reapportionment 
+410 Antitrust 
+430 Banks and Banking 
+450 Commerce 
+460 Deportation 
+470 Racketeer Influenced & 
+Corrupt Organizations 
+480 Consumer Credit 
+485 Telephone Consumer 
+Protection Act 
+490 Cable/Sat TV 
+850 Securities/Commodities/ 
+Exchange 
+890 Other Statutory Actions 
+891 Agricultural Acts 
+893 Environmental Matters 
+895 Freedom of Information 
+Act 
+896 Arbitration 
+899 Administrative Procedure 
+Act/Review or Appeal of 
+Agency Decision 
+950 Constitutionality of State 
+Statutes 
+LABOR 
+PROPERTY RIGHTS 
+710 Fair Labor Standards Act 
+720 Labor/Management 
+Relations 
+740 Railway Labor Act 
+751 Family and Medical 
+Leave Act 
+790 Other Labor Litigation 
+791 Employee Retirement 
+Income Security Act 
+820 Copyrights 
+830 Patent 
+835 Patent─Abbreviated New 
+Drug Application 
+840 Trademark 
+880 Defend Trade Secrets
+  Act of 2016 
+SOCIAL SECURITY 
+861 HIA (1395ff) 
+862 Black Lung (923) 
+863 DIWC/DIWW (405(g)) 
+864 SSID Title XVI 
+865 RSI (405(g)) 
+IMMIGRATION 
+462 Naturalization 
+Application 
+465 Other Immigration 
+Actions 
+CIVIL RIGHTS 
+PRISONER PETITIONS 
+440 Other Civil Rights 
+441 Voting 
+442 Employment 
+443 Housing/ 
+Accommodations 
+445 Amer. w/Disabilities– 
+Employment 
+446 Amer. w/Disabilities–Other 
+448 Education 
+HABEAS CORPUS 
+463 Alien Detainee 
+510 Motions to Vacate 
+Sentence 
+530 General 
+535 Death Penalty 
+OTHER 
+540 Mandamus & Other 
+550 Civil Rights 
+555 Prison Condition 
+560 Civil Detainee– 
+Conditions of 
+Confinement 
+REAL PROPERTY 
+FEDERAL TAX SUITS 
+210 Land Condemnation 
+220 Foreclosure 
+230 Rent Lease & Ejectment 
+240 Torts to Land 
+245 Tort Product Liability 
+290 All Other Real Property 
+870 Taxes (U.S. Plaintiff or 
+Defendant) 
+871 IRS–Third Party 
+26 U.S.C. § 7609 
+V.
+ORIGIN (Place an “X” in One Box Only) 
+Transferred from Another District  
+Multidistrict Litigation–Transfer 
+Original Proceeding 
+Removed from State Court 
+Reinstated or Reopened 
+Multidistrict Litigation–Direct File 
+VII.
+REQUESTED IN COMPLAINT
+VIII. RELATED CASE(S) OR MDL CASE
+Provide case name(s), number(s), and presiding judge(s).
+IX.
+DIVISIONAL ASSIGNMENT pursuant to Civil Local Rule 3-2
+SAN FRANCISCO/OAKLAND 
+SAN JOSE 
+EUREKA-MCKINLEYVILLE 
+DATE 
+SIGNATURE OF ATTORNEY OR PRO SE LITIGANT 
+Check if the complaint contains a jury demand.
+Check if the complaint contains a monetary demand. Amount:  $
+Check if the complaint seeks class action status under Fed. R. Civ. P. 23.
+Check if the complaint seeks a nationwide injunction or Administrative Procedure Act vacatur.
+III.
+CAUSE OF ACTION
+Cite the U.S. Statute under which you are filing: (Use jurisdictional statutes only for diversity)
+Brief description of case: 
+4 
+Diversity 
+VI. FOR DIVERSITY CASES ONLY:
+CITIZENSHIP OF PRINCIPAL PARTIES
+(Place an “X” in One Box for Plaintiff and One Box for Defendant) 
+Plaintiff   Defendant
+Citizen of California
+Citizen of Another State
+Citizen or Subject of a Foreign Country
+Incorporated or Principal Place of Business In California
+Incorporated and Principal Place of Business In Another State 
+Foreign Nation
+I. PLAINTIFF(S)
+County of Residence of First Listed Plaintiff:
+Leave blank in cases where United States is plaintiff. 
+Attorney or Pro Se Litigant Information (Firm Name, Address, and Telephone Number)
+DEFENDANT(S)
+County of Residence of First Listed Defendant:
+Use ONLY in cases where United States is plaintiff. 
+Defendant's Attorney's Name and Contact Information (if known) 
+ (Place an “X” in One Box Only) 
+Remanded from Appellate Court 
+Ngwa Nforbi, Brendan
+San Joaquin
+Ngwa Nforbi, Brendan (pro se), 1455 Cat Tail Drive, Stockton, CA 95204; (209) 
+801-4442
+Uber Technologies, Inc.; TaskUs Holdings, Inc.; TaskUs USA, LLC; Does 1-20
+San Francisco
+Unknown
+3
+None
+09/23/2026
+3
+15 U.S.C. § 1681b(b)(2)(A), (b)(3)(A) (Fair Credit Reporting Act)
+FCRA employment-screening disclosure / pre-adverse-action violations
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+JS-CAND 44 (rev. 12/2024) 
+COMPLETING THE CIVIL COVER SHEET
+Complete the form as follows:
+I.
+Plaintiffs-Defendants. Enter names (last, first, middle initial) of plaintiff and defendant. If the plaintiff or defendant is a government agency, use the 
+full name or standard abbreviations. If the plaintiff or defendant is an official within a government agency, identify first the agency and then the 
+official, giving both name and title.
+County of Residence. For each civil case filed, except U.S. plaintiff cases, enter the name of the county where the first listed plaintiff resides at the 
+time of filing. In U.S. plaintiff cases, enter the name of the county in which the first listed defendant resides at the time of filing. In land 
+condemnation cases, the county of residence of the “defendant” is the location of the tract of land involved.
+Attorney/Pro Se Litigant Information. Enter the firm name, address, telephone number, and email for attorney of record or pro se litigant. If there 
+are several individuals, list them on an attachment.
+II.
+Jurisdiction. Under Federal Rule of Civil Procedure 8(a), pleadings must establish the basis of jurisdiction. If multiple bases for jurisdiction apply, 
+prioritize them in the order listed:
+(1)
+United States plaintiff. Jurisdiction based on 28 U.S.C. §§ 1345 and 1348 for suits filed by the United States, its agencies or officers.
+(2)
+United States defendant. Applies when the United States, its agencies, or officers are defendants.
+(3)
+Federal question. Select this option when jurisdiction is based on 28 U.S.C. § 1331 for cases involving the U.S. Constitution, its amendments, 
+federal laws, or treaties (but use choices 1 or 2 if the United States is a party).
+(4)
+Diversity of citizenship. Select this option when jurisdiction is based on 28 U.S.C. § 1332 for cases between citizens of different states and 
+complete Section VI to specify the parties’ citizenship. Note: Federal question jurisdiction takes precedence over diversity jurisdiction.
+III. Cause of Action. Enter the statute directly related to the cause of action and give a brief description of the cause. Do not cite jurisdictional statutes 
+unless jurisdiction is based on diversity. Example: U.S. Civil Statute: 47 U.S.C. § 553. Brief Description: Unauthorized reception of cable service.
+IV. Nature of Suit.  Check one of the boxes. If the case fits more than one nature of suit, select the most definitive or predominant.
+V.
+Origin.  Check one of the boxes:
+(1)
+Original Proceedings. Cases originating in the United States district courts.
+(2)
+Removed from State Court. Proceedings initiated in state courts may be removed to the district courts under Title 28 U.S.C. § 1441. When the 
+petition for removal is granted, check this box.
+(3)
+Remanded from Appellate Court. Check this box for cases remanded to the district court for further action, using the date of remand as the 
+filing date.
+(4)
+Reinstated or Reopened. Check this box for cases reinstated or reopened in the district court. Use the reopening date as the filing date.
+(5)
+Transferred from Another District. Check this box for cases transferred under Title 28 U.S.C. § 1404(a). Do not use this for within-district 
+transfers or multidistrict litigation (MDL) transfers.
+(6)
+Multidistrict Litigation Transfer. Check this box when a multidistrict (MDL) case is transferred into the district under authority of Title 28
+U.S.C. § 1407.
+(7)
+Multidistrict Litigation Direct File. Check this box when a multidistrict litigation case is filed in the same district as the Master MDL docket.
+VI. Residence (citizenship) of Principal Parties. Mark for each principal party only if jurisdiction is based on diversity of citizenship.
+VII. Requested in Complaint.
+(1)
+Jury demand. Check this box if plaintiff's complaint demanded a jury trial.
+(2)
+Monetary demand. For cases demanding monetary relief, check this box and enter the actual dollar amount being demanded.
+(3)
+Class action. Check this box if plaintiff is filing a class action under Federal Rule of Civil Procedure 23.
+(4)
+Nationwide injunction. Check this box if plaintiff is seeking a nationwide injunction or nationwide vacatur pursuant to the Administrative 
+Procedures Act.
+VIII.
+Related Cases. If there are related pending case(s), provide the case name(s) and number(s) and the name(s) of the presiding judge(s). If a short-
+form MDL complaint is being filed, furnish the MDL case name and number.
+IX. Divisional Assignment. Identify the divisional venue according to Civil Local Rule 3-2: “the county in which a substantial part of the events or 
+omissions which give rise to the claim occurred or in which a substantial part of the property that is the subject of the action is situated.” Note that 
+case assignment is made without regard for division in the following case types: Property Rights (Patent, Trademark and Copyright), Prisoner 
+Petitions, Securities Class Actions, Anti-Trust, Bankruptcy, Social Security, and Tax.

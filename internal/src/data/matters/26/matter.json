@@ -1,6 +1,6 @@
 {
   "number": 26,
-  "last_updated": "2026-09-24",
+  "last_updated": "2026-09-17",
   "caption": "Newanforbi v. United Parcel Service, Inc.",
   "case_no": "2:26-cv-02847-DAD-CKD",
   "court": "USDC E.D. Cal. (Sacramento Div.)",
@@ -10,11 +10,11 @@
     "docket_url": "/docket/74680795/ps-newanforbi-v-united-parcel-service-inc/"
   },
   "claims": "PC §290.46(j)(2)(E) Violation, Failure to Hire (Tameny), ICRAA, Invasion of Privacy, Negligence Per Se, UCL §17200",
-  "status": "Live MTD is Dkt. 9 (opposition Dkt. 10, Aug. 28; reply Dkt. 14, Sep. 14). Sep. 24, 2026 minute order (Delaney, text-only): Oct. 7 hearing VACATED on the court’s own motion; motion taken under submission without argument under L.R. 230(g). A hearing will be set only if the court wants argument or supplemental briefing. No ruling yet — watch the docket; do not appear Oct. 7. Standing on the complaint; Rule 15(a)(1)(B) window closed without amendment.",
-  "status_label": "MTD under submission — Oct. 7 vacated",
+  "status": "Live MTD is Dkt. 9, hearing Oct. 7, 2026, 10:00 a.m., Courtroom 24 (CKD) before Magistrate Judge Delaney (Zoom). Dkt. 10 opposition on file (Aug. 28). Dkt. 14 reply filed Sep. 14 (Dkt. 14-1 COS). Standing on the complaint; Rule 15(a)(1)(B) window closed without amendment.",
+  "status_label": "Dkt. 14 reply filed — hearing Oct. 7",
   "lifecycle": "active",
   "proceeding": "federal_civil",
-  "phase": "fr_pending",
+  "phase": "mtd_briefing",
   "filed": "July 15, 2026",
   "judge": "Hon. Dale A. Drozd, D.J.; Hon. Carolyn K. Delaney, M.J.",
   "cluster": 3,

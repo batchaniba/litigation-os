@@ -1,6 +1,6 @@
 {
   "number": 28,
-  "last_updated": "2026-09-22",
+  "last_updated": "2026-09-20",
   "caption": "Newanforbi v. Shannon Smith, LCSW, CEO, et al.",
   "case_no": "3:26-cv-07504-LJC",
   "court": "USDC N.D. Cal.",
@@ -10,11 +10,11 @@
     "docket_url": "/docket/73646240/ngehsi-newanforbi-v-smith/"
   },
   "claims": "42 U.S.C. §1983 (Monell + Individual Capacity); Bane Act (Cal. Civ. Code §52.1); Fraud / Negligent Misrepresentation; RICO (18 U.S.C. §1962(c)-(d))",
-  "status": "Dkt. 15 Motion to Dismiss filed Sep. 21, 2026. Opposition to the MTD is complete and in transit; courthouse arrival September 23, 2026. Do not treat the opposition as ECF-filed until clerk-stamped. CM/ECF still lists Response Deadline 10/05/2026; Reply 10/13/2026; MTD hearing 10/20/2026 10:30 a.m.; joint CMC statement 10/15/2026; initial CMC 10/22/2026 1:30 p.m., Hon. Lisa J. Cisneros. Dkt. 13 Proof of Service filed Sep. 3. Rule 12 meet-and-confer held Sep. 10. Quiet Civil L.R. 7-11 dated Sep. 14; he will not oppose and will not sign. Do not dismiss.",
-  "status_label": "Opp. in transit — courthouse Sep. 23",
+  "status": "Dkt. 13 Proof of Service filed Sep. 3 (San Jose): email service Aug. 31 on SLB; Van Dine accepted for both defendants effective Aug. 31. Answer due Sep. 21. Joint CMC statement Oct. 15; CMC Oct. 22, 1:30 p.m. Rule 12(b)(6) meet-and-confer held Sep. 10; Martinez memorialized Sep. 11 (res judicata / insufficiency; M&C exhausted; motion practice unavoidable). Quiet Civil L.R. 7-11 dated Sep. 14 (Help Desk exhibit; tap /hope-name-motion); he will not oppose and will not sign. Do not dismiss.",
+  "status_label": "M&C exhausted — answer Sep. 21",
   "lifecycle": "active",
   "proceeding": "federal_civil",
-  "phase": "mtd_briefing",
+  "phase": "responsive_deadline",
   "filed": "Case Filed July 20, 2026 (complaint docketed July 21, 2026)",
   "judge": "Hon. Lisa J. Cisneros",
   "cluster": 2,

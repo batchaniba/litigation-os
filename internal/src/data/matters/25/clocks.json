@@ -4,12 +4,11 @@
     "date": "2026-09-24",
     "date_label": "Sep. 24, 2026",
     "kind": "deadline",
-    "status": "satisfied",
+    "status": "open",
     "source_dkt": 8,
     "title": "WATCH — FedEx status reports in Newanforbi v. Federal Express Corporation (E.D. Cal. 2:26-cv-02881-DAD-SCR). Dkt. 8: not later than 14 days before the Oct. 8…",
     "actor": "you",
-    "source": "/documents/matter-25/Dkt 08 - Order Setting Status Conference (Filed Sep 8 2026).pdf",
-    "retired_reason": "FedEx filed its status report (Dkt. 10) Sep. 24, 2026. Plaintiff mailed his Sep. 14; confirm its docket number on PACER."
+    "source": "/documents/matter-25/Dkt 08 - Order Setting Status Conference (Filed Sep 8 2026).pdf"
   },
   {
     "id": "25-hearing-2",
@@ -21,14 +20,5 @@
     "title": "HEARING — Status (Pretrial Scheduling) Conference in Newanforbi v. Federal Express Corporation (E.D. Cal. 2:26-cv-02881-DAD-SCR), Thursday, October 8, 2026,…",
     "actor": "you",
     "source": "/documents/matter-25/Dkt 08 - Order Setting Status Conference (Filed Sep 8 2026).pdf"
-  },
-  {
-    "id": "25-deadline-rfa-rog-rfp-set1",
-    "date": "2026-10-29",
-    "tz": "America/Los_Angeles",
-    "kind": "deadline",
-    "status": "contingent",
-    "title": "CONTINGENT — FedEx responses to Plaintiff's Interrogatories, RFAs, and RFPs (Set One). Not yet served by mail as of Sep. 25, 2026. Recompute on service: 30 days after service (Rule 6(a)), + 3 days if served by mail (Rule 6(d)). Oct. 29 is a placeholder (mail on Sep. 25). RFAs are deemed admitted if not answered in time (Rule 36(a)(3)).",
-    "actor": "you"
   }
 ]

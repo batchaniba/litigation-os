@@ -86,11 +86,6 @@
     {
       "path": "internal/docs/STIPULATION_DEFENSE.md",
       "doc_kind": "analysis"
-    },
-    {
-      "path": "internal/docs/settlement/SETTLEMENT_REANCHOR_MEMO.md",
-      "doc_kind": "analysis",
-      "as_of": "2026-09-25"
     }
   ]
 }

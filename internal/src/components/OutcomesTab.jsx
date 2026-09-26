@@ -270,7 +270,6 @@ export function OutcomesTab() {
           label="Combined Near-Term"
           amount={combined}
           prefix={outcomes.anticipated.length > 0 ? "~" : ""}
-          confidential={outcomes.realized.some(r => r.confidential)}
           color={BLUE}
           sub={`vs. ${fmt(moderate)} portfolio exposure (moderate)`}
           theme={theme}
