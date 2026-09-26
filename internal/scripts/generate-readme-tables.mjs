@@ -27,6 +27,7 @@ import { loadMatters, MATTERS_DIR } from "./load-matters.mjs";
 import { loadAllClocks } from "./lib/load-clocks.mjs";
 import { todayKey } from "./lib/next-actions.mjs";
 import { clocksToUpcomingEvents } from "./lib/upcoming-from-clocks.mjs";
+import { settlementLeakPatterns } from "./lib/publish-matter.mjs";
 import { isSettledLifecycle, lifecycleLabel, readmeBucket } from "./matter-lifecycle.mjs";
 import { effectiveStatusLabel } from "./status-label.mjs";
 import { formatMatterRefs, parseMatterRefs } from "../src/utils/matterRefs.js";
@@ -231,7 +232,9 @@ const closedTable = [
   ),
 ].join("\n");
 
-const upcoming = clocksToUpcomingEvents(loadAllClocks(MATTERS_DIR), { today: todayKey() })
+// README is shared: same public filter as upcoming.json (no private clocks, no settlement figures).
+const upcoming = clocksToUpcomingEvents(loadAllClocks(MATTERS_DIR), { today: todayKey(), excludePrivate: true })
+  .filter((event) => !settlementLeakPatterns().some(({ re }) => re.test(JSON.stringify(event))))
   .map((t, i) => ({ ...t, _i: i, _d: parsePortfolioDate(t.date) }))
   .sort((a, b) => {
     if (a._d && b._d) return a._d - b._d || a._i - b._i;

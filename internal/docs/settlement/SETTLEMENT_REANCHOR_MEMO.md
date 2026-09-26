@@ -74,8 +74,8 @@ All figures are gross settlement amounts:
 
 | Track | Open | Early / pre-event | After trigger | Walk-away (private) | Number goes out when |
 |---|---|---|---|---|---|
-| **UPS** (26) | None before Oct. 7. The $250,000 demand (Aug. 31) lapsed Sep. 14 with no counter. Do not return to the $85,000 pre-filing figure. | — | Motion denied: open **$150,000**, target **$85,000–$125,000**. Granted with leave: reprice down. | $40,000 | After Delaney's Oct. 7 ruling, and only if the motion is denied |
-| **FedEx** (25) | **$175,000–$225,000** | **$75,000–$125,000**, pre-report only | First Advantage report ties the denial to a California-registry source: **$100,000–$150,000** | $40,000. Under $40,000 after a registry-source report is a sale. | At or after the Oct. 8 conference and the report demand, or the settlement conference requested for the week of Nov. 2 |
+| **UPS** (26) | None until Delaney rules. The $250,000 demand (Aug. 31) lapsed Sep. 14 with no counter. Do not return to the $85,000 pre-filing figure. | — | Motion denied: open **$150,000**, target **$85,000–$125,000**. Granted with leave: reprice down. | $40,000 | After Delaney rules on the submitted motion (the Oct. 7 hearing was vacated Sep. 24 under L.R. 230(g); no ruling date), and only if the motion is denied |
+| **FedEx** (25) | **$175,000–$225,000** | **$75,000–$125,000**, pre-report only | First Advantage report ties the denial to a California-registry source: **$100,000–$150,000** | $40,000. Under $40,000 after a registry-source report is a sale. | Counsel opened settlement Sep. 25; a $195,000 offer (§ 4A engine) was prepared that day. Record the send date when it goes out. |
 | **Amazon** (29) | Keep the Aug. 31 **$250,000** Amazon-only letter | **$40,000–$90,000** (their early zone, not ours) | Verified registry use or a clean FCRA/ICRAA/Fair Chance Act record: **$100,000–$150,000**. Stretch to **$150,000–$300,000** only with the report in hand. | **$100,000** if the Accurate report hits; **$40,000** on Fair Chance Act alone | After Amazon's responsive motion is decided |
 | **Accurate** (29) | **$150,000** (Plaintiff re-anchor, Sep. 25) | **$15,000–$35,000** (nuisance band) | Screening ID Y94611404 shows a registry-source furnishing: **$40,000–$75,000** | ~$15,000. Weigh any Rule 68 offer above it against trial-after-costs before rejecting. | After the FCRA file request comes back |
 | **Smith / HOPE** (28) | **$350,000–$500,000**, as a post-ruling opening. Not a now-price: sending it while RICO leads their motion invites a $0 response. | No firm cash before Oct. 20 | Core claims survive against both: **$150,000–$250,000**. Case cut sharply: **$50,000–$100,000**. | Set after the ruling | After Cisneros rules on the Oct. 20 motion |
@@ -91,6 +91,55 @@ All figures are gross settlement amounts:
 - Matter 32: service still being perfected.
 - Matter 19: habeas.
 
+## 4A. Opening engine: the defense's own wage math
+
+Adopted Sep. 25, 2026 from the FedEx offer. **It sets the opening number, and the § 4 brackets still set where the case settles.**
+
+**Formula**
+
+| Line | How it is computed |
+|---|---|
+| Back pay | hourly rate × weekly hours × weeks from the denial to trial |
+| Front pay | the same weekly figure × 104 weeks (two years after trial) |
+| Statutory | Pen. Code § 290.46(j)(4)(A) civil penalty: $25,000 |
+| Emotional distress | Plaintiff's figure, set below any figure the defense itself gave for emotional distress |
+| Punitive | Plaintiff's Code Civ. Proc. § 425.115 figure ($25,000), resting on Civ. Code §§ 1786.50(b) and 3294, not on § 290.46. That statute allows exemplary damages *or* a penalty, so claiming both under it invites a double-counting objection. |
+
+Round the total up to the next clean figure.
+
+**Inputs.** Use the defense's own figures wherever it ran amount-in-controversy math in a diversity removal. That way anyone at the company who checks the wage lines finds they match their own filing.
+
+| Matter | Defense math on file | Engine result |
+|---|---|---|
+| FedEx (25) | Dkt. 1 ¶¶ 28–32 and Bow Decl. (Dkt. 1-2) ¶ 6: $20.25 × 20 hrs; back pay $51,435 (127 wks) + front pay $42,120 (104 wks) = $93,555, plus the $25,000 "statutory minimum" | $193,555 → **$195,000** (offer prepared Sep. 25, 2026; see `matter-25/settlement/`) |
+| UPS (26) | Dkt. 1 ¶ 30: $21.00 × 16 hrs ($336/wk); $60,144 if trial is 18 months out (179 wks), **$88,032** if 36 months out | $88,032 + $25,000 + $50,000 + $25,000 = **~$188,000**. Held under Rule 5 until Delaney rules; reconcile it with the § 4 post-denial $150,000 opening before sending. |
+| Amazon (29) | None: removed on federal-question (FCRA) grounds, so there is no amount-in-controversy math | Run the formula on Plaintiff's own rate and hours |
+| State-court matters (Accurate, Shannon, Serrato state, Candelaria, others) | None: never removed | Same: Plaintiff's own inputs |
+
+**Fits:** hourly failure-to-hire or loss-of-work cases (FedEx, UPS, Amazon, Accurate).
+**Does not fit:** Serrato (a certification remedy; qualified immunity), Candelaria/DMV (record correction first), Smith/HOPE (fraud/RICO). Use § 4 alone there.
+
+**Drafting rules for the letter**
+- Present the figures as Plaintiff's own valuation. Do not cite the removal papers, a declaration, or ECF numbers, and do not quote defense counsel's remarks back to them. The figures match their filing, so the recognition happens without saying it.
+- Write for the official with settlement authority, not for counsel:
+  - bottom line first;
+  - a component table citing statutes only;
+  - a short "what the figure leaves out" list;
+  - a short "why now" (discovery reach, jury risk, certainty).
+- Leave out the expiration date unless Plaintiff asks for one. Expressly invite a counteroffer. Keep the "may withdraw or modify before acceptance" line.
+- **Held-back reserve**, for when the figure is called high. These are reasons, never additions to the ask:
+  - the defense's own later trial date;
+  - the high end of its pay range;
+  - its emotional-distress comparables;
+  - § 290.46 trebling.
+
+**Limits**
+- **An estimate is not an admission.** An amount-in-controversy figure assumes Plaintiff wins everything and the defense denies liability in the same paragraph, so it is not a valuation or a verdict forecast.
+- **Offsets.** Interim earnings since each denial reduce back pay. Know Plaintiff's own figure before sending.
+- **Misrepresentation / after-acquired-evidence defenses** can cut off wage damages (FedEx Dkt. 10). Price that risk into the target, not the opening.
+- **Fees.** A pro se plaintiff recovers no attorney's fees. Drop any fee figure from defense math.
+- **Walk-aways are unchanged by the engine.**
+
 ## 5. Pre-send checklist
 
 Before any number goes out, confirm and show Plaintiff each of these:
@@ -99,7 +148,7 @@ Before any number goes out, confirm and show Plaintiff each of these:
 2. Current offer status and expiration on both sides.
 3. Produced evidence: especially the consumer report and its source line.
 4. Shared-loss ledger entry for this matter.
-5. Proposed **opening**, **target**, and private **walk-away**, as separate decisions.
+5. Proposed **opening** (run through the § 4A engine where it fits), **target**, and private **walk-away**, as separate decisions.
 6. Non-cash terms, each with a value and a completion deadline.
 7. Release scope (§ 7).
 8. What the move buys (Rule 3) and what event justifies it (Rule 4).
@@ -113,7 +162,7 @@ Before any number goes out, confirm and show Plaintiff each of these:
 | Now | FCRA file requests | Mail both drafts in [`fcra-file-requests/`](fcra-file-requests/) (Accurate for Matter 29; First Advantage for Matters 25/26). |
 | Now, parallel | Matter 20 | Press for the completed I-918B. |
 | Now, parallel | FedEx, Amazon/Accurate | Open talks on records, not assumptions: ask for the report, decision records, and source attribution. |
-| After Oct. 7 | UPS | First number, off Delaney's order. |
+| After Delaney's ruling (under submission since Sep. 24; no date) | UPS | First number, off Delaney's order. |
 | After Oct. 8 conference / report | FedEx | Reprice off the First Advantage report. |
 | After the Accurate report / Amazon's motion ruling | Amazon + Accurate | Joint talks allowed, but **separately allocated dollars on separate lines** |
 | After Oct. 20 | Smith / HOPE | First firm cash band |
@@ -184,7 +233,7 @@ Every term sheet:
   - release scope;
   - result;
   - the rule it produces for the next negotiation.
-- **Update this memo** the day any of these rules: Delaney (Oct. 7), the FedEx conference (Oct. 8), Cisneros (Oct. 20), Candelaria (Nov. 12), Breyer (Nov. 20), or Amazon's motion.
+- **Update this memo** the day any of these rules: Delaney (UPS motion, under submission), the FedEx conference (Oct. 8), Cisneros (Oct. 20), Candelaria (Nov. 12), Breyer (Nov. 20), or Amazon's motion.
 - Also update it when the Accurate or First Advantage file arrives.
 
 ## 11. Facts to confirm before relying on them
