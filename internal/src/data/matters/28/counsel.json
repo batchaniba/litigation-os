@@ -10,9 +10,44 @@
     {
       "id": null,
       "name": "Eric Thomas Martinez",
-      "firm": null,
+      "firm": "Sims Lawrence & Broghammer",
       "dossier": "counsel/eric-thomas-martinez.json",
       "attorney_id": null
     }
-  ]
+  ],
+  "service": {
+    "effective": "2026-09-26",
+    "source": "Martinez courtesy-copy acknowledgment of Proposed Order Denying MTD (Sep. 26, 2026) plus Plaintiff instruction for all future Matter 28 proofs of service.",
+    "pos_addressees": [
+      {
+        "name": "Eric T. Martinez",
+        "email": "emartinez@sims-law.net"
+      },
+      {
+        "name": "Kim Schmitt",
+        "email": "kschmitt@sims-law.net"
+      },
+      {
+        "name": "June Meinecke",
+        "email": "june@sims-law.net"
+      },
+      {
+        "name": "Amber Krausse",
+        "email": "amber@sims-law.net"
+      },
+      {
+        "name": "SLB e-service",
+        "email": "slb-eservice@sims-law.net"
+      }
+    ],
+    "email_courtesy": [
+      "blaze@sims-law.net",
+      "cynthia@sims-law.net"
+    ],
+    "firm_address": "1478 Stone Point Drive, Suite 450, Roseville, CA 95661",
+    "do_not_rewrite": [
+      "Proof of Service by Email - Opposition to MTD (N.D. Cal. 3-26-cv-07504-LJC) (Sep 22 2026).pdf",
+      "Proof of Service - SLB Accepted Service for Smith and HOPE (N.D. Cal. 3-26-cv-07504-LJC) (Sep 2 2026).pdf"
+    ]
+  }
 }
