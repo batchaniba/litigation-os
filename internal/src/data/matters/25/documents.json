@@ -139,5 +139,17 @@
   {
     "path": "/documents/matter-25/Proof of Service - Consent to Magistrate Judge Jurisdiction - FedEx (E.D. Cal. 2-26-cv-02881) (Sep 1 2026).pdf",
     "filed": false
+  },
+  {
+    "path": "/documents/matter-25/Dkt 10 - Defendant's Status Report (Kray, Filed Sep 24 2026).pdf",
+    "filed": true
+  },
+  {
+    "path": "/documents/matter-25/Rule 26(f) Meet-and-Confer - Zoom Invite from Kray (Sep 24 2026).pdf",
+    "filed": false
+  },
+  {
+    "path": "/documents/matter-25/Email Thread - Rule 26(f) Conference Scheduling with Kray (Sep 24 2026).pdf",
+    "filed": false
   }
 ]

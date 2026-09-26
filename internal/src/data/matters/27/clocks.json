@@ -38,10 +38,53 @@
     "date": "2026-09-25",
     "date_label": "Sep. 25, 2026",
     "kind": "deadline",
-    "status": "open",
+    "status": "vacated",
     "source_dkt": null,
     "title": "Randstad US, LLC to file and serve its response to the Complaint — per Stipulation to Set Aside and Vacate Entry of Default, entered Sep. 17, 2026 (Newanforbi v. Randstad US, LLC et al., 26CV199902)",
     "actor": "opposing",
-    "source": "/documents/matter-27/Stipulation to Set Aside and Vacate Entry of Default (Executed, Entered Sep 17 2026).pdf"
+    "source": "/documents/matter-27/Stipulation to Set Aside and Vacate Entry of Default (Executed, Entered Sep 17 2026).pdf",
+    "retired_reason": "Extended through Oct. 26, 2026 for both defendants under the Sep. 24-25 stipulation and settlement agreement (Para. 2)."
+  },
+  {
+    "id": "27-deadline-5",
+    "date": "2026-10-09",
+    "date_label": "Oct. 9, 2026",
+    "tz": "America/Los_Angeles",
+    "kind": "deadline",
+    "status": "open",
+    "title": "WATCH — Randstad settlement payment due: 14 calendar days after the Sep. 25, 2026 Effective Date. Checks by tracked overnight courier; tracking number to be emailed on dispatch. Confirm receipt and clearing.",
+    "actor": "opposing",
+    "private": true
+  },
+  {
+    "id": "27-deadline-6",
+    "date": "2026-10-26",
+    "date_label": "Oct. 26, 2026",
+    "tz": "America/Los_Angeles",
+    "kind": "deadline",
+    "status": "open",
+    "title": "Response deadline for Randstad US, LLC and The RK Logistics Group, Inc., extended by stipulation through Oct. 26, 2026 (no further extensions).",
+    "actor": "opposing"
+  },
+  {
+    "id": "27-dismissal-after-clearing",
+    "date": null,
+    "tz": "America/Los_Angeles",
+    "kind": "filing",
+    "status": "contingent",
+    "title": "FILE request for dismissal with prejudice (Randstad, RK, and Does) within 5 business days after the settlement checks are delivered and have cleared (Para. 2). Consider asking the court to retain jurisdiction under CCP 664.6.",
+    "actor": "you",
+    "private": true
+  },
+  {
+    "id": "27-outside-date",
+    "date": "2026-10-26",
+    "date_label": "Oct. 26, 2026",
+    "tz": "America/Los_Angeles",
+    "kind": "deadline",
+    "status": "open",
+    "title": "PRIVATE — outside date under the confidential agreement: if the checks are not delivered by today or any check is dishonored, Plaintiff may proceed with the case or enforce the agreement (Paras. 2, 21).",
+    "actor": "you",
+    "private": true
   }
 ]

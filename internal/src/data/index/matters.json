@@ -917,15 +917,15 @@
       "proceeding": "federal_civil",
       "phase": "mtd_briefing",
       "next_clock": {
-        "id": "28-deadline-7",
-        "date": "2026-09-23",
-        "kind": "deadline",
-        "status": "overdue",
-        "title": "WATCH — Opposition paper arrives at N.D. Cal. courthouse. Confirm clerk stamp / ECF docket entry before treating as filed. Do not treat as filed on the strength of transit alone.",
+        "id": "28-hearing-6",
+        "date": "2026-10-27",
+        "kind": "hearing",
+        "status": "open",
+        "title": "HEARING — Motion to Dismiss, Newanforbi v. Smith / HOPE (3:26-cv-07504-LJC), Oct. 27, 2026, 10:30 a.m., Courtroom G, 15th Floor, Hon. Lisa J. Cisneros (date per lodged proposed order Dkt. 24; confirm on CM/ECF).",
         "source_dkt": 15
       },
       "overdue": true,
-      "last_updated": "2026-09-22",
+      "last_updated": "2026-09-25",
       "files": [
         "claims.json",
         "clocks.json",
@@ -1100,15 +1100,15 @@
       "proceeding": "federal_civil",
       "phase": "pleadings",
       "next_clock": {
-        "id": "33-deadline-1",
-        "date": "2026-09-22",
+        "id": "33-deadline-7",
+        "date": "2026-10-09",
         "kind": "deadline",
-        "status": "overdue",
-        "title": "WATCH — Defendants' consent or declination to magistrate-judge jurisdiction due in Nforbi v. Candelaria et al. (3:26-cv-08272-LJC). Set by Dkt. 12 (Sep. 8,…",
-        "source_dkt": 12
+        "status": "open",
+        "title": "Meet-and-confer with McMahon on the Dkt. 17 motion to strike — complete by Oct. 9, 2026 (offered weekdays 10:00 a.m.–4:00 p.m. PT).",
+        "source_dkt": 17
       },
       "overdue": true,
-      "last_updated": "2026-09-18",
+      "last_updated": "2026-09-25",
       "files": [
         "claims.json",
         "clocks.json",
@@ -1167,17 +1167,17 @@
       "same_incident": null,
       "lifecycle": "active",
       "proceeding": "state_civil",
-      "phase": "service",
+      "phase": "responsive_deadline",
       "next_clock": {
-        "id": "35-deadline-1",
-        "date": "2026-10-25",
+        "id": "35-deadline-5",
+        "date": "2026-10-15",
         "kind": "deadline",
         "status": "open",
-        "title": "OPEN TASK — Serve Ross Stores, Inc. and Ross Dress for Less, Inc. in Matter 35 (26CV501995) with the Verified Complaint, issued Summons, ADR Information Sheet,…",
+        "title": "Responses to the Verified Complaint due — Ross Stores, Inc. and Ross Dress for Less, Inc. (extended through Oct. 15, 2026).",
         "source_dkt": null
       },
       "overdue": false,
-      "last_updated": "2026-09-16",
+      "last_updated": "2026-09-25",
       "files": [
         "claims.json",
         "clocks.json",

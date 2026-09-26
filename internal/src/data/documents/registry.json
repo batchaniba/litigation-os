@@ -5995,6 +5995,66 @@
       "path": "/documents/opinions/Newanforbi v Smith - USDC NDCal - Order Directing Service Aug 26 2026.pdf",
       "label": "Opinion copy — Mag. Cisneros Order Directing Service (Aug. 26, 2026)",
       "ownerMatter": null
+    },
+    {
+      "path": "/documents/matter-27/Settlement Execution Email Thread with Williams - Superseding Execution Copy (Sep 24-25 2026).pdf",
+      "label": "Settlement execution email thread with Williams (Sep 24-25 2026)",
+      "ownerMatter": 27
+    },
+    {
+      "path": "/documents/matter-27/W-4 - Brendan Nforbi - Randstad (2026).pdf",
+      "label": "W-4 for Randstad settlement (emailed Sep 24 2026)",
+      "ownerMatter": 27
+    },
+    {
+      "path": "/documents/matter-27/W-9 - Brendan Nforbi - Randstad (2026).pdf",
+      "label": "W-9 for Randstad settlement (emailed Sep 24 2026)",
+      "ownerMatter": 27
+    },
+    {
+      "path": "/documents/matter-25/Dkt 10 - Defendant's Status Report (Kray, Filed Sep 24 2026).pdf",
+      "label": "Dkt 10 - FedEx status report (Kray, filed Sep 24 2026)",
+      "ownerMatter": 25
+    },
+    {
+      "path": "/documents/matter-25/Rule 26(f) Meet-and-Confer - Zoom Invite from Kray (Sep 24 2026).pdf",
+      "label": "Rule 26(f) Zoom invite from Kray (Sep 24 2026)",
+      "ownerMatter": 25
+    },
+    {
+      "path": "/documents/matter-25/Email Thread - Rule 26(f) Conference Scheduling with Kray (Sep 24 2026).pdf",
+      "label": "Rule 26(f) scheduling thread with Kray (Sep 24 2026)",
+      "ownerMatter": 25
+    },
+    {
+      "path": "/documents/matter-26/Dkt 15 - Minute Order Vacating Oct 7 MTD Hearing, Under Submission L.R. 230(g) (Sep 24 2026).pdf",
+      "label": "Dkt 15 - Minute order: Oct 7 MTD hearing vacated, under submission (Sep 24 2026)",
+      "ownerMatter": 26
+    },
+    {
+      "path": "/documents/matter-28/Dkt 24 - [Proposed] Order Denying Defendants' Motion to Dismiss, Lodged (Sep 24 2026).pdf",
+      "label": "Dkt 24 - [Proposed] order denying MTD, lodged Sep 24 2026",
+      "ownerMatter": 28
+    },
+    {
+      "path": "/documents/matter-33/Email Thread with McMahon - Extension Request, FAC Service, Meet-and-Confer (Sep 25 2026).pdf",
+      "label": "McMahon email: extension request, FAC service, meet-and-confer (Sep 25 2026)",
+      "ownerMatter": 33
+    },
+    {
+      "path": "/documents/matter-33/Email to McMahon - Three-Week Extension Granted, MTS Opposition Due Oct 16 2026 (Sep 25 2026).pdf",
+      "label": "Extension granted: MTS opposition due Oct 16 2026 (Sep 25 2026)",
+      "ownerMatter": 33
+    },
+    {
+      "path": "/documents/matter-35/Email from Musni (VMB) - Appearance and 15-Day Extension Request (Sep 25 2026).pdf",
+      "label": "Musni (VMB) appearance + 15-day extension request (Sep 25 2026)",
+      "ownerMatter": 35
+    },
+    {
+      "path": "/documents/matter-35/Email Thread - Extension Granted Through Oct 15 2026, Confirmed (Sep 25 2026).pdf",
+      "label": "Extension granted through Oct 15 2026, confirmed (Sep 25 2026)",
+      "ownerMatter": 35
     }
   ]
 }

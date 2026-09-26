@@ -4,11 +4,12 @@
     "date": "2026-10-25",
     "date_label": "Oct. 25, 2026",
     "kind": "deadline",
-    "status": "open",
+    "status": "satisfied",
     "source_dkt": null,
     "title": "OPEN TASK — Serve Ross Stores, Inc. and Ross Dress for Less, Inc. in Matter 35 (26CV501995) with the Verified Complaint, issued Summons, ADR Information Sheet,…",
     "actor": "you",
-    "source": "/documents/matter-35/SUM-100 Summons (ISSUED, Filed Aug 26 2026) - 26CV501995.pdf"
+    "source": "/documents/matter-35/SUM-100 Summons (ISSUED, Filed Aug 26 2026) - 26CV501995.pdf",
+    "retired_reason": "Both defendants served Aug. 31, 2026 via CT Corporation; counsel (Raenalene C. Musni, VMB) appeared Sep. 25, 2026."
   },
   {
     "id": "35-deadline-2",
@@ -42,5 +43,15 @@
     "title": "CASE MANAGEMENT CONFERENCE — Ngwa Nforbi v. Ross Stores, Inc., et al. (Matter 35, Santa Clara Sup. Ct. No. 26CV501995), Hon. Vince Parrett, Dept. 16 (stamp…",
     "actor": "you",
     "source": "/documents/matter-35/CV-5012 Civil Lawsuit Notice (Clerk-Stamped) - 26CV501995.pdf"
+  },
+  {
+    "id": "35-deadline-5",
+    "date": "2026-10-15",
+    "date_label": "Oct. 15, 2026",
+    "tz": "America/Los_Angeles",
+    "kind": "deadline",
+    "status": "open",
+    "title": "Responses to the Verified Complaint due — Ross Stores, Inc. and Ross Dress for Less, Inc. Extended through Oct. 15, 2026 by Sep. 25, 2026 agreement (single extension; two defendants only; no waivers; Feb. 11, 2027 CMC unchanged).",
+    "actor": "opposing"
   }
 ]
