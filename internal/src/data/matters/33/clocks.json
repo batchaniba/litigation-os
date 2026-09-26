@@ -4,11 +4,12 @@
     "date": "2026-09-22",
     "date_label": "Sep. 22, 2026",
     "kind": "deadline",
-    "status": "open",
+    "status": "satisfied",
     "source_dkt": 12,
     "title": "WATCH — Defendants' consent or declination to magistrate-judge jurisdiction due in Nforbi v. Candelaria et al. (3:26-cv-08272-LJC). Set by Dkt. 12 (Sep. 8,…",
     "actor": "opposing",
-    "source": "/documents/matter-33/ndcal/PACER Docket Report - N.D. Cal. 3-26-cv-08272-LJC (Sep 9 2026).pdf"
+    "source": "/documents/matter-33/ndcal/PACER Docket Report - N.D. Cal. 3-26-cv-08272-LJC (Sep 9 2026).pdf",
+    "retired_reason": "Defendants consented to magistrate-judge jurisdiction by the September 22, 2026 deadline."
   },
   {
     "id": "33-deadline-5",
@@ -27,8 +28,8 @@
     "kind": "deadline",
     "status": "open",
     "source_dkt": 17,
-    "title": "WATCH — Reply ISO opposition to Dkt. 17 motion to strike due in Nforbi v. Candelaria et al. (3:26-cv-08272-LJC). PACER Deadlines/Hearings Sep. 18 sets Reply 2026-09-30. Civil L.R. 7-3(c).",
-    "actor": "opposing"
+    "title": "Plaintiff's reply in support of Dkt. 17 motion to strike due — Nforbi v. Candelaria et al. (3:26-cv-08272-LJC). PACER Deadlines/Hearings sets Reply for September 30, 2026; Civil L.R. 7-3(c).",
+    "actor": "you"
   },
   {
     "id": "33-deadline-2",
