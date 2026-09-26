@@ -1,21 +1,36 @@
 // Cloudflare Worker: litigation portfolio document + data API.
 //
 //   GET /health            -> { ok, bucket }
-//   GET  /doc/<sha256>      -> R2 PDF bytes (application/pdf, ETag passthrough)
-//   GET  /doc/<sha256>/meta -> { sha256, size, etag } from R2 HEAD
-//   GET  /documents/<path> -> path index (or D1 documents_by_path) -> PDF bytes
-//   PUT  /doc/<sha256>      -> upload bytes (rw) + upsert manifest row
-//   DELETE /doc/<sha256>?confirm=1 -> remove manifest row + R2 bytes (rw)
+//   GET /doc/<sha256>      -> R2 PDF bytes (application/pdf, ETag passthrough)
+//   GET /doc/<sha256>/meta -> { sha256, size, etag } from R2 HEAD
+//   GET /doc/<sha256>/text -> pre-extracted PDF text { sha256, text, ... }
+//   GET /documents/<path>  -> path index (or D1 documents_by_path) -> PDF bytes
 //   GET /matters           -> D1 matter rows (mirrors `npm run q listMatters`)
 //   GET /matters/<n>       -> one matter + clocks + documents (mirrors getMatter)
+//   GET /matters/<n>/documents -> manifest rows for one matter, with download URLs
+//   GET /documents/search?q=<query>[&limit=20] -> manifest rows + download URLs
 //   GET /upcoming?days=14  -> clock rows due within window (mirrors upcomingDeadlines)
 //   GET /fuse              -> { fuse, wait, parked } (mirrors getFuseBoard)
+//   POST /matters                        -> upsertMatter (rw, JSON body)
+//   PATCH /matters/<n>                   -> patchMatter (rw, JSON body)
+//   DELETE /matters/<n>?confirm=1[&cascade=true] -> deleteMatter (rw)
+//   POST /matters/<n>/clocks             -> addClock (rw, JSON body {title, date, kind})
+//   DELETE /matters/<n>/clocks?title=<t>[&date=YYYY-MM-DD] -> deleteClock (rw)
+//   POST /documents                     -> registerDocument / upsert manifest row (rw, JSON body)
+//   PUT  /doc/<sha256>      -> upload bytes (rw) + upsert manifest row
+//   DELETE /doc/<sha256>?confirm=1 -> remove manifest row + R2 bytes (rw)
 //   POST /mcp              -> MCP endpoint (Streamable HTTP, stateless JSON-RPC):
 //                             initialize / ping / tools/list / tools/call over the
 //                             same read operations. CORS-open so browser-based
 //                             MCP clients can call it.
 //   POST /admin/reseed     -> guarded D1 re-apply of seed.sql
 //                             (Authorization: Bearer <RESEED_SECRET>)
+//
+// The REST write surface mirrors the MCP write tools one-for-one (same
+// data-layer functions, same requireWrite gate, same audit trail) so
+// non-MCP clients — e.g. a ChatGPT Custom GPT with an API-key action — get
+// the full capability set. The machine-readable contract for those clients
+// lives in openapi.json next to this file.
 //
 // R2 is reached through the DOCS *binding* — this file contains no keys,
 // tokens, or secrets. D1 is optional at runtime: data routes return
@@ -31,20 +46,27 @@ import {
   buildDigest,
   fuseData,
   getDocObject,
+  getDocText,
   getMatterData,
   headDocObject,
   listMattersData,
+  searchDocumentsData,
   upcomingData,
   sha256ForDocumentPath,
 } from "./data.mjs";
 import { handleMcp } from "./mcp.mjs";
 import { resolveAccess, requireWrite } from "./auth.mjs";
 import {
+  addClock,
+  deleteClock,
   deleteDocBytes,
   deleteDocumentRow,
+  deleteMatter,
+  patchMatter,
   putDocBytes,
   recordAudit,
   upsertDocumentRow,
+  upsertMatter,
 } from "./writes.mjs";
 import { contentDispositionForPath } from "./documents.mjs";
 
@@ -109,6 +131,33 @@ const listMatters = route(listMattersData);
 const getMatter = route((env, n) => getMatterData(env, n));
 const upcoming = route((env, params) => upcomingData(env, params.get("days")));
 const fuse = route((env, params) => fuseData(env, params.get("days")));
+const docText = route((env, sha, params) =>
+  getDocText(env, sha, params.get("offset") ?? 0, params.get("limit") ?? 20000),
+);
+
+const docUrl = (origin, sha256) => `${origin}/doc/${sha256}`;
+const withUrls = (origin, docs) =>
+  (docs ?? []).map((d) => ({ ...d, url: docUrl(origin, d.sha256) }));
+
+async function matterDocuments(env, n, origin) {
+  try {
+    const m = await getMatterData(env, n);
+    return json(withUrls(origin, m.documents));
+  } catch (e) {
+    if (e instanceof HttpError) return json(e.body, e.status);
+    throw e;
+  }
+}
+
+async function searchDocuments(env, params, origin) {
+  try {
+    const rows = await searchDocumentsData(env, params.get("q"), params.get("limit"));
+    return json(withUrls(origin, rows));
+  } catch (e) {
+    if (e instanceof HttpError) return json(e.body, e.status);
+    throw e;
+  }
+}
 
 // --- admin: D1 self-reseed --------------------------------------------------
 // POST /admin/reseed with `Authorization: Bearer <RESEED_SECRET>` and the
@@ -135,6 +184,58 @@ async function handleReseed(request, env) {
     applied += chunk.length;
   }
   return json({ ok: true, statements: applied });
+}
+
+// confirm=1 (or confirm=true) arms the two destructive REST deletes.
+const isConfirmed = (v) => v === "1" || v === "true";
+
+// --- REST write surface (rw scope, audited) ----------------------------------
+// Mirrors the MCP write tools one-for-one for non-MCP clients (e.g. a
+// ChatGPT Custom GPT action). Same data-layer functions, same requireWrite
+// gate, same audit trail as callTool in mcp.mjs.
+async function restWrite(request, env, access, action, target, op, successStatus = 200) {
+  try {
+    requireWrite(access);
+  } catch (e) {
+    return json(e.body, e.status);
+  }
+  let body = {};
+  if (request.method === "POST" || request.method === "PATCH" || request.method === "PUT") {
+    const ct = request.headers.get("content-type") || "";
+    if (!ct.includes("application/json"))
+      return json({ error: "content-type must be application/json" }, 400);
+    try {
+      body = await request.json();
+    } catch {
+      return json({ error: "request body must be valid JSON" }, 400);
+    }
+    if (body === null || typeof body !== "object" || Array.isArray(body))
+      return json({ error: "request body must be a JSON object" }, 400);
+  }
+  const tgt = target ?? body.sha256 ?? body.number ?? null;
+  try {
+    const data = await op(body);
+    await recordAudit(env, {
+      actor: access.actor,
+      action,
+      target: tgt,
+      detail: body,
+      ok: true,
+    });
+    return json(data, successStatus);
+  } catch (e) {
+    if (e instanceof HttpError) {
+      await recordAudit(env, {
+        actor: access.actor,
+        action,
+        target: tgt,
+        detail: { error: e.body },
+        ok: false,
+      });
+      return json(e.body, e.status);
+    }
+    throw e;
+  }
 }
 
 // --- document writes (rw scope) ---------------------------------------------
@@ -200,7 +301,7 @@ async function deleteDoc(env, sha, url, access) {
   } catch (e) {
     return json(e.body, e.status);
   }
-  if (url.searchParams.get("confirm") !== "1")
+  if (!isConfirmed(url.searchParams.get("confirm")))
     return json({ error: "confirm=1 required to delete" }, 400);
   try {
     const keepBytes = url.searchParams.get("keepBytes") === "true";
@@ -235,6 +336,7 @@ export default {
   async fetch(request, env, _ctx) {
     const url = new URL(request.url);
     const path = url.pathname;
+    const origin = url.origin;
 
     if (path === "/mcp") return handleMcp(request, env);
 
@@ -246,6 +348,54 @@ export default {
 
     const access = await resolveAccess(request, env);
     let m;
+
+    // REST write surface (rw Bearer <redacted> required; audited). Matched before
+    // the GET guard below.
+    if (request.method === "POST" && path === "/matters")
+      return restWrite(request, env, access, "upsertMatter", null, (b) => upsertMatter(env, b), 201);
+    if ((m = path.match(/^\/matters\/(\d{1,2})$/))) {
+      const n = Number(m[1]);
+      if (request.method === "PATCH")
+        return restWrite(request, env, access, "updateMatter", n, (b) => patchMatter(env, n, b));
+      if (request.method === "DELETE") {
+        if (!isConfirmed(url.searchParams.get("confirm")))
+          return json({ error: "confirm=1 required to delete" }, 400);
+        const cascade = url.searchParams.get("cascade") === "true";
+        return restWrite(request, env, access, "deleteMatter", n, () =>
+          deleteMatter(env, n, { cascade }),
+        );
+      }
+    }
+    if ((m = path.match(/^\/matters\/(\d{1,2})\/clocks$/))) {
+      const n = Number(m[1]);
+      if (request.method === "POST")
+        return restWrite(
+          request,
+          env,
+          access,
+          "addClock",
+          n,
+          (b) => addClock(env, { ...b, matter_number: n }),
+          201,
+        );
+      if (request.method === "DELETE") {
+        const title = url.searchParams.get("title");
+        const date = url.searchParams.get("date") || undefined;
+        return restWrite(request, env, access, "deleteClock", n, () =>
+          deleteClock(env, { matter_number: n, title, date }),
+        );
+      }
+    }
+    if (request.method === "POST" && path === "/documents")
+      return restWrite(
+        request,
+        env,
+        access,
+        "registerDocument",
+        null,
+        (b) => upsertDocumentRow(env, b),
+        201,
+      );
 
     // Mutating document routes (PUT/DELETE) are matched before the GET guard.
     if ((m = path.match(/^\/doc\/([^/]+)$/))) {
@@ -262,13 +412,18 @@ export default {
     if (!access.canRead) return json({ error: "unauthorized" }, 401);
 
     if ((m = path.match(/^\/doc\/([^/]+)\/meta$/))) return docMeta(env, m[1]);
+    if ((m = path.match(/^\/doc\/([^/]+)\/text$/))) return docText(env, m[1], url.searchParams);
     if ((m = path.match(/^\/doc\/([^/]+)$/))) return serveDoc(env, m[1]);
     if (path.startsWith("/doc/")) return json({ error: "sha256 must be 64 hex chars" }, 400);
 
+    // /documents/search must come before the path-addressed document fallback.
+    if (path === "/documents/search") return searchDocuments(env, url.searchParams, origin);
     if (path === "/documents" || path.startsWith("/documents/"))
       return serveDocumentsPath(env, path);
 
     if (path === "/matters") return listMatters(env);
+    if ((m = path.match(/^\/matters\/(\d{1,2})\/documents$/)))
+      return matterDocuments(env, Number(m[1]), origin);
     if ((m = path.match(/^\/matters\/(\d{1,2})$/))) return getMatter(env, Number(m[1]));
     if (path === "/upcoming") return upcoming(env, url.searchParams);
     if (path === "/fuse") return fuse(env, url.searchParams);

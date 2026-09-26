@@ -12,12 +12,13 @@ by design, there is nowhere to leak them from.
 | File | Purpose |
 |---|---|
 | `wrangler.toml` | Worker config: `DOCS` R2 binding → `litigation-documents`, `DB` D1 binding, UTC cron triggers for the digests. `database_id` is a placeholder until D1 is created. |
-| `src/index.mjs` | The Worker. Document routes (`/doc/<sha256>`, `/doc/<sha256>/meta`) + D1-backed data routes (`/matters`, `/matters/<n>`, `/upcoming?days=14`, `/fuse`) mirroring the `npm run q` op shapes, a `POST /mcp` MCP endpoint (Streamable HTTP, stateless JSON-RPC — see below), a guarded `POST /admin/reseed` endpoint (Bearer `RESEED_SECRET`; re-applies seed.sql to D1 in batches), plus a `scheduled` handler (daily fuse digest ~08:08 PT, Monday roll call ~07:08 PT) that POSTs to `ALERT_WEBHOOK` when set, else logs. |
+| `src/index.mjs` | The Worker. Document routes (`/doc/<sha256>`, `/doc/<sha256>/meta`, `/doc/<sha256>/text`) + D1-backed data routes (`/matters`, `/matters/<n>`, `/matters/<n>/documents`, `/documents/search`, `/upcoming?days=14`, `/fuse`) mirroring the `npm run q` op shapes, a REST write surface (`POST/PATCH/DELETE /matters…`, `POST/DELETE /matters/<n>/clocks`, `POST /documents`) mirroring the MCP write tools one-for-one (same gate, same audit), a `POST /mcp` MCP endpoint (Streamable HTTP, stateless JSON-RPC — see below), a guarded `POST /admin/reseed` endpoint (Bearer `RESEED_SECRET`; re-applies seed.sql to D1 in batches), plus a `scheduled` handler (daily fuse digest ~08:08 PT, Monday roll call ~07:08 PT) that POSTs to `ALERT_WEBHOOK` when set, else logs. |
 | `src/data.mjs` | Shared data layer: R2/D1 access and the portfolio query ops. Both the REST routes and the MCP tools call into it, so the two surfaces can't drift. Throws `HttpError` (400/404/503) on mapped failures. |
 | `src/mcp.mjs` | MCP endpoint handler: `initialize` / `ping` / `tools/list` / `tools/call` over the read ops **and the v2 write tools** (scope-gated, audited). CORS-open (`*`) so browser-based clients work. |
 | `src/auth.mjs` | Scoped bearer-token auth. Tokens live only as SHA-256 hashes inside the `API_KEYS` Worker secret; scope `r` / `rw`. Resolves what a caller may do; surfaces gate with `requireRead` / `requireWrite`. |
 | `src/writes.mjs` | Write data layer (C/U/D): R2 byte put/delete, D1 upsert/patch/delete over matters, clocks, and the document manifest, plus best-effort `recordAudit`. |
 | `schema.sql` | Idempotent D1 schema: `matters`, `clocks`, `documents`, and the `audit` trail. |
+| `openapi.json` | OpenAPI 3.1 contract for the REST surface, for non-MCP clients (e.g. a ChatGPT Custom GPT action with API-key auth). Covers all reads + writes; PDF byte upload (`PUT /doc/<sha256>`) is intentionally excluded — Actions can't carry binary bodies. |
 | `seed.mjs` | Node script → stdout. Runs the same `publishMatter()` projection as the SPA (identity, court-facing clocks, filed / phone-tap PDFs) and emits idempotent DELETE + INSERTs. Never writes to the repo. Laptop `npm run mcp` keeps the full graph. |
 
 ## Deploy
@@ -219,13 +220,36 @@ write records `{ ts, actor, action, target, detail, ok }` to `audit` —
 
 ## Write API — REST
 
+Every route below needs an `rw` token (`Authorization: Bearer <token>`) and
+is audited to the `audit` table, exactly like the MCP write tools. Bodies are
+JSON (`content-type: application/json`).
+
 ```
-PUT    /doc/<sha256>?matter=<n>&path=<path>[&verify=false]   body = PDF bytes   (rw)
-DELETE /doc/<sha256>?confirm=1[&keepBytes=true]                                  (rw)
+POST   /matters                        JSON body               -> upsertMatter (201)
+PATCH  /matters/<n>                    JSON body               -> patchMatter
+DELETE /matters/<n>?confirm=1[&cascade=true]                   -> deleteMatter
+POST   /matters/<n>/clocks            JSON {title, date?, kind?} -> addClock (201)
+DELETE /matters/<n>/clocks?title=<t>[&date=YYYY-MM-DD]        -> deleteClock
+POST   /documents                      JSON {sha256, matter_number?, path?, size?} -> registerDocument (201)
+PUT    /doc/<sha256>?matter=<n>&path=<path>[&verify=false]   body = PDF bytes   -> putDocument (201)
+DELETE /doc/<sha256>?confirm=1[&keepBytes=true]                                  -> deleteDocument
 ```
 
-`PUT` verifies the uploaded bytes hash to `<sha256>` (the R2 key) before
-storing, then upserts the manifest row. `DELETE` needs `confirm=1`.
+`POST /matters` is a **full replace** — omitted fields are cleared to null;
+use `PATCH` for partial updates (e.g. fixing a stale `status_label`).
+`DELETE /matters/<n>` refuses with 409 if the matter still owns clocks or
+documents unless `cascade=true` (removes those D1 rows; R2 bytes stay).
+Destructive deletes need `confirm=1` (or `confirm=true`).
+
+Read parity for the same clients:
+
+```
+GET /matters/<n>/documents          manifest rows for one matter, each with a download `url`
+GET /documents/search?q=<query>[&limit=20]   substring over manifest paths + matter captions, with `url`s
+GET /doc/<sha256>/text[?offset=0&limit=20000] pre-extracted PDF text, paginated
+```
+
+The machine-readable contract for all of the above is `openapi.json`.
 
 ## Connecting clients
 
@@ -237,6 +261,7 @@ are locked), send `Authorization: Bearer <token>`.
 - **Cursor:** Settings → MCP → Add server → Streamable HTTP URL, and set an `Authorization` header in the server entry.
 - **Claude Desktop:** remote server entry in `claude_desktop_config.json` with a `headers` map.
 - **claude.ai / ChatGPT:** add as a custom connector with the URL (+ auth header where the connector supports it).
+- **ChatGPT Custom GPT (full write access):** ChatGPT's MCP connector flow offers no API-key/Bearer field — only OAuth or no-auth — so MCP writes can't authenticate there. Instead, create a Custom GPT, add an Action importing `openapi.json` from this directory, and set the action's authentication to API Key with the `rw` token. The GPT then gets the same 15-operation capability set as the MCP write tools.
 
 The same token model applies to every client — access is decided at the
 Worker, not per-agent, so any MCP-capable model or agent gets identical CRUD
