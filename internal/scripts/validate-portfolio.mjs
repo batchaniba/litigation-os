@@ -24,6 +24,7 @@ import { loadMatters, MATTERS_DIR } from "./load-matters.mjs";
 import { EVENTS_FILE, listMatterSources } from "./lib/matter-layout.mjs";
 import {
   collectPublishStripIssues,
+  collectSettlementLeakIssues,
   loadPhoneTapPaths,
   publishMatterFromDir,
 } from "./lib/publish-matter.mjs";
@@ -1036,6 +1037,22 @@ const crossMatter = JSON.parse(
       }
     }
   }
+}
+
+// ---------- settlement figures in bundled data + README ----------
+// The SPA bundles these modules directly (not through the publish
+// projection), and README.md is shared. Settlement and demand figures
+// stay internal (internal/docs/settlement/, matter events).
+for (const rel of [
+  "README.md",
+  "internal/src/data/outcomes.js",
+  "internal/src/data/upcoming.json",
+  "internal/src/data/matters/document-index.json",
+  "internal/src/data/timeline.public.json",
+]) {
+  const abs = path.join(REPO_ROOT, rel);
+  if (!fs.existsSync(abs)) continue;
+  for (const issue of collectSettlementLeakIssues(rel, fs.readFileSync(abs, "utf8"))) fail(issue);
 }
 
 // ---------- report ----------
