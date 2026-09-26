@@ -37,11 +37,12 @@
     "date": "2026-09-20",
     "date_label": "Sep. 20, 2026",
     "kind": "deadline",
-    "status": "open",
+    "status": "satisfied",
     "source_dkt": null,
     "title": "AMENDMENT DUE (optional) — if Petitioner elects to amend Count 4, file and serve an amended Petition within 20 days of notice of entry of the August 29, 2026…",
     "actor": "you",
-    "source": "/documents/matter-32/from-20/Order Sustaining Demurrer In Part - Whitman (Aug 29 2026) (Notice of Entry Aug 31 2026).pdf"
+    "source": "/documents/matter-32/from-20/Order Sustaining Demurrer In Part - Whitman (Aug 29 2026) (Notice of Entry Aug 31 2026).pdf",
+    "retired_reason": "Optional amendment period expired September 20, 2026; no Count 4 amendment was filed. Petitioner proceeds on surviving Count 1."
   },
   {
     "id": "20-deadline-5",
