@@ -217,6 +217,51 @@ Later, drop `PUBLIC_READ` and issue `r` tokens to lock reads down too. Every
 write records `{ ts, actor, action, target, detail, ok }` to `audit` —
 `actor` is the key's `name`, so you can see which agent changed what.
 
+## OAuth 2.1 authorization server (ChatGPT native MCP)
+
+Some MCP clients — notably ChatGPT's "Create MCP App" flow — can't send a
+static `Authorization` header; they only speak OAuth. The Worker is its own
+OAuth authorization server (`src/oauth.mjs`) so those clients can obtain a
+scoped token with the owner's one-time approval. Same scope model (`r` /
+`rw`), same audit trail (`actor` = `oauth:<client-name>`).
+
+Setup (one time):
+
+```bash
+cd workers/doc-api
+# 1) provision the oauth_* tables (schema.sql is idempotent):
+wrangler d1 execute litigation-portfolio --remote --file=schema.sql
+# 2) set the owner key that unlocks the consent page (strong random value):
+wrangler secret put OAUTH_OWNER_KEY
+```
+
+Then in ChatGPT: create the MCP app pointing at
+`https://litigation-doc-api.ss8sxswwkt.workers.dev/mcp`, choose **OAuth** —
+auto-discovery reads `/.well-known/oauth-authorization-server` — or fill the
+Advanced OAuth settings manually:
+
+- Authorization URL: `https://litigation-doc-api.ss8sxswwkt.workers.dev/oauth/authorize`
+- Token URL: `https://litigation-doc-api.ss8sxswwkt.workers.dev/oauth/token`
+- Scopes: `read write` (or `read` for read-only)
+
+The app registers itself via `POST /oauth/register` (Dynamic Client
+Registration). During linking, the consent page asks for the owner key and
+the scope to grant (read-only or read+write). Approve once — ChatGPT keeps a
+refresh token (90 days, rotated on every use) and calls `/mcp` with a Bearer
+access token.
+
+Notes:
+
+- **Fail-closed:** without D1, the `oauth_*` tables, or `OAUTH_OWNER_KEY`,
+  every `/oauth/*` endpoint returns 503. OAuth grants additionally require
+  `API_KEYS` to be configured — you still can't get a
+  writable-but-unauthenticated API.
+- Only token *hashes* touch D1. Authorization codes are 10-minute,
+  single-use, and bound to client + redirect URI + PKCE (S256 mandatory).
+- Revoke a client: `wrangler d1 execute litigation-portfolio --remote
+  --command "DELETE FROM oauth_tokens WHERE client_id = 'cli_...'"`, and
+  delete its `oauth_clients` row if it's never coming back.
+
 ## Write API — REST
 
 ```
@@ -236,7 +281,11 @@ are locked), send `Authorization: Bearer <token>`.
 - **Claude Code:** `claude mcp add --transport http litigation-portfolio https://litigation-doc-api.ss8sxswwkt.workers.dev/mcp --header "Authorization: Bearer <token>"`
 - **Cursor:** Settings → MCP → Add server → Streamable HTTP URL, and set an `Authorization` header in the server entry.
 - **Claude Desktop:** remote server entry in `claude_desktop_config.json` with a `headers` map.
-- **claude.ai / ChatGPT:** add as a custom connector with the URL (+ auth header where the connector supports it).
+- **claude.ai:** add as a custom connector with the URL + the Bearer <redacted> (header supported).
+- **ChatGPT:** add as a custom connector with the URL, but choose **OAuth**
+  when creating the app — ChatGPT's MCP apps can't send a static auth header
+  (see "OAuth 2.1 authorization server" above). Reads work without auth while
+  `PUBLIC_READ` is on.
 
 The same token model applies to every client — access is decided at the
 Worker, not per-agent, so any MCP-capable model or agent gets identical CRUD
@@ -253,3 +302,5 @@ with its own scoped token.
   API; without it writes are refused). `PUBLIC_READ` Worker var (`"true"` to
   keep reads open once `API_KEYS` is set). Apply the `audit` table with
   `wrangler d1 execute litigation-portfolio --remote --file=schema.sql`.
+- `OAUTH_OWNER_KEY` Worker secret (required for the OAuth consent page; also
+  apply the `oauth_*` tables with the same `wrangler d1 execute` command).

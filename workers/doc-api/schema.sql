@@ -63,3 +63,33 @@ CREATE TABLE IF NOT EXISTS audit (
   ok      INTEGER             -- 1 = applied, 0 = failed
 );
 CREATE INDEX IF NOT EXISTS idx_audit_ts ON audit(ts);
+
+-- OAuth 2.1 authorization-server tables (ChatGPT native-MCP support).
+-- src/oauth.mjs reads/writes these; all endpoints fail closed (503) until
+-- they exist. Apply with: wrangler d1 execute litigation-portfolio --remote --file=schema.sql
+CREATE TABLE IF NOT EXISTS oauth_clients (
+  client_id          TEXT PRIMARY KEY,
+  client_secret_hash TEXT NOT NULL,  -- SHA-256 of the DCR-issued secret
+  redirect_uris      TEXT NOT NULL,  -- JSON array of exact-match redirect URIs
+  client_name        TEXT,
+  created_at         TEXT NOT NULL DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ','now'))
+);
+CREATE TABLE IF NOT EXISTS oauth_codes (
+  code_hash      TEXT PRIMARY KEY,   -- SHA-256 of the authorization code
+  client_id      TEXT NOT NULL,
+  redirect_uri   TEXT NOT NULL,
+  code_challenge TEXT NOT NULL,      -- PKCE S256 challenge
+  scope          TEXT NOT NULL,      -- space-separated subset of "read write"
+  expires_at     INTEGER NOT NULL,   -- unix seconds (10-minute TTL)
+  created_at     TEXT NOT NULL DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ','now'))
+);
+CREATE TABLE IF NOT EXISTS oauth_tokens (
+  token_hash TEXT PRIMARY KEY,       -- SHA-256 of the access/refresh token
+  kind       TEXT NOT NULL,          -- 'access' | 'refresh'
+  client_id  TEXT NOT NULL,
+  label      TEXT,                   -- client name at issuance, for the audit trail
+  scope      TEXT NOT NULL,          -- space-separated subset of "read write"
+  expires_at INTEGER NOT NULL,       -- unix seconds (access 24h, refresh 90d)
+  created_at TEXT NOT NULL DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ','now'))
+);
+CREATE INDEX IF NOT EXISTS idx_oauth_tokens_client ON oauth_tokens(client_id);

@@ -14,6 +14,12 @@
 //                             initialize / ping / tools/list / tools/call over the
 //                             same read operations. CORS-open so browser-based
 //                             MCP clients can call it.
+//   GET /.well-known/oauth-authorization-server -> OAuth AS metadata (RFC 8414;
+//                             also served under the /mcp path-inserted variant)
+//   GET /.well-known/oauth-protected-resource   -> resource metadata (RFC 9728)
+//   POST /oauth/register  -> Dynamic Client Registration (RFC 7591)
+//   GET|POST /oauth/authorize -> owner-consent page / authorization-code issuance
+//   POST /oauth/token     -> code exchange + refresh rotation (PKCE S256 mandatory)
 //   POST /admin/reseed     -> guarded D1 re-apply of seed.sql
 //                             (Authorization: Bearer <RESEED_SECRET>)
 //
@@ -39,6 +45,14 @@ import {
 } from "./data.mjs";
 import { handleMcp } from "./mcp.mjs";
 import { resolveAccess, requireWrite } from "./auth.mjs";
+import {
+  authorizationServerMetadata,
+  protectedResourceMetadata,
+  handleRegister,
+  handleAuthorizeGet,
+  handleAuthorizePost,
+  handleToken,
+} from "./oauth.mjs";
 import {
   deleteDocBytes,
   deleteDocumentRow,
@@ -235,6 +249,33 @@ export default {
   async fetch(request, env, _ctx) {
     const url = new URL(request.url);
     const path = url.pathname;
+
+    // OAuth 2.1 authorization server (ChatGPT native MCP and friends).
+    // Public endpoints, dispatched before the access gate; each one fails
+    // closed (503) when D1, the oauth_* tables, or OAUTH_OWNER_KEY is missing.
+    if (
+      path === "/.well-known/oauth-authorization-server" ||
+      path === "/.well-known/oauth-authorization-server/mcp"
+    )
+      return json(authorizationServerMetadata(url.origin));
+    if (
+      path === "/.well-known/oauth-protected-resource" ||
+      path === "/.well-known/oauth-protected-resource/mcp"
+    )
+      return json(protectedResourceMetadata(url.origin));
+    if (path === "/oauth/register") {
+      if (request.method !== "POST") return json({ error: "method_not_allowed" }, 405);
+      return handleRegister(request, env);
+    }
+    if (path === "/oauth/authorize") {
+      if (request.method === "GET") return handleAuthorizeGet(request, env, url);
+      if (request.method === "POST") return handleAuthorizePost(request, env);
+      return json({ error: "method_not_allowed" }, 405);
+    }
+    if (path === "/oauth/token") {
+      if (request.method !== "POST") return json({ error: "method_not_allowed" }, 405);
+      return handleToken(request, env);
+    }
 
     if (path === "/mcp") return handleMcp(request, env);
 

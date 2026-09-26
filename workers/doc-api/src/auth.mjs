@@ -22,6 +22,7 @@
 // a hash against the injected secret.
 
 import { HttpError } from "./data.mjs";
+import { verifyAccessToken } from "./oauth.mjs";
 
 export async function sha256Hex(input) {
   const buf = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(String(input)));
@@ -56,6 +57,15 @@ export async function resolveAccess(request, env) {
     if (rec) {
       scope = rec.scope === "rw" ? "rw" : "r";
       actor = typeof rec.name === "string" && rec.name ? rec.name : "key";
+    } else {
+      // OAuth access tokens (e.g. ChatGPT native MCP): same scope model —
+      // "write" in the granted scopes means rw. Only active while API_KEYS
+      // is configured (no writable-but-unauthenticated API).
+      const grant = await verifyAccessToken(env, token);
+      if (grant) {
+        scope = grant.scope.split(/\s+/).includes("write") ? "rw" : "r";
+        actor = `oauth:${grant.label}`;
+      }
     }
   }
 
