@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "matters": [
+    {
+      "number": 0,
+      "caption": "Ngwa Nforbi v. Ngwa Nforbi",
+      "path": "internal/private/matters/00/",
+      "classification": "private_contingency",
+      "lifecycle": "planning",
+      "phase": "assessment",
+      "public": false,
+      "active_litigation": false,
+      "last_updated": "2026-09-26"
+    }
+  ]
+}
