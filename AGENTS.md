@@ -145,3 +145,29 @@ Rules:
 - New automation that runs in the hooks or `npm run` must be Node (.mjs).
 - Python scripts must not be added to `package.json` scripts. Do not add GitHub Actions workflows.
 - Shared logic (matter loading, validation) lives in Node; do not duplicate it in Python.
+
+## Matter 0 — private contingency workspace
+
+Matter 0 is **not a filed case** and must never enter the public matter graph. Its
+front door is `internal/private/matters/00/README.md`. It is an internal
+workspace for marriage preservation, decision analysis, lawful divorce
+contingency planning, and preparation if a family-law proceeding becomes
+necessary.
+
+Hard boundary:
+
+- Do not copy Matter 0 content into `internal/src/data/matters/`, the public
+  README inventory, generated summaries, the SPA, D1, R2, the public Worker, the
+  fuse board, damages totals, lawyer-fee totals, or public document registries.
+- Do not treat a planning scenario as a fact, admission, accusation, or decision
+  to separate. Label entries FACT, USER REPORT, INFERENCE, QUESTION, or
+  RECOMMENDATION.
+- Do not contact a spouse, family member, lawyer, mediator, court, financial
+  institution, employer, or other third party without the user's express
+  instruction.
+- Do not store passwords, access tokens, Social Security numbers, full account
+  numbers, minor children's identifying data, intimate communications, or raw
+  medical records. Store a redacted description plus a private locator or hash.
+- Preserve lawful conduct: no concealment or dissipation of assets, no
+  unauthorized account access, no destructive deletion, no retaliation, and no
+  unlawful recording.
