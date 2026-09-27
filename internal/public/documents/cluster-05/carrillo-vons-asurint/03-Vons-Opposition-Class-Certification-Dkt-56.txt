@@ -1,0 +1,2181 @@
+<PARSED TEXT FOR PAGE: 1 / 32>
+
+CASE NO. 8:25-cv-00191-SRM-KES
+DEFENDANT THE VONS COMPANIES, INC.’S MEMORANDUM OF POINTS AND AUTHORITIES 
+IN OPPOSITION TO PLAINTIFF’S MOTION FOR CLASS CERTIFICATION
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+LITTLER MENDELSON, P.C.
+501 W. Broadway, Suite 900
+San Diego, California 92101
+619.232.0441
+Rod M. Fliegel, Bar No. 168289
+rfliegel@littler.com
+LITTLER MENDELSON, P.C.
+101 Second Street, Suite 1000
+San Francisco, California 94105
+Telephone: 415.433.1940
+Facsimile: 415.399.8490
+Karimah J. Lamar, Bar No. 246862
+klamar@littler.com
+Christine Fitzgerald, Bar No. 259014
+cfitzgerald@littler.com
+Robert Geiger, Bar No. 322914
+rgeiger@littler.com
+LITTLER MENDELSON, P.C.
+501 W. Broadway, Suite 900
+San Diego, California 92101
+Telephone: 619.232.0441
+Facsimile: 619.232.4302
+Attorneys for Defendant
+THE VONS COMPANIES, INC.
+UNITED STATES DISTRICT COURT
+CENTRAL DISTRICT OF CALIFORNIA
+SOUTHERN DIVISION
+ROBERTO SANDOVAL CARRILLO, 
+individually and on behalf of all others 
+similarly situated,
+Plaintiff,
+v.
+THE VONS COMPANIES, INC.; ONE 
+SOURCE TECHNOLOGY LLC d/b/a 
+ASURINT; and DOES 1-5,
+Defendants.
+Case No. 8:25-cv-00191-SRM-KES
+DEFENDANT THE VONS 
+COMPANIES, INC.’S 
+MEMORANDUM OF POINTS AND 
+AUTHORITIES IN OPPOSITION TO 
+PLAINTIFF’S MOTION FOR CLASS 
+CERTIFICATION
+Date: April 15, 2026 Time: 1:30 p.m.
+Trial Date: Not Yet Set
+Complaint Filed: February 6, 2025
+Case 8:25-cv-00191-SRM-KES Document 56 Filed 02/18/26 Page 1 of 32 Page ID
+#:1084
+
+<PARSED TEXT FOR PAGE: 2 / 32>
+
+2 CASE NO. 8:25-cv-00191-SRM-KES
+DEFENDANT THE VONS COMPANIES, INC.’S MEMORANDUM OF POINTS AND AUTHORITIES 
+IN OPPOSITION TO PLAINTIFF’S MOTION FOR CLASS CERTIFICATION
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+LITTLER MENDELSON, P.C.
+501 W. Broadway, Suite 900
+San Diego, California 92101
+619.232.0441
+TABLE OF CONTENTS
+PAGE
+I. INTRODUCTION ....................................................................................8
+II. RELEVANT FACTUAL BACKGROUND.............................................9
+A. Vons Maintains Background Check Policies and Procedures 
+That Require Individualized Assessment of Every Applicant. ......9
+B. Plaintiff Is an Alcoholic, Bipolar Sex Offender with Ongoing
+Issues.............................................................................................11
+1. Plaintiff Is Convicted of Possessing Child Explicit 
+Sexual Material and Required to Register as a Sex 
+Offender..............................................................................11
+2. Plaintiff Discloses His Status as a Registered Sex 
+Offender to Vons After Vons Conditionally Offered 
+Him Employment. ..............................................................12
+3. Plaintiff’s Ongoing Violations of His Supervised 
+Release and Continued Risk Factors..................................13
+a. Plaintiff’s Unauthorized Devices and Evidence of 
+Deletion....................................................................13
+b. Plaintiff Screenshotted Images of Children.............13
+c. Plaintiff’s Alcohol-Related Judgment Failures 
+and Mental-Health Concerns. ..................................14
+d. Plaintiff’s Continued Violations After Filing This 
+Lawsuit.....................................................................14
+C. Procedural History Demonstrates Plaintiff’s Counsel’s 
+Repeated Lack of Diligence. ........................................................15
+III. STATUTORY BACKGROUND ...........................................................15
+A. California Megan’s Law—Penal Code Section 290.46—
+Allows Employers to Deny Employment to Protect a Person at 
+Risk. ..............................................................................................15
+Case 8:25-cv-00191-SRM-KES Document 56 Filed 02/18/26 Page 2 of 32 Page ID
+#:1085
+
+<PARSED TEXT FOR PAGE: 3 / 32>
+
+3 CASE NO. 8:25-cv-00191-SRM-KES
+DEFENDANT THE VONS COMPANIES, INC.’S MEMORANDUM OF POINTS AND AUTHORITIES 
+IN OPPOSITION TO PLAINTIFF’S MOTION FOR CLASS CERTIFICATION
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+LITTLER MENDELSON, P.C.
+501 W. Broadway, Suite 900
+San Diego, California 92101
+619.232.0441
+TABLE OF CONTENTS
+(CONTINUED) PAGE
+B. California’s Fair Chance Act—Government Code Section 
+12952. ...........................................................................................16
+IV. LEGAL STANDARD FOR CLASS CERTIFICATION.......................18
+V. ARGUMENT..........................................................................................19
+A. Plaintiff’s Criminal Conviction, Substance Abuse Problems, 
+and Ongoing Supervised Release Violations Render Him an 
+Inadequate Class Representative. .................................................19
+1. Plaintiff’s Active Federal Supervision and Repeated 
+Violations Create Severe Credibility Concerns. ................20
+2. Plaintiff’s Substance Abuse and Mental-Health Issues 
+Compound His Inadequacy. ...............................................21
+3. Plaintiff’s Attempt to Destroy Evidence Undermines His 
+Credibility and Exposes the Class to Impeachment...........21
+4. Plaintiff’s Continuing Misconduct—Before and After 
+Filing Suit—Destroys Adequacy. ......................................22
+5. Plaintiff Is Uniquely Inadequate—Even Among 
+Individuals with Criminal Histories...................................22
+6. Plaintiff’s Credibility Will Become the Focus of This 
+Case—To the Class’s Detriment........................................23
+B. Plaintiff Failed to Establish Typicality.........................................23
+1. Plaintiff Disclosed His Status as a Sex Offender, 
+Making His Claim Fundamentally Different from Those 
+of the Putative Class...........................................................23
+2. Plaintiff Was Not an Applicant of Vons When His Offer 
+Was Rescinded. ..................................................................24
+C. Plaintiff Failed to Establish Commonality. ..................................25
+Case 8:25-cv-00191-SRM-KES Document 56 Filed 02/18/26 Page 3 of 32 Page ID
+#:1086
+
+<PARSED TEXT FOR PAGE: 4 / 32>
+
+4 CASE NO. 8:25-cv-00191-SRM-KES
+DEFENDANT THE VONS COMPANIES, INC.’S MEMORANDUM OF POINTS AND AUTHORITIES 
+IN OPPOSITION TO PLAINTIFF’S MOTION FOR CLASS CERTIFICATION
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+LITTLER MENDELSON, P.C.
+501 W. Broadway, Suite 900
+San Diego, California 92101
+619.232.0441
+TABLE OF CONTENTS
+(CONTINUED) PAGE
+1. Plaintiff Failed Establish Commonality as to the 
+Megan’s Law Class by Ignoring Half the Penal Code.......26
+2. Plaintiff Failed to Establish Commonality as to the Fair 
+Chance Act Class. ..............................................................27
+D. Plaintiff Failed to Establish Predominance. .................................28
+1. Individualized Issues Predominate Plaintiff’s Megan’s 
+Law Claim. .........................................................................29
+2. Individualized Issues Predominate Plaintiff’s FCA 
+Claim. .................................................................................29
+a. Vons’s Evidence Shows Individualized 
+Assessments for Every Applicant. ...........................30
+b. Each Putative Class Member’s FCA Claim 
+Would Require a Mini-Trial. ...................................30
+E. Plaintiff Fails to Provide a Coherent Trial Plan and Fails to 
+Demonstrate that a Class Action is Superior................................31
+1. Plaintiff Fails to Provide a Trial Plan.................................31
+2. A Class Action Is Not Superior Due to Privacy 
+Concerns.............................................................................31
+F. Plaintiff’s Counsel Failed to Show He Is Adequate.....................32
+VI. CONCLUSION.......................................................................................32
+Case 8:25-cv-00191-SRM-KES Document 56 Filed 02/18/26 Page 4 of 32 Page ID
+#:1087
+
+<PARSED TEXT FOR PAGE: 5 / 32>
+
+5 CASE NO. 8:25-cv-00191-SRM-KES
+DEFENDANT THE VONS COMPANIES, INC.’S MEMORANDUM OF POINTS AND AUTHORITIES 
+IN OPPOSITION TO PLAINTIFF’S MOTION FOR CLASS CERTIFICATION
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+LITTLER MENDELSON, P.C.
+501 W. Broadway, Suite 900
+San Diego, California 92101
+619.232.0441
+TABLE OF AUTHORITIES
+Page(s)
+Federal Cases
+Amchem Prods. Inc. v. Windsor,
+521 U.S. 591 (1997)......................................................................................18, 19
+Bowerman v. Field Asset Servs.,
+60 F.4th 459 (9t
+h Cir. 2022)...........................................................................29, 31
+Califano v. Yamasaki,
+442 U.S. 682 (1979)............................................................................................18
+Canterberry v. Acara Sols., Inc.,
+No. 20-CV-02361-KJM-KJN, 2022 WL 317002 (E.D. Cal. Feb. 2, 2022).......25
+Castillo v. Bank of Am., NA,
+980 F.3d 723 (9th Cir. 2020) ..............................................................................31
+Comcast Corp. v. Behrend,
+133 S. Ct. 1426 (2013)........................................................................................18
+Dunford v. American DataBank, LLC,
+64 F.Supp.3d 1378 (N.D. Cal. Aug. 12, 2014)...................................................23
+Hanon v. Dataproducts Corp.,
+976 F.2d 497 (9th Cir. 1992) ........................................................................24, 25
+Hernandez v. Christensen Brothers General Eng., Inc.,
+670 F.Supp.3d 996 (C.D. Cal. 2023)............................................................28, 29
+Lindsey v. Normet,
+405 U.S. 56 (1972)..............................................................................................31
+Meyer v. Portfolio Recovery Assocs., LLC,
+707 F.3d 1036 (9th Cir. 2012), cert. denied, 569 U.S. 975 (2013) ..............19, 23
+Nguyen v. Nissan N. Am., Inc.,
+487 F. Supp. 3d 845 (N.D. Cal. 2020)................................................................24
+Olean Wholesale Grocery Coop., Inc. v. Bumble Bee Foods LLC,
+31 F.4th 651 (9th Cir. 2022)...............................................................................18
+Case 8:25-cv-00191-SRM-KES Document 56 Filed 02/18/26 Page 5 of 32 Page ID
+#:1088
+
+<PARSED TEXT FOR PAGE: 6 / 32>
+
+6 CASE NO. 8:25-cv-00191-SRM-KES
+DEFENDANT THE VONS COMPANIES, INC.’S MEMORANDUM OF POINTS AND AUTHORITIES 
+IN OPPOSITION TO PLAINTIFF’S MOTION FOR CLASS CERTIFICATION
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+LITTLER MENDELSON, P.C.
+501 W. Broadway, Suite 900
+San Diego, California 92101
+619.232.0441
+TABLE OF AUTHORITIES
+(CONTINUED)
+Page(s)
+Parker v. FedEx Nat. Ltl, Inc.,
+2011 WL11671754 (C.D. Cal. Apr.11, 2011)....................................................32
+Peabody v. Orange Cnty. Transp. Auth.,
+2015WL12912332 (C.D. Cal. July 7, 2015).................................................28, 29
+Porath v. Logitech, Inc.,
+No. C 18-03091 WHA, 2019 WL 6134936 (N.D. Cal. Nov. 18, 2019)
+...........................................................................................................19, 21, 22, 23
+Santos v. TWC Administration LLC,
+2014 WL 12558274 (C.D. Cal. 2014) ................................................................27
+Tyson Foods, Inc. v. Bouaphakeo,
+577 U.S. 442 (2016)............................................................................................18
+U.S. v. Sandoval,
+Case No. 16-CR-1694 (S.D. Cal.) ......................................................................11
+Wal-Mart v. Dukes,
+564 U.S. 338 (2011).....................................................................................passim
+Zinser v. Accufix Research Instit.,
+253 F.3d 1180 (9th Cir. 2001) ............................................................................31
+California Cases
+Edwards v. Am. Auto. Ass'n of N. Cal., Nevada & Utah, Inc.,
+No. A170012, 2025 WL 2435408 (Cal. Ct. App. Aug. 25, 2025), reh'g 
+denied (Sept. 10, 2025), review denied (Nov. 25, 2025)....................................25
+California Statutes
+Cal. Gov’t Code
+§ 11017.1.............................................................................................................25
+§ 12952.........................................................................................................passim
+§ 12952(c)(1)(A).................................................................................................17
+Case 8:25-cv-00191-SRM-KES Document 56 Filed 02/18/26 Page 6 of 32 Page ID
+#:1089
+
+<PARSED TEXT FOR PAGE: 7 / 32>
+
+7 CASE NO. 8:25-cv-00191-SRM-KES
+DEFENDANT THE VONS COMPANIES, INC.’S MEMORANDUM OF POINTS AND AUTHORITIES 
+IN OPPOSITION TO PLAINTIFF’S MOTION FOR CLASS CERTIFICATION
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+LITTLER MENDELSON, P.C.
+501 W. Broadway, Suite 900
+San Diego, California 92101
+619.232.0441
+TABLE OF AUTHORITIES
+(CONTINUED)
+Page(s)
+Cal. Pen. Code
+§ 290.03(a)(1) .....................................................................................................15
+§ 290.46(j)(1)................................................................................................16, 26
+§ 290.46...........................................................................................................8, 15
+§ 290.46(j)...........................................................................................................29
+Other Authorities
+Cal. Code Regs. tit. 2, § 11023 ..........................................................................17, 29
+Fed. R. Civ. P. 23.......................................................................................8, 9, 18, 23
+Fed. R. Civ. P. 23(a)...........................................................................................18, 28
+Fed. R. Civ. P. 23(a)(1)–(4).....................................................................................18
+Fed. R. Civ. P. 23(a)(2)................................................................................25, 27, 28
+Fed. R. Civ. P. 23(a)(4)...............................................................................19, 20, 32
+Fed. R. Civ. P. 23(b) ................................................................................................18
+Fed. R. Civ. P. 23(b)(3)...........................................................................18, 28, 29,31
+Fed. R. Civ. P. 23(b)(3)(D)......................................................................................18
+Fed. R. Civ. P. 30(b)(6)......................................................................................15, 32
+Case 8:25-cv-00191-SRM-KES Document 56 Filed 02/18/26 Page 7 of 32 Page ID
+#:1090
+
+<PARSED TEXT FOR PAGE: 8 / 32>
+
+8 CASE NO. 8:25-cv-00191-SRM-KES
+DEFENDANT THE VONS COMPANIES, INC.’S MEMORANDUM OF POINTS AND AUTHORITIES 
+IN OPPOSITION TO PLAINTIFF’S MOTION FOR CLASS CERTIFICATION
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+LITTLER MENDELSON, P.C.
+501 W. Broadway, Suite 900
+San Diego, California 92101
+619.232.0441
+I. INTRODUCTION
+Plaintiff’s Motion for Class Certification (“Motion”) should be denied. Plaintiff 
+brings claims against Defendant The Vons Companies, Inc. (“Vons” or “Defendant”) for 
+alleged classwide violations of (1) the California Penal Code (“Megan’s Law”) and (2) the 
+California Fair Chance Act (“FCA”). Plaintiff fails to meet his burden under Rule 23 to 
+demonstrate these claims are suitable for class treatment. 
+Initially, Plaintiff, a former schoolteacher, is demonstrably unfit to serve as a class 
+representative (i.e., fiduciary). His federal conviction for possessing child-exploitation 
+material, his repeated violations of supervised release, his acknowledged inability to 
+exercise sound judgment while under the influence, and his ongoing struggles with 
+compliance and sobriety leave no doubt about his unfitness. No class action can proceed 
+with a representative whose own conduct, credibility, and continuing criminal issues 
+overwhelm the litigation. 
+Plaintiff is also atypical. He disclosed his conviction to Vons, and the undisputed 
+evidence shows Vons would have taken the same employment action regardless of his 
+appearance on the Megan’s Law Website (“MLW”). His circumstances—an existing 
+employee hired during a staffing emergency, not an applicant covered by the FCA—bear 
+no resemblance to the situations of other individuals he seeks to represent.
+Nor can Plaintiff establish commonality or predominance. His theory ignores 
+California law, which authorizes employers to rely on MLW information to protect a 
+person at risk, including children—precisely the concern presented here. And the FCA
+requires individualized assessments, which necessarily defeats any effort to adjudicate 
+liability on a classwide basis. Determining whether Vons lawfully evaluated conviction 
+history, whether a particular crime was job-related, whether mitigating evidence was 
+provided, or whether MLW information was used for a statutorily permissible purpose all 
+require individualized inquiries.
+Finally, a class action is not a superior method of resolving these claims. The case 
+turns on individualized assessments, sensitive personal histories, and fact-intensive 
+Case 8:25-cv-00191-SRM-KES Document 56 Filed 02/18/26 Page 8 of 32 Page ID
+#:1091
+
+<PARSED TEXT FOR PAGE: 9 / 32>
+
+9 CASE NO. 8:25-cv-00191-SRM-KES
+DEFENDANT THE VONS COMPANIES, INC.’S MEMORANDUM OF POINTS AND AUTHORITIES 
+IN OPPOSITION TO PLAINTIFF’S MOTION FOR CLASS CERTIFICATION
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+LITTLER MENDELSON, P.C.
+501 W. Broadway, Suite 900
+San Diego, California 92101
+619.232.0441
+statutory defenses. Proceeding as a class would strip Vons of its due process right to contest 
+each applicant’s circumstances and would thrust absent individuals’ highly personal 
+criminal histories into public litigation without need.
+After conducting extensive discovery, Plaintiff cannot satisfy his burden under Rule 
+23. Class certification should be denied. 
+II. RELEVANT FACTUAL BACKGROUND
+A. Vons Maintains Background Check Policies and Procedures That 
+Require Individualized Assessment of Every Applicant. 
+Vons is a family-friendly grocery retailer whose stores routinely serve and employ 
+minors. (Declaration of Courtney Jones (“Jones Decl.”) ¶ 2, 6.) It therefore maintains and 
+follows background-adjudication procedures tailored to California’s FCA. (Jones Decl., ¶ 
+3; Ex. 1 (Standard Operating Procedures)1; Ex. 2 (North Depo.) at 161:4-14.) The 
+procedures also are consistent with the Legislature’s safety directive that MLW 
+information may be used “to protect a person at risk.” (Id.)2
+Consistent with Government Code section 12952 and its regulations, Vons conducts 
+background checks of all its retail job applicants at the post-offer stage of the hiring 
+process. (Id.) During the relevant period, Toni North and Courtney Jones were responsible 
+for adjudicating background checks for California. (Ex. 2 at 44:2-14, 51:8-12, 75:6-15, 
+61:7-8; Jones Decl., ¶ 3.) As part of its process, Vons makes conditional offers first and 
+then evaluates conviction history, with no pre-offer inquiry into criminal records and no 
+consideration of arrests not resulting in conviction, diversion, or sealed/expunged matters. 
+1 Exhibit 1 “(Ex. 1)”, and all other exhibits ordered by Arabic numerals are filed herewith and attached to the Declaration of Karimah Lamar (“Lamar Decl.”).
+2 Vons is a subsidiary of Albertsons Companies, Inc. (“Albertsons”). (Jones Decl., ¶ 3.) 
+Vons operates Vons and Pavilions stores in Southern California. (Id.) Because Vons is an indirect subsidiary of Albertsons, policies and procedures followed by Vons may have 
+the Albertsons Companies trademark. (Id. at ¶ 5.) In limited circumstances, including the background adjudication process, employees of other Albertsons subsidiaries may 
+provide support for Vons. (Ex. 1; Jones Decl., ¶¶ 3–6; Ex. 3 (Background Check Fails); Ex. 2 at 60:17-61:8; 84:14-21; 146:17-147:1.) This explains why the Standard Operating Procedures (“SOP”) and internal forms at times bear the “Albertsons” mark while being 
+applied to Vons’s applicants. (Id.)
+Case 8:25-cv-00191-SRM-KES Document 56 Filed 02/18/26 Page 9 of 32 Page ID
+#:1092
+
+<PARSED TEXT FOR PAGE: 10 / 32>
+
+10 CASE NO. 8:25-cv-00191-SRM-KES
+DEFENDANT THE VONS COMPANIES, INC.’S MEMORANDUM OF POINTS AND AUTHORITIES 
+IN OPPOSITION TO PLAINTIFF’S MOTION FOR CLASS CERTIFICATION
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+LITTLER MENDELSON, P.C.
+501 W. Broadway, Suite 900
+San Diego, California 92101
+619.232.0441
+(Ex. 1; Jones Decl., ¶ 4.) If post-offer information could be disqualifying, Vons conducts 
+an individualized assessment addressing: (1) the nature and gravity of the offense; (2) the 
+time since the conviction; and (3) the nature of the job held or sought. (Id.) Specifically, 
+Vons reviews the crime(s) committed by the applicant and determine which, if any, are 
+related to the job to which they are applying. (Id.; see Ex. 3 (Background Check Data).) 
+Vons then documents the decision path—identifying the most serious offense where 
+multiple exist—and treats non-disclosure itself as a distinct integrity issue. (Ex. 2 at 38:2-
+39:3, 53:2-23; Ex. 3; Jones Decl., ¶ 4.) In other words, Vons conducts a unique analysis 
+for each background adjudication to determine whether the crime committed by the 
+applicant is adversely job related enough to warrant an initial “fail,” which would trigger 
+the next step in the background check process. (See id.) These steps are not optional; they 
+are embedded in the workflow and trigger the statutory “pre-adverse” and “adverse action” 
+notices that invite mitigation evidence for Vons to consider before any final decision. (Ex. 
+1; Ex. 2 at 66:22-71:1.)
+If Vons intends to rescind a conditional job offer after conducting the background 
+check, it first provides written notice to the applicant—the “Pre-Adverse Action Letter.”
+(Id.) The Pre-Adverse Action Letter notifies the applicant of the conviction, provides a 
+copy of the conviction history report, and explains that the applicant has a right to respond 
+in writing and with mitigating evidence. (Id.) 
+If a final decision is made after the applicant provides mitigating evidence (if at all), 
+Vons provides the applicant with a written notice of same: the “Adverse Action Letter.”
+(Id.) The Adverse Action Letter notifies the applicant of the disqualification, a process to 
+challenge the decision or request reconsideration, and the applicant’s right to file a 
+complaint with the California Civil Rights Department (“CRD”). (Id.)
+Throughout the relevant period, Vons passed more than 1,700 individuals and failed 
+approximately 901 individuals after individualized adjudication—objective evidence that 
+outcomes turn on applicant-specific facts rather than inflexible rules. (Ex. 3; Jones Decl., 
+¶¶ 4-5.) While Vons has not passed candidates whose records and roles presented 
+Case 8:25-cv-00191-SRM-KES Document 56 Filed 02/18/26 Page 10 of 32 Page ID
+#:1093
+
+<PARSED TEXT FOR PAGE: 11 / 32>
+
+11 CASE NO. 8:25-cv-00191-SRM-KES
+DEFENDANT THE VONS COMPANIES, INC.’S MEMORANDUM OF POINTS AND AUTHORITIES 
+IN OPPOSITION TO PLAINTIFF’S MOTION FOR CLASS CERTIFICATION
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+LITTLER MENDELSON, P.C.
+501 W. Broadway, Suite 900
+San Diego, California 92101
+619.232.0441
+unresolved risk involving sexual-offenses, including individuals required to register as 
+sexual offenders, an Albertsons banner who is not a defendant in this case (Safeway) has 
+passed at least one MLW-listed individual who was similarly convicted for viewing child 
+pornography for a non-customer-facing corporate position after considering mitigating 
+evidence. (Ex. 2 at 159:15-160:8.) 
+B. Plaintiff Is an Alcoholic, Bipolar Sex Offender with Ongoing Issues. 
+Plaintiff is not a stable or trustworthy class representative. His criminal history is not 
+historical or rehabilitated—it is active, escalating, and continuously monitored by the 
+federal court. Plaintiff remains on a lengthy term of supervised release stemming from his 
+federal conviction for possessing child-exploitation material in U.S. v. Sandoval, Case No. 
+16-CR-1694 (S.D. Cal.). (Request for Judicial Notice (“RJN”) Exs. A (Judgment)–B 
+(Modification).)3 His release conditions reflect the seriousness of his offense and the 
+federal court’s ongoing concern regarding his behavior and mental state. (See Exs. A–B.)
+1. Plaintiff Is Convicted of Possessing Child Explicit Sexual Material 
+and Required to Register as a Sex Offender.
+In July 2016, Plaintiff was federally indicted for possessing child-exploitation 
+material in the U.S. District Court for the Southern District of California, Case No. 16-CR￾1694. (RJN, Ex. A (Judgment in a Criminal Case).) He pleaded guilty in August 2017, was 
+sentenced to 97 months in federal prison, and upon release was placed on 10 years of 
+supervised release, with strict “Special Conditions of Supervision,” including a prohibition 
+on initiating contact with minors outside the presence of a supervising adult who is aware 
+of the details of his conviction. (Id.) These conditions were not discretionary—they were 
+imposed because the federal court found Plaintiff presents a heightened risk requiring 
+ongoing oversight. (Id.)
+/ / /
+/ / / 
+3 Exhibit A “(Ex. A)”, and all other exhibits ordered alphabetically are filed herewith and 
+attached to Vons’s Request for Judicial Notice.
+Case 8:25-cv-00191-SRM-KES Document 56 Filed 02/18/26 Page 11 of 32 Page ID
+#:1094
+
+<PARSED TEXT FOR PAGE: 12 / 32>
+
+12 CASE NO. 8:25-cv-00191-SRM-KES
+DEFENDANT THE VONS COMPANIES, INC.’S MEMORANDUM OF POINTS AND AUTHORITIES 
+IN OPPOSITION TO PLAINTIFF’S MOTION FOR CLASS CERTIFICATION
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+LITTLER MENDELSON, P.C.
+501 W. Broadway, Suite 900
+San Diego, California 92101
+619.232.0441
+2. Plaintiff Discloses His Status as a Registered Sex Offender to Vons 
+After Vons Conditionally Offered Him Employment. 
+In January 2023, mere months after leaving federal custody and while still living in 
+a halfway house, Plaintiff began working for Vons during a period of post-pandemic 
+staffing strain, including high turnover and absenteeism. (Ex. 4 (Responses to Special 
+Interrogatories) at 5:13-21.) Because of these staffing challenges, Plaintiff was permitted 
+to begin working at Vons before his background check process concluded. (Id.) Vons was 
+unaware Plaintiff was a convicted sex offender who is listed on the MLW when it hired 
+him on a conditional basis (i.e., subject to a background check). 
+As part of the background check process, and only after receiving a conditional offer,
+Plaintiff disclosed he had been convicted of receipt of an image of a minor in August 2017. 
+(Ex. 5 (Pltf. Depo.) at 203:2-204:2; Ex. 6 (Disclosure).) During the pendency of Plaintiff’s 
+background check, he was hired in the deli section of the store, where he would regularly 
+interact with customers, including children. (Ex. 5 at 114:6-15, 116:11-117:2; Jones Decl., 
+¶ 6.) As part of his position as a deli clerk, Plaintiff was required to greet guests, ask every 
+guest if they needed help, and make sure every guest is escorted to a product when asked. 
+(Ex. 5 at 118:4-119:12; Ex. 7 (Commitment to Service).) Vons also regularly employs 
+minors in its stores. (Jones Decl., ¶ 6.)
+Vons received the results of the background check, which included both the 
+disclosure of his conviction on his application and the presence of his name on the MLW. 
+Under its individualized assessment procedures, Vons considered the disclosed conviction 
+to potentially preclude employment as a customer-facing deli clerk—who interacts with 
+children regularly. (Ex. 1; Ex. 2 at 67:5-16, 69:1-70:5, 77:5-14, 110:24-111:3, 119:6-9, 
+130:4-8, 138:9-18.) Whether he disclosed his offense or appeared on the MLW, the result 
+for Vons would have been identical: Vons would evaluate a customer-facing deli clerk
+under its individualized assessment procedures. (Id.)
+Vons issued a Pre-Adverse Action Notice and invited Plaintiff to provide mitigating 
+evidence. (Ex. 2 at 106:19-24, Ex. 8.) Plaintiff submitted materials Vons considered, but it 
+Case 8:25-cv-00191-SRM-KES Document 56 Filed 02/18/26 Page 12 of 32 Page ID
+#:1095
+
+<PARSED TEXT FOR PAGE: 13 / 32>
+
+13 CASE NO. 8:25-cv-00191-SRM-KES
+DEFENDANT THE VONS COMPANIES, INC.’S MEMORANDUM OF POINTS AND AUTHORITIES 
+IN OPPOSITION TO PLAINTIFF’S MOTION FOR CLASS CERTIFICATION
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+LITTLER MENDELSON, P.C.
+501 W. Broadway, Suite 900
+San Diego, California 92101
+619.232.0441
+was insufficient to overcome the job-related risk presented. (Jones Decl., ¶ 6; Ex. 9
+(Mitigation Documents.) Because Plaintiff’s role required constant interaction with 
+customers—including children—and shared facilities (e.g., restrooms) with children, Vons 
+made the lawful and safety-driven decision to withdraw his conditional offer of 
+employment on March 8, 2023. (Ex. 2 at 214:9-13; Ex. 5 at 134:4-135:1; Ex. 10 (Adverse 
+Action Notice).) Vons considered Plaintiff’s request to work as an overnight stock clerk, 
+but even that position involves working with minors. (Ex. 2 at 214:9-13.) 
+3. Plaintiff’s Ongoing Violations of His Supervised Release and 
+Continued Risk Factors.
+Far from demonstrating rehabilitation, Plaintiff continued engaging in prohibited 
+conduct after his release, after beginning employment at Vons, and even after filing this 
+lawsuit.
+a. Plaintiff’s Unauthorized Devices and Evidence of Deletion.
+In July 2023, Plaintiff’s period of supervised release commenced. (Ex. 5 at 70:18-
+22.) In April 2024, Plaintiff was found in possession of an unapproved cellular device that 
+had been reset to factory settings, indicating potential concealment. (RJN Ex. B (Petition 
+for Warrant or Summons for Offender Under Supervision).) He was admonished and 
+reminded of his obligation to comply with the conditions of his supervised release, 
+including complying with his computer-monitoring agreement. (Id.) 
+Despite this admonishment, just months later, a computer forensic exam revealed 
+visits to sexually explicit websites prohibited by his supervised-release terms: Pornhub, 
+Chaturbate, Babepedia, Cam4, Xhamster, xxxhdsex.cc, and Leeporn. (Id.; Ex. 5 at 167:23-
+172:13.) The forensic exam showed Plaintiff used “Data Destroyer,” a program known for 
+permanently deleting files. (Id.)
+b. Plaintiff Screenshotted Images of Children.
+In December 2024, Plaintiff’s probation officer again petitioned the court for a 
+warrant because Plaintiff admitted he had “succumbed” to temptation while online and 
+had been viewing and screenshotting images of prepubescent children. (Ex. B.) This was 
+Case 8:25-cv-00191-SRM-KES Document 56 Filed 02/18/26 Page 13 of 32 Page ID
+#:1096
+
+<PARSED TEXT FOR PAGE: 14 / 32>
+
+14 CASE NO. 8:25-cv-00191-SRM-KES
+DEFENDANT THE VONS COMPANIES, INC.’S MEMORANDUM OF POINTS AND AUTHORITIES 
+IN OPPOSITION TO PLAINTIFF’S MOTION FOR CLASS CERTIFICATION
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+LITTLER MENDELSON, P.C.
+501 W. Broadway, Suite 900
+San Diego, California 92101
+619.232.0441
+not an isolated lapse—it reflected a repeat pattern of conduct directly tied to his underlying 
+offense and an admission that again violated the terms of his supervised release. (See id.)
+c. Plaintiff’s Alcohol-Related Judgment Failures and 
+Mental-Health Concerns.
+Plaintiff’s probation officer also reported Plaintiff’s alcohol use—especially while 
+on psychotropic medications—was “extremely concerning” and associated with behavior 
+linked to his original conviction and suicidal attempts. (Id.) (emphasis added.)4 In January 
+2025, Plaintiff admitted to violating the terms of his supervised release, only to 
+immediately fire his attorney and appeal the order. (Ex. C (Criminal Transcript Jan. 24, 
+2025) at 4:5-17; Ex. D (Criminal Transcript Feb. 7, 2025) at 18:16-25.) The district court 
+also denied Plaintiff’s motion for an emergency stay on his mandatory psychological 
+evaluation (which was at that time scheduled for February 20, 2025), in part because the 
+psychological evaluations were required as an ongoing part of his supervised release. (Ex. 
+D.) Plaintiff also lost his appeal; the Ninth Circuit affirmed the order just six weeks ago on 
+January 2, 2026. (Ex. E.) 
+d. Plaintiff’s Continued Violations After Filing This Lawsuit.
+In August 2025, nearly seven months after Plaintiff filed this lawsuit, Plaintiff’s 
+probation officers again discovered Plaintiff was viewing prohibited images that “reflected 
+the lascivious exhibition of female genitalia and pubic area, and completely nude.” (RJN 
+Ex. F.) In response, the court imposed additional restrictions, including alcohol monitoring 
+prohibiting him from drinking alcohol or frequenting places that sell alcohol, and further 
+seized his devices for forensic review. (Id.)5 Plaintiff admitted he consumed alcohol 
+heavily and acknowledged that when he consumes alcohol it may affect his judgment. (Id.)
+4 Plaintiff’s issues related to substance abuse remained a concern despite completing the 
+residential portion of the Dual Diagnosis Residential Drug Abuse Treatment Program on 
+July 15, 2022. (Ex. 9.)
+5 Plaintiff has not produced the forensic report yet, so it is presumably still pending. (Lamar 
+Decl., ¶ 16.)
+Case 8:25-cv-00191-SRM-KES Document 56 Filed 02/18/26 Page 14 of 32 Page ID
+#:1097
+
+<PARSED TEXT FOR PAGE: 15 / 32>
+
+15 CASE NO. 8:25-cv-00191-SRM-KES
+DEFENDANT THE VONS COMPANIES, INC.’S MEMORANDUM OF POINTS AND AUTHORITIES 
+IN OPPOSITION TO PLAINTIFF’S MOTION FOR CLASS CERTIFICATION
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+LITTLER MENDELSON, P.C.
+501 W. Broadway, Suite 900
+San Diego, California 92101
+619.232.0441
+C. Procedural History Demonstrates Plaintiff’s Counsel’s Repeated Lack 
+of Diligence.
+Plaintiff’s conduct throughout this litigation has been marked by repeated delays and 
+disregard for Court-ordered deadlines, requiring Vons to continually prompt basic 
+compliance. Plaintiff missed the deadline to respond to Vons’s August 6, 2025 discovery 
+and served nothing until Vons followed up three days after the due date. (Lamar Decl., ¶ 
+13.) He then ignored the Court’s September 29 order to supplement responses by October 
+13, serving them nine days late. (ECF Dkt. 42.; Lamar Decl., ¶ 14.) 
+Yet even with these delays, Plaintiff still had ample opportunity to conduct 
+meaningful discovery. More than four months after serving his first requests—and just 
+sixteen days before the discovery cutoff—he unilaterally noticed a Rule 30(b)(6) 
+deposition the night before Thanksgiving. (Lamar Decl., ¶ 12.) Defendants agreed to 
+extend the discovery period to accommodate it, but instead of using that opportunity, 
+Plaintiff sought a sweeping continuance of all case deadlines. (Id.; ECF Dkt. 52.) The Court 
+denied the request, finding he had not been diligent, and the deposition never occurred 
+solely because of Plaintiff’s own dilatory conduct. (ECF Dkt. 54.)
+III. STATUTORY BACKGROUND
+A. California Megan’s Law—Penal Code Section 290.46—Allows 
+Employers to Deny Employment to Protect a Person at Risk. 
+As an initial matter, Plaintiff’s premise is legally incorrect. California law does not 
+prohibit employers from using the MLW for any reason. Plaintiff’s arguments depends on 
+ignoring half of the statute. The Legislature has expressly recognized that convicted sexual 
+offenders, like Plaintiff, “pose a potentially high risk of committing further sex offenses
+after release from incarceration,” and that “protection of the public from reoffending by 
+these offenders is a paramount public interest.” Cal. Pen. Code § 290.03(a)(1) 
+(emphasis added). The Legislature further declared it is a “compelling and necessary public 
+interest” for the public to have access to information about persons convicted of offenses 
+so they can “adequately protect themselves and their children from these persons.” Id. 
+Case 8:25-cv-00191-SRM-KES Document 56 Filed 02/18/26 Page 15 of 32 Page ID
+#:1098
+
+<PARSED TEXT FOR PAGE: 16 / 32>
+
+16 CASE NO. 8:25-cv-00191-SRM-KES
+DEFENDANT THE VONS COMPANIES, INC.’S MEMORANDUM OF POINTS AND AUTHORITIES 
+IN OPPOSITION TO PLAINTIFF’S MOTION FOR CLASS CERTIFICATION
+1
+2
+3
+4
+5
+
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+LITTLER MENDELSON, P.C.
+501 W. Broadway, Suite 900
+San Diego, California 92101
+619.232.0441
+§ 290.03(a)(2) (emphasis added). 
+Consistent with these findings, the California Department of Justice makes MLW
+information publicly available. And critically, the Penal code does not impose a categorical 
+employment-use ban. Rather, it does the opposite: it expressly authorizes the use of MLW 
+information when necessary “to protect a person at risk.” Penal Code section 290.46(j)(1) 
+provides:
+A person is authorized to use information disclosed pursuant to 
+this section only to protect a person at risk.” (Emphasis added.)
+Only after codifying this affirmative authorization does the statute state that other uses, 
+including certain employment uses, are prohibited “[e]xcept as authorized under 
+paragraph (1) or any other provision of law.” Id. § 290.46(j)(2)(E) (emphasis added).
+Plaintiff completely ignores paragraph one in his motion. (See Motion at 7:23-8:5 
+(omitting Paragraph (j)(1)).) His reading would nullify Section 260.46(j)(1) and require 
+employers—including grocery stores, schools, and daycare centers—to ignore publicly 
+available risk-based information even when making decisions about roles that place 
+employees in direct proximity to children. Such a construction is not only wrong but would 
+produce absurd results the Legislature plainly did not intend. Plaintiff’s representations 
+about California law are therefore demonstrably incorrect and misleading. Employers are 
+expressly permitted to review MLW information when necessary to protect at-risk 
+individuals—precisely the situation presented here where Vons employs minors and 
+regularly serves unaccompanied children.
+B. California’s Fair Chance Act—Government Code Section 12952.
+The FCA, Government Code section 12952, requires employers to conduct an 
+individualized assessment before denying an applicant employment based “solely or in 
+part” on conviction history. The statute does not impose a categorical bar on considering 
+convictions. Instead, it directs employers to make a reasoned, job-related evaluation using 
+the three statutory factors: (1) the nature and gravity of the offense or conduct; (2) the 
+amount of time that has passed since the offense or conduct and completion of the sentence; 
+Case 8:25-cv-00191-SRM-KES Document 56 Filed 02/18/26 Page 16 of 32 Page ID
+#:1099
+
+<PARSED TEXT FOR PAGE: 17 / 32>
+
+17 CASE NO. 8:25-cv-00191-SRM-KES
+DEFENDANT THE VONS COMPANIES, INC.’S MEMORANDUM OF POINTS AND AUTHORITIES 
+IN OPPOSITION TO PLAINTIFF’S MOTION FOR CLASS CERTIFICATION
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+LITTLER MENDELSON, P.C.
+501 W. Broadway, Suite 900
+San Diego, California 92101
+619.232.0441
+and (3) the nature of the job held or sought. Cal. Gov’t Code § 12952(c)(1)(A).
+If, after this individualized assessment, the employer preliminarily determines a 
+conviction is disqualifying, the FCA requires certain procedural notices. The employer 
+must provide written notification containing all the following: (1) notice of the 
+disqualifying conviction(s) that are the basis for the preliminary decision to rescind the 
+offer; (2) a copy of the conviction history report, if any; (3) an explanation of the 
+applicant’s right to respond to the notice of the employer’s preliminary decision before that 
+decision becomes final and the deadline by which to respond. See id. at § 12952(c)(2). The 
+explanation must inform the applicant that the response may include submission of 
+evidence challenging the accuracy of the conviction history report that is the basis for 
+rescinding the offer, evidence of rehabilitation or mitigating circumstances, or both. Id.
+The applicant must be given at least five business days to respond to the notice before the 
+employer makes the final decision. Id. at § 12952(c)(3).
+If the employer ultimately denies employment based on an applicant’s conviction 
+history, the employer must issue a final notice identifying: (1) the final denial or 
+disqualification; (2) any existing procedure the employer has for the applicant to challenge 
+the decision or request reconsideration; and (3) the right to file a complaint with the CRD. 
+Id. at § 12952(c)(5).
+Importantly, the FCA does not require employers to (1) create or maintain a written 
+policy describing their individualized assessment process; (2) produce or memorialize the
+individualized assessment in writing; or (3) use any particular format or template in 
+conducting that assessment.
+This is in contrast to other FEHA provisions—such as the mandatory written 
+harassment and discrimination prevention policy required under 2 C.C.R. section 11023—
+which expressly impose written-policy obligations. The FCA contains no such 
+requirement, confirming that the Legislature intended a flexible, applicant-specific review, 
+not a rigid, policy-driven or document-driven process. This statutory framework—
+requiring individualized, fact-intensive inquiries and procedural notices, but not mandating 
+Case 8:25-cv-00191-SRM-KES Document 56 Filed 02/18/26 Page 17 of 32 Page ID
+#:1100
+
+<PARSED TEXT FOR PAGE: 18 / 32>
+
+18 CASE NO. 8:25-cv-00191-SRM-KES
+DEFENDANT THE VONS COMPANIES, INC.’S MEMORANDUM OF POINTS AND AUTHORITIES 
+IN OPPOSITION TO PLAINTIFF’S MOTION FOR CLASS CERTIFICATION
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+LITTLER MENDELSON, P.C.
+501 W. Broadway, Suite 900
+San Diego, California 92101
+619.232.0441
+written documentation or uniform policies—directly undermines Plaintiff’s class theories. 
+It is structurally incompatible with the kind of uniform, classwide determinations Plaintiff 
+seeks, and instead reinforces that each adjudication necessarily turns on the applicant’s 
+crime, the applicant’s history, the job at issue, and the mitigating evidence provided.
+IV. LEGAL STANDARD FOR CLASS CERTIFICATION
+Class actions are “an exception to the usual rule that litigation is conducted by and 
+on behalf of the individual named parties only.” Califano v. Yamasaki, 442 U.S. 682, 700-
+701 (1979). Class actions for damages are considered the “most adventuresome” type of 
+class action. Amchem Prods. Inc. v. Windsor, 521 U.S. 591, 614-615 (1997); see also Fed. 
+R. Civ. Proc. 23(b)(3)(D) (requiring consideration of “the likely difficulties in managing a 
+class action”). Issues are “individualized” when members of a proposed class must “present 
+evidence that varies from member to member.” Tyson Foods, Inc. v. Bouaphakeo, 577 U.S. 
+442, 453 (2016).
+To obtain class certification under Rule 23(a), Plaintiff bears the burden of 
+demonstrating, by a preponderance of the evidence, each of the four threshold 
+requirements: (1) numerosity; (2) common questions of law or fact; (3) typicality; and (4) 
+adequacy of the class representatives and their counsel. Fed. R. Civ. P. 23(a)(1)-(4); Olean 
+Wholesale Grocery Coop., Inc. v. Bumble Bee Foods LLC, 31 F.4th 651, 664 (9th Cir. 
+2022). The Supreme Court has made clear: “Rule 23 does not set forth a mere pleading 
+standard.” Wal-Mart v. Dukes, 564 U.S. 338, 350 (2011). Rather, “[a] party seeking class 
+certification must affirmatively demonstrate his compliance with the Rule.” Id. 
+Even if Plaintiff could satisfy Rule 23(a)—and he cannot—it remains his burden to 
+show that the case also qualifies for class treatment under Rule 23(b). Dukes, 564 U.S. at 
+345-46. Under Rule 23(b)(3), Plaintiff must establish both predominance and superiority. 
+The predominance criterion is even more demanding than commonality under Rule 23(a).” 
+Comcast Corp. v. Behrend, 133 S. Ct. 1426, 1432 (2013). It is not enough for Plaintiff to 
+simply point to questions he claims are common—the central question is whether those 
+issues are sufficiently cohesive and capable of classwide resolution. Class certification 
+Case 8:25-cv-00191-SRM-KES Document 56 Filed 02/18/26 Page 18 of 32 Page ID
+#:1101
+
+<PARSED TEXT FOR PAGE: 19 / 32>
+
+19 CASE NO. 8:25-cv-00191-SRM-KES
+DEFENDANT THE VONS COMPANIES, INC.’S MEMORANDUM OF POINTS AND AUTHORITIES 
+IN OPPOSITION TO PLAINTIFF’S MOTION FOR CLASS CERTIFICATION
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+LITTLER MENDELSON, P.C.
+501 W. Broadway, Suite 900
+San Diego, California 92101
+619.232.0441
+“tests whether proposed classes are sufficiently cohesive to warrant adjudication by 
+representation.” Amchem Prods., 521 U.S. at 623. 
+Under this rigorous standard, the Motion falls well short. As demonstrated below, 
+the putative classes lack adequacy, typicality, commonality, and predominance; the 
+individualized inquiries mandated by the Megan’s Law and FCA overwhelm any purported 
+common questions; and Plaintiff’s own credibility problems, ongoing criminal violations, 
+and procedural missteps render him fundamentally incapable of representing a class. For 
+these reasons, Plaintiff fails to meet his burden, and his Motion must be denied.
+V. ARGUMENT
+A. Plaintiff’s Criminal Conviction, Substance Abuse Problems, and 
+Ongoing Supervised Release Violations Render Him an Inadequate Class 
+Representative. 
+Plaintiff will not “fairly and adequately protect the interests of the class,” a threshold 
+requirement of Rule 23(a)(4) for any proposed representative. A district court acts within 
+its discretion when determining whether a named plaintiff is inadequate due to a recent 
+criminal record. Meyer v. Portfolio Recovery Assocs., LLC, 707 F.3d 1036, 1042 (9th Cir. 
+2012), cert. denied, 569 U.S. 975 (2013). Courts deny certification where a plaintiff’s 
+criminal conduct, history of substance abuse, or repeated parole violations render him 
+vulnerable to impeachment or unable to credibly advance the class’s interests. Porath v. 
+Logitech, Inc., No. C 18-03091 WHA, 2019 WL 6134936, *5 (N.D. Cal. Nov. 18, 2019) 
+(denying class certification in part based on Plaintiff’s inadequacy as class representative). 
+Indeed, the Court in Porath found inadequacy even though the plaintiff had three 
+felony convictions and a four-year period of drug abuse, yet he had completed his parole 
+while his case was pending. Id. at *6. Despite being drug free for years, having full custody 
+of his child, and his parole ending that year, the district court still found him inadequate
+because he was susceptible to being “clobbered on the stand with his convictions, all to the 
+detriment to the class” and that class representatives “must be trusted.” Id. at *5 (citing 
+Fed. R. Evid. 609 and Fed. R. Civ. P. 23). Those same concerns apply here, but in sharper 
+Case 8:25-cv-00191-SRM-KES Document 56 Filed 02/18/26 Page 19 of 32 Page ID
+#:1102
+
+<PARSED TEXT FOR PAGE: 20 / 32>
+
+20 CASE NO. 8:25-cv-00191-SRM-KES
+DEFENDANT THE VONS COMPANIES, INC.’S MEMORANDUM OF POINTS AND AUTHORITIES 
+IN OPPOSITION TO PLAINTIFF’S MOTION FOR CLASS CERTIFICATION
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+LITTLER MENDELSON, P.C.
+501 W. Broadway, Suite 900
+San Diego, California 92101
+619.232.0441
+form.
+1. Plaintiff’s Active Federal Supervision and Repeated Violations 
+Create Severe Credibility Concerns.
+Plaintiff is not a rehabilitated, decades-removed offender. He is an individual with 
+ongoing criminal-justice supervision who has repeatedly violated release conditions 
+imposed by the federal court. Plaintiff admitted to violating his supervised release in
+January 2025, then attempted to reverse course a week later by appealing—an appeal that 
+was ultimately rejected on January 2, 2026. (RJN Ex. B at 4:5-17; Ex. C at 18:16-25; Ex. 
+E.) His 10-year supervised-release term, which began in mid-2024, was reset for another 
+ten years following those violations. (Ex. 5 at 107:7-108:15.) 
+More troubling is the nature of the violations. In October 2024, Plaintiff admitted to 
+screenshotting images of children on his device—well after his release and long after his 
+employment at Vons ended. (Ex. A.) In December 2024, Plaintiff’s probation officer again 
+petitioned the court for a warrant because Plaintiff admitted that he had “succumbed” to 
+temptation while online and had been viewing and screenshotting images of prepubescent 
+children. (Id.) In August 2025, months after this lawsuit was filed, he again viewed 
+prohibited images that “reflected the lascivious exhibition of female genitalia and pubic 
+area, and completely nude.” (Ex. F.) He further admitted to heavy alcohol use and this 
+admission triggered yet another modification of his supervised release. (Id.) Now, he must 
+undergo alcohol monitoring prohibiting him from drinking alcohol or frequenting places 
+that sell alcohol. (Id.)
+These are not minor technical violations; they go directly to judgment, credibility, 
+impulse control, and ongoing risk—key factors courts consider under Rule 23(a)(4). 
+Plaintiff claimed that his conviction was allegedly caused by alcohol abuse. (Ex. 5 at 131:4-
+10.) That he is still abusing alcohol, the same condition he claims led him to engage in 
+conduct that resulted in his conviction for child porn, only underscores his vulnerabilities, 
+illuminating why he is an inadequate class representative for this reason alone.
+/ / /
+Case 8:25-cv-00191-SRM-KES Document 56 Filed 02/18/26 Page 20 of 32 Page ID
+#:1103
+
+<PARSED TEXT FOR PAGE: 21 / 32>
+
+21 CASE NO. 8:25-cv-00191-SRM-KES
+DEFENDANT THE VONS COMPANIES, INC.’S MEMORANDUM OF POINTS AND AUTHORITIES 
+IN OPPOSITION TO PLAINTIFF’S MOTION FOR CLASS CERTIFICATION
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+LITTLER MENDELSON, P.C.
+501 W. Broadway, Suite 900
+San Diego, California 92101
+619.232.0441
+2. Plaintiff’s Substance Abuse and Mental-Health Issues Compound 
+His Inadequacy.
+Plaintiff’s own probation officer advised the federal court that Plaintiff’s drinking—
+especially while on psychotropic medications—was “extremely concerning” given this 
+behavior was linked to his conviction and suicidal attempts. (Ex. A.) Plaintiff admitted that 
+alcohol impairs his judgment. (Ex. F.) In January 2025, Plaintiff agreed to extend his 
+supervised release and undergo a mental health evaluation, only to immediately fire his 
+attorney and appeal the order. (Ex. B at 4:5-17; Ex. C at 18:16-25.) These findings raise 
+serious questions about his stability, reliability, and fitness to act as a fiduciary for absent 
+class members.
+3. Plaintiff’s Attempt to Destroy Evidence Undermines His 
+Credibility and Exposes the Class to Impeachment.
+Plaintiff was also found in possession of an unauthorized phone in April 2024, and 
+a forensic review revealed he reset the phone to factory settings. (Ex. B.) Such conduct 
+emphasizes that Plaintiff was trying to conceal the websites he was visiting on this 
+unauthorized phone by resetting the phone to hide his search history. Despite being 
+admonished by the court for this unlawful conduct, just months later, another forensic exam 
+revealed visits to sexually explicit websites prohibited by his supervised-release terms: 
+Pornhub, Chaturbate, Babepedia, Cam4, Xhamster, xxxhdsex.cc, and Leeporn. (Id.) The 
+forensic exam also showed that Plaintiff used a program called “Data Destroyer,” software 
+designed to permanently delete files—to eliminate evidence of improper computer use. 
+(Id.) 
+Courts view such conduct—attempted concealment of wrongdoing—as a powerful 
+indicator of inadequacy because it renders a representative exceptionally vulnerable to 
+impeachment. See Porath, 2019 WL 6134936 at *6 (risk that plaintiff would be “clobbered 
+on the stand” warranted denying certification). Indeed, at his deposition, he tried to 
+minimize his activities and deny that he visited these websites. (Ex. 5 at 170:6-173:13.) If 
+he is willing to lie under penalty of perjury at his deposition, he most certainly will at trial. 
+Case 8:25-cv-00191-SRM-KES Document 56 Filed 02/18/26 Page 21 of 32 Page ID
+#:1104
+
+<PARSED TEXT FOR PAGE: 22 / 32>
+
+22 CASE NO. 8:25-cv-00191-SRM-KES
+DEFENDANT THE VONS COMPANIES, INC.’S MEMORANDUM OF POINTS AND AUTHORITIES 
+IN OPPOSITION TO PLAINTIFF’S MOTION FOR CLASS CERTIFICATION
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+LITTLER MENDELSON, P.C.
+501 W. Broadway, Suite 900
+San Diego, California 92101
+619.232.0441
+Here, Plaintiff’s credibility vulnerabilities are orders of magnitude greater than those in 
+Porath. He is not merely impeachable with dated convictions; he has been impeached 
+already and he is impeachable with ongoing criminal behavior, ongoing supervision, and 
+ongoing violations—including attempted destruction of digital evidence and the possession 
+of prohibited content.
+4. Plaintiff’s Continuing Misconduct—Before and After Filing Suit—
+Destroys Adequacy.
+Plaintiff’s misconduct did not stop upon entering litigation. He violated 
+supervised-release terms three months before filing this case (October 2024), admitted to 
+doing so immediately before filing this case (January 2025), and six months after filing this 
+case (August 2025). (Exs. B, C, F.) A representative who cannot comply with federal court 
+orders in his own criminal case cannot fairly and adequately steward the interests of a 
+putative class.
+5. Plaintiff Is Uniquely Inadequate—Even Among Individuals with 
+Criminal Histories.
+Vons does not argue that individuals with criminal histories are categorically unfit 
+to serve as class representatives. But Plaintiff’s circumstances are uniquely disqualifying:
+• He is not a long-rehabilitated offender.
+• He has shown an inability to remain compliant for even six months at a time.
+• He has repeatedly admitted (and then attempted to retract) violations.
+• He has engaged in deceptive behavior to hide his violations.
+• He lied under oath at his deposition.
+• He has a documented history of evidence destruction and impaired judgment.
+Nothing about this profile aligns with Rule 23’s requirement that the representative be 
+someone the class, and the Court, can trust to fairly and adequately protect absent class 
+members.
+/ / /
+/ / /
+Case 8:25-cv-00191-SRM-KES Document 56 Filed 02/18/26 Page 22 of 32 Page ID
+#:1105
+
+<PARSED TEXT FOR PAGE: 23 / 32>
+
+23 CASE NO. 8:25-cv-00191-SRM-KES
+DEFENDANT THE VONS COMPANIES, INC.’S MEMORANDUM OF POINTS AND AUTHORITIES 
+IN OPPOSITION TO PLAINTIFF’S MOTION FOR CLASS CERTIFICATION
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+LITTLER MENDELSON, P.C.
+501 W. Broadway, Suite 900
+San Diego, California 92101
+619.232.0441
+6. Plaintiff’s Credibility Will Become the Focus of This Case—To 
+the Class’s Detriment.
+Rule 23 prohibits certification where the representative’s personal issues will 
+dominate the litigation. That is exactly what would happen here. Plaintiff’s violations, his 
+mental-health concerns, his substance-abuse issues, his appeals and reversals, and his 
+continuing forensic investigations will overshadow the merits of this case. His credibility 
+issues will not merely be fodder for cross-examination; they will become the centerpiece 
+of every stage of litigation. 
+Plaintiff’s ongoing misconduct, escalating violations, concealment attempts, and 
+impaired judgment render him uniquely inadequate: (1) He faces extraordinary 
+impeachment exposure, far beyond any other putative class member. (2) His personal 
+violations—including attempts to delete evidence—would become the central focus of the 
+case, displacing any classwide issues. (3) His ongoing criminal-justice supervision creates 
+inherent conflicts and distractions and undermines the reliability required of a class 
+representative. (4) His conduct after filing suit demonstrates that his risk factors are not 
+resolved and remain active concerns—precisely the type of individualized circumstances 
+that defeat adequacy. Courts regularly reject putative class representatives who, like 
+Plaintiff, carry substantial criminal-credibility issues, ongoing supervision, or histories of 
+noncompliance. See, e.g., Meyer v. Portfolio Recovery Assocs., LLC, 707 F.3d 1036, 1042 
+(9th Cir. 2012); Porath, 2019 WL 6134936 at *5; Dunford v. American DataBank, LLC, 
+64 F.Supp.3d 1378, 1397 (N.D. Cal. Aug. 12, 2014). His Motion should be denied.
+B. Plaintiff Failed to Establish Typicality.
+1. Plaintiff Disclosed His Status as a Sex Offender, Making His Claim 
+Fundamentally Different from Those of the Putative Class.
+Plaintiff is not a typical member of the proposed Megan’s Law class because he 
+affirmatively disclosed his conviction for possessing child pornography. (Ex. 6.) This 
+disclosure alone creates a unique factual pathway to his termination that is not shared by 
+applicants whose only source of sex-offense information was the MLW. (Ex. 2 at 38:2-
+Case 8:25-cv-00191-SRM-KES Document 56 Filed 02/18/26 Page 23 of 32 Page ID
+#:1106
+
+<PARSED TEXT FOR PAGE: 24 / 32>
+
+24 CASE NO. 8:25-cv-00191-SRM-KES
+DEFENDANT THE VONS COMPANIES, INC.’S MEMORANDUM OF POINTS AND AUTHORITIES 
+IN OPPOSITION TO PLAINTIFF’S MOTION FOR CLASS CERTIFICATION
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+LITTLER MENDELSON, P.C.
+501 W. Broadway, Suite 900
+San Diego, California 92101
+619.232.0441
+39:3, 53:2-23.) Typicality requires that the named plaintiff’s claims “align[] with the 
+interest of the class,” Hanon v. Dataproducts Corp., 976 F.2d 497, 508 (9th Cir. 1992) and 
+that the representative not be subject to defenses inapplicable to the class at large. Id.
+(plaintiff atypical where unique background required him “to prepare to meet defenses not 
+typical” of the class). This principle is routinely applied where, as here, the proposed 
+representative will be forced to litigate individualized defenses that have no bearing on 
+other class members. See, e.g., Nguyen v. Nissan N. Am., Inc., 487 F. Supp. 3d 845 (N.D. 
+Cal. 2020) (plaintiff atypical when statute of limitations defense applies to him). Typicality 
+is not met if the representative’s unique circumstance require them to address defenses not 
+applicable to the class at large. Id. (“Hanon’s unique background and factual situation 
+require him to prepare to meet two defenses that are not typical of the defenses which 
+may be raised against other members of the proposed class.”). 
+Here, Plaintiff faces a textbook unique defense: the “same-decision” defense. (See 
+Answer, Dkt. 15 at Eighth Affirmative Defense.) Vons will show that even if Plaintiff had 
+never appeared on the MLW, the company would have initiated the adverse action process
+based solely on his own disclosure of the underlying conviction. (Ex. 2 at 38:2-39:3, 53:2-
+23.) This defense applies to Plaintiff because other class members may not have disclosed 
+their convictions and therefore may argue that the MLW appearance was the but-for cause 
+of the employment decision. Therefore, even if Plaintiff’s theory is correct (it is not) that 
+Vons improperly used information contained on the MLW, Plaintiff’s claim would still fail 
+because Vons had an independently sufficient, job-related basis to make the same decision. 
+That defense does not apply to class members who did not disclose their convictions. The 
+same-decision defense defeats typicality.
+Because Plaintiff disclosed his conviction, he is atypical from class members who 
+did not, and he would be subject to unique defenses not typical of the putative class. 
+2. Plaintiff Was Not an Applicant of Vons When His Offer Was 
+Rescinded.
+Plaintiff also fails to establish typicality for the FCA class because he was not an 
+Case 8:25-cv-00191-SRM-KES Document 56 Filed 02/18/26 Page 24 of 32 Page ID
+#:1107
+
+<PARSED TEXT FOR PAGE: 25 / 32>
+
+25 CASE NO. 8:25-cv-00191-SRM-KES
+DEFENDANT THE VONS COMPANIES, INC.’S MEMORANDUM OF POINTS AND AUTHORITIES 
+IN OPPOSITION TO PLAINTIFF’S MOTION FOR CLASS CERTIFICATION
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+LITTLER MENDELSON, P.C.
+501 W. Broadway, Suite 900
+San Diego, California 92101
+619.232.0441
+applicant at the time Vons conducted its individualized assessment and terminated his 
+employment. Plaintiff had already been working for Vons for approximately one and a half 
+months when Vons completed the background-check process and made its final decision. 
+(Ex. 4 (Responses to Special Interrogatories) at 5:13-21.) Government Code section 12952 
+applies only to “applicants,” not employees, and he cannot assert the same statutory rights 
+or procedures that the putative class of applicants seek to vindicate. See Canterberry v. 
+Acara Sols., Inc., No. 20-CV-02361-KJM-KJN, 2022 WL 317002, at *2 (E.D. Cal. Feb. 2, 
+2022) (holding plaintiff was not an “applicant” under the Fair Chance Act where he had 
+not applied to the employment agency itself, and granting judgment on the pleadings); see,
+e.g., Edwards v. Am. Auto. Ass'n of N. Cal., Nevada & Utah, Inc., No. A170012, 2025 WL 
+2435408, at *9 (Cal. Ct. App. Aug. 25, 2025), reh'g denied (Sept. 10, 2025), review denied 
+(Nov. 25, 2025) (the plaintiff was not an applicant under Gov’t Code section 11017.1 
+because he had already started his employment).
+Here, this distinction is not a technicality—it goes directly to the core of Rule 23(a)’s 
+typicality requirement. A named plaintiff whose claim turns on a different legal standard, 
+and who is subject to employee-specific defenses, cannot represent a class composed 
+exclusively of applicants. Courts routinely hold that class certification fails where the 
+representative will be forced to litigate issues or defenses that no other class member 
+shares, because such plaintiff-specific matters inevitably become the focus of the litigation 
+rather than the classwide issues. See, e.g., Hanon, 976 F.2d at 508 (plaintiff atypical where 
+his “unique background and factual situation” required him to confront defenses not 
+applicable to the class). Because Plaintiff’s employment status places him in a 
+fundamentally different legal posture from every putative class member, he cannot serve 
+as a representative for a class of applicants asserting rights under the FCA.
+C. Plaintiff Failed to Establish Commonality.
+Plaintiff fails to demonstrate the existence of common answers, not merely common 
+questions as required by Rule 23(a)(2). Fed. R. Civ. P. 23(a)(2). Dukes makes clear that 
+what matters “is not the raising of common ‘questions’—even in droves—but, rather the 
+Case 8:25-cv-00191-SRM-KES Document 56 Filed 02/18/26 Page 25 of 32 Page ID
+#:1108
+
+<PARSED TEXT FOR PAGE: 26 / 32>
+
+26 CASE NO. 8:25-cv-00191-SRM-KES
+DEFENDANT THE VONS COMPANIES, INC.’S MEMORANDUM OF POINTS AND AUTHORITIES 
+IN OPPOSITION TO PLAINTIFF’S MOTION FOR CLASS CERTIFICATION
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+LITTLER MENDELSON, P.C.
+501 W. Broadway, Suite 900
+San Diego, California 92101
+619.232.0441
+capacity of a classwide proceeding to generate common answers apt to drive the resolution 
+of the litigation.’” Dukes, 564 U.S. at 350 (“Dissimilarities within the proposed class are 
+what have the potential to impede the generation of common answers.”). Here, the 
+individualized nature of Vons’s background-check process as applied to individualized 
+candidates—and Plaintiff’s fundamental mischaracterization of both the Megan’s Law and 
+FCA—precludes any such common answers.
+1. Plaintiff Failed Establish Commonality as to the Megan’s Law 
+Class by Ignoring Half the Penal Code.
+As explained, Plaintiff’s Megan’s Law theory ignores half the statute. Penal Code 
+section 290.46(j)(1) expressly authorizes employers to use MLW information to “protect a 
+person at risk.” Plaintiff omits this controlling provision, instead insisting that any use of 
+MLW information for employment purposes is per se unlawful. (See Motion at 7:23-8:5 
+(omitting Paragraph (j)(1)).) That is wrong based on the plain statutory text.
+Whether Vons acted “to protect a person at risk” requires a role-specific, 
+fact-intensive analysis, including:
+• job duties (e.g., deli clerks work in close proximity to children),
+• workplace environment (Vons stores regularly serve and employ minors),
+• nature and recency of conviction, and
+• any mitigating information provided.
+(Ex. 1; Ex. 2 at 66:22-71:1; Ex. 3; Jones Decl., ¶ 5.) 
+The FCA underscores that criminal-history assessments are individualized, requiring 
+consideration of the specific conviction, elapsed time, job duties, and any mitigating 
+information—factors that vary applicant to applicant and cannot be resolved through a 
+single classwide determination. Plaintiff’s own circumstances underscore this point: he 
+worked in a highly visible, customer-facing role, with direct interaction with children, and 
+possessed a recent federal conviction with ongoing supervised-release violations. That 
+factual matrix bears no resemblance to applicants for other positions or with different 
+conviction histories.
+Case 8:25-cv-00191-SRM-KES Document 56 Filed 02/18/26 Page 26 of 32 Page ID
+#:1109
+
+<PARSED TEXT FOR PAGE: 27 / 32>
+
+27 CASE NO. 8:25-cv-00191-SRM-KES
+DEFENDANT THE VONS COMPANIES, INC.’S MEMORANDUM OF POINTS AND AUTHORITIES 
+IN OPPOSITION TO PLAINTIFF’S MOTION FOR CLASS CERTIFICATION
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+LITTLER MENDELSON, P.C.
+501 W. Broadway, Suite 900
+San Diego, California 92101
+619.232.0441
+Plaintiff also suggests that because Vons denied employment to all individuals who 
+appeared on the MLW during the relevant period, commonality is automatically satisfied. 
+But that is incorrect: the mere fact that an employment outcome is the same does not 
+establish a common question under Rule 23(a)(2). Courts evaluate whether the reasons 
+underlying those decisions can be resolved classwide—not whether the outcomes happen 
+to align. Here, the evidence shows that Vons’s decisions were based on individualized 
+assessments, job-related risk, and statutory authorization to protect persons at risk. (Ex. 1; 
+Ex. 2 at 66:22-71:1; Ex. 3; Jones Decl., ¶ 5.) 
+Because Plaintiff cannot identify any common issue capable of resolution “in one 
+stroke,” Dukes, 564 U.S. at 350, he fails to satisfy Rule 23(a)(2) for the Megan’s Law class. 
+2. Plaintiff Failed to Establish Commonality as to the Fair Chance 
+Act Class.
+Plaintiff’s Fair Chance Act theory depends on two incorrect assumptions: (1) that 
+Vons does not have an SOP because some documents bear that Albertsons name; and (2) 
+that the absence of a standalone Vons policy can create classwide questions of liability. 
+(See Motion at 12-14.) Both specious arguments fail.
+First, Plaintiff’s corporate-name argument is a red herring. Vons is an indirect 
+subsidiary of Albertsons, and the testimony is undisputed that adjudicators perform 
+individualized assessments on behalf of Vons using the SOP framework. (Ex. 1; Ex. 2 at 
+66:22-71:1; Ex. 3; Jones Decl., ¶¶ 2–3, 5.) Courts routinely rely on evidence of actual 
+implementation, regardless of the logo printed on a document. See Santos v. TWC 
+Administration LLC, 2014 WL 12558274 *15-16 (C.D. Cal. 2014) (no joint employment 
+with Time Warner Cable, Inc. where the defendant’s employee handbook stated “Time 
+Warner Cable Employee Handbook” and not “TWC Administration LLC Employee 
+Handbook”). 
+Second, the FCA does not require employers to maintain a written policy. And even 
+if the SOP did not exist or did not apply to Vons, a lack of a written policy does not 
+automatically create a certifiable issue. Plaintiff’s attempt to bootstrap commonality from 
+Case 8:25-cv-00191-SRM-KES Document 56 Filed 02/18/26 Page 27 of 32 Page ID
+#:1110
+
+<PARSED TEXT FOR PAGE: 28 / 32>
+
+28 CASE NO. 8:25-cv-00191-SRM-KES
+DEFENDANT THE VONS COMPANIES, INC.’S MEMORANDUM OF POINTS AND AUTHORITIES 
+IN OPPOSITION TO PLAINTIFF’S MOTION FOR CLASS CERTIFICATION
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+LITTLER MENDELSON, P.C.
+501 W. Broadway, Suite 900
+San Diego, California 92101
+619.232.0441
+the absence of a written policy misunderstands the statute and contradicts cases holding 
+that a lack of a policy does not automatically create a class question. See, e.g., Hernandez 
+v. Christensen Brothers General Eng., Inc., 670 F.Supp.3d 996, 1009 (C.D. Cal. 2023).
+Third—and most importantly—Plaintiff’s FCA theory ignores the undeniable 
+evidence that Vons actually conducts individualized assessments, which requires the 
+SOP’s application to each applicant, including Plaintiff. (Ex. 1; Ex. 2 at 66:22-71:1; Ex. 3; 
+Jones Decl., ¶ 5.) Vons hires more people with conviction histories than it declines. (Jones 
+Decl, ¶¶ 4–5; Ex. 3.) Vons produced spreadsheets showing its adjudications and explained 
+the individualized factors considered, including offense gravity, number of convictions, the 
+job applied for, and mitigating information. (Jones Decl, ¶¶ 4; Ex. 3.) Plaintiff 
+disingenuously argues Vons produced no evidence of an individualized assessment. 
+These facts destroy commonality. Liability under the FCA depends on whether each 
+individual applicant received: (1) the required individualized assessment; (2) the specific 
+statutory notices; and (3) a proper evaluation of any mitigating evidence. Those 
+determinations cannot be resolved with a single “common answer.” They require 
+one-by-one analysis. Only individuals with the same crime, same timing, same job, and 
+same mitigation could theoretically share answers—and Plaintiff identifies no such group.
+Finally, Plaintiff’s reliance on selective discovery responses and emails about 
+Albertsons is misplaced. Those communications addressed requests seeking information 
+about employees of non-defendant companies, not whether Vons uses Albertsons’s SOPs.
+(Lamar Decl., ¶ 15.) Vons has never denied its business relationship with Albertsons, and 
+Plaintiff’s argument does nothing to produce classwide questions under Rule 23(a)(2). In 
+short, individualized assessments defeat commonality. They are required by statute,
+performed in practice, and necessarily preclude classwide resolution.
+D. Plaintiff Failed to Establish Predominance.
+The predominance prong under FRCP 23(b)(3) is “far more demanding” than the 
+commonality requirement under Rule 23(a). Peabody v. Orange Cnty. Transp. Auth., 
+2015WL12912332, *6 (C.D. Cal. July 7, 2015). If a predominant issue requires “the 
+Case 8:25-cv-00191-SRM-KES Document 56 Filed 02/18/26 Page 28 of 32 Page ID
+#:1111
+
+<PARSED TEXT FOR PAGE: 29 / 32>
+
+29 CASE NO. 8:25-cv-00191-SRM-KES
+DEFENDANT THE VONS COMPANIES, INC.’S MEMORANDUM OF POINTS AND AUTHORITIES 
+IN OPPOSITION TO PLAINTIFF’S MOTION FOR CLASS CERTIFICATION
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+LITTLER MENDELSON, P.C.
+501 W. Broadway, Suite 900
+San Diego, California 92101
+619.232.0441
+separate adjudication of each class members’ individual claim or defense,” certification is 
+inappropriate.” Id. The Ninth Circuit recently reaffirmed this in Bowerman v. Field Asset 
+Servs., 60 F.4th 459, 471 (9t
+h Cir. 2022), holding that certification must be reversed where 
+common issues are “outweighed by complicated individualized questions.” Here, Plaintiff 
+cannot meet Rule 23(b)(3)’s stringent standard. Both the FCA and Megan’s Law require 
+fact-specific, applicant-specific determinations that eliminate any possibility of common, 
+classwide resolution. 
+1. Individualized Issues Predominate Plaintiff’s Megan’s Law Claim. 
+Individualized issues predominate Plaintiff’s Megan’s Law claim. The Penal Code 
+is clear that employers can use the MLW to protect people at risk. Pen. Code § 290.46(j). 
+For each applicant who was denied employment because they appeared on the MLW, a 
+factfinder would need to determine whether Vons did so to protect a person at risk. This 
+will require analysis of the job position sought, the proximity to at-risk children and at-risk 
+adults, the mitigating circumstances provided by the applicant, and the length of time from 
+the conviction. There is no evidence that Vons categorically denies all sex offenders—as 
+Ms. North testified that each situation involves review of the above. (Ex. 1; Ex. 2 at 66:22-
+71:1.) Indeed, Toni North testified that she has passed at least one sex offender as part of 
+her duties to adjudicate background checks, albeit with a different company unnamed in 
+this lawsuit. (Ex. 2 at 159:15-160:8.) 
+2. Individualized Issues Predominate Plaintiff’s FCA Claim. 
+The FCA is fundamentally individualized by design, requiring employers to make a 
+tailored, applicant-specific assessment of: (1) the nature and gravity of the offense or 
+conduct; (2) the amount of time that has passed since the offense or conduct and completion 
+of the sentence; and (3) the nature of the job held or sought. Gov’t Code § 12952(c)(1)(A). 
+The statute does not require employers to write down their individualized assessment, 
+maintain a written policy, or memorialize their reasoning. Hernandez, 670 F.Supp.3d at
+1009. Thus, the absence of a written policy or paper trail does not create a common 
+question; it simply reflects the flexible structure the Legislature intended.
+Case 8:25-cv-00191-SRM-KES Document 56 Filed 02/18/26 Page 29 of 32 Page ID
+#:1112
+
+<PARSED TEXT FOR PAGE: 30 / 32>
+
+30 CASE NO. 8:25-cv-00191-SRM-KES
+DEFENDANT THE VONS COMPANIES, INC.’S MEMORANDUM OF POINTS AND AUTHORITIES 
+IN OPPOSITION TO PLAINTIFF’S MOTION FOR CLASS CERTIFICATION
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+LITTLER MENDELSON, P.C.
+501 W. Broadway, Suite 900
+San Diego, California 92101
+619.232.0441
+a. Vons’s Evidence Shows Individualized Assessments for 
+Every Applicant.
+The record confirms that Vons actually performs individualized assessments for 
+each applicant: (1) Vons passed over 1,700 applicants and failed approximately 901, 
+demonstrating individualized, applicant-specific outcomes. (Ex. 3; Jones Decl., ¶¶ 4-5.) (2) 
+Vons produced detailed spreadsheets listing all background-check fail results (Plaintiff did 
+not request passes in discovery) and testified how adjudicators analyze offense gravity, 
+number of convictions, job-relatedness, failure to disclose, and recency of offenses. (Ex. 2 
+at 66:22-71:1; Ex. 3; Jones Decl., ¶¶ 4-5.) (3) These categories themselves include broad 
+ranges—for example, “Property Crime” may include petty theft, embezzlement, forgery, 
+or burglary, each requiring different analysis. (Ex. 3; Jones Decl., ¶¶ 4-5.) 
+Plaintiff’s claim—that Vons “categorically” denies employment to applicants with 
+criminal histories—is contradicted by these facts. And because individualized review is 
+mandated by statute and performed in practice, liability cannot be resolved through any
+classwide showing.
+b. Each Putative Class Member’s FCA Claim Would Require 
+a Mini-Trial.
+Determining whether Vons violated the FCA for any applicant requires examining: 
+(1) the specific offense, (2) the date of conviction or release, (3) the job applied for, (4) the 
+mitigating information provided, (5) the individualized assessment performed, and (6) 
+whether any adverse action letter complied with the FCA’s notice requirements. Those 
+issues differ dramatically across applicants and cannot be litigated “in one stroke.” As a 
+practical matter, only someone with Plaintiff’s precise combination of job position, 
+offense, timing, number of convictions, and mitigation could share common answers—and 
+such a class does not exist. Accordingly, individualized issues overwhelm any alleged 
+common questions under the FCA.
+Moreover, whether or not a putative class member suffered actual lost wages or 
+suffered emotional distress is wholly unknown. For example, a putative class member may 
+Case 8:25-cv-00191-SRM-KES Document 56 Filed 02/18/26 Page 30 of 32 Page ID
+#:1113
+
+<PARSED TEXT FOR PAGE: 31 / 32>
+
+31 CASE NO. 8:25-cv-00191-SRM-KES
+DEFENDANT THE VONS COMPANIES, INC.’S MEMORANDUM OF POINTS AND AUTHORITIES 
+IN OPPOSITION TO PLAINTIFF’S MOTION FOR CLASS CERTIFICATION
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+LITTLER MENDELSON, P.C.
+501 W. Broadway, Suite 900
+San Diego, California 92101
+619.232.0441
+have applied to Vons, but as soon as the background check process began, that putative 
+class member, knowing what would turn up on the background check report, went and 
+found another job that did not require a background check before Vons even made its 
+determination. That would result in no damages for lost wages. See Bowerman, 60 F.4th 
+at 470 (“Lacking any sort of representative evidence, the class members were left relying 
+on individual testimony to establish the existence of an injury and the amount of 
+damage.”); Castillo v. Bank of Am., NA, 980 F.3d 723, 733 (9th Cir. 2020) (“complicated” 
+individualized questions about “whether those exposed [to unlawful policy] were harmed 
+in a way giving rise to liability”) (emphasis added).
+E. Plaintiff Fails to Provide a Coherent Trial Plan and Fails to 
+Demonstrate that a Class Action is Superior.
+1. Plaintiff Fails to Provide a Trial Plan.
+Plaintiff fails to explain how the Court could try this case as a class action, even 
+though Rule 23(b)(3) and the Ninth Circuit require Plaintiff to present a realistic, workable 
+trial plan. Zinser v. Accufix Research Instit., 253 F.3d 1180, 1189 (9th Cir. 2001). Liability 
+under both the FCA and Megan’s Law turn on applicant-specific assessments—job-related 
+risk analyses, conviction histories, offense characteristics, timeliness, and mitigation 
+evidence—making a class trial an exercise in thousands of mini-trials that no plan could 
+consolidate without depriving Vons of individualized defenses. Damages are likewise not 
+ascertainable on a classwide basis. The Supreme Court has made clear that class actions 
+cannot proceed where they “sacrifice procedural fairness” or deny a defendant the 
+opportunity to assert “every available defense,” Lindsey v. Normet, 405 U.S. 56, 66 (1972), 
+and Dukes confirms employers’ entitlement to individualized determinations and 
+individualized affirmative defenses. 564 U.S. at 366–67. Plaintiff proposes no structure for 
+managing these applicant-specific issues or safeguarding Vons’s rights, and his failure to 
+provide any viable trial plan is fatal to certification.
+2. A Class Action Is Not Superior Due to Privacy Concerns.
+Even if the Court found that common questions of law or fact predominate, a class 
+Case 8:25-cv-00191-SRM-KES Document 56 Filed 02/18/26 Page 31 of 32 Page ID
+#:1114
+
+<PARSED TEXT FOR PAGE: 32 / 32>
+
+32 CASE NO. 8:25-cv-00191-SRM-KES
+DEFENDANT THE VONS COMPANIES, INC.’S MEMORANDUM OF POINTS AND AUTHORITIES 
+IN OPPOSITION TO PLAINTIFF’S MOTION FOR CLASS CERTIFICATION
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+LITTLER MENDELSON, P.C.
+501 W. Broadway, Suite 900
+San Diego, California 92101
+619.232.0441
+action is still not superior method for adjudicating these claims. The putative class consists 
+of individuals whose criminal convictions, MLW listings, and in many cases highly 
+sensitive information that many have strong privacy or trauma-related reasons to keep 
+confidential. Forcing such information into proceedings for the sake of one representative 
+would be intrusive and would deter participation, rendering the class unmanageable. 
+F. Plaintiff’s Counsel Failed to Show He Is Adequate.
+Counsel’s inability to meet deadlines or follow simple procedural rules is powerful 
+evidence of inadequacy under Rule 23(a)(4). Parker v. FedEx Nat. Ltl, Inc., 2011
+WL11671754, at *8–9 (C.D. Cal. Apr.11, 2011) (“failure to follow even simple orders 
+concerning page limits[] suggests that [counsel] will not provide appropriate 
+representation[.]”).
+Plaintiff and his counsel have shown a consistent pattern of delay and 
+noncompliance with deadlines and rules throughout this litigation. (ECF Dkt. 42; Lamar 
+Decl., ¶¶ 12–14.) This Court has already noted Plaintiff failed to act diligently when he 
+waited until two weeks before the cutoff to serve a Rule 30(b)(6) deposition notice. (ECF 
+Dkt. 54 at 2:14–16.) This sustained lack of diligence is incompatible with the 
+responsibilities inherent in class litigation, and it is further reflected in Plaintiff’s failure to 
+comply with the local rules in filing this motion, including submitting a table of contents 
+that appears to pertain to an entirely different case. Plaintiff has failed to show adequacy 
+of counsel, and his motion should be denied. 
+VI. CONCLUSION
+Vons respectfully requests that the Court deny Plaintiff’s Motion in its entirety. 
+Dated: February 18, 2026 /s/ Karimah J. Lamar
+Rod M. Fliegel
+Karimah J. Lamar
+Christine Fitzgerald
+Robert Geiger
+LITTLER MENDELSON, P.C.
+Attorneys for Defendant
+THE VONS COMPANIES, INC.
+Case 8:25-cv-00191-SRM-KES Document 56 Filed 02/18/26 Page 32 of 32 Page ID
+#:1115
