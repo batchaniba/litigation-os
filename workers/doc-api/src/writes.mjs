@@ -58,7 +58,7 @@ function asMatterNumber(n) {
 // Store bytes at sha256/<first2>/<rest>.pdf. By default the content hash is
 // verified against the key, so the store can never disagree with its own
 // addressing. Returns { sha256, size }.
-export async function putDocBytes(env, sha, bytes, { verify = true } = {}) {
+export async function putDocBytes(env, sha, bytes, { verify = true, contentType } = {}) {
   needR2(env);
   const clean = cleanSha(sha);
   const buf = bytes instanceof ArrayBuffer ? bytes : bytes?.buffer ? bytes.buffer : null;
@@ -70,7 +70,7 @@ export async function putDocBytes(env, sha, bytes, { verify = true } = {}) {
       throw new HttpError(400, { error: "sha256 mismatch", expected: clean, actual });
   }
   await env.DOCS.put(keyForSha256(clean), buf, {
-    httpMetadata: { contentType: "application/pdf" },
+    httpMetadata: { contentType: contentType || "application/pdf" },
   });
   return { sha256: clean, size: buf.byteLength };
 }

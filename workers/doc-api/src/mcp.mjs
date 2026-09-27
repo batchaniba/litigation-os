@@ -13,8 +13,11 @@
 //
 // v2 adds write tools (create/update/delete over matters, clocks, and the
 // document manifest). Writes require an "rw" Bearer <redacted> (see auth.mjs) and
-// are recorded to the D1 `audit` table. Document *bytes* are uploaded over
-// REST (PUT /doc/<sha256>), not JSON-RPC.
+// are recorded to the D1 `audit` table. Document bytes travel two ways:
+// `uploadDocument` takes base64 bytes inline over JSON-RPC (handy for MCP
+// clients that can only call tools — capped at 20 MB decoded), while large
+// files should still use REST `PUT /doc/<sha256>` followed by
+// `registerDocument`.
 
 import {
   HttpError,
@@ -34,12 +37,13 @@ import {
   deleteDocumentRow,
   deleteMatter,
   patchMatter,
+  putDocBytes,
   recordAudit,
   upsertDocumentRow,
   upsertMatter,
 } from "./writes.mjs";
 
-const SERVER = { name: "litigation-doc-api", version: "2.0.0" };
+const SERVER = { name: "litigation-doc-api", version: "2.1.0" };
 // Newest first; the initialize handshake negotiates the client's version
 // when we speak it, otherwise our newest.
 const PROTOCOLS = ["2025-06-18", "2025-03-26", "2024-11-05"];
@@ -73,6 +77,16 @@ const toInt = (v) => {
 const docUrl = (ctx, sha256) => `${ctx.origin}/doc/${sha256}`;
 const withUrls = (ctx, docs) =>
   (docs ?? []).map((d) => ({ ...d, url: docUrl(ctx, d.sha256) }));
+
+// Inline-upload cap: 20 MB decoded. Base64 inflates ~33%, so the JSON-RPC
+// body stays comfortably under Workers' request limits; larger files go
+// through REST `PUT /doc/<sha256>`.
+const MAX_UPLOAD_BYTES = 20 * 1024 * 1024;
+
+async function sha256Hex(bytes) {
+  const buf = await crypto.subtle.digest("SHA-256", bytes);
+  return [...new Uint8Array(buf)].map((b) => b.toString(16).padStart(2, "0")).join("");
+}
 
 const LIFECYCLES = ["active", "pre_filing", "dismissed", "abandoned", "closed", "settled"];
 
@@ -217,9 +231,66 @@ const TOOLS = [
     run: async ({ sha256, offset, limit }, ctx) => getDocText(ctx.env, sha256, offset, limit),
   },
   // --- write tools (scope "rw"; enforced in callTool, audited) --------------
-  // Byte upload is NOT here — a PDF over JSON-RPC would be base64-bloated and
-  // some documents are >20 MB. Upload bytes with `PUT /doc/<sha256>` (REST),
-  // then register/point the manifest row with registerDocument.
+  // uploadDocument carries bytes inline as base64 (capped at 20 MB decoded)
+  // for MCP clients that can only call tools. For large files prefer REST
+  // `PUT /doc/<sha256>` + registerDocument.
+  {
+    name: "uploadDocument",
+    write: true,
+    description:
+      "Upload a document's bytes (base64-encoded, max ~20 MB decoded) to R2 and register its D1 manifest row in one call. Returns the content sha256 and download URL. The sha256 is computed server-side, so the store can never disagree with its own addressing.",
+    inputSchema: {
+      type: "object",
+      properties: {
+        content_base64: {
+          type: "string",
+          description: "File bytes, base64-encoded. Decoded size must be 1 byte – 20 MB.",
+        },
+        path: {
+          type: "string",
+          description: "Manifest path, e.g. /documents/matter-26/Foo.pdf (required; D1 documents.path is NOT NULL).",
+        },
+        matter_number: { type: "integer", description: "Owning matter, or omit for an unscoped file." },
+        content_type: {
+          type: "string",
+          description: "MIME type stored on the R2 object. Default application/pdf.",
+        },
+      },
+      required: ["content_base64", "path"],
+    },
+    run: async ({ content_base64, path, matter_number, content_type }, ctx) => {
+      if (typeof content_base64 !== "string" || content_base64.length === 0)
+        throw new HttpError(400, { error: "content_base64 must be a non-empty string" });
+      if (!/^[A-Za-z0-9+/=\s]+$/.test(content_base64))
+        throw new HttpError(400, { error: "content_base64 is not valid base64" });
+      let bytes;
+      try {
+        const bin = atob(content_base64.replace(/\s+/g, ""));
+        bytes = new Uint8Array(bin.length);
+        for (let i = 0; i < bin.length; i++) bytes[i] = bin.charCodeAt(i);
+      } catch {
+        throw new HttpError(400, { error: "content_base64 is not valid base64" });
+      }
+      if (bytes.byteLength === 0)
+        throw new HttpError(400, { error: "empty content: nothing to upload" });
+      if (bytes.byteLength > MAX_UPLOAD_BYTES)
+        throw new HttpError(400, {
+          error: `content too large: ${bytes.byteLength} bytes decoded (max ${MAX_UPLOAD_BYTES}); use REST PUT /doc/<sha256> for large files`,
+        });
+      const sha256 = await sha256Hex(bytes);
+      const put = await putDocBytes(ctx.env, sha256, bytes.buffer, {
+        verify: false, // sha256 was just computed from these exact bytes
+        contentType: typeof content_type === "string" && content_type ? content_type : undefined,
+      });
+      const row = await upsertDocumentRow(ctx.env, {
+        sha256: put.sha256,
+        matter_number: matter_number ?? null,
+        path,
+        size: put.size,
+      });
+      return { ok: true, ...put, ...row, url: docUrl(ctx, put.sha256) };
+    },
+  },
   {
     name: "registerDocument",
     write: true,
@@ -381,11 +452,18 @@ async function callTool(name, args, ctx) {
 
   const target = () => a.sha256 ?? a.n ?? a.number ?? a.matter_number ?? null;
 
+  // Never persist document bytes to the audit table: redact the base64
+  // payload, keeping only its length for forensics.
+  const auditDetail = () =>
+    name === "uploadDocument" && a && typeof a === "object"
+      ? { ...a, content_base64: `[redacted ${String(a.content_base64 ?? "").length} chars]` }
+      : a;
+
   return tool
     .run(a, ctx)
     .then(async (data) => {
       if (tool.write)
-        await recordAudit(ctx.env, { actor: access.actor, action: name, target: target(), detail: a, ok: true });
+        await recordAudit(ctx.env, { actor: access.actor, action: name, target: target(), detail: auditDetail(), ok: true });
       return rpcOk(null, { content: [{ type: "text", text: JSON.stringify(data) }] });
     })
     .catch(async (e) => {
@@ -394,7 +472,7 @@ async function callTool(name, args, ctx) {
           actor: access.actor,
           action: name,
           target: target(),
-          detail: { args: a, error: e instanceof HttpError ? e.body : e?.message },
+          detail: { args: auditDetail(), error: e instanceof HttpError ? e.body : e?.message },
           ok: false,
         });
       // 400s are client input errors; 404/409/503 surface as tool-level
