@@ -15,6 +15,8 @@ Do not contact Njiubu, Patrick, relatives, witnesses, police, prosecutors, court
 ## Research package
 
 - `deep-maryland-remedies-research.md` — comprehensive Maryland safety, divorce, civil, criminal, financial-exploitation, victim-relief, housing, employment, confidentiality, limitations, and sequencing analysis.
+- `research-addendum-2026-09-26.md` — independent verification of the priority conclusions, CICB clock correction, and housing/work/criminal-exploitation sharpening.
+- `sequencing-and-counsel-intake.md` — order of operations and redacted packet to hand Maryland counsel.
 - `remedy-matrix.json` — structured incident-to-remedy gates for agent and counsel use.
 - `legal-avenues.md` — concise decision map.
 - `sources.json` — official Maryland authority index verified September 26, 2026.
@@ -23,7 +25,7 @@ Do not contact Njiubu, Patrick, relatives, witnesses, police, prosecutors, court
 ## Priority conclusions
 
 1. **Safety is act-specific.** A spouse is eligible for a Maryland protective order, but emotional or psychological mistreatment by itself is not a current statutory ground. Facts must establish a listed act such as assault, imminent-serious-harm fear, false imprisonment, stalking, a sexual offense, revenge porn, or qualifying vulnerable-adult abuse.
-2. **Coercive control is not yet a standalone Maryland protective-order ground.** HB 1586 remained in the House after a March 13, 2026 hearing. Do not cite the bill as enacted law.
+2. **Coercive control is not yet a standalone Maryland protective-order ground.** HB 1586 remained in the House after a March 13, 2026 hearing. Its proposed October 1, 2026 effective date passed without chapter law. Do not cite the bill as enacted law.
 3. **Divorce can carry economic relief.** Maryland permits divorce on six-month separation, irreconcilable differences, or mutual consent, with possible alimony, marital-property adjustment, retirement division, fees, and child-related relief if applicable.
 4. **Age and capacity may unlock a powerful financial remedy.** If Njiubu is at least 68 or is a statutory susceptible adult, Estates and Trusts §§ 13-601 through 13-607 may provide compensatory and possible treble damages plus accounting, restitution, constructive trust, rescission, injunction, and emergency asset preservation.
 5. **The 2012 start date creates serious timing risk.** Marriage does not toll civil limitations. Every act needs a separate accrual, discovery, proof, and limitations analysis.
