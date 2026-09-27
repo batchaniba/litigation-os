@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "fileCount": 1656,
-  "totalBytes": 1040317853,
+  "fileCount": 1676,
+  "totalBytes": 1061445598,
   "files": [
     {
       "path": "/documents/_form-library/ao239-blank-template.pdf",
@@ -1052,6 +1052,16 @@
       "path": "/documents/matter-10/ORDER_DENYING_PETITION_C2602632.pdf",
       "size": 4728,
       "sha256": "c2c828947e5c7bf021146deb46cc2dc7c92a49a7d19e3376362743981030cff6"
+    },
+    {
+      "path": "/documents/matter-11/Newanforbi v Macomber Section 1983 Filing (draft).pdf",
+      "size": 37695,
+      "sha256": "ff93565b97c1e405e5c1f81d165fc901a564fb5552623612ef6b4b34cfc019e1"
+    },
+    {
+      "path": "/documents/matter-11/Newanforbi v Macomber Section 1983 Filing (draft).txt",
+      "size": 18910,
+      "sha256": "f4d77abff06e06c11bb9c1901d34fcf1ec9b1e4b2117c3681be52a40a2ce86ca"
     },
     {
       "path": "/documents/matter-12/014a CIV100 Request for Entry of Default or Default Judgment.pdf",
@@ -5914,6 +5924,16 @@
       "sha256": "c49da7cd10ea1a6f070881a2b2d085f43c8b2728e11f11ef5debc2d474a90ece"
     },
     {
+      "path": "/documents/matter-3/Proof of Service - Katie Palacios.pdf",
+      "size": 85450,
+      "sha256": "68bb4a1714bd6772c5dfbd4a65953f55cf7e114d3afd1b604948ca8eaa292a12"
+    },
+    {
+      "path": "/documents/matter-3/Proof of Service - Katie Palacios.txt",
+      "size": 1677,
+      "sha256": "a2341dc53d77b706faf928bf9f8abf7f0c5ddf72d3d649456ee52819a04a1ac4"
+    },
+    {
       "path": "/documents/matter-30/CASOMB Complaint Submission – HOPE Psychotherapy, Inc. 2.pdf",
       "size": 83191,
       "sha256": "dc4061596765570a06d4e86f38db4d34f71fb386904d98ee7bfe821d13256f16"
@@ -5984,6 +6004,16 @@
       "sha256": "4617005559f24f884e4f0f05622201756db60c52397ceff3ea6e3b547fc7a30b"
     },
     {
+      "path": "/documents/matter-32/from-01/[19] Request for Leave to Appear Remotely.pdf",
+      "size": 235285,
+      "sha256": "191989ecf7eebf895d41a4b90cdd41b32e33fcf1af4e98b4f896660b5d0abae8"
+    },
+    {
+      "path": "/documents/matter-32/from-01/[19] Request for Leave to Appear Remotely.txt",
+      "size": 4997,
+      "sha256": "527c70cc78bafab218485a92a6191cbfe5a19dab645f75450e3334e840a69b01"
+    },
+    {
       "path": "/documents/matter-32/from-01/0.Newanforbi v. CHP.pdf",
       "size": 254467,
       "sha256": "0903d7162ecfc8707c8198e62dfb821975cc1fcc7c0471330bc441e59b52302e"
@@ -6049,6 +6079,21 @@
       "sha256": "e6b12fe1ec86ec3b308c57ecafdeea873ca761c71676ca856f4173a261f4138d"
     },
     {
+      "path": "/documents/matter-32/from-01/CHP Motion To Dismiss.txt",
+      "size": 28699,
+      "sha256": "8b2f476345df55742bcc75a0a00fab503f9d6b27dbb429d2ec713a9d78a5a512"
+    },
+    {
+      "path": "/documents/matter-32/from-01/First Amended Complaint.pdf",
+      "size": 84646,
+      "sha256": "fa3bf108aba1a7e0e9daaaddc8ee555ecbedf9ebb89fa93a464cd33c73d801fa"
+    },
+    {
+      "path": "/documents/matter-32/from-01/First Amended Complaint.txt",
+      "size": 19705,
+      "sha256": "ee841a4d24a16ec17753039fe2d614320212bfc8bed2d38665bfe945e9cfbf9e"
+    },
+    {
       "path": "/documents/matter-32/from-01/Notice of Change of Address (July 7, 2026).pdf",
       "size": 35099,
       "sha256": "4d424a35603060aba61c6bc57a4d23278615e94139ef78270751acb7361b7d25"
@@ -6069,9 +6114,34 @@
       "sha256": "a4a5cbeef343243b236ba2215d69465c4f97f37f40d21de6f34103a3819aad77"
     },
     {
+      "path": "/documents/matter-32/from-01/Opposition for Motion to Dismiss (file-stamped).pdf",
+      "size": 4840064,
+      "sha256": "4903d373217ae902757b79f69f5fdea7e13a22f45e633c0ef225fcef3cb807f9"
+    },
+    {
+      "path": "/documents/matter-32/from-01/Opposition for Motion to Dismiss (file-stamped).txt",
+      "size": 63910,
+      "sha256": "d788dff0cc3801f17fa74c62c06919f0bae7c29b78d63a360a3c3cfb8b6e8a5a"
+    },
+    {
       "path": "/documents/matter-32/from-01/Opposition for Motion to Dismiss.pdf",
       "size": 214016,
       "sha256": "cdf235051ac986ebc302bd0fae3221a883366bb47049109de5b943b326083133"
+    },
+    {
+      "path": "/documents/matter-32/from-01/Opposition for Motion to Dismiss.txt",
+      "size": 1545,
+      "sha256": "7ea7ac7a0356568f18068be480056ea0243b74f1b9d649c5108033c9992ed469"
+    },
+    {
+      "path": "/documents/matter-32/from-01/Plaintiff's Submission of Proofs of Service for All Defendants.pdf",
+      "size": 39499,
+      "sha256": "b7b86c97a83cc162a700d88e3c4f52534dc216a0a0e8af59a1718aadad488c74"
+    },
+    {
+      "path": "/documents/matter-32/from-01/Plaintiff's Submission of Proofs of Service for All Defendants.txt",
+      "size": 1239,
+      "sha256": "59b5d77aa95d117bef0c157445d1ecc92facb1737c113059e8d95bb2c510f017"
     },
     {
       "path": "/documents/matter-32/from-01/Reply - CHP.pdf",
@@ -8212,6 +8282,36 @@
       "path": "/documents/matter-41/Video Interview Confirmation - Nuro (Sep 15 2026).pdf",
       "size": 95949,
       "sha256": "e1b1993ae3dc2883a9f885e513c8a8f3bf2277b74a0f452d167aaf26e681f286"
+    },
+    {
+      "path": "/documents/matter-5/Complaint - Newanforbi v. Palacios, et al. (filing packet).pdf",
+      "size": 14531425,
+      "sha256": "0e56c96abfc8d6caa962c3987a4addff95b481f3b989bc0f813fd43ee27e24e6"
+    },
+    {
+      "path": "/documents/matter-5/Complaint - Newanforbi v. Palacios, et al. (filing packet).txt",
+      "size": 32310,
+      "sha256": "2d7525b9774b3a3f6eb717851646c2652084d3bca5387959e65958ab6f03d5e5"
+    },
+    {
+      "path": "/documents/matter-6/Newanforbi v HOPE FAC FINAL v9.pdf",
+      "size": 401734,
+      "sha256": "0cb4e52b4d5e8ee04035e5ea9a4a9b9358bcade0b81deeb7791bd02a4ff0156e"
+    },
+    {
+      "path": "/documents/matter-6/Newanforbi v HOPE FAC FINAL v9.txt",
+      "size": 39408,
+      "sha256": "a95b1419ea72378fa710f9f1dda8ea0c298226a060ac38d989a793dee31cefa8"
+    },
+    {
+      "path": "/documents/matter-9/Petition for Writ of Mandate - Newanforbi v. Macomber (draft).pdf",
+      "size": 631352,
+      "sha256": "97f02bf622f36d6cf07bc9f039844b5772ca0a3789013b31a91a9719b6d2edd4"
+    },
+    {
+      "path": "/documents/matter-9/Petition for Writ of Mandate - Newanforbi v. Macomber (draft).txt",
+      "size": 28195,
+      "sha256": "77cf9ed1e515c40edc84824f0bdec2e902a8da5aa3ee3e15c0f62c23a466960a"
     },
     {
       "path": "/documents/opinions/Newanforbi Habeas - Santa Clara Sup Ct - Order Extending Time Jul 2 2026.pdf",
