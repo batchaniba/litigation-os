@@ -21,6 +21,13 @@ Do not contact Njiubu, Patrick, relatives, witnesses, police, prosecutors, court
 - `remedy-matrix.json` — structured incident-to-remedy gates for agent and counsel use.
 - `legal-avenues.md` — concise decision map.
 - `sources.json` — official Maryland authority index verified September 26, 2026.
+- `protective-order-and-erpo-practice-guide.md` — step-by-step PO/ERPO procedure: eligibility triage, interim/TPO/final sequences, extension/modification/appeal, violations, firearm logistics, record shielding, verified Judiciary forms. Researched against pre-October-1 statute text; see `legislative-update-2026.md` for the HB 497 transition.
+- `case-law-companion.md` — 33 verified Maryland decisions across six lanes (protective orders, divorce economics, interspousal torts, wiretap, financial exploitation, revenge porn), with issue-spots and caveats.
+- `victim-compensation-and-restitution-guide.md` — CICB practice guide under the 2025 Victim Compensation Reform Act (4-year clock, repealed reporting/cooperation bars, caps, emergency awards) plus criminal restitution mechanics.
+- `u-visa-certification-and-vawa-guide.md` — Maryland CP § 11-931 U-visa certification procedure and an honest eligibility map (VAWA unavailable to the aunt on these facts; U-visa only as a direct victim).
+- `address-confidentiality-program-guide.md` — Safe at Home ACP practice guide (eligibility, substitute address, limits).
+- `legislative-update-2026.md` — 2026 Maryland legislative update: HB 497 (Ch. 791) TPO-duration and monetary-relief transition effective Oct 1, 2026 (with workspace statements the change supersedes); HB 1586 died; other enactments and failed bills.
+- `legal-aid-reference.md` — Maryland DV legal-aid and advocacy directory (reference for Maryland counsel only; no outreach authorized).
 - `facts-and-chronology.md`, `evidence-register.md`, and `questions.md` — intake and proof-development surfaces.
 
 ## Priority conclusions
