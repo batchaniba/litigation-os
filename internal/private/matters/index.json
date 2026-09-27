@@ -11,6 +11,17 @@
       "public": false,
       "active_litigation": false,
       "last_updated": "2026-09-26"
+    },
+    {
+      "number": 44,
+      "caption": "Ngwa Nforbi v. Njiomouo",
+      "path": "internal/private/matters/44/",
+      "classification": "confidential_internal_planning",
+      "lifecycle": "planning",
+      "phase": "intake_and_preservation",
+      "public": false,
+      "active_litigation": false,
+      "last_updated": "2026-09-26"
     }
   ]
 }

@@ -3,11 +3,16 @@
 This directory contains internal planning workspaces that are intentionally
 excluded from every public portfolio projection.
 
-## Current workspace
+## Current workspaces
 
 - Matter 0 — Ngwa Nforbi v. Ngwa Nforbi
   - Front door: `internal/private/matters/00/README.md`
   - Classification: private contingency planning
+  - Public projection: prohibited
+  - Active litigation: no
+- Matter 44 — Ngwa Nforbi v. Njiomouo
+  - Front door: `internal/private/matters/44/README.md`
+  - Classification: confidential family-member redress planning
   - Public projection: prohibited
   - Active litigation: no
 

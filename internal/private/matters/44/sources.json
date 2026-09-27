@@ -1,0 +1,22 @@
+{
+  "verified_on": "2026-09-26",
+  "scope": "Official Maryland sources and controlling Maryland appellate authority for initial issue spotting; current text and local practice must be rechecked before action.",
+  "sources": [
+    {"title":"Maryland Judiciary — Divorce","url":"https://www.mdcourts.gov/legalhelp/family/divorce","proposition":"Divorce framework, grounds overview, and no separate legal-separation action."},
+    {"title":"Maryland Family Law § 7-103","url":"https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gfl&section=7-103","proposition":"Current statutory grounds for absolute divorce."},
+    {"title":"Maryland Judiciary — Domestic Violence","url":"https://www.mdcourts.gov/legalhelp/domesticviolence","proposition":"Protective-order eligibility, filing path, stages, and relief overview."},
+    {"title":"Maryland Family Law § 4-501","url":"https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gfl&section=4-501","proposition":"Definitions of abuse and persons eligible for protective relief."},
+    {"title":"Maryland Family Law § 4-506","url":"https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gfl&section=4-506","proposition":"Final protective-order findings and available relief."},
+    {"title":"Maryland Judiciary — Criminal Cases","url":"https://www.mdcourts.gov/legalhelp/criminalcases","proposition":"Police-report and Application for Statement of Charges pathways."},
+    {"title":"Maryland Courts & Judicial Proceedings § 5-101","url":"https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gcj&section=5-101","proposition":"General three-year civil limitations provision."},
+    {"title":"Maryland Courts & Judicial Proceedings § 5-105","url":"https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gcj&section=5-105","proposition":"One-year civil limitations rule for assault, libel, and slander."},
+    {"title":"Maryland Courts & Judicial Proceedings § 5-106","url":"https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gcj&section=5-106","proposition":"General criminal limitations framework for misdemeanors and exceptions."},
+    {"title":"Maryland Family Law § 8-205","url":"https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gfl&section=8-205","proposition":"Monetary award and adjustment of property interests."},
+    {"title":"Maryland Family Law § 11-106","url":"https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gfl&section=11-106","proposition":"Alimony factors."},
+    {"title":"Maryland Family Law § 11-110","url":"https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gfl&section=11-110","proposition":"Suit money, costs, and counsel fees."},
+    {"title":"Bozman v. Bozman, 376 Md. 461 (2003)","url":"https://www.mdcourts.gov/data/opinions/coa/2003/105a02.pdf","proposition":"Maryland Court of Appeals abolished interspousal tort immunity."},
+    {"title":"Maryland Judiciary — Extreme Risk Protective Orders","url":"https://www.mdcourts.gov/district/ERPO","proposition":"Firearm-risk relief and process."},
+    {"title":"Maryland Criminal Injuries Compensation Board","url":"https://gocpp.maryland.gov/victim-services/cicb/","proposition":"Potential victim-compensation program and eligibility information."},
+    {"title":"Maryland Court Help Center","url":"https://www.mdcourts.gov/helpcenter","proposition":"Free civil legal-help services for eligible self-represented litigants."}
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "number": 44,
+  "caption": "Ngwa Nforbi v. Njiomouo",
+  "workspace_type": "private_family_member_redress",
+  "classification": "confidential_internal_planning",
+  "jurisdiction": "Maryland",
+  "lifecycle": "planning",
+  "phase": "intake_and_preservation",
+  "status": "User-reported family-member abuse and redress assessment; no filing, court, case number, or live deadline recorded.",
+  "active_litigation": false,
+  "public": false,
+  "filed": false,
+  "case_no": null,
+  "court": null,
+  "claimant": "Njiubu Ngwa Nforbi",
+  "respondent": "Patrick Njiomouo",
+  "sponsor_role": "Brendan Ngwa Nforbi — family support, research, and evidence organization; not claimant or counsel",
+  "created": "2026-09-26",
+  "last_updated": "2026-09-26",
+  "source_status": "user_report",
+  "objectives": [
+    "Protect Njiubu's immediate safety and autonomy.",
+    "Identify Maryland divorce, protective-order, civil, criminal, compensation, and related remedies.",
+    "Preserve evidence and build an incident-by-incident chronology.",
+    "Map standing, jurisdiction, venue, limitations, proof, damages, and remedy overlap.",
+    "Prepare an attorney-ready decision record without initiating contact or proceedings."
+  ],
+  "hard_gates": [
+    "Njiubu's informed consent, goals, and authorization",
+    "Maryland county, residence, jurisdiction, and venue",
+    "Current safety, firearms, and the most recent alleged conduct",
+    "Incident-by-incident limitations and charge-classification analysis",
+    "Independent Maryland family-law, civil, and criminal counsel assessment",
+    "Evidence preservation without unauthorized access or destructive handling"
+  ]
+}
