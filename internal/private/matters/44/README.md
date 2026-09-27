@@ -16,6 +16,7 @@ Do not contact Njiubu, Patrick, relatives, witnesses, police, prosecutors, court
 
 - `deep-maryland-remedies-research.md` — comprehensive Maryland safety, divorce, civil, criminal, financial-exploitation, victim-relief, housing, employment, confidentiality, limitations, and sequencing analysis.
 - `research-addendum-2026-09-26.md` — independent verification of the priority conclusions, CICB clock correction, and housing/work/criminal-exploitation sharpening.
+- `rape-limitations-and-proof.md` — capstone on felony-rape clocks, repeal of the spousal defense, adult civil limits, and what constitutes proof.
 - `sequencing-and-counsel-intake.md` — order of operations and redacted packet to hand Maryland counsel.
 - `remedy-matrix.json` — structured incident-to-remedy gates for agent and counsel use.
 - `legal-avenues.md` — concise decision map.
@@ -28,8 +29,9 @@ Do not contact Njiubu, Patrick, relatives, witnesses, police, prosecutors, court
 2. **Coercive control is not yet a standalone Maryland protective-order ground.** HB 1586 remained in the House after a March 13, 2026 hearing. Its proposed October 1, 2026 effective date passed without chapter law. Do not cite the bill as enacted law.
 3. **Divorce can carry economic relief.** Maryland permits divorce on six-month separation, irreconcilable differences, or mutual consent, with possible alimony, marital-property adjustment, retirement division, fees, and child-related relief if applicable.
 4. **Age and capacity may unlock a powerful financial remedy.** If Njiubu is at least 68 or is a statutory susceptible adult, Estates and Trusts §§ 13-601 through 13-607 may provide compensatory and possible treble damages plus accounting, restitution, constructive trust, rescission, injunction, and emergency asset preservation.
-5. **The 2012 start date creates serious timing risk.** Marriage does not toll civil limitations. Every act needs a separate accrual, discovery, proof, and limitations analysis.
-6. **Digital self-help can create liability.** Maryland generally requires all-party consent for participant recording; preserve existing evidence without unauthorized access, secret interception, tracking, impersonation, or publication.
+5. **The 2012 start date creates serious timing risk on civil damages.** Marriage does not toll civil limitations. Every act needs a separate accrual, discovery, proof, and limitations analysis.
+6. **Felony rape has no criminal statute of limitations.** There is no separate “spousal rape” offense. The 2023 repeal of former Criminal Law § 3-318 removed the remaining marital defense. An old act can still be a State charge and still be a dead civil claim. See `rape-limitations-and-proof.md`.
+7. **Digital self-help can create liability.** Maryland generally requires all-party consent for participant recording; preserve existing evidence without unauthorized access, secret interception, tracking, impersonation, or publication.
 
 ## Gate order
 
