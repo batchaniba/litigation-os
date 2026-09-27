@@ -1,0 +1,37 @@
+{
+  "number": 0,
+  "caption": "Ngwa Nforbi v. Ngwa Nforbi",
+  "workspace_type": "private_contingency",
+  "classification": "confidential_internal_planning",
+  "lifecycle": "planning",
+  "phase": "assessment",
+  "status": "Contemplation, prevention, and contingency planning; no filing or court deadline recorded.",
+  "active_litigation": false,
+  "public": false,
+  "filed": false,
+  "case_no": null,
+  "court": null,
+  "created": "2026-09-26",
+  "last_updated": "2026-09-26",
+  "objectives": [
+    "Preserve and improve the marriage where safe, mutual, and realistically achievable.",
+    "Replace fear and impulsive action with verified facts, decision gates, and time horizons.",
+    "Build an accurate financial, housing, family, and legal baseline without escalation.",
+    "Prepare for negotiated separation, mediation, or litigation only if those paths become necessary.",
+    "Protect lawful options without concealing assets, destroying evidence, retaliating, or contacting third parties without authorization."
+  ],
+  "decision_gates": [
+    "monitor",
+    "repair_plan",
+    "professional_consult",
+    "structured_separation",
+    "mediation_or_negotiated_dissolution",
+    "litigation"
+  ],
+  "non_goals": [
+    "Manufacturing claims or evidence.",
+    "Treating planning scenarios as established facts.",
+    "Using the portfolio to pressure, threaten, surveil, or embarrass a spouse.",
+    "Publishing private family information."
+  ]
+}
