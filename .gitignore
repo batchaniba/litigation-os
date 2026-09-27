@@ -59,3 +59,7 @@ internal/public/*/index.html
 /seed.sql
 /workers/doc-api/seed.sql
 /workers/doc-api/seed-chunk-*.sql
+
+# Resumable local document-store recovery checkpoints.
+/.document-recovery/
+

@@ -29,6 +29,7 @@
     "mcp": "node internal/mcp/server.mjs",
     "documents:pull": "node internal/scripts/documents-store.mjs pull",
     "documents:push": "node internal/scripts/documents-store.mjs push",
+    "documents:recover": "node internal/scripts/recover-document-store.mjs",
     "documents:seed": "node internal/scripts/documents-store.mjs seed",
     "extract:matter1": "node internal/scripts/extract-matter-pdfs.mjs",
     "fuse:board": "node internal/scripts/generate-fuse-board.mjs",
