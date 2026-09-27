@@ -62,9 +62,41 @@ describe("mcp write gate", () => {
     const { DB } = d1Stub();
     const env = { DB, API_KEYS: await keys("secret", "r") };
     const res = await handleMcp(post(call("updateMatter", { n: 27, status_label: "x" }), "secret"), env);
+    // HTTP-level auth challenge (MCP / RFC 9728): OAuth-capable clients use
+    // the WWW-Authenticate header to discover the authorization server.
+    expect(res.status).toBe(401);
+    expect(res.headers.get("www-authenticate")).toMatch(
+      /Bearer resource_metadata=".*\/\.well-known\/oauth-protected-resource"/,
+    );
     const j = await res.json();
-    expect(j.error.code).toBe(-32003);
-    expect(j.error.message).toMatch(/rw scope/);
+    expect(j.error).toBe("unauthorized");
+  });
+
+  it("challenges an anonymous write with HTTP 401 + WWW-Authenticate", async () => {
+    const { DB } = d1Stub();
+    const env = { DB, API_KEYS: await keys("secret", "rw") };
+    const res = await handleMcp(post(call("deleteClock", { matter_number: 27, title: "x" })), env);
+    expect(res.status).toBe(401);
+    const wah = res.headers.get("www-authenticate");
+    expect(wah).toBe('Bearer resource_metadata="https://x/.well-known/oauth-protected-resource"');
+    const j = await res.json();
+    expect(j.error).toBe("unauthorized");
+    expect(j.error_description).toMatch(/oauth-protected-resource/);
+  });
+
+  it("challenges a batch containing a write, but not a pure read batch", async () => {
+    const { DB } = d1Stub();
+    const env = { DB, API_KEYS: await keys("secret", "rw") };
+    const mixed = await handleMcp(
+      post([
+        { jsonrpc: "2.0", id: 1, method: "tools/list", params: {} },
+        call("addClock", { matter_number: 27, title: "x" }),
+      ]),
+      env,
+    );
+    expect(mixed.status).toBe(401);
+    const readsOnly = await handleMcp(post([{ jsonrpc: "2.0", id: 1, method: "tools/list", params: {} }]), env);
+    expect(readsOnly.status).toBe(200);
   });
 
   it("allows an rw token, applies the write, and records an audit row", async () => {
@@ -173,8 +205,12 @@ describe("mcp uploadDocument", () => {
       post(call("uploadDocument", { content_base64: helloB64, path: "/x.pdf" }), "secret"),
       env,
     );
+    // HTTP 401 + WWW-Authenticate challenge (not a bare JSON-RPC error), so
+    // OAuth-only clients can discover the authorization server and sign in.
+    expect(res.status).toBe(401);
+    expect(res.headers.get("www-authenticate")).toContain("Bearer resource_metadata=");
     const j = await res.json();
-    expect(j.error.code).toBe(-32003);
+    expect(j.error).toBe("unauthorized");
   });
 
   it("rejects invalid and empty base64", async () => {
