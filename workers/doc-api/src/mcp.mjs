@@ -30,6 +30,7 @@ import {
   upcomingData,
 } from "./data.mjs";
 import { resolveAccess } from "./auth.mjs";
+import { wwwAuthenticate } from "./oauth.mjs";
 import {
   addClock,
   deleteClock,
@@ -429,6 +430,28 @@ const TOOLS = [
 
 const byName = new Map(TOOLS.map((t) => [t.name, t]));
 
+// Names of tools that mutate state. Used by handleMcp to issue an HTTP-level
+// 401 + WWW-Authenticate challenge (MCP / RFC 9728 auth discovery) when an
+// unauthenticated caller attempts a write, instead of a bare JSON-RPC error.
+// OAuth-only clients (e.g. claude.ai connectors, which cannot send a static
+// Authorization header) need that challenge to discover the authorization
+// server and start the sign-in flow; without it they fail closed with no
+// path to authenticate.
+const WRITE_TOOL_NAMES = new Set(TOOLS.filter((t) => t.write).map((t) => t.name));
+
+function bodyAttemptsWrite(body) {
+  const msgs = Array.isArray(body) ? body : [body];
+  return msgs.some(
+    (m) =>
+      m &&
+      typeof m === "object" &&
+      m.method === "tools/call" &&
+      m.params &&
+      typeof m.params.name === "string" &&
+      WRITE_TOOL_NAMES.has(m.params.name),
+  );
+}
+
 async function callTool(name, args, ctx) {
   const tool = byName.get(name);
   if (!tool) return rpcErr(null, -32602, `unknown tool: ${name}`);
@@ -536,7 +559,32 @@ export async function handleMcp(request, env) {
   }
 
   const access = await resolveAccess(request, env);
-  const ctx = { env, origin: new URL(request.url).origin, access };
+  const origin = new URL(request.url).origin;
+  // Spec-compliant auth challenge: an unauthenticated write attempt gets an
+  // HTTP 401 with WWW-Authenticate pointing at the protected-resource
+  // metadata, so OAuth-capable clients can discover the authorization
+  // server and sign in. (Reads stay open; the tool-level -32003 gate in
+  // callTool remains as defense in depth.) Only challenge when auth is
+  // actually configured — otherwise no token could ever satisfy it.
+  if (access.configured && !access.canWrite && bodyAttemptsWrite(body)) {
+    return new Response(
+      JSON.stringify({
+        error: "unauthorized",
+        error_description:
+          "This operation requires an 'rw' bearer token. Authenticate via OAuth: see " +
+          `${origin}/.well-known/oauth-protected-resource`,
+      }),
+      {
+        status: 401,
+        headers: {
+          "content-type": "application/json; charset=utf-8",
+          "www-authenticate": wwwAuthenticate(origin),
+          ...CORS,
+        },
+      },
+    );
+  }
+  const ctx = { env, origin, access };
   if (Array.isArray(body)) {
     const out = [];
     for (const m of body) {
