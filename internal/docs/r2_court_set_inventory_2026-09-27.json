@@ -1,1 +1,34 @@
-placeholder
+{
+  "generated": "2026-09-27",
+  "note": "Court filings from chat missing from the R2 manifest. 408 letters and settlement drafts excluded. Worker PUT /doc/<sha256> returned 401 from this environment.",
+  "already_in_r2": [
+    {
+      "file": "035127624289.pdf",
+      "sha256": "ef25d0e5bfd6879f02cdc01c798cb358cd07efbef3575d55b05709948b51e185",
+      "r2_path": "/documents/matter-29/Dkt 13 - Plaintiff's Certification of Conflicts (Filed Sep 9 2026).pdf"
+    }
+  ],
+  "count": 20,
+  "upload": [
+    {"matter": 25, "dest": "/documents/matter-25/Plaintiff First Set of Interrogatories to FedEx (Set One) (Sep 25 2026).pdf", "sha256": "b90c0174d4a7971bb07e9eb1743429f33a15eb3a181386a4d692fd78ebe1d4a5", "bytes": 410491},
+    {"matter": 25, "dest": "/documents/matter-25/Plaintiff First Set of Requests for Admission to FedEx (Set One) (Sep 25 2026).pdf", "sha256": "3737c00bc8eb4038c474e2de34489c47cdbfad3bf033e8230770ce71fd4e8b5d", "bytes": 410127},
+    {"matter": 25, "dest": "/documents/matter-25/Plaintiff First Set of Requests for Production to FedEx (Set One) (Sep 25 2026).pdf", "sha256": "43ee4034128229eecb2560fa9d4b11e5307a5d1b0fa616f7a023e080ec1068aa", "bytes": 414536},
+    {"matter": 25, "dest": "/documents/matter-25/FedEx Meet and Confer Correspondence (Sep 2026).pdf", "sha256": "47ae9aa3a4ebf120c66831c59b319b4aeee10ee499e4b2f2e9349e1fe75bffc7", "bytes": 57679},
+    {"matter": 25, "dest": "/documents/matter-25/Allison Kray Status Report (Sep 2026).pdf", "sha256": "bcb90fae499c5f8df1801f5a492a8a18a7363b5cc16360488cb3fa720fd2407d", "bytes": 235337},
+    {"matter": 26, "dest": "/documents/matter-26/Minute Order - UPS MTD Taken Under Submission (Sep 24 2026).pdf", "sha256": "d890b67a3968b182b09710781442b3523f01c7a3462c8d176a06980307d80dd5", "bytes": 136019},
+    {"matter": 28, "dest": "/documents/matter-28/Defendant Smith Motion to Dismiss (Filed).pdf", "sha256": "3dc8f4d083711c3fec6fcd789986467d2b2bb74552d6900b6f47198bc99a640d", "bytes": 1477558},
+    {"matter": 28, "dest": "/documents/matter-28/Opposition to Motion to Dismiss (Oct 5 2026).pdf", "sha256": "1f3cad9cb8c150643d5ce2d060908c9a057ffeb49394846991dfb39c96f3ea94", "bytes": 118257},
+    {"matter": 28, "dest": "/documents/matter-28/Consent or Declination to Magistrate Judge Jurisdiction (Dkt 16, Filed Sep 21 2026).pdf", "sha256": "ea575afeddf32f898115c8596538d3a77c9c80e4b87e5fca9668861432e1c265", "bytes": 77851},
+    {"matter": 28, "dest": "/documents/matter-28/Dkt 17 - Defendant Filing (Filed Sep 21 2026).pdf", "sha256": "e224c44e65dff38bdecdfe5a0c1546821bfb7ef65d5f2acc355fb5c5055537d8", "bytes": 125755},
+    {"matter": 28, "dest": "/documents/matter-28/Dkt 18 - Certificate of Service (Filed Sep 21 2026).pdf", "sha256": "0ed12388e1075fbf3f4640e4cebb09f6f0a51d157fadf885fb2a8525ecf58cb0", "bytes": 119773},
+    {"matter": 29, "dest": "/documents/matter-29/Amazon Motion to Dismiss.pdf", "sha256": "024be89a1722339afe7d83e02d83c1b3985399959f737b6cf6a2aa3346264ef9", "bytes": 645644},
+    {"matter": 29, "dest": "/documents/matter-29/Accurate Answer to Complaint (Dkt 21, Filed Sep 22 2026).pdf", "sha256": "2f0dc1ef93a1d1e7370bdf0095b99a0343c4eadf1278558b943950b93417e648", "bytes": 324826},
+    {"matter": 29, "dest": "/documents/matter-29/Opposition to Amazon MTD - Pleading Paper (Sep 23 2026).pdf", "sha256": "a34fb7a802b1eb2c56505ca1ceb2f13af4cabe874d7079a53cdeffafc19686b5", "bytes": 253755},
+    {"matter": 29, "dest": "/documents/matter-29/Order Granting Pro Hac Vice.pdf", "sha256": "36c6e3e80e77a857a12dbc46ac760566dfc2ff1f8858b0c2dfad2d9c23261452", "bytes": 460042},
+    {"matter": 29, "dest": "/documents/matter-29/Complaint - Alameda 26CV201554 (pre-removal).pdf", "sha256": "9db49eb44872a7dfa4f211fa0b6e3e98a33931fad00e1f3e8a5a36153651a652", "bytes": 706688},
+    {"matter": 32, "dest": "/documents/matter-32/ndcal/Dkt 03 - AO 440 Summons (Filed Aug 10 2026).pdf", "sha256": "16e354b9e18fa486ee70422434f0c0c4b78e2421371f58a1fb7f41c142745687", "bytes": 114758},
+    {"matter": 32, "dest": "/documents/matter-32/ndcal/Dkt 04 (Filed Aug 10 2026).pdf", "sha256": "234b3c479a114c6fa64cdeae55c578887d9f6f88233c786225d03a5bc5c84011", "bytes": 112022},
+    {"matter": 32, "dest": "/documents/matter-32/ndcal/Dkt 05 - First Amended Complaint (Filed Aug 17 2026).pdf", "sha256": "dc49cc26f9fe695b90e05f7edbbcfb00b019d794ebd36b67cbde2470eebf004b", "bytes": 1325711},
+    {"matter": 32, "dest": "/documents/matter-32/ndcal/Melano Re-Serve Packet Dkt 3-5-4.pdf", "sha256": "19385dd25edbea4b499febc4943b81a676ed695381034133486384d47589b235", "bytes": 1444660}
+  ]
+}
