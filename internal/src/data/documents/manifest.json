@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "fileCount": 1670,
-  "totalBytes": 1041449257,
+  "fileCount": 1672,
+  "totalBytes": 1042233100,
   "files": [
     {
       "path": "/documents/_form-library/ao239-blank-template.pdf",
@@ -8072,6 +8072,16 @@
       "path": "/documents/matter-40/Consent to Magistrate Judge Jurisdiction - Ngwa Nforbi v Uber Technologies Inc (N.D. Cal.) (Sep 23 2026).txt",
       "size": 1367,
       "sha256": "555bc1ca1354daa7a3049d11dd07f37618c478f09e902d249f17f5a707ed1b7b"
+    },
+    {
+      "path": "/documents/matter-40/First Advantage Consumer Report - TaskUs Background Screening (Sep 27 2026).pdf",
+      "size": 710599,
+      "sha256": "07b6ce26ddc721031356bff882118c97aad0f089998d2d15bdd24b65003eddfd"
+    },
+    {
+      "path": "/documents/matter-40/First Advantage Consumer Report - TaskUs Background Screening (Sep 27 2026).txt",
+      "size": 73244,
+      "sha256": "1aef6cee28060feb5ea6eacdf5a3c78ad1d2995fd03ee4e0514886c83e22fff9"
     },
     {
       "path": "/documents/matter-40/First Advantage Invite - TaskUs Background Screening (Sep 14 2026).pdf",
