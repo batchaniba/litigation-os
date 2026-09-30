@@ -4,21 +4,23 @@
     "date": "2026-09-22",
     "date_label": "Sep. 22, 2026",
     "kind": "deadline",
-    "status": "open",
+    "status": "satisfied",
     "source_dkt": 12,
     "title": "WATCH — Defendants' consent or declination to magistrate-judge jurisdiction due in Nforbi v. Candelaria et al. (3:26-cv-08272-LJC). Set by Dkt. 12 (Sep. 8,…",
     "actor": "opposing",
-    "source": "/documents/matter-33/ndcal/PACER Docket Report - N.D. Cal. 3-26-cv-08272-LJC (Sep 9 2026).pdf"
+    "source": "/documents/matter-33/ndcal/PACER Docket Report - N.D. Cal. 3-26-cv-08272-LJC (Sep 9 2026).pdf",
+    "retired_reason": "Defendants declined magistrate-judge jurisdiction; matter reassigned to Hon. Rita F. Lin as 3:26-cv-08272-RFL."
   },
   {
     "id": "33-deadline-5",
     "date": "2026-09-23",
     "date_label": "Sep. 23, 2026",
     "kind": "deadline",
-    "status": "open",
+    "status": "satisfied",
     "source_dkt": 17,
     "title": "WATCH — Opposition to Dkt. 17 motion to strike due in Nforbi v. Candelaria et al. (3:26-cv-08272-LJC). PACER Deadlines/Hearings Sep. 18 sets Response (Mandatory) 2026-09-23. Civil L.R. 7-3(a). Not enlarged.",
-    "actor": "opposing"
+    "actor": "opposing",
+    "retired_reason": "Sep. 23 opposition deadline has passed and is no longer a live action clock. Sep. 28 PACER true-up carries the next motion clock as Plaintiff's Sep. 30 reply."
   },
   {
     "id": "33-deadline-6",
@@ -27,8 +29,8 @@
     "kind": "deadline",
     "status": "open",
     "source_dkt": 17,
-    "title": "WATCH — Reply ISO opposition to Dkt. 17 motion to strike due in Nforbi v. Candelaria et al. (3:26-cv-08272-LJC). PACER Deadlines/Hearings Sep. 18 sets Reply 2026-09-30. Civil L.R. 7-3(c).",
-    "actor": "opposing"
+    "title": "Plaintiff's reply due in support of Dkt. 17 motion to strike — Nforbi v. Candelaria et al. (3:26-cv-08272-RFL), Sep. 30, 2026.",
+    "actor": "you"
   },
   {
     "id": "33-deadline-2",
@@ -43,25 +45,25 @@
   },
   {
     "id": "33-deadline-3",
-    "date": "2026-11-05",
-    "date_label": "Nov. 5, 2026",
+    "date": "2026-12-02",
+    "date_label": "Dec. 2, 2026",
     "kind": "deadline",
     "status": "open",
     "source_dkt": 4,
-    "title": "Deadline to make initial disclosures (Fed. R. Civ. P. 26(a)(1)) and to file the Joint Case Management Statement (Standing Order for All Judges of the Northern…",
+    "title": "Deadline to make initial disclosures and file the Case Management Statement — Nforbi v. Candelaria et al. (3:26-cv-08272-RFL), per Sep. 28 PACER true-up.",
     "actor": "you",
     "source": "/documents/matter-33/ndcal/Dkt 04 - Order Setting Initial Case Management Conference and ADR Deadlines (Aug 10 2026).pdf"
   },
   {
     "id": "33-hearing-4",
-    "date": "2026-11-12",
-    "date_label": "Nov. 12, 2026",
-    "time": "13:30",
+    "date": "2026-12-09",
+    "date_label": "Dec. 9, 2026",
+    "time": "10:00",
     "tz": "America/Los_Angeles",
     "kind": "hearing",
     "status": "open",
     "source_dkt": 4,
-    "title": "Initial Case Management Conference and Dkt. 17 motion-to-strike hearing, 1:30 p.m. by Zoom (cand.uscourts.gov/ljc) before Magistrate Judge Lisa J. Cisneros — Nforbi v. Candelaria et al. (3:26-cv-08272-LJC). Same slot (PACER Sep. 18).",
+    "title": "Initial Case Management Conference and Dkt. 17 motion-to-strike hearing, 10:00 a.m. before Hon. Rita F. Lin — Nforbi v. Candelaria et al. (3:26-cv-08272-RFL).",
     "actor": "you",
     "source": "/documents/matter-33/ndcal/Dkt 04 - Order Setting Initial Case Management Conference and ADR Deadlines (Aug 10 2026).pdf"
   }
