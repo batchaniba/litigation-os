@@ -48,9 +48,9 @@
     "date": "2026-10-16",
     "date_label": "Oct. 16, 2026",
     "kind": "deadline",
-    "status": "open",
+    "status": "vacated",
     "source_dkt": null,
-    "title": "Hearing on CHP demurrer and the individual respondents' joinders/demurrers to the Petition for Writ of Mandate, Newanforbi v. California Highway Patrol, et al.…",
+    "title": "VACATED by the Aug. 29, 2026 Whitman order (hearings advanced to Aug. 28, then dropped as moot; Dutra and Paul dismissed) — Hearing on CHP demurrer and the individual respondents' joinders/demurrers to the Petition for Writ of Mandate, Newanforbi v. California Highway Patrol, et al.…",
     "actor": "you",
     "source": "/documents/matter-32/from-20/Serrato Notice of Joinder and Demurrer.pdf"
   },
@@ -59,10 +59,31 @@
     "date": "2026-10-23",
     "date_label": "Oct. 23, 2026",
     "kind": "deadline",
-    "status": "open",
+    "status": "vacated",
     "source_dkt": null,
-    "title": "Continued hearing on the Dutra joinder and demurrer to the Petition for Writ of Mandate, Newanforbi v. California Highway Patrol, et al. (Matter 20) — Dept.…",
+    "title": "VACATED by the Aug. 29, 2026 Whitman order (hearings advanced to Aug. 28, then dropped as moot; Dutra and Paul dismissed) — Continued hearing on the Dutra joinder and demurrer to the Petition for Writ of Mandate, Newanforbi v. California Highway Patrol, et al. (Matter 20) — Dept.…",
     "actor": "you",
     "source": "/documents/matter-32/from-20/Dutra Notice of Joinder and Demurrer.pdf"
+  },
+  {
+    "id": "20-hearing-writ",
+    "date": "2027-01-08",
+    "time": "09:00",
+    "tz": "America/Los_Angeles",
+    "kind": "hearing",
+    "status": "set",
+    "source": "/documents/matter-20/CRS Reservation 958052306492 - Motion for Writ of Mandate Jan 8 2027 (Sep 29 2026).pdf",
+    "title": "HEARING — Petitioner's Motion for Peremptory Writ of Mandate (First Cause of Action), Newanforbi v. CHP et al. (26CV191136), 9:00 a.m., Dept. 25, Hon. Jenna M. Whitman. Reservation ID 958052306492 (reserved Sep. 29, 2026).",
+    "actor": "you"
+  },
+  {
+    "id": "20-deadline-writ-motion",
+    "date": "2026-12-11",
+    "tz": "America/Los_Angeles",
+    "kind": "deadline",
+    "status": "open",
+    "source": "/documents/matter-20/CRS Reservation 958052306492 - Motion for Writ of Mandate Jan 8 2027 (Sep 29 2026).pdf",
+    "title": "FILE AND SERVE — Motion for Peremptory Writ of Mandate (Count 1), declaration, proposed judgment and writ, with CRS receipt 958052306492 as last page (computed: 16 court days before the Jan. 8, 2027 hearing under CCP § 1005(b), plus 2 court days for e-service under CCP § 1010.6, skipping Dec. 25 and Jan. 1) — Newanforbi v. CHP et al. (26CV191136). File earlier if possible.",
+    "actor": "you"
   }
 ]

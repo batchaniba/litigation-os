@@ -277,14 +277,12 @@ Standalone retail civil-rights matter arising from an August 25, 2026 consumer r
 | Oct. 13, 2026 | 20 | Case Management Statement due (computed) — Newanforbi v. CHP et al. (26CV191136), 15 calendar days before the Oct. 28, 2026 CMC per CRC 3.725. |
 | Oct. 13, 2026 | 28 | Reply deadline on Motion to Dismiss — Newanforbi v. Smith / HOPE (3:26-cv-07504-LJC). CM/ECF Reply Deadline 10/13/2026. |
 | Oct. 15, 2026 | 28 | Case Management Statement due — Newanforbi v. Shannon Smith, LCSW, CEO, et al. (3:26-cv-07504), USDC N.D. Cal. CM/ECF confirms 10/15/2026. |
-| Oct. 16, 2026 | 20 | Hearing on CHP demurrer and the individual respondents' joinders/demurrers to the Petition for Writ of Mandate, Newanforbi v. California Highway Patrol, et al.… |
 | Oct. 17, 2026 | 39 | OUTER BOUND — CCP § 338(a) three-year statutory-liability clock on the Best Buy § 290.46(j) count if accrual is the Oct. 17, 2023 offer / same-day screen week.… |
 | Oct. 19, 2026 | 32 | WATCH — Meza-Gonzalez Rule 12(a) responsive deadline (computed from a September 17, 2026 CCP § 415.20(b) mailing) in Nforbi v. Meza-Gonzalez et al.… |
 | Oct. 20, 2026 | 20 | WATCH — CHP written responses to RFP Set One (Count 1) in Newanforbi v. CHP et al. (26CV191136). Clock is October 20 if the September 16 email to Ing is valid… |
 | Oct. 20, 2026 | 28 | Hearing on Motion to Dismiss — Newanforbi v. Smith / HOPE (3:26-cv-07504-LJC), 10:30 a.m., Hon. Lisa J. Cisneros. CM/ECF: 10/20/2026 at 10:30 AM. |
 | Oct. 22, 2026 | 28 | Initial Case Management Conference — Newanforbi v. Shannon Smith, LCSW, CEO, et al. (3:26-cv-07504), 1:30 p.m., Hon. Lisa J. Cisneros. CM/ECF confirms 10/22/2026 at 01:30 PM. |
 | Oct. 22, 2026 | 33 | Deadline to file ADR Certification (ADR L.R. 3) and to meet and confer regarding initial disclosures, early settlement, ADR process selection, and a discovery… |
-| Oct. 23, 2026 | 20 | Continued hearing on the Dutra joinder and demurrer to the Petition for Writ of Mandate, Newanforbi v. California Highway Patrol, et al. (Matter 20) — Dept.… |
 | Oct. 25, 2026 | 35 | OPEN TASK — Serve Ross Stores, Inc. and Ross Dress for Less, Inc. in Matter 35 (26CV501995) with the Verified Complaint, issued Summons, ADR Information Sheet,… |
 | Oct. 28, 2026 | 20 | Case Management Conference (continued from Sep. 2, 2026) — Newanforbi v. CHP et al. (26CV191136), 4:00 p.m., Dept. 25, Rene C. Davidson Courthouse, Hon. Jenna… |
 | Nov. 1, 2026 | 1, 2, 32 | CCP §335.1 two-year statute of limitations (computed) backstop, running from the Nov. 1, 2024 incident. (1) Matter 1's Fourth Amendment §1983 claim (borrowed… |
@@ -296,6 +294,8 @@ Standalone retail civil-rights matter arising from an August 25, 2026 consumer r
 | Nov. 24, 2026 | 29 | Deadline to make initial disclosures (Fed. R. Civ. P. 26(a)(1)) and to file the Joint Case Management Statement (Standing Order for All Judges of the Northern… |
 | Dec. 1, 2026 | 29 | Initial Case Management Conference, 1:30 p.m. by Zoom (cand.uscourts.gov/ask) before Magistrate Judge Ajay S. Krishnan — Newanforbi v. Amazon.com Services, LLC… |
 | Dec. 11, 2026 | 12 | Further Case Management Conference, 8:30 AM, Dept. 11B, Hon. Robert T. Waters — Ngwa Nforbi v. Diamond Truck Sales, Inc. et al. (STK-CV-UF-2026-0001094), set… |
+| Dec. 11, 2026 | 20 | FILE AND SERVE — Motion for Peremptory Writ of Mandate (Count 1), declaration, proposed judgment and writ, with CRS receipt 958052306492 as last page (computed: 16 court days before the Jan. 8, 2027 hearing under CCP §… |
+| Jan. 8, 2027 | 20 | HEARING — Petitioner's Motion for Peremptory Writ of Mandate (First Cause of Action), Newanforbi v. CHP et al. (26CV191136), 9:00 a.m., Dept. 25, Hon. Jenna M. Whitman. |
 | Jan. 12, 2027 | 27 | Initial Case Management Conference, Newanforbi v. Randstad US, LLC et al. (26CV199902) — 3:00 PM, Dept. 20, Hon. Thomas Weathers, Rene C. Davidson Courthouse. |
 | Jan. 12, 2027 | 35 | OPEN TASK — Matter 35 (26CV501995) meet-and-confer with appearing parties at least 30 calendar days before the Feb. 11, 2027 CMC (Santa Clara Civil Lawsuit… |
 | Jan. 27, 2027 | 35 | OPEN TASK — File and serve Case Management Statement (CM-110) in Matter 35 (26CV501995) at least 15 calendar days before the Feb. 11, 2027 CMC. |

@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "fileCount": 1630,
-  "totalBytes": 1036976783,
+  "fileCount": 1631,
+  "totalBytes": 1037013088,
   "files": [
     {
       "path": "/documents/_form-library/ao239-blank-template.pdf",
@@ -8152,6 +8152,11 @@
       "path": "/documents/matter-27/Notice of Case Rescheduling - Initial CMC Moved to Jan 12 2027 (Sep 22 2026).pdf",
       "size": 787542,
       "sha256": "9ca8e4cae6ea34e7d44776b39f81df88ef5b02144810e2b711c09f021e496056"
+    },
+    {
+      "path": "/documents/matter-20/CRS Reservation 958052306492 - Motion for Writ of Mandate Jan 8 2027 (Sep 29 2026).pdf",
+      "size": 36305,
+      "sha256": "1bd0b54be3816f1e353e339c45ea326f2a55ca65983b666b77e6b1049d643494"
     }
   ]
 }

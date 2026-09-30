@@ -14,8 +14,9 @@ merits determination on the record CHP already had, and for a writ
 commanding certification — with remand for reconsideration as the
 alternative.
 
-Renders UNSIGNED with the hearing date blank. Reserve the hearing with
-Dept. 25 first; set HEARING_* below; regenerate; Petitioner signs.
+Hearing reserved: January 8, 2027, 9:00 a.m., Dept. 25, Reservation ID
+958052306492. Renders UNSIGNED; Petitioner signs, then attach the CRS
+receipt as the motion's last page.
 Every authority is flagged for citation-verify before filing.
 
   python3 internal/scripts/matter20-motion-peremptory-writ.py
@@ -36,10 +37,13 @@ from pleading_paper import CONTENT_LEFT, COURT_LINE1, PleadingPaper  # noqa: E40
 
 FILED_STATUS = False
 
-# Reserve with Dept. 25, then fill these in. CCP § 1005(b): 16 court days'
-# notice, plus 2 court days for electronic service (CCP § 1010.6).
-HEARING_DATE = "____________, 2026"
-HEARING_TIME = "_______"
+# Reserved Sep. 29, 2026 (CRS "Motion for Writ of Mandate"). CCP § 1005(b):
+# 16 court days' notice, plus 2 court days for electronic service
+# (CCP § 1010.6) -> file and serve by Friday, December 11, 2026.
+# Attach the CRS receipt as the last page of the motion.
+RESERVATION_ID = "958052306492"
+HEARING_DATE = "January 8, 2027"
+HEARING_TIME = "9:00 a.m."
 EXEC_DATE = "October ___, 2026"
 EXEC_PLACE = "Stockton, California"
 
@@ -74,6 +78,7 @@ def caption_right(title: list[str], hearing: bool = True) -> list[tuple[str, boo
             (f"Date:  {HEARING_DATE}", False, False),
             (f"Time:  {HEARING_TIME}", False, False),
             ("Dept.: 25", False, False),
+            (f"Reservation ID: {RESERVATION_ID}", False, False),
         ]
     rows += [
         ("Hon. Jenna M. Whitman", False, False),
@@ -382,8 +387,8 @@ CMC_ATTACHMENT: list[tuple] = [
           "date is needed."),
     ("sh", "3.  Request to set the writ hearing and briefing schedule."),
     ("p", "Petitioner requests that the Court set the hearing on his Motion for Peremptory "
-          f"Writ of Mandate on the First Cause of Action for {HEARING_DATE} [or the earliest "
-          "available date], with CHP's opposition and Petitioner's reply due as provided by "
+          f"Writ of Mandate on the First Cause of Action, reserved for {HEARING_DATE}, at "
+          f"{HEARING_TIME} (Reservation ID {RESERVATION_ID}), or an earlier date if available, with CHP's opposition and Petitioner's reply due as provided by "
           "Code of Civil Procedure section 1005, subdivision (b), unless the Court orders "
           "otherwise."),
     ("sh", "4.  Discovery."),

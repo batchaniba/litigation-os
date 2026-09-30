@@ -1,6 +1,6 @@
 {
   "generated": true,
-  "today": "2026-09-24",
+  "today": "2026-09-29",
   "matters": [
     {
       "number": 1,
@@ -642,7 +642,7 @@
         "source_dkt": null
       },
       "overdue": true,
-      "last_updated": "2026-09-16",
+      "last_updated": "2026-09-29",
       "files": [
         "claims.json",
         "clocks.json",
@@ -813,11 +813,11 @@
         "id": "25-deadline-1",
         "date": "2026-09-24",
         "kind": "deadline",
-        "status": "open",
+        "status": "overdue",
         "title": "WATCH — FedEx status reports in Newanforbi v. Federal Express Corporation (E.D. Cal. 2:26-cv-02881-DAD-SCR). Dkt. 8: not later than 14 days before the Oct. 8…",
         "source_dkt": 8
       },
-      "overdue": false,
+      "overdue": true,
       "last_updated": "2026-09-16",
       "files": [
         "claims.json",
@@ -889,11 +889,11 @@
         "id": "27-deadline-4",
         "date": "2026-09-25",
         "kind": "deadline",
-        "status": "open",
+        "status": "overdue",
         "title": "Randstad US, LLC to file and serve its response to the Complaint — per Stipulation to Set Aside and Vacate Entry of Default, entered Sep. 17, 2026 (Newanforbi v. Randstad US, LLC et al., 26CV199902)",
         "source_dkt": null
       },
-      "overdue": false,
+      "overdue": true,
       "last_updated": "2026-09-24",
       "files": [
         "claims.json",
@@ -1279,11 +1279,11 @@
         "id": "38-deadline-1",
         "date": "2026-09-26",
         "kind": "deadline",
-        "status": "open",
+        "status": "overdue",
         "title": "OUTER BOUND — CCP § 338(a) three-year statutory-liability clock on the Swift § 290.46(j) / ICRAA counts if accrual is the Sept. 26, 2023 pre-adverse email.…",
         "source_dkt": null
       },
-      "overdue": false,
+      "overdue": true,
       "last_updated": "2026-09-16",
       "files": [
         "claims.json",
@@ -1393,11 +1393,11 @@
         "id": "41-watch-1",
         "date": "2026-09-25",
         "kind": "deadline",
-        "status": "open",
+        "status": "overdue",
         "title": "WATCH — one week post-driving-eval: check for any Checkr background-check authorization/disclosure email from Nuro. None signed as of Sep. 18, 2026. The vendor step is the next event in the sequence.",
         "source_dkt": null
       },
-      "overdue": false,
+      "overdue": true,
       "last_updated": "2026-09-18",
       "files": [
         "claims.json",
