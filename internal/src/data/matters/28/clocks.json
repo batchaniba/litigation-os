@@ -4,11 +4,12 @@
     "date": "2026-09-21",
     "date_label": "Sep. 21, 2026",
     "kind": "deadline",
-    "status": "open",
+    "status": "satisfied",
     "source_dkt": null,
     "title": "Responsive pleading deadline (computed) — Shannon Smith, LCSW, and HOPE Psychotherapy, Inc., Newanforbi v. Shannon Smith, LCSW, CEO, et al.…",
     "actor": "opposing",
-    "source": "/documents/matter-28/Proof of Service - SLB Accepted Service for Smith and HOPE (N.D. Cal. 3-26-cv-07504-LJC) (Sep 2 2026).pdf"
+    "source": "/documents/matter-28/Proof of Service - SLB Accepted Service for Smith and HOPE (N.D. Cal. 3-26-cv-07504-LJC) (Sep 2 2026).pdf",
+    "retired_reason": "Defendants responded by filing Dkt. 15 Rule 12(b)(6) motion on Sep. 21, 2026."
   },
   {
     "id": "28-deadline-2",
@@ -31,5 +32,38 @@
     "title": "Initial Case Management Conference — Newanforbi v. Shannon Smith, LCSW, CEO, et al. (3:26-cv-07504), 1:30 PM, Hon. Lisa J. Cisneros, San Francisco…",
     "actor": "you",
     "source": "/documents/matter-28/Service Packet Emailed to SLB (Issued Summons Complaint Dkt 1-1 Dkt 4 Dkt 11) (Aug 31 2026).pdf"
+  },
+  {
+    "id": "28-deadline-mtd-opposition",
+    "date": "2026-10-05",
+    "date_label": "Oct. 5, 2026",
+    "kind": "deadline",
+    "status": "satisfied",
+    "source_dkt": 15,
+    "title": "Opposition to Dkt. 15 motion to dismiss — Newanforbi v. Smith / HOPE (3:26-cv-07504-LJC).",
+    "actor": "you",
+    "retired_reason": "Plaintiff confirmed on Sep. 29, 2026 that the opposition has been filed. Stamped opposition PDF is not yet ingested into the repo/R2."
+  },
+  {
+    "id": "28-deadline-mtd-reply",
+    "date": "2026-10-13",
+    "date_label": "Oct. 13, 2026",
+    "kind": "deadline",
+    "status": "open",
+    "source_dkt": 15,
+    "title": "Reply deadline on Dkt. 15 motion to dismiss — Newanforbi v. Smith / HOPE (3:26-cv-07504-LJC).",
+    "actor": "opposing"
+  },
+  {
+    "id": "28-hearing-mtd",
+    "date": "2026-10-27",
+    "date_label": "Oct. 27, 2026",
+    "time": "10:30",
+    "tz": "America/Los_Angeles",
+    "kind": "hearing",
+    "status": "open",
+    "source_dkt": 15,
+    "title": "Hearing on Dkt. 15 motion to dismiss — Newanforbi v. Smith / HOPE (3:26-cv-07504-LJC), 10:30 a.m., Hon. Lisa J. Cisneros.",
+    "actor": "you"
   }
 ]
