@@ -43,5 +43,26 @@
     "actor": "you",
     "source": "/documents/matter-32/ndcal/CCP 415.20(b) Mailing Bundle - Meza-Gonzalez (N.D. Cal. 4-26-cv-08271-ASK) (September 17, 2026).pdf",
     "retired_reason": "MAIL executed (CCP § 415.20(b) first-class follow-up to Dkt. 16 / 16-1). Papers exist. FILE of the signed declaration + Exhibit A + POS remains unfiled (dkt null). Do not invent a filing."
+  },
+  {
+    "id": "32-deadline-melano-answer",
+    "date": "2026-09-04",
+    "date_label": "Sep. 4, 2026",
+    "kind": "deadline",
+    "status": "open",
+    "source_dkt": null,
+    "title": "OVERDUE — Jose Melano response to operative FAC. Served Aug. 14, 2026; no response on PACER as of Sep. 28, 2026. Default posture; verify docket before seeking Rule 55(a) relief.",
+    "actor": "opposing",
+    "source": "/documents/matter-32/ndcal/Proof of Service of Summons - Jose Melano (C&P Process Server original, clerk-stamped Aug 31 2026).pdf"
+  },
+  {
+    "id": "32-deadline-cms",
+    "date": "2026-11-25",
+    "date_label": "Nov. 25, 2026",
+    "kind": "deadline",
+    "status": "open",
+    "source_dkt": null,
+    "title": "Case Management Statement due — Nforbi v. Meza-Gonzalez et al. (4:26-cv-08271-ASK), per Sep. 28 PACER true-up.",
+    "actor": "you"
   }
 ]
