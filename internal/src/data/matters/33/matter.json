@@ -1,8 +1,8 @@
 {
   "number": 33,
-  "last_updated": "2026-09-18",
+  "last_updated": "2026-09-28",
   "caption": "Nforbi v. Candelaria et al.",
-  "case_no": "3:26-cv-08272-LJC",
+  "case_no": "3:26-cv-08272-RFL",
   "court": "USDC N.D. Cal. (San Francisco Div.)",
   "courtlistener": {
     "court_id": "cand",
@@ -10,13 +10,13 @@
     "docket_url": "/docket/73742123/nforbi-v-candelaria/"
   },
   "claims": "42 U.S.C. § 1983 — APS impartial-adjudicator / fair hearing; declaratory and injunctive relief (vacatur of APS 34739340) — Dkt. 6 (FAC filed Aug. 17, 2026) is the court pleading of record; also Candelaria / DMV APS PDF home for Matters 7/8",
-  "status": "Stays with Mag. Cisneros. Krishnan declined to relate to Serrato (Dkt. 13). Tigno/McMahon for both defendants. Answer (Dkt. 11) is to superseded Dkt. 1. Plaintiff's motion to strike is on file as Dkt. 17 (PACER Event Filed Sep. 9; CL entered Sep. 10 2:29 p.m.). Opposition due Sep. 23; reply Sep. 30; hearing stacked on CMC Nov. 12 1:30 p.m. McMahon Sep. 18 asked five extra opposition days for \"DMV\"; Plaintiff remains silent — Sep. 23 is not enlarged. Dkt. 12 magistrate consent/declination due Sep. 22 (PACER still labels Doc. 14; Dkt. 14 is the misfiled second notice — disregard). Name-conform granted Dkt. 19 (Sep. 16) on the Dkt. 18 stipulation (filed Sep. 14). Operative FAC is Dkt. 6. Do not file the Sep. 14 7-11.",
-  "status_label": "Dkt. 17 MTS; opp. Sep. 23; name corrected",
+  "status": "Defendants declined magistrate-judge jurisdiction; case reassigned to Hon. Rita F. Lin, U.S. District Judge, as 3:26-cv-08272-RFL. Plaintiff's Dkt. 17 motion to strike remains pending. Opposition deadline Sep. 23 is no longer a live tracking item; Plaintiff's reply is due Sep. 30. Hearing and CMC moved to Dec. 9, 2026 at 10:00 a.m.; Case Management Statement due Dec. 2. Operative FAC remains Dkt. 6; name-conform was granted at Dkt. 19.",
+  "status_label": "RFL reassignment; reply Sep. 30; CMC Dec. 9",
   "lifecycle": "active",
   "proceeding": "federal_civil",
   "phase": "pleadings",
   "filed": "August 10, 2026 (docketed; complaint signed Aug. 7, 2026)",
-  "judge": "Hon. Lisa J. Cisneros (Magistrate Judge)",
+  "judge": "Hon. Rita F. Lin, U.S. District Judge (N.D. Cal.)",
   "cluster": 1,
   "type": "Federal",
   "badge": "MTS FILED",
