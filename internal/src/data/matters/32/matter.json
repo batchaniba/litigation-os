@@ -1,6 +1,6 @@
 {
   "number": 32,
-  "last_updated": "2026-09-19",
+  "last_updated": "2026-09-28",
   "caption": "Nforbi v. Meza-Gonzalez, et al",
   "case_no": "4:26-cv-08271-ASK",
   "court": "USDC N.D. Cal. (Oakland; 4:26-cv-08271-ASK; opened as 3:26-cv-08271-PHK; related Serrato 3:26-cv-05953-CRB and Candelaria 3:26-cv-08272-LJC)",
@@ -10,8 +10,8 @@
     "docket_url": "/docket/74220629/nforbi-v-meza-gonzalez/"
   },
   "claims": "42 U.S.C. § 1983 — Fourth/Fourteenth/First Amendment (unlawful entry, search, arrest, Franks/judicial deception, fabrication, First Amendment retaliation) — Dkt. 5 (FAC filed Aug. 17, 2026) is the court pleading of record; also CHP-cluster PDF home for Matters 1/2/20/24",
-  "status": "Krishnan 4:26-cv-08271-ASK. MAIL executed (CCP § 415.20(b) follow-up to Dkt. 16 / 16-1). FILE of signed declaration + Exhibit A + POS still unfiled (dkt null). Rule 55(a) clerk-default packet drafted Sep. 18 (unfiled). Dkt. 13 pending. Meza Rule 12(a) watch Oct. 19 if mailing confirmed.",
-  "status_label": "415.20 MAIL done — FILE still unfiled",
+  "status": "Krishnan 4:26-cv-08271-ASK. Melano's answer has been overdue since Sep. 4, 2026; no response appeared on PACER as of the Sep. 28 true-up, placing him in default posture. Meza: CCP §415.20(b) follow-up mailing executed, but FILE of the signed declaration + Exhibit A USPS receipt + POS remains unfiled (dkt null). Meza Rule 12(a) watch Oct. 19 if mailing is confirmed. Case Management Statement due Nov. 25.",
+  "status_label": "Melano answer overdue; Meza POS filing open",
   "lifecycle": "active",
   "proceeding": "federal_civil",
   "phase": "responsive_deadline",
