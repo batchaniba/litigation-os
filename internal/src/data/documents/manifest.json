@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "fileCount": 1672,
-  "totalBytes": 1042233100,
+  "fileCount": 1684,
+  "totalBytes": 1105356039,
   "files": [
     {
       "path": "/documents/_form-library/ao239-blank-template.pdf",
@@ -872,6 +872,66 @@
       "path": "/documents/matter-05/HOPE resp plntf SROGS1 (NEWpal) (061526).pdf",
       "size": 756957,
       "sha256": "e2f44009a4d2b37dc6ee6fe4be5ba6db0b939dc79346c966e968cd2833349b14"
+    },
+    {
+      "path": "/documents/matter-05/hope-discovery/HOPE_000001-031_Professional_Liability_Policy.pdf",
+      "size": 4347289,
+      "sha256": "9c6b98f0e9c42ca99d74efff5dcd53146ac247fe74e4c62b1bff6a314bd0d4c6"
+    },
+    {
+      "path": "/documents/matter-05/hope-discovery/HOPE_000032-104_DandO_EPL_Policy.pdf",
+      "size": 10369478,
+      "sha256": "13120f5ecfc3f2d3478f5ba45fd8942c43e7c74c3d1913989cf14869addb4f77"
+    },
+    {
+      "path": "/documents/matter-05/hope-discovery/HOPE_000105-138_Block_1_Homework.pdf",
+      "size": 1589351,
+      "sha256": "eefc6c6dbe1bf0ee6f9ea0b2875565b6c1dc76651bbe3336cf3b4460f05f2b29"
+    },
+    {
+      "path": "/documents/matter-05/hope-discovery/HOPE_000139-199_Collateral_Notes_and_Communications.pdf",
+      "size": 2987254,
+      "sha256": "f6bdd9af1b04ac5621eb13526feee7f5c21cdb267e6200aaf29a5d99c1346b47"
+    },
+    {
+      "path": "/documents/matter-05/hope-discovery/HOPE_000200-223_Homework_and_Preparatory_Tickets.pdf",
+      "size": 1343548,
+      "sha256": "4adf1674e55da1073131a2b933bdfef0b5aef7e48d354961550cedf013d3fc42"
+    },
+    {
+      "path": "/documents/matter-05/hope-discovery/HOPE_000224_Curriculum_Tracking_Audit.pdf",
+      "size": 193952,
+      "sha256": "956371fe0cfca3c7a77d84117b8a84a2eac2b5c935011162e9a336f60d71a3de"
+    },
+    {
+      "path": "/documents/matter-05/hope-discovery/HOPE_000225-314_Clinical_Operational_Manual_Part_1.pdf",
+      "size": 12001352,
+      "sha256": "d5d1b26349fcbe092509095ba4c0f571aba31a67c7afd42dba092d79e5e54090"
+    },
+    {
+      "path": "/documents/matter-05/hope-discovery/HOPE_000315-349_Clinical_Operational_Manual_Part_2.pdf",
+      "size": 5106224,
+      "sha256": "3c13ccbfa14ee4feaa91fef8bb35f804401e9b68c6df6021247751396aacdee9"
+    },
+    {
+      "path": "/documents/matter-05/hope-discovery/HOPE_000350-434_Maintenance_Curriculum.pdf",
+      "size": 9157280,
+      "sha256": "a4e2b9d65625326e6e6880a14b4fbf74678686706ff4deea96256484b1e6017f"
+    },
+    {
+      "path": "/documents/matter-05/hope-discovery/HOPE_000435-485_Program_Employee_Handbook_2023.pdf",
+      "size": 8720755,
+      "sha256": "59f9fd24387ffe1579850cb45ae138ad1b43831836777f5be1939c995f4b3a0e"
+    },
+    {
+      "path": "/documents/matter-05/hope-discovery/HOPE_000486-537_Proprietary_Treatment_Manual.pdf",
+      "size": 6678142,
+      "sha256": "dbbf02b2af55fb23f8b78224413b9063c2220beebefa1b3669f03dd120204e3f"
+    },
+    {
+      "path": "/documents/matter-05/hope-discovery/HOPE_000538-542_Clinical_Director_Job_Description.pdf",
+      "size": 628314,
+      "sha256": "20d87d178cdf48fdb3f314a4742745a52fa6f8362bad6b9dcef9aa6815f593c2"
     },
     {
       "path": "/documents/matter-05/Meet and Confer Letter 061626.pdf",
