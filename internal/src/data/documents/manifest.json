@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "fileCount": 1672,
-  "totalBytes": 1042233100,
+  "fileCount": 1684,
+  "totalBytes": 1105356039,
   "files": [
     {
       "path": "/documents/_form-library/ao239-blank-template.pdf",
@@ -874,6 +874,66 @@
       "sha256": "e2f44009a4d2b37dc6ee6fe4be5ba6db0b939dc79346c966e968cd2833349b14"
     },
     {
+      "path": "/documents/matter-05/hope-discovery/HOPE_000001-031_Professional_Liability_Policy.pdf",
+      "size": 4347289,
+      "sha256": "9c6b98f0e9c42ca99d74efff5dcd53146ac247fe74e4c62b1bff6a314bd0d4c6"
+    },
+    {
+      "path": "/documents/matter-05/hope-discovery/HOPE_000032-104_DandO_EPL_Policy.pdf",
+      "size": 10369478,
+      "sha256": "13120f5ecfc3f2d3478f5ba45fd8942c43e7c74c3d1913989cf14869addb4f77"
+    },
+    {
+      "path": "/documents/matter-05/hope-discovery/HOPE_000105-138_Block_1_Homework.pdf",
+      "size": 1589351,
+      "sha256": "eefc6c6dbe1bf0ee6f9ea0b2875565b6c1dc76651bbe3336cf3b4460f05f2b29"
+    },
+    {
+      "path": "/documents/matter-05/hope-discovery/HOPE_000139-199_Collateral_Notes_and_Communications.pdf",
+      "size": 2987254,
+      "sha256": "f6bdd9af1b04ac5621eb13526feee7f5c21cdb267e6200aaf29a5d99c1346b47"
+    },
+    {
+      "path": "/documents/matter-05/hope-discovery/HOPE_000200-223_Homework_and_Preparatory_Tickets.pdf",
+      "size": 1343548,
+      "sha256": "4adf1674e55da1073131a2b933bdfef0b5aef7e48d354961550cedf013d3fc42"
+    },
+    {
+      "path": "/documents/matter-05/hope-discovery/HOPE_000224_Curriculum_Tracking_Audit.pdf",
+      "size": 193952,
+      "sha256": "956371fe0cfca3c7a77d84117b8a84a2eac2b5c935011162e9a336f60d71a3de"
+    },
+    {
+      "path": "/documents/matter-05/hope-discovery/HOPE_000225-314_Clinical_Operational_Manual_Part_1.pdf",
+      "size": 12001352,
+      "sha256": "d5d1b26349fcbe092509095ba4c0f571aba31a67c7afd42dba092d79e5e54090"
+    },
+    {
+      "path": "/documents/matter-05/hope-discovery/HOPE_000315-349_Clinical_Operational_Manual_Part_2.pdf",
+      "size": 5106224,
+      "sha256": "3c13ccbfa14ee4feaa91fef8bb35f804401e9b68c6df6021247751396aacdee9"
+    },
+    {
+      "path": "/documents/matter-05/hope-discovery/HOPE_000350-434_Maintenance_Curriculum.pdf",
+      "size": 9157280,
+      "sha256": "a4e2b9d65625326e6e6880a14b4fbf74678686706ff4deea96256484b1e6017f"
+    },
+    {
+      "path": "/documents/matter-05/hope-discovery/HOPE_000435-485_Program_Employee_Handbook_2023.pdf",
+      "size": 8720755,
+      "sha256": "59f9fd24387ffe1579850cb45ae138ad1b43831836777f5be1939c995f4b3a0e"
+    },
+    {
+      "path": "/documents/matter-05/hope-discovery/HOPE_000486-537_Proprietary_Treatment_Manual.pdf",
+      "size": 6678142,
+      "sha256": "dbbf02b2af55fb23f8b78224413b9063c2220beebefa1b3669f03dd120204e3f"
+    },
+    {
+      "path": "/documents/matter-05/hope-discovery/HOPE_000538-542_Clinical_Director_Job_Description.pdf",
+      "size": 628314,
+      "sha256": "20d87d178cdf48fdb3f314a4742745a52fa6f8362bad6b9dcef9aa6815f593c2"
+    },
+    {
       "path": "/documents/matter-05/Meet and Confer Letter 061626.pdf",
       "size": 16575,
       "sha256": "6d29490554898d6072447f6efe43d1043facd136a9eeff3e082f7dd5632fc8f6"
@@ -1669,6 +1729,56 @@
       "sha256": "ebbdb991e27337f4eb9546c05bf3a23e7fabb38e732ad8d147e7c517f8e7d566"
     },
     {
+      "path": "/documents/matter-20/01_Motion_for_Peremptory_Writ_MPA_with_CRS_Receipt.pdf",
+      "sha256": "dcf900e98d084282088db53436bfadbab8813448d231490f734881a4aee5d7fc",
+      "size": 288963
+    },
+    {
+      "path": "/documents/matter-20/01_Motion_for_Peremptory_Writ_MPA_with_CRS_Receipt.txt",
+      "sha256": "6b9ae8ba64744a538442ff9f5bf45db882fcca6cd3dd0baa838370a9d1d42249",
+      "size": 20373
+    },
+    {
+      "path": "/documents/matter-20/02_Declaration_ISO_Motion_for_Peremptory_Writ.pdf",
+      "sha256": "f730bc4b9fe3a2e0913e9f8ef169e476b4a5f17e15d4cd14225a81365661b436",
+      "size": 227378
+    },
+    {
+      "path": "/documents/matter-20/02_Declaration_ISO_Motion_for_Peremptory_Writ.txt",
+      "sha256": "0b5b60eec6a419f0ca1d65481a302e39d5a2adc58bc7231c767b0dd293402db0",
+      "size": 5372
+    },
+    {
+      "path": "/documents/matter-20/03_Attachment_to_CM110_Oct28_CMC.pdf",
+      "sha256": "f7e579658773cf05d42a6d47f59fd6cdaff68c11162886566547be51b5a2091c",
+      "size": 226843
+    },
+    {
+      "path": "/documents/matter-20/03_Attachment_to_CM110_Oct28_CMC.txt",
+      "sha256": "bb6f4908159eaf6756c90cf3a49aa398a0a1a4f1a9f0a4dcd2af398c338ebc32",
+      "size": 5280
+    },
+    {
+      "path": "/documents/matter-20/04_Proposed_Judgment_Granting_Peremptory_Writ.pdf",
+      "sha256": "b3f656cefd6fde46351d945cc1c4accebc822f04f7e5c3f0239fe6dbc37ed2b0",
+      "size": 31204
+    },
+    {
+      "path": "/documents/matter-20/04_Proposed_Judgment_Granting_Peremptory_Writ.txt",
+      "sha256": "b1c1797692815ba94a70f68bcb1e9f9ed2b14586474c4926e6c9f0490eddcfd0",
+      "size": 3074
+    },
+    {
+      "path": "/documents/matter-20/05_Proposed_Peremptory_Writ_of_Mandate.pdf",
+      "sha256": "5536eee00deeb692c28d40a0d296bffbfa14267b485eb01065d9afc219b0a417",
+      "size": 30167
+    },
+    {
+      "path": "/documents/matter-20/05_Proposed_Peremptory_Writ_of_Mandate.txt",
+      "sha256": "d67ea0c2882753586d06d05a1a9ef04bcc448efb8709ae232e17ef4c76ef91c2",
+      "size": 2450
+    },
+    {
       "path": "/documents/matter-20/Declaration ISO Notice of Lodging Nov 1 2024 CHP Dashcam (Sep 8 2026).pdf",
       "size": 198112,
       "sha256": "062f7803d19dd250d4662499e3b52aaaa0a4f9945e3743456e013efaa9c2ad88"
@@ -1702,6 +1812,26 @@
       "path": "/documents/matter-20/Gmail - Newanforbi v CHP - Notice of Lodging Dashcam to Ing (Sent Sep 8 2026).pdf",
       "size": 37118,
       "sha256": "2ed6735907774dc67235ce457b00632c1640a5f4c48828780ad3426ebda04134"
+    },
+    {
+      "path": "/documents/matter-20/Matter20_CM110_with_PleadingPaper_Attachments.pdf",
+      "sha256": "75503402cdc292adeb24538b4f5637fda2472d71d68e164aa2550872dbe7c11a",
+      "size": 224486
+    },
+    {
+      "path": "/documents/matter-20/Matter20_CM110_with_PleadingPaper_Attachments.txt",
+      "sha256": "9bbab3004494b6f89df6c136f448a012cae69c4e93cf31c06f24ce61177b511a",
+      "size": 22331
+    },
+    {
+      "path": "/documents/matter-20/Newanforbi_v._California_Highway_Patrol__No._26CV191136___Rule_3.724_meet_and_co.pdf",
+      "sha256": "8583d6e0676da8b558c8b0de0ce02bdcfce6df427f581278f1c19adc2ea8c312",
+      "size": 41197
+    },
+    {
+      "path": "/documents/matter-20/Newanforbi_v._California_Highway_Patrol__No._26CV191136___Rule_3.724_meet_and_co.txt",
+      "sha256": "5ede10125b16d288d8c34ead9c4a63bbf62c801018a3a063c5976b56be3b3670",
+      "size": 2286
     },
     {
       "path": "/documents/matter-20/Notice of Confirmation of Electronic Filing - Notice of Lodging (POS rejected Sep 8 2026).pdf",
@@ -1762,76 +1892,6 @@
       "path": "/documents/matter-20/Stipulation to Advance Hearing Date.docx",
       "size": 39798,
       "sha256": "0a209a1d1f0c24dc19696c59a2eadefee79f5fe82321e7e1c984fccc40cda70e"
-    },
-    {
-      "path": "/documents/matter-20/01_Motion_for_Peremptory_Writ_MPA_with_CRS_Receipt.pdf",
-      "sha256": "dcf900e98d084282088db53436bfadbab8813448d231490f734881a4aee5d7fc",
-      "size": 288963
-    },
-    {
-      "path": "/documents/matter-20/01_Motion_for_Peremptory_Writ_MPA_with_CRS_Receipt.txt",
-      "sha256": "6b9ae8ba64744a538442ff9f5bf45db882fcca6cd3dd0baa838370a9d1d42249",
-      "size": 20373
-    },
-    {
-      "path": "/documents/matter-20/02_Declaration_ISO_Motion_for_Peremptory_Writ.pdf",
-      "sha256": "f730bc4b9fe3a2e0913e9f8ef169e476b4a5f17e15d4cd14225a81365661b436",
-      "size": 227378
-    },
-    {
-      "path": "/documents/matter-20/02_Declaration_ISO_Motion_for_Peremptory_Writ.txt",
-      "sha256": "0b5b60eec6a419f0ca1d65481a302e39d5a2adc58bc7231c767b0dd293402db0",
-      "size": 5372
-    },
-    {
-      "path": "/documents/matter-20/03_Attachment_to_CM110_Oct28_CMC.pdf",
-      "sha256": "f7e579658773cf05d42a6d47f59fd6cdaff68c11162886566547be51b5a2091c",
-      "size": 226843
-    },
-    {
-      "path": "/documents/matter-20/03_Attachment_to_CM110_Oct28_CMC.txt",
-      "sha256": "bb6f4908159eaf6756c90cf3a49aa398a0a1a4f1a9f0a4dcd2af398c338ebc32",
-      "size": 5280
-    },
-    {
-      "path": "/documents/matter-20/04_Proposed_Judgment_Granting_Peremptory_Writ.pdf",
-      "sha256": "b3f656cefd6fde46351d945cc1c4accebc822f04f7e5c3f0239fe6dbc37ed2b0",
-      "size": 31204
-    },
-    {
-      "path": "/documents/matter-20/04_Proposed_Judgment_Granting_Peremptory_Writ.txt",
-      "sha256": "b1c1797692815ba94a70f68bcb1e9f9ed2b14586474c4926e6c9f0490eddcfd0",
-      "size": 3074
-    },
-    {
-      "path": "/documents/matter-20/05_Proposed_Peremptory_Writ_of_Mandate.pdf",
-      "sha256": "5536eee00deeb692c28d40a0d296bffbfa14267b485eb01065d9afc219b0a417",
-      "size": 30167
-    },
-    {
-      "path": "/documents/matter-20/05_Proposed_Peremptory_Writ_of_Mandate.txt",
-      "sha256": "d67ea0c2882753586d06d05a1a9ef04bcc448efb8709ae232e17ef4c76ef91c2",
-      "size": 2450
-    },
-    {
-      "path": "/documents/matter-20/Matter20_CM110_with_PleadingPaper_Attachments.pdf",
-      "sha256": "75503402cdc292adeb24538b4f5637fda2472d71d68e164aa2550872dbe7c11a",
-      "size": 224486
-    },
-    {
-      "path": "/documents/matter-20/Matter20_CM110_with_PleadingPaper_Attachments.txt",
-      "sha256": "9bbab3004494b6f89df6c136f448a012cae69c4e93cf31c06f24ce61177b511a",
-      "size": 22331
-    },
-    {
-      "path": "/documents/matter-20/Newanforbi_v._California_Highway_Patrol__No._26CV191136___Rule_3.724_meet_and_co.pdf",
-      "sha256": "8583d6e0676da8b558c8b0de0ce02bdcfce6df427f581278f1c19adc2ea8c312",
-      "size": 41197
-    },
-    {
-      "path": "/documents/matter-20/Newanforbi_v._California_Highway_Patrol__No._26CV191136___Rule_3.724_meet_and_co.txt",
-      "sha256": "5ede10125b16d288d8c34ead9c4a63bbf62c801018a3a063c5976b56be3b3670",
-      "size": 2286
     },
     {
       "path": "/documents/matter-21/Complaint.pdf",
