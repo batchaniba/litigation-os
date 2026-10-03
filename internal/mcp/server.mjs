@@ -19,6 +19,20 @@ const SERVER = { name: "litigation-portfolio", version: "0.2.0" };
 // these adapters normalize the few positional signatures.
 const TOOLS = [
   {
+    name: "getPropositionLedger",
+    description: "Read a private matter reasoning ledger and audit recorded review completeness. Laptop only.",
+    fn: ({ n }) => query.getPropositionLedger(n),
+    schema: { n: { type: "integer", minimum: 1 } },
+    required: ["n"],
+  },
+  {
+    name: "auditPropositions",
+    description: "Audit assertions for missing sources, review, proof gaps and unanswered objections. Does not establish legal correctness.",
+    fn: (p) => query.auditPropositions(p),
+    schema: { propositions: { type: "array", items: { type: "object" } } },
+    required: ["propositions"],
+  },
+  {
     name: "getMatter",
     description: "Identity + index entry for one matter by number.",
     fn: ({ n }) => query.getMatter(n),

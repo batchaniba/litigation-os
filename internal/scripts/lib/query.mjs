@@ -6,6 +6,8 @@
 // Legacy generator scripts stay untouched — this lib is the contract layer
 // they will eventually be refactored to import from.
 import fs from "node:fs";
+import { auditPropositions } from "./proposition-audit.mjs";
+export { auditPropositions } from "./proposition-audit.mjs";
 import path from "node:path";
 import { createHash } from "node:crypto";
 import { todayKey, dateKeyFromLabel } from "./next-actions.mjs";
@@ -241,4 +243,18 @@ export function getNumberedClusters() {
 export function getMatterDocs(n) {
   const num = Number(n);
   return (manifest().files ?? []).filter((f) => f.path.includes(`/matter-${num}/`));
+}
+
+/** Private, user-authored reasoning ledger; never reads the public projection. */
+export function getPropositionLedger(n) {
+  const num = Number(n);
+  if (!Number.isSafeInteger(num) || num < 1) throw new Error("matter must be a positive integer");
+  if (!matterByNumber(num)) throw new Error("no matter " + num + " in index");
+  const rel = "internal/private/propositions/" + paddedMatterNumber(num) + ".json";
+  const file = path.join(REPO_ROOT, rel);
+  if (!fs.existsSync(file)) return { matter: num, found: false, path: rel, propositions: [] };
+  const ledger = JSON.parse(fs.readFileSync(file, "utf8"));
+  if (ledger.version !== 1 || ledger.matter !== num)
+    throw new Error("ledger version or matter mismatch: " + rel);
+  return { matter: num, found: true, path: rel, ...auditPropositions(ledger) };
 }

@@ -5,6 +5,8 @@
 // See internal/docs/API_OPERATIONS.md for the operation catalog.
 import {
   getMatter,
+  getPropositionLedger,
+  auditPropositions,
   listMatters,
   upcomingDeadlines,
   getTimeline,
@@ -28,6 +30,8 @@ import {
 } from "./lib/mutate.mjs";
 
 const OPS = {
+  getPropositionLedger: { fn: getPropositionLedger, args: ["n"] },
+  auditPropositions: { fn: auditPropositions, opts: true, json: ["propositions"] },
   getMatter: { fn: getMatter, args: ["n"] },
   listMatters: { fn: listMatters, opts: true },
   upcomingDeadlines: { fn: upcomingDeadlines, opts: true },
