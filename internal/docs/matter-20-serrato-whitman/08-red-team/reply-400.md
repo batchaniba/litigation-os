@@ -1,0 +1,9 @@
+# Reply — no new exhibits
+
+The issue is not whether the court should make the certification decision for CHP. The requested Count 1 remedy can stop at vacatur and remand. *Saleeby* permits traditional mandate to correct abuse of discretion even though it cannot prescribe the ultimate discretionary result.
+
+Whitman's August 29 order also narrows the factual question. It holds that, if the pleaded absence of alcohol odor and impairment, recorded test performance, and false-report allegations are proved, a factfinder could find probable cause lacking and CHP's refusal abusive. The merits record must therefore show what CHP considered and whether the denial can be reconciled with its own materials.
+
+The comparison is specific. The report allegations quoted in petition paragraphs 44–47 state an odor from the vehicle and Petitioner's breath and person, “Slurred” speech, a “very confused and disoriented” demeanor, and “BEVERAGE PRESENT: YES.” The lodged transcript records the liquid identified as urine at 00:58:59, situational answers at 01:00:41–01:01:56, a timed balance exercise at 01:08:02–01:08:45, the PAS described as not required at 01:10:54, and the arrest beginning at 01:11:15. Exhibit 7 records “a detention only, not an arrest” and “insufficient grounds for making a criminal complaint.” None of that conclusively proves a qualifying crime, but CHP cannot lawfully ignore it.
+
+CHP's totality argument therefore creates a reason for a reasoned decision, not immunity from review. The present denial identifies a conclusion without revealing whether the certifying official reviewed the recording, report, certificate, and identified qualifying-crime theories together. If the court finds the decision arbitrary, based on an incomplete record, or based on the wrong legal standard, it can vacate and remand while leaving the ultimate certification decision entirely to CHP.

@@ -1,0 +1,13 @@
+# Ing opposition — bucket only
+
+The surviving claim does not turn a discretionary U-visa certification judgment into a ministerial command. The August 29 order only held that Count 1 was adequately pleaded at the demurrer stage. It did not find that officers lacked probable cause, that any report statement was false, or that Petitioner was the victim of qualifying criminal activity.
+
+CHP considered the request and denied it because the incident did not meet the standard for qualifying criminal activity or substantially similar activity. That is the statutory threshold. The agency was not required to certify merely because Petitioner labeled the incident false imprisonment, felonious assault, obstruction, or perjury.
+
+The contemporaneous material supplies a rational basis for CHP's decision. Officers encountered Petitioner parked on a freeway shoulder. The video records an alcohol-container discussion, a field-sobriety sequence, Petitioner's decision not to complete every proposed exercise, refusal of a voluntary PAS, and later refusal of chemical testing. Probable cause is assessed under the totality, not by demanding that an officer verbalize every observation on camera. *Espinoza v. Shiomoto* (2017) 10 Cal.App.5th 85, 97–102.
+
+The claimed crimes are not established. A Penal Code § 851.6 certificate records that the matter was treated as a detention and that no criminal complaint would issue; it does not adjudicate that the arresting officers committed false imprisonment. The involuntary blood draw does not, without more, establish felony assault. Differences between report characterizations and a recording do not prove a knowingly false statement under a legally authorized oath, corrupt intent, or an obstruction nexus. The petition's labels are allegations.
+
+Helpfulness does not cure the missing qualifying-crime threshold. CHP's denial was not based on a refusal to cooperate. Whitman's order rejected the separate helpfulness count for that reason. Even if subdivision (h) were reached, CHP has argued that its presumption follows a reasonable request for information or assistance, and the bucket identifies no such post-request demand.
+
+Traditional mandate cannot direct CHP to choose certification. *Common Cause v. Board of Supervisors* (1989) 49 Cal.3d 432, 442–446; *Saleeby v. State Bar* (1985) 39 Cal.3d 547, 562. At most, the court may review for arbitrariness. The lodged video does not erase the report, establish the required criminal elements, or convert reasonable evidentiary disagreement into abuse of discretion. Judgment should follow for CHP because the decision had a rational record basis and remained within the certifying official's lawful discretion.
