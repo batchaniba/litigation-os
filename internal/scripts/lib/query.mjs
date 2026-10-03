@@ -6,6 +6,8 @@
 // Legacy generator scripts stay untouched — this lib is the contract layer
 // they will eventually be refactored to import from.
 import fs from "node:fs";
+import { verifyPropositionSources } from "./proposition-sources.mjs";
+export { verifyPropositionSources } from "./proposition-sources.mjs";
 import { auditPropositions } from "./proposition-audit.mjs";
 export { auditPropositions } from "./proposition-audit.mjs";
 import path from "node:path";
@@ -257,4 +259,12 @@ export function getPropositionLedger(n) {
   if (ledger.version !== 1 || ledger.matter !== num)
     throw new Error("ledger version or matter mismatch: " + rel);
   return { matter: num, found: true, path: rel, ...auditPropositions(ledger) };
+}
+
+/** Verify the current private ledger against local extracted source passages. */
+export function verifyPropositionLedger(n) {
+  const ledger = getPropositionLedger(n);
+  if (!ledger.found) return ledger;
+  return { matter: ledger.matter, found: true, path: ledger.path,
+    ...verifyPropositionSources({ propositions: ledger.propositions }) };
 }

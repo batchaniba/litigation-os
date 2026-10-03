@@ -6,6 +6,8 @@
 import {
   getMatter,
   getPropositionLedger,
+  verifyPropositionLedger,
+  verifyPropositionSources,
   auditPropositions,
   listMatters,
   upcomingDeadlines,
@@ -30,6 +32,8 @@ import {
 } from "./lib/mutate.mjs";
 
 const OPS = {
+  verifyPropositionLedger: { fn: verifyPropositionLedger, args: ["n"] },
+  verifyPropositionSources: { fn: verifyPropositionSources, opts: true, json: ["propositions"] },
   getPropositionLedger: { fn: getPropositionLedger, args: ["n"] },
   auditPropositions: { fn: auditPropositions, opts: true, json: ["propositions"] },
   getMatter: { fn: getMatter, args: ["n"] },
