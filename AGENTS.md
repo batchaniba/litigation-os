@@ -171,3 +171,35 @@ Hard boundary:
 - Preserve lawful conduct: no concealment or dissipation of assets, no
   unauthorized account access, no destructive deletion, no retaliation, and no
   unlawful recording.
+
+## Matter 44 — private family-member redress workspace
+
+Matter 44 is **not a filed case** and must never enter the public matter graph.
+Its front door is `internal/private/matters/44/README.md`. It is an internal
+workspace to assess Maryland safety, divorce, civil, criminal, compensation,
+and related remedies for Njiubu Ngwa Nforbi.
+
+Hard boundary:
+
+- Do not copy Matter 44 content into `internal/src/data/matters/`, the public
+  README inventory, generated summaries, the SPA, D1, R2, the public Worker, the
+  fuse board, damages totals, lawyer-fee totals, or public document registries.
+- Njiubu is the prospective claimant and decision-maker. Brendan is family
+  support, researcher, and evidence organizer—not claimant or counsel.
+- Treat every abuse allegation as **USER REPORT** until corroborated. Separate
+  FACT, USER REPORT, INFERENCE, QUESTION, and RECOMMENDATION.
+- Do not contact Njiubu, Patrick, family, witnesses, law enforcement,
+  prosecutors, courts, advocates, financial institutions, employers, or
+  lawyers without express instruction and Njiubu's authorization where needed.
+- Do not draft or file claims in Brendan's name for injuries personal to
+  Njiubu, imply that Brendan represents her, or imply that a private person
+  controls criminal prosecution.
+- Prioritize current safety, recent incidents, limitations, jurisdiction,
+  evidence preservation, and independent Maryland counsel review.
+- Do not store passwords, access tokens, Social Security numbers, full account
+  numbers, immigration identifiers, children's identifying data, intimate
+  media, raw medical records, or unredacted sensitive communications. Use a
+  redacted description plus a secure private locator or hash.
+- Preserve lawful conduct: no unauthorized access, impersonation, tracking,
+  unlawful recording, coached testimony, evidence alteration, retaliation,
+  public accusation, or concealment/dissipation of assets.
