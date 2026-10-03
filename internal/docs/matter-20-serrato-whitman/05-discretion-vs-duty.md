@@ -1,3 +1,15 @@
+## 2026-10-02 — Codex audit qualification
+
+The conditional command is Penal Code § 679.10(g)(1), not subdivision (b). Subdivision (b) defines officials; (h) supplies the helpfulness presumption; (k) removes listed prerequisites and prohibited reasons.
+
+Ing's strongest position: the qualifying-crime threshold requires evaluative findings; a written threshold denial need not separately adjudicate every asserted offense or narrate every exhibit. Section 679.10(i)(2)'s specific cooperation details do not create an element-by-element explanation duty for a noncooperation-independent denial. The August 29 order rejected that separate Count 2 theory. Pins: `0.Newanforbi v. CHP - Writ of Mandate.pdf` Ex. 1; `Order Sustaining Demurrer In Part - Whitman (Aug 29 2026) (Notice of Entry Aug 31 2026).pdf`, Counts 1–3.
+
+The short letter's silence about the dashcam/certificate does **not** prove they were ignored. Agency review file: MISSING. Remand requires proved abuse or legal error; it is not a reward for brevity. Saleeby (1985) 39 Cal.3d 547, 562; Common Cause (1989) 49 Cal.3d 432, 442–446.
+
+Dated dissent — 2026-10-02: direct certification is not categorically forbidden. California Correctional Supervisors (2002) 96 Cal.App.4th 824, 827 permits compelled choice where only one choice is reasonable. This record does not presently establish that condition. Preserve the user's primary certification request as conditional and alternative remand as the narrower route.
+
+---
+
 # Discretion versus duty
 
 ## Ing's best discretion argument

@@ -1,3 +1,20 @@
+## 2026-10-02 — Codex audit correction
+
+The original inventory is preserved below. Its `NOT IN BUCKET` labels for embedded exhibits mean **no standalone object**, not absent evidence. The operative petition `0.Newanforbi v. CHP - Writ of Mandate.pdf` contains the denial (Ex. 1, PDF p. 45), request (Ex. 2), transcript (Ex. 5/A), five-page report (Ex. 6/B, PDF pp. 84–88), and certificate (Ex. 7/C, PDF p. 90).
+
+| Item / bucket filename | Corrected date or status | Hole |
+|---|---|---|
+| Certificate embedded in operative petition Ex. 7/C | Custody November 1, 2024; release November 5, 2024; footer preparation May 12, 2025, 11:53 AM | Issuance on November 5 is not established |
+| Notice of Confirmation of Electronic Filing - Notice of Lodging (POS rejected Sep 8 2026).pdf | Notice and declaration accepted; proof of service REJECTED | Acceptance of those papers is not proof the court received/reviewed the native MP4 |
+| CHP_Cam1.MP4, identified in Notice of Lodging - Nov 1 2024 CHP Dashcam Exhibit 5 Source (Sep 8 2026).pdf | Native bytes not inspected in this audit | Receipt, availability, authentication, service cure |
+| DA no-case proof | MISSING independent document | Petition allegation is not a DA disposition record |
+| Complete administrative review record | MISSING | What Serrato received and considered |
+| October 12 answer | MISSING in inspected set | Do not anticipate admissions |
+
+Certificate correction: individualized text says custody “was a detention only, not an arrest.” “Insufficient grounds for making a criminal complaint” appears in printed statutory material, not a separately checked individualized finding. No conclusive no-probable-cause adjudication follows from this document.
+
+---
+
 # Record index
 
 Status is left blank for an ordinary in-bucket item. `LODGED`, `REJECTED`, and `NOT IN BUCKET` are used only as defined by this room. Dates are taken from filenames or the face of the identified record; an empty date was not pinned.

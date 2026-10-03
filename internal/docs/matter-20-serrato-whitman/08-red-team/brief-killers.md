@@ -1,3 +1,27 @@
+## 2026-10-02 — Codex additions
+
+Do not compile these propositions:
+
+- “No charges proves there was no probable cause.”
+- “The certificate was issued November 5, 2024.” (Release date is not issuance date.)
+- “CHP individually found insufficient grounds.” (Not pinned by a checked individualized certificate field.)
+- “The arrest ceased to be an arrest as a matter of law.” (Do not deny actual custody.)
+- “Urine in one container proves no alcohol container existed.”
+- “Coherent later answers disprove initial disorientation.”
+- “43 seconds proves the Romberg test was passed.”
+- “The transcript disproves HGN or eyelid flutters.”
+- “The arrest was based solely on PAS refusal.” (Temporal sequence does not establish sole cause.)
+- “The short denial proves CHP ignored the record.”
+- “Every denial must address every crime element.” (Revives rejected Count 2.)
+- “The helpfulness presumption establishes a qualifying crime.” (Revives rejected Count 3.)
+- “The entire September 8 lodging was rejected.” (Notice/declaration accepted; POS rejected.)
+- “Native dashcam bytes were inspected and verified.” (Not done in this audit.)
+- Any federal damages, wage-loss, § 1983, dismissed-party, Counts 2–3 or Count 4 argument.
+
+Dated qualification: primary certification can be requested conditionally under § 679.10(g)(1); do not convert that into an unconditional assertion that the court must order signature now.
+
+---
+
 # Brief killers
 
 The following sentences, or their substantive equivalents, must never reach a draft:

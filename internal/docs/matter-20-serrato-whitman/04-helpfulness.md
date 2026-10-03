@@ -1,3 +1,15 @@
+## 2026-10-02 — Codex audit qualification
+
+Penal Code § 679.10(h) conditions its presumption on the victim not refusing/failing reasonably requested assistance. It does not expressly make an actual prior request a prerequisite. A reasonable assertion of unawareness prevents failure to cooperate from rebutting the presumption. Source: [official § 679.10](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=PEN&sectionNum=679.10.).
+
+Bucket application: `0.Newanforbi v. CHP - Writ of Mandate.pdf` Exs. 2–3 tender information and assert cooperation; Ex. 13 acknowledges receipt. Neither proves the qualifying-crime threshold by itself. The August 29 order, `Order Sustaining Demurrer In Part - Whitman (Aug 29 2026) (Notice of Entry Aug 31 2026).pdf`, rejects Count 3 because the denial rests on that threshold rather than helpfulness.
+
+CHP rebuttal requires a pinned reasonable request, its subject, awareness and refusal/failure concerning the qualifying activity. Those pins remain MISSING. Separate-case cooperation cannot be a denial reason (§ 679.10(k)(3)(H)); DUI testing refusal is not automatically refusal to assist investigation of alleged officer criminal activity.
+
+Dated dissent — 2026-10-02: the prior “no request, no presumption” position is an adverse argument, not the statutory rule. Preserve helpfulness within Count 1's conditional statutory analysis without reviving Count 3.
+
+---
+
 # Helpfulness under Penal Code § 679.10(h)
 
 ## Trigger

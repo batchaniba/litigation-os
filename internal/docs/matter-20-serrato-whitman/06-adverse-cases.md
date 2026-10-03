@@ -1,3 +1,41 @@
+## 2026-10-02 — Codex expanded checked authorities
+
+These are research entries, not an assertion that Ing has cited every case. Existing entries are preserved below. Checked opinion text; no claim of comprehensive subsequent-treatment verification.
+
+### California Correctional Supervisors Organization, Inc. v. Department of Corrections (2002) 96 Cal.App.4th 824, 827
+
+Holding excerpt: “Where only one choice can be a reasonable exercise of discretion, a court may compel an official to make that choice.”
+Effect: distinguishable from a categorical bar on certification; fatal to demanding that result without eliminating lawful alternatives.
+Checked: [opinion](https://law.justia.com/cases/california/court-of-appeal/4th/96/824.html), standard-of-review discussion.
+
+### People v. Thompson (2006) 38 Cal.4th 811, 818–819
+
+Holding excerpt: “Probable cause exists when the facts known to the arresting officer would persuade someone of reasonable caution” that a crime occurred.
+Effect: distinguishable facts, but fatal to certainty/no-prosecution shortcuts. Initial erratic-driving observations came from a citizen, not officers. Use only probable-cause principle; do not import its home-entry/exigency ruling.
+Checked: [opinion](https://law.justia.com/cases/california/supreme-court/2006/s130174.html), part A.
+
+### Espinoza v. Shiomoto (2017) 10 Cal.App.5th 85, 101–102 — qualification of original entry
+
+Holding excerpt: “because we find substantial evidence to support probable cause to arrest Espinoza for DUI, we must affirm the trial court’s implied finding.”
+Effect: coherent answers were contrary evidence, not dispositive. Dangerous to P Ex. 5 later-location/speech arguments; not fatal to proving a particular report discrepancy.
+Checked: [rehearing opinion](https://law.justia.com/cases/california/court-of-appeal/2017/e064252a.html).
+
+### Western States Petroleum Assn. v. Superior Court (1995) 9 Cal.4th 559, 573–576
+
+Holding excerpt: “extra-record evidence is generally not admissible in traditional mandamus actions challenging quasi-legislative administrative decisions.”
+Effect: distinguishable from this individual informal certification denial; opinion expressly preserves disputed-fact evidence for ministerial/informal actions. Do not mechanically apply its CEQA rule to every CCP § 1085 proceeding. Establish what CHP received.
+Checked: [opinion](https://law.justia.com/cases/california/supreme-court/4th/9/559.html), parts III–IV.
+
+### Catholic Charities CYO v. Napolitano (9th Cir. 2010) 368 F.App'x 750, 753
+
+Holding excerpt: “DHS exercised its discretion by denying plaintiffs’ individual certification requests” and federal § 1252(a)(2)(B)(ii) barred review.
+Effect: distinguishable: federal DHS decision under federal law, not CHP's later-enacted California conditional duty. Unpublished/nonprecedential except Ninth Circuit Rule 36-3. Not fatal to this state mandate case.
+Checked: [memorandum](https://openjurist.org/368/fappx/750/catholic-charities-cyo-v-janet-napolitano-secretary), final merits paragraph and publication footnote.
+
+Dated dissent — 2026-10-02: none of these authorities establishes that remand automatically follows a short denial; none categorically forecloses all direct certification relief. Record abuse and conditional duty must be proved.
+
+---
+
 # Adverse cases
 
 Only checked authorities appear here. “Checked” identifies the source used to verify the cited holding.
