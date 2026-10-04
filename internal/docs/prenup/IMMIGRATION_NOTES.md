@@ -47,6 +47,38 @@ use the full legal name with an "also known as" line.
    consequence. A vacatur for rehabilitation alone does not. **This is the first question for crimmigration counsel.**
 4. **Adam Walsh Act does not block Toyosi from petitioning.** It applies to the petitioner. She has no conviction.
 
+## Second path: U visa through the Serrato writ (Matter 20)
+
+**Matter 20**, *Newanforbi v. California Highway Patrol, et al.*, Alameda Sup. Ct. No. 26CV191136 (Whitman, Dept. 25):
+writ of mandate (CCP § 1085; Pen. Code § 679.10) against CHP's Apr. 20, 2026 denial of U visa certification (Form I-918 Supplement B), signed by
+Commander G. Serrato. Count 1 survived demurrer. Live clocks are in `internal/src/data/matters/20/clocks.json`. Do not take
+dates from this note.
+
+**Why this path may be stronger than marriage (for counsel to confirm):**
+
+| | Marriage path (I-130) | U visa path (I-918) |
+|---|---|---|
+| Needs Toyosi | Yes, as petitioner | No |
+| Conviction waiver | § 212(h). For violent or dangerous crimes, "exceptional and extremely unusual hardship" (8 C.F.R. § 212.7(d)) | § 212(d)(14) via Form I-192: "public or national interest," no hardship test. But for violent or dangerous crimes, favorable discretion only in "extraordinary circumstances" (8 C.F.R. § 212.17(b)) |
+| Final removal order | Must reopen first. Time-barred, so needs ICE to join | U approval cancels a DHS order by operation of law. For an immigration judge's order, a motion to reopen and terminate, which ICE may join (8 C.F.R. § 214.14(c)(5)(i)) |
+| Green card later | Requires admissibility (the waiver above) | After 3 years in U status, adjustment under § 245(m) is **not** subject to the inadmissibility grounds. It is discretionary |
+| Gate | Waiver standard | **CHP certification.** No certification, no U petition. That is what Matter 20 fights for |
+
+**How the two interact:**
+- They aren't exclusive. A U.S. citizen spouse is a **positive factor** in the discretionary U waiver, in any stay of removal,
+  and in ICE's supervision decisions. Marriage helps the U path even though it cannot carry him alone.
+- A U petition can be filed with the certification alone. The U.S. citizen spouse is not a derivative and isn't needed as one.
+- Remaining U visa hurdles beyond certification: "substantial physical or mental abuse" from the qualifying crime, and the
+  multi-year cap and backlog. A bona fide determination can bring a work permit and deferred action while waiting.
+- Relief in Matter 20 is likely an order to **reconsider under the correct standard** (including the § 679.10 presumption of
+  helpfulness). Unless the court finds the duty to certify ministerial on this record, it will not order CHP to certify outright.
+
+**Prenup consequences:**
+- Article 4 covers only the § 290.46(j) employment suits. **Matter 20** (no money, but the immigration gateway) and **Matter 24**
+  (*Newanforbi v. Serrato*, § 1983 damages) are not covered. Recommend expanding Article 4 to all of the client's litigation, or listing
+  Matters 20 and 24 on Exhibit A.
+- Any U visa or immigration-related recovery or fee award in those matters then stays separate property.
+
 ## Effect on the prenup and the other drafts
 
 - **Travel (Article 9):** ICE supervision already bars him from leaving California for more than 48 hours without notice. International travel
@@ -94,6 +126,9 @@ use the full legal name with an "also known as" line.
 4. **Never tie the marriage to immigration in writing.** No clause should make anything conditional on a green card.
 
 ## Questions for the attorney
+- [ ] Which path to lead with: U visa (Matter 20 certification) or marriage-based, or both in parallel?
+- [ ] Does a bona fide determination or a stay of removal become available once the I-918 is filed?
+- [ ] Post-conviction relief (e.g., Pen. Code § 1473.7) timing given current parole status.
 - [ ] Given the conviction, is any waiver realistically available?
 - [ ] Is reopening (joint motion with ICE) realistic, and does applying carry any risk to current CAT protection or
       supervision status?

@@ -7,7 +7,7 @@
 
 ## Lawsuits (Article 4)
 - [ ] Confirm the Exhibit A list: Matters 22, 25, 26, 27, 29. Should it include any other employment matter (e.g., 28, the Randstad demand)?
-- [ ] Should **all** your lawsuits be covered, not only the §290 employment suits (CHP, consumer, HOPE / parole-treatment matters)?
+- [ ] Should **all** your lawsuits be covered, not only the §290 employment suits (CHP, consumer, HOPE / parole-treatment matters)? Recommended: yes, at minimum Matters 20 and 24 (U visa writ and § 1983 against Serrato).
 - [ ] Do any recoveries already received exist? Where are they held now?
 
 ## Crypto (Article 5)
