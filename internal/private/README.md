@@ -3,7 +3,13 @@
 This directory contains internal planning workspaces that are intentionally
 excluded from every public portfolio projection.
 
-## Current workspace
+## Current workspaces
+
+- Prenup workspace (paused)
+  - Front door: `internal/private/prenup/STATUS.md`
+  - Classification: private personal planning
+  - Public projection: prohibited
+  - Active litigation: no
 
 - Matter 0 — Ngwa Nforbi v. Ngwa Nforbi
   - Front door: `internal/private/matters/00/README.md`
