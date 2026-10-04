@@ -25,7 +25,7 @@ of the residence at [ADDRESS] (the "Residence"), on the terms below. Each party 
 | Entrances, exterior | Yes | Yes |
 | Living room, kitchen, hallways | Yes | Yes |
 | **All adult bedrooms, including the bedroom where the parties have sexual relations** | **Yes, continuous** | **Yes, continuous** |
-| Guest bedrooms | Yes **only while unoccupied** | Yes **only while unoccupied** |
+| Guest bedrooms | Yes, except while a guest occupies it (unless that guest consents in writing, § 5.3) | Same |
 | Any room used by a minor | **Never** | **Never** |
 | Bathrooms | **Never** | **Never** |
 
@@ -46,11 +46,27 @@ Either party may withdraw consent, in whole or for specific areas, by written no
 in the withdrawn areas stops immediately, and the system is reconfigured within 24 hours. Withdrawal has no effect
 on the premarital agreement or on property rights.
 
-## 5. Third parties
+## 5. Guests and third parties
 
-- Visible signs at each entrance: "Audio and video recording in progress."
-- Guests are told about recording, and audio in common areas is muted when guests are present unless every guest agrees.
-- No recording of any minor in any bedroom or bathroom.
+5.1 **All guests are recorded (audio and video) in every area listed in § 2 as recorded.** Entering the Residence after
+notice is consent to being recorded. A guest who does not consent may decline to enter or may leave.
+
+5.2 **Notice (this is what makes guest audio lawful).** California bars recording a *confidential* conversation without
+everyone's consent (Pen. Code § 632). A conversation is not confidential if the person was told it would be recorded.
+So notice must be given **before** the guest speaks inside:
+- A permanent, conspicuous sign at every entrance: "This home records audio and video in all common areas. By entering,
+  you consent to being recorded."
+- A brief verbal notice on arrival for first-time guests and service workers ("Just so you know, the house records audio and video").
+- Notice in writing (text or email) with any invitation to stay overnight.
+
+5.3 **Overnight guests.** A guest bedroom and any bathroom are **not** recorded while a guest occupies or uses them,
+unless that guest signs a written consent first. Recording a person undressed in a bedroom or bathroom without knowledge
+and consent is a crime (Pen. Code § 647(j)(3)). Posted signs are not enough for those rooms.
+
+5.4 **Minors.** Visiting minors may be recorded in common areas like any guest. No room a minor uses for sleeping,
+changing, or bathing is recorded. Separately confirm any parole condition on contact with minors in the Residence.
+
+5.5 **Guest footage** follows the common-area 30-day retention in § 6 unless a dispute notice preserves it.
 
 ## 6. Storage, integrity, and access
 
