@@ -13,7 +13,21 @@ Tiers:
 
 ---
 
-## 1. Lawsuit recoveries — Penal Code § 290 employment suits → **Tier A**
+## 1. Respect — no public humiliation, no public disrespect → **Tier B / C** (client's first priority)
+
+**Position:** Mutual respect is the foundation of the marriage and comes before every financial term.
+
+**Placement:** It opens the agreement as Recital A, ahead of every property article, and it is repeated in Schedule C.
+A recital states the purpose of the agreement and carries weight in how the agreement is read, but it
+creates no penalty that could put the property terms at risk.
+
+
+- **Not enforceable** as a stand-alone behavior rule. A court will not award money or property for "disrespect."
+- **Partly reachable** through a **mutual** confidentiality and non-disparagement clause covering social media, press,
+  and statements to the other spouse's employer or community. Enforceability in a California premarital agreement is
+  **unsettled**, so it must be mutual, tied to no forfeiture of property, and severable. A clause that applies to only one spouse will be attacked as unconscionable.
+
+## 2. Lawsuit recoveries — Penal Code § 290 employment suits → **Tier A**
 
 **Position:** Every recovery from the §290.46(j) employment cluster (Matters 22, 25, 26, 27, 29, plus any later-filed suit on
 the same theory) is the client's separate property.
@@ -28,7 +42,7 @@ the same theory) is the client's separate property.
 fee awards, costs, and sanctions, whenever they accrue or are paid, and all proceeds of them. Waive community
 reimbursement claims for community time or money spent prosecuting the suits. Schedule each matter by name in Exhibit A.
 
-## 2. Cryptocurrency bought with lawsuit money → **Tier A (if tracing holds up)**
+## 3. Cryptocurrency bought with lawsuit money → **Tier A (if tracing holds up)**
 
 **Position:** Crypto bought with lawsuit proceeds, plus all gains, is the client's separate property.
 
@@ -43,13 +57,6 @@ reimbursement claims for community time or money spent prosecuting the suits. Sc
 - Require a **dedicated separate-property account and wallets** (Exhibit B lists exchange accounts and wallet addresses).
 - Optional fallback: deposits of community funds into those accounts are treated as gifts to separate property, or become
   a fixed-sum reimbursement only (no share of appreciation).
-
-## 3. Public humiliation / public disrespect → **Tier B / C**
-
-- **Not enforceable** as a stand-alone behavior rule. A court will not award money or property for "disrespect."
-- **Partly reachable** through a **mutual** confidentiality and non-disparagement clause covering social media, press,
-  and statements to the other spouse's employer or community. Enforceability in a California premarital agreement is
-  **unsettled**, so it must be mutual, tied to no forfeiture of property, and severable. A clause that applies to only one spouse will be attacked as unconscionable.
 
 ## 4. Psychological games / triangulation → **Tier C**
 

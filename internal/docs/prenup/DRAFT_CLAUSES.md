@@ -1,5 +1,15 @@
 # Working Clause Language (draft — not reviewed by counsel)
 
+## Recitals
+
+A. **Respect.** The parties enter this marriage committed, above all, to mutual respect. Each will treat the other with
+dignity in public and in private, and neither will publicly humiliate, belittle, or disrespect the other. The parties
+make this agreement in that spirit, and it is to be read in that spirit.
+
+B. [CLIENT] is a party to the employment litigation described in Exhibit A and has disclosed it fully to [SPOUSE].
+
+C. Each party has made full and fair disclosure of his or her property, debts, and income, as set out in Exhibits A–D.
+
 ## Article 4 — Litigation Recoveries
 
 4.1 **Separate Property.** All right, title and interest of [CLIENT] in every claim, cause of action, charge, complaint,
