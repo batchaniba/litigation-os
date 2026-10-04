@@ -24,3 +24,8 @@
 - [ ] Earnings during marriage: community property as default, or separate?
 - [ ] Marital home and residence; death and estate terms (will, waiver of probate rights); children from prior relationships.
 - [ ] Sunset clause (agreement expires after N years)? Many fiancées ask for one.
+
+## Recording (RECORDING_CONSENT.md)
+- [ ] Get written confirmation from your parole agent or attorney on whether bedroom recordings violate any condition.
+- [ ] Bedroom option: A (continuous video), B (audio consent log), or C (none)?
+- [ ] Retention period (default 30 days) and the storage provider.

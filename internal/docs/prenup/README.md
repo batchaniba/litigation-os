@@ -13,6 +13,7 @@ Governing law assumed: **California Uniform Premarital Agreement Act**
 | `TERM_SHEET.md` | Client non-negotiables → legal tier → drafting approach |
 | `DRAFT_CLAUSES.md` | Working clause language for the enforceable tiers |
 | `OPEN_QUESTIONS.md` | Facts needed before a draft can be finalized |
+| `RECORDING_CONSENT.md` | Standalone, revocable mutual home-recording consent (kept out of the prenup on purpose) |
 
 ## Execution guardrails (Fam. Code § 1615)
 
