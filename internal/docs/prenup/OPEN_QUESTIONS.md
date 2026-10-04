@@ -30,3 +30,9 @@
 - [x] Bedrooms: continuous audio and video in all adult bedrooms, including intimate activity (client decision).
 - [ ] Bedroom archive retention term (draft: 7 years after marriage ends).
 - [ ] Recorder and offsite backup choice (local NVR, not consumer cloud).
+
+## Cat Tail Drive (Article 6)
+- [ ] Purchase timing: before or after the wedding? Funding source (Litigation proceeds, loan, other)?
+- [ ] APN for the property description.
+- [ ] Fallback if her money goes into it: no reimbursement, or dollar-for-dollar?
+- [ ] Death: should she have any right to live there if you die first? (Needs a will or trust; the prenup alone does not transfer it.)

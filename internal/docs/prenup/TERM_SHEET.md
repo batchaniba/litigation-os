@@ -68,7 +68,21 @@ Even that clause is only advisory in California.
 - If the concern is tied to the client's own constraints (for example, parole travel conditions), say so in a recital.
   A stated reason helps show good faith.
 
-## 6. (Implied) Spousal support → **open**
+## 6. 1515 Cat Tail Drive, Stockton → **Tier A**
+
+**Position:** If the client buys it, the house stays his, whenever bought and however paid for.
+
+**Risks under default law:**
+- **Bought during the marriage** → presumed community property (Fam. Code § 760). Title in his name alone does not fix that.
+- **Bought before the marriage, but mortgage paid during the marriage with earnings** → the community gets a pro rata
+  share of the equity and appreciation (*Moore* / *Marsden*).
+- **Joint title** → presumed community property on divorce (§ 2581).
+
+**Drafting approach:** Classify it as separate property by address (Article 6), vest title in his name as sole and separate
+property, have her sign an interspousal transfer deed at closing, and waive *Moore* / *Marsden* and § 2640 claims.
+Strongest version: buy it with Litigation proceeds (Article 5) and pay the mortgage from the separate-property account.
+
+## 7. (Implied) Spousal support → **open**
 
 Not raised yet. If the client wants to limit or waive support to protect the lawsuit and crypto money, § 1612(c) requires
 her independent counsel, and the waiver can still be set aside if it is unconscionable when enforced. See `OPEN_QUESTIONS.md`.

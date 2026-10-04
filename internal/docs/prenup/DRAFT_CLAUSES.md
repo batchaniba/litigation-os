@@ -26,6 +26,32 @@ and any similar doctrine.
 [CLIENT]. Commingling shall not transmute any Litigation Investment. Any community funds deposited shall create, at
 most, a reimbursement claim for the dollar amount deposited, without interest or appreciation.
 
+## Article 6 — Designated Real Property (1515 Cat Tail Drive)
+
+6.1 **Separate Property.** If [CLIENT] acquires any interest in the real property commonly known as 1515 Cat Tail Drive,
+Stockton, California 95204 (APN [________]) (the "Property"), whether before or during the marriage, and whether
+acquired with separate funds, Litigation proceeds, community funds, credit, or any combination, the Property and all
+rents, issues, profits, appreciation, and proceeds of sale or refinance, and any replacement property, shall be the sole
+and separate property of [CLIENT].
+
+6.2 **Title.** Title shall vest in "[CLIENT], a married man, as his sole and separate property." [SPOUSE] shall sign
+any interspousal transfer deed, quitclaim, or lender acknowledgment reasonably requested at acquisition or refinance to
+confirm this. Her signature confirms this Article and does not transfer any interest from her.
+
+6.3 **Waiver of Apportionment.** [SPOUSE] waives any community or separate interest in the Property arising from
+community or her separate funds or labor applied to the down payment, mortgage principal, improvements, taxes, or
+insurance, including any pro tanto interest under *In re Marriage of Moore* or *In re Marriage of Marsden*, and any
+reimbursement under Family Code section 2640.
+
+6.4 **Optional fallback (choose one):**
+- [ ] **No reimbursement.** Community payments toward the Property are treated as contributions to the marital household
+  and create no claim.
+- [ ] **Dollar-for-dollar reimbursement.** [SPOUSE]'s separate funds, or her share of community funds, applied to
+  principal or capital improvements are reimbursed at face value, with no interest and no share of appreciation.
+
+6.5 **Residence.** If the Property is the marital residence, this Article governs ownership only. It does not limit any
+court order about temporary use or occupancy during a dissolution proceeding.
+
 ## Article 9 — Travel Funds
 
 9.1 No community or jointly held funds shall be used for international travel, including any travel to Jamaica, without
@@ -47,5 +73,5 @@ This Schedule creates no legal obligation, no property consequence, and no groun
 
 ## Article 14 — Severability
 
-If any provision is held unenforceable, the remainder shall be enforced. Articles 4, 5, and 9 are independent of
+If any provision is held unenforceable, the remainder shall be enforced. Articles 4, 5, 6, and 9 are independent of
 Article 10 and Schedule C.
