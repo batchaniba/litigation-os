@@ -93,3 +93,17 @@ Strongest version: buy it with Litigation proceeds (Article 5) and pay the mortg
 
 Not raised yet. If the client wants to limit or waive support to protect the lawsuit and crypto money, § 1612(c) requires
 her independent counsel, and the waiver can still be set aside if it is unconscionable when enforced. See `OPEN_QUESTIONS.md`.
+
+## 8. Direct correction / no in-law escalation / no disputes over the children → **Tier C**
+
+Placed in Schedule C as mutual, non-binding commitments (C.2–C.4). They have to apply to both spouses. A one-way right
+for one spouse to "correct" the other reads as control (Fam. Code § 6320(c)), and her counsel would use it against the
+whole agreement. Terms about children are advisory only. Custody and child support stay with the court (§ 1612(b)).
+
+## 9. Neutral Christian arbitrator, not Nigerian or Cameroonian → **Tier A for property disputes**
+
+Article 12: two-step process, with Christian mediation first, then binding arbitration of property and agreement disputes.
+Excluding both parties' nationalities follows international arbitration practice (the sole arbitrator's nationality
+differs from both parties'), which makes it easy to defend as neutrality. Requiring a Christian arbitrator is a private
+choice of neutral that faith-based conciliation services already accommodate. It is in a separate subsection with a
+fallback, so a court that refuses it falls back on the rest of Article 12 instead of voiding it.

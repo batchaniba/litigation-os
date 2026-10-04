@@ -36,3 +36,9 @@
 - [ ] APN for the property description.
 - [ ] Fallback if her money goes into it: no reimbursement, or dollar-for-dollar?
 - [ ] Death: should she have any right to live there if you die first? (Needs a will or trust; the prenup alone does not transfer it.)
+
+## Conduct, family, children, dispute resolution (Schedule C, Article 12)
+- [ ] Children: which areas are fixed now? (religion, schooling, discipline, language, travel, other)
+- [ ] Nationalities of each party (for Article 12.3(b)): confirm Cameroon and Nigeria cover both.
+- [ ] Christian provider: name a specific conciliation service or denomination requirement? Any other limits?
+- [ ] Number of mandatory mediation sessions before arbitration.

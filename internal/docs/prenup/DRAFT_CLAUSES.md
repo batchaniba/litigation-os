@@ -77,11 +77,54 @@ creates no forfeiture of property and does not affect classification or division
 
 ## Schedule C — Statement of Mutual Expectations (non-binding)
 
-The parties state, as a moral commitment only and not as an enforceable obligation, that each will treat the other with
-respect in public and private, and will refrain from triangulation, manipulation, and similar psychological tactics.
+The parties state, as a moral commitment only and not as an enforceable obligation:
+
+C.1 **Respect.** Each will treat the other with respect in public and private, and will refrain from triangulation,
+manipulation, and similar psychological tactics.
+
+C.2 **Direct correction.** Each spouse is free to tell the other, directly and respectfully, when conduct is out of line
+("that was out of line, and here is why"). Raising a concern this way is a right of the marriage, not an offense. The
+spouse who hears it will listen without retaliation, silent treatment, or escalation.
+
+C.3 **Disputes stay between the spouses.** Neither spouse will involve the other's parents, siblings, or extended family
+to pressure the other into changing behavior. Neither spouse is expected to report the other's conduct to in-laws.
+If outside help is needed, the parties will use a pastor or counselor both choose, or the process in Article 12.
+
+C.4 **Parenting.** The parties will present a united front to their children and will resolve parenting disagreements
+privately, never in front of the children, according to these shared positions: [religion / schooling / discipline /
+language / other — to be completed]. If they cannot agree, they will mediate under Article 12.1 before either acts alone.
+
 This Schedule creates no legal obligation, no property consequence, and no ground for relief. It is severable.
+
+## Article 12 — Dispute Resolution
+
+12.1 **Step one: Christian mediation (non-binding).** Before starting any arbitration or court proceeding, other than for
+emergency or protective orders, the parties will attend at least [two] sessions of Christian conciliation or mediation
+through [PROVIDER — e.g., a Christian conciliation service; confirm before signing] or a mediator meeting the
+qualifications in 12.3.
+
+12.2 **Step two: binding arbitration.** Any dispute arising under this Agreement, including the characterization,
+valuation, or division of property, and any reimbursement claim, will be decided by binding arbitration before a sole
+arbitrator under Code of Civil Procedure section 1280 et seq. The arbitrator shall apply California law. Judgment on the
+award may be entered in the Superior Court.
+
+12.3 **Arbitrator qualifications.** The sole arbitrator and any mediator shall:
+  (a) be neutral and independent of both parties and both families;
+  (b) not be a national or citizen of the Federal Republic of Nigeria or the Republic of Cameroon, nor of any other
+      country of which either party is a national, consistent with the nationality-neutrality rule used in international
+      arbitration;
+  (c) be a professing Christian; and
+  (d) be a retired California judge or a California-licensed attorney with at least [ten] years of family law experience.
+
+12.4 **Selection.** The parties will agree on an arbitrator within [30] days after a written demand. Failing agreement,
+[PROVIDER] shall appoint one meeting 12.3. If no qualified arbitrator can be appointed, the qualifications in 12.3(c)
+and then 12.3(b) shall be relaxed in that order. They shall not be relaxed in any other way.
+
+12.5 **Excluded matters.** Child custody, visitation, child support, and domestic violence or protective orders are not
+subject to arbitration and remain with the Superior Court. Any agreement about children is advisory only
+(Fam. Code § 1612(b); best-interests standard, § 3011).
 
 ## Article 14 — Severability
 
 If any provision is held unenforceable, the remainder shall be enforced. Articles 4, 5, 6, and 9 are independent of
-Article 10 and Schedule C.
+Article 10, Article 12.3(b)–(c), and Schedule C.
