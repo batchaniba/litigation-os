@@ -97,9 +97,27 @@ changing, or bathing is recorded. Separately confirm any parole condition on con
 Nothing in this agreement is consent to any sexual act. Consent to sexual activity is given separately each time and can be
 withdrawn at any time. Recording consent is only consent to being recorded.
 
+## 8. Mutual location sharing
+
+8.1 Each party consents to share real-time phone location with the other through a standard location-sharing feature
+(for example, Find My or Google location sharing). The obligation is identical for both parties.
+
+8.2 **Revocable.** Either party may pause or end sharing at any time. Tracking a person's location by electronic device
+without consent is a crime (Pen. Code § 637.7), so sharing must stop when consent ends. Pausing is not a breach and has
+no effect on the premarital agreement or on property.
+
+8.3 **Workplace.** Sharing shows location only. Neither party will contact the other's employer, coworkers, or patients,
+or appear at the other's workplace, based on location data.
+
+8.4 **No hidden tools.** No spyware, hidden trackers, or account access beyond what is in this section.
+
 ## Signatures
 
 General recording consent (§§ 1–2):
+[CLIENT] ______________________  Date ________
+[SPOUSE] ______________________  Date ________
+
+Consent to location sharing (§ 8):
 [CLIENT] ______________________  Date ________
 [SPOUSE] ______________________  Date ________
 
