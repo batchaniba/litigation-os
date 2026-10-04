@@ -27,5 +27,6 @@
 
 ## Recording (RECORDING_CONSENT.md)
 - [ ] Get written confirmation from your parole agent or attorney on whether bedroom recordings violate any condition.
-- [ ] Bedroom option: A (continuous video), B (audio consent log), or C (none)?
-- [ ] Retention period (default 30 days) and the storage provider.
+- [x] Bedrooms: continuous audio and video in all adult bedrooms, including intimate activity (client decision).
+- [ ] Bedroom archive retention term (draft: 7 years after marriage ends).
+- [ ] Recorder and offsite backup choice (local NVR, not consumer cloud).

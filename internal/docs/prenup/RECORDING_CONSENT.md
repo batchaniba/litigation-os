@@ -24,18 +24,21 @@ of the residence at [ADDRESS] (the "Residence"), on the terms below. Each party 
 |---|---|---|
 | Entrances, exterior | Yes | Yes |
 | Living room, kitchen, hallways | Yes | Yes |
-| Primary bedroom | See § 3 | See § 3 |
+| **All adult bedrooms, including the bedroom where the parties have sexual relations** | **Yes, continuous** | **Yes, continuous** |
+| Guest bedrooms | Yes **only while unoccupied** | Yes **only while unoccupied** |
+| Any room used by a minor | **Never** | **Never** |
 | Bathrooms | **Never** | **Never** |
-| Guest rooms | **Never** while occupied | **Never** while occupied |
 
-## 3. Primary bedroom (choose one)
+## 3. Intimate activity
 
-- [ ] **Option A — Continuous.** Bedroom cameras record continuously. Each party may turn them off at any time by a visible
-  physical switch. Turning them off is not a breach and creates no inference against that party.
-- [ ] **Option B — Audio-only consent log.** No bedroom video. Instead, either party can start a short audio recording at the
-  beginning of an intimate encounter to capture verbal consent. Either party can stop it, and either party can
-  withdraw consent at any point.
-- [ ] **Option C — None.** No bedroom recording. Common areas only.
+3.1 Each party specifically consents to audio and video recording of sexual activity between the parties in any bedroom
+covered by § 2. This consent is signed on its own line (see Signatures), separate from the general consent.
+
+3.2 The purpose of the intimate recordings is solely to preserve an accurate record in case either party is accused of
+misconduct. They may not be viewed for any other purpose.
+
+3.3 Each bedroom camera has a visible indicator light and a physical off switch. Either party may switch it off at any time
+for any reason. Doing so is not a breach and creates no inference against that party.
 
 ## 4. Withdrawal
 
@@ -49,14 +52,29 @@ on the premarital agreement or on property rights.
 - Guests are told about recording, and audio in common areas is muted when guests are present unless every guest agrees.
 - No recording of any minor in any bedroom or bathroom.
 
-## 6. Storage and access
+## 6. Storage, integrity, and access
 
-- Encrypted storage. Both parties hold credentials. Neither party may delete footage alone.
-- Retention: **[30] days** rolling auto-delete. Footage is preserved longer only if either party gives written notice of a dispute,
-  police contact, or court proceeding.
-- No copying, sharing, uploading, or showing footage to anyone, **except** to a party's attorney, law enforcement, or a court
-  in connection with a claim or defense. Distributing intimate footage is a crime (Pen. Code § 647(j)(4)).
-- Bedroom footage (if Option A) is stored separately and accessible only by both credentials together, or by court order.
+**Two retention tiers:**
+- **Common areas:** 30-day rolling auto-delete, unless either party gives written notice of a dispute, police contact,
+  or court proceeding.
+- **Bedrooms:** retained in sealed archive until both parties jointly agree in writing to delete, or [7] years after
+  the marriage ends, whichever comes first. Many California sex offenses have no statute of limitations, so set this
+  term deliberately.
+
+**Storage:**
+- Local encrypted recorder (NVR) plus an encrypted offsite backup. **Do not use consumer cloud camera services** (Ring, Nest, etc.).
+  Their terms often ban intimate content, staff can access footage, and the provider may answer subpoenas without notice to you.
+- **Dual-key access:** the bedroom archive can be opened only with both parties' credentials together, or by court order.
+  Neither party can view, export, or delete it alone. This protects both of you: it proves the footage wasn't
+  selectively kept or edited.
+
+**Tamper evidence:**
+- Each recording segment is hashed (SHA-256) when written. The hash and timestamp are logged to an append-only record.
+- If footage is ever produced, the logged hash proves the file is unaltered and the timestamps are authentic.
+
+**Use:**
+- No copying, sharing, uploading, or showing footage to anyone except a party's attorney, law enforcement, or a court,
+  and only in connection with a claim or defense. Distributing intimate footage is a crime (Pen. Code § 647(j)(4)).
 
 ## 7. No waiver
 
@@ -65,5 +83,10 @@ withdrawn at any time. Recording consent is only consent to being recorded.
 
 ## Signatures
 
+General recording consent (§§ 1–2):
+[CLIENT] ______________________  Date ________
+[SPOUSE] ______________________  Date ________
+
+Specific consent to recording of intimate activity (§ 3):
 [CLIENT] ______________________  Date ________
 [SPOUSE] ______________________  Date ________
