@@ -6,6 +6,20 @@ do not catalog into R2, do not publish through the Worker.
 Governing law assumed: **California Uniform Premarital Agreement Act**
 (Fam. Code §§ 1600–1617). Confirm if the marriage or residence will be elsewhere.
 
+## Parties and family (working list — private)
+
+| Role | Name |
+|---|---|
+| Client | Brendan Ngwa Nforbi |
+| Fiancée | Toyosi Ogunbajo |
+| Her parents | Pastor Lanre Ejibunu; Pastor Nike Ejibunu |
+| Client's mother | [name] — beneficiary, see ESTATE_PLAN_NOTES.md |
+| Client's stepfather | [name] — **excluded** from any benefit or role |
+
+Imbalance note: her parents are pastors and the client has no family support on his side. Article 12.6 keeps all family
+out of negotiation, mediation, arbitration, and signing. Article 12.3(a) bars any neutral tied to her parents' church or
+ministry. The client's own family-law attorney is his side of the table.
+
 ## Files
 
 | File | Purpose |

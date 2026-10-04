@@ -141,7 +141,8 @@ arbitrator under Code of Civil Procedure section 1280 et seq. The arbitrator sha
 award may be entered in the Superior Court.
 
 12.3 **Arbitrator qualifications.** The sole arbitrator and any mediator shall:
-  (a) be neutral and independent of both parties and both families;
+  (a) be neutral and independent of both parties and both families, and not be a member, minister, or officer of any
+      church, ministry, or congregation in which either party's parent or relative serves as clergy;
   (b) not be a national or citizen of the Federal Republic of Nigeria or the Republic of Cameroon, nor of any other
       country of which either party is a national, consistent with the nationality-neutrality rule used in international
       arbitration;
@@ -155,6 +156,10 @@ and then 12.3(b) shall be relaxed in that order. They shall not be relaxed in an
 12.5 **Excluded matters.** Child custody, visitation, child support, and domestic violence or protective orders are not
 subject to arbitration and remain with the Superior Court. Any agreement about children is advisory only
 (Fam. Code § 1612(b); best-interests standard, § 3011).
+
+12.6 **Family members excluded.** No parent, sibling, relative, or in-law of either party (including clergy related to
+either party) may attend, take part in, or be consulted as a neutral in any negotiation of this Agreement, any mediation
+or arbitration under this Article, or its signing. Each party may be accompanied only by his or her own attorney.
 
 ## Article 14 — Severability
 
