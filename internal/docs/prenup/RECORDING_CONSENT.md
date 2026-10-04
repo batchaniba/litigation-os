@@ -3,7 +3,7 @@
 > **Check before using — parole and registration risk.** Parole conditions for registrants often bar possessing
 > sexually explicit material. Bedroom recordings of intimate activity could be treated as that material, and could also
 > be seized in a parole search. Get the conditions in writing from your parole agent or attorney **before** any bedroom
-> camera is installed. If the conditions bar it, use Option B in §3.
+> camera is installed. If the conditions bar it, drop bedrooms from § 2 and keep common-area coverage.
 
 ## Why this is a separate document
 
