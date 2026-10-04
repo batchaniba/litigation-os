@@ -1,8 +1,62 @@
 # Immigration Notes — for a crimmigration attorney (not part of the prenup)
 
-**Client's posture (as stated):** Final order of removal, with removal to [country] withheld or deferred under the
-Convention Against Torture. Sex-offense conviction attached. Exact CAT form (withholding under 8 C.F.R. § 1208.16(c) vs
-deferral under § 1208.17) **to confirm from the IJ order**.
+## Record facts (from documents the client uploaded 2026-10-04; originals not stored in repo)
+
+**Criminal — Santa Clara County Superior Court, No. C1761642** (minute order, probation and sentencing, Jan. 12, 2018,
+Hon. Arthur Bocanegra):
+- Convicted: Count 2, **Pen. Code § 289(a)(1)(A)** (sexual penetration by force), 4 years (midterm); Count 3, **Pen. Code § 220(a)(1)**
+  (assault with intent to commit a sex offense), 4 years (midterm), concurrent. Total term shown as 6 years, CDCR. Probation denied.
+- Dismissed: Count 1 (Pen. Code §§ 664/209(b)(1)) and Count 4 (Pen. Code §§ 664/242/243.4(a)).
+- § 290 registration ordered. **Criminal protective order for the victim; the minute order appears to show it expiring Jan. 12, 2028.**
+  Confirm the date from a clean copy.
+
+**Immigration — Immigration Court, Aurora, Colorado, Judge Elizabeth McGrail, Feb. 8, 2021:**
+- Removable under INA **§ 237(a)(1)(B)** (in the U.S. in violation of status, which means he was **admitted**) and
+  **§ 237(a)(2)(A)(iii)** (aggravated felony).
+- Asylum **denied**. Withholding under the INA **denied**. Withholding under CAT **denied**. **Deferral of removal under CAT: granted.**
+- Ordered removed to Cameroon. Both sides waived appeal, so the order was **final Feb. 8, 2021**.
+- ICE Order of Supervision (Form I-220B), Apr. 30, 2021; released May 10, 2021. Conditions include periodic reporting, no
+  travel outside **California** for more than 48 hours without notice to ICE, 48 hours' advance notice of any change of residence or employment,
+  sex offender registration, and helping ICE obtain travel documents.
+- Work permit application (I-765) pending; biometrics May 1, 2026.
+
+**Spouse-to-be:** Toyosi Ogunbajo, **U.S. citizen** (per client).
+
+**Address check:** All records show the client at **1455** Cat Tail Drive. Article 6 names **1515** Cat Tail Drive. Confirm
+which property the client means to buy.
+
+**Name variants in records:** Ngwa Nforbi, Brendan Ngehsi; Newanforbi; Brendan Ngehsi Ngwa Nforbi. The prenup should
+use the full legal name with an "also known as" line.
+
+## Preliminary analysis (for counsel to confirm)
+
+1. **Marriage alone very likely does not change the outcome.**
+   - Because he was admitted and she is a U.S. citizen, he is an "immediate relative." Overstay doesn't bar adjustment.
+   - But both convictions are crimes involving moral turpitude (§ 212(a)(2)(A)), so he needs a **§ 212(h) waiver**.
+   - The aggravated felony bar in § 212(h) applies only to former green-card holders, so it likely does **not** apply to him (Ninth Circuit rule;
+     confirm).
+   - **But** forcible sexual penetration is a "violent or dangerous" crime. Under 8 C.F.R. § 212.7(d), the waiver requires
+     **exceptional and extremely unusual hardship**, and even that may not be enough given how serious the crime is.
+     Hardship to a spouse who married knowing the record usually carries less weight.
+   - The **final order** must first be reopened. The 90-day motion deadline passed in 2021, so reopening would need a joint
+     motion with ICE or the immigration judge reopening on their own. Both are unlikely on this record.
+2. **CAT deferral is not affected by marriage.** It is the protection he has now, and it stays in place unless DHS moves to
+   end it. It does not lead to a green card.
+3. **The only path that would change the analysis is post-conviction relief.** A conviction vacated for a legal defect (for example,
+   a California motion such as Pen. Code § 1473.7 or habeas, depending on custody and parole status) can remove the immigration
+   consequence. A vacatur for rehabilitation alone does not. **This is the first question for crimmigration counsel.**
+4. **Adam Walsh Act does not block Toyosi from petitioning.** It applies to the petitioner. She has no conviction.
+
+## Effect on the prenup and the other drafts
+
+- **Travel (Article 9):** ICE supervision already bars him from leaving California for more than 48 hours without notice. International travel
+  by him is effectively impossible. The Jamaica clause matters only for her travel and joint funds.
+- **Recording (RECORDING_CONSENT.md):** He is on CDCR parole for a forcible sex offense. Parole conditions very likely bar
+  possessing sexually explicit material. Bedroom recording of intimate activity must not start before a written answer from
+  his parole agent or a lawyer.
+- **Disclosure (Exhibit C):** Full written disclosure of both convictions, registration, the removal order, and CAT deferral to
+  Toyosi before signing. It protects the agreement and any later immigration filing.
+- **Residence and employment changes** (Article 6, buying a house) need 48 hours' notice to ICE and parole approval.
 
 ## Whether marriage helps depends on
 
