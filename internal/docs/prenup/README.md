@@ -28,6 +28,7 @@ ministry. The client's own family-law attorney is his side of the table.
 | `DRAFT_CLAUSES.md` | Working clause language for the enforceable tiers |
 | `OPEN_QUESTIONS.md` | Facts needed before a draft can be finalized |
 | `ESTATE_PLAN_NOTES.md` | Client's trust and charitable plan (not part of the prenup) |
+| `IMMIGRATION_NOTES.md` | How marriage interacts with the CAT order and conviction; questions for a crimmigration attorney |
 | `RECORDING_CONSENT.md` | Standalone, revocable mutual home-recording consent (kept out of the prenup on purpose) |
 
 ## Execution guardrails (Fam. Code § 1615)
