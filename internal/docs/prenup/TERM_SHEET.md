@@ -107,3 +107,14 @@ Excluding both parties' nationalities follows international arbitration practice
 differs from both parties'), which makes it easy to defend as neutrality. Requiring a Christian arbitrator is a private
 choice of neutral that faith-based conciliation services already accommodate. It is in a separate subsection with a
 fallback, so a court that refuses it falls back on the rest of Article 12 instead of voiding it.
+
+## 10. Earnings during marriage → **Tier A**
+
+Article 7. Each spouse's earnings are separate property unless deposited into the Joint Account, which is community property.
+This applies equally to her nursing income, which helps the fairness review. Practical requirement: each spouse keeps a
+personal account in their own name only, and household bills come out of the Joint Account.
+
+## 11. Death / charitable estate → **Tier A** (waiver in prenup; gifts in will or trust)
+
+Article 11 waives her inheritance rights in his separate property (Prob. Code §§ 140–147) and confirms his freedom to give
+it to charity. The charitable gift itself goes in a trust. See ESTATE_PLAN_NOTES.md.

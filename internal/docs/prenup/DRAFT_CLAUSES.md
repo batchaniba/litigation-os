@@ -62,6 +62,38 @@ reimbursement under Family Code section 2640.
 6.5 **Residence.** If the Property is the marital residence, this Article governs ownership only. It does not limit any
 court order about temporary use or occupancy during a dissolution proceeding.
 
+## Article 7 — Earnings During Marriage
+
+7.1 **Separate Earnings.** The earnings, salary, wages, bonuses, commissions, and other compensation for personal services
+of each party during the marriage, and all property acquired with them, shall be that party's separate property,
+except as provided in 7.2.
+
+7.2 **Joint Account.** The parties shall maintain a joint household account (the "Joint Account"). Funds deposited into
+the Joint Account, and property acquired with funds from it, are community property. Each party decides alone how much
+of his or her earnings to deposit, subject to any household contribution the parties agree on in writing.
+
+7.3 **Tracing.** Separate earnings remain separate if held in an account titled in that party's name alone, even if
+community funds are occasionally deposited into it. Separate funds deposited into the Joint Account become community
+property and create no right of reimbursement.
+
+7.4 **Retirement.** Contributions to and growth in each party's employer retirement plans and IRAs from that party's
+employment are that party's separate property. Each party will sign, after the marriage, any spousal consent or waiver
+the plan requires to carry this out (federal law does not honor a premarital waiver of plan survivor rights).
+
+## Article 11 — Rights on Death
+
+11.1 **Waiver.** Each party waives all rights to the other's separate property arising from the other's death, including
+intestate succession, the right to take as an omitted spouse, the family allowance, the probate homestead, the right to
+set aside exempt property, and the right to serve as administrator, under Probate Code sections 140–147, except for gifts
+the deceased party makes by will, trust, beneficiary designation, or other written instrument.
+
+11.2 **Freedom of Disposition.** Each party may leave his or her separate property to anyone, including to charity,
+without the other's consent. Nothing in this Agreement limits the surviving party's own half of community property,
+including the Joint Account.
+
+11.3 **Estate Plan.** Each party shall sign a will or trust consistent with this Article within [90] days after the
+marriage. [CLIENT]'s estate plan is described in ESTATE_PLAN_NOTES.md (not part of this Agreement).
+
 ## Article 9 — Travel Funds
 
 9.1 No community or jointly held funds shall be used for international travel, including any travel to Jamaica, without
