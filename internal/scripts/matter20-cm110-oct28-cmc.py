@@ -106,7 +106,7 @@ def build_blank(src: Path, dst: Path) -> Path:
             d[pn].draw_rect(pymupdf.Rect(x + 0.7, y + 0.5, x + 9.3, y + 8.7),
                             color=None, fill=(1, 1, 1), width=0)
     # 10a(1) "has": the old X there is a filled glyph; clear the whole box interior.
-    d[1].draw_rect(pymupdf.Rect(268.8, 586.4, 285.6, 594.2), color=None, fill=(1, 1, 1), width=0)
+    d[1].draw_rect(pymupdf.Rect(268.6, 586.05, 285.85, 594.6), color=None, fill=(1, 1, 1), width=0)
     p0 = d[0]
     p0.draw_rect(pymupdf.Rect(418, 96, 568, 196), color=None, fill=(1, 1, 1), width=0)
     p4 = d[4]
