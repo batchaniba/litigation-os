@@ -25,9 +25,16 @@ skill makes them a step you cannot skip.
    If the matter has no ledger, create `internal/private/negotiation/NN.jsonl`
    from the matter's `events.jsonl` (sent figures, unsent drafts, every defense
    response) before anything else. Format: `internal/private/negotiation/README.md`.
-2. **Read** `internal/docs/settlement/SETTLEMENT_REANCHOR_MEMO.md` § 3 (rules),
+2. **Run the valuation** if the matter has `internal/private/negotiation/NN.valuation.json`:
+   `npm run valuation -- --matter NN`. It shows what is proven (with pins), each
+   damages line × Plaintiff's probability, the bracket the evidence supports, which
+   defenses discount it, and which records may be cited in a letter, held in
+   reserve, or never cited. Every figure you propose must trace to a line there.
+   No valuation file yet: build one before proposing a number (FedEx, Matter 25,
+   is the model).
+3. **Read** `internal/docs/settlement/SETTLEMENT_REANCHOR_MEMO.md` § 3 (rules),
    § 4 (this track's bracket), § 4A (opening engine), § 9 (deal terms).
-3. **Run the check on the exact move** before drafting the letter:
+4. **Run the check on the exact move** before drafting the letter:
 
    ```bash
    npm run negotiate:check -- --matter NN --amount 60000 --scope global \
@@ -36,6 +43,19 @@ skill makes them a step you cannot skip.
 
    Report the output to Plaintiff verbatim: CLEAR or BLOCKED, each rule, and
    the § 5 checklist.
+
+## Using evidence in the letter
+
+- Cite only what the valuation lists under "Cite in a letter". Quote it; do not
+  characterize it (memo Rule 12).
+- Items "in reserve" are for mediation or for answering a specific defense.
+  Do not spend them in the opening.
+- Never cite: the defense's own removal math or declarations (memo § 4A).
+- Any item with a use restriction (protective order, sealed record) stays out
+  until the restriction is cleared in writing.
+- Never threaten criminal reporting, regulatory complaints, or publicity in
+  exchange for money. For a party without a lawyer that can be extortion
+  (Pen. Code §§ 518–519). Ask for money for the claims; nothing else.
 
 ## If it is BLOCKED
 

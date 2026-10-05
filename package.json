@@ -42,6 +42,7 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "negotiate:check": "node internal/scripts/negotiate-check.mjs",
+    "valuation": "node internal/scripts/valuation.mjs",
     "next": "node internal/scripts/next-actions.mjs",
     "postinstall": "node internal/scripts/postinstall-sync.mjs",
     "prebuild": "npm run sync:derived",

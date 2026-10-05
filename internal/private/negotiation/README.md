@@ -28,6 +28,16 @@ email to counsel. Walk-aways are reservation points, never disclosed.
 Record **drafts that were not sent** too: a higher unsent draft is exactly
 what Rule 6 checks for.
 
+## Valuation files (`NN.valuation.json`)
+
+The proof map behind the numbers: each key record with its pin and a verbatim
+quote, which claim element it proves, which defense it answers, whether the
+defense has seen it, whether it is held in reserve or must never be cited, and
+each damages line with the evidence behind it and Plaintiff's probability of
+proving it. `npm run valuation -- --matter NN` prints the sheet. Reprice by
+editing the probabilities or evidence status when an event lands, then rerun.
+FedEx (`25.valuation.json`) is the model.
+
 ## Use
 
 ```bash
