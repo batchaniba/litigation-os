@@ -1,6 +1,5 @@
 import { describe, expect, it } from "vitest";
 import {
-  deleteMatter,
   patchMatter,
   putDocBytes,
   upsertDocumentRow,
@@ -100,33 +99,6 @@ describe("writes: matters", () => {
   it("patchMatter rejects an empty patch", async () => {
     const { DB } = d1Stub(() => ({ number: 27 }));
     await expect(patchMatter({ DB }, 27, {})).rejects.toMatchObject({ status: 400 });
-  });
-});
-
-describe("writes: deleteMatter", () => {
-  const counts = (docs, clocks) => (sql) => {
-    if (/FROM matters WHERE number/.test(sql)) return { number: 27 };
-    if (/FROM documents/.test(sql)) return { c: docs };
-    if (/FROM clocks/.test(sql)) return { c: clocks };
-    return null;
-  };
-
-  it("refuses a non-empty matter without cascade (409)", async () => {
-    const { DB } = d1Stub(counts(3, 1));
-    await expect(deleteMatter({ DB }, 27)).rejects.toMatchObject({ status: 409 });
-  });
-
-  it("cascades when asked, batching the child deletes", async () => {
-    const { DB, batches } = d1Stub(counts(3, 1));
-    const out = await deleteMatter({ DB }, 27, { cascade: true });
-    expect(out).toMatchObject({ deleted: true, cascade: true, removed_documents: 3, removed_clocks: 1 });
-    expect(batches[0]).toHaveLength(3); // matters + clocks + documents
-  });
-
-  it("deletes an empty matter without cascade", async () => {
-    const { DB, batches } = d1Stub(counts(0, 0));
-    await expect(deleteMatter({ DB }, 27)).resolves.toMatchObject({ deleted: true });
-    expect(batches[0]).toHaveLength(1);
   });
 });
 

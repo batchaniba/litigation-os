@@ -75,13 +75,6 @@ export async function putDocBytes(env, sha, bytes, { verify = true, contentType 
   return { sha256: clean, size: buf.byteLength };
 }
 
-export async function deleteDocBytes(env, sha) {
-  needR2(env);
-  const clean = cleanSha(sha);
-  await env.DOCS.delete(keyForSha256(clean));
-  return { sha256: clean, deleted: true };
-}
-
 // --- documents: manifest row (D1) -------------------------------------------
 
 export async function upsertDocumentRow(env, { sha256, matter_number, path, size }) {
@@ -103,13 +96,6 @@ export async function upsertDocumentRow(env, { sha256, matter_number, path, size
     .bind(clean, mn, p, sz)
     .run();
   return { sha256: clean, matter_number: mn, path: p, size: sz };
-}
-
-export async function deleteDocumentRow(env, sha) {
-  needDb(env);
-  const clean = cleanSha(sha);
-  await env.DB.prepare(`DELETE FROM documents WHERE sha256 = ?`).bind(clean).run();
-  return { sha256: clean, deleted: true };
 }
 
 // --- matters (D1) -----------------------------------------------------------
@@ -166,40 +152,6 @@ export async function patchMatter(env, n, patch) {
   return { number, updated: cols };
 }
 
-// Delete a matter. Refuses if it still owns clocks or documents unless
-// cascade:true, which also removes those D1 rows (never R2 bytes — delete
-// documents explicitly if you also want the files gone).
-export async function deleteMatter(env, n, { cascade = false } = {}) {
-  needDb(env);
-  const number = asMatterNumber(n);
-  const exists = await env.DB.prepare(`SELECT number FROM matters WHERE number = ?`)
-    .bind(number)
-    .first();
-  if (!exists) throw new HttpError(404, { error: "not_found", matter: number });
-  const docs = await env.DB.prepare(`SELECT COUNT(*) AS c FROM documents WHERE matter_number = ?`)
-    .bind(number)
-    .first();
-  const clocks = await env.DB.prepare(`SELECT COUNT(*) AS c FROM clocks WHERE matter_number = ?`)
-    .bind(number)
-    .first();
-  const docCount = docs?.c ?? 0;
-  const clockCount = clocks?.c ?? 0;
-  if ((docCount > 0 || clockCount > 0) && !cascade)
-    throw new HttpError(409, {
-      error: "matter_not_empty",
-      documents: docCount,
-      clocks: clockCount,
-      hint: "pass cascade:true to remove its D1 rows (R2 bytes are left intact)",
-    });
-  const stmts = [env.DB.prepare(`DELETE FROM matters WHERE number = ?`).bind(number)];
-  if (cascade) {
-    stmts.push(env.DB.prepare(`DELETE FROM clocks WHERE matter_number = ?`).bind(number));
-    stmts.push(env.DB.prepare(`DELETE FROM documents WHERE matter_number = ?`).bind(number));
-  }
-  await env.DB.batch(stmts);
-  return { number, deleted: true, cascade, removed_clocks: cascade ? clockCount : 0, removed_documents: cascade ? docCount : 0 };
-}
-
 // --- clocks (D1) ------------------------------------------------------------
 
 export async function addClock(env, { matter_number, title, date, kind }) {
@@ -213,19 +165,6 @@ export async function addClock(env, { matter_number, title, date, kind }) {
     .bind(mn, title, date || null, kind || null)
     .run();
   return { matter_number: mn, title, date: date || null, kind: kind || null };
-}
-
-// Delete clock rows matching matter + title (+ date if given).
-export async function deleteClock(env, { matter_number, title, date }) {
-  needDb(env);
-  const mn = asMatterNumber(matter_number);
-  if (!title) throw new HttpError(400, { error: "title is required" });
-  const sql = date
-    ? `DELETE FROM clocks WHERE matter_number = ? AND title = ? AND date = ?`
-    : `DELETE FROM clocks WHERE matter_number = ? AND title = ?`;
-  const binds = date ? [mn, title, date] : [mn, title];
-  const res = await env.DB.prepare(sql).bind(...binds).run();
-  return { matter_number: mn, title, date: date || null, deleted: res?.meta?.changes ?? null };
 }
 
 // --- audit (D1, best-effort) ------------------------------------------------

@@ -80,3 +80,24 @@ describe("PUT /doc/<sha256> requires ?path=", () => {
     expect(d1runs.length).toBeGreaterThanOrEqual(2);
   });
 });
+
+describe("DELETE /doc/<sha256> is gone", () => {
+  it("answers 405 even with an rw token and confirm=1, and touches nothing", async () => {
+    const { env, r2puts, d1runs } = await envWith();
+    let r2deletes = 0;
+    env.DOCS.delete = async () => {
+      r2deletes += 1;
+    };
+    const res = await worker.fetch(
+      new Request(`https://example.test/doc/${SHA}?confirm=1`, {
+        method: "DELETE",
+        headers: { authorization: "Bearer secret" },
+      }),
+      env,
+    );
+    expect(res.status).toBe(405);
+    expect(r2deletes).toBe(0);
+    expect(r2puts).toEqual([]);
+    expect(d1runs.filter((r) => /DELETE/i.test(r.sql))).toEqual([]);
+  });
+});

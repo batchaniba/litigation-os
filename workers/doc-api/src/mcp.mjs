@@ -11,8 +11,10 @@
 // and fetchDocument returns the /doc/<sha256> download URL for raw PDF bytes
 // when those are needed. CORS is open so browser-based clients can call it.
 //
-// v2 adds write tools (create/update/delete over matters, clocks, and the
-// document manifest). Writes require an "rw" Bearer <redacted> (see auth.mjs) and
+// v2 adds write tools (create/update over matters, clocks, and the document
+// manifest). There are no delete tools: an assistant with an rw token must
+// not be able to remove documents, matters, or clocks.
+// Writes require an "rw" Bearer <redacted> (see auth.mjs) and
 // are recorded to the D1 `audit` table. Document bytes travel two ways:
 // `uploadDocument` takes base64 bytes inline over JSON-RPC (handy for MCP
 // clients that can only call tools — capped at 20 MB decoded), while large
@@ -33,10 +35,6 @@ import { resolveAccess } from "./auth.mjs";
 import { wwwAuthenticate } from "./oauth.mjs";
 import {
   addClock,
-  deleteClock,
-  deleteDocBytes,
-  deleteDocumentRow,
-  deleteMatter,
   patchMatter,
   putDocBytes,
   recordAudit,
@@ -310,27 +308,6 @@ const TOOLS = [
     run: (a, ctx) => upsertDocumentRow(ctx.env, a),
   },
   {
-    name: "deleteDocument",
-    write: true,
-    description:
-      "Delete a document: removes the D1 manifest row and (unless keepBytes) the R2 bytes. Requires confirm:true.",
-    inputSchema: {
-      type: "object",
-      properties: {
-        sha256: { type: "string", pattern: "^[0-9a-fA-F]{64}$", description: "64 hex chars." },
-        keepBytes: { type: "boolean", description: "Keep the R2 object; drop only the manifest row." },
-        confirm: { type: "boolean", description: "Must be true — deletes are irreversible." },
-      },
-      required: ["sha256", "confirm"],
-    },
-    run: async ({ sha256, keepBytes, confirm }, ctx) => {
-      if (confirm !== true) throw new HttpError(400, { error: "confirm must be true to delete" });
-      const row = await deleteDocumentRow(ctx.env, sha256);
-      const bytes = keepBytes ? { kept: true } : await deleteDocBytes(ctx.env, sha256);
-      return { ...row, bytes };
-    },
-  },
-  {
     name: "upsertMatter",
     write: true,
     description:
@@ -377,25 +354,6 @@ const TOOLS = [
     run: ({ n, ...patch }, ctx) => patchMatter(ctx.env, n, patch),
   },
   {
-    name: "deleteMatter",
-    write: true,
-    description:
-      "Delete a matter row. Refuses if it still owns clocks/documents unless cascade:true (which removes those D1 rows; R2 bytes are left). Requires confirm:true.",
-    inputSchema: {
-      type: "object",
-      properties: {
-        n: { type: "integer", description: "Matter number." },
-        cascade: { type: "boolean", description: "Also delete its clocks and document rows." },
-        confirm: { type: "boolean", description: "Must be true — deletes are irreversible." },
-      },
-      required: ["n", "confirm"],
-    },
-    run: ({ n, cascade, confirm }, ctx) => {
-      if (confirm !== true) throw new HttpError(400, { error: "confirm must be true to delete" });
-      return deleteMatter(ctx.env, n, { cascade: cascade === true });
-    },
-  },
-  {
     name: "addClock",
     write: true,
     description: "Add a clock (deadline/hearing) to a matter.",
@@ -410,21 +368,6 @@ const TOOLS = [
       required: ["matter_number", "title"],
     },
     run: (a, ctx) => addClock(ctx.env, a),
-  },
-  {
-    name: "deleteClock",
-    write: true,
-    description: "Delete clock rows matching a matter + title (+ date if given).",
-    inputSchema: {
-      type: "object",
-      properties: {
-        matter_number: { type: "integer" },
-        title: { type: "string" },
-        date: { type: "string", description: "YYYY-MM-DD (optional narrower match)" },
-      },
-      required: ["matter_number", "title"],
-    },
-    run: (a, ctx) => deleteClock(ctx.env, a),
   },
 ];
 
