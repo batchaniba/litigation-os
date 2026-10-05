@@ -1,6 +1,6 @@
 import { describe, expect, it, vi } from "vitest";
 import { CHECK_NAME } from "./constants.mjs";
-import { executeGateJob } from "./orchestrate.mjs";
+import { drainQueuedJob, executeGateJob, queueJob, runGateJob } from "./orchestrate.mjs";
 
 const SHA = "dddddddddddddddddddddddddddddddddddddddd";
 const PREV = "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee";
@@ -92,5 +92,72 @@ describe("executeGateJob", () => {
     expect(result.conclusion).toBe("success");
     expect(github.cancelPendingChecks).toHaveBeenCalledWith(PREV, expect.stringMatching(/superseded/));
     expect(cancelled).toEqual([{ id: PREV, reason: "superseded" }]);
+  });
+});
+
+describe("queued execution", () => {
+  function memoryStorage() {
+    const data = new Map();
+    let alarm = null;
+    return {
+      data,
+      get alarm() {
+        return alarm;
+      },
+      put: async (k, v) => void data.set(k, v),
+      get: async (k) => data.get(k),
+      delete: async (k) => void data.delete(k),
+      setAlarm: async (t) => {
+        alarm = t;
+      },
+    };
+  }
+
+  it("queueJob stores the job and arms an immediate alarm", async () => {
+    const storage = memoryStorage();
+    await queueJob(storage, { sha: SHA }, 1234);
+    expect(storage.data.get("job")).toEqual({ sha: SHA });
+    expect(storage.alarm).toBe(1234);
+  });
+
+  it("drainQueuedJob dequeues before running, so a retried alarm is a no-op", async () => {
+    const storage = memoryStorage();
+    await queueJob(storage, { sha: SHA });
+    const run = vi.fn(async () => {
+      expect(storage.data.has("job")).toBe(false);
+      throw new Error("alarm killed mid-run");
+    });
+    await expect(drainQueuedJob(storage, run)).rejects.toThrow("alarm killed");
+    expect(await drainQueuedJob(storage, run)).toBeNull();
+    expect(run).toHaveBeenCalledOnce();
+  });
+
+  it("runGateJob stops the container after the run", async () => {
+    const github = mockGithub();
+    const runner = { runJob: vi.fn(async () => ({ ok: true })), cancel: vi.fn(async () => ({})) };
+    const result = await runGateJob({
+      job: { sha: SHA, timeoutMs: 1000 },
+      env: { GITHUB_REPO: "o/r" },
+      getRunner: () => runner,
+      getToken: async () => "tok",
+      makeClient: () => github,
+    });
+    expect(result.conclusion).toBe("success");
+    expect(runner.runJob.mock.calls[0][0].installationToken).toBe("tok");
+    expect(runner.cancel).toHaveBeenCalledWith("finished");
+  });
+
+  it("runGateJob fails a refused job without starting a container", async () => {
+    const github = mockGithub();
+    const getRunner = vi.fn(() => ({ runJob: vi.fn(), cancel: vi.fn() }));
+    const result = await runGateJob({
+      job: { sha: SHA, refusal: "fork head" },
+      env: { GITHUB_REPO: "o/r" },
+      getRunner,
+      getToken: async () => "tok",
+      makeClient: () => github,
+    });
+    expect(result.conclusion).toBe("failure");
+    expect(getRunner).not.toHaveBeenCalled();
   });
 });

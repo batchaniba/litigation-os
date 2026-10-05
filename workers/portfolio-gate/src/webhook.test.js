@@ -42,7 +42,7 @@ describe("verifyGitHubSignature", () => {
 
 describe("handleWebhook fail-closed auth", () => {
   it("returns 401 and does not start a run when the signature is invalid", async () => {
-    const waited = [];
+    const queued = [];
     const res = await handleWebhook({
       rawBody: JSON.stringify({
         action: "opened",
@@ -59,10 +59,10 @@ describe("handleWebhook fail-closed auth", () => {
       signatureHeader: "sha256=00",
       eventName: "pull_request",
       env: { GITHUB_WEBHOOK_SECRET: SECRET, GITHUB_REPO: "newanforbi/interactive-litigation-portfolio" },
-      ctx: { waitUntil: (p) => waited.push(p) },
+      enqueue: async (j) => { queued.push(j); },
     });
     expect(res.status).toBe(401);
-    expect(waited).toEqual([]);
+    expect(queued).toEqual([]);
     expect(await res.json()).toMatchObject({ ok: false, error: "invalid signature" });
   });
 });
