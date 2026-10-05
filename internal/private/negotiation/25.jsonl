@@ -1,0 +1,4 @@
+{"date": "2026-07-12", "side": "plaintiff", "kind": "demand", "amount": 85000, "scope": "global", "note": "Pre-filing demand letter, $85,000; response due Jul. 26"}
+{"date": "2026-07-26", "side": "defense", "kind": "note", "scope": "global", "note": "No response to the pre-filing demand"}
+{"date": "2026-09-25", "side": "plaintiff", "kind": "walkaway", "amount": 40000, "scope": "global", "note": "Memo \u00a7 4 FedEx row (Sep. 25): under $40,000 after a registry-source report is a sale"}
+{"date": "2026-09-25", "side": "plaintiff", "kind": "draft", "amount": 195000, "scope": "global", "note": "Offer letter dated Sep. 25 (\u00a7 4A engine). CONFIRM whether it was sent; if so, change kind to demand."}

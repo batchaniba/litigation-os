@@ -1,0 +1,284 @@
+{
+ "matter": 25,
+ "caption": "Newanforbi v. Federal Express Corporation, E.D. Cal. 2:26-cv-02881-DAD-SCR",
+ "as_of": "2026-10-05",
+ "note": "Private. Proof map and valuation for settlement only. Never attach, quote, or paraphrase in anything defense counsel sees. Probabilities are Plaintiff's working estimates: change them here and rerun `npm run valuation -- --matter 25`.",
+ "evidence": [
+  {
+   "id": "ans-26",
+   "label": "FedEx Answer (Dkt. 4) ¶ 26",
+   "sha256": "b8b70e1e26017fa5bf1007b2c2b453ddc44947c6e2a575dc35cc26b91beece84",
+   "pin": "Dkt. 4 ¶ 26, p. 5",
+   "quote": "Defendant further admits that the adverse action letter referenced a review of the National Sex Offender Public Website and the California state Sex Offender website",
+   "status": "on_record",
+   "seen_by_defense": true,
+   "reserve": false
+  },
+  {
+   "id": "ans-34",
+   "label": "FedEx Answer (Dkt. 4) ¶ 34",
+   "sha256": "b8b70e1e26017fa5bf1007b2c2b453ddc44947c6e2a575dc35cc26b91beece84",
+   "pin": "Dkt. 4 ¶ 34, p. 6",
+   "quote": "the background screening report prepared by First Advantage and provided to FedEx identified Plaintiff as a registrant on California's sex offender registry",
+   "status": "on_record",
+   "seen_by_defense": true,
+   "reserve": false
+  },
+  {
+   "id": "ans-7aff",
+   "label": "FedEx Answer (Dkt. 4), Seventh Affirmative Defense",
+   "sha256": "b8b70e1e26017fa5bf1007b2c2b453ddc44947c6e2a575dc35cc26b91beece84",
+   "pin": "Dkt. 4, Seventh Aff. Def.",
+   "quote": "Defendant withdrew the conditional offer of employment based, independently and in part, on Plaintiff's dishonesty and material misrepresentations in his background check forms",
+   "status": "on_record",
+   "seen_by_defense": true,
+   "reserve": true,
+   "why_reserve": "'in part' concedes the registry information was also part of the decision. Use it in mediation or in reply to the misrepresentation defense, not in the opening letter."
+  },
+  {
+   "id": "removal-28",
+   "label": "Notice of Removal (Dkt. 1) ¶¶ 28-29: FedEx's own wage math",
+   "sha256": "052c44564b7d59c964dc7ec4ed973a580b33fa0b9427d2cee4fd318a52490b57",
+   "pin": "Dkt. 1 ¶¶ 28-29",
+   "quote": "Twenty hours per week at $20.25 per hour equates to $405 in earnings per week ... 127-weeks of lost wages, which is approximately $51,435 ... an additional $42,120 in wages",
+   "status": "on_record",
+   "seen_by_defense": true,
+   "reserve": false,
+   "do_not_cite_in_letter": true,
+   "why": "Memo § 4A: present the figures as Plaintiff's own valuation; the match with their filing is recognized without citing it."
+  },
+  {
+   "id": "bow-6",
+   "label": "Bow Decl. (Dkt. 1-2) ¶ 6 and Ex. 9: pay range",
+   "sha256": "45e68d517b2e2ae4aef163eea2c592e71138d33830bfc1a6f842561a0c7e21e8",
+   "pin": "Dkt. 1-2 ¶ 6; Ex. 9 hiring rows",
+   "quote": "paid at an hourly rate ranging from $20.25-$21.25 for up to 20 hours of work per week",
+   "status": "on_record",
+   "seen_by_defense": true,
+   "reserve": true,
+   "do_not_cite_in_letter": true,
+   "why_reserve": "Held-back reserve (memo § 4A): the high end of their own pay range ($21.25 by May 2026) if the figure is called high."
+  },
+  {
+   "id": "fa-notices",
+   "label": "First Advantage pre-adverse (Mar. 10, 2025) and adverse (Mar. 19, 2025) notices",
+   "sha256": "a8c60724cc1ab84123a5b4904591313fbf19855b1e1195bd0ebd11d3b5741227",
+   "pin": "Mar. 10 and Mar. 19, 2025 emails from DoNotReply@fadv.com, 'for FEDEX GROUND HR'",
+   "quote": "Please review the Adverse Action notification for your background screening report for FEDEX GROUND HR",
+   "status": "in_hand",
+   "seen_by_defense": true,
+   "reserve": false,
+   "why": "Proves timing (nine days) and that First Advantage acted for FedEx. The notices do not show the report's contents; the portal links are expired."
+  },
+  {
+   "id": "fa-report",
+   "label": "First Advantage report and FedEx adjudication record",
+   "pin": "RFP Set One; Rule 45 subpoena to First Advantage (Atts. A and B)",
+   "status": "requested_not_served",
+   "seen_by_defense": true,
+   "reserve": false,
+   "why": "Shows the registry-source line and how FedEx adjudicated it. Set One and the subpoena are drafted but not yet served."
+  },
+  {
+   "id": "jan8-forms",
+   "label": "Jan. 8, 2025 background check forms (the 'NO' answer)",
+   "pin": "RFP Set One no. 18 and the 'material application misrepresentation' requests",
+   "status": "requested_not_served",
+   "seen_by_defense": true,
+   "reserve": false,
+   "why": "FedEx's main defense rests on the exact question asked and the answer given. Value moves most on this document."
+  }
+ ],
+ "elements": [
+  {
+   "id": "registry-use",
+   "claim": "Pen. Code § 290.46(j)(2)(E)",
+   "element": "Registry information was used in the employment decision",
+   "evidence": [
+    "ans-26",
+    "ans-34",
+    "ans-7aff"
+   ],
+   "proof": "admitted",
+   "note": "FedEx admits the adverse-action letter referenced both registry websites and the report identified Plaintiff as a registrant. It contests only that the use was unlawful."
+  },
+  {
+   "id": "adverse-action",
+   "claim": "All",
+   "element": "Adverse action: conditional offer withdrawn Mar. 19, 2025",
+   "evidence": [
+    "ans-26",
+    "fa-notices"
+   ],
+   "proof": "admitted"
+  },
+  {
+   "id": "causation",
+   "claim": "All",
+   "element": "The registry information caused the denial",
+   "evidence": [
+    "ans-7aff"
+   ],
+   "proof": "disputed",
+   "note": "FedEx says the 'NO' answer was an independent basis. Its own words are 'independently and in part'."
+  },
+  {
+   "id": "damages-wage",
+   "claim": "Tameny / § 290.46(j)(4)(A) actual damages",
+   "element": "Lost wages",
+   "evidence": [
+    "removal-28",
+    "bow-6"
+   ],
+   "proof": "documented",
+   "note": "Rate and hours come from FedEx's own filing. Interim earnings since Mar. 2025 reduce back pay; know Plaintiff's figure before sending."
+  },
+  {
+   "id": "distress",
+   "claim": "Actual damages",
+   "element": "Emotional distress",
+   "evidence": [],
+   "proof": "unproven",
+   "note": "No records yet. Plaintiff's testimony only. FedEx pleads none suffered (15th) and outside causes (16th)."
+  }
+ ],
+ "defenses": [
+  {
+   "id": "misrep",
+   "name": "Material misrepresentation / independent basis (6th, 7th, 11th, 14th)",
+   "threat": "high",
+   "answered_by": [
+    "ans-7aff",
+    "jan8-forms"
+   ],
+   "open_questions": [
+    "Exactly what the Jan. 8, 2025 form asked, and whether the answer was false as worded",
+    "Whether that question was a lawful inquiry at that stage of hiring (evaluate before relying on it)",
+    "Why the answer says the application was 'January 2025' when the file shows a July 17, 2024 application"
+   ],
+   "cuts": [
+    "back_pay",
+    "front_pay"
+   ]
+  },
+  {
+   "id": "exception",
+   "name": "Statutory exception: protection of persons at risk (8th)",
+   "threat": "medium",
+   "answered_by": [
+    "ans-26"
+   ],
+   "open_questions": [
+    "Whether FedEx can show any person-at-risk assessment beyond the conviction category"
+   ],
+   "cuts": [
+    "penalty",
+    "punitive"
+   ]
+  },
+  {
+   "id": "mitigation",
+   "name": "Avoidable consequences (17th)",
+   "threat": "medium",
+   "answered_by": [],
+   "open_questions": [
+    "Plaintiff's interim earnings and job search since Mar. 19, 2025"
+   ],
+   "cuts": [
+    "back_pay",
+    "front_pay"
+   ]
+  }
+ ],
+ "damages": [
+  {
+   "id": "back_pay",
+   "label": "Back pay, Mar. 19, 2025 to trial (127 wks × $405)",
+   "amount": 51435,
+   "evidence": [
+    "removal-28",
+    "bow-6"
+   ],
+   "p": 0.5,
+   "why_p": "Rate is FedEx's own; the misrepresentation defense and interim earnings are the discount."
+  },
+  {
+   "id": "front_pay",
+   "label": "Front pay, 104 wks after trial",
+   "amount": 42120,
+   "evidence": [
+    "removal-28"
+   ],
+   "p": 0.3,
+   "why_p": "Speculative, and cut hardest if the misrepresentation defense holds."
+  },
+  {
+   "id": "penalty",
+   "label": "Pen. Code § 290.46(j)(4)(A) civil penalty (up to $25,000)",
+   "amount": 25000,
+   "evidence": [
+    "ans-26",
+    "ans-34"
+   ],
+   "p": 0.6,
+   "why_p": "Registry use is admitted; the 8th-defense exception is the risk. It is a cap, not a floor."
+  },
+  {
+   "id": "distress",
+   "label": "Emotional distress",
+   "amount": 50000,
+   "evidence": [],
+   "p": 0.35,
+   "why_p": "No records yet; testimony only."
+  },
+  {
+   "id": "punitive",
+   "label": "Punitive (Civ. Code §§ 1786.50(b), 3294)",
+   "amount": 25000,
+   "evidence": [
+    "ans-26"
+   ],
+   "p": 0.15,
+   "why_p": "Needs willful or grossly negligent conduct; nothing yet shows FedEx knew the use was barred."
+  }
+ ],
+ "positions": {
+  "opening": 195000,
+  "opening_basis": "§ 4A engine on FedEx's own wage math ($193,555, rounded); offer letter dated Sep. 25, 2026",
+  "bracket": {
+   "early": [
+    75000,
+    125000
+   ],
+   "after_trigger": [
+    100000,
+    150000
+   ]
+  },
+  "trigger": {
+   "label": "Report ties the denial to a California-registry source (memo § 4)",
+   "met_by": [
+    "ans-26",
+    "ans-34"
+   ],
+   "note": "FedEx's own answer already admits the adverse letter cited the registry websites and the report identified registration. The memo's 'after trigger' band applies now, not after the report."
+  }
+ },
+ "repricing_events": [
+  {
+   "event": "Jan. 8, 2025 forms produced",
+   "if_favorable": "Question was vague, unlawful at that stage, or the answer was not false as worded: raise back_pay and front_pay p.",
+   "if_unfavorable": "Clear question and false answer: lower back_pay and front_pay p; penalty is unaffected."
+  },
+  {
+   "event": "First Advantage report and adjudication record produced",
+   "if_favorable": "Registry line is the stated or only disqualifier: raise penalty and punitive p.",
+   "if_unfavorable": "FedEx relied on the form answer first: lower causation-dependent lines."
+  },
+  {
+   "event": "Oct. 8 status conference / settlement-judge referral",
+   "if_favorable": "A settlement conference date with Judge Riordan sets the clock for the next number.",
+   "if_unfavorable": "No change by itself."
+  }
+ ]
+}
