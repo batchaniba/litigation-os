@@ -12,7 +12,10 @@ import { Container } from "@cloudflare/containers";
 
 export class GateRunner extends Container {
   defaultPort = 8080;
-  sleepAfter = "40m";
+  // Idle backstop if a run's cleanup never ran. Longer than GATE_TIMEOUT_MS
+  // (12m) so idling can never end a live run; short enough that a leaked
+  // container frees its max_instances slot quickly.
+  sleepAfter = "15m";
   enableInternet = true;
 
   async runJob(job) {
@@ -67,12 +70,15 @@ export class GateRunner extends Container {
     }
   }
 
+  // Free the instance slot now. destroy() is SIGKILL: the run is over (or
+  // superseded), so there is nothing to drain. stop() only sends SIGTERM and
+  // returns, which left containers running (see container/server.mjs).
   async cancel(_reason) {
     try {
-      if (typeof this.stop === "function") {
-        await this.stop();
-      } else if (this.ctx.container?.running && typeof this.ctx.container.stop === "function") {
-        await this.ctx.container.stop();
+      if (typeof this.destroy === "function") {
+        await this.destroy();
+      } else if (this.ctx.container?.running && typeof this.ctx.container.destroy === "function") {
+        await this.ctx.container.destroy();
       }
     } catch {
       // already stopped
