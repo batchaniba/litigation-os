@@ -9,6 +9,9 @@ const PORT = Number(process.env.PORT || 8080);
 const SCRIPT = path.join(path.dirname(fileURLToPath(import.meta.url)), "run-gate.sh");
 const SHA_RE = /^[0-9a-f]{40}$/i;
 
+// Gate processes still running, so a shutdown can take them down too.
+const children = new Set();
+
 function json(res, status, body) {
   const payload = JSON.stringify(body);
   res.writeHead(status, { "content-type": "application/json" });
@@ -39,6 +42,7 @@ function runGate({ sha, cloneUrl, token, timeoutMs }) {
       },
       stdio: ["ignore", "pipe", "pipe"],
     });
+    children.add(child);
 
     let log = "";
     const append = (buf) => {
@@ -57,6 +61,7 @@ function runGate({ sha, cloneUrl, token, timeoutMs }) {
         : null;
 
     child.on("close", (code, signal) => {
+      children.delete(child);
       if (timer) clearTimeout(timer);
       const exitCode = code ?? (signal ? 1 : 0);
       resolve({
@@ -104,6 +109,19 @@ const server = http.createServer(async (req, res) => {
 server.requestTimeout = 0;
 server.headersTimeout = 0;
 server.timeout = 0;
+// This process is PID 1 in the container (CMD ["node", "server.mjs"]). Linux
+// does not apply the default action to signals sent to PID 1, so without
+// these handlers SIGTERM was ignored: Container.stop() did nothing, every
+// finished run kept its container running, and the fourth run hit
+// max_instances ("Maximum number of running container instances exceeded").
+function shutdown(signal) {
+  for (const child of children) child.kill("SIGKILL");
+  server.close();
+  process.exit(signal === "SIGTERM" ? 143 : 130);
+}
+process.on("SIGTERM", () => shutdown("SIGTERM"));
+process.on("SIGINT", () => shutdown("SIGINT"));
+
 server.listen(PORT, "0.0.0.0", () => {
   console.log(`portfolio-gate runner listening on ${PORT}`);
 });
