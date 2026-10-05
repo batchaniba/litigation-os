@@ -78,8 +78,17 @@ timeout + 5 minutes after it started (runner lost without reporting). Use
 "Re-run" on the check to try again.
 
 Cloudflare does not document a hard max instance runtime; the Container class
-`sleepAfter` is **40 minutes** here so idle-sleep cannot beat the gate
-timeout. Host moves can still SIGTERM a container (see
+`sleepAfter` is **15 minutes** here: longer than the 12-minute gate timeout,
+so idle-sleep cannot end a live run.
+
+**Freeing instances.** After every run the orchestrator calls `cancel()`,
+which `destroy()`s (SIGKILL) the container so its `max_instances` slot is
+free at once. The image runs `node server.mjs` as PID 1, and Linux ignores
+SIGTERM sent to PID 1 unless the process handles it; `server.mjs` therefore
+handles SIGTERM/SIGINT explicitly. Before Oct. 2026 neither was true:
+`stop()` (SIGTERM) was a no-op, finished containers kept running, and the
+fourth run in a window failed with "Maximum number of running container
+instances exceeded". Host moves can still SIGTERM a container (see
 [Containers FAQ](https://developers.cloudflare.com/containers/faq/)); that
 path is also concluded as failure.
 
