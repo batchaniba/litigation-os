@@ -6,8 +6,13 @@ const pdfKey = `sha256/${SHA.slice(0, 2)}/${SHA.slice(2)}.pdf`;
 const pdfBytes = new Uint8Array([0x25, 0x50, 0x44, 0x46, 0x2d, 0x31, 0x2e, 0x37]);
 const DOC_PATH = "/documents/matter-24/First Amended Complaint (Doc 10, Filed Jul 15 2026).pdf";
 
-function envWith({ index, d1 } = {}) {
+// documents_by_path row marking SHA as part of the public projection (the stub
+// answers every query with the same rows).
+const PUBLIC = [{ sha256: SHA, ok: 1 }];
+
+function envWith({ index, d1, apiKeys } = {}) {
   return {
+    ...(apiKeys ? { API_KEYS: apiKeys, PUBLIC_READ: "true" } : {}),
     DOCS: {
       async get(key) {
         if (key === "index/path-to-sha256.json") {
@@ -38,7 +43,7 @@ describe("GET /documents/<path>", () => {
   it("serves PDF bytes from the path index and does not mark the path immutable", async () => {
     const res = await worker.fetch(
       new Request(`https://example.test${DOC_PATH}`),
-      envWith({ index: { [DOC_PATH]: SHA } }),
+      envWith({ index: { [DOC_PATH]: SHA }, d1: PUBLIC }),
     );
     expect(res.status).toBe(200);
     expect(res.headers.get("content-type")).toBe("application/pdf");
@@ -69,9 +74,36 @@ describe("GET /documents/<path>", () => {
   it("hash URLs stay immutable", async () => {
     const res = await worker.fetch(
       new Request(`https://example.test/doc/${SHA}`),
-      envWith({}),
+      envWith({ d1: PUBLIC }),
     );
     expect(res.status).toBe(200);
     expect(res.headers.get("cache-control")).toMatch(/immutable/);
+  });
+});
+
+describe("anonymous callers see only the filing-safe projection", () => {
+  // Path index resolves the path, but documents_by_path does not hold the
+  // hash: the document was registered by a write tool, not seeded as public.
+  const privateEnv = (extra = {}) => envWith({ index: { [DOC_PATH]: SHA }, d1: [], ...extra });
+
+  it.each([`/doc/${SHA}`, `/doc/${SHA}/meta`, DOC_PATH])("404s %s without a token", async (route) => {
+    const res = await worker.fetch(new Request(`https://example.test${route}`), privateEnv());
+    expect(res.status).toBe(404);
+    expect((await res.json()).error).toBe("not_found");
+  });
+
+  it("serves the same document to a valid read token", async () => {
+    const { sha256Hex } = await import("./auth.mjs");
+    const apiKeys = JSON.stringify({ [await sha256Hex("tok")]: { name: "phone", scope: "r" } });
+    const res = await worker.fetch(
+      new Request(`https://example.test/doc/${SHA}`, { headers: { authorization: "Bearer tok" } }),
+      privateEnv({ apiKeys }),
+    );
+    expect(res.status).toBe(200);
+  });
+
+  it("fails closed with no D1 binding", async () => {
+    const res = await worker.fetch(new Request(`https://example.test/doc/${SHA}`), envWith({}));
+    expect(res.status).toBe(404);
   });
 });

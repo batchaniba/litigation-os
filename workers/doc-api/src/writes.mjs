@@ -37,6 +37,24 @@ function needDb(env) {
   if (!env.DB) throw new HttpError(503, { error: "d1_not_provisioned" });
 }
 
+// D1 matters/clocks are a projection of main, rebuilt by every reseed. A
+// direct write never reaches the repo and is erased by the next reseed, so it
+// only creates a second, disagreeing calendar. Off unless the Worker sets
+// ALLOW_DIRECT_D1_WRITES = "true".
+export const DIRECT_D1_WRITE_TOOLS = new Set(["upsertMatter", "updateMatter", "addClock"]);
+
+export function directD1WritesAllowed(env) {
+  return env?.ALLOW_DIRECT_D1_WRITES === "true";
+}
+
+function needDirectD1Writes(env) {
+  if (!directD1WritesAllowed(env))
+    throw new HttpError(403, {
+      error: "d1_writes_disabled",
+      hint: "D1 is a read-only projection of main. Change matter.json / clocks.json in a pull request.",
+    });
+}
+
 function needR2(env) {
   if (!env.DOCS) throw new HttpError(503, { error: "r2_not_bound" });
 }
@@ -119,6 +137,7 @@ function validateMatterFields(fields, { partial }) {
 
 // Create or fully replace a matter row (upsert on `number`).
 export async function upsertMatter(env, matter) {
+  needDirectD1Writes(env);
   needDb(env);
   const number = asMatterNumber(matter?.number);
   const fields = validateMatterFields(matter, { partial: false });
@@ -138,6 +157,7 @@ export async function upsertMatter(env, matter) {
 // Patch only the provided columns on an existing matter (e.g. correcting a
 // stale status_label). Throws 404 if the matter does not exist.
 export async function patchMatter(env, n, patch) {
+  needDirectD1Writes(env);
   needDb(env);
   const number = asMatterNumber(n);
   const fields = validateMatterFields(patch, { partial: true });
@@ -155,6 +175,7 @@ export async function patchMatter(env, n, patch) {
 // --- clocks (D1) ------------------------------------------------------------
 
 export async function addClock(env, { matter_number, title, date, kind }) {
+  needDirectD1Writes(env);
   needDb(env);
   const mn = asMatterNumber(matter_number);
   if (!title || typeof title !== "string")

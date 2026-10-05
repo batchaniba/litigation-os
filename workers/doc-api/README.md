@@ -37,13 +37,28 @@ wrangler secret put RESEED_SECRET   # required for POST /admin/reseed; same valu
 
 ## D1 re-seed
 
-`.github/workflows/d1-reseed.yml` keeps D1 in sync with the repo: on every
-portfolio-data merge to `main` it regenerates `seed.sql` (`node seed.mjs`)
-and POSTs it to `/admin/reseed` with the `RESEED_SECRET` bearer. The
-endpoint applies the statements idempotently in batches of 50 and is
+D1 is a **projection of `main`**, rebuilt by a reseed. There is no
+`d1-reseed.yml` (no Actions in this repo), so reseeding is manual. The seed
+replaces every row of `matters`, `clocks`, `documents`, and
+`documents_by_path`, and stamps `meta` with the source commit and time.
+`GET /health` reports `d1.source_commit`, `seeded_at`, `age_days`, and
+`stale` (no stamp, or older than a day). `/admin/reseed` applies `INSERT`,
+`DELETE`, and `CREATE TABLE IF NOT EXISTS` lines in batches of 50 and is
 fail-closed (503 when the secret isn't configured, 403 on mismatch).
-Manual re-seed (required after this publish-strip lands, so live D1 drops
-strategy clocks, unfiled drafts, and settlement chips):
+
+**Before every reseed, run the drift audit** (read-only, no keys):
+
+```bash
+NODE_USE_ENV_PROXY=1 npm run audit:mirror -- --out drift.json
+```
+
+It lists missing / extra / mismatched matters and clocks, and every D1
+document row the repo would not seed (`d1_only_unknown_to_repo` are
+assistant uploads that never reached the manifest; a reseed removes their
+rows, while their R2 bytes stay, findable only by hash). Catalog anything
+worth keeping into the repo first.
+
+Manual re-seed:
 
 ```bash
 cd workers/doc-api
@@ -62,9 +77,13 @@ computed SOL backstops, `$35,000` / final-demand chips, `EMAIL_DRAFT_*`,
 and unfiled screening-ID PDFs must be gone. Laptop `npm run mcp` is unchanged.
 
 Re-seed after the manifest or matter data changes (`node seed.mjs` again —
-statements are idempotent). Cron times in `wrangler.toml` are UTC
-approximations of PT wall clock; they shift an hour with daylight saving,
-documented in the file.
+statements are idempotent).
+
+**Derived, not stored.** `/matters`, `/matters/<n>`, `/fuse`, and the MCP
+`listMatters` / `getMatter` / `getFuseBoard` compute each matter's next
+clock from the `clocks` table with the repo's own `nextFromClocks()`; the
+`matters.next_clock_*` columns are no longer read. "Today" is the Pacific
+date (it was UTC, which made evening overdue flags a day early).
 
 ## Path-addressed documents & clock statuses
 
@@ -167,18 +186,25 @@ that need raw bytes (`application/pdf`). Timelines, counsel/judge dossiers,
 and the cluster map are not in D1, so they are not tools yet — a seed
 expansion could add them later.
 
-**Write tools (v2).** Create / update / delete over matters, clocks, and the
-document manifest. Each needs an `rw` token (see **Auth & scopes**) and is
+**Write tools (v2).** Create / update over the document manifest (and, only
+when `ALLOW_DIRECT_D1_WRITES = "true"`, over matters and clocks). Each needs an `rw` token (see **Auth & scopes**) and is
 written to the `audit` table. Document *bytes* go over REST (`PUT /doc`), not
 JSON-RPC — a base64 PDF over the wire is wasteful and some documents are
 >20 MB.
 
 | Tool | Args | Effect |
 |---|---|---|
-| `upsertMatter` | `number`, + any matter fields | create or replace a matter row |
-| `updateMatter` | `n`, + fields to patch | patch only the given columns (e.g. fix a stale `status_label`); 404 if unknown |
-| `addClock` | `matter_number`, `title`, `date?`, `kind?` | add a deadline/hearing |
+| `upsertMatter`* | `number`, + any matter fields | create or replace a matter row |
+| `updateMatter`* | `n`, + fields to patch | patch only the given columns; 404 if unknown |
+| `addClock`* | `matter_number`, `title`, `date?`, `kind?` | add a deadline/hearing |
 | `registerDocument` | `sha256`, `matter_number?`, `path?`, `size?` | upsert a manifest row (bytes uploaded separately) |
+
+\* **Off by default and not listed.** D1 matters and clocks are a projection
+of `main`: a direct write never reaches the repo and the next reseed erases
+it, so it only creates a second calendar that disagrees with the real one.
+Calls return `403 d1_writes_disabled`. Change `matter.json` / `clocks.json`
+in a PR instead. Set the Worker var `ALLOW_DIRECT_D1_WRITES = "true"` only
+for a deliberate, temporary exception.
 
 There are **no delete tools**, by design. Connected assistants hold `rw`
 tokens; on Oct. 1–2, 2026 one used `deleteDocument` on two documents (bytes
@@ -187,6 +213,15 @@ matter, or clock, do it deliberately in the Cloudflare dashboard (R2 object,
 D1 console), and remove it from the repo in a PR.
 
 ## Auth & scopes
+
+**What anonymous callers see.** Without a valid token, document listings,
+search, `/doc/<sha256>`, `/doc/<sha256>/meta`, `/documents/<path>`,
+`fetchDocument`, and `readDocumentText` are limited to the filing-safe
+publish projection (`documents_by_path`, written only by the seed). Rows
+that write tools add to `documents` are visible to token holders only; to
+anyone else they are a plain 404. Until Oct. 2026 the open routes also
+listed and served ~415 assistant-registered documents the projection
+excludes. With no D1 binding, anonymous document reads fail closed.
 
 Reads shipped open and stay that way by default. Writes require a **scoped
 bearer token**. Tokens exist only as SHA-256 hashes inside the `API_KEYS`
