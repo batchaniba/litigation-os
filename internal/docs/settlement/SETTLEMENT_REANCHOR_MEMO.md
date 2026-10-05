@@ -37,6 +37,8 @@ The file's own default prove-up for Randstad alone was **$45,543.70**. Two defen
 
 ## 3. Hard rules
 
+**Enforced, not just written.** `npm run negotiate:check -- --matter NN --amount X ...` tests a proposed move against these rules and the matter's offer ledger (`internal/private/negotiation/NN.jsonl`) and exits non-zero when one is broken. Replayed on Randstad's own history, it blocks the Aug. 19 $55,000 (cut from the $85,000 pre-filing ask with no Randstad number, $250,000 draft unsent), the Sep. 9 withdrawal, and the Sep. 12 $25,000 (no defense number since, price cut paired with extra time, nothing bought, $40,000 draft unsent). Skill: `.claude/skills/settlement-guard/`.
+
 1. **After the opening, no move without their number.** Silence, "conferring with client," and requests for time are not counters.
 2. **Never withdraw a figure without a replacement,** and never pair a price cut with extra defense time.
 3. **No unearned discount.** Every concession buys something identifiable and recorded:
@@ -142,7 +144,7 @@ Round the total up to the next clean figure.
 
 ## 5. Pre-send checklist
 
-Before any number goes out, confirm and show Plaintiff each of these:
+Before any number goes out, run `npm run negotiate:check` on the exact move (it prints this list), then confirm and show Plaintiff each of these:
 
 1. Latest docket, operative pleading, and pending-motion status.
 2. Current offer status and expiration on both sides.
