@@ -1,0 +1,6 @@
+---
+description: Settlement guard. Before any settlement number, counter, withdrawal, or response to an offer, run the ledger check so Plaintiff never negotiates against himself.
+alwaysApply: true
+---
+
+Before drafting, recommending, or sending any settlement figure, counter, withdrawal, expiring or "final" demand, or response to a defense offer: run `npm run negotiate:check -- --matter NN --history`, then `npm run negotiate:check -- --matter NN --amount <figure> [--scope] [--buys] [--event] [--gives-time] [--withdraw]`, and show Plaintiff the result. If it is BLOCKED, do not draft that figure; propose the compliant move (hold, ask for their number, reprice on a named event, or send the higher unsent draft). A defense request for time, "conferring", or a rejection without a number is never a counter. Only Plaintiff may override, with a stated reason recorded via `--override "reason" --record`. Record every send, defense response, unsent draft, and walk-away in `internal/private/negotiation/NN.jsonl`. Rules: `internal/docs/settlement/SETTLEMENT_REANCHOR_MEMO.md` § 3. Never put ledger figures or walk-aways in anything defense counsel sees.

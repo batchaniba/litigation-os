@@ -43,6 +43,7 @@ Cap the first fetch, not the case. Numbers live in `GRAPH_LIMITS` (`assembleMatt
 ## Standing locks
 
 - Actual stipulations / extensions / stays: read `internal/docs/STIPULATION_DEFENSE.md`. Plaintiff-first. Do not import that voice into ordinary Plaintiff papers.
+- Settlement numbers: before any demand, counter, withdrawal, or response to an offer, run `npm run negotiate:check` against the matter's ledger (`internal/private/negotiation/NN.jsonl`) and show Plaintiff the result. A BLOCKED figure is not drafted unless Plaintiff overrides with a recorded reason. Rules: `internal/docs/settlement/SETTLEMENT_REANCHOR_MEMO.md` § 3; skill: `.claude/skills/settlement-guard/`.
 - Email close after the valediction:
 
 ```

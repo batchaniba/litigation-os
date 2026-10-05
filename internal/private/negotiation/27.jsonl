@@ -1,0 +1,19 @@
+{"date": "2026-07-20", "side": "plaintiff", "kind": "demand", "amount": 85000, "scope": "randstad", "note": "Pre-filing demand letter, $85,000 each defendant; response due Aug. 2"}
+{"date": "2026-07-20", "side": "plaintiff", "kind": "demand", "amount": 85000, "scope": "rk", "note": "Pre-filing demand letter, $85,000 each defendant"}
+{"date": "2026-07-21", "side": "defense", "kind": "reject", "scope": "rk", "note": "Garcia (RK) denies liability: Randstad was employer; MVR not registry. No number."}
+{"date": "2026-08-18", "side": "defense", "kind": "note", "scope": "randstad", "note": "Williams appears; asks Plaintiff for an opening demand. No number."}
+{"date": "2026-08-18", "side": "plaintiff", "kind": "draft", "amount": 250000, "scope": "randstad", "note": "Executed opening letter, Randstad only; never sent"}
+{"date": "2026-08-19", "side": "plaintiff", "kind": "demand", "amount": 55000, "scope": "randstad", "note": "Opening email to Williams"}
+{"date": "2026-08-19", "side": "plaintiff", "kind": "demand", "amount": 85000, "scope": "global", "note": "Same email: global with RK"}
+{"date": "2026-08-28", "side": "defense", "kind": "request_time", "scope": "randstad", "note": "Williams: still conferring, needs more time, will try to respond by Sep. 4. No number."}
+{"date": "2026-08-28", "side": "plaintiff", "kind": "demand", "amount": 55000, "scope": "randstad", "note": "Restated; response due Sep. 8"}
+{"date": "2026-08-28", "side": "plaintiff", "kind": "demand", "amount": 85000, "scope": "global", "note": "Restated; response due Sep. 8"}
+{"date": "2026-09-09", "side": "defense", "kind": "request_time", "scope": "randstad", "note": "Williams asks for a further pleading extension by phone; declined. No number."}
+{"date": "2026-09-09", "side": "plaintiff", "kind": "withdraw", "note": "Withdraws the $55,000 / $85,000 demands; no replacement number"}
+{"date": "2026-09-12", "side": "plaintiff", "kind": "draft", "amount": 40000, "scope": "global", "note": "House draft: clocks stay Sep. 14 / Sep. 15, no Sep. 18 extension; never sent"}
+{"date": "2026-09-12", "side": "plaintiff", "kind": "demand", "amount": 25000, "scope": "global", "note": "Sent 8:00 a.m.; also extends both defendants to Sep. 18; expires Sep. 18 5 p.m."}
+{"date": "2026-09-14", "side": "defense", "kind": "conferring", "scope": "global", "note": "Williams: thanks for the $25,000 offer; conferring with Randstad. No number."}
+{"date": "2026-09-16", "side": "plaintiff", "kind": "note", "scope": "randstad", "note": "Default prove-up packet ready: $45,543.70 against Randstad alone"}
+{"date": "2026-09-17", "side": "defense", "kind": "accept", "amount": 25000, "scope": "global", "note": "Agreement in principle, contingent on a written agreement (general release, dismissal with prejudice)"}
+{"date": "2026-09-17", "side": "defense", "kind": "term", "scope": "global", "note": "Proposes 50/50 wage / 1099 split, checks within 14 days"}
+{"date": "2026-09-17", "side": "plaintiff", "kind": "term", "scope": "global", "note": "Counters allocation: $5,000 wages / $20,000 non-wage. RK authority (Garcia) unconfirmed."}

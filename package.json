@@ -41,6 +41,7 @@
     "intel:counsel": "node internal/scripts/courtlistener/intel/counsel-dossier.mjs",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
+    "negotiate:check": "node internal/scripts/negotiate-check.mjs",
     "next": "node internal/scripts/next-actions.mjs",
     "postinstall": "node internal/scripts/postinstall-sync.mjs",
     "prebuild": "npm run sync:derived",
