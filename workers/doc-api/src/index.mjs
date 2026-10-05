@@ -5,7 +5,6 @@
 //   GET  /doc/<sha256>/meta -> { sha256, size, etag } from R2 HEAD
 //   GET  /documents/<path> -> path index (or D1 documents_by_path) -> PDF bytes
 //   PUT  /doc/<sha256>      -> upload bytes (rw) + upsert manifest row
-//   DELETE /doc/<sha256>?confirm=1 -> remove manifest row + R2 bytes (rw)
 //   GET /matters           -> D1 matter rows (mirrors `npm run q listMatters`)
 //   GET /matters/<n>       -> one matter + clocks + documents (mirrors getMatter)
 //   GET /upcoming?days=14  -> clock rows due within window (mirrors upcomingDeadlines)
@@ -28,13 +27,13 @@
 // 503 { error: "d1_not_provisioned" } when the DB binding is absent, so the
 // document routes work before D1 is ever seeded.
 //
-// scheduled(): daily fuse digest (~08:08 PT) and Monday roll call, computed
-// from D1 with zero dependencies. POSTs JSON to ALERT_WEBHOOK when set,
-// otherwise console.log.
+// No delete route and no cron. Deletes are deliberately not reachable with a
+// token (connected assistants hold rw tokens); remove a document or matter
+// from the Cloudflare dashboard. The daily deadline digest moved to the
+// portfolio-gate Worker, which reads clocks.json on main instead of D1.
 
 import {
   HttpError,
-  buildDigest,
   fuseData,
   getDocObject,
   getMatterData,
@@ -54,8 +53,6 @@ import {
   handleToken,
 } from "./oauth.mjs";
 import {
-  deleteDocBytes,
-  deleteDocumentRow,
   putDocBytes,
   recordAudit,
   upsertDocumentRow,
@@ -154,8 +151,7 @@ async function handleReseed(request, env) {
 // --- document writes (rw scope) ---------------------------------------------
 // PUT /doc/<sha256>?matter=<n>&path=<path>[&verify=false]  body = PDF bytes
 //   -> R2 put (sha verified against the key by default) + manifest upsert.
-// DELETE /doc/<sha256>?confirm=1[&keepBytes=true]
-//   -> manifest row + R2 bytes removed. confirm=1 is mandatory.
+// There is deliberately no DELETE route (see the header comment).
 // Bytes live on REST (not MCP) because a PDF over JSON-RPC would be
 // base64-bloated and some documents are >20 MB.
 
@@ -198,41 +194,6 @@ async function putDoc(request, env, sha, url, access) {
       await recordAudit(env, {
         actor: access.actor,
         action: "putDocument",
-        target: sha,
-        detail: { error: e.body },
-        ok: false,
-      });
-      return json(e.body, e.status);
-    }
-    throw e;
-  }
-}
-
-async function deleteDoc(env, sha, url, access) {
-  try {
-    requireWrite(access);
-  } catch (e) {
-    return json(e.body, e.status);
-  }
-  if (url.searchParams.get("confirm") !== "1")
-    return json({ error: "confirm=1 required to delete" }, 400);
-  try {
-    const keepBytes = url.searchParams.get("keepBytes") === "true";
-    const row = await deleteDocumentRow(env, sha);
-    const bytes = keepBytes ? { kept: true } : await deleteDocBytes(env, sha);
-    await recordAudit(env, {
-      actor: access.actor,
-      action: "deleteDocument",
-      target: sha,
-      detail: { keepBytes },
-      ok: true,
-    });
-    return json({ ok: true, ...row, bytes });
-  } catch (e) {
-    if (e instanceof HttpError) {
-      await recordAudit(env, {
-        actor: access.actor,
-        action: "deleteDocument",
         target: sha,
         detail: { error: e.body },
         ok: false,
@@ -288,10 +249,9 @@ export default {
     const access = await resolveAccess(request, env);
     let m;
 
-    // Mutating document routes (PUT/DELETE) are matched before the GET guard.
+    // The mutating document route (PUT) is matched before the GET guard.
     if ((m = path.match(/^\/doc\/([^/]+)$/))) {
       if (request.method === "PUT") return putDoc(request, env, m[1], url, access);
-      if (request.method === "DELETE") return deleteDoc(env, m[1], url, access);
     }
 
     if (request.method !== "GET") return json({ error: "method_not_allowed" }, 405);
@@ -315,22 +275,5 @@ export default {
     if (path === "/fuse") return fuse(env, url.searchParams);
 
     return json({ error: "not_found" }, 404);
-  },
-
-  async scheduled(event, env, ctx) {
-    ctx.waitUntil(
-      (async () => {
-        const payload = await buildDigest(env, event.cron);
-        if (env.ALERT_WEBHOOK) {
-          await fetch(env.ALERT_WEBHOOK, {
-            method: "POST",
-            headers: { "content-type": "application/json" },
-            body: JSON.stringify(payload),
-          });
-        } else {
-          console.log(JSON.stringify(payload));
-        }
-      })(),
-    );
   },
 };

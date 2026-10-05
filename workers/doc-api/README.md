@@ -11,8 +11,8 @@ by design, there is nowhere to leak them from.
 
 | File | Purpose |
 |---|---|
-| `wrangler.toml` | Worker config: `DOCS` R2 binding → `litigation-documents`, `DB` D1 binding, UTC cron triggers for the digests. `database_id` is a placeholder until D1 is created. |
-| `src/index.mjs` | The Worker. Document routes (`/doc/<sha256>`, `/doc/<sha256>/meta`) + D1-backed data routes (`/matters`, `/matters/<n>`, `/upcoming?days=14`, `/fuse`) mirroring the `npm run q` op shapes, a `POST /mcp` MCP endpoint (Streamable HTTP, stateless JSON-RPC — see below), a guarded `POST /admin/reseed` endpoint (Bearer `RESEED_SECRET`; re-applies seed.sql to D1 in batches), plus a `scheduled` handler (daily fuse digest ~08:08 PT, Monday roll call ~07:08 PT) that POSTs to `ALERT_WEBHOOK` when set, else logs. |
+| `wrangler.toml` | Worker config: `DOCS` R2 binding → `litigation-documents`, `DB` D1 binding, the live D1 `database_id`. No cron triggers (the digest moved to `workers/portfolio-gate`). |
+| `src/index.mjs` | The Worker. Document routes (`/doc/<sha256>`, `/doc/<sha256>/meta`) + D1-backed data routes (`/matters`, `/matters/<n>`, `/upcoming?days=14`, `/fuse`) mirroring the `npm run q` op shapes, a `POST /mcp` MCP endpoint (Streamable HTTP, stateless JSON-RPC — see below), a guarded `POST /admin/reseed` endpoint (Bearer `RESEED_SECRET`; re-applies seed.sql to D1 in batches). No `DELETE` route and no `scheduled` handler. |
 | `src/data.mjs` | Shared data layer: R2/D1 access and the portfolio query ops. Both the REST routes and the MCP tools call into it, so the two surfaces can't drift. Throws `HttpError` (400/404/503) on mapped failures. |
 | `src/mcp.mjs` | MCP endpoint handler: `initialize` / `ping` / `tools/list` / `tools/call` over the read ops **and the v2 write tools** (scope-gated, audited). CORS-open (`*`) so browser-based clients work. |
 | `src/auth.mjs` | Scoped bearer-token auth. Tokens live only as SHA-256 hashes inside the `API_KEYS` Worker secret; scope `r` / `rw`. Resolves what a caller may do; surfaces gate with `requireRead` / `requireWrite`. |
@@ -32,7 +32,6 @@ workflow-only, never visible to agents. Manual deploys still work:
 ```bash
 cd workers/doc-api
 wrangler deploy
-wrangler secret put ALERT_WEBHOOK   # optional; without it digests go to the Worker logs
 wrangler secret put RESEED_SECRET   # required for POST /admin/reseed; same value as the repo secret
 ```
 
@@ -178,11 +177,14 @@ JSON-RPC — a base64 PDF over the wire is wasteful and some documents are
 |---|---|---|
 | `upsertMatter` | `number`, + any matter fields | create or replace a matter row |
 | `updateMatter` | `n`, + fields to patch | patch only the given columns (e.g. fix a stale `status_label`); 404 if unknown |
-| `deleteMatter` | `n`, `confirm`, `cascade?` | delete a matter; refuses if it owns clocks/docs unless `cascade` |
 | `addClock` | `matter_number`, `title`, `date?`, `kind?` | add a deadline/hearing |
-| `deleteClock` | `matter_number`, `title`, `date?` | remove matching clock rows |
 | `registerDocument` | `sha256`, `matter_number?`, `path?`, `size?` | upsert a manifest row (bytes uploaded separately) |
-| `deleteDocument` | `sha256`, `confirm`, `keepBytes?` | remove the manifest row and (unless `keepBytes`) the R2 bytes |
+
+There are **no delete tools**, by design. Connected assistants hold `rw`
+tokens; on Oct. 1–2, 2026 one used `deleteDocument` on two documents (bytes
+survived only because `keepBytes` happened to be set). To remove a document,
+matter, or clock, do it deliberately in the Cloudflare dashboard (R2 object,
+D1 console), and remove it from the repo in a PR.
 
 ## Auth & scopes
 
@@ -266,11 +268,10 @@ Notes:
 
 ```
 PUT    /doc/<sha256>?matter=<n>&path=<path>[&verify=false]   body = PDF bytes   (rw)
-DELETE /doc/<sha256>?confirm=1[&keepBytes=true]                                  (rw)
 ```
 
 `PUT` verifies the uploaded bytes hash to `<sha256>` (the R2 key) before
-storing, then upserts the manifest row. `DELETE` needs `confirm=1`.
+storing, then upserts the manifest row. There is no `DELETE` route.
 
 ## Connecting clients
 
@@ -288,13 +289,11 @@ are locked), send `Authorization: Bearer <token>`.
   `PUBLIC_READ` is on.
 
 The same token model applies to every client — access is decided at the
-Worker, not per-agent, so any MCP-capable model or agent gets identical CRUD
-with its own scoped token.
+Worker, not per-agent, so any MCP-capable model or agent gets the same
+create/read/update access with its own scoped token.
 
 ## Not yet done
 
-- `ALERT_WEBHOOK` secret (optional — without it, the scheduled digests go to
-  the Worker logs instead of posting anywhere).
 - `CLOUDFLARE_API_TOKEN` repo secret (required for `cloudflare-deploy.yml`).
 - `RESEED_SECRET` repo secret + matching Worker secret (required for
   `d1-reseed.yml` / `POST /admin/reseed`).

@@ -75,7 +75,7 @@ describe("mcp write gate", () => {
   it("challenges an anonymous write with HTTP 401 + WWW-Authenticate", async () => {
     const { DB } = d1Stub();
     const env = { DB, API_KEYS: await keys("secret", "rw") };
-    const res = await handleMcp(post(call("deleteClock", { matter_number: 27, title: "x" })), env);
+    const res = await handleMcp(post(call("addClock", { matter_number: 27, title: "x" })), env);
     expect(res.status).toBe(401);
     const wah = res.headers.get("www-authenticate");
     expect(wah).toBe('Bearer resource_metadata="https://x/.well-known/oauth-protected-resource"');
@@ -227,5 +227,27 @@ describe("mcp uploadDocument", () => {
     }
     expect(puts).toHaveLength(0);
     expect(runs.some((r) => /INSERT INTO documents/.test(r.sql))).toBe(false);
+  });
+});
+
+describe("mcp exposes no delete tools", () => {
+  it("lists no delete* tool even to an rw token", async () => {
+    const { DB } = d1Stub();
+    const env = { DB, API_KEYS: await keys("secret", "rw") };
+    const res = await handleMcp(post({ jsonrpc: "2.0", id: 1, method: "tools/list", params: {} }, "secret"), env);
+    const names = (await res.json()).result.tools.map((t) => t.name);
+    expect(names).toContain("uploadDocument");
+    expect(names.filter((n) => /^delete/i.test(n))).toEqual([]);
+  });
+
+  it.each(["deleteDocument", "deleteMatter", "deleteClock"])("rejects %s as an unknown tool", async (name) => {
+    const { DB } = d1Stub();
+    const env = { DB, API_KEYS: await keys("secret", "rw") };
+    const res = await handleMcp(
+      post(call(name, { sha256: "a".repeat(64), n: 27, matter_number: 27, title: "x", confirm: true }), "secret"),
+      env,
+    );
+    const j = await res.json();
+    expect(j.error?.message ?? j.result?.content?.[0]?.text ?? "").toMatch(/unknown tool/);
   });
 });

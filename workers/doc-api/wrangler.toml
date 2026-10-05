@@ -4,6 +4,9 @@
 name = "litigation-doc-api"
 main = "src/index.mjs"
 compatibility_date = "2026-09-17"
+# PUBLIC_READ and similar are set on the live Worker, not in this file.
+# Keep them across deploys instead of letting this file wipe them.
+keep_vars = true
 
 [[r2_buckets]]
 binding = "DOCS"
@@ -12,13 +15,11 @@ bucket_name = "litigation-documents"
 [[d1_databases]]
 binding = "DB"
 database_name = "litigation-portfolio"
-# Fill in after: wrangler d1 create litigation-portfolio
-database_id = "REPLACE_WITH_D1_DATABASE_ID"
+# The live database (created 2026-09-17). An id, not a credential. A
+# placeholder here would detach D1 from the Worker on the next deploy.
+database_id = "5e920ba3-722d-448d-93ca-304c1e31bee9"
 
-[triggers]
-# UTC approximations of America/Los_Angeles wall-clock times.
-# 08:08 PT daily fuse digest  -> 15:08 UTC in PDT (16:08 UTC in PST)
-# 07:08 PT Monday roll call   -> 14:08 UTC in PDT (15:08 UTC in PST)
-# The scheduled handler also double-checks the weekday, so a one-hour
-# seasonal shift only moves the fire time, never the digest type.
-crons = ["8 15 * * *", "8 14 * * 1"]
+# No cron triggers. The daily deadline digest moved to the portfolio-gate
+# Worker (workers/portfolio-gate/src/digest.mjs), which reads clocks.json on
+# main. The old digest here read one next_clock per matter from this D1
+# projection, which drifts between manual reseeds.
