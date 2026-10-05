@@ -1,6 +1,4 @@
 import { CHECK_NAME, DEFAULT_TIMEOUT_MS } from "./constants.mjs";
-import { createGitHubClient, getInstallationToken } from "./github.mjs";
-import { executeGateJob } from "./orchestrate.mjs";
 import { decideWebhookAction } from "./policy.mjs";
 import { verifyGitHubSignature } from "./webhook.mjs";
 
@@ -38,10 +36,9 @@ export function healthBody(env) {
  * @param {string|null} args.signatureHeader
  * @param {string|null} args.eventName
  * @param {object} args.env
- * @param {{ waitUntil: (p: Promise<unknown>) => void }} args.ctx
- * @param {(sha: string) => { runJob: Function, cancel?: Function }} [args.getRunner]
+ * @param {(job: object) => Promise<unknown>} args.enqueue  hands the job to the GateOrchestrator Durable Object
  */
-export async function handleWebhook({ rawBody, signatureHeader, eventName, env, ctx, getRunner }) {
+export async function handleWebhook({ rawBody, signatureHeader, eventName, env, enqueue }) {
   const verified = await verifyGitHubSignature(rawBody, signatureHeader, env.GITHUB_WEBHOOK_SECRET);
   if (!verified) {
     return json({ ok: false, error: "invalid signature" }, 401);
@@ -66,27 +63,18 @@ export async function handleWebhook({ rawBody, signatureHeader, eventName, env, 
 
   const job = decision.job;
   job.timeoutMs = timeoutMs(env);
+  if (decision.action === "fail") job.refusal = decision.reason || "refused before start";
 
-  const kick = async () => {
-    const installationId = job.installationId || env.GITHUB_APP_INSTALLATION_ID;
-    const token = await getInstallationToken(env, installationId);
-    job.installationToken = token;
-    const github = createGitHubClient({ token, repo: allowedRepo });
-    return executeGateJob({
-      job,
-      github,
-      timeoutMs: job.timeoutMs,
-      skipRunner: decision.action === "fail",
-      skipReason: decision.reason,
-      getRunner,
-    });
-  };
-
-  ctx.waitUntil(
-    kick().catch((err) => {
-      console.log(`portfolio-gate job failed: ${String(err?.message || err).slice(0, 240)}`);
-    }),
-  );
+  // Queue only. Running the gate here under ctx.waitUntil() is cancelled 30s
+  // after this response, which is what left Check Runs stuck in_progress.
+  // No Check Run exists yet if queueing fails, so the required check stays
+  // missing and merge stays blocked (fail-closed).
+  try {
+    await enqueue(job);
+  } catch (err) {
+    console.log(`portfolio-gate enqueue failed: ${String(err?.message || err).slice(0, 240)}`);
+    return json({ ok: false, error: "enqueue failed", sha: job.sha }, 500);
+  }
 
   return json(
     {

@@ -57,9 +57,25 @@ auth failures do not create a Check Run — they still cannot conclude success.
 
 ## Timeout (fail-closed)
 
-Default **`GATE_TIMEOUT_MS=1500000` (25 minutes)**, set in `wrangler.toml`.
+Default **`GATE_TIMEOUT_MS=720000` (12 minutes)**, set in `wrangler.toml`.
 If the Container does not return a result in that window, the Worker
 concludes the Check Run as **`failure`**.
+
+Where the run executes matters. The webhook only **queues** the job on the
+`GateOrchestrator` Durable Object (one per head SHA) and answers 202; the
+DO's **alarm** runs it. Do not move the run back into the webhook's
+`ctx.waitUntil()`: Cloudflare cancels that work 30 seconds after the response
+([Workers limits](https://developers.cloudflare.com/workers/platform/limits/)),
+which killed every full run until Oct. 2026 and left Check Runs
+`in_progress` forever (#958, #962) while the orphaned containers filled the
+`max_instances` slots (#961: "Maximum number of running container instances
+exceeded"). Alarms get 15 minutes, so the timeout stays under that. After
+each run the container is stopped to free its slot.
+
+**Stale sweep.** Every 30 minutes a cron concludes as `failure` any
+`portfolio-gate` check on an open PR to `main` still `in_progress` more than
+timeout + 5 minutes after it started (runner lost without reporting). Use
+"Re-run" on the check to try again.
 
 Cloudflare does not document a hard max instance runtime; the Container class
 `sleepAfter` is **40 minutes** here so idle-sleep cannot beat the gate
@@ -209,12 +225,15 @@ without Docker.
 
 | Path | Role |
 |---|---|
-| `src/index.mjs` | Worker `fetch` + exported `GateRunner` class |
-| `src/handler.mjs` | Signature check, routing, `waitUntil` kick-off |
+| `src/index.mjs` | Worker `fetch` + `scheduled` (sweep, digest); exports `GateRunner`, `GateOrchestrator` |
+| `src/handler.mjs` | Signature check, routing, queue the job |
+| `src/orchestrator.mjs` | `GateOrchestrator` DO: queue + alarm runs the job |
 | `src/policy.mjs` | Main-only / rerequest / fork policy |
 | `src/webhook.mjs` | `X-Hub-Signature-256` |
 | `src/github.mjs` | App JWT + Checks API |
-| `src/orchestrate.mjs` | Pending check → runner → success/failure |
+| `src/orchestrate.mjs` | Pending check → runner → success/failure; queue/drain; stop container |
+| `src/sweep.mjs` | Fail checks left `in_progress` past the timeout |
+| `src/digest.mjs` | Daily deadline digest from `main`'s `clocks.json` |
 | `src/runner.mjs` | `@cloudflare/containers` `Container` subclass |
 | `src/check.mjs` | Locked name, truncated log, fail-closed conclusion |
 | `container/server.mjs` | HTTP server on 8080 inside the image |
@@ -222,10 +241,31 @@ without Docker.
 | `Dockerfile` | Node 22.22.0-bookworm + python3 + git |
 | `wrangler.toml` | containers + DO + sqlite migration |
 
+## Daily deadline digest
+
+The `8 15 * * *` cron (08:08 PDT / 07:08 PST) reads **every**
+`internal/src/data/matters/NN/clocks.json` at the head of `main` through the
+GitHub App and POSTs JSON (with a phone-readable `text` field) to the
+`ALERT_WEBHOOK` secret. Without that secret it only reaches Worker logs.
+
+- **Needs disposition**: `open` / `set` clocks whose date has passed.
+- **Next 14 days**: every live clock (`open`, `set`, `contingent`), any
+  actor, any matter lifecycle. Several per matter are listed.
+- **Mondays**: a 15–60 day horizon (statute-of-limitations backstops on
+  dismissed matters included).
+- Every message names the `main` commit it read. `private: true` clock
+  titles are masked.
+- If `main` cannot be read, a "DIGEST FAILED — deadlines were NOT checked"
+  message is sent instead. A quiet day still sends a message.
+
+This replaces the doc-api digest, which read one `next_clock` per matter
+from the D1 publish projection (stale between manual reseeds, and blind to
+non-court-facing clocks).
+
 ## Out of scope
 
 - Creating the GitHub App for you
-- Turning on branch protection for you
+- Turning on branch protection for you (see the operator steps in the PR that added the alarm runner)
 - Re-adding Actions
 - Public-strip / cluster / clock edits
 - Auto-reseed

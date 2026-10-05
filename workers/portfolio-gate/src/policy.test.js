@@ -110,16 +110,78 @@ describe("handleWebhook — PR not targeting main is a no-op", () => {
     );
     const sig = await crypto.subtle.sign("HMAC", key, new TextEncoder().encode(body));
     const hex = [...new Uint8Array(sig)].map((b) => b.toString(16).padStart(2, "0")).join("");
-    const waited = [];
+    const queued = [];
     const res = await handleWebhook({
       rawBody: body,
       signatureHeader: `sha256=${hex}`,
       eventName: "pull_request",
       env: { GITHUB_WEBHOOK_SECRET: secret, GITHUB_REPO: REPO },
-      ctx: { waitUntil: (p) => waited.push(p) },
+      enqueue: async (j) => { queued.push(j); },
     });
     expect(res.status).toBe(200);
-    expect(waited).toEqual([]);
+    expect(queued).toEqual([]);
     expect(await res.json()).toMatchObject({ ok: true, ignored: true });
+  });
+});
+
+async function signed(body, secret) {
+  const key = await crypto.subtle.importKey(
+    "raw",
+    new TextEncoder().encode(secret),
+    { name: "HMAC", hash: "SHA-256" },
+    false,
+    ["sign"],
+  );
+  const sig = await crypto.subtle.sign("HMAC", key, new TextEncoder().encode(body));
+  return `sha256=${[...new Uint8Array(sig)].map((b) => b.toString(16).padStart(2, "0")).join("")}`;
+}
+
+describe("handleWebhook — queues instead of running under waitUntil", () => {
+  it("queues a PR to main with the timeout and answers 202", async () => {
+    const body = JSON.stringify(prPayload());
+    const queued = [];
+    const res = await handleWebhook({
+      rawBody: body,
+      signatureHeader: await signed(body, "s"),
+      eventName: "pull_request",
+      env: { GITHUB_WEBHOOK_SECRET: "s", GITHUB_REPO: REPO, GATE_TIMEOUT_MS: "720000" },
+      enqueue: async (j) => {
+        queued.push(j);
+      },
+    });
+    expect(res.status).toBe(202);
+    expect(queued).toHaveLength(1);
+    expect(queued[0]).toMatchObject({ sha: SHA, timeoutMs: 720000 });
+    expect(queued[0].refusal).toBeUndefined();
+  });
+
+  it("queues a fork PR as a refusal so it still gets a failing check", async () => {
+    const body = JSON.stringify(prPayload({ headRepo: "someone/fork" }));
+    const queued = [];
+    const res = await handleWebhook({
+      rawBody: body,
+      signatureHeader: await signed(body, "s"),
+      eventName: "pull_request",
+      env: { GITHUB_WEBHOOK_SECRET: "s", GITHUB_REPO: REPO },
+      enqueue: async (j) => {
+        queued.push(j);
+      },
+    });
+    expect(res.status).toBe(202);
+    expect(queued[0].refusal).toBeTruthy();
+  });
+
+  it("answers 500 when the job cannot be queued", async () => {
+    const body = JSON.stringify(prPayload());
+    const res = await handleWebhook({
+      rawBody: body,
+      signatureHeader: await signed(body, "s"),
+      eventName: "pull_request",
+      env: { GITHUB_WEBHOOK_SECRET: "s", GITHUB_REPO: REPO },
+      enqueue: async () => {
+        throw new Error("durable object unavailable");
+      },
+    });
+    expect(res.status).toBe(500);
   });
 });

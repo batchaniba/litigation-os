@@ -18,9 +18,27 @@ instance_type = "standard-2"
 name = "GATE_RUNNER"
 class_name = "GateRunner"
 
+# Queues each gate job and runs it from an alarm (15-minute wall limit).
+# The webhook's ctx.waitUntil() is cancelled 30s after the response, which
+# killed every full run and left Check Runs in_progress forever.
+[[durable_objects.bindings]]
+name = "GATE_ORCHESTRATOR"
+class_name = "GateOrchestrator"
+
 [[migrations]]
 tag = "v1"
 new_sqlite_classes = [ "GateRunner" ]
+
+[[migrations]]
+tag = "v2"
+new_sqlite_classes = [ "GateOrchestrator" ]
+
+# Times are UTC. Keep the sweep string identical to SWEEP_CRON in src/index.mjs.
+#   */30 * * * *  fail portfolio-gate checks left in_progress past the timeout
+#   8 15 * * *    deadline digest from main's clocks.json, 08:08 PDT / 07:08 PST
+#                 (Mondays add the 60-day horizon). Replaces the doc-api D1 digest.
+[triggers]
+crons = ["*/30 * * * *", "8 15 * * *"]
 
 [observability]
 enabled = true
@@ -29,10 +47,13 @@ enabled = true
 #   wrangler secret put GITHUB_APP_ID
 #   wrangler secret put GITHUB_APP_PRIVATE_KEY
 #   wrangler secret put GITHUB_WEBHOOK_SECRET
-#   wrangler secret put GITHUB_APP_INSTALLATION_ID   # optional if every webhook includes installation.id
+#   wrangler secret put GITHUB_APP_INSTALLATION_ID   # optional; crons look it up from the App if unset
+#   wrangler secret put ALERT_WEBHOOK                # where the daily digest is POSTed (JSON with a `text` field)
 [vars]
 GITHUB_REPO = "newanforbi/interactive-litigation-portfolio"
 # Locked Check Run name — branch protection requires this exact string.
 CHECK_NAME = "portfolio-gate"
-# Fail-closed wall clock (25 minutes). No result → Check Run conclusion `failure`.
-GATE_TIMEOUT_MS = "1500000"
+# Fail-closed wall clock (12 minutes). No result → Check Run conclusion `failure`.
+# Must stay under the 15-minute Durable Object alarm limit so the failure is
+# reported from inside the alarm; the stale sweep covers anything past that.
+GATE_TIMEOUT_MS = "720000"

@@ -6,8 +6,8 @@ export const CHECK_NAME = "portfolio-gate";
 export const ALLOWED_REPO = "newanforbi/interactive-litigation-portfolio";
 export const WORKER_NAME = "ilp-portfolio-gate";
 
-/** Fail-closed wall clock. If the container does not return, the Check Run is failure (not neutral). */
-export const DEFAULT_TIMEOUT_MS = 25 * 60 * 1000;
+/** Fail-closed wall clock, under the 15-minute Durable Object alarm limit. No result → failure (not neutral). */
+export const DEFAULT_TIMEOUT_MS = 12 * 60 * 1000;
 
 /** GitHub Check Run output.text is capped at 65535 characters. */
 export const CHECK_LOG_MAX_CHARS = 60_000;

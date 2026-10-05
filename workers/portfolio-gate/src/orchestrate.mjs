@@ -1,5 +1,6 @@
 import { buildCheckOutput, failClosedConclusion } from "./check.mjs";
 import { CHECK_NAME, DEFAULT_TIMEOUT_MS } from "./constants.mjs";
+import { createGitHubClient, getInstallationToken } from "./github.mjs";
 
 function timeoutError(timeoutMs) {
   const err = new Error(`No result within ${timeoutMs}ms`);
@@ -126,5 +127,62 @@ export async function executeGateJob({
       timeoutMs,
     });
     return { checkRunId: check.id, conclusion: "failure", started: true, error: reason };
+  }
+}
+
+// --- queued execution --------------------------------------------------------
+// The webhook must answer GitHub fast, and work handed to ctx.waitUntil() is
+// cancelled 30 seconds after that response. A gate run (clone, npm ci, gate)
+// takes minutes, so running it there killed every full run mid-flight and left
+// the Check Run `in_progress` forever. The webhook now only queues the job on
+// the GateOrchestrator Durable Object; its alarm (15-minute wall limit) runs
+// it. The job is dequeued before it runs, so an alarm retry never runs the
+// same webhook twice; a run that dies anyway is failed by the stale sweep.
+
+export async function queueJob(storage, job, now = Date.now()) {
+  await storage.put("job", job);
+  await storage.setAlarm(now);
+  return { queued: true, sha: job.sha };
+}
+
+export async function drainQueuedJob(storage, run) {
+  const job = await storage.get("job");
+  if (!job) return null;
+  await storage.delete("job");
+  return run(job);
+}
+
+/**
+ * Mint a token, run the gate, and always stop the container afterwards so a
+ * finished run does not hold one of the `max_instances` slots for the full
+ * `sleepAfter` window.
+ */
+export async function runGateJob({
+  job,
+  env,
+  getRunner,
+  getToken = getInstallationToken,
+  makeClient = createGitHubClient,
+}) {
+  const token = await getToken(env, job.installationId || env.GITHUB_APP_INSTALLATION_ID);
+  const github = makeClient({ token, repo: env.GITHUB_REPO });
+  const refused = Boolean(job.refusal);
+  try {
+    return await executeGateJob({
+      job: { ...job, installationToken: token },
+      github,
+      getRunner,
+      timeoutMs: job.timeoutMs,
+      skipRunner: refused,
+      skipReason: job.refusal || "",
+    });
+  } finally {
+    if (!refused) {
+      try {
+        await getRunner(job.sha).cancel("finished");
+      } catch {
+        // already stopped
+      }
+    }
   }
 }

@@ -136,11 +136,69 @@ export async function getInstallationToken(env, installationId) {
   return data.token;
 }
 
+// Cron runs have no webhook payload to carry an installation id. Use the
+// configured one, else ask GitHub which installation covers the repo.
+export async function resolveInstallationId(env) {
+  if (env.GITHUB_APP_INSTALLATION_ID) return env.GITHUB_APP_INSTALLATION_ID;
+  const jwt = await createAppJwt({
+    appId: env.GITHUB_APP_ID,
+    privateKeyPem: env.GITHUB_APP_PRIVATE_KEY,
+  });
+  const data = await githubRequest(`/repos/${env.GITHUB_REPO}/installation`, { token: jwt });
+  if (!data?.id) throw new Error(`no GitHub App installation found for ${env.GITHUB_REPO}`);
+  return data.id;
+}
+
+export function decodeBase64Utf8(b64) {
+  const bin = atob(String(b64 || "").replace(/\s+/g, ""));
+  return new TextDecoder().decode(Uint8Array.from(bin, (c) => c.charCodeAt(0)));
+}
+
 export function createGitHubClient({ token, repo }) {
   const [owner, name] = String(repo).split("/");
   if (!owner || !name) throw new Error("GITHUB_REPO must be owner/name");
 
   return {
+    async getBranchHead(branch) {
+      const data = await githubRequest(`/repos/${owner}/${name}/commits/${encodeURIComponent(branch)}`, {
+        token,
+      });
+      if (!data?.sha) throw new Error(`could not resolve ${branch}`);
+      return { sha: data.sha, committedAt: data.commit?.committer?.date ?? null };
+    },
+
+    async getTree(sha) {
+      const data = await githubRequest(`/repos/${owner}/${name}/git/trees/${sha}?recursive=1`, { token });
+      if (data?.truncated) throw new Error(`tree for ${sha.slice(0, 12)} is truncated`);
+      return Array.isArray(data?.tree) ? data.tree.filter((e) => e.type === "blob") : [];
+    },
+
+    async getFileText(path, ref) {
+      const encoded = path.split("/").map(encodeURIComponent).join("/");
+      const data = await githubRequest(
+        `/repos/${owner}/${name}/contents/${encoded}?ref=${encodeURIComponent(ref)}`,
+        { token },
+      );
+      if (data?.encoding !== "base64" || typeof data?.content !== "string")
+        throw new Error(`${path}: unexpected contents response`);
+      return decodeBase64Utf8(data.content);
+    },
+
+    async listOpenPulls() {
+      const data = await githubRequest(`/repos/${owner}/${name}/pulls?state=open&base=main&per_page=100`, {
+        token,
+      });
+      return Array.isArray(data) ? data : [];
+    },
+
+    async listCheckRuns(sha) {
+      const data = await githubRequest(
+        `/repos/${owner}/${name}/commits/${sha}/check-runs?check_name=${encodeURIComponent(CHECK_NAME)}&per_page=20`,
+        { token },
+      );
+      return Array.isArray(data?.check_runs) ? data.check_runs : [];
+    },
+
     async createCheckRun({ sha, title, summary, status = "in_progress" }) {
       return githubRequest(`/repos/${owner}/${name}/check-runs`, {
         token,
