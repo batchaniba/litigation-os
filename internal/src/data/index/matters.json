@@ -1,6 +1,6 @@
 {
   "generated": true,
-  "today": "2026-09-25",
+  "today": "2026-10-04",
   "matters": [
     {
       "number": 1,
@@ -599,11 +599,11 @@
         "id": "19-deadline-1",
         "date": "2026-10-01",
         "kind": "deadline",
-        "status": "open",
+        "status": "overdue",
         "title": "Habeas ruling calendar (computed) — Newanforbi v. Macomber (C2604791). CRC 4.551(a)(6)(B) runs 30 days from the September 1, 2026 in-person filing of the…",
         "source_dkt": null
       },
-      "overdue": false,
+      "overdue": true,
       "last_updated": "2026-09-16",
       "files": [
         "claims.json",
@@ -917,15 +917,15 @@
       "proceeding": "federal_civil",
       "phase": "mtd_briefing",
       "next_clock": {
-        "id": "28-deadline-7",
-        "date": "2026-09-23",
+        "id": "28-deadline-adr-cert",
+        "date": "2026-10-01",
         "kind": "deadline",
         "status": "overdue",
-        "title": "WATCH — Opposition paper arrives at N.D. Cal. courthouse. Confirm clerk stamp / ECF docket entry before treating as filed. Do not treat as filed on the strength of transit alone.",
-        "source_dkt": 15
+        "title": "FILE ADR Certification by Parties and Counsel (ADR L.R. 3-5(b)) — Newanforbi v. Shannon Smith / HOPE (3:26-cv-07504-LJC). Dkt. 4 sets Oct. 1, 2026 for the ADR Certification and Rule 26(f)/ADR meet-and-confer. The meet-and-confer was scheduled for Sep. 29; the certification filing remains due Oct. 1.",
+        "source_dkt": 4
       },
       "overdue": true,
-      "last_updated": "2026-09-22",
+      "last_updated": "2026-09-29",
       "files": [
         "claims.json",
         "clocks.json",
@@ -953,17 +953,17 @@
       "same_incident": null,
       "lifecycle": "active",
       "proceeding": "federal_civil",
-      "phase": "responsive_deadline",
+      "phase": "mtd_briefing",
       "next_clock": {
-        "id": "29-deadline-4",
-        "date": "2026-09-22",
+        "id": "29-deadline-6",
+        "date": "2026-09-30",
         "kind": "deadline",
         "status": "overdue",
-        "title": "Accurate Background LLC responsive pleading deadline (extended) — Newanforbi v. Amazon.com Services, LLC et al. (Matter 29, N.D. Cal. No. 4:26-cv-09249-ASK).…",
-        "source_dkt": 7
+        "title": "28 U.S.C. §1447(c) remand window closes (computed) — Newanforbi v. Amazon.com Services, LLC et al., USDC N.D. Cal. No. 3:26-cv-09249-ASK. Thirty days from the…",
+        "source_dkt": 1
       },
       "overdue": true,
-      "last_updated": "2026-09-18",
+      "last_updated": "2026-09-28",
       "files": [
         "claims.json",
         "clocks.json",
@@ -1062,15 +1062,15 @@
       "proceeding": "federal_civil",
       "phase": "responsive_deadline",
       "next_clock": {
-        "id": "32-deadline-1",
-        "date": "2026-09-17",
+        "id": "32-deadline-melano-answer",
+        "date": "2026-09-04",
         "kind": "deadline",
         "status": "overdue",
-        "title": "FILE — signed 415.20(b) declaration + Exhibit A USPS receipt + POS in Nforbi v. Meza-Gonzalez et al. (4:26-cv-08271-ASK) after the September 17 postmark. San…",
-        "source_dkt": 16
+        "title": "OVERDUE — Jose Melano response to operative FAC. Served Aug. 14, 2026; no response on PACER as of Sep. 28, 2026. Default posture; verify docket before seeking Rule 55(a) relief.",
+        "source_dkt": null
       },
       "overdue": true,
-      "last_updated": "2026-09-19",
+      "last_updated": "2026-09-28",
       "files": [
         "claims.json",
         "clocks.json",
@@ -1090,9 +1090,9 @@
       "path": "internal/src/data/matters/33/",
       "layout": "split",
       "caption": "Nforbi v. Candelaria et al.",
-      "case_no": "3:26-cv-08272-LJC",
+      "case_no": "3:26-cv-08272-RFL",
       "court": "USDC N.D. Cal. (San Francisco Div.)",
-      "judge": "Hon. Lisa J. Cisneros (Magistrate Judge)",
+      "judge": "Hon. Rita F. Lin, U.S. District Judge (N.D. Cal.)",
       "cluster": 1,
       "related": [],
       "same_incident": null,
@@ -1100,15 +1100,15 @@
       "proceeding": "federal_civil",
       "phase": "pleadings",
       "next_clock": {
-        "id": "33-deadline-1",
-        "date": "2026-09-22",
+        "id": "33-deadline-6",
+        "date": "2026-09-30",
         "kind": "deadline",
         "status": "overdue",
-        "title": "WATCH — Defendants' consent or declination to magistrate-judge jurisdiction due in Nforbi v. Candelaria et al. (3:26-cv-08272-LJC). Set by Dkt. 12 (Sep. 8,…",
-        "source_dkt": 12
+        "title": "Plaintiff's reply due in support of Dkt. 17 motion to strike — Nforbi v. Candelaria et al. (3:26-cv-08272-RFL), Sep. 30, 2026.",
+        "source_dkt": 17
       },
       "overdue": true,
-      "last_updated": "2026-09-18",
+      "last_updated": "2026-09-28",
       "files": [
         "claims.json",
         "clocks.json",
@@ -1272,11 +1272,11 @@
         "id": "38-deadline-1",
         "date": "2026-09-26",
         "kind": "deadline",
-        "status": "open",
+        "status": "overdue",
         "title": "OUTER BOUND — CCP § 338(a) three-year statutory-liability clock on the Swift § 290.46(j) / ICRAA counts if accrual is the Sept. 26, 2023 pre-adverse email.…",
         "source_dkt": null
       },
-      "overdue": false,
+      "overdue": true,
       "last_updated": "2026-09-16",
       "files": [
         "claims.json",
@@ -1379,12 +1379,43 @@
         "id": "41-watch-1",
         "date": "2026-09-25",
         "kind": "deadline",
-        "status": "open",
+        "status": "overdue",
         "title": "WATCH — one week post-driving-eval: check for any Checkr background-check authorization/disclosure email from Nuro. None signed as of Sep. 18, 2026. The vendor step is the next event in the sequence.",
         "source_dkt": null
       },
-      "overdue": false,
+      "overdue": true,
       "last_updated": "2026-09-18",
+      "files": [
+        "claims.json",
+        "clocks.json",
+        "counsel.json",
+        "damages.json",
+        "docket.json",
+        "documents.json",
+        "events.jsonl",
+        "evidence.json",
+        "matter.json",
+        "parties.json",
+        "prose.json"
+      ]
+    },
+    {
+      "number": 42,
+      "path": "internal/src/data/matters/42/",
+      "layout": "split",
+      "caption": "Nforbi v. Staples Retail et al.",
+      "case_no": "TBD",
+      "court": "TBD (pre-dispute — onboarding Sep. 29–30, 2026)",
+      "judge": "TBD",
+      "cluster": 3,
+      "related": [],
+      "same_incident": null,
+      "lifecycle": "pre_filing",
+      "proceeding": "state_civil",
+      "phase": "pre_filing",
+      "next_clock": null,
+      "overdue": false,
+      "last_updated": null,
       "files": [
         "claims.json",
         "clocks.json",
