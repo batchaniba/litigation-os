@@ -1,5 +1,6 @@
 import { describe, expect, it } from "vitest";
 import {
+  addClock,
   patchMatter,
   putDocBytes,
   upsertDocumentRow,
@@ -63,7 +64,7 @@ const SHA_A = "a".repeat(64);
 describe("writes: matters", () => {
   it("upsertMatter INSERTs with ON CONFLICT and binds the number first", async () => {
     const { DB, runs } = d1Stub();
-    const out = await upsertMatter({ DB }, { number: 27, status_label: "x", lifecycle: "active" });
+    const out = await upsertMatter({ DB, ALLOW_DIRECT_D1_WRITES: "true" }, { number: 27, status_label: "x", lifecycle: "active" });
     expect(out.number).toBe(27);
     expect(runs).toHaveLength(1);
     expect(runs[0].sql).toMatch(/INSERT INTO matters/);
@@ -73,23 +74,23 @@ describe("writes: matters", () => {
 
   it("upsertMatter rejects an unknown field", async () => {
     const { DB } = d1Stub();
-    await expect(upsertMatter({ DB }, { number: 1, bogus: 1 })).rejects.toMatchObject({ status: 400 });
+    await expect(upsertMatter({ DB, ALLOW_DIRECT_D1_WRITES: "true" }, { number: 1, bogus: 1 })).rejects.toMatchObject({ status: 400 });
   });
 
   it("upsertMatter rejects a bad lifecycle and bad date", async () => {
     const { DB } = d1Stub();
-    await expect(upsertMatter({ DB }, { number: 1, lifecycle: "zzz" })).rejects.toMatchObject({ status: 400 });
-    await expect(upsertMatter({ DB }, { number: 1, next_clock_date: "2026/01/01" })).rejects.toMatchObject({ status: 400 });
+    await expect(upsertMatter({ DB, ALLOW_DIRECT_D1_WRITES: "true" }, { number: 1, lifecycle: "zzz" })).rejects.toMatchObject({ status: 400 });
+    await expect(upsertMatter({ DB, ALLOW_DIRECT_D1_WRITES: "true" }, { number: 1, next_clock_date: "2026/01/01" })).rejects.toMatchObject({ status: 400 });
   });
 
   it("patchMatter 404s when the matter is unknown", async () => {
     const { DB } = d1Stub(() => null); // SELECT returns nothing
-    await expect(patchMatter({ DB }, 99, { status_label: "y" })).rejects.toMatchObject({ status: 404 });
+    await expect(patchMatter({ DB, ALLOW_DIRECT_D1_WRITES: "true" }, 99, { status_label: "y" })).rejects.toMatchObject({ status: 404 });
   });
 
   it("patchMatter updates only the provided columns", async () => {
     const { DB, runs } = d1Stub((sql) => (/WHERE number = \?/.test(sql) ? { number: 27 } : null));
-    const out = await patchMatter({ DB }, 27, { status_label: "$25k final demand" });
+    const out = await patchMatter({ DB, ALLOW_DIRECT_D1_WRITES: "true" }, 27, { status_label: "$25k final demand" });
     expect(out).toMatchObject({ number: 27, updated: ["status_label"] });
     const update = runs.find((r) => /UPDATE matters SET/.test(r.sql));
     expect(update.sql).toMatch(/status_label = \?/);
@@ -98,7 +99,7 @@ describe("writes: matters", () => {
 
   it("patchMatter rejects an empty patch", async () => {
     const { DB } = d1Stub(() => ({ number: 27 }));
-    await expect(patchMatter({ DB }, 27, {})).rejects.toMatchObject({ status: 400 });
+    await expect(patchMatter({ DB, ALLOW_DIRECT_D1_WRITES: "true" }, 27, {})).rejects.toMatchObject({ status: 400 });
   });
 });
 
@@ -137,5 +138,18 @@ describe("writes: documents", () => {
   it("putDocBytes rejects an empty body", async () => {
     const { DOCS } = r2Stub();
     await expect(putDocBytes({ DOCS }, SHA_A, new Uint8Array(0), { verify: false })).rejects.toMatchObject({ status: 400 });
+  });
+});
+
+describe("writes: D1 matter/clock writers are off by default", () => {
+  it.each([
+    ["upsertMatter", (env) => upsertMatter(env, { number: 27, status_label: "x" })],
+    ["patchMatter", (env) => patchMatter(env, 27, { status_label: "x" })],
+    ["addClock", (env) => addClock(env, { matter_number: 27, title: "x", date: "2026-10-13" })],
+  ])("%s refuses with 403 and writes nothing", async (_name, call) => {
+    const { DB, runs } = d1Stub(() => ({ number: 27 }));
+    await expect(call({ DB })).rejects.toMatchObject({ status: 403, body: { error: "d1_writes_disabled" } });
+    await expect(call({ DB, ALLOW_DIRECT_D1_WRITES: "1" })).rejects.toMatchObject({ status: 403 });
+    expect(runs).toEqual([]);
   });
 });

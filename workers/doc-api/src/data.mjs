@@ -1,5 +1,7 @@
 import { documentsKeyFromUrl, sha256ForPath } from "./documents.mjs";
 import { CLOSED_CLOCK_SQL, isClosedClockStatus } from "../../../internal/scripts/lib/clock-status.mjs";
+import { todayKey } from "../../../internal/scripts/lib/next-actions.mjs";
+import { nextFromClocks } from "../../../internal/scripts/lib/upcoming-from-clocks.mjs";
 
 // Shared data layer for the litigation-doc-api Worker: R2 + D1 access and
 // the portfolio query operations. Used by the REST routes (index.mjs) and
@@ -28,7 +30,9 @@ export const keyForSha256Text = (sha) => {
   const c = String(sha ?? "").toLowerCase();
   return `text/${c.slice(0, 2)}/${c.slice(2)}.txt`;
 };
-export const utcToday = () => new Date().toISOString().slice(0, 10);
+// Court deadlines are California dates. UTC flipped "today" to tomorrow at
+// 5 pm Pacific, so evening overdue flags were a day early.
+export const portfolioToday = () => todayKey();
 export const addDays = (key, n) => {
   const d = new Date(`${key}T12:00:00Z`);
   d.setUTCDate(d.getUTCDate() + n);
@@ -128,30 +132,78 @@ function needDb(rows) {
   return rows;
 }
 
-const slimClock = (today, r) => ({
-  number: r.number,
-  caption: r.caption,
-  lifecycle: r.lifecycle,
-  overdue: !!r.next_clock_date && r.next_clock_date < today,
-  date: r.next_clock_date ?? null,
-  kind: null,
-  title: r.next_clock_title ?? null,
-});
+// Every matter's next clock, computed from the clocks table with the repo's
+// own nextFromClocks() — the same rule index/matters.json uses. The stored
+// matters.next_clock_* columns are not read: they are a denormalized copy
+// that went stale between reseeds and that write tools could edit.
+async function nextClocksByMatter(env, today) {
+  let rows;
+  try {
+    rows = await dbAll(env, `SELECT matter_number, title, date, kind, status FROM clocks`);
+  } catch (e) {
+    if (!noStatusColumn(e)) throw e;
+    rows = await dbAll(env, `SELECT matter_number, title, date, kind FROM clocks`);
+  }
+  const byMatter = new Map();
+  for (const r of rows ?? []) {
+    const list = byMatter.get(r.matter_number) ?? [];
+    list.push({ title: r.title, date: r.date, kind: r.kind, status: r.status ?? "open" });
+    byMatter.set(r.matter_number, list);
+  }
+  const next = new Map();
+  for (const [n, list] of byMatter) next.set(n, nextFromClocks(list, today));
+  return next;
+}
 
-const slimMatter = (today, r) => ({
-  number: r.number,
-  caption: r.caption,
-  case_no: r.case_no,
-  court: r.court,
-  phase: r.phase,
-  lifecycle: r.lifecycle,
-  status_label: r.status_label,
-  judge: r.judge,
-  overdue: r.lifecycle === "active" && !!r.next_clock_date && r.next_clock_date < today,
-  next_clock: r.next_clock_date
-    ? { date: r.next_clock_date, title: r.next_clock_title }
-    : null,
-});
+const slimClock = (today, r, next) => {
+  const nc = next?.next_clock ?? null;
+  return {
+    number: r.number,
+    caption: r.caption,
+    lifecycle: r.lifecycle,
+    overdue: Boolean(next?.overdue),
+    date: nc?.date ?? null,
+    kind: nc?.kind ?? null,
+    title: nc?.title ?? null,
+  };
+};
+
+const slimMatter = (today, r, next) => {
+  const nc = next?.next_clock ?? null;
+  return {
+    number: r.number,
+    caption: r.caption,
+    case_no: r.case_no,
+    court: r.court,
+    phase: r.phase,
+    lifecycle: r.lifecycle,
+    status_label: r.status_label,
+    judge: r.judge,
+    overdue: r.lifecycle === "active" && Boolean(next?.overdue),
+    next_clock: nc?.date ? { date: nc.date, title: nc.title } : null,
+  };
+};
+
+// Which commit of main D1 was seeded from (written by seed.mjs into `meta`).
+// Null when the table predates this field; callers report that as unknown.
+export async function seedSource(env, now = Date.now()) {
+  let rows = null;
+  try {
+    rows = await dbAll(env, `SELECT key, value FROM meta`);
+  } catch {
+    rows = null;
+  }
+  const meta = Object.fromEntries((rows ?? []).map((r) => [r.key, r.value]));
+  if (!meta.source_commit) return { source_commit: null, seeded_at: null, age_days: null, stale: true };
+  const age = meta.seeded_at ? Math.floor((now - Date.parse(meta.seeded_at)) / 86_400_000) : null;
+  return {
+    source_commit: meta.source_commit,
+    seeded_at: meta.seeded_at ?? null,
+    age_days: age,
+    // A reseed per merge is the goal; past a day the projection is suspect.
+    stale: age == null || age >= 1,
+  };
+}
 
 // Mirrors `npm run q listMatters`.
 export async function listMattersData(env) {
@@ -159,29 +211,46 @@ export async function listMattersData(env) {
     await dbAll(
       env,
       `SELECT number, caption, case_no, court, phase, lifecycle, status_label,
-              judge, next_clock_title, next_clock_date
+              judge
        FROM matters ORDER BY number`,
     ),
   );
-  const today = utcToday();
-  return rows.map((r) => slimMatter(today, r));
+  const today = portfolioToday();
+  const next = await nextClocksByMatter(env, today);
+  return rows.map((r) => slimMatter(today, r, next.get(r.number)));
 }
 
 // Mirrors getMatter: identity + clocks + document manifest rows.
 // Throws 404 when the matter number is unknown.
-export async function getMatterData(env, n) {
+// --- public vs. authenticated document visibility -----------------------------
+// The open (no-token) surface is meant to expose only the filing-safe publish
+// projection. That set is `documents_by_path`, which only the seed writes.
+// `documents` also holds rows that write tools registered (assistant uploads),
+// which are not reviewed for publication. Callers without a valid token see
+// the projection only; anything else is a plain 404, so its existence is not
+// revealed. Token holders (r or rw) see everything.
+export const docsTable = (publicOnly) => (publicOnly ? "documents_by_path" : "documents");
+
+export async function assertDocVisible(env, sha, publicOnly) {
+  if (!publicOnly) return;
+  const clean = String(sha ?? "").toLowerCase();
+  const rows = await dbAll(env, `SELECT 1 AS ok FROM documents_by_path WHERE sha256 = ? LIMIT 1`, [clean]);
+  if (!rows?.length) throw new HttpError(404, { error: "not_found", sha256: clean });
+}
+
+export async function getMatterData(env, n, { publicOnly = false } = {}) {
   const rows = needDb(
     await dbAll(
       env,
       `SELECT number, caption, case_no, court, phase, lifecycle, status_label,
-              judge, next_clock_title, next_clock_date
+              judge
        FROM matters WHERE number = ?`,
       [n],
     ),
   );
   if (!rows.length) throw new HttpError(404, { error: "not_found", matter: n });
   const r = rows[0];
-  const today = utcToday();
+  const today = portfolioToday();
   let clocks;
   try {
     clocks =
@@ -202,11 +271,11 @@ export async function getMatterData(env, n) {
   const documents =
     (await dbAll(
       env,
-      `SELECT sha256, path, size FROM documents WHERE matter_number = ? ORDER BY path`,
+      `SELECT sha256, path, size FROM ${docsTable(publicOnly)} WHERE matter_number = ? ORDER BY path`,
       [n],
     )) ?? [];
   return {
-    ...slimMatter(today, r),
+    ...slimMatter(today, r, nextFromClocks(clocks.map((c) => ({ ...c, status: c.status ?? "open" })), today)),
     clocks: clocks.map((c) => ({
       title: c.title,
       date: c.date,
@@ -223,7 +292,7 @@ export async function getMatterData(env, n) {
 // 1..90), oldest first, including overdue ones.
 export async function upcomingData(env, days) {
   const window = parseDays(days);
-  const today = utcToday();
+  const today = portfolioToday();
   const horizon = addDays(today, window);
   let rows;
   try {
@@ -293,15 +362,16 @@ export async function sha256ForDocumentPath(env, pathname) {
 // next_clock, exactly like the REST /fuse route.
 export async function fuseData(env, days) {
   const window = parseDays(days);
-  const today = utcToday();
+  const today = portfolioToday();
   const horizon = addDays(today, window);
   const rows = needDb(
     await dbAll(
       env,
-      `SELECT number, caption, lifecycle, next_clock_title, next_clock_date FROM matters`,
+      `SELECT number, caption, lifecycle FROM matters`,
     ),
   );
-  const slim = rows.map((r) => slimClock(today, r));
+  const next = await nextClocksByMatter(env, today);
+  const slim = rows.map((r) => slimClock(today, r, next.get(r.number)));
   const fuseRows = slim
     .filter((m) => m.lifecycle === "active" && m.date && (m.overdue || m.date <= horizon))
     .sort((a, b) => a.date.localeCompare(b.date) || a.number - b.number);
@@ -314,7 +384,7 @@ export async function fuseData(env, days) {
   const parked = slim
     .filter((m) => m.lifecycle === "pre_filing")
     .sort((a, b) => a.number - b.number);
-  return { generated: today, today, horizon, fuse: fuseRows, wait, parked };
+  return { generated: today, today, horizon, source: await seedSource(env), fuse: fuseRows, wait, parked };
 }
 
 // Escape LIKE metacharacters so the query is a literal substring match.
@@ -323,7 +393,7 @@ const escapeLike = (s) => String(s).replace(/[\\%_]/g, (c) => `\\${c}`);
 // Substring search over document manifest paths and matter captions.
 // D1 holds no .txt sidecar text, so this matches filenames/labels and
 // captions — the same rows getMatterData returns, ranked by path.
-export async function searchDocumentsData(env, query, limit = 20) {
+export async function searchDocumentsData(env, query, limit = 20, { publicOnly = false } = {}) {
   const q = String(query ?? "").trim();
   if (!q) throw new HttpError(400, { error: "query must be a non-empty string" });
   let n = Number(limit ?? 20);
@@ -334,7 +404,7 @@ export async function searchDocumentsData(env, query, limit = 20) {
     await dbAll(
       env,
       `SELECT d.sha256, d.matter_number, d.path, d.size, m.caption
-       FROM documents d LEFT JOIN matters m ON m.number = d.matter_number
+       FROM ${docsTable(publicOnly)} d LEFT JOIN matters m ON m.number = d.matter_number
        WHERE d.path LIKE ? ESCAPE '\\' OR m.caption LIKE ? ESCAPE '\\'
        ORDER BY d.path LIMIT ?`,
       [like, like, n],

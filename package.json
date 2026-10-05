@@ -8,6 +8,8 @@
   },
   "scripts": {
     "build": "vite build",
+    "audit:backup": "node internal/scripts/audit-backup.mjs",
+    "audit:mirror": "node internal/scripts/audit-mirror.mjs",
     "check:deadlines": "node internal/scripts/check-deadlines.mjs",
     "check:doc-kind": "node internal/scripts/check-doc-kind.mjs",
     "citations:check": "python3 internal/scripts/verify-citations.py --check",

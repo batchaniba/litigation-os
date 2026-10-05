@@ -1,6 +1,6 @@
 // Cloudflare Worker: litigation portfolio document + data API.
 //
-//   GET /health            -> { ok, bucket }
+//   GET /health            -> { ok, bucket, d1: { source_commit, seeded_at, age_days, stale } }
 //   GET  /doc/<sha256>      -> R2 PDF bytes (application/pdf, ETag passthrough)
 //   GET  /doc/<sha256>/meta -> { sha256, size, etag } from R2 HEAD
 //   GET  /documents/<path> -> path index (or D1 documents_by_path) -> PDF bytes
@@ -23,9 +23,10 @@
 //                             (Authorization: Bearer <RESEED_SECRET>)
 //
 // R2 is reached through the DOCS *binding* — this file contains no keys,
-// tokens, or secrets. D1 is optional at runtime: data routes return
-// 503 { error: "d1_not_provisioned" } when the DB binding is absent, so the
-// document routes work before D1 is ever seeded.
+// tokens, or secrets. Data routes return 503 { error: "d1_not_provisioned" }
+// when the DB binding is absent. Anonymous document reads are limited to the
+// seeded public projection (documents_by_path), so they fail closed without D1;
+// token holders can still fetch by hash.
 //
 // No delete route and no cron. Deletes are deliberately not reachable with a
 // token (connected assistants hold rw tokens); remove a document or matter
@@ -36,10 +37,12 @@ import {
   HttpError,
   fuseData,
   getDocObject,
+  assertDocVisible,
   getMatterData,
   headDocObject,
   listMattersData,
   upcomingData,
+  seedSource,
   sha256ForDocumentPath,
 } from "./data.mjs";
 import { handleMcp } from "./mcp.mjs";
@@ -102,9 +105,22 @@ async function serveDoc(env, sha, { cacheControl = HASH_CACHE, disposition } = {
   }
 }
 
-async function serveDocumentsPath(env, pathname) {
+// 404 (not 403) for a hash outside the public projection, so an anonymous
+// caller cannot probe which private documents exist.
+async function visible(env, sha, publicOnly, serve) {
+  try {
+    await assertDocVisible(env, sha, publicOnly);
+  } catch (e) {
+    if (e instanceof HttpError) return json(e.body, e.status);
+    throw e;
+  }
+  return serve();
+}
+
+async function serveDocumentsPath(env, pathname, publicOnly = false) {
   try {
     const { sha256 } = await sha256ForDocumentPath(env, pathname);
+    await assertDocVisible(env, sha256, publicOnly);
     return serveDoc(env, sha256, {
       cacheControl: PATH_CACHE,
       disposition: contentDispositionForPath(pathname),
@@ -117,7 +133,7 @@ async function serveDocumentsPath(env, pathname) {
 
 const docMeta = route(headDocObject);
 const listMatters = route(listMattersData);
-const getMatter = route((env, n) => getMatterData(env, n));
+const getMatter = route((env, n, publicOnly) => getMatterData(env, n, { publicOnly }));
 const upcoming = route((env, params) => upcomingData(env, params.get("days")));
 const fuse = route((env, params) => fuseData(env, params.get("days")));
 
@@ -138,7 +154,9 @@ async function handleReseed(request, env) {
   const statements = body
     .split("\n")
     .map((l) => l.trim())
-    .filter((l) => /^(INSERT|DELETE)\s/i.test(l));
+    // CREATE TABLE IF NOT EXISTS lets a seed add an additive table (meta)
+    // without a separate schema step; nothing here can drop or alter one.
+    .filter((l) => /^(INSERT|DELETE|CREATE TABLE IF NOT EXISTS)\s/i.test(l));
   let applied = 0;
   for (let i = 0; i < statements.length; i += 50) {
     const chunk = statements.slice(i, i + 50);
@@ -256,21 +274,27 @@ export default {
 
     if (request.method !== "GET") return json({ error: "method_not_allowed" }, 405);
 
-    if (path === "/health") return json({ ok: true, bucket: BUCKET }); // open
+    if (path === "/health")
+      return json({ ok: true, bucket: BUCKET, d1: env.DB ? await seedSource(env) : null }); // open
 
     // Every read below honors the read gate (open unless the Worker locks
     // reads down with API_KEYS + PUBLIC_READ != "true").
     if (!access.canRead) return json({ error: "unauthorized" }, 401);
 
-    if ((m = path.match(/^\/doc\/([^/]+)\/meta$/))) return docMeta(env, m[1]);
-    if ((m = path.match(/^\/doc\/([^/]+)$/))) return serveDoc(env, m[1]);
+    // Without a valid token, only the filing-safe projection is visible.
+    const publicOnly = !access.scope;
+    if ((m = path.match(/^\/doc\/([^/]+)\/meta$/)))
+      return visible(env, m[1], publicOnly, () => docMeta(env, m[1]));
+    if ((m = path.match(/^\/doc\/([^/]+)$/)))
+      return visible(env, m[1], publicOnly, () => serveDoc(env, m[1]));
     if (path.startsWith("/doc/")) return json({ error: "sha256 must be 64 hex chars" }, 400);
 
     if (path === "/documents" || path.startsWith("/documents/"))
-      return serveDocumentsPath(env, path);
+      return serveDocumentsPath(env, path, publicOnly);
 
     if (path === "/matters") return listMatters(env);
-    if ((m = path.match(/^\/matters\/(\d{1,2})$/))) return getMatter(env, Number(m[1]));
+    if ((m = path.match(/^\/matters\/(\d{1,2})$/)))
+      return getMatter(env, Number(m[1]), publicOnly);
     if (path === "/upcoming") return upcoming(env, url.searchParams);
     if (path === "/fuse") return fuse(env, url.searchParams);
 

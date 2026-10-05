@@ -101,7 +101,7 @@ describe("mcp write gate", () => {
 
   it("allows an rw token, applies the write, and records an audit row", async () => {
     const { DB, runs } = d1Stub();
-    const env = { DB, API_KEYS: await keys("secret", "rw") };
+    const env = { DB, API_KEYS: await keys("secret", "rw"), ALLOW_DIRECT_D1_WRITES: "true" };
     const res = await handleMcp(post(call("updateMatter", { n: 27, status_label: "$25k final demand" }), "secret"), env);
     const j = await res.json();
     expect(j.error).toBeUndefined();
@@ -249,5 +249,32 @@ describe("mcp exposes no delete tools", () => {
     );
     const j = await res.json();
     expect(j.error?.message ?? j.result?.content?.[0]?.text ?? "").toMatch(/unknown tool/);
+  });
+});
+
+describe("mcp hides disabled D1 matter/clock writers", () => {
+  it("does not list upsertMatter/updateMatter/addClock unless ALLOW_DIRECT_D1_WRITES is true", async () => {
+    const { DB } = d1Stub();
+    const list = async (extra) => {
+      const env = { DB, API_KEYS: await keys("secret", "rw"), ...extra };
+      const res = await handleMcp(post({ jsonrpc: "2.0", id: 1, method: "tools/list", params: {} }, "secret"), env);
+      return (await res.json()).result.tools.map((t) => t.name);
+    };
+    const off = await list({});
+    expect(off).not.toContain("upsertMatter");
+    expect(off).not.toContain("updateMatter");
+    expect(off).not.toContain("addClock");
+    expect(off).toContain("uploadDocument");
+    expect(off).toContain("registerDocument");
+    expect(await list({ ALLOW_DIRECT_D1_WRITES: "true" })).toContain("addClock");
+  });
+
+  it("refuses a direct call with d1_writes_disabled", async () => {
+    const { DB, runs } = d1Stub();
+    const env = { DB, API_KEYS: await keys("secret", "rw") };
+    const res = await handleMcp(post(call("addClock", { matter_number: 27, title: "x" }), "secret"), env);
+    const j = await res.json();
+    expect(JSON.stringify(j)).toMatch(/d1_writes_disabled/);
+    expect(runs.filter((r) => /INSERT INTO clocks/.test(r.sql))).toEqual([]);
   });
 });

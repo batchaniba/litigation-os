@@ -27,6 +27,7 @@ import {
   getDocText,
   getMatterData,
   headDocObject,
+  assertDocVisible,
   listMattersData,
   searchDocumentsData,
   upcomingData,
@@ -35,6 +36,8 @@ import { resolveAccess } from "./auth.mjs";
 import { wwwAuthenticate } from "./oauth.mjs";
 import {
   addClock,
+  DIRECT_D1_WRITE_TOOLS,
+  directD1WritesAllowed,
   patchMatter,
   putDocBytes,
   recordAudit,
@@ -124,7 +127,7 @@ const TOOLS = [
     run: async ({ n }, ctx) => {
       const num = toInt(n);
       if (!Number.isInteger(num)) throw new HttpError(400, { error: "n must be an integer matter number" });
-      const m = await getMatterData(ctx.env, num);
+      const m = await getMatterData(ctx.env, num, { publicOnly: publicOnly(ctx) });
       return { ...m, documents: withUrls(ctx, m.documents) };
     },
   },
@@ -172,7 +175,7 @@ const TOOLS = [
     run: async ({ n }, ctx) => {
       const num = toInt(n);
       if (!Number.isInteger(num)) throw new HttpError(400, { error: "n must be an integer matter number" });
-      const m = await getMatterData(ctx.env, num);
+      const m = await getMatterData(ctx.env, num, { publicOnly: publicOnly(ctx) });
       return withUrls(ctx, m.documents);
     },
   },
@@ -189,7 +192,7 @@ const TOOLS = [
       required: ["query"],
     },
     run: async ({ query, limit }, ctx) => {
-      const rows = await searchDocumentsData(ctx.env, query, limit);
+      const rows = await searchDocumentsData(ctx.env, query, limit, { publicOnly: publicOnly(ctx) });
       return withUrls(ctx, rows);
     },
   },
@@ -207,6 +210,7 @@ const TOOLS = [
     run: async ({ sha256 }, ctx) => {
       if (typeof sha256 !== "string" || !/^[0-9a-fA-F]{64}$/.test(sha256))
         throw new HttpError(400, { error: "sha256 must be 64 hex chars" });
+      await assertDocVisible(ctx.env, sha256, publicOnly(ctx));
       const meta = await headDocObject(ctx.env, sha256);
       return { ...meta, url: docUrl(ctx, meta.sha256) };
     },
@@ -227,7 +231,10 @@ const TOOLS = [
       },
       required: ["sha256"],
     },
-    run: async ({ sha256, offset, limit }, ctx) => getDocText(ctx.env, sha256, offset, limit),
+    run: async ({ sha256, offset, limit }, ctx) => {
+      await assertDocVisible(ctx.env, sha256, publicOnly(ctx));
+      return getDocText(ctx.env, sha256, offset, limit);
+    },
   },
   // --- write tools (scope "rw"; enforced in callTool, audited) --------------
   // uploadDocument carries bytes inline as base64 (capped at 20 MB decoded)
@@ -373,6 +380,11 @@ const TOOLS = [
 
 const byName = new Map(TOOLS.map((t) => [t.name, t]));
 
+// No valid token (anonymous, or an unknown token) → filing-safe projection only.
+function publicOnly(ctx) {
+  return !ctx?.access?.scope;
+}
+
 // Names of tools that mutate state. Used by handleMcp to issue an HTTP-level
 // 401 + WWW-Authenticate challenge (MCP / RFC 9728 auth discovery) when an
 // unauthenticated caller attempts a write, instead of a bare JSON-RPC error.
@@ -477,7 +489,12 @@ async function handleMessage(msg, ctx) {
     case "tools/list":
       return rpcOk(
         id,
-        { tools: TOOLS.map(({ run: _r, ...t }) => t) },
+        {
+          // Disabled D1 matter/clock writers are not advertised at all.
+          tools: TOOLS.filter(
+            (t) => !DIRECT_D1_WRITE_TOOLS.has(t.name) || directD1WritesAllowed(ctx.env),
+          ).map(({ run: _r, ...t }) => t),
+        },
       );
     case "tools/call": {
       const res = await callTool(params.name, params.arguments, ctx);
