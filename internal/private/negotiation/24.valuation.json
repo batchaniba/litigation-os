@@ -1,0 +1,207 @@
+{
+ "matter": 24,
+ "as_of": "2026-10-07",
+ "note": "Private. Proof map and valuation for settlement only. Never attach, quote, or paraphrase in anything defense counsel sees. Probabilities are working estimates (Oct. 7, 2026 review): change them here and rerun `npm run valuation -- --matter 24`.",
+ "caption": "Newanforbi v. Serrato, N.D. Cal. 3:26-cv-05953-CRB",
+ "evidence": [
+  {
+   "id": "denial-letter",
+   "label": "Apr. 20, 2026 denial letter, as quoted in Serrato's motion to dismiss",
+   "pin": "Dkt. 18 at 9:13-17 (quoting FAC 9:19-23)",
+   "quote": "Unfortunately, the [November 1, 2024] incident does not meet the standard of qualifying criminal activity identified in Section 679.10 of the California Penal Code, nor does it meet the standards of the Immigration and Nationality Act Section 101(a)(15)(U)(iii).",
+   "status": "on_record",
+   "seen_by_defense": true,
+   "reserve": false
+  },
+  {
+   "id": "mtd-knowledge",
+   "label": "Motion to dismiss on the Mar. 26, 2026 investigator letter",
+   "pin": "Dkt. 18 at 10:16-18",
+   "quote": "Defendant Serrato assigned an investigator to investigate Plaintiff's complaints in a letter dated March 26, 2026.",
+   "status": "on_record",
+   "seen_by_defense": true,
+   "reserve": false,
+   "why": "Serrato's own brief places his knowledge of the protected complaints 25 days before the denial."
+  },
+  {
+   "id": "mtd-clearly-established",
+   "label": "Motion to dismiss concedes the retaliation right is clearly established (argues generality)",
+   "pin": "Dkt. 18 at 15:8-10",
+   "quote": "while it is true that the right of Plaintiff to engage in protected speech without fear of retaliation is clearly established",
+   "status": "on_record",
+   "seen_by_defense": true,
+   "reserve": true,
+   "why_reserve": "Answers the qualified-immunity defense at mediation; not an opening-letter point."
+  },
+  {
+   "id": "mtd-fickes",
+   "label": "Motion to dismiss: Judge Fickes also denied certification",
+   "pin": "Dkt. 18 at 11:17-18",
+   "quote": "On June 18, 2026, Judge Mark Fickes of the Alameda Superior Court denied Plaintiff's request for U-visa certification via Court Order in Case No. 26CV168913.",
+   "status": "on_record",
+   "seen_by_defense": true,
+   "reserve": false,
+   "do_not_cite_in_letter": true,
+   "why": "Adverse; listed so the valuation accounts for it."
+  },
+  {
+   "id": "whitman-order",
+   "label": "Alameda 26CV191136, Aug. 29, 2026 order: writ Count 1 overruled (Matter 20)",
+   "pin": "Matter 20 events.jsonl, Aug. 31, 2026 notice of entry",
+   "status": "in_hand",
+   "reserve": true,
+   "why_reserve": "State mandate track for the I-918B; keep the federal release separate unless one agreement delivers the signed certification (memo § 4 / § 9)."
+  },
+  {
+   "id": "breyer-ruling",
+   "label": "Breyer ruling on Dkt. 18 (hearing Nov. 20, 2026)",
+   "status": "pending",
+   "why": "Decides whether Count III survives qualified immunity."
+  }
+ ],
+ "elements": [
+  {
+   "id": "protected",
+   "claim": "Count III (First Amendment retaliation)",
+   "element": "Protected petitioning: complaints and suits against CHP officers",
+   "evidence": [
+    "mtd-knowledge"
+   ],
+   "proof": "documented"
+  },
+  {
+   "id": "knowledge",
+   "claim": "Count III",
+   "element": "Serrato knew of the protected activity before the denial",
+   "evidence": [
+    "mtd-knowledge"
+   ],
+   "proof": "documented"
+  },
+  {
+   "id": "adverse",
+   "claim": "All",
+   "element": "Adverse action: the Apr. 20, 2026 denial",
+   "evidence": [
+    "denial-letter"
+   ],
+   "proof": "admitted"
+  },
+  {
+   "id": "causation",
+   "claim": "Count III",
+   "element": "Retaliatory motive was a but-for cause",
+   "evidence": [
+    "mtd-knowledge",
+    "denial-letter"
+   ],
+   "proof": "disputed",
+   "note": "Dkt. 18 calls it speculation; timing (Mar. 26 to Apr. 20) and the letter's failure to engage the evidence are the proof."
+  },
+  {
+   "id": "due-process-right",
+   "claim": "Counts I-II",
+   "element": "A protected interest in certification under Pen. Code § 679.10",
+   "evidence": [],
+   "proof": "disputed",
+   "note": "Dkt. 18 relies on Catholic Charities ('discretionary'). Weak for damages; qualified immunity likely."
+  }
+ ],
+ "defenses": [
+  {
+   "id": "qi",
+   "name": "Qualified immunity (all counts, individual capacity)",
+   "threat": "high",
+   "answered_by": [
+    "mtd-clearly-established"
+   ],
+   "open_questions": [
+    "Whether Breyer frames the retaliation right at the Perry / Umbehr level or at the U-visa level"
+   ],
+   "cuts": [
+    "distress",
+    "punitive"
+   ]
+  },
+  {
+   "id": "discretion",
+   "name": "No entitlement: certification is discretionary",
+   "threat": "high",
+   "answered_by": [],
+   "open_questions": [
+    "Whether Count I of the writ (Whitman) gives a § 679.10 duty that matters to the federal court"
+   ],
+   "cuts": [
+    "distress"
+   ]
+  },
+  {
+   "id": "fickes",
+   "name": "Another certifier (Judge Fickes) also denied",
+   "threat": "medium",
+   "answered_by": [],
+   "cuts": [
+    "distress"
+   ]
+  },
+  {
+   "id": "pro-se-fees",
+   "name": "No § 1988 fees for a pro se plaintiff (Kay v. Ehrler)",
+   "threat": "low",
+   "answered_by": [],
+   "cuts": []
+  }
+ ],
+ "damages": [
+  {
+   "id": "distress",
+   "label": "Emotional and dignitary harm from the retaliatory denial",
+   "amount": 50000,
+   "evidence": [
+    "denial-letter",
+    "mtd-knowledge"
+   ],
+   "p": 0.2,
+   "why_p": "Requires Count III to survive qualified immunity and win; rises to about 0.4 if it survives Nov. 20."
+  },
+  {
+   "id": "punitive",
+   "label": "Punitive damages against Serrato individually",
+   "amount": 50000,
+   "evidence": [
+    "denial-letter"
+   ],
+   "p": 0.05,
+   "why_p": "Needs proof of retaliatory intent; low before discovery."
+  }
+ ],
+ "positions": {
+  "opening": 150000,
+  "opening_basis": "Memo § 4 opening band $150,000-$250,000 (low edge)",
+  "bracket": {
+   "after_trigger": [
+    50000,
+    125000
+   ]
+  },
+  "trigger": {
+   "label": "Count III survives Breyer's Nov. 20 ruling",
+   "met_by": [
+    "breyer-ruling"
+   ],
+   "note": "Memo § 4: no firm cash before the ruling. Even after it, the evidence-weighted value (about $25,000) sits below the memo's $50,000 floor; the signed I-918B is worth more than cash from an individual officer."
+  }
+ },
+ "repricing_events": [
+  {
+   "event": "Breyer rules on Dkt. 18 (Nov. 20, 2026)",
+   "if_favorable": "Count III survives: raise distress p to about 0.4 and punitive to 0.1; open first cash talks.",
+   "if_unfavorable": "All counts dismissed on qualified immunity: cash value near zero; the certification moves entirely to the state writ (Matter 20)."
+  },
+  {
+   "event": "State writ (Matter 20) produces a signed I-918B or a ruling on Count 1",
+   "if_favorable": "Certification in hand: federal case becomes a small cash rider; consider a joint release only if one agreement delivers the certification.",
+   "if_unfavorable": "Writ denied: the federal retaliation claim is the only path; keep the releases separate."
+  }
+ ]
+}

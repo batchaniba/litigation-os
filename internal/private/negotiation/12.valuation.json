@@ -1,0 +1,245 @@
+{
+ "matter": 12,
+ "as_of": "2026-10-07",
+ "note": "Private. Proof map and valuation for settlement only. Never attach, quote, or paraphrase in anything defense counsel sees. Probabilities are working estimates (Oct. 7, 2026 review): change them here and rerun `npm run valuation -- --matter 12`.",
+ "caption": "Ngwa Nforbi v. Diamond Truck Sales, Inc. et al., San Joaquin Sup. Ct. STK-CV-UF-2026-0001094",
+ "evidence": [
+  {
+   "id": "oop-documented",
+   "label": "Documented out-of-pocket losses (Aug. 4, 2026 prove-up declaration)",
+   "pin": "Matter 12 damages.json; Aug. 4, 2026 declaration",
+   "status": "in_hand",
+   "reserve": false
+  },
+  {
+   "id": "release-p23",
+   "label": "General Release of All Claims, signed at delivery",
+   "pin": "Dealer packet p. 23 (Apr. 4, 2023)",
+   "quote": "for sole consideration of SIXTEEN THOUSAND SIX HUNDRED FOR dollars ($0.00) or the equivalent in service/repairs to be paid to",
+   "status": "produced",
+   "seen_by_defense": true,
+   "reserve": false,
+   "do_not_cite_in_letter": true,
+   "why": "Defense exhibit. Answers: Civ. Code § 1668 (no release of one's own fraud), no § 1542 waiver, contradictory consideration, no dealer signature."
+  },
+  {
+   "id": "business-purpose",
+   "label": "Delivery Summary initialed 'business or agricultural'",
+   "pin": "Dealer packet p. 22, item 9",
+   "quote": "business or agricultural",
+   "status": "produced",
+   "seen_by_defense": true,
+   "reserve": false,
+   "do_not_cite_in_letter": true,
+   "why": "Defeats consumer-arbitration protections; the cost argument rests on inability to pay instead."
+  },
+  {
+   "id": "no-oral-promises",
+   "label": "Delivery Summary item 11",
+   "pin": "Dealer packet p. 22, item 11",
+   "quote": "I have not received any oral promises from you.",
+   "status": "produced",
+   "seen_by_defense": true,
+   "reserve": false,
+   "do_not_cite_in_letter": true,
+   "why": "Aimed at the misrepresentation counts; concealment and Riverisland fraud exception answer it."
+  },
+  {
+   "id": "as-is",
+   "label": "Buyer's order warranty disclaimer",
+   "pin": "Dealer packet p. 1",
+   "quote": "DEALER HEREBY DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED",
+   "status": "produced",
+   "seen_by_defense": true,
+   "reserve": false,
+   "do_not_cite_in_letter": true,
+   "why": "Hurts the contract / warranty count; fraud is not disclaimed."
+  },
+  {
+   "id": "cost-split",
+   "label": "Arbitration Agreement cost clause",
+   "pin": "Dealer packet p. 28",
+   "quote": "The costs of arbitration shall be borne equally by the Seller and Purchaser.",
+   "status": "produced",
+   "seen_by_defense": true,
+   "reserve": false,
+   "why": "Diamond owes half of every forum cost, including the filing fee."
+  },
+  {
+   "id": "pearson-cost",
+   "label": "Pearson on forum cost",
+   "pin": "Email, Oct. 6, 2026, 10:47 a.m.",
+   "quote": "three arbitrators would cost more than the value of the vehicle you purchased 2.5 years ago",
+   "status": "in_hand",
+   "reserve": true,
+   "why_reserve": "Defense counsel's own cost sensitivity; for mediation."
+  },
+  {
+   "id": "prior-owner",
+   "label": "Prior-owner disclosure / pre-sale repair records showing Diamond knew of the defect",
+   "status": "pending",
+   "why": "The proof that moves the fraud claim past the as-is clause and the release."
+  }
+ ],
+ "elements": [
+  {
+   "id": "defect",
+   "claim": "Fraud / concealment",
+   "element": "Material defect existed at sale",
+   "evidence": [
+    "oop-documented"
+   ],
+   "proof": "documented"
+  },
+  {
+   "id": "knowledge",
+   "claim": "Fraud / concealment",
+   "element": "Diamond knew and concealed it",
+   "evidence": [
+    "prior-owner"
+   ],
+   "proof": "unproven"
+  },
+  {
+   "id": "damages",
+   "claim": "All",
+   "element": "Out-of-pocket loss",
+   "evidence": [
+    "oop-documented"
+   ],
+   "proof": "documented"
+  }
+ ],
+ "defenses": [
+  {
+   "id": "release",
+   "name": "General release signed at delivery (p. 23)",
+   "threat": "medium",
+   "answered_by": [
+    "release-p23"
+   ],
+   "open_questions": [
+    "What the $16,600 was supposed to be, and whether it was ever paid or performed",
+    "DocuSign Certificate of Completion: when each page was viewed and signed"
+   ],
+   "cuts": [
+    "oop",
+    "income",
+    "interest"
+   ]
+  },
+  {
+   "id": "as-is",
+   "name": "As-is / warranty disclaimer and no-oral-promises acknowledgment",
+   "threat": "medium",
+   "answered_by": [
+    "prior-owner"
+   ],
+   "cuts": [
+    "oop",
+    "income"
+   ]
+  },
+  {
+   "id": "arbitration-cost",
+   "name": "Arbitration under the Commercial Rules with costs split",
+   "threat": "medium",
+   "answered_by": [
+    "cost-split"
+   ],
+   "open_questions": [
+    "Roldan / Weiler inability-to-pay remedy (verify citations)",
+    "CCP § 1281.12 tolling (verify)"
+   ],
+   "cuts": []
+  },
+  {
+   "id": "alpine",
+   "name": "Alpine formed Sept. 2, 2025, after the sale",
+   "threat": "medium",
+   "answered_by": [],
+   "cuts": []
+  }
+ ],
+ "damages": [
+  {
+   "id": "oop",
+   "label": "Documented out-of-pocket losses",
+   "amount": 20218.65,
+   "evidence": [
+    "oop-documented"
+   ],
+   "p": 0.4,
+   "why_p": "Documented; liability turns on proving Diamond's knowledge."
+  },
+  {
+   "id": "income",
+   "label": "Lost commercial income (18 wks × $1,300)",
+   "amount": 23400,
+   "evidence": [
+    "oop-documented"
+   ],
+   "p": 0.25,
+   "why_p": "Projected, not documented."
+  },
+  {
+   "id": "undocumented",
+   "label": "Sworn but undocumented losses",
+   "amount": 5750,
+   "evidence": [],
+   "p": 0.2,
+   "why_p": "Receipts would move this toward 0.4."
+  },
+  {
+   "id": "interest",
+   "label": "Prejudgment interest (Civ. Code § 3287(a), 7%)",
+   "amount": 4302.55,
+   "evidence": [
+    "oop-documented"
+   ],
+   "p": 0.3,
+   "why_p": "Follows liability; disputed."
+  },
+  {
+   "id": "punitive",
+   "label": "Punitive damages (fraud)",
+   "amount": 25000,
+   "evidence": [],
+   "p": 0.04,
+   "why_p": "Arbitrators rarely award; needs knowledge proof."
+  }
+ ],
+ "positions": {
+  "opening": 68000,
+  "opening_basis": "Aug. 31, 2026 opening to prior counsel (Evid. Code § 1152); confirm its terms before treating it as open",
+  "bracket": {
+   "early": [
+    10000,
+    30000
+   ],
+   "after_trigger": [
+    20000,
+    45000
+   ]
+  },
+  "trigger": {
+   "label": "Proof that Diamond knew of the defect before the sale",
+   "met_by": [
+    "prior-owner"
+   ],
+   "note": "Early band is a cost-of-defense estimate (Oct. 7 review), not a memo figure. Set the walk-away before mediation."
+  }
+ },
+ "repricing_events": [
+  {
+   "event": "Petition to compel arbitration decided",
+   "if_favorable": "Diamond ordered to bear forum costs (or arbitration denied for inability to pay): defense cost rises; raise the settlement band.",
+   "if_unfavorable": "Arbitration with costs split: Plaintiff's cost exposure rises; settle value at the early band."
+  },
+  {
+   "event": "Prior-owner disclosure or pre-sale repair records obtained",
+   "if_favorable": "Knowledge proven: raise oop, income, and punitive p; release and as-is defenses weaken.",
+   "if_unfavorable": "No knowledge evidence: concealment theory weakens; stay near the early band."
+  }
+ ]
+}

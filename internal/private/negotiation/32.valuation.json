@@ -1,0 +1,235 @@
+{
+ "matter": 32,
+ "as_of": "2026-10-07",
+ "note": "Private. Proof map and valuation for settlement only. Never attach, quote, or paraphrase in anything defense counsel sees. Probabilities are working estimates (Oct. 7, 2026 review): change them here and rerun `npm run valuation -- --matter 32`.",
+ "caption": "Nforbi v. Meza-Gonzalez et al., N.D. Cal. 4:26-cv-08271-ASK",
+ "evidence": [
+  {
+   "id": "cert-851-6",
+   "label": "Nov. 5, 2024 CHP Penal Code § 851.6 Detention Certificate (RJ68845), as pleaded",
+   "pin": "Dkt. 5 ¶ 32, pp. 9-10",
+   "quote": "was a detention only, not an arrest",
+   "status": "on_record",
+   "seen_by_defense": false,
+   "reserve": false
+  },
+  {
+   "id": "da-declined",
+   "label": "Alameda County DA declined to file",
+   "pin": "Dkt. 5 ¶ 34, p. 10",
+   "quote": "The District Attorney declined to file any accusatory pleading. No criminal case was initiated.",
+   "status": "on_record",
+   "seen_by_defense": false,
+   "reserve": false
+  },
+  {
+   "id": "dashcam",
+   "label": "CHP dashcam / MVARS transcript, Nov. 1, 2024 (RJ68845)",
+   "pin": "RJ68845#t=00:54:36-01:57:10; odor never verbalized (t=01:12:04)",
+   "status": "in_hand",
+   "reserve": true,
+   "why_reserve": "Strongest proof that the DS-367 claims are false; hold the timestamp-by-timestamp comparison for mediation or summary judgment."
+  },
+  {
+   "id": "centerline-rate",
+   "label": "Centerline wage notice, Oct. 31, 2024",
+   "pin": "Dkt. 5 ¶ 36(c), p. 11",
+   "quote": "at a regular rate of $33.35 per hour and a premium/overtime rate of $50.03 per hour",
+   "status": "on_record",
+   "seen_by_defense": false,
+   "reserve": false
+  },
+  {
+   "id": "kim-report-odor",
+   "label": "Matter 1 F&R relied on the officers' report",
+   "pin": "E.D. Cal. 2:25-cv-01460, ECF No. 23 at 6:16-18",
+   "quote": "they \"could smell the distinct odor of an alcoholic beverage emitting from within the vehicle.\"",
+   "status": "on_record",
+   "seen_by_defense": true,
+   "reserve": false,
+   "do_not_cite_in_letter": true,
+   "why": "Adverse: the probable-cause story the AG will tell. The F&R was mooted by voluntary dismissal, never adopted."
+  },
+  {
+   "id": "parole-hold",
+   "label": "Parole hold after the arrest",
+   "pin": "E.D. Cal. 2:25-cv-01460, ECF No. 23 at 2:16-17",
+   "quote": "The incident also triggered a parole violation hold",
+   "status": "on_record",
+   "seen_by_defense": true,
+   "reserve": false,
+   "do_not_cite_in_letter": true,
+   "why": "Adverse context; whether the officers knew of parole status before the entry is an open question."
+  },
+  {
+   "id": "dkt17",
+   "label": "Request for clerk's entry of default as to Meza-Gonzalez and Melano",
+   "pin": "Dkt. 17, filed Sep. 18, 2026",
+   "quote": "PLAINTIFF'S REQUEST FOR CLERK'S ENTRY OF DEFAULT AS TO DEFENDANTS MEZA-GONZALEZ AND MELANO",
+   "status": "on_record",
+   "seen_by_defense": false,
+   "reserve": false
+  },
+  {
+   "id": "melano-default",
+   "label": "Clerk's entry of default as to Melano",
+   "status": "pending",
+   "why": "Not yet confirmed on PACER."
+  }
+ ],
+ "elements": [
+  {
+   "id": "no-pc",
+   "claim": "Counts 1-3 (Fourth Amendment)",
+   "element": "No probable cause to enter, search, or arrest",
+   "evidence": [
+    "cert-851-6",
+    "da-declined",
+    "dashcam"
+   ],
+   "proof": "disputed",
+   "note": "Report claims (odor, slurred speech, field tests) against the dashcam; arguable-probable-cause qualified immunity is the battleground."
+  },
+  {
+   "id": "fabrication",
+   "claim": "Counts 4-5 (Franks / fabrication)",
+   "element": "Officers made false statements in the DS-367 and warrant affidavit",
+   "evidence": [
+    "dashcam"
+   ],
+   "proof": "documented",
+   "note": "Documented by the transcript; the officers will dispute it."
+  },
+  {
+   "id": "retaliation",
+   "claim": "Count 6 (First Amendment)",
+   "element": "Arrest followed the lawful PAS refusal 18 seconds later",
+   "evidence": [
+    "dashcam"
+   ],
+   "proof": "documented"
+  }
+ ],
+ "defenses": [
+  {
+   "id": "pc-qi",
+   "name": "Probable cause / arguable probable cause (qualified immunity)",
+   "threat": "high",
+   "answered_by": [
+    "dashcam",
+    "cert-851-6",
+    "da-declined"
+   ],
+   "open_questions": [
+    "What the blood result showed",
+    "Whether 'It wasn't here earlier when we passed by' supports reasonable cause of prior driving"
+   ],
+   "cuts": [
+    "arrest_distress",
+    "wages",
+    "punitive"
+   ]
+  },
+  {
+   "id": "parole",
+   "name": "Parole status (search condition; jury sympathy)",
+   "threat": "medium",
+   "answered_by": [],
+   "open_questions": [
+    "Whether the officers knew Plaintiff was on parole before opening the door"
+   ],
+   "cuts": [
+    "arrest_distress"
+   ]
+  },
+  {
+   "id": "intervening-aps",
+   "name": "The DMV suspension was an independent decision (causation for wages)",
+   "threat": "medium",
+   "answered_by": [
+    "dashcam"
+   ],
+   "cuts": [
+    "wages"
+   ]
+  },
+  {
+   "id": "service",
+   "name": "Service and default disputes (Meza substitute service; AG not appearing)",
+   "threat": "low",
+   "answered_by": [
+    "dkt17"
+   ],
+   "cuts": []
+  }
+ ],
+ "damages": [
+  {
+   "id": "arrest_distress",
+   "label": "Arrest, five-day parole hold, forced blood draw, Santa Rita booking",
+   "amount": 100000,
+   "evidence": [
+    "cert-851-6",
+    "da-declined"
+   ],
+   "p": 0.35,
+   "why_p": "Liability turns on probable cause and qualified immunity; the dashcam is the lever."
+  },
+  {
+   "id": "wages",
+   "label": "CDL wages Nov. 1, 2024 to Feb. 19, 2026 (68 wks × $2,334.60; shared with Matter 33, recover once)",
+   "amount": 158753,
+   "evidence": [
+    "centerline-rate"
+   ],
+   "p": 0.25,
+   "why_p": "Causation runs through the DMV suspension; weeks after Feb. 19, 2026 excluded (mitigation, overlap with the background-check matters)."
+  },
+  {
+   "id": "punitive",
+   "label": "Punitive damages for fabrication",
+   "amount": 50000,
+   "evidence": [
+    "dashcam"
+   ],
+   "p": 0.1,
+   "why_p": "Fabrication supports malice, but qualified immunity and probable cause come first."
+  },
+  {
+   "id": "out_of_pocket",
+   "label": "SR-22 premiums ($281.28 × 3) and $125 CDL reissue",
+   "amount": 969,
+   "evidence": [
+    "centerline-rate"
+   ],
+   "p": 0.35,
+   "why_p": "Rises and falls with liability."
+  }
+ ],
+ "positions": {
+  "trigger": {
+   "label": "Clerk's default entered against Melano (or the AG appears for both officers)",
+   "met_by": [
+    "melano-default"
+   ],
+   "note": "Memo § 4: not in the settlement wave while service is being perfected. Nov. 1, 2026 is the CCP § 335.1 backstop for any state-law claims against the State / CHP (Bane Act; no qualified immunity) — the largest value lever on this matter."
+  }
+ },
+ "repricing_events": [
+  {
+   "event": "Clerk's default entered against Melano",
+   "if_favorable": "Default against one officer: raise every p for Melano's share; the AG or the officer must engage.",
+   "if_unfavorable": "Default refused or set aside: no change in merits value; service issue only."
+  },
+  {
+   "event": "State-law claims against the State / CHP added before Nov. 1, 2026 (verify the Gov. Code claim deadlines first)",
+   "if_favorable": "A defendant with no qualified immunity and vicarious liability: raise arrest_distress and wages p materially.",
+   "if_unfavorable": "Claims time-barred or not pursued: value stays with the individual officers."
+  },
+  {
+   "event": "Blood-test result produced",
+   "if_favorable": "Low or zero BAC: probable cause collapses; raise all p.",
+   "if_unfavorable": "BAC over the limit: lower arrest_distress and wages sharply."
+  }
+ ]
+}
