@@ -1,0 +1,195 @@
+{
+ "matter": 33,
+ "as_of": "2026-10-07",
+ "note": "Private. Proof map and valuation for settlement only. Never attach, quote, or paraphrase in anything defense counsel sees. Probabilities are working estimates (Oct. 7, 2026 review): change them here and rerun `npm run valuation -- --matter 33`.",
+ "caption": "Nforbi v. Candelaria et al., N.D. Cal. 3:26-cv-08272-RFL",
+ "evidence": [
+  {
+   "id": "mvr-suspension",
+   "label": "DMV DL/ID Information Request (customer receipt), Jul. 15, 2026",
+   "pin": "Departmental actions block",
+   "quote": "DRV LIC SUSPENDED*EFF:02-20-25*ORDER MAILED:02-11-25* AUTH:13353 ,END STAY - DMV UPHELD*",
+   "status": "in_hand",
+   "reserve": true,
+   "why_reserve": "Plaintiff's own record; shows the suspension the APS decision imposed. Not for a letter."
+  },
+  {
+   "id": "mvr-sr22",
+   "label": "DMV record: proof-of-financial-responsibility requirement",
+   "pin": "Departmental actions block",
+   "quote": "PROOF REQ:V/05-19-26*TERM:05-19-29*",
+   "status": "in_hand",
+   "reserve": true,
+   "why_reserve": "Continuing effect through May 2029, for Ex parte Young standing."
+  },
+  {
+   "id": "kim-immunity",
+   "label": "Matter 7 F&R: quasi-judicial immunity for the hearing officer",
+   "pin": "E.D. Cal. 2:26-cv-00983, ECF No. 6 at 7:6-8",
+   "quote": "Plaintiff's § 1983 claim against Defendant Candelaria in her individual capacity fails because Defendant Candelaria is entitled to quasi-judicial immunity for her official actions.",
+   "status": "on_record",
+   "seen_by_defense": true,
+   "reserve": false,
+   "do_not_cite_in_letter": true,
+   "why": "Adverse; the F&R was mooted by voluntary dismissal, never adopted, but the AG will make the same argument."
+  },
+  {
+   "id": "kim-sr22-moot",
+   "label": "Matter 7 F&R on standing for prospective relief",
+   "pin": "ECF No. 6 at 8:20-23",
+   "quote": "any injunction would be moot because the California Vehicle Code requires evidence of financial responsibility to be maintained by owners and drivers \"at all times.\"",
+   "status": "on_record",
+   "seen_by_defense": true,
+   "reserve": false,
+   "do_not_cite_in_letter": true,
+   "why": "Adverse, and answerable: an SR-22 filing is a separate requirement triggered by the suspension (mvr-sr22)."
+  },
+  {
+   "id": "knudsen-case-by-case",
+   "label": "Matter 7 F&R quoting Knudsen on the dual-role analysis",
+   "pin": "ECF No. 6 at 9:10-11",
+   "quote": "The analysis will necessarily depend on the unique facts of each hearing.",
+   "status": "on_record",
+   "seen_by_defense": true,
+   "reserve": false,
+   "why": "The roadmap: plead the specific Clarke acts (offering DMV exhibits, ruling on objections, cross-examining) if they occurred."
+  },
+  {
+   "id": "mcmahon-email",
+   "label": "McMahon email asking five extra days, quoting the $50,000 offer",
+   "pin": "Email, Sep. 18, 2026, 12:54 p.m.",
+   "status": "in_hand",
+   "reserve": false
+  },
+  {
+   "id": "hearing-record",
+   "label": "APS hearing recording / transcript (Jan. 24, 2025)",
+   "status": "requested",
+   "why": "Needed to show the Clarke dual-role acts."
+  }
+ ],
+ "elements": [
+  {
+   "id": "dual-role",
+   "claim": "Counts 1-2 (procedural due process)",
+   "element": "The hearing officer acted as advocate and adjudicator",
+   "evidence": [
+    "knudsen-case-by-case"
+   ],
+   "proof": "unproven",
+   "note": "Needs the hearing record."
+  },
+  {
+   "id": "continuing-effect",
+   "claim": "Counts 3-4 (declaratory / Ex parte Young)",
+   "element": "Continuing adverse effect supporting prospective relief",
+   "evidence": [
+    "mvr-sr22",
+    "mvr-suspension"
+   ],
+   "proof": "documented"
+  }
+ ],
+ "defenses": [
+  {
+   "id": "quasi-judicial",
+   "name": "Quasi-judicial immunity (Candelaria, individual capacity)",
+   "threat": "high",
+   "answered_by": [],
+   "open_questions": [
+    "Whether a DMV hearing officer acting as advocate loses the immunity under the Butz factors"
+   ],
+   "cuts": [
+    "wages",
+    "distress",
+    "punitive"
+   ]
+  },
+  {
+   "id": "carey",
+   "name": "Carey v. Piphus: only nominal damages unless a fair hearing would have changed the outcome",
+   "threat": "high",
+   "answered_by": [],
+   "cuts": [
+    "wages"
+   ]
+  },
+  {
+   "id": "standing-moot",
+   "name": "No standing for prospective relief / SR-22 moot",
+   "threat": "medium",
+   "answered_by": [
+    "mvr-sr22"
+   ],
+   "cuts": []
+  },
+  {
+   "id": "forum",
+   "name": "Refiled before the Matter 7 dismissal (claim-splitting / forum arguments)",
+   "threat": "low",
+   "answered_by": [],
+   "cuts": []
+  }
+ ],
+ "damages": [
+  {
+   "id": "wages",
+   "label": "Suspension-year CDL wages, Feb. 20, 2025 to Feb. 19, 2026 (52 wks × $2,334.60; same dollars as Matter 32 wages line, recover once)",
+   "amount": 121399,
+   "evidence": [
+    "mvr-suspension"
+   ],
+   "p": 0.08,
+   "why_p": "Immunity plus Carey causation."
+  },
+  {
+   "id": "distress",
+   "label": "Harm from the unfair hearing itself",
+   "amount": 25000,
+   "evidence": [
+    "mvr-suspension"
+   ],
+   "p": 0.15,
+   "why_p": "Recoverable without outcome causation, but immunity still applies to Candelaria."
+  },
+  {
+   "id": "out_of_pocket",
+   "label": "SR-22 premiums and CDL reissue fee",
+   "amount": 969,
+   "evidence": [
+    "mvr-sr22"
+   ],
+   "p": 0.3,
+   "why_p": "Tied to vacatur and causation."
+  },
+  {
+   "id": "punitive",
+   "label": "Punitive damages against Candelaria",
+   "amount": 25000,
+   "evidence": [],
+   "p": 0.03,
+   "why_p": "Immunity; no intent evidence yet."
+  }
+ ],
+ "positions": {
+  "trigger": {
+   "label": "Lin's ruling on the Dkt. 17 motion to strike (Dec. 9, 2026) and the hearing record in hand",
+   "met_by": [
+    "hearing-record"
+   ],
+   "note": "Memo § 4: no standalone cash target. Vacatur of APS 34739340 or a corrected record comes first; it clears the CDL record that every background-check matter turns on. The $50,000 offer expired Sep. 25 and is not renewed."
+  }
+ },
+ "repricing_events": [
+  {
+   "event": "Hearing record shows the Clarke acts (exhibits offered, objections ruled on, cross-examination)",
+   "if_favorable": "Dual role documented: raise wages p (and the vacatur odds) materially.",
+   "if_unfavorable": "Officer only adjudicated: due-process counts weaken; focus on prospective relief."
+  },
+  {
+   "event": "Ex parte Young claim survives against Gordon",
+   "if_favorable": "Vacatur becomes the settlement currency (non-cash term worth more than the cash lines).",
+   "if_unfavorable": "No prospective relief: the case is a damages case against an immune officer."
+  }
+ ]
+}
