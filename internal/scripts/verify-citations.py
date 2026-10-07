@@ -71,13 +71,10 @@ KNOWN_FABRICATED = [
         "status": "NOT_FOUND",
         "notes": "Matter 28 Round 3: table page hosts unrelated dispositions.",
     },
-    {
-        "id": "burrell-jackson",
-        "label": "Burrell v. Jackson, 2003 WL 23545858",
-        "pattern": r"Burrell v\.\s*Jackson|23545858",
-        "status": "NOT_FOUND",
-        "notes": "Round 4: no matching absolute-immunity hearing-officer decision at that WL number.",
-    },
+    # burrell-jackson removed Oct. 7, 2026: the case exists. Affirmed, Burrell v.
+    # Jackson, 96 F. App'x 892 (4th Cir. 2004) (CourtListener opinion 8452839),
+    # and quoted by E.D. Cal. 2:26-cv-00983, ECF No. 6 at 6, 10. Adverse authority
+    # (DMV hearing-officer immunity), not a fabrication. See citation_verification_rounds.json.
 ]
 
 BAD_STATUSES = {"NOT_FOUND", "MISCITED", "MISCHARACTERIZED", "MISQUOTED"}
