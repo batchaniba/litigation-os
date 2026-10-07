@@ -213,7 +213,7 @@ Standalone retail civil-rights matter arising from an August 25, 2026 consumer r
 | 39 | Brendan Ngwa Nforbi v. Best Buy Co., Inc. | TBD | USDC E.D. Cal. (Sep. 16 walk-up; unfiled) / San Joaquin Sup. Ct. (Sep. 8 packet LOCKED, unfiled) | Federal | EDCA walk-up Sep. 16 — unfiled |
 | 40 | Brendan Ngwa Nforbi v. Uber Technologies, Inc. | TBD | TBD (pre-dispute — offer received Sep. 14, 2026) | State | Start withheld — complaint signed, not filed |
 | 41 | Brendan Ngwa Nforbi v. Nuro, Inc. | TBD | TBD (pre-dispute — application Sep. 9, 2026) | State | Pending — pre-background-check |
-| 42 | Nforbi v. Staples Retail et al. | TBD | TBD (pre-dispute — onboarding Sep. 29–30, 2026) | State | Pending — FADV reported public records Oct. 7; no adverse… |
+| 42 | Nforbi v. Staples Retail et al. | TBD | TBD (pre-dispute — onboarding Sep. 29–30, 2026) | State | Pending — FADV public-record notice Oct. 7 |
 <!-- PORTFOLIO:ACTIVE_MATTERS:END -->
 
 *Settled matters stay in the table above until dismissal is entered — a settlement resolves the merits, but the matter is still open on the docket. Their Status column reads "Settled" (see the Overview count above for which ones).*
