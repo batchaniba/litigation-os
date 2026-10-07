@@ -1,6 +1,6 @@
 {
   "generatedBy": "internal/scripts/verify-citations.py",
-  "generatedDate": "2026-09-19",
+  "generatedDate": "2026-10-07",
   "methodology": "Join citation_audit.json onto citation_index.json authority rows; overlay Round 4+ results from citation_verification_rounds.json. Existence checks use WebSearch plus direct CourtListener search API and CAP static.case.law CasesMetadata/HTML (see lookup-citations.py / citation_lookup_multisource.json). Positive control: Richardson v. McKnight. Negative control: In re Leman. Justia is Cloudflare-blocked here; Google Scholar is unreliable (often 403); CAP JSON API and CourtListener citation-lookup require auth.",
   "controls": {
     "positive": "Richardson v. McKnight, 521 U.S. 399 (1997) \u2014 must be findable",
@@ -41,18 +41,18 @@
   "corpusAuthorities": 987,
   "statusCounts": {
     "UNVERIFIED": 484,
-    "VERIFIED": 461,
+    "VERIFIED": 463,
     "MISCHARACTERIZED": 6,
     "MISCITED": 30,
-    "NOT_FOUND": 6
+    "NOT_FOUND": 4
   },
   "queue": {
     "plaintiffOnlyUnverified": 8,
-    "plaintiffOnlyBad": 30
+    "plaintiffOnlyBad": 29
   },
   "rounds": {
     "loaded": "2026-08-09 Round 4 \u2014 portfolio P0 (batches A\u2013D; LACW WL correction); Round 5 multisource (CourtListener + CAP); Round 5b Matter 28 full funnel; Round 6 spot-check of the Matter 33 conformed complaint (3:26-cv-08272-LJC, Dkt. 1) page-43 immunity sentence; Round 7 authorities cited in the Serrato IFP screening order (Matter 24, Dkt. 5) after OCR made that scan searchable; Round 8 \u2014 OCR tranche (16 plaintiff filings + court orders: Matters 5/12/15/25/26/33, Barocio opinion); Round 9 \u2014 Matter 24 Serrato Opp v4 final citation/quotation verification pass (2026-08-27); Round 10 \u2014 Matter 26 hybrid UPS MTD opposition (Claude structure + Cursor caution), 2026-08-28; Round 11 \u2014 P0 plaintiff-only queue after OCR-alias index rebuild (Matters 25/26/32/33 plus remaining portfolio P0), 2026-09-06; Round 12 \u2014 Matter 28 UNIFIED KeyCite treatment overlay (Westlaw Patron Access, 2026-09-19)",
-    "resultCount": 393,
+    "resultCount": 394,
     "method": "Round 4: WebSearch after Richardson(+) / Leman(\u2212) controls. Round 5: CourtListener /api/rest/v4/search/ + CAP static.case.law for controls/high-risk. Round 5b: all Matter 28 indexed authorities through lookup-citations.py --matter 28 (\u2192 citation_lookup_matter28.json). Justia Cloudflare-blocked; Scholar unreliable; api.case.law JSON and CL citation-lookup need auth. Existence FOUND does not clear prior MISCHARACTERIZED/MISCITED proposition problems. Table-page F.3d pins can host multiple dispositions \u2014 do not treat first CL hit as unique. Round 7: the June 29, 2026 Serrato IFP/screening order was an image-only scan contributing nothing to the index until internal/scripts/ocr-text-layer.py added a text layer; its authorities were then probed through lookup-citations.py (\u2192 citation_lookup_serrato_order.json) behind the same Richardson(+) / Leman(\u2212) controls. These are a court's own citations, so they carry role court_order and never enter the plaintiff-only P0/P1 queues. Round 8: after ocr-text-layer.py on the 16-document plaintiff_filing/court_order tranche, probed new P0 Matter 12/15 authorities (citation_lookup_matter12_p0.json) and Barocio screening-order authorities (citation_lookup_barocio_order.json). McCorkle manually confirmed on CourtListener when CAP lacked cal2d/70. Round 9: Matter 24 Opposition v4 \u2014 npm citations:index + citations:lookup:matter --matter 24 (\u2192 citation_lookup_matter24.json); quote needles checked against CAP static.case.law HTML (Whittlestone/Lopez/Noll/Perry/Twombly/Iqbal/Wade/Knievel/Erickson/Ford) and CA9 PDF (Capp); fixed Garity miscitation, Whittlestone non-opinion paraphrase, Perry/Twombly wording, and removed unused Lewis/Shanks TOA entries; Bureerong manually FOUND on CL+CAP. Round 10: Matter 26 hybrid opposition \u2014 npm citations:index + citations:lookup:matter --matter 26 (\u2192 citation_lookup_matter26.json); Cal. App. 5th pins for Williams (40 Cal. App. 5th 280) and Quinn (121 Cal. App. 5th 1124) confirmed by direct CourtListener search when the reporter probe missed (CAP static lacks those volumes). Mendoza quotes checked against the published opinion (anti-SLAPP; 1658-59). Cel-Tech 183 quote is UPS's own. Round 11: build-citation-index.py OCR_PAGE_FIXES (Califomia/DUl/MedinOy/TorreSy/Knudsen/Devenpeck 3 U.S.\u2192543 U.S. etc.) dropped P0 70\u219254; lookup-citations.py \u2192 citation_lookup_p0.json (FOUND 28, CAPTION_MISMATCH 14, PARTIAL 3, NOT_FOUND 7, UNKNOWN 2); overlay-citation-lookups.py folded FOUND + same-case OCR mismatches + Gonzalez/Hertz PARTIAL into VERIFIED (existence only) and marked both Devenpeck mispins MISCITED (real case is 543 U.S. 146). NOT_FOUND/UNKNOWN left UNVERIFIED (a miss is not a fabrication). Controls were not re-probed this pass. Round 12: KeyCite flags from legal-intel/recon/2026-09-19-matter-28-keycite-westlaw.md over the 27 unique UNIFIED citations. Treatment, not existence. Yellow \u2260 MISCITED. Four deep-dives KEEP (Perez / DKN / Neal / Costello). Chavez v. Robinson, 12 F.4th 978 stays MISCHARACTERIZED \u2014 KeyCite NONE does not clear the QI-reversal proposition error. Overlay does not rewrite prior bad statuses."
   },
   "knownFabricated": [
@@ -312,142 +312,6 @@
           "matter": 28
         }
       ]
-    },
-    {
-      "id": "burrell-jackson",
-      "label": "Burrell v. Jackson, 2003 WL 23545858",
-      "status": "NOT_FOUND",
-      "notes": "Round 4: no matching absolute-immunity hearing-officer decision at that WL number.",
-      "hitCount": 18,
-      "plaintiffFilingHits": 14,
-      "locations": [
-        {
-          "citation": "2003 WL 23545858",
-          "document": "/documents/matter-33/from-07/Objections to FR Newanforbi v Candelaria BOLSTERED 3.pdf",
-          "page": 4,
-          "role": "plaintiff_filing",
-          "matter": 7
-        },
-        {
-          "citation": "2003 WL 23545858",
-          "document": "/documents/matter-33/from-07/Objections to FR Newanforbi v Candelaria BOLSTERED 3.pdf",
-          "page": 15,
-          "role": "plaintiff_filing",
-          "matter": 7
-        },
-        {
-          "citation": "2003 WL 23545858",
-          "document": "/documents/matter-33/ndcal/Complaint Ngwa Nforbi v Candelaria and Gordon NDCal 3 Operative.pdf",
-          "page": 43,
-          "role": "plaintiff_filing",
-          "matter": 33
-        },
-        {
-          "citation": "2003 WL 23545858",
-          "document": "/documents/matter-33/ndcal/Complaint Ngwa Nforbi v Candelaria and Gordon NDCal.pdf",
-          "page": 43,
-          "role": "plaintiff_filing",
-          "matter": 33
-        },
-        {
-          "citation": "2003 WL 23545858",
-          "document": "/documents/matter-33/ndcal/Dkt 01 - Complaint (CONFORMED, Filed Aug 10 2026).pdf",
-          "page": 43,
-          "role": "plaintiff_filing",
-          "matter": 33
-        },
-        {
-          "citation": "2003 WL 23545858",
-          "document": "/documents/matter-33/opinions/Newanforbi v Candelaria - USDC EDCal - FR Recommending Dismissal Jun 15 2026.pdf",
-          "page": 6,
-          "role": "court_order",
-          "matter": 7
-        },
-        {
-          "citation": "2003 WL 23545858",
-          "document": "/documents/matter-33/opinions/Newanforbi v Candelaria - USDC EDCal - FR Recommending Dismissal Jun 15 2026.pdf",
-          "page": 10,
-          "role": "court_order",
-          "matter": 7
-        },
-        {
-          "citation": "Burrell v. Jackson",
-          "document": "/documents/matter-33/from-07/Objections to FR Newanforbi v Candelaria BOLSTERED 3.pdf",
-          "page": 4,
-          "role": "plaintiff_filing",
-          "matter": 7
-        },
-        {
-          "citation": "Burrell v. Jackson",
-          "document": "/documents/matter-33/ndcal/Complaint Ngwa Nforbi v Candelaria and Gordon NDCal 3 Operative.pdf",
-          "page": 43,
-          "role": "plaintiff_filing",
-          "matter": 33
-        },
-        {
-          "citation": "Burrell v. Jackson",
-          "document": "/documents/matter-33/ndcal/Complaint Ngwa Nforbi v Candelaria and Gordon NDCal.pdf",
-          "page": 43,
-          "role": "plaintiff_filing",
-          "matter": 33
-        },
-        {
-          "citation": "Burrell v. Jackson",
-          "document": "/documents/matter-33/ndcal/Dkt 01 - Complaint (CONFORMED, Filed Aug 10 2026).pdf",
-          "page": 43,
-          "role": "plaintiff_filing",
-          "matter": 33
-        },
-        {
-          "citation": "Burrell v. Jackson",
-          "document": "/documents/matter-33/ndcal/Notice Identifying Operative First Amended Complaint (Candelaria) (Aug 24 2026).pdf",
-          "page": 1,
-          "role": "plaintiff_filing",
-          "matter": 33
-        },
-        {
-          "citation": "Burrell v. Jackson, 2003 WL 23545858",
-          "document": "/documents/matter-33/from-07/Objections to FR Newanforbi v Candelaria BOLSTERED 3.pdf",
-          "page": 4,
-          "role": "plaintiff_filing",
-          "matter": 7
-        },
-        {
-          "citation": "Burrell v. Jackson, 2003 WL 23545858",
-          "document": "/documents/matter-33/ndcal/Complaint Ngwa Nforbi v Candelaria and Gordon NDCal 3 Operative.pdf",
-          "page": 43,
-          "role": "plaintiff_filing",
-          "matter": 33
-        },
-        {
-          "citation": "Burrell v. Jackson, 2003 WL 23545858",
-          "document": "/documents/matter-33/ndcal/Complaint Ngwa Nforbi v Candelaria and Gordon NDCal.pdf",
-          "page": 43,
-          "role": "plaintiff_filing",
-          "matter": 33
-        },
-        {
-          "citation": "Burrell v. Jackson, 2003 WL 23545858",
-          "document": "/documents/matter-33/ndcal/Dkt 01 - Complaint (CONFORMED, Filed Aug 10 2026).pdf",
-          "page": 43,
-          "role": "plaintiff_filing",
-          "matter": 33
-        },
-        {
-          "citation": "See Burrell v. Jackson",
-          "document": "/documents/matter-33/opinions/Newanforbi v Candelaria - USDC EDCal - FR Recommending Dismissal Jun 15 2026.pdf",
-          "page": 6,
-          "role": "court_order",
-          "matter": 7
-        },
-        {
-          "citation": "See Burrell v. Jackson, 2003 WL 23545858",
-          "document": "/documents/matter-33/opinions/Newanforbi v Candelaria - USDC EDCal - FR Recommending Dismissal Jun 15 2026.pdf",
-          "page": 6,
-          "role": "court_order",
-          "matter": 7
-        }
-      ]
     }
   ],
   "knownBadDebt": {
@@ -515,60 +379,6 @@
         "role": "plaintiff_filing",
         "matter": 19,
         "reason": "Same pre-existing Leman hit as the Aug 7 HC-004 packet path \u2014 filename date rolled to Aug 17 without changing the fabricated cite on p.11"
-      },
-      {
-        "id": "burrell-jackson",
-        "label": "Burrell v. Jackson, 2003 WL 23545858",
-        "document": "/documents/matter-33/from-07/Objections to FR Newanforbi v Candelaria BOLSTERED 3.pdf",
-        "page": 4,
-        "role": "plaintiff_filing",
-        "matter": 7,
-        "reason": "Pre-existing filed location tracked as remediation debt"
-      },
-      {
-        "id": "burrell-jackson",
-        "label": "Burrell v. Jackson, 2003 WL 23545858",
-        "document": "/documents/matter-33/from-07/Objections to FR Newanforbi v Candelaria BOLSTERED 3.pdf",
-        "page": 15,
-        "role": "plaintiff_filing",
-        "matter": 7,
-        "reason": "Pre-existing filed location tracked as remediation debt"
-      },
-      {
-        "id": "burrell-jackson",
-        "label": "Burrell v. Jackson, 2003 WL 23545858",
-        "document": "/documents/matter-33/ndcal/Complaint Ngwa Nforbi v Candelaria and Gordon NDCal 3 Operative.pdf",
-        "page": 43,
-        "role": "plaintiff_filing",
-        "matter": 33,
-        "reason": "Pre-existing filed location tracked as remediation debt"
-      },
-      {
-        "id": "burrell-jackson",
-        "label": "Burrell v. Jackson, 2003 WL 23545858",
-        "document": "/documents/matter-33/ndcal/Dkt 01 - Complaint (CONFORMED, Filed Aug 10 2026).pdf",
-        "page": 43,
-        "role": "plaintiff_filing",
-        "matter": 33,
-        "reason": "Same page-43 sentence already tracked at the operative draft path \u2014 this is the conformed copy the court docketed as Dkt. 1 on Aug. 10, 2026, so the debt is carried in a live federal filing rather than a draft. Cited as adverse out-of-circuit authority being distinguished, not as support. REMEDIATED: Dkt. 6 FAC (CONFORMED, Filed Aug. 17, 2026) at /documents/matter-33/ndcal/Dkt 06 - First Amended Complaint (CONFORMED, Filed Aug 17 2026).pdf is now the pleading of record and drops the passage entirely \u2014 retire this entry."
-      },
-      {
-        "id": "burrell-jackson",
-        "label": "Burrell v. Jackson, 2003 WL 23545858",
-        "document": "/documents/matter-33/ndcal/Complaint Ngwa Nforbi v Candelaria and Gordon NDCal.pdf",
-        "page": 43,
-        "role": "plaintiff_filing",
-        "matter": 33,
-        "reason": "Pre-existing filed location tracked as remediation debt"
-      },
-      {
-        "id": "burrell-jackson",
-        "label": "Burrell v. Jackson, 2003 WL 23545858",
-        "document": "/documents/matter-33/ndcal/Notice Identifying Operative First Amended Complaint (Candelaria) (Aug 24 2026).pdf",
-        "page": 1,
-        "role": "plaintiff_filing",
-        "matter": 33,
-        "reason": "Pre-existing Matter 33 Burrell fabrication referenced in the Aug 24 operative-FAC identification notice; tracked as debt pending retirement with superseded pleadings"
       }
     ]
   },
@@ -1498,51 +1308,6 @@
           "page": 18,
           "role": "other",
           "matter": 32
-        }
-      ],
-      "priority": "P1_plaintiff_only_bad"
-    },
-    {
-      "citation": "Burrell v. Jackson, 2003 WL 23545858",
-      "kind": "authority",
-      "occurrenceCount": 4,
-      "matters": [
-        7,
-        32,
-        33
-      ],
-      "roles": [
-        "plaintiff_filing"
-      ],
-      "plaintiffOnly": true,
-      "status": "NOT_FOUND",
-      "statusSource": "round",
-      "notes": "No decision matching Burrell v. Jackson, 2003 WL 23545858 for absolute immunity of a hearing officer. Do not brief. Use Forrester / Stump / Swift / Miller v. Gammie functional-immunity line instead. Round 5 multisource (NOT_FOUND): CourtListener + CAP static.case.law.",
-      "sampleContext": "y Hearing Officer' and the general nature of her duties, without conducting the required functional analysis. F&R at 5-7. The Findings and Recommendations cite Burrell v. Jackson, 2003 WL 23545858 (E.D. Va. 2003), and Baker v. Bzydra, 2019 WL 6619348 (D. Conn. 2019), both out-of-",
-      "locations": [
-        {
-          "document": "/documents/matter-33/from-07/Objections to FR Newanforbi v Candelaria BOLSTERED 3.pdf",
-          "page": 4,
-          "role": "plaintiff_filing",
-          "matter": 7
-        },
-        {
-          "document": "/documents/matter-33/ndcal/Complaint Ngwa Nforbi v Candelaria and Gordon NDCal 3 Operative.pdf",
-          "page": 43,
-          "role": "plaintiff_filing",
-          "matter": 33
-        },
-        {
-          "document": "/documents/matter-33/ndcal/Complaint Ngwa Nforbi v Candelaria and Gordon NDCal.pdf",
-          "page": 43,
-          "role": "plaintiff_filing",
-          "matter": 33
-        },
-        {
-          "document": "/documents/matter-33/ndcal/Dkt 01 - Complaint (CONFORMED, Filed Aug 10 2026).pdf",
-          "page": 43,
-          "role": "plaintiff_filing",
-          "matter": 33
         }
       ],
       "priority": "P1_plaintiff_only_bad"
@@ -9837,6 +9602,51 @@
           "page": 5,
           "role": "plaintiff_filing",
           "matter": 24
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
+      "citation": "Burrell v. Jackson, 2003 WL 23545858",
+      "kind": "authority",
+      "occurrenceCount": 4,
+      "matters": [
+        7,
+        32,
+        33
+      ],
+      "roles": [
+        "plaintiff_filing"
+      ],
+      "plaintiffOnly": true,
+      "status": "VERIFIED",
+      "statusSource": "Oct. 7, 2026 review: CourtListener + federal court citation",
+      "notes": "Exists. Affirmed, Burrell v. Jackson, 96 F. App'x 892 (4th Cir. 2004) (Nos. 03-1767, 03-1768; appeal from denial of \u00a7 1983 relief and a pre-filing injunction). Cited and quoted by Mag. Judge Chi Soo Kim in Newanforbi v. Candelaria, E.D. Cal. 2:26-cv-00983, ECF No. 6 at 6:2-7 and 10:2-5 (June 15, 2026 F&R), for DMV hearing-officer quasi-judicial immunity. Round 4's NOT_FOUND came from a free-source WL lookup, which cannot reach unpublished Westlaw-only district opinions. The WL text itself has not been pulled; treat the proposition as Judge Kim states it. ADVERSE: do not cite for Plaintiff; expect the AG to cite it in Matter 33.",
+      "sampleContext": "y Hearing Officer' and the general nature of her duties, without conducting the required functional analysis. F&R at 5-7. The Findings and Recommendations cite Burrell v. Jackson, 2003 WL 23545858 (E.D. Va. 2003), and Baker v. Bzydra, 2019 WL 6619348 (D. Conn. 2019), both out-of-",
+      "locations": [
+        {
+          "document": "/documents/matter-33/from-07/Objections to FR Newanforbi v Candelaria BOLSTERED 3.pdf",
+          "page": 4,
+          "role": "plaintiff_filing",
+          "matter": 7
+        },
+        {
+          "document": "/documents/matter-33/ndcal/Complaint Ngwa Nforbi v Candelaria and Gordon NDCal 3 Operative.pdf",
+          "page": 43,
+          "role": "plaintiff_filing",
+          "matter": 33
+        },
+        {
+          "document": "/documents/matter-33/ndcal/Complaint Ngwa Nforbi v Candelaria and Gordon NDCal.pdf",
+          "page": 43,
+          "role": "plaintiff_filing",
+          "matter": 33
+        },
+        {
+          "document": "/documents/matter-33/ndcal/Dkt 01 - Complaint (CONFORMED, Filed Aug 10 2026).pdf",
+          "page": 43,
+          "role": "plaintiff_filing",
+          "matter": 33
         }
       ],
       "priority": "P2_joined"
@@ -18700,9 +18510,9 @@
         "court_order"
       ],
       "plaintiffOnly": false,
-      "status": "NOT_FOUND",
-      "statusSource": "round",
-      "notes": "No decision matching Burrell v. Jackson, 2003 WL 23545858 for absolute immunity of a hearing officer. Do not brief. Use Forrester / Stump / Swift / Miller v. Gammie functional-immunity line instead. Round 5 multisource (NOT_FOUND): CourtListener + CAP static.case.law.",
+      "status": "VERIFIED",
+      "statusSource": "Oct. 7, 2026 review: CourtListener + federal court citation",
+      "notes": "Exists. Affirmed, Burrell v. Jackson, 96 F. App'x 892 (4th Cir. 2004) (Nos. 03-1767, 03-1768; appeal from denial of \u00a7 1983 relief and a pre-filing injunction). Cited and quoted by Mag. Judge Chi Soo Kim in Newanforbi v. Candelaria, E.D. Cal. 2:26-cv-00983, ECF No. 6 at 6:2-7 and 10:2-5 (June 15, 2026 F&R), for DMV hearing-officer quasi-judicial immunity. Round 4's NOT_FOUND came from a free-source WL lookup, which cannot reach unpublished Westlaw-only district opinions. The WL text itself has not been pulled; treat the proposition as Judge Kim states it. ADVERSE: do not cite for Plaintiff; expect the AG to cite it in Matter 33.",
       "sampleContext": "actions were taken in the course of her official duties, which are essentially judicial in nature. Accordingly, Defendant Candelaria is immune from suit. See Burrell v. Jackson, 2003 WL 23545858, at *4 (E.D. Va. Apr. 21, 2003) (finding DMV hearing officer immune from suit arising",
       "locations": [
         {
