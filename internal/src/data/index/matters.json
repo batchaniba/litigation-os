@@ -1,6 +1,6 @@
 {
   "generated": true,
-  "today": "2026-10-04",
+  "today": "2026-10-06",
   "matters": [
     {
       "number": 1,
@@ -380,7 +380,7 @@
         "source_dkt": null
       },
       "overdue": false,
-      "last_updated": "2026-09-16",
+      "last_updated": "2026-10-06",
       "files": [
         "claims.json",
         "clocks.json",
@@ -963,7 +963,7 @@
         "source_dkt": 1
       },
       "overdue": true,
-      "last_updated": "2026-09-28",
+      "last_updated": "2026-10-06",
       "files": [
         "claims.json",
         "clocks.json",
@@ -1070,7 +1070,7 @@
         "source_dkt": null
       },
       "overdue": true,
-      "last_updated": "2026-09-28",
+      "last_updated": "2026-10-06",
       "files": [
         "claims.json",
         "clocks.json",
@@ -1259,15 +1259,15 @@
       "path": "internal/src/data/matters/38/",
       "layout": "split",
       "caption": "Brendan Ngwa Nforbi v. Swift Transportation Co. of Arizona LLC",
-      "case_no": "TBD",
-      "court": "USDC E.D. Cal. (Sep. 16 walk-up; unfiled) / San Joaquin Sup. Ct. (Sep. 8 packet LOCKED, unfiled)",
-      "judge": "TBD",
+      "case_no": "2:26-cv-03312-DC-SCR",
+      "court": "USDC E.D. Cal. (Sacramento Div.)",
+      "judge": "Hon. Dena M. Coggins, D.J.; Hon. Sean C. Riordan, M.J.",
       "cluster": 3,
       "related": [],
       "same_incident": null,
-      "lifecycle": "pre_filing",
+      "lifecycle": "active",
       "proceeding": "federal_civil",
-      "phase": "pre_filing",
+      "phase": "pleadings",
       "next_clock": {
         "id": "38-deadline-1",
         "date": "2026-09-26",
@@ -1277,7 +1277,7 @@
         "source_dkt": null
       },
       "overdue": true,
-      "last_updated": "2026-09-16",
+      "last_updated": "2026-10-06",
       "files": [
         "claims.json",
         "clocks.json",
