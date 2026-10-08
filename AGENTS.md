@@ -44,7 +44,7 @@ Cap the first fetch, not the case. Numbers live in `GRAPH_LIMITS` (`assembleMatt
 
 - Actual stipulations / extensions / stays: read `internal/docs/STIPULATION_DEFENSE.md`. Plaintiff-first. Do not import that voice into ordinary Plaintiff papers.
 - Settlement numbers: before any demand, counter, withdrawal, or response to an offer, run `npm run negotiate:check` against the matter's ledger (`internal/private/negotiation/NN.jsonl`) and show Plaintiff the result. A BLOCKED figure is not drafted unless Plaintiff overrides with a recorded reason. Rules: `internal/docs/settlement/SETTLEMENT_REANCHOR_MEMO.md` § 3; skill: `.claude/skills/settlement-guard/`.
-- Email close after the valediction:
+- Counsel-email voice and close: read `.cursor/rules/email-ending.mdc`. Draft smooth, natural, professional, respectful, and polite emails; verify honorifics; ask scheduling and logistics questions plainly; avoid mechanical or needlessly legalistic filler. Tone never changes substantive positions, deadlines, concessions, or settlement authority. After the valediction, use exactly:
 
 ```
 Brendan Ngwa Nforbi
