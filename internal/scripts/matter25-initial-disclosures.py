@@ -220,21 +220,17 @@ heading(doc, "III. COMPUTATION OF DAMAGES")
 
 para(
     doc,
-    "Plaintiff's present computation is preliminary. The record reflects compensation beginning "
-    "at $20.25 per hour for up to 20 hours per week. Defendant controls additional material "
-    "inputs, including the anticipated start date, position classification, benefits, and complete "
-    "hiring records. Plaintiff requested those facts in written discovery served October 6, 2026 "
-    "and will supplement promptly after receiving them and completing his mitigation compilation.",
+    "Plaintiff's present computation is preliminary. California Penal Code section "
+    "290.46(j)(4)(A) does not provide a $25,000 minimum; the $25,000 figure is a cap on the "
+    "alternative civil penalty. The record reflects compensation beginning at $20.25 per hour for "
+    "up to 20 hours per week. Defendant controls additional material inputs, including the "
+    "anticipated start date, position classification, benefits, and complete hiring records. "
+    "Plaintiff requested those facts in written discovery served October 6, 2026 and will "
+    "supplement under Rule 26(e) after receiving them and completing his mitigation compilation.",
 )
 
 numbered(
     doc, "1",
-    "Statutory damages under California Penal Code section 290.46(j)(4)(A): not less than "
-    "$25,000 for the presently identified prohibited use, or actual damages, whichever is greater. "
-    "Plaintiff will supplement if discovery establishes additional legally distinct prohibited uses.",
-)
-numbered(
-    doc, "2",
     "Accrued lost wages: $20.25 per hour x 20 hours per week = $405 per week. From the March "
     "19, 2025 final adverse action through October 9, 2026 (569 days, or approximately 81.2857 "
     "weeks), gross accrued wage loss is approximately $32,920.71, less interim earnings and "
@@ -242,18 +238,25 @@ numbered(
     "per week, subject to proof, mitigation, and the appropriate legal cutoff.",
 )
 numbered(
-    doc, "3",
+    doc, "2",
     "Front pay: using a provisional two-year period, 104 weeks x $405 per week = $42,120, less "
     "interim earnings and other amounts properly attributable to mitigation. Plaintiff will "
     "supplement this period and calculation as the case schedule, discovery, and mitigation record "
     "develop.",
 )
 numbered(
-    doc, "4",
+    doc, "3",
     "Lost employment benefits: the value of employer-provided benefits Plaintiff would have "
     "received during the compensable period, less corresponding benefits obtained through "
     "mitigation. The plan terms and employer contribution data are presently controlled by "
     "Defendant and will be incorporated after production.",
+)
+numbered(
+    doc, "4",
+    "Statutory remedy under California Penal Code section 290.46(j)(4)(A): actual damages; an "
+    "additional amount determined by the trier of fact, not exceeding three times actual damages "
+    "and not less than $250; attorney's fees; exemplary damages; or, in the alternative, a civil "
+    "penalty not exceeding $25,000. Attorney's fees are not claimed for Plaintiff's own time.",
 )
 numbered(
     doc, "5",
@@ -279,14 +282,14 @@ numbered(
 
 para(
     doc,
-    "The presently estimated nonpunitive damages are approximately $175,040.71 before "
+    "The presently quantifiable damages are approximately $175,040.71 before "
     "mitigation, consisting of $32,920.71 in accrued gross wage loss, $42,120 in provisional front "
     "pay, and $100,000 in noneconomic damages. Accrued wage loss continues at $405 per week. "
-    "The statutory $25,000 minimum is disclosed as an alternative where section 290.46(j)(4)(A) "
-    "requires the greater of actual damages or $25,000, and Plaintiff does not seek duplicative "
-    "recovery. Benefits, punitive damages, recoverable costs, interest, restitution, and equitable "
-    "relief remain additional or subject to later computation as permitted by law. This is a Rule "
-    "26 disclosure, not a settlement demand or a waiver of any remedy.",
+    "The alternative civil penalty under section 290.46(j)(4)(A) is not included as an additive "
+    "amount in this total. Benefits, statutory enhancements, exemplary or punitive damages, "
+    "recoverable costs, interest, restitution, and equitable relief remain additional or subject to "
+    "later computation as permitted by law. This is a Rule 26 computation, not a settlement "
+    "demand or a waiver of any remedy.",
 )
 
 heading(doc, "IV. INSURANCE AGREEMENTS")
@@ -311,9 +314,9 @@ fields = ProofOfServiceFields(
     service_date="October 9, 2026",
     document_title="Plaintiff's Initial Rule 26(a)(1) Disclosures",
     recipients=[
-        "Allison A. Kray, Esq. - allison.kray@fedex.com",
-        "Gabriella Bow - gabriella.bow@fedex.com",
-        "Michele Wilson - michele.wilson@fedex.com",
+        "Ms. Allison A. Kray, Esq. - allison.kray@fedex.com",
+        "Ms. Gabriella Bow - gabriella.bow@fedex.com",
+        "Ms. Michele Wilson - michele.wilson@fedex.com",
     ],
     server_name="Brendan Ngehsi Newanforbi",
     stamp_signature=True,
@@ -324,4 +327,3 @@ assemble([BODY, POS], OUT)
 BODY.unlink(missing_ok=True)
 POS.unlink(missing_ok=True)
 print(OUT)
-
