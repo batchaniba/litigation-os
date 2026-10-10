@@ -314,9 +314,9 @@ fields = ProofOfServiceFields(
     service_date="October 9, 2026",
     document_title="Plaintiff's Initial Rule 26(a)(1) Disclosures",
     recipients=[
-        "Ms. Allison A. Kray, Esq. - allison.kray@fedex.com",
-        "Ms. Gabriella Bow - gabriella.bow@fedex.com",
-        "Ms. Michele Wilson - michele.wilson@fedex.com",
+        "Allison A. Kray, Esq. - allison.kray@fedex.com",
+        "Gabriella Bow - gabriella.bow@fedex.com",
+        "Michele Wilson - michele.wilson@fedex.com",
     ],
     server_name="Brendan Ngehsi Newanforbi",
     stamp_signature=True,
