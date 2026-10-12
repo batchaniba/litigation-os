@@ -1,0 +1,1145 @@
+ 1    BRENDAN NGEHSI NEWANFORBI
+      Plaintiff, In Pro Per
+ 2
+      1455 Cat Tail Drive
+ 3    Stockton, CA 95204
+      Telephone: (209) 801-4442
+ 4    E-mail: bnn.cdl@gmail.com
+ 5
+
+ 6                                  UNITED STATES DISTRICT COURT
+
+ 7                                 NORTHERN DISTRICT OF CALIFORNIA
+
+ 8
+
+ 9     BRENDAN NGEHSI NEWANFORBI,                               Case No. 4:26-cv-09249-ASK
+
+10                    Plaintiff,                                PLAINTIFF'S OPPOSITION TO
+                                                                DEFENDANT AMAZON.COM
+11         v.                                                   SERVICES LLC'S MOTION TO
+                                                                DISMISS PLAINTIFF'S FIFTH,
+12
+       AMAZON.COM SERVICES, LLC, a                              SIXTH, AND SEVENTH CLAIMS
+       Delaware limited liability company;                      FOR RELIEF
+13
+       ACCURATE BACKGROUND, LLC, a
+14     California limited liability company;                    Date: November 18, 2026
+       and DOES 1-10, inclusive,                                Time: 1:30 p.m.
+15                                                              Courtroom: 4, 3rd Floor
+                      Defendants.                               Judge: Hon. Ajay S. Krishnan
+16
+
+17
+
+18
+
+19
+
+20
+
+21
+
+22
+
+23
+
+24
+
+25
+
+26
+
+27
+
+28
+
+                                                      Page 1
+     PLAINTIFF'S OPPOSITION TO AMAZON'S MOTION TO DISMISS -- NEWANFORBI v. AMAZON.COM SERVICES, LLC (N.D. Cal.)
+ 1                                                       TABLE OF CONTENTS
+
+ 2
+
+ 3    I. STATEMENT OF ISSUES TO BE DECIDED . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5
+
+ 4    II. INTRODUCTION . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5
+
+ 5    III. STATEMENT OF RELEVANT ALLEGATIONS . . . . . . . . . . . . . . . . . . . . . . . . . . . .                                              6
+
+ 6    IV. LEGAL STANDARD . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 8
+
+ 7    V. ARGUMENT . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 8
+
+ 8         A. The Motion Must Be Decided on the Complaint, and It Does Not Reach
+
+ 9            Claims One Through Four. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 8
+
+10         B. Plaintiff's Fifth Claim for Invasion of Privacy Is Adequately Pleaded. . . . . . . . . . . . . . 10
+
+11              1. The asserted interest is freedom from the prohibited use of registry
+
+12                 information, not secrecy. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .          10
+
+13              2. Amazon's public-record authorities do not address a statutory use
+
+14                 restriction. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11
+
+15              3. General authorization for a background check is not consent to the
+
+16                 alleged prohibited use. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12
+
+17              4. The Complaint plausibly alleges a serious invasion, and the balancing
+
+18                 Amazon seeks is premature. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13
+
+19              5. Alternative allegations about the source of the registry information are
+
+20                 permitted. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14
+
+21              6. Any dismissal of the Fifth Claim should be without prejudice and limited
+
+22                 to the constitutional claim. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14
+
+23         C. If the Court Dismisses the Sixth Claim Against Amazon, the Dismissal
+
+24            Should Be Without Prejudice. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .              14
+
+25         D. Plaintiff Does Not Oppose Dismissal of the Seventh Claim as Against
+
+26            Amazon Only and Without Prejudice. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 15
+
+27         E. Leave to Amend Should Be Granted as to Any Claim Dismissed. . . . . . . . . . . . . . . . . 16
+
+28    VI. CONCLUSION . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17
+
+                                                                      Page 2
+     PLAINTIFF'S OPPOSITION TO AMAZON'S MOTION TO DISMISS -- NEWANFORBI v. AMAZON.COM SERVICES, LLC (N.D. Cal.)
+ 1                                                  TABLE OF AUTHORITIES
+
+ 2
+
+ 3    Cases
+
+ 4        Ashcroft v. Iqbal, 556 U.S. 662 (2009) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .             8
+
+ 5        Brahmana v. Henard, 2010 WL 11488727 (N.D. Cal. Nov. 12, 2010) . . . . . . . . . . . . . . . 11
+
+ 6        Erickson v. Pardus, 551 U.S. 89 (2007) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 8
+
+ 7        Estate of Hearst, 67 Cal. App. 3d 777 (1977) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11
+
+ 8        Guzman v. Polaris Industries Inc., 49 F.4th 1308 (9th Cir. 2022) . . . . . . . . . . . . . . 6, 15, 17
+
+ 9        Hill v. National Collegiate Athletic Ass'n, 7 Cal. 4th 1 (1994) . . . . . . . . . . . . . . . . . . passim
+
+10        In re Yahoo Mail Litigation, 7 F. Supp. 3d 1016 (N.D. Cal. 2014) . . . . . . . . . . . . . . . . . . 13
+
+11        Khoja v. Orexigen Therapeutics, Inc., 899 F.3d 988 (9th Cir. 2018) . . . . . . . . . . . . . . . . . . 8
+
+12        Lee v. City of Los Angeles, 250 F.3d 668 (9th Cir. 2001), overruled on other
+
+13            grounds by Galbraith v. County of Santa Clara, 307 F.3d 1119 (9th Cir. 2002) . . . . . . . 8
+
+14        Lerma v. Amazon.com Services, LLC, No. 8:22-cv-01727-FWS-JDE, 2023
+
+15            WL 4681571 (C.D. Cal. May 26, 2023) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9
+
+16        Lopez v. Smith, 203 F.3d 1122 (9th Cir. 2000) (en banc) . . . . . . . . . . . . . . . . . . . . 8, 14, 16
+
+17        Saleh v. Nike, Inc., 562 F. Supp. 3d 503 (C.D. Cal. 2021) . . . . . . . . . . . . . . . . . . . . . . . .                        12
+
+18        Sonner v. Premier Nutrition Corp., 971 F.3d 834 (9th Cir. 2020) . . . . . . . . . . . . . . . 5, 6, 15
+
+19        Starr v. Baca, 652 F.3d 1202 (9th Cir. 2011) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 8
+
+20
+
+21    Constitutional Provisions
+
+22        Cal. Const. art. I, § 1 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5, 10
+
+23
+
+24    Statutes
+
+25        15 U.S.C. § 1681g . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 16
+
+26        Cal. Bus. & Prof. Code § 17200 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5
+
+27        Cal. Civ. Code § 1786.10 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 16
+
+28        Cal. Penal Code § 290.46(j)(2) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . passim
+
+                                                                    Page 3
+     PLAINTIFF'S OPPOSITION TO AMAZON'S MOTION TO DISMISS -- NEWANFORBI v. AMAZON.COM SERVICES, LLC (N.D. Cal.)
+ 1        Cal. Penal Code § 290.46(j)(4)(A) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11, 14
+
+ 2
+
+ 3    Rules
+
+ 4        Fed. R. Civ. P. 8(d)(2)-(3) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .     14
+
+ 5        Fed. R. Civ. P. 12(b)(6) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .    8, 9
+
+ 6        Fed. R. Civ. P. 15(a)(2) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 15, 16
+
+ 7        Civil L.R. 7-4(a)(3) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5
+
+ 8
+
+ 9
+
+10
+
+11
+
+12
+
+13
+
+14
+
+15
+
+16
+
+17
+
+18
+
+19
+
+20
+
+21
+
+22
+
+23
+
+24
+
+25
+
+26
+
+27
+
+28
+
+                                                                     Page 4
+     PLAINTIFF'S OPPOSITION TO AMAZON'S MOTION TO DISMISS -- NEWANFORBI v. AMAZON.COM SERVICES, LLC (N.D. Cal.)
+ 1                             I. STATEMENT OF ISSUES TO BE DECIDED
+
+ 2
+
+ 3            Pursuant to Civil Local Rule 7-4(a)(3), the issues presented are:
+
+ 4
+
+ 5            1. Whether the Fifth Claim states a claim under article I, section 1 of the California
+
+ 6            Constitution where it alleges the use of registry information to deny employment -- the
+
+ 7            specific use California law prohibits -- rather than the disclosure of secret information.
+
+ 8
+
+ 9            2. Whether, if the Court concludes under Sonner v. Premier Nutrition Corp. that it
+
+10            lacks equitable jurisdiction over the Sixth Claim under Business and Professions Code
+
+11            section 17200, the dismissal as against Amazon should be without prejudice.
+
+12
+
+13            3. Whether the unopposed dismissal of the Seventh Claim as against Amazon should
+
+14            be without prejudice.
+
+15
+
+16            4. Whether the motion must be decided on the Complaint alone, without regard to the
+
+17            factual assertions in the motion's first footnote, and without any ruling on Claims One
+
+18            through Four.
+
+19
+
+20                                            II. INTRODUCTION
+
+21
+
+22            Amazon's motion is limited. Plaintiff pleads seven causes of action, but Amazon
+
+23    moves only against the Fifth Claim for invasion of privacy, the Sixth Claim under California's
+
+24    Unfair Competition Law (UCL), and the Seventh Claim for intentional infliction of emotional
+
+25    distress (IIED). It does not move against the First Claim under Penal Code section
+
+26    290.46(j)(2)(E), the Second Claim under the California Fair Chance Act, the Third Claim
+
+27    under the Fair Credit Reporting Act (FCRA), or the Fourth Claim under the Investigative
+
+28    Consumer Reporting Agencies Act (ICRAA). The merits of Claims One through Four are
+
+                                                      Page 5
+     PLAINTIFF'S OPPOSITION TO AMAZON'S MOTION TO DISMISS -- NEWANFORBI v. AMAZON.COM SERVICES, LLC (N.D. Cal.)
+ 1    therefore not presented for decision. Accurate Background has answered the Complaint and
+
+ 2    has not joined the motion. ECF No. 21.
+
+ 3
+
+ 4            The motion should be denied as to the Fifth Claim. Amazon treats that claim as an
+
+ 5    assertion that public registry information is secret. Plaintiff alleges something narrower: a
+
+ 6    protected interest in freedom from the use of registry information to deny employment -- the
+
+ 7    specific use California expressly prohibits. Indeed, the statutory restriction exists only because
+
+ 8    the information is public; public availability therefore cannot be the end of the analysis.
+
+ 9    California's enactment supplies the legal and social norms that inform each element under Hill
+
+10    v. National Collegiate Athletic Ass'n, 7 Cal. 4th 1 (1994).
+
+11
+
+12            Plaintiff does not oppose dismissal of the Sixth Claim as against Amazon only,
+
+13    provided the dismissal is without prejudice. Plaintiff does not defend lost wages or ordinary
+
+14    employment benefits as UCL restitution. Any dismissal would rest on federal equitable
+
+15    jurisdiction under Sonner v. Premier Nutrition Corp., 971 F.3d 834 (9th Cir. 2020), not on the
+
+16    merits of the statutory predicates Amazon has not challenged. Under Guzman v. Polaris
+
+17    Industries Inc., 49 F.4th 1308 (9th Cir. 2022), such a dismissal should be without prejudice.
+
+18    Plaintiff likewise does not oppose dismissal of the Seventh Claim as against Amazon only,
+
+19    without prejudice, and without adopting Amazon's characterization of that claim.
+
+20
+
+21            Finally, Amazon's footnote about the status of the background report is unsupported
+
+22    attorney argument. The motion must be decided on the Complaint, and it cannot yield a ruling
+
+23    on the four claims Amazon did not challenge.
+
+24
+
+25                          III. STATEMENT OF RELEVANT ALLEGATIONS
+
+26
+
+27            On July 3, 2026, Amazon extended Plaintiff a conditional offer for a Seasonal XL
+
+28    Warehouse Associate position at its Fremont fulfillment center, with training fixed for July
+
+                                                      Page 6
+     PLAINTIFF'S OPPOSITION TO AMAZON'S MOTION TO DISMISS -- NEWANFORBI v. AMAZON.COM SERVICES, LLC (N.D. Cal.)
+ 1    28-29 and August 4-5, 2026. Compl. ¶¶ 7-10. The offer e-mail told Plaintiff that if
+
+ 2    pre-employment requirements were "not completed on time," he would be required to select a
+
+ 3    new start date, location, or schedule -- and added, "But don't worry if this happens!" Id. ¶ 9.
+
+ 4
+
+ 5            Amazon procured a consumer report on Plaintiff through Defendant Accurate
+
+ 6    Background, which identified itself in writing as "a consumer reporting agency" conducting
+
+ 7    the screening on behalf of "Amazon Salesforce." Id. ¶¶ 15-16. Moments after Plaintiff
+
+ 8    completed his July 7 pre-hire appointment, Accurate also asked him to telephone and confirm
+
+ 9    his Social Security number, prior names, address history, and date of birth, describing the
+
+10    request as "urgent." Id. ¶ 15.
+
+11
+
+12            On July 8, Amazon told Plaintiff that background checks for that site "are usually
+
+13    returned 5 days after they are submitted." Id. ¶ 17. On July 12, Amazon wrote that the
+
+14    application was "still in progress"; on July 17, it apologized for the delay and attributed it to
+
+15    its third-party vendor. Id. ¶¶ 18-19. On July 27 -- twenty days after submission and one day
+
+16    before the fixed training date -- Amazon's onboarding portal still showed the check as
+
+17    "Pending," and Plaintiff's confirmed shift had been replaced with the message "You do not
+
+18    have a shift selected. Please select a new shift." Id. ¶¶ 21-22.
+
+19
+
+20            Plaintiff alleges that the specific, dated position was lost in substance while the
+
+21    application remained labeled pending, and that neither Defendant provided a
+
+22    pre-adverse-action notice, a copy of the report, an adverse-action notice, or an opportunity to
+
+23    respond. Id. ¶¶ 23-25. Plaintiff is a registrant on California's Sex Offender Registry. Id. ¶ 26.
+
+24    He alleges, in the alternative, that registry-derived information entered the screening through
+
+25    Accurate's registry search product, a national sex-offender database drawing on California's
+
+26    registry, the Megan's Law website, or another registry-derived channel. Id. ¶¶ 28, 43. He has
+
+27    demanded but not received the report and therefore cannot yet identify the internal source. Id.
+
+28    ¶ 29.
+
+                                                      Page 7
+     PLAINTIFF'S OPPOSITION TO AMAZON'S MOTION TO DISMISS -- NEWANFORBI v. AMAZON.COM SERVICES, LLC (N.D. Cal.)
+ 1
+
+ 2                                          IV. LEGAL STANDARD
+
+ 3
+
+ 4            A Rule 12(b)(6) motion tests the sufficiency of the pleading, not the merits. A claim
+
+ 5    survives when the pleaded facts permit a reasonable inference that the defendant is liable.
+
+ 6    Ashcroft v. Iqbal, 556 U.S. 662, 678 (2009). The Court accepts well-pleaded allegations as
+
+ 7    true and draws reasonable inferences in Plaintiff's favor. Starr v. Baca, 652 F.3d 1202,
+
+ 8    1216-17 (9th Cir. 2011). A self-represented litigant's pleading is construed liberally. Erickson
+
+ 9    v. Pardus, 551 U.S. 89, 94 (2007). A pro se plaintiff should be granted leave to amend unless
+
+10    the pleading could not possibly be cured by additional facts. Lopez v. Smith, 203 F.3d 1122,
+
+11    1127, 1130 (9th Cir. 2000) (en banc).
+
+12
+
+13                                               V. ARGUMENT
+
+14
+
+15    A. The Motion Must Be Decided on the Complaint, and It Does Not Reach Claims One
+
+16    Through Four.
+
+17
+
+18            Review under Rule 12(b)(6) is limited to the Complaint, documents properly
+
+19    incorporated by reference, and matters properly subject to judicial notice. Lee v. City of Los
+
+20    Angeles, 250 F.3d 668, 688-90 (9th Cir. 2001), overruled on other grounds by Galbraith v.
+
+21    County of Santa Clara, 307 F.3d 1119 (9th Cir. 2002). Even when a document is judicially
+
+22    noticeable, disputed facts within it may not be accepted as true. Khoja v. Orexigen
+
+23    Therapeutics, Inc., 899 F.3d 988, 999-1003 (9th Cir. 2018).
+
+24
+
+25            Amazon submits nothing outside the pleadings -- no background report, no
+
+26    declaration, no status record, and no request for judicial notice. Its first footnote nonetheless
+
+27    asserts that the report remains unfinished because certain California court records are difficult
+
+28    to obtain, and that no adverse action has been taken. Mot. 1 n.1. That is unsupported attorney
+
+                                                      Page 8
+     PLAINTIFF'S OPPOSITION TO AMAZON'S MOTION TO DISMISS -- NEWANFORBI v. AMAZON.COM SERVICES, LLC (N.D. Cal.)
+ 1    argument, and it cannot displace the pleaded allegations. Accordingly, the motion must be
+
+ 2    decided on the Complaint and materials properly considered under Rule 12(b)(6).
+
+ 3
+
+ 4            That posture distinguishes Lerma v. Amazon.com Services, LLC,
+
+ 5    No. 8:22-cv-01727-FWS-JDE, 2023 WL 4681571 (C.D. Cal. May 26, 2023), which the
+
+ 6    Complaint describes. Compl. ¶¶ 31-33. As the Complaint alleges, the court in that case
+
+ 7    resolved the source of the disqualifying information on the background report itself, which
+
+ 8    was before the court and which showed court-record sourcing and no registry hit. Id. ¶ 32.
+
+ 9    Here, Amazon has placed no report in the record, and Plaintiff alleges that he has demanded it
+
+10    and not received it. Id. ¶ 29. For purposes of this motion, the Court therefore takes the
+
+11    Complaint's alternative allegations about the source of the registry information as true.
+
+12
+
+13            Accurate's Answer does not change that analysis. Accurate admits that Plaintiff's
+
+14    "consumer report is pending" and denies reporting registry information. ECF No. 21 at 10:3-4,
+
+15    12:14-15, 18:18-19. A co-defendant's pleaded denials are not evidence and cannot resolve
+
+16    Amazon's Rule 12(b)(6) motion; the Complaint's well-pleaded allegations are accepted as true,
+
+17    and neither defendant has placed a background report before the Court.
+
+18
+
+19            Nor does the motion reach Claims One through Four. Amazon moved against only the
+
+20    Fifth, Sixth, and Seventh Claims, and its footnote comments on the remaining claims request
+
+21    no relief. Those claims are not presented for decision, and the order on this motion should not
+
+22    be read to address them.
+
+23
+
+24
+
+25
+
+26
+
+27
+
+28
+
+                                                      Page 9
+     PLAINTIFF'S OPPOSITION TO AMAZON'S MOTION TO DISMISS -- NEWANFORBI v. AMAZON.COM SERVICES, LLC (N.D. Cal.)
+ 1    B. Plaintiff's Fifth Claim for Invasion of Privacy Is Adequately Pleaded.
+
+ 2
+
+ 3            A claim for invasion of the California constitutional right of privacy requires a legally
+
+ 4    protected privacy interest, a reasonable expectation of privacy under the circumstances, and a
+
+ 5    serious invasion. Hill, 7 Cal. 4th at 35-37; Cal. Const. art. I, § 1. Whether a reasonable
+
+ 6    expectation exists and whether an invasion is serious are mixed questions of law and fact; they
+
+ 7    may be decided as a matter of law only where the undisputed facts show no reasonable
+
+ 8    expectation or an insubstantial impact on privacy interests. Hill, 7 Cal. 4th at 40. Amazon's
+
+ 9    arguments on each element answer a secrecy claim Plaintiff has not brought.
+
+10
+
+11    1. The asserted interest is freedom from the prohibited use of registry information, not
+
+12    secrecy.
+
+13
+
+14            Amazon argues that Plaintiff has no privacy interest in public criminal records or
+
+15    information displayed on a government website. Mot. 5. But the Complaint does not allege
+
+16    that the registry listing is confidential. It alleges an interest in the information "insofar as that
+
+17    information is used for purposes expressly prohibited by Penal Code § 290.46(j)(2)."
+
+18    Compl. ¶ 73. The alleged invasion is the use of registry information to deny employment. Id.
+
+19    ¶¶ 74-75.
+
+20
+
+21            Hill defines informational privacy as the interest in precluding the "dissemination or
+
+22    misuse" of sensitive and confidential information. 7 Cal. 4th at 35 (emphasis added). Plaintiff
+
+23    does not contend that his registry listing is confidential; Amazon is correct that it is publicly
+
+24    accessible. The claim does not depend on confidentiality. It depends on restricted use, context,
+
+25    the scope of consent, and resulting harm -- the considerations that inform whether an
+
+26    expectation of privacy is reasonable and an invasion serious. Id. at 35-37.
+
+27
+
+28            The Legislature has identified the misuse at issue here. Absent a statutory exception,
+
+                                                     Page 10
+     PLAINTIFF'S OPPOSITION TO AMAZON'S MOTION TO DISMISS -- NEWANFORBI v. AMAZON.COM SERVICES, LLC (N.D. Cal.)
+ 1    Penal Code section 290.46(j)(2)(E) prohibits the use of registry information disclosed under
+
+ 2    that section for purposes relating to employment -- including, as alleged here, to deny it -- and
+
+ 3    section 290.46(j)(4)(A) gives the person harmed a private civil remedy. That enactment bears
+
+ 4    on whether the asserted interest is legally protected and on the social norms governing the
+
+ 5    challenged use.
+
+ 6
+
+ 7            At minimum, the statutory prohibition and its express civil remedy supply concrete
+
+ 8    legal and social norms relevant to the contextual Hill inquiry; they foreclose dismissal based
+
+ 9    solely on the public availability of the underlying information.
+
+10
+
+11    2. Amazon's public-record authorities do not address a statutory use restriction.
+
+12
+
+13            Amazon relies on Brahmana v. Henard, 2010 WL 11488727, at *4 (N.D. Cal. Nov. 12,
+
+14    2010), and Estate of Hearst, 67 Cal. App. 3d 777, 782 (1977). Mot. 5. As Amazon presents
+
+15    them, those decisions establish that court records and information about criminal convictions
+
+16    on a government website are publicly accessible. Plaintiff does not dispute that proposition.
+
+17    Neither decision addresses a statute that restricts a particular use of otherwise-public
+
+18    information, and neither involved a use that the Legislature has made independently
+
+19    actionable.
+
+20
+
+21            The distinction is not a technicality. Section 290.46(j)(2) governs information
+
+22    "disclosed pursuant to this section" -- information that is, by definition, public. The
+
+23    Legislature chose to publish registry information for protective purposes while restricting its
+
+24    use for employment and other enumerated purposes. Public availability is therefore relevant,
+
+25    but it is not necessarily dispositive of the distinct theory pleaded here: that Defendants used
+
+26    registry-derived information for a purpose California expressly prohibits. Section 290.46(j)
+
+27    informs the objective expectations and social norms relevant under Hill, even though the
+
+28    statute does not itself establish every constitutional element.
+
+                                                     Page 11
+     PLAINTIFF'S OPPOSITION TO AMAZON'S MOTION TO DISMISS -- NEWANFORBI v. AMAZON.COM SERVICES, LLC (N.D. Cal.)
+ 1
+
+ 2    3. General authorization for a background check is not consent to the alleged prohibited
+
+ 3    use.
+
+ 4
+
+ 5            Amazon next argues that because Plaintiff applied, completed onboarding paperwork,
+
+ 6    and received an offer conditioned on a background check, he consented to the check and
+
+ 7    cannot claim a reasonable expectation of privacy. Mot. 5. That argument equates awareness of
+
+ 8    a background check with consent to every possible source and use. The Complaint does not
+
+ 9    support that expansion. It alleges that the offer was conditioned on a background check and
+
+10    that Plaintiff later opted into text-message communications from Accurate. Compl. ¶¶ 8, 20. It
+
+11    does not allege that Plaintiff authorized Defendants to use registry information to deny
+
+12    employment in violation of section 290.46(j)(2)(E).
+
+13
+
+14            Saleh v. Nike, Inc., 562 F. Supp. 3d 503, 524 (C.D. Cal. 2021), on which Amazon
+
+15    relies, recites the general principle that a plaintiff cannot claim a reasonable expectation of
+
+16    privacy in an intrusion to which he consented. It does not hold that consent to one activity
+
+17    extends to a different use, and still less to a use that state law forbids. Amazon cites no
+
+18    authority holding that authorization for a lawful employment screening constitutes consent to
+
+19    a prohibited use of the results. Under Hill, the reasonableness of an expectation of privacy is
+
+20    an objective question informed by widely accepted community norms and the circumstances,
+
+21    including the opportunity to consent. 7 Cal. 4th at 36-37. Here the governing norm is codified,
+
+22    and the scope of the consent alleged is narrower than the use alleged. At the pleading stage,
+
+23    the Court should not enlarge that consent in Amazon's favor.
+
+24
+
+25
+
+26
+
+27
+
+28
+
+                                                     Page 12
+     PLAINTIFF'S OPPOSITION TO AMAZON'S MOTION TO DISMISS -- NEWANFORBI v. AMAZON.COM SERVICES, LLC (N.D. Cal.)
+ 1    4. The Complaint plausibly alleges a serious invasion, and the balancing Amazon seeks is
+
+ 2    premature.
+
+ 3
+
+ 4            Seriousness is evaluated through the invasion's nature, scope, and actual or potential
+
+ 5    impact. Hill, 7 Cal. 4th at 37. Plaintiff alleges more than abstract access to a public listing. He
+
+ 6    alleges the use of registry information for the precise employment purpose California forbids,
+
+ 7    resulting in the loss of a specific, dated job without the required notices or any opportunity to
+
+ 8    respond. Compl. ¶¶ 22-25, 75-76. A use the Legislature has singled out for prohibition and
+
+ 9    made privately actionable is, at a minimum, plausibly an egregious breach of the social norms
+
+10    underlying the privacy right.
+
+11
+
+12            Amazon's reliance on the "high bar" language of In re Yahoo Mail Litigation, 7 F.
+
+13    Supp. 3d 1016, 1038 (N.D. Cal. 2014), does not change the analysis. Privacy claims can be
+
+14    dismissed at the pleading stage, but dismissal is unwarranted where, as here, the pleaded
+
+15    circumstances plausibly support seriousness and the relevant context remains fact-dependent.
+
+16    See Hill, 7 Cal. 4th at 40. Any asserted countervailing interest likewise requires a fact-specific
+
+17    justification analysis. Id. On the pleaded allegations, Amazon identifies no basis to resolve
+
+18    that analysis against Plaintiff at the Rule 12 stage, and the Complaint alleges a use the
+
+19    Legislature has already labeled wrongful. Seriousness is at least plausible.
+
+20
+
+21            The same alleged conduct underlies the First Claim under section 290.46(j)(2)(E).
+
+22    Amazon's decision not to move against that claim is not a concession that a violation occurred,
+
+23    but it places the statutory merits outside this motion. The question here is narrower: assuming
+
+24    the pleaded prohibited use, do the allegations satisfy Hill? At the Rule 12 stage, they plausibly
+
+25    do.
+
+26
+
+27
+
+28
+
+                                                     Page 13
+     PLAINTIFF'S OPPOSITION TO AMAZON'S MOTION TO DISMISS -- NEWANFORBI v. AMAZON.COM SERVICES, LLC (N.D. Cal.)
+ 1    5. Alternative allegations about the source of the registry information are permitted.
+
+ 2
+
+ 3            Rule 8 permits a party to set out alternative statements of a claim and to plead in the
+
+ 4    alternative regardless of consistency. Fed. R. Civ. P. 8(d)(2)-(3). The Complaint alleges
+
+ 5    alternative channels through which registry-derived information entered the screening because
+
+ 6    the report that would identify the channel is in Defendants' possession and has been demanded
+
+ 7    but not produced. Compl. ¶¶ 28-29, 43, 75. Amazon's privacy argument does not contend
+
+ 8    otherwise. It assumes the information came from the public registry and argues only public
+
+ 9    availability and consent. Plaintiff's inability to identify the internal source before discovery is
+
+10    not a pleading defect.
+
+11
+
+12    6. Any dismissal of the Fifth Claim should be without prejudice and limited to the
+
+13    constitutional claim.
+
+14
+
+15            If the Court nonetheless concludes that the constitutional claim is deficient, the
+
+16    dismissal should be without prejudice and with leave to amend. Lopez, 203 F.3d at 1127,
+
+17    1130. It should also be limited to the constitutional claim. Amazon did not move against the
+
+18    First Claim, and a ruling on the Hill elements would not determine whether registry
+
+19    information was used in violation of section 290.46(j)(2)(E) or whether section
+
+20    290.46(j)(4)(A) affords relief.
+
+21
+
+22    C. If the Court Dismisses the Sixth Claim Against Amazon, the Dismissal Should Be
+
+23    Without Prejudice.
+
+24
+
+25            Amazon argues that the UCL claim must be dismissed because the UCL affords only
+
+26    equitable relief and the Complaint does not allege that Plaintiff lacks an adequate legal
+
+27    remedy. Mot. 3-4. Plaintiff does not oppose dismissal of the Sixth Claim against Amazon on
+
+28    the presently pleaded equitable-relief theory, provided that dismissal is without prejudice and
+
+                                                     Page 14
+     PLAINTIFF'S OPPOSITION TO AMAZON'S MOTION TO DISMISS -- NEWANFORBI v. AMAZON.COM SERVICES, LLC (N.D. Cal.)
+ 1    does not adjudicate the underlying statutory predicates. Plaintiff also clarifies that he does not
+
+ 2    defend lost wages or ordinary employment benefits as UCL restitution; those sums are sought,
+
+ 3    if recoverable, as legal damages under other claims.
+
+ 4
+
+ 5            A Sonner disposition does not adjudicate the UCL predicates. The UCL count borrows
+
+ 6    the alleged section 290.46, FCRA, and ICRAA violations, Compl. ¶ 79, and Amazon has not
+
+ 7    moved against those claims.
+
+ 8
+
+ 9            Under Guzman, if the Court concludes that equitable jurisdiction is absent, dismissal
+
+10    should be without prejudice rather than an adjudication of the UCL claim's substantive
+
+11    predicates. 49 F.4th at 1313-15. Plaintiff asks only that the order say so: a dismissal without
+
+12    prejudice, without adjudicating the UCL claim's substantive merits.
+
+13
+
+14            Alternatively, if the Court permits amendment, Plaintiff can plead the continuing status
+
+15    of the screening and application, the prospective harms that damages cannot prevent, the
+
+16    precise injunction sought, and why monetary relief cannot supply that relief. Sonner addressed
+
+17    equitable restitution for past harm. 971 F.3d at 844. The Complaint alleges that the screening
+
+18    remains in "Pending" status, Compl. ¶ 23 -- a point Amazon's motion does not dispute, see
+
+19    Mot. 1 n.1, and that Accurate's Answer admits, ECF No. 21 at 10:3-4. Plaintiff therefore
+
+20    requests either dismissal without prejudice under Guzman or leave to amend under Rule
+
+21    15(a)(2).
+
+22
+
+23    D. Plaintiff Does Not Oppose Dismissal of the Seventh Claim as Against Amazon Only
+
+24    and Without Prejudice.
+
+25
+
+26            Plaintiff does not oppose dismissal of the IIED claim as against Amazon only. That
+
+27    limited non-opposition does not adopt Amazon's reduction of the alleged course of conduct to
+
+28    a routine twenty-day delay. The Complaint also alleges removal of a confirmed shift one day
+
+                                                     Page 15
+     PLAINTIFF'S OPPOSITION TO AMAZON'S MOTION TO DISMISS -- NEWANFORBI v. AMAZON.COM SERVICES, LLC (N.D. Cal.)
+ 1    before training, withholding of the report and required notices, prohibited use of registry
+
+ 2    information, and resulting distress. Compl. ¶¶ 22-25, 84-87.
+
+ 3
+
+ 4            Plaintiff requests that the dismissal be without prejudice to later seeking leave under
+
+ 5    Rule 15 if the report, Amazon's decision record, or discovery supplies facts concerning
+
+ 6    Amazon's knowledge, the reason for the employment outcome, and the severity of the distress.
+
+ 7
+
+ 8    E. Leave to Amend Should Be Granted as to Any Claim Dismissed.
+
+ 9
+
+10            Leave to amend should be freely given, Fed. R. Civ. P. 15(a)(2); Lopez, 203 F.3d at
+
+11    1127, 1130, and amendment would not be futile. Without contradicting the Complaint,
+
+12    Plaintiff can allege the terms and scope of the background-check authorization he actually
+
+13    gave and the facts connecting the alleged employment use to the statutory prohibition, as the
+
+14    report and decision record are obtained through 15 U.S.C. § 1681g, Civil Code section
+
+15    1786.10, or discovery. Compl. ¶¶ 29, 45. The amendments available for the Sixth and Seventh
+
+16    Claims are set out in Sections V.C and V.D.
+
+17
+
+18
+
+19
+
+20
+
+21
+
+22
+
+23
+
+24
+
+25
+
+26
+
+27
+
+28
+
+                                                     Page 16
+     PLAINTIFF'S OPPOSITION TO AMAZON'S MOTION TO DISMISS -- NEWANFORBI v. AMAZON.COM SERVICES, LLC (N.D. Cal.)
+ 1                                             VI. CONCLUSION
+
+ 2
+
+ 3            Plaintiff respectfully requests that the Court: (1) deny Amazon's motion as to the Fifth
+
+ 4    Claim or, alternatively, dismiss that claim without prejudice, with leave to amend, and without
+
+ 5    any determination concerning the First Claim; (2) dismiss the Sixth Claim as against Amazon
+
+ 6    only and without prejudice under Guzman, or alternatively grant leave to amend; and (3)
+
+ 7    dismiss the Seventh Claim as against Amazon only and without prejudice to later seeking
+
+ 8    leave to amend. Claims One through Four, and all claims against Accurate, are not before the
+
+ 9    Court on this motion.
+
+10
+
+11    Dated: September 22, 2026                                                 Respectfully submitted,
+
+12
+
+13
+
+14                                                        ___________________________________
+
+15                                                             BRENDAN NGEHSI NEWANFORBI
+
+16                                                                                  Plaintiff, In Pro Per
+
+17
+
+18
+
+19
+
+20
+
+21
+
+22
+
+23
+
+24
+
+25
+
+26
+
+27
+
+28
+
+                                                     Page 17
+     PLAINTIFF'S OPPOSITION TO AMAZON'S MOTION TO DISMISS -- NEWANFORBI v. AMAZON.COM SERVICES, LLC (N.D. Cal.)
+ 1   BRENDAN NGEHSI NEWANFORBI
+     Plaintiff, In Pro Per
+ 2
+     1455 Cat Tail Drive
+ 3   Stockton, CA 95204
+     Telephone: (209) 801-4442
+ 4   E-mail: bnn.cdl@gmail.com
+ 5
+
+ 6                                 UNITED STATES DISTRICT COURT
+
+ 7                                NORTHERN DISTRICT OF CALIFORNIA
+
+ 8
+
+ 9    BRENDAN NGEHSI NEWANFORBI,                            Case No. 4:26-cv-09249-ASK
+
+10                   Plaintiff,                             [PROPOSED] ORDER ON
+                                                            DEFENDANT AMAZON.COM
+11        v.                                                SERVICES LLC'S MOTION TO
+                                                            DISMISS PLAINTIFF'S FIFTH,
+12
+      AMAZON.COM SERVICES, LLC, a                           SIXTH, AND SEVENTH CLAIMS
+      Delaware limited liability company;                   FOR RELIEF (DKT. 19)
+13
+      ACCURATE BACKGROUND, LLC, a
+14    California limited liability company;                 Judge: Hon. Ajay S. Krishnan
+      and DOES 1-10, inclusive,
+15
+                     Defendants.
+16
+
+17
+
+18                                         [PROPOSED] ORDER
+
+19
+
+20             Having considered Defendant Amazon.com Services LLC's Motion to Dismiss
+
+21   Plaintiff's Fifth, Sixth, and Seventh Claims for Relief (Dkt. 19), the papers filed in support of
+
+22   and in opposition to the motion, and the record, the Court ORDERS as follows:
+
+23
+
+24   1. The motion is DENIED as to the Fifth Claim for invasion of privacy under article I, section
+
+25   1 of the California Constitution.
+
+26
+
+27   2. The motion is GRANTED as to the Sixth Claim under Business and Professions Code
+
+28   section 17200, as against Amazon only. The Sixth Claim is DISMISSED as against Amazon
+
+                                                   Page 1
+     [PROPOSED] ORDER ON AMAZON'S MOTION TO DISMISS -- NEWANFORBI v. AMAZON.COM SERVICES, LLC (N.D. Cal.)
+ 1   WITHOUT PREJUDICE. This dismissal rests on the absence of federal equitable jurisdiction
+
+ 2   and does not adjudicate the merits of the claim or of its statutory predicates.
+
+ 3
+
+ 4   3. The motion is GRANTED as to the Seventh Claim for intentional infliction of emotional
+
+ 5   distress, as against Amazon only. The Seventh Claim is DISMISSED as against Amazon
+
+ 6   WITHOUT PREJUDICE to Plaintiff later seeking leave to amend.
+
+ 7
+
+ 8   4. This Order does not address or adjudicate Plaintiff's First, Second, Third, or Fourth Claims
+
+ 9   for Relief, and it does not dismiss any claim against Defendant Accurate Background, LLC.
+
+10
+
+11   5. Amazon shall answer the Complaint's remaining claims against it within fourteen (14) days
+
+12   after entry of this Order. Fed. R. Civ. P. 12(a)(4)(A).
+
+13
+
+14   IT IS SO ORDERED.
+
+15
+
+16   Dated: ________________
+
+17
+
+18
+
+19                                               ________________________________________
+
+20                                                                     HON. AJAY S. KRISHNAN
+
+21                                                                   United States Magistrate Judge
+
+22
+
+23
+
+24
+
+25
+
+26
+
+27
+
+28
+
+                                                   Page 2
+     [PROPOSED] ORDER ON AMAZON'S MOTION TO DISMISS -- NEWANFORBI v. AMAZON.COM SERVICES, LLC (N.D. Cal.)
+                                           UNITED STATES DISTRICT COURT
+                                          NORTHERN DISTRICT OF CALIFORNIA
+
+
+BRENDAN NGEHSI NEWANFORBI                                             Case Number: 4:26-cv-09249-ASK
+                              Plaintiff
+V.
+
+AMAZON.COM SERVICES, LLC;
+ACCURATE BACKGROUND, LLC; and
+DOES 1-10, inclusive                                                  PROOF OF SERVICE
+                     Defendants
+
+                                                      /
+
+
+     I hereby certify that on September 23, 2026, I served a copy of the attached
+
+PLAINTIFF'S OPPOSITION TO DEFENDANT AMAZON.COM SERVICES LLC'S MOTION TO DISMISS
+
+PLAINTIFF'S FIFTH, SIXTH, AND SEVENTH CLAIMS FOR RELIEF; [PROPOSED] ORDER,
+
+by transmitting a true copy by electronic mail (PDF attachments) to the e-mail address(es) hereinafter listed:
+
+(List Name and E-mail Address of Each Defendant or Attorney Served)
+     Andrew P. Frederick, Esq. — andrew.frederick@morganlewis.com
+     Douglass G. Brown, Esq. — douglass.brown@morganlewis.com
+     Morgan, Lewis & Bockius LLP
+     Attorneys for Defendant Amazon.com Services LLC
+
+     Jasmine J. Stanzick, Esq. — jstanzick@seyfarth.com
+     John W. Drury, Esq. — jdrury@seyfarth.com
+     Seyfarth Shaw LLP
+     Attorneys for Defendant Accurate Background, LLC
+
+
+I declare under penalty of perjury that the foregoing is true and correct.
+
+
+
+
+                                                                    Brendan Ngehsi Newanforbi, In Propria Persona
+

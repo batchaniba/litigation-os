@@ -1,6 +1,33 @@
 [
   {
     "dkt": null,
+    "date": "2026-09-23",
+    "filer": "plaintiff",
+    "type": "opposition",
+    "title": "Opposition to Amazon MTD with Proposed Order and POS - Unified (N.D. Cal. 4-26-cv-09249-ASK) (Sep 22 2026)",
+    "path": "/documents/matter-29/Opposition to Amazon MTD with Proposed Order and POS - Unified (N.D. Cal. 4-26-cv-09249-ASK) (Sep 22 2026).pdf",
+    "filed": true
+  },
+  {
+    "dkt": null,
+    "date": "2026-09-23",
+    "filer": "plaintiff",
+    "type": "other",
+    "title": "Gmail - [E-SERVICE] Opposition to Amazon MTD (Dkt 19) - Morgan Lewis (Sep 23 2026)",
+    "path": "/documents/matter-29/Gmail - [E-SERVICE] Opposition to Amazon MTD (Dkt 19) - Morgan Lewis (Sep 23 2026).pdf",
+    "filed": false
+  },
+  {
+    "dkt": null,
+    "date": "2026-09-23",
+    "filer": "plaintiff",
+    "type": "other",
+    "title": "Gmail - [E-SERVICE] Opposition to Amazon MTD (Dkt 19) - Seyfarth (Sep 23 2026)",
+    "path": "/documents/matter-29/Gmail - [E-SERVICE] Opposition to Amazon MTD (Dkt 19) - Seyfarth (Sep 23 2026).pdf",
+    "filed": false
+  },
+  {
+    "dkt": null,
     "date": null,
     "filer": "plaintiff",
     "type": "other",
