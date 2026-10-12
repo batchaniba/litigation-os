@@ -1,6 +1,6 @@
 {
   "generated": true,
-  "today": "2026-10-07",
+  "today": "2026-10-12",
   "matters": [
     {
       "number": 1,
@@ -813,11 +813,11 @@
         "id": "25-hearing-2",
         "date": "2026-10-08",
         "kind": "hearing",
-        "status": "open",
+        "status": "overdue",
         "title": "HEARING — Status (Pretrial Scheduling) Conference in Newanforbi v. Federal Express Corporation (E.D. Cal. 2:26-cv-02881-DAD-SCR), Thursday, October 8, 2026,…",
         "source_dkt": 8
       },
-      "overdue": false,
+      "overdue": true,
       "last_updated": "2026-09-24",
       "files": [
         "claims.json",
@@ -882,11 +882,11 @@
         "id": "27-deadline-5",
         "date": "2026-10-09",
         "kind": "deadline",
-        "status": "open",
+        "status": "overdue",
         "title": "WATCH — Randstad settlement payment due: 14 calendar days after the Sep. 25, 2026 Effective Date. Checks by tracked overnight courier; tracking number to be emailed on dispatch. Confirm receipt and clearing.",
         "source_dkt": null
       },
-      "overdue": false,
+      "overdue": true,
       "last_updated": "2026-09-25",
       "files": [
         "claims.json",
@@ -917,15 +917,15 @@
       "proceeding": "federal_civil",
       "phase": "mtd_briefing",
       "next_clock": {
-        "id": "28-deadline-adr-cert",
-        "date": "2026-10-01",
+        "id": "28-deadline-mtd-reply",
+        "date": "2026-10-13",
         "kind": "deadline",
-        "status": "overdue",
-        "title": "FILE ADR Certification by Parties and Counsel (ADR L.R. 3-5(b)) — Newanforbi v. Shannon Smith / HOPE (3:26-cv-07504-LJC). Dkt. 4 sets Oct. 1, 2026 for the ADR Certification and Rule 26(f)/ADR meet-and-confer. The meet-and-confer was scheduled for Sep. 29; the certification filing remains due Oct. 1.",
-        "source_dkt": 4
+        "status": "open",
+        "title": "Reply deadline on Dkt. 15 motion to dismiss — Newanforbi v. Smith / HOPE (3:26-cv-07504-LJC).",
+        "source_dkt": 15
       },
-      "overdue": true,
-      "last_updated": "2026-09-29",
+      "overdue": false,
+      "last_updated": "2026-10-12",
       "files": [
         "claims.json",
         "clocks.json",

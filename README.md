@@ -199,7 +199,7 @@ Standalone retail civil-rights matter arising from an August 25, 2026 consumer r
 | 25 | Newanforbi v. Federal Express Corporation | 2:26-cv-02881-DAD-SCR | USDC E.D. Cal. (Sacramento Div.) | Federal | Both reports in; Zoom Oct. 8 (Riordan) |
 | 26 | Newanforbi v. United Parcel Service, Inc. | 2:26-cv-02847-DAD-CKD | USDC E.D. Cal. (Sacramento Div.) | Federal | MTD under submission — Oct. 7 vacated |
 | 27 | Newanforbi v. Randstad, et al. | 26CV199902 | Alameda Sup. Ct. (Rene C. Davidson Courthouse) | State | Response deadline Oct. 26 |
-| 28 | Newanforbi v. Shannon Smith, LCSW, CEO, et al. | 3:26-cv-07504-LJC | USDC N.D. Cal. | Federal | Opposition filed; reply Oct. 13; MTD Oct. 27 |
+| 28 | Newanforbi v. Shannon Smith, LCSW, CEO, et al. | 3:26-cv-07504-LJC | USDC N.D. Cal. | Federal | Reply Oct. 13; CMC+MTD hearing Oct. 27 |
 | 29 | Newanforbi v. Amazon.com Services, LLC | 4:26-cv-09249-ASK | USDC N.D. Cal. (Oakland; formerly 3:26-cv-09249-ASK) | Federal | Dkt. 19 MTD; opposition Oct. 13 |
 | 30 | Newanforbi v. Moua, et al. | TBD | USDC N.D. Cal. | Federal | Pre-filing — Moua v9 ready; GCA window open |
 | 31 | Newanforbi v. First Advantage LLC | TBD | San Joaquin Sup. Ct. (anticipated) | State | Pre-filing — no demand or complaint yet |
@@ -265,7 +265,6 @@ Standalone retail civil-rights matter arising from an August 25, 2026 consumer r
 | Sep. 30, 2026 | 29 | 28 U.S.C. §1447(c) remand window closes (computed) — Newanforbi v. Amazon.com Services, LLC et al., USDC N.D. Cal. No. 3:26-cv-09249-ASK. Thirty days from the… |
 | Sep. 30, 2026 | 33 | Plaintiff's reply due in support of Dkt. 17 motion to strike — Nforbi v. Candelaria et al. (3:26-cv-08272-RFL), Sep. 30, 2026. |
 | Oct. 1, 2026 | 19 | Habeas ruling calendar (computed) — Newanforbi v. Macomber (C2604791). CRC 4.551(a)(6)(B) runs 30 days from the September 1, 2026 in-person filing of the… |
-| Oct. 1, 2026 | 28 | FILE ADR Certification by Parties and Counsel (ADR L.R. 3-5(b)) — Newanforbi v. Shannon Smith / HOPE (3:26-cv-07504-LJC). Dkt. 4 sets Oct. 1, 2026 for the ADR Certification and Rule 26(f)/ADR meet-and-confer. |
 | Oct. 6, 2026 | 20 | TARGET — File & serve CM-110 with attachments + proof of service (ideal window Oct 6–8; hard deadline Oct 13, 15 calendar days before Oct 28 CMC per CRC 3.725). |
 | Oct. 8, 2026 | 25 | HEARING — Status (Pretrial Scheduling) Conference in Newanforbi v. Federal Express Corporation (E.D. Cal. 2:26-cv-02881-DAD-SCR), Thursday, October 8, 2026,… |
 | Oct. 9, 2026 | 27 | WATCH — Randstad settlement payment due: 14 calendar days after the Sep. 25, 2026 Effective Date. Checks by tracked overnight courier; tracking number to be emailed on dispatch. Confirm receipt and clearing. |
@@ -273,19 +272,17 @@ Standalone retail civil-rights matter arising from an August 25, 2026 consumer r
 | Oct. 13, 2026 | 28 | Reply deadline on Dkt. 15 motion to dismiss — Newanforbi v. Smith / HOPE (3:26-cv-07504-LJC). |
 | Oct. 13, 2026 | 29 | Opposition due on Dkt. 19 motion to dismiss — Newanforbi v. Amazon.com Services, LLC et al. (4:26-cv-09249-ASK). |
 | Oct. 14, 2026 | 42 | WATCH — Staples / First Advantage (Matter 42): First Advantage file requested and received? Staples pre-adverse notice or Fair Chance Act preliminary decision (Gov. |
-| Oct. 15, 2026 | 28 | Case Management Statement due — Newanforbi v. Shannon Smith, LCSW, CEO, et al. (3:26-cv-07504), USDC N.D. Cal. |
 | Oct. 16, 2026 | 20 | Hearing on CHP demurrer and the individual respondents' joinders/demurrers to the Petition for Writ of Mandate, Newanforbi v. California Highway Patrol, et al.… |
 | Oct. 17, 2026 | 39 | OUTER BOUND — CCP § 338(a) three-year statutory-liability clock on the Best Buy § 290.46(j) count if accrual is the Oct. 17, 2023 offer / same-day screen week.… |
 | Oct. 19, 2026 | 32 | WATCH — Meza-Gonzalez Rule 12(a) responsive deadline (computed from a September 17, 2026 CCP § 415.20(b) mailing) in Nforbi v. Meza-Gonzalez et al.… |
 | Oct. 20, 2026 | 20 | WATCH — CHP written responses to RFP Set One (Count 1) in Newanforbi v. CHP et al. (26CV191136). Clock is October 20 if the September 16 email to Ing is valid… |
-| Oct. 22, 2026 | 28 | Initial Case Management Conference — Newanforbi v. Shannon Smith, LCSW, CEO, et al. (3:26-cv-07504), 1:30 PM, Hon. Lisa J. Cisneros, San Francisco… |
 | Oct. 22, 2026 | 33 | Deadline to file ADR Certification (ADR L.R. 3) and to meet and confer regarding initial disclosures, early settlement, ADR process selection, and a discovery… |
 | Oct. 23, 2026 | 20 | Continued hearing on the Dutra joinder and demurrer to the Petition for Writ of Mandate, Newanforbi v. California Highway Patrol, et al. (Matter 20) — Dept.… |
 | Oct. 25, 2026 | 35 | OPEN TASK — Serve Ross Stores, Inc. and Ross Dress for Less, Inc. in Matter 35 (26CV501995) with the Verified Complaint, issued Summons, ADR Information Sheet,… |
 | Oct. 26, 2026 | 27 | Response deadline for Randstad US, LLC and The RK Logistics Group, Inc., extended by stipulation through Oct. 26, 2026 (no further extensions). |
 | Oct. 26, 2026 | 27 | PRIVATE — outside date under the confidential agreement: if the checks are not delivered by today or any check is dishonored, Plaintiff may proceed with the case or enforce the agreement (Paras. 2, 21). |
 | Oct. 26, 2026 | 38 | IMPORTANT — DUE — Renewed IFP motion (complete AO 239: monthly income, monthly expenses, assets, all money received in the past 12 months) OR pay the filing fee — Brendan Ngwa Nforbi v. Swift Transportation Company (E.D. |
-| Oct. 27, 2026 | 28 | Hearing on Dkt. 15 motion to dismiss — Newanforbi v. Smith / HOPE (3:26-cv-07504-LJC), 10:30 a.m., Hon. Lisa J. Cisneros. |
+| Oct. 27, 2026 | 28 | Initial CMC (continued) and hearing on Dkt. 15 motion to dismiss — Newanforbi v. Smith / HOPE (3:26-cv-07504-LJC), Oct. 27, 2026, 10:30 a.m., Courtroom G, Hon. Lisa J. |
 | Oct. 28, 2026 | 20 | Case Management Conference (continued from Sep. 2, 2026) — Newanforbi v. CHP et al. (26CV191136), 4:00 p.m., Dept. 25, Rene C. Davidson Courthouse, Hon. Jenna… |
 | Oct. 29, 2026 | 25 | CONTINGENT — FedEx responses to Plaintiff's Interrogatories, RFAs, and RFPs (Set One). Not yet served by mail as of Sep. 25, 2026. |
 | Nov. 1, 2026 | 1, 2, 32 | CCP §335.1 two-year statute of limitations (computed) backstop, running from the Nov. 1, 2024 incident. (1) Matter 1's Fourth Amendment §1983 claim (borrowed… |
