@@ -16,22 +16,25 @@
     "date": "2026-10-15",
     "date_label": "Oct. 15, 2026",
     "kind": "deadline",
-    "status": "open",
+    "status": "satisfied",
     "source_dkt": 1,
     "title": "Case Management Statement due — Newanforbi v. Shannon Smith, LCSW, CEO, et al. (3:26-cv-07504), USDC N.D. Cal.",
     "actor": "you",
-    "source": "/documents/matter-28/Service Packet Emailed to SLB (Issued Summons Complaint Dkt 1-1 Dkt 4 Dkt 11) (Aug 31 2026).pdf"
+    "source": "/documents/matter-28/Service Packet Emailed to SLB (Issued Summons Complaint Dkt 1-1 Dkt 4 Dkt 11) (Aug 31 2026).pdf",
+    "retired_reason": "Opposing counsel (Sims Lawrence) filed the Joint Case Management Statement. Kim Schmitt emailed a courtesy copy on Oct. 5, 2026; Plaintiff acknowledged receipt the same day. No docket number ingested in the repo."
   },
   {
     "id": "28-hearing-3",
     "date": "2026-10-22",
     "date_label": "Oct. 22, 2026",
     "kind": "hearing",
-    "status": "open",
+    "status": "vacated",
     "source_dkt": 1,
     "title": "Initial Case Management Conference — Newanforbi v. Shannon Smith, LCSW, CEO, et al. (3:26-cv-07504), 1:30 PM, Hon. Lisa J. Cisneros, San Francisco…",
     "actor": "you",
-    "source": "/documents/matter-28/Service Packet Emailed to SLB (Issued Summons Complaint Dkt 1-1 Dkt 4 Dkt 11) (Aug 31 2026).pdf"
+    "source": "/documents/matter-28/Service Packet Emailed to SLB (Issued Summons Complaint Dkt 1-1 Dkt 4 Dkt 11) (Aug 31 2026).pdf",
+    "superseded_by": "28-hearing-mtd",
+    "retired_reason": "Continued by ECF No. 29 (entered Oct. 8, 2026) from Oct. 22, 2026, 1:30 p.m. to Oct. 27, 2026, 10:30 a.m. in Courtroom G, to be held with the Dkt. 15 motion-to-dismiss hearing. Live clock is 28-hearing-mtd."
   },
   {
     "id": "28-deadline-mtd-opposition",
@@ -63,7 +66,7 @@
     "kind": "hearing",
     "status": "open",
     "source_dkt": 15,
-    "title": "Hearing on Dkt. 15 motion to dismiss — Newanforbi v. Smith / HOPE (3:26-cv-07504-LJC), 10:30 a.m., Hon. Lisa J. Cisneros.",
+    "title": "Initial CMC (continued) and hearing on Dkt. 15 motion to dismiss — Newanforbi v. Smith / HOPE (3:26-cv-07504-LJC), Oct. 27, 2026, 10:30 a.m., Courtroom G, Hon. Lisa J. Cisneros (ECF No. 29 combined the Oct. 22 CMC with this hearing).",
     "actor": "you"
   },
   {
@@ -71,10 +74,11 @@
     "date": "2026-10-01",
     "date_label": "Oct. 1, 2026",
     "kind": "deadline",
-    "status": "open",
+    "status": "satisfied",
     "source_dkt": 4,
     "title": "FILE ADR Certification by Parties and Counsel (ADR L.R. 3-5(b)) — Newanforbi v. Shannon Smith / HOPE (3:26-cv-07504-LJC). Dkt. 4 sets Oct. 1, 2026 for the ADR Certification and Rule 26(f)/ADR meet-and-confer. The meet-and-confer was scheduled for Sep. 29; the certification filing remains due Oct. 1.",
     "actor": "you",
-    "source": "/documents/matter-28/Service Packet Emailed to SLB (Issued Summons Complaint Dkt 1-1 Dkt 4 Dkt 11) (Aug 31 2026).pdf"
+    "source": "/documents/matter-28/Service Packet Emailed to SLB (Issued Summons Complaint Dkt 1-1 Dkt 4 Dkt 11) (Aug 31 2026).pdf",
+    "retired_reason": "Plaintiff confirmed on Oct. 4, 2026 that the ADR Certification (ADR L.R. 3-5(b)) was already e-filed; Sep. 30, 2026 email to opposing counsel also states it was served/filed. No docket number ingested in the repo."
   }
 ]

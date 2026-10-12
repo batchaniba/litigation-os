@@ -8655,12 +8655,14 @@
    28
   ],
   "type": "deadline",
-  "upcoming": true,
+  "upcoming": false,
   "actor": "you",
   "source": "/documents/matter-28/Service Packet Emailed to SLB (Issued Summons Complaint Dkt 1-1 Dkt 4 Dkt 11) (Aug 31 2026).pdf",
   "source_type": "portfolio",
   "confidence": "medium",
-  "verified_at": "2026-09-11"
+  "verified_at": "2026-09-11",
+  "retired_reason": "Opposing counsel (Sims Lawrence) filed the Joint Case Management Statement. Kim Schmitt emailed a courtesy copy on Oct. 5, 2026; Plaintiff acknowledged receipt the same day. No docket number ingested in the repo.",
+  "retired_date": "2026-10-12"
  },
  {
   "date": "Oct. 22, 2026",
@@ -8669,12 +8671,14 @@
    28
   ],
   "type": "hearing",
-  "upcoming": true,
+  "upcoming": false,
   "actor": "you",
   "source": "/documents/matter-28/Service Packet Emailed to SLB (Issued Summons Complaint Dkt 1-1 Dkt 4 Dkt 11) (Aug 31 2026).pdf",
   "source_type": "portfolio",
   "confidence": "medium",
-  "verified_at": "2026-09-11"
+  "verified_at": "2026-09-11",
+  "retired_reason": "Continued by ECF No. 29 (entered Oct. 8, 2026) from Oct. 22, 2026, 1:30 p.m. to Oct. 27, 2026, 10:30 a.m. in Courtroom G, to be held with the Dkt. 15 motion-to-dismiss hearing. Live clock is 28-hearing-mtd.",
+  "retired_date": "2026-10-12"
  },
  {
   "date": "Jul. 23, 2026",
