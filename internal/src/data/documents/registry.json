@@ -5995,6 +5995,31 @@
       "path": "/documents/opinions/Newanforbi v Smith - USDC NDCal - Order Directing Service Aug 26 2026.pdf",
       "label": "Opinion copy — Mag. Cisneros Order Directing Service (Aug. 26, 2026)",
       "ownerMatter": null
+    },
+    {
+      "path": "/documents/matter-28/Plaintiff's Opposition to Defendants' Motion to Dismiss (N.D. Cal. 3-26-cv-07504-LJC) (Served Sep 22 2026).pdf",
+      "label": "Plaintiff's Opposition to Defendants' Motion to Dismiss (N.D. Cal. 3-26-cv-07504-LJC) (Served Sep 22 2026)",
+      "ownerMatter": 28
+    },
+    {
+      "path": "/documents/matter-28/Gmail - [E-SERVICE] Opposition to Defendants Motion to Dismiss - Sims Lawrence (Sep 22 2026).pdf",
+      "label": "Gmail - [E-SERVICE] Opposition to Defendants Motion to Dismiss - Sims Lawrence (Sep 22 2026)",
+      "ownerMatter": 28
+    },
+    {
+      "path": "/documents/matter-29/Opposition to Amazon MTD with Proposed Order and POS - Unified (N.D. Cal. 4-26-cv-09249-ASK) (Sep 22 2026).pdf",
+      "label": "Opposition to Amazon MTD with Proposed Order and POS - Unified (N.D. Cal. 4-26-cv-09249-ASK) (Sep 22 2026)",
+      "ownerMatter": 29
+    },
+    {
+      "path": "/documents/matter-29/Gmail - [E-SERVICE] Opposition to Amazon MTD (Dkt 19) - Morgan Lewis (Sep 23 2026).pdf",
+      "label": "Gmail - [E-SERVICE] Opposition to Amazon MTD (Dkt 19) - Morgan Lewis (Sep 23 2026)",
+      "ownerMatter": 29
+    },
+    {
+      "path": "/documents/matter-29/Gmail - [E-SERVICE] Opposition to Amazon MTD (Dkt 19) - Seyfarth (Sep 23 2026).pdf",
+      "label": "Gmail - [E-SERVICE] Opposition to Amazon MTD (Dkt 19) - Seyfarth (Sep 23 2026)",
+      "ownerMatter": 29
     }
   ]
 }

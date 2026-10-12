@@ -69,13 +69,26 @@
   },
   {
     "id": "29-deadline-mtd-opposition",
+    "date": "2026-10-06",
+    "date_label": "Oct. 6, 2026",
+    "kind": "deadline",
+    "status": "satisfied",
+    "source_dkt": 19,
+    "title": "Opposition due on Dkt. 19 motion to dismiss — Newanforbi v. Amazon.com Services, LLC et al. (4:26-cv-09249-ASK). Civil L.R. 7-3(a) (as amended 11/1/21): 14 days after Dkt. 19 was filed (Sep. 22).",
+    "actor": "you",
+    "source": "/documents/matter-29/Opposition to Amazon MTD with Proposed Order and POS - Unified (N.D. Cal. 4-26-cv-09249-ASK) (Sep 22 2026).pdf",
+    "retired_reason": "Plaintiff served the opposition (with [Proposed] Order and POS) by email on Sep. 23, 2026, 11:00 p.m. PT to Morgan Lewis (Frederick, Brown; cc Ikeda) and Seyfarth (Stanzick, Drury). Dated Sep. 22. Unstamped served copy ingested; no ECF number. Civil L.R. 7-3(a) due date was Oct. 6, 2026 (Dkt. 19 filed Sep. 22 + 14 days)."
+  },
+  {
+    "id": "29-deadline-mtd-reply",
     "date": "2026-10-13",
     "date_label": "Oct. 13, 2026",
     "kind": "deadline",
     "status": "open",
     "source_dkt": 19,
-    "title": "Opposition due on Dkt. 19 motion to dismiss — Newanforbi v. Amazon.com Services, LLC et al. (4:26-cv-09249-ASK).",
-    "actor": "you"
+    "title": "Reply deadline on Dkt. 19 motion to dismiss — Newanforbi v. Amazon.com Services, LLC et al. (4:26-cv-09249-ASK). Civil L.R. 7-3(a) and (c) (as amended 11/1/21): opposition due 14 days after the motion is filed (Oct. 6); reply due 7 days after that opposition due date (Oct. 13). FRCP 6(d) does not extend.",
+    "actor": "opposing",
+    "source": "/documents/matter-29/Opposition to Amazon MTD with Proposed Order and POS - Unified (N.D. Cal. 4-26-cv-09249-ASK) (Sep 22 2026).pdf"
   },
   {
     "id": "29-hearing-mtd",
@@ -86,7 +99,8 @@
     "kind": "hearing",
     "status": "open",
     "source_dkt": 19,
-    "title": "Hearing on Dkt. 19 motion to dismiss — Newanforbi v. Amazon.com Services, LLC et al. (4:26-cv-09249-ASK), 1:30 p.m.",
-    "actor": "you"
+    "title": "Hearing on Dkt. 19 motion to dismiss — Newanforbi v. Amazon.com Services, LLC et al. (4:26-cv-09249-ASK), Nov. 18, 2026, 1:30 p.m., Courtroom 4, 3rd Floor, Hon. Ajay S. Krishnan.",
+    "actor": "you",
+    "source": "/documents/matter-29/Opposition to Amazon MTD with Proposed Order and POS - Unified (N.D. Cal. 4-26-cv-09249-ASK) (Sep 22 2026).pdf"
   }
 ]
