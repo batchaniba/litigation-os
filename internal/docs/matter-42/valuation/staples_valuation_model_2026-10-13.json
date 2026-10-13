@@ -1,0 +1,129 @@
+{
+  "matter": 42,
+  "caption": "Nforbi v. Staples Retail et al.",
+  "as_of": "2026-10-13",
+  "scope": {
+    "included": "Staples only",
+    "reserved": ["First Advantage"],
+    "status": "private conditional valuation, not a settlement demand"
+  },
+  "documented": {
+    "hourly_rate": 22,
+    "offer_status": "conditional offer accepted",
+    "position": "Retail Sales Supervisor",
+    "position_described_as_full_time": true,
+    "first_advantage_public_record_notice_date": "2026-10-07"
+  },
+  "proof_status": {
+    "current_documented_liability_and_damages_total": null,
+    "reason": "Causal non-start or denial, schedule, offsets, report source/use, harm, and punitive corporate proof remain unresolved."
+  },
+  "working_assumptions": {
+    "loss_start_date": "2026-10-05",
+    "projected_resolution_date": "2028-10-13",
+    "regular_hours_per_week": 40,
+    "front_pay_weeks": 104,
+    "benefits_rate": 0.15,
+    "emotional_distress": 100000,
+    "registry_additional_award_multiple": 1,
+    "exemplary_multiple": 1,
+    "civil_penalty": 25000,
+    "interim_earnings_offset": 0,
+    "future_loss_discount_rate": 0,
+    "attorney_fees": 0,
+    "costs_interest_and_expenses": 0
+  },
+  "working_formulas": {
+    "weekly_wage": "hourly_rate * regular_hours_per_week",
+    "projected_back_pay": "days_between(loss_start_date, projected_resolution_date) / 7 * weekly_wage",
+    "front_pay": "front_pay_weeks * weekly_wage",
+    "lost_benefits": "benefits_rate * (projected_back_pay + front_pay)",
+    "compensatory_pool": "projected_back_pay + front_pay + lost_benefits + emotional_distress",
+    "registry_additional_award": "registry_additional_award_multiple * compensatory_pool",
+    "civil_penalty_route": "compensatory_pool + registry_additional_award + civil_penalty",
+    "exemplary_route": "compensatory_pool + registry_additional_award + exemplary_multiple * compensatory_pool"
+  },
+  "working_results": {
+    "weekly_wage": 880,
+    "projected_back_pay": 92902.85714285713,
+    "front_pay": 91520,
+    "lost_benefits": 27663.42857142857,
+    "emotional_distress": 100000,
+    "compensatory_pool": 312086.2857142857,
+    "registry_additional_award": 312086.2857142857,
+    "civil_penalty_route": 649172.5714285714,
+    "illustrative_exemplary_award": 312086.2857142857,
+    "exemplary_route_full_case": 936258.857142857,
+    "recommended_demand_anchor": 1250000,
+    "settlement_value_band": {
+      "low": 300000,
+      "working": 400000,
+      "high": 500000
+    }
+  },
+  "scenarios": {
+    "conservative": {
+      "projected_back_pay": 45760,
+      "front_pay": 45760,
+      "lost_benefits": 9152,
+      "emotional_distress": 50000,
+      "compensatory_pool": 150672,
+      "registry_additional_award": 75336,
+      "civil_penalty_route": 236008,
+      "illustrative_exemplary_award": 0,
+      "exemplary_route": 226008
+    },
+    "working": {
+      "projected_back_pay": 92902.85714285713,
+      "front_pay": 91520,
+      "lost_benefits": 27663.42857142857,
+      "emotional_distress": 100000,
+      "compensatory_pool": 312086.2857142857,
+      "registry_additional_award": 312086.2857142857,
+      "civil_penalty_route": 649172.5714285714,
+      "illustrative_exemplary_award": 312086.2857142857,
+      "exemplary_route": 936258.857142857
+    },
+    "high_exposure": {
+      "projected_back_pay": 137280,
+      "front_pay": 137280,
+      "lost_benefits": 54912,
+      "emotional_distress": 150000,
+      "compensatory_pool": 479472,
+      "registry_additional_award": 1438416,
+      "civil_penalty_route": 1942888,
+      "illustrative_exemplary_award": 958944,
+      "exemplary_route": 2876832
+    }
+  },
+  "remedy_architecture": {
+    "civil_penalty_and_exemplary_are_alternatives": true,
+    "duplicate_recovery_across_claims_excluded": true,
+    "first_advantage_exposure_excluded": true,
+    "company_valuation_multiplier_excluded": true,
+    "frca_and_icraa_alternatives_not_added": true
+  },
+  "material_assumptions_requiring_review": [
+    "40 paid hours per week",
+    "October 5, 2026 causal loss start",
+    "October 13, 2028 resolution date",
+    "104 weeks of front pay",
+    "15 percent benefits load",
+    "zero mitigation offset",
+    "$100,000 Staples-specific emotional distress",
+    "registry source/use and causation",
+    "1x registry additional award",
+    "1x exemplary award with corporate proof"
+  ],
+  "excluded_until_supported": [
+    "overtime",
+    "raises",
+    "commissions",
+    "tax gross-up",
+    "future medical costs",
+    "prejudgment interest",
+    "litigation costs",
+    "attorney fees",
+    "out-of-pocket expenses"
+  ]
+}
