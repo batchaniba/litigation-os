@@ -1,0 +1,23 @@
+{
+  "as_of": "2026-10-13",
+  "scope": "Private suit-exposure package for Matters 36, 37, 39. Not a settlement demand. Not for pleading.",
+  "rule": "Accrued back pay to date drives the difference. Future components are shortened so identical horizons do not flatten elapsed time.",
+  "accrued_to_date": {
+    "best_buy": { "matter": 39, "loss_start": "2023-10-17", "weeks_elapsed": 156, "weekly_wage": 904, "accrued_back_pay": 141024 },
+    "home_depot": { "matter": 37, "loss_start": "2024-08", "weeks_elapsed": 113, "weekly_wage_proxy": 880, "accrued_back_pay": 99440, "rate_documented": false },
+    "att": { "matter": 36, "loss_start": "2026-05-28", "weeks_elapsed": 19.5, "weekly_wage": 998, "accrued_back_pay": 19461 }
+  },
+  "working_aggressive": {
+    "best_buy": { "compensatory": 370296, "civil_penalty_route": 765592, "exemplary_route": 1110888, "settlement_band": [100000, 200000] },
+    "home_depot": { "compensatory": 319604, "civil_penalty_route": 664208, "exemplary_route": 958812, "settlement_band": [50000, 100000], "rate_proxy": 22 },
+    "att": { "compensatory": 157061, "civil_penalty_route": 339122, "exemplary_route": 471183, "settlement_band": [60000, 125000] }
+  },
+  "guardrails": {
+    "civil_penalty_and_exemplary_are_alternatives": true,
+    "vendor_liability_reserved": true,
+    "pro_se_fees_excluded": true,
+    "company_value_multiplier_excluded": true,
+    "full_case_figures_not_for_pleading": true,
+    "home_depot_rate_is_proxy": true
+  }
+}
