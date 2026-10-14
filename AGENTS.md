@@ -98,9 +98,16 @@ full case graph. This is the preferred way for an external model to fetch
 documents: no R2 keys, no repo clone, no credentials of any kind. Local
 agents with `R2_*` keep using `npm run docs:fetch` and the query interface.
 
-## No GitHub Actions
+## GitHub Actions — deploy only
 
-Do not add `.github/workflows/`. The spending limit already refuses every job.
+The owner has no laptop. **One** workflow is allowed:
+`.github/workflows/cloudflare-deploy.yml` (Worker deploy + idempotent D1
+schema + optional `documents:sync --apply`). Phone setup and the minimal
+API token: [`internal/docs/CI_CLOUDFLARE_DEPLOY.md`](internal/docs/CI_CLOUDFLARE_DEPLOY.md).
+Do **not** add lint, typecheck, vitest, Dependabot, or portfolio-gate jobs
+— those stay in `.githooks/pre-push` / `npm run gate` and
+`workers/portfolio-gate/`. Do not add a D1 reseed workflow.
+
 The checks the old CI job ran live in the fail-closed `pre-push` hook (installed
 by `npm run prepare`) and in `npm run gate` (same steps, shared
 `internal/scripts/portfolio-gate.mjs`): lint, typecheck, `validate-portfolio`,
@@ -109,17 +116,17 @@ by `npm run prepare`) and in `npm run gate` (same steps, shared
 may skip the hook on a feature branch only — a push that updates
 `refs/heads/main` cannot bypass. Phase 2 remote status is the Cloudflare
 Worker in `workers/portfolio-gate/` (GitHub App + Containers, Check Run
-`portfolio-gate`); still no Actions YAML. Before opening a PR, run `npm run gate`
+`portfolio-gate`). Before opening a PR, run `npm run gate`
 (matches the hook) or `npm run validate` (adds coverage and generated-file
 checks) and say so in the PR body.
 
 Laptop replacements (never paste keys into chat; other AIs get the Worker URL, not `R2_*`):
 
 - CourtListener: `npm run court:sync -- --bootstrap` (token in gitignored `.env`)
-- R2 bytes + path index: `npm run documents:push` (`R2_*` from `~/.config/r2/env`)
-- Worker: `cd workers/doc-api && wrangler deploy`
+- R2 bytes + path index: `npm run documents:push` / `documents:sync -- --apply` (CI when `R2_*` repo secrets exist; else `~/.config/r2/env`)
+- Worker + D1 schema: `.github/workflows/cloudflare-deploy.yml` (or `cd workers/doc-api && wrangler deploy`)
 - Phase 2 portfolio-gate: `cd workers/portfolio-gate && wrangler deploy` (operator App secrets; runbook in that README)
-- D1: `node workers/doc-api/seed.mjs > seed.sql` (publish projection), then POST `/admin/reseed`
+- D1 reseed (destructive, not CI): `node workers/doc-api/seed.mjs > seed.sql` then POST `/admin/reseed`
 - Dependencies: `npm run deps:outdated` / `npm run deps:update` (do not restore Dependabot; it runs on Actions runners). Optional PR factory is the Mend Renovate GitHub App + `.github/renovate.json`, not a workflow.
 
 Production deploys are the Vercel Deploy Hook from the Cloudflare cron, not
@@ -148,7 +155,7 @@ run manually by Aliko. They are **not** part of the build, the hooks, or any npm
 
 Rules:
 - New automation that runs in the hooks or `npm run` must be Node (.mjs).
-- Python scripts must not be added to `package.json` scripts. Do not add GitHub Actions workflows.
+- Python scripts must not be added to `package.json` scripts. Do not add GitHub Actions workflows except `.github/workflows/cloudflare-deploy.yml` (phone-only Worker / D1 / R2 deploy).
 - Shared logic (matter loading, validation) lives in Node; do not duplicate it in Python.
 
 ## Matter 0 — private contingency workspace

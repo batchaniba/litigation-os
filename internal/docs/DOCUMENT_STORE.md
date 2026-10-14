@@ -124,8 +124,10 @@ Do **not** put new PDFs anywhere else, and do not `git add -f` them onto
 
 ## Where the checks run now
 
-There is no GitHub Actions. The checks the old data job ran live in the
-git hooks:
+Test CI is not Actions. Worker / D1 / R2 deploys run from
+`.github/workflows/cloudflare-deploy.yml` (phone-only owner; see
+[CI_CLOUDFLARE_DEPLOY.md](CI_CLOUDFLARE_DEPLOY.md)). The checks the old
+data job ran live in the git hooks:
 
 - **pre-commit** syncs registry + manifest when PDFs or the catalog are
   staged, hashes only new/resized files, checks `%PDF` magic, and pushes

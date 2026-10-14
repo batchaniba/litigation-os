@@ -23,11 +23,20 @@ by design, there is nowhere to leak them from.
 ## Deploy
 
 Deploys run from `main` via `.github/workflows/cloudflare-deploy.yml`
-(path-filtered to `workers/doc-api/**`; also `workflow_dispatch`). The
-workflow resolves the D1 `database_id` by name at deploy time, so
-`wrangler.toml` keeps its placeholder. Needs the repo secret
-`CLOUDFLARE_API_TOKEN` (custom token: Workers Scripts Edit + D1 Edit) —
-workflow-only, never visible to agents. Manual deploys still work:
+(path-filtered; also **Actions → Cloudflare deploy → Run workflow**).
+Phone-only owner: this is the production path. Setup, secrets, and the
+minimal API token: [CI_CLOUDFLARE_DEPLOY.md](../../internal/docs/CI_CLOUDFLARE_DEPLOY.md).
+
+The workflow deploys **this Worker only** (REST + `POST /mcp` — MCP is
+not a second script). It applies `schema.sql` to D1 `litigation-portfolio`
+(`5e920ba3-722d-448d-93ca-304c1e31bee9`) with `CREATE … IF NOT EXISTS`
+and never reseeds. `PUBLIC_READ` stays on the live Worker (secrets are
+not rotated here; `keep_vars = true`).
+
+Required repo secrets: `CLOUDFLARE_API_TOKEN`, `CLOUDFLARE_ACCOUNT_ID`.
+Optional for PDF upload: `R2_ACCESS_KEY_ID`, `R2_SECRET_ACCESS_KEY`.
+
+Manual deploys still work if a laptop exists:
 
 ```bash
 cd workers/doc-api
@@ -38,7 +47,9 @@ wrangler secret put RESEED_SECRET   # required for POST /admin/reseed; same valu
 ## D1 re-seed
 
 D1 is a **projection of `main`**, rebuilt by a reseed. There is no
-`d1-reseed.yml` (no Actions in this repo), so reseeding is manual. The seed
+`d1-reseed.yml` — do not add one. Schema apply (FTS) runs from
+`cloudflare-deploy.yml`; reseeding stays manual because it DELETEs
+assistant-registered rows. The seed
 replaces every row of `matters`, `clocks`, `documents`, and
 `documents_by_path`, and stamps `meta` with the source commit and time.
 `GET /health` reports `d1.source_commit`, `seeded_at`, `age_days`, and
@@ -335,9 +346,14 @@ create/read/update access with its own scoped token.
 
 ## Not yet done
 
-- `CLOUDFLARE_API_TOKEN` repo secret (required for `cloudflare-deploy.yml`).
-- `RESEED_SECRET` repo secret + matching Worker secret (required for
-  `d1-reseed.yml` / `POST /admin/reseed`).
+- Repo secrets for `.github/workflows/cloudflare-deploy.yml` (phone
+  runbook: [CI_CLOUDFLARE_DEPLOY.md](../../internal/docs/CI_CLOUDFLARE_DEPLOY.md)):
+  `CLOUDFLARE_API_TOKEN`, `CLOUDFLARE_ACCOUNT_ID`, and optional
+  `R2_ACCESS_KEY_ID` / `R2_SECRET_ACCESS_KEY`. Token permissions:
+  Account Settings Read, Workers Scripts Edit, D1 Edit, Workers R2
+  Storage Edit.
+- `RESEED_SECRET` Worker secret (required for `POST /admin/reseed`).
+  There is **no** `d1-reseed.yml` — do not add one. Reseed is destructive.
 - `API_KEYS` Worker secret (required to enable write tools / the REST write
   API; without it writes are refused). `PUBLIC_READ` Worker var (`"true"` to
   keep reads open once `API_KEYS` is set). Apply the `audit` table with

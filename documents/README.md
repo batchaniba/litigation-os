@@ -12,5 +12,7 @@ Private denylist PDFs (HOPE_000 discovery + two matter-12 card forms) do
 ```bash
 npm run documents:pull              # fill / refresh from R2 or origin/documents
 npm run documents:sync              # dry-run R2/D1 register
-npm run documents:sync -- --apply   # laptop, needs R2_*
+npm run documents:sync -- --apply   # CI (cloudflare-deploy.yml) or laptop, needs R2_*
 ```
+
+Phone-only deploys: [CI_CLOUDFLARE_DEPLOY.md](../internal/docs/CI_CLOUDFLARE_DEPLOY.md).

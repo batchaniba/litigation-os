@@ -439,6 +439,12 @@ Reads do not need a token. Fourteen paths are auth-only (HOPE_000 discovery
 Write tools need OAuth/`write` scope. Connection steps, example prompts,
 and the denylist: [CANONICAL_DOCUMENT_STORE.md](internal/docs/CANONICAL_DOCUMENT_STORE.md).
 
+Owner is phone-only. Worker deploy, D1 FTS schema, and R2 upload run from
+**Actions → Cloudflare deploy → Run workflow**. One-time secrets and the
+minimal Cloudflare API token (Workers Scripts Edit, D1 Edit, Workers R2
+Storage Edit, Account Settings Read): [CI_CLOUDFLARE_DEPLOY.md](internal/docs/CI_CLOUDFLARE_DEPLOY.md).
+MCP is the `/mcp` route on that same Worker, not a second deploy.
+
 Example: “List documents for matter 24, then read the first amended complaint as text.”
 
 ## Citation Verification
@@ -598,7 +604,7 @@ Vercel builds with `VITE_COPY_DOCUMENTS=0` and `PORTFOLIO_SKIP_DISK_DOCS=1` so t
 
 **GitHub Pages** is no longer deployed. Phone taps are the `/{slug}.pdf` copies on Vercel. New PDFs from `npm run documents:push` go to R2 (when `R2_*` is set) and to the `documents` branch as a cold backup. The Worker serves `/documents/<path>` after the path index is published. `vite.config.js` keeps the `GITHUB_PAGES` base-path switch for a manual Pages build if one is ever needed.
 
-**Pre-push gate.** There are no GitHub Actions workflows. `.githooks/pre-push` and `npm run gate` run the same fail-closed checks before `main`: lint, typecheck, `validate-portfolio`, golden damages math, the unit suite, and the fabricated-citation gate. `npm run prepare` installs the hook (`core.hooksPath = .githooks`). Missing `node_modules` or `python3` refuses the push. `SKIP_PORTFOLIO_GATE=EMERGENCY git push` may skip the hook on a feature branch only; a push that updates `refs/heads/main` cannot bypass. Phase 2 remote status is the Cloudflare Worker in `workers/portfolio-gate/` (Check Run `portfolio-gate` on PRs targeting `main`). Branch protection on `main` should require a PR, block force pushes, and — after that Worker is deployed — require the `portfolio-gate` check (Worker-posted, not Actions). See [WORKFLOW_NOTES.md](.github/WORKFLOW_NOTES.md).
+**Pre-push gate.** Test CI is not Actions. `.githooks/pre-push` and `npm run gate` run the same fail-closed checks before `main`: lint, typecheck, `validate-portfolio`, golden damages math, the unit suite, and the fabricated-citation gate. `npm run prepare` installs the hook (`core.hooksPath = .githooks`). Missing `node_modules` or `python3` refuses the push. `SKIP_PORTFOLIO_GATE=EMERGENCY git push` may skip the hook on a feature branch only; a push that updates `refs/heads/main` cannot bypass. Phase 2 remote status is the Cloudflare Worker in `workers/portfolio-gate/` (Check Run `portfolio-gate` on PRs targeting `main`). Branch protection on `main` should require a PR, block force pushes, and — after that Worker is deployed — require the `portfolio-gate` check (Worker-posted, not Actions). The only Actions workflow is [cloudflare-deploy.yml](.github/workflows/cloudflare-deploy.yml) (phone-only Worker / D1 / R2 deploy). See [WORKFLOW_NOTES.md](.github/WORKFLOW_NOTES.md) and [CI_CLOUDFLARE_DEPLOY.md](internal/docs/CI_CLOUDFLARE_DEPLOY.md).
 
 **Dependencies.** Do not restore Dependabot (it runs on Actions runners). Weekly: `npm run deps:outdated`, then `npm run deps:update` for in-range npm. Optional PR factory is the Mend Renovate GitHub App using `.github/renovate.json` — see [WORKFLOW_NOTES.md](.github/WORKFLOW_NOTES.md).
 

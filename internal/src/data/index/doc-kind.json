@@ -60,6 +60,10 @@
       "doc_kind": "runbook"
     },
     {
+      "path": "internal/docs/CI_CLOUDFLARE_DEPLOY.md",
+      "doc_kind": "runbook"
+    },
+    {
       "path": "internal/docs/CLOUDFLARE_PAGES.md",
       "doc_kind": "runbook"
     },

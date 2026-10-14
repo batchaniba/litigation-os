@@ -234,7 +234,9 @@ control plane.
 - Pointing `vercel-deploy-cron` at Pages
 - Deleting `vercel.json` or the Vercel project
 - Dropping static slug PDFs in favor of R2-only short-links
-- Adding `.github/workflows/`
+- Adding test-CI `.github/workflows/` (the phone-only deploy workflow
+  `cloudflare-deploy.yml` is the exception; see
+  [CI_CLOUDFLARE_DEPLOY.md](CI_CLOUDFLARE_DEPLOY.md))
 
 ## Docs fetched for this phase (2026-09-21)
 

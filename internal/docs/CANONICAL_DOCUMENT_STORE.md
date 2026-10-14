@@ -69,16 +69,39 @@ the path index (denylist omitted), and extracts text sidecars when
 `pdftotext` is installed. Never DELETE/DROP. A D1 reseed is a different,
 destructive operation — do not run it as part of this sync.
 
-## Deploy steps (owner)
+## Deploy (GitHub Actions — no laptop)
 
-1. `cd workers/doc-api && wrangler deploy`
-2. `wrangler d1 execute litigation-portfolio --remote --file=schema.sql`
-   (adds `documents_fts`; idempotent)
-3. Do **not** reseed unless you intend to wipe assistant-registered D1
-   rows. To register new public files without a reseed, run
-   `documents:sync -- --apply` on the laptop.
-4. Existing ChatGPT/Claude OAuth clients keep working. New consents
-   default to read-only.
+Owner is phone-only. Do not wait for a laptop `wrangler` run.
+
+1. One-time secrets + token: [CI_CLOUDFLARE_DEPLOY.md](CI_CLOUDFLARE_DEPLOY.md)
+   (iPhone Safari, Request Desktop Website).
+2. Repo → **Actions → Cloudflare deploy → Run workflow** on `main`.
+3. Later pushes to `main` that touch `workers/doc-api/**` or
+   `documents/**` run the same workflow (path-filtered).
+
+The workflow:
+
+1. `wrangler deploy` in `workers/doc-api` (REST **and** `POST /mcp` —
+   there is no second MCP Worker).
+2. `wrangler d1 execute litigation-portfolio --remote --yes --file=schema.sql`
+   (adds `documents_fts`; idempotent; database id
+   `5e920ba3-722d-448d-93ca-304c1e31bee9`).
+3. `npm run documents:sync -- --apply` when `R2_ACCESS_KEY_ID` and
+   `R2_SECRET_ACCESS_KEY` are set. Skips with a warning if they are not.
+4. Keeps `PUBLIC_READ=true` (does not delete Worker secrets; `keep_vars`
+   preserves dashboard vars).
+5. Does **not** reseed. A reseed would wipe assistant-registered D1 rows.
+
+Laptop equivalents still work if a machine exists later:
+
+```bash
+cd workers/doc-api && wrangler deploy
+wrangler d1 execute litigation-portfolio --remote --yes --file=schema.sql
+npm run documents:sync -- --apply
+```
+
+Existing ChatGPT/Claude OAuth clients keep working. New consents default
+to read-only.
 
 ## Git LFS
 

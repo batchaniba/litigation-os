@@ -4,8 +4,13 @@
 
 This repository uses a multi-stage data pipeline to keep the interactive litigation portfolio in sync across the SPA bundle, README documentation, and validation gates.
 
-There are **no GitHub Actions workflows**. Do not add `.github/workflows/`.
-The spending limit already refuses every job. The **local** gate is
+There is **one** GitHub Actions workflow: `.github/workflows/cloudflare-deploy.yml`
+(Worker deploy + idempotent D1 schema + optional R2 `documents:sync`). The
+owner has no laptop; that workflow is the production deploy path. Phone
+setup and token permissions: [`internal/docs/CI_CLOUDFLARE_DEPLOY.md`](../internal/docs/CI_CLOUDFLARE_DEPLOY.md).
+
+Do **not** add lint / test / Dependabot / D1-reseed workflows. The spending
+limit will refuse a restored full CI. The **local** gate is
 `.githooks/pre-push` and `npm run gate` (same steps; shared
 `internal/scripts/portfolio-gate.mjs`). The **Phase 2 remote** gate is the
 Cloudflare Worker + Container in `workers/portfolio-gate/`, which posts the
@@ -83,13 +88,23 @@ These are optional and not part of the build pipeline:
 
 ## Workflow Files
 
-There is **no GitHub Actions CI** and no `.github/workflows/`. GitHub Actions
-was dropped in September 2026 (billing; the remaining jobs then failed with
-“Actions budget is preventing further use”). The local gate is
-`.githooks/pre-push` / `npm run gate`. Phase 2 remote status is the
-Cloudflare Worker in `workers/portfolio-gate/` (GitHub App + Containers),
-which posts Check Run `portfolio-gate`. Do not add workflow YAML to invent
-an Actions job.
+Test CI is not Actions. GitHub Actions test jobs were dropped in September
+2026 (billing; remaining jobs failed with “Actions budget is preventing
+further use”). The local gate is `.githooks/pre-push` / `npm run gate`.
+Phase 2 remote status is the Cloudflare Worker in `workers/portfolio-gate/`
+(GitHub App + Containers), which posts Check Run `portfolio-gate`.
+
+The **only** allowed workflow YAML is `.github/workflows/cloudflare-deploy.yml`
+so a phone-only owner can deploy `litigation-doc-api` (including `/mcp`),
+apply D1 `schema.sql`, and run `documents:sync --apply`. Do not grow that
+file into a test suite. Raise the Actions spending limit a few dollars or
+the deploy job will not start — see [CI_CLOUDFLARE_DEPLOY.md](../internal/docs/CI_CLOUDFLARE_DEPLOY.md).
+
+Required repo secrets: `CLOUDFLARE_API_TOKEN`, `CLOUDFLARE_ACCOUNT_ID`.
+Optional: `R2_ACCESS_KEY_ID`, `R2_SECRET_ACCESS_KEY` (sync skips if either
+is missing). Minimal custom token: Account Settings Read, Workers Scripts
+Edit, D1 Edit, Workers R2 Storage Edit. Zone Workers Routes Edit and
+Workers KV Storage Edit are not required today (workers.dev, no KV).
 
 ```
 1. npm run lint
@@ -124,23 +139,23 @@ One run per SHA. A new `synchronize` cancels older pending runs on the
 previous SHA. Optional `check_run` rerequest is supported for this check
 name on a main-targeting PR.
 
-Do not add `.github/workflows/`. Do not point branch protection at an
-Actions job.
+Do not add further `.github/workflows/` beyond `cloudflare-deploy.yml`.
+Do not point branch protection at an Actions job.
 
 ### Branch protection (GitHub settings)
 
 `main` must not be a free-for-all from the web UI. Configure this in GitHub
-**Settings → Branches → Branch protection rule** for `main`. Still **no**
-`.github/workflows/`. The required check is posted by the Worker, not by
-Actions.
+**Settings → Branches → Branch protection rule** for `main`. The required
+check is posted by the Worker, not by Actions. `cloudflare-deploy.yml` is
+a deploy workflow, not a required status check.
 
 - [ ] Require a pull request before merging into `main`
 - [ ] Do not allow force pushes
 - [ ] Do not allow deletions of `main`
 - [ ] Require status checks to pass → add exactly **`portfolio-gate`**
       (after the Worker is deployed; before that, the check does not exist)
-- [ ] Do **not** require any Actions check (Actions is off)
-- [ ] Do **not** add workflow YAML to invent those checks
+- [ ] Do **not** require any Actions check (the deploy workflow is not a gate)
+- [ ] Do **not** add test-CI workflow YAML to invent those checks
 
 The local hook still runs on every laptop/agent push to a code branch.
 `SKIP_PORTFOLIO_GATE=EMERGENCY` cannot push to `main`; emergencies go through
@@ -152,15 +167,16 @@ Laptop jobs that used to be Actions:
 |---|---|
 | CourtListener sync | `npm run court:sync -- --bootstrap` |
 | R2 upload + path index | `npm run documents:push` |
-| Worker deploy | `cd workers/doc-api && wrangler deploy` |
+| Worker deploy + D1 schema + R2 sync | `.github/workflows/cloudflare-deploy.yml` (or `cd workers/doc-api && wrangler deploy`) |
 | Phase 2 portfolio-gate | `cd workers/portfolio-gate && wrangler deploy` (after App secrets; see that README) |
-| D1 reseed | `node workers/doc-api/seed.mjs > seed.sql` then POST `/admin/reseed` |
+| D1 reseed | **Manual only.** `node workers/doc-api/seed.mjs > seed.sql` then POST `/admin/reseed`. Never from Actions. |
 | Dependency report | `npm run deps:outdated` |
 | In-range npm bump | `npm run deps:update` |
 
-Do not add workflow YAML. Do not add `.github/dependabot.yml`. Dependabot
-version updates now run on GitHub Actions runners and a spending limit that
-blocks Actions will block them (or put jobs back in the Actions tab).
+Do not add test-CI workflow YAML. Do not add `.github/dependabot.yml`.
+Dependabot version updates run on GitHub Actions runners and a spending
+limit that blocks Actions will block them (or put jobs back in the Actions
+tab). The deploy workflow is the exception; keep it path-filtered.
 
 External AIs get the Worker (`https://litigation-doc-api.ss8sxswwkt.workers.dev`),
 not R2 admin keys. See `.cursor/rules/worker-not-keys.mdc`.
