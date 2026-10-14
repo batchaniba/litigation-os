@@ -159,12 +159,14 @@ and gets a plain JSON response — no SSE stream, no session ids. Protocol
 versions negotiated: `2025-06-18`, `2025-03-26`, `2024-11-05`. CORS is open
 (`*`) so browser-based clients (Claude/ChatGPT web connectors) can call it.
 
-Reads stay open and filing-safe: D1 is seeded from `publishMatter()`, not
-the laptop graph. The stdio server in `internal/mcp` (`npm run mcp`) is the
-full-graph laptop client — do not treat the two MCP endpoints as equivalent.
+Reads stay open: every D1-registered document except the 14-path denylist.
+D1 seed SQL still comes from `publishMatter()` (filed / phone-tap only);
+do not reseed as part of this change. The stdio server in `internal/mcp`
+(`npm run mcp`) is the full-graph laptop client — do not treat the two MCP
+endpoints as equivalent.
 
-**Read tools.** Eight tools, mirroring the *shape* of the stdio server in
-`internal/mcp` and the `npm run q` ops, backed by the same D1/R2 bindings:
+**Read tools.** Mirroring the *shape* of the stdio server in `internal/mcp`
+and the `npm run q` ops, backed by the same D1/R2 bindings:
 
 | Tool | Args | Returns |
 |---|---|---|
@@ -173,7 +175,8 @@ full-graph laptop client — do not treat the two MCP endpoints as equivalent.
 | `upcomingDeadlines` | `days=14`, `matter?` | clock rows, oldest first |
 | `getFuseBoard` | `days=14` | `{ fuse, wait, parked }` |
 | `getMatterDocs` | `n` | manifest rows with download `url`s |
-| `searchDocuments` | `query`, `limit=20` | substring over manifest paths + matter captions, with `url`s |
+| `listDocuments` / `list_documents` | `matter?`, `limit=100`, `offset=0` | all D1 rows except the 14-path denylist (token sees those too) |
+| `searchDocuments` / `search_documents` | `query`, `limit=20` | FTS5 over extracted text when `documents_fts` exists; otherwise path/caption LIKE |
 | `fetchDocument` | `sha256` | `{ sha256, size, etag, url }` — fetch the bytes with `GET url` |
 | `readDocumentText` | `sha256`, `offset=0`, `limit=20000` | `{ sha256, total_chars, offset, limit, returned_chars, truncated, text }` — extracted PDF text, inline |
 
@@ -197,7 +200,8 @@ JSON-RPC — a base64 PDF over the wire is wasteful and some documents are
 | `upsertMatter`* | `number`, + any matter fields | create or replace a matter row |
 | `updateMatter`* | `n`, + fields to patch | patch only the given columns; 404 if unknown |
 | `addClock`* | `matter_number`, `title`, `date?`, `kind?` | add a deadline/hearing |
-| `registerDocument` | `sha256`, `matter_number?`, `path?`, `size?` | upsert a manifest row (bytes uploaded separately) |
+| `uploadDocument` | `content_base64`, `path`, `matter_number?` | PUT bytes + register (max 20 MB decoded; `write` scope) |
+| `registerDocument` | `sha256`, `matter_number?`, `path?`, `size?` | upsert a manifest row (bytes uploaded separately; `write` scope) |
 
 \* **Off by default and not listed.** D1 matters and clocks are a projection
 of `main`: a direct write never reaches the repo and the next reseed erases
@@ -214,14 +218,16 @@ D1 console), and remove it from the repo in a PR.
 
 ## Auth & scopes
 
-**What anonymous callers see.** Without a valid token, document listings,
-search, `/doc/<sha256>`, `/doc/<sha256>/meta`, `/documents/<path>`,
-`fetchDocument`, and `readDocumentText` are limited to the filing-safe
-publish projection (`documents_by_path`, written only by the seed). Rows
-that write tools add to `documents` are visible to token holders only; to
-anyone else they are a plain 404. Until Oct. 2026 the open routes also
-listed and served ~415 assistant-registered documents the projection
-excludes. With no D1 binding, anonymous document reads fail closed.
+**What anonymous callers see.** Document listings, search, `/doc/<sha256>`,
+`/doc/<sha256>/meta`, `/documents/<path>`, `fetchDocument`, and
+`readDocumentText` stay **open** for every D1-registered file except the
+14-path owner denylist (`internal/src/data/documents/private-documents.json`:
+twelve `hope-discovery/HOPE_000*` productions and two matter-12
+card-authorization PDFs). Those 14 (and any SHA-identical copy) are
+auth-only: anonymous callers get `404 not_found`. Newly registered files
+default public unless they match the denylist. There is **no** blanket
+auth requirement on `/doc`. Write tools still need `write` / `rw`. With
+no D1 binding, anonymous document reads fail closed.
 
 Reads shipped open and stay that way by default. Writes require a **scoped
 bearer token**. Tokens exist only as SHA-256 hashes inside the `API_KEYS`

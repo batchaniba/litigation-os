@@ -1,9 +1,10 @@
 {
-  "generated": "2026-09-21",
-  "note": "Tracked PDFs/DOCX sitting at the repository root that predate the root-cleanliness rule. This ledger is an allowlist, not an approval: anything at root NOT listed here fails the gate. Entries are removed as files are filed into internal/public/documents/ and pushed to R2. Every unfiled entry belongs to Matter 05 (Newanforbi v. Palacios et al.), confirmed by Plaintiff. Do not delete a root file until its bytes exist in R2 -- internal/public/documents/ is gitignored, so the root copy is the only one in version control.",
-  "remaining": 41,
-  "remainingBytes": 161556807,
-  "files": [
+  "generated": "2026-10-14",
+  "note": "Drained 2026-10-14: root PDFs moved to documents/ or internal/private/documents/. remaining=0. New root PDFs still fail the gate.",
+  "remaining": 0,
+  "remainingBytes": 0,
+  "files": [],
+  "drained": [
     {
       "name": "1032_Declaration.pdf",
       "size": 1036744,

@@ -81,23 +81,22 @@ describe("GET /documents/<path>", () => {
   });
 });
 
-describe("anonymous callers see only the filing-safe projection", () => {
-  // Path index resolves the path, but documents_by_path does not hold the
-  // hash: the document was registered by a write tool, not seeded as public.
-  const privateEnv = (extra = {}) => envWith({ index: { [DOC_PATH]: SHA }, d1: [], ...extra });
+describe("unregistered hashes 404 for anonymous callers so /doc is not an R2 listing", () => {
+  // Path index resolves the path, but D1 does not hold the hash.
+  const missingEnv = (extra = {}) => envWith({ index: { [DOC_PATH]: SHA }, d1: [], ...extra });
 
   it.each([`/doc/${SHA}`, `/doc/${SHA}/meta`, DOC_PATH])("404s %s without a token", async (route) => {
-    const res = await worker.fetch(new Request(`https://example.test${route}`), privateEnv());
+    const res = await worker.fetch(new Request(`https://example.test${route}`), missingEnv());
     expect(res.status).toBe(404);
     expect((await res.json()).error).toBe("not_found");
   });
 
-  it("serves the same document to a valid read token", async () => {
+  it("serves the same unregistered hash to a valid read token", async () => {
     const { sha256Hex } = await import("./auth.mjs");
     const apiKeys = JSON.stringify({ [await sha256Hex("tok")]: { name: "phone", scope: "r" } });
     const res = await worker.fetch(
       new Request(`https://example.test/doc/${SHA}`, { headers: { authorization: "Bearer tok" } }),
-      privateEnv({ apiKeys }),
+      missingEnv({ apiKeys }),
     );
     expect(res.status).toBe(200);
   });
@@ -105,5 +104,94 @@ describe("anonymous callers see only the filing-safe projection", () => {
   it("fails closed with no D1 binding", async () => {
     const res = await worker.fetch(new Request(`https://example.test/doc/${SHA}`), envWith({}));
     expect(res.status).toBe(404);
+  });
+});
+
+const OPEN = "c".repeat(64);
+const PRIV = "9c6b98a0ccf500f2894028f6b50f5e6538d4561c8f4681e9dca45858e8e2e7cc";
+const OPEN_PATH = "/documents/matter-12/Meet and Confer.pdf";
+const PRIV_PATH =
+  "/documents/matter-05/hope-discovery/HOPE_000001-031_Professional_Liability_Policy.pdf";
+
+function r2Key(sha) {
+  return `sha256/${sha.slice(0, 2)}/${sha.slice(2)}.pdf`;
+}
+
+function envCatalog({ apiKeys } = {}) {
+  const tables = {
+    documents_by_path: [{ sha256: SHA, path: DOC_PATH, size: 1, matter_number: 24 }],
+    documents: [
+      { sha256: SHA, path: DOC_PATH, size: 1, matter_number: 24 },
+      { sha256: OPEN, path: OPEN_PATH, size: 1, matter_number: 12 },
+      { sha256: PRIV, path: PRIV_PATH, size: 1, matter_number: 5 },
+    ],
+  };
+  return {
+    ...(apiKeys ? { API_KEYS: apiKeys, PUBLIC_READ: "true" } : {}),
+    DOCS: {
+      async get(key) {
+        if (key === "index/path-to-sha256.json") {
+          return { json: async () => ({ [DOC_PATH]: SHA }), httpEtag: '"i"', size: 2 };
+        }
+        if (key === r2Key(SHA) || key === r2Key(OPEN) || key === r2Key(PRIV)) {
+          return { body: pdfBytes, httpEtag: '"p"', size: pdfBytes.length };
+        }
+        return null;
+      },
+      async head(key) {
+        const obj = await this.get(key);
+        return obj ? { size: obj.size, httpEtag: obj.httpEtag } : null;
+      },
+    },
+    DB: {
+      prepare(sql) {
+        const stmt = {
+          p: [],
+          bind(...p) {
+            stmt.p = p;
+            return stmt;
+          },
+          async all() {
+            const table = /FROM\s+(\w+)/i.exec(sql)?.[1];
+            let rows = tables[table] ?? [];
+            if (/WHERE sha256 = \?/.test(sql)) rows = rows.filter((r) => r.sha256 === stmt.p[0]);
+            if (/WHERE path = \?/.test(sql)) rows = rows.filter((r) => r.path === stmt.p[0]);
+            return { results: rows };
+          },
+        };
+        return stmt;
+      },
+    },
+  };
+}
+
+describe("GET /doc stays open except the 14-path denylist", () => {
+  it("does not 401 an anonymous GET /doc of a public hash", async () => {
+    const res = await worker.fetch(new Request(`https://example.test/doc/${SHA}`), envCatalog());
+    expect(res.status).toBe(200);
+  });
+
+  it("serves an assistant-registered public file that is not in documents_by_path", async () => {
+    const res = await worker.fetch(new Request(`https://example.test/doc/${OPEN}`), envCatalog());
+    expect(res.status).toBe(200);
+  });
+
+  it.each([`/doc/${PRIV}`, `/doc/${PRIV}/meta`, PRIV_PATH])(
+    "404s denylist %s without a token",
+    async (route) => {
+      const res = await worker.fetch(new Request(`https://example.test${route}`), envCatalog());
+      expect(res.status).toBe(404);
+      expect((await res.json()).error).toBe("not_found");
+    },
+  );
+
+  it("serves the denylist hash to a valid read token", async () => {
+    const { sha256Hex } = await import("./auth.mjs");
+    const apiKeys = JSON.stringify({ [await sha256Hex("tok")]: { name: "phone", scope: "r" } });
+    const res = await worker.fetch(
+      new Request(`https://example.test/doc/${PRIV}`, { headers: { authorization: "Bearer tok" } }),
+      envCatalog({ apiKeys }),
+    );
+    expect(res.status).toBe(200);
   });
 });

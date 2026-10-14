@@ -24,9 +24,10 @@
 //
 // R2 is reached through the DOCS *binding* — this file contains no keys,
 // tokens, or secrets. Data routes return 503 { error: "d1_not_provisioned" }
-// when the DB binding is absent. Anonymous document reads are limited to the
-// seeded public projection (documents_by_path), so they fail closed without D1;
-// token holders can still fetch by hash.
+// when the DB binding is absent. GET /doc stays open: every D1-registered
+// document is readable without auth except the 14-path denylist. Unregistered
+// hashes 404 so the route is not an R2 listing. Token holders can fetch the
+// denylist. There is no blanket auth requirement on GET /doc.
 //
 // No delete route and no cron. Deletes are deliberately not reachable with a
 // token (connected assistants hold rw tokens); remove a document or matter
@@ -277,11 +278,12 @@ export default {
     if (path === "/health")
       return json({ ok: true, bucket: BUCKET, d1: env.DB ? await seedSource(env) : null }); // open
 
-    // Every read below honors the read gate (open unless the Worker locks
-    // reads down with API_KEYS + PUBLIC_READ != "true").
+    // Existing Worker lock: API_KEYS without PUBLIC_READ=true 401s every
+    // read. That is not a per-document /doc gate. Recommended production
+    // is PUBLIC_READ=true so GET /doc stays open except the denylist.
     if (!access.canRead) return json({ error: "unauthorized" }, 401);
 
-    // Without a valid token, only the filing-safe projection is visible.
+    // No token → hide the 14-path denylist. Do not require auth for every /doc.
     const publicOnly = !access.scope;
     if ((m = path.match(/^\/doc\/([^/]+)\/meta$/)))
       return visible(env, m[1], publicOnly, () => docMeta(env, m[1]));

@@ -1,0 +1,222 @@
+{
+  "generated": "2026-10-14",
+  "apply": true,
+  "counts": {
+    "tracked_pdfs": 647,
+    "moved": 580,
+    "deduped_removed": 11,
+    "phone_tap_slugs_kept": 56,
+    "renamed_for_byte_conflict": 2,
+    "private_to_internal_private": 13,
+    "unique_sha_kept": 580
+  },
+  "git_lfs": "Not recommended. GitHub’s free LFS quota is 1 GB/month of bandwidth; Vercel builds would exhaust it. R2 remains the serving store. This branch tracks previously-scattered public PDFs so they are no longer at repo root / internal/docs.",
+  "phone_tap_exception": "internal/public/{slug}.pdf stay as unauthenticated Vercel/Pages tap copies of public filings. Private denylist files must never become slugs.",
+  "hope_discovery_conflicts": 12,
+  "private_moved": [
+    {
+      "source": "1_HOPE_Clinical_Operational_Manual_9_24_24_225349_pg_1_to_90.pdf",
+      "dest": "internal/private/documents/matter-05/hope-discovery/HOPE_000225-314_Clinical_Operational_Manual_Part_1.root-cfdf2238.pdf",
+      "sha256": "cfdf2238003522782b689a7f9b3f36dace0c8815e8372c665f90ec0fa903e4d6"
+    },
+    {
+      "source": "1_HOPE_Clinical_Operational_Manual_9_24_24_225349_pg_91_to_125.pdf",
+      "dest": "internal/private/documents/matter-05/hope-discovery/HOPE_000315-349_Clinical_Operational_Manual_Part_2.root-2861a95b.pdf",
+      "sha256": "2861a95be415e8c280c2b55d7f8ad9f500b3545698979b5c9c2bc726a713339d"
+    },
+    {
+      "source": "1_PHCP06796815_Rdctd_131_pdf.pdf",
+      "dest": "internal/private/documents/matter-05/hope-discovery/HOPE_000001-031_Professional_Liability_Policy.root-5dbdfba7.pdf",
+      "sha256": "5dbdfba7a018e003e3e2c9efcf0c4435e2aa1a34b8c83b705ffd637af1a103a2"
+    },
+    {
+      "source": "2_HOPE_Maintenance_Curriculum_350434.pdf",
+      "dest": "internal/private/documents/matter-05/hope-discovery/HOPE_000350-434_Maintenance_Curriculum.root-f35c3fee.pdf",
+      "sha256": "f35c3fee0907d7cfe14edac2ac776ddd0a23fbbbb9ed7b04b10ae884bf44dbf5"
+    },
+    {
+      "source": "2_HOPE_Maintenance_Curriculum_350434__pdf.pdf",
+      "dest": "internal/private/documents/matter-05/hope-discovery/HOPE_000350-434_Maintenance_Curriculum.root-ffcab3eb.pdf",
+      "sha256": "ffcab3eb1c57d1244035a5f51b4009fa529d9a7065e8e9b143daadc18d248e02"
+    },
+    {
+      "source": "2_PHSD1838240007_Rdctd_32104_pdf.pdf",
+      "dest": "internal/private/documents/matter-05/hope-discovery/HOPE_000032-104_DandO_EPL_Policy.root-8d45119d.pdf",
+      "sha256": "8d45119d7fc8daec1152f33864b0117e15b61f994122721d929f4d4328acc85e"
+    },
+    {
+      "source": "3_HOPE_Prgrm_Emply_Hndbk_2023_435485_pdf.pdf",
+      "dest": "internal/private/documents/matter-05/hope-discovery/HOPE_000435-485_Program_Employee_Handbook_2023.root-e9822fc1.pdf",
+      "sha256": "e9822fc1fc123c803a2ae212809b6c05b2a0ce545237bb0e99efc8ee93a7dc05"
+    },
+    {
+      "source": "4_HOPE_Prprtry_Trtmnt_Mnul_2_18_2019_486537.pdf",
+      "dest": "internal/private/documents/matter-05/hope-discovery/HOPE_000486-537_Proprietary_Treatment_Manual.root-e06c6753.pdf",
+      "sha256": "e06c6753d4c21ca70afeb9e3180067a382fb657a43fa151b92dacfa10d595727"
+    },
+    {
+      "source": "5_CD_Job_Description_538542_pdf.pdf",
+      "dest": "internal/private/documents/matter-05/hope-discovery/HOPE_000538-542_Clinical_Director_Job_Description.root-99240585.pdf",
+      "sha256": "992405852c5f90a31b5a22973d18881ba79b226653ff0d8302091eda62e1c23c"
+    },
+    {
+      "source": "Block_1_Homework_105138_pdt.pdf",
+      "dest": "internal/private/documents/matter-05/hope-discovery/HOPE_000105-138_Block_1_Homework.root-a3137ea3.pdf",
+      "sha256": "a3137ea310b57410a980142ab39a82bfc200af18e6fd936e30f46a66d425be20"
+    },
+    {
+      "source": "Collateral_NotesComm_139199_pdf.pdf",
+      "dest": "internal/private/documents/matter-05/hope-discovery/HOPE_000139-199_Collateral_Notes_and_Communications.root-1b5f7f10.pdf",
+      "sha256": "1b5f7f108ba80c111661a9171cec92ed4c6207aac839c1743ea8e94c2bb820ba"
+    },
+    {
+      "source": "Homework_200223_pdf.pdf",
+      "dest": "internal/private/documents/matter-05/hope-discovery/HOPE_000200-223_Homework_and_Preparatory_Tickets.root-310e7f2f.pdf",
+      "sha256": "310e7f2ff4a5d44ad883f1b62fbbf3265ca637cee108c181bed681a5aa3041c2"
+    },
+    {
+      "source": "Hw_Audit_3_2026_224_paf.pdf",
+      "dest": "internal/private/documents/matter-05/hope-discovery/HOPE_000224_Curriculum_Tracking_Audit.root-aaf89e1d.pdf",
+      "sha256": "aaf89e1dc23468377497c211fe2decb4f33e92bae53b1dc0027fe22232457dcf"
+    }
+  ],
+  "deduped": [
+    {
+      "source": "internal/docs/counsel/matter29/sources/2-24-cv-05669-Walker-v-Ronin/Dkt 01 - Class Action Complaint (Jul 3, 2024).pdf",
+      "sha256": "1ad15d840b32fb611524cce95bb21772225741bd720451384b7a1b63f318d3f9",
+      "size": 590623,
+      "kept": "documents/matter-29/walker-v-ronin-staffing/Dkt 01 - Class Action Complaint (Jul 3, 2024).pdf"
+    },
+    {
+      "source": "internal/docs/counsel/matter29/sources/2-24-cv-05669-Walker-v-Ronin/Dkt 14 - Sterling Answer and Affirmative Defenses - Stanzick (Sep 12, 2024).pdf",
+      "sha256": "aa08995514042021df20b7d3aeacf847d1d60104bc55d71c74916f2414f7d4c1",
+      "size": 177133,
+      "kept": "documents/matter-29/walker-v-ronin-staffing/Dkt 14 - Sterling Infosystems Answer to Complaint (Sep 12, 2024).pdf"
+    },
+    {
+      "source": "internal/docs/counsel/matter29/sources/2-24-cv-05669-Walker-v-Ronin/Dkt 16 - Stipulation to Dismiss Sterling Without Prejudice (Oct 29, 2024).pdf",
+      "sha256": "ea0e7ed35e614c75a5e3b9552742ac3a94058b525a4d84b38ae315851b584f6f",
+      "size": 87668,
+      "kept": "documents/matter-29/walker-v-ronin-staffing/Dkt 16 - Stipulation to Dismiss Sterling Without Prejudice (Oct 29, 2024).pdf"
+    },
+    {
+      "source": "internal/docs/counsel/matter29/sources/2-24-cv-05669-Walker-v-Ronin/Dkt 16-1 - Proposed Order Dismissing Sterling Without Prejudice (Oct 29, 2024).pdf",
+      "sha256": "90a7a6f04f45386ecfb397831b623caf97d0ff142d5d5ea1ab99696553ffcb5a",
+      "size": 73318,
+      "kept": "documents/matter-29/walker-v-ronin-staffing/Dkt 16-1 - Order Dismissing Sterling Infosystems Without Prejudice (Oct 29, 2024).pdf"
+    },
+    {
+      "source": "internal/docs/counsel/matter29/sources/5-26-cv-00258-Varela-v-Accurate/Dkt 01-1 - Civil Cover Sheet (Jan 21, 2026).pdf",
+      "sha256": "134ba22452a107068f0293e1aef01b2b844eab34cdd00818411e30c1c6041d85",
+      "size": 3770120,
+      "kept": "documents/matter-29/varela-v-accurate-background/Dkt 01-1 - Exhibit to Complaint (Jan 21, 2026).pdf"
+    },
+    {
+      "source": "internal/docs/counsel/matter29/sources/8-25-cv-00191-Carrillo-v-Vons/Dkt 15 - Vons Answer to Class Action Complaint (Apr 8, 2025).pdf",
+      "sha256": "b516472fe6b9da2556429b7367b3e2fdf285390499b954f58f223f5790929060",
+      "size": 204962,
+      "kept": "documents/matter-29/carrillo-v-vons/Dkt 15 - Vons Answer to Complaint (Apr 8, 2025).pdf"
+    },
+    {
+      "source": "internal/docs/counsel/matter29/sources/8-25-cv-00191-Carrillo-v-Vons/Dkt 19 - Asurint Answer and Affirmative Defenses - Stanzick (May 30, 2025).pdf",
+      "sha256": "55b800369cfc832694cf110617c09b5dbc21ace60d1d5f66fe2f272cb2d81076",
+      "size": 227933,
+      "kept": "documents/matter-29/carrillo-v-vons/Dkt 19 - Asurint Answer to Complaint (May 30, 2025).pdf"
+    },
+    {
+      "source": "internal/docs/counsel/matter29/sources/8-25-cv-00191-Carrillo-v-Vons/Dkt 27 - Stipulated Protective Order (Sep 18, 2025).pdf",
+      "sha256": "3332a5f0e8b00da5fbb66d9b0942bd3d76aca4e519c0b909013e27ff878bb7e2",
+      "size": 206808,
+      "kept": "documents/matter-29/carrillo-v-vons/Dkt 27 - Stipulated Protective Order (Sep 18, 2025).pdf"
+    },
+    {
+      "source": "internal/docs/counsel/matter29/sources/8-25-cv-00191-Carrillo-v-Vons/Dkt 62 - Transcript of Motion Hearing (Apr 15, 2026) (Filed May 29, 2026).pdf",
+      "sha256": "2fb4fb00ca41af1f9eba4b5b964c36cd4022b777a1a3077bf81be1b614f29855",
+      "size": 217181,
+      "kept": "documents/matter-29/carrillo-v-vons/Dkt 62 - Transcript of Class Certification Hearing (Apr 15, 2026).pdf"
+    },
+    {
+      "source": "internal/docs/counsel/matter29/sources/8-25-cv-00191-Carrillo-v-Vons/Dkt 64 - Vons Additional Request for Judicial Notice (Sep 15, 2026).pdf",
+      "sha256": "860b3f719280a890e0b97da90266bf96a853ff86cf677c747eafe98753db8838",
+      "size": 59524,
+      "kept": "documents/matter-29/carrillo-v-vons/Dkt 64 - Vons Request for Judicial Notice ISO Class Cert Opposition (Sep 15, 2026).pdf"
+    },
+    {
+      "source": "internal/docs/counsel/matter29/sources/8-25-cv-00191-Carrillo-v-Vons/Dkt 64-1 - Exhibit A to Vons Additional RJN (Sep 15, 2026).pdf",
+      "sha256": "cca2b93dfcb69a1a3f3c8926d6975c2e8971016e16abe6a5a87ec49559e9a65a",
+      "size": 628141,
+      "kept": "documents/matter-29/carrillo-v-vons/Dkt 64-1 - Exhibit A - Federal Court Order (Sep 15, 2026).pdf"
+    }
+  ],
+  "renamed": [
+    {
+      "from": "documents/matter-25/Plaintiff's Initial Rule 26(a)(1) Disclosures (Oct 9 2026).pdf",
+      "to": "documents/matter-25/Plaintiff's Initial Rule 26(a)(1) Disclosures (Oct 9 2026).deeb0e8f.pdf",
+      "reason": "same_name_different_bytes"
+    },
+    {
+      "from": "documents/matter-25/Plaintiff's Initial Rule 26(a)(1) Disclosures (Oct 9 2026).pdf",
+      "to": "documents/matter-25/Plaintiff's Initial Rule 26(a)(1) Disclosures (Oct 9 2026).f9f74320.pdf",
+      "reason": "same_name_different_bytes"
+    }
+  ],
+  "kept_phone_taps": [
+    "internal/public/Civil L.R. 7-11 Administrative Motion Packet - Conform Plaintiff's Docket Name to Brendan Ngwa Nforbi for PACER ECF E-Filing Access (Newanforbi v. Smith and HOPE, N.D. Cal. 3-26-cv-07504-LJC) (September 14, 2026).pdf",
+    "internal/public/accurate-sig-notice.pdf",
+    "internal/public/accurate-stip.pdf",
+    "internal/public/amazon-consent.pdf",
+    "internal/public/cand-strike-packet.pdf",
+    "internal/public/cand-strike.pdf",
+    "internal/public/candelaria-fac.pdf",
+    "internal/public/chp-rfp-mail.pdf",
+    "internal/public/edca-att-consent.pdf",
+    "internal/public/edca-att.pdf",
+    "internal/public/edca-best-buy-consent.pdf",
+    "internal/public/edca-best-buy.pdf",
+    "internal/public/edca-home-depot-consent.pdf",
+    "internal/public/edca-home-depot.pdf",
+    "internal/public/edca-mj-consents.pdf",
+    "internal/public/edca-swift-consent.pdf",
+    "internal/public/edca-swift.pdf",
+    "internal/public/fedex-answer.pdf",
+    "internal/public/fedex-complaint.pdf",
+    "internal/public/fedex-consent.pdf",
+    "internal/public/fedex-status-report.pdf",
+    "internal/public/habeas-discharge.pdf",
+    "internal/public/hc-004.pdf",
+    "internal/public/hope-name-motion.pdf",
+    "internal/public/hope-name-stip.pdf",
+    "internal/public/meza-41520-decl.pdf",
+    "internal/public/meza-41520-filing.pdf",
+    "internal/public/meza-41520-mail.pdf",
+    "internal/public/meza-clerk-default.pdf",
+    "internal/public/meza-li-service.pdf",
+    "internal/public/name-24-decl.pdf",
+    "internal/public/name-24-motion.pdf",
+    "internal/public/name-24-order.pdf",
+    "internal/public/name-24.pdf",
+    "internal/public/name-28.pdf",
+    "internal/public/name-29.pdf",
+    "internal/public/name-32.pdf",
+    "internal/public/name-33.pdf",
+    "internal/public/ross-title-decl.pdf",
+    "internal/public/ross-title-ex-a-cover.pdf",
+    "internal/public/ross-title-ex-a.pdf",
+    "internal/public/ross-title-ex-b-cover.pdf",
+    "internal/public/ross-title-ex-b.pdf",
+    "internal/public/ross-title-ex-c-cover.pdf",
+    "internal/public/ross-title-ex-c.pdf",
+    "internal/public/ross-title-order.pdf",
+    "internal/public/ross-title-packet.pdf",
+    "internal/public/ross-title.pdf",
+    "internal/public/serrato-complaint.pdf",
+    "internal/public/serrato-mtd.pdf",
+    "internal/public/serrato-opp.pdf",
+    "internal/public/ups-complaint.pdf",
+    "internal/public/ups-consent.pdf",
+    "internal/public/ups-ext-opp.pdf",
+    "internal/public/ups-mtd.pdf",
+    "internal/public/ups-opp.pdf"
+  ],
+  "move_count": 591
+}

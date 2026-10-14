@@ -30,6 +30,7 @@ All current and future matters follow the [Stipulation Defense — Plaintiff-Fir
 - [Attorney Fees Analysis](#attorney-fees-analysis)
 - [Legal Theories](#legal-theories)
 - [Tech Stack](#tech-stack)
+- [Documents & MCP](#documents--mcp)
 - [Citation Verification](#citation-verification)
 - [CourtListener bridge](#courtlistener-bridge)
 - [Local Development](#local-development)
@@ -418,13 +419,27 @@ Plaintiff is representing himself pro se across all 40 matters. The figures belo
   - `proceeding` — track: `state_civil` | `federal_civil` | `mandate` | `habeas`
   - `phase` — current stage on that track (e.g. `demurrer`, `fr_pending`, `under_submission`, `responsive_deadline`; `terminal` when disposed)
 - **Timeline:** `clocks.json` is the live calendar; `timeline.json` is the archive (CourtListener still writes it). Generated `upcoming.json` feeds the shell deadline clock.
-- **Documents:** `internal/public/documents/` (Matter 32: `from-01|02|20|24/` + N.D. Cal. filing under `ndcal/`; Matter 33: `incident|from-07|from-08|opinions/` + N.D. Cal. filing under `ndcal/`; blank Judicial Council templates and the portfolio Proof of Service form under `_form-library/` (see `_form-library/README.md`)). The tree is ~660 MB and growing; without it on disk, `PORTFOLIO_SKIP_DISK_DOCS=1` checks paths against `internal/src/data/documents/manifest.json` (the `pre-push` hook sets this automatically). See [DOCUMENT_STORE.md](internal/docs/DOCUMENT_STORE.md).
+- **Documents:** canonical public tree is `documents/` (mirrors `/documents/matter-NN/...`). Phone-tap slugs stay in `internal/public/{slug}.pdf`. The 14-path private denylist lives under `internal/private/documents/` and is auth-only on the Worker. Without the full library on disk, `PORTFOLIO_SKIP_DISK_DOCS=1` checks paths against `internal/src/data/documents/manifest.json`. See [DOCUMENT_STORE.md](internal/docs/DOCUMENT_STORE.md) and [CANONICAL_DOCUMENT_STORE.md](internal/docs/CANONICAL_DOCUMENT_STORE.md).
 
 ### Graph (records, not a diary)
 
 Crawl `internal/src/data/index/matters.json`, then the sibling file the question needs. `docket.json` is pleadings; `documents.json` is the file inventory; `clocks.json` is the live calendar. `events.jsonl` is append-only. Never invent a docket number. `{filed: true, dkt: 18}` is on file; a draft is not. README tables are generated (`npm run generate:readme`) — do not keep them in sync by hand. Schema is a contract for shape (`internal/src/data/index/schema.json`), not a speed limit. `status_label` is a 60-character UI chip. Word counts are advisory (`npm run report:prose`), not a schema fail.
 
 On screen, prose over ~320 characters renders through `CollapsibleProse`, which clamps to a few lines with a "Show full …" toggle. That is display only. Nothing is truncated in the DOM — print, find-in-page, and the Markdown export still see the whole record.
+
+## Documents & MCP
+
+Public PDFs live under `documents/` in the repo and in R2. Any MCP-capable
+model (ChatGPT, Claude, Cursor, others) points at:
+
+`https://litigation-doc-api.ss8sxswwkt.workers.dev/mcp`
+
+Reads do not need a token. Fourteen paths are auth-only (HOPE_000 discovery
++ two matter-12 card-authorization forms); everything else stays public.
+Write tools need OAuth/`write` scope. Connection steps, example prompts,
+and the denylist: [CANONICAL_DOCUMENT_STORE.md](internal/docs/CANONICAL_DOCUMENT_STORE.md).
+
+Example: “List documents for matter 24, then read the first amended complaint as text.”
 
 ## Citation Verification
 

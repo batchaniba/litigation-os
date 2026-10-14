@@ -11,6 +11,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { assembleSplitMatter, loadSplitParts, paddedMatterNumber } from "./matter-layout.mjs";
+import { isPrivateDocument } from "./private-documents.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 export const REPO_ROOT = path.resolve(__dirname, "../../..");
@@ -121,6 +122,7 @@ export function isPublicDocketRow(row) {
 
 export function isPublicDocument(doc, ctx = {}) {
   if (!isObj(doc) || !isPdfPath(doc.path)) return false;
+  if (isPrivateDocument(doc)) return false;
   if (ctx.phoneTapPaths instanceof Set && ctx.phoneTapPaths.has(doc.path)) return true;
   if (ctx.filedDocketPaths instanceof Set && ctx.filedDocketPaths.has(doc.path)) return true;
   return doc.filed === true;

@@ -1,0 +1,245 @@
+{
+  "generated": "2026-10-14",
+  "files": [
+    {
+      "path": "/documents/matter-05/hope-discovery/HOPE_000001-031_Professional_Liability_Policy.pdf",
+      "d1": {
+        "sha256": "9c6b98a0ccf500f2894028f6b50f5e6538d4561c8f4681e9dca45858e8e2e7cc",
+        "size": 4347289,
+        "bytes_in_this_tree": false
+      },
+      "manifest": {
+        "sha256": "9c6b98f0e9c42ca99d74efff5dcd53146ac247fe74e4c62b1bff6a314bd0d4c6",
+        "size": 4347289,
+        "bytes_in_this_tree": false
+      },
+      "repo_root": {
+        "source": "1_PHCP06796815_Rdctd_131_pdf.pdf",
+        "sha256": "5dbdfba7a018e003e3e2c9efcf0c4435e2aa1a34b8c83b705ffd637af1a103a2",
+        "size": 4247516,
+        "canonical_copy": "internal/private/documents/matter-05/hope-discovery/HOPE_000001-031_Professional_Liability_Policy.root-5dbdfba7.pdf"
+      },
+      "visibility": "private/auth-only (owner denylist of 14). D1 and manifest hashes disagree; repo-root Bates copies are a third byte sequence. Do not collapse."
+    },
+    {
+      "path": "/documents/matter-05/hope-discovery/HOPE_000032-104_DandO_EPL_Policy.pdf",
+      "d1": {
+        "sha256": "13120f4b4a3158b29d0dcf3ef2c43df81b84d092b3c1d14d6dcb05a6fa46f54f",
+        "size": 10369478,
+        "bytes_in_this_tree": false
+      },
+      "manifest": {
+        "sha256": "13120f5ecfc3f2d3478f5ba45fd8942c43e7c74c3d1913989cf14869addb4f77",
+        "size": 10369478,
+        "bytes_in_this_tree": false
+      },
+      "repo_root": {
+        "source": "2_PHSD1838240007_Rdctd_32104_pdf.pdf",
+        "sha256": "8d45119d7fc8daec1152f33864b0117e15b61f994122721d929f4d4328acc85e",
+        "size": 9989291,
+        "canonical_copy": "internal/private/documents/matter-05/hope-discovery/HOPE_000032-104_DandO_EPL_Policy.root-8d45119d.pdf"
+      },
+      "visibility": "private/auth-only (owner denylist of 14). D1 and manifest hashes disagree; repo-root Bates copies are a third byte sequence. Do not collapse."
+    },
+    {
+      "path": "/documents/matter-05/hope-discovery/HOPE_000105-138_Block_1_Homework.pdf",
+      "d1": {
+        "sha256": "eefc6c7dfe9ee864c753241114ff41046444f935d1da9b4f482bc495ded4e192",
+        "size": 1589351,
+        "bytes_in_this_tree": false
+      },
+      "manifest": {
+        "sha256": "eefc6c6dbe1bf0ee6f9ea0b2875565b6c1dc76651bbe3336cf3b4460f05f2b29",
+        "size": 1589351,
+        "bytes_in_this_tree": false
+      },
+      "repo_root": {
+        "source": "Block_1_Homework_105138_pdt.pdf",
+        "sha256": "a3137ea310b57410a980142ab39a82bfc200af18e6fd936e30f46a66d425be20",
+        "size": 1572702,
+        "canonical_copy": "internal/private/documents/matter-05/hope-discovery/HOPE_000105-138_Block_1_Homework.root-a3137ea3.pdf"
+      },
+      "visibility": "private/auth-only (owner denylist of 14). D1 and manifest hashes disagree; repo-root Bates copies are a third byte sequence. Do not collapse."
+    },
+    {
+      "path": "/documents/matter-05/hope-discovery/HOPE_000139-199_Collateral_Notes_and_Communications.pdf",
+      "d1": {
+        "sha256": "f6bdd9f73b178f5147bc1d96d720dcf37810b07f9fb675f62c5bb92105f114ef",
+        "size": 2987254,
+        "bytes_in_this_tree": false
+      },
+      "manifest": {
+        "sha256": "f6bdd9af1b04ac5621eb13526feee7f5c21cdb267e6200aaf29a5d99c1346b47",
+        "size": 2987254,
+        "bytes_in_this_tree": false
+      },
+      "repo_root": {
+        "source": "Collateral_NotesComm_139199_pdf.pdf",
+        "sha256": "1b5f7f108ba80c111661a9171cec92ed4c6207aac839c1743ea8e94c2bb820ba",
+        "size": 2918814,
+        "canonical_copy": "internal/private/documents/matter-05/hope-discovery/HOPE_000139-199_Collateral_Notes_and_Communications.root-1b5f7f10.pdf"
+      },
+      "visibility": "private/auth-only (owner denylist of 14). D1 and manifest hashes disagree; repo-root Bates copies are a third byte sequence. Do not collapse."
+    },
+    {
+      "path": "/documents/matter-05/hope-discovery/HOPE_000200-223_Homework_and_Preparatory_Tickets.pdf",
+      "d1": {
+        "sha256": "4adf16993e35927418755724694716842b71c3f465009240934c240f9c730251",
+        "size": 1343548,
+        "bytes_in_this_tree": false
+      },
+      "manifest": {
+        "sha256": "4adf1674e55da1073131a2b933bdfef0b5aef7e48d354961550cedf013d3fc42",
+        "size": 1343548,
+        "bytes_in_this_tree": false
+      },
+      "repo_root": {
+        "source": "Homework_200223_pdf.pdf",
+        "sha256": "310e7f2ff4a5d44ad883f1b62fbbf3265ca637cee108c181bed681a5aa3041c2",
+        "size": 1329128,
+        "canonical_copy": "internal/private/documents/matter-05/hope-discovery/HOPE_000200-223_Homework_and_Preparatory_Tickets.root-310e7f2f.pdf"
+      },
+      "visibility": "private/auth-only (owner denylist of 14). D1 and manifest hashes disagree; repo-root Bates copies are a third byte sequence. Do not collapse."
+    },
+    {
+      "path": "/documents/matter-05/hope-discovery/HOPE_000224_Curriculum_Tracking_Audit.pdf",
+      "d1": {
+        "sha256": "956371fe44467070a3454e7e76a7884818b0ddc54e6b0fe6ab885661d86fbf22",
+        "size": 193952,
+        "bytes_in_this_tree": false
+      },
+      "manifest": {
+        "sha256": "956371fe0cfca3c7a77d84117b8a84a2eac2b5c935011162e9a336f60d71a3de",
+        "size": 193952,
+        "bytes_in_this_tree": false
+      },
+      "repo_root": {
+        "source": "Hw_Audit_3_2026_224_paf.pdf",
+        "sha256": "aaf89e1dc23468377497c211fe2decb4f33e92bae53b1dc0027fe22232457dcf",
+        "size": 189961,
+        "canonical_copy": "internal/private/documents/matter-05/hope-discovery/HOPE_000224_Curriculum_Tracking_Audit.root-aaf89e1d.pdf"
+      },
+      "visibility": "private/auth-only (owner denylist of 14). D1 and manifest hashes disagree; repo-root Bates copies are a third byte sequence. Do not collapse."
+    },
+    {
+      "path": "/documents/matter-05/hope-discovery/HOPE_000225-314_Clinical_Operational_Manual_Part_1.pdf",
+      "d1": {
+        "sha256": "d5d1b28f7a3b2a8fd48b0b139445d0710364097a001c34bcc2e9f1119331da37",
+        "size": 12001352,
+        "bytes_in_this_tree": false
+      },
+      "manifest": {
+        "sha256": "d5d1b26349fcbe092509095ba4c0f571aba31a67c7afd42dba092d79e5e54090",
+        "size": 12001352,
+        "bytes_in_this_tree": false
+      },
+      "repo_root": {
+        "source": "1_HOPE_Clinical_Operational_Manual_9_24_24_225349_pg_1_to_90.pdf",
+        "sha256": "cfdf2238003522782b689a7f9b3f36dace0c8815e8372c665f90ec0fa903e4d6",
+        "size": 11786729,
+        "canonical_copy": "internal/private/documents/matter-05/hope-discovery/HOPE_000225-314_Clinical_Operational_Manual_Part_1.root-cfdf2238.pdf"
+      },
+      "visibility": "private/auth-only (owner denylist of 14). D1 and manifest hashes disagree; repo-root Bates copies are a third byte sequence. Do not collapse."
+    },
+    {
+      "path": "/documents/matter-05/hope-discovery/HOPE_000315-349_Clinical_Operational_Manual_Part_2.pdf",
+      "d1": {
+        "sha256": "3c13ccff02c40b258c00a826c7861f3e5adf423db3b4169ea910be4e88b5644b",
+        "size": 5106224,
+        "bytes_in_this_tree": false
+      },
+      "manifest": {
+        "sha256": "3c13ccbfa14ee4feaa91fef8bb35f804401e9b68c6df6021247751396aacdee9",
+        "size": 5106224,
+        "bytes_in_this_tree": false
+      },
+      "repo_root": {
+        "source": "1_HOPE_Clinical_Operational_Manual_9_24_24_225349_pg_91_to_125.pdf",
+        "sha256": "2861a95be415e8c280c2b55d7f8ad9f500b3545698979b5c9c2bc726a713339d",
+        "size": 4991467,
+        "canonical_copy": "internal/private/documents/matter-05/hope-discovery/HOPE_000315-349_Clinical_Operational_Manual_Part_2.root-2861a95b.pdf"
+      },
+      "visibility": "private/auth-only (owner denylist of 14). D1 and manifest hashes disagree; repo-root Bates copies are a third byte sequence. Do not collapse."
+    },
+    {
+      "path": "/documents/matter-05/hope-discovery/HOPE_000350-434_Maintenance_Curriculum.pdf",
+      "d1": {
+        "sha256": "a4e2b9bb86bb3f1e79204803aa741879935a33286b29262b88bb4344ca0d05f6",
+        "size": 9157280,
+        "bytes_in_this_tree": false
+      },
+      "manifest": {
+        "sha256": "a4e2b9d65625326e6e6880a14b4fbf74678686706ff4deea96256484b1e6017f",
+        "size": 9157280,
+        "bytes_in_this_tree": false
+      },
+      "repo_root": {
+        "source": "2_HOPE_Maintenance_Curriculum_350434.pdf",
+        "sha256": "f35c3fee0907d7cfe14edac2ac776ddd0a23fbbbb9ed7b04b10ae884bf44dbf5",
+        "size": 8988431,
+        "canonical_copy": "internal/private/documents/matter-05/hope-discovery/HOPE_000350-434_Maintenance_Curriculum.root-f35c3fee.pdf"
+      },
+      "visibility": "private/auth-only (owner denylist of 14). D1 and manifest hashes disagree; repo-root Bates copies are a third byte sequence. Do not collapse."
+    },
+    {
+      "path": "/documents/matter-05/hope-discovery/HOPE_000435-485_Program_Employee_Handbook_2023.pdf",
+      "d1": {
+        "sha256": "59f9fd80ea64e3f965b0de66ec30d6772ab2512a3a7bb351048015a230a03a4e",
+        "size": 8720755,
+        "bytes_in_this_tree": false
+      },
+      "manifest": {
+        "sha256": "59f9fd24387ffe1579850cb45ae138ad1b43831836777f5be1939c995f4b3a0e",
+        "size": 8720755,
+        "bytes_in_this_tree": false
+      },
+      "repo_root": {
+        "source": "3_HOPE_Prgrm_Emply_Hndbk_2023_435485_pdf.pdf",
+        "sha256": "e9822fc1fc123c803a2ae212809b6c05b2a0ce545237bb0e99efc8ee93a7dc05",
+        "size": 8563870,
+        "canonical_copy": "internal/private/documents/matter-05/hope-discovery/HOPE_000435-485_Program_Employee_Handbook_2023.root-e9822fc1.pdf"
+      },
+      "visibility": "private/auth-only (owner denylist of 14). D1 and manifest hashes disagree; repo-root Bates copies are a third byte sequence. Do not collapse."
+    },
+    {
+      "path": "/documents/matter-05/hope-discovery/HOPE_000486-537_Proprietary_Treatment_Manual.pdf",
+      "d1": {
+        "sha256": "dbbf02c51290bc40e9e47d37f96147eefda92d7412563b92bd337960ae18c441",
+        "size": 6678142,
+        "bytes_in_this_tree": false
+      },
+      "manifest": {
+        "sha256": "dbbf02b2af55fb23f8b78224413b9063c2220beebefa1b3669f03dd120204e3f",
+        "size": 6678142,
+        "bytes_in_this_tree": false
+      },
+      "repo_root": {
+        "source": "4_HOPE_Prprtry_Trtmnt_Mnul_2_18_2019_486537.pdf",
+        "sha256": "e06c6753d4c21ca70afeb9e3180067a382fb657a43fa151b92dacfa10d595727",
+        "size": 6550502,
+        "canonical_copy": "internal/private/documents/matter-05/hope-discovery/HOPE_000486-537_Proprietary_Treatment_Manual.root-e06c6753.pdf"
+      },
+      "visibility": "private/auth-only (owner denylist of 14). D1 and manifest hashes disagree; repo-root Bates copies are a third byte sequence. Do not collapse."
+    },
+    {
+      "path": "/documents/matter-05/hope-discovery/HOPE_000538-542_Clinical_Director_Job_Description.pdf",
+      "d1": {
+        "sha256": "20d87d1d6d53d534c26eeab85a76d797a58904054f735ca9d18a15fdaf589c5d",
+        "size": 628314,
+        "bytes_in_this_tree": false
+      },
+      "manifest": {
+        "sha256": "20d87d178cdf48fdb3f314a4742745a52fa6f8362bad6b9dcef9aa6815f593c2",
+        "size": 628314,
+        "bytes_in_this_tree": false
+      },
+      "repo_root": {
+        "source": "5_CD_Job_Description_538542_pdf.pdf",
+        "sha256": "992405852c5f90a31b5a22973d18881ba79b226653ff0d8302091eda62e1c23c",
+        "size": 584783,
+        "canonical_copy": "internal/private/documents/matter-05/hope-discovery/HOPE_000538-542_Clinical_Director_Job_Description.root-99240585.pdf"
+      },
+      "visibility": "private/auth-only (owner denylist of 14). D1 and manifest hashes disagree; repo-root Bates copies are a third byte sequence. Do not collapse."
+    }
+  ]
+}

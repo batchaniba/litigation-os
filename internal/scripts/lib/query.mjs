@@ -175,7 +175,9 @@ export async function fetchDocument(sha256, outPath) {
 
 /** Full-text search over the .txt sidecars on main (no R2 touch). */
 export function searchDocuments(query, { limit = 20 } = {}) {
-  const root = path.join(REPO_ROOT, "internal/public/documents");
+  const root = fs.existsSync(path.join(REPO_ROOT, "documents"))
+    ? path.join(REPO_ROOT, "documents")
+    : path.join(REPO_ROOT, "internal/public/documents");
   const q = query.toLowerCase();
   const hits = [];
   const walk = (dir) => {

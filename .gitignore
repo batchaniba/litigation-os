@@ -8,9 +8,18 @@ Next_Chapter_Resume.pdf
 __pycache__/
 *.pyc
 
-# Filings and working copies belong under internal/public/documents/matter-NN/,
-# not the repository root.
+# Filings belong under documents/matter-NN/, not the repository root.
 /*.pdf
+
+# Owner denylist — never commit these bytes under a public tree.
+/documents/matter-05/hope-discovery/HOPE_000*.pdf
+/documents/matter-12/reservice-packets-*/4_Stanislaus_Credit_Card_Authorization_Diamond.pdf
+/documents/matter-12/018 Request for Sheriff Service + Fee Waiver : CC Auth *
+/documents/matter-28/HOPE Discovery (Matter 5)/
+/internal/public/documents/matter-05/hope-discovery/HOPE_000*.pdf
+/internal/public/documents/matter-12/reservice-packets-*/4_Stanislaus_Credit_Card_Authorization_Diamond.pdf
+/internal/public/documents/matter-12/018 Request for Sheriff Service + Fee Waiver : CC Auth *
+/internal/public/documents/matter-28/HOPE Discovery (Matter 5)/
 
 # Filled payment sheets (PAN). Generate locally; do not commit.
 internal/handoff/*CC-Authorization*.pdf
@@ -22,8 +31,8 @@ internal/handoff/4_Stanislaus_Credit_Card_Authorization*.pdf
 /*.jpg
 /*.png
 
-# Filed PDFs live on the `documents` branch. Restore with:
-#   npm run documents:pull
+# Historical gitignored tree (cold backup still uses this prefix on
+# origin/documents). Canonical tracked copies live at repo-root documents/.
 internal/public/documents/**
 !internal/public/documents/
 !internal/public/documents/README.md

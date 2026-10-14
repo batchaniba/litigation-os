@@ -8,8 +8,10 @@ import {
   MANIFEST_PATH,
   REPO_ROOT,
   diskFromUrl,
+  hashFileSha256,
   walkFiles,
 } from "./document-store.mjs";
+import { isPrivateDocument, isPrivatePath, isPrivateSha } from "./private-documents.mjs";
 import { getObject, isConfigured as r2IsConfigured, keyForSha256 } from "./r2-client.mjs";
 import {
   DOCUMENTS_ORIGIN,
@@ -164,16 +166,18 @@ export function wrapDocumentsTree(documentsTreeSha) {
 export function writeWorkingDocumentsRootTree() {
   if (!fs.existsSync(DOCUMENTS_ROOT)) {
     throw new Error(
-      "internal/public/documents/ is missing — run npm run documents:pull",
+      "documents/ is missing — run npm run documents:pull",
     );
   }
   const dir = fs.mkdtempSync(path.join(os.tmpdir(), "ilp-docs-idx-"));
   const indexFile = path.join(dir, "index");
   try {
-    git(["add", "-f", "-A", "--", "internal/public/documents"], {
+    git(["add", "-f", "-A", "--", "documents"], {
       env: { GIT_INDEX_FILE: indexFile, GIT_WORK_TREE: REPO_ROOT },
     });
-    return git(["write-tree"], { env: { GIT_INDEX_FILE: indexFile } });
+    const full = git(["write-tree"], { env: { GIT_INDEX_FILE: indexFile } });
+    const docsSha = git(["rev-parse", `${full}:documents`]);
+    return wrapDocumentsTree(docsSha);
   } finally {
     fs.rmSync(dir, { recursive: true, force: true });
   }
@@ -181,9 +185,13 @@ export function writeWorkingDocumentsRootTree() {
 
 export function documentsTreeFromHead() {
   try {
-    return git(["rev-parse", "HEAD:internal/public/documents"]);
+    return git(["rev-parse", "HEAD:documents"]);
   } catch {
-    return null;
+    try {
+      return git(["rev-parse", "HEAD:internal/public/documents"]);
+    } catch {
+      return null;
+    }
   }
 }
 
@@ -260,7 +268,7 @@ function manifestFilesForPull(opts = {}) {
   }
   if (opts.forms) prefixes.push("/documents/_form-library/");
   if (opts.opinions) prefixes.push("/documents/opinions/");
-  const files = manifest.files ?? [];
+  const files = (manifest.files ?? []).filter((f) => !isPrivateDocument(f));
   if (!prefixes.length) return files.filter((f) => String(f.path ?? "").startsWith("/documents/"));
   return files.filter((f) => prefixes.some((p) => String(f.path ?? "").startsWith(p)));
 }
@@ -279,11 +287,40 @@ async function pullDocumentsFromR2(opts = {}) {
   const paths = (opts.matters ?? []).map((n) => `matter-${String(n).padStart(2, "0")}`);
   if (opts.forms) paths.push("_form-library");
   if (opts.opinions) paths.push("opinions");
-  return { paths: paths.length ? paths : [DOCUMENTS_GIT_PREFIX], via: "r2", count: files.length };
+  return { paths: paths.length ? paths : ["documents"], via: "r2", count: files.length };
+}
+
+function publicWorkingTreePdfs() {
+  return walkFiles(DOCUMENTS_ROOT).filter((abs) => {
+    if (!/\.pdf$/i.test(abs)) return false;
+    const rel = path.relative(DOCUMENTS_ROOT, abs).split(path.sep).join("/");
+    const urlPath = `/documents/${rel}`;
+    if (isPrivatePath(urlPath)) return false;
+    try {
+      if (isPrivateSha(hashFileSha256(abs))) return false;
+    } catch {
+      return false;
+    }
+    return true;
+  });
+}
+
+function copyArchiveIntoDocumentsRoot(src) {
+  fs.mkdirSync(DOCUMENTS_ROOT, { recursive: true });
+  for (const abs of walkFiles(src)) {
+    const rel = path.relative(src, abs).split(path.sep).join("/");
+    const urlPath = `/documents/${rel}`;
+    if (/\.pdf$/i.test(abs) && (isPrivatePath(urlPath) || isPrivateSha(hashFileSha256(abs)))) {
+      continue;
+    }
+    const dest = path.join(DOCUMENTS_ROOT, ...rel.split("/"));
+    fs.mkdirSync(path.dirname(dest), { recursive: true });
+    fs.copyFileSync(abs, dest);
+  }
 }
 
 function uploadWorkingTreeToR2() {
-  const pdfs = walkFiles(DOCUMENTS_ROOT).filter((abs) => /\.pdf$/i.test(abs));
+  const pdfs = publicWorkingTreePdfs();
   if (pdfs.length) {
     const list = path.join(os.tmpdir(), `ilp-r2-${process.pid}.txt`);
     fs.writeFileSync(
@@ -361,12 +398,24 @@ export function pullDocumentsFromGit(opts = {}) {
     }
     throw error;
   }
-  execFileSync("tar", ["-x", "-C", REPO_ROOT], {
-    cwd: REPO_ROOT,
-    input: archive,
-    stdio: ["pipe", "inherit", "inherit"],
-  });
-  return { paths: archivePaths ?? [DOCUMENTS_GIT_PREFIX] };
+  const tmp = fs.mkdtempSync(path.join(os.tmpdir(), "ilp-docs-pull-"));
+  try {
+    execFileSync("tar", ["-x", "-C", tmp], {
+      cwd: REPO_ROOT,
+      input: archive,
+      stdio: ["pipe", "inherit", "inherit"],
+    });
+    const wrapped = path.join(tmp, DOCUMENTS_GIT_PREFIX);
+    const flat = path.join(tmp, "documents");
+    const src = fs.existsSync(wrapped) ? wrapped : flat;
+    if (!fs.existsSync(src)) {
+      throw new Error("origin/documents archive did not contain a documents tree");
+    }
+    copyArchiveIntoDocumentsRoot(src);
+  } finally {
+    fs.rmSync(tmp, { recursive: true, force: true });
+  }
+  return { paths: archivePaths ?? ["documents"] };
 }
 
 export function pushDocuments() {

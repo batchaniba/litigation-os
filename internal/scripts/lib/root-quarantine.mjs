@@ -36,7 +36,7 @@ export function classifyRootEntries({ entries, allowedFiles, quarantine }) {
     if (!listed) {
       errors.push(
         `repository root has stray file "${entry.name}" — move it into ` +
-          `internal/public/documents/matter-NN/ (or internal/assets/). ` +
+          `documents/matter-NN/ (or internal/assets/). ` +
           `Document-store files are pushed to R2, not committed here.`,
       );
       continue;
@@ -66,7 +66,7 @@ export function classifyRootEntries({ entries, allowedFiles, quarantine }) {
     warnings.push(
       `repository root still holds ${seen.size} quarantined document(s) ` +
         `(${(bytes / 1e6).toFixed(1)} MB). File them under ` +
-        `internal/public/documents/, run npm run sync:manifest and ` +
+        `documents/, run npm run sync:manifest and ` +
         `npm run documents:push, then remove them here and from the ledger.`,
     );
   }

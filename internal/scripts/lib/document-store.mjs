@@ -13,7 +13,10 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 export const REPO_ROOT = path.resolve(__dirname, "../../..");
 export const PUBLIC_ROOT = path.join(REPO_ROOT, "internal", "public");
-export const DOCUMENTS_ROOT = path.join(PUBLIC_ROOT, "documents");
+/** Canonical on-disk library. Mirrors D1/R2 `/documents/...` paths. */
+export const DOCUMENTS_ROOT = path.join(REPO_ROOT, "documents");
+/** Auth-only denylist bytes. Never copy these into DOCUMENTS_ROOT or internal/public. */
+export const PRIVATE_DOCUMENTS_ROOT = path.join(REPO_ROOT, "internal", "private", "documents");
 export const MANIFEST_PATH = path.resolve(
   __dirname,
   "../../src/data/documents/manifest.json",
@@ -46,9 +49,19 @@ export function urlFromPublicRel(rel) {
   return `/${rel}`;
 }
 
+/** URL path for a file under the canonical `documents/` tree. */
+export function urlFromDocumentsDisk(absPath, documentsRoot = DOCUMENTS_ROOT) {
+  const rel = path.relative(documentsRoot, absPath).split(path.sep).join("/");
+  return `/documents/${rel}`;
+}
+
 /** @param {string} urlPath @param {string} [publicRoot] */
 export function diskFromUrl(urlPath, publicRoot = PUBLIC_ROOT) {
-  return path.join(publicRoot, String(urlPath).replace(/^\//, ""));
+  const trimmed = String(urlPath).replace(/^\//, "");
+  if (trimmed.startsWith("documents/") && publicRoot === PUBLIC_ROOT) {
+    return path.join(DOCUMENTS_ROOT, trimmed.slice("documents/".length));
+  }
+  return path.join(publicRoot, trimmed);
 }
 
 /** @param {string} dir */
@@ -125,7 +138,7 @@ export function hashFileSha256(filePath) {
  */
 export function buildManifestFromDisk(
   documentsRoot = DOCUMENTS_ROOT,
-  publicRoot = PUBLIC_ROOT,
+  _publicRoot = PUBLIC_ROOT,
   { previous, rehash = false } = {},
 ) {
   const prevByPath = manifestByPath(
@@ -133,8 +146,8 @@ export function buildManifestFromDisk(
   );
   const files = walkFiles(documentsRoot)
     .map((full) => {
-      const rel = publicRel(full, publicRoot);
-      const urlPath = urlFromPublicRel(rel);
+      const rel = path.relative(documentsRoot, full).split(path.sep).join("/");
+      const urlPath = `/documents/${rel}`;
       const size = fs.statSync(full).size;
       const prev = prevByPath.get(urlPath);
       const sha256 =

@@ -50,16 +50,15 @@ import { hasResolvableDocketNumber } from "./courtlistener/docket-number.mjs";
 import { clockStatusIssue } from "./lib/clock-status.mjs";
 import {
   DOCUMENTS_ROOT,
-  PUBLIC_ROOT,
   diskFromUrl,
   hashFileSha256,
   loadManifest,
   manifestByPath,
-  publicRel,
   skipDiskDocs,
-  urlFromPublicRel,
+  urlFromDocumentsDisk,
   walkFiles,
 } from "./lib/document-store.mjs";
+import { isPrivateDocument, isPrivatePath, isPrivateSha } from "./lib/private-documents.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const REPO_ROOT = path.resolve(__dirname, "..", "..");
@@ -245,6 +244,10 @@ function checkDocumentPath(tag, urlPath) {
   if (!urlPath.startsWith("/documents/")) {
     fail(`${tag}: path "${urlPath}" should start with "/documents/"`);
     return false;
+  }
+  if (isPrivatePath(urlPath)) {
+    // Auth-only denylist: catalogued in private-documents.json, never the public tree.
+    return true;
   }
   if (!documentManifestByPath.has(urlPath)) {
     fail(`${tag}: path not in document manifest — run npm run sync:manifest: ${urlPath}`);
@@ -800,7 +803,7 @@ if (!skipDisk) {
   const byDigest = new Map();
   const seenManifestPaths = new Set();
   for (const full of onDiskDocs) {
-    const urlPath = urlFromPublicRel(publicRel(full));
+    const urlPath = urlFromDocumentsDisk(full);
     const size = fs.statSync(full).size;
     const digest = hashFileSha256(full);
     seenManifestPaths.add(urlPath);
@@ -812,17 +815,18 @@ if (!skipDisk) {
     }
     if (full.startsWith(formLibraryPrefix + path.sep) || full === formLibraryPrefix) continue;
     if (!referencedDocPaths.has(full)) {
-      orphans.push(path.relative(PUBLIC_ROOT, full));
+      orphans.push(path.relative(REPO_ROOT, full));
     }
     const key = `${path.dirname(full)}::${digest}`;
     if (!byDigest.has(key)) byDigest.set(key, []);
-    byDigest.get(key).push(path.relative(PUBLIC_ROOT, full));
+    byDigest.get(key).push(path.relative(REPO_ROOT, full));
     if (full.toLowerCase().endsWith(".pdf")) {
       const problem = pdfReadableProblem(full, size);
-      if (problem) fail(`${path.relative(PUBLIC_ROOT, full)}: ${problem}`);
+      if (problem) fail(`${path.relative(REPO_ROOT, full)}: ${problem}`);
     }
   }
   for (const entry of documentManifest.files) {
+    if (isPrivateDocument(entry) || isPrivatePath(entry.path)) continue;
     if (!seenManifestPaths.has(entry.path)) {
       fail(`${entry.path}: in document manifest but missing on disk`);
     }
@@ -1033,6 +1037,47 @@ const crossMatter = JSON.parse(
         artifactLabel: `publish/${name}`,
       })) {
         fail(issue);
+      }
+    }
+  }
+}
+
+// ---------- private denylist must not sit in a public tree ----------
+{
+  const publicTrees = [
+    path.join(REPO_ROOT, "documents"),
+    path.join(REPO_ROOT, "internal/public"),
+  ];
+  for (const tree of publicTrees) {
+    if (!fs.existsSync(tree)) continue;
+    for (const full of walkFiles(tree)) {
+      if (!full.toLowerCase().endsWith(".pdf")) continue;
+      const rel = path.relative(REPO_ROOT, full).split(path.sep).join("/");
+      const asUrl = rel.startsWith("documents/")
+        ? `/${rel}`
+        : rel.startsWith("internal/public/documents/")
+          ? `/${rel.slice("internal/public/".length)}`
+          : null;
+      if (asUrl && isPrivatePath(asUrl)) {
+        fail(
+          `${rel}: private denylist PDF committed in a public tree — move it to internal/private/documents/`,
+        );
+        continue;
+      }
+      // Path check is cheap and always runs. Hashing every public PDF is
+      // skipped when PORTFOLIO_SKIP_DISK_DOCS=1 so validate can run without
+      // reading 500+ files; the SHA denylist still applies whenever we hash.
+      if (skipDisk) continue;
+      let digest;
+      try {
+        digest = hashFileSha256(full);
+      } catch {
+        continue;
+      }
+      if (isPrivateSha(digest)) {
+        fail(
+          `${rel}: private denylist PDF committed in a public tree — move it to internal/private/documents/`,
+        );
       }
     }
   }

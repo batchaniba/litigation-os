@@ -8,7 +8,7 @@
 //
 // Creates:
 //   internal/src/data/matters/NN.json
-//   internal/public/documents/matter-NN/
+//   documents/matter-NN/
 //
 // Then fill in the JSON and add companion rows in timeline.json,
 // damages.js, and lawyerFees.js (validate will warn until those exist).
@@ -41,7 +41,7 @@ const fileName = matterFileName(number);
 const jsonPath = path.join(MATTERS_DIR, fileName);
 const docsDir = path.join(
   REPO_ROOT,
-  "internal/public/documents",
+  "documents",
   `matter-${String(number).padStart(2, "0")}`,
 );
 

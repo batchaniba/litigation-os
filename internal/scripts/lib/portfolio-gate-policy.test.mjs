@@ -235,6 +235,12 @@ describe("runPortfolioGate", () => {
     expect(env.VITE_COPY_DOCUMENTS).toBe("0");
   });
 
+  it("sets PORTFOLIO_SKIP_DISK_DOCS when the on-disk library is a subset of the manifest", () => {
+    const { code, env } = run({ matterDirNames: ["matter-01"], diskComplete: false });
+    expect(code).toBe(0);
+    expect(env.PORTFOLIO_SKIP_DISK_DOCS).toBe("1");
+  });
+
   it("runs every gate step including citation", () => {
     const { code, ran, logs } = run({ matterDirNames: ["matter-01"] });
     expect(code).toBe(0);
