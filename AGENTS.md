@@ -29,7 +29,7 @@ Crawl this repo as a graph. Do not reconstruct a docket from README or from `sta
 - Clock `status` is `open | set | contingent | vacated | satisfied` (`internal/scripts/lib/clock-status.mjs`). `overdue` is derived from date + open/set, never stored. Do not store `retired`, `cancelled`, or `undated`.
 - `events.jsonl` is append-only. Do not rewrite it.
 - Operative pleading is the docket row with `"operative": true`. ASK vs CRB name-conform packets: CRB supersedes; they are not two cases.
-- PDF bytes live in Cloudflare R2 (`litigation-documents` bucket, key `sha256/<first2>/<rest>.pdf` — deterministic from the manifest sha256). Draft or replace a file under `internal/public/documents/matter-NN/`; `npm run documents:push` (needs `R2_*`) PUTs the bytes and rewrites `index/path-to-sha256.json` so the same `/documents/...` path serves the new object. Fetch one with `npm run docs:fetch <sha256>` (bytes are re-hashed client-side). Search `.txt` / `.meta.json` sidecars on this branch. Pre-extracted text sidecars live at `text/<first2>/<rest>.txt` in the same bucket (poppler `pdftotext -layout`; `internal/scripts/extract-doc-text.mjs` backfills, `r2-upload.mjs` keeps them in sync) and are served by the Worker's `readDocumentText` MCP tool. The `documents` branch is a cold backup.
+- PDF bytes live in Cloudflare R2 (`litigation-documents` bucket, key `sha256/<first2>/<rest>.pdf` — deterministic from the manifest sha256). Draft or replace a **public** file under `documents/matter-NN/` (never the 14-path denylist in `internal/src/data/documents/private-documents.json`). `npm run documents:push` (needs `R2_*`) PUTs the bytes and rewrites `index/path-to-sha256.json` so the same `/documents/...` path serves the new object. Fetch one with `npm run docs:fetch <sha256>` (bytes are re-hashed client-side). Search `.txt` / `.meta.json` sidecars on this branch. Pre-extracted text sidecars live at `text/<first2>/<rest>.txt` in the same bucket (poppler `pdftotext -layout`; `internal/scripts/extract-doc-text.mjs` backfills, `r2-upload.mjs` keeps them in sync) and are served by the Worker's `readDocumentText` MCP tool. The `documents` branch is a cold backup. New files default public unless their path or hash matches the denylist.
 - `R2_*` comes from the environment. Never paste keys into chat, files, or memory.
 - Do not put GitHub or repo URLs in anything Plaintiff will send or file.
 
@@ -69,6 +69,9 @@ Do not give ChatGPT, Grok, or any third-party chat R2 admin keys or
 `~/.config/r2/env`. Point them at
 `https://litigation-doc-api.ss8sxswwkt.workers.dev`
 (`/matters`, `/fuse`, `/doc/<sha256>`, `/doc/<sha256>/meta`, `/documents/<path>`).
+`/doc` stays public except the 14-path denylist in
+`internal/src/data/documents/private-documents.json`. Do not add a blanket
+auth gate on `/doc`.
 The Worker binds R2; keys stay server-side. Cursor reads `~/.config/r2/env`
 for writes or calls the Worker for reads. If a chat needs a secret, a
 rotatable Worker bearer — never the Cloudflare admin pair. Direct R2, if
@@ -83,13 +86,14 @@ Streamable HTTP (JSON-RPC 2.0, no auth, CORS `*`). Any MCP-capable model or
 agent (Claude Code, Cursor, Claude Desktop, ChatGPT, Grok) points its client
 at that URL and gets read-only tools over the same store: `listMatters`,
 `getMatter`, `upcomingDeadlines`, `getFuseBoard`, `getMatterDocs`,
-`searchDocuments`, `fetchDocument` (returns size/ETag plus the
+`listDocuments`, `searchDocuments`, `fetchDocument` (returns size/ETag plus the
 `GET /doc/<sha256>` download URL), and `readDocumentText` (returns the
 document's extracted text inline, paginated — the preferred way for an
 external model to *read* a document, so it never has to fetch PDF bytes over
-HTTP). Public Worker MCP/REST stays open-read but only filing-safe data
-(the `publishMatter()` projection: identity, public docket rows, court-facing
-clocks, filed / phone-tap PDFs). Laptop `npm run mcp` / `npm run q` keep the
+HTTP). Public Worker MCP/REST stays open-read: identity, public docket rows,
+court-facing clocks, and every D1-registered PDF except the 14-path denylist.
+A D1 reseed still publishes only filed/phone-tap PDFs — do not reseed to
+register the public library. Laptop `npm run mcp` / `npm run q` keep the
 full case graph. This is the preferred way for an external model to fetch
 documents: no R2 keys, no repo clone, no credentials of any kind. Local
 agents with `R2_*` keep using `npm run docs:fetch` and the query interface.

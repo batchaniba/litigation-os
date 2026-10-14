@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "fileCount": 1689,
-  "totalBytes": 1106396803,
+  "fileCount": 1662,
+  "totalBytes": 979121063,
   "files": [
     {
       "path": "/documents/_form-library/ao239-blank-template.pdf",
@@ -874,66 +874,6 @@
       "sha256": "e2f44009a4d2b37dc6ee6fe4be5ba6db0b939dc79346c966e968cd2833349b14"
     },
     {
-      "path": "/documents/matter-05/hope-discovery/HOPE_000001-031_Professional_Liability_Policy.pdf",
-      "size": 4347289,
-      "sha256": "9c6b98f0e9c42ca99d74efff5dcd53146ac247fe74e4c62b1bff6a314bd0d4c6"
-    },
-    {
-      "path": "/documents/matter-05/hope-discovery/HOPE_000032-104_DandO_EPL_Policy.pdf",
-      "size": 10369478,
-      "sha256": "13120f5ecfc3f2d3478f5ba45fd8942c43e7c74c3d1913989cf14869addb4f77"
-    },
-    {
-      "path": "/documents/matter-05/hope-discovery/HOPE_000105-138_Block_1_Homework.pdf",
-      "size": 1589351,
-      "sha256": "eefc6c6dbe1bf0ee6f9ea0b2875565b6c1dc76651bbe3336cf3b4460f05f2b29"
-    },
-    {
-      "path": "/documents/matter-05/hope-discovery/HOPE_000139-199_Collateral_Notes_and_Communications.pdf",
-      "size": 2987254,
-      "sha256": "f6bdd9af1b04ac5621eb13526feee7f5c21cdb267e6200aaf29a5d99c1346b47"
-    },
-    {
-      "path": "/documents/matter-05/hope-discovery/HOPE_000200-223_Homework_and_Preparatory_Tickets.pdf",
-      "size": 1343548,
-      "sha256": "4adf1674e55da1073131a2b933bdfef0b5aef7e48d354961550cedf013d3fc42"
-    },
-    {
-      "path": "/documents/matter-05/hope-discovery/HOPE_000224_Curriculum_Tracking_Audit.pdf",
-      "size": 193952,
-      "sha256": "956371fe0cfca3c7a77d84117b8a84a2eac2b5c935011162e9a336f60d71a3de"
-    },
-    {
-      "path": "/documents/matter-05/hope-discovery/HOPE_000225-314_Clinical_Operational_Manual_Part_1.pdf",
-      "size": 12001352,
-      "sha256": "d5d1b26349fcbe092509095ba4c0f571aba31a67c7afd42dba092d79e5e54090"
-    },
-    {
-      "path": "/documents/matter-05/hope-discovery/HOPE_000315-349_Clinical_Operational_Manual_Part_2.pdf",
-      "size": 5106224,
-      "sha256": "3c13ccbfa14ee4feaa91fef8bb35f804401e9b68c6df6021247751396aacdee9"
-    },
-    {
-      "path": "/documents/matter-05/hope-discovery/HOPE_000350-434_Maintenance_Curriculum.pdf",
-      "size": 9157280,
-      "sha256": "a4e2b9d65625326e6e6880a14b4fbf74678686706ff4deea96256484b1e6017f"
-    },
-    {
-      "path": "/documents/matter-05/hope-discovery/HOPE_000435-485_Program_Employee_Handbook_2023.pdf",
-      "size": 8720755,
-      "sha256": "59f9fd24387ffe1579850cb45ae138ad1b43831836777f5be1939c995f4b3a0e"
-    },
-    {
-      "path": "/documents/matter-05/hope-discovery/HOPE_000486-537_Proprietary_Treatment_Manual.pdf",
-      "size": 6678142,
-      "sha256": "dbbf02b2af55fb23f8b78224413b9063c2220beebefa1b3669f03dd120204e3f"
-    },
-    {
-      "path": "/documents/matter-05/hope-discovery/HOPE_000538-542_Clinical_Director_Job_Description.pdf",
-      "size": 628314,
-      "sha256": "20d87d178cdf48fdb3f314a4742745a52fa6f8362bad6b9dcef9aa6815f593c2"
-    },
-    {
       "path": "/documents/matter-05/Meet and Confer Letter 061626.pdf",
       "size": 16575,
       "sha256": "6d29490554898d6072447f6efe43d1043facd136a9eeff3e082f7dd5632fc8f6"
@@ -1137,11 +1077,6 @@
       "path": "/documents/matter-12/017 CM110 Case Management Statement.pdf",
       "size": 234138,
       "sha256": "f0f7c24c5ca36cd6b45ac270cd171da0c8c5b8dbdf5804cfd93d82563b670ba5"
-    },
-    {
-      "path": "/documents/matter-12/018 Request for Sheriff Service + Fee Waiver : CC Auth — Ngwa Nforbi v. Diamond Truc.pdf",
-      "size": 40998,
-      "sha256": "c27e93998452da4a50fc081a30c39c36d99d3bb88c879fdd853c14ada4133504"
     },
     {
       "path": "/documents/matter-12/1094 Alpine Default Judgment Packet (Compensatory Only, Hearing Hand-Up Aug 12 2026).pdf",
@@ -1519,11 +1454,6 @@
       "sha256": "cf1056a379fb56566f2bfe5a0b0d84cc494f619128705eb9944611f28af42b73"
     },
     {
-      "path": "/documents/matter-12/reservice-packets-aug31/4_Stanislaus_Credit_Card_Authorization_Diamond.pdf",
-      "size": 494432,
-      "sha256": "9411c895fa4f3abbde5b31ae784af5b08d22a4d6275c605f0f22c911a09e5b31"
-    },
-    {
       "path": "/documents/matter-12/reservice-packets-sep9/1_SER-001_Diamond_Saliman_Osmani_Stanislaus.pdf",
       "size": 340457,
       "sha256": "8885b0dc7d6766afe2a1e32307fabf5a242754edb65ce6c8449cc0df23b2db70"
@@ -1537,11 +1467,6 @@
       "path": "/documents/matter-12/reservice-packets-sep9/3_Summons_FAC.pdf",
       "size": 1144420,
       "sha256": "cf1056a379fb56566f2bfe5a0b0d84cc494f619128705eb9944611f28af42b73"
-    },
-    {
-      "path": "/documents/matter-12/reservice-packets-sep9/4_Stanislaus_Credit_Card_Authorization_Diamond.pdf",
-      "size": 494432,
-      "sha256": "9411c895fa4f3abbde5b31ae784af5b08d22a4d6275c605f0f22c911a09e5b31"
     },
     {
       "path": "/documents/matter-12/SER-001 Request for Sheriff to Serve Court Papers - Alpine Truck Sales (Stanislaus, Aug 3 2026).pdf",
@@ -3522,66 +3447,6 @@
       "path": "/documents/matter-28/Gmail - RE request to stipulate to docket name correction - Martinez (Sep 10 2026).pdf",
       "size": 112347,
       "sha256": "4aa410921c968a2fcdc48d6491525531cb01d9644e0961b755e6c46aad6ea80c"
-    },
-    {
-      "path": "/documents/matter-28/HOPE Discovery (Matter 5)/1_HOPE_Clinical_Operational_Manual_9_24_24_225349_pg_1_to_90.pdf",
-      "size": 12001352,
-      "sha256": "d5d1b26349fcbe092509095ba4c0f571aba31a67c7afd42dba092d79e5e54090"
-    },
-    {
-      "path": "/documents/matter-28/HOPE Discovery (Matter 5)/1_HOPE_Clinical_Operational_Manual_9_24_24_225349_pg_91_to_125.pdf",
-      "size": 5106224,
-      "sha256": "3c13ccbfa14ee4feaa91fef8bb35f804401e9b68c6df6021247751396aacdee9"
-    },
-    {
-      "path": "/documents/matter-28/HOPE Discovery (Matter 5)/1_PHCP06796815_Rdctd_131_pdf.pdf",
-      "size": 4347289,
-      "sha256": "9c6b98f0e9c42ca99d74efff5dcd53146ac247fe74e4c62b1bff6a314bd0d4c6"
-    },
-    {
-      "path": "/documents/matter-28/HOPE Discovery (Matter 5)/2_HOPE_Maintenance_Curriculum_350434.pdf",
-      "size": 9157280,
-      "sha256": "a4e2b9d65625326e6e6880a14b4fbf74678686706ff4deea96256484b1e6017f"
-    },
-    {
-      "path": "/documents/matter-28/HOPE Discovery (Matter 5)/2_PHSD1838240007_Rdctd_32104_pdf.pdf",
-      "size": 10369478,
-      "sha256": "13120f5ecfc3f2d3478f5ba45fd8942c43e7c74c3d1913989cf14869addb4f77"
-    },
-    {
-      "path": "/documents/matter-28/HOPE Discovery (Matter 5)/3_HOPE_Prgrm_Emply_Hndbk_2023_435485_pdf.pdf",
-      "size": 8720755,
-      "sha256": "59f9fd24387ffe1579850cb45ae138ad1b43831836777f5be1939c995f4b3a0e"
-    },
-    {
-      "path": "/documents/matter-28/HOPE Discovery (Matter 5)/4_HOPE_Prprtry_Trtmnt_Mnul_2_18_2019_486537.pdf",
-      "size": 6678142,
-      "sha256": "dbbf02b2af55fb23f8b78224413b9063c2220beebefa1b3669f03dd120204e3f"
-    },
-    {
-      "path": "/documents/matter-28/HOPE Discovery (Matter 5)/5_CD_Job_Description_538542_pdf.pdf",
-      "size": 628314,
-      "sha256": "20d87d178cdf48fdb3f314a4742745a52fa6f8362bad6b9dcef9aa6815f593c2"
-    },
-    {
-      "path": "/documents/matter-28/HOPE Discovery (Matter 5)/Block_1_Homework_105138.pdf",
-      "size": 1589351,
-      "sha256": "eefc6c6dbe1bf0ee6f9ea0b2875565b6c1dc76651bbe3336cf3b4460f05f2b29"
-    },
-    {
-      "path": "/documents/matter-28/HOPE Discovery (Matter 5)/Collateral_NotesComm_139199_pdf.pdf",
-      "size": 2987254,
-      "sha256": "f6bdd9af1b04ac5621eb13526feee7f5c21cdb267e6200aaf29a5d99c1346b47"
-    },
-    {
-      "path": "/documents/matter-28/HOPE Discovery (Matter 5)/Homework_200223.pdf",
-      "size": 1343548,
-      "sha256": "4adf1674e55da1073131a2b933bdfef0b5aef7e48d354961550cedf013d3fc42"
-    },
-    {
-      "path": "/documents/matter-28/HOPE Discovery (Matter 5)/Hw_Audit_3_2026_224.pdf",
-      "size": 193952,
-      "sha256": "956371fe0cfca3c7a77d84117b8a84a2eac2b5c935011162e9a336f60d71a3de"
     },
     {
       "path": "/documents/matter-28/Motion Protective Order NDCA.pdf",

@@ -16,6 +16,8 @@ import {
   parsePushLines,
   shouldSkipDiskDocs,
 } from "./lib/portfolio-gate-policy.mjs";
+import { diskFromUrl, loadManifest } from "./lib/document-store.mjs";
+import { isPrivateDocument } from "./lib/private-documents.mjs";
 
 const repoRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 
@@ -29,6 +31,7 @@ export function runPortfolioGate({
   enginesRange,
   nvmrcVersion,
   matterDirNames = [],
+  diskComplete = true,
   runStep,
   log = console.log,
   logErr = console.error,
@@ -69,7 +72,7 @@ export function runPortfolioGate({
     return 1;
   }
 
-  if (shouldSkipDiskDocs(matterDirNames)) {
+  if (shouldSkipDiskDocs(matterDirNames) || diskComplete === false) {
     env.PORTFOLIO_SKIP_DISK_DOCS = "1";
   }
   env.VITE_COPY_DOCUMENTS = "0";
@@ -116,7 +119,7 @@ function nvmrcPin(root) {
 }
 
 function listMatterDirs(root) {
-  const dir = path.join(root, "internal/public/documents");
+  const dir = path.join(root, "documents");
   try {
     return fs
       .readdirSync(dir, { withFileTypes: true })
@@ -125,6 +128,17 @@ function listMatterDirs(root) {
   } catch {
     return [];
   }
+}
+
+/** True when every public (non-denylist) manifest PDF exists under documents/. */
+export function publicDocumentsTreeComplete(root = repoRoot) {
+  const documentsRoot = path.join(root, "documents");
+  if (!fs.existsSync(documentsRoot)) return false;
+  const expected = (loadManifest().files ?? []).filter(
+    (f) => !isPrivateDocument(f) && String(f.path ?? "").toLowerCase().endsWith(".pdf"),
+  );
+  if (!expected.length) return false;
+  return expected.every((f) => fs.existsSync(diskFromUrl(f.path)));
 }
 
 function readStdinSync() {
@@ -158,6 +172,7 @@ function main() {
     enginesRange: declaredEngines(repoRoot),
     nvmrcVersion: nvmrcPin(repoRoot),
     matterDirNames: listMatterDirs(repoRoot),
+    diskComplete: publicDocumentsTreeComplete(repoRoot),
     runStep: spawnStep,
   });
   process.exit(code);

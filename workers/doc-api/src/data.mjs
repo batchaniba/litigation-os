@@ -2,6 +2,10 @@ import { documentsKeyFromUrl, sha256ForPath } from "./documents.mjs";
 import { CLOSED_CLOCK_SQL, isClosedClockStatus } from "../../../internal/scripts/lib/clock-status.mjs";
 import { todayKey } from "../../../internal/scripts/lib/next-actions.mjs";
 import { nextFromClocks } from "../../../internal/scripts/lib/upcoming-from-clocks.mjs";
+import {
+  filterPublicDocuments,
+  isPrivateDocument,
+} from "../../../internal/scripts/lib/private-documents.mjs";
 
 // Shared data layer for the litigation-doc-api Worker: R2 + D1 access and
 // the portfolio query operations. Used by the REST routes (index.mjs) and
@@ -223,18 +227,66 @@ export async function listMattersData(env) {
 // Mirrors getMatter: identity + clocks + document manifest rows.
 // Throws 404 when the matter number is unknown.
 // --- public vs. authenticated document visibility -----------------------------
-// The open (no-token) surface is meant to expose only the filing-safe publish
-// projection. That set is `documents_by_path`, which only the seed writes.
-// `documents` also holds rows that write tools registered (assistant uploads),
-// which are not reviewed for publication. Callers without a valid token see
-// the projection only; anything else is a plain 404, so its existence is not
-// revealed. Token holders (r or rw) see everything.
-export const docsTable = (publicOnly) => (publicOnly ? "documents_by_path" : "documents");
+// Owner rule (2026-10-14): every D1-registered document is public except the
+// 14-path denylist in private-documents.mjs (HOPE_000* discovery + two
+// matter-12 card-authorization PDFs). Anonymous callers see the full
+// `documents` catalog minus that set; a private hash or path is a plain 404
+// so its existence is not revealed. Token holders (r or rw) see everything.
+// There is no blanket auth requirement on GET /doc. New uploads default
+// public unless their path or sha256 matches the denylist.
+
+async function rowsForSha(env, sha) {
+  const fromDocs =
+    (await dbAll(env, `SELECT sha256, path, size, matter_number FROM documents WHERE sha256 = ?`, [sha])) ?? [];
+  const fromPath =
+    (await dbAll(
+      env,
+      `SELECT sha256, path, size, matter_number FROM documents_by_path WHERE sha256 = ?`,
+      [sha],
+    )) ?? [];
+  return [...fromDocs, ...fromPath];
+}
+
+export async function loadDocumentRows(env, { matter, publicOnly = false } = {}) {
+  const params = [];
+  let where = "";
+  if (Number.isInteger(matter)) {
+    where = " WHERE matter_number = ?";
+    params.push(matter);
+  }
+  const fromDocs = await dbAll(
+    env,
+    `SELECT sha256, path, size, matter_number FROM documents${where} ORDER BY path`,
+    params,
+  );
+  const fromPath = await dbAll(
+    env,
+    `SELECT sha256, path, size, matter_number FROM documents_by_path${where} ORDER BY path`,
+    params,
+  );
+  if (!fromDocs && !fromPath) return null;
+  const byKey = new Map();
+  for (const row of [...(fromDocs ?? []), ...(fromPath ?? [])]) {
+    const key = `${row.path ?? ""}::${String(row.sha256 ?? "").toLowerCase()}`;
+    if (!byKey.has(key)) byKey.set(key, row);
+  }
+  let rows = [...byKey.values()].sort((a, b) => String(a.path ?? "").localeCompare(String(b.path ?? "")));
+  if (publicOnly) rows = filterPublicDocuments(rows);
+  return rows;
+}
 
 export async function assertDocVisible(env, sha, publicOnly) {
-  if (!publicOnly) return;
   const clean = String(sha ?? "").toLowerCase();
-  const rows = await dbAll(env, `SELECT 1 AS ok FROM documents_by_path WHERE sha256 = ? LIMIT 1`, [clean]);
+  if (!HEX64.test(clean)) throw new HttpError(400, { error: "sha256 must be 64 hex chars" });
+  const rows = await rowsForSha(env, clean);
+  const privateHit = (rows ?? []).some((r) => isPrivateDocument(r)) || isPrivateDocument({ sha256: clean });
+  if (privateHit) {
+    if (publicOnly) throw new HttpError(404, { error: "not_found", sha256: clean });
+    return;
+  }
+  if (!publicOnly) return;
+  // Anonymous: registered in D1 and not denylisted. Unregistered hashes 404
+  // so the open /doc route does not become an R2 bucket listing.
   if (!rows?.length) throw new HttpError(404, { error: "not_found", sha256: clean });
 }
 
@@ -268,12 +320,7 @@ export async function getMatterData(env, n, { publicOnly = false } = {}) {
         [n],
       )) ?? [];
   }
-  const documents =
-    (await dbAll(
-      env,
-      `SELECT sha256, path, size FROM ${docsTable(publicOnly)} WHERE matter_number = ? ORDER BY path`,
-      [n],
-    )) ?? [];
+  const documents = needDb(await loadDocumentRows(env, { matter: n, publicOnly }));
   return {
     ...slimMatter(today, r, nextFromClocks(clocks.map((c) => ({ ...c, status: c.status ?? "open" })), today)),
     clocks: clocks.map((c) => ({
@@ -390,31 +437,99 @@ export async function fuseData(env, days) {
 // Escape LIKE metacharacters so the query is a literal substring match.
 const escapeLike = (s) => String(s).replace(/[\\%_]/g, (c) => `\\${c}`);
 
-// Substring search over document manifest paths and matter captions.
-// D1 holds no .txt sidecar text, so this matches filenames/labels and
-// captions — the same rows getMatterData returns, ranked by path.
+function ftsQuery(raw) {
+  // Quote each alphanumeric token so MATCH is literal, not a boolean trap.
+  const tokens = String(raw)
+    .toLowerCase()
+    .match(/[a-z0-9]{2,}/g);
+  if (!tokens?.length) return null;
+  return tokens.map((t) => `"${t.replaceAll('"', "")}"`).join(" AND ");
+}
+
+function mapSearchRow(r) {
+  return {
+    sha256: r.sha256,
+    matter_number: r.matter_number,
+    matter_caption: r.caption ?? r.matter_caption ?? null,
+    path: r.path,
+    size: r.size,
+    ...(r.snippet ? { snippet: r.snippet } : {}),
+  };
+}
+
+// Full-text search: D1 FTS5 over extracted PDF text when `documents_fts`
+// exists (populated by documents:sync). Falls back to a path/caption LIKE
+// substring — the historical behavior — so an un-migrated D1 still works.
+// FTS5 is the right index here: docket strings, statute numbers, and party
+// names are keyword lookups; Vectorize would need a second product, an
+// embedding pipeline, and still lose exact-token precision. Anonymous
+// callers never see denylisted rows.
 export async function searchDocumentsData(env, query, limit = 20, { publicOnly = false } = {}) {
   const q = String(query ?? "").trim();
   if (!q) throw new HttpError(400, { error: "query must be a non-empty string" });
   let n = Number(limit ?? 20);
   if (!Number.isFinite(n)) n = 20;
   n = Math.min(100, Math.max(1, Math.round(n)));
+
+  const match = ftsQuery(q);
+  if (match) {
+    try {
+      const fts = await dbAll(
+        env,
+        `SELECT d.sha256, d.matter_number, d.path, d.size, m.caption,
+                snippet(documents_fts, 2, '', '', '…', 32) AS snippet
+         FROM documents_fts
+         JOIN documents d ON d.sha256 = documents_fts.sha256
+         LEFT JOIN matters m ON m.number = d.matter_number
+         WHERE documents_fts MATCH ?
+         LIMIT ?`,
+        [match, n * 3],
+      );
+      if (fts) {
+        const rows = publicOnly ? filterPublicDocuments(fts) : fts;
+        return rows.slice(0, n).map(mapSearchRow);
+      }
+    } catch (e) {
+      if (!/no such table/i.test(e?.message ?? "")) throw e;
+    }
+  }
+
   const like = `%${escapeLike(q)}%`;
   const rows = needDb(
     await dbAll(
       env,
       `SELECT d.sha256, d.matter_number, d.path, d.size, m.caption
-       FROM ${docsTable(publicOnly)} d LEFT JOIN matters m ON m.number = d.matter_number
+       FROM documents d LEFT JOIN matters m ON m.number = d.matter_number
        WHERE d.path LIKE ? ESCAPE '\\' OR m.caption LIKE ? ESCAPE '\\'
        ORDER BY d.path LIMIT ?`,
-      [like, like, n],
+      [like, like, n * 3],
     ),
   );
-  return rows.map((r) => ({
-    sha256: r.sha256,
-    matter_number: r.matter_number,
-    matter_caption: r.caption,
-    path: r.path,
-    size: r.size,
-  }));
+  const visible = publicOnly ? filterPublicDocuments(rows) : rows;
+  return visible.slice(0, n).map(mapSearchRow);
+}
+
+export async function listDocumentsData(env, { matter, limit = 100, offset = 0, publicOnly = false } = {}) {
+  let n = Number(limit ?? 100);
+  if (!Number.isFinite(n)) n = 100;
+  n = Math.min(500, Math.max(1, Math.round(n)));
+  let off = Number(offset ?? 0);
+  if (!Number.isFinite(off) || off < 0) off = 0;
+  const matterNum =
+    matter === undefined || matter === null ? undefined : Number(matter);
+  if (matter !== undefined && matter !== null && !Number.isInteger(matterNum)) {
+    throw new HttpError(400, { error: "matter must be an integer matter number" });
+  }
+  const rows = needDb(
+    await loadDocumentRows(env, {
+      matter: Number.isInteger(matterNum) ? matterNum : undefined,
+      publicOnly,
+    }),
+  );
+  return {
+    total: rows.length,
+    offset: off,
+    limit: n,
+    documents: rows.slice(off, off + n),
+  };
 }

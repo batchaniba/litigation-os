@@ -72,6 +72,10 @@
       "doc_kind": "runbook"
     },
     {
+      "path": "internal/docs/CANONICAL_DOCUMENT_STORE.md",
+      "doc_kind": "runbook"
+    },
+    {
       "path": "internal/docs/FUSE_BOARD.md",
       "doc_kind": "runbook"
     },

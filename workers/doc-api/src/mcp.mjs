@@ -28,6 +28,7 @@ import {
   getMatterData,
   headDocObject,
   assertDocVisible,
+  listDocumentsData,
   listMattersData,
   searchDocumentsData,
   upcomingData,
@@ -180,9 +181,31 @@ const TOOLS = [
     },
   },
   {
+    name: "listDocuments",
+    description:
+      "List document rows (path, sha256, size, matter), optionally filtered by matter. Anonymous callers see every D1-registered document except the 14-path private denylist; a bearer token also returns those 14. Newly added files are public unless they match the denylist.",
+    inputSchema: {
+      type: "object",
+      properties: {
+        matter: { type: "integer", description: "Restrict to one matter number. Omit for all." },
+        limit: { type: "integer", description: "Max rows, 1-500. Default 100.", default: 100 },
+        offset: { type: "integer", description: "Skip this many rows. Default 0.", default: 0 },
+      },
+    },
+    run: async ({ matter, limit, offset }, ctx) => {
+      const result = await listDocumentsData(ctx.env, {
+        matter,
+        limit,
+        offset,
+        publicOnly: publicOnly(ctx),
+      });
+      return { ...result, documents: withUrls(ctx, result.documents) };
+    },
+  },
+  {
     name: "searchDocuments",
     description:
-      "Substring search over document manifest paths (filenames carry the labels) and matter captions. Returns matching rows with download URLs.",
+      "Full-text search over extracted PDF text (D1 FTS5) when available, otherwise substring match on document paths and matter captions. Anonymous results omit the 14-path private denylist.",
     inputSchema: {
       type: "object",
       properties: {
@@ -214,7 +237,8 @@ const TOOLS = [
       const meta = await headDocObject(ctx.env, sha256);
       return { ...meta, url: docUrl(ctx, meta.sha256) };
     },
-  },  {
+  },
+  {
     name: "readDocumentText",
     description:
       "Read a document's contents as extracted text, paginated. Takes the 64-char manifest sha256 (from searchDocuments/getMatterDocs) and returns the text inline — no separate fetch needed. This is the preferred way to read a document; use fetchDocument only when raw PDF bytes are required.",
@@ -378,9 +402,22 @@ const TOOLS = [
   },
 ];
 
+const TOOL_ALIASES = [
+  ["list_matters", "listMatters"],
+  ["list_documents", "listDocuments"],
+  ["get_document_text", "readDocumentText"],
+  ["search_documents", "searchDocuments"],
+  ["get_document_pdf", "fetchDocument"],
+  ["get_document_link", "fetchDocument"],
+];
+for (const [alias, target] of TOOL_ALIASES) {
+  const tool = TOOLS.find((t) => t.name === target);
+  if (tool) TOOLS.push({ ...tool, name: alias, description: `${tool.description} Alias of ${target}.` });
+}
+
 const byName = new Map(TOOLS.map((t) => [t.name, t]));
 
-// No valid token (anonymous, or an unknown token) → filing-safe projection only.
+// No valid token → public catalog minus the 14-path denylist.
 function publicOnly(ctx) {
   return !ctx?.access?.scope;
 }

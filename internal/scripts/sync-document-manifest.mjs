@@ -2,7 +2,7 @@
 // ==========================================================
 // Build / check the physical inventory of public/documents.
 //
-// Every file under internal/public/documents/ (except dotfiles) is recorded
+// Every file under documents/ (except dotfiles) is recorded
 // as { path, size, sha256 }. Data-only CI uses this in place of the 660 MB
 // tree. See internal/docs/DOCUMENT_STORE.md.
 //

@@ -3,6 +3,8 @@
 // the 64-hex sha256 stored in manifest.json. Bytes live at
 // sha256/<first2>/<rest>.pdf.
 
+import { isPrivateDocument } from "../../../internal/scripts/lib/private-documents.mjs";
+
 export function documentsKeyFromUrl(pathname) {
   let p = decodeURIComponent(String(pathname ?? "").split("?")[0]);
   if (!p.startsWith("/")) p = `/${p}`;
@@ -28,7 +30,11 @@ export function contentDispositionForPath(pathname) {
 export function buildPathIndex(manifestFiles) {
   const out = {};
   for (const file of manifestFiles ?? []) {
-    if (file?.path && file?.sha256) out[file.path] = String(file.sha256).toLowerCase();
+    if (!file?.path || !file?.sha256) continue;
+    // Private denylist bytes stay in R2 (hash-addressed) but must not be
+    // reachable via the public path index.
+    if (isPrivateDocument(file)) continue;
+    out[file.path] = String(file.sha256).toLowerCase();
   }
   return out;
 }

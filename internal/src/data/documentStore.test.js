@@ -3,6 +3,7 @@ import path from "node:path";
 import { tmpdir } from "node:os";
 import { describe, expect, it } from "vitest";
 import {
+  DOCUMENTS_ROOT,
   buildManifestFromDisk,
   copyPublicExceptDocumentsFilter,
   diskFromUrl,
@@ -10,6 +11,7 @@ import {
   publicRel,
   skipDiskDocs,
   skipViteDocumentCopy,
+  urlFromDocumentsDisk,
   urlFromPublicRel,
 } from "../../scripts/lib/document-store.mjs";
 import {
@@ -51,6 +53,15 @@ describe("public path helpers", () => {
     );
     expect(diskFromUrl("/documents/matter-05/complaint.pdf", publicRoot)).toBe(
       path.join(publicRoot, "documents", "matter-05", "complaint.pdf"),
+    );
+  });
+
+  it("maps /documents URLs onto the repo-root documents/ tree by default", () => {
+    expect(diskFromUrl("/documents/matter-05/complaint.pdf")).toBe(
+      path.join(DOCUMENTS_ROOT, "matter-05", "complaint.pdf"),
+    );
+    expect(urlFromDocumentsDisk(path.join(DOCUMENTS_ROOT, "matter-12", "a.pdf"))).toBe(
+      "/documents/matter-12/a.pdf",
     );
   });
 });

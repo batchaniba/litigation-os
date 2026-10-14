@@ -23,6 +23,7 @@ import {
   publishMatterFromDir,
 } from "../../internal/scripts/lib/publish-matter.mjs";
 import { isClosedClockStatus } from "../../internal/scripts/lib/clock-status.mjs";
+import { isPrivateDocument } from "../../internal/scripts/lib/private-documents.mjs";
 
 const readJSON = (p) => JSON.parse(fs.readFileSync(p, "utf8"));
 const lit = (v) =>
@@ -110,6 +111,7 @@ export function buildProjection({ repoRoot = REPO_ROOT } = {}) {
     for (const doc of published.documents ?? []) {
       const sha = shaByPath.get(doc.path);
       if (!sha) continue;
+      if (isPrivateDocument({ path: doc.path, sha256: sha })) continue;
       documents.push({ path: doc.path, sha256: sha, matter_number: n, size: sizeByPath.get(doc.path) ?? null });
     }
   }

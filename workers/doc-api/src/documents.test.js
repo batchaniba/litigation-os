@@ -35,6 +35,17 @@ describe("documents path map", () => {
     expect(sha256ForPath(index, "/documents/matter-32/decl.pdf")).toBe(redraft);
   });
 
+  it("omits the 14-path private denylist from the public path index", () => {
+    const priv =
+      "/documents/matter-12/reservice-packets-sep9/4_Stanislaus_Credit_Card_Authorization_Diamond.pdf";
+    const index = buildPathIndex([
+      { path: "/documents/matter-26/foo.pdf", sha256: SHA },
+      { path: priv, sha256: "9411c895fa4f3abbde5b31ae784af5b08d22a4d6275c605f0f22c911a09e5b31" },
+    ]);
+    expect(index["/documents/matter-26/foo.pdf"]).toBe(SHA);
+    expect(index[priv]).toBeUndefined();
+  });
+
   it("names Content-Disposition from the court filename, not the hash", () => {
     expect(contentDispositionForPath("/documents/matter-32/ndcal/Declaration.pdf")).toBe(
       'inline; filename="Declaration.pdf"',

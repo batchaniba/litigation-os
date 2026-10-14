@@ -1,11 +1,15 @@
 # Document store
 
-Filed PDFs live in Cloudflare R2. `main` keeps the catalogs
-(`registry.json`, `manifest.json`) and gitignores the bytes. Local
-`internal/public/documents/` is filled with `npm run documents:pull`.
-`/documents/...` URLs do not change: a redraft at the same path gets a
-new sha256 object and the path index moves to it. Old objects stay
+Filed PDFs live in Cloudflare R2. The git-tracked public working set is
+repo-root `documents/` (mirrors `/documents/<matter>/...`). Catalogs stay
+on `main` (`registry.json`, `manifest.json`). `npm run documents:pull`
+fills `documents/` from R2 (or the `documents` git branch as a cold
+backup). `/documents/...` URLs do not change: a redraft at the same path
+gets a new sha256 object and the path index moves to it. Old objects stay
 (upload-only, never deletes).
+
+Visibility, the 14-path private denylist, MCP, and sync:
+[CANONICAL_DOCUMENT_STORE.md](CANONICAL_DOCUMENT_STORE.md).
 
 The `documents` git branch is a cold backup. Do not retire it until a
 public Worker `GET /documents/...` returns HTTP 200 for the Serrato FAC
@@ -64,7 +68,8 @@ keeps working after a redraft.
 
 ```bash
 # 1. Drop the PDF next to the others — or replace the existing file
-#    internal/public/documents/matter-NN/Your Filing (Date).pdf
+#    documents/matter-NN/Your Filing (Date).pdf
+#    Do not put denylist files (HOPE_000* / the two matter-12 card forms) here.
 
 # 2. Point the matter record at it (path + optional filed / label override)
 #    internal/src/data/matters/NN/documents.json  (split) or NN.json

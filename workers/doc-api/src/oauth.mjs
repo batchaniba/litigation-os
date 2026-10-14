@@ -247,8 +247,8 @@ function consentPage({ clientName, requestedScope, state, clientId, redirectUri,
       `<form method="post" action="/oauth/authorize">` +
       hiddenInputs +
       `<p><label>Grant<br>` +
-      `<label><input type="radio" name="approved_scope" value="read" ${requestedScope.join(" ") === "read" ? "checked" : ""}> read only</label><br>` +
-      `<label><input type="radio" name="approved_scope" value="read write" ${requestedScope.join(" ") !== "read" ? "checked" : ""}> read + write</label>` +
+      `<label><input type="radio" name="approved_scope" value="read" checked> read only</label><br>` +
+      `<label><input type="radio" name="approved_scope" value="read write"> read + write</label>` +
       `</label></p>` +
       `<p><label>Owner key<br><input type="password" name="owner_key" autocomplete="off" style="width:100%;padding:.5rem"></label></p>` +
       `<p><button type="submit" name="decision" value="approve" style="padding:.6rem 1.2rem">Approve</button> ` +

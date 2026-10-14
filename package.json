@@ -33,6 +33,8 @@
     "documents:push": "node internal/scripts/documents-store.mjs push",
     "documents:recover": "node internal/scripts/recover-document-store.mjs",
     "documents:seed": "node internal/scripts/documents-store.mjs seed",
+    "documents:sync": "node internal/scripts/sync-canonical-store.mjs",
+    "documents:consolidate": "node internal/scripts/consolidate-pdfs.mjs",
     "extract:matter1": "node internal/scripts/extract-matter-pdfs.mjs",
     "fuse:board": "node internal/scripts/generate-fuse-board.mjs",
     "gate": "node internal/scripts/portfolio-gate.mjs",

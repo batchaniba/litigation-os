@@ -10,9 +10,11 @@ account credentials, or `~/.config/r2/env`. Point them at the Worker:
 
 `https://litigation-doc-api.ss8sxswwkt.workers.dev`
 
-Read routes (HTTPS, no credentials): `/health`, `/matters`, `/matters/<n>`,
-`/fuse`, `/upcoming`, `/doc/<sha256>`, `/doc/<sha256>/meta`,
-`/documents/<path>`, `/mcp`.
+Read routes stay open without credentials (`/health`, `/matters`,
+`/fuse`, `/upcoming`, `/doc/<sha256>`, `/documents/<path>`, `/mcp`) except
+the 14-path private denylist in
+`internal/src/data/documents/private-documents.json`. Do not add a blanket
+auth gate on `/doc`.
 
 The Worker is the API in front of R2. Keys stay server-side in the `DOCS`
 binding. Pasting admin keys into a chatbot sends them to someone else's

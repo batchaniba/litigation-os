@@ -51,6 +51,18 @@ CREATE TABLE IF NOT EXISTS documents_by_path (
 CREATE INDEX IF NOT EXISTS idx_documents_by_path_sha ON documents_by_path(sha256);
 CREATE INDEX IF NOT EXISTS idx_documents_by_path_matter ON documents_by_path(matter_number);
 
+-- Extracted-text FTS5 index for searchDocuments. Populated by
+-- `npm run documents:sync` (INSERT OR REPLACE into documents_fts).
+-- Safe to apply on a live D1 that does not yet have it. Search falls
+-- back to path/caption LIKE when this table is absent. Never store the
+-- 14 denylisted private documents here.
+CREATE VIRTUAL TABLE IF NOT EXISTS documents_fts USING fts5(
+  sha256 UNINDEXED,
+  path,
+  text,
+  tokenize = 'porter'
+);
+
 -- Append-only trail of every mutating operation (writes.mjs recordAudit).
 -- actor = the API key name that authorized the write; ok = 1 success, 0 error.
 CREATE TABLE IF NOT EXISTS audit (
