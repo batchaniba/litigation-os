@@ -1,15 +1,16 @@
-# Document library
+# Public document library
 
-PDF bytes live in Cloudflare R2. This folder is gitignored on `main`.
-`origin/documents` is a cold backup. A replacement at the same path is
-a new object; the Worker path index moves `/documents/...` to it.
+Canonical on-disk copies of **public** litigation PDFs. Paths here mirror
+D1/R2 `/documents/<matter>/...`. Bytes are served from Cloudflare R2;
+this folder is the git-tracked working set for files that used to sit at
+repo root, under `internal/docs/`, and similar.
+
+Private denylist PDFs (HOPE_000 discovery + two matter-12 card forms) do
+**not** belong here. See `internal/private/documents/` and
+`internal/docs/CANONICAL_DOCUMENT_STORE.md`.
 
 ```bash
-npm run documents:pull   # after clone (R2 if R2_* is set, else the git branch)
-npm run documents:push   # after adding or replacing a filing
+npm run documents:pull              # fill / refresh from R2 or origin/documents
+npm run documents:sync              # dry-run R2/D1 register
+npm run documents:sync -- --apply   # laptop, needs R2_*
 ```
-
-The pre-commit hook runs `documents:push` when `manifest.json` changes.
-Matter JSON still lists paths under `/documents/...`. Vercel rewrites those
-URLs to the Worker (`litigation-doc-api`). Phone-tap slugs stay as copies
-on `main` until that origin returns HTTP 200.
