@@ -30,5 +30,16 @@
     "status": "contingent",
     "title": "CONTINGENT — FedEx responses to Plaintiff's Interrogatories, RFAs, and RFPs (Set One). Not yet served by mail as of Sep. 25, 2026. Recompute on service: 30 days after service (Rule 6(a)), + 3 days if served by mail (Rule 6(d)). Oct. 29 is a placeholder (mail on Sep. 25). RFAs are deemed admitted if not answered in time (Rule 36(a)(3)).",
     "actor": "you"
+  },
+  {
+    "id": "25-fedex-discovery-responses",
+    "date": "2026-11-05",
+    "date_label": "Nov. 5, 2026",
+    "kind": "deadline",
+    "status": "open",
+    "source_dkt": null,
+    "actor": "opposing",
+    "source": "Gmail (bnn.cdl@gmail.com), Oct. 6, 2026: 'Newanforbi v. Federal Express Corporation, No. 2:26-cv-02881-DAD-SCR — Plaintiff's First Written Discovery' to Ms. Kray",
+    "title": "WATCH — FedEx responses to Plaintiff's Interrogatories, RFAs, and RFPs (Set One) due, Newanforbi v. Federal Express Corporation (E.D. Cal. 2:26-cv-02881-DAD-SCR). Served by email Oct. 6, 2026 → 30 days (FRCP 33(b)(2), 34(b)(2)(A), 36(a)(3); no 3 days added for email service under FRCP 6(d)). Recomputes the earlier mail-based contingent Oct. 29 row, which is left as is."
   }
 ]
