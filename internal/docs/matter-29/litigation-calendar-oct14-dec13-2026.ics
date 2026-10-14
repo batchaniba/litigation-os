@@ -1,0 +1,587 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Grok Bot//Litigation Calendar//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Litigation Oct 14-Dec 13 2026
+X-WR-TIMEZONE:America/Los_Angeles
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:e49ceab2f57628acf7bb@grokbot-litigation
+DTSTAMP:20261014T220909Z
+DTSTART;VALUE=DATE:20261014
+DTEND;VALUE=DATE:20261015
+TRANSP:TRANSPARENT
+SUMMARY:M29 [record] Dispute sent to Accurate 1:58 PM\; SR 20261014-15421
+ 955 ack 2:03 PM\; preservation letters (Amazon\, Accurate) an
+DESCRIPTION:Dispute sent to Accurate 1:58 PM\; SR 20261014-15421955 ack 2
+ :03 PM\; preservation letters (Amazon\, Accurate) and CCPA request (Amazo
+ n via Morgan Lewis) emailed 2:47–2:48 PM\nSource: Gmail threads 1a13c1f
+ 7f4294f00\, 1a13c39c6ed4a530\, 1a13c6060c9bfce4\, 1a13c60687c8ba31
+END:VEVENT
+BEGIN:VEVENT
+UID:6fe1d666e3570cad55ec@grokbot-litigation
+DTSTAMP:20261014T220909Z
+DTSTART;VALUE=DATE:20261020
+DTEND;VALUE=DATE:20261021
+TRANSP:TRANSPARENT
+SUMMARY:M29 [court] Civil L.R. 7-3(d)(1) window to object to new reply ev
+ idence closes (reply served 10/13 + 7). NOT NEEDED: reply
+DESCRIPTION:Civil L.R. 7-3(d)(1) window to object to new reply evidence c
+ loses (reply served 10/13 + 7). NOT NEEDED: reply has no declarations\, e
+ xhibits\, or RJN\nSource: Civ. L.R. 7-3(d)(1)\; Amazon Reply ISO MTD (ser
+ ved 10/13/26)\, 6 pp.
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:In 3 day(s): M29 [court] Civil L.R. 7-3(d)(1) window to objec
+ t to new reply evidence closes (reply served 10/13 + 7). NOT NEEDED: repl
+ y
+TRIGGER:-P3D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:In 1 day(s): M29 [court] Civil L.R. 7-3(d)(1) window to objec
+ t to new reply evidence closes (reply served 10/13 + 7). NOT NEEDED: repl
+ y
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:40c1b8c2aa13b83bb5a3@grokbot-litigation
+DTSTAMP:20261014T220909Z
+DTSTART;VALUE=DATE:20261020
+DTEND;VALUE=DATE:20261021
+TRANSP:TRANSPARENT
+SUMMARY:M29 [internal] INTERNAL TARGET: freeze and hash evidence\; export
+  the native .eml of the Oct 14 5:06 AM Amazon Jobs email from
+DESCRIPTION:INTERNAL TARGET: freeze and hash evidence\; export the native
+  .eml of the Oct 14 5:06 AM Amazon Jobs email from brendan@ngwanforbi.com
+ \nSource: Work plan
+END:VEVENT
+BEGIN:VEVENT
+UID:b4d35292f5f3da5feba5@grokbot-litigation
+DTSTAMP:20261014T220909Z
+DTSTART;VALUE=DATE:20261020
+DTEND;VALUE=DATE:20261021
+TRANSP:TRANSPARENT
+SUMMARY:M29 [internal] INTERNAL TARGET: order the certified Santa Clara d
+ ocket (C1761642)
+DESCRIPTION:INTERNAL TARGET: order the certified Santa Clara docket (C176
+ 1642)\nSource: Work plan\; CR pp3–4 (Santa Clara search completed 10/14
+ )
+END:VEVENT
+BEGIN:VEVENT
+UID:5c515e0cd08be98a596f@grokbot-litigation
+DTSTAMP:20261014T220909Z
+DTSTART;VALUE=DATE:20261030
+DTEND;VALUE=DATE:20261031
+TRANSP:TRANSPARENT
+SUMMARY:M29 [internal] INTERNAL TARGET: damages ledger (lost wages from J
+ ul 28 start\, training dates\, emotional distress log\, costs)
+DESCRIPTION:INTERNAL TARGET: damages ledger (lost wages from Jul 28 start
+ \, training dates\, emotional distress log\, costs)\nSource: Work plan
+END:VEVENT
+BEGIN:VEVENT
+UID:d8223865e5e81026f2e1@grokbot-litigation
+DTSTAMP:20261014T220909Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+TRANSP:TRANSPARENT
+SUMMARY:M29 [internal] INTERNAL TARGET: finalize and deliver early Rule 3
+ 4 requests to Amazon and Accurate (deemed served at the 26(f
+DESCRIPTION:INTERNAL TARGET: finalize and deliver early Rule 34 requests 
+ to Amazon and Accurate (deemed served at the 26(f) conference). The windo
+ w has been open since 8/22/26 for both defendants (served 7/31/26 + more 
+ than 21 days)\nSource: FRCP 26(d)(2)(A)–(B)\; service: events.jsonl Jul
+  31 2026 (Amazon via CSC 12:56 PM\; Accurate via CT Corp 11:00 AM)
+END:VEVENT
+BEGIN:VEVENT
+UID:5326178a999069c6e6e2@grokbot-litigation
+DTSTAMP:20261014T220909Z
+DTSTART;VALUE=DATE:20261106
+DTEND;VALUE=DATE:20261107
+TRANSP:TRANSPARENT
+SUMMARY:M29 [internal] INTERNAL TARGET: Rule 26(f) agenda and proposed di
+ scovery plan (FRCP 26(f)(3) topics\; ESI\, protective order\, p
+DESCRIPTION:INTERNAL TARGET: Rule 26(f) agenda and proposed discovery pla
+ n (FRCP 26(f)(3) topics\; ESI\, protective order\, privilege)\nSource: Wo
+ rk plan\; FRCP 26(f)(3)\; Civ. L.R. 16-9
+END:VEVENT
+BEGIN:VEVENT
+UID:49ef7369db4d62c56b9a@grokbot-litigation
+DTSTAMP:20261014T220909Z
+DTSTART;VALUE=DATE:20261110
+DTEND;VALUE=DATE:20261111
+TRANSP:TRANSPARENT
+SUMMARY:M29 [court] Rule 26(f) meet-and-confer (initial disclosures\, ear
+ ly settlement\, ADR process\, discovery plan) AND ADR Certif
+DESCRIPTION:Rule 26(f) meet-and-confer (initial disclosures\, early settl
+ ement\, ADR process\, discovery plan) AND ADR Certification filing (ADR L
+ .R. 3-5(b)). No conference date agreed with counsel yet\nSource: Dkt 9 Or
+ der Setting Initial CMC & ADR Deadlines (filed 9/3/26)\, documents/matter
+ -29/Dkt 09…pdf\; FRCP 26(f)(1) (≥21 days before the 12/1 CMC)\; ADR L
+ .R. 3-5
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:In 3 day(s): M29 [court] Rule 26(f) meet-and-confer (initial 
+ disclosures\, early settlement\, ADR process\, discovery plan) AND ADR Ce
+ rtif
+TRIGGER:-P3D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:In 1 day(s): M29 [court] Rule 26(f) meet-and-confer (initial 
+ disclosures\, early settlement\, ADR process\, discovery plan) AND ADR Ce
+ rtif
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:998075bf251044631046@grokbot-litigation
+DTSTAMP:20261014T220909Z
+DTSTART;VALUE=DATE:20261111
+DTEND;VALUE=DATE:20261112
+TRANSP:TRANSPARENT
+SUMMARY:M29 [record] Veterans Day: federal holiday\, court closed
+DESCRIPTION:Veterans Day: federal holiday\, court closed\nSource: FRCP 6(
+ a)(6)
+END:VEVENT
+BEGIN:VEVENT
+UID:14a101e8f14b39fbda45@grokbot-litigation
+DTSTAMP:20261014T220909Z
+DTSTART;VALUE=DATE:20261113
+DTEND;VALUE=DATE:20261114
+TRANSP:TRANSPARENT
+SUMMARY:M29 [statutory] Accurate reinvestigation response due (30 days fr
+ om the 10/14 dispute\; SR 20261014-15421955). Watch also for t
+DESCRIPTION:Accurate reinvestigation response due (30 days from the 10/14
+  dispute\; SR 20261014-15421955). Watch also for the §1681g / §1786.10 
+ full file\nSource: 15 U.S.C. §1681i(a)(1)(A)\; Civ. Code §1786.24\; clo
+ cks.json 29-accurate-reinvestigation
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:In 3 day(s): M29 [statutory] Accurate reinvestigation respons
+ e due (30 days from the 10/14 dispute\; SR 20261014-15421955). Watch also
+  for t
+TRIGGER:-P3D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:In 1 day(s): M29 [statutory] Accurate reinvestigation respons
+ e due (30 days from the 10/14 dispute\; SR 20261014-15421955). Watch also
+  for t
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:b6efa0c9b08ed6bab1b5@grokbot-litigation
+DTSTAMP:20261014T220909Z
+DTSTART;VALUE=DATE:20261113
+DTEND;VALUE=DATE:20261114
+TRANSP:TRANSPARENT
+SUMMARY:M29 [court] Last day to request Zoom for the 11/18 MTD hearing (3
+  business days before\; good cause required). OPTIONAL\; de
+DESCRIPTION:Last day to request Zoom for the 11/18 MTD hearing (3 busines
+ s days before\; good cause required). OPTIONAL\; default is in person\nSo
+ urce: Krishnan Civil Standing Order (updated 8/20/26) p2
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:In 3 day(s): M29 [court] Last day to request Zoom for the 11/
+ 18 MTD hearing (3 business days before\; good cause required). OPTIONAL\;
+  de
+TRIGGER:-P3D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:In 1 day(s): M29 [court] Last day to request Zoom for the 11/
+ 18 MTD hearing (3 business days before\; good cause required). OPTIONAL\;
+  de
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:80971c6707ea4593262f@grokbot-litigation
+DTSTAMP:20261014T220909Z
+DTSTART;VALUE=DATE:20261113
+DTEND;VALUE=DATE:20261114
+TRANSP:TRANSPARENT
+SUMMARY:M29 [internal] INTERNAL TARGET: hearing binder (MTD\, opposition\
+ , reply\, Khoja / public-records privacy authority\, oral-argume
+DESCRIPTION:INTERNAL TARGET: hearing binder (MTD\, opposition\, reply\, K
+ hoja / public-records privacy authority\, oral-argument outline on Claims
+  5–7)\nSource: Work plan
+END:VEVENT
+BEGIN:VEVENT
+UID:146ac4f460e8157d01a9@grokbot-litigation
+DTSTAMP:20261014T220909Z
+DTSTART;VALUE=DATE:20261117
+DTEND;VALUE=DATE:20261118
+TRANSP:TRANSPARENT
+SUMMARY:M29 [internal] INTERNAL TARGET: drafts of initial disclosures and
+  Joint CMC Statement to defense counsel
+DESCRIPTION:INTERNAL TARGET: drafts of initial disclosures and Joint CMC 
+ Statement to defense counsel\nSource: Work plan
+END:VEVENT
+BEGIN:VEVENT
+UID:dfdf07dfc4530448b2aa@grokbot-litigation
+DTSTAMP:20261014T220909Z
+DTSTART;TZID=America/Los_Angeles:20261118T133000
+DTEND;TZID=America/Los_Angeles:20261118T150000
+SUMMARY:M29 [court] HEARING: Amazon MTD of Claims 5–7 (Dkt 19). In pers
+ on\, Courtroom 4\, 3rd Floor\, 1301 Clay St.\, Oakland\, Hon. Aj
+DESCRIPTION:HEARING: Amazon MTD of Claims 5–7 (Dkt 19). In person\, Cou
+ rtroom 4\, 3rd Floor\, 1301 Clay St.\, Oakland\, Hon. Ajay S. Krishnan (M
+ J). Arrive by 1:20 PM to state appearance\nSource: Dkt 19 p1–2\; Amazon
+  Reply caption\; Krishnan Civil Standing Order (updated 8/20/26) p1–2 (
+ 1st/3rd/5th Wed 1:30 PM\; arrive 10 min early)
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:In 3 day(s): M29 [court] HEARING: Amazon MTD of Claims 5–7 
+ (Dkt 19). In person\, Courtroom 4\, 3rd Floor\, 1301 Clay St.\, Oakland\,
+  Hon. Aj
+TRIGGER:-P3D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:In 1 day(s): M29 [court] HEARING: Amazon MTD of Claims 5–7 
+ (Dkt 19). In person\, Courtroom 4\, 3rd Floor\, 1301 Clay St.\, Oakland\,
+  Hon. Aj
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:6779891cdfd57763e7c9@grokbot-litigation
+DTSTAMP:20261014T220909Z
+DTSTART;VALUE=DATE:20261124
+DTEND;VALUE=DATE:20261125
+TRANSP:TRANSPARENT
+SUMMARY:M29 [court] Initial disclosures (FRCP 26(a)(1)) exchanged AND Joi
+ nt CMC Statement filed (includes the Rule 26(f) discovery
+DESCRIPTION:Initial disclosures (FRCP 26(a)(1)) exchanged AND Joint CMC S
+ tatement filed (includes the Rule 26(f) discovery plan\; no separate Rule
+  26(f) report is required in N.D. Cal.). Last day to request an in-person
+  CMC (optional)\nSource: Dkt 9 Order Setting Initial CMC & ADR Deadlines 
+ (filed 9/3/26)\, documents/matter-29/Dkt 09…pdf\; Civ. L.R. 16-9(a)\; N
+ .D. Cal. Standing Order for All Judges (JCMS contents)\; Krishnan Civil S
+ tanding Order (updated 8/20/26) p4 (7 days before)
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:In 3 day(s): M29 [court] Initial disclosures (FRCP 26(a)(1)) 
+ exchanged AND Joint CMC Statement filed (includes the Rule 26(f) discover
+ y
+TRIGGER:-P3D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:In 1 day(s): M29 [court] Initial disclosures (FRCP 26(a)(1)) 
+ exchanged AND Joint CMC Statement filed (includes the Rule 26(f) discover
+ y
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:9e2abb1a87c491499c85@grokbot-litigation
+DTSTAMP:20261014T220909Z
+DTSTART;VALUE=DATE:20261125
+DTEND;VALUE=DATE:20261126
+TRANSP:TRANSPARENT
+SUMMARY:M29 [internal] INTERNAL TARGET (moved up from 11/27 because of Th
+ anksgiving): CMC prep\, including talking points\, proposed sc
+DESCRIPTION:INTERNAL TARGET (moved up from 11/27 because of Thanksgiving)
+ : CMC prep\, including talking points\, proposed schedule\, and ADR posit
+ ion\nSource: Work plan
+END:VEVENT
+BEGIN:VEVENT
+UID:36ef714ee7192998c774@grokbot-litigation
+DTSTAMP:20261014T220909Z
+DTSTART;VALUE=DATE:20261126
+DTEND;VALUE=DATE:20261127
+TRANSP:TRANSPARENT
+SUMMARY:M29 [record] Thanksgiving: court closed (also 11/27 closed for th
+ e holiday)
+DESCRIPTION:Thanksgiving: court closed (also 11/27 closed for the holiday
+ )\nSource: FRCP 6(a)(6)
+END:VEVENT
+BEGIN:VEVENT
+UID:2bc1606c038a825af222@grokbot-litigation
+DTSTAMP:20261014T220909Z
+DTSTART;VALUE=DATE:20261128
+DTEND;VALUE=DATE:20261129
+TRANSP:TRANSPARENT
+SUMMARY:M29 [statutory] Amazon CCPA request-to-know response due (45 days
+  from 10/14\, extendable 45 days with notice). Sent through Mo
+DESCRIPTION:Amazon CCPA request-to-know response due (45 days from 10/14\
+ , extendable 45 days with notice). Sent through Morgan Lewis\, so arguabl
+ y runs from Amazon's receipt. Saturday\nSource: Civ. Code §1798.130(a)(2
+ )(A)\; Gmail thread 1a13c6060c9bfce4 (sent 10/14 2:48 PM PT)
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:In 3 day(s): M29 [statutory] Amazon CCPA request-to-know resp
+ onse due (45 days from 10/14\, extendable 45 days with notice). Sent thro
+ ugh Mo
+TRIGGER:-P3D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:In 1 day(s): M29 [statutory] Amazon CCPA request-to-know resp
+ onse due (45 days from 10/14\, extendable 45 days with notice). Sent thro
+ ugh Mo
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:bf005c07ae2a1e9d75a0@grokbot-litigation
+DTSTAMP:20261014T220909Z
+DTSTART;VALUE=DATE:20261130
+DTEND;VALUE=DATE:20261201
+TRANSP:TRANSPARENT
+SUMMARY:M29 [court] If appearing by phone or needing a participant invite
+ : contact CRD Kim Means (askcrd@cand.uscourts.gov\, 510-63
+DESCRIPTION:If appearing by phone or needing a participant invite: contac
+ t CRD Kim Means (askcrd@cand.uscourts.gov\, 510-637-1296) at least one bu
+ siness day before the CMC\nSource: cand.uscourts.gov Krishnan page (Zoom 
+ access)\; Krishnan Civil Standing Order (updated 8/20/26) p1
+END:VEVENT
+BEGIN:VEVENT
+UID:c3702b11abf3feb0dd19@grokbot-litigation
+DTSTAMP:20261014T220909Z
+DTSTART;TZID=America/Los_Angeles:20261201T133000
+DTEND;TZID=America/Los_Angeles:20261201T143000
+SUMMARY:M29 [court] INITIAL CMC by Zoom webinar (cand.uscourts.gov/ask)\,
+  Hon. Ajay S. Krishnan
+DESCRIPTION:INITIAL CMC by Zoom webinar (cand.uscourts.gov/ask)\, Hon. Aj
+ ay S. Krishnan\nSource: Dkt 9 Order Setting Initial CMC & ADR Deadlines (
+ filed 9/3/26)\, documents/matter-29/Dkt 09…pdf\; Krishnan Civil Standin
+ g Order (updated 8/20/26) p4
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:In 3 day(s): M29 [court] INITIAL CMC by Zoom webinar (cand.us
+ courts.gov/ask)\, Hon. Ajay S. Krishnan
+TRIGGER:-P3D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:In 1 day(s): M29 [court] INITIAL CMC by Zoom webinar (cand.us
+ courts.gov/ask)\, Hon. Ajay S. Krishnan
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:fd81ab3b00855f87c840@grokbot-litigation
+DTSTAMP:20261014T220909Z
+DTSTART;VALUE=DATE:20261210
+DTEND;VALUE=DATE:20261211
+TRANSP:TRANSPARENT
+SUMMARY:M29 [court] Responses due to early Rule 34 requests\, IF delivere
+ d beforehand and the 26(f) conference is held 11/10 (30 da
+DESCRIPTION:Responses due to early Rule 34 requests\, IF delivered before
+ hand and the 26(f) conference is held 11/10 (30 days after deemed service
+ )\nSource: FRCP 26(d)(2)(B)\, 34(b)(2)(A)
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:In 3 day(s): M29 [court] Responses due to early Rule 34 reque
+ sts\, IF delivered beforehand and the 26(f) conference is held 11/10 (30 
+ da
+TRIGGER:-P3D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:In 1 day(s): M29 [court] Responses due to early Rule 34 reque
+ sts\, IF delivered beforehand and the 26(f) conference is held 11/10 (30 
+ da
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:6c13d652fbfde6012229@grokbot-litigation
+DTSTAMP:20261014T220909Z
+DTSTART;VALUE=DATE:20261015
+DTEND;VALUE=DATE:20261016
+TRANSP:TRANSPARENT
+SUMMARY:M28 [other] Initial disclosures (both sides\; AGREED in Joint CMS
+  Dkt 28). Plaintiff's were emailed 10/14 (one bounce\, then
+DESCRIPTION:Initial disclosures (both sides\; AGREED in Joint CMS Dkt 28)
+ . Plaintiff's were emailed 10/14 (one bounce\, then forwarded)\nSource: D
+ 1 clocks
+END:VEVENT
+BEGIN:VEVENT
+UID:945fced661b948caeda6@grokbot-litigation
+DTSTAMP:20261014T220909Z
+DTSTART;VALUE=DATE:20261016
+DTEND;VALUE=DATE:20261017
+TRANSP:TRANSPARENT
+SUMMARY:M20 [other] CHP demurrer and joinders hearing (26CV191136)
+DESCRIPTION:CHP demurrer and joinders hearing (26CV191136)\nSource: D1 cl
+ ocks
+END:VEVENT
+BEGIN:VEVENT
+UID:e6607bdea72b77c21686@grokbot-litigation
+DTSTAMP:20261014T220909Z
+DTSTART;VALUE=DATE:20261017
+DTEND;VALUE=DATE:20261018
+TRANSP:TRANSPARENT
+SUMMARY:M39 [other] OUTER BOUND: CCP §338(a) clock\, Best Buy §290.46(j
+ ) count
+DESCRIPTION:OUTER BOUND: CCP §338(a) clock\, Best Buy §290.46(j) count\
+ nSource: D1 clocks
+END:VEVENT
+BEGIN:VEVENT
+UID:f6c0e746087a32f86b5b@grokbot-litigation
+DTSTAMP:20261014T220909Z
+DTSTART;VALUE=DATE:20261019
+DTEND;VALUE=DATE:20261020
+TRANSP:TRANSPARENT
+SUMMARY:M32 [other] WATCH: Meza-Gonzalez Rule 12(a) responsive deadline
+DESCRIPTION:WATCH: Meza-Gonzalez Rule 12(a) responsive deadline\nSource: 
+ D1 clocks
+END:VEVENT
+BEGIN:VEVENT
+UID:2c91896ba0a4c5f5e7e9@grokbot-litigation
+DTSTAMP:20261014T220909Z
+DTSTART;VALUE=DATE:20261020
+DTEND;VALUE=DATE:20261021
+TRANSP:TRANSPARENT
+SUMMARY:M20 [other] WATCH: CHP responses to RFP Set One
+DESCRIPTION:WATCH: CHP responses to RFP Set One\nSource: D1 clocks
+END:VEVENT
+BEGIN:VEVENT
+UID:289f733fe984a119c144@grokbot-litigation
+DTSTAMP:20261014T220909Z
+DTSTART;VALUE=DATE:20261022
+DTEND;VALUE=DATE:20261023
+TRANSP:TRANSPARENT
+SUMMARY:M33 [other] ADR Certification and 26(f) meet-and-confer
+DESCRIPTION:ADR Certification and 26(f) meet-and-confer\nSource: D1 clock
+ s
+END:VEVENT
+BEGIN:VEVENT
+UID:b0ba6795a0ddd4ffd319@grokbot-litigation
+DTSTAMP:20261014T220909Z
+DTSTART;VALUE=DATE:20261023
+DTEND;VALUE=DATE:20261024
+TRANSP:TRANSPARENT
+SUMMARY:M20 [other] Continued hearing: Dutra joinder and demurrer
+DESCRIPTION:Continued hearing: Dutra joinder and demurrer\nSource: D1 clo
+ cks
+END:VEVENT
+BEGIN:VEVENT
+UID:25200f1e00181ea61a20@grokbot-litigation
+DTSTAMP:20261014T220909Z
+DTSTART;VALUE=DATE:20261025
+DTEND;VALUE=DATE:20261026
+TRANSP:TRANSPARENT
+SUMMARY:M35 [other] OPEN TASK: serve Ross Stores / Ross Dress for Less (2
+ 6CV501995)
+DESCRIPTION:OPEN TASK: serve Ross Stores / Ross Dress for Less (26CV50199
+ 5)\nSource: D1 clocks
+END:VEVENT
+BEGIN:VEVENT
+UID:9f417b18c87dc04a44e6@grokbot-litigation
+DTSTAMP:20261014T220909Z
+DTSTART;VALUE=DATE:20261027
+DTEND;VALUE=DATE:20261028
+TRANSP:TRANSPARENT
+SUMMARY:M28 [other] Initial CMC plus MTD hearing (Dkt 15)\, Newanforbi v.
+  Shannon Smith (3:26-cv-07504-LJC)
+DESCRIPTION:Initial CMC plus MTD hearing (Dkt 15)\, Newanforbi v. Shannon
+  Smith (3:26-cv-07504-LJC)\nSource: D1 clocks
+END:VEVENT
+BEGIN:VEVENT
+UID:859b245e733825266366@grokbot-litigation
+DTSTAMP:20261014T220909Z
+DTSTART;VALUE=DATE:20261028
+DTEND;VALUE=DATE:20261029
+TRANSP:TRANSPARENT
+SUMMARY:M20 [other] CMC 4:00 PM\, Newanforbi v. CHP (26CV191136)
+DESCRIPTION:CMC 4:00 PM\, Newanforbi v. CHP (26CV191136)\nSource: D1 cloc
+ ks
+END:VEVENT
+BEGIN:VEVENT
+UID:5c8a4da34ca590645cfe@grokbot-litigation
+DTSTAMP:20261014T220909Z
+DTSTART;VALUE=DATE:20261101
+DTEND;VALUE=DATE:20261102
+TRANSP:TRANSPARENT
+SUMMARY:M1\, 2\, 32 [other] CCP §335.1 two-year SOL backstop (Nov 1 2024
+  incident)
+DESCRIPTION:CCP §335.1 two-year SOL backstop (Nov 1 2024 incident)\nSour
+ ce: D1 clocks
+END:VEVENT
+BEGIN:VEVENT
+UID:28b3c11f7449481636a9@grokbot-litigation
+DTSTAMP:20261014T220909Z
+DTSTART;VALUE=DATE:20261105
+DTEND;VALUE=DATE:20261106
+TRANSP:TRANSPARENT
+SUMMARY:M33 [other] Initial disclosures and Joint CMC Statement
+DESCRIPTION:Initial disclosures and Joint CMC Statement\nSource: D1 clock
+ s
+END:VEVENT
+BEGIN:VEVENT
+UID:1b2643e05e5741877621@grokbot-litigation
+DTSTAMP:20261014T220909Z
+DTSTART;VALUE=DATE:20261112
+DTEND;VALUE=DATE:20261113
+TRANSP:TRANSPARENT
+SUMMARY:M33 [other] Initial CMC plus Dkt 17 motion-to-strike hearing\, 1:
+ 30 PM Zoom
+DESCRIPTION:Initial CMC plus Dkt 17 motion-to-strike hearing\, 1:30 PM Zo
+ om\nSource: D1 clocks
+END:VEVENT
+BEGIN:VEVENT
+UID:3e460643f0bb78ae36a1@grokbot-litigation
+DTSTAMP:20261014T220909Z
+DTSTART;VALUE=DATE:20261113
+DTEND;VALUE=DATE:20261114
+TRANSP:TRANSPARENT
+SUMMARY:M28 [other] PROPOSED: prior-discovery re-production/authorization
+  completed
+DESCRIPTION:PROPOSED: prior-discovery re-production/authorization complet
+ ed\nSource: D1 clocks
+END:VEVENT
+BEGIN:VEVENT
+UID:2a6d035633c5e6bc36aa@grokbot-litigation
+DTSTAMP:20261014T220909Z
+DTSTART;VALUE=DATE:20261116
+DTEND;VALUE=DATE:20261117
+TRANSP:TRANSPARENT
+SUMMARY:M24 [other] Email appearance names to crbcrd@cand.uscourts.gov
+DESCRIPTION:Email appearance names to crbcrd@cand.uscourts.gov\nSource: D
+ 1 clocks
+END:VEVENT
+BEGIN:VEVENT
+UID:553f1e97278161dd26ce@grokbot-litigation
+DTSTAMP:20261014T220909Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261121
+TRANSP:TRANSPARENT
+SUMMARY:M24 [other] MTD FAC (Dkt 18) hearing by Zoom before Judge Breyer
+DESCRIPTION:MTD FAC (Dkt 18) hearing by Zoom before Judge Breyer\nSource:
+  D1 clocks
+END:VEVENT
+BEGIN:VEVENT
+UID:016823a63a970e488b0f@grokbot-litigation
+DTSTAMP:20261014T220909Z
+DTSTART;VALUE=DATE:20261211
+DTEND;VALUE=DATE:20261212
+TRANSP:TRANSPARENT
+SUMMARY:M12 [other] Further CMC 8:30 AM\, Dept. 11B (Diamond Truck)
+DESCRIPTION:Further CMC 8:30 AM\, Dept. 11B (Diamond Truck)\nSource: D1 c
+ locks
+END:VEVENT
+END:VCALENDAR
