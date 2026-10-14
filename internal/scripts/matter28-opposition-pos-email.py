@@ -46,6 +46,20 @@ CASE = "3:26-cv-07504-LJC"
 PLAINTIFF = "BRENDAN NGEHSI NEWANFORBI"
 SERVER = "Brendan Ngehsi Newanforbi"
 
+# Matter 28 service list (updated Oct 14, 2026; mirrors internal/src/data/matters/28/parties.json).
+# NOTE: SLB@sims-law.net is INVALID -- bounced 550 Rejected on Oct 14, 2026. Do not use.
+# (The Sep 22, 2026 Opposition POS as served listed SLB@sims-law.net; regenerating
+# this script now produces the corrected list.)
+SERVICE_LIST = [
+    "Cynthia G. Lawrence, Esq. — cynthia@sims-law.net",
+    "Blaze Van Dine, Esq. — blaze@sims-law.net",
+    "Eric T. Martinez, Esq. — emartinez@sims-law.net",
+    "Kim Schmitt (Legal Secretary) — kschmitt@sims-law.net",
+    "June Meinecke — june@sims-law.net",
+    "Amber Krausse — Amber@sims-law.net",
+    "Sims, Lawrence & Broghammer (e-service) — slb-eservice@sims-law.net",
+]
+
 
 def pos_fields() -> ProofOfServiceFields:
     return ProofOfServiceFields(
@@ -60,12 +74,7 @@ def pos_fields() -> ProofOfServiceFields:
         title="PROOF OF SERVICE",
         service_date="September 22, 2026",
         document_title="PLAINTIFF'S OPPOSITION TO DEFENDANTS' MOTION TO DISMISS",
-        recipients=[
-            "Cynthia G. Lawrence, Esq. — cynthia@sims-law.net",
-            "Blaze Van Dine, Esq. — blaze@sims-law.net",
-            "Eric T. Martinez, Esq. — emartinez@sims-law.net",
-            "Sims, Lawrence & Broghammer (e-service) — SLB@sims-law.net; "
-            "slb-eservice@sims-law.net",
+        recipients=SERVICE_LIST + [
             "",
             "Attorneys for Defendants Shannon Smith, LCSW, and",
             "HOPE Psychotherapy, Inc. (d/b/a HOPE Program)",
