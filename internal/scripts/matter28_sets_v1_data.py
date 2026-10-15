@@ -50,6 +50,9 @@ INSTR_RFP = [
     "These requests reach documents in your possession, custody, or control, including documents you have the legal right to obtain on demand from employees, contractors, and vendors (including EHR, email, and cloud-storage vendors), and work-related messages on personal devices or accounts.",
     "Withhold nothing on a claim of privilege without serving a privilege log that meets Rule 26(b)(5)(A) with your written response.",
     "Confidential material may be designated under the Stipulated Protective Order once entered; confidentiality is not a basis to withhold. Records of other clients may be produced de-identified where a request so states.",
+    "If responsive material no longer exists, identify what existed, its former custodian, when and why it became unavailable, and any available copy.",
+    "Preserve parent-attachment relationships and produce metadata sufficient to identify the author, custodian, and creation, modification, and transmission dates of each item.",
+    "Where third-party information is protected, redact it rather than withhold an otherwise responsive document.",
     "These requests are continuing to the extent required by Rule 26(e).",
 ]
 
@@ -58,7 +61,7 @@ INSTR_RFP = [
 # subsumed in it (Kendall, 174 F.R.D. at 685-86; Safeco, 181 F.R.D. 441).
 HOPE_ROGS = [
     dict(t="IDENTIFY each person who participated in making, approving, or communicating any COMPLETION DETERMINATION concerning PLAINTIFF during the RELEVANT PERIOD, stating for each the determination(s) and date(s) involved and the person's role.", c=["1983-HOPE", "1983-SMITH", "DP"]),
-    dict(t="For each CTM concerning PLAINTIFF during the RELEVANT PERIOD, state the date and the COMPLETION DETERMINATION HOPE communicated to CDCR at that CTM.", c=["1983-HOPE", "DP", "STATE"]),
+    dict(t="For each CTM concerning PLAINTIFF during the RELEVANT PERIOD, state the date, the COMPLETION DETERMINATION HOPE communicated to CDCR at that CTM, and each reason HOPE gave for not recommending completion.", c=["1983-HOPE", "DP", "STATE"]),
     dict(t="Describe each policy, practice, or custom (written or unwritten) that governed whether a parolee at the STOCKTON SITE could receive a favorable COMPLETION DETERMINATION while on active parole supervision, stating the period each was in effect.", c=["1983-HOPE", "MONELL", "DP"]),
     dict(t="Describe the change to HOPE's treatment-completion or aftercare policy that HOPE has stated occurred in or about October 2024, including what changed, the effective date, and who approved it.", c=["MONELL", "STATE"], note="Matter 5 FROG 17.1 / SROG 7."),
     dict(t="IDENTIFY each contract term, CDCR directive, guideline, or other CDCR requirement that HOPE contends required, limited, or influenced any COMPLETION DETERMINATION concerning parolees during the RELEVANT PERIOD.", c=["STATE", "MONELL"], note="Targets the contract-guideline basis seen at HOPE_000294 without disclosing it."),
@@ -69,7 +72,7 @@ HOPE_ROGS = [
     dict(t="For each year from 2021 through 2026, state the number of parolee clients at the STOCKTON SITE who received a favorable COMPLETION DETERMINATION while still on parole supervision (de-identified counts only).", c=["MONELL", "DP"], note="Matter 5 SROG 6 (objected). Count-only; Jaffee-safe."),
     dict(t="IDENTIFY each complaint, grievance, objection, or request PLAINTIFF made to HOPE (orally or in writing) during the RELEVANT PERIOD concerning his treatment, completion, schedule, homework, or HOPE's reports to CDCR, stating the date and the HOPE recipient of each.", c=["FA"]),
     dict(t="Describe each statement made by Katie Palacios or any other HOPE employee to CDCR between January 1, 2025 and the present characterizing PLAINTIFF's behavior, attitude, participation, or complaints (including any use of the words \"disruptive\" or \"ringleader\"), stating the speaker, date, and recipient.", c=["FA", "BANE"], note="Palacios RFA 11/12/16 (Matter 5) -- not binding here."),
-    dict(t="State all facts supporting any contention by HOPE that HOPE's statements to CDCR about PLAINTIFF were not made because of, or in response to, PLAINTIFF's complaints or protected speech.", c=["FA"], note="Nieves causation."),
+    dict(t="State all facts supporting any contention by HOPE that it would have taken the same actions concerning PLAINTIFF (including its statements to CDCR about him) in the absence of his complaints, grievances, or lawsuits.", c=["FA"], note="Mt. Healthy same-decision defense; Nieves causation. Reworded Oct 14 from the #1001 draft ROG 18."),
     dict(t="State all facts supporting any contention by HOPE that it did not threaten, intimidate, or coerce PLAINTIFF within the meaning of California Civil Code section 52.1.", c=["BANE"]),
     dict(t="Describe how and when HOPE first learned of In re Dwyer (San Joaquin County Superior Court habeas proceeding) and of the April 17, 2025 amendments to Cal. Code Regs., tit. 15, section 3574, and state what HOPE did in response to each.", c=["MONELL", "DP"], note="Discrete-subpart risk: Dwyer vs. regulation could count as 2. Budgeted as 2."),
     dict(t="IDENTIFY each officer, director, or managing agent of HOPE with final authority over HOPE's treatment-completion policies during the RELEVANT PERIOD, stating the period of that authority.", c=["MONELL", "1983-SMITH"]),
@@ -104,8 +107,9 @@ SMITH_ROGS = [
     dict(t="State your net worth and annual income for each of 2024 and 2025.", c=["PUNITIVE"], note="Punitive-damages financial condition. Expect objection/bifurcation request; can defer until a prima facie showing. Consider reserving."),
     dict(t="IDENTIFY each person you believe has knowledge of the facts alleged in the complaint or of your defenses, stating the subject of each person's knowledge.", c=["WITNESS"]),
     dict(t="State all facts supporting each affirmative defense you assert in your answer to the operative complaint.", c=["DEFENSE"], note="Serve only after an answer is filed. Counted as 1 but objectors argue one per defense; hold it if subparts are tight."),
+    dict(t="IDENTIFY each person to whom you delegated authority over treatment-completion policy, CTM reporting, or the handling of client complaints during the RELEVANT PERIOD, and describe the authority delegated.", c=["1983-SMITH", "MONELL"], note="Supervisory delegation. Uses 1 of 5 reserve slots."),
 ]
-SMITH_ROG_COUNT_NOTE = "20 numbered; reserve 5. Nos. 18 and 20 are timing-sensitive (see memo)."
+SMITH_ROG_COUNT_NOTE = "21 numbered; reserve 4. Nos. 18 and 20 are timing-sensitive (see memo)."
 
 # ---------------------------------------------------------------- HOPE RFAs (Set One -- serve-ready, no HOPE San Joaquin content)
 HOPE_RFA1 = [
@@ -141,11 +145,26 @@ HOPE_RFA1 = [
     ("HOPE's verified response to Special Interrogatory No. 38 in the SAN JOAQUIN ACTION stated that Responding Party \"had no knowledge of Plaintiff's 'CDL employment obligations.'\"", ["CONTRA"]),
     ("HOPE's response to Special Interrogatory No. 28 in the SAN JOAQUIN ACTION stated that HOPE had no knowledge of the Dwyer decision.", ["CONTRA"]),
     ("HOPE knew of PLAINTIFF's employment as a commercial driver before January 1, 2023.", ["CONTRA", "DAMAGES"]),
+    ("In at least one written report concerning PLAINTIFF transmitted to CDCR, HOPE stated that PLAINTIFF \"is fixated on lawsuits instead of subject material.\"", ["FA", "DP"]),
+    ("The statement quoted in Request for Admission No. 33 refers to lawsuits filed by PLAINTIFF.", ["FA"]),
+    ("HOPE signed at least one CDCR Form 3043 concerning PLAINTIFF.", ["STATE", "DP"]),
+    ("HOPE did not sign a CDCR Form 3043 stating good cause to retain PLAINTIFF in a sex offender management program following the August 19, 2025 CTM.", ["DP", "STATE"]),
+    ("HOPE has no record that a written determination to retain PLAINTIFF in a sex offender management program following the August 19, 2025 CTM was delivered to PLAINTIFF within 30 calendar days of that CTM.", ["DP"]),
+    ("HOPE did not sign a CDCR Form 3043 stating good cause to retain PLAINTIFF in a sex offender management program following the February 18, 2026 CTM.", ["DP", "STATE"]),
+    ("HOPE has no record that a written determination to retain PLAINTIFF in a sex offender management program following the February 18, 2026 CTM was delivered to PLAINTIFF within 30 calendar days of that CTM.", ["DP"]),
+    ("At no time after April 17, 2025 did HOPE score PLAINTIFF at 11 or higher on the Level of Service/Case Management Inventory (LS/CMI).", ["DP", "STATE"]),
+    ("Katie Palacios acted within the course and scope of her employment or agency with HOPE when communicating with CDCR about PLAINTIFF.", ["BANE", "FA"]),
 ]
 HOPE_RFA1_NOTES = {
     29: "Quote from HOPE's San Joaquin discovery response (not the confidential production). Confirm the response was not designated Confidential and that it was verified; Nos. 29-31 track those responses.",
     32: "Contradiction lock: Plaintiff's own knowledge (work accommodations requested). Does not rely on HOPE_ production.",
-    27: "Verify exact current CCR text; keep this paraphrase neutral.",
+    27: "Verified Oct 14, 2026 against current 15 CCR 3574(f) (Cornell LII; CDCR adopted text, COC filed 4/17/2025).",
+    33: "Quote appears in Complaint para. 32 and is quoted by Defendants in Dkt 15 (public). Not from HOPE_ production.",
+    35: "Defeats the San Joaquin SROG objection that Forms 3043/1502-DR are CDCR-retained forms.",
+    36: "CTM dates from HOPE's verified San Joaquin SROG 11 response (not designated Confidential). 15 CCR 3574(f).",
+    38: "Same basis as No. 36 (Feb 18, 2026 CTM per SROG 11).",
+    40: "Basis: Plaintiff's own Form 1502-DR (LS/CMI 5 on 10/15/2024). Confirm with Brendan that no later score of 11+ exists. 15 CCR 3574(f)(1).",
+    41: "Respondeat superior for the Bane Act claim (state law; Monell bar does not apply).",
 }
 
 # ---------------------------------------------------------------- HOPE RFAs Set Two -- HOLD pending PO fix
@@ -196,6 +215,8 @@ SMITH_RFA = [
     ("You were aware of the April 17, 2025 amendments to Cal. Code Regs., tit. 15, section 3574 before PLAINTIFF filed the SAN JOAQUIN ACTION.", ["1983-SMITH"]),
     ("You used a personal device or personal account for HOPE business communications during the RELEVANT PERIOD.", ["ESI"]),
     ("You have not issued a litigation hold covering text messages concerning PLAINTIFF.", ["PRESERVATION"]),
+    ("You held an ownership interest in HOPE during the RELEVANT PERIOD.", ["MONELL-MOTIVE", "PUNITIVE", "1983-SMITH"]),
+    ("You had authority to require an internal review of a client complaint concerning HOPE personnel during the RELEVANT PERIOD.", ["1983-SMITH"]),
 ]
 SMITH_RFA_NOTES = {
     9: "HOLD: rests on HOPE_000189 (San Joaquin production). Serve only after the PO fix.",
@@ -212,10 +233,10 @@ HOPE_RFP = [
     ("B. Plaintiff's treatment and CTM records", [
         ("PLAINTIFF's complete clinical file, including intake documents, treatment contracts and client service agreements, treatment plans in every version, progress notes, group and individual session notes, attendance records, homework records, polygraph reports and referrals, and any discharge, titration, or completion documents.", ["1983-HOPE", "DP"]),
         ("PLAINTIFF's complete electronic health record in native or system-export form, together with the system audit trail showing, for each entry, the author, creation date, and every modification, view, export, or deletion.", ["1983-HOPE", "DP", "ESI"]),
-        ("All audio and video recordings of any CTM concerning PLAINTIFF, including the CTM held in or about August 2025.", ["FA", "BANE", "DP"]),
+        ("All audio and video recordings of any CTM concerning PLAINTIFF, including the CTMs held on or about August 19, 2025 and February 18, 2026.", ["FA", "BANE", "DP"]),
         ("All audio and video recordings of HOPE group sessions attended by PLAINTIFF from June 1, 2025 through September 30, 2025.", ["FA"]),
         ("All CTM notes, CTM progress reports, CTM agendas, sign-in sheets, and pre-CTM submissions concerning PLAINTIFF.", ["DP", "STATE"]),
-        ("All CDCR Form 3043 documents and CDCR Form 1502-DR inputs concerning PLAINTIFF, including drafts, worksheets, and transmittals.", ["STATE", "DP"]),
+        ("All CDCR Form 3043 documents and CDCR Form 1502-DR inputs concerning PLAINTIFF, including drafts, worksheets, signature pages, transmittals, and records of delivery to PLAINTIFF.", ["STATE", "DP"]),
         ("All titration tracking forms, graduation or completion checklists, Treatment Completion Certificate materials, and records of any upload to a CDCR system (including ARMS) concerning PLAINTIFF.", ["STATE", "DP"]),
         ("All homework packets and preparatory tickets PLAINTIFF submitted, and all logs, chart notations, or records of their assignment, receipt, review, or grading.", ["DP"]),
         ("All DOCUMENTS concerning any complaint, grievance, objection, or request by PLAINTIFF, and HOPE's response to each.", ["FA"]),
@@ -265,6 +286,13 @@ HOPE_RFP = [
         ("All DOCUMENTS HOPE contends support its position that it did not act under color of state law.", ["STATE"]),
         ("All DOCUMENTS HOPE contends support its position that its COMPLETION DETERMINATIONS concerning PLAINTIFF were individualized clinical judgments.", ["MONELL", "DP"]),
         ("All DOCUMENTS HOPE identified, or intends to identify, in its Rule 26(a)(1) initial disclosures.", ["ALL"]),
+    ]),
+    ("K. Additional requests", [
+        ("Every progress report, treatment-plan update, or status report concerning PLAINTIFF that HOPE prepared for or transmitted to CDCR from August 1, 2024 to the present, including each report containing the words \"fixated on lawsuits.\"", ["FA", "DP", "STATE"]),
+        ("Every risk or needs assessment scored for PLAINTIFF (including the Static-99R, STABLE-2007, ACUTE-2007, and LS/CMI), with score sheets, inputs, and any COMMUNICATION of results to CDCR.", ["DP", "STATE"]),
+        ("All DOCUMENTS concerning HOPE's receipt, review, routing, or escalation of the complaint in the SAN JOAQUIN ACTION from December 1, 2025 through January 31, 2026 (privileged communications with counsel to be logged rather than produced).", ["FA", "1983-SMITH"]),
+        ("Organizational charts, or DOCUMENTS sufficient to identify each person responsible during the RELEVANT PERIOD for treatment-completion policy, CTM reporting, compliance, records management, and complaint handling.", ["MONELL", "1983-SMITH"]),
+        ("All DOCUMENTS HOPE prepared, and all COMMUNICATIONS between HOPE and CDCR, from September 1, 2025 through December 31, 2025 concerning PLAINTIFF's treatment status or completion eligibility, including any information HOPE supplied for the CDCR Form 1502-DR concerning PLAINTIFF signed on November 14 and 19, 2025.", ["STATE", "DP", "FA"]),
     ]),
 ]
 

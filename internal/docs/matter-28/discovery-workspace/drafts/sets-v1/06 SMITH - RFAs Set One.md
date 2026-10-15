@@ -67,6 +67,10 @@ Under Federal Rules of Civil Procedure 26 and 36, Plaintiff Brendan Ngehsi Newan
 
 **REQUEST FOR ADMISSION NO. 15:** You have not issued a litigation hold covering text messages concerning PLAINTIFF.
 
+**REQUEST FOR ADMISSION NO. 16:** You held an ownership interest in HOPE during the RELEVANT PERIOD.
+
+**REQUEST FOR ADMISSION NO. 17:** You had authority to require an internal review of a client complaint concerning HOPE personnel during the RELEVANT PERIOD.
+
 Dated: ____________________, 2026
 
 Respectfully submitted,
@@ -100,3 +104,5 @@ Plaintiff, In Propria Persona
 | 13 | 1983-SMITH |  |
 | 14 | ESI |  |
 | 15 | PRESERVATION |  |
+| 16 | MONELL-MOTIVE, PUNITIVE, 1983-SMITH |  |
+| 17 | 1983-SMITH |  |

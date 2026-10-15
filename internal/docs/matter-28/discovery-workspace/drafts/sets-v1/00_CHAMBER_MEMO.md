@@ -7,25 +7,25 @@ generator is `internal/scripts/matter28-discovery-sets-v1.py` and the data lives
 
 **Counts.**
 - HOPE ROGs: 21 numbered, counted conservatively as 22. No. 15 (Dwyer plus the regulation) may count as two. 3 reserved.
-- Smith ROGs: 20, 5 reserved.
-- RFAs: HOPE Set One 32; HOPE Set Two 20 (HOLD); Smith Set One 15; Smith Set Two 2 (HOLD).
-- RFPs: HOPE 41; Smith 15.
+- Smith ROGs: 21, 4 reserved (No. 21, delegation, added Oct 14).
+- RFAs: HOPE Set One 41 (Nos. 33-41 added Oct 14); HOPE Set Two 20 (HOLD); Smith Set One 17 (Nos. 16-17 added Oct 14); Smith Set Two 2 (HOLD).
+- RFPs: HOPE 46 (Nos. 42-46 added Oct 14 as section K; RFP instructions 9-11 added); Smith 15.
 - Subpart discipline follows Kendall, 174 F.R.D. at 685–86, as adopted in Safeco, 181 F.R.D. 441: one primary
   question each, with subsumed details only. There are no "and identify all documents" tails; RFPs carry that load.
 
 ## Claim map (request numbers)
 | Claim / issue | HOPE ROG | HOPE RFA (Set 1 / Set 2 HOLD) | HOPE RFP | Smith ROG | Smith RFA (Set 1 / Set 2 HOLD) | Smith RFP |
 |---|---|---|---|---|---|---|
-| §1983 Monell / policy (HOPE) | 1-5,8,10,15-17 | 6,8-13,25-26,28-29 / - | 1-4,16-19,22-25,27-33,40-41 | 2-3,8-9,17 | 2,12 / - | 4-8,15 |
-| Color of state law (both) | 2,4-7 | 1-5,7,9,22,27,29 / - | 1-2,7-9,14,17-21,25,39,41 | 6,11 | 8 / - | 3,13 |
-| First Amendment retaliation | 11-13,18 | 17-20,23 / - | 1-2,5-6,11-12,14-15,26,32,41 | 5,7 | - / 2 | 1 |
-| Due process | 1-3,8-10,15 | 2,5-6,11,14-16,27 / - | 1-5,7-10,19,29,40-41 | - | 5 / - | - |
-| Smith individual / supervisory | 1,16-17 | 28 / - | 1-2,15-16,24,26,31,41 | 1-9,12 | 1-7,12-13 / 1-2 | 1-8,14 |
-| Bane Act §52.1 | 12,14 | 18-19,21-22 / - | 1-2,5,12-14,41 | 13 | 7 / - | - |
+| §1983 Monell / policy (HOPE) | 1-5,8,10,15-17 | 6,8-13,25-26,28-29 / - | 1-4,16-19,22-25,27-33,40-41,45 | 2-3,8-9,17 | 2,12 / - | 4-8,15 |
+| Color of state law (both) | 2,4-7 | 1-5,7,9,22,27,29,35-36,38,40 / - | 1-2,7-9,14,17-21,25,39,41-43,46 | 6,11 | 8 / - | 3,13 |
+| First Amendment retaliation | 11-13,18 | 17-20,23,33-34,41 / - | 1-2,5-6,11-12,14-15,26,32,41-42,44,46 | 5,7 | - / 2 | 1 |
+| Due process | 1-3,8-10,15 | 2,5-6,11,14-16,27,33,35-40 / - | 1-5,7-10,19,29,40-43,46 | - | 5 / - | - |
+| Smith individual / supervisory | 1,16-17 | 28 / - | 1-2,15-16,24,26,31,41,44-45 | 1-9,12,21 | 1-7,12-13,16-17 / 1-2 | 1-8,14 |
+| Bane Act §52.1 | 12,14 | 18-19,21-22,41 / - | 1-2,5,12-14,41 | 13 | 7 / - | - |
 | Preclusion / privity defense (Smith) | - | - / - | 1-2,41 | 10 | 9-11 / - | 12 |
 | Insurance | 21 | - / - | 1-2,34-35,41 | 16 | - / - | 11 |
 | ESI / preservation | 18-20 | 23-24 / - | 1-2,4,36-38,41 | 14-15 | 14-15 / - | 9-10 |
-| Damages / punitive | - | 32 / - | 1-2,13,33,41 | 17-18 | - / - | 15 |
+| Damages / punitive | - | 32 / - | 1-2,13,33,41 | 17-18 | 16 / - | 15 |
 | Matter 5 contradictions | - | 30-32 / - | 1-2,41 | - | - / - | - |
 
 HOPE RFA Set Two (HOLD) = authenticity and business-records foundation for HOPE_000001–542 (Nos. 1–3), plus admissions
@@ -48,7 +48,8 @@ via HOPE_000189.
 4. **Before service:**
    - Confirm that HOPE's San Joaquin SROG responses (cited in HOPE RFA 29–31) were verified and not designated
      Confidential.
-   - Verify the current text of 15 CCR §3574 (RFA 27).
+   - ~~Verify the current text of 15 CCR §3574 (RFA 27).~~ Done Oct 14; RFA 27 and 30 corrected (PR #1003).
+   - Confirm with Brendan that no LS/CMI score of 11+ was recorded after Apr 17, 2025 (RFA 40).
    - Confirm the signature-name question (caption name vs. AGENTS.md email signature).
 
 ## Anticipated objections and pre-drafted responses

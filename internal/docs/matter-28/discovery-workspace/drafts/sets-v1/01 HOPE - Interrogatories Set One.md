@@ -40,7 +40,7 @@ Under Federal Rules of Civil Procedure 26 and 33, Plaintiff Brendan Ngehsi Newan
 
 **INTERROGATORY NO. 1:** IDENTIFY each person who participated in making, approving, or communicating any COMPLETION DETERMINATION concerning PLAINTIFF during the RELEVANT PERIOD, stating for each the determination(s) and date(s) involved and the person's role.
 
-**INTERROGATORY NO. 2:** For each CTM concerning PLAINTIFF during the RELEVANT PERIOD, state the date and the COMPLETION DETERMINATION HOPE communicated to CDCR at that CTM.
+**INTERROGATORY NO. 2:** For each CTM concerning PLAINTIFF during the RELEVANT PERIOD, state the date, the COMPLETION DETERMINATION HOPE communicated to CDCR at that CTM, and each reason HOPE gave for not recommending completion.
 
 **INTERROGATORY NO. 3:** Describe each policy, practice, or custom (written or unwritten) that governed whether a parolee at the STOCKTON SITE could receive a favorable COMPLETION DETERMINATION while on active parole supervision, stating the period each was in effect.
 
@@ -62,7 +62,7 @@ Under Federal Rules of Civil Procedure 26 and 33, Plaintiff Brendan Ngehsi Newan
 
 **INTERROGATORY NO. 12:** Describe each statement made by Katie Palacios or any other HOPE employee to CDCR between January 1, 2025 and the present characterizing PLAINTIFF's behavior, attitude, participation, or complaints (including any use of the words "disruptive" or "ringleader"), stating the speaker, date, and recipient.
 
-**INTERROGATORY NO. 13:** State all facts supporting any contention by HOPE that HOPE's statements to CDCR about PLAINTIFF were not made because of, or in response to, PLAINTIFF's complaints or protected speech.
+**INTERROGATORY NO. 13:** State all facts supporting any contention by HOPE that it would have taken the same actions concerning PLAINTIFF (including its statements to CDCR about him) in the absence of his complaints, grievances, or lawsuits.
 
 **INTERROGATORY NO. 14:** State all facts supporting any contention by HOPE that it did not threaten, intimidate, or coerce PLAINTIFF within the meaning of California Civil Code section 52.1.
 
@@ -110,7 +110,7 @@ Plaintiff, In Propria Persona
 | 10 | MONELL, DP | Matter 5 SROG 6 (objected). Count-only; Jaffee-safe. |
 | 11 | FA |  |
 | 12 | FA, BANE | Palacios RFA 11/12/16 (Matter 5) -- not binding here. |
-| 13 | FA | Nieves causation. |
+| 13 | FA | Mt. Healthy same-decision defense; Nieves causation. Reworded Oct 14 from the #1001 draft ROG 18. |
 | 14 | BANE |  |
 | 15 | MONELL, DP | Discrete-subpart risk: Dwyer vs. regulation could count as 2. Budgeted as 2. |
 | 16 | MONELL, 1983-SMITH |  |

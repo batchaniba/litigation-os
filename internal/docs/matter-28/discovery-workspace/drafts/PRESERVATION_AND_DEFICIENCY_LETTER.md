@@ -22,6 +22,8 @@ the claims and defenses in this action, including at least:
    on shared drives or internal websites;
 5. Records submitted to or exchanged with CDCR/DAPO concerning me, including completion or titration records;
 6. Contracts, billing and compensation records relating to the program at the Stockton site.
+7. Every risk or needs assessment scored for me (including Static-99R, STABLE-2007, ACUTE-2007 and LS/CMI), with
+   score sheets and inputs.
 
 Please suspend any auto-deletion or overwrite settings that could affect these materials. Please also confirm by
 [date, ~7 days] that a litigation hold is in place covering these categories, including recordings. I am glad to
