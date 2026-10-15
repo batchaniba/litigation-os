@@ -138,3 +138,6 @@ Research memos (QI, CASOMB, Title 15 § 3574): `/documents/matter-28/research/`.
 - `NEXT_MOVES.md`: ranked moves through ~Nov 4 (Oct 15 disclosures; Oct 27 CMC/MTD hearing).
 - `drafts/`: RFP/RFA/ROG Set One, Rule 45 CDCR subpoena, preservation and deficiency letters, PO strategy. **All drafts; nothing served or sent.**
 - Key constraint: the San Joaquin PO §VI does not cover Matter 28. Do not use HOPE_ material in Matter 28 filings until it is re-produced or HOPE consents.
+
+## Discovery sets v1 (2026-10-14), `drafts/sets-v1/`
+Service-form ROG/RFA/RFP sets to HOPE and to Smith (assumes fraud and RICO dismissed), with PDFs in `pdf/` (signature blank) and `00_CHAMBER_MEMO.md` (claim map, serving order, objection responses). Sets marked HOLD depend on the HOPE San Joaquin production and wait for the PO fix. Regenerate with `internal/scripts/matter28-discovery-sets-v1.py`. **Not served.**
