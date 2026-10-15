@@ -135,10 +135,10 @@ HOPE_RFA1 = [
     ("HOPE has not deleted or overwritten any recording of a CTM concerning PLAINTIFF since January 1, 2025.", ["PRESERVATION"]),
     ("Dr. Cristina Loree testified in the In re Dwyer habeas proceeding in San Joaquin County Superior Court.", ["MONELL"]),
     ("HOPE was aware of the In re Dwyer proceeding before PLAINTIFF filed the SAN JOAQUIN ACTION.", ["MONELL"]),
-    ("Cal. Code Regs., tit. 15, section 3574(f)(1), as amended effective April 17, 2025, addresses the joint determination of a supervised person's completion of sex-offender treatment.", ["STATE", "DP"]),
+    ("Cal. Code Regs., tit. 15, section 3574(f), as amended effective April 17, 2025, requires that a Containment Team determination to retain a supervised person in a sex offender management program be supported by good cause and stated in writing, signed by both the sex offender treatment provider and the parole agent on CDCR Form 3043.", ["STATE", "DP"]),
     ("SMITH had final authority over HOPE's treatment-completion policies during the RELEVANT PERIOD.", ["MONELL", "1983-SMITH"]),
     ("HOPE's verified response to Special Interrogatory No. 7 in the SAN JOAQUIN ACTION stated that, before October 2024, CDCR policy required supervised persons to continue some form of treatment as part of their supervision.", ["MONELL", "STATE"]),
-    ("HOPE's response to Special Interrogatory No. 38 in the SAN JOAQUIN ACTION stated that HOPE had no knowledge of PLAINTIFF's CDL employment.", ["CONTRA"]),
+    ("HOPE's verified response to Special Interrogatory No. 38 in the SAN JOAQUIN ACTION stated that Responding Party \"had no knowledge of Plaintiff's 'CDL employment obligations.'\"", ["CONTRA"]),
     ("HOPE's response to Special Interrogatory No. 28 in the SAN JOAQUIN ACTION stated that HOPE had no knowledge of the Dwyer decision.", ["CONTRA"]),
     ("HOPE knew of PLAINTIFF's employment as a commercial driver before January 1, 2023.", ["CONTRA", "DAMAGES"]),
 ]
