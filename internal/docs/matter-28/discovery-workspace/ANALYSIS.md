@@ -1,236 +1,242 @@
-# Matter 28 — Discovery Analysis (Newanforbi v. Smith / HOPE, N.D. Cal. 3:26-cv-07504-LJC)
+# Matter 28 — Discovery analysis
 
-Prepared 2026-10-14 (PT). PRIVATE WORKSPACE — attorney-work-product style notes for the pro se Plaintiff.
-**Confidentiality:** HOPE_000001–542 was produced in Matter 5 (San Joaquin) under the San Joaquin Stipulated
-Protective Order. This file uses **Bates cites and paraphrase only** — no verbatim text from the HOPE production.
-Nothing here may be copied to `documents/` or `internal/public/`. Nothing has been served, filed, or emailed.
+*Newanforbi v. Shannon Smith, LCSW, et al.*, N.D. Cal. No. 3:26-cv-07504-LJC  
+Prepared October 14, 2026 (PT). Internal litigation work product.
 
-Source texts: OCR at `internal/private/documents/matter-05/hope-discovery/text/` (tesseract 150 dpi; OCR errors
-possible — verify against the PDF before relying on any page). Matter 5 responses: HOPE RFA (DRAFT, unsigned,
-unverified, dated 6/8/26), HOPE FROG/SROG/RFP Set One responses (6/15/26), Palacios RFA responses (6/8/26).
+> **Confidentiality and source limits.** HOPE_000001–542 was produced in Matter 5 under the San Joaquin protective order. This memorandum identifies documents by title and Bates range and paraphrases relevant points. It does not reproduce confidential text. Verify every OCR-derived point against the page image before quoting or using it. Nothing in this memorandum authorizes use of the production in Matter 28.
 
----
+## Executive assessment
 
-## 0. Bottom line
+The highest-value discovery path is a short, provable causal chain:
 
-1. **The San Joaquin PO bars using HOPE_000001–542 in this case as things stand.** §VI of the signed San Joaquin
-   order limits Confidential material to "this Litigation" plus one named related action — *Newanforbi v. Derrick*,
-   E.D. Cal. 2:26-cv-00004 (Matter 3, now closed). Matter 28 is **not** covered. Until HOPE consents, re-produces,
-   or a court modifies the order, do not cite or attach HOPE_ material in any Matter 28 filing, including an amended
-   complaint. (Internal analysis on the box is preparation for "this Litigation"/reuse and is the user's call; it is
-   not filed.)
-2. **The cleanest fix is not a Foltz motion. Have HOPE re-produce the same documents in the federal case.** The San
-   Joaquin PO restricts the *receiving* party, not HOPE. A federal Rule 34 request ("all documents you produced in the
-   San Joaquin action, HOPE_000001–542"), or a one-paragraph "deemed produced" clause in the federal PO, ends the
-   problem. HOPE's own JCMS position and Plaintiff's Nov 13 "re-production or authorization" proposal (Dkt 28) are
-   already pointed at this.
-3. **The return-or-destroy clock is a real risk.** §VIII requires return or destruction within 60 days after the
-   later of the conclusion of the San Joaquin action or of *Derrick*. *Derrick* was closed Aug 26 by a Rule 41
-   voluntary dismissal. Rough computation: 30 days to appeal (~Sep 21–25), plus the PO's 30-day "conclusion" lag
-   (~Oct 21–25), plus 60 days, gives **~Dec 20–24, 2026** at the earliest. That assumes the San Joaquin action has
-   "concluded"; no §581d judgment has been found, so it arguably has not. This is NOT a clock in clocks.json. It is a
-   computation to verify before relying on it. Lock in the federal re-production well before then.
-4. **The production helps the state-action and Monell theories more than the defense suggests, and it also has
-   real adverse material** (§2.3).
-5. **Many Matter 5 requests can be re-served almost verbatim.** HOPE answered most RFPs with "will produce upon
-   entry of a protective order." A PO was entered and HOPE produced only 542 pages before the 7/15 demurrer ruling.
-   Most promised categories (clinical file, CTM notes and videos, 3043s, agent communications) were never produced.
+1. identify the rule or individualized reason HOPE applied to keep Plaintiff in treatment;
+2. obtain the record of the decision and the people who made it;
+3. obtain the information HOPE transmitted to CDCR/DAPO;
+4. obtain the government decision that relied on that information; and
+5. connect that decision to a concrete loss.
 
----
+The present production helps locate that evidence, but it does not complete the chain. It shows that HOPE had formal graduation and aftercare processes, recurring case-team reviews, records in TreatAnyone and ARMS, and communications with parole agents. It also identifies records that should exist but were not produced in Matter 5. The production contains defense-helpful material as well, including accommodations, a reported polygraph concern, custody-related interruptions, and a parole agent's instruction concerning one no-show entry.
 
-## 1. Record overview
+The strongest immediate moves are therefore:
 
-### 1.1 Matter 28 (federal)
+- secure lawful re-production or express authorization to use HOPE_000001–542 in Matter 28;
+- seek Plaintiff-specific decision records, CTM materials, native communications, audit trails, and transmissions before broad policy or damages discovery;
+- obtain the corresponding CDCR/DAPO records in parallel;
+- reframe the unfinished Matter 5 discovery under the Federal Rules instead of treating the old requests or admissions as portable; and
+- preserve interrogatory and deposition capacity until the October 27 case-management conference and motion-to-dismiss hearing clarify the case's scope.
 
-| Item | Status / key points |
-|---|---|
-| Complaint | 5 counts (claims.json): §1983 Monell (HOPE); §1983 individual capacity (Smith); Bane Act §52.1; fraud / negligent misrepresentation; RICO §1962(c)–(d) |
-| Dkt 15 MTD (filed 9/21/26) | Claim preclusion from the San Joaquin 7/15/26 order; no color of state law; First Amendment and due process insufficient; Bane Act (no threats, intimidation, or coercion); Rule 9(b); RICO |
-| Opposition (ECF No. 23, as cited in Dkt 30) | Argues: the 7/15 order is not a final judgment; no privity for Smith; joint action through PC §3008(d)(2) and 15 CCR §3574(f)(1); Zinermon; offers to amend the fraud claim speaker by speaker |
-| Dkt 30 Reply (10/13/26) + 30-1 Supp. RFJN | Lyon v. Goss / Griset substance-over-form ("Case Disposed" docket entry); privity through employees (DKN; Scott v. Kuhlmann; Drawsand); Caviness / Rendell-Baker / Blum; Neal v. Shimoda; Herrera (Bane); Sanford (9(b)); says Plaintiff "concedes" RICO is inadequately pled |
-| Dkt 28 JCMS | 26(f) held 9/29. Plaintiff proposes: prior-discovery re-production or authorization by **Nov 13**, fact cutoff 1/29/27, trial 6/14/27. Defendants propose: fact cutoff 5/1/27, trial 7/10/28 |
-| Initial disclosures (Plaintiff) | Served. They say the HOPE Bates set will be produced only on order or agreement (consistent with the PO problem) |
-| Proposed Stipulated PO (filed 10/14 by SLB) | N.D. Cal. model form: single "CONFIDENTIAL" tier, FRE 502(d), L.R. 79-5 sealing. **No cross-use or prior-production clause**, so it does not solve the San Joaquin problem by itself |
-| Defendants' initial disclosures | Due **Oct 15** (per user; presumably stipulated, since the default under Rule 26(a)(1)(C) is 14 days after the 26(f) conference, i.e. 10/13). Not in clocks.json |
-| Oct 27, 10:30 PT | Continued initial CMC + Dkt 15 hearing (clocks.json `28-hearing-mtd`) |
+## 1. Procedural posture and constraints
 
-### 1.2 Matter 5 (San Joaquin, *Newanforbi v. Palacios / HOPE*): why discovery stopped
+- The parties held their Rule 26(f) conference on September 29, 2026. No discovery stay appears in the retrieved record, but docket entries 16–27 were not available in the workspace and should be checked before service.
+- Plaintiff served initial disclosures on October 14. Defendants stated that they would serve theirs on October 15 and would withhold confidential material until a protective order was entered.
+- A proposed federal protective order was filed on October 14. The retrieved record did not show that it had been entered. Its present text does not itself authorize use of material produced under the San Joaquin order.
+- The October 27, 2026 hearing combines the initial case-management conference and the motion-to-dismiss hearing.
+- November 13 is Plaintiff's proposed date for prior-discovery re-production or authorization in the joint case-management statement. It is not a current court-ordered deadline.
+- The San Joaquin protective order permits use in that litigation and the identified Derrick action. It remains in force after termination and contains a return-or-destroy provision. A federal protective order does not silently expand that permission.
 
-- 5/22 Plaintiff served Set One: FROGs (DISC-001), SROGs 1–40, RFPs 1–45, RFAs to HOPE and Palacios.
-- 6/8 RFA responses (HOPE's copy in the file is a DRAFT: unsigned, no verification). 6/13–14 Stipulated PO signed.
-  6/15 FROG/SROG/RFP responses. 6/16 Plaintiff's 6-category meet-and-confer letter demanding supplements by 6/24.
-  6/17–18 further sets served (HOPE SROG Set Two, Nos. 36–56; see §4).
-- 7/9–10 HOPE produced HOPE_000001–542.
-- 7/15 Judge Abdallah sustained the demurrer without leave (exhaustion grounds). Van Dine (defense counsel) then
-  wrote that discovery was "mooted" and that no further or supplemental responses would be given. **No §581d
-  dismissal judgment has been found.** That supports the opposition's finality argument, and Dkt 30 answers it with
-  the "Case Disposed" docket entry.
-- Result: every motion-to-compel issue (the 6/16 letter) and Set Two died unresolved. None of it carries into federal
-  court automatically.
+The cleanest path is an express agreement by HOPE to re-produce the Bates set in this action under the federal order, followed by an ordinary Rule 34 production. If agreement is unavailable, seek the same documents in a federal request and consider relief from the issuing state court before using the old copies. *Foltz v. State Farm Mutual Automobile Insurance Co.*, 331 F.3d 1122 (9th Cir. 2003), supports collateral access and avoiding duplicative discovery, but it does not authorize unilateral cross-case use.
 
----
+## 2. Current production: what it establishes and what it leaves open
 
-## 2. The current production: HOPE_000001–542, by claim
-
-### 2.1 Document-by-document
-
-| Bates | Document | Proves / supports | Undercuts / risks | Implies exists but NOT produced |
+| Bates range | Record | Supported inference | Limitation or adverse point | Best follow-up |
 |---|---|---|---|---|
-| 001–031 | Professional liability policy, PHCP 067968, **6/4/2023–6/4/2024 term only**; occurrence form; entity limits $1M / $5M; individual limits N/A | Coverage exists for the period. Occurrence form means each policy year's occurrences sit under that year's policy | Individual coverage "N/A" may leave Smith personally uninsured under this form | Every other PHCP term 2021–2026; any excess/umbrella; the reservation-of-rights letter. HOPE's FROG 4.1 says a ROR was issued ("f. Yes"). Its 4.1 also lists the policy number as PHCP-67968-15 and lists PHSD1838240-007 as "CGL $1M/$1M", which does not match 032–104 |
-| 032–104 | D&O/EPL policy PHSD1838240-007, 11/27/2025–11/27/2026 (claims-made) | A claims-made policy in force when the state complaint (Jan 2026) and this suit were made. Fraud exclusion applies only after final adjudication. Punitive / multiple damages covered to the extent insurable | D&O Part 1 limit appears blank in the OCR (verify against the PDF). EPL $1M with a $1M aggregate. Coverage for §1983/RICO is unclear | Declarations and endorsements for prior D&O terms; the notice of claim and tender to the carrier (see HOPE_000189: the policy and procedure followed on receiving the complaint) |
-| 105–138 | Block 1 homework (Plaintiff's) | **HOPE possesses substantial Block 1 work product.** That cuts against SROG 11 (Block I "not complete" at every CTM 8/2022→) and RFP 13 ("never existed" for lost-homework records) | HOPE will say the work was incomplete or deficient. Page-by-page review is needed for completion marks | Grading or scoring rubric; homework log entries (SROG 18 describes chart notations that were not produced) |
-| 139–199 | Collateral notes (TreatAnyone EHR export) | **000189:** Palacios's 1/6/2026 note. On receiving the state complaint she followed "policy and procedure," notified supervisor Mark Delucchi, and copied Dr. Carrie Shinske and **Shannon Smith**. This shows Smith's personal knowledge from at least Jan 2026, and that a complaint-handling policy exists. **000192:** a Palacios email to a CDCR agent with its body missing from the export. Notes authored from @almaxconsulting.com accounts (e.g. 000186, 000190) show that a management company's staff write HOPE's chart | **000142/000194:** Agent Moua's 3/31/2026 email reports a "technological error" but asks HOPE to mark him a no-show, so the no-show came from the agent. **000143, 000197–199 (Apr 2022):** moved to an evening group to accommodate work. **000159–161 (Apr 2023):** teletherapy modification approved. **000172–174:** polygraph significant response (10/21/2023). **000184–186:** in custody Nov 2024. **000190:** grace period ended 2/20/2025, a date that differs from what was pled | Native emails behind every forwarded collateral note; the full EHR (progress notes, group notes, attendance); the archiver mailbox; the Almax Consulting relationship and contract; the "policy and procedure" for complaints |
-| 200–223 | Homework / preparatory tickets (dates ~2021–2025) | Continued submissions over years; supports the "never allowed to finish" narrative | Some dates are after the grace period ended | Homework logs and receipt records (RFP 12) |
-| 224 | Curriculum tracking audit | Shows the phase/block tracking instrument exists | OCR is poor (handwritten checks). **Needs visual review** before use | Prior versions of the audit; the same audit for other clients (de-identified) |
-| 225–314 | Clinical Operational Manual (9/23/2024), part 1 | **000294:** the Aftercare phase is framed as complying with a state-law requirement of continuous treatment during supervision, and **contract guidelines bar HOPE from discharging any client for any reason.** This is strong for state action (state compulsion / joint action, Caviness's "specific conduct" test) and for Monell (a written entity-wide policy, not individualized judgment). It contradicts SROG 12 (individualized). **000295:** graduation requires a CASOMB titration form in "TA," a team decision, Clinical Director approval, and a completion certificate uploaded to ARMS (a CDCR system); clients cannot obtain the certificate from HOPE. **000276:** a client progress example | **Double-edged:** if the CDCR contract compelled retention, HOPE will argue causation lies with CDCR, which weakens fraud and RICO scienter ("we followed the contract"). The manual is dated 9/23/2024, *before* the claimed October 2024 policy change | **The CDCR/DAPO contract "guidelines" referenced at 000294**; the titration forms; ARMS uploads; the pre-9/2024 and post-10/2024 manual versions |
-| 315–349 | Manual, part 2 | **000334–335:** CTM notes are due 48 hours before every CTM. None were produced. **000348–349:** addenda (Graduation Criteria, Treatment Plan Criteria, Client Service Agreement, CTM Progress Report template, Training Library) exist only as Google Drive / almaxconsulting.com Sites links | — | **Every CTM note and progress report for Plaintiff (2021–2026); every linked addendum in native form;** the Training Library |
-| 350–434 | Maintenance curriculum | Shows the maintenance-phase content, i.e. what "completion" would have required | — | Completion criteria per module |
-| 435–485 | Employee Handbook 2023 | Policy source (Monell); possibly complaint and anti-retaliation provisions (review for First Amendment / retaliation) | — | 2021, 2022, 2024–26 handbooks; acknowledgments signed by Palacios |
-| 486–537 | Treatment manual | Policy content | — | Versions |
-| 538–542 | Clinical Director job description | **Profit sharing, performance bonus, bonus eligibility; audits for "contractual requirements."** This supports the financial-incentive / RICO motive theory and the relevance of compensation requests (RFPs 27–28; SROG 26 objected to) | Generic; does not show retention-linked pay | Palacios's actual bonus and profit-sharing calculations; the incentive plan documents |
+| HOPE_000001–031 | Professional-liability policy | A professional-liability policy with stated entity limits was produced | One historical term does not establish every policy potentially responsive to this action | Compare Defendants' Rule 26(a)(1)(A)(iv) disclosure with all applicable primary and excess agreements |
+| HOPE_000032–104 | D&O/EPL policy package | A policy package covers a term spanning the filing period; declarations and endorsements may matter | Do not infer full coverage for every claim or insured from partial OCR | Obtain complete potentially applicable agreements through initial disclosures; use Rule 34 for other coverage materials only if relevant |
+| HOPE_000105–138, 200–223 | Homework and tickets | Plaintiff submitted substantial work over time; individual items and receipt dates can be tested | The production does not show that every required item was complete, accepted, or timely | Obtain the item-by-item curriculum ledger, scoring criteria, reviewer notes, receipt metadata, and missing-work notices |
+| HOPE_000139–199 | Collateral notes and communications | Identifies agent-provider communications, persons with notice, and gaps in the exported record | One duplicated email is one event, not two; one no-show instruction came from an agent after a reported technology problem | Obtain native messages with headers, attachment families, EHR audit logs, and the resulting attendance/status entry |
+| HOPE_000224 | Curriculum tracking audit | A tracking instrument existed | Handwriting and blank fields are ambiguous in OCR | Inspect the image and obtain the underlying electronic ledger and audit history |
+| HOPE_000225–349 | Clinical Operational Manual | Describes graduation, transition to aftercare, CTM preparation, titration, approvals, TreatAnyone, ARMS, and linked addenda | The manual describes an actual graduation process; it does not support saying HOPE had no graduation criteria | Obtain historical versions, referenced addenda, CTM templates, titration forms, approval records, and ARMS upload logs |
+| HOPE_000350–434 | Maintenance curriculum | Shows the content of a maintenance phase | Curriculum content alone does not establish the decision to retain Plaintiff | Tie assigned modules and completion status to CTM decisions |
+| HOPE_000435–485 | 2023 employee handbook | Supplies general compliance and records policies | General policies do not prove Smith made the challenged decision | Obtain acknowledgments, applicable later versions, and decision-specific communications |
+| HOPE_000486–537 | 2019 preparatory treatment manual | Provides historical clinical framework | May not be the operative policy for later decisions | Obtain version history and dates of use |
+| HOPE_000538–542 | Clinical Director job description | Describes clinical authority, audits, management duties, and eligibility for incentives | Eligibility language does not prove that retention bonuses existed or were paid | Seek the actual incentive formula and decision criteria only if a claim makes them material |
 
-### 2.2 Claim-by-claim
+### Decision-specific leads
 
-**§1983, Monell (HOPE).** Tsao: Monell applies to private entities acting under color of law. Two elements: (a) color
-of law, and (b) an entity policy or custom that caused the violation.
-- *Color of law:* HOPE_000294 (contract-driven no-discharge rule) and 000295 (completion certificate routed through
-  CDCR's ARMS) are the best documentary evidence of state compulsion / joint action. HOPE's RFA 2 (CASOMB-certified,
-  contracts with CDCR/DAPO) is admitted. HOPE's RFA admissions 3–4 (status submitted at every CTM; continued treatment
-  recommended at every CTM and completion never recommended) are admitted but need re-service (§3.4).
-- *Policy:* HOPE's own FROG 17.1 / SROG 7 say that **before October 2024 CDCR required continuous treatment during
-  active parole and HOPE's policy followed that.** That is a formal, entity-wide policy, which defeats the
-  "individualized" defense (SROG 12). RFA 9 is admitted: no policy change after 4/17/25.
-- *Gaps:* the CDCR contract; the October 2024 policy change documents; CTM notes and videos; de-identified completion
-  data for the Stockton site (SROG 6 was objected to).
+- A January 2026 entry shows that Palacios notified a supervisor and copied other leadership, including Smith, after the state complaint was served. This is a notice lead. It does not establish that Smith caused later retaliation.
+- The March 31/April 1, 2026 no-show communication acknowledges a technology problem while recording an agent's direction to mark a no-show. The two copies in the production are duplicates. The native message, resulting database entry, any report to CDCR, and any consequence are the relevant missing links.
+- The manual's aftercare and graduation sections indicate that aftercare, graduation, titration, clinical approval, and an ARMS completion record are distinct operational events. Discovery should test how those terms were applied to Plaintiff.
+- The manual references CTM notes prepared before meetings, linked criteria and templates, TreatAnyone records, and ARMS activity. Those references are strong grounds for focused requests for existing records.
+- A May 2023 supplemental assessment is referenced but missing. Later communications concerning treatment planning appear incomplete. Request the referenced attachments and complete families.
+- The production shows accommodations for work and teletherapy and records an adverse polygraph concern. Any presentation of the record must account for these facts.
+- A grace-period date in the records may differ from a pleaded date. Reconcile the underlying source before using either date.
 
-**§1983, Smith (individual).** Starr v. Baca: supervisory liability through knowledge and acquiescence or policy
-setting. HOPE_000189 puts Smith on notice by Jan 2026. Pre-2026 knowledge is unproven. Need: Smith's emails, policy
-approvals, and her role in the October 2024 change. Privity / claim preclusion (Dkt 30 §I.B) is a legal fight that
-discovery barely affects.
+## 3. Title 15 § 3574: the discovery frame
 
-**First Amendment retaliation.** Palacios RFA admissions 11, 12, 16 and 29 ("disruptive," "ringleader," the
-"complaining … chime in" remark, and Plaintiff's complaints before Aug 2025), and HOPE RFA 25 (admitted). These bind
-only Matter 5 (§3.4) and must be re-obtained. Need: the August 2025 CTM video (FROG 12.4 says CTMs are recorded), group
-notes, and the Palacios email chain.
+The current regulation must be stated precisely.
 
-**Due process.** Mostly legal (Neal v. Shimoda; Zinermon). Discovery value: proof that the deprivation was systemic
-(policy) rather than random, to fit Zinermon. HOPE_000294 and FROG 17.1 help.
+- Section 3574(a)(3) describes aftercare as voluntary.
+- Section 3574(d) allows a parolee to complete treatment before discharge from parole.
+- Section 3574(e) separates the treatment review from discharge from parole and electronic monitoring.
+- Section 3574(f) permits retention for good cause, requires a written decision signed by the provider and parole agent on Form 3043, and requires delivery within 30 days.
+- The listed good-cause considerations include LS/CMI and STABLE scores, a current deceptive polygraph or new admissions, and relevant violations during the preceding year. The list is not a rule that a low score automatically requires completion.
 
-**Bane Act.** Cornell (specific intent; coercion need not be independent of the violation) and Reese (the federal
-reading of Cornell). Discovery: evidence that the threat of a violation report was used to force attendance
-(agent communications; the 3/31/2026 no-show episode cuts the other way).
+This makes the written retention decision, signatures, stated good cause, delivery date, supporting CTM record, and later use of that decision the central discovery targets. A regulatory violation would not by itself establish a federal constitutional violation. It can, however, identify the required decision process and the records that should exist.
 
-**Fraud / negligent misrepresentation.** Kearns / 9(b): who, what, when, where, how. The collateral notes and CTM
-records will identify speakers and dates; that is the amendment roadmap Plaintiff promised in ECF No. 23.
-Lazar elements. Risk: reliance is attacked in Dkt 30 §V.
+CDCR's final statement of reasons rejected mandatory aftercare as inconsistent with the regulatory design. That history may help interpret policy language, but the operative question remains what policy and decision process governed Plaintiff at the relevant time.
 
-**RICO.** Sedima / H.J. Inc. (pattern); Diaz v. Gates (en banc), where loss of employment is injury to "business or
-property." That fits the CDL-income theory. Canyon County: concrete financial loss. Need: the CDCR contract and fee
-schedule, per-client revenue (RFA 22 admitted: revenue drops on discharge; SROG 27 says the same), invoices, and
-compensation incentives (HOPE_000538–542). Dkt 30 says Plaintiff "concedes" inadequate pleading, so RICO survival
-likely depends on leave to amend.
+## 4. Unfinished Matter 5 discovery that should be carried forward
 
-### 2.3 Admissions and contradictions to exploit (Matter 5 responses vs. production)
+The old discovery is a source of leads and drafting language. It does not carry over automatically. California RFAs are confined to the pending state action under Code of Civil Procedure § 2033.410(b), and Federal Rule 36(b) similarly confines federal admissions to the pending federal action.
 
-| HOPE statement | Contradicted or undercut by |
-|---|---|
-| SROG 13 / 28–30, RFP 30: no knowledge of *Dwyer* | RFA 13 (partial admission): Dr. Loree, HOPE's Executive Director of Training, testified at the Dwyer hearing |
-| RFA 31: denies that the 15 CCR §3574(f)(1) language exists | The regulation text (verify current CCR text before using; likely a false denial, Rule 37(c)(2) cost-shifting if repeated federally) |
-| SROG 12: decisions individualized | HOPE_000294 (blanket, contract-driven no-discharge rule); FROG 17.1 / SROG 7 (pre-Oct 2024 CDCR-mandated continuous treatment) |
-| SROG 38 / RFP 42: no knowledge or documents about his CDL / work | HOPE_000143, 000197–199 (evening group to accommodate work); 000159–161 (teletherapy modification) |
-| SROG 11: Block I incomplete at every CTM 8/2022→ | HOPE_000105–138 and 200–223 (volume of submitted work); 000224 audit (review) |
-| RFP 3 / 13 / 32–34: "never existed" | HOPE_000189 ("policy and procedure"); HOPE_000348–349 (addenda); 000334–335 (CTM notes due before each CTM) |
-| FROG 4.1 policy list | HOPE_000032–104 is D&O/EPL, not CGL; only one PHCP year was produced |
+### A. Unresolved meet-and-confer categories
 
-**Adverse to Plaintiff (be candid in any filing):** 000142/194 (agent-requested no-show); 000143/197–199 and 159–161
-(accommodations were given); 000172–174 (polygraph); 000184–186 (custody Nov 2024); 000190 (grace-period date differs
-from the pleading; correct it in any amendment).
+| Matter 5 category | What remained unresolved | Federal continuation |
+|---|---|---|
+| Comparator completions | HOPE objected to anonymized completion information | Request defined, de-identified counts and documents sufficient to show completions before parole discharge, limited by site, program, and period |
+| Basis for denials and policy contentions | Several answers gave little factual support | Use focused interrogatories identifying the policy, decisionmakers, dates, and documents for the challenged retention decisions |
+| Individualized decision basis | Responses relied on general clinical factors | Request each Form 3043, CTM note, progress report, score, polygraph information, violation, and other fact actually relied on |
+| ESI and communications | Native email, agent communications, and audit data were withheld or not produced | Use custodian, date, system, and event-window limits; request native form with metadata where material |
+| Statements attributed to Palacios | Responses resisted identifying specific statements | Palacios is a nonparty here; obtain the communications from HOPE and CDCR, then use a Rule 45 deposition |
+| Protective-order-dependent production | Categories were promised after entry of the state order but discovery ended | Build a response-to-production matrix showing produced, withheld, promised, nonexistent, and missing categories |
 
-### 2.4 Not produced (consolidated gap list → drafts/RFP_SET_ONE.md)
+### B. High-value Set Two topics
 
-CDCR/DAPO contracts, scopes of work, guidelines, fee schedules, invoices, payments · CTM notes, progress reports, and
-**video recordings** · 3043 / 1502-DR inputs and drafts · full EHR (TreatAnyone) with audit trail · native emails
-(hopeprogram.biz incl. the archiver mailbox; almaxconsulting.com) · all policy and manual versions 2021–2026 and the
-October 2024 change documents · linked addenda and the Training Library · titration forms and ARMS uploads · all
-insurance policies 2021–2026 + ROR + tender · compensation and bonus records (Palacios, Clinical Director) · the
-complaint-handling "policy and procedure" (HOPE_000189) · the Almax Consulting management agreement · litigation-hold
-notices (date only).
+The June 17 Matter 5 sets should be mined for:
 
----
+- the October 2024 policy change, its author, substance, notices, implementation, and effect on Plaintiff;
+- the content and introduction dates of Block I and Block II curricula;
+- the basis and participants for the August 2025 CTM decision;
+- September–December 2025 communications concerning the later retention decision and Form 1502-DR;
+- the identity and role of Bernadette Tassone and any treatment plan she prepared or presented;
+- receipt, review, and tracking of Plaintiff's homework;
+- communications with the identified parole agents;
+- the treatment-plan approval chain and any instruction not to provide it to Plaintiff;
+- the document-retention policy; and
+- applicable insurance agreements.
 
-## 3. Precedent, with verification status
+Requests for racial totals, complete compensation history, or system-wide financial records should be deferred or narrowed unless the surviving claims and pleaded theory make them proportional.
 
-Verification method (10/14/26): CourtListener search API (citation lookup returned the matching case name and
-date), plus a web read of the holding where marked **H**. LII for the FRCP text; Justia / leginfo search results for
-CCP. "C" means the citation was verified; "H" means the holding was also read. Anything not marked is **UNVERIFIED**.
+### C. Federal drafting changes
 
-### 3.1 Discovery issues
+- Keep interrogatories to 25 per party, including discrete subparts. Reserve capacity for answers that expose new decisionmakers or defenses.
+- Direct Rule 33 interrogatories and Rule 36 requests only to parties. Use Rule 45 and depositions for Palacios and government custodians.
+- Do not use a broad form-interrogatory follow-up requiring support for every RFA denial. Ask targeted contention interrogatories.
+- Use RFAs for authentication, discrete historical facts, and issues likely to narrow proof. Do not use them as a substitute for document discovery.
+- Require Rule 34 responses to state whether responsive material is being withheld and request production in the form ordinarily maintained where metadata matters.
 
-| Issue | Authority | Status | Use |
+## 5. Discovery by claim
+
+| Theory | What discovery can prove | Priority evidence | Legal constraint |
 |---|---|---|---|
-| Scope / proportionality | FRCP 26(b)(1) (2015 text: "relevant to any party's claim or defense and proportional to the needs of the case," six factors) | **H** (LII) | Contracts, revenue and compensation are relevant to RICO, Monell motive and punitive damages; HOPE holds the information ("relative access") |
-| Discovery not stayed by a pending MTD | *Gray v. First Winthrop Corp.*, 133 F.R.D. 39 (N.D. Cal. 1990) | **C+H** | Oppose any stay request at the 10/27 CMC |
-| Federal privilege law governs (fed-question + pendent state claims) | *Agster v. Maricopa County*, 422 F.3d 836 (9th Cir. 2005) | **C+H** | Defeats Cal. constitutional privacy as a *privilege*; privacy becomes a balancing / PO question |
-| Psychotherapist privilege | *Jaffee v. Redmond*, 518 U.S. 1 (1996) | **C** (holding well known; not re-read) | Applies to *other clients'* records, so ask for de-identified aggregate data. Plaintiff's own records: he holds the privilege and puts them at issue |
-| Official-information privilege (CDCR subpoena) | *Kerr v. U.S. Dist. Ct.*, 511 F.2d 192 (9th Cir. 1975); *Sanchez v. City of Santa Ana*, 936 F.2d 1027 (9th Cir. 1991) | **C** | Expect CDCR to assert it; a PO and in-camera review are the usual answer |
-| Collateral use / modifying a PO | *Foltz v. State Farm*, 331 F.3d 1122 (9th Cir. 2003) | **C+H** | The collateral litigant asks the *issuing* court. The issuing court decides relevance roughly (overlap of facts, parties, issues); the collateral court decides specific discoverability. Here the issuing court is San Joaquin Superior Court (a state court, so Foltz is persuasive only) |
-| Same | *Beckman Indus. v. Int'l Ins. Co.*, 966 F.2d 470 (9th Cir. 1992); *Olympic Refining v. Carter*, 332 F.2d 260 (9th Cir. 1964); *In re Roman Catholic Archbishop of Portland*, 661 F.3d 417 (9th Cir. 2011) | **C** | Policy favoring access to avoid duplicative discovery |
-| Early Rule 34 requests | FRCP 26(d)(2) (delivered >21 days after service; deemed served at the first 26(f) conference) | **H** (LII) | **Moot:** the 26(f) conference was held 9/29, so ordinary discovery is open under 26(d)(1). Serve normal Rule 34 requests now |
-| Objections must state whether anything is withheld | FRCP 34(b)(2)(C) | **H** (LII) | HOPE's state "will produce upon entry of a protective order" boilerplate won't comply federally |
-| Insurance disclosure | FRCP 26(a)(1)(A)(iv) ("any insurance agreement under which an insurance business may be liable…") | **H** (LII) | Every policy that may respond: all PHCP terms, D&O/EPL terms, excess. A ROR letter is arguably *not* an "insurance agreement": request it by Rule 34 (case law split, **UNVERIFIED**, no cite) |
-| RFAs bind only the pending action (fed) | FRCP 36(b) last sentence | **H** (LII) | Federal admissions can't be used elsewhere, and vice versa in spirit |
-| RFAs bind only the pending action (Cal.) | Cal. CCP §2033.410(b) | **C** (statute text via Justia/leginfo search summary; the leginfo page timed out on direct fetch, so re-read before citing) | **HOPE's and Palacios's Matter 5 RFA admissions cannot be used as admissions in Matter 28.** Re-serve them. (They may still be usable as ordinary party statements, FRE 801(d)(2), **UNVERIFIED** application, and HOPE's RFA copy is an unsigned draft anyway) |
-| Withdrawal of admissions | *Conlon v. United States*, 474 F.3d 616 (9th Cir. 2007) | **C+H** | Once federal RFAs are admitted or deemed, withdrawal is discretionary under the two-part 36(b) test; reliance alone isn't prejudice |
-| Prior deposition use | FRCP 32(a)(8) | UNVERIFIED (not re-read) | No Matter 5 depositions were taken, so N/A |
-| N.D. Cal. meet-and-confer | Civil L.R. 37-1; Judge Cisneros's discovery standing order (joint-letter procedure) | **UNVERIFIED**: pull the current LJC standing order before any dispute | Required before any motion |
+| § 1983 state action | Whether the challenged retention/reporting decision was compelled, jointly made, or integrated with CDCR functions | CDCR contract and operative guidance; signed decision forms; agent-provider communications; ARMS and 3043 records | *Rawson v. Recovery Innovations*, 975 F.3d 742 (9th Cir. 2020), requires attention to the specific conduct and state involvement; contracting or regulation alone is insufficient |
+| Monell against HOPE | Whether an HOPE policy or custom caused an actual federal violation | operative manuals, historical versions, policy-change records, approval chain, defined comparator data | *Tsao v. Desert Palace*, 698 F.3d 1128 (9th Cir. 2012), applies Monell to private entities acting under color of law and rejects respondeat superior |
+| Individual liability of Smith | Smith's own participation, direction, policy decision, or knowing acquiescence | Smith-specific communications, approvals, meeting records, and testimony | Notice from a copied email alone does not prove causation |
+| First Amendment retaliation | Protected complaint, adverse action, causal link, and absence of the same action for legitimate reasons | complaint timeline, CTM recording and notes, decision communications, comparator treatment, later reports | The record contains legitimate clinical and supervision facts that must be tested, not ignored |
+| Due process | Whether a protected interest was affected through a systemic or unauthorized process and what procedures were supplied | signed decision, notice, reasons, opportunity to respond, review route, transmission and consequence | *Neal v. Shimoda*, 131 F.3d 818 (9th Cir. 1997), concerns process for classification based on a prior conviction; it does not answer every later retention decision |
+| Bane Act | Specific intent to interfere with rights through threats, intimidation, or coercion | exact communications, instructions, reports, and expected consequences | *Reese v. County of Sacramento*, 888 F.3d 1030 (9th Cir. 2018), emphasizes specific intent |
+| Fraud / negligent misrepresentation | Speaker, statement, time, recipient, falsity, knowledge, reliance, and loss | native communications, reports, attendance logs, homework ledger, recipient testimony | Discovery must supply particulars; generalized disagreement with clinical judgment will not meet Rule 9(b) |
+| RICO | Predicate communications, enterprise structure, proximate causation, and business/property loss | invoices tied to Plaintiff, transmission records, contracts and rate schedules, direct economic-loss records | *Anza v. Ideal Steel*, 547 U.S. 451 (2006), makes directness central. *Medical Marijuana, Inc. v. Horn*, 604 U.S. ___ (2025), rejects a categorical bar on economic loss flowing from personal injury but does not cure remoteness or missing predicates |
 
-### 3.2 Merits (for relevance framing)
+Discovery cannot by itself resolve the threshold claim-preclusion and pleading issues raised by the motion to dismiss. Those issues should inform sequencing so expensive policy, comparator, and financial discovery follows a viable pleaded theory.
 
-| Authority | Status | Point |
-|---|---|---|
-| *West v. Atkins*, 487 U.S. 42 (1988) | C | A contractor performing the State's obligation acts under color of law |
-| *Lugar v. Edmondson Oil*, 457 U.S. 922 (1982) | C | "Fairly attributable" test |
-| *Brentwood Academy v. TSSAA*, 531 U.S. 288 (2001) | C | Entwinement |
-| *Rendell-Baker v. Kohn*, 457 U.S. 830; *Blum v. Yaretsky*, 457 U.S. 991 (1982) | C | Defense cites: regulation and funding alone are not enough. HOPE_000294 answers this (compelled conduct) |
-| *Caviness v. Horizon*, 590 F.3d 806 (9th Cir. 2010) | C | Focus on the specific conduct |
-| *Franklin v. Fox*, 312 F.3d 423 (9th Cir. 2002) | C | Four tests |
-| *Tsao v. Desert Palace*, 698 F.3d 1128 (9th Cir. 2012) | **C+H** | Monell applies to private entities; joint action |
-| *Monell*, 436 U.S. 658 (1978) | C | Policy / custom |
-| *Starr v. Baca*, 652 F.3d 1202 (9th Cir. 2011) | C | Supervisory liability |
-| *Nieves v. Bartlett*, 587 U.S. 391 (2019); *Mendocino Envtl. Ctr.*, 192 F.3d 1283 (9th Cir. 1999) | C | Retaliation causation / chilling |
-| *Zinermon v. Burch*, 494 U.S. 113 (1990); *Neal v. Shimoda*, 131 F.3d 818 (9th Cir. 1997); *Patsy*, 457 U.S. 496 (1982) | C | Due process / exhaustion |
-| *Cornell v. City & Cnty. of S.F.*, 17 Cal.App.5th 766 (2017); *Venegas*, 32 Cal.4th 820 (2004); *Reese v. County of Sacramento*, 888 F.3d 1030 (9th Cir. 2018) | C | Bane Act |
-| *Lazar v. Superior Court*, 12 Cal.4th 631 (1996); *Kearns v. Ford*, 567 F.3d 1120 (9th Cir. 2009) | C | Fraud elements / 9(b) |
-| *Sedima*, 473 U.S. 479 (1985); *H.J. Inc.*, 492 U.S. 229 (1989); *Diaz v. Gates*, 420 F.3d 897 (9th Cir. 2005) (en banc); *Canyon County v. Syngenta*, 519 F.3d 969 (9th Cir. 2008) | C (Diaz **C+H**) | RICO |
-| *DKN Holdings v. Faerber*, 61 Cal.4th 813 (2015); *Lyon v. Goss*, 19 Cal.2d 659 (1942); *Griset v. FPPC*, 25 Cal.4th 688 (2001) | C | Preclusion (defense cites; verified to exist) |
+## 6. Ranked discovery plan
 
-Not verified / deliberately not cited: any authority on whether a ROR letter is discoverable; any authority on
-federal courts modifying *state* POs; Eleventh Amendment limits on Rule 45 subpoenas to CDCR. Research these before
-briefing.
+### 1. Lock down the challenged decisions and transmissions
 
----
+Request, for each relevant review or alleged adverse event:
 
-## 4. San Joaquin requests: status and federal repurposing
+- Form 3043 and any Form 1502-DR input, draft, attachment, and transmission record;
+- CTM agenda, pre-meeting note, progress report, recording, attendance, minutes, and follow-up;
+- assessment scores, polygraph information, alleged violation, homework status, and every fact actually relied on;
+- the persons who recommended, approved, signed, entered, transmitted, or received the decision; and
+- the TreatAnyone and ARMS audit history showing creation, edits, approval, and transmission.
 
-Federal limits: **25 interrogatories including discrete subparts** (Rule 33(a)(1)). The Cal. 35-SROG cap and FROGs
-don't translate; FROG content must be rewritten as ordinary interrogatories. RFPs and RFAs have no numeric cap (check
-the LJC standing order). Definitions must be re-drafted ("INCIDENT" etc. are DISC-001 terms).
+This is the shortest route from the alleged misconduct to an admissible record.
 
-| Matter 5 request | Matter 5 status | Federal plan |
-|---|---|---|
-| RFP 1, 2, 6–9, 11, 12, 14, 16, 17, 19–22, 36–38, 40, 43–45 | "Will produce on entry of PO." PO entered; **mostly not produced** beyond HOPE_000001–542 | Re-serve nearly verbatim → **RFP Set One 2–20** |
-| RFP 10, 15, 18, 23–29, 31, 35, 39, 41 | Objections only; the 6/16 meet-and-confer was unresolved | Re-serve, narrowed (time-bounded, de-identified, "documents sufficient to show") to pre-empt proportionality → RFP 21–34 |
-| RFP 3, 13, 30, 32–34, 42 | "Never existed" | Re-serve with the production contradictions (HOPE_000189, 000348–349, 000143) cited in the meet-and-confer, not in the request. Rule 34 / 26(g) certification makes repeat false "never existed" answers sanctionable |
-| RFP 4, 5 (CASOMB) | "Equally available" / objection | Low priority; fold into the policy request |
-| SROG 6 (completions), 19 (lost homework), 23–26 (contracts / revenue / compensation) | Objections only | Federal ROGs 6–10 (de-identified counts; revenue by year) |
-| SROG 7, 11, 12, 13 | Answered (key admissions) | Re-ask in narrow form to lock the answers in under federal oath (ROGs 1–5) |
-| SROG 28–35 (Dwyer, regulation, Aug 2025 CTM) | "No knowledge" | Re-ask; pair with RFAs about Loree's testimony |
-| SROG Set Two (36–56) | Served 6/17; due after 7/15; **mooted, never answered** | Fold the best into the 25-ROG budget |
-| FROG 4.1 (insurance) | Answered with a ROR, but the numbers are wrong | Replace with the 26(a)(1)(A)(iv) demand + RFP 35–37 |
-| FROG 12.4 (recordings) | "CTMs are video recorded" | **Preservation demand now** + RFP for the videos |
-| HOPE RFAs 1–33 | Draft responses, admissions listed in §2.3 | Re-serve as federal RFA Set One (bind HOPE in Matter 28) |
-| Palacios RFAs | Admissions 1, 3, 4, 6, 8, 11, 12, 16, 28, 29 | Palacios is not a party. Convert to RFAs to HOPE about Palacios's statements (HOPE has to investigate under Rule 36(a)(4)) and to a later Rule 45 deposition |
-| 6/16 meet-and-confer letter | Unresolved | Template for the federal deficiency letter |
+### 2. Obtain the same chain from CDCR/DAPO
 
-Palacios FROG/SROG/RFP responses and Plaintiff's original Set One PDFs: not re-read line by line in this pass (the
-request text was taken from the response documents, which restate each request). Do a quick diff before service.
+After Rule 45 notice, seek Plaintiff-specific records from the correct government custodian:
+
+- received HOPE reports and attachments;
+- agent notes and communications with HOPE;
+- the signed retention or treatment decision and proof of delivery;
+- decisions that changed supervision, work, travel, treatment, or other conditions;
+- ARMS history and completion/titration entries; and
+- the operative contract, scope, and guidance necessary to understand the decision.
+
+Keep the subpoena Plaintiff-specific and use separate, narrow requests for contract materials. This reduces burden and makes privilege objections easier to resolve.
+
+### 3. Preserve and collect native ESI
+
+Identify custodians and short event windows before searching:
+
+- Palacios, Smith, Delucchi, Shinske, and the involved parole agents;
+- the March 31/April 1, 2026 technology/no-show event;
+- the August 2025 CTM;
+- the November 2025 retention or supervision event;
+- receipt and handling of the January 2026 state complaint; and
+- any identified October 2024 policy change.
+
+Request native email and attachments, EHR audit logs, recording metadata, and the historical versions of linked manuals or forms. Do not access provider-controlled Google Drive or Sites links without authorization.
+
+### 4. Test the claim of individualized clinical judgment
+
+Use a focused interrogatory requiring HOPE to identify every fact and document actually relied on for each decision. Then compare the answer with the regulatory good-cause criteria, the CTM file, homework ledger, assessment history, and transmitted record.
+
+### 5. Seek defined comparator evidence
+
+Ask for de-identified information sufficient to show whether similarly situated participants completed treatment before parole discharge. Define the relevant site, program, period, supervision status, and decision type. Start with counts and decision criteria; seek individual files only if the aggregate response shows a material pattern.
+
+### 6. Establish Smith's actual role
+
+Request Smith-specific documents concerning Plaintiff, the relevant policies, complaint handling, and the challenged decisions. Follow with testimony only after the documents show what Smith knew, decided, approved, or delegated.
+
+### 7. Sequence depositions
+
+A practical order is:
+
+1. HOPE Rule 30(b)(6) on records systems, decision workflow, policies, contracts, and production;
+2. Palacios on Plaintiff-specific decisions and communications;
+3. the responsible parole agent or CDCR custodian on receipt, reliance, and consequences; and
+4. Smith if the documents establish a personal decision or policy role.
+
+## 7. Proposed first-wave package
+
+Subject to the October 27 scheduling discussion and confirmation that no stay exists:
+
+- approximately 15 targeted RFPs covering re-production, Plaintiff's complete decision file, CTM materials, native event communications, audit trails, policies actually applied, historical versions, contracts/guidance, and applicable insurance agreements;
+- 8–10 interrogatories directed to policy identity, decisionmakers, individualized reasons, transmissions, record systems, and narrowly defined completion data;
+- a small RFA set for authenticity and discrete facts after the documents are produced; and
+- a Plaintiff-specific CDCR/DAPO subpoena with a separate narrow contract category.
+
+The first wave should avoid broad compensation, all-client files, company-wide revenue, and expansive RICO billing discovery. Those subjects become more proportional after the pleadings and direct causal record are clearer.
+
+## 8. October 27 case-management asks
+
+Ask the Court to:
+
+- confirm whether discovery is stayed or may proceed;
+- enter the stipulated protective order or set a prompt path to entry;
+- set a short deadline for HOPE to re-produce or expressly authorize use of the prior Bates production;
+- permit targeted Plaintiff-specific ESI and decision-record discovery while the motion is pending;
+- recognize that Plaintiff intends a narrow Rule 45 request to CDCR/DAPO; and
+- apply Judge Cisneros's discovery procedure to later disputes.
+
+Judge Cisneros's standing order requires a formal in-person or video discovery conference before presenting a discovery dispute. A telephone call alone is insufficient for that discovery process. A joint letter ordinarily follows within five business days and addresses each issue and proposed compromise.
+
+## 9. Verification and open items
+
+Before service or filing:
+
+- inspect the original images for every Bates citation that may be quoted;
+- verify the current docket, including entries 16–27, entry of the federal protective order, and any discovery stay;
+- review Defendants' October 15 disclosures;
+- obtain and inspect the original Form 1502-DR, which was not readable in this review;
+- reconcile all event dates against source documents;
+- confirm the operative versions of 15 CCR § 3574 and Judge Cisneros's standing order; and
+- build a request-by-request matrix matching each Matter 5 response to the 542-page production.
+
+### Principal authorities reviewed
+
+- Fed. R. Civ. P. 26, 33, 34, 36, 37, and 45.
+- Cal. Code Civ. Proc. § 2033.410.
+- 15 Cal. Code Regs. § 3574 and CDCR's adopted regulatory materials.
+- *Rawson v. Recovery Innovations, Inc.*, 975 F.3d 742 (9th Cir. 2020).
+- *Tsao v. Desert Palace, Inc.*, 698 F.3d 1128 (9th Cir. 2012).
+- *Neal v. Shimoda*, 131 F.3d 818 (9th Cir. 1997).
+- *Rhodes v. Robinson*, 408 F.3d 559 (9th Cir. 2005).
+- *Reese v. County of Sacramento*, 888 F.3d 1030 (9th Cir. 2018).
+- *Foltz v. State Farm Mutual Automobile Insurance Co.*, 331 F.3d 1122 (9th Cir. 2003).
+- *Anza v. Ideal Steel Supply Corp.*, 547 U.S. 451 (2006).
+- *Medical Marijuana, Inc. v. Horn*, 604 U.S. ___ (2025).
