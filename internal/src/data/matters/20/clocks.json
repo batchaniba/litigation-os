@@ -37,33 +37,36 @@
     "date": "2026-09-20",
     "date_label": "Sep. 20, 2026",
     "kind": "deadline",
-    "status": "open",
+    "status": "lapsed",
     "source_dkt": null,
     "title": "AMENDMENT DUE (optional) — if Petitioner elects to amend Count 4, file and serve an amended Petition within 20 days of notice of entry of the August 29, 2026…",
     "actor": "you",
-    "source": "/documents/matter-32/from-20/Order Sustaining Demurrer In Part - Whitman (Aug 29 2026) (Notice of Entry Aug 31 2026).pdf"
+    "source": "/documents/matter-32/from-20/Order Sustaining Demurrer In Part - Whitman (Aug 29 2026) (Notice of Entry Aug 31 2026).pdf",
+    "note": "No amended petition filed; Count 4 leave to amend lapsed."
   },
   {
     "id": "20-deadline-5",
     "date": "2026-10-16",
     "date_label": "Oct. 16, 2026",
     "kind": "deadline",
-    "status": "open",
+    "status": "vacated",
     "source_dkt": null,
     "title": "Hearing on CHP demurrer and the individual respondents' joinders/demurrers to the Petition for Writ of Mandate, Newanforbi v. California Highway Patrol, et al.…",
     "actor": "you",
-    "source": "/documents/matter-32/from-20/Serrato Notice of Joinder and Demurrer.pdf"
+    "source": "/documents/matter-32/from-20/Serrato Notice of Joinder and Demurrer.pdf",
+    "note": "Advanced to Aug 28 by stipulation; vacated as moot by Aug 29, 2026 Whitman order."
   },
   {
     "id": "20-deadline-6",
     "date": "2026-10-23",
     "date_label": "Oct. 23, 2026",
     "kind": "deadline",
-    "status": "open",
+    "status": "vacated",
     "source_dkt": null,
     "title": "Continued hearing on the Dutra joinder and demurrer to the Petition for Writ of Mandate, Newanforbi v. California Highway Patrol, et al. (Matter 20) — Dept.…",
     "actor": "you",
-    "source": "/documents/matter-32/from-20/Dutra Notice of Joinder and Demurrer.pdf"
+    "source": "/documents/matter-32/from-20/Dutra Notice of Joinder and Demurrer.pdf",
+    "note": "Advanced to Aug 28 by stipulation; vacated as moot by Aug 29, 2026 Whitman order."
   },
   {
     "id": "20-deadline-7",
