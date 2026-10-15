@@ -1,0 +1,1608 @@
+===== page 01 =====
+CLINICAL ASSESSMENT TOOLS INCLUDE:
+
+HOPE clinicians are trained on a variety of clinical assessment tools. The most commonly
+administered tools pulled into the CITP and Interim Assessment Reports, along with clinical
+interpretation, include the Sex Offender Treatment Readiness Scale (SOTRS - provided in
+screener package), the Criminal Sentiments Scale-Modified (provided in screener package), the
+LS/CMI (clinician administered), the STABLE-2007 (clinician administered), and the LOOK
+Assessment (clinician administered during the initial evaluation). Please note that the LOOK is
+
+only administered one time throughout the entirety of the clients’ time at HOPE.
+
+Other clinical assessment tools that can be administered, if clinically indicated, include the
+Bumby-Molest Scale, Bumby-Rape Scale, the Miller Social Intimacy Scale (MSIS), the UCLA
+Loneliness Scale, the Screening Scale for Pedophilic Interests (SSPI-2 - reserved for those who
+have committed at least one sexual offense against someone younger than 15-years old, based on
+self-report or criminal charge, and administered once); the Child Pornography Offender Risk
+Tool (CPORT - reserved for adult males with Child Sexual Exploitation Material (CSEM)
+offenses), the Sex Offender Treatment Intervention and Progress Scale (SOTIPS), the Desistence
+for Adolescents who Sexually Harm (DASH-13) tool, the Youth Needs and Progress Scale, the
+DSM-5 Cross-Cutting Measure; the University of Rhode Island Change Assessment (URICA),
+the Substance Abuse Subtle Screening Inventories (SASSI), Modified Mini Screen, Brief
+Situational Confidence Questionnaire, the Personality Inventory for the DSM-S5 (PID-S), the
+Perceived Stress Scale, and Brief-COPE.
+
+CLINICAL INTERPRETATION GUIDELINES (CLINICAL TOOLS)
+These are specialized measures designed to help assess treatment progress and or to identify
+sexual interest and arousal. In most cases, completion of one or more such tests can be a
+
+requirement to advance through the various stages of the treatment program.
+
+SOTRS:
+
+The SOTRS helps to identify whether the client is ready for treatment now, moderately ready for
+treatment, somewhat ready for treatment, or not ready for treatment and in need of pre-
+treatment.
+
+a. To score measure, simply add up all items and sum to obtain a total score
+
+91
+September 23, 2024
+
+CONFIDENTIAL
+HOPE_000315
+===== page 02 =====
+b. Interpretive guidelines are provided in TA
+
+CRIMINAL SENTIMENTS SCALE-MODIFIED:
+The Criminal Sentiments Scale-Modified (CSS-M) is a 41-item self-report measure designed to
+assess criminal attitudes organized into the following three content areas: (a) respect for the law
+and criminal justice system, (b) Tolerance of law violations; and (c) Identification with criminal
+others. The original CSS was rated on a 5-point scale until the test developers reworded several
+of the original items for clarity and changed the rating scale from five points to three points (1 =
+disagree, 2 = uncertain, 3 = agree) to form the CSS-M scale.
+a. Please refer to the Criminal Sentiments Scale-Modified Scoring Key to determine the
+specific scores which correspond to Agree, Undecided, or Disagree.
+b. Clinician adds up all items and reports total score. Subscale interpretation is not required
+c. Total score Interpretation is as follows
+a. 22 and Below = Low level of antisocial attitudes
+b. 23-36 = Moderate level of antisocial attitudes
+
+c. 37 += High level of antisocial attitudes
+
+THE LOOK ASSESSMENT:
+
+The LOOK Assessment is a computer-based idiographic assessment of sexual interests,
+including pedophilic sexual interest, which generates data for the preferences of different age and
+gender categories. LOOK combines a participant’s opportunity to report his sexual preferences
+along with having three (3) covert viewing time validity measures. LOOK incorporates an anti-
+feigning tool that requires participants to look at pictures and make a decision concerning sexual
+attractiveness. As with any single assessment, the results of the LOOK should not be used in
+isolation to determine the presence or absence of any specific sexual interest. Click here
+
+https://sites.google.com/a/almaxconsulting.com/hope/frequentl y-asked-questions/assessment-
+
+process/look-assessment for YouTube tutorials on how to administer and score the LOOK.
+
+BUMBY - MOLEST SCALE:
+The MOLEST scale (Bumby, 1996) is a 38-item self-report measure of cognitions, assumptions,
+and or beliefs supportive of sexual offending against children. Higher scores represent more
+
+justifications, minimizations, rationalizations, and excuses for sexual activity with children. To
+
+92
+September 23, 2024
+
+CONFIDENTIAL
+HOPE_000316
+===== page 03 =====
+score measure, simply add up all items for total score. Scores over 60 are considered clinically
+dysfunctional (Nunes, Pettersen, Hermann, Looman, & Spape, 2014); that is, are indicative of
+
+attitudes and beliefs that are supportive of sex with children.
+
+BUMBY - RAPE SCALE:
+
+RAPE scale (Bumby, 1996) is a 36-item self-report measure of cognitions, assumptions, and/or
+beliefs supportive of sexual offending against adults. Higher scores indicate more justifications,
+minimizations, rationalizations, and excuses for rape. Scores over 76 are considered clinically
+dysfunctional. To score measure, simply add up all items for total score. Scores over 76 are
+considered clinically dysfunctional (Nunes, Pettersen, Hermann, Looman, & Spape, 2014); that
+
+is, are indicative of attitudes and beliefs that are supportive of rape.
+
+SARATSO AUTHORIZED RISK ASSESSMENT TOOLS:
+
+HOPE is responsible for ensuring all clients convicted of committing a sexual offense are
+
+evaluated in accordance with SARATSO policy.
+
+Static and Dynamic Risk Factors (DRFs) are factors statistically associated with increased
+
+recidivism risk and thus are targets for treatment.
+
+STATIC-99R
+
+Registered Sex Offenders (PC 290)— who are on formal supervision will have a completed
+Static-99R (provided by probation or parole) that will be reviewed and verified during the
+individual’s onboarding. The Static-99R is an actuarial instrument designed to assist in the
+prediction of sexual and violent recidivism for clients. The Static-99R has shown moderate
+accuracy in ranking clients according to their relative risk for sexual recidivism. Furthermore, its
+accuracy in assessing relative risk has been consistent across a wide variety of samples,
+
+countries, and unique settings.
+
+STABLE-2007/ACUTE-2007
+
+The STABLE-2007 is an empirically informed, cross-validated, risk assessment instrument that
+relies on changeable factors to estimate risk of sexual recidivism. Hanson and Harris (2000,
+2007) developed this risk assessment instrument based on a large prospective study from Canada
+
+and the states of Alaska and Iowa with a total sample size of 997 sexual offenders. The presence
+
+93
+September 23, 2024
+
+CONFIDENTIAL
+HOPE_000317
+===== page 04 =====
+of dynamic risk factors is not considered to aggravate an individual’s risk; instead, these factors
+help identify protective factors or treatment targets that could potentially reduce or influence
+one’s risk to engage in sexually harmful/illegal or problematic behavior. The STABLE-2007 is
+designed to track changes in different types of dynamic factors, which are potentially
+
+changeable, but persist in the long term (e.g. alcoholism, intimacy deficits, etc.).
+
+The ACUTE-2007 is a specialized risk assessment designed to track changes in different types of
+acute dynamic factors, which can change in the short term, such as weeks or days, and signal the
+
+timing of new offenses (e.g. drunkenness, acute distress, etc.).
+
+LEVEL OF SERVICE /CASE MANAGEMENT INVENTORY (LS/CMI1)
+
+The Level of Service Case Management Inventory (LS/CMD) is a risk and need assessment tool.
+The General Risk/Need score reflects the literature’s “big eight” risk/need factors, which are
+Criminal History, Education/Employment, Family/Marital, Leisure/Recreation, Companions,
+
+Alcohol/Drug Problem, Pro-criminal Attitude/Orientation, and Antisocial Pattern.
+
+REPORT DEADLINES
+We are held to strict deadlines for all assessments and reports. See the timeline for the completion of
+reports below:
+e Comprehensive Individualized Treatment Plan (CITP)-Due 30 calendar days from
+the initial referral (received date)
+e Sex Offender Specific Evaluation (SOSE)-Due 10 calendar days after the second
+clinical interview hour
+e Psychosexual Evaluation-Due 10 calendar days after the second clinical interview hour
+e Substance Abuse Assessment Report-Due 10 calendar days after the second clinical
+interview hour
+e Mental Health Assessment Report-Due 10 calendar days after the second clinical
+interview hour
+e Annual Assessment Report-Update once per fiscal year (July 1 to June 30).
+e Interim Report-Update once per fiscal year (July 1 to June 30) or as needed if
+
+additional measure(s) are clinically indicated.
+
+94
+September 23, 2024
+
+CONFIDENTIAL
+HOPE_000318
+===== page 05 =====
+DISCHARGE REPORTS
+
+Discharge (DC) reports are to be completed for every client (CLT) who has entered treatment
+and subsequently is no longer participating in treatment at HOPE.
+
+This includes but is not limited to clients who:
+® Client completes their required parole/probation period
+® Return to Prison
+® At the request of supervising officer/agent
+® Transfer to another contract/county
+
+® Deceased
+
+All DC summaries are to be completed in TA within five (5) calendar days of the Controlling
+Discharge Date (CDD). DC summaries must be approved by the supervisor on day seven (7) and
+received by our Stakeholders on day ten (10). If a client was never seen by HOPE’s clinical team
+or if the client was referred for assessment only, the local OC or OM are to create an
+administrative discharge report.
+
+The clinical Discharge Summary should include an accurate representation of the CLT’s entire
+experience in treatment, not just the current clinician’s experience. Clinicians are to perform a
+thorough chart review and consult with other clinicians to obtain an accurate picture of a
+particular client’s journey in treatment. DC summaries require an updated risk profile as assessed
+by utilizing validated assessment tools. All known risk factors or high-risk behaviors must be
+reflected in the discharge summary, as well as the most recent polygraph results, reason for
+conclusion or termination of contracted services, a Diagnostic and Statistical Manual of Mental
+Disorders (DSM) diagnosis, progress in treatment goals or lack thereof; familial or prosocial
+supports at time of discharge, and recommendations for continued therapy and management of
+
+sexual deviancies or risky behaviors.
+
+Removal from Group Collection:
+
+If a CLT is unavailable for treatment for more than two (2) weeks, the Office Manager (OM) will
+remove the CLT from their assigned group collection, which will allow room for a new referral
+or a CLT requesting group transfer. Upon return to treatment, the OM will reassign the CLT to
+
+his/her former group collection, if available. If the CLT’s former group is not available, then the
+
+95
+September 23, 2024
+
+CONFIDENTIAL
+HOPE_000319
+===== page 06 =====
+OM will reassign the CLT to another group collection, preferably with their former clinician. If
+the CLT’s former clinician does not have an opening in any of his or her groups, then the OM
+will reassign the CLT to another group collection, cc’ing the former clinician and newly assigned
+
+clinician to ensure continuity of care.
+
+Discharge Summary Example:
+
+Mr. Doe is a 56-year-old Caucasian, heterosexually identified man who was referred by the
+California Department of Corrections and Rehabilitation (CDCR) for a 290-risk assessment and
+sex offender treatment. On November 28, 2012, Mr. Doe was convicted of Indecent Exposure,
+with prior convictions of Indecent Exposure and Solicit a Lewd Act on July 17, 1992 and July
+18, 1995.
+
+Diagnostic and Clinical Impression
+
+At the time of Mr. Doe’s intake evaluation on May 1, 2018, his assessor diagnosed him with
+cocaine dependence, uncomplicated, and other stimulant dependence,
+
+uncomplicated. Throughout treatment at HOPE, Mr. Doe never spoke of symptoms consistent
+with any other diagnosis; however, near the end of his treatment, he reported that he was going
+to see a psychiatrist for symptoms consistent with schizophrenia, bipolar type. While at HOPE,
+Mr. Doe was never outwardly symptomatic, and he was not on medications for this condition.
+Mr. Doe began treatment at HOPE on May 1, 2018, and he was assigned to a High-Risk Sex
+Offender (HRSO) group, in which he attended group sessions twice a week and individual
+sessions once per month. Mr. Doe missed seven appointments during the period in which he
+received treatment. He actively engaged in treatment sessions and he made progress towards his
+treatment goals. Specifically, Mr. Doe occasionally engaged in verbal impulsivity and vulgarity,
+and he often presented with heightened anxiety and excitability; however, despite these areas of
+concern, he was able to demonstrate progress by implementing behavioral control skills in
+
+session.
+
+Furthermore, Mr. Doe demonstrated insight and knowledge of the materials presented in
+sessions. He was also able to identify the skills needed to initiate and maintain healthy
+relationships with prosocial peers and family members. He was also able to utilize his emotion
+
+regulation skills and maintain his sobriety. In regards to substance use, Mr. Doe identified past
+
+96
+September 23, 2024
+
+CONFIDENTIAL
+HOPE_000320
+===== page 07 =====
+use as a precipitating factor to his indecent exposures, and he acknowledged that if he were to
+relapse, he would increase his likelihood of repeating a sexual offense. Mr. Doe denied urges to
+
+return to substance use, and he maintained his sobriety throughout his required parole period.
+
+When reviewing his discharge plans, Mr. Doe reported that he would continue to abide by three
+of the acronyms learned in sessions. First, to avoid impulsivity, Mr. Doe reported that he would
+STOP, THINK, ACT, and REVIEW (STAR) his thoughts and behaviors. To avoid risky
+situations, Mr. Doe said he would avoid SEEMINGLY UNIMPORTANT DECISIONS (SUDS),
+and last, to ensure he is engaging in healthy relationships, he reported that he would remember
+that there must be CONSENT, EQUALITY, RESPECT, TRUST, and SAFETY (CERTS) before
+engaging in sexual relationships. This clinician encouraged Mr. Doe to continue to practice these
+skills, as well as maintain his sobriety, as he completed his required parole period and was no
+longer eligible for the HOPE program. Mr. Doe’s discharge date was 12/15/18. Monthly
+
+maintenance therapy was suggested.
+
+Risk to Re-Offend
+
+Scientific research has consistently shown that actuarial methods of risk assessment are more
+accurate than unstructured clinical judgements alone in predicting re-offending among
+individuals released into the community. Actuarial estimates are not perfectly accurate, but they
+do provide the best available estimate of risk for future sexual and non-sexual violence over the
+
+long-term.
+
+Mr. Doe's overall general Risk/Need Total score derived from the LS/CMI was 27, which fell in
+the high level. Comparable to others, individuals with the same LS/CMI score as Mr. Doe have
+
+approximately 44% chance of re-offending within one year.
+
+The STABLE-2007 can be combined with the Static-99 to provide a composite assessment of
+risk/needs, and to produce estimates of sexual recidivism, sexual recidivism with sexually
+motivated breaches, violent recidivism, and any criminal recidivism both with and without
+breaches. Mr. Doe's composite assessment placed him in level [Vb for supervision and
+intervention using the standardized risk framework. Individuals at Level IVb are
+
+considered Well Above Average Risk using the standardized risk level framework. They often
+
+97
+September 23, 2024
+
+CONFIDENTIAL
+HOPE_000321
+===== page 08 =====
+have many criminogenic needs, most of which are chronic and severe. Access to prosocial
+
+resources and strengths are likely limited due to significant barriers.
+
+The rate of sexual reoffending for individuals in Level IVb is about three to four times the
+average rate of reoffending for the overall population of individuals convicted of sexually
+motivated offenses. Most will transition to Level III after a sufficient dose of treatment, positive
+life changes, or should they remain offense-free in the community for 10 to 15 years.
+
+The risk of reoffending can be described using risk ratios, which summarizes the risk of a
+particular Level compared to the average individual convicted of a sexual offense. On average,
+individuals in Level IVb are expected to have roughly three to four times the rate of recidivism
+
+compared to the average individual convicted of a sexually motivated offense.
+
+The risk of Mr. Doe offending can also be described by examining the absolute rates of
+reoffending over a time period. Out of 100 individuals convicted of sexually motivated offenses
+with the same risk profile as Mr. Doe, Level IVb would be expected to recidivate sexually at a
+rate of 21.7% after 1 year, 28.8% after 3 years, and 33.7% would be expected to recidivate
+
+sexually (including sexually motivated breaches) over 5 years.
+
+Recommendations
+
+It is recommended that Mr. Doe continue monthly maintenance therapy to assist in the practice
+of healthy coping skills and maintaining his sobriety. He was also encouraged to gain a sponsor
+and attend a support group, such as Alcoholics Anonymous (AA) and Narcotics Anonymous
+(NA). Lastly, since Mr. Doe endorsed symptoms consistent with a mental health diagnosis
+shortly before discharge from HOPE, he was encouraged to follow up with a psychiatrist; an
+
+appointment was made and confirmed before discharge.
+
+Thank you for this referral. If you have any questions, please do not hesitate to ask.
+
+County Probation Clients:
+
+Discharge summaries are to be completed for every client that leaves treatment. This includes
+clients that graduate from treatment and for those that are discharged for other reasons like non-
+compliance or a probation violation. The discharge summaries are to be completed in TA and the
+individual supervisor should be notified that the discharge summary is ready for review. This
+
+98
+September 23, 2024
+
+CONFIDENTIAL
+HOPE_000322
+===== page 09 =====
+must occur within five (5) business days of the client’s last session. The discharge summaries
+
+are to be sent to the client’s supervising officer within ten (10) days of the client’s last session.
+
+PROOF OF PRACTICE (POP)— APPOINTMENT SLIPS
+
+Per policy, all clients receive an appointment slip for every appointment they are scheduled to
+attend. These are commonly known as Proof of Practice slips. Clients receive one appointment
+slip for their group schedule. Repeating group appointments only require one original
+appointment slip. The client only needs to receive a new appointment slip if their group schedule
+
+changes and/or if they request a new one.
+
+A client is to receive a new appointment slip for every individual session, unless the client is
+being seen weekly, on the same/day time (i.e., recurrent sessions). In this case, the client only
+
+receives one appointment slip that states this is a repeating appointment.
+
+It is imperative that every new appointment is accompanied with an appointment slip. The client
+receives the white copy and HOPE keeps the yellow copy. Proof of practice slips are used as
+reminders for upcoming appointments and proof of documentation that is often referenced for
+verification that the client was notified. Once both copies are signed by the client and
+clinician/operation member providing the slip, the POP is scanned and uploaded in the client’s
+
+chart under documents in TA.
+
+Policy
+
+Individual appointments should be scheduled in a consistent fashion. If a participant is to be seen
+the 3 Friday of every month, it should not change for the most part, unless rescheduled due to
+the appointment falling on a holiday. If a participant needs to move their appointment due to
+work or school change, the request MUST come from their supervising authority if the assigned
+clinician is unable to accommodate their schedule. In general, clients should attempt to schedule
+external appointments around their mandated treatment, which demonstrates their ability to
+
+problem solve and practice assertive communication skills with their employer.
+
+Procedure Specifics
+Appt. slips- Participants will get an appointment slip for individual sessions, their initial group
+
+session, group changes, polygraph examinations, and intake assessments. For individual
+
+99
+September 23, 2024
+
+CONFIDENTIAL
+HOPE_000323
+===== page 10 =====
+sessions, it is preferable that the clinician write a slip for the next session at the end of the current
+
+session and have the participant sign it so the clinician can upload it into TA chart.
+
+Polygraph slips- As mentioned above, from time to time, participants will get notification slips
+for polygraphs. Polygraphs are mandatory. If a participant complains that they cannot come at
+that date and time scheduled, they must speak to their supervising authority and the supervising
+authority should request the appointment be changed or excuse them 72-business hours in
+advance. As mentioned above, the POP slip includes a portion for the participant to retain, and a
+portion for the file. The POP should be scanned or filed immediately to help with proof that the
+
+client was notified should they be absent.
+
+Refusal to sign appointment slips- If a participant refuses to sign a slip, please write “refused to
+sign” on the slip and scan/file the slip into the client’s TA file. Include a collateral note outlining
+
+your discussion with the client in his or her chart.
+
+SIGN-IN SHEETS
+
+FEDERAL CLIENTS
+
+Per the US Federal Government, all federal clients must write the time of their treatment
+appointment in the space provided on the sign-in sheet. All sign-in sheets are to be signed and
+dated by the treating clinician and turned in to the Office Manager at the end of the month. If a
+client is absent from treatment, it should be noted if the absence is excused or a no-show on the
+sign-in sheet, on the right column. Please note that all no-shows must be excused by the
+supervising officer three business (3) days (Monday-Saturday) or 72 business hours prior to the
+session, in writing. Examples of excused absences include medical emergencies, prescheduled
+medical appointments, notification of incarceration or absconding supervision, and employment,
+but ONLY if HOPE’s schedule were to interrupt a client’s consistent work schedule, verified by
+
+their supervising officer or agent.
+
+CLIENT ATTENDANCE AND ABSENCES
+
+Consistency in treatment is paramount to managing risk and successful completion of a treatment
+
+program. Clients are required to attend treatment regularly and at the frequency per their
+
+100
+September 23, 2024
+
+CONFIDENTIAL
+HOPE_000324
+===== page 11 =====
+treatment plan. Unless the session is excused 72 business hours in advance for an approved
+
+reason by the supervising officer or agent, the missed session is to be marked as a “No-Show.”
+
+When a probation client reschedules their session to a new day/time, they are only billed for the
+one session they rescheduled. For example, if a client’s upcoming session conflicts with a funeral
+for a family member, the client can request a switch 72-business hours in advance; however, the
+session can only be changed as a courtesy if the clinician has the bandwidth to reschedule their
+appointment within the same week. In this case, the client would only charged for one
+appointment when the protocol is followed correctly. If the clinician does not have the
+availability to reschedule the appointment, then the client would be marked as a no-show should
+
+they not attend the session.
+
+Any missed session requires a Missed Session Alert (MSA). See Missed Session Alert section to
+
+learn about his process.
+
+EXCUSED vs. NO-SHOW ABSENCES
+Absences can be considered excused if the supervising officer or agent notifies HOPE 72 hours
+
+in advance of the following qualified reasons:
+® Status Updates (i.e., In custody, absconded, on medical leave, transferred, or discharged)
+® Medical emergency, defined by being hospitalized or confirmation of contagious
+diseases (e.g. COVID-19 infection).
+® Prescheduled medical appointments
+Any other reasons for not attending treatment are considered No-Shows, even if “excused” by
+
+their supervising agent or officer. An MSA should include details outlining the client’s reason
+
+for his or her absence.
+
+MISSED SESSION ALERTS
+
+HOPE Program will notify the supervising officer of any missed appointments by generating a
+written notification, known as a Missed Session (MSA) Alert, by the close of business on the
+same day of the missed absence. All missed appointments (excused or no show) are generated in
+
+TA and sent directly to the assigned supervising officer or court.
+
+101
+September 23, 2024
+
+CONFIDENTIAL
+HOPE_000325
+===== page 12 =====
+If a client has two (2) no-show absences, the treating clinician will place the client on a
+behavioral contract and request a meeting with the client and his/her supervising officer to
+address the client’s inconsistency in attendance. This containment meeting is typically held at the
+client’s individual session time. Upon completion of the contract, the treating clinician will email
+a copy to the supervising officer and a copy will be uploaded to the client’s file in TA. Ifa client
+continues to be non-compliant with attending his or her mandated treatment after signing the
+contract, s/he can be terminated from the HOPE Program or violated by the supervising officer
+for noncompliance with mandated treatment. Once or if violated, the process starts over and the
+
+client will need to be placed on another contract should s/he miss another three sessions.
+
+STATUS ALERTS
+A Status Alert is a formal document that reflects an incident or disclosure that took place with a
+client. Status Alerts (SA) are sent to the supervising officer or agent before the close of business
+on the same day the event or disclosure took place, or when the clinician learns about the
+problematic or risky behavior. A courtesy phone notification can also be requested at HOPE’s or
+the supervising officer’s discretion. Phone calls made to or received by officers or agents are to
+be entered into a collateral note in the client’s electronic file. Problematic or risky behavior
+includes, but is not limited to, the following:
+
+e Suspected drug or alcohol use
+
+e Aggressive behavior and or threats
+
+e Suspected violation of the terms of probation or parole
+
+e Any disclosure or concerns about high-risk behaviors
+
+e@ Problematic behaviors in group or in the clinic
+
+e Contact with law enforcement or police for whatever reason
+
+e Contact with emergency services or Adult Protective Services (APS) or Child Protective
+
+Services (CPS)
+
+A Status Alert can be emailed to the client’s supervising officer any time the client is engaging in
+behavior that is deemed counterproductive to treatment. Sending a status alert should be
+
+discussed with your immediate supervisor, and the site’s Clinical Director (CD), if necessary.
+
+102
+September 23, 2024
+
+CONFIDENTIAL
+HOPE_000326
+===== page 13 =====
+Upon advising one’s supervisee to send a high-risk status alert for a client (in the case of a
+probation/parole violation, re-offense, an egregious program violation, etc., the supervisor must
+
+inform the site’s Clinical Director (CD) of this decision.
+
+PROGRESS NOTES
+Any and all contact with a client is documented and all progress notes are to be completed
+within 24 hours from the date of service.
+
+The note types HOPE uses are:
+® Individual Progress Note
+® Group Progress Note
+
+® Collateral Note
+
+INDIVIDUAL PROGRESS NOTE
+The individual progress note is completed using the GIRP format. The GIRP format is best for
+active therapy sessions working off a detailed treatment plan. The I and R can be combined for
+
+simpler writing.
+
+GOAL: The client’s long-term goal and current focus of therapy. There may be more than one.
+The goals can be broad (e.g. reduce depression) or specific (e.g. increase daily communication
+
+with spouse) and may change throughout treatment.
+
+INTERVENTION: Therapeutic interventions, actions, or methods used by the therapist to
+address goals and objectives during the session. What therapist did. This may be an interpretation
+offered, a clarification or information given, homework assigned, a challenge to narrow thinking
+about an issue, formal problem solving around the event, empathetic/supportive behavior on your
+part, functional analysis of a situation, a normalizing comment, or whatever is appropriate from
+the therapeutic conceptualization (i.e., theoretical approach) you are using. Also, included may
+be the therapist's understanding about the client's problem, the therapist's working hypotheses,
+
+the general content and process of the session.
+
+RESPONSE: The response of the client to each of the therapist’s interventions listed, as well as
+
+progress made towards treatment plan goals and objectives. This is also where the clinician may
+
+103
+September 23, 2024
+
+CONFIDENTIAL
+HOPE_000327
+===== page 14 =====
+add client's quotes, client's actions (e.g., yelled, cried, avoided), and client presentation (e.g., sad
+
+affect). Also included may be the client's current response to the treatment plan.
+
+PLAN: Document what is going to happen next. What is the therapist and/or the client planning
+to do between sessions or during their next session? What is the therapist's plan for future
+treatment? What are the next steps in achieving treatment goals and objectives? What in the
+treatment plan needs revision? When is the next session date? The therapist might note whether
+they gave homework assignments, have topics to follow up on, or have actions to take before the
+
+next session (i.e., those can be entered here as reminders).
+
+INDIVIDUAL NOTE TEMPLATE EXAMPLE:
+Goal: To review and practice healthy coping skills and Cognitive Behavioral Therapy (CBT)
+
+techniques in response to endorsed stressors.
+
+Intervention/Response: Mr. Doe arrived to his scheduled session on time, and he presented with
+an anxious mood and congruent affect, evidenced by self-report and psychomotor agitation.
+Discussion focused on Mr. Doe's recent reunion with his brother, whom he contacted via
+Facebook and text. This writer asked client whether he was allowed to use Facebook, as she
+believed it was against his conditions. Client reported that his supervising officer was aware.
+This clinician encouraged Mr. Doe to clarify with his officer as this writer would have to follow
+up; aSTATUS ALERT was sent. Discussion continued by Mr. Doe reporting that his brother
+was dying of stage 4 liver cancer and cirrhosis of the liver. Mr. Doe also learned that his mother
+has no interest in reconnecting with him as a result of his criminal history. Mr. Doe processed
+his emotions and he endorsed feeling shame over his history of poor decision making.
+Empathetic and reflective feedback was given, and Mr. Doe was asked to challenge his negative
+self-talk by finding evidence against his cognitive distortions; client was receptive. Lastly, Mr.
+Doe and this writer discussed healthy coping skills and he practiced grounding techniques in
+
+session.
+
+Plan: To review his conditions and practice at least three healthy coping skills before his next
+scheduled session, which is on Monday, 2/4/19. Mr. Doe was also scheduled to take his
+
+maintenance polygraph examination on Saturday, 2/2/19.
+
+104
+September 23, 2024
+
+CONFIDENTIAL
+HOPE_000328
+===== page 15 =====
+Risk factors reported: Violence: NONE; Suicidal: NONE; Engaging in risky or harmful
+sexual behaviors: NONE; Substance Use/Abuse: NONE.
+
+GROUP PROGRESS NOTE
+
+The group progress note is typed up in two paragraphs. The first paragraph should focus on the
+number of group attendees, followed by a brief overview of the topic (s) discussed during group
+session, while the second paragraph should focus on the individual group member being charted.
+
+Please note that no other client names or initials should be included in a client’s chart.
+
+Minimal Expectations in Each Group Entry:
+
+As noted above, the group clinician will include the number of clients that attended session (e.g.,
+8 out of 9 clients) and provide an overview of the group. The group summary should include
+whether check-ins were performed, the topic (s) discussed (include phase of treatment and
+module), whether homework was assigned, and any significant announcements (e.g., group
+
+changes, polygraph reminders, or review of group rules, to name a few).
+
+The second paragraph must include the client’s presentation (i.e., mood and affect), their level of
+participation, their progress or lack of knowledge or insight in response to the curriculum
+presented, any homework assignments, and whether any risk factors were present. If any risk
+factors were present, the clinician will document the risk factors and any interventions applied,
+fill out the bolded template at the bottom of the progress note, and report whether a STATUS
+ALERT was sent.
+
+GrouP NOTE TEMPLATE EXAMPLE:
+
+7 out of 9 clients were present and on time for their scheduled group session. Today's session
+began with brief check-ins, review of last week's discussion on cognitive restructuring (Core
+Block 1, Module 5), and an in-class assignment (Homework 1.1.1) on identifying the
+thought(s), feeling(s), and behavior(s) associated with a triggering event. Lastly, this writer
+announced that the time of group session would be changing from 1:00-2:30 pm to 1:30-3:00
+pm, starting in two weeks; client's reported that they were okay with the change and proof of
+
+practices were provided.
+
+105
+September 23, 2024
+
+CONFIDENTIAL
+HOPE_000329
+===== page 16 =====
+Mr. Doe arrived to his group session on time, and he presented with a euthymic mood and
+congruent affect. Mr. Doe needed to be redirected on a couple occasions for interrupting his
+peers, but he actively engaged in discussion and was commended for demonstrating knowledge
+and insight when presenting his in-group assignment. Mr. Doe was encouraged to practice
+mindfulness and the behavioral control skills discussed during session. Mr. Doe appeared
+receptive to this writer’s suggestion and reported that he would use his diary card to track his
+
+emotions over the weekend.
+
+Risk factors reported: Violence: NONE; Suicidal: NONE; Engaging in risky or harmful
+sexual behaviors: NONE; Substance Use/Abuse: NONE.
+
+COLLATERAL NOTES
+
+Collateral Notes are another type of progress note utilized by the HOPE Program. Clinicians
+must create a collateral note in a variety of situations including any communication with an
+outside party (supervising officer, attorney, family member, etc.). The format for the collateral
+note can be a general narrative of what occurred. If the collateral contact is made via email, the
+body of the email, including the time stamp, is copied and pasted into the collateral note. For
+more detailed information on how and what to collateral, see steps 1-7 below. Please note, at a
+minimum, monthly collateral contact via phone or containment meeting with the supervising
+officer is required for every client on Probation or Parole.
+
+How and What to Collateral
+
+1. Communication with anyone outside of HOPE (e.g., parole or probation officers, clients,
+client's family or friends, attorneys) must be entered into a collateral note or via
+conversations in the client’s chart in TA.
+
+2. If the communication occurred in person or over the phone, paraphrase the conversation
+in your collateral note.
+
+3. If the communication occurred via email or text message via RingCentral (never provide
+your personal cell phone number to clients), then copy and paste the whole text, to
+include the timestamp, date, and time of the correspondence in your collateral.
+
+4. If emails include multiple client names, then omit all other client information and leave
+
+the name of the client you are documenting on in your collateral entry. Continue to do
+
+106
+September 23, 2024
+
+CONFIDENTIAL
+HOPE_000330
+===== page 17 =====
+this for each client discussed in your correspondence. Preferably, each client
+communication should be on a separate thread.
+
+5. Do I collateral internal conversations with other HOPE staff? The answer is no, unless
+another staff was looped into your email to someone outside of HOPE.
+
+6. What if a client calls to ask a simple question? The answer is that no matter how short or
+lengthy the call, it must be entered into a collateral note.
+
+7. Lastly, when labeling collateral notes, be as specific as possible, although brief. For
+example, you would not label a note as a "phone call," as this does not provide enough
+detail to identify the contents in that entry. Instead, in this example, you could label it as
+"Phone call with AOR re: MSA." Other examples could be "Updated CDD," or "Client
+
+won't make it to group today."
+
+CLIENT REPORTS VIOLATION OR BREAKING THE LAW
+To ensure compliance with the Containment Model and our agreements and contracts with our
+stakeholders, any information disclosed that is a violation of the law and/or their conditions of
+
+parole/probation is reported to the supervising officer.
+
+If a client reports in the waiting room or in session that they have violated their Terms and
+Conditions of Probation or Parole, or that they have broken the law, then we must report this
+
+information to the supervising officer or agent.
+
+Procedure
+
+Do not dismiss the client from the session, instead, continue with treatment. Ask the client if they
+reported their violation to their supervising officer. Remind them of the service agreement they
+signed upon entering treatment and of the Containment Model. This information will be reported
+to their supervising officer in a Status Alert. A Status Alert is warranted and is to be submitted
+on the same day the incident was disclosed to the agency. Be clear, concise, and direct in your
+documentation; state the facts. The progress note must also capture the disclosure and narrative
+of what events took place in the session and/or waiting room. Include what advice and
+
+information was provided to the client during the discussion.
+
+107
+September 23, 2024
+
+CONFIDENTIAL
+HOPE_000331
+===== page 18 =====
+COLLECTING PAYMENT
+
+HOPE Program is committed to providing accessible and affordable services to all our clients.
+Following the service agreement outlined in the opening paperwork packet, all self-pay clients
+are obligated to make full payments for services at the time of service. Self-pay clients are
+defined as individuals who receive voluntary or mandatory services and who are required to pay
+at least a portion (i.e., up to 100%) of their treatment service fees. CDCR clients do not pay for
+
+their treatment and Federal Probation clients occasionally pay a co-pay for their treatment.
+
+The process of collecting payment involves collaboration between our clinical and operations
+teams. Either before or at the time of the initial appointment, HOPE’s operation team shall
+describe the fees for services to the client. If the client is a minor or lacks the capacity for
+consent, HOPE’s operation team shall inform the parent or legal guardian of all fees. In the case
+of an emergency, the clinician shall inform the client of any fees as soon as is practical after
+
+rendering the service.
+
+A variety of payment options are accepted, including Credit Cards (CC), debit cards, certified
+checks, money orders, and cash. Clients without CCs or bank accounts will have the option to
+pay via Check, Cashier’s Check, and Cash. If paying via CC, the client is required to provide a
+signed Credit Card Authorization Form for auto payments, which will be processed when the
+client provides the Office Coordinator (OC) or Office Manager (OM) with the CC information.
+If the client does not possess a CC, they must pay dues before entering each session. Before
+sessions, the assigned or covering clinician will coordinate with the front desk (CC or OM) to
+confirm receipt of the client's payment. The messaging to clients when requesting that they pay
+their balance, in full, is to promote accountability and prevent the financial burden associated
+
+with accruing significant balances at HOPE.
+
+If a client does not pay for services as agreed and if HOPE wishes to use a collection agency to
+collect the fees, HOPE Program will first give written notice to the client that a collection agency
+will be employed, but that the client will first be allowed a reasonable opportunity to make
+prompt payment. The written notice shall specify a date by which the collection agency will be
+employed if prompt payment is not received. HOPE shall limit information provided to the
+
+collection agency to that which is essential to recover the fees.
+
+108
+September 23, 2024
+
+CONFIDENTIAL
+HOPE_000332
+===== page 19 =====
+Finally, it may also be important to know that historically, despite clients being discouraged from
+accruing a balance, sometimes clients would accumulate one and HOPE would immediately
+place them on a behavioral contract and financial agreement if their balance reached $300.00;
+however, effective January 1, 2024, HOPE Program no longer permits the accumulation of
+financial balances for self-pay clients. If a former client returns to treatment and attends their
+first session without payment, then we can see them for the day, and emphasize that they will
+need to return the following week and pay their balance (current balance and next appointment)
+in full to be seen. If they return without payment, then they are dismissed, marked as a no-show,
+and discharged for non-payment. For more information on collecting client balances, visit the
+
+FAQ’s here: https://sites.google.com/a/almaxconsulting.com/hope/frequently-asked-
+
+questions/how-do-i-collect-outstanding-client-balances.
+
+SCHOLARSHIPS
+
+When a client enters the HOPE Program, unless otherwise noted, they are expected to pay the
+full fee for treatment. Scholarships are based on financial need and discussed when the client
+expresses financial hardship causing them to be unable to pay for treatment. When a client
+applies for a scholarship, they must first complete the budget homework and discuss the
+homework with their individual clinician. If after completing the homework the client still
+demonstrates need for a scholarship, the client can fill out the scholarship application and
+provide the necessary documentation (pay stubs, tax returns, etc.) and turn the application in to
+their individual therapist. The treating clinician then passes the application along their immediate
+
+supervisor.
+
+For a client to be eligible for a scholarship they must demonstrate that they can maintain a
+zero balance for three (3) months prior to the scholarship being awarded. It generally takes
+three (3) weeks for a decision on eligibility for a scholarship.
+
+Clinical Artifacts by Client Type:
+The HOPE Program serves a variety of client types under several different contracts. While much
+
+of the clinical and administrative work is the same for all client types, there are some nuances and
+
+109
+September 23, 2024
+
+CONFIDENTIAL
+HOPE_000333
+===== page 20 =====
+differences between them. Please see below for a detailed account of clinical artifacts by client
+
+type.
+
+Federal Clients — Pretrial
+
+1. Group and Individual Attendance: Same day of service
+
+2. Group and Individual Notes: Due within 24 hours of services being rendered. See
+Documentation training for note templates
+
+3. Monthly Treatment Reports (MTRS): Due to your supervisor by the 3 of each
+month. See Documentation training for minimum requirements
+
+4. Quarterly Treatment Plans (QTPS): Due every 90 days. See Documentation training
+for template
+
+5. Sex Offender Specific Evaluation (SOSE): Only if ordered on the Prob 45 form. If
+ordered, the SOSE is due 10 calendar days after the date of the last clinical interview
+appointment
+
+6. Containment notes (CTM notes): Due 48 hours prior to the scheduled CTM. The due
+date is assigned to the clinicians’ task page in TA. All Federal Pretrial clients require a
+containment note each month. You are responsible for completing the CTM notes for all
+of your individual clients. If your client is in group only and you are the group facilitator,
+you are responsible for completing that note
+
+7. Discharge Summary: 5 calendar days from date of discharge
+
+Federal Clients — Post Conviction
+All clinical artifacts for this client type are the same as the ones listed above except for:
+1. Annual Risk Assessments (Update Stable/LSCMI): Yearly depending on the date of
+last update. Please refer to Stable/LSCMI training
+
+CDCR Clients — State Parole
+1. Group and Individual Attendance: Same day of service
+2. Group and Individual Progress Notes: Due within 24 hours of client’s session. See
+
+Documentation training for templates
+
+110
+September 23, 2024
+
+CONFIDENTIAL
+HOPE_000334
+===== page 21 =====
+Individualized Treatment Plan (ITP): ITPs are a quick version of the CITP designed to
+be used when standing up a new site. It includes risk scores and self-report measures but
+no clinician narrative. ITPs are due 10 days from the scheduled interview appointment.
+See Documentation training for template
+
+Comprehensive Individualized Treatment Plan (CITP): Due to supervisor 30 days
+from the day the complete referral was received from parole, not from the scheduled
+interview date. The due date is assigned to the evaluator’s task page by operations when
+the CITP is assigned. Please refer to CITP training for template and minimum
+requirements
+
+Containment notes (CTM notes): Due 48 hours prior to scheduled CTM. The due date
+is assigned to the assigned Clinician’s task page. Group facilitators are responsible for
+completing the CTM notes for CDCR clients. If you have a client that is in individual
+only, then you, the individual clinician, are responsible for completing the CTM note.
+
+Treatment Completion/Discharge Summary: 5 calendar days from date of discharge
+
+7. Interim Assessments: Each CDCR client is required to complete 4 assessments per
+
+fiscal year (July 1 through June 30). Two of those assessments must be the mandatory
+update of the Stable-2007 and LS/CMI. Yearly depending on the date of last update
+
+Probation Clients (non-Federal), Social Services, Attorney Referrals
+
+is
+2.
+
+Group and Individual Progress notes: Due within 24 hours of client’s session
+Monthly Treatment Reports (MTRs): Due to your supervisor no later than the 3" of
+each month, accounting for the previous month
+
+Annual Risk Assessments (Update Stable/LS/CMI): Yearly depending on the date of
+last update
+
+Psychosexual Evaluation: Due 10 days after the last interview appointment.
+
+5. Containment notes (CTM notes): Due 48 hours prior to scheduled CTM. The due date
+
+is provided when the CTM email goes out to clinicians. Probation client CTM notes are
+completed by the individual clinician
+
+Discharge Summary: 5 calendar days from date of discharge
+
+Private Pay Clients
+
+I:
+
+Psychosexual Evaluation: Due 10 days after the last interview appointment.
+
+111
+
+September 23, 2024
+
+CONFIDENTIAL
+HOPE_000335
+===== page 22 =====
+2. Group and Individual Progress notes: Due within 24 hours of services being rendered
+
+PERFORMANCE IMPROVEMENT PROCESS
+
+To ensure that we are providing quality care to our clients, All HOPE providers are responsible
+for documenting each client encounter completely, accurately, and on time. Clear and concise
+documentation is critical to forensic and clinical report writing as it vital to risk management and
+community safety. Accurate and timely documentation of all HOPE artifacts (e.g., client
+attendance, progress notes, alerts, and reports) will also help providers evaluate and plan the
+client’s treatment, mitigate malpractice risks, maintain contractual compliance, and ensure
+payment for the services rendered. The practice of good risk management should build on the old
+adage of four Cs: compassion, communication, competence, and charting. In cases where a
+HOPE employee struggles with completing their documentation within HOPE’s deadlines, staff
+
+will be placed on a Performance Improvement Plan (PIP).
+
+PERFORMANCE IMPROVEMENT PLAN (PIP)
+Purpose
+
+A performance improvement plan (PIP), also known as a performance action plan, is a tool to
+
+give an employee with performance deficiencies the opportunity to succeed. It may be used to
+
+address failures to meet specific job goals or to ameliorate behavior-related concerns.
+
+Initial Performance Concern
+
+When a performance concern is identified or brought to a supervisor’s attention the following
+procedures are intended to serve as a guide to supervisors while managing and developing
+employees with the task of executing their responsibilities. Some examples of performance
+concerns are: missing progress notes, status alerts, MTRs, interims, CITPs, or marking
+
+attendance.
+Follow these steps when addressing performance concerns.
+
+1. During the standing supervision appointment, the supervisor is to connect with the
+individual to address the concern within the same week the concern has been identified.
+
+If supervision has already passed, then a separate meeting is to be scheduled during the
+
+112
+September 23, 2024
+
+CONFIDENTIAL
+HOPE_000336
+===== page 23 =====
+same week. Addressing a concern in a timely manner gives more weight and significance
+to the concern. Typically, this meeting is all that is needed to address a concern. Failure
+to address concerns in a timely manner, often evolve into increasingly more problematic
+
+circumstances, in which it proves more difficult to correct.
+
+2. Following the in-person meeting, an email summarizing the conversation and concern(s)
+is to be sent to the supervisee within 24 hours, explicitly stating the concern and purpose
+of the meeting and articulating a plan forward. This email needs to be saved in the
+employee file, therefore it is recommended that the email is forwarded to HR. Given this
+is the first written notification addressing a concern, it is not recommended to CC HR due
+to the direct implication of the appearance that this issue has already been escalated to
+HR. Ensure the supervisor document is updated accordingly and that the performance
+
+email is saved to the weekly supervisory meeting form.
+
+a. Click here for sample email template
+
+b. Click here for weekly supervisor meeting form template
+
+Note that if the staff member with performance concerns is licensed, then the CD, as
+opposed to the supervisor, is responsible for the aforementioned performance
+improvement steps. If for some other reason, the CD is not able to implement these steps,
+then the responsibility is delegated to the Executive Clinical Director.
+
+Repeated Performance Concern
+
+The next phase in this process is intended to address repeated concerns or ongoing performance
+
+issues. This step can be used if a repeated concern occurred within 12 months of it previously
+
+being addressed.
+
+The steps are as follows:
+
+1. The supervisor (or CD, if applicable) must create a list of the performance deficiencies,
+including dates, specific data or detailed explanations, and any previous guidance given to
+the employee.
+
+2. Consult with the ECD and HR within 48 hours of the identified repeated concern.
+
+3. Complete the Performance Improvement Plan Document (Click Here)
+
+113
+September 23, 2024
+
+CONFIDENTIAL
+HOPE_000337
+===== page 24 =====
+4. Schedule a meeting with the employee, the supervisor (or CD) and HR to present the plan
+
+Final write up and/or termination
+
+The third and final phase in this process is intended to addressing ongoing performance concerns
+while on the PIP.
+
+1. The supervisor (or CD, if applicable) must create a list of the performance deficiencies,
+including dates, specific data or detailed explanations, and any previous guidance given to
+the employee.
+
+2. Consult with the ECD and HR within 48 hours of the identified repeated concern.
+
+3. Complete the Employee Warning Notice (Click Here)
+
+4. Schedule a meeting with the employee, the supervisor (or CD), the ECD, and HR to present
+the write-up
+
+5. If the identified issue is not resolved after this document has been presented, the employee
+
+is terminated. If the concerns have been adequately addressed, the matter is closed.
+
+114
+September 23, 2024
+
+CONFIDENTIAL
+HOPE_000338
+===== page 25 =====
+PIP Process Flow
+
+issue is resolved
+
+Supervisor or CD meets with
+the individual nvtity
+CONCEMns and develop a plan
+that is summarized in an email
+follow-up and documented in
+supervisor meeting template
+
+Matter is closed
+
+Performance issue identified
+
+issue is not resolved
+
+Proceed to Phase 2
+
+Supervisor creates list of
+issues, consults with ECD and
+Repeated Performance HR and completes PIP
+Concerns Document
+Meeting with Employee to
+present the pian
+issue is not resolved
+
+Proceed to Phase 3
+
+sresolved
+
+Matter is closed
+
+Repeated Performance
+
+foes Concerns
+
+Meeting with Employee to
+
+iss 5 not resolv
+present the plan ssue tre: ed
+
+Employee is terminated
+
+USE OF POLYGRAPH EXAMINERS AND EXAMINATIONS
+
+HOPE Program requires all clients enrolled in the Sex Offender Treatment Program to
+participate in one or more polygraph examinations while attending treatment at the HOPE
+Program. Generally, most clients take two polygraphs within the first calendar year (every 6
+months), followed by one polygraph per year thereafter. All clients are required to complete a
+maintenance polygraph in order to be considered for graduation.
+
+Any client can polygraph more frequently and as needed upon written approval from their
+supervising officer (probation), Unit Supervisor or Assistant Unit Supervisor (CDCR), or USPO
+(federal), accompanying an updated treatment plan. The written approval from stakeholders must
+
+be saved in the client’s electronic chart.
+
+115
+September 23, 2024
+
+CONFIDENTIAL
+HOPE_000339
+===== page 26 =====
+POLYGRAPH EXAMINER QUALIFICATIONS REQUIREMENTS
+
+HOPE Program works only with certified polygraphists. HOPE Program requires that the
+examiners performing the Clinical Polygraph are properly trained and adhere to the established
+ethics, standards, and practices of ATSA, and meet the certification standards adopted by the
+CASOMB, the American Polygraph Association, and the California Association of Polygraph
+
+Examiners.
+
+Our examiners are required to complete a typed clinical polygraph report within 10 business days
+of conducting the examination. Clients undergo examinations at HOPE offices where they will
+
+meet with our subcontractor.
+
+POLYGRAPH PROTOCOL
+
+We require that all clients sign a specialized consent form stating that they agree to the
+Polygraph Examination and acknowledge that they understand the examination procedure.
+
+The Office Manager (OM) is responsible for coordinating the schedule with the polygraph
+examiner. Clinicians are responsible for tracking and ensuring that their clients are being
+polygraphed in a timely manner. The following types of polygraphs can be administered: An
+Instant Offense (IO) polygraph, a Sexual History polygraph, or a Maintenance/Monitor
+polygraph examination. However, due to an offenders elevated risk upon transition from prison
+or local custody into the community, a maintenance examination is recommended within the first
+six (3) months of treatment. Maintenance polygraphs will allow the polygraphist to ask questions
+that will focus on the offender’s ability to comply with his or her conditions and restrictions of
+
+community supervision.
+
+When a client participates in any polygraph examination, the examiner requires all the legal
+documentation, such as, but not limited to, police report(s), probation/parole report(s), which
+contains information as to what the client did or did not do during his or her instant or qualifying
+offense(s) and includes statements made by the client and the victim(s) to the police. Operations
+will follow up with probation or parole to ensure the required information is in their file. A
+
+description of the types of polygraph examinations HOPE Program utilizes can be found below.
+
+116
+September 23, 2024
+
+CONFIDENTIAL
+HOPE_000340
+===== page 27 =====
+TYPES OF POLYGRAPH EXAMINATIONS
+
+SEXUAL HISTORY POLYGRAPH: Evaluates the truthfulness of the client’s answers to their
+completed Sexual History Questionnaire. The test covers the client’s sexual history prior to the
+date of his last conviction for a sexual offense. To assist in test question formulation, list three to
+four problem areas or specific areas where you suspect the client may not have been 100%
+truthful on the polygraph referral form (i.e. he has more victims than he disclosed, undisclosed
+female victims when he lists only male victims or vice versa, undisclosed adult victims when he
+lists only child victims or vice versa, involvement in a specific deviant behavior, use of
+force/weapons, masturbating to deviant sexual thoughts or fantasies or to infliction pain on
+victims, using pain for sexual arousal, etc.). The Sexual History Victims Test can also be used
+after the Disclosure over Sexual History Test has been completed to further address victims,
+
+types of sexual contact or use of force or weapons not reported.
+
+MAINTENANCE POLYGRAPH: Used to determine the client’s commitment to treatment by
+looking at his current behavioral markers in treatment and adherence to treatment program
+policies and terms and conditions of their parole/probation. Also, this test can be used to evaluate
+the client’s truthfulness to his answers on a specialized Sexual Thoughts and Fantasies
+
+Questionnaire.
+
+MONITORING POLYGRAPH: Used to address if a new SEX CRIME has been committed while on
+supervision or since a period of time on supervision. For example: During the last 6 months (or
+since starting supervision) have you had any sexual contact with a person you knew to be a
+
+minor?
+
+SPECIFIC INCIDENT POLYGRAPH: Addresses the instant/qualifying offense(s) only. This test is
+
+most frequently requested when the client is in denial about their offense or any part of it.
+
+SPECIAL REQUEST EXAMINATION: To ascertain clinically relevant information, i.e. behavioral
+issues, victimization issues related to patient’s offense. State relevance of request; state referral
+
+questions.
+
+PROCESS
+
+117
+September 23, 2024
+
+CONFIDENTIAL
+HOPE_000341
+===== page 28 =====
+HOPE Program schedules two polygraphs within the first calendar year (every 6 months),
+followed by one polygraph per fiscal year thereafter. After a client is identified to test, operations
+
+and polygraphers take the following steps:
+
+HOPE Operations Responsibilities:
+
+1. Ensures clients have a zero balance and have or will pay for the polygraph exam at least
+
+two weeks in advance (applies to self-pay clients only).
+
+2. Ensures a Release of Information (ROI) for the polygraph examiner has been signed. The
+ROI should be updated yearly, or if the client is tested by a different examiner during the
+same year.
+
+3. Obtain a Consent Form signed by the client to participate in the polygraph examination.
+This document should be updated yearly.
+
+4. Create the polygraph sign-in and place it in the “Polygraph Sign-in” folder. For Federal
+
+clients, please ensure the service code is correct.
+
+Schedule all clients around their existing services each month.
+
+Send all polygraph referrals for external input by the 23rd of each month.
+
+Referrals will be sent to the examiners by the Ist of each month.
+
+eNO HM
+
+Email the examiners about no-shows or excusals with directions on how to close out the
+referral.
+
+9. Once the polygraph reports are complete, the Office Manager (OM) or Office
+Coordinator (OC) will email the report to the client’s supervising officer, and cc the
+
+Clinical Director (CD) and treating clinician.
+
+Polygraph Examiner Responsibilities:
+
+1. Attendance, progress notes, and assessments must be completed by the close of every
+business day. Operations will reach out to examiners the following morning if any
+metrics are missing, with the expectation that they will be completed as soon as possible.
+
+a. Absences (i.e., no-shows) and excusals should be marked the same day examiners
+receive the email from HOPE.
+
+2. Reports, videos, and federal charts are required to be uploaded within ten (10) days of the
+exam. Operations will reach out to examiners on day 11 if any are missing with the
+expectation they will be completed as soon as possible.
+
+118
+September 23, 2024
+
+CONFIDENTIAL
+HOPE_000342
+===== page 29 =====
+3. All documents must be labeled as follows:
+
+a. CDCR and County Probation reports: Last name, first initial (CDCR/PFN #)
+HOPE Polygraph Report [date of exam]
+
+b. CDCR and County Probation videos: Last name, first initial (CDCR/PFN #)
+HOPE Polygraph Video [date of exam]
+
+c. Federal Probation reports: First initial, last initial (PACTS #) HOPE Polygraph
+Report [date of exam]
+
+d. Federal Probation videos: First initial, last initial (PACTS #) HOPE Polygraph
+Video [date of exam]
+
+e. Federal Probation videos: First initial, last initial (PACTS #) HOPE Polygraph
+Charts [date of exam]
+
+4. Examiners will close out the referrals by the 31st of each month.
+
+e Clinical teams are not to schedule polygraph examinations
+
+e Clinical teams do not create polygraph treatment modifications, nor do they request
+approval from parole to retest a client.
+
+e Clients are only retested if they do not attend (i.e., no show) their exam and if the
+supervising officer specifically requests an additional test. In this case, operations would
+
+create the modification to gain written approval from the US/AUS.
+
+COUNTY PROBATION
+
+POLYGRAPH TESTING
+
+Clients are required to polygraph within three (3) months of beginning treatment, and at the
+discretion of the treatment team and supervising officer thereafter. The client must provide a
+non-deceptive maintenance polygraph approximately three (3) months before leaving
+treatment/graduating. Best practices state that those who have graduated treatment should
+
+continue to polygraph every six (6) months for the duration of their time on supervision.
+
+CDCR
+
+POLYGRAPH TESTING
+
+Clients are required to polygraph within three (3) months of beginning treatment. Clients will
+take two polygraphs within the first calendar year, followed by one polygraph per fiscal year
+
+119
+September 23, 2024
+
+CONFIDENTIAL
+HOPE_000343
+===== page 30 =====
+thereafter. The client must provide a non-deceptive maintenance polygraph approximately three
+(3) months before leaving treatment/graduating. Best practices state that those who have
+graduated treatment should continue to polygraph every year for the duration of their time on
+
+supervision.
+
+FEDERAL
+
+POLYGRAPH TESTING
+
+Federal clients are required to polygraph every six (6) months for the duration for their time on
+probation. HOPE will require all new federal referrals to test within the first 3 months of entering
+treatment. USPOs must participate in the referral procedure and request what areas they want
+
+assessed during the polygraph.
+
+CONREP
+POLYGRAPH TESTING
+
+CONREP clients are required to polygraph every six (6) months for the duration for their time on
+conditional release. HOPE will require all new referrals to test within the first 3 months of
+entering treatment. CONREP will participate in the referral procedure and request what areas
+
+they want assessed during the polygraph.
+
+SPECIAL POPULATIONS:
+
+HOPE Program provides services to a wide array of clientele. Only certain clients, such as
+private pay clients, can be denied services at HOPE and subsequently would be referred out to a
+qualified professional / program. If you have questions on eligibility, please contact your local
+Clinical Director (CD).
+
+RECORD REQUESTS
+
+California Department of Corrections and Rehabilitation (CDCR) Clients:
+In the event that a client or their representative(s) requests a copy of client records, please know
+that the California Department of Corrections and Rehabilitation (CDCR) is the custodian of
+
+records. For further guidance on the process, see below:
+
+120
+September 23, 2024
+
+CONFIDENTIAL
+HOPE_000344
+===== page 31 =====
+Client Requests
+
+1.
+
+3.
+
+Inform the client that CDCR is the holder and owner of client records, and direct them to
+CDCR to complete Form 7385, titled, "Authorization for Release of Protected Health
+Information."
+
+Once the client completes the form at parole, the client can turn it in to parole's front desk
+administrator, and the CDCR representative will forward the form to the Sex Offender
+Unit (SOU). The SOU will review the request and respond accordingly.
+
+Collateral all contacts, verbal or written, in the client's TA chart.
+
+Representative Requests
+
+i;
+
+Inform the representative that we cannot confirm or deny that the client they are
+requesting information for is in fact a client without a Release of Information (ROI).
+Similar to above, inform them that CDCR is the holder and owner of client records, and
+direct them to call the local parole unit to request and complete Form 7385, titled,
+"Authorization for Release of Protected Health Information."
+
+Once the representative completes the form, inform them that the CDCR representative
+should forward the form to the Sex Offender Unit (SOU). The SOU will review the
+request and respond accordingly.
+
+If a representative sends you the completed form, forward the request to Janelle Harper
+
+(jharper @ hopeprogram.biz) and cc your supervisor and Clinical Director (CD) for
+
+awareness.
+Janelle Harper will forward it to the SOU, provide further instruction, and or loop in
+clinical if applicable.
+
+If the representative's request involves information needed from the Sex Offender
+Treatment (SOT) provider (HOPE), the SOU will forward/work with their Division of
+Adult Parole Operations (DAPO) Litigation Unit (Northern or Southern Region
+depending on SOT vendor location), who will redact, log, and forward to the requestor.
+If the request is for services the SOT vendors do not provide, such as the client's medical
+history (i.e. physical exam, mental exam, lab test, x-ray reports, etc.), then the SOU
+
+recommends that the SOT vendor (HOPE) respond to the requestor by advising them that
+
+121
+
+September 23, 2024
+
+CONFIDENTIAL
+HOPE_000345
+===== page 32 =====
+they Do NOT provide these types of services. This can be done simply by noting it on the
+form itself and sending it back to the requestor.
+
+8. Collateral all contacts, verbal or written, in the client's TA chart.
+
+Probation Client
+
+In the event that a client (including self-pay probation clients) requests a copy of their records,
+please redirect the client to their Probation Officer (PO) so the PO can provide the client with the
+information they are requesting. The PO may request an updated Monthly Treatment Report
+(MTR) from the assigned clinician if not completed at the time of the client's request, but the PO
+would be the one to directly provide this to the client. The clinician is not to provide any
+
+documents to the client.
+
+SUBPOENAS
+
+In the event of a subpoena — contact your immediate supervisor to walk through the process and
+ensure the following steps are taken place within 24 hours. NOTE: All contacts, verbal or
+written, are to be documented in TA in the client’s file.
+Process:
+
+1. Upload the subpoena to the client’s file and enter a collateral note.
+
+2. Forward a copy of the subpoena to Janelle Harper (jharper@hopeprogram.biz) with your
+
+supervisor and the Clinical Director (CD) cc’ed in that email.
+
+3. Janelle Harper will forward the subpoena to the Sex Offender Unit (SOU) and cc the unit
+Agent of Record (AOR) and the Unit Supervisor (US). Again, ensure all communications
+are documented in TA/client’s file.
+
+4. Contact your supervisor via telephone. If your supervisor is unavailable, contact their
+immediate supervisor for guidance and to discuss the subpoena.
+
+5. Contact the requesting agency/DA/Prosecutor — inform them that all client information
+belongs to the California Department of Corrections and Rehabilitation (CDCR) and
+HOPE is unable to release any information. CDCR is the custodian of records. In the
+event that the subpoena calls for testimony or presence in court, SOU recommends that
+HOPE contact the requesting agency, District Attorney (DA), and or prosecutor on behalf
+of HOPE, and ask if submission of documentation would suffice instead of an
+
+122
+September 23, 2024
+
+CONFIDENTIAL
+HOPE_000346
+===== page 33 =====
+appearance. If documents are accepted in lieu of an appearance, then the DA/prosecutor
+obtains the documents directly from CDCR/SOU. SOU’s litigation department will
+connect with the requesting party and provide the necessary documents.
+
+6. HOPE is prohibited from releasing any documentation to any requesting party at any time
+
+regarding CDCR clients.
+
+123
+September 23, 2024
+
+CONFIDENTIAL
+HOPE_000347
+===== page 34 =====
+ADDENDUMS
+HOPE’s Frequently Asked Questions
+
+https://sites.zoogle.com/a/almaxconsulting.com/hope/frequentl y-asked-questions
+ATSA CODE OF ETHICS
+
+https://www.atsa.com/atsa-code-ethics
+
+CAMFPT CODE OF ETHICS
+https://www.camft.org/Membership/About-Us/Association-Documents/Code-of-Ethics
+
+BBS
+
+https://www.bbs.ca.gov/
+
+BOP
+https://www.psychology.ca.gov/
+
+NASW CODE OF ETHICS
+https://www.socialworkers.org/About/Ethics/Code-of-Ethics
+
+APA Guidelines for Telepsychology
+https://www.apa.org/practice/telehealth-telepsychology
+
+A: PRIVATE CLIENT SERVICE AGREEMENT
+HTTPS://DRIVE.GOOGLE.COM/FILE/D/OBOORIUA7MY3KRIZDV XHIV 1VVNGS8/VIEW?USP=SHARI
+NG&RESOURCEKEY=0-_ IKZMUOFWQZ38G0D-W5GTA
+
+B: CONTAINMENT MEETINGS: PROGRESS REPORT & TREATMENT PLAN UPDATE PROGRESS
+
+REPORT
+
+C: POLYGRAPH CONSENT FORM
+
+https://drive.google.com/file/d/OBOTrXm_ETIs-
+
+WUSZZXdjX2xLbzQ/view ?usp=sharing&resourcekey=0-wFUoz Y5h7wROnTatyOOW8A
+D: RELEASE OF INFORMATION
+
+ROI-PRIVATE
+
+https://drive.google.com/file/d/1 1UFDZ3SQ8KxPd1 Wvk8XeJ62bbpQiJiRn/view
+
+ROI-CDCR
+
+124
+September 23, 2024
+
+CONFIDENTIAL
+HOPE_000348
+===== page 35 =====
+https://drive.google.com/file/d/Inhe VCNAMKF3ajDx3cg00-hHxoU XONqCx/view
+ROI-Probation
+
+https://drive.google.com/file/d/OBOTrXm_ETIs-
+
+eHZFbUFDT3 Vjb0U/ view ?usp=sharing&resourcekey=0-QupkxJ5FmmKtS8Qk1 RryNw
+E: Clinic Rules
+
+https://sites.zoogle.com/a/almaxconsulting.com/hope/frequentl y-asked-questions/clinic-rules
+
+F: GRADUATION CRITERIA
+
+https://sites.google.com/a/almaxconsulting.com/hope/frequently-asked-questions/hope-
+curriculum/hope-graduation-criteria
+
+G: TREATMENT PLAN CRITERIA
+
+https://sites.zoogle.com/a/almaxconsulting.com/hope/frequentl y-asked-questions/assessment-
+process/treatment-goals
+
+H: Training Library
+https://sites.google.com/a/almaxconsulting.com/hope/frequently-asked-questions/training
+I: Articles
+
+https://drive.google.com/drive/u/0/folders/1 EpZJY J6d1H-xEdFwwrtnVeFJG4tu9FY3
+Telehealth Documents
+
+https://drive.google.com/drive/folders/14cvC57pS ldqUwfguB UpUMOxf 1 Ifurt0x
+
+HOPE Assessment Training Protocol Training
+https://drive.google.com/file/d/1TWV VjaRk VCQbBaH 1 fDW w3HHjm4nNXy-
+
+k/view?usp=sharing
+
+HOPE Best Practices Training
+
+https://drive.google.com/file/d/1mZm9gP9yrqcOgZR_Owf4UI38FsSTpeCv/view?uCASdsp=sha
+ring
+
+125
+September 23, 2024
+
+CONFIDENTIAL
+HOPE_000349
