@@ -141,5 +141,6 @@ Research memos (QI, CASOMB, Title 15 § 3574): `/documents/matter-28/research/`.
 - [`NEXT_MOVES.md`](NEXT_MOVES.md): concrete actions from the October 15 disclosure review through the October 27 CMC and the first response cycle.
 - The analysis treats the San Joaquin requests and responses as leads, not portable federal admissions.
 - It recommends a narrow first wave focused on the challenged decisions, native event communications, audit trails, transmissions, and the corresponding CDCR/DAPO records.
-- No discovery request, subpoena, letter, filing, or communication was created, served, or sent in this pass.
+- [`drafts/`](drafts/): separate Set One RFPs, interrogatories, and RFAs to HOPE and Smith, plus a service-sequencing memorandum. These are internal drafts and have not been served or sent.
+- The sequencing memo identifies a narrow immediate subset and holds interrogatories, broader comparator/financial requests, and document-dependent RFAs until after the October 27 hearing.
 - The San Joaquin protective order does not presently authorize use of HOPE_000001–542 in Matter 28. Obtain re-production, consent, or appropriate court relief before using the material.
