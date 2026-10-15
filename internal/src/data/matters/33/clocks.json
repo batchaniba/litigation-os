@@ -6,7 +6,7 @@
     "kind": "deadline",
     "status": "satisfied",
     "source_dkt": 12,
-    "title": "WATCH — Defendants' consent or declination to magistrate-judge jurisdiction due in Nforbi v. Candelaria et al. (3:26-cv-08272-LJC). Set by Dkt. 12 (Sep. 8,…",
+    "title": "WATCH \u2014 Defendants' consent or declination to magistrate-judge jurisdiction due in Nforbi v. Candelaria et al. (3:26-cv-08272-LJC). Set by Dkt. 12 (Sep. 8,\u2026",
     "actor": "opposing",
     "source": "/documents/matter-33/ndcal/PACER Docket Report - N.D. Cal. 3-26-cv-08272-LJC (Sep 9 2026).pdf",
     "retired_reason": "Defendants declined magistrate-judge jurisdiction; matter reassigned to Hon. Rita F. Lin as 3:26-cv-08272-RFL."
@@ -18,7 +18,7 @@
     "kind": "deadline",
     "status": "satisfied",
     "source_dkt": 17,
-    "title": "WATCH — Opposition to Dkt. 17 motion to strike due in Nforbi v. Candelaria et al. (3:26-cv-08272-LJC). PACER Deadlines/Hearings Sep. 18 sets Response (Mandatory) 2026-09-23. Civil L.R. 7-3(a). Not enlarged.",
+    "title": "WATCH \u2014 Opposition to Dkt. 17 motion to strike due in Nforbi v. Candelaria et al. (3:26-cv-08272-LJC). PACER Deadlines/Hearings Sep. 18 sets Response (Mandatory) 2026-09-23. Civil L.R. 7-3(a). Not enlarged.",
     "actor": "opposing",
     "retired_reason": "Sep. 23 opposition deadline has passed and is no longer a live action clock. Sep. 28 PACER true-up carries the next motion clock as Plaintiff's Sep. 30 reply."
   },
@@ -29,19 +29,20 @@
     "kind": "deadline",
     "status": "open",
     "source_dkt": 17,
-    "title": "Plaintiff's reply due in support of Dkt. 17 motion to strike — Nforbi v. Candelaria et al. (3:26-cv-08272-RFL), Sep. 30, 2026.",
+    "title": "Plaintiff's reply due in support of Dkt. 17 motion to strike \u2014 Nforbi v. Candelaria et al. (3:26-cv-08272-RFL), Sep. 30, 2026.",
     "actor": "you"
   },
   {
     "id": "33-deadline-2",
-    "date": "2026-10-22",
-    "date_label": "Oct. 22, 2026",
+    "date": "2026-11-18",
+    "date_label": "Nov. 18, 2026",
     "kind": "deadline",
     "status": "open",
     "source_dkt": 4,
-    "title": "Deadline to file ADR Certification (ADR L.R. 3) and to meet and confer regarding initial disclosures, early settlement, ADR process selection, and a discovery…",
+    "title": "Deadline to file ADR Certification (ADR L.R. 3) and to meet and confer regarding initial disclosures, early settlement, ADR process selection, and a discovery\u2026 (adjusted to Dec 9 CMC per Dkt. 4/Dkt. 23)",
     "actor": "you",
-    "source": "/documents/matter-33/ndcal/Dkt 04 - Order Setting Initial Case Management Conference and ADR Deadlines (Aug 10 2026).pdf"
+    "source": "/documents/matter-33/ndcal/Dkt 04 - Order Setting Initial Case Management Conference and ADR Deadlines (Aug 10 2026).pdf",
+    "note": "Moved from Oct. 22 to Nov. 18 (21 days before Dec. 9 CMC) per Dkt. 4 (deadlines adjust with CMC) and Dkt. 23 clerk's notice."
   },
   {
     "id": "33-deadline-3",
@@ -50,7 +51,7 @@
     "kind": "deadline",
     "status": "open",
     "source_dkt": 4,
-    "title": "Deadline to make initial disclosures and file the Case Management Statement — Nforbi v. Candelaria et al. (3:26-cv-08272-RFL), per Sep. 28 PACER true-up.",
+    "title": "Deadline to make initial disclosures and file the Case Management Statement \u2014 Nforbi v. Candelaria et al. (3:26-cv-08272-RFL), per Sep. 28 PACER true-up.",
     "actor": "you",
     "source": "/documents/matter-33/ndcal/Dkt 04 - Order Setting Initial Case Management Conference and ADR Deadlines (Aug 10 2026).pdf"
   },
@@ -63,7 +64,7 @@
     "kind": "hearing",
     "status": "open",
     "source_dkt": 4,
-    "title": "Initial Case Management Conference and Dkt. 17 motion-to-strike hearing, 10:00 a.m. before Hon. Rita F. Lin — Nforbi v. Candelaria et al. (3:26-cv-08272-RFL).",
+    "title": "Initial Case Management Conference and Dkt. 17 motion-to-strike hearing, 10:00 a.m. before Hon. Rita F. Lin \u2014 Nforbi v. Candelaria et al. (3:26-cv-08272-RFL).",
     "actor": "you",
     "source": "/documents/matter-33/ndcal/Dkt 04 - Order Setting Initial Case Management Conference and ADR Deadlines (Aug 10 2026).pdf"
   }
