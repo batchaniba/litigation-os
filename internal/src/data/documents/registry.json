@@ -6055,6 +6055,41 @@
       "path": "/documents/opinions/Newanforbi v Smith - USDC NDCal - Order Directing Service Aug 26 2026.pdf",
       "label": "Opinion copy — Mag. Cisneros Order Directing Service (Aug. 26, 2026)",
       "ownerMatter": null
+    },
+    {
+      "path": "/documents/matter-35/Ross Notice of Posting Jury Fees - Served Copy, Not File-Stamped (26CV501995) (Served Oct 15 2026).pdf",
+      "label": "Ross Notice of Posting Jury Fees (served Oct 15 2026)",
+      "ownerMatter": 35
+    },
+    {
+      "path": "/documents/matter-35/Ross Requests for Production, Set One, to Plaintiff - Served Copy (26CV501995) (Served Oct 15 2026).pdf",
+      "label": "Ross Requests for Production, Set One (24), to Plaintiff (served Oct 15 2026)",
+      "ownerMatter": 35
+    },
+    {
+      "path": "/documents/matter-35/Ross Form Interrogatories-General (DISC-001), Set One, to Plaintiff - Served Copy (26CV501995) (Served Oct 15 2026).pdf",
+      "label": "Ross Form Interrogatories-General (DISC-001), Set One (served Oct 15 2026)",
+      "ownerMatter": 35
+    },
+    {
+      "path": "/documents/matter-35/Ross Special Interrogatories, Set One, to Plaintiff - Served Copy (26CV501995) (Served Oct 15 2026).pdf",
+      "label": "Ross Special Interrogatories, Set One (27), to Plaintiff (served Oct 15 2026)",
+      "ownerMatter": 35
+    },
+    {
+      "path": "/documents/matter-35/Ross Verified Answer to Verified Complaint - Served Copy, Not File-Stamped (26CV501995) (Served Oct 15 2026).pdf",
+      "label": "Ross Verified Answer to Plaintiff's Verified Complaint (served Oct 15 2026)",
+      "ownerMatter": 35
+    },
+    {
+      "path": "/documents/matter-35/POS-010 Proof of Service of Summons - Ross Stores Inc (Signed Sep 11 2026, NOT FILED) - 26CV501995.pdf",
+      "label": "POS-010 Proof of Service of Summons on Ross Stores Inc via CT Corporation (signed by process server Sarah Thompson Sep 11 2026) — NOT YET FILED",
+      "ownerMatter": 35
+    },
+    {
+      "path": "/documents/matter-35/POS-010 Proof of Service of Summons - Ross Dress for Less Inc (Signed Sep 11 2026, NOT FILED) - 26CV501995.pdf",
+      "label": "POS-010 Proof of Service of Summons on Ross Dress for Less Inc via CT Corporation (signed by process server Sarah Thompson Sep 11 2026) — NOT YET FILED",
+      "ownerMatter": 35
     }
   ]
 }
