@@ -19,6 +19,8 @@ Files here:
 |---|---|
 | `README.md` | This index: caption, parties, posture, dates, document table |
 | [`DISCOVERY_PLAN.md`](DISCOVERY_PLAN.md) | Claims → facts → evidence held/needed → candidate RFP/ROG/RFA/subpoena scaffold; timing gates |
+| [`ANALYSIS.md`](ANALYSIS.md) | Verified analysis of the production, the broader record, governing law, and unfinished Matter 5 discovery |
+| [`NEXT_MOVES.md`](NEXT_MOVES.md) | Ranked actions, first-wave scope, CMC asks, sequencing, and guardrails |
 | [`manifest.json`](manifest.json) | Machine-readable list of every file referenced, with metadata and sha256 |
 | `incoming-2026-10-14/` | Oct 14 courtesy copies from Sims Lawrence (Dkt 30 reply set; proposed stipulated PO + COS), PDF + `.txt` |
 
@@ -134,7 +136,10 @@ Research memos (QI, CASOMB, Title 15 § 3574): `/documents/matter-28/research/`.
 - Docket entries 16–27 are not catalogued in the repo (Dkt 22 and 23 are referenced in Dkt 29 / Dkt 30).
 
 ## Analysis pass (2026-10-14)
-- `ANALYSIS.md`: production analysis by Bates, by claim, plus the Matter 5 record, precedent (verification status) and the San Joaquin repurposing table.
-- `NEXT_MOVES.md`: ranked moves through ~Nov 4 (Oct 15 disclosures; Oct 27 CMC/MTD hearing).
-- `drafts/`: RFP/RFA/ROG Set One, Rule 45 CDCR subpoena, preservation and deficiency letters, PO strategy. **All drafts; nothing served or sent.**
-- Key constraint: the San Joaquin PO §VI does not cover Matter 28. Do not use HOPE_ material in Matter 28 filings until it is re-produced or HOPE consents.
+
+- [`ANALYSIS.md`](ANALYSIS.md): production analysis by Bates range and claim; Title 15 § 3574 decision framework; Matter 5 continuation map; precedent; and a ranked discovery plan.
+- [`NEXT_MOVES.md`](NEXT_MOVES.md): concrete actions from the October 15 disclosure review through the October 27 CMC and the first response cycle.
+- The analysis treats the San Joaquin requests and responses as leads, not portable federal admissions.
+- It recommends a narrow first wave focused on the challenged decisions, native event communications, audit trails, transmissions, and the corresponding CDCR/DAPO records.
+- No discovery request, subpoena, letter, filing, or communication was created, served, or sent in this pass.
+- The San Joaquin protective order does not presently authorize use of HOPE_000001–542 in Matter 28. Obtain re-production, consent, or appropriate court relief before using the material.
