@@ -1,0 +1,4305 @@
+===== page 01 =====
+HOPE Clinical Operational Manual:
+
+A Clinician’s Guide
+
+HOPE Program
+
+1245 B Street
+
+Hayward, CA 94541
+
+Tel/Fax: (510) 764-2428
+Email: info@hopeprogram.biz
+
+September 23, 2024
+
+CONFIDENTIAL
+
+HOPE_000225
+===== page 02 =====
+NOTICE
+
+The Clinical Operational manual was developed to provide staff with the fundamental guidelines
+of the processes and practices of delivering forensic services to our clientele and working with our
+stakeholders.
+
+The information provided in this document is confidential and proprietary to HOPE Program and
+may not be used for any purpose other than to inform Probation and Parole agencies of the
+operations of the program and to guide the delivery of sex offender specific services. This
+document and the information contained in it must not be disclosed to any person other than an
+employee or advisor of the Probation or Parole agency. In the event of such disclosure, the
+parties receiving this document should be notified that it contains HOPE Program’s confidential
+
+and proprietary information and must be kept confidential.
+
+September 23, 2024
+
+CONFIDENTIAL
+HOPE_000226
+===== page 03 =====
+TABLE OF CONTENTS
+
+TREATMENT AND MANAGEMENT PHILOSOPHY .0.0.0..0....00000ccccscscscsseesesessesseseeseseeseestensaeeneaneunee 7
+CORE FOCUS: FORENSIC MENTAL HEALTH TREATMENT ..00.0.00.0.ccccscccsccseesesteseeseseeneeeenenee 9
+CORE VALUES 0..0o.ooccccccccccccccceesceeesseseesssteeseeseseeseueoesaseenecsesseseeasssneseeesesaseassuteesesseeeaseaseasseneeseeeeeeeeeeates 10
+HOPE PROGRAMS CODE OF PRACTICE FOR SEX OFFENDER THERAPISTS...............0...... 10
+SAFETY PROTOCOLS o0...0...ccccccccececccceceeeesseseesesteeenesteseeseseesessseseesesnsessseseseuessseeusseeeessneeneeesueaueeneee 12
+OVERFAMILIARITY ooo ccccccccceeseeesesseseeseeneeessasseeesssesesssaseesassaeaesasnassuecsecseseeaeeatsesaeeanseeaseaeeseases 14
+SUICIDAL CLIENTS 000..0ccccccccccccccccccc ce cecscesesesenesseseeesssseeeseseseecsesesessesesesaseeseseseeaeseseesseseeseatenseeaneneeaeeees 15
+COMPLIANCE WITH CASOMB AND SARATSO REQUIREMENTS ...0.......000..c:ccscscesseseesesesesseee 29
+USE OF CASOMB CERTIFIED CLINICAL STAFF oo0...000cccccccccccccecsesesseeseeseeeseeetseeaeneeseestaeeneaees 29
+SUPERVISION AND PROFESSIONAL DEVELOPMENT ..0.00...0.0cccccccccccccescseeeeseceeeeeeeeeseeneneeneenes 30
+CLINICAL SUPERVISION. .....00.. 00000000 0ccccceeeeeeeceeeueceseueeeeueeseuueeeeeueeessueeeeseeeeeuaeceseueeeas 30
+CLINICAL SUPERVISOR RESPONSIBIN TIES 9935655230025 SEE 32
+RESPONSIBILITUES OF SUPT Vis a5 i5si55 oss gic Races genase Sas aas hada aca esaba saedesaaeaaea babes agabas 34
+NEXTEST SECURITY CEEA RAIN Ce 5555555 s 0 See SRE so Sa 34
+TREC TIVE AAMT MRS ss se Taco a nee aS Rees 35
+CONTAINMENT ACE 3 igo eISSN Ca Be 35
+1 2 QA al LS bod a Fae ge Opp er PR ee OBS STS E CBREDEE HORA Z PART SRI BICEP SSE SAC PR ent ERI SPORE, OPER LY aRIE 38
+CONTAINMENT MODEL STAKEHOLDERS. ....00.0.......c.ccsssscssssesssssssssessecncsesussusanenscnssesecsecueaeenesseanen 38
+1; CRIMINAL JUSTICE SYSTEM icscessssess Ss SE SERGE EE 39
+|G 4 Wo C0) Od” 2. Viner ripe eno Ree OR Dre eB Pa SRI Bre CE ORDER Cry Me reel ory SP SRIERASE SPORTS PRP aR 39
+Ze TRE THIEN T PRO WMUDRR 255525235 Sa SUS SS Sa SE SE SS SS SC Se 39
+3. POLYGRAPH EXAMINER 532225207 sces0zescsriessrensrnem steadier canes Beceem tenes eee eReT EERE 40
+4. VICTIM ADVOCATE ssiccs2cncnscrcnesasscuemayencureseespansamanasaxsanesceedusecciawasseeamauecamenecae 40
+COLLABORATION WITH SUPERVISING OFFICERS USING THE CONTAINMENT MODEL
+APRROA GCE siccsccissccsiesenseaeseccsterseseseescavasseccrenteaveisseraceuucetecresesanon ooisserseantenta heat ecestenioesearemnecniEantRNERS ES 41
+CTM AGENCY REPRESENTATIVES: A HOW-TO GUIDES oo... ececec tec cececc cece ee eseseeseeateneseeneen 44
+HOPE REPRESENTATIVE CTM ATTENDANCE CHEAT SHEET 32 ..00.0....0.0.cccccccscesteteseeeeseeeeeeeee 48
+CONTAINMENT MEETING (CTM) REPORT S.............:-::cssscsesssssssscsesesssescsscscstencescsesseseeaseneatencenenees 48
+RISK NEED RESPONSIVITY (RNR) MODEL 0..0........c.cccscssscsscseesessseessessescsssssssescnsssessseseescessesssessenes 52
+THE RISK: PRINCIPE ig ccsscnennss apcszevenpscuncnenzeneonssanwesgansexnueestueemeconnecenarsenenwek opeezexemwesce 53
+THE NEED PRINCIPLE. . 0.0.0.0... cece cece cece cece een ec eee eeeeeeeeeeeneeeeeneeeeeeeeeeeeeeeeeseeeeeateneeeneas 53
+THE RESPONSIVITY PRINCIPLE. ......... 0... cece ccc cc cece e ee eee eee eeneceeeeeeneeseeeneaeeeeeeeenenens 54
+3
+September 23, 2024
+CONFIDENTIAL
+
+HOPE_000227
+===== page 04 =====
+OFFENSE PROCESS MODES ssissisississsssssssssssictcssssssasnssssedensshasstssiasiedsvcchiscescsssscudstsasuansvedetsadaatsbeasies 55
+RELAPSE PREVENTION THERAPY (RP) wsssssssissssssssscssoesssvaressissctascassesvessiansaniuanatcssscsesnacsnnnsconssessens 55
+THE GOOD LIVES MODDED oicsissssissccsssssossersvscssisarsnssstivsscsscnssccvsnssescseaascssvautesssensactunsdsewusssesuscavansssssessess 57
+
+Accessibility for non-English-Speaking or American sign language individuals .............0...0.000000-+ 62
+Foreign language interpreter Services .........0.ccccccccccscscscsessesesseseseseesesesaeeseseesessacsssetsesseseseseneeseaseaeace 62
+Treatment Justifications: Increasing/Decreasing Services .........0.0.0cc.cccccscccsescscseseseseseesesssecsseeesnees 64
+Freatatent Curricula sssccscssccscctssscnust sos cctnccecetaasssandsicsntuak shite ast setcsesbaibataasescudaceniatiasberccedaasbeeut ee 65
+PRS Nels he db 11 5: ae ee ne 67
+PHASE 1: PREPARATORY PHASE OF TREATMENT 0.0.00.....0.csccs.secsesesssseseseeseseesnscseeeseseeseecsenee 67
+PHASE 2: CORE PHASE OF TREATMENT 35 jis55. 3ssisssecsccs ccs eieccsas chests bes acasssicagos caseesossebedoveuasotuts 67
+PHASE 3: MAINTENANCE PHASE OF TREATMENT...............c.c.ccssessssssessscssssssssesessescssessssseee 69
+PHASE 4: AFTERCARE PHASE OF TREATMENT. ...........:.:.:sssscssssssosssssscsessssscsssssssecosssscacesscuses 70
+
+Criteria for Graduation, Release, and/or Termination from Treatment... 70
+SPECIALIZED PROGRAMING 0 oooccccccccccccccccceeeeseeeeensestseseenesseseneessessseseustsesesessseseseseiseeseeeeeneneeeasen 72
+CHAPERONE PROGRAM. ..........0000000c0ccceceeceeeececee sees cuceeeeeeeeeseneueeseneeeeeueeueesenceseueesenens 72
+TELETHERAPY ooooooooooccccccccccccccccceccc cece tees eseseeesesssenesenesesssesssesnsesesesesesesesseeneeseseseseseesseseseeeateanenseaeenseee 74
+TELEHEALTH PROCEDURE. ...........00.00.00c00ccccescneceecneseeuesceeueecueceeuecueeeeesecueeeeuecseeeeeeees
+‘TRLEHEAT-TH SESSION RULES 33.205 56208 BIER ELE EERIE BOSTONITES
+TYPICAL TELETHERAPY SESSIONS LOOK SOMETHING LIKE THIS:
+TRLERRATTN DOCUMENTATION ccccsswecceescusecoaccsceseeeesvenzeneneermsetee mes een enteecessemaeceaeeneens
+
+APA Guidelines for Telepsychology- Psychologist Competency
+OVERVIEW OF THE PROCESS FROM REFERRAL TO SUCCESSFUL TREATMENT
+
+COMPLETION 6352 RSE EERE EE RSS EEES 80
+ONGOING ACTIVITIES WHILE ENROLLED IN HOPE o.0.000000.0.0000.00..00cccccccccccceccceeeseeeecceeseeeseeeee 84
+BRP AT PR CHG isos ae ENG SELES SEN saat es 86
+THERAPEUTIC CONTRACT AND INFORMED CONSENT WITH CLIENTS. ..........0000c000cc0ecceueeeeeunes 86
+HANDLING OF CONFIDENTIAL FILE INFORMATION, RELEASE FORMG..............002..00ecc00eceseeeees 86
+POLICIES ON THE USE OF FILE INFORMATION FOR RESEARCH. ...........0...000ccc0eccceeeeceeeeeueeee 86
+COMPREHENSIVE ASSESSMENTS & REPORTS ...00..0...0...0..2.0cccceccecseescesceecceccesseescesseesceeseeecenceesees 87
+TYPES OF REPORTS...0.....000..0cccceecccsecssueeceuecceusececveecueeecuuccesecesuucessueceseccseececseeesauees 87
+
+A COMPREHENSIVE EVALUATION INCLUDES THE FOLLOWING INFORMATION. .........00eeceeeeeseeeeeeees 88
+STEPS FOR COMPLETING A CITP? visseecccccscssessccessscsciscusesuscussectacessvarcavcsarsssweweszeesesks: 89
+
+4
+
+September 23, 2024
+
+CONFIDENTIAL
+HOPE_000228
+===== page 05 =====
+CLINICAL INTERPRETATION GUIDELINES (CLINICAL TOOLS)
+
+THESE ARE SPECIALIZED MEASURES DESIGNED TO HELP ASSESS TREATMENT PROGRESS AND OR TO
+IDENTIFY SEXUAL INTEREST AND AROUSAL. IN MOST CASES, COMPLETION OF ONE OR MORE SUCH
+TESTS CAN BE A REQUIREMENT TO ADVANCE THROUGH THE VARIOUS STAGES OF THE TREATMENT
+
+PROGRAM. 91
+SDT RRS ae sccasscesscarnszssecessgetcaas ese CocasSed0 vsti we bsg E SIONS CCAR UAE COS pSAR ASN TENN E ASTRA RI NNSA CLR EE 91
+Criminal Sentiments Scale-Modified: ... see D2
+The LOOK Assessment: ...................... 92
+BUMBY - Molest Scale: se OP
+BUMBY - RAPE Scale: seas 93
+SHAE GOR Ss sicsccviscsrcmicresanceses wu 93
+
+STABLE-2007/ACUTE-20073 oo..cccccccccccecscesesssessseeetsseeseenee 1.93
+Level of Service /Case Management Inventory (LS/CM1]): .. pee
+DISCHARGE REPORTS 35205505. SEARO SITES 95
+PROOF OF PRACTICE (POP) — APPOINTMENT SLIPS. ...........5.20c0csecececencseesececetceseececteeseees 99
+MN res screener emcaranenes vaneweesusseesaessoumessiasssuaeeswamesenets eae OO
+Federal cliemts.....00.0.00.0.0.0ccccccccccccsescesseseeseeeeseesnscseseesesesecsesessesesesasseseseeseesesuseeceeeeeassseanseseieeeseaeeneenees 100
+CLIENT ATTENDANCE AND ABSENCES (00.0.0... ccccccccccccccsecceseseeeseeseseseetsesesesesseeseseseeetenseenensneneneee 100
+EXCUSED VS. NO;SHOW ABSENCES 525255255555 aa aE 101
+POUT SELDD SESSION Aa UB 52 eS eS SUI eS 101
+SEATS AE css cscs Sasa UNSEAT LE SSSE RS EES Nae aL 102
+PROGRESS NOT IG sss as aS NEUSE EES REE OE ERENT
+INDIVIDUAL PROGRESS NOUR os .ssiescsccensscsescaucececeuessuscoseuaaensesspsussenseskwwsenwesk Seeeeeeueete:
+Individual Note Template Example:
+GROUP PROGRESS NOTE............
+Group Note Template Example: .
+COLEATEBAE NOTES 2: sie2cc2ssccnnacszswzeseaqeemnectcteemcactneme me neccrace tanec rere enwoe ee aeee gee
+CLIENT REPORTS VIOLATION OR BREAKING THE LAW .0.0.0.0...cccccccccccsescecseseseeeeeseeeeanees 107
+COLLECTING PAYMEN? . s:c:sscsscezuscasescaserseacaesesteinseenmenrnenstwasnenenkdcaeaceeetanweas newness scenes 108
+CHOU ASIII oosscccscccosrrsm ener acasnnsnuaspwenenssnaceuneunaqanuemceeuunncaaens yuasenemerenieanesvesusssermmsescas 109
+PERFORMANCE IMPROVEMENT PROCESS ..000.......ccccscscsessscssscsssessesssescetsesssestsnseasscanseaseaseenseees 112
+PERFORMANCE IMPROVEMENT PLAN (PIP)...............csssssccsscsscesssesecesesecscesececeseqeceescessaencecaeseees 112
+USE OF POLYGRAPH EXAMINERS AND EXAMINATIONS 0.00.0 o0ococccccccecccsecteseeeeteeeeteeeteeenens 115
+POLYGRAPH EXAMINER QUALIFICATIONS REQUIREMENTS. ..........000...0-0000cceee0eeceeeeueeeeeees 116
+POLYGRAPH PROTOCOE 355252 SE ANSE 116
+"TYPES OF POLYGRAPH EXAMINA TIONG be :2ccseustcsscuscssesasusewarces sen saer Eee eee CTR 117
+SPECIFIC INCIDENT POLYGRAPH sicccszsesorcsssssrseesusscaswasaasotarensncn seus eeteceseceeraeeeeTeNTeS 117
+SPECTAL REQUEST EXAMINATIONS \scsessepcsessccscsceuetees sexcuneewsesswenisecenseesescsesewaae eens. 117
+PR CTSS oc csc concewcsvusex sa ncesissanenesecauneennennaunccacesisunicessqaeeesnenwsaswsneasanassmasersanesnesveassic 117
+COUNTY PROBATION .......0. 2.0 .020cc cece cece ce ece cece ceeeececeeeeceeeeneeeceeseseceesueeceeeeeeceseeeeeeeeues 119
+5
+September 23, 2024
+
+CONFIDENTIAL
+HOPE_000229
+===== page 06 =====
+COR coccesesscassersnasnapnensenscsanecmssusucns inane nmceraae ues nena encmananmmasenseneemnenvensnerenaoes 119
+Polygraph Testing ..........ccccccccccccccsesesesesseeeseseseessesesesesesesesesesesssesssssesesneesnensesesesesessssenseeeseaneeseeees 119
+FRDRR ATs 27oseccs oe eseecees ae 120
+Polygraph Tesea ney accssssias se cscs th Sasa a8 ES SEU TS TEL SAAT SIGS ESSE EL SERS 120
+CONRED 0 ocssssecevecswesvassazeneee cesscnnencuas eater taniveswaneeeneetkes wena ses emRESTeeSE SER BIERCA TEENS 120
+BOUVET TSANG coco son sso neon scosapeurcoras nestvetvessneosnvenoen snean ccontenee cons venue ueansstge te cteaaeen Copashatenevecueaeoneesie 120
+SPECIAL POPULATIONS. oo. o.....cccsccccsescesessscsssesessseseseesssesessesescesesenessesesseseseeeesesseaeseecseseeeseesneeee 120
+SUBPOENAS ............cccccccescecscssesesesesesesenessssesesessesssavsesessesesessssesenseseseeseseneesesesaeseseesesesseaeseseeseseneeaeeaneeee 122
+ADDENDUMS ooo... ..c..cccccscscesescscesesseeesesessesescseeseseeasessssesesessssessscseneesesenseseseeasscsessesesceaesessesesceeeaesaneceee 124
+ATSA CODE OF ETHICS 22255 ai ssg ss Sasa 124
+CAMET.GODE OF EMEC G 5325558525 OR OIE IEE PES EEE 124
+BES wsescccesusseswecnswscnscsupeveseneaksecuspacetscvens cauetenaenetnaeseese me eisbasecwaneaecce ere eReE 124
+FO a escscag ena crsetceenicas weantparaseeee magn seanieeu dee oimee ar aeenaea ge ansvansalaawmavpgusecaiwenEneersaueerae 124
+NASW CODE OF ETHICS..........0..0.cccccceececceceeeceeceectecestucceceeeueeeeeeecescseaecaeeeeeeceneewuse 124
+As CHENT SERVICE: AGRERMENT is ss2s sss Sasa ae Sr mee eee 124
+B: CONTAINMENT MEETINGS: PROGRESS REPORT & TREATMENT PLAN UPDATE REPORT............. 124
+COROLYGRAPH CONSENT FORM ..00-2<e5 5025 cesnseseeeseopensusraenuaecsteanactsavesepeaemaremeaansessuaes 124
+DOR ECHASE Cit INROR MATION 0.03 eun nano sncoryenyscemanwemsuneeaxvssaeeamwergeaneeraenass sxcouaneueneneween 124
+E. CLINIC RULES......... 0. ccc cece cee ee cee eeeeceeeece cee eaeeeececeeeeeeseeceseeaeeeeaeaeaeeeeseeneceeeeeeeeeeeneees 124
+BGRADUATION CRITERIA 20255 OSES IEEE NOISIER CRETE 125
+G2 TREATMENT PLAN CRITERIA Gs eccsszesscatexsccareasacaenectrtacannes tw oaueus ae aearanteamE ERIN 125
+6
+September 23, 2024
+CONFIDENTIAL
+
+HOPE_000230
+===== page 07 =====
+NOTICE: If any part of this manual is later found to be incorrect or inapplicable, it does not
+invalidate any other section of it. Please notify the Executive Director of Clinical Operations,
+immediately, if you have any questions about any part of this manual or its contents. Updates
+
+will occur as laws change, programs develop, and HOPE grows.
+
+TREATMENT AND MANAGEMENT PHILOSOPHY
+
+HOPE Program was founded in September of 2008 by Shannon Smith, LCSW, who has
+dedicated her professional career to helping individuals convicted of a sexual offense, or
+suffering from emotional, behavioral, or psychological problems. Based on the extensive
+experience and insights she gained over the years, Ms. Smith has developed a unique vision for a
+
+clinical program that addresses client’s individual needs and risk level.
+
+HOPE Program utilizes the latest best-practice research to provide services to individuals and
+families in order to reduce their risk of reoffending or engaging in problematic sexual behaviors.
+The primary goal of HOPE is to combine the latest research with practical psychotherapy
+techniques to provide effective, personalized, and affordable care that leads to reduced
+recidivism and healthier lifestyles. HOPE Program maintains strict adherence to the Association
+for the Treatment and Prevention of Sexual Abusers (ATSA) and California Coalition on Sexual
+Offending (CCOSO) guidelines and best practices, and is governed by the California Sex
+Offender Management Board (CASOMB).
+
+HOPE’s Core Focus is Forensic Mental Health Treatment and our Core Values are:
+e Passionate about creating better lives
+e Committed to victim prevention
+e Approachable and warm
+e Collaborative, respectful, motivated, and driven
+e Acting with integrity
+
+e Compassionate, conscientious, thoughtful, and professional
+
+We strive to deliver our services according to the following guiding principles:
+e Highly personalized service
+
+e Experience and professionalism
+
+September 23, 2024
+
+CONFIDENTIAL
+HOPE_000231
+===== page 08 =====
+e Adherence to implementation of empirical-based and state-of-the art research for sex
+
+offenders
+e Adherence to best practices and treatment standards, as well as steadfast ethical standards
+e Serving local community
+
+The key characteristics of our Program are as follows:
+
+Research-based Treatment
+
+e Strict adherence to the Containment Model while incorporating evidence-based offender
+rehabilitation models (i.e., Risk Need Responsivity, Good Lives Model) and strength-based
+approaches
+
+e Flexible curriculum and recovery plan tailored to individual needs and risk factors of the
+clients
+
+e Graduation criteria aligned to goal achievement and reduction of risk to reoffend
+
+Specialized Psychotherapy
+
+e Experienced CASOMB Certified practitioners trained in sex offender-specific treatment,
+psychosexual evaluations (including specialized risk assessments) and personalized case
+management techniques
+
+e Identification of client needs based on structured assessment protocols and clinical
+diagnoses obtained during the assessment process
+
+@ Goal-based approach to treatment of sexual offenders
+
+e Adaptive case management based on continuous progress monitoring and frequent
+assessments
+
+e Clinical staff are members of ATSA and/or CCOSO and professional organizations
+providing ethical guidelines and treatment standards for the industry
+
+Efficient Operating Model
+
+e HOPE uses a treatment approach such that all clinical staff are able to provide services
+and contribute to the treatment of any client using TreatAnyone (TA), a data management
+platform that supports treatment and improves continuity of care. Stakeholders are given
+access to TA to assist in maintaining transparency, effective communication, and better
+oversight, which provides a closer and more direct collaboration between therapists and
+
+supervising officers.
+
+September 23, 2024
+
+CONFIDENTIAL
+HOPE_000232
+===== page 09 =====
+CORE FOCUS: FORENSIC MENTAL HEALTH
+TREATMENT
+
+September 23, 2024
+
+CONFIDENTIAL
+HOPE_000233
+===== page 10 =====
+CORE VALUES
+
+e Passionate about creating better lives
+
+e Committed to victim prevention
+
+e Approachable and warm
+
+e Collaborative, respectful, motivated, and driven
+e Acting with integrity
+
+e Compassionate, conscientious, thoughtful, and professional
+
+HOPE PROGRAMS CODE OF PRACTICE FOR SEX OFFENDER
+THERAPISTS
+
+In order to achieve our Core Focus and abide by our Core Values, HOPE operates within The
+Code of Practice commonly known as The Code of Ethics for sex offender therapists, adapted
+from The Association for the Treatment and Prevention of Sexual Abusers (ATSA:
+
+https://www.atsa.com/). ATSA has published Practice Standards and Guidelines, which include a
+
+section on Professional Conduct.
+
+The Code of Practice presents a framework for making professional decisions and augmenting
+our moral compass. The strength of HOPE ultimately resides in the commitment of its clinical
+
+team to common goals, beliefs, and values.
+
+It is the responsibility of HOPE and its employees to ensure we are dedicated to supporting
+values of basic human dignity and respect, as well as common goals related to community safety
+and preventing sexual violence. Employees are responsible for familiarizing themselves with the
+ATSA Adult Practice Guidelines, the ATSA Adolescent Practice Guidelines, and this Code of
+Ethics, as seen below. For additional information on ATSA guidelines, visit here:
+
+https://members.atsa.com/learn/Details/guidelines-professional-code-of-ethic- 194332.
+
+10
+September 23, 2024
+
+CONFIDENTIAL
+HOPE_000234
+===== page 11 =====
+General guidelines e The code supplements any other ethical or professional code
+practiced by individuals.
+
+e Therapists should always adhere to the highest professional
+standards and should maintain and develop their skills.
+
+e Therapists agree to work within the treatment model of the
+program.
+
+Competence e Therapists should not practice beyond their level of
+competence and training.
+
+e Facilitators should always respect the need for treatment
+integrity.
+
+e Facilitators should take responsibility for recognizing the
+limits of their competence.
+
+Conduct e Treatment should never will not be conducted in a spirit of
+retribution for offending.
+
+e Facilitators should will not compromise their professionalism
+with violence, racism, derogatory language, sexual contact
+with clients or their families, or improper receipt of gifts.
+
+e Facilitators should will only deliver treatment if in a fit mental,
+emotional, and physical state.
+
+e Facilitators should will model appropriate respectful behavior
+in their relationships with colleagues and with clients
+
+Confidentiality e Therapists should will treat all information from their clients
+with appropriate professional discretion.
+
+e Therapists must be clear with clients about the conditions
+under which information about them will be shared outside
+treatment context.
+
+e All materials relating to clients must be stored securely.
+
+e False assurances of confidentiality must not be given to
+clients.
+
+Consent e The purpose and implications of all treatment exercises must
+be explained to clients at the outset. Clients must never be
+misled about the purposes of an exercise or procedure.
+
+e Therapists must take steps to ensure that clients do not possess
+false expectations about the benefits of treatment.
+
+¢ Clients who wish to withdraw from the program must be
+treated with sensitivity.
+
+11
+September 23, 2024
+
+CONFIDENTIAL
+HOPE_000235
+===== page 12 =====
+Colleagues e Therapists must bring any concerns about colleagues to the
+person concerned or to a manager without delay.
+
+e Therapists must take all steps possible to communicate and
+work constructively with other professionals involved with the
+client.
+
+e Therapists should respect each other for the unique contribution
+that each person brings to sex offender treatment.
+
+SAFETY PROTOCOLS
+
+Safety is of upmost importance, and although we have been providing services in a community
+setting for several years without incident, it is important to be mindful of the clientele we serve,
+
+maintain healthy boundaries, and take measures to reduce risk as much as possible.
+
+To ensure the safety of our employees and clients:
+
+e Do not keep any secrets with a client at any time.
+
+e Do not offer to hire or provide any money to a client at any time.
+
+e Do not give or accept gifts to/from clients.
+
+e Allservices are to be conducted during the business hours of the agency. Any service
+outside of standard operating hours, requires prior written authorization from the
+Executive Clinical Director.
+
+e After the conclusion of group, ensure all members of the group leave the building
+together. In the evenings, no clinician should ever stay behind and alone with a client
+when no other people are nearby.
+
+e All communication with clientele should take place in a HOPE office. Do not engage in
+conversations with a client outside of the office. For example, do not have conversations
+with clients in the hallway, on the sidewalk, or in any environment that is outside of the
+clinic.
+
+e Allinteractions with clientele are to remain professional and appropriate at all times.
+Clinicians will not engage in derogatory or vulgar language.
+
+e All social media connections and/or sharing personal contact information with clients is
+strictly prohibited. This includes, but is not limited to:
+
+a. Do not friend any clients on Facebook or any other social media applications.
+
+12
+September 23, 2024
+
+CONFIDENTIAL
+HOPE_000236
+===== page 13 =====
+>
+
+Do not share, follow, or engage in any form of social media with clients.
+
+Do not share any personal photos or videos with clients at any time.
+
+s P
+
+Do not take a picture with a client or allow a client to take a picture of you.
+
+Do not hug or touch a client.
+
+a 9
+
+Report any and all suspicious, flirtatious, or concerning behavior to your
+
+supervisor and the clinical director on the same day the incident occurred.
+
+e. Document any and all suspicious, flirtatious, or concerning behavior in the
+client’s file on the same day the incident occurred.
+
+f. Do not share your personal contact information, such as your home or cell phone
+number. Only communicate via email or telephone through your work provided
+communications. All client communications outside of the therapy room are to be
+documented in the client’s file in TA.
+
+g. All email communications received from clients must be saved in their client file;
+clinicians do not provide therapy via electronic communication (e.g., email or
+text).
+
+h. Texting clients is prohibited.
+
+e If you have any questions about your safety with any client in any context, end the
+session or your contact with the client. Excuse the client from the agency and
+immediately contact your supervisor.
+
+e In any situation where there is a concern for your physical safety or that of others,
+immediately end the group or the individual session and call 911.
+
+e All clients are to walk in front of staff members, as to avoid clients being out of an
+employee’s line of sight.
+
+e Employees and clients are to take separate elevators when entering and exiting the
+building.
+
+e During all sessions, clinicians are to sit by the door to ensure access to an exit is not
+blocked, should a client turn violent and the clinician needs to escape.
+
+e Inclinics where you are working with other employees during normal operating hours,
+notify your colleagues that you are leaving for lunch, taking a break outside of the office,
+
+or when you leave the office for the day.
+
+13
+September 23, 2024
+
+CONFIDENTIAL
+HOPE_000237
+===== page 14 =====
+e Clients who bring book bags (or any type of bag) to treatment are to store them in a
+designated area of the treatment room, away from their person. They can collect the book
+bag at the end of the session.
+
+e Clients are not allowed to take book bags into the restroom in order to prevent theft, drug
+use, or consumption of alcohol.
+
+e Clients may only go to the bathroom by themselves and not in pairs or in a group, to
+
+prevent theft, drug use, conflict, or consumption of alcohol.
+
+To view the full list of practices our teams need to follow in order to promote a safe work
+environment, visit HOPE’s drive or review our Safety Procedure’s Binder here:
+
+https://drive.google.com/file/d/1hHt300ZoalLAGS 280GL-YBzY: view ?usp=sharin:
+
+OVERFAMILIARITY
+
+Familiarity or overfamiliarity with our clients must be closely monitored to ensure it does not
+happen. Overfamiliarity means engaging in conversations or any type of communication that
+includes personal topics. No employee may engage in familiarity with clientele who are referred
+to the HOPE Program. Conversations shall be limited to work and treatment related topics only.
+The behaviors listed below may place an employee at risk of developing an inappropriate
+relationship with an offender:
+
+e Looking forward to seeing a particular client when you come to work.
+
+e Doing things with a client you would not want your family or supervisor to know about.
+
+e Being reluctant to have a co-worker observe your behavior for an entire day.
+
+e Talking about personal matters with client.
+
+e Asking a client to do personal favors for you.
+
+e Receiving personal advice from a client.
+
+e Saying anything to a client you would not want tape recorded.
+
+e Having fantasies of touching a client.
+
+e Believing that you have the right to touch a client.
+
+e Looking forward to sharing good or bad news with a particular client.
+
+e Thinking clients are not allowed to say “no” to you, no matter what you ask.
+
+e Allowing clients to talk about sexual experiences or sexual fantasies, beyond what is
+
+treatment appropriate.
+
+14
+September 23, 2024
+
+CONFIDENTIAL
+HOPE_000238
+===== page 15 =====
+e Allowing clients to talk about or tell sexual jokes in your presence.
+
+e Disclosing unauthorized information learned from the supervising officer or agent, or by
+
+way of aCTM.
+
+For more information, please see the Boundaries and Overfamiliarity training video here
+
+https://drive.google.com/file/d/1Eg5a99fDk4nEte_GWWErxXycJBpvyu7DN/view?usp=sharing
+
+SUICIDAL CLIENTS
+Clients may become or present as suicidal or dangerous to others while engaged in treatment at
+HOPE Program. As we have a duty of care to our clients, we must take all precautions to assess
+
+the level of risk to the client, which then informs subsequent responses.
+
+To assess safety, it is the expectation that all HOPE Program staff and clinicians in training
+e Assess risk of suicide and/or danger to others at initial intake and for the duration of
+HOPE treatment
+e Provide, as a priority, prompt support to address the immediate safety needs of a client
+
+presenting at any level of risk of suicide and/or danger to others
+
+POLICIES:
+
+Purpose and Scope
+
+This policy provides guidance for HOPE Program staff and clinicians in training in responding to
+client observation, allegation, and disclosures indicating potential suicide and/or danger to
+others. This policy applies to all programs and services operated by HOPE Program and all staff
+and clinicians in training involved in client support and services provision. This policy does not
+prescribe client treatment planning, intervention goals and strategies, or specific counseling
+
+techniques and theories.
+
+Definitions
+a. Risk factors — factors such as biological, physiological, social, and cultural agents that are
+associated with suicide/suicide ideation and increase their probability
+b. Suicide prevention — actions or initiatives to reduce the risk of suicide among populations
+
+or specific target groups
+
+15
+September 23, 2024
+
+CONFIDENTIAL
+HOPE_000239
+===== page 16 =====
+c. Self-harm — deliberate damage to one’s body without the intent to die (also referred to as
+self-injury)
+
+d. Danger to others - act, attempt, or threat of substantial and imminent harm to another
+
+e. Suicidal ideation — thoughts about attempting or completing suicide
+
+f. Suicidal behavior - includes the spectrum of activities related to suicide and self-harm
+including suicidal thinking, self-harming behaviors not aimed at causing death, and
+suicide attempts
+
+g. Suicide attempt - a potentially self-injurious act intended to end one’s life, but does not
+result in death
+
+h. Suicide — the act of purposely ending one’s life
+
+i. Postvention — interventions to support and assist the bereaved after a suicide has occurred
+
+Principles
+
+HOPE Program is committed to good practice in the prevention of suicide and harm to others
+through the development, implementation, and review of policies and procedures based on
+current evidence. When responding to suicidal behavior and those dangerous to others, the
+physical and emotional safety of the client, staff, and clinicians in training is paramount. Thus,
+HOPE Program ensures that staff and clinicians in training receive a level of training and
+supervision appropriate to their role in responding to clients at risk of suicide and or dangerous to
+
+others.
+
+Risk Management
+
+HOPE Program acknowledges, and is prepared for, clients disclosing suicide or thoughts of
+harming others through a range of avenues including disclosure to staff, clinicians in training,
+and/or other clients. Assessment and responses to the risk of suicide and those posing as
+dangerous to others are undertaken by staff who are appropriately trained and qualified, using
+evidence-based assessment and response practices. All indications of suicide and danger to
+others are taken seriously. A first aid kit is available in accessible areas. All staff and clinicians
+in training are supported to recognize the limits of individual roles and competencies and
+
+actively facilitate links to further levels of care where necessary.
+
+16
+September 23, 2024
+
+CONFIDENTIAL
+HOPE_000240
+===== page 17 =====
+Outcomes
+HOPE Program identifies and responds to clients at risk of suicide or a danger to others. Staff
+and clinicians in training receive adequate training and supervision in responding to clients either
+
+at risk of suicide or posing a danger to others.
+
+Related Legislation
+
+Emergency Detention Under Welfare and Institutions Code Section 5150
+
+5150 is the number of the section of the Welfare and Institutions Code, which allows a person
+with a mental illness to be involuntarily detained for psychiatric hospitalization. A person on a
+5150 can be held in the psychiatric hospital against their will for up to 72 hours. There needs to
+be a probable cause to take any person into custody and to place such a person in a county-
+
+designated facility for the initial 72-hour treatment and evaluation (i.e. "5150").
+
+Probable Cause
+
+Probable cause is defined as facts known to the authorized person that would lead a person of
+ordinary care and prudence to believe, or to entertain a strong suspicion, that the person detained
+is mentally disordered and is a danger to self or others, or is gravely disabled. In other
+words, in order to be detained under W& I Section 5150, the person must be, "as a result of a
+
+mental disorder," a danger to self or others or gravely disabled.
+
+Danger to self
+This criterion may be either deliberate intention to injure oneself (ie. overdose) or a disregard of
+personal safety to the point where injury is imminent (i.e. wandering about in heavy traffic). The
+
+danger must be present, immediate, substantial, physical, and demonstrable.
+
+Examples could include some or all of the following:
+e Words or actions showing intent to commit suicide or bodily harm
+e Words or actions indicating gross disregard for personal safety
+e Words or actions indicating a specific plan to suicide
+
+e Means available to carry out suicide plan (i.e. pills, firearms present or available)
+
+17
+September 23, 2024
+
+CONFIDENTIAL
+HOPE_000241
+===== page 18 =====
+Danger to others
+
+This criterion should be based on words or actions that indicate the person in question intends to
+cause harm to a particular individual or intends to engage in dangerous acts with gross disregard
+
+for the safety of others.
+
+Examples could include some or all of the following:
+
+e Threats against particular individuals
+e Attempts to harm certain individuals
+e Means available to carry out threats or to repeat attempts (i.e. firearms, or other weapons)
+
+e Expressed intention or attempts to engage in dangerous activity
+
+Professional Development and Training
+Staff and clinicians in training receive training in suicide risk assessment and interventions
+
+appropriate to their role.
+
+Administrative staff receive mandatory introductory training to assist in identifying warning
+signs and for referring clients to appropriate staff members. HOPE Program Directors ensure
+staff and clinicians in training attend training programs delivered by providers with an
+
+appropriate level of expertise.
+
+HOPE Program recognizes that suicide risk assessments and interventions are core skills for staff
+
+with direct client contact, and that knowledge and practice is reviewed and updated regularly.
+
+Professional Supervision and Support
+HOPE Program recognizes that supporting clients who are at risk of suicide and/or self-harm can
+be challenging and demanding. HOPE Program is committed to monitoring and attending to the
+
+impact of client suicide and self-harm on staff and clinicians in training.
+
+Supervision
+Staff and clinicians in training notify their supervisor or HOPE Program Director once a client
+
+suicide or self-harm risk is identified to develop immediate and longer-term risk management
+
+18
+September 23, 2024
+
+CONFIDENTIAL
+HOPE_000242
+===== page 19 =====
+planning. Staff and clinicians in training are provided with internal supervision and debriefing to
+
+address the emotional impacts that may arise from working with clients in distress.
+
+Policy and Practice Review and Evaluation
+HOPE Program reviews its policies and procedures based on feedback from staff and clinicians
+in training, as well as results of service evaluations and new or emerging evidence in suicide and
+
+self-harm prevention and management.
+
+Policy Implementation
+
+This policy is part of all HOPE Program staff and clinicians in training orientation processes and
+all are responsible for understanding and adhering to this policy. This policy should be
+referenced in relevant HOPE Program policies, procedures, and other supporting documents to
+
+ensure that it is familiar to all program staff and clinicians in training and actively used.
+
+PROCEDURES:
+
+Assessment and Interventions
+
+As part of initial intake assessment and ongoing treatment work, it is important that all HOPE
+Program clients are assessed for risk of suicide and danger to others should there be any
+indication that such risk exists. In conducting client suicide and danger to others risk assessment,
+
+cultural considerations are addressed as part of the assessment process.
+
+If staff or clinicians in training are unsure about a client’s suicide or danger to others risk, they
+ensure the client’s physical safety before consulting with their supervisor, senior colleague, or a
+peer. If a client is assessed as being at risk of suicide and/or danger to others, intervention
+
+strategies to decrease the risk are developed and implemented.
+
+Both objective and subjective evidence is used to determine a client’s risk of suicide and danger
+to others. A comprehensive assessment draws on all available information including: interviews
+with the client, observation, medical, psychiatric, and personal history, feedback from other staff,
+
+and information from the client’s support system.
+
+19
+September 23, 2024
+
+CONFIDENTIAL
+HOPE_000243
+===== page 20 =====
+SAFE-T
+HOPE Program utilizes Suicide Assessment Five-step Evaluation and Triage (SAFE-T) process
+
+to assess risk of suicide and to intervene appropriately.
+
+IDENTIFY RISK FACTORS
+
+Note those that can be modified
+to reduce risk
+
+!
+
+IDENTIFY PROTECTIVE FACTORS
+Note those that can be enhanced
+
+CONDUCT SUICIDE INQUIRY
+Suicidal thoughts, plans,
+behavior, and intent
+
+DETERMINE RISK LEVEL /INTERVENTION
+Determine risk. Choose
+appropriate intervention to
+address and reduce risk
+
+!
+
+Assessment of risk, rationale,
+intervention, and follow-up
+
+DOCUMENT
+
+Suicide Inquiry
+
+Suicide inquiry involves asking specific DIRECT questions about thoughts, plans, behaviors,
+and intent. See specific questions to ask here
+
+(https://docs.google.com/document/d/OB2QQX00 1 SdZbLTZfVESINWtX YIB1YzQwcWxDRH
+PNNUsNFY4/edit?resourcekey=0-UBTmFd5408-6DRJTfvp-SA) with an overview below:
+
+e Ideation: Frequency, intensity, duration—in last 48 hours, past month, and worst ever.
+
+e Plan: Timing, location, lethality, availability, preparatory acts.
+
+20
+September 23, 2024
+
+CONFIDENTIAL
+HOPE_000244
+===== page 21 =====
+e Behaviors: Past attempts, aborted attempts, rehearsals (tying noose, loading gun) vs. non-
+suicidal self-injurious actions
+
+e Intent: Extent to which the patient (1) expects to carry out the plan and (2) believes the
+plan/act to be lethal vs. self-injurious. Explore ambivalence: reasons to die vs. reasons to
+
+live.
+
+For Youths: Ask parent/guardian about evidence of suicidal thoughts, plans, or behaviors, and
+
+changes in mood, behaviors, or disposition.
+
+Homicide Inquiry: When indicated, especially in character disordered or paranoid males
+dealing with loss or humiliation, inquire on four bulleted areas listed above, using the link for
+
+direct inquiries.
+
+Risk level / Intervention
+
+Where a client is thought to be suicidal, HOPE Program staff and clinicians in training should
+make themselves available for brief consultation at any time within office hours. Decisions as to
+how to safeguard the client should be made whenever possible with the client's active
+participation in the decision-making process. Available options should be discussed (e.g.
+additional treatment sessions, phone contact with the provider within office hours, voluntary
+hospital admission, referral to medical or psychiatric services, out of hours contact with area
+mental health crisis team where appropriate, and with the client's consent, consultation with the
+
+client's family).
+
+If risk of suicide is confirmed, HOPE Program staff and clinicians in training are guided to
+
+perform a combination of the following activities according to the risk rating:
+
+e Monitor and staff the client regularly
+
+e Identify client's potential supports
+
+e Contract with client to seek immediate assistance if fleeting thoughts become more
+serious or depression deepens
+
+e Request permission to contact support system
+
+e Ensure that the client is not left alone
+
+21
+September 23, 2024
+
+CONFIDENTIAL
+HOPE_000245
+===== page 22 =====
+e Call 911 to initiate 5150
+
+e¢ Consult with a colleague or supervisor for guidance and support
+
+Assessment of risk level is based on clinical judgment. Clinicians and staff in training are to
+
+reassess as client or environmental circumstances change. The chart below is intended to
+
+represent a range of risk levels and interventions, not actual determinations.
+
+RISK LEVEL RISK/PROTECTIVE | SUICIDALITY POSSIBLE
+FACTOR INTERVENTIONS
+High Psychiatric diagnoses _| Potentially lethal Call 911 to initiate "5150."
+with severe symptoms | suicide attempt or Admission generally indicated
+or acute precipitating —_| persistent ideation unless a significant change
+event; protective with strong intent or | reduces risk. Suicide
+factors not relevant suicide rehearsal precautions (e.g. the client is
+not to be left unsupervised)
+Moderate Multiple risk factors, Suicidal ideation with | Admission may be necessary
+few protective factors | plan, but no intent or | depending on risk factors.
+behavior Develop crisis plan. Give
+emergency/crisis numbers. A
+No-Harm Contract should be
+entered.
+Low Modifiable risk Thoughts of death, no | Outpatient referral (i.e.
+factors, identifiable plan, intent, or medication evaluation),
+strong protective behavior symptom reduction. Give
+
+factors.
+
+emergency/crisis numbers.
+Client is to be monitored
+frequently. Staff and clinicians
+in training assist client in
+identifying potential supports.
+A No-Harm Contract should
+be entered into.
+
+Documentation and Collateral Contact
+
+Client file documentation (i.e. assessments, progress notes, collateral notes, Status Alert,
+
+Treatment Plan, Monthly Treatment Report, Crisis Treatment Plan) is comprehensive and
+
+accurate and details risk level and rationale; treatment plan to address/reduce current risk (e.g.,
+
+September 23, 2024
+
+CONFIDENTIAL
+
+22
+
+HOPE_000246
+
+===== page 23 =====
+medication, setting, psychotherapy, contact with significant others and supervising
+officers/agents, consultation); follow-up plan. For youths, treatment plan should include roles for
+
+parent/guardian.
+
+Client documentation is completed by the end of the business day. If a client is assessed as being
+at risk of suicide or self-harm, HOPE Program staff or clinicians in training notify their
+
+supervisor to jointly develop a plan for further assessment and intervention.
+
+Immediate safety concerns are addressed before developing longer term risk management plans.
+HOPE Program staff and clinicians in training contact client's supervising officer by phone (use
+mobile phone numbers to reach officers and agents when in the field). This is followed up by
+sending Status Alert regarding the incident. These actions are followed by progress and collateral
+
+notes in the client's file.
+
+No-Harm Contract
+Client No-Harm contracts provide a written and verbal agreement for the client not to engage in
+suicidal or self-harming behavior. A client No-Harm contract depends on an established
+
+clinician-client relationship and capacity of the client to provide informed consent.
+
+A written No-Harm Contract template is used by HOPE Program where the client is able to
+provide informed consent. The No-Harm Contract includes:
+e A guarantee not to harm themselves (should have a specific time frame)
+e Assisting the client in suicide proofing their environment (i.e., getting rid of
+potentially lethal doses of medications, weapons, etc.)
+e Actions that client can implement if suicidal thoughts return
+e Identifying referrals client can use to respond to triggers for suicidality (e.g. suicide
+hotline phone number, HOPE Program clinician contact info, etc.)
+e Support structure that they can use as a resource (e.g. friends, family)
+e List of crisis services
+e Appointment day/time for the client to check in with HOPE Program clinician on the
+
+phone or in person between the regularly scheduled sessions
+
+23
+September 23, 2024
+
+CONFIDENTIAL
+HOPE_000247
+===== page 24 =====
+You can find a copy of HOPE’s No-Harm Contract here:
+https://docs.google.com/document/d/OBwJx 1f27Hd YtT3dKR2 | hc2RzNkO/edit?resourcekey=0-
+2VnDaWKDf-SSCfaEeYuGCw
+
+Developing a Safety Plan
+
+Once an immediate suicide and/or self-harm crisis has passed, clients are assisted in treatment to
+develop a safety plan which identifies a particular course of action they can follow if they are at
+risk of suicidal or self-harming behavior in the future. The safety plan should include details
+regarding the client's support contacts such as family, friends, and available community
+resources. Clients are actively involved in decision making processes about how to protect their
+
+safety and prevent suicide or self-harm.
+
+You can find a copy of HOPE’s Safety Plan here:
+https://docs.google.com/document/d/1 wp65sLs3 wfffl WIHY 80wGBcHS9kpy¢-r/edit
+
+Maintaining Client Contact
+A client who has been assessed as being at risk for suicide and/or self-harm and does not attend
+their scheduled appointments will need to be actively followed up by the clinician to ascertain
+
+safety needs.
+
+Relevant staff members are informed of specific client arrangements where necessary. For
+
+example, Office Manager (OM) is instructed to give priority to particular client calls.
+
+Confidentiality
+HOPE Program has a duty of care to do everything reasonable to prevent a client’s suicide or
+
+self-harm.
+
+The right of confidentiality is not absolute and is balanced against duty of care. HOPE Program
+has a legal and ethical responsibility to disclose information where not reporting might
+
+contribute to harm to a client or another person.
+
+24
+September 23, 2024
+
+CONFIDENTIAL
+HOPE_000248
+===== page 25 =====
+Clients are advised of the limits of confidentiality during intake assessment and if a suicide
+and/or self-harm situation arises. Reasonable steps are taken to obtain client agreement for
+
+information to be disclosed to a third party.
+
+Confidential information is disclosed to those in a position to assist in client safety and the
+
+information provided is restricted to that which elicits assistance.
+
+Suicide Postvention
+HOPE Program recognizes that a client’s suicide may impact other clients, staff, clinicians in
+training, the client’s family and friends, and the wider community. Staff and clinicians in training
+
+are provided with written information and resources about suicide bereavement where
+
+appropriate.
+
+a. Initial Actions for Staff
+
+Following the death of a client from suicide or an emergency incident involving a
+client who is suicidal or self-harming, staff and clinicians in training are offered
+access to immediate debriefing support. HOPE Program nominated staff provide
+staff and clinicians in training with a factual briefing concerning the circumstances of
+
+the death.
+
+Group and/or individual debriefing for staff and clinicians in training will be
+provided during group supervision, individual supervision, as well as during weekly
+
+clinical case consultations (i.e., staff meetings) if needed.
+
+Staff and clinicians in training are encouraged to remain aware of their own
+emotional reactions and seek support from their supervisor, colleagues and other
+
+avenues as required.
+
+b. Initial Actions for Clients
+
+Following the death of a client from suicide, the individual and group treatment
+providers provide other current clients with relevant information about the death. The
+emphasis is on developing understanding without condemning or glorifying the
+
+suicidal event or client.
+
+25
+September 23, 2024
+
+CONFIDENTIAL
+HOPE_000249
+===== page 26 =====
+Following the death of a client from suicide, HOPE Program identifies clients who
+may be at increased risk of suicide and/or self-harm and assist them to access
+
+appropriate support.
+Procedure Overview
+
+1. If aclient indicates or if HOPE Program staff or clinicians in training suspect that the
+client might be considering suicide or presents as a danger to others, HOPE Program staff
+or clinicians in training conduct a risk assessment (see the Risk Assessment form here:
+https://docs.google.com/document/d/OB2Q0QX00 1SdZbLTZfVES INWtXYIB1YzQwcW.
+xDRHpNNIIsNFY 4/edit?resourcekey=0-UBTmFd5408-6DRJTfvp-SA
+
+2. HOPE Program staff or clinicians in training determine the level of risk (i.e. low,
+moderate, high). An overarching principle must be that if a member of staff is in doubt
+about a person's potential for suicide or danger to others, then they should ensure that the
+
+person is safe and then consult with a supervisor, a senior colleague, or peer.
+
+a. If the risk is low, HOPE Program staff or clinicians in training perform the
+following:
+i. Provide emergency/crisis numbers (see Tab 12 for suicide resources in the
+Safety Procedure Binder on the drive)
+ii. Assist the client in identifying potential supports (e.g. family, prosocial
+friends, professionals)
+iii. Send a Status Alert to the supervising officer (i.e. Probation Officer,
+Parole Agent) for awareness and to collaborate care
+iv. Develop a Crisis Treatment Plan that includes:
+e the role and responsibilities of HOPE Program clinician
+e the role and responsibilities of the client
+e aNo-Harm Contract should be signed by the client, which can be
+located here:
+https://docs.google.com/document/d/OBwJx 1f27HdYtT3dKR21hc2Rz
+NkO/edit?resourcekey=0-2 VnDaWKDf!-SSCfaEe YuGCw
+
+26
+September 23, 2024
+
+CONFIDENTIAL
+HOPE_000250
+===== page 27 =====
+Vi
+
+e complete a Safety Plan to include an action plan in relation to the
+triggers for suicidality (e.g. attend counseling, medication). HOPE’s
+Safety plan is located here:
+https://docs.google.com/document/d/1 wp65sLs3wffflW1HY80wGBe
+
+HS9kpyg-r/edit
+Monitor the client frequently by assessing their risk on an ongoing basis
+
+(i.e. follow up by phone between sessions, schedule additional
+
+appointments, etc.).
+
+b. If the risk is moderate, hospitalization (i.e. ''5150) may be necessary
+
+depending on risk factors. HOPE Program staff or clinicians in training perform
+
+the following:
+
+i.
+
+il.
+
+iil.
+
+iv.
+
+September 23, 2024
+
+Provide emergency/crisis numbers (see Tab 12 for suicide resources in the
+Safety Procedure Binder on the drive)
+Assist the client in identifying potential supports (e.g. family, prosocial
+friends, professionals)
+Send a Status Alert to the supervising officer (i.e. Probation Officer,
+Parole Agent) for awareness and to collaborate care
+Contact the client's supervising Probation Officer (PO) or Parole Agent of
+Record (AOR) by phone or email and request additional follow-up (e.g.
+appointments, PO or AOR home visits, phone check-ins).
+Develop a Crisis Treatment Plan that includes:
+e the role and responsibilities of the HOPE Program clinician
+e the role and responsibilities of the client
+e aNo-Harm Contract should be signed by the client, which is located
+here:
+https://docs.google.com/document/d/OBwJx 1f27HdYtT3dKR2 lhce2Rz
+NkO/edit?resourcekey=0-2 VnDaWKDf-SSCfaEe YuGCw
+
+e complete a Safety Plan to include an action plan in relation to the
+triggers for suicidality (e.g. attend counseling, medication). HOPE’s
+
+Safety plan is located here:
+
+27
+
+CONFIDENTIAL
+HOPE_000251
+===== page 28 =====
+Vi.
+
+https://docs.google.com/document/d/ | wp65sLs3wffflWlHY 80wGBe
+
+HS9kpyg-r/edit
+Monitor the client frequently by assessing their risk on an ongoing basis
+
+(i.e. follow up by phone between sessions, schedule additional
+
+appointments, etc.).
+
+c. Ifthe risk is high, clients are not to be left alone at any point. HOPE Program
+
+performs the following:
+
+i.
+
+ii.
+
+iii.
+
+iv.
+
+Vi.
+
+Vii.
+
+September 23, 2024
+
+HOPE Program staff or clinicians in training will call the Office Manager
+or, if the Office Manager is unavailable, other available HOPE Program
+clinician from their office to request assistance.
+
+Once the client is safe and assisted by another HOPE Program staff or
+clinician, the treating clinician makes a 911 call to initiate a "5150" for the
+mental health emergency.
+
+While waiting for the mental health emergency response (i.e. Police or
+ambulance) team, the client is assisted and supported by the HOPE
+Program clinician.
+
+HOPE Program staff or clinicians in training contact the supervising
+officer by phone, immediately after the client has been taken in for
+evaluation at a designated mental health crisis facility. The call needs to be
+followed up with a Status Alert to the supervising officer, unit supervisor,
+and assistant unit supervisor.
+
+HOPE Program staff or clinicians in training complete documentation (i.e.
+progress notes, collateral notes, crisis treatment plan, incident report if
+emergency services are called).
+
+HOPE Program staff or clinicians in training follow up by frequently
+monitoring the client in person during scheduled appointments and/or by
+phone between the scheduled appointments.
+
+Other HOPE Program staff should be advised where appropriate to
+facilitate these options (e.g. the reception staff should be informed of
+
+client's calls which are to receive priority attention).
+
+28
+
+CONFIDENTIAL
+HOPE_000252
+===== page 29 =====
+viii. HOPE Program staff or clinicians in training always consult their
+supervisors as soon as possible or, in his/her absence, an appropriate or
+designated colleague.
+
+ix. Clients that have been assessed to be at risk for suicide or in danger to
+others should be presented for frequent review in the weekly clinical case
+
+conference meetings and monthly Containment Meetings.
+
+COMPLIANCE WITH CASOMB AND SARATSO REQUIREMENTS
+
+HOPE Program adheres to the California Sex Offender Management Board (CASOMB) and
+State Authorized Risk Assessment Tools for Sex Offenders (SARATSO) requirements and will
+ensure ongoing compliance by conducting internal quarterly audits. Clinicians are responsible for
+submitting certifications of specialized training to Human Resources. These certificates will be
+kept in staff's Human Resources (HR) file. Clinicians are responsible for maintaining CASOMB
+
+certification while employed at HOPE. For more information, please visit CASOMB - CA Sex
+
+Offender Management Board (https://casomb.org/), SARATSO - Home (https://saratso.org/), and
+HOPE Programs Frequently Asked CASOMB Questions here:
+
+https://sites.zoogle.com/a/almaxconsulting.com/hope/frequentl y-asked-
+
+questions/training/casomb
+
+USE OF CASOMB CERTIFIED CLINICAL STAFF
+
+The HOPE Program’s clinical staff are all licensed by the State of California or license eligible.
+All staff are supervised by a Licensed Mental Health Practitioner (LMHP), the Clinical Director
+(CD), or the Executive CD. All HOPE staff participate, at a minimum, in weekly face-to-face
+team meetings, and supervision and training is provided. Clinical staff will be certified by
+CASOMB and are encouraged to become a member of Association of Treatment of Sex Abusers
+
+(ATSA; https://www.atsa.com/).
+
+All new clinicians are required to undergo intensive sex offender specific training during their
+onboarding training process. During this time, they are expected to shadow and then cofacilitate
+
+with other CASOMB certified practitioners. This intensive training will ensure that all new
+
+29
+September 23, 2024
+
+CONFIDENTIAL
+HOPE_000253
+===== page 30 =====
+employees are eligible for CASOMB Certification prior to sitting with clients. Staff may be
+required to attend SARATSO authorized trainings or other trainings that meet the
+CASOMB/SARATSO criteria, not offered at HOPE. All staff are required to maintain their
+CASOMB/SARATSO certifications.
+
+SUPERVISION AND PROFESSIONAL DEVELOPMENT
+
+HOPE Program provides multiple trainings, group supervisions, and individual supervision on a
+weekly basis, to ensure staff are given the necessary tools to deliver effective, evidence-based
+services. These trainings will also support staff's professional development. In addition to 5.5
+hours of weekly training (didactic, group supervision and individual supervision), there is a 1.5-
+hour clinical meeting where clinical staff consult on cases to ensure best practices, minimize
+splitting, and create effective interventions and case planning recommendations. These Clinical
+Case Consultation meetings are open to parole/probation and the polygraph examiner. A copy of
+HOPE Program’s clinical supervision contracts for Associate and Apprentice level CASOMB
+
+certified clinicians can be found in TriNet at https://www.trinet.com/.
+
+HOPE Program requires all staff be active in their role of professional development. Staff are
+asked to present professional trainings at HOPE Program throughout their tenure covering sex
+offender specific topics to ensure continued professional development. Staff are also encouraged
+to attend professional development conferences, specializing in sex offender assessment,
+treatment, and research, such as The Association for the Treatment and Prevention of Sexual
+
+Abuse (ATSA; https://www.atsa.com/). When staff participate in professional development paid
+
+for by HOPE, while at HOPE, they are required to take this training back to their team and
+present on the information they learned. Further, students who are training with HOPE Program
+are encouraged to create and present at least one didactic presentation during the training year as
+
+a way to foster their professional development.
+
+CLINICAL SUPERVISION
+
+All unlicensed clinicians at HOPE are required to participate in clinical supervision. For the
+supervisee to benefit from supervision, the expectation is that the clinician come prepared with a
+
+clinical agenda. The role of the clinical supervisor is defined as providing ongoing clinical and
+
+30
+September 23, 2024
+
+CONFIDENTIAL
+HOPE_000254
+===== page 31 =====
+operational support, guidance, education, consultation, and oversight of the supervisee’s work.
+To this degree, the clinical supervisor is responsible, at least in part, for providing mentorship,
+the development of skills and growth in supervisees, and for protecting the welfare of the clients
+and community we serve. Supervisors help supervisees to understand their clients, their cases,
+and the allegations against them. Supervisors also help supervisees identify their clients’
+
+criminogenic needs, formulate a treatment plan, and intervene, if necessary, for public safety.
+
+SUPERVISION STRUCTURE
+
+Individual Supervision (60 minutes)
+
+Each clinician/trainee and her/his supervisor meet for a minimum of one hour per week for
+scheduled, face-to-face individual supervision, in addition to the ongoing daily support and
+100% availability via telephone, text message, and email. If the primary supervisor is
+unavailable, the delegated clinical supervisor will be available to cover the supervision. Topics
+reviewed in supervision can include current or potential therapy or testing case(s), and/or other
+assessment or treatment-related issues. Each trainee will also have access to the Clinical Director
+at their site 100% of the time should there be an emergency and their supervisor cannot be
+
+reached, or should they need to escalate an issue with their supervisor.
+
+Group Supervision (two hours)
+
+All trainees meet together weekly with a supervisor for two hours of group supervision. Group
+supervision provides an opportunity to strengthen professional development as well as promote
+peer relationship building and information sharing. If the regularly scheduled group supervisor is
+unavailable, a secondary group supervisor will be available to cover the scheduled group
+
+supervision.
+
+Clinical Case Consultation (90 minutes)
+
+Clinicians/trainees attend weekly clinical case consultations where they have the opportunity to
+
+give and receive feedback from their treatment team on client cases.
+
+Didactic Training
+Trainees are expected to attend 90-minute weekly didactic trainings. These trainings are crucial
+
+as they focus on sex offender treatment and the training and certification of SARATSO
+
+31
+September 23, 2024
+
+CONFIDENTIAL
+HOPE_000255
+===== page 32 =====
+recommended measures (LS/CMI and STABLE-2007). Trainees are encouraged to join the
+Association for the Treatment and Prevention of Sexual Abuse (ATSA; https://www.atsa.com/)
+and the California Coalition on Sexual Offending (CCOSO; https://ccoso.org/) to further
+
+promote ongoing professional development.
+
+g/
+
+CLINICAL SUPERVISOR RESPONSIBILITIES
+
+A Clinical supervisor is an integral part of the functioning of the HOPE Program. The supervisor
+provides supervision in accordance to following the guidelines of the Board of Behavioral
+
+Sciences (BBS; https://www.bbs.ca.gov/), Board of Psychology (BOP;
+
+https://www.psychology.ca.gov/), and universities supervision requirements for each of their
+assigned supervisees. The clinical supervisors are responsible for upholding the Code of Ethics
+for sex offender therapists, governed by psychology associations and boards such as CASOMB
+(https://casomb.org/index.cfm?pid=1215) and ATSA (https://www.atsa.com/).
+
+The primary clinical supervisor is required to be a licensed mental health professional (LMHP).
+Secondary consultation can be provided by unlicensed, but license eligible clinicians, who hold
+CASOMB certification. It is the responsibility of the primary clinical supervisor to be up-to-date
+on the caseloads of each of their supervisees. This includes knowing the names of each client and
+risk profile. A supervisor is to understand if the client is on a behavioral contract or a financial
+agreement, the client’s polygraph status including date of next polygraph, the client’s overall
+level of participation in treatment including attendance, and anything else that might be
+
+considered clinically significant.
+
+Clinical supervisors ensure that their supervisees are following the policies and procedures of this
+manual and compliance with our contracts, including, but not limited to, meeting our due dates
+and documentation requirements. Supervisors review, provide feedback, and approve all clinical
+artifacts, including, but not limited to the following:
+
+e Daily attendance, Missed Status Alert (MSA) and Status Alert (SA) documentation
+
+e Reviewing and finalizing session notes
+
+e Monthly Treatment Reports (MTRs)
+
+e@ Quarterly Treatment Plans (QTPs)
+
+e Assessments
+32
+September 23, 2024
+
+CONFIDENTIAL
+HOPE_000256
+===== page 33 =====
+e@ Progress Reports
+
+Treatment Modifications
+
+Ensuring collateral notes are completed for clients on a monthly basis
+
+In addition to providing supervision, the supervisor must be available to their supervisee 100%
+
+of the time by phone, email, etc. Listed below are additional supervisory duties and
+
+responsibilities. Other items can be added at the discretion of the Executive Clinical Director.
+
+Additional Supervisor Responsibilities Include:
+
+L.
+
+Supervisor will provide supervision according to the rules and regulations of the Board of
+Behavioral Sciences and/or Board of Psychology;
+
+Supervisor will provide individual and/or group supervision;
+
+If the Supervisor must miss a scheduled supervision session, either individual or group, it
+is the Supervisor’s responsibility to initiate and schedule a ‘make up’ supervision session
+or reassign supervision for the week to another supervisor, as appropriate;
+
+Supervisor will assess the Supervisee’s developmental and skill level and provide
+constructive feedback to support the Supervisee’s professional growth;
+
+Supervisor will provide the Supervisee with guidance on both the content and process of
+his/her clinical work. This will include concrete directives and suggestions for therapeutic
+strategies, theoretical frameworks for conceptualizing the clinical work, and analysis of
+countertransference and issues of human diversity;
+
+Supervisor will raise issues of job performance and prepare a plan of improvement if
+deemed necessary. Supervisor will accordingly recommend additional personal support
+as deemed necessary to enhance clinical work performance;
+
+Board of Behavioral Sciences and/or Board of Psychology paperwork submitted by the
+Supervisee will be completed prior to the Supervisee’s departure from HOPE Program;
+Supervisor will document a summary of content of individual and/or group supervision
+and track the Supervisee’s attendance; and
+
+Supervisor will follow all policies and procedures related to risk management and
+expeditiously address all risks of liability to the program or agency. Supervisor will
+
+inform the Supervisee of the extent of what are identified as liability issues.
+
+33
+
+September 23, 2024
+
+CONFIDENTIAL
+HOPE_000257
+===== page 34 =====
+RESPONSIBILITIES OF SUPERVISEES:
+
+Supervision is a forum for supervisees to gain clinical, emotional, and administrative support for
+
+their development as mental health professionals. At HOPE Program, we value a team approach
+
+to both leadership and service provision. Supervisor(s) may share information to ensure quality
+
+client care and continued supervisee support.
+
+Supervisee Responsibilities Include:
+
+1,
+2.
+
+Supervisee will identify reasonable goals and training needs with Supervisor;
+Supervisee will attend weekly individual and group supervision(s) as scheduled. If
+Supervisee must miss a supervision session, it is their responsibility to initiate and
+schedule a “make-up” supervision time;
+
+Supervisee will plan to use and utilize the allotted individual and group supervision
+sessions by coming prepared with a clinical agenda. Clinical Supervision will focus on
+the Supervisee’s clinical interventions and/or countertransference;
+
+Supervisee is expected to follow the directives and suggestions of the individual and
+group supervisors regarding clinical issues, legal obligations and ethical responsibilities;
+Supervisee is expected to be on time to individual and group supervision;
+
+Supervisee will submit the Summary of Experience logs to the Supervisor for review and
+signature on a monthly basis. The Summary of Experience logs and Experience
+Verification forms should be an accurate reflection of the Supervisee’s actual services
+provided. All Board of Behavioral Sciences (BBS) and/or Board of Psychology (BOP)
+documentation will be completed prior to the Supervisee’s departure from HOPE
+Program;
+
+Supervisee will inform Supervisor of any ethical or legal issues that arise in therapy with
+the client and/or family of the client in accordance with HOPE Program policies and
+
+procedures, and in the next supervision.
+
+NEXTEST SECURITY CLEARANCE
+
+All certified provider agencies and agency employees who have access to criminal justice
+
+information must meet The Federal Bureau of Investigation (FBI) and The California
+
+Department of Justice (DOJ) requirements by taking and passing the nexTEST exam. Prior to the
+
+34
+
+September 23, 2024
+
+CONFIDENTIAL
+HOPE_000258
+===== page 35 =====
+exam, you will review Criminal Justice Information Services (CJIS) security protocols, such
+
+as not leaving out your laptop for others to view confidential information, or need to know
+versus want to know. In compliance with CASOMB policies, HOPE Program requires all staff to
+undergo the nexTEST security clearance test every two years to ensure compliance with the
+
+Criminal Justice Information Services (CHS) security protocols.
+
+Upon completion of the nexTEST exam, staff will upload their certificate to their Human
+Resources (HR) portal in TriNet. Staff will NOT send CASOMB a copy of their certificate; the
+system will automatically update once the test is complete. Click here to follow step-by-step
+instructions to complete your NextTEST:
+
+https://sites.zoogle.com/a/almaxconsulting.com/hope/frequentl y-asked-
+
+questions/training/casomb/nextest-aka-cjis
+
+TREATMENT MODALITIES
+
+Various treatment modalities are employed when working with individuals convicted of a sexual
+offense. In this section, we will discuss some of the most effective models used in managing
+sexual offenders in the community. The most effective frameworks include the following:
+
+e The Containment Model
+
+e Risk Need Responsivity (RNR) Model
+
+e Offense Process Models
+
+CONTAINMENT MODEL
+
+The Containment Model is an interdisciplinary strategy to manage sexual offenders that
+combines elements of treatment, supervision, monitoring, and risk management. It includes
+interventions designed to produce behavioral changes that are supported by modifications in the
+offender’s daily lifestyle and psychological condition. The Containment Model is built upon two
+
+observations:
+
+1) The majority of criminally detected sexual offenders eventually return to communities under
+
+some form of mandated community supervision
+
+35
+September 23, 2024
+
+CONFIDENTIAL
+HOPE_000259
+===== page 36 =====
+2) The likelihood of re-offense is reduced when well-planned mechanisms are in place that
+support full and productive participation of offenders in community life, while holding them
+
+accountable for the harm they have created and for the choices they made and continue to make.
+
+The model is implemented on a case-by-case basis through collaboration of the various
+stakeholders involved in each case. For example, a team that includes a parole agent, a
+specialized law enforcement officer, inpatient and outpatient treatment providers, a medical
+doctor, a polygraphist, a conditional release supervisor, and in some cases, a victim advocate acts
+to “contain” the rehabilitating sexual offender. In some cases, a responsible family member or
+friend may be integrated into this model. Each agent thoroughly learns the sexual offender’s
+pattern of sexual offending, participates in ongoing regular discussions that identify any
+resurfacing of key risk factors, and collaboratively strategizes and coordinates services (e.g.,
+
+level of treatment, probation, etc.) to interrupt the cycle of re-offense.
+
+The Containment Model asserts that reduction in recidivism is achieved only when the
+multiple criminal justice agencies involved in each case proactively strategize to close
+the gaps that naturally occur when multiple systems work together to promote change. A
+thorough understanding of, and full participation in the Containment Model by all
+involved agencies is essential to public safety and vital to the success of externally
+motivated change. Ideally, externally motivated change can be internalized and the
+offender will continue to live a prosocial lifestyle when supervision ends and legally
+mandated monitoring mechanisms are discontinued (p. 4). (CCOSO Adult Standards
+Guidelines, 2010).
+
+HOPE Program operates under the strict adherence to the Containment Model, as a collaborative
+approach to sex offender management. Per California Penal Code 290.09, "The certified sex
+offender management professional shall communicate with the offender's probation officer or
+parole agent on a regular basis, but at least once a month, about the offender's progress in the
+program and dynamic risk assessment issues, and shall share pertinent information with the
+certified polygraph examiner as required." The Containment Model must use a victim-centered
+
+approach. The three primary stakeholders who have regular communication are:
+
+36
+September 23, 2024
+
+CONFIDENTIAL
+HOPE_000260
+===== page 37 =====
+1. Participation and open communication by a supervising officer/agent
+2. Participation and open communication by HOPE Program
+
+3. Participation and open communication by the polygraph examiner
+
+These three stakeholders are the core of the Containment Team, although other team members
+could participate in the Containment Team Meeting (CTM) to share general information, as
+
+mentioned above (e.g., the registering law enforcement agency or victim advocates).
+
+Prior to entering treatment, all clients are required to sign a Release of Information (ROI)
+consenting to open communication (releasing and exchanging) of all aspects of their treatment to
+and from HOPE Program and their supervising officer and/or the courts. HOPE Program is
+responsible for ensuring that the client undergoes a comprehensive evaluation that includes
+standardized risk assessments, such as the STABLE-2007/ACUTE-2007 and the LS/CMI.
+Initially, and throughout the client’s tenure in treatment, their risk scores, cooperation with
+treatment and program policies, including progress in the program and/or any concerns regarding
+
+the client’s risk, will be communicated to the supervising officer.
+
+Client’s treatment contract describes the responsibility of the client to avoid risky, aggressive, or
+re-offending behavior and high-risk situations. The treatment contract requires the client to self-
+report any such behaviors to HOPE Program and their supervising officer as soon as possible.
+Below is an overview of the Containment Model and how HOPE Program operates within the
+
+containment team.
+
+37
+September 23, 2024
+
+CONFIDENTIAL
+HOPE_000261
+===== page 38 =====
+Containment Team
+
+Victim
+Advocacy
+
+Polygraph Criminal Justice
+
+Assessment &
+Treatment
+
+KEY PREMISES
+
+e Sex offenders eventually return to their communities under some form of supervision.
+
+e Reduced likelihood of re-offense when offenders experience productive participation in
+community life and are held accountable for the harm they have created and the choices
+they make.
+
+e Reduction in recidivism is achieved only when the multiple criminal justice agencies
+involved, proactively strategize to close the gaps that naturally occur when multiple
+
+systems work together to promote change
+
+CONTAINMENT MODEL STAKEHOLDERS
+
+1. Criminal Justice System
+Treatment Provider
+
+Polygraph Examiner
+
+- woN
+
+Victim Advocacy
+
+38
+September 23, 2024
+
+CONFIDENTIAL
+HOPE_000262
+===== page 39 =====
+1. CRIMINAL JUSTICE SYSTEM
+
+KEY STAKEHOLDERS
+
+Law enforcement
+Supervising officers/agents
+Parole
+
+Probation
+
+Courts
+
+: Supervision
+
+Primary Case Manager - oversee and coordinate the overall management of sex offenders
+in the community
+
+Ensure ongoing adherence to the conditions of parole or probation
+
+Apply pressure through clear expectations and through the use of sanctions to ensure
+the offender complies with their supervision requirements
+
+Issue authorization to take parole or probation violators into custody
+
+Enforcer of the court
+
+Perform routine house visits
+
+Maintain regular contact with friends and family
+
+Monitor the sex offenders’ activities
+
+Restricts activities/rewards progress of offender
+
+Thoroughly learn the sexual offender’s pattern of sexual offending
+
+Participates in ongoing discussions with the treatment team and polygraphist
+
+Report any risk factors and concerns
+
+Uses victim impact information
+
+GPS - may help monitor the location of offenders and provide information during the
+
+investigation of new sexual offenses
+
+2. TREATMENT PROVIDER
+Key Stakeholders
+
+Evaluator
+Individual Psychotherapist
+
+Group Facilitator
+
+39
+
+September 23, 2024
+
+CONFIDENTIAL
+HOPE_000263
+===== page 40 =====
+Psychiatrist (if needed)
+
+Role: Evaluate, Reduce Re-offense, & Support
+
+Thoroughly assess offender and identify risk factors
+
+Thoroughly learn the sexual offender’s pattern of sexual offending
+
+Help offenders develop internal control, and understand and interrupt their individual
+offense cycles
+
+Identify cognitive distortions / offense supportive schemas
+
+Maintain close collaboration with the supervising officer and polygraphist by having
+ongoing regular discussions
+
+Report any risk factors
+
+3. POLYGRAPH EXAMINER
+
+Polygraph Testing — a treatment tool used to increase disclosures, ensure adherence to
+
+treatment goals, and to increase compliance with conditions of probation or parole.
+Key Stakeholder
+
+Certified Polygraphist
+
+Role: Monitoring
+
+Used to enhance the assessment process
+
+Helps break down offender denial
+
+Helps monitor the offender's deviant fantasies and external behaviors, including access to
+victims
+
+Investigates compliance with probation or parole, and the treatment program’s policies
+
+Report findings to stakeholders
+
+4. VICTIM ADVOCATE
+Key Stakeholders
+
+The Child Abuse Listening, Interviewing and Coordination Center (CALICO)
+Victims of Sexual Abuse
+
+Spouse or Partner
+
+Family
+
+Circles of Support & Accountability (COSA)
+
+40
+
+September 23, 2024
+
+CONFIDENTIAL
+HOPE_000264
+===== page 41 =====
+Role: Victim-Centered & Victim Impact
+e Provides support, services, and information to victims
+e Helps offenders understand the victim’s perspective
+e Actas a liaison between the victim and the containment team
+e Provides training and input into public policy
+
+e Express concerns about a sex offender’s re-entry into the community
+
+SUMMARY
+Individualized and implemented on a case-by-case basis through collaboration of the various
+stakeholders involved. Interventions are designed to:
+
+e Produce behavioral changes
+
+e Modify offender's daily lifestyle
+
+e Reduce risk of re-offending
+
+e Create healthier, pro-social outlets
+
+COLLABORATION WITH SUPERVISING
+OFFICERS USING THE CONTAINMENT
+
+MODEL APPROACH
+
+While HOPE works collaboratively with all stakeholders, the agency works most closely with
+the Polygraph Examiners and Criminal Justice System. In regards to polygraph examiners,
+HOPE works closely with polygraphists to support the use of specialized assessments that
+enhance treatment and determine compliance with release conditions. In conjunction with the
+Criminal Justice System, it is imperative that HOPE maintains constant communication with
+supervising officers regarding any information that we believe might be material to the case, the
+defendant/offender, or to the safety of any person or group. In return, supervising officers will
+notify HOPE of ongoing investigations, or other areas of concern that are relevant to our mutual
+client. Any information disclosed at any time by the supervising officer or agent regarding an
+active investigation, pending charges, surveillance of a client, or any information that is deemed
+confidential or sensitive in nature cannot be disclosed to the client in therapy under any
+
+circumstance.
+
+41
+September 23, 2024
+
+CONFIDENTIAL
+HOPE_000265
+===== page 42 =====
+HOPE also facilitates weekly or monthly Containment Team Meetings (CTMs) either at HOPE
+or at the supervising officer’s location (i.e., probation or parole office). Referring officers,
+polygraphists, and HOPE treatment team are invited to participate. Cases are presented and
+discussed amongst the group. Similar to above, it is important to note that if information
+discussed during a CTM pertains to a client being under an active investigation or if any other
+matter that is deemed sensitive is discussed or obtained by the supervising officer or agent, then
+under no circumstance can that information be disclosed to a client. The diagram below provides
+
+an overview of the steps involved in scheduling and conducting a weekly or monthly CTM.
+
+CONTAINMENT MEETING PROCESS FLOW
+
+Schedule Containment Conduct Containment
+
+AOR/US/AUS
+Office
+Manager
+
+Primary
+Clinician
+
+v
+
+HOPE Program believes that effective communication between the primary mental health
+
+provider and the referring supervising officer is a key success factor in implementing the
+Containment Model on which our treatment philosophy is based. HOPE will make every
+reasonable effort to stay in regular contact with the referring officer, so as a matter of general
+
+practice, formal notifications called “Status Alerts” and “Missed Session Alerts (MSAs)” are
+
+42
+September 23, 2024
+
+CONFIDENTIAL
+HOPE_000266
+===== page 43 =====
+generated in our electronic client file system known as TreatAnyone (TA). The chart below
+
+demonstrates the minimal expectations between the supervising officers/agents and HOPE
+
+representatives during a CTM, followed by HOPE’s CTM agency representative guide.
+
+GENERAL OVERVIEW & EXPECTATIONS OF CONTAINMENT TEAM MEETINGS (CTMS)
+
+SOT (Sex Offender Supervising Officer(s) Polygrapher Victim Advocate
+Treatment) Provider
+Arrive to CTM on time Arrive to CTM on time | SOT provider to review polygraphist The victim advocate can
+
+report to discuss exam findings with
+stakeholder
+
+sit in on CTMS, if
+applicable
+
+Present attendance history
+
+Discuss supervision
+compliance
+
+Discussion of exams can help SOT
+provider and stakeholders monitor the
+offender's deviant fantasies and external
+behaviors, including access to victims
+
+Advocates can provide
+support and information
+to the victims
+
+Discuss participation in
+treatment
+
+Relay any violations of
+conditions
+
+Discussion of exams helps to investigates
+compliance with probation/parole
+
+Advocates can help
+offenders understand the
+victim’s perspective
+
+Discuss polygraph results
+
+Discuss clients’ source
+of income
+
+SOT provider to make recommendations
+for future polygraph type
+
+Victim advocates act as
+liaison between
+victim(s) and
+containment team
+
+Discuss any changes in
+LS/CMI and STABLE risk
+factors (i.e., increase,
+decrease, or no change)
+
+Relay whether client is
+employed
+
+SOT provider to schedule polygraph
+examinations with client and polygraphist
+
+Advocates can express
+concerns about a sex
+offender’s re-entry into
+the community
+
+Relay any behavioral
+concerns
+
+Discuss clients’
+housing situation (i.e.,
+stable, unstable, or
+transient)
+
+Discuss completion of
+treatment goals
+
+Discuss clients’
+relationships (i.e., in an
+intimate relationship,
+evidence of prosocial or
+antisocial peers)
+
+Discuss completion of
+curriculum
+
+Officers/AOR’s to
+provide polygraph
+referral forms to relay
+specific questions
+wanted for upcoming
+polygraph examinations
+
+Discuss eligibility for
+titration or suggested
+increases in services
+
+Discuss placement or
+amendment of
+conditions
+
+September 23, 2024
+
+CONFIDENTIAL
+
+43
+
+HOPE_000267
+
+===== page 44 =====
+CTM AGENCY REPRESENTATIVES: A HOW-TO GUIDE:
+
+Attendance for Containment Team Meeting (CTM)
+
+When marking attendance for CTM, you will use the bolded “blurbs" listed below. The only time
+you would delete (do not “skip”) a Client (CLT) from the CTM collection and NOT mark their
+attendance is if the Agent of Record (AOR) cancels his/her CTM and requests that the client be
+rescheduled. If this is the case, save the Progress Report and Treatment Plan update (i.e., CTM
+report) as “work in progress” to use at a later date. You would inform the clinician the client’s
+meeting was postponed, and ask them to edit the report to include updated information once that
+client is rescheduled. As a courtesy, you can inform your operation’s team as well so they are
+aware as to why you did not finalize the report. Finally, if anyone not on the CTM list was
+discussed for any reason (e.g., to gain collateral, PO/AOR provides custody updates), then you
+will NO longer add them to the CTM group collection, but instead you will simply add the
+discussion to a collateral note.
+e If the client attended CTM, mark them as present in TreatAnyone (TA) and use the
+dropdown menu to add the template seen below.
+> Client (CLT’s full name should populate here; John Smith) is present and
+staffed. Refer to the containment report dated 3-15-2022.
+e If the client did not attend, mark as excused (NOT no-show as you would in traditional
+progress notes) in TA and use the dropdown menu to add the template seen below.
+> Client (CLT’s full name should populate here; John Smith) was staffed.
+Refer to the containment report dated 3-21-2022.
+
+Progress Report & Treatment Plan Updates
+
+Please reference the templates above or in TA for awareness of the clinical expectations for all
+sections of the Progress Report & Treatment Plan Update report (i.e., Risk Summary, Overall
+Clinical Comments, Requested Frequency of Treatment, and then the final section that you
+complete, which is the Agency Representative Comments). Before finalizing all reports, CTM
+representatives are to make sure they are correcting any clinician errors in their reports. Also, if
+AOR provides an updated client status (e.g., incarcerated, medical, etc.) or provides an updated
+Agent of Record (AOR) or updated Controlling Discharge Date (CDD)/Treatment End Date
+
+(TED), please make sure you cross-reference info in the system, add a collateral note, and email
+
+44
+September 23, 2024
+
+CONFIDENTIAL
+HOPE_000268
+===== page 45 =====
+Operations @almaxconsulting.com if changes need to be made in TA. The CTM representative
+
+can edit phone numbers and CDD, for example, but any status update (i.e., absconded,
+incarcerated, supervision ended, receiving services, medical) needs to be edited by operations so
+they can update ARMS (i.e., CDCR database).
+
+Agency Representative Comments:
+
+EXAMPLE #1
+
+Mr. Smith did not attend his scheduled Containment Team Meeting (CTM). His assigned Agent
+of Record (AOR) and the Unit Supervisor (US) of Delta GPS were also in attendance. His Static-
+99R is a | and his CSRA is a 1. He resides in a Sober Living Environment (SLE). He has a
+history of Methamphetamine use. He does not have a telephone and he does not engage in HOPE
+services; however, he is receiving Mental Health (MH) treatment through the county and works
+closely with a MH team. The subject also attends the Behavioral Health Reentry (BHR) program,
+Community Outreach, and has a conservator. The subject will remain on medical leave until
+more stabilized and amenable to Sex Offender Treatment (SOT). Remain SA level of
+
+supervision.
+
+EXAMPLE #2
+
+Mr. Doe attended his scheduled Containment Team Meeting (CTM). His assigned Agent of
+Record (AOR) and the Unit Supervisor (US) of Seaport GPS were also in attendance. He resides
+with his girlfriend in a studio apartment on California Street in downtown San Diego, CA. He is
+employed full-time at Amazon. He has had violations in prior review periods for failure to attend
+Sex Offender Treatment (SOT); however, he has not had any violations in this review period. He
+needs to be scheduled for his maintenance polygraph examination. AOR sent polygraph
+
+questions to operations. Maintain current supervision level.
+
+EXAMPLE #3 (INCORRECT Sample)
+
+The client attended his scheduled CTM OR the Client was present. (This example is NOT
+acceptable per the Sex Offender Unit (SOU) as more detailed information is needed as seen
+in Examples #1 and #2 above).
+
+45
+September 23, 2024
+
+CONFIDENTIAL
+HOPE_000269
+===== page 46 =====
+What to listen/look for and document during the meeting:
+
+Employed? Housing? In a relationship? Do we have the correct Static-99R score? Do
+they attend other groups outside of HOPE for Mental Health (MH) services through
+Parole Outpatient Clinic (POC), Behavioral Health Reentry (BHR) program, Telecare
+(We need a Release of Information (ROJ) to talk to Telecare) or Veteran’s Affairs (VA;
+we need an ROI for them as well). Do they attend Alcoholic Anonymous (AA), Narcotics
+Anonymous (NA), and or Domestic Violence (DV) courses? Do they attend school? Do
+they engage in prosocial activities (i.e., Agent of Record (AOR) might say the subject
+goes to the gym in his spare time or the subject reports reading and watching movies with
+his partner in his/her spare time)? Have they recently violated their conditions; any
+changes to their conditions of parole? Any updates to their status (i.e., incarcerated),
+supervising agent/officer, and or any updates to their discharge date. If parole gives you
+an updated Controlling Discharge Date (CDD) or Max CDD, you will collateral this
+CDD in clt file and check to ensure CDD matches his Treatment End Date (TED) in
+TreatAnyone (TA) under Enrollment>Enrollment Information. If the dates do not match,
+email Operations @almaxconsulting.com to request that Op’s updates CDD in our system
+or edit the CDD yourself in TA labeled “Tx end date.” If it is an upcoming CDD, cc
+
+operations and the assigned clinician for awareness so the clinician can prioritize
+
+assessments, begin/continue treatment planning before the client discharges, and prepare
+
+their discharge summary report.
+
+What you verbally report during CTM:
+
+Read clinician's reports and attempt to review ahead of time to ensure completion and
+accuracy. Worse case, if the report is incomplete, provide risk scores, a brief description
+of the client’s progress and participation (review a recent group and individual note),
+relay polygraph results to include pre and or post-test disclosures, any risk factors or
+areas of noncompliance you see. Are they ready to titrate and reduce in treatment? What
+part of the curriculum are they in (i.e., prep, core block I or II, maintenance, or aftercare
+
+and which module) per their last group note entry?
+
+46
+
+September 23, 2024
+
+CONFIDENTIAL
+HOPE_000270
+===== page 47 =====
+CTM TO-DO Reminders:
+
+Write out words at least once then you can use acronyms (i.e. Sex Offender Treatment;
+SOT). For a list of commonly used acronyms, click here:
+
+https://sites.zoogle.com/a/almaxconsulting.com/hope/frequently-asked-questions/list-of-
+
+acronyms-commonl y-used-by-stakeholdershope
+
+Review and edit grammatical errors prior to finalizing reports
+Follow up with Ops for any TA updates (cc clinician if necessary)
+Follow up with clinicians if parole confirms an upcoming CDD so as to remind the
+clinician to prioritize the client’s risk assessments/Self Reports (SR’s), and to engage in
+discharge planning.
+Collateral important things to know/track (i-e., confirm CDD’s, Max CDD (max means
+the CDD cannot be extended even if the client gets a violation).
+Follow up with clinician’s missing reports. If it becomes a theme, loop in supervisors for
+additional reinforcement.
+Identify themes and bring to staff meeting if many are not doing something similar, such
+as including the disclosures when reporting polygraph results. Simply saying “the client
+passed his last polygraph” is not acceptable. The clinician needs to include whether there
+were disclosures or not. Appropriate completion of this section might say the following:
+> Mr. Smith’s maintenance polygraph conducted on 3/28/22 resulted in no
+significant reactions with the following pretest disclosures:
+
+o Use of alcohol twice since his last polygraph examination
+
+o The subject reported that he is in a romantic relationship
+
+o Hereported accessing social media via his cell phone (i.e., Facebook and
+
+Instagram)
+o He reported use of the dating app, “Plenty of Fish”
+© Occasional masturbation to adult X-rated material via the website
+
+“pornhub.com”
+
+47
+
+September 23, 2024
+
+CONFIDENTIAL
+HOPE_000271
+===== page 48 =====
+HOPE REPRESENTATIVE CTM ATTENDANCE CHEAT SHEET:
+
+Client attended Client did not
+attend
+
+Mark Mark
+Present Excused
+Complete Complete
+PN PN
+Finalize Finalize
+CTM Report CTM Report
+and mark and mark
+attendance attendance
+within 24 within 24
+hours; hours;
+inform op's inform op's
+once once
+complete complete
+
+CONTAINMENT MEETING (CTM) REPORTS
+
+Client excused
+24-hr in
+
+advance by
+stakeholder
+
+Delete from
+collection;
+do not
+"skip"
+
+Save CTM
+Report as
+"Workin
+Progress"
+
+Client excused
+less than 24-hr
+
+in advance
+
+Discuss any clt
+
+not staffed
+during CTM
+
+Delete from
+collection;
+do not
+
+Save CTM
+Report as
+"Work in
+
+Progress"
+
+f ”
+
+We no
+longer drop
+into the
+collection
+—eeeee
+(——
+Simply
+enter
+discussion
+intoa
+collateral
+
+note In TA
+——________
+
+Probation CTM representatives no longer need to complete monthly CTM reports. Instead, the
+
+HOPE representative will add the agency feedback to the CTM collection attendance note. All
+
+CDCR clients staffed at CTMs require corresponding documentation in TA. Clinicians are to
+
+create a report titled, “Progress Report and Treatment Plan Update” in TA, in preparation for
+
+all CDCR clients’ CTMs, 48 hours prior to the meeting. Templates are provided in TA to help
+
+guide clinicians to ensure vital elements are discussed during the CTM. See step-by-step
+
+instruction below:
+
+How to Create a CDCR CTM Report: “Progress Report and Treatment Plan Update”
+
+e Go to client file in TreatAnyone (TA)
+e Goto Chart
+
+e Click + add chart item in the right-hand corner
+
+48
+
+September 23, 2024
+
+CONFIDENTIAL
+HOPE_000272
+===== page 49 =====
+e Select "Create clinical report"
+
+e Click clinical report dropdown and choose "Progress report and treatment plan updates"
+for CDCR clients
+
+e Under "Clinical report date," enter the date of the CTM meeting, not the date the report
+was created
+
+e Under "What period does this clinical report cover?" click “custom” and include the six
+months. Do not click “last six months” as this does not include the current month and
+only includes the six months’ prior
+
+e Click Next
+
+e Complete each section seen below and ensure you use the templates provided
+
+1. Risk Summary Section:
+EXAMPLE:
+
+Mr. Doe’s risk assessments were reassessed on 4/11/22. His STABLE score reduced by 2
+points in the following domains: Hostility towards women and impulsivity. His LS/CMI
+
+increased 2 points in the following domains: Criminal history and procriminal attitude.
+
+His current STABLE-2007 is an 8 (Moderate) and his overall general Risk/Need Total
+score derived from the LS/CMI was 21 (High). Comparable individuals with the same
+LS/CMI score as Mr. Doe have, approximately, a 44% chance of re-offending within one
+
+year.
+
+Mr. Doe’s composite assessment placed him in level IVa for supervision and intervention
+using the standardized risk framework. Individuals placed in Level IVa are considered
+Above Average Risk. Out of 100 individuals convicted of sexually motivated offenses
+with the same risk profile as Mr. Doe, Level [Va would be expected to recidivate
+
+sexually (including sexually motivated breaches) at a rate of 17.8% over 5 years.
+
+OR For Women
+Mrs. Doe's overall general Risk/Need Total score derived from the LS/CMI is 4, which
+fell in the overall Very Low level. Comparable individuals with the same LS/CMI score
+
+as Mrs. Doe have, approximately, a 1% chance of reoffending within one year.
+
+49
+September 23, 2024
+
+CONFIDENTIAL
+HOPE_000273
+===== page 50 =====
+Women are not assessed using the Static-99R or the STABLE-2007, so HOPE is not able
+to provide a composite assessment of risk/needs to produce estimates of sexual
+recidivism; however, the STABLE-2007 is used to develop overall treatment goals and
+interventions for females. Mrs. Doe scored a 2 on the STABLE-2007 which placed her in
+
+the overall Low category.
+
+2. Goals Section:
+
+Enter a minimum of three goals. One treatment target must come from the LS/CMI,
+
+another must come from the STABLE-2007, and the third is the clinician’s choice.
+
+3. Section One: Engagement & Participation in Treatment Section:
+Choose from the following options: Not met, Partially Met, or Met
+
+4. Section Two: Progress Towards Reduction in Risk (Criminogenic Needs &
+Protective Factors Section):
+
+Choose from the following options: Not met, Partially Met, or Met
+
+5. Overall Clinical Comments Section:
+EXAMPLE:
+
+e Attendance: Mr. Doe has had perfect attendance since beginning HOPE program
+on 4/20/20 OR He's had five absences in the last 6 months (1/2/24, 1/5/24,
+1/20/24, 2/1/24, 2/16/24); he was placed on a behavioral contract on 6/1/20 to
+address his attendance (Do not include % here, instead include # of absences).
+
+e Current Module: Mr. Doe began treatment on 4/20/20. He continues to
+participate in the preparatory phase of treatment and just completed module 4
+of 6 on motivation and resistance.
+
+e Does the client admit to his/her sexual offense(s)? Mr. Doe takes responsibility
+for his sexual offense.
+
+e Polygraph Type, results, and disclosures: Mr. Doe's last maintenance
+polygraph on 7/1/20 indicated no significant reactions, with the following pretest
+disclosures:
+
+e Viewed adult X-rated pornography
+
+50
+September 23, 2024
+
+CONFIDENTIAL
+HOPE_000274
+===== page 51 =====
+e Sexually active with adult girlfriend
+
+e Drank alcohol with his girlfriend during COVID-19 quarantine. He added
+that he stopped drinking as soon as he was scheduled for his polygraph
+examination.
+
+e High-risk behaviors: Mr. Doe reported urges to drink alcohol and smoke
+cannabis, but reported that it is against his conditions of parole. He added that he
+has refrained from use since his release from custody. A relapse prevention plan
+was created.
+
+e Concern(s) in treatment: Mr. Doe endorsed anxiety in relation to his transition
+back into the community, as well as anxiety in relation to ensuring he follows his
+conditions of parole. Coping skills were provided.
+
+e Participation and progress in treatment: Mr. Doe actively engages in
+discussion, without being prompted, and he appears motivated for treatment. He
+and his clinician continue to target his treatment goals in an attempt to reduce his
+risk of re-offending. A current focus in treatment has been on behavioral control
+skills and the events surrounding his sexual offense. Next month, healthy
+intimacy skills will also be a focus of discussion. Finally, despite his endorsing
+anxiety, he appears to be coping effectively, evidenced by challenging his
+cognitive distortions and positively reframing his thoughts during sessions.
+
+e Titration: Mr. Doe is not eligible for titration at this time. He is in the
+preparatory program (Module 4 of 6) and still needs to complete blocks | and 2 of
+the core curriculum before titration to the maintenance phase of treatment can be
+considered. Upon successful completion of HOPE’s curriculum, Mr. Doe may be
+
+eligible for titration.
+
+6. Requested Frequency of Treatment Section:
+EXAMPLE #1
+
+Remain the same frequency of treatment
+EXAMPLE #2
+In addition to Mr. Doe's current level of treatment (bi-weekly maintenance groups and
+
+monthly individual sessions), this writer is proposing an increase in services to include
+
+51
+September 23, 2024
+
+CONFIDENTIAL
+HOPE_000275
+===== page 52 =====
+monthly couples therapy sessions (i.e., once per month). Specifically, Mr. Doe has
+reported ongoing marital conflict and he has requested couples counseling, in addition to
+his current level of services, in hopes of gaining healthy conflict resolution skills and
+healthy intimacy skills with his wife. Being that domestic violence was a nexus to Mr.
+Doe’s sexual offense, this writer is recommending additional services to better adhere to
+the risk principle and to further reduce his risk of re-offending.
+
+EXAMPLE #3
+
+Upon completion of HOPE's curriculum, this clinician will present Mr. Doe to the
+treatment team to propose a reduction in treatment. Specifically, this writer would like to
+transfer Mr. Doe to HOPE's bi-weekly maintenance phase of treatment. Mr. Doe is
+
+expected to complete his last module of Core 2 Block 2 within the next few weeks.
+
+7. Agency Representative Comments Section:
+This section is left alone and completed by the representative attending CTM. Once all
+
+sections of the report are complete, the clinician is to save the report as "Work in
+progress." The CTM representative (i.e., clinical director) will review and finalize the
+report after completing the final section. Clinicians will need to review the
+
+representative's comments upon completion of report.
+
+RISK NEED RESPONSIVITY (RNR) MODEL
+
+In order to provide evidence-based treatment, it is required that all services (group, individual
+and chaperone training) and treatment plans are delivered under the auspice of the Risk Needs
+
+Responsivity (RNR) Model.
+
+The RNR model was developed in the 1990s by Andrews, Bonta, and Hoge and is applied to a
+wide range of criminal populations. RNR has become one of the most influential models guiding
+treatment interventions in corrections (Ogloff & Davis, 2004). Hanson, Bourgon, Helmus, and
+Hodgson (2009) meta-analysis of 23 recidivism studies indicates that programs that utilize the
+
+Risk-Need-Responsivity Model evidenced lower sexual and general recidivism.
+
+Empirical Research indicates that interventions that adhered to all the three principles of RNR
+
+(i.e., targeted low risk offenders, and their non-criminogenic needs using non-behavioral
+
+52
+September 23, 2024
+
+CONFIDENTIAL
+HOPE_000276
+===== page 53 =====
+therapeutic approaches) evidenced the largest reductions in recidivism. Treatment programs that
+did not adhere to any of the three principles, were actually associated with a small increase in
+recidivism. Treatment programs that adhered to at least one of the principles showed a small
+decrease in recidivism. Treatment programs adhering to two principles showed larger effects.
+Treatment interventions that adhered to risk reduction programs, informed by psychological
+science generally, and RNR specifically, have been shown to reduce recidivism by 30-40%
+(Andrews, D.A, 2012). When all three principles are in operation, particularly in community
+settings, reductions in recidivism of up to 50% have been reported (Andrews & Bonta, 2006).
+
+Treatment and supervision are most effective when tailored to the specific RNR of the client.
+Risk Need Responsivity has three guiding principles:
+
+e Risk Principle
+
+e@ Need Principle
+
+e Responsivity Principle
+
+THE RISK PRINCIPLE
+
+e Risk —an offender’s level of risk should be matched to the appropriate level of treatment
+intensity and supervision. There are two aspects of the Risk Principle —
+e First — Criminal behavior can be predicted
+e@ Second — Match the level of services to the risk level of the offender
+Risk should be determined using actuarial risk assessments:
+1. Static — unchangeable factors
+2. Dynamic — changeable factors
+
+e Provide intensive services to higher risk clients and minimal services to lower risk clients
+
+THE NEED PRINCIPLE
+
+e Needs - are known crime producing factors that are targeted for intervention, because
+
+they can be changed through treatment
+e Identifying the specific criminogenic needs or dynamic factors are the most effective
+interventions
+e Criminogenic needs are dynamic risk factors that are proven through research to affect
+recidivism
+53
+September 23, 2024
+
+CONFIDENTIAL
+HOPE_000277
+===== page 54 =====
+Criminogenic / Non-Criminogenic Needs
+
+Antisocial personality pattern
+
+Low self-esteem
+
+Procriminal attitudes Loneliness
+
+Antisocial relationships; supportive of crime | Depression
+
+Family/marital problems Major mental health disorder
+Relationship problems Physical health concerns
+
+Lack of performance or involvement in work
+
+or school
+
+Poor victim empathy
+
+Lack of prosocial recreational activities
+
+Lack of motivation for treatment at intake
+
+Substance abuse
+
+Sexual preoccupation
+
+Atypical sexual interests
+
+Emotional congruence with children
+
+General self-regulation
+
+Resistance to rules/supervision
+
+Poor problem solving
+
+THE RESPONSIVITY PRINCIPLE
+
+e Responsivity — is matching the style, modes, and influence strategies of service with the
+
+learning styles, motivation, aptitude, and ability of cases (Andrews, 2000).
+
+e Deliver information in a way that the client will receive the information.
+
+o Treatment and interventions should be delivered in a manner that is consistent
+
+with the offenders’ learning styles, abilities, and personal circumstances.
+
+©. This includes a person’s learning style, motivation, and level of functioning.
+
+e@ Cognitive-behavior and cognitive social learning methodologies are reported to be the
+
+most suitable (Andrews & Bonta, 2003).
+
+September 23, 2024
+
+CONFIDENTIAL
+
+HOPE_000278
+===== page 55 =====
+OFFENSE PROCESS MODELS
+In concert with the Risk Need Responsivity Model, Offense Process Models provide CBT
+
+interventions that are used to tailor treatment to specific needs of clients. These models include:
+e Relapse Prevention (RP)
+e@ The Good Lives Model (GLM)
+e Self-Regulation Model (SRG)
+
+RELAPSE PREVENTION THERAPY (RP)
+
+RP is a cognitive behavioral approach that was originally designed for use in conjunction with
+treatment of addictive behaviors. More recently, it has been used as a stand-alone technique
+designed to teach patients how to alter their behavior to recognize and cope with triggering
+
+events, situations, and feelings that are likely to lead to a relapse.
+
+The conceptual framework of the relapse process is useful in treating sexual offenders, who
+commonly experience high-risk situations by being unaware of how a seemingly benign decision
+can threaten their perceived sense of control and self-efficacy. Figure 1 below illustrates the
+Offense Chain, a model we use to help our clients develop effective coping responses and avoid
+
+inadvertently progressing along the risk continuum toward a re-offense.
+
+55
+September 23, 2024
+
+CONFIDENTIAL
+HOPE_000279
+===== page 56 =====
+Figure 1: The Offense Chain
+
+Abstinence
+(Sense of Control, Continued Success Expected)
+
+Seemingly Unimportant Decision?
+Yes
+
+J => No: Prevention
+
+High-Risk Situation
+(Sense of control threatened)
+
+I
+
+Adequate Coping Response
+
+n ==> Yes: Prevention
+
+Lapse
+Abstinence Violation Effect (giving up)
+
+4
+
+Adequate Coping Response?
+
+J ==> Yes: Prevention
+
+Relapse (Reoffense)
+
+56
+September 23, 2024
+
+CONFIDENTIAL
+HOPE_000280
+===== page 57 =====
+THE GOOD LIVES MODEL
+
+GLM is a strength-based treatment construct based on the notion that sex offenders are both
+holders and violators of human rights. It suggests that humans require certain “goods” in
+principal areas of life in order to feel whole: Life/Healthy Living, Knowledge, Excellence in
+Work and Play, Excellence in Agency, (self-determination and self-agency), Inner Peace,
+Relatedness (family/friends), Community, Spirituality, Happiness, and Creativity. The HOPE
+treatment program leverages this model to help clinicians understand and evaluate the risks
+factors associated with clients’ inability to achieve the basic Human Goods. Additionally, we
+strongly favor this treatment philosophy because it also addresses clinician attitudes toward the
+offender and the relationship between these attitudes and factors, such as forgiveness, evil, and
+
+therapeutic alliance. Figure 2 below illustrates A “Good Life’ Diagram.
+
+Figure 2: A Good Life Diagram
+
+LIFE
+Healthy living and
+functioning
+
+RELATEDNESS INNER PEACE
+
+including intimate freedom from
+romantic and emotional turmoil
+familial relationships and stress
+
+EXCELLENCE
+IN WORK
+including mastery
+
+EXCELLENCE
+IN PLAY
+hobbies interests
+
+experiences
+
+EXCELLENCE
+IN AGENCY
+autonomy, power,
+self-directedness
+
+SPIRITUALITY
+in the broad sense
+of finding meaning
+and purpose in life
+
+A ‘Good Life’
+
+COMMUNITY
+connection to wider
+social groups
+
+PLEASURE
+feeling good in the
+here and now
+
+CREATIVITY
+expressing KNOWLEDGE
+oneself through how well informed
+alternative forms one feels
+57
+September 23, 2024
+CONFIDENTIAL
+
+HOPE_000281
+===== page 58 =====
+SELF-REGULATION MODEL
+
+According to Yates and Ward, “We argue that none of these models singly is sufficient to guide
+the assessment and treatment of sexual offenders, and that an integrated model that draws on
+research and practice in the development of case formulation, is most likely to be effective in
+achieving the goals of reduced recidivism, risk reduction, and reduced rates of sexual
+
+victimization (Ward and Yates, 2008).”
+
+The Self-Regulation Model (SRM) described by Ward, Hudson, and Keenan (1998) differs from
+the Relapse Prevention (RP) model by identifying four offending pathways rather than a single
+pathway, by identifying offense goals, and by identifying the strategies used to address these
+goals. Figure 3 below illustrates the Self-Regulation Model.
+
+Figure 3 Self-Regulation Model
+
+PHASE 1 : LIFE EVENT
+
+PHASE 2 : DESIRE FOR OFFENSIVE SEX
+
+PHASE 3 : GOALS FOR SEXUAL OFFENDING
+
+PHASE 4 : PLANNING STRATEGY
+
+AVOIDANCE GOALS APPROACH GOALS
+AVOIDANT-PASSIVE AVOIDANT-ACTIVE {| APPROACH-AUTOMATIC APPROACH-EXPLICIT
+Underregulation Misregulation ‘ Und ulation Intact regulation
+
+Decr skill, covert plan Inapprop. strategy : Impulsive Syste: plans
+
+PHASE 5 : HIGH RISK SITUATION
+
+AVOIDANT-PASSIVE AVOIDANT-ACTIVE
+Feels out of control Renewed effort
+
+APPROACH-AUTOMATIC APPROACH-EXPLICIT
+Going with the flow Explicit planning
+
+PHASE 6 : LAPSE
+
+AVOIDANT-PASSIVE AVOIDANT-ACTIVE
+Give in, go to approach Loss of control,
+Go to approach
+
+APPROACH-AUTOMATIC APPROACH-EXPLICIT
+Increased efficacy Increased efficacy
+
+weeceecsceenee O
+
+PHASE 7 : SEXUAL OFFENCE
+
+PHASE 8 : EVALUATION
+
+AVOIDANT-PASSIVE AVOIDANT-ACTIVE
+AVE, shame, goal failure AVE, guilt, goal failure
+
+APPROACH-AUTOMATIC APPROACH-EXPLICIT
+Goal success, beh stable Goal success, refine plans
+
+PHASE 9 : ATTITUDE TO FUTURE OFFENDING
+
+58
+September 23, 2024
+
+CONFIDENTIAL
+HOPE_000282
+===== page 59 =====
+PSYCHOTHERAPEUTIC TREATMENT APPROACHES AND METHODS
+
+HOPE Program utilizes evidenced-based treatment approaches when working with our clients.
+As such, Cognitive Behavioral Treatment (CBT) is a primary modality. All clinicians are trained
+to engage the client in treatment by creating a therapeutic alliance using Motivational
+
+Interviewing (MI) techniques.
+
+TREATMENT STRATEGIES FOR SUBTYPES OF OFFENDERS
+
+HOPE Program utilizes an individualized approach and tailors each client’s treatment to his/her
+learning style and treatment needs. They are assigned to a treatment team and services are
+
+delivered within the Responsivity Principle.
+
+TREATMENT
+HOPE Program’s treatment is developed and targeted towards the following treatment needs:
+® Preparatory Treatment Program
+® Core Treatment Program — Males
+® Core Treatment Program — Females
+® Maintenance Treatment Program
+® Aftercare Treatment Program
+® Adolescent Treatment Program
+® Child Pornography
+® Responsivity
+® Mentally ill individuals
+® Developmentally Delayed individuals
+@ Illiterate individuals
+
+® Spanish Speaking individuals
+
+Group TREATMENT
+Group Treatment is provided on a weekly, twice weekly, or bi-weekly basis (i.e. every other
+week), depending upon the risk and need of the client. HOPE Program's groups are structured to
+
+be open-ended and rolling, not closed, which means that clinicians can incorporate different
+
+59
+September 23, 2024
+
+CONFIDENTIAL
+HOPE_000283
+===== page 60 =====
+modules or phases of treatment with new members joining a group. All groups are 90 minutes in
+
+duration. See group session process flow below.
+
+Group Session Process Flow
+Schedule Group Conduct Group Documentation
+Agent of
+Record
+
++
+
+Client
+
+zl same day within 24 hours
+>
+
+Supervisor
+
+INDIVIDUAL AND FAMILY TREATMENT
+Individual treatment is offered on a weekly, bi-weekly, monthly, and quarterly basis, depending
+upon treatment needs. Individual treatment is 60 minutes.
+
+Probation clients are initially enrolled in weekly groups and weekly individual sessions for a
+period of 6 months. During this time, the clinician will establish rapport, conduct a proper
+functional assessment/case conceptualization that incorporates risk-relevant factors and treatment
+need, and commence with skills-based strategies to promote risk reduction. After the 6-month
+period, the client is eligible for participating in weekly groups and monthly individual sessions
+if he/she exhibits appropriate behavior in group and shows progress toward treatment goals,
+
+including a reduction in identified criminogenic needs.
+
+60
+September 23, 2024
+
+CONFIDENTIAL
+HOPE_000284
+===== page 61 =====
+CDCR clients are initially enrolled in once or twice weekly groups, which is dependent upon
+their Static-99R score, and monthly individual sessions. Similar to probation clients, CDCR
+clients will participate in a functional assessment and treatment planning, but can only decrease
+their sessions once they have successfully completed the preparatory and core phases of
+
+treatment.
+
+Family therapy is offered to all client types on a weekly, bi-weekly, monthly, and quarterly basis
+with the exception of CDCR clients. CDCR clients can only participate in family therapy once
+they have titrated to the maintenance phase on treatment. Once reduced to the maintenance
+phase, and if clinically indicated, CDCR client are eligible for once monthly family therapy
+sessions if approved by CDCR and HOPE’s treatment team. See individual session process flow
+below.
+
+Individual Session Process Flow
+Schedule Individual Conduct Individual Documentation
+Agent of
+Record
+
+Office
+_ ~~
+Client
+
+s
+
+Yes
+Primary
+No
+Supervisor
+61
+September 23, 2024
+
+CONFIDENTIAL
+HOPE_000285
+===== page 62 =====
+MODIFICATIONS TO TREATMENT FOR INDIVIDUALS WITH LOW COGNITIVE
+FUNCTIONING
+
+When clients with low cognitive functioning are enrolled into treatment, HOPE clinicians adjust
+their approach and cognitive behavioral therapy interventions and materials to best align with the
+client’s cognitive level of functioning. Applying this responsivity principle where clinicians
+tailor interventions to a client’s learning style, motivation, abilities, and strengths, maximizes a
+
+client’s ability to learn.
+
+ACCESSIBILITY FOR NON-ENGLISH-SPEAKING OR AMERICAN SIGN LANGUAGE
+INDIVIDUALS
+
+If we are unable to provide services to clients in their preferred language, an interpreter is
+
+brought in either at the expense of HOPE, the stakeholder, or the client, depending on the referral
+
+source.
+
+FOREIGN LANGUAGE INTERPRETER SERVICES
+
+For all CDCR clients, language translation services MUST be coordinated through the parolee’s
+agent of record, with the exception of American Sign Language (ASL), which is conducted
+through Boostlingo, a service we will discuss in more detail below. For more information on
+utilizing CDCR’s language translation services, click here:
+
+https://sites.zoogle.com/a/almaxconsulting.com/hope/frequently-asked-questions/cdcr-foreign-
+
+language-interpreter-services
+
+For county and federal clients, foreign language and ASL translation services will be conducted
+
+through Boostlingo.
+
+Boostlingo is an agency that provides HOPE Program with on-demand translation services, 24/7.
+We can utilize this agency for ASL (all client types, including CDCR) and foreign language
+translation for county and federal clients ONLY. If we do not receive a response/confirmation
+about a language translator from a CDCR agent, we CANNOT use this agency just because the
+
+clinician did not want to cancel the CDCR appointment.
+
+62
+September 23, 2024
+
+CONFIDENTIAL
+HOPE_000286
+===== page 63 =====
+Boostlingo works on a rating system. After the clinician has completed their call, they will rate
+the interpreter and the call quality. Rating the interpreter will increase the chances of being
+connected with that same interpreter in the future, or not be connected if rated as having a bad
+experience. The call quality is in regards to the quality of the call (e.g., was there background
+noise, did the call constantly cut out, etc.). This agency controls all quality through ratings, so
+clinicians or staff in training are to provide ratings each time so they can ensure their services
+
+continue to meet expectations.
+
+When using Boostlingo, we recommend using Chrome because it’s fast and easy to use. Internet
+Explorer doesn’t support Web RTC and will not place calls. Other browsers that will work
+include the following:
+
+* Firefox
+
+» Safari 11 (older versions won’t work)
+
+= Microsoft Edge
+The steps below detail how to use the service with teletherapy clients:
+
+Process
+
+1. Log into your account app.boostlingo.com using your email address and password.
+
+2. You'll see a pop-up window on the right-hand side - select phone or video.
+
+3. Select the language or ASL.
+
+4. Click Call.
+
+5. You will be connected to an interpreter.
+
+To add a third party to a video call, initiate a video call from the Web. When your call connects
+
+to an interpreter, click the plus sign (+) in the top right of the caller. Choose from the menu.
+
+* Dial for Audio —dials a phone number to add an audio participant. Can dial into a Zoom
+meeting or other third-party platform
+
+« Share by email — If you have a default email client configured on your computer, this will
+generate an email invitation to join the VRI session. Enter the recipient and send. The
+recipient can join from any computer or phone without downloading the app. They can
+
+choose to join by Audio or video.
+
+63
+September 23, 2024
+
+CONFIDENTIAL
+HOPE_000287
+===== page 64 =====
+* Share a link to call — This option copies the URL to your clipboard. Message or email this
+URL to a participant so they can join from their computer or phone. They won’t need any
+
+software and can choose to join by Audio or by video.
+
+Boostlingo Call Center
+Hope Program
+
+28
+
+Spanish - espafiol .
+
+Medical .
+
+TREATMENT JUSTIFICATIONS: INCREASING/DECREASING SERVICES
+
+In response to clients’ treatment needs, his or her treatment dosage can be adjusted by increasing
+or decreasing their services. All clients who are referred for services have a baseline expectation
+of the frequency in which they participate in treatment. If a client is identified as HRSO (defined
+by a Static-99R score of 4 or above), the client’s baseline frequency of treatment is two times
+(2x) per week for group treatment and one time (1x) per month for individual treatment. If a
+client is identified as Non-HRSO (defined by a Static score of 3 or below), the client’s baseline
+frequency of treatment is one time (1x) per week for group treatment, and one time (1x) per
+
+month for individual treatment.
+
+64
+September 23, 2024
+
+CONFIDENTIAL
+HOPE_000288
+===== page 65 =====
+When a client demonstrates or discloses an increase in risk factors, presents with general
+concerns, or vocalizes a desire to receive more services to address specific issue(s), treatment
+services can be increased after the appropriate authorization is received from the stakeholder’s
+unit supervisor. Clients can also decrease in services upon successful execution of their treatment
+goals, combined with a reduction in risk in accordance with HOPE’s curriculum. Additionally,
+given that we are trained as general mental health clinicians first, then specialize in forensic
+psychotherapy, when a client presents with general mental health symptoms that may be
+interfering with a client’s amenability to sex offender treatment, then the clinician can request
+
+increased services to address the symptoms.
+
+To receive authorization to increase, decrease, or otherwise change the frequency of treatment,
+the clinician must first discuss the plan with HOPE’s treatment team in group supervision or case
+consultation. If the team is in agreement, the primary clinician should create a treatment
+modification (see Treatment Modification Process training here:
+https://drive.google.com/file/d/1962r3wJ_fY YLTi4AStp4Ey YGPGJzPAvT/view?usp=sharing)
+
+and alert their supervisor that the modification is ready to be reviewed and approved. Once the
+supervisor approves the treatment modification, they will send it to
+
+operations @ almaxconsulting.com so HOPE’s operation’s team can send the modification to
+
+Parole to request approval from the Unit Supervisor (US) or Assistant Unit Supervisor (AUS)
+with the Agent of Record (AOR) and assigned clinician cc’ed in the email.
+
+Please note: the new treatment dosage cannot commence until approval from Parole is
+
+received and documented in TA.
+
+TREATMENT CURRICULUM
+
+As a matter of best practice, HOPE Program utilizes an evidence-based curriculum to reduce
+recidivism and increase community safety. Sex offender-specific treatment is goal-directed and
+solution-focused in order to target risk factors that are associated with reoffending. All sex
+offender specific treatment is highly structured and guided by the curriculum. HOPE Program
+utilizes their own curriculum, known as Treatment Blocks, developed and written specifically for
+HOPE. HOPE also utilizes various supplementary materials based on each client’s specific
+
+treatment needs.
+
+65
+September 23, 2024
+
+CONFIDENTIAL
+HOPE_000289
+===== page 66 =====
+HOPE Program’s curriculum generally consists of four phases that gradually increase clients’
+skills and understanding necessary to reduce their individual risk factors and the probability of
+re-offending. Advancement to each phase is directly dependent on the client’s ability to
+demonstrate measurable progress toward individual treatment goals. The measurement method is
+based on STABLE-2007, LS/CMI, and other specialized tools designed to assess and track
+change and risk over time. Clients are eligible to graduate only after they have successfully
+completed the Maintenance Phase of the treatment program. As noted earlier, the core
+curriculum integrates several evidence-based treatment modalities, such as Cognitive Behavioral
+Therapy (CBT), social learning theory, and motivational interviewing techniques. Moreover,
+RNR, GLM, as well as specific offense descriptive models are also utilized to facilitate
+
+treatment.
+
+Progress in treatment is measured by demonstrating knowledge of the skills discussed in
+sessions, insight into the precipitating factors that led to their boundary violations, homework
+and curriculum completion, and skill application. The goal is for the client to apply the skills
+
+learned in treatment to their daily lives, thus promoting behavioral changes.
+
+Throughout an offender’s treatment, the client will be provided with different “Treatment
+Blocks.” Each Treatment Block is specially designed to address important psychological factors,
+long-term vulnerabilities and risk factors, as well as healthy living skills and effective
+communication skills, to name a few. Each Block is composed of short learning modules, and in
+some cases, a module may be skipped and readdressed at a later date, pending each client’s
+
+ability to address the specific topic at that time in their treatment.
+
+To determine titration eligibility from one treatment phase to another, clinicians or staff in
+training will view the titration criteria
+
+(https://sites.google.com/a/almaxconsulting.com/hope/frequently-asked-questions/hope-
+
+curriculum/titration-criteria), and if eligible, they will complete the clinical titration tracking
+
+form located under reports in TA. Once complete, the assigned clinician will present the client’s
+case during group supervision or clinical case consultation. The clinical supervisor or clinical
+
+director will approve or deny the tracking form in TA and provide a brief overview of why the
+
+66
+September 23, 2024
+
+CONFIDENTIAL
+HOPE_000290
+===== page 67 =====
+decrease in services was approved or denied. Below is a general description of each treatment
+
+phase and key risk factors it addresses.
+
+TREATMENT PHASE DETAILS
+
+PHASE 1: PREPARATORY PHASE OF TREATMENT
+HOPE’s Phase 1: Preparatory Treatment Manual
+https://drive.google.com/file/d/1JxPftx AkzrjO9n6jp90mJPOxJJEPSIFh/view ?usp=sharing
+
+consists of 6 Modules designed for male and female individuals who have been convicted of a
+sexual offense, who have engaged in inappropriate or compulsive sexual behaviors, and/or who
+have realized that they need help in addressing their behavior(s). The Prep Phase consists of the
+following:
+@ Roughly 24 open/rolling sessions (12-weeks) utilizing cognitive-behavioral treatment for
+adult males who have been convicted of a sexual offense.
+e Emphasis is placed on motivation and engagement as the primary means to introduce and
+engage offenders in treatment.
+e Group facilitator should adopt a reinforcing and encouraging approach, while also being
+firm and setting boundaries.
+e In this phase, it is essential that participants understand how this treatment program can
+benefit them and help them achieve their life goals.
+e This phase has two goals:
+
+o 1) Providing individuals with the knowledge of HOPE Program policy and
+procedures, as well as relevant treatment concepts that will prepare them for
+success in subsequent treatment phases and within the community.
+
+o 2) Motivating and engaging clients, establishing appropriate group climate, and
+beginning the development of an effective therapeutic relationship.
+
+After successful completion of the 12-week preparatory phase of treatment, individuals will be
+
+assessed for transition to HOPE’s core phase of treatment.
+
+PHASE 2: CORE PHASE OF TREATMENT
+
+= The Core Phase of treatment is split into two Blocks; Block 1: Emotional and Cognitive
+
+Self-Regulation Manual
+
+67
+September 23, 2024
+
+CONFIDENTIAL
+HOPE_000291
+===== page 68 =====
+https://drive.google.com/file/d/1JtfUCSHk 1 yUxUIRJ2O7IUhIApY 1 ES7PH/view?usp=sharin
+
+g and Block 2: Interpersonal Relationships and Sexual Self-Regulation Manual
+https://drive.google.com/file/d/1 K8Nc1PjcrZGb Y RZj8nzA GeziHr6 V Y NV 3/view ?usp=sharin
+g. totaling 24 models. In Phase 2, our clients actively address personal dynamic risk factors
+
+that lead to sexually abusive behavior(s). Listed below are the key objectives of this treatment
+phase designed to help clients advance to the next stage:
+
+® Reduction and/or management of the offender’s deviant sexual urges and recurrent deviant
+
+fantasies.
+® Identification and treatment of the offender’s thoughts, emotions, and behaviors that facilitate
+sexual re-offenses or other victimizing or violent behaviors.
+® Reduction in negative emotionality.
+® Understanding of sex drive and preoccupation.
+® Decreased level or removal of hostility.
+® Reduction in deviant sexual interest and active practicing of healthy sexuality.
+® Exploration of victim impact and victim empathy.
+® Ability to utilize internal controls.
+® Abstinence from all drugs and alcohol.
+® Completion of a non-deceptive polygraph, to include the absence of disclosures.
+® Participation in the Chaperone Program.
+
+® Offender education (including those identified as the offender’s support system) about the
+
+potential for re-offending and the offender’s specific risk factors.
+® Self-management methods to avoid a sexual re-offense.
+
+® Demonstrated understanding about non-abusive, adaptive, legal, and pro-social sexual
+behaviors.
+® Demonstrated understanding about the impact of sexual offending on victims, their families,
+
+and the community.
+
+® Identification and treatment of the effects of trauma and past victimizations on offenders as
+factors in their potential for re-offending (it is essential that offenders be prevented from
+
+assuming a victim stance as a mechanism to diminish responsibility for their actions).
+
+® No evidence of sexual preoccupation.
+
+68
+September 23, 2024
+
+CONFIDENTIAL
+HOPE_000292
+===== page 69 =====
+® Demonstrated ability of healthy sexual outlets.
+
+® Capacity for relationship stability.
+
+® Successful completion of family reunification requirements (when applicable).
+® Stable housing, employment, and financial responsibility.
+
+® Abstinence from all drugs and alcohol.
+
+® Full compliance with the HOPE Program’s Treatment Service Agreement.
+
+® Full compliance with Parole/Probation/Court Supervision.
+
+® Healthy Sexuality
+
+Length of the CORE Phases of treatment are dependent upon the offenders’ compliance,
+participation, and completion of homework assignments. Clients categorized as HRSO must
+complete all modules and homework in the Core Treatment Phase twice; once in an HRSO group
+and once in a Non-HRSO group (see titration requirements). Clients identified as Non-HRSO
+
+must complete all modules and homework in the Core Treatment Phase once.
+
+PHASE 3: MAINTENANCE PHASE OF TREATMENT
+Clients who enter Phase 3: Maintenance Program Manual
+
+https://drive.google.com/file/d/1M22Ayt7rj1GUS yEI9pB-2clo_jRt4x-J/view?usp=sharing have
+
+demonstrated an ability to successfully apply the skills learned during treatment Phases | and 2
+to their everyday lives. The Maintenance Phase focuses on providing continued support and
+reinforcement through ongoing structure to help clients properly internalize what they have
+
+learned. Key elements are as follows:
+® Bi-monthly group psychotherapy attendance.
+® Monthly individual psychotherapy attendance.
+® Continued abstinence from all drugs and alcohol (AA/NA attendance when required).
+® Maintenance of a prosocial peer group.
+® Adherence to the Good Lives Model.
+® Adherence to the Relapse Prevention Model.
+® Completion of a non-deceptive polygraph, to include the absence of disclosures.
+
+® Stable housing, employment, and financial responsibility.
+
+69
+September 23, 2024
+
+CONFIDENTIAL
+HOPE_000293
+===== page 70 =====
+® Maintenance of treatment gains.
+® Full compliance with Parole/Probation/Court Supervision.
+
+® Discharge Planning.
+
+It is important to notes that clients can return to the CORE Phase of treatment should their risk
+levels increase, should they violate their conditions of probation or parole, or should they fall
+
+below treatment expectations in this phase of the program.
+
+PHASE 4: AFTERCARE PHASE OF TREATMENT
+Clients who have completed the Maintenance Phase of treatment should be placed in HOPE’s
+Aftercare Program. The Aftercare Phase of treatment is designed to comply with state law
+requiring registered 290 offenders to maintain their connection with treatment for the duration of
+their term on community supervision. Key elements are as follows:
+
+e Occasional individual treatment sessions (a minimum of once per quarter)
+
+e Twice yearly polygraph appointments
+
+e Adherence to the Good Lives Model
+
+e Adherence to the Relapse Prevention Model
+
+e Review of key concepts
+
+e@ Maintenance of treatment gains
+
+CRITERIA FOR GRADUATION, RELEASE, AND/OR TERMINATION FROM
+
+TREATMENT
+
+Clients discontinue treatment at HOPE for various reasons. Due to specific guidelines within our
+contracts, HOPE is prohibited from discharging a client from treatment for any reason; however,
+HOPE has a zero-tolerance policy against violence and threatening behavior. If any client
+engages in violent or threatening behavior at HOPE, the police and supervising officer are to be
+
+contacted, immediately.
+
+Grounds for termination or release from treatment include rearrests for violating ones’ general or
+special conditions of parole or probation, rearrests for committing a new offense(s), receiving
+violations for failure to regularly report for treatment, failure to comply with program policies,
+moving out of the county, and no longer being mandated to attend treatment. Before discharging
+
+70
+September 23, 2024
+
+CONFIDENTIAL
+HOPE_000294
+===== page 71 =====
+any client from TA, the clinician and or operations is to confirm the discharge date and reason
+
+for discharge and document in collateral.
+
+In order to graduate from HOPE Program, a client must satisfy several criteria. Graduation
+criteria is as follows:
+
+1. The client must successfully complete the Maintenance Program.
+
+2. The client must continue to adhere to all HOPE titration criteria
+
+a. Appropriate behavior in group and in the community (i.e., demonstration of an
+ability to apply group content to real world situations).
+
+b. Measurable and sustained decrease in risk to re-offend
+
+c. Completion of a non-deceptive maintenance polygraph (including disclosures)
+that targets areas of risk for the client (unauthorized contact with minors, use of
+pornography, etc.).
+
+d. Full compliance with conditions of community supervision
+
+3. Clinician must complete the CASOMB titration tracking form in TA and provide a
+detailed presentation to staff in group supervision or team meeting.
+
+4. A team decision is made regarding suitability for graduation. If the client is considered
+appropriate for graduation, he can transition to Phase 4 (Aftercare), which consists of
+individual-only, supportive treatment.
+
+5. The Clinical Director (CD) or supervisor must approve or deny the CASOMB titration
+form in TA and include their reasoning for final decision.
+
+6. The clinician should also complete the HOPE Treatment Completion Certificate.
+Operations will upload this certificate into ARMS. Clinicians are not permitted to
+provide this certificate directly to clients. Clients can reach out via parole to obtain this
+
+documentation if they wish.
+
+See special populations for specific criteria to be terminated from treatment.
+
+71
+September 23, 2024
+
+CONFIDENTIAL
+HOPE_000295
+===== page 72 =====
+SPECIALIZED PROGRAMING
+
+CHAPERONE PROGRAM
+
+HOPE Program has developed a Chaperone Program designed to educate the potential
+
+Chaperone on the overall dynamics of sex offenders and covers important topics including the
+
+definition of sexual abuse, the difference between a person who molests a child and a pedophile,
+
+grooming, and other topics related to sexual re-offense. HOPE’s Chaperone Program is designed
+
+to be an additional barrier to sexual offending.
+
+Who is Chaperone Training for?
+
+Primary caregivers of adolescent sexual abusers and children with sexual behavior
+problems.
+
+Foster care providers with children who may have acted out sexually in the past.
+Non-offending parents/caregivers who might need to chaperone a sexual abuser during a
+specific event, such as church, a wedding, funerals, etc.
+
+Significant others, friends, family members, and/or co-workers of a sexual offender who
+
+want to assist that person in remaining offense free.
+
+Chaperone Requirements:
+
+Must be 21 years of age or older.
+
+Must have no prior accusation, charge, and/or conviction regarding sexual abuse.
+
+Must be able to cognitively understand the training materials.
+
+Must acknowledge, in writing, that they believe the sexual offense occurred (i.e., not in
+denial or colluding with the client).
+
+Must sign the required participant documents.
+
+Must be substance free.
+
+Must report suspected child abuse to appropriate authorities.
+
+Why do Chaperone training?
+
+Sex Offenders do not live in a vacuum. Most persons who have committed a sexual
+
+offense are living in the community.
+
+72
+
+September 23, 2024
+
+CONFIDENTIAL
+HOPE_000296
+===== page 73 =====
+e It is not unusual for incest victims to want contact with their perpetrator (i.e., father,
+brother, sister, etc.).
+
+e Atsome point in the future, the offender will not be supervised; therefore, the
+information and training provided to Chaperones will be, in the future, the last line of
+defense.
+
+e Chaperone Training is not defined by a limited number of sessions, but a process of
+education and understanding to cultivate awareness and minimize re-offense. It is not
+family reunification. It is not in lieu of sexual offender treatment, but meant to
+
+compliment it.
+
+The Goals of Chaperone Treatment are:
+e Prevent further victimization.
+e Assist offenders in controlling their inappropriate and/or sexually offending behavior.
+e Provide information and tactics for effective chaperoning of sex offenders.
+e To Allow offenders a safe way to participate in events.
+e Increase awareness of dynamics and scope of sexual abuse.
+
+e Provide more accountability for the offender.
+Chaperone Timeline-Example:
+
+Phase 1
+
+Sessions 1& 2: First two sessions are used to interview chaperone for appropriateness as a
+chaperone and develop rapport.
+
+Sessions 3 through 8: Multiple sessions reviewing the dynamics of sexual offending, the
+difference between a person who molests a child and a pedophile, grooming behaviors, high risk
+situations, common problems related to chaperoning an offender.
+
+At the conclusion of sessions 1 through 8, the Chaperone will take a test to ensure
+understanding of the material. The Chaperone must answer all questions correctly to move
+on to Phase 2.
+
+Phase 2
+
+73
+September 23, 2024
+
+CONFIDENTIAL
+HOPE_000297
+===== page 74 =====
+Session 9: Chaperone and client attend together. Brief review of Phase 1. Review mandatory
+reporting laws, no alcohol/drug policy, no child left alone policy. Review of Phase 2 slides.
+Clinician assigns the client the Account of Offense assignment
+
+Session 10: Chaperone and client attend together. Client presents Account of Offense with time
+to review and process the details. Clinician assigns the client the Offense Chain assignment
+Session 11: Chaperone and client attend together. Client presents Offense Chain assignment
+with time to review and process details. Clinician assigns the My Good Life Plan Assignment.
+Session 12: Chaperone and client attend together. Client presents the My Good Life Plan
+
+assignment with time to review and process details. Final review and questions.
+
+TELETHERAPY
+
+In some cases, HOPE may conduct therapy over the telephone or via HOPE’s remote desktop
+stations with approval from stakeholders if clients are physically unable to attend in-person
+sessions for reasons such as limited mobility or a physical impairment that could lead to injury,
+
+or if required travel time is over 80 minutes, one way, to the nearest HOPE clinic.
+
+TELEHEALTH PROCEDURE
+
+Before the delivery of health care via telehealth, the health care provider initiating the use of
+teletherapy shall inform the client about the use of telehealth and obtain verbal or written consent
+from the client for the use of telehealth as an acceptable mode of delivering health care services
+
+and public health. The consent shall be documented.
+
+Upon initiation of telehealth services, a clinician shall do the following:
+
+1. Obtain informed consent from the client consistent with Section 2290.5 of the Code of
+the BBS.
+
+2. Inform the client of the potential risks and limitations of receiving treatment via
+telehealth.
+
+3. Provide the client with his or her license or registration number and the type of license or
+registration.
+
+4. Document reasonable efforts made to ascertain the contact information of relevant
+
+resources, including emergency services, in the client’s geographic area.
+
+74
+September 23, 2024
+
+CONFIDENTIAL
+HOPE_000298
+===== page 75 =====
+Each time a clinician provides services via telehealth, they shall do the following:
+1. Assess whether the client is appropriate for telehealth, including, but not limited to,
+consideration of the client’s psychosocial situation.
+2. Utilize industry best practices for telehealth to ensure both client confidentiality and the
+
+security of the communication medium.
+
+The process of explaining and obtaining informed consent, by whatever means obtained, sets the
+stage for the relationship between the clinician and the client. Clinicians make reasonable effort
+to offer a complete and clear description of the telehealth services they provide and seek to
+obtain and document informed consent when providing professional services (APA Ethics Code,
+Standard 3.10). In addition, they attempt to develop and share the policies and procedures that
+will explain to their clients how they will interact with them using the specific
+telecommunication technologies involved. It may be more difficult to obtain and document
+informed consent in situations where clinicians provide telehealth services to their clients who
+are not in the same physical location, or with whom they do not have in-person interactions.
+Moreover, there may be differences with respect to informed consent between the laws and
+regulations in the jurisdictions where a clinician who is providing telehealth services is located,
+and the jurisdiction in which the client resides. Furthermore, clinicians may need to be aware of
+the manner in which cultural, linguistic, socioeconomic characteristics, and organizational
+considerations may impact a client's understanding of, and the special considerations required
+for, obtaining informed consent (such as when securing informed consent remotely from a
+
+parent/guardian when providing telehealth services to a minor).
+
+Telehealth services may require different considerations for and safeguards against potential
+risks to confidentiality, information security, and comparability of traditional in-person services.
+Clinicians are thus encouraged to consider appropriate policies and procedures to address the
+potential threats to the security of client data and information when using specific
+telecommunication technologies, and they are to appropriately inform their clients about them.
+For example, clinicians who provide telehealth services consider addressing with their client’s
+what client data and information will be stored, how the data and information will be stored, how
+
+it will be accessed, how secure is the information communicated using a given technology, and
+
+75
+September 23, 2024
+
+CONFIDENTIAL
+HOPE_000299
+===== page 76 =====
+any technology-related vulnerability to confidentiality and security by creating and storing
+
+electronic client/patient data and information.
+
+TELEHEALTH SESSION RULES
+1. Clinic session rules still apply
+
+2. Clients must call in on time (15-minute grace period for group and 10-minute grace
+period for individual sessions). If they call in 1 minute past the grace period, they need to
+be dismissed from the session, similar to if they were to arrive late to an in-person
+session.
+
+3. Clients must be in a confidential location, not distracted, prepared with their homework
+assignments, and in a space where they can verbally participate.
+
+4. Clients should respond when called upon so the clinician can give the client credit for
+their active participation if sessions are scheduled via telephone and not video.
+
+5. Clients must be in a stationary location and cannot be driving, riding the bus, riding their
+bike, grocery shopping, working, cooking, etc. Keeping structure has been difficult and is
+a slippery slope.
+
+6. In the progress note, indicate that this was a teletherapy session by stating that the session
+was conducted via phone (teletherapy). You can say things like, "Mr. (insert client name)
+reported that he was feeling __ because of ." This still keeps some of the
+face-to-face structure.
+
+7. California Department of Corrections and Rehabilitation (CDCR) no longer requires
+paper sign-in sheets and requires electronic documentation only. Probation does continue
+to require paper sign-in sheets for both remote and in-person sessions. For instructions on
+documenting attendance for CDCR and Probation clients, see Telehealth Guidance
+section below or follow the
+
+link: https://sites.google.com/a/almaxconsulting.com/hope/frequentl y-asked-
+
+questions/telehealth-guidance
+
+TYPICAL TELETHERAPY SESSIONS LOOK SOMETHING LIKE THIS:
+
+1. The client calls into their scheduled session on time (10-minute grace period; same as in-
+
+person sessions).
+
+76
+September 23, 2024
+
+CONFIDENTIAL
+HOPE_000300
+===== page 77 =====
+2. If CDCR, the client gives their physical address so the clinician can document it in
+TreatAnyone (TA). For instructions on this,
+
+see https://sites.g0ogle.com/a/almaxconsulting.com/hope/frequentl y-asked-
+
+questions/telehealth-guidance/process-how-do-i-schedule-and-mark-attendance-for-
+
+teletherapy-clients. If Probation, clinician writes "teletherapy" in both the Sign-in and
+Sign-out boxes.
+3. The clinician has the client engage in a brief check-in.
+
+4. The clinician turns to the last lesson for a brief review of material.
+
+a
+
+The clinician engages the client in discussion on the curriculum topic and gives lots of
+reality-based examples of abstract principles.
+
+The client presents their homework, if applicable.
+
+The clinician assigns the client homework, if applicable.
+
+The clinician confirms the client's next scheduled session (time/day, etc.).
+
+oan 2
+
+The clinician checks in to confirm the client's ending address location so it can be
+documented in TA; see link above for further instruction.
+
+10. Check out; clinician marks attendance and completes Progress Note (PN) in TA.
+
+TELEHEALTH DOCUMENTATION
+
+The California Department of Corrections and Rehabilitation (CDCR) requires contractors to
+enter the start and end addresses of teletherapy clients into their ARMS database; therefore, all
+teletherapy clients must now be scheduled with the Individual-Teletherapy offering and an
+Attendance Note created with the start and end addresses in TreatAnyone (TA). The client's
+
+physical address location must be entered for both group and individual teletherapy sessions.
+CDCR Overview
+
+1. If the client remains in the same location at the start and end of the call, only enter that
+one address. You do not need to include the apartment number, state, or zip code. Please
+include the street number and street name. Cross streets are also accepted (this may apply
+to transient clients).
+
+2. If the client ends the call at a different address than at the start of the call, enter both
+
+addresses. You do not need to include the apartment number, state, or zip
+
+77
+September 23, 2024
+
+CONFIDENTIAL
+HOPE_000301
+===== page 78 =====
+code. Please include the street number and street name. Cross streets are also accepted
+
+(this may apply to transient clients).
+
+Example:
+
+1.
+2.
+3:
+
+6836 Stonewall Court, Stockton
+Walgreens on Hammer Lane, SF
+
+1401 Telegraph/8974 A Street, Salinas
+
+Individual Telehealth Sessions:
+
+1.
+a
+3.
+
+4.
+
+Schedule as Individual-Teletherapy appointment in TreatAnyone (TA)
+
+Mark attendance as present
+
+Click the Green Attendance Note icon (at the far right of the attendance listing) and enter
+the Starting and Ending Addresses as seen in the examples above
+
+Click Save
+
+Addresses are not required for No Shows and Excused appointments.
+
+Group Telehealth Sessions:
+
+1.
+
+4.
+
+Schedule Groups as normal (we currently do not have a separate group teletherapy
+offering, but the group title should be labeled as telehealth in TA)
+
+Mark attendance as present
+
+Click the Green Attendance Note icon (at the far right of the attendance listing) and enter
+the Starting and Ending Addresses - Cross streets are acceptable (See examples above)
+Click Save
+
+Addresses are not required for No Shows and Excused appointments
+
+County and Federal Probation
+
+Individual and Group Telehealth Sessions
+
+lL;
+
+Schedule as Individual or Group (we do not currently have separate teletherapy
+
+offerings).
+2. Mark attendance as present.
+3. Click the Green Attendance Note icon (at the far right of the attendance listing) and write
+"Telehealth."
+78
+September 23, 2024
+
+CONFIDENTIAL
+HOPE_000302
+===== page 79 =====
+4. Click Save.
+Addresses are not required for Federal and Probation Clients. Sign-in sheets are still required and
+need to say "Telehealth" in the Signature In and Signature Out boxes, respectively. No show and
+
+Excused will remain the same.
+
+APA GUIDELINES FOR TELEPSYCHOLOGY- PSYCHOLOGIST COMPETENCY
+
+1. Be up to date on latest research regarding remote/telepsychology “...Psychologists
+assume responsibility to continually assess both their professional and technical
+competence when providing telepsychology services. Psychologists who utilize or intend
+to utilize telecommunication technologies when delivering services to clients/patients
+strive to obtain relevant professional training to develop their requisite knowledge and
+skills.”
+
+2. Goodness of fit”... Psychologists are encouraged to examine the available evidence to
+determine whether specific telecommunication technologies are suitable for a
+client/patient, based on the current literature available, current outcomes research, best
+practice guidance and client/patient preference...” and “...Psychologists understand the
+need to consider their competence in utilizing telepsychology as well as their
+clients/patients ability to engage in and fully understand the risks and benefits of the
+proposed intervention utilizing specific technologies....”
+
+3. Document rationale for use of telepsychology “... Additionally, psychologists are
+encouraged to document their consideration and choices regarding the use of
+telecommunication technologies used in service delivery...”
+
+4. Emergency protocols... “Psychologists who are trained to handle emergency situations in
+providing traditional in-person clinical services, and are generally familiar with the
+resources available in their local community to assist clients/patients with crisis
+intervention. At the onset of the delivery of telepsychology services, psychologists make
+reasonable effort to identify and learn how to access relevant and appropriate emergency
+resources in the client’s/patient’s local area, such as emergency response contacts (e.g.,
+
+emergency telephone numbers, hospital admissions, local referral resources, clinical
+
+79
+September 23, 2024
+
+CONFIDENTIAL
+HOPE_000303
+===== page 80 =====
+champion at a partner clinic where services are delivered, a support person in the
+client’s/patient’s life when available). Psychologists prepare a plan to address any lack of
+appropriate resources, particularly those necessary in an emergency, and other relevant
+factors which may impact the efficacy and safety of said service. Psychologists make
+reasonable effort to discuss with and provide all clients/patients with clear written
+instructions as to what to do in an emergency (e.g., where there is a suicide risk). As part
+of emergency planning, psychologists are encouraged to acquire knowledge of the laws
+and rules of the jurisdiction in which the client/patient resides and the differences from
+those in the psychologist’s jurisdiction, as well as document all their emergency planning
+efforts...”
+
+5. Discharge or Referral “...as applicable psychologists are mindful of the array of potential
+discharge plans for clients/patients when telepsychology services are no longer necessary
+and/or desirable. If a client/patient recurrently experiences crises/emergencies suggestive
+that in-person services may be appropriate, psychologists take reasonable steps to refer a
+
+client/patient to a local mental health resource or begin providing in-person services...”
+
+OVERVIEW OF THE PROCESS FROM REFERRAL TO
+SUCCESSFUL TREATMENT COMPLETION
+
+Before entering treatment, all clients are to go through our referral and evaluation process to
+determine the appropriate treatment assignment, as discussed above. Figure 4 below provides a
+general overview of the process from entering treatment to concluding treatment. Specifically, it
+illustrates the specific steps and activities associated with all new referrals and an overview of
+the clients’ experience when initiating treatment at HOPE. Figure 4 also illustrates the
+individualization of HOPE when determining the client’s treatment frequency. For instance,
+under “Individual & Group Assignment,” treatment dosage is determined by taking into
+consideration the referring agency and the outcome of the evaluation. Clients are assigned
+accordingly to the appropriate individual and group needs. Clients can be seen for weekly, bi-
+weekly, monthly or quarterly individual treatment; weekly group, bi-weekly group, or no group.
+
+See Figure 4 below for an overview of the process from referral to treatment completion.
+
+80
+September 23, 2024
+
+CONFIDENTIAL
+HOPE_000304
+===== page 81 =====
+General overview of the process from entering treatment to concluding treatment at the
+HOPE Program.
+
+81
+
+September 23, 2024
+
+CONFIDENTIAL
+HOPE_000305
+===== page 82 =====
+Figure 4.1 Detailed Overview of Referral to Treatment
+
+Process Screening, Intake Report, & Assign Evaluator & Treatment Team
+
+Referral to Treatment
+
+!
+
+'
+
+Intake :
+
+: Referral Screening R Evaluation
+' eport
+
+'
+
+Process Flow
+
+Send
+CurnSumn
+Package
+
+Stakeholder Send 1502
+
+Referral
+
+—— | Upload
+en Docs to TA
+
+Receive
+
+Office Manager Referral
+& Docs
+
+Schedute
+Initiat
+Screening
+within 5 days
+of referral
+
+Client
+
+Primary Clinician
+
+September 23, 2024
+
+5 business days from referral
+
+Add to
+Group in TA
+
+Assign |
+
+Treatment
+
+intake
+Report
+
+Receved
+
+Evaluator in
+
+CITP/SOSE/Psychosexual
+
+CONFIDENTIAL
+
+Assign Client
+to
+Group/Primary
+
+Client walks out
+w/ appointment
+slip
+
+Clinician Calendars
+Updated & Emails
+Sent
+
+Complete
+workflow and
+inteke in ARMS
+
+82
+
+HOPE_000306
+===== page 83 =====
+Figure 4.2 Detailed Overview of Treatment to Treatment Completion
+
+Treatment to Discharge
+
+Assign to Group, conduct sessions, titrate if eligible, discharge
+
+!
+}
+Assign to Individual Discharge
+Treatment Therapy :
+
+i
+
+Process Flow
+
+Treatment info
+
+Stakeholder recetved Confirms CDD
+
+Update
+Status in TA
+and ARMS
+
+“ “a Z ,
+Office Manager ipamsny Confirm Controlting Ester serene Run report to
+
+s update TA; ass
+Or Coordinator on Static-99. if Discharge Date (CDD} praia urea send DC reports to
+
+report task to Ue papers
+probation, ask officers/agents
+
+® for
+
+assigned clinician
+
+placement.
+
+| Discharge (DC)
+| report due 5
+| calendar days
+’ | from CDD
+ti yaks Cit enters Pr
+een i sin seen Group pale Cit enters CORE Non-HRSO _ ee
+(cit) 2 = individual sessions Static-99 is 4 or group if Static-99 & 3 oF Planning
+sup above below
+= Clinician to present titration transition
+Primary Clinician Clinician Calendars (Prep to HRSO or & titration to Present for : ww
+Updated & Emails a Maintenance & Aftercare) to treatment team graduation, if Prepare DC report once CDD or
+
+ebgible. See transfer confirmed. Send to
+supervisor for approval
+
+in group supervision or in staff meeting.
+CD/Supervisor to approve graduation critera
+
+Sent
+
+83
+September 23, 2024
+
+CONFIDENTIAL
+HOPE_000307
+===== page 84 =====
+ONGOING ACTIVITIES WHILE ENROLLED IN HOPE
+
+Figure 5 & 6 below illustrates the ongoing activities associated with client populations when
+participating in treatment.
+
+Figure 5 Ongoing Activities while enrolled in HOPE
+
+_—_s—_>
+is
+
+= Ss
+
+September 23, 2024
+
+CONFIDENTIAL
+
+HOPE_000308
+===== page 85 =====
+Figure 6 Ongoing Activities while enrolled - Micro View
+
+Increase/decrease No-Shows )
+services Reported harmful/
+Relapse=Increase risky behaviors
+services e Contact with any
+
+law enforcement
+
+Violation of
+conditions=
+
+increased
+services
+
+Engagement in
+
+problematic Zero Balance
+behaviors e Financial
+Repeated no-shows Agreements |
+Failure to participate Pay for services
+Failure to keep zero when rendered
+balance
+
+85
+September 23, 2024
+
+CONFIDENTIAL
+HOPE_000309
+===== page 86 =====
+REFERRAL PROCESS
+
+Once a referral is received by HOPE, operations will:
+® Create a new client file in TA.
+® Collect necessary documentation for the referral.
+® Schedule the Initial Screening.
+® Schedule the Comprehensive Individualized Treatment Plan (CITP), Sex Offender
+Specific Evaluation (SOSE), Psychosexual Evaluation, Substance Abuse (SA)
+
+Assessment, or Mental Health (MH) Assessment with the appropriate clinician, which is
+
+dependent on referral source.
+
+THERAPEUTIC CONTRACT AND INFORMED CONSENT WITH CLIENTS
+
+® During the intake process, all clients are provided with a treatment contract and informed
+
+consent.
+
+® Clients are not allowed to participate in any services at HOPE until all the paperwork has
+
+been signed and the client has provided consent to engage in mental health treatment.
+
+HANDLING OF CONFIDENTIAL FILE INFORMATION, RELEASE FORMS
+
+HOPE Program takes all reasonable steps to protect the confidential records of our clients and
+private nature of the services we provide. HOPE utilizes an electronic client file system, known
+as TreatAnyone (TA). We require a written, signed client consent to disclose the
+defendant’s/offender’s records. CDCR and Federal clients are not provided with any
+documentation other than their proof of practice slip, as CDCR and/or the Federal Government is
+
+the primary client.
+
+POLICIES ON THE USE OF FILE INFORMATION FOR RESEARCH
+
+HOPE Program requires signed client consent for research participation. Information and data
+obtained from psychological and psychophysiological tests, as well as any actuarial measures
+completed, may be used for research regarding the understanding of sexual behavior. The
+
+information used for research purposes will be de-identified.
+
+86
+September 23, 2024
+
+CONFIDENTIAL
+HOPE_000310
+===== page 87 =====
+COMPREHENSIVE ASSESSMENTS & REPORTS
+
+HOPE has implemented comprehensive assessment batteries intended for all clients. The purpose
+of these assessments is to help guide clinical decisions, identify risk-relevant treatment needs, and
+demonstrate the overall effectiveness of our interventions. Assessments are utilized throughout the
+
+duration of an individual’s treatment at HOPE.
+
+Three main types of reports are utilized over the course of treatment. If a report is submitted and
+
+additional reports that year are required, clinicians can utilize interim assessment reports.
+
+TYPES OF REPORTS
+Le Upon Admission . Once per a fiscal year [i Upon clients
+™ or as needed (July 1 - discharge from HOPE
+
+June 30)
+
+COMPREHENSIVE INDIVIDUALIZED TREATMENT PLANS (CITPs)
+
+A crucial first step in providing treatment is conducting a Comprehensive Individual Treatment
+Plan (CITP) and risk assessment that includes assessments based on historical factors, or static
+risks, and some that are based on long-term vulnerabilities or dynamic risks. Prior to starting
+treatment, every client referred to HOPE undergoes an evaluation either referred to a Sex
+Offender Specific Evaluation or commonly known as a CITP. The content and measures used in
+
+the assessment are determined by the reason for referral and referring organization.
+
+CITPs give an initial understanding of each new client. The CITP consists of a structured clinical
+interview with the client and the completion of a combination of SARATSO and HOPE selected
+risk assessment tools. A structured clinical interview is an evaluation conducted by a trained
+clinician leveraging a variety of assessment methods such as the Level of Service Case
+Management Inventory (LS/CMI), STABLE-2007, The LOOK, The Sex Offender Treatment
+Readiness Scale (SOTRS), and the Criminal Sentiment’s Scale-Modified (CSS-M), which
+depends on the presenting problem and referring agency. Additional testing can be employed, if
+
+87
+September 23, 2024
+
+CONFIDENTIAL
+HOPE_000311
+===== page 88 =====
+necessary, and this decision depends on the client’s specific treatment needs and the clinical
+
+judgment of the treating clinician and their supervisor.
+
+Information from assessments is captured in the Comprehensive Individualized Treatment Plan
+
+(CITP), which among other things, identifies treatment needs and interventions for each
+
+individual. The treatment plan for each client is carefully tailored, following the Risk, Need,
+
+Responsivity Principle, to address specific needs identified during the intake and initial
+
+evaluation process.
+
+A CITP will also incorporate Individual treatment goals which serve as the framework for the
+
+overall treatment plan. Individual treatment goals are defined when a mental health needs
+
+assessment and a comprehensive sex offender-specific risk assessment are conducted with each
+
+client. The goals focus on addressing personal skill deficits, predilections, and learned behaviors
+that highly correlate with sexual recidivism. Each CITP will include a minimum of three
+individual treatment goals; one sexual (obtained from the STABLE-2007), one violent (obtained
+
+from the LS/CMI) and one that is a general criminogenic treatment need.
+
+Functioning Intellectual &
+
+A COMPREHENSIVE EVALUATION INCLUDES THE FOLLOWING INFORMATION
+
+Neuropsychological
+
+Academic Achievement
+
+Mental Health
+
+Medical
+Psychiatric
+Physical Health
+
+Employment
+Recreation
+Leisure
+
+Drug/Alcohol Use
+
+Stability of
+Functioning
+
+September 23, 2024
+
+Cognitive Functioning
+Functioning
+Character/ Mental Illness Self- Psychological
+Personality Concept/Self Adjustment
+Pathology Esteem
+Pharmacological Medical Condition History of Medication Use/Abuse
+Needs
+Use/Abuse & Number of times Activities in Spare Time, Hobbies,
+Number of employed/fired/quit Interests
+Relapses without giving notice
+Preferred Drugs Frequency and Rehabilitation, NA/AA groups
+Used (legal and Amount of Use/Abuse
+illegal)
+Marital/Family Employment/ Social Skills
+Stability Education
+88
+CONFIDENTIAL
+
+HOPE_000312
+
+===== page 89 =====
+Developmental Sexual History Interpersonal Reinforcement | Arousal/Interest
+
+History (Onset, Intensity, Relationships, Structure for Pattern
+
+Duration, Pleasure | Peers/Associates, Deviant
+
+Derived) Intimate Relationships | Behavior
+
+Sexual Deviance Dysfunction Offenders Impact of | Access to
+(Impotence, Injuries, Perception of Offending | Children
+Medications Affecting | Sexual behavior
+Sexual Functioning, Functioning
+Etc.)
+
+Preferences (Male/Female; Age; Attitudes/ Specifics of Sexual
+
+Masturbation, Use of Tools, Food, Current Cognitions Crime
+Sexual Practices; Deviant and Non-deviant
+Behaviors)
+
+See Sis | Risk of Failure in Review of criminal
+Treatment and history
+Supervision
+
+Motivation and Precontemplative,
+Amenability to Contemplative,
+Treatment Preparation, Action
+
+eiuselimicjenteam | recommended
+polygraph
+
+STEPS FOR COMPLETING A CITP
+
+1. Prior to the interview:
+Read all legal documentation
+
+a.
+b. Determine the appropriate measures and assessments to use
+
+®
+
+Obtain interview template
+
+pe
+
+Confirm the appointment has been scheduled correctly in TA and identify the amount
+
+due at time of scheduled meeting, if applicable
+
+2. Structured clinical interview is scheduled for 2 hours and held in a confidential setting. The
+clinicians should wait to mark attendance for the second hour as client can still be seen for
+the second interview hour should they arrive late.
+
+3. Additional testing might be necessary - this is done in collaboration with the supervisor after
+
+the interview is completed.
+
+89
+September 23, 2024
+
+CONFIDENTIAL
+HOPE_000313
+===== page 90 =====
+4. All writing of the assessments is to take place in TA!.
+5. Once all narratives and assessments are completed, submit the report to your individual
+
+supervisor for review and approval.
+
+STEPS FOR COMPLETING A PSYCHOSEXUAL EVALUATION/ SEX OFFENDER
+
+SPECIFIC EVALUATION (SOSE)
+
+1. Prior to the interview:
+a. Read all legal documentation
+b. Determine the appropriate measures and assessments to use
+c. Obtain interview template
+d. Confirm the appointment has been scheduled correctly in TA and identify the amount
+of money due at time of scheduled meeting, if applicable
+2. Structured clinical interview is scheduled for 2 hours and held in a confidential setting. The
+clinicians should wait to mark attendance for the second hour as client can still be seen for
+the second interview hour should they arrive late.
+3. Additional testing might be necessary - this is done in collaboration with the supervisor after
+the interview is completed
+4. All writing of the assessments is to take place in TA’.
+5. Once all narratives and assessments are completed, submit the report to your individual
+
+supervisor for review and approval.
+
+INTERIM ASSESSMENTS & REPORTS
+Interim assessments are completed each subsequent fiscal year. The fiscal year is from July 1* to
+June 30". They provide updated assessment information and anything else pertinent to the client.
+
+Most individuals will have multiple interim assessments reports over the course of treatment.
+
+1 All client documentation and reports are to be drafted and saved in TA. Writing and saving in word to transfer “at
+a later date” is never appropriate.
+? All client documentation and reports are to be drafted and saved in TA. Writing and saving in word to transfer “at
+a later date” is never appropriate.
+
+90
+September 23, 2024
+
+CONFIDENTIAL
+HOPE_000314
