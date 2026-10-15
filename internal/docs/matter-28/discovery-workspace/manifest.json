@@ -69,7 +69,7 @@
       "type": "proposed order",
       "author": "Joint; filed by SLB",
       "dkt": null,
-      "summary": "N.D. Cal. model stipulated PO with pro se Receiving Party language (§2.14); filed Oct 14 morning; not yet entered",
+      "summary": "N.D. Cal. model stipulated PO with pro se Receiving Party language (\u00a72.14); filed Oct 14 morning; not yet entered",
       "pages": 13,
       "sha256": "d8f7dec16cb7f1aa53a7fd1137effc70535d8c92755aee3c36735f712de630e3",
       "source": "Gmail bnn.cdl@gmail.com, Kim Schmitt (kschmitt@sims-law.net) emails of Oct 14 2026 09:30/09:31 PT",
@@ -89,6 +89,70 @@
       "source": "Gmail bnn.cdl@gmail.com, Kim Schmitt (kschmitt@sims-law.net) emails of Oct 14 2026 09:30/09:31 PT",
       "confidential": false,
       "role": "incoming"
+    },
+    {
+      "path": "internal/docs/matter-28/discovery-workspace/ANALYSIS.md",
+      "role": "analysis",
+      "type": "markdown",
+      "summary": "Discovery analysis: production by Bates, claims, Matter 5 record, precedent with verification status, repurposing table",
+      "confidential": true,
+      "contains": "Bates cites and paraphrase only; no verbatim HOPE text"
+    },
+    {
+      "path": "internal/docs/matter-28/discovery-workspace/NEXT_MOVES.md",
+      "role": "plan",
+      "type": "markdown",
+      "summary": "Ranked discovery moves Oct 14 - ~Nov 4, 2026",
+      "confidential": true,
+      "contains": "Bates cites and paraphrase only; no verbatim HOPE text"
+    },
+    {
+      "path": "internal/docs/matter-28/discovery-workspace/drafts/RFP_SET_ONE.md",
+      "role": "draft",
+      "type": "markdown",
+      "summary": "DRAFT RFP Set One to HOPE (not served)",
+      "confidential": true,
+      "contains": "Bates cites and paraphrase only; no verbatim HOPE text"
+    },
+    {
+      "path": "internal/docs/matter-28/discovery-workspace/drafts/RFA_SET_ONE.md",
+      "role": "draft",
+      "type": "markdown",
+      "summary": "DRAFT RFA Set One to HOPE (not served)",
+      "confidential": true,
+      "contains": "Bates cites and paraphrase only; no verbatim HOPE text"
+    },
+    {
+      "path": "internal/docs/matter-28/discovery-workspace/drafts/ROG_SET_ONE.md",
+      "role": "draft",
+      "type": "markdown",
+      "summary": "DRAFT Interrogatories Set One to HOPE (not served)",
+      "confidential": true,
+      "contains": "Bates cites and paraphrase only; no verbatim HOPE text"
+    },
+    {
+      "path": "internal/docs/matter-28/discovery-workspace/drafts/RULE45_SUBPOENA_CDCR_DAPO.md",
+      "role": "draft",
+      "type": "markdown",
+      "summary": "DRAFT Rule 45 subpoena attachment to CDCR/DAPO (not served)",
+      "confidential": true,
+      "contains": "Bates cites and paraphrase only; no verbatim HOPE text"
+    },
+    {
+      "path": "internal/docs/matter-28/discovery-workspace/drafts/PRESERVATION_AND_DEFICIENCY_LETTER.md",
+      "role": "draft",
+      "type": "markdown",
+      "summary": "DRAFT preservation + initial-disclosure deficiency letters (not sent)",
+      "confidential": true,
+      "contains": "Bates cites and paraphrase only; no verbatim HOPE text"
+    },
+    {
+      "path": "internal/docs/matter-28/discovery-workspace/drafts/PO_STRATEGY_AND_ADDENDUM.md",
+      "role": "draft",
+      "type": "markdown",
+      "summary": "PO strategy and proposed prior-production paragraph (not sent)",
+      "confidential": true,
+      "contains": "Bates cites and paraphrase only; no verbatim HOPE text"
     }
   ],
   "discovery_set": {

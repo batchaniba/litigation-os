@@ -132,3 +132,9 @@ Research memos (QI, CASOMB, Title 15 § 3574): `/documents/matter-28/research/`.
 - Proposed stip. PO filing has no ECF number in the repo; entry status unknown.
 - Defendants' initial disclosures (due Oct 15) not yet received/ingested.
 - Docket entries 16–27 are not catalogued in the repo (Dkt 22 and 23 are referenced in Dkt 29 / Dkt 30).
+
+## Analysis pass (2026-10-14)
+- `ANALYSIS.md`: production analysis by Bates, by claim, plus the Matter 5 record, precedent (verification status) and the San Joaquin repurposing table.
+- `NEXT_MOVES.md`: ranked moves through ~Nov 4 (Oct 15 disclosures; Oct 27 CMC/MTD hearing).
+- `drafts/`: RFP/RFA/ROG Set One, Rule 45 CDCR subpoena, preservation and deficiency letters, PO strategy. **All drafts; nothing served or sent.**
+- Key constraint: the San Joaquin PO §VI does not cover Matter 28. Do not use HOPE_ material in Matter 28 filings until it is re-produced or HOPE consents.
