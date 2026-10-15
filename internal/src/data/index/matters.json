@@ -1,6 +1,6 @@
 {
   "generated": true,
-  "today": "2026-10-12",
+  "today": "2026-10-14",
   "matters": [
     {
       "number": 1,
@@ -917,15 +917,15 @@
       "proceeding": "federal_civil",
       "phase": "mtd_briefing",
       "next_clock": {
-        "id": "28-deadline-mtd-reply",
-        "date": "2026-10-13",
+        "id": "28-lr73d-objection",
+        "date": "2026-10-20",
         "kind": "deadline",
         "status": "open",
-        "title": "Reply deadline on Dkt. 15 motion to dismiss — Newanforbi v. Smith / HOPE (3:26-cv-07504-LJC).",
-        "source_dkt": 15
+        "title": "Civil L.R. 7-3(d)(1) objection to new evidence in reply: due within 7 days after the reply is filed (filed Oct. 13 → Oct. 20). LIVE: Dkt. 30-1 Supplemental RFJN Exhibit A attaches a San Joaquin docket screenshot (STK-CV-UF-2026-0001032). Newanforbi v. Smith / HOPE (3:26-cv-07504-LJC).",
+        "source_dkt": 30
       },
       "overdue": false,
-      "last_updated": "2026-10-12",
+      "last_updated": "2026-10-14",
       "files": [
         "claims.json",
         "clocks.json",
@@ -963,7 +963,7 @@
         "source_dkt": 1
       },
       "overdue": true,
-      "last_updated": "2026-10-12",
+      "last_updated": "2026-10-14",
       "files": [
         "claims.json",
         "clocks.json",
