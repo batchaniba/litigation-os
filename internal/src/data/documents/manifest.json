@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "fileCount": 1668,
-  "totalBytes": 980100546,
+  "fileCount": 1669,
+  "totalBytes": 980507316,
   "files": [
     {
       "path": "/documents/_form-library/ao239-blank-template.pdf",
@@ -8342,6 +8342,11 @@
       "path": "/documents/matter-28/Dkt_30-2_-_Certificate_of_Service_for_Reply_and_Supplemental_RFJN__N.D._Cal._3-26-cv-07504-LJC___Filed_Oct_13_2026__04a3.pdf",
       "size": 122005,
       "sha256": "6bbe56b2c933563ebb9055a3d9752f8a3641bea8a7a835113e671b4d60737ea8"
+    },
+    {
+      "path": "/documents/matter-25/Plaintiff's Initial Rule 26(a)(1) Disclosures (Oct 9 2026).pdf",
+      "size": 406770,
+      "sha256": "deeb0e8fd268444110b99aae7648117a8a92498fd8dc48f04f090b2b7e78c90d"
     }
   ]
 }
