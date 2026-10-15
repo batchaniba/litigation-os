@@ -246,9 +246,9 @@
   },
   {
     "id": "e36",
-    "label": "Lerma Dkt. 36 — Order Granting Motions to Dismiss (May 26, 2023): holds that Accurate Background's background report, subject to judicial notice, contradicted Plaintiff's Megan's Law-sourcing allegation; National Sex Offender Database Search returned 'no record found'; establishes that Matter 29 needs its own actual BGC report to show a registry hit rather than inferring one from delay alone",
+    "label": "Lerma Dkt. 36 - Order Granting Motions to Dismiss (May 26, 2023): the incorporated Accurate report showed ordinary court-record sourcing and a negative National Sex Offender Database Search. Historical source-attribution comparator; Matter 29's own Accurate report is now in hand.",
     "path": null,
-    "what_it_proves": "Lerma Dkt. 36 — Order Granting Motions to Dismiss (May 26, 2023): holds that Accurate Background's background report, subject to judicial notice, contradicted Plaintiff's Megan's Law-sourcing allegation; National Sex Offender Database Search returned 'no record found'; establishes that Matter 29 needs its own actual BGC report to show a registry hit rather than inferring one from delay alone",
+    "what_it_proves": "Lerma Dkt. 36 - Order Granting Motions to Dismiss (May 26, 2023): the incorporated Accurate report showed ordinary court-record sourcing and a negative National Sex Offender Database Search. Historical source-attribution comparator; Matter 29's own Accurate report is now in hand.",
     "transcript_path": null
   },
   {
@@ -256,6 +256,62 @@
     "label": "Lerma Dkt. 20 — First Amended Complaint: source of the Fair Chance Act (Gov. Code §12952) cause of action now added to Matter 29, based on an employer's duty to individually assess conviction/registry history against specific job duties before denial",
     "path": null,
     "what_it_proves": "Lerma Dkt. 20 — First Amended Complaint: source of the Fair Chance Act (Gov. Code §12952) cause of action now added to Matter 29, based on an employer's duty to individually assess conviction/registry history against specific job duties before denial",
+    "transcript_path": null
+  },
+  {
+    "id": "e38",
+    "label": "Accurate Background - Amazon HVH consumer report, ordered Jul. 7 and updated Oct. 14, 2026",
+    "path": "/documents/matter-29/Accurate Background - Consumer Report (Amazon HVH, Ref 496623722, updated Oct 14 2026).pdf",
+    "what_it_proves": "Accurate found Santa Clara case C1761642 but reported NATIONAL SEX OFFENDER DATABASE SEARCH - NO RECORD FOUND; the identity table also includes the unsupported NEWANSORBI variant.",
+    "transcript_path": null
+  },
+  {
+    "id": "e39",
+    "label": "First Advantage - UPS background report, completed Jul. 18, 2024",
+    "path": "/documents/matter-26/Dkt 07 Exhibit A - First Advantage Background Report (Filed Aug 26 2026).pdf",
+    "what_it_proves": "DOJ-site National Sex Offender Registry search returned Record Found and identified the California Sex Offender Registry as the source.",
+    "transcript_path": null
+  },
+  {
+    "id": "e40",
+    "label": "Checkr - Pilot Travel Centers background report, completed Dec. 23, 2025",
+    "path": "/documents/matter-22/Checkr - Pilot Travel Centers - Background Check Report (Completed Dec 23 2025).pdf",
+    "what_it_proves": "California registry match under the full name and date of birth; predates Accurate's negative result.",
+    "transcript_path": null
+  },
+  {
+    "id": "e41",
+    "label": "Checkr - Next Chapter Project report, completed Mar. 27, 2026",
+    "path": "/documents/matter-29/Checkr Consumer Report - Next Chapter Project (Report 2998b72edcf19a05d25ab058, Completed Mar 27 2026).pdf",
+    "what_it_proves": "California registry match under the full name and date of birth; predates Accurate's negative result.",
+    "transcript_path": null
+  },
+  {
+    "id": "e42",
+    "label": "HireRight - Macy's background report, requested May 28, 2026",
+    "path": "/documents/matter-23/HireRight - Macy's - Background Check Report (Requested May 28 2026).pdf",
+    "what_it_proves": "HireRight recorded that the applicant was listed in California and verified the match using AKA, date of birth, and address.",
+    "transcript_path": null
+  },
+  {
+    "id": "e43",
+    "label": "InfoMart - RK Logistics background report, Order 15780719, completed Jul. 13, 2026",
+    "path": "/documents/matter-27/InfoMart - RK Logistics - Background Check Report (Order 15780719, Completed Jul 13 2026).pdf",
+    "what_it_proves": "California sex-offender record found six days after Accurate's negative search; matched name, DOB, aliases, and physical description.",
+    "transcript_path": null
+  },
+  {
+    "id": "e44",
+    "label": "Checkr - Next Chapter Project report, completed Aug. 7, 2026",
+    "path": "/documents/matter-29/Checkr Consumer Report - Next Chapter Project (Report d1eb77b8c7c4e1cf783dfa24, Completed Aug 7 2026).pdf",
+    "what_it_proves": "Continued California registry match after Accurate's July 7 negative search.",
+    "transcript_path": null
+  },
+  {
+    "id": "e45",
+    "label": "Checkr - Nuro report, completed Oct. 6, 2026",
+    "path": "/documents/matter-29/Checkr Consumer Report - Nuro (Report fdd27d50df88c6073f30aecc, Completed Oct 6 2026).pdf",
+    "what_it_proves": "California registry match remained present shortly before Accurate's Oct. 14 update retained the negative registry result.",
     "transcript_path": null
   }
 ]
