@@ -1,5 +1,32 @@
 [
   {
+    "dkt": 4,
+    "date": "2026-10-14",
+    "filer": "court",
+    "type": "order",
+    "title": "Dkt 04 - Order Granting IFP, Screening, and Directing USM Service (Filed Oct 14 2026)",
+    "path": "/documents/matter-36/edca/Dkt 04 - Order Granting IFP, Screening, and Directing USM Service (Filed Oct 14 2026).pdf",
+    "filed": true
+  },
+  {
+    "dkt": 5,
+    "date": "2026-10-14",
+    "filer": "court",
+    "type": "order",
+    "title": "Dkt 05 - Initial Scheduling Order Pro Se Cases (Filed Oct 14 2026)",
+    "path": "/documents/matter-36/edca/Dkt 05 - Initial Scheduling Order Pro Se Cases (Filed Oct 14 2026).pdf",
+    "filed": true
+  },
+  {
+    "dkt": 6,
+    "date": "2026-10-14",
+    "filer": "court",
+    "type": "summons",
+    "title": "Dkt 06 - Summons Issued as to AT&T Mobility Services LLC (Filed Oct 14 2026)",
+    "path": "/documents/matter-36/edca/Dkt 06 - Summons Issued as to AT&T Mobility Services LLC (Filed Oct 14 2026).pdf",
+    "filed": true
+  },
+  {
     "dkt": null,
     "date": null,
     "filer": "plaintiff",
