@@ -101,6 +101,24 @@ Under Federal Rules of Civil Procedure 26 and 36, Plaintiff Brendan Ngehsi Newan
 
 **REQUEST FOR ADMISSION NO. 32:** HOPE knew of PLAINTIFF's employment as a commercial driver before January 1, 2023.
 
+**REQUEST FOR ADMISSION NO. 33:** In at least one written report concerning PLAINTIFF transmitted to CDCR, HOPE stated that PLAINTIFF "is fixated on lawsuits instead of subject material."
+
+**REQUEST FOR ADMISSION NO. 34:** The statement quoted in Request for Admission No. 33 refers to lawsuits filed by PLAINTIFF.
+
+**REQUEST FOR ADMISSION NO. 35:** HOPE signed at least one CDCR Form 3043 concerning PLAINTIFF.
+
+**REQUEST FOR ADMISSION NO. 36:** HOPE did not sign a CDCR Form 3043 stating good cause to retain PLAINTIFF in a sex offender management program following the August 19, 2025 CTM.
+
+**REQUEST FOR ADMISSION NO. 37:** HOPE has no record that a written determination to retain PLAINTIFF in a sex offender management program following the August 19, 2025 CTM was delivered to PLAINTIFF within 30 calendar days of that CTM.
+
+**REQUEST FOR ADMISSION NO. 38:** HOPE did not sign a CDCR Form 3043 stating good cause to retain PLAINTIFF in a sex offender management program following the February 18, 2026 CTM.
+
+**REQUEST FOR ADMISSION NO. 39:** HOPE has no record that a written determination to retain PLAINTIFF in a sex offender management program following the February 18, 2026 CTM was delivered to PLAINTIFF within 30 calendar days of that CTM.
+
+**REQUEST FOR ADMISSION NO. 40:** At no time after April 17, 2025 did HOPE score PLAINTIFF at 11 or higher on the Level of Service/Case Management Inventory (LS/CMI).
+
+**REQUEST FOR ADMISSION NO. 41:** Katie Palacios acted within the course and scope of her employment or agency with HOPE when communicating with CDCR about PLAINTIFF.
+
 Dated: ____________________, 2026
 
 Respectfully submitted,
@@ -145,9 +163,18 @@ Plaintiff, In Propria Persona
 | 24 | PRESERVATION |  |
 | 25 | MONELL |  |
 | 26 | MONELL |  |
-| 27 | STATE, DP | Verify exact current CCR text; keep this paraphrase neutral. |
+| 27 | STATE, DP | Verified Oct 14, 2026 against current 15 CCR 3574(f) (Cornell LII; CDCR adopted text, COC filed 4/17/2025). |
 | 28 | MONELL, 1983-SMITH |  |
 | 29 | MONELL, STATE | Quote from HOPE's San Joaquin discovery response (not the confidential production). Confirm the response was not designated Confidential and that it was verified; Nos. 29-31 track those responses. |
 | 30 | CONTRA |  |
 | 31 | CONTRA |  |
 | 32 | CONTRA, DAMAGES | Contradiction lock: Plaintiff's own knowledge (work accommodations requested). Does not rely on HOPE_ production. |
+| 33 | FA, DP | Quote appears in Complaint para. 32 and is quoted by Defendants in Dkt 15 (public). Not from HOPE_ production. |
+| 34 | FA |  |
+| 35 | STATE, DP | Defeats the San Joaquin SROG objection that Forms 3043/1502-DR are CDCR-retained forms. |
+| 36 | DP, STATE | CTM dates from HOPE's verified San Joaquin SROG 11 response (not designated Confidential). 15 CCR 3574(f). |
+| 37 | DP |  |
+| 38 | DP, STATE | Same basis as No. 36 (Feb 18, 2026 CTM per SROG 11). |
+| 39 | DP |  |
+| 40 | DP, STATE | Basis: Plaintiff's own Form 1502-DR (LS/CMI 5 on 10/15/2024). Confirm with Brendan that no later score of 11+ exists. 15 CCR 3574(f)(1). |
+| 41 | BANE, FA | Respondeat superior for the Bane Act claim (state law; Monell bar does not apply). |

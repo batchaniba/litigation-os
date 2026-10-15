@@ -21,7 +21,10 @@ Under Federal Rules of Civil Procedure 26 and 34, Plaintiff Brendan Ngehsi Newan
 5. These requests reach documents in your possession, custody, or control, including documents you have the legal right to obtain on demand from employees, contractors, and vendors (including EHR, email, and cloud-storage vendors), and work-related messages on personal devices or accounts.
 6. Withhold nothing on a claim of privilege without serving a privilege log that meets Rule 26(b)(5)(A) with your written response.
 7. Confidential material may be designated under the Stipulated Protective Order once entered; confidentiality is not a basis to withhold. Records of other clients may be produced de-identified where a request so states.
-8. These requests are continuing to the extent required by Rule 26(e).
+8. If responsive material no longer exists, identify what existed, its former custodian, when and why it became unavailable, and any available copy.
+9. Preserve parent-attachment relationships and produce metadata sufficient to identify the author, custodian, and creation, modification, and transmission dates of each item.
+10. Where third-party information is protected, redact it rather than withhold an otherwise responsive document.
+11. These requests are continuing to the extent required by Rule 26(e).
 
 ## DEFINITIONS
 
@@ -53,13 +56,13 @@ Under Federal Rules of Civil Procedure 26 and 34, Plaintiff Brendan Ngehsi Newan
 
 **REQUEST FOR PRODUCTION NO. 4:** PLAINTIFF's complete electronic health record in native or system-export form, together with the system audit trail showing, for each entry, the author, creation date, and every modification, view, export, or deletion.
 
-**REQUEST FOR PRODUCTION NO. 5:** All audio and video recordings of any CTM concerning PLAINTIFF, including the CTM held in or about August 2025.
+**REQUEST FOR PRODUCTION NO. 5:** All audio and video recordings of any CTM concerning PLAINTIFF, including the CTMs held on or about August 19, 2025 and February 18, 2026.
 
 **REQUEST FOR PRODUCTION NO. 6:** All audio and video recordings of HOPE group sessions attended by PLAINTIFF from June 1, 2025 through September 30, 2025.
 
 **REQUEST FOR PRODUCTION NO. 7:** All CTM notes, CTM progress reports, CTM agendas, sign-in sheets, and pre-CTM submissions concerning PLAINTIFF.
 
-**REQUEST FOR PRODUCTION NO. 8:** All CDCR Form 3043 documents and CDCR Form 1502-DR inputs concerning PLAINTIFF, including drafts, worksheets, and transmittals.
+**REQUEST FOR PRODUCTION NO. 8:** All CDCR Form 3043 documents and CDCR Form 1502-DR inputs concerning PLAINTIFF, including drafts, worksheets, signature pages, transmittals, and records of delivery to PLAINTIFF.
 
 **REQUEST FOR PRODUCTION NO. 9:** All titration tracking forms, graduation or completion checklists, Treatment Completion Certificate materials, and records of any upload to a CDCR system (including ARMS) concerning PLAINTIFF.
 
@@ -143,6 +146,18 @@ Under Federal Rules of Civil Procedure 26 and 34, Plaintiff Brendan Ngehsi Newan
 
 **REQUEST FOR PRODUCTION NO. 41:** All DOCUMENTS HOPE identified, or intends to identify, in its Rule 26(a)(1) initial disclosures.
 
+### K. Additional requests
+
+**REQUEST FOR PRODUCTION NO. 42:** Every progress report, treatment-plan update, or status report concerning PLAINTIFF that HOPE prepared for or transmitted to CDCR from August 1, 2024 to the present, including each report containing the words "fixated on lawsuits."
+
+**REQUEST FOR PRODUCTION NO. 43:** Every risk or needs assessment scored for PLAINTIFF (including the Static-99R, STABLE-2007, ACUTE-2007, and LS/CMI), with score sheets, inputs, and any COMMUNICATION of results to CDCR.
+
+**REQUEST FOR PRODUCTION NO. 44:** All DOCUMENTS concerning HOPE's receipt, review, routing, or escalation of the complaint in the SAN JOAQUIN ACTION from December 1, 2025 through January 31, 2026 (privileged communications with counsel to be logged rather than produced).
+
+**REQUEST FOR PRODUCTION NO. 45:** Organizational charts, or DOCUMENTS sufficient to identify each person responsible during the RELEVANT PERIOD for treatment-completion policy, CTM reporting, compliance, records management, and complaint handling.
+
+**REQUEST FOR PRODUCTION NO. 46:** All DOCUMENTS HOPE prepared, and all COMMUNICATIONS between HOPE and CDCR, from September 1, 2025 through December 31, 2025 concerning PLAINTIFF's treatment status or completion eligibility, including any information HOPE supplied for the CDCR Form 1502-DR concerning PLAINTIFF signed on November 14 and 19, 2025.
+
 Dated: ____________________, 2026
 
 Respectfully submitted,
@@ -202,3 +217,8 @@ Plaintiff, In Propria Persona
 | 39 | STATE |  |
 | 40 | MONELL, DP |  |
 | 41 | ALL |  |
+| 42 | FA, DP, STATE |  |
+| 43 | DP, STATE |  |
+| 44 | FA, 1983-SMITH |  |
+| 45 | MONELL, 1983-SMITH |  |
+| 46 | STATE, DP, FA |  |

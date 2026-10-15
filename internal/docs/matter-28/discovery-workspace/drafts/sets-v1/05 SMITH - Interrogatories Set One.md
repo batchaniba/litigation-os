@@ -78,6 +78,8 @@ Under Federal Rules of Civil Procedure 26 and 33, Plaintiff Brendan Ngehsi Newan
 
 **INTERROGATORY NO. 20:** State all facts supporting each affirmative defense you assert in your answer to the operative complaint.
 
+**INTERROGATORY NO. 21:** IDENTIFY each person to whom you delegated authority over treatment-completion policy, CTM reporting, or the handling of client complaints during the RELEVANT PERIOD, and describe the authority delegated.
+
 Dated: ____________________, 2026
 
 Respectfully submitted,
@@ -116,3 +118,4 @@ Plaintiff, In Propria Persona
 | 18 | PUNITIVE | Punitive-damages financial condition. Expect objection/bifurcation request; can defer until a prima facie showing. Consider reserving. |
 | 19 | WITNESS |  |
 | 20 | DEFENSE | Serve only after an answer is filed. Counted as 1 but objectors argue one per defense; hold it if subparts are tight. |
+| 21 | 1983-SMITH, MONELL | Supervisory delegation. Uses 1 of 5 reserve slots. |

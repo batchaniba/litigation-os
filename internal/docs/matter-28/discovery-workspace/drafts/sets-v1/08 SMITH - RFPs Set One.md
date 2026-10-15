@@ -21,7 +21,10 @@ Under Federal Rules of Civil Procedure 26 and 34, Plaintiff Brendan Ngehsi Newan
 5. These requests reach documents in your possession, custody, or control, including documents you have the legal right to obtain on demand from employees, contractors, and vendors (including EHR, email, and cloud-storage vendors), and work-related messages on personal devices or accounts.
 6. Withhold nothing on a claim of privilege without serving a privilege log that meets Rule 26(b)(5)(A) with your written response.
 7. Confidential material may be designated under the Stipulated Protective Order once entered; confidentiality is not a basis to withhold. Records of other clients may be produced de-identified where a request so states.
-8. These requests are continuing to the extent required by Rule 26(e).
+8. If responsive material no longer exists, identify what existed, its former custodian, when and why it became unavailable, and any available copy.
+9. Preserve parent-attachment relationships and produce metadata sufficient to identify the author, custodian, and creation, modification, and transmission dates of each item.
+10. Where third-party information is protected, redact it rather than withhold an otherwise responsive document.
+11. These requests are continuing to the extent required by Rule 26(e).
 
 ## DEFINITIONS
 
