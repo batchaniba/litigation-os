@@ -153,6 +153,159 @@
       "summary": "PO strategy and proposed prior-production paragraph (not sent)",
       "confidential": true,
       "contains": "Bates cites and paraphrase only; no verbatim HOPE text"
+    },
+    {
+      "path": "internal/docs/matter-28/discovery-workspace/drafts/sets-v1/00_CHAMBER_MEMO.md",
+      "role": "draft-set",
+      "type": "md",
+      "hold": false,
+      "confidential": true,
+      "served": false,
+      "generator": "internal/scripts/matter28-discovery-sets-v1.py"
+    },
+    {
+      "path": "internal/docs/matter-28/discovery-workspace/drafts/sets-v1/01 HOPE - Interrogatories Set One.md",
+      "role": "draft-set",
+      "type": "md",
+      "hold": false,
+      "confidential": true,
+      "served": false,
+      "generator": "internal/scripts/matter28-discovery-sets-v1.py"
+    },
+    {
+      "path": "internal/docs/matter-28/discovery-workspace/drafts/sets-v1/02 HOPE - RFAs Set One.md",
+      "role": "draft-set",
+      "type": "md",
+      "hold": false,
+      "confidential": true,
+      "served": false,
+      "generator": "internal/scripts/matter28-discovery-sets-v1.py"
+    },
+    {
+      "path": "internal/docs/matter-28/discovery-workspace/drafts/sets-v1/03 HOPE - RFAs Set Two (HOLD pending PO fix).md",
+      "role": "draft-set",
+      "type": "md",
+      "hold": true,
+      "confidential": true,
+      "served": false,
+      "generator": "internal/scripts/matter28-discovery-sets-v1.py"
+    },
+    {
+      "path": "internal/docs/matter-28/discovery-workspace/drafts/sets-v1/04 HOPE - RFPs Set One.md",
+      "role": "draft-set",
+      "type": "md",
+      "hold": false,
+      "confidential": true,
+      "served": false,
+      "generator": "internal/scripts/matter28-discovery-sets-v1.py"
+    },
+    {
+      "path": "internal/docs/matter-28/discovery-workspace/drafts/sets-v1/05 SMITH - Interrogatories Set One.md",
+      "role": "draft-set",
+      "type": "md",
+      "hold": false,
+      "confidential": true,
+      "served": false,
+      "generator": "internal/scripts/matter28-discovery-sets-v1.py"
+    },
+    {
+      "path": "internal/docs/matter-28/discovery-workspace/drafts/sets-v1/06 SMITH - RFAs Set One.md",
+      "role": "draft-set",
+      "type": "md",
+      "hold": false,
+      "confidential": true,
+      "served": false,
+      "generator": "internal/scripts/matter28-discovery-sets-v1.py"
+    },
+    {
+      "path": "internal/docs/matter-28/discovery-workspace/drafts/sets-v1/07 SMITH - RFAs Set Two (HOLD pending PO fix).md",
+      "role": "draft-set",
+      "type": "md",
+      "hold": true,
+      "confidential": true,
+      "served": false,
+      "generator": "internal/scripts/matter28-discovery-sets-v1.py"
+    },
+    {
+      "path": "internal/docs/matter-28/discovery-workspace/drafts/sets-v1/08 SMITH - RFPs Set One.md",
+      "role": "draft-set",
+      "type": "md",
+      "hold": false,
+      "confidential": true,
+      "served": false,
+      "generator": "internal/scripts/matter28-discovery-sets-v1.py"
+    },
+    {
+      "path": "internal/docs/matter-28/discovery-workspace/drafts/sets-v1/pdf/01 HOPE - Interrogatories Set One.pdf",
+      "role": "draft-set",
+      "type": "pdf",
+      "hold": false,
+      "confidential": true,
+      "served": false,
+      "generator": "internal/scripts/matter28-discovery-sets-v1.py"
+    },
+    {
+      "path": "internal/docs/matter-28/discovery-workspace/drafts/sets-v1/pdf/02 HOPE - RFAs Set One.pdf",
+      "role": "draft-set",
+      "type": "pdf",
+      "hold": false,
+      "confidential": true,
+      "served": false,
+      "generator": "internal/scripts/matter28-discovery-sets-v1.py"
+    },
+    {
+      "path": "internal/docs/matter-28/discovery-workspace/drafts/sets-v1/pdf/03 HOPE - RFAs Set Two (HOLD pending PO fix).pdf",
+      "role": "draft-set",
+      "type": "pdf",
+      "hold": true,
+      "confidential": true,
+      "served": false,
+      "generator": "internal/scripts/matter28-discovery-sets-v1.py"
+    },
+    {
+      "path": "internal/docs/matter-28/discovery-workspace/drafts/sets-v1/pdf/04 HOPE - RFPs Set One.pdf",
+      "role": "draft-set",
+      "type": "pdf",
+      "hold": false,
+      "confidential": true,
+      "served": false,
+      "generator": "internal/scripts/matter28-discovery-sets-v1.py"
+    },
+    {
+      "path": "internal/docs/matter-28/discovery-workspace/drafts/sets-v1/pdf/05 SMITH - Interrogatories Set One.pdf",
+      "role": "draft-set",
+      "type": "pdf",
+      "hold": false,
+      "confidential": true,
+      "served": false,
+      "generator": "internal/scripts/matter28-discovery-sets-v1.py"
+    },
+    {
+      "path": "internal/docs/matter-28/discovery-workspace/drafts/sets-v1/pdf/06 SMITH - RFAs Set One.pdf",
+      "role": "draft-set",
+      "type": "pdf",
+      "hold": false,
+      "confidential": true,
+      "served": false,
+      "generator": "internal/scripts/matter28-discovery-sets-v1.py"
+    },
+    {
+      "path": "internal/docs/matter-28/discovery-workspace/drafts/sets-v1/pdf/07 SMITH - RFAs Set Two (HOLD pending PO fix).pdf",
+      "role": "draft-set",
+      "type": "pdf",
+      "hold": true,
+      "confidential": true,
+      "served": false,
+      "generator": "internal/scripts/matter28-discovery-sets-v1.py"
+    },
+    {
+      "path": "internal/docs/matter-28/discovery-workspace/drafts/sets-v1/pdf/08 SMITH - RFPs Set One.pdf",
+      "role": "draft-set",
+      "type": "pdf",
+      "hold": false,
+      "confidential": true,
+      "served": false,
+      "generator": "internal/scripts/matter28-discovery-sets-v1.py"
     }
   ],
   "discovery_set": {
