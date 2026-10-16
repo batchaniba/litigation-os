@@ -83,6 +83,7 @@ export function buildProjection({ repoRoot = REPO_ROOT } = {}) {
   const matters = [];
   const clocks = [];
   const documents = [];
+  const publishedClockIds = new Set();
   for (const published of publishedMatters) {
     const n = published.number;
     const nc = nextOpenClock(published.clocks);
@@ -100,6 +101,7 @@ export function buildProjection({ repoRoot = REPO_ROOT } = {}) {
     });
     for (const c of published.clocks ?? []) {
       if (!c || !c.date) continue;
+      if (c.id) publishedClockIds.add(`${n}:${c.id}`);
       clocks.push({
         matter_number: n,
         title: c.title ?? null,
@@ -115,7 +117,71 @@ export function buildProjection({ repoRoot = REPO_ROOT } = {}) {
       documents.push({ path: doc.path, sha256: sha, matter_number: n, size: sizeByPath.get(doc.path) ?? null });
     }
   }
-  return { matters, clocks, documents };
+  const documentsByPath = [];
+  applyPreserveList({ repoRoot, mattersDir, clocks, documents, documentsByPath, publishedClockIds });
+  return { matters, clocks, documents, documentsByPath };
+}
+
+/**
+ * workers/doc-api/d1-preserve.json: rows live D1 serves that the filing-safe
+ * publish projection deliberately leaves out (unfiled/working documents, R2-only
+ * sidecars, non-court clocks the bot tracks). Without this a reseed deleted them.
+ * Documents are kept exactly as D1 held them; clocks are taken from the repo's
+ * clocks.json by (matter, id) so repo edits still win. Dateless clocks are
+ * allowed only here (the projection keeps skipping them).
+ */
+export function loadPreserveList(repoRoot = REPO_ROOT) {
+  const p = path.join(repoRoot, "workers/doc-api/d1-preserve.json");
+  if (!fs.existsSync(p)) return { documents: [], documentsByPath: [], clocks: [] };
+  const j = readJSON(p);
+  return { documents: j.documents ?? [], documentsByPath: j.documents_by_path ?? [], clocks: j.clocks ?? [] };
+}
+
+function applyPreserveList({ repoRoot, mattersDir, clocks, documents, documentsByPath, publishedClockIds }) {
+  const preserve = loadPreserveList(repoRoot);
+  const haveSha = new Set(documents.map((d) => d.sha256));
+  for (const d of preserve.documents) {
+    const sha = String(d.sha256).toLowerCase();
+    if (haveSha.has(sha)) continue;
+    haveSha.add(sha);
+    documents.push({
+      path: d.path,
+      sha256: sha,
+      matter_number: d.matter_number,
+      size: d.size ?? null,
+      by_path: false,
+    });
+  }
+  const havePath = new Set(documents.filter((d) => d.by_path !== false).map((d) => d.path));
+  for (const r of preserve.documentsByPath) {
+    if (havePath.has(r.path)) continue;
+    havePath.add(r.path);
+    documentsByPath.push({
+      path: r.path,
+      sha256: String(r.sha256).toLowerCase(),
+      matter_number: r.matter_number ?? null,
+      size: r.size ?? null,
+    });
+  }
+  const rawByMatter = new Map();
+  for (const { matter, id } of preserve.clocks) {
+    if (publishedClockIds.has(`${matter}:${id}`)) continue;
+    if (!rawByMatter.has(matter)) {
+      const f = path.join(mattersDir, String(matter).padStart(2, "0"), "clocks.json");
+      rawByMatter.set(matter, fs.existsSync(f) ? readJSON(f) : []);
+    }
+    const raw = rawByMatter.get(matter);
+    const list = Array.isArray(raw) ? raw : raw.clocks ?? [];
+    const c = list.find((x) => x && x.id === id);
+    if (!c) throw new Error(`d1-preserve.json: clock ${matter}:${id} not found in clocks.json`);
+    clocks.push({
+      matter_number: matter,
+      title: c.title ?? null,
+      date: c.date ?? null,
+      kind: c.kind ?? null,
+      status: c.status ?? "open",
+    });
+  }
 }
 
 export function buildSeedSql({
@@ -123,7 +189,7 @@ export function buildSeedSql({
   commit = sourceCommit(repoRoot),
   seededAt = new Date().toISOString(),
 } = {}) {
-  const { matters, clocks, documents } = buildProjection({ repoRoot });
+  const { matters, clocks, documents, documentsByPath } = buildProjection({ repoRoot });
 
   const out = [];
   out.push("-- D1 seed — filing-safe publish projection. Idempotent; replaces every row.");
@@ -157,18 +223,25 @@ export function buildSeedSql({
   }
   for (const c of clocks) {
     out.push(
-      `INSERT INTO clocks (matter_number, title, date, kind, status) VALUES (${c.matter_number}, ${lit(c.title)}, ${lit(c.date)}, ${lit(c.kind)}, ${lit(c.status)});`,
+      `INSERT INTO clocks (matter_number, title, date, kind, status) VALUES (${lit(c.matter_number)}, ${lit(c.title)}, ${lit(c.date)}, ${lit(c.kind)}, ${lit(c.status)});`,
     );
   }
   for (const d of documents) {
-    out.push(
+    if (d.by_path !== false) out.push(
       `INSERT OR REPLACE INTO documents_by_path (path, sha256, matter_number, size) VALUES (` +
-        [lit(d.path), lit(d.sha256), d.matter_number, lit(d.size)].join(", ") +
+        [lit(d.path), lit(d.sha256), lit(d.matter_number), lit(d.size)].join(", ") +
         `);`,
     );
     out.push(
       `INSERT OR REPLACE INTO documents (sha256, matter_number, path, size) VALUES (` +
-        [lit(d.sha256), d.matter_number, lit(d.path), lit(d.size)].join(", ") +
+        [lit(d.sha256), lit(d.matter_number), lit(d.path), lit(d.size)].join(", ") +
+        `);`,
+    );
+  }
+  for (const d of documentsByPath) {
+    out.push(
+      `INSERT OR REPLACE INTO documents_by_path (path, sha256, matter_number, size) VALUES (` +
+        [lit(d.path), lit(d.sha256), lit(d.matter_number), lit(d.size)].join(", ") +
         `);`,
     );
   }

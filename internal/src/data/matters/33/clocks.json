@@ -67,5 +67,29 @@
     "title": "Initial Case Management Conference and Dkt. 17 motion-to-strike hearing, 10:00 a.m. before Hon. Rita F. Lin \u2014 Nforbi v. Candelaria et al. (3:26-cv-08272-RFL).",
     "actor": "you",
     "source": "/documents/matter-33/ndcal/Dkt 04 - Order Setting Initial Case Management Conference and ADR Deadlines (Aug 10 2026).pdf"
+  },
+  {
+    "id": "33-cisneros-disclosures",
+    "date": "2026-11-05",
+    "date_label": "Nov. 5, 2026",
+    "kind": "deadline",
+    "status": "vacated",
+    "source_dkt": null,
+    "title": "Deadline to make initial disclosures (Fed. R. Civ. P. 26(a)(1)) and to file the Joint Case Management Statement (Standing Order for All Judges of the Northern\u2026",
+    "actor": "you",
+    "source": null,
+    "note": "Reconciled from D1 clocks row 128. Cisneros-era date superseded by reassignment to Judge Lin (see 33-deadline-3, Dec. 2, 2026)."
+  },
+  {
+    "id": "33-cisneros-cmc",
+    "date": "2026-11-12",
+    "date_label": "Nov. 12, 2026",
+    "kind": "hearing",
+    "status": "vacated",
+    "source_dkt": null,
+    "title": "Initial Case Management Conference and Dkt. 17 motion-to-strike hearing, 1:30 p.m. by Zoom (cand.uscourts.gov/ljc) before Magistrate Judge Lisa J. Cisneros \u2014 Nforbi v. Candelaria et al. (3:26-cv-08272-LJC). Same slot (PACER Sep. 18).",
+    "actor": "court",
+    "source": null,
+    "note": "Reconciled from D1 clocks row 129. Cisneros-era CMC superseded by reassignment to Judge Lin (see 33-hearing-4, Dec. 9, 2026)."
   }
 ]

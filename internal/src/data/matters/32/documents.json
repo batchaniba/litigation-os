@@ -851,5 +851,9 @@
   {
     "path": "/documents/matter-32/ndcal/Dkt 05 - First Amended Complaint (Filed Aug 17 2026) (alternate scan).pdf",
     "filed": true
+  },
+  {
+    "path": "/documents/matter-32/ndcal/Exhibit A Cover - ECF Help Desk (September 14, 2026).pdf",
+    "filed": false
   }
 ]
