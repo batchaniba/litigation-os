@@ -36,4 +36,23 @@ describe("diffMirror", () => {
     expect(r.drift.documents.d1_only_not_public.map((x) => x.sha256)).toEqual(["priv"]);
     expect(r.drift.documents.d1_only_unknown_to_repo.map((x) => x.sha256)).toEqual(["orphan"]);
   });
+
+  it("matches D1 rows lacking a matter number or an R2 object instead of calling them missing", () => {
+    const expected = { matters: [], clocks: [], documents: [d("form", "/documents/_form-library/x.pdf"), d("hope", "/documents/matter-05/h.pdf"), d("gone", "/y.pdf")] };
+    const live = {
+      matters: [],
+      clocks: [],
+      documents: [],
+      d1Documents: [
+        { sha256: "form", path: "/documents/_form-library/x.pdf", matter_number: null },
+        { sha256: "hope", path: "/documents/matter-05/h.pdf", matter_number: 5 },
+      ],
+      r2Missing: new Set(["hope"]),
+    };
+    const r = diffMirror(expected, live);
+    expect(r.drift.documents.missing_in_d1.map((x) => x.sha256)).toEqual(["gone"]);
+    expect(r.drift.documents.in_d1_no_r2_object.map((x) => x.sha256)).toEqual(["hope"]);
+    expect(r.info.documents_in_d1_no_matter_number).toBe(1);
+    expect(r.drift.documents.d1_only).toEqual([]);
+  });
 });
