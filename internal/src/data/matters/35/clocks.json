@@ -1,14 +1,14 @@
 [
   {
     "id": "35-deadline-5",
-    "date": "2026-10-21",
-    "date_label": "Oct. 21, 2026",
+    "date": "2026-10-22",
+    "date_label": "Oct. 22, 2026",
     "kind": "deadline",
     "status": "open",
     "source_dkt": null,
-    "title": "OPEN TASK — Matter 35 (26CV501995) meet-and-confer with Ross counsel (Vogl Meredith) re Oct 15 Verified Answer before demurrer/motion to strike (CCP §§ 430.41(a)(2), 435.5).",
+    "title": "OPEN TASK — Matter 35 (26CV501995): complete telephone or video meet-and-confer with Ross counsel regarding the Oct. 15 Verified Answer under CCP §§ 430.41 and 435.5. Letter alone does not complete the conference.",
     "actor": "you",
-    "source": "/internal/docs/matter-35/answer-workspace/Ross Answer & Discovery Analysis (Oct 15 2026).md"
+    "source": "/internal/docs/matter-35/answer-workspace/Senior Review - Corrections and Immediate Strategy (Oct 15 2026).md"
   },
   {
     "id": "35-deadline-1",
@@ -17,20 +17,20 @@
     "kind": "deadline",
     "status": "satisfied",
     "source_dkt": null,
-    "title": "OPEN TASK — Serve Ross Stores, Inc. and Ross Dress for Less, Inc. in Matter 35 (26CV501995) with the Verified Complaint, issued Summons, ADR Information Sheet,…",
+    "title": "SATISFIED — Serve Ross Stores, Inc. and Ross Dress for Less, Inc. in Matter 35 (26CV501995) with the Verified Complaint, issued Summons, ADR Information Sheet, and Civil Lawsuit Notice.",
     "actor": "you",
     "source": "/documents/matter-35/SUM-100 Summons (ISSUED, Filed Aug 26 2026) - 26CV501995.pdf"
   },
   {
     "id": "35-deadline-6",
-    "date": "2026-10-26",
-    "date_label": "Oct. 26, 2026",
+    "date": "2026-10-30",
+    "date_label": "Oct. 30, 2026",
     "kind": "deadline",
     "status": "open",
     "source_dkt": null,
-    "title": "OPEN TASK — Matter 35: demurrer / motion to strike Ross's Oct 15 answer (CCP §§ 430.40(b), 435), OR file § 430.41(a)(2) declaration for automatic 30-day extension (to Nov. 25, 2026).",
+    "title": "OPEN TASK — Matter 35: mail-based outside date to demur or move to strike Ross's Oct. 15 answer, or file and serve CCP §§ 430.41(a)(2) / 435.5(a)(2) declarations for an automatic 30-day extension. Preserve rights conservatively by Oct. 27 if electronic service is treated as operative.",
     "actor": "you",
-    "source": "/internal/docs/matter-35/answer-workspace/Ross Answer & Discovery Analysis (Oct 15 2026).md"
+    "source": "/internal/docs/matter-35/answer-workspace/Senior Review - Corrections and Immediate Strategy (Oct 15 2026).md"
   },
   {
     "id": "35-deadline-7",
@@ -39,9 +39,20 @@
     "kind": "deadline",
     "status": "open",
     "source_dkt": null,
-    "title": "OPEN TASK — Matter 35: serve verified responses to Ross Form Interrogatories, Special Interrogatories (27), and RFPs (24), Set One (served Oct 15 by mail + email; 30 days + 2 court days, CCP § 1010.6). Late = objections waived.",
+    "title": "OPEN TASK — Matter 35: conservative date to serve verified responses to Ross Form Interrogatories, 27 Special Interrogatories, and 24 RFPs, Set One. Mail-based outside date is Nov. 19; do not rely on it absent written agreement.",
     "actor": "you",
-    "source": "/internal/docs/matter-35/answer-workspace/Ross Answer & Discovery Analysis (Oct 15 2026).md"
+    "source": "/internal/docs/matter-35/answer-workspace/Senior Review - Corrections and Immediate Strategy (Oct 15 2026).md"
+  },
+  {
+    "id": "35-deadline-9",
+    "date": "2026-11-30",
+    "date_label": "Nov. 30, 2026",
+    "kind": "deadline",
+    "status": "open",
+    "source_dkt": null,
+    "title": "CONDITIONAL — Matter 35: extended deadline to demur or move to strike Ross's answer if a qualifying CCP §§ 430.41(a)(2) / 435.5(a)(2) declaration is timely filed and served. Corrected for Thanksgiving, the Nov. 27 court holiday, and weekend roll-forward.",
+    "actor": "you",
+    "source": "/internal/docs/matter-35/answer-workspace/Senior Review - Corrections and Immediate Strategy (Oct 15 2026).md"
   },
   {
     "id": "35-deadline-2",
@@ -50,7 +61,7 @@
     "kind": "deadline",
     "status": "open",
     "source_dkt": null,
-    "title": "OPEN TASK — Matter 35 (26CV501995) meet-and-confer with appearing parties at least 30 calendar days before the Feb. 11, 2027 CMC (Santa Clara Civil Lawsuit…",
+    "title": "OPEN TASK — Matter 35 (26CV501995): meet and confer with appearing parties at least 30 calendar days before the Feb. 11, 2027 CMC.",
     "actor": "you",
     "source": "/documents/matter-35/CV-5012 Civil Lawsuit Notice (Clerk-Stamped) - 26CV501995.pdf"
   },
@@ -72,7 +83,7 @@
     "kind": "hearing",
     "status": "open",
     "source_dkt": null,
-    "title": "CASE MANAGEMENT CONFERENCE — Ngwa Nforbi v. Ross Stores, Inc., et al. (Matter 35, Santa Clara Sup. Ct. No. 26CV501995), Hon. Vince Parrett, Dept. 16 (stamp…",
+    "title": "CASE MANAGEMENT CONFERENCE — Ngwa Nforbi v. Ross Stores, Inc., et al. (Matter 35, Santa Clara Sup. Ct. No. 26CV501995), Hon. Vince Parrett, Dept. 16. Confirm time and remote-appearance details on the portal.",
     "actor": "you",
     "source": "/documents/matter-35/CV-5012 Civil Lawsuit Notice (Clerk-Stamped) - 26CV501995.pdf"
   },
@@ -83,8 +94,8 @@
     "kind": "deadline",
     "status": "open",
     "source_dkt": null,
-    "title": "OPEN TASK — Matter 35: post Plaintiff's $150 jury fee (or confirm fee-waiver coverage) on or before initial CMC (CCP § 631(c)(2)).",
+    "title": "OPEN TASK — Matter 35: post Plaintiff's $150 jury fee or confirm fee-waiver coverage on or before the initial CMC under CCP § 631(c)(2).",
     "actor": "you",
-    "source": "/internal/docs/matter-35/answer-workspace/Ross Answer & Discovery Analysis (Oct 15 2026).md"
+    "source": "/internal/docs/matter-35/answer-workspace/Senior Review - Corrections and Immediate Strategy (Oct 15 2026).md"
   }
 ]
