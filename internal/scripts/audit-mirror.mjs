@@ -16,10 +16,24 @@
 //   npm run audit:mirror -- --out drift.json
 //   DOC_API_TOKEN=… npm run audit:mirror    # if reads are ever locked
 //
+// Documents: the Worker's /matters/<n> routes only list rows that HAVE a
+// matter number and are servable (R2 object present / not denylisted), so
+// they cannot see D1 rows with matter_number NULL (_form-library, unscoped)
+// or rows whose R2 object is absent. When wrangler can reach D1 the audit
+// also reads the full `documents` table with a read-only SELECT
+// (`wrangler d1 execute litigation-portfolio --remote --command "SELECT …"`)
+// and, when R2 credentials are in the environment, HEADs each D1 row the
+// Worker did not serve. Expected documents found that way are NOT missing:
+// rows without an R2 object are reported as documents.in_d1_no_r2_object
+// (informational, does not fail the audit). Nothing is ever written.
+//   WRANGLER="npx -y node@22 $(command -v wrangler)"   # override the binary
+//   AUDIT_D1=worker                                  # skip the direct read
+//
 // Exit 0: no drift. Exit 1: drift found. Exit 2: could not run.
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { execFileSync } from "node:child_process";
 import { buildProjection } from "../../workers/doc-api/seed.mjs";
 
 const DEFAULT_API = "https://litigation-doc-api.ss8sxswwkt.workers.dev";
@@ -34,6 +48,8 @@ const clockKey = (c) => `${c.matter_number}|${c.date}|${c.title}`;
  * set) and ones the repo has never heard of.
  */
 export function diffMirror(expected, live, manifestShas = null) {
+  // live.d1Documents: every row of D1 `documents` (incl. matter_number NULL),
+  // when read directly. live.r2Missing: shas confirmed absent from R2.
   const exMatters = new Map(expected.matters.map((m) => [m.number, m]));
   const liveMatters = new Map(live.matters.map((m) => [m.number, m]));
 
@@ -56,7 +72,12 @@ export function diffMirror(expected, live, manifestShas = null) {
   }
 
   const exDocs = new Set(expected.documents.map((d) => d.sha256));
-  const liveDocs = new Map(live.documents.map((d) => [d.sha256, d]));
+  const servedDocs = new Map(live.documents.map((d) => [d.sha256, d]));
+  const liveDocs = new Map(servedDocs);
+  for (const d of live.d1Documents ?? []) if (!liveDocs.has(d.sha256)) liveDocs.set(d.sha256, d);
+  const r2Missing = live.r2Missing ?? new Set();
+  const inD1NoR2 = expected.documents.filter((d) => !servedDocs.has(d.sha256) && liveDocs.has(d.sha256) && r2Missing.has(d.sha256));
+  const inD1NoMatter = expected.documents.filter((d) => liveDocs.has(d.sha256) && liveDocs.get(d.sha256).matter_number == null);
 
   const drift = {
     matters: {
@@ -72,6 +93,7 @@ export function diffMirror(expected, live, manifestShas = null) {
     documents: {
       missing_in_d1: expected.documents.filter((d) => !liveDocs.has(d.sha256)),
       d1_only: [...liveDocs.values()].filter((d) => !exDocs.has(d.sha256)),
+      in_d1_no_r2_object: inD1NoR2,
     },
   };
   const d1Only = drift.documents.d1_only;
@@ -93,7 +115,13 @@ export function diffMirror(expected, live, manifestShas = null) {
     counts.documents_d1_only_not_public = drift.documents.d1_only_not_public.length;
     counts.documents_d1_only_unknown_to_repo = drift.documents.d1_only_unknown_to_repo.length;
   }
-  return { ok: Object.values(counts).every((n) => n === 0), counts, drift };
+  // Informational: present in D1, so not drift, but worth knowing.
+  const info = {
+    d1_documents_source: live.d1Documents ? "d1-direct" : "worker-only",
+    documents_in_d1_no_r2_object: inD1NoR2.length,
+    documents_in_d1_no_matter_number: inD1NoMatter.length,
+  };
+  return { ok: Object.values(counts).every((n) => n === 0), counts, info, drift };
 }
 
 async function getJson(api, route, token) {
@@ -119,6 +147,42 @@ export async function fetchLive(api, token) {
   return { source: health.d1 ?? null, matters, clocks, documents };
 }
 
+/** Every D1 `documents` row via a read-only wrangler SELECT, or null if unavailable. */
+export function fetchD1Documents() {
+  if (process.env.AUDIT_D1 === "worker") return null;
+  const cmd = (process.env.WRANGLER || "npx wrangler").split(/\s+/).filter(Boolean);
+  const sql = "SELECT sha256, matter_number, path, size FROM documents";
+  try {
+    const out = execFileSync(
+      cmd[0],
+      [...cmd.slice(1), "d1", "execute", "litigation-portfolio", "--remote", "--json", "--command", sql],
+      { cwd: path.join(path.dirname(fileURLToPath(import.meta.url)), "../../workers/doc-api"), encoding: "utf8", stdio: ["ignore", "pipe", "pipe"], maxBuffer: 64 << 20 },
+    );
+    const rows = JSON.parse(out.slice(out.indexOf("[")))[0]?.results;
+    if (!Array.isArray(rows)) throw new Error("unexpected wrangler output");
+    return rows.map((r) => ({ ...r, sha256: String(r.sha256).toLowerCase() }));
+  } catch (err) {
+    process.stderr.write(`audit:mirror: direct D1 read unavailable (${String(err?.message || err).split("\n")[0]}); worker-only document view\n`);
+    return null;
+  }
+}
+
+/** shas (from the given list) with no R2 object; null if R2 creds are absent. */
+export async function findR2Missing(shas) {
+  const r2 = await import("./lib/r2-client.mjs");
+  if (!r2.isConfigured()) return null;
+  const missing = new Set();
+  const list = [...shas];
+  for (let i = 0; i < list.length; i += 16) {
+    await Promise.all(
+      list.slice(i, i + 16).map(async (sha) => {
+        if (!(await r2.objectExists(r2.keyForSha256(sha)))) missing.add(sha);
+      }),
+    );
+  }
+  return missing;
+}
+
 async function main() {
   const args = process.argv.slice(2);
   const outIdx = args.indexOf("--out");
@@ -127,6 +191,14 @@ async function main() {
 
   const expected = buildProjection();
   const live = await fetchLive(api, process.env.DOC_API_TOKEN);
+  live.d1Documents = fetchD1Documents();
+  if (live.d1Documents) {
+    const served = new Set(live.documents.map((d) => d.sha256));
+    const unserved = live.d1Documents.filter((d) => !served.has(d.sha256)).map((d) => d.sha256);
+    const missing = await findR2Missing(unserved);
+    if (missing) live.r2Missing = missing;
+    else process.stderr.write("audit:mirror: R2 credentials not set; in_d1_no_r2_object not checked\n");
+  }
   const manifest = JSON.parse(
     fs.readFileSync(path.join(path.dirname(fileURLToPath(import.meta.url)), "../src/data/documents/manifest.json"), "utf8"),
   );
@@ -136,7 +208,8 @@ async function main() {
   if (out) fs.writeFileSync(out, `${JSON.stringify(result, null, 2)}\n`);
   else process.stdout.write(`${JSON.stringify(result, null, 2)}\n`);
   process.stderr.write(
-    result.ok ? "audit:mirror OK — D1 matches the repo projection\n" : `audit:mirror DRIFT — ${JSON.stringify(result.counts)}\n`,
+    (result.ok ? "audit:mirror OK — D1 matches the repo projection" : `audit:mirror DRIFT — ${JSON.stringify(result.counts)}`) +
+      ` | info ${JSON.stringify(result.info)}\n`,
   );
   process.exit(result.ok ? 0 : 1);
 }
