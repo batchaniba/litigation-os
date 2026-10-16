@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "fileCount": 1689,
-  "totalBytes": 1001635061,
+  "fileCount": 1696,
+  "totalBytes": 1004662012,
   "files": [
     {
       "path": "/documents/_form-library/ao239-blank-template.pdf",
@@ -8447,6 +8447,41 @@
       "path": "/documents/matter-9/Petition for Writ of Mandate - Newanforbi v. Macomber (draft).txt",
       "size": 28195,
       "sha256": "77cf9ed1e515c40edc84824f0bdec2e902a8da5aa3ee3e15c0f62c23a466960a"
+    },
+    {
+      "path": "/documents/matter-35/Ross Notice of Posting Jury Fees - Served Copy, Not File-Stamped (26CV501995) (Served Oct 15 2026).pdf",
+      "size": 204237,
+      "sha256": "c11dfaf3c8bcc87f325ba7dd03b9f5546c3d83d1ec9d8de42714d16252cfe29d"
+    },
+    {
+      "path": "/documents/matter-35/Ross Requests for Production, Set One, to Plaintiff - Served Copy (26CV501995) (Served Oct 15 2026).pdf",
+      "size": 288624,
+      "sha256": "fe955eae0c71799ca2da1227c69f257ec1ae67d937edeef7b2b7d3d5fbd04b0d"
+    },
+    {
+      "path": "/documents/matter-35/Ross Form Interrogatories-General (DISC-001), Set One, to Plaintiff - Served Copy (26CV501995) (Served Oct 15 2026).pdf",
+      "size": 763008,
+      "sha256": "3544a607db2d1ecd11ca5d251961e771000f36b88a75aae0dd1b052d3a08e398"
+    },
+    {
+      "path": "/documents/matter-35/Ross Special Interrogatories, Set One, to Plaintiff - Served Copy (26CV501995) (Served Oct 15 2026).pdf",
+      "size": 285007,
+      "sha256": "c9dd0a324a6f6b0deeb1b0bc68ed5c1616ba49467d02bd4a7e9ca9279003de4b"
+    },
+    {
+      "path": "/documents/matter-35/Ross Verified Answer to Verified Complaint - Served Copy, Not File-Stamped (26CV501995) (Served Oct 15 2026).pdf",
+      "size": 1236508,
+      "sha256": "705131a13df3241e29bb6ec74a5ac04cae4d8d3200cf61e4aa8264ef9ecfed4c"
+    },
+    {
+      "path": "/documents/matter-35/POS-010 Proof of Service of Summons - Ross Stores Inc (Signed Sep 11 2026, NOT FILED) - 26CV501995.pdf",
+      "size": 123433,
+      "sha256": "fbf087c37ca3cad021f53149a37da60f4a0049882ff7536f502b9c9015a05352"
+    },
+    {
+      "path": "/documents/matter-35/POS-010 Proof of Service of Summons - Ross Dress for Less Inc (Signed Sep 11 2026, NOT FILED) - 26CV501995.pdf",
+      "size": 126134,
+      "sha256": "8c668c22e5d7d44aa845121abcd6df88256028f11c9fb23d3239915b4f889ca0"
     }
   ]
 }
