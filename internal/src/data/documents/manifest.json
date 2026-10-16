@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "fileCount": 1696,
-  "totalBytes": 1004662012,
+  "fileCount": 1726,
+  "totalBytes": 1008775749,
   "files": [
     {
       "path": "/documents/_form-library/ao239-blank-template.pdf",
@@ -8345,8 +8345,8 @@
     },
     {
       "path": "/documents/matter-25/Plaintiff's Initial Rule 26(a)(1) Disclosures (Oct 9 2026).pdf",
-      "size": 406770,
-      "sha256": "deeb0e8fd268444110b99aae7648117a8a92498fd8dc48f04f090b2b7e78c90d"
+      "size": 406775,
+      "sha256": "9cfd34275d8b3b7955cbdcfd3f25b270379ba18e1d9aad11ee4f039485bdc3fa"
     },
     {
       "path": "/documents/matter-11/Newanforbi v Macomber Section 1983 Filing (draft).pdf",
@@ -8482,6 +8482,156 @@
       "path": "/documents/matter-35/POS-010 Proof of Service of Summons - Ross Dress for Less Inc (Signed Sep 11 2026, NOT FILED) - 26CV501995.pdf",
       "size": 126134,
       "sha256": "8c668c22e5d7d44aa845121abcd6df88256028f11c9fb23d3239915b4f889ca0"
+    },
+    {
+      "path": "/documents/matter-24/Exhibit A Cover - ECF Help Desk (September 14, 2026).pdf",
+      "size": 2074,
+      "sha256": "3673002f1a41901f9ddb555f5b91629374f8ba329579af9684147306f39b3bc7"
+    },
+    {
+      "path": "/documents/matter-28/Dkt 15 - Defendants Smith and HOPE Motion to Dismiss (Filed Sep 21 2026).pdf",
+      "size": 506291,
+      "sha256": "b8af72cf0bc4224430262c833b8fa156b932ad2fe04697f0fe039245e0832dac"
+    },
+    {
+      "path": "/documents/matter-28/Dkt 15-1 - Defendants Smith and HOPE Request for Judicial Notice ISO Motion to Dismiss (Filed Sep 21 2026).pdf",
+      "size": 1091580,
+      "sha256": "39cfc036dd887ea33ce4105402d9b7d72c72f6d44c712061815f6a58a2b74709"
+    },
+    {
+      "path": "/documents/matter-28/Dkt 15-2 - Proposed Order on Defendants Smith and HOPE Motion to Dismiss (Filed Sep 21 2026).pdf",
+      "size": 91618,
+      "sha256": "26363f0e2feb3ff20cd52ef50c69fa61d3ced9fa17f8eb7fe8494ba7c4548c69"
+    },
+    {
+      "path": "/documents/matter-28/Dkt 28 - Joint Case Management Statement (Filed Oct 5 2026).pdf",
+      "size": 231601,
+      "sha256": "0329c8b773565272695a813ad5a5fc9ee80f8abbdfa3f1a1c95202099b1d0f1b"
+    },
+    {
+      "path": "/documents/matter-28/Dkt 29 - Order Continuing Case Management Conference (Filed Oct 8 2026).pdf",
+      "size": 132113,
+      "sha256": "abc170af2789df9dc5686394e6d50031046f46ca52c84b79ec6d84de3b49b6d1"
+    },
+    {
+      "path": "/documents/matter-28/Exhibit A Cover - ECF Help Desk (September 14, 2026).pdf",
+      "size": 2074,
+      "sha256": "147bf733e58fd89cbeeb2a78b882c6a9baa3fd2112af9a1853afbc9720e1c8da"
+    },
+    {
+      "path": "/documents/matter-28/Plaintiff's Rule 26(a)(1) Initial Disclosures - Nforbi v Smith 3-26-cv-07504-LJC (Signed, Served Oct 14 2026).pdf",
+      "size": 429009,
+      "sha256": "21b08682551549417bbac21b717fb8b8ee20a8500ad3863e8eb50df32cc5f93e"
+    },
+    {
+      "path": "/documents/matter-29/Accurate Background - California ICRA Notice of Rights (Civ. Code 1786.22) (Amazon HVH, Ref 496623722, Oct 14 2026).pdf",
+      "size": 72850,
+      "sha256": "e9423b909e37c3c392d54734d6d10b64b1853d1cbf742d9b8151a339eae6854c"
+    },
+    {
+      "path": "/documents/matter-29/Accurate Background - Consumer Report (Amazon HVH, Ref 496623722, updated Oct 14 2026).pdf",
+      "size": 128017,
+      "sha256": "61bff72437e1a6e3710c5e9e1b4c5f3149a0da9438ce9749cb147a24156a3489"
+    },
+    {
+      "path": "/documents/matter-29/Accurate Background - FCRA 1681k Public Record Notice to Consumer (Amazon HVH, Ref 496623722, Oct 14 2026).pdf",
+      "size": 115934,
+      "sha256": "edc7712909387e69b59091b13f77361a30f09cfa7f9247f28e2370d6ce957c4e"
+    },
+    {
+      "path": "/documents/matter-29/Accurate Background - FCRA Summary of Rights (Amazon HVH, Ref 496623722, Oct 14 2026).pdf",
+      "size": 171526,
+      "sha256": "5fd81c396da81c3bd12398bdc6bae52b4baf48f56c0057988cc981707b7cfc95"
+    },
+    {
+      "path": "/documents/matter-29/Accurate Background - Notice Regarding Background Checks per California Law (Amazon HVH, Ref 496623722, Oct 14 2026).pdf",
+      "size": 41791,
+      "sha256": "3ea99a6b338e6665c95f2844daa0d616bad47c5826bf59fd0360920ee0567d03"
+    },
+    {
+      "path": "/documents/matter-29/Accurate Background - Portal Documents Page Screenshot (Amazon HVH, Ref 496623722, Oct 14 2026).pdf",
+      "size": 40791,
+      "sha256": "5fb68c70b9a4fff40cc8826ef4784619773080337467a67122a137fa8bf92946"
+    },
+    {
+      "path": "/documents/matter-29/Accurate Background - Subject Notification Cover Letter (Amazon HVH, Ref 496623722, Oct 14 2026).pdf",
+      "size": 100345,
+      "sha256": "47e7f3ed4911d6aad9d2f5454412e33f0c875ff3f40ad0ee48aaffeacc023cdc"
+    },
+    {
+      "path": "/documents/matter-29/Accurate Background - Subject Notification Cover Letter, Amazon Salesforce Variant (Amazon HVH, Ref 496623722, Oct 14 2026).pdf",
+      "size": 44992,
+      "sha256": "8cc964ec7241876f55198f727f57a16dd5baafe71819c22c5e2827c7fa8def51"
+    },
+    {
+      "path": "/documents/matter-29/Amazon Reply ISO Motion to Dismiss (Dkt 19) - Served Copy, Not File-Stamped (N.D. Cal. 4-26-cv-09249-ASK) (Served Oct 13 2026).pdf",
+      "size": 406740,
+      "sha256": "fd54efa9235413c8e781392f73299f31299b0e4e9aeddae01b9121531ed2e846"
+    },
+    {
+      "path": "/documents/matter-29/Checkr Consumer Report - Next Chapter Project (Report 2998b72edcf19a05d25ab058, Completed Mar 27 2026).pdf",
+      "size": 44170,
+      "sha256": "bebf538d733961c8c86f3b0897f214b8e3eb25954ed56bdeb40a7bbb671b0ebf"
+    },
+    {
+      "path": "/documents/matter-29/Checkr Consumer Report - Next Chapter Project (Report d1eb77b8c7c4e1cf783dfa24, Completed Aug 7 2026).pdf",
+      "size": 43246,
+      "sha256": "6472486fc9f8fe23017e87fdf91ab88e86bb35a3f15a65b8d93bf1c05858f624"
+    },
+    {
+      "path": "/documents/matter-29/Checkr Consumer Report - Nuro (Report fdd27d50df88c6073f30aecc, Completed Oct 6 2026).pdf",
+      "size": 48242,
+      "sha256": "49fd1b2e8e1c6e1737b3c2a7bd8bec8cdf3f4fa7be2efd34d08aa578a8b10ad8"
+    },
+    {
+      "path": "/documents/matter-29/Email - Accurate Background 'Important FCRA Notice About Your Consumer Report' (Amazon HVH, Ref 496623722, Oct 14 2026 1158 AM).pdf",
+      "size": 62465,
+      "sha256": "932f84a091161c7d33e3d338cafbbd9575ff547e33a598731d6c3d05d6b08f3f"
+    },
+    {
+      "path": "/documents/matter-29/Email - Accurate Background 'Your Copy of Your Consumer Report' (Amazon HVH, Ref 496623722, Oct 14 2026 1158 AM).pdf",
+      "size": 37007,
+      "sha256": "8a59833322dc70d94aa627eb91c913776b02dd450882e8d4fa552d247e558c0b"
+    },
+    {
+      "path": "/documents/matter-29/Exhibit A Cover - ECF Help Desk (September 14, 2026).pdf",
+      "size": 2075,
+      "sha256": "72e88b06a72641b482c1027e461d211a7cb70401a650fb8be74c0ad171d02346"
+    },
+    {
+      "path": "/documents/matter-29/Gmail - Accurate Acknowledgment Thread with Forward to Seyfarth (Drury, Stanzick), SR 20261014-15421955 (Oct 14 2026 204 PM).pdf",
+      "size": 64224,
+      "sha256": "42ee22d7dbd497dc0aad155977b007db2c52e02637298acc293f9a8bd88a65c7"
+    },
+    {
+      "path": "/documents/matter-29/Gmail - Accurate Background Support Acknowledgment, Service Request 20261014-15421955 (Received Oct 14 2026 203 PM).pdf",
+      "size": 62177,
+      "sha256": "efd9797a0f40298f84117e5d47eca3ca6e3ef6126da99b9386246e6513e1c74d"
+    },
+    {
+      "path": "/documents/matter-29/Gmail - Dispute of Accuracy and Request for Complete File to Accurate Background, Ref 496623722 (Sent Oct 14 2026).pdf",
+      "size": 44294,
+      "sha256": "cc9ffd884cfecdea6fd88fd7a3e8c256b3d1d08911d807e829bca40a39ff78ba"
+    },
+    {
+      "path": "/documents/matter-29/Gmail - Information regarding your Amazon application - Amazon Jobs to brendan@ngwanforbi.com (Oct 14 2026 5.06 AM).pdf",
+      "size": 87423,
+      "sha256": "5b53e9447ae447781c49be9e28d58ea9f5812231c99f03508f83ed4b897b21dd"
+    },
+    {
+      "path": "/documents/matter-32/ndcal/Exhibit A Cover - ECF Help Desk (September 14, 2026).pdf",
+      "size": 2080,
+      "sha256": "7ea5bb42a700e2981468c1aac8e90bf6d9bd0b4886d3cfca60b40eaf9a441b25"
+    },
+    {
+      "path": "/documents/matter-33/ndcal/Exhibit A Cover - ECF Help Desk (September 14, 2026).pdf",
+      "size": 2070,
+      "sha256": "0b88b0811bd612b6cc4cc5405797688ffa2fbf46039a425b45b6633e47440e4e"
+    },
+    {
+      "path": "/documents/matter-35/[Proposed] Order Correcting Case Title - 26CV501995 (Sep 9 2026).pdf",
+      "size": 4913,
+      "sha256": "89462bece500f9db1762d8cad276017a04f5da63b2f55de0bb4e8fce092be7b1"
     }
   ]
 }

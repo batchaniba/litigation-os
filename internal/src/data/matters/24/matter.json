@@ -1,6 +1,6 @@
 {
   "number": 24,
-  "last_updated": "2026-09-16",
+  "last_updated": "2026-10-15",
   "caption": "Newanforbi v. Serrato",
   "case_no": "3:26-cv-05953-CRB",
   "former_case_no": "4:26-cv-05953-ASK",
@@ -20,7 +20,14 @@
   "judge": "Hon. Charles R. Breyer",
   "judge_id": "charles-r-breyer",
   "cluster": 1,
-  "related": [1, 2, 7, 20, 32, 33],
+  "related": [
+    1,
+    2,
+    7,
+    20,
+    32,
+    33
+  ],
   "same_incident": "RJ68845",
   "type": "Federal",
   "badge": "MTD PENDING",
