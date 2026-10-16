@@ -30,3 +30,9 @@ Verified Answer (16 boilerplate affirmative defenses), Form Interrogatories–Ge
 | Tue Jan 12, 2027 | CMC meet-and-confer (CRC 3.724) | 35-deadline-2 |
 | Wed Jan 27, 2027 | CM-110 due (CRC 3.725) | 35-deadline-3 |
 | Thu Feb 11, 2027 | CMC, Dept. 16; Plaintiff's $150 jury fee due by this date (CCP § 631(c)(2)) | 35-hearing-4 / 35-deadline-8 |
+
+## Plaintiff's outbound discovery drafts (Oct. 15, 2026)
+
+See [`drafts/outbound-discovery/`](drafts/outbound-discovery/) for the standalone evidence-preservation demand, separate Set One packets to Ross Stores, Inc. and Ross Dress for Less, Inc., editable DOCX and rendered PDF versions, service-assembly checklist, sequencing strategy, and source generator. Each defendant packet contains 34 RFAs, planned DISC-001 selections including 15.1 and 17.1, 35 special interrogatories, and 40 RFPs.
+
+**Status:** unsigned drafts; not served or filed. Complete the official DISC-001 and bracketed RFP production date before service.
