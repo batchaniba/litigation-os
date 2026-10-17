@@ -6,11 +6,11 @@ The build script fills one template proof per discovery set and appends it to th
 
 ## A. Early Rule 34 delivery — First Requests for Production
 
-Dated and signed October 19, 2026 (signature image affixed by the template). Method: e-mail to every address on the service list and first-class U.S. Mail, postage prepaid, deposited at Stockton, California, to the mailing addresses below, both on October 19, 2026. Recites delivery under Fed. R. Civ. P. 26(d)(2)(A), deemed served at the first Rule 26(f) conference under Rule 26(d)(2)(B).
+Dated and signed October 19, 2026 (signature image affixed by the template). Method: e-mail to every address on the service list and first-class U.S. Mail, postage prepaid, deposited at San Jose, California, to the mailing addresses below, both on October 19, 2026. Recites delivery under Fed. R. Civ. P. 26(d)(2)(A), deemed served at the first Rule 26(f) conference under Rule 26(d)(2)(B).
 
 ## B. First Interrogatories and First Requests for Admission
 
-Service date blank and signature unstamped. Complete only after actual service at or after the Rule 26(f) conference, and confirm written consent to e-mail service (Fed. R. Civ. P. 5(b)(2)(E)) before relying on the e-mail recital. The proof already recites mail plus same-day e-mail and lists both firms.
+Service date blank and signature unstamped. Complete only after actual service at or after the Rule 26(f) conference, and confirm written consent to e-mail service (Fed. R. Civ. P. 5(b)(2)(E)) before relying on the e-mail recital. The proof already recites mail (mailing location prefilled as San Jose, California) plus same-day e-mail and lists both firms.
 
 ## Service list (both firms on every proof — Fed. R. Civ. P. 5(a)(1)(C))
 

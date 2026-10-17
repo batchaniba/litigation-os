@@ -32,7 +32,7 @@ N.D. Cal. 4:26-cv-09249-ASK; Magistrate Judge Ajay S. Krishnan. The Matter 29 po
 
 **Accurate:** John Drury, JDrury@seyfarth.com; Jasmine J. Stanzick, jstanzick@seyfarth.com. Mail: Seyfarth Shaw LLP, 2029 Century Park East, Suite 3500, Los Angeles, California 90067-3021 (Dkt. 21 counsel block).
 
-**Rule 5(a)(1)(C):** serve every set on BOTH firms. The October 19, 2026 RFP proofs recite e-mail plus first-class U.S. Mail from Stockton to both firms. Mail each RFP set to both firms the same day.
+**Rule 5(a)(1)(C):** serve every set on BOTH firms. The October 19, 2026 RFP proofs recite e-mail plus first-class U.S. Mail from San Jose to both firms. Mail each RFP set to both firms the same day.
 
 ## Response timing
 

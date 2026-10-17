@@ -141,7 +141,7 @@ SERVICE_LIST = [
     "    Los Angeles, California 90067-3021",
     "Seyfarth Shaw LLP -- Attorneys for Defendant Accurate Background, LLC",
 ]
-MAILED_FROM = "Stockton, California"
+MAILED_FROM = "San Jose, California"  # place of mailing (not the party address)
 EARLY_DELIVERY_NOTE = [
     "",
     "Delivered early under Fed. R. Civ. P. 26(d)(2)(A); deemed served at the",
@@ -786,7 +786,7 @@ def pos_fields(key: str) -> ProofOfServiceFields:
         title="PROOF OF SERVICE",
         service_date=SIGN_DATE if early else "",
         document_title=doc_title,
-        mailing_location=MAILED_FROM if early else "",
+        mailing_location=MAILED_FROM,
         recipients=recipients,
         server_name=SIGNER,
         stamp_signature=early,
