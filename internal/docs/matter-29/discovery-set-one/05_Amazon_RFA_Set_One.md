@@ -1,8 +1,8 @@
 **UNITED STATES DISTRICT COURT — NORTHERN DISTRICT OF CALIFORNIA, OAKLAND DIVISION**
 
-**BRENDAN NGEHSI NEWANFORBI, Plaintiff, v. AMAZON.COM SERVICES, LLC and ACCURATE BACKGROUND, LLC, Defendants.**
+**BRENDAN NGEHSI NEWANFORBI, Plaintiff, v. AMAZON.COM SERVICES, LLC, ACCURATE BACKGROUND, LLC, and DOES 1-10, inclusive, Defendants.**
 
-**Case No. 4:26-cv-09249-ASK — Hon. Ajay S. Krishnan**
+**Case No. 4:26-cv-09249-ASK — Magistrate Judge Ajay S. Krishnan**
 
 # Plaintiff's First Requests for Admission to Amazon.com Services, LLC
 
@@ -26,8 +26,10 @@ Under Fed. R. Civ. P. 36, admit or deny each statement specifically, or explain 
 
 **REQUEST FOR ADMISSION NO. 08.** Admit that Amazon’s July 2026 offer terms contemplated selection of a new start date or schedule if pre-employment requirements were not completed in time.
 
-**Dated:** __________ **Signature:** __________
+**Dated:** October 20, 2026
 
-Brendan Ngwa Nforbi, Plaintiff in Propria Persona
+[[SIGNATURE]]
+
+Brendan Ngehsi Newanforbi, Plaintiff in Propria Persona
 
 1455 Cat Tail Drive, Stockton, CA 95204 · (209) 801-4442 · bnn.cdl@gmail.com

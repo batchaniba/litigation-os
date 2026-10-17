@@ -1,8 +1,8 @@
 **UNITED STATES DISTRICT COURT — NORTHERN DISTRICT OF CALIFORNIA, OAKLAND DIVISION**
 
-**BRENDAN NGEHSI NEWANFORBI, Plaintiff, v. AMAZON.COM SERVICES, LLC and ACCURATE BACKGROUND, LLC, Defendants.**
+**BRENDAN NGEHSI NEWANFORBI, Plaintiff, v. AMAZON.COM SERVICES, LLC, ACCURATE BACKGROUND, LLC, and DOES 1-10, inclusive, Defendants.**
 
-**Case No. 4:26-cv-09249-ASK — Hon. Ajay S. Krishnan**
+**Case No. 4:26-cv-09249-ASK — Magistrate Judge Ajay S. Krishnan**
 
 # Plaintiff's First Requests for Production to Accurate Background, LLC
 
@@ -40,15 +40,15 @@ Under Fed. R. Civ. P. 26 and 34, Plaintiff requests the documents below. If deli
 
 **REQUEST FOR PRODUCTION NO. 07.** Produce the complete component record for National Sex Offender Database Search 496623723, including search parameters, source databases or vendors, timestamps, results, exceptions, review notes and instructions governing the “NO RECORD FOUND” output.
 
-**REQUEST FOR PRODUCTION NO. 08.** Produce the policies, matching criteria, field-mapping specifications, name-normalization rules, and vendor specifications in effect on July 7, 2026, applicable to the National Sex Offender Database Search performed under Search ID 496623723.
+**REQUEST FOR PRODUCTION NO. 08.** Produce the policies, matching criteria, field-mapping specifications, name-normalization rules, and vendor specifications in effect at any time from July 1, 2026 through October 31, 2026, limited to those applied to Plaintiff’s Screening Order 496623722 and the National Sex Offender Database Search performed for Plaintiff under Search ID 496623723.
 
-**REQUEST FOR PRODUCTION NO. 09.** Produce the court-source records, request and retrieval logs, vendor results and supporting documents for the Santa Clara County criminal-history component associated with case C1761642 and order 496623722.
+**REQUEST FOR PRODUCTION NO. 09.** Produce the court-source records, request and retrieval logs, vendor results and supporting documents for the Santa Clara County criminal-history component (Search ID 496644204) associated with case C1761642 and order 496623722.
 
-**REQUEST FOR PRODUCTION NO. 10.** Produce assignment, recheck, exception, escalation, court-runner and third-party vendor records concerning the Santa Clara County component from its July 7 order through its October 14 completion, including the stated reasons for its processing time.
+**REQUEST FOR PRODUCTION NO. 10.** Produce assignment, recheck, exception, escalation, court-runner and third-party vendor records concerning the Santa Clara County component (Search ID 496644204) from its July 7 order through its October 14 completion, including the stated reasons for its processing time.
 
-**REQUEST FOR PRODUCTION NO. 11.** Produce component records, third-party vendor communications, search timestamps, exception logs and escalation records explaining the San Joaquin County component that was reported complete on or about September 3, 2026.
+**REQUEST FOR PRODUCTION NO. 11.** Produce component records, third-party vendor communications, search timestamps, exception logs and escalation records explaining the San Joaquin County component (Search ID 496644200) that was reported complete on or about September 3, 2026.
 
-**REQUEST FOR PRODUCTION NO. 12.** Produce the October 13, 2026 package-review audit entries, review notes, approval or release records, reviewer identity or service account, and records explaining what results were available for review before the October 14 Santa Clara completion.
+**REQUEST FOR PRODUCTION NO. 12.** Produce the October 13, 2026 package-review (Search ID 500363362) audit entries, review notes, approval or release records, reviewer identity or service account, and records explaining what results were available for review before the October 14 Santa Clara completion.
 
 **REQUEST FOR PRODUCTION NO. 13.** Produce all ordinary-course case notes, internal tickets, manual-review notes, identity-verification exceptions, quality-control records and hold/escalation history for order 496623722 from July 7 through November 15, 2026.
 
@@ -60,14 +60,16 @@ Under Fed. R. Civ. P. 26 and 34, Plaintiff requests the documents below. If deli
 
 **REQUEST FOR PRODUCTION NO. 17.** Produce the generation, content, version, dispatch and delivery or failure records for all FCRA, ICRAA, public-record and subject-notification notices concerning order 496623722, including October 14, 2026 notices, the [LINK]/[ENLACE] placeholder and any notification appearing to be sent in Amazon’s name.
 
-**REQUEST FOR PRODUCTION NO. 18.** Produce the ordinary-course dispute-case file, intake logs, investigation activity logs, communications, findings, corrections, and status records concerning Plaintiff’s October 14, 2026 dispute, reference 496623722, and service request 20261014-15421955, through the date of production.
+**REQUEST FOR PRODUCTION NO. 18.** Produce the ordinary-course dispute-case file, intake logs, investigation activity logs, communications, findings, corrections, and status records concerning Plaintiff’s October 14, 2026 dispute, reference 496623722, and service request 20261014-15421955, through the date of production, excluding communications between Accurate and its counsel protected by the attorney-client privilege and attorney work product.
 
 **REQUEST FOR PRODUCTION NO. 19.** Produce nonprivileged business communications between Accurate and Amazon about Plaintiff’s screening status, identity inputs, search results, exceptions or delivery, excluding post-litigation attorney-client communications and attorney work product.
 
-**REQUEST FOR PRODUCTION NO. 20.** Produce data dictionaries, status-code explanations, component-to-package mappings, ordinary-course workflow documents, and report-generation or versioning rules necessary to interpret records produced under Requests Nos. 1–19.
+**REQUEST FOR PRODUCTION NO. 20.** Produce data dictionaries, status-code explanations, component-to-package mappings, ordinary-course workflow documents, and report-generation or versioning rules in effect at any time from July 1, 2026 through October 31, 2026, limited to those necessary to interpret records produced under Requests Nos. 1–19 concerning Plaintiff’s Application and Screening Order 496623722.
 
-**Dated:** __________ **Signature:** __________
+**Dated:** October 20, 2026
 
-Brendan Ngwa Nforbi, Plaintiff in Propria Persona
+[[SIGNATURE]]
+
+Brendan Ngehsi Newanforbi, Plaintiff in Propria Persona
 
 1455 Cat Tail Drive, Stockton, CA 95204 · (209) 801-4442 · bnn.cdl@gmail.com

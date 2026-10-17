@@ -1,6 +1,6 @@
 # Rule 26(f) ESI Meet-and-Confer Proposal
 
-**DRAFT FOR CONFERENCE — NOT A STIPULATION.** Case 4:26-cv-09249-ASK (N.D. Cal.), Hon. Ajay S. Krishnan.
+**DRAFT FOR CONFERENCE — NOT A STIPULATION.** Case 4:26-cv-09249-ASK (N.D. Cal.), Magistrate Judge Ajay S. Krishnan.
 
 Plaintiff proposes the following targeted electronic discovery protocol pursuant to Rule 26(f), the Northern District of California ESI Guidelines, and the Court's Civil Standing Order. No item below is binding absent agreement or order.
 

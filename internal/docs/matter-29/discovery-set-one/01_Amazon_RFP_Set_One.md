@@ -1,8 +1,8 @@
 **UNITED STATES DISTRICT COURT — NORTHERN DISTRICT OF CALIFORNIA, OAKLAND DIVISION**
 
-**BRENDAN NGEHSI NEWANFORBI, Plaintiff, v. AMAZON.COM SERVICES, LLC and ACCURATE BACKGROUND, LLC, Defendants.**
+**BRENDAN NGEHSI NEWANFORBI, Plaintiff, v. AMAZON.COM SERVICES, LLC, ACCURATE BACKGROUND, LLC, and DOES 1-10, inclusive, Defendants.**
 
-**Case No. 4:26-cv-09249-ASK — Hon. Ajay S. Krishnan**
+**Case No. 4:26-cv-09249-ASK — Magistrate Judge Ajay S. Krishnan**
 
 # Plaintiff's First Requests for Production to Amazon.com Services, LLC
 
@@ -48,22 +48,24 @@ Under Fed. R. Civ. P. 26 and 34, Plaintiff requests the documents below. If deli
 
 **REQUEST FOR PRODUCTION NO. 11.** Produce support tickets, exception queues, identity-reverification requests, hold records, review notes, escalations, and ordinary-course communications concerning delays or processing exceptions in Plaintiff’s screening, including referrals to Accurate.
 
-**REQUEST FOR PRODUCTION NO. 12.** Produce nonprivileged emails, chat messages, staffing notes, or internal communications by employees who handled Plaintiff’s application concerning the screening status, training assignment, eligibility, cancellation, or rescheduling, from July 1 through October 31, 2026.
+**REQUEST FOR PRODUCTION NO. 12.** Produce nonprivileged emails, chat messages, staffing notes, or internal communications by employees who handled Plaintiff’s Application, limited to communications concerning Plaintiff’s Application or Screening Order 496623722 and its screening status, training assignment, eligibility, cancellation, or rescheduling, sent or created from July 1, 2026 through October 31, 2026.
 
 **REQUEST FOR PRODUCTION NO. 13.** Produce versions of the written policies, operating instructions, and training materials in force for the Fremont Seasonal XL position during July–August 2026 governing background checks that remain pending when a confirmed training or start date arrives, including shift cancellation, expiration, reassignment, and rescheduling.
 
 **REQUEST FOR PRODUCTION NO. 14.** Produce versions in force during July–October 2026 of the screening eligibility criteria, review or escalation rules, automated status mappings, and authorization criteria applicable to Plaintiff’s Seasonal XL position; limit any broader materials to the portions applicable to that hiring workflow.
 
-**REQUEST FOR PRODUCTION NO. 15.** Produce the portions of Amazon’s agreements, statements of work, screening-order configuration, and technical interface specifications with Accurate effective during July–October 2026 that define services, report delivery, decision-making responsibility, compliance duties, or notice generation for the applicable screening package.
+**REQUEST FOR PRODUCTION NO. 15.** Produce the portions of Amazon’s agreements, statements of work, screening-order configuration, and technical interface specifications with Accurate in effect at any time from July 1, 2026 through October 31, 2026 that define services, report delivery, decision-making responsibility, compliance duties, or notice generation for the screening package ordered for Plaintiff’s Application under Screening Order 496623722.
 
-**REQUEST FOR PRODUCTION NO. 16.** Produce certifications furnished by Amazon to Accurate for screening order 496623722, or the applicable account-wide certifications in effect at that order’s creation, concerning permissible purpose and compliance with federal and California employment-screening laws.
+**REQUEST FOR PRODUCTION NO. 16.** Produce certifications furnished by Amazon to Accurate for Screening Order 496623722 on Plaintiff’s Application, or, if no order-specific certification exists, the account-wide certifications applicable to that order and in effect at any time from July 1, 2026 through October 31, 2026, concerning permissible purpose and compliance with federal and California employment-screening laws.
 
 **REQUEST FOR PRODUCTION NO. 17.** Produce the July 2026 job posting and pay terms for the offered position, scheduled paid training hours, expected position duration and benefits, together with records sufficient to show whether an equivalent replacement training or start slot was offered to Plaintiff before October 31, 2026.
 
 **REQUEST FOR PRODUCTION NO. 18.** Produce data dictionaries, status-code definitions, event-type mappings, report-version identifiers, and ordinary-course documentation necessary to interpret responsive system records produced in response to Requests Nos. 1–17.
 
-**Dated:** __________ **Signature:** __________
+**Dated:** October 20, 2026
 
-Brendan Ngwa Nforbi, Plaintiff in Propria Persona
+[[SIGNATURE]]
+
+Brendan Ngehsi Newanforbi, Plaintiff in Propria Persona
 
 1455 Cat Tail Drive, Stockton, CA 95204 · (209) 801-4442 · bnn.cdl@gmail.com
