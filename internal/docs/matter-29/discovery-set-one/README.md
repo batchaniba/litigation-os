@@ -8,6 +8,7 @@
 
 | Document | Type | Count | Timing |
 |---|---|---:|---|
+| 00_README_Deployment_and_Checklist.md | Deployment checklist | — | Review before service |
 | 01_Amazon_RFP_Set_One.md | Rule 34 requests | 18 | May be delivered early under Rule 26(d)(2) |
 | 02_Accurate_RFP_Set_One.md | Rule 34 requests | 20 | Same |
 | 03_Amazon_Interrogatories_Set_One.md | Rule 33 | 8 | At or after actual Rule 26(f) conference |
@@ -23,7 +24,7 @@
 
 **Total:** 38 RFPs, 17 interrogatories, 16 RFAs = **71 requests**.
 
-These Markdown files preserve the full wording of the 71 discovery requests and companion working templates in an editable, diff-friendly form. Formatted Word and PDF renders were created separately in the conversation workspace; **their binary files are not attached to this PR**. Verify any PDF/DOCX output against the approved Markdown text before service, especially the caption, date, blank signature fields, and service method.
+These Markdown files preserve the full wording of the 71 discovery requests and companion working templates in an editable, diff-friendly form. **Rendered Word/PDF drafts are included in this PR** under [`generated/`](generated/) along with three combined PDFs and a downloadable ZIP archive. They were regenerated from the tracked Markdown source by [`build_matter29_discovery_packet.py`](../../../scripts/build_matter29_discovery_packet.py) and are not byte-for-byte copies of the earlier conversation renders. Verify the generated layout, caption, dates, blank signature fields, and authorized service method before use.
 
 ## Deployment protocol
 
@@ -57,3 +58,12 @@ Accurate: report versions, furnishing/access logs, alias provenance, Santa Clara
 - No opposing counsel controls or affixes Plaintiff's signature; leave signature lines blank until Plaintiff reviews final files.
 - Preserve existing pleadings, standing orders, dates, and counsel research without changing them in this PR.
 - The source documents are sensitive litigation materials in a private repository. Reassess before any public export.
+
+## Generated packet
+
+- [Full DOCX/PDF ZIP](generated/Matter_29_Complete_Discovery_Packet_DOCX_PDF.zip)
+- [Complete combined PDF](generated/Matter_29_Complete_Discovery_Packet.pdf)
+- [Amazon combined PDF](generated/Matter_29_Amazon_Discovery_Combined.pdf)
+- [Accurate combined PDF](generated/Matter_29_Accurate_Discovery_Combined.pdf)
+
+Render with `python internal/scripts/build_matter29_discovery_packet.py` after installing `python-docx`, `pypdf`, and LibreOffice. GitHub Actions on the temporary PR branch generated and committed the existing files.
