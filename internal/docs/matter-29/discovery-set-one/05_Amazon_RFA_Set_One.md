@@ -6,7 +6,7 @@
 
 # Plaintiff's First Requests for Admission to Amazon.com Services, LLC
 
-**DRAFT — NOT FILED OR SERVED**
+
 
 Under Fed. R. Civ. P. 36, admit or deny each statement specifically, or explain in detail why you cannot truthfully do so after reasonable inquiry. Respond within the applicable Rule 36 period.
 

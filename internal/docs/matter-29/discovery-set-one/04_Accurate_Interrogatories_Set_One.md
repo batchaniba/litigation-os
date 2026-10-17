@@ -6,7 +6,7 @@
 
 # Plaintiff's First Interrogatories to Accurate Background, LLC
 
-**DRAFT — NOT FILED OR SERVED**
+
 
 Pursuant to Fed. R. Civ. P. 33, answer each interrogatory separately and fully in writing under oath within the time allowed by Rule 33, including the identity of the person furnishing each answer. Screening order 496623722 includes associated component IDs.
 

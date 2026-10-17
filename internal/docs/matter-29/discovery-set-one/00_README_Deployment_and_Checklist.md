@@ -50,7 +50,9 @@ Cross-reference exact status changes, report versions, transmission and access l
 - Evaluate whether the November 15 upper date for some requests should be adjusted or supplemented for newly created responsive materials.
 - Keep the October 14 preservation and consumer file requests distinct from formal Rule 34 discovery.
 - Verify court source material before asserting that a criminal disposition date, parole status, or recorded conviction answer is inaccurate.
-- Do not give opposing counsel control over Plaintiff's signature. Signature blocks carry Plaintiff's own portfolio signature image (internal/assets/signature/brendan-newanforbi-signature.png), affixed by the build script; the Section B service certificates remain unsigned until actual service.
+- Do not give opposing counsel control over Plaintiff's signature. Signature blocks carry Plaintiff's own portfolio signature image (internal/assets/signature/brendan-newanforbi-signature.png), affixed by the build script. The interrogatory and RFA proofs of service remain undated and unsigned until actual service.
+
+- Format: every discovery set is on portfolio pleading paper (lib/pleading_paper.py) with Civil L.R. 3-4 caption and footer; Word copies are true pleading-paper .docx files. Proofs of service use the portfolio federal POS template (lib/proof_of_service.py). The "REVIEW DRAFT -- NOT SERVED" footer marker is a separate, deletable Word footer paragraph and is controlled by REVIEW_DRAFT in the build script.
 
 ## Governing references
 

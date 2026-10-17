@@ -6,7 +6,7 @@
 
 # Plaintiff's First Requests for Production to Accurate Background, LLC
 
-**DRAFT — NOT FILED OR SERVED**
+
 
 Under Fed. R. Civ. P. 26 and 34, Plaintiff requests the documents below. If delivered under Rule 26(d)(2) before the Rule 26(f) conference, deemed service occurs at the first actual conference.
 

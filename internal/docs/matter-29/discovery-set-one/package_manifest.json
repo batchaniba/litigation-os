@@ -28,8 +28,14 @@
   "binary_renders_in_pr": true,
   "first_conference_date": "unconfirmed",
   "do_not_treat_pr_as_service": true,
-  "generated_docx_count": 12,
+  "generated_docx_count": 10,
   "generated_pdf_count": 15,
   "generated_zip_count": 1,
-  "generated_from_markdown_not_identical_to_local_originals": true
+  "generated_from_markdown_not_identical_to_local_originals": true,
+  "formatter": "internal/scripts/lib/pleading_paper.py",
+  "proof_of_service_template": "internal/scripts/lib/proof_of_service.py",
+  "signature_image": "internal/assets/signature/brendan-newanforbi-signature.png",
+  "signature_date": "2026-10-20",
+  "review_draft_marker": true,
+  "service_records_pdf_only": true
 }

@@ -24,7 +24,11 @@
 
 **Total:** 38 RFPs, 17 interrogatories, 16 RFAs = **71 requests**.
 
-These Markdown files preserve the full wording of the 71 discovery requests and companion working templates in an editable, diff-friendly form. **Rendered Word/PDF drafts are included in this PR** under [`generated/`](generated/) along with three combined PDFs and a downloadable ZIP archive. They were regenerated from the tracked Markdown source by [`build_matter29_discovery_packet.py`](../../../scripts/build_matter29_discovery_packet.py) and are not byte-for-byte copies of the earlier conversation renders. Verify the generated layout, caption, dates, signature image placement, and authorized service method before use.
+These Markdown files preserve the full wording of the 71 discovery requests and companion working templates in an editable, diff-friendly form. **Rendered Word/PDF drafts are included in this PR** under [`generated/`](generated/) along with three combined PDFs and a downloadable ZIP archive, built by [`build_matter29_discovery_packet.py`](../../../scripts/build_matter29_discovery_packet.py):
+
+- **Word (.docx):** pleading paper for Microsoft Word — Times New Roman 12 pt, exact 24-pt lines, 28 line numbers in a header-anchored text box, header rule lines, named "Pleading …" styles, inline signature image, no macros, tracked changes, or comments; author Brendan Ngehsi Newanforbi.
+- **PDF:** each DOCX is read back and rendered through the portfolio pleading-paper formatter (`internal/scripts/lib/pleading_paper.py`, the engine behind `pleading-paper-formatter-script.py`), with the Civil L.R. 3-4 first page (party block at line 1, court title from line 8, caption, case number, document title) and the title/case-number footer.
+- **Proofs of service:** the portfolio federal POS template (`internal/scripts/lib/proof_of_service.py`) is appended to each discovery set; `10_`/`11_` PDFs collect them per defendant. RFP proofs are dated and signed October 20, 2026; interrogatory and RFA proofs stay undated and unsigned. Verify the generated layout, caption, dates, signature image placement, and authorized service method before use.
 
 ## Deployment protocol
 
@@ -66,4 +70,4 @@ Accurate: report versions, furnishing/access logs, alias provenance, Santa Clara
 - [Amazon combined PDF](generated/Matter_29_Amazon_Discovery_Combined.pdf)
 - [Accurate combined PDF](generated/Matter_29_Accurate_Discovery_Combined.pdf)
 
-Render with `python internal/scripts/build_matter29_discovery_packet.py` after installing `python-docx`, `pypdf`, and LibreOffice. The current files were regenerated locally with the signature image affixed.
+Render with `python internal/scripts/build_matter29_discovery_packet.py` after installing `python-docx`, `pypdf`, and LibreOffice. Requires `python-docx`, `pypdf`, `reportlab`; LibreOffice renders only the internal 00 checklist.
