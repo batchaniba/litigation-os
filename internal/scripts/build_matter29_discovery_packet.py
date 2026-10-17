@@ -119,19 +119,29 @@ CAPTION_ROWS = 12  # even: 12 rows x 12 pt = 6 pleading lines in Word
 AMAZON = "AMAZON.COM SERVICES, LLC"
 ACCURATE = "ACCURATE BACKGROUND, LLC"
 
-AMAZON_RECIPIENTS = [
+# Rule 5(a)(1)(C): every paper is served on every party, so each proof lists
+# both firms. Mailing addresses are exactly as the counsel blocks show them:
+#   Morgan Lewis -- Amazon MTD, Dkt. 19 (Sep 22, 2026), p. 1 (also the Oct 13
+#     Reply ISO MTD): Frederick, Palo Alto; Douglass G. Brown, Dallas.
+#   Seyfarth -- Accurate Answer, Dkt. 21 (Sep 22, 2026), p. 1: Los Angeles.
+#     Dkt. 21 lists only Ms. Stanzick; John Drury's own office address is not
+#     in the filings, so his copy goes to the firm's address of record.
+# Suga Ikeda (Mr. Frederick's assistant) appears in no counsel block: e-mail only.
+SERVICE_LIST = [
     "Andrew P. Frederick -- andrew.frederick@morganlewis.com",
-    "Douglass Brown -- douglass.brown@morganlewis.com",
-    "Suga Ikeda -- suga.ikeda@morganlewis.com",
-    "Morgan, Lewis & Bockius LLP",
-    "Attorneys for Defendant Amazon.com Services, LLC",
-]
-ACCURATE_RECIPIENTS = [
+    "    1400 Page Mill Road, Palo Alto, CA 94304",
+    "Douglass G. Brown -- douglass.brown@morganlewis.com",
+    "    1717 Main Street, Suite 3200, Dallas, TX 75201",
+    "Suga Ikeda -- suga.ikeda@morganlewis.com (e-mail only)",
+    "Morgan, Lewis & Bockius LLP -- Attorneys for Defendant Amazon.com Services, LLC",
+    "",
     "John Drury -- JDrury@seyfarth.com",
     "Jasmine J. Stanzick -- jstanzick@seyfarth.com",
-    "Seyfarth Shaw LLP",
-    "Attorneys for Defendant Accurate Background, LLC",
+    "    Seyfarth Shaw LLP, 2029 Century Park East, Suite 3500,",
+    "    Los Angeles, California 90067-3021",
+    "Seyfarth Shaw LLP -- Attorneys for Defendant Accurate Background, LLC",
 ]
+MAILED_FROM = "Stockton, California"
 EARLY_DELIVERY_NOTE = [
     "",
     "Delivered early under Fed. R. Civ. P. 26(d)(2)(A); deemed served at the",
@@ -760,9 +770,9 @@ def render_pdf_from_docx(key: str, docx_path: Path, pdf_path: Path) -> None:
 def pos_fields(key: str) -> ProofOfServiceFields:
     meta = DOCS[key]
     amazon = meta["defendant"] == AMAZON
-    recipients = list(AMAZON_RECIPIENTS if amazon else ACCURATE_RECIPIENTS)
+    recipients = list(SERVICE_LIST)
     who = "Amazon.com Services, LLC" if amazon else "Accurate Background, LLC"
-    doc_title = f"Plaintiff's {KIND_NAME[meta['kind']]} to Defendant {who} (Set One) (PDF and Word)"
+    doc_title = f"Plaintiff's {KIND_NAME[meta['kind']]} to Defendant {who} (Set One)"
     early = meta["kind"] == "RFP"
     if early:
         recipients += EARLY_DELIVERY_NOTE
@@ -776,12 +786,14 @@ def pos_fields(key: str) -> ProofOfServiceFields:
         title="PROOF OF SERVICE",
         service_date=SIGN_DATE if early else "",
         document_title=doc_title,
-        mailing_location="",
+        mailing_location=MAILED_FROM if early else "",
         recipients=recipients,
         server_name=SIGNER,
         stamp_signature=early,
         district_line=DISTRICT_NDCAL,
-        by_email=True,
+        by_email=False,
+        also_email=True,  # first-class U.S. Mail and e-mail, same day
+        signature_on_second_page=True,
     )
 
 

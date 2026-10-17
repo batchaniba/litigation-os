@@ -37,7 +37,7 @@ These Markdown files preserve the full wording of the 71 discovery requests and 
 3. Rule 26(d)(2) permits **early delivery** of Rule 34 requests more than 21 days after service, but they are **deemed served at the first actual Rule 26(f) conference**. Record delivery and deemed service distinctly.
 4. Interrogatories and requests for admission do not use Rule 26(d)(2)'s early Rule 34 delivery mechanism. Serve when permitted by Rule 26(d), an agreement, or court order.
 5. Discuss ESI scope, native production, time zones, privilege, sensitive identifiers, protective order, and report crosswalk at Rule 26(f).
-6. Confirm email service authorization; informal email exchanges and ECF filing notices are not substitutes for valid service of unfiled discovery. Keep proof of transmission.
+6. Confirm email service authorization; informal email exchanges and ECF filing notices are not substitutes for valid service of unfiled discovery. Keep proof of transmission. Under Rule 5(a)(1)(C), every set goes to BOTH firms: the RFP proofs recite e-mail plus first-class U.S. Mail from Stockton on October 19, 2026 to Morgan Lewis (Dkt. 19 addresses) and Seyfarth (Dkt. 21 address).
 7. Send PDF versions with editable Word courtesy copies under Magistrate Judge Krishnan's standing order. Discovery requests ordinarily are **served, not filed**.
 8. After responses: compare Amazon status/decision logs with Accurate report transmission/access logs; confer about missing records before considering a discovery letter or Rule 30(b)(6) deposition.
 

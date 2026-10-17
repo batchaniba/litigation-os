@@ -37,5 +37,27 @@
   "signature_image": "internal/assets/signature/brendan-newanforbi-signature.png",
   "signature_date": "2026-10-19",
   "review_draft_marker": false,
-  "service_records_pdf_only": true
+  "service_records_pdf_only": true,
+  "service_on_all_parties": {
+    "rule": "Fed. R. Civ. P. 5(a)(1)(C)",
+    "rfp_proof_methods": [
+      "email",
+      "first-class U.S. Mail, Stockton, California"
+    ],
+    "rfp_service_date": "2026-10-19",
+    "mail_addresses": {
+      "Morgan, Lewis & Bockius LLP (Amazon)": {
+        "Andrew P. Frederick": "1400 Page Mill Road, Palo Alto, CA 94304",
+        "Douglass G. Brown": "1717 Main Street, Suite 3200, Dallas, TX 75201",
+        "source": "Dkt. 19 counsel block, p. 1"
+      },
+      "Seyfarth Shaw LLP (Accurate)": {
+        "John Drury; Jasmine J. Stanzick": "2029 Century Park East, Suite 3500, Los Angeles, California 90067-3021",
+        "source": "Dkt. 21 counsel block, p. 1 (lists Stanzick only)"
+      }
+    },
+    "email_only": [
+      "suga.ikeda@morganlewis.com"
+    ]
+  }
 }
