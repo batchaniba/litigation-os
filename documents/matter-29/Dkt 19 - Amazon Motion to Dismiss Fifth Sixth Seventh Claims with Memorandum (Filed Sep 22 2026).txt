@@ -1,0 +1,797 @@
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+
+MorGAN, LEWIS &
+
+Bockius LLP
+ATTORNEYS AT LAW
+SILICON VALLEY
+
+Case 4:26-cv-09249-ASK Document 19
+
+MORGAN, LEWIS & BOCKIUS LLP
+Andrew P. Frederick, Bar No. 284832
+andrew. frederick@morganlewis.com
+1400 Page Mill Road
+
+Palo Alto, CA 94304
+
+Tel: +1.650.843.4000
+
+Fax: +1.650.843.4001
+
+Douglass G. Brown, TX Bar No. 24119786
+
+(pro hac vice application pending)
+douglass.brown@morganlewis.com
+1717 Main Street, Suite 3200
+Dallas, TX 75201
+
+Tel: +1.214.466.4161
+
+Fax: +1.214.466.4001
+
+Attorneys for Defendant
+AMAZON.COM SERVICES LLC
+
+Filed 09/22/26
+
+Page 1 of 12
+
+UNITED STATES DISTRICT COURT
+
+NORTHERN DISTRICT OF CALIFORNIA
+
+BRENDAN NGEHSI NEWANFORBI,
+Plaintiff,
+vs.
+AMAZON.COM SERVICES, LLC,
+ACCURATE BACKGROUND, LLC, and
+DOES 1-10, inclusive,
+
+Defendants.
+
+Case No. 4:26-cv-09249-ASK
+
+DEFENDANT AMAZON.COM
+SERVICES LLC’S NOTICE OF
+MOTION AND MOTION TO DISMISS
+PLAINTIFF’S FIFTH, SIXTH, AND
+SEVENTH CLAIMS FOR RELIEF
+PURSUANT TO FEDERAL RULE OF
+CIVIL PROCEDURE 12(b)(6)
+
+MEMORANDUM OF POINTS AND
+AUTHORITIES
+
+Date: November 18, 2026
+Time: 1:30 p.m.
+
+Courtroom: 04
+
+Judge: Hon. Ajay S. Krishnan
+
+AMAZON’S MOTION TO DISMISS
+CASE NO. 4:26-CV-09249-ASK
+
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+
+MorGAN, LEWIS &
+
+Bockius LLP
+ATTORNEYS AT LAW
+SILICON VALLEY
+
+Case 4:26-cv-09249-ASK Document19 Filed 09/22/26 Page 2 of 12
+
+TO THE UNITED STATES DISTRICT COURT FOR THE NORTHERN DISTRICT OF
+CALIFORNIA, AND TO PLAINTIFF BRENDAN NGEHSI NEWANFORBI:
+
+PLEASE TAKE NOTICE THAT on November 18, 2026, at 1:30 P.M., or as soon
+thereafter as this matter may be heard in a courtroom to be noticed by the Court of the United
+States District Court for the Northern District of California, located at the Ronald V. Dellums
+Federal Building & United States Courthouse, 1301 Clay Street, Oakland, CA 94612, Courtroom
+4, 3rd Floor, the Honorable Ajay S. Krishnan presiding, Defendant Amazon.com Services LLC
+(“Amazon” or “Defendant’’) will and hereby does move the Court for an order dismissing
+Plaintiff Brendan Ngehsi Newanforbi’s (“Plaintiff”) Fifth, Sixth, and Seventh Claims for Relief
+pursuant to Federal Rule of Civil Procedure (“FRCP”) 12(b)(6) on the ground that Plaintiff's
+claims are not plausibly pleaded.
+
+Amazon’s Motion to Dismiss is based on the following grounds:
+
+l. Plaintiff's fifth claim for invasion of privacy fails to state a claim because Plaintiff
+does not have a constitutionally protected privacy interest in public records and has not plausibly
+pled any violation of such rights.
+
+2. Plaintiffs sixth claim based on alleged violation of the California Business and
+Professions Code fails to state a claim because any such relief is barred as Plaintiff has an
+adequate remedy at law and cannot plead any other forms of equitable relief.
+
+3. Plaintiff's seventh claim for intentional infliction of emotional distress fails to state
+a claim because Plaintiff has not pled any facts sufficient to support this claim.
+
+Amazon’s Motion is based upon this Notice, this supporting Memorandum of Points and
+Authorities, the pleadings and records on file in this action, and such further argument as may be
+
+presented to the Court at or before the hearing on this matter.
+
+AMAZON’S MOTION TO DISMISS
+CASE NO. 4:26-CV-09249-ASK
+
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+
+MorGAN, LEWIS &
+
+Bockius LLP
+ATTORNEYS AT LAW
+SILICON VALLEY
+
+Case 4:26-cv-09249-ASK
+
+Dated: September 22, 2026
+
+Document 19
+
+Filed 09/22/26 Page 3of12
+
+MORGAN, LEWIS & BOCKIUS LLP
+
+By /s/ Andrew P. Frederick
+
+Andrew P. Frederick
+Douglass G. Brown (pro hac vice
+application pending)
+
+Attorneys for Defendant
+AMAZON.COM SERVICES LLC
+
+AMAZON’S MOTION TO DISMISS
+CASE NO. 4:26-CV-09249-ASK
+
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+
+MorGAN, LEWIS &
+
+Bockius LLP
+ATTORNEYS AT LAW
+SILICON VALLEY
+
+Case 4:26-cv-09249-ASK Document19 Filed 09/22/26 Page 4 of 12
+
+Il.
+
+II.
+IV.
+
+TABLE OF CONTENTS
+
+Page
+INTRODUCTION 000... eeceaeeeeceseessecsseeeeeeseceaeesaecsaeeseesseeeseseeesseesseesaeesaeseaesaeesneeeaaeeeeeaees 1
+FACTUAL BACKGROUND oo oeeececceseesesseeeseeeneeeeeeaeesaeseeeaeesseeeaesneeeaeesaeeeaeenaeesaeesaees 1
+LEGAL STANDARD 0.0. ceceseeseeeeeeeseceseesnecsaesaeesseesseseeeeaeeseesaeesaesnaesaeeeneeeaeesseeaees 3
+ARGUMENT 000. cc cceceeceeescesesseeecescsseeseesecsececescsaecsecsesaeaesaesaesaeeesesseesessessesseseeesaesseeeaenees 3
+A. Plaintiff's Sixth Claim for Purported Violation of California’s Unfair
+Competition Law Should Be Dismissed. .00..........cceceeceeseeeteeeseeeeeeeeeeeceeeeeeenaeeeeees 3
+B. Plaintiff's Fifth Claim for Invasion of Privacy Should Be Dismissed.................... 4
+C. Plaintiff's Seventh Claim for Intentional Infliction of Emotional Distress
+Should Be Dismissed. ...........cccceeeseeseeseceneesesseeeeceeceseesessecsecesesseesesseseeereeaeeeeseenes 5
+CONCLUSION 1.00... cceceeccesceesesseecseseseeeeeeseesseesaesneceeseeeseceseceeeseeseeeeeeeaesenesieeseneseaeeeeeeates 6
+
+AMAZON’S MOTION TO DISMISS
+CASE NO. 4:26-CV-09249-ASK
+
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+
+MorGAN, LEWIS &
+
+Bockius LLP
+ATTORNEYS AT LAW
+SILICON VALLEY
+
+Case 4:26-cv-09249-ASK Document19 Filed 09/22/26 Page 5 of 12
+
+TABLE OF AUTHORITIES
+
+Page(s)
+
+FEDERAL CASES
+Ashcroft v. Iqbal
+
+556 U.S. 662 (2009) 0. eeececcsscccssneceessseecesneccssneceseeeceseneeceseeceseececeeeessseeesseesseaeeeseaeeessneeeeeaes 3
+Barranco v. 3D Sys. Corp.
+
+952 F.3d 1122 (Oth Cir. 2020)... ceeccccescccesscceesseecsesseeeesseceesseeesssecessssesessseeeesseeeeseeeeseeeeesaes 4
+Bell Atlantic Corp. v. Twombly
+
+550 U.S. 544 (2007) ...eeceeecccccseccssneceeseneeeesneeceseceeseeceseseccssaeecseaeeceeseeeeseaeecnsseeeseseeeseaeeeeeneeeenags 3
+Brahmana v. Henard
+
+2010 WL 11488727 (N.D. Cal. Nov. 12, 2010)... ccc ceccccscccseceteeeseeeesseeeeeeeseeeeeeeseeeseeeeeseees 5
+Clark v. Am. Honda Motor Co.
+
+528 F. Supp. 3d 1108 (C.D. Cal. 2021)... ee eeeescecssssecesseceesneeesseeccseneeeeeneeesssneeeeseeseseneeeneaes 4
+In re Stac Elecs. Sec. Litig.
+
+89 F.3d 1399 (Oth Cir. 1996)... cecccccccsssccesseecesseecssseeeeseeceeseeceeseeceeaeeeessesenssesensaeeeensneeeseaeees 3
+In re Yahoo Mail Litig.
+
+7 F. Supp. 3d 1016 (N.D. Cal. 2014) oo. ccccccesecceseceseeenecesseesseeeeecesseceaeenseceeseeeeteeenseeens 4
+King v. Facebook, Inc.
+
+572 F. Supp. 3d 776 (N.D. Cal. Nov. 12, 2021) ooo ececcccesscessneeeesneeeeeseecesseeeesneeesenneeeennees 6
+Mendiondo v. Centinela Hosp. Med. Ctr.
+
+521 F.3d 1097 (9th Cir. 2008).......cccscccccssccccssecesseecesseeeeceseeeesseecssseeeseseeeessseeeesseseseseeeesseeessaeees 3
+Moss v. U.S. Secret Serv.
+
+572 F.3d 962 (9th Cir. 2009)... cececcccssseccesneecesneeeesneeessseeesseeecssseeeseneeeeeseeeessesessueeeeesneeessaes 3
+Saleh v. Nike, Inc.
+
+562 F. Supp. 3d 503 (C.D. Cal. 2021)... cc ceesscessseecesneeeeeneeeseseeceseeeeseaeeesseeeesaeeeseneeeeenaes 5
+Smith v. YETI Coolers, LLC
+
+754 F. Supp. 3d 933 (N.D. Cal. 2024) ooo. ccc ceccccscccsseeeseeesseeesecesseceseeceecesseeseeceecenseeeseeenseeens 5
+Sonner v. Premier Nutrition Corp.
+
+971 F.3d 834 (9th Cir. 2020)... cecccccccsscccesneeeesneeeesneeessaeecesneeceseeeseneeeeesaeeessseseseeeeeseneeessnes 4
+Starr v. Baca
+
+652 F.3d 1202 (Oth Cir. 2011)... ececcccesccesseccesseceessseeceseeeeseeeessecessseeesseeecesseeeessaeeeeeeeeeeaes 3
+
+W. Mining Council v. Watt
+643 F.2d 618 (9th Cir, 1981)... eceeceeeessesseeeceecsecseeeeeeeecsesaceecsecaesseeaeeecessesaeeeseeeeesaeeaeeaeeesees 3
+
+AMAZON’S MOTION TO DISMISS
+CASE NO. 4:26-CV-09249-ASK
+
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+
+MorGAN, LEWIS &
+
+Bockius LLP
+ATTORNEYS AT LAW
+SILICON VALLEY
+
+Case 4:26-cv-09249-ASK Document19 Filed 09/22/26 Page 6 of 12
+
+CALIFORNIA CASES
+
+Carlsen v. Koivumaki
+
+227 Cal. App. 4th 879 (2014)... ececccseseceseseeesesseesececeseesesseesecseceeceeecaesaesneeseesesaeeaeseneeaeeaeeaes 6
+Clark v. Superior Court
+
+50 Cal.4th 605 (2010) cee eecssesseesecsseesesecsecsecsecssesseseessesscesessecaesaeessessessessecsesaeeaeeeeeaesaeenes 4
+Est. of Hearst, 67 Cal. App. 3d 777, 782 (1977) ...ceccceccceesseceseeeesecenceceeeeseeeeeseceeeseaeeseeeeneaeessaeenaeees 5
+
+Nationwide Biweekly Admin., Inc. v. Superior Court
+9 Cal. 5th 279 (2020) ..cceecccccsscccssscceessscccesseccesseecsseecsssseeeesseeeesseeeesseseesaeeeesseeessseeessseeeeeseeeesaes 4
+
+FEDERAL STATUTES
+
+15 U.S.C. § 1681 D(D)(1) oo... ee eecceseeeeseeeeseeceeeeeaeceeeceaeeeaecesceceaeeseaeceaeessaeeceaeceeeseeesiaeeseaeeseaeensees 2
+CALIFORNIA STATUTES
+
+California’s Fair Chance Act (Cal. Gov’t Code § 12952) .oo.ceeeeceecceesseeeneeeeteceneeeeaeeeteeeneeeeesaeenaees 2
+California’s Investigative Consumer Reporting Agencies Act (Cal. Civ. Code § 1786.18) .......... 2
+California’s Megan’s Law (Cal. Pen. Code § 290.4 et Seq.) ....cecceccestesseeeeeceteeeseseeeeeeeseesaeesneseneeate 2
+California’s Unfair Competition Law (Cal. Bus. & Prof. Code § 17200)... cece eeeeeteeeeteeeenees 3
+OTHER AUTHORITIES
+
+Cal. Const. Article [, § 1... iccccccccccssscecccccsssseeccesseeecessesecececesseeeecesssseeecceesseeeseesesseeeeseeeesseeeeeees 4
+Federal Rule of Civil Procedure Rule 12(b)(6)........ cee eecceeeceeseeeeneeeeeeeeeeeeaeeeteeeeeeeeaeeeeaeeseaeensaes 1,3
+
+AMAZON’S MOTION TO DISMISS
+
+“Hl- CASE NO. 4:26-CV-09249-ASK
+
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+
+MorGAN, LEWIS &
+
+Bockius LLP
+ATTORNEYS AT LAW
+SILICON VALLEY
+
+Case 4:26-cv-09249-ASK Document19 Filed 09/22/26 Page 7 of 12
+
+I. INTRODUCTION
+
+Various claims asserted by Plaintiff Brendan Nghesi Newanforbi’s (“Plaintiff”) against
+Defendant Amazon.com Services LLC (“Amazon”) are insufficiently pled or subject to dismissal
+as a matter of law. Plaintiff's sixth claim under California’s Unfair Competition Law (“UCL”) is
+subject to dismissal as a matter of law because the UCL only provides for equitable remedies.
+When a plaintiff has an adequate remedy at law, however, they are not entitled to equitable relief
+under the UCL, which is precisely the situation here. Because Plaintiff seeks compensatory
+damages in his Complaint, he has an adequate remedy at law, which means that his UCL claim is
+not viable and should therefore be dismissed.
+
+Meanwhile, Plaintiffs fifth claim for invasion of privacy and seventh claim for intentional
+infliction of emotional distress are insufficiently pleaded. With respect to Plaintiff's invasion of
+privacy claim, Plaintiff has not plausibly pled this claim because he has not pled facts showing a
+legally protected privacy interest, a reasonable expectation of privacy, or a violation of his
+privacy interests. Similarly, for Plaintiff's intentional infliction of emotional distress claim, he
+has not pled any facts showing extreme or outrageous conduct by Amazon or that he has suffered
+severe or extreme emotional distress.
+
+For these reasons, discussed more fully below, Amazon requests that the Court dismiss
+Plaintiffs Fifth, Sixth, and Seventh Claims for Relief against Amazon pursuant to Federal Rule
+of Civil Procedure Rule 12(b)(6).!
+
+II. FACTUAL BACKGROUND
+
+Plaintiff alleges that he applied through Amazon’s hiring portal online for a position as a
+Seasonal XL Warehouse Associate with a possible start date of July 28, 2026. Compl. § 7. After
+applying, he states that he received a conditional offer from Amazon for the associate position
+
+expressly premised on completion of a background check, drug test, and all pre-hire activities.
+
+' Plaintiff's other claims—which are pled under Megan’s Law, the California Fair Chance Act,
+the Fair Credit Reporting Act, and the Investigative Consumer Reporting Agencies Act—also
+lack merit. As far as Amazon is aware, the background check that Accurate Background is
+preparing on Plaintiff in connection with his application for employment with Amazon still has
+not been completed because of the difficulty of obtaining criminal records from certain courts in
+California. As such, Plaintiff's background check remains pending, and no adverse employment
+action has been taken against Plaintiff. This entire action, therefore, was prematurely filed.
+
+1 AMAZON’S MOTION TO DISMISS
+CASE NO. 4:26-CV-09249-ASK
+
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+
+MorGAN, LEWIS &
+
+Bockius LLP
+ATTORNEYS AT LAW
+SILICON VALLEY
+
+Case 4:26-cv-09249-ASK Document19 Filed 09/22/26 Page 8 of 12
+
+Compl. 8. Plaintiff admits that the same offer email provided that if there are delays with the
+pre-hire paperwork, then Amazon would contact Plaintiff with changes to a start date or training
+date. Compl. § 9.
+
+After receiving confirmation for a pre-hire appointment with Amazon to review
+documentation and clear Plaintiff for employment, Plaintiff recetved several ongoing telephonic
+communications related to his conditional offer. Compl. 4 11-14. Plaintiff's conditional offer
+further required a background check, of which Amazon utilized a third-party service, Defendant
+Accurate Background, LLC (“Accurate”), to conduct. Compl. ff 15-16. As Plaintiff notes, he
+received several updates by email and text message regarding the status of his background check.
+Compl. §§ 17-22. Plaintiff was informed that “[t]he time to complete the background check and
+testing can vary,” Compl. § 18, yet Plaintiff does not allege that he attempted to contact Amazon
+or Accurate to inquire about reasons why the background check was delayed.
+
+As a result, Plaintiff's start date and training appointments were canceled, given that the
+background check process was not completed by the projected start time. Compl. J 22. He
+admits that he was given the option to select a new shift, and that he has not received any formal
+adverse-action notice by Defendants. Compl. J] 22—23. Plaintiff now alleges that this is a
+constructive revocation, even prior to receiving any formal adverse-action notice. Compl. [§ 24—
+25.
+
+On July 28, 2026, Plaintiff filed this lawsuit against Amazon and Accurate in the Superior
+Court of the State of California, County of Alameda. See Pl.’s State Court Compl. (ECF No. 2).
+On August 31, 2026, Amazon removed the action to this Court. ECF No. 1. Plaintiff pleads the
+following claims for relief against Amazon and/or Accurate: (1) claim under California’s
+Megan’s Law (Cal. Pen. Code § 290.4 et seq.); (2) claim under California’s Fair Chance Act (Cal.
+Gov’t Code § 12952) (against Amazon only); (3) claim under the Fair Credit Reporting Act (15
+U.S.C. § 1681b(b)(1); (4) claim under California’s Investigative Consumer Reporting Agencies
+Act (Cal. Civ. Code § 1786.18) (primarily against Accurate); (5) claim for invasion of privacy
+under the California Constitution; (6) claim under California’s Unfair Competition Law (Cal.
+
+Bus. & Prof. Code §17200); and (7) a claim for intentional infliction of emotional distress.
+
+AMAZON’S MOTION TO DISMISS
+
+2 CASE NO. 4:26-CV-09249-ASK
+
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+
+MorGAN, LEWIS &
+
+Bockius LLP
+ATTORNEYS AT LAW
+SILICON VALLEY
+
+Case 4:26-cv-09249-ASK Document19 Filed 09/22/26 Page 9 of 12
+
+Ht. LEGAL STANDARD
+
+To survive a Rule 12(b)(6) motion to dismiss, a complaint must “contain sufficient factual
+matter, accepted as true, to ‘state a claim to relief that is plausible on its face.’” Ashcroft v. Iqbal,
+556 U.S. 662, 678 (2009) (quoting Bell Atlantic Corp. v. Twombly, 550 U.S. 544, 570 (2007)).
+The “plausibility standard is not akin to a “probability requirement,’ but rather, it asks for more
+than a sheer possibility that a defendant has acted unlawfully” or “facts that are ‘merely consistent
+with’ a defendant’s liability.” Ashcroft v. Iqbal, 556 U.S. 662, 678 (2009) (quoting Twombly, 550
+U.S. at 556-57). A complaint must contain “more than labels and conclusions” or “a formulaic
+recitation of the elements of a cause of action.” Twombly, 550 U.S. at 555; Moss v. U.S. Secret
+Serv., 572 F.3d 962, 969 (9th Cir. 2009) (“[B]are assertions . . . amounting to nothing more than a
+
+999
+
+‘formulaic recitation of the elements’” of a claim “are not entitled to an assumption of truth”
+(quoting /qbal, 556 U.S. at 681)). Therefore, the Court may not “assume the truth of legal
+conclusions merely because they are cast in the form of factual allegations.” W. Mining Council
+v. Watt, 643 F.2d 618, 624 (9th Cir. 1981); In re Stac Elecs. Sec. Litig., 89 F.3d 1399, 1403 (9th
+Cir. 1996) (holding that “[c]onclusory allegations of law and unwarranted inferences are
+insufficient to defeat a motion to dismiss for failure to state a claim’’).
+
+The Court considers whether the pleading’s “factual content .. . allows the court to draw
+the reasonable inference that the defendant is liable for the misconduct alleged,” such that “it is
+not unfair to require the opposing party to be subjected to the expense of discovery and continued
+litigation.” Starr v. Baca, 652 F.3d 1202, 1216 (9th Cir. 2011). Dismissal is required when a
+complaint lacks a cognizable legal theory or fails to allege facts sufficient to support a cognizable
+
+legal theory. Twombly, 550 U.S. at 555; Mendiondo v. Centinela Hosp. Med. Ctr., 521 F.3d
+1097, 1104 (9th Cir. 2008); Fed. R. Civ. P. 12(b)(6).
+
+IV. ARGUMENT
+
+A. Plaintiff’s Sixth Claim for Purported Violation of California’s Unfair
+Competition Law Should Be Dismissed.
+
+Plaintiff's UCL claim fails because he already has an adequate remedy at law. The UCL
+
+only affords equitable relief to a plaintiff. See, e.g., Nationwide Biweekly Admin., Inc. v. Superior
+
+3 AMAZON’S MOTION TO DISMISS
+CASE NO. 4:26-CV-09249-ASK
+
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+
+MorGAN, LEWIS &
+
+Bockius LLP
+ATTORNEYS AT LAW
+SILICON VALLEY
+
+Case 4:26-cv-09249-ASK Document19 Filed 09/22/26 Page 10 of 12
+
+Court, 9 Cal.5th 279, 292 (Cal. 2020) (concluding that the “causes of action established by the
+UCL” are “equitable in nature”); Clark v. Superior Court, 50 Cal.4th 605, 610 (2010) (under the
+UCL, a private plaintiffs “remedies are generally limited to injunctive relief and restitution”).
+When a state law claim for equitable relief is before a federal court, “the necessary prerequisite
+for a court to award equitable remedies is the absence of an adequate remedy at law.” Barranco
+v. 3D Sys. Corp., 952 F.3d 1122, 1129 (9th Cir. 2020). Accordingly, a plaintiff must specifically
+allege that he lacks an adequate legal remedy to survive a motion to dismiss. Sonner v. Premier
+Nutrition Corp., 971 F.3d 834, 844 (9th Cir. 2020) (dismissing a UCL claim because “the
+operative complaint does not allege that [plaintiff] lacks an adequate legal remedy’’); see also
+Clark v. Am. Honda Motor Co., 528 F. Supp. 3d 1108, 1121 (C.D. Cal. 2021) (dismissing a UCL
+claim because “Plaintiffs have not pointed to any allegation in the Complaint pleading that they
+lack an adequate remedy at law”).
+
+Notably, Plaintiff seeks compensatory damages in his Complaint. See, e.g., Compl. 4 46,
+53, 63, 70; see also Compl. pp. 23-26 4 1-10 (Plaintiff's Prayer for Relief). He therefore has
+not—and cannot—allege that he lacks an adequate remedy at law. Because Plaintiff's alleged
+injuries can be redressed by compensatory damages, Plaintiff is not entitled to equitable relief,
+
+including an injunction. Plaintiff's UCL claim must be dismissed on this basis.
+
+B. Plaintiff’s Fifth Claim for Invasion of Privacy Should Be Dismissed.
+
+Plaintiff's fifth claim for an alleged invasion of his privacy interests is not plausibly pled
+because he has not pled facts showing a legally protected privacy interest, a reasonable
+expectation of privacy, or a violation of his privacy interests. While California’s Constitution
+provides for protection to an individual’s right of privacy, Cal. Const. Art. I, § 1, Plaintiffs
+allegations do not meet the “high bar” required to sustain such a claim. Jn re Yahoo Mail Litig., 7
+F. Supp. 3d 1016, 1038 (N.D. Cal. 2014) (citation omitted).
+
+To state a claim for invasion of privacy, a plaintiff must allege three elements, including
+“(1) a legally protected privacy interest; (2) a reasonable expectation of privacy in the
+circumstances; and (3) conduct by defendant constituting a serious invasion of privacy.” Smith v.
+
+YETI Coolers, LLC, 754 F. Supp. 3d 933, 944 (N.D. Cal. 2024) (quoting Hill v. Nat’! Collegiate
+
+4 AMAZON’S MOTION TO DISMISS
+CASE NO. 4:26-CV-09249-ASK
+
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+
+MorGAN, LEWIS &
+
+Bockius LLP
+ATTORNEYS AT LAW
+SILICON VALLEY
+
+Case 4:26-cv-09249-ASK Document19 _ Filed 09/22/26 Page 11 of 12
+
+Athletic Ass’n, 26 Cal. Rptr. 2d 834, 859, 865 (Cal. 1994)). As to the third prong, “[a]ctionable
+invasions of privacy must be sufficiently serious in their nature, scope, and actual or potential
+impact to constitute an egregious breach of the social norms underlying the privacy right.” Id.
+(quoting Hill, 26 Cal. Rptr. 2d at 857). Plaintiff fails to adequately allege any element.
+
+First, Plaintiff has no legally protected privacy interest in public information relating to
+criminal convictions or information posted on a government website. See Brahmana v. Henard,
+2010 WL 11488727, at *4 (N.D. Cal. Nov. 12, 2010); Est. of Hearst, 67 Cal. App. 3d 777, 782
+(Cal. Ct. App. 1977) (“[T]here can be no doubt that court records are public records... .”).
+Plaintiff asserts that he has a “protected privacy interest in the information maintained on the Sex
+Offender Registry and the Megan’s Law website,” Compl. § 73, but this cannot be so given that
+the information contained on the Megan’s Law website is publicly accessible.
+
+Second, even if a protected privacy interest exists, “[a] plaintiff cannot have a reasonable
+expectation of privacy if [he] consented to the intrusion.” Saleh v. Nike, Inc., 562 F. Supp. 3d
+503, 524 (C.D. Cal. 2021) (citation omitted). Plaintiff alleges that he applied through Amazon’s
+hiring portal, completed onboarding paperwork, and received a “conditional” offer of
+employment subject to successfully completing a background check. Compl. {| 7-8. As such,
+Plaintiff was aware that a background check would be performed on him and consented to this
+background check. /d. Plaintiff, therefore, cannot claim a reasonable expectation of privacy in
+the consented-to background check.
+
+Lastly, for the same reason, Plaintiff cannot now claim that a background check that he
+consented to somehow constituted an invasion of his privacy interests. Accordingly, Plaintiff has
+
+failed to plead a viable invasion of privacy claim and thus this claim should be dismissed.
+
+C. Plaintiff’s Seventh Claim for Intentional Infliction of Emotional Distress
+Should Be Dismissed.
+
+A claim for intentional infliction of emotional distress requires (1) extreme and
+outrageous conduct by the defendant with the intention of causing, or reckless disregard of the
+probability of causing, emotional distress, (2) the plaintiff's suffering severe or extreme
+
+emotional distress, and (3) actual and proximate causation of the emotional distress by the
+
+AMAZON’S MOTION TO DISMISS
+CASE NO. 4:26-CV-09249-ASK
+
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+
+MorGAN, LEWIS &
+
+Bockius LLP
+ATTORNEYS AT LAW
+SILICON VALLEY
+
+Case 4:26-cv-09249-ASK Document19 Filed 09/22/26 Page 12 of 12
+
+defendant's outrageous conduct. Carlsen v. Koivumaki, 227 Cal. App. 4th 879, 896 (2014).
+Plaintiff fails to plead any facts supporting these elements in his Complaint. Specifically,
+Plaintiff alleges that he was subjected to severe emotional harm due to a “pending” status for his
+background check for twenty days, claiming this “prolonged uncertainty about his employment
+status” is so egregious as to cause him “anxiety, mental anguish, humiliation, embarrassment, loss
+of sleep, and related symptoms.” Compl. 4] 85-87. Yet, there is nothing extreme or outrageous
+about an alleged twenty-day “delay” for a background check to be conducted and thus this delay
+cannot form the basis for a claim for intentional infliction of emotional distress. See, e.g., King v.
+Facebook, Inc., 572 F. Supp. 3d 776, 786 (N.D. Cal. Nov. 12, 2021) (collecting cases dismissing
+claims for ITED as a matter of law) (“Liability for IED does not extend to mere insults,
+indignities, threats, annoyances, petty oppressions, or other trivialities.”). The alleged conduct
+here falls woefully short of that needed to assert an ITED claim. As such, this claim should be
+
+dismissed.
+
+V. CONCLUSION
+
+Amazon respectfully requests that this Court dismiss Plaintiffs fifth claim for invasion of
+privacy, sixth claim for unfair competition, and seventh claim for intentional infliction of
+
+emotional distress.
+
+Dated: September 22, 2026 MORGAN, LEWIS & BOCKIUS LLP
+
+By /s/ Andrew P. Frederick
+
+Andrew P. Frederick
+Douglass G. Brown (pro hac vice
+application pending)
+
+Attorneys for Defendant
+AMAZON.COM SERVICES LLC
+
+6 AMAZON’S MOTION TO DISMISS
+CASE NO. 4:26-CV-09249-ASK
+
+

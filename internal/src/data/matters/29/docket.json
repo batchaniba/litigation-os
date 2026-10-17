@@ -529,5 +529,41 @@
     "title": "Dkt 11 - Plaintiff's Consent to Magistrate Judge Jurisdiction (Filed Sep 3 2026)",
     "path": "/documents/matter-29/Dkt 11 - Plaintiff's Consent to Magistrate Judge Jurisdiction (Filed Sep 3 2026).pdf",
     "filed": true
+  },
+  {
+    "dkt": 19,
+    "date": "2026-09-22",
+    "filer": "defendant",
+    "type": "motion_to_dismiss",
+    "title": "Dkt 19 - Amazon Motion to Dismiss Fifth Sixth Seventh Claims with Memorandum (Filed Sep 22 2026)",
+    "path": "/documents/matter-29/Dkt 19 - Amazon Motion to Dismiss Fifth Sixth Seventh Claims with Memorandum (Filed Sep 22 2026).pdf",
+    "filed": true
+  },
+  {
+    "dkt": 19,
+    "date": "2026-09-22",
+    "filer": "defendant",
+    "type": "order",
+    "title": "Dkt 19-1 - Amazon Proposed Order Granting Motion to Dismiss (Filed Sep 22 2026)",
+    "path": "/documents/matter-29/Dkt 19-1 - Amazon Proposed Order Granting Motion to Dismiss (Filed Sep 22 2026).pdf",
+    "filed": true
+  },
+  {
+    "dkt": 19,
+    "date": "2026-09-22",
+    "filer": "defendant",
+    "type": "proof_of_service",
+    "title": "Dkt 19-2 - Amazon Certificate of Service of Motion to Dismiss (Filed Sep 22 2026)",
+    "path": "/documents/matter-29/Dkt 19-2 - Amazon Certificate of Service of Motion to Dismiss (Filed Sep 22 2026).pdf",
+    "filed": true
+  },
+  {
+    "dkt": 21,
+    "date": "2026-09-22",
+    "filer": "defendant",
+    "type": "other",
+    "title": "Dkt 21 - Accurate Background Answer and Affirmative and Other Defenses (Filed Sep 22 2026)",
+    "path": "/documents/matter-29/Dkt 21 - Accurate Background Answer and Affirmative and Other Defenses (Filed Sep 22 2026).pdf",
+    "filed": true
   }
 ]

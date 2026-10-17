@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "fileCount": 1726,
-  "totalBytes": 1008775749,
+  "fileCount": 1738,
+  "totalBytes": 1015262443,
   "files": [
     {
       "path": "/documents/_form-library/ao239-blank-template.pdf",
@@ -8632,6 +8632,66 @@
       "path": "/documents/matter-35/[Proposed] Order Correcting Case Title - 26CV501995 (Sep 9 2026).pdf",
       "size": 4913,
       "sha256": "89462bece500f9db1762d8cad276017a04f5da63b2f55de0bb4e8fce092be7b1"
+    },
+    {
+      "path": "/documents/matter-29/Dkt 19 - Amazon Motion to Dismiss Fifth Sixth Seventh Claims with Memorandum (Filed Sep 22 2026).pdf",
+      "size": 4953985,
+      "sha256": "79af1af5b3796b319645eea085fec349eae48f44a1df422e5d04a2050452f442"
+    },
+    {
+      "path": "/documents/matter-29/Dkt 19-1 - Amazon Proposed Order Granting Motion to Dismiss (Filed Sep 22 2026).pdf",
+      "size": 298377,
+      "sha256": "d8c2b7940a0b71d8d2c853814ea0aa4963d8f7e86af1fae2627101a0f7c66561"
+    },
+    {
+      "path": "/documents/matter-29/Dkt 19-2 - Amazon Certificate of Service of Motion to Dismiss (Filed Sep 22 2026).pdf",
+      "size": 781418,
+      "sha256": "e6c87a306513800e7b04f69d306deb333190c7e8f56f5e5b811a4ab12a53b0de"
+    },
+    {
+      "path": "/documents/matter-29/Dkt 21 - Accurate Background Answer and Affirmative and Other Defenses (Filed Sep 22 2026).pdf",
+      "size": 324826,
+      "sha256": "2f0dc1ef93a1d1e7370bdf0095b99a0343c4eadf1278558b943950b93417e648"
+    },
+    {
+      "path": "/documents/matter-29/Dkt 19 - Amazon Motion to Dismiss Fifth Sixth Seventh Claims with Memorandum (Filed Sep 22 2026).meta.json",
+      "size": 757,
+      "sha256": "e1e8aa33fecb677edcb6423d7a0afc6c7280f3923ad29f66f797ff945f1289ee"
+    },
+    {
+      "path": "/documents/matter-29/Dkt 19 - Amazon Motion to Dismiss Fifth Sixth Seventh Claims with Memorandum (Filed Sep 22 2026).txt",
+      "size": 25018,
+      "sha256": "4e8d10e2463d01b695b3a393682984d82abf1ef55fcd421f52c9d1a44fa8b17d"
+    },
+    {
+      "path": "/documents/matter-29/Dkt 19-1 - Amazon Proposed Order Granting Motion to Dismiss (Filed Sep 22 2026).meta.json",
+      "size": 585,
+      "sha256": "070f38fdd6c2de83c93cde5f8bbc55db31f36369535685313e95eb16a262b07b"
+    },
+    {
+      "path": "/documents/matter-29/Dkt 19-1 - Amazon Proposed Order Granting Motion to Dismiss (Filed Sep 22 2026).txt",
+      "size": 1381,
+      "sha256": "add79a4d0b54516d915501d2e552c300987ef037c5e5254805dbaaf5ff781418"
+    },
+    {
+      "path": "/documents/matter-29/Dkt 19-2 - Amazon Certificate of Service of Motion to Dismiss (Filed Sep 22 2026).meta.json",
+      "size": 565,
+      "sha256": "4c73409ec9ad3c14f0144c988ad9ff6ed8ef4aa3cf3991549b1de4045643c7ee"
+    },
+    {
+      "path": "/documents/matter-29/Dkt 19-2 - Amazon Certificate of Service of Motion to Dismiss (Filed Sep 22 2026).txt",
+      "size": 3493,
+      "sha256": "76358ac0ab6c9a9208ee8a8e3d3866d1eb92c1edb79d17c784a9676551b37e10"
+    },
+    {
+      "path": "/documents/matter-29/Dkt 21 - Accurate Background Answer and Affirmative and Other Defenses (Filed Sep 22 2026).meta.json",
+      "size": 618,
+      "sha256": "c8a64af13326851ce4ed0dcd74613f0c565a7662402382a281d308a90ce135ce"
+    },
+    {
+      "path": "/documents/matter-29/Dkt 21 - Accurate Background Answer and Affirmative and Other Defenses (Filed Sep 22 2026).txt",
+      "size": 95671,
+      "sha256": "f45483a7b8ba8a77b24108a9ae128783499e48563854499ff08f494f6db01721"
     }
   ]
 }

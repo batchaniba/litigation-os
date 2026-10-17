@@ -1,0 +1,12 @@
+{
+  "path": "/documents/matter-29/Dkt 19-2 - Amazon Certificate of Service of Motion to Dismiss (Filed Sep 22 2026).pdf",
+  "sha256": "e6c87a306513800e7b04f69d306deb333190c7e8f56f5e5b811a4ab12a53b0de",
+  "bytes": 781418,
+  "pages": 3,
+  "dkt": 19,
+  "date": "2026-09-22",
+  "author": "Morgan, Lewis & Bockius LLP for Amazon.com Services LLC",
+  "doc_type": "proof_of_service",
+  "extract": "tesseract-ocr",
+  "holds_one_liner": "Certificate of service of Amazon's Dkt. 19 motion papers, served Sep. 22, 2026. File-stamped Dkt. 19-2. Image-only PDF; text is OCR."
+}
