@@ -26,7 +26,7 @@ Pursuant to Fed. R. Civ. P. 33, answer each interrogatory separately and fully i
 
 **INTERROGATORY NO. 08.** Identify the Amazon role or business unit responsible for determining whether and when to send pre-adverse-action and Fair Chance Act notices in connection with Plaintiff’s application.
 
-**Dated:** October 20, 2026
+**Dated:** October 19, 2026
 
 [[SIGNATURE]]
 

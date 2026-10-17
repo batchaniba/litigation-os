@@ -35,7 +35,7 @@
   "formatter": "internal/scripts/lib/pleading_paper.py",
   "proof_of_service_template": "internal/scripts/lib/proof_of_service.py",
   "signature_image": "internal/assets/signature/brendan-newanforbi-signature.png",
-  "signature_date": "2026-10-20",
-  "review_draft_marker": true,
+  "signature_date": "2026-10-19",
+  "review_draft_marker": false,
   "service_records_pdf_only": true
 }

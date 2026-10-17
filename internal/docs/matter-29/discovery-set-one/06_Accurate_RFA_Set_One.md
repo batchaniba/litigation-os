@@ -26,7 +26,7 @@ Under Fed. R. Civ. P. 36, admit or deny each statement specifically, or explain 
 
 **REQUEST FOR ADMISSION NO. 08.** Admit that Accurate received Plaintiff’s written consumer dispute on October 14, 2026, as reflected in the Accurate Background Support acknowledgment sent at 2:03 PM Pacific Time that day assigning Service Request 20261014-15421955.
 
-**Dated:** October 20, 2026
+**Dated:** October 19, 2026
 
 [[SIGNATURE]]
 

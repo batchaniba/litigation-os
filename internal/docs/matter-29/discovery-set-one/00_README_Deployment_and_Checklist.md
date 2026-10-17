@@ -4,7 +4,7 @@
 
 ## Status — drafts not served or filed
 
-This packet consists of six written discovery sets, a Rule 26(f) ESI discussion proposal, two held Rule 30(b)(6) outlines, and separate delivery/service records. All six sets are dated October 20, 2026 and carry Plaintiff's signature image for review; none has been delivered or served by preparation or repository storage of this packet.
+This packet consists of six written discovery sets, a Rule 26(f) ESI discussion proposal, two held Rule 30(b)(6) outlines, and separate delivery/service records. All six sets are dated October 19, 2026 and carry Plaintiff's signature image for review; none has been delivered or served by preparation or repository storage of this packet.
 
 ## Matter and planning dates
 
@@ -14,7 +14,7 @@ N.D. Cal. 4:26-cv-09249-ASK; Magistrate Judge Ajay S. Krishnan. The Matter 29 po
 
 1. Confirm operative docket caption and the name Plaintiff will use for his signature. The operative caption uses BRENDAN NGEHSI NEWANFORBI and names DOES 1-10, inclusive. Signature blocks use Brendan Ngehsi Newanforbi, matching the caption. Update all sets consistently if a conforming order changes the caption.
 
-2. Review the signed RFP sets (dated October 20, 2026, 21 days before the November 10 Rule 26(f) target) for Rule 26(g) compliance. Deliver early under Rule 26(d)(2) if the timing and applicable orders permit. Record **DELIVERY**, not service. Properly delivered early requests are deemed **SERVED** at the first actual Rule 26(f) conference.
+2. Review the signed RFP sets (dated October 19, 2026, 22 days before the November 10 Rule 26(f) target) for Rule 26(g) compliance. Deliver early under Rule 26(d)(2) if the timing and applicable orders permit. Record **DELIVERY**, not service. Properly delivered early requests are deemed **SERVED** at the first actual Rule 26(f) conference.
 
 3. Use the ESI proposal to confer on repositories, native formats, retention, confidentiality, time zones, and production dates. Request a crosswalk between Amazon's and Accurate's identifiers for the same screening order.
 
@@ -52,7 +52,7 @@ Cross-reference exact status changes, report versions, transmission and access l
 - Verify court source material before asserting that a criminal disposition date, parole status, or recorded conviction answer is inaccurate.
 - Do not give opposing counsel control over Plaintiff's signature. Signature blocks carry Plaintiff's own portfolio signature image (internal/assets/signature/brendan-newanforbi-signature.png), affixed by the build script. The interrogatory and RFA proofs of service remain undated and unsigned until actual service.
 
-- Format: every discovery set is on portfolio pleading paper (lib/pleading_paper.py) with Civil L.R. 3-4 caption and footer; Word copies are true pleading-paper .docx files. Proofs of service use the portfolio federal POS template (lib/proof_of_service.py). The "REVIEW DRAFT -- NOT SERVED" footer marker is a separate, deletable Word footer paragraph and is controlled by REVIEW_DRAFT in the build script.
+- Format: every discovery set is on portfolio pleading paper (lib/pleading_paper.py) with Civil L.R. 3-4 caption and footer; Word copies are true pleading-paper .docx files. Proofs of service use the portfolio federal POS template (lib/proof_of_service.py). The served sets (01–06), their proofs of service, and the cover e-mails carry no draft markings; REVIEW_DRAFT in the build script is off.
 
 ## Governing references
 

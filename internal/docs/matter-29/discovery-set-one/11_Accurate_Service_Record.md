@@ -6,7 +6,7 @@ The build script fills one template proof per discovery set and appends it to th
 
 ## A. Early Rule 34 delivery — First Requests for Production
 
-Dated and signed October 20, 2026 (signature image affixed by the template). Method: e-mail (PDF and Word). Recites delivery under Fed. R. Civ. P. 26(d)(2)(A), deemed served at the first Rule 26(f) conference under Rule 26(d)(2)(B).
+Dated and signed October 19, 2026 (signature image affixed by the template). Method: e-mail (PDF and Word). Recites delivery under Fed. R. Civ. P. 26(d)(2)(A), deemed served at the first Rule 26(f) conference under Rule 26(d)(2)(B).
 
 ## B. First Interrogatories and First Requests for Admission
 

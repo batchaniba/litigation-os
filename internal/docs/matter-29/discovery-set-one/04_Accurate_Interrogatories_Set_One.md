@@ -28,7 +28,7 @@ Pursuant to Fed. R. Civ. P. 33, answer each interrogatory separately and fully i
 
 **INTERROGATORY NO. 09.** Identify the Amazon legal entity or account to which Accurate was authorized to furnish order 496623722 and the screen name shown for that account.
 
-**Dated:** October 20, 2026
+**Dated:** October 19, 2026
 
 [[SIGNATURE]]
 

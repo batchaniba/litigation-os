@@ -26,7 +26,7 @@ Under Fed. R. Civ. P. 36, admit or deny each statement specifically, or explain 
 
 **REQUEST FOR ADMISSION NO. 08.** Admit that Amazon’s July 2026 offer terms contemplated selection of a new start date or schedule if pre-employment requirements were not completed in time.
 
-**Dated:** October 20, 2026
+**Dated:** October 19, 2026
 
 [[SIGNATURE]]
 

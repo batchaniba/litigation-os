@@ -2,7 +2,7 @@
 
 **N.D. Cal. 4:26-cv-09249-ASK · Magistrate Judge Ajay S. Krishnan**
 
-**STATUS: WORKING DRAFTS DATED OCTOBER 20, 2026 WITH SIGNATURE IMAGE AFFIXED — NONE FILED, DELIVERED, OR SERVED BY THIS PR.**
+**STATUS: WORKING DRAFTS DATED OCTOBER 19, 2026 WITH SIGNATURE IMAGE AFFIXED — NONE FILED, DELIVERED, OR SERVED BY THIS PR.**
 
 ## Packet contents
 
@@ -28,12 +28,12 @@ These Markdown files preserve the full wording of the 71 discovery requests and 
 
 - **Word (.docx):** pleading paper for Microsoft Word — Times New Roman 12 pt, exact 24-pt lines, 28 line numbers in a header-anchored text box, header rule lines, named "Pleading …" styles, inline signature image, no macros, tracked changes, or comments; author Brendan Ngehsi Newanforbi.
 - **PDF:** each DOCX is read back and rendered through the portfolio pleading-paper formatter (`internal/scripts/lib/pleading_paper.py`, the engine behind `pleading-paper-formatter-script.py`), with the Civil L.R. 3-4 first page (party block at line 1, court title from line 8, caption, case number, document title) and the title/case-number footer.
-- **Proofs of service:** the portfolio federal POS template (`internal/scripts/lib/proof_of_service.py`) is appended to each discovery set; `10_`/`11_` PDFs collect them per defendant. RFP proofs are dated and signed October 20, 2026; interrogatory and RFA proofs stay undated and unsigned. Verify the generated layout, caption, dates, signature image placement, and authorized service method before use.
+- **Proofs of service:** the portfolio federal POS template (`internal/scripts/lib/proof_of_service.py`) is appended to each discovery set; `10_`/`11_` PDFs collect them per defendant. RFP proofs are dated and signed October 19, 2026; interrogatory and RFA proofs stay undated and unsigned. Verify the generated layout, caption, dates, signature image placement, and authorized service method before use.
 
 ## Deployment protocol
 
 1. Confirm live docket, caption, any name-conform order, and any superseding discovery restrictions.
-2. **Each discovery set is signed under Rule 26(g)** with Plaintiff's portfolio signature image above the typed name "Brendan Ngehsi Newanforbi" (matching the caption) and dated October 20, 2026.
+2. **Each discovery set is signed under Rule 26(g)** with Plaintiff's portfolio signature image above the typed name "Brendan Ngehsi Newanforbi" (matching the caption) and dated October 19, 2026.
 3. Rule 26(d)(2) permits **early delivery** of Rule 34 requests more than 21 days after service, but they are **deemed served at the first actual Rule 26(f) conference**. Record delivery and deemed service distinctly.
 4. Interrogatories and requests for admission do not use Rule 26(d)(2)'s early Rule 34 delivery mechanism. Serve when permitted by Rule 26(d), an agreement, or court order.
 5. Discuss ESI scope, native production, time zones, privilege, sensitive identifiers, protective order, and report crosswalk at Rule 26(f).
@@ -43,7 +43,7 @@ These Markdown files preserve the full wording of the 71 discovery requests and 
 
 ## Planning dates (not confirmation of a conference)
 
-- **Oct. 20, 2026:** Signature date; internal target to deliver the two early Rule 34 sets (21 days before the Nov. 10 target).
+- **Oct. 19, 2026:** Signature date; internal target to deliver the two early Rule 34 sets (22 days before the Nov. 10 target).
 - **Nov. 10:** Portfolio's Rule 26(f) and ADR target; **actual conference date not yet confirmed**.
 - **Nov. 18:** Amazon partial motion hearing (Claims 5–7).
 - **Nov. 24:** Portfolio lists initial disclosures and joint CMC statement.

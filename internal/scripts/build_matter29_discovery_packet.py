@@ -20,13 +20,13 @@ pleading.py, and matter28-initial-disclosures-pleading.py):
      internal/public/documents/_form-library/proof-of-service-blank-template.pdf),
      and are appended to each discovery set and collected per defendant in
      10_/11_ service packets. RFP proofs (Rule 26(d)(2) early delivery) are
-     dated and signed October 20, 2026; interrogatory and RFA proofs stay
+     dated and signed October 19, 2026; interrogatory and RFA proofs stay
      undated and unsigned until actual service.
 
-REVIEW_DRAFT keeps the "REVIEW DRAFT -- NOT SERVED" marker. In the DOCX it is
-its own footer paragraph (style "Pleading Footer Draft Marker"), so it can be
-deleted in Word; in the PDF it is appended to the formatter footer line, as
-matter28 does with "-- WORKING DRAFT". Nothing here files, sends, or serves.
+REVIEW_DRAFT (off) would restore a "REVIEW DRAFT -- NOT SERVED" marker: in the
+DOCX as its own footer paragraph, in the PDF appended to the formatter footer
+line, as matter28 does with "-- WORKING DRAFT". Nothing here files, sends, or
+serves.
 
     python3 internal/scripts/build_matter29_discovery_packet.py
 """
@@ -80,12 +80,12 @@ from signature_stamp import (  # noqa: E402
 ROOT = SCRIPT_DIR.parent / "docs" / "matter-29" / "discovery-set-one"
 OUT = ROOT / "generated"
 
-REVIEW_DRAFT = True
+REVIEW_DRAFT = False  # draft marker removed for service (Oct 17, 2026)
 DRAFT_MARKER = "REVIEW DRAFT -- NOT SERVED"
 AUTHOR = "Brendan Ngehsi Newanforbi"
 CASE_NO = "4:26-cv-09249-ASK"
 SHORT_CAPTION = "NEWANFORBI v. AMAZON.COM SERVICES, LLC, et al."
-SIGN_DATE = "October 20, 2026"
+SIGN_DATE = "October 19, 2026"
 SIGNER = "Brendan Ngehsi Newanforbi"
 SIGNER_ROLE = "Plaintiff, In Propria Persona"
 SIG_LINE = "___________________________________"
@@ -335,7 +335,8 @@ def setup_styles(doc):
     _pstyle(doc, "Pleading Header", size=1, exact=1, base=None)
     _pstyle(doc, "Pleading Footer", size=10, exact=12, align=C, base=None)
     _pstyle(doc, "Pleading Footer Title", size=8, exact=10, align=C, base=None)
-    _pstyle(doc, "Pleading Footer Draft Marker", size=8, exact=10, align=C, base=None, bold=True)
+    if REVIEW_DRAFT:
+        _pstyle(doc, "Pleading Footer Draft Marker", size=8, exact=10, align=C, base=None, bold=True)
 
 
 def _rule(shape_no: int, x_pt: float) -> str:
@@ -684,7 +685,10 @@ def render_pdf_from_docx(key: str, docx_path: Path, pdf_path: Path) -> None:
             for row in t.rows:
                 for cell, acc in zip(row.cells, (left, right)):
                     p = cell.paragraphs[0]
-                    acc.append((p.text, any(r.bold for r in p.runs if r.text), False))
+                    # The last left row holds only a tab-leader rule for Word;
+                    # a raw tab would print as a black box in the PDF.
+                    txt = p.text.replace("\t", "").rstrip()
+                    acc.append((txt, any(r.bold for r in p.runs if r.text.strip()), False))
             while left and not left[-1][0] and (not right or not right[len(left) - 1][0]):
                 left.pop()
             right = [r for r in right]
