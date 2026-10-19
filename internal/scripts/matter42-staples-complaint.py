@@ -87,10 +87,8 @@ def load_paras():
         n += q["text"].count("bnn.cdl@gmail.com")
         q["text"] = q["text"].replace("bnn.cdl@gmail.com", "brendan@ngwanforbi.com")
     assert n == 1, n
-    # User-approved (Oct 19, 2026): drop the "Telephone: " / "Email: " labels in the counsel block.
+    # Counsel-block labels kept (user reversed the label removal, Oct 19, 2026).
     assert paras[3]["text"] == "Telephone: (209) 801-4442" and paras[4]["text"] == "Email: brendan@ngwanforbi.com"
-    paras[3]["text"] = paras[3]["text"].removeprefix("Telephone: ")
-    paras[4]["text"] = paras[4]["text"].removeprefix("Email: ")
     # User-approved (Oct 19, 2026): new opening line.
     assert paras[22]["text"] == "Plaintiff Brendan Ngwa Nforbi alleges as follows:"
     paras[22]["text"] = "Plaintiff BRENDAN NGWA NFORBI, appearing on his own behalf, alleges:"
