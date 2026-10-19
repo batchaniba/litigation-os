@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "fileCount": 1726,
-  "totalBytes": 1008775749,
+  "fileCount": 1730,
+  "totalBytes": 1012848105,
   "files": [
     {
       "path": "/documents/_form-library/ao239-blank-template.pdf",
@@ -8632,6 +8632,26 @@
       "path": "/documents/matter-35/[Proposed] Order Correcting Case Title - 26CV501995 (Sep 9 2026).pdf",
       "size": 4913,
       "sha256": "89462bece500f9db1762d8cad276017a04f5da63b2f55de0bb4e8fce092be7b1"
+    },
+    {
+      "path": "/documents/matter-42/ndcal/to-file/Complaint - Ngwa Nforbi v. Staples The Office Superstore, LLC (N.D. Cal.) (Oct 19 2026).pdf",
+      "size": 272069,
+      "sha256": "d71627483d91ac3bd7000b219de284bf27c8e77999c1803ed8e82c0f26920cfd"
+    },
+    {
+      "path": "/documents/matter-42/ndcal/to-file/Complaint - Ngwa Nforbi v. Staples The Office Superstore, LLC (N.D. Cal.) (Oct 19 2026).docx",
+      "size": 245942,
+      "sha256": "c41b52e020eac52aa25f554a5a544f4f97188de8e9bd6152b355a2c5d207d4b6"
+    },
+    {
+      "path": "/documents/matter-42/ndcal/to-file/JS-CAND 44 Civil Cover Sheet - Ngwa Nforbi v. Staples The Office Superstore, LLC (N.D. Cal.) (Oct 19 2026).pdf",
+      "size": 1335684,
+      "sha256": "75fee8220874bf70b2989ee1b3d35fe121a305dcc0457e9347b20f7598146839"
+    },
+    {
+      "path": "/documents/matter-42/ndcal/to-file/JS-CAND 44 Civil Cover Sheet (fillable) - Ngwa Nforbi v. Staples The Office Superstore, LLC (N.D. Cal.) (Oct 19 2026).pdf",
+      "size": 2218661,
+      "sha256": "a94ea99d2d586ae8ab3880104d31b7967615f4ffc92f6c9e280caa456b7b746b"
     }
   ]
 }
