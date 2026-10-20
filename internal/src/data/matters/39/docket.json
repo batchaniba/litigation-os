@@ -1,5 +1,23 @@
 [
   {
+    "dkt": 1,
+    "date": "2026-09-18",
+    "filer": "plaintiff",
+    "type": "complaint",
+    "title": "Dkt 01 - Complaint with Civil Cover Sheet and Summons, Dkt 1-1 to 1-2 (Filed Sep 18 2026)",
+    "path": "/documents/matter-39/edca/Dkt 01 - Complaint with Civil Cover Sheet and Summons, Dkt 1-1 to 1-2 (Filed Sep 18 2026).pdf",
+    "filed": true
+  },
+  {
+    "dkt": 2,
+    "date": "2026-09-18",
+    "filer": "plaintiff",
+    "type": "motion",
+    "title": "Dkt 02 - AO 239 Application to Proceed IFP (Long Form) (Filed Sep 18 2026)",
+    "path": "/documents/matter-39/edca/Dkt 02 - AO 239 Application to Proceed IFP (Long Form) (Filed Sep 18 2026).pdf",
+    "filed": true
+  },
+  {
     "dkt": null,
     "date": null,
     "filer": "plaintiff",
