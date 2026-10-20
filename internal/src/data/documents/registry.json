@@ -6260,6 +6260,21 @@
       "path": "/documents/matter-42/ndcal/to-file/JS-CAND 44 Civil Cover Sheet (fillable) - Ngwa Nforbi v. Staples The Office Superstore, LLC (N.D. Cal.) (Oct 19 2026).pdf",
       "label": "Staples — Civil Cover Sheet (JS-CAND 44), fillable (N.D. Cal.) — final, not yet filed",
       "ownerMatter": 42
+    },
+    {
+      "path": "/documents/matter-39/edca/Dkt 01 - Complaint with Civil Cover Sheet and Summons, Dkt 1-1 to 1-2 (Filed Sep 18 2026).pdf",
+      "label": "Best Buy — Dkt 01 Complaint for Damages, file-stamped, with Dkt 1-1 and 1-2 attachments (E.D. Cal. No. 2:26-cv-03315-DC-CKD) (Filed Sep 18 2026)",
+      "ownerMatter": 39
+    },
+    {
+      "path": "/documents/matter-39/edca/Dkt 02 - AO 239 Application to Proceed IFP (Long Form) (Filed Sep 18 2026).pdf",
+      "label": "Best Buy — Dkt 02 AO 239 Application to Proceed Without Prepaying Fees (Long Form), file-stamped (E.D. Cal. No. 2:26-cv-03315-DC-CKD) (Filed Sep 18 2026)",
+      "ownerMatter": 39
+    },
+    {
+      "path": "/documents/matter-38/edca/Dkt 04 - Order Denying IFP Motion Without Prejudice (Filed Oct 5 2026).pdf",
+      "label": "Swift — Dkt 04 Order denying IFP motion (ECF No. 2) without prejudice (E.D. Cal. No. 2:26-cv-03312-DC-SCR) (Filed Oct 5 2026)",
+      "ownerMatter": 38
     }
   ]
 }

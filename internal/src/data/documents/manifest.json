@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "fileCount": 1730,
-  "totalBytes": 1012848139,
+  "fileCount": 1733,
+  "totalBytes": 1014647253,
   "files": [
     {
       "path": "/documents/_form-library/ao239-blank-template.pdf",
@@ -8652,6 +8652,21 @@
       "path": "/documents/matter-42/ndcal/to-file/JS-CAND 44 Civil Cover Sheet (fillable) - Ngwa Nforbi v. Staples The Office Superstore, LLC (N.D. Cal.) (Oct 19 2026).pdf",
       "size": 2218661,
       "sha256": "a94ea99d2d586ae8ab3880104d31b7967615f4ffc92f6c9e280caa456b7b746b"
+    },
+    {
+      "path": "/documents/matter-39/edca/Dkt 01 - Complaint with Civil Cover Sheet and Summons, Dkt 1-1 to 1-2 (Filed Sep 18 2026).pdf",
+      "size": 1176733,
+      "sha256": "0ce42b39c6b81729b3fc938f4399fdcc7a7a3c3c1448e8b7e7801f47d626552a"
+    },
+    {
+      "path": "/documents/matter-39/edca/Dkt 02 - AO 239 Application to Proceed IFP (Long Form) (Filed Sep 18 2026).pdf",
+      "size": 479702,
+      "sha256": "b2b6dc967128aa6ea500da9c0e277901f5bbada05eba431c75ed729916985536"
+    },
+    {
+      "path": "/documents/matter-38/edca/Dkt 04 - Order Denying IFP Motion Without Prejudice (Filed Oct 5 2026).pdf",
+      "size": 142679,
+      "sha256": "2a8bc0b3e23caa4621ad1a2ed4c8ce7f2e1b8b8c1042b01563351ad7cab07b10"
     }
   ]
 }
