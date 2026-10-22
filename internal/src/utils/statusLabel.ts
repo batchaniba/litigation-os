@@ -1,3 +1,4 @@
+import { CLOCK_KIND_LABELS } from "../types/portfolio";
 import type { MatterLifecycle, MatterPhase, MatterSummary, TimelineEvent } from "../types/portfolio";
 import { lifecycleLabel, isTerminalLifecycle } from "./matterLifecycle";
 import { eventsForMatter, matterActivity } from "./matterTimeline";
@@ -82,6 +83,7 @@ export function postureEventScore(event: TimelineEvent, phase?: MatterPhase): nu
   if (/\b(meet-and-confer|meet and confer|adr |adr-|usps|sheriff outer|postage|continued hearing|joinder)\b/.test(text)) {
     score -= 50;
   }
+  if (event.type === "meet-and-confer") score -= 50;
   if (event.type === "deadline") score += 8;
   if (event.type === "filing") score += 12;
   return score;
@@ -120,6 +122,7 @@ function postureKind(event: TimelineEvent, phase?: MatterPhase): string {
   if (/\b(cmc|case management conference)\b/.test(text)) return "CMC";
   if (/\banticipated filing\b/.test(text)) return "Anticipated filing";
   if (/\b(response due|responsive pleading)\b/.test(text)) return "Response due";
+  if (event.type === "meet-and-confer") return CLOCK_KIND_LABELS["meet-and-confer"];
   if (event.type === "hearing" || /\bhearing\b/.test(text)) return "Hearing";
   if (phase && PHASE_SHORT[phase]) return PHASE_SHORT[phase]!;
   return "Next deadline";

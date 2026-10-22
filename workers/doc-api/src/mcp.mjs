@@ -394,7 +394,7 @@ const TOOLS = [
         matter_number: { type: "integer" },
         title: { type: "string" },
         date: { type: "string", description: "YYYY-MM-DD" },
-        kind: { type: "string", description: "deadline | hearing | expiry | conference | ..." },
+        kind: { type: "string", description: "deadline | hearing | meet-and-confer | expiry | conference | ..." },
       },
       required: ["matter_number", "title"],
     },
