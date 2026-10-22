@@ -5,6 +5,18 @@ import { lifecycleLabel, isTerminalLifecycle } from "./matter-lifecycle.mjs";
 
 export const STATUS_LABEL_MAX = 60;
 
+/** Display labels for known clock kinds. Keep in sync with CLOCK_KIND_LABELS in internal/src/types/portfolio.ts. */
+export const CLOCK_KIND_LABELS = {
+  deadline: "Deadline",
+  hearing: "Hearing",
+  cmc: "CMC",
+  court_order: "Court order",
+  expiry: "Expiry",
+  filing: "Filing",
+  watch: "Watch",
+  "meet-and-confer": "Meet & Confer",
+};
+
 const PHASE_SHORT = {
   fr_pending: "F&R pending",
   district_review: "District Judge review",
@@ -74,6 +86,7 @@ export function postureEventScore(event, phase) {
   if (/\b(meet-and-confer|meet and confer|adr |adr-|usps|sheriff outer|postage|continued hearing|joinder)\b/.test(text)) {
     score -= 50;
   }
+  if (event.type === "meet-and-confer") score -= 50;
   if (event.type === "deadline") score += 8;
   if (event.type === "filing") score += 12;
   return score;
@@ -103,6 +116,7 @@ function postureKind(event, phase) {
   if (/\b(cmc|case management conference)\b/.test(text)) return "CMC";
   if (/\banticipated filing\b/.test(text)) return "Anticipated filing";
   if (/\b(response due|responsive pleading)\b/.test(text)) return "Response due";
+  if (event.type === "meet-and-confer") return CLOCK_KIND_LABELS["meet-and-confer"];
   if (event.type === "hearing" || /\bhearing\b/.test(text)) return "Hearing";
   if (phase && PHASE_SHORT[phase]) return PHASE_SHORT[phase];
   return "Next deadline";
