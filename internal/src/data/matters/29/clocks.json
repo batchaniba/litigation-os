@@ -180,5 +180,18 @@
     "actor": "you",
     "source": "/documents/matter-29/",
     "title": "WATCH — CRD right-to-sue GAP for Claim 2 (Fair Chance Act, Gov. Code §12952). No CRD complaint or right-to-sue notice found in the repo, matter.json, the complaint, or Gmail, and the complaint pleads no exhaustion. Consider filing a CRD intake with an immediate right-to-sue request and supplementing. Outer CRD filing limit is 3 years from the July 2026 acts (Gov. Code §12960(e)); the right-to-sue notice then opens a 1-year window to sue (§12965(c))."
+  },
+  {
+    "id": "29-rule26f-meet-confer",
+    "date": "2026-11-06",
+    "date_label": "Nov. 6, 2026",
+    "time": "13:00",
+    "tz": "America/Los_Angeles",
+    "kind": "hearing",
+    "status": "open",
+    "source_dkt": 9,
+    "title": "Rule 26(f) / ADR L.R. 3-5 meet-and-confer (not a court hearing), Fri. Nov. 6, 2026, 1:00–1:30 p.m. PT (invite sent as 3:00–3:30 p.m. Central), by Microsoft Teams — Newanforbi v. Amazon.com Services, LLC et al. (4:26-cv-09249-ASK). With Doug Brown and Drew Frederick (Morgan Lewis, for Amazon) and John Drury and Jasmine Stanzick (Seyfarth, for Accurate Background). Satisfies the Dkt. 9 meet-and-confer deadline of Nov. 10. Join details are in the invite email, not the repo.",
+    "actor": "you",
+    "source": "Gmail (bnn.cdl@gmail.com) message 1a160ec8e09fb279, Doug Brown (Morgan Lewis) Teams invite sent Oct 21 2026 5:04 PM PT, subject \"Newanforbi v. Amazon.com Services, LLC, et al., No. 4:26-cv-09249-ASK - Rule 26(f) Conference\" (invite.ics)"
   }
 ]
