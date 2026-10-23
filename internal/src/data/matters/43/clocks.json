@@ -1,0 +1,38 @@
+[
+  {
+    "id": "43-watch-onboarding",
+    "date": null,
+    "tz": "America/Los_Angeles",
+    "kind": "watch",
+    "status": "contingent",
+    "title": "WATCH — Confirm the Oracle/additional-information task, actual start date, scheduled hours, location, and remaining pre-boarding requirements.",
+    "actor": "you"
+  },
+  {
+    "id": "43-watch-report-copy",
+    "date": null,
+    "tz": "America/Los_Angeles",
+    "kind": "watch",
+    "status": "contingent",
+    "title": "WATCH — Applicant elected a free California report copy on October 23. Preserve delivery of the actual MVR Express report and any later full consumer/investigative report; the current furnishing notice is not the report.",
+    "actor": "you"
+  },
+  {
+    "id": "43-watch-background",
+    "date": null,
+    "tz": "America/Los_Angeles",
+    "kind": "watch",
+    "status": "contingent",
+    "title": "WATCH — HireRight screening status, additional-information requests, report versions/source labels, employer communications, and any preliminary or final adverse-action notice. No adverse action currently documented.",
+    "actor": "you"
+  },
+  {
+    "id": "43-watch-identity",
+    "date": null,
+    "tz": "America/Los_Angeles",
+    "kind": "watch",
+    "status": "contingent",
+    "title": "WATCH — HireRight signed forms use Brendan Ngehsi Ngwanforbi while the offer and current legal name use Brendan Ngwa Nforbi; preserve any alias matching, mixed-file issue, or correction request.",
+    "actor": "you"
+  }
+]

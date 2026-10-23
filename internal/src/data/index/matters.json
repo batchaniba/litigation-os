@@ -1436,6 +1436,37 @@
         "parties.json",
         "prose.json"
       ]
+    },
+    {
+      "number": 43,
+      "path": "internal/src/data/matters/43/",
+      "layout": "split",
+      "caption": "Ngwa Nforbi v. Hertz Global Holdings, Inc.",
+      "case_no": "TBD",
+      "court": "TBD — no action filed",
+      "judge": "TBD",
+      "cluster": 3,
+      "related": [],
+      "same_incident": null,
+      "lifecycle": "pre_filing",
+      "proceeding": "state_civil",
+      "phase": "pre_filing",
+      "next_clock": null,
+      "overdue": false,
+      "last_updated": "2026-10-22",
+      "files": [
+        "claims.json",
+        "clocks.json",
+        "counsel.json",
+        "damages.json",
+        "docket.json",
+        "documents.json",
+        "events.jsonl",
+        "evidence.json",
+        "matter.json",
+        "parties.json",
+        "prose.json"
+      ]
     }
   ]
 }
