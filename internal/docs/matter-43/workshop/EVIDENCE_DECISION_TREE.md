@@ -1,6 +1,6 @@
 # Matter 43 — evidence matrix and decision gates
 
-As of 2026-10-22. This is an evidence-to-question map, **not** a claim chart or a calendar.
+As of 2026-10-23. This is an evidence-to-question map, **not** a claim chart or a calendar.
 
 ## Source inventory (source hashes and original names in PR #1024)
 
@@ -16,6 +16,14 @@ As of 2026-10-22. This is an evidence-to-question map, **not** a claim chart or 
 | E08 | ADP WOTC request email | A tax-credit questionnaire requested for Hertz Global Holdings, Inc. | Criminal-background report authorization/vendor identity |
 | E09 | ADP WOTC confirmation page | Questionnaire completion | Qualification for WOTC or screening clearance |
 | E10 | Hertz Careers additional-information email | Outstanding request shown October 22 | Completion, deadline, or nature of unsubmitted fields |
+| E11 | Hertz pre-boarding email | Oracle and HireRight tasks identified | Completion or screening result |
+| E12 | HireRight acknowledgment/authorization | Signed consent and disclosure acknowledgment | Accuracy or completion of report |
+| E13 | HireRight submission receipt | Forms received; processing begun | Component results or employer decision |
+| E14 | Consent-form delivery thread | Copies supplied; consent sent to requester | Report contents |
+| E15 | Other disclosures/authorizations | California product list; free-copy election; form/name defects | Which product returned data or was used |
+| E16 | HireRight verification request | HireRight confirmed as CRA for The Hertz Corporation | Screening outcome |
+| E17 | Standalone screening disclosure | Report categories and authorization | Actual records reported |
+| E18 | MVR Express furnishing notice | MVR public-record report sent to Gloria Williams/Hertz at 3:05 p.m. | Underlying MVR contents or adverse decision |
 
 **Integrity:** SHA-256 checksums and file descriptions are in internal/private/matters/43/EVIDENCE_INTAKE.md, on the #1024 branch. Original evidence bytes are not present in this workshopping PR. No path should be added to documents.json unless the bytes are actually ingested and retrievable.
 
@@ -32,14 +40,17 @@ As of 2026-10-22. This is an evidence-to-question map, **not** a claim chart or 
 | Oct 22, 5:00 p.m. | Hertz Careers confirms offer accepted | Email timestamp |
 | Oct 22, 5:00 p.m. | ADP WOTC request and Hertz additional-information request | Separate, simultaneous notices; neither is proof a criminal report was issued |
 | Oct 22, 5:44 p.m. (capture) | WOTC confirmation page shows completion | Capture time is not proof of exact submission time |
+| Oct 23, 12:37 p.m. | Hertz pre-boarding and HireRight request | HireRight screening initiation confirmed |
+| Oct 23, 3:03–3:04 p.m. | Disclosures/authorizations signed; submission received | Form timestamps; California free-copy election checked |
+| Oct 23, 3:05 p.m. | HireRight MVR furnishing notice | Confirms delivery transaction, not MVR contents |
 
 ## Decision gate tree
 
-**G0 — Accepted offer / routine onboarding (current state).** Continue onboarding, retain confirmations, obtain written start details if provided. No adverse-action claim.
+**G0 — Accepted offer / routine onboarding (completed baseline).** Continue onboarding, retain confirmations, obtain written start details if provided. No adverse-action claim.
 
 **G1 — Administrative gap or missed onboarding task.** Determine whether the missing task, identity mismatch, scheduling, or response timing accounts for a delay; document requests and completion. Do not assign screening causation prematurely.
 
-**G2 — Background/MVR process begins.** Archive the employer's authorization, all notices, provider identity, applicant copy requests, report date and source labels. WOTC forms are a different workflow.
+**G2 — Background/MVR process begins (current state).** Archive the employer's authorization, all notices, provider identity, applicant copy requests, report date and source labels. WOTC forms are a different workflow.
 
 **G3 — Report arrives and is accurate / approved.** Record result and job commencement. This is a win; no need to manufacture a litigation theory.
 
@@ -55,7 +66,8 @@ As of 2026-10-22. This is an evidence-to-question map, **not** a claim chart or 
 |---|---|---|
 | H0 — Hired normally | Start/assignment/pay record, background pass | Actual rescission/no-start |
 | H1 — Onboarding logistics | Incomplete additional-info task, timeline emails | Completed tasks and independent reason |
-| H2 — MVR/driver eligibility | Driving-related selection rule and MVR result | Employer record identifies a distinct reason |
+| H2 — MVR/driver eligibility | Actual MVR entries, driving-related selection rule, and employer adjudication | Clean MVR or employer record identifies a distinct reason |
+| H2A — Identity/alias mismatch | HireRight correction request, mismatched subject data, or mixed-file entry | Report accurately resolves the name variants |
 | H3 — Conviction-history selection | Assessment, relevant report and decision note | Unrelated reason or no assessment activity |
 | H4 — Misuse of Megan's Law **website** data | Public-site source trace, access/use documents, causal decision | Court-record/criminal check source without website use; statutory exception |
 | H5 — Consumer-report process/accuracy defect | Disclosure, authorization, report, notices, disputed field, attributable process lapse | Compliant documents or no consumer report used |
