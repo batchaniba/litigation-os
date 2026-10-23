@@ -1,12 +1,12 @@
 # Matter 43 — portfolio comparator assessment
 
-**Comparison snapshot:** canonical repository data checked on October 22, 2026. This file contrasts evidentiary **stages**, not case value, probability of prevailing, or a verified live docket report. Some matter identity/status fields were last updated earlier; re-read their docket.json, clocks.json, and events.jsonl for later developments.
+**Comparison snapshot:** canonical repository data checked on October 23, 2026. This file contrasts evidentiary **stages**, not case value, probability of prevailing, or a verified live docket report. Some matter identity/status fields were last updated earlier; re-read their docket.json, clocks.json, and events.jsonl for later developments.
 
 ## Why the Hertz record matters
 
 The applicant has **two independent confirmations** of an accepted conditional offer (Hertz Careers acceptance email and applicant portal), plus a standalone written offer describing the prospective employer, position, location, pay rate, and screening contingency. That proves a more advanced hiring commitment than an application/interview alone, and supplies useful facts for comparing a later changed decision, if one occurs.
 
-The exact source and lawful basis of any possible screening result are presently **unknown**. Hertz's explicit MVR contingency is a material alternative explanation in a vehicle-related role; it must not be ignored in favor of a preferred inference.
+HireRight is now confirmed as the screening vendor, and an MVR Express report containing public-record information was furnished to Hertz. The underlying MVR, any criminal-search results, and any employer adjudication remain **unknown**. Hertz's explicit MVR contingency is a material alternative explanation in a vehicle-related role; it must not be ignored in favor of a preferred inference.
 
 ## Stage comparison
 
@@ -19,7 +19,7 @@ The exact source and lawful basis of any possible screening result are presently
 | **39 — Best Buy** | Accepted offer and background authorization; later nonresponse alleged; filed complaint | An alleged no-start has occurred | Portfolio does not have a Best Buy screening report or confirmed reason |
 | **42 — Staples** | Conditional offer; First Advantage notice that it is reporting public-record information | Screening advanced beyond Hertz's known stage | Report contents, employer use and adverse action not established in snapshot |
 | **41 — Nuro** | Application, interview and driving evaluation; no accepted offer confirmed in last record | Hertz is stronger on proof of hiring commitment | Nuro identity last updated Sep 18, 2026; may be stale |
-| **43 — Hertz** | Accepted conditional offer, $23/hour, known screening contingency; no report or adverse action | **Earlier dispute stage / stronger accepted-offer baseline** | As of Oct 22, **no actual liability or injury evidence** |
+| **43 — Hertz** | Accepted conditional offer; HireRight authorization; MVR Express furnished to Hertz; California product list includes named criminal/registry searches | **Active screening stage / strong accepted-offer baseline** | Actual MVR/full report and employer decision remain missing; no adverse action or injury |
 
 ## Separate scoring axes
 
@@ -27,7 +27,7 @@ Do not collapse these into an unqualified “strongest lawsuit” ranking:
 
 - **Offer baseline:** Hertz = strong, with written terms and portal acceptance.
 - **Adverse act:** Hertz = none documented; FedEx/UPS have adverse-action notices; other matters vary.
-- **Report traceability:** Hertz = not yet started or proven; Amazon/Accurate has an actual completed report; Staples has a contemporaneous public-record notice.
+- **Report traceability:** Hertz = HireRight confirmed and MVR delivery documented, but report contents are missing; Amazon/Accurate has an actual completed report; Staples has a contemporaneous public-record notice.
 - **Unlawful information source/use:** Hertz = completely unproven. Report source may differ from California's public website.
 - **Damages:** Hertz = zero established by this record. A projected annual salary is not present damages.
 - **Value of retaining the job:** material; success would mean actual earnings and career progression rather than an additional dispute.
@@ -48,7 +48,7 @@ Do not assert these as claims from the current record. A reviewer must identify 
 - The written offer is expressly conditional and at-will; no start date or guaranteed hours is established.
 - Employment screening may legitimately involve MVR, education, employment history, or other qualifications, independently of any registry website.
 - Administrative onboarding tasks may remain incomplete.
-- ADP WOTC is not evidence of a criminal-background report or prohibited information acquisition.
+- ADP WOTC remains separate. HireRight is the confirmed CRA, but a disclosure listing search products is not proof that every product returned data or drove a decision.
 - No changed hiring decision, unlawful source, notice failure, reliance, injury or damages has been shown.
 
 ## What would change the view
