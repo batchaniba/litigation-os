@@ -33,7 +33,7 @@ Unit 023295 (Meza-Gonzales), MVARS ID 3901633363. This is the usable record of t
 - **01:49:36** — Tesla loaded on a tow truck; officer walking roadside with papers.
 - **01:59:36** — Patrol car in a parking lot with parked cars and a wall; the clip ends ~01:59:51.
 
-**Gap:** no forward video exists for 01:59:51–02:46:03 (Dublin processing and blood-draw lead-up). The roadside audio on this clip has not been transcribed; it is the largest unexamined evidence in the case, because the Answer's admissions turn on what was and was not said aloud (neither officer stated aloud on the recording that they smelled alcohol; neither told the subject his speech was slurred or impaired).
+**Gap:** no forward video exists for 01:59:51–02:46:03 (Dublin processing and blood-draw lead-up). The roadside audio on this clip is transcribed — see [Transcripts of this recording already in the repo](#transcripts-of-this-recording-already-in-the-repo) below. The Answer's admissions turn on what was and was not said aloud (neither officer stated aloud on the recording that they smelled alcohol; neither told the subject his speech was slurred or impaired), and the transcript is where those admissions are tested.
 
 ### 2. Back-seat camera, ~01:33 — no signal, no sound
 
@@ -47,6 +47,25 @@ The frame shows the literal on-screen text "No Signal." A 30-second audio sample
 ### 4. Back-seat camera, ~02:47 — no signal, no sound
 
 Same as video 2: "No Signal" on screen, no in-car picture or sound of the subject. Together, videos 2 and 4 mean half the video record — the entire back-seat camera — is blank.
+
+## Transcripts of this recording already in the repo
+
+The forward (Camera 1) audio **is** transcribed. The transcript is a verbatim, timestamped transcription of the CHP dashcam video and audio recording for this incident — November 1, 2024, I-580 East, Livermore, CHP Case RJ68845, window **00:54:36–01:57:10** — with a speaker legend (Meza-Gonzalez, badge 023295; Melano, badge 023054) and sections including pre-FST questioning (01:01:21–01:05:07). It covers the whole roadside encounter on video 1 above, through the tow phase; it does not cover the 01:59:51–02:46:03 gap (no video exists there) or the 02:46–02:49 arrival clip, and there is no back-seat audio to transcribe (videos 2 and 4 are silent).
+
+### Where the transcript lives
+
+- **Hand-extract sidecar (live file in this repo):** `internal/public/documents/matter-33/incident/Exhibit_A_CHP_Video_Transcript.txt`, with `Exhibit_A_CHP_Video_Transcript.meta.json` alongside it. It is filed under matter-33 in the repo tree although the incident is Matter 20's. It extracts the four proof points, with citable anchors `RJ68845#t=00:54:36` (encounter window opens) and `RJ68845#t=01:12:04` (odor of alcohol never verbalized on the recording):
+  1. "Strong distinct odor of an alcoholic beverage" — never verbalized during the 62-minute encounter.
+  2. "Slurred" speech — contradicted by coherent, articulate speech throughout.
+  3. "Seemed very confused and disoriented" — the subject correctly identified his location and read highway signs.
+  4. "BEVERAGE PRESENT: YES" — the only liquid found was urine in a cup.
+- **Full transcript text (in the repo's document index):** `internal/docs/document_index.jsonl` carries the extracted text of two full versions — the 15-page standalone `CHP Transcript.pdf` (document-store path `/documents/matter-33/from-07/CHP Transcript.pdf`) and the 19-page Exhibit A version filed in the E.D. Cal. Meza-Gonzalez case, No. 2:25-cv-01460-DC-CSK (document-store path `/documents/matter-33/incident/Exhibit_A_CHP_Video_Transcript.pdf`). Note: those PDFs themselves are not files in the repo tree — only their extracted text is in the index, and the sidecar itself notes "Replace with pdftotext when the documents branch is pulled."
+- **As an exhibit to the Verified Petition:** the Matter 20 Verified Petition for Writ of Mandate (153 pp; document-store paths `/documents/matter-32/from-20/`) attaches the transcript as an exhibit and cites it at Petition ¶¶ 35–38, 44–48, 63.
+- **Timestamped quotes embedded in the filed papers:** the briefs quote the transcript directly, including the cup exchange (00:58:51–00:59:05, "This is piss"; Meza-Gonzalez: "No I'm not gonna smell that"), the FST discussion (01:08:20–01:08:40; 01:10:14–01:10:30, environmental conditions), and the PAS advisement (01:10:54, "You're not required to do this"; 01:11:03, arrest left to the officer's discretion on refusal).
+
+### What this changes
+
+An earlier draft of this file — and of the companion memo — said the roadside audio was untranscribed. That was wrong: the transcript above already exists, and the companion memo's "transcribe the audio" next step is superseded by working from this transcript and logging only the narrow gap between the transcript's 01:57:10 end and the forward clip's ~01:59:51 end.
 
 ## Production PDFs in this folder
 
