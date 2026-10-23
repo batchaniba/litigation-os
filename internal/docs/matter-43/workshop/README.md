@@ -1,6 +1,6 @@
 # Matter 43 — Hertz cross-model strategy workshop
 
-**As-of:** October 22, 2026 (America/Los_Angeles)  
+**As-of:** October 23, 2026 (America/Los_Angeles)  
 **Working caption:** Ngwa Nforbi v. Hertz Global Holdings, Inc.  
 **Status:** Pre-filing monitoring, not a filed action and not an allegation of wrongdoing  
 **Companion record:** PR #1024, feat/matter-43-hertz-offer (unmerged when this workspace was created)
@@ -14,11 +14,12 @@ Use this folder as the handoff point for ChatGPT, Claude, Gemini, Grok, local ag
 ## Source order / navigation
 
 1. **Companion PR #1024**: internal/src/data/matters/43/matter.json, events.jsonl, evidence.json, clocks.json, and claims.json. These are on the PR branch until #1024 merges. If they are unavailable from main, inspect PR #1024 explicitly; do not assume absent files mean an empty record.
-2. **Original-source register**: internal/private/matters/43/EVIDENCE_INTAKE.md on PR #1024. It records ten supplied files and SHA-256 values. Checksums were independently reverified against the conversation uploads in this workshopping session.
-3. **This workspace**: EVIDENCE_DECISION_TREE.md for the proof chain; CROSS_MATTER_ASSESSMENT.md for comparison; LLM_REVIEW_PROTOCOL.md for repeatable cross-model review; REVIEW_LOG.md for disagreements and updates.
-4. **Other canonical matter records**: internal/src/data/index/matters.json, then selected siblings in internal/src/data/matters/25, /26, /29, /36, /39, /41, and /42. Read their events, docket, and clocks where relevant. Do not rely on their descriptive status fields for current dockets.
+2. **Original-source register**: internal/private/matters/43/EVIDENCE_INTAKE.md on PR #1024. It records eighteen supplied files and SHA-256 values. Checksums were independently reverified against the conversation uploads in this workshopping session.
+3. **October 23 screening update**: OCT_23_HIRERIGHT_UPDATE.md records the confirmed HireRight workflow, furnished MVR notice, disclosed search products, report-copy election, and name-variant issue.
+4. **This workspace**: EVIDENCE_DECISION_TREE.md for the proof chain; CROSS_MATTER_ASSESSMENT.md for comparison; LLM_REVIEW_PROTOCOL.md for repeatable cross-model review; REVIEW_LOG.md for disagreements and updates.
+5. **Other canonical matter records**: internal/src/data/index/matters.json, then selected siblings in internal/src/data/matters/25, /26, /29, /36, /39, /41, and /42. Read their events, docket, and clocks where relevant. Do not rely on their descriptive status fields for current dockets.
 
-**Source access limitation:** The ten original PDF/JPEG bytes have not been ingested into GitHub or the R2 document store. Descriptions and hash references are not a substitute for reading originals. If an external reviewer has only the repository, label assertions that require the unavailable attachments as **reported from source inventory**, not independently verified.
+**Source access limitation:** The eighteen original PDF/JPEG bytes have not been ingested into GitHub or the R2 document store. Descriptions and hash references are not a substitute for reading originals. If an external reviewer has only the repository, label assertions that require the unavailable attachments as **reported from source inventory**, not independently verified.
 
 ## Confirmed, source-backed baseline
 
@@ -26,7 +27,11 @@ Use this folder as the handoff point for ChatGPT, Claude, Gemini, Grok, local ag
 - The **written offer issuer is The Hertz Corporation**; the **user-requested matter caption names Hertz Global Holdings, Inc.** ADP's WOTC questionnaire identifies Hertz Global Holdings, Inc. Corporate/agency relationships and any proper defendant are open research questions, not settled facts.
 - The written offer specifies **full-time Manager Trainee, $23/hour, 816 San Antonio Rd., Palo Alto, CA 94303**, reporting to Kathleen Williams; it makes employment contingent on an MVR check if applicable and criminal, employment, and education background checks.
 - Hertz Careers confirmed the offer's acceptance at **5:00 p.m. on October 22**. The applicant's career portal also shows **Offer Accepted** (requisition 43711).
-- ADP requested a **Work Opportunity Tax Credit (WOTC)** questionnaire and a confirmation was issued. This **does not establish** who performs employment background reporting or that any criminal report has been obtained.
+- ADP requested a **Work Opportunity Tax Credit (WOTC)** questionnaire and a confirmation was issued. This remains separate from the HireRight employment-screening workflow.
+- On October 23, Hertz identified **HireRight** as the screening vendor. The applicant completed disclosures/authorizations and checked the California free-report-copy election.
+- HireRight's California disclosure lists MVR Express and named criminal/public-record search products, including National Sex Offender Registry.
+- At 3:05 p.m. October 23, HireRight notified the applicant that an **MVR Express report containing public-record information was furnished to Gloria Williams at The Hertz Corporation**. The supplied PDF is the notice, not the MVR itself.
+- Signed HireRight forms use **Brendan Ngehsi Ngwanforbi**, while the offer/recruiting record uses **Brendan Ngwa Nforbi**; preserve this as an identity-accuracy watch item.
 - A separate additional-information request arrived on October 22 at 5:00 p.m.; the source record has not established that it was satisfied.
 - Kathleen's iMessage invitation says “Thursday 10/21,” a weekday/date conflict for 2026. Preserve the wording and mark exact interview date unresolved, rather than correcting it by assumption.
 
@@ -35,7 +40,7 @@ Use this folder as the handoff point for ChatGPT, Claude, Gemini, Grok, local ag
 | Dimension | Current assessment | What changes it |
 |---|---|---|
 | Hiring commitment | **Well documented**: employer offer + portal acceptance | Genuine offer authenticity issues, any material conditions not yet surfaced |
-| Background-check causation | **Unestablished**: no report or changed decision shown | Dated screening initiation, report, internal decision record |
+| Background-check causation | **Partially established process**: HireRight screening initiated and MVR furnished; no changed decision shown | Actual report, employer adjudication, internal decision record |
 | Illegality | **No violation established** | Specific conduct, source of information, required process, and applicable exception analysis |
 | Injury / damages | **No employment loss established** | Proven lost start, rescission, economic loss, mitigation and offsets |
 | Best-case result | Employment proceeds | Onboarding/start confirmation |
@@ -45,9 +50,9 @@ Never convert a strong conditional-offer record into a strong **current liabilit
 
 ## Live questions (not findings)
 
-1. Did Hertz send a separate background-check disclosure/authorization, and was it signed?
-2. Who is the consumer reporting agency, if any? ADP's WOTC role does not answer this.
-3. What does the background/MVR report actually say, which records/sources does it use, and who at Hertz receives what?
+1. What does the actual MVR Express report say, which public records does it contain, and does it match what Hertz received?
+2. What other HireRight components complete, what source labels do they carry, and what report copy is delivered under the checked California election?
+3. Does the candidate-name variant cause an alias match, mixed file, or verification request?
 4. What happens with the outstanding additional-information task and actual start date?
 5. If any delay/reversal occurs, is the stated cause an MVR/driving standard, a separate administrative issue, a conviction-history assessment, public website information, or something else?
 6. Which Hertz entity decided the action, and which statutory duties attach to that entity?
