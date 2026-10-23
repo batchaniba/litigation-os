@@ -1,6 +1,6 @@
 # Matter 43 — cross-model review log
 
-As-of source snapshot: October 22, 2026. This is the shared **analysis** ledger for comments, corrections and independent model reviews. It is not the append-only canonical employment chronology (events.jsonl).
+As-of source snapshot: October 23, 2026. This is the shared **analysis** ledger for comments, corrections and independent model reviews. It is not the append-only canonical employment chronology (events.jsonl).
 
 ## Initial review findings
 
@@ -13,12 +13,17 @@ As-of source snapshot: October 22, 2026. This is the shared **analysis** ledger 
 | H43-R05 | INFERENCE | Better accepted-offer baseline than Nuro's last recorded stage; less developed adverse-action evidence than FedEx/UPS | Compare matter 41, 25, 26 evidence/docket | OPEN | Inspect current records for any new events after snapshot |
 | H43-R06 | FACT / discrepancy | Interview invitation says “Thursday 10/21,” internally inconsistent in 2026 | PR #1024 E01 screenshot | OPEN | Calendar invite or recruiting record clarifying actual interview date |
 | H43-R07 | UNKNOWN | “Hertz Global Holdings, Inc.” and “The Hertz Corporation” may play different legal roles | PR #1024 E05 vs E08 | OPEN | Corporate, employment, and decisionmaking records |
+| H43-R08 | FACT | HireRight is the confirmed employment-screening vendor; applicant completed disclosures and authorization Oct. 23 | PR #1024 E11–E17 | OPEN | Actual report/status records |
+| H43-R09 | FACT / limitation | HireRight furnished an MVR Express public-record report to Gloria Williams/The Hertz Corporation at 3:05 p.m.; supplied PDF is only the notice | PR #1024 E18 | OPEN | Download the actual MVR and compare delivery/version |
+| H43-R10 | FACT / limitation | California disclosure lists National Sex Offender Registry among several products; listing does not establish a returned match, website source, reliance, or adverse action | PR #1024 E15 | OPEN | Full report/source trace and employer decision record |
+| H43-R11 | FACT / discrepancy | Signed forms use Brendan Ngehsi Ngwanforbi rather than Brendan Ngwa Nforbi | PR #1024 E12, E15, E17 | OPEN | HireRight report subject identifiers and any correction request |
+| H43-R12 | FACT | Applicant checked California's free-report-copy election | PR #1024 E15 | OPEN | Actual delivery and report completeness |
 
 ## External reviewer submissions
 
 Add the following **per reviewer**; a distinct model can disagree with an earlier review without deleting it.
 
-### H43-R08 — [reviewer / model] — [YYYY-MM-DD]
+### H43-R13 — [reviewer / model] — [YYYY-MM-DD]
 
 - Source branch / commit reviewed:
 - Did you inspect original PDFs/screenshots, or only the PR inventory?
@@ -31,7 +36,7 @@ Add the following **per reviewer**; a distinct model can disagree with an earlie
 - Disposition: **OPEN / TESTING / ACCEPTED / REJECTED**
 - Follow-up PR comment or commit reference:
 
-### H43-R09 — [reviewer / model] — [YYYY-MM-DD]
+### H43-R14 — [reviewer / model] — [YYYY-MM-DD]
 
 - Source branch / commit reviewed:
 - Did you inspect original PDFs/screenshots, or only the PR inventory?
@@ -49,5 +54,6 @@ Add the following **per reviewer**; a distinct model can disagree with an earlie
 | Date | Decision proposed | Proven trigger? | Approved by user? | Outcome |
 |---|---|---|---|---|
 | 2026-10-22 | Continue monitoring/onboarding; preserve accepted offer and look for actual background-screening materials | Yes, offer accepted; no adverse action | Not a communication authorization | Workspace opened for adversarial review |
+| 2026-10-23 | Move evidence state to G2; collect actual MVR/full report and monitor name-variant accuracy | Yes, HireRight screening and MVR furnishing notice | Yes, user supplied records for addition | Canonical and workshop PRs updated |
 
 No deadlines, attorney appearances, discovery service, valuation, demand, or pleading has been created by this log.
