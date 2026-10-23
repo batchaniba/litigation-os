@@ -1,0 +1,20 @@
+[
+  {
+    "id": "43-watch-onboarding",
+    "date": null,
+    "tz": "America/Los_Angeles",
+    "kind": "watch",
+    "status": "contingent",
+    "title": "WATCH — Hertz Manager Trainee: complete or obtain clarification on the additional-information request sent October 22 at 5:00 p.m.; confirm start date and onboarding steps. No specific due date in supplied notice.",
+    "actor": "you"
+  },
+  {
+    "id": "43-watch-background",
+    "date": null,
+    "tz": "America/Los_Angeles",
+    "kind": "watch",
+    "status": "contingent",
+    "title": "WATCH — Hertz employment background-screening notices, authorizations, report copy, final decision, and any pre-adverse or preliminary adverse-action notice. No report, vendor identity, rescission, or deadline yet documented.",
+    "actor": "you"
+  }
+]
