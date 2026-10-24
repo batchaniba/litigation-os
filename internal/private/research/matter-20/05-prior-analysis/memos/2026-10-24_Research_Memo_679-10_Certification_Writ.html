@@ -1,0 +1,659 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="color-scheme" content="light dark" />
+<link rel="icon" href="data:," />
+<title>Research Memorandum — § 679.10 Certification Writ</title>
+<style>
+:root{
+  --bg:#f7f7f5; --surface:#ffffff; --surface2:#f0efe9; --ink:#1c2333; --ink2:#4a5568; --muted:#718096;
+  --line:#ddd9ce; --navy:#1e3a5f; --navy2:#2c5282; --rust:#9a3412; --rust-bg:#fff1e6; --green:#276749; --green-bg:#e6f4ea;
+  --amber:#975a16; --amber-bg:#fef9e7; --red:#9b2c2c; --red-bg:#fdf0f0;
+  --serif: Georgia, "Times New Roman", Times, serif;
+  --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  --mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root{ --bg:#12151c; --surface:#1a1f2b; --surface2:#232a3a; --ink:#e8eaf0; --ink2:#b8c0d4; --muted:#8a94ad;
+  --line:#333b4f; --navy:#7fb0e8; --navy2:#9cc2f0; --rust:#f0a07a; --rust-bg:#3a2418; --green:#7fd6a4; --green-bg:#1d3328;
+  --amber:#f5d67a; --amber-bg:#38300f; --red:#f5a3a3; --red-bg:#3a1f1f; }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.65}
+a{color:var(--navy2);text-decoration:underline;text-underline-offset:2px}
+h1,h2,h3,h4{font-family:var(--serif);line-height:1.25;color:var(--ink)}
+h2{font-size:1.55rem;margin:0 0 .5rem;border-bottom:2px solid var(--navy);padding-bottom:.4rem}
+h3{font-size:1.15rem;margin:1.4rem 0 .5rem}
+h4{font-size:1rem;margin:1.1rem 0 .4rem}
+p{margin:.6rem 0}
+ul,ol{margin:.5rem 0 .8rem;padding-left:1.4rem}
+li{margin:.3rem 0}
+small{color:var(--muted)}
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px 60px}
+.caption{background:var(--navy);color:#fff;padding:28px 0 22px}
+@media (prefers-color-scheme: dark){.caption{background:#0d1524}}
+.caption .wrap{padding-bottom:0}
+.caption .court{font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;opacity:.85;font-family:var(--sans)}
+.caption h1{color:#fff;font-size:clamp(1.7rem,4vw,2.5rem);margin:.35rem 0 .3rem}
+.caption .sub{opacity:.92;font-size:1rem;max-width:820px}
+.caption .meta{display:flex;flex-wrap:wrap;gap:8px 22px;margin-top:14px;font-size:.85rem;opacity:.9;border-top:1px solid rgba(255,255,255,.25);padding-top:12px}
+.verdict{background:var(--surface);border:1px solid var(--line);border-left:5px solid var(--rust);padding:18px 20px;margin:26px 0}
+.verdict h2{border:none;font-size:1.3rem;margin-bottom:.3rem}
+.verdict .lead{font-size:1.05rem}
+.hierarchy{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:16px 0}
+@media(max-width:700px){.hierarchy{grid-template-columns:1fr}}
+.hcard{border:1px solid var(--line);background:var(--surface);padding:16px 18px}
+.hcard.primary{border-top:4px solid var(--green)}
+.hcard.alt{border-top:4px solid var(--amber)}
+.hcard .tag{font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+.tag.g{color:var(--green)} .tag.a{color:var(--amber)}
+.hcard h3{margin:.3rem 0 .4rem}
+.layout{display:grid;grid-template-columns:230px 1fr;gap:34px;align-items:start;margin-top:8px}
+@media(max-width:860px){.layout{grid-template-columns:1fr}}
+nav.toc{position:sticky;top:16px;background:var(--surface);border:1px solid var(--line);padding:14px 16px;font-size:.86rem}
+@media(max-width:860px){nav.toc{position:static}}
+nav.toc strong{display:block;font-family:var(--serif);margin-bottom:8px;font-size:.95rem}
+nav.toc a{display:block;padding:3px 0;text-decoration:none;color:var(--ink2)}
+nav.toc a:hover{color:var(--navy2);text-decoration:underline}
+section.block{background:var(--surface);border:1px solid var(--line);padding:24px 26px;margin-bottom:20px}
+@media(max-width:600px){section.block{padding:18px 16px}}
+.callout{padding:12px 16px;margin:12px 0;font-size:.94rem}
+.callout.warn{background:var(--amber-bg);border:1px solid var(--amber)}
+.callout.good{background:var(--green-bg);border:1px solid var(--green)}
+.callout.bad{background:var(--red-bg);border:1px solid var(--red)}
+.callout.neutral{background:var(--surface2);border:1px solid var(--line)}
+table{width:100%;border-collapse:collapse;font-size:.88rem;margin:12px 0}
+th,td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+th{background:var(--surface2);font-family:var(--sans);font-size:.8rem;letter-spacing:.03em}
+@media(max-width:700px){
+  table,thead,tbody,tr,th,td{display:block;width:100%}
+  thead{display:none}
+  td{border-top:none}
+  td:first-child{border-top:1px solid var(--line);font-weight:600;background:var(--surface2)}
+}
+blockquote.judge{background:var(--surface2);border-left:4px solid var(--navy);margin:12px 0;padding:14px 18px;font-family:var(--serif);font-size:.95rem}
+.badge{display:inline-block;font-size:.7rem;font-weight:700;letter-spacing:.05em;padding:2px 8px;border-radius:20px;vertical-align:middle}
+.badge.bind{background:var(--navy);color:#fff}
+.badge.pers{background:var(--surface2);color:var(--ink2);border:1px solid var(--line)}
+.badge.ver{background:var(--green-bg);color:var(--green);border:1px solid var(--green)}
+.badge.idx{background:var(--amber-bg);color:var(--amber);border:1px solid var(--amber)}
+.badge.none{background:var(--red-bg);color:var(--red);border:1px solid var(--red)}
+.checklist{list-style:none;padding-left:0}
+.checklist li{padding:8px 0 8px 30px;position:relative;border-bottom:1px solid var(--line)}
+.checklist li::before{content:"▢";position:absolute;left:4px;font-size:1.1rem;color:var(--navy2)}
+.checklist li:last-child{border-bottom:none}
+.kicker{font-size:.75rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--rust);margin-bottom:2px}
+details{border:1px solid var(--line);margin:10px 0;padding:0 14px;background:var(--surface)}
+summary{cursor:pointer;font-weight:600;padding:10px 0;font-family:var(--serif)}
+footer{font-size:.85rem;color:var(--muted);border-top:1px solid var(--line);padding-top:16px;margin-top:10px}
+.src{font-size:.85rem}
+.src li{margin:.45rem 0;word-break:break-word}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}
+.tabs button{font-family:var(--sans);font-size:.88rem;padding:8px 14px;border:1px solid var(--line);background:var(--surface2);color:var(--ink);cursor:pointer;border-radius:6px}
+.tabs button[aria-selected="true"]{background:var(--navy);color:#fff;border-color:var(--navy)}
+@media (prefers-color-scheme: dark){.tabs button[aria-selected="true"]{background:#2c5282}}
+.panel{display:none}.panel.on{display:block}
+</style>
+</head>
+<body>
+
+<header class="caption">
+  <div class="wrap">
+    <div class="court">Alameda County Superior Court · Case No. 26CV191136</div>
+    <h1>Research Memorandum: Ordering — or Compelling Reconsideration of — a § 679.10 Certification</h1>
+    <p class="sub"><em>Newanforbi v. California Highway Patrol, et al.</em> — Traditional mandate (Code Civ. Proc. §§ 1085, 1086) to obtain a Form I-918, Supplement B certification, or to vacate Captain Serrato’s April 20, 2026 denial and remand under court-defined legal rules.</p>
+    <div class="meta">
+      <span><strong>Petitioner:</strong> Brendan Ngehsi Newanforbi</span>
+      <span><strong>Date researched:</strong> October 24, 2026</span>
+      <span><strong>Status:</strong> Advocacy memorandum — research synthesis, not a filing</span>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+
+<div class="verdict">
+  <div class="kicker">Bottom line — read this first</div>
+  <h2>Lead with controlled remand. Plead direct certification in the alternative.</h2>
+  <p class="lead">Penal Code § 679.10(g)(1) says a certifying official “<strong>shall certify</strong> … <em>when</em> the victim was a victim of a qualifying criminal activity <em>and</em> has been helpful…” The signature is therefore <strong>conditionally mandatory</strong> — ministerial <em>once</em> the two predicates are found — but the statute assigns the official the job of <em>finding</em> those predicates. No published California decision found in this research has ordered an agency to sign a Supplement B, or held it could not. Direct certification is a first-impression prayer.</p>
+  <p>The viable writ theory is two-track, in this order of strength:</p>
+  <div class="hierarchy">
+    <div class="hcard primary">
+      <div class="tag g">Track 1 — Strongest · Primary prayer</div>
+      <h3>Vacatur + legally controlled remand</h3>
+      <p>The denial applied the wrong legal standard, ignored the (g)/(h)/(k) rules, relied on a prohibited ground, or rested on materially inaccurate facts — so the court vacates and orders reconsideration under specified legal rules <em>without dictating the outcome</em>. Anchors: <em>Common Cause</em>, <em>Saleeby</em>, <em>CCSO</em>.</p>
+    </div>
+    <div class="hcard alt">
+      <div class="tag a">Track 2 — High-risk · Alternative prayer</div>
+      <h3>Direct certification</h3>
+      <p>Available only if the court can lawfully find <em>both</em> predicates itself on undisputed or properly found facts <em>and</em> that only one reasonable exercise of discretion remains (<em>CCSO</em> at p. 827; <em>Common Cause</em>’s “no discretion to exercise” exception at p. 446). It collides with federal guidance treating signing as discretionary and with the Supplement B attestation problem (see §5).</p>
+    </div>
+  </div>
+  <p><strong>Framing rule:</strong> treat the two tracks as two levels of the <em>same</em> relief. First identify the findings that would compel certification. Then identify the minimum findings that make the existing denial legally unsustainable and require reconsideration under a court-defined framework. Build the record so the remand order does the work even if direct relief is denied — and invite that fallback expressly, so denial of direct relief does not become denial of the petition.</p>
+  <div class="callout warn"><strong>Confidence key used throughout:</strong> <span class="badge ver">Verified live</span> = full text read in the October 24, 2026 research session. <span class="badge idx">Index</span> = proposition appears in a search snippet or secondary reproduction and <strong>must be re-checked on the primary source before filing</strong>. No holding, quotation, or pincite in the underlying research was invented; gaps are listed in §17 and “Open questions.”</div>
+</div>
+
+<div class="layout">
+<nav class="toc" aria-label="Contents">
+  <strong>Contents — 17 deliverables</strong>
+  <a href="#s1">1 · Recommended remedial theory</a>
+  <a href="#s2">2 · Route to direct certification</a>
+  <a href="#s3">3 · Route to vacatur + remand</a>
+  <a href="#s4">4 · Required statutory findings</a>
+  <a href="#s5">5 · False imprisonment, element by element</a>
+  <a href="#s6">6 · Material-factual-error analysis</a>
+  <a href="#s7">7 · Traditional-mandate analysis</a>
+  <a href="#s8">8 · Evidence &amp; authentication plan</a>
+  <a href="#s9">9 · Opposition &amp; responses</a>
+  <a href="#s10">10 · Arguments to remove or narrow</a>
+  <a href="#s11">11 · Authority audit</a>
+  <a href="#s12">12 · Revised motion structure</a>
+  <a href="#s13">13 · Findings — direct certification</a>
+  <a href="#s14">14 · Findings — remand</a>
+  <a href="#s15">15 · Judgment &amp; writ language</a>
+  <a href="#s16">16 · Additional evidence needed</a>
+  <a href="#s17">17 · Revision checklist + open questions</a>
+  <a href="#sources">Sources</a>
+</nav>
+
+<main>
+
+<section class="block" id="s1">
+  <div class="kicker">Deliverable 1</div>
+  <h2>Recommended remedial theory</h2>
+  <p><strong>Theory in one sentence:</strong> CHP’s April 20, 2026 denial is reviewable traditional-mandate error — wrong legal standard, prohibited or irrelevant grounds, disregard of the helpfulness presumption, and/or dependence on materially inaccurate facts — and the court should therefore either (a) vacate and remand under binding legal directions, or (b) if it finds both § 679.10 predicates on a proper record and that no reasonable official could deny, order the designated official to sign.</p>
+  <h3>Why § 1085, not § 1094.5</h3>
+  <p>A § 679.10 certification denial involves <strong>no statutorily required evidentiary hearing</strong>, so the petition is properly under Code of Civil Procedure § 1085 (traditional mandate), not § 1094.5 (administrative mandate). Say so expressly to pre-empt a misclassification attack. Section 1094.5(b), (e), (f) language remains useful <em>by analogy</em> for abuse-of-discretion and remand framing — including its limiting proviso, which the agency will quote: on set-aside the court “may order the reconsideration of the case in light of the court’s opinion and judgment … <strong>but the judgment shall not limit or control in any way the discretion legally vested in the respondent</strong>” (§ 1094.5(f)). The controlled remand must therefore be drafted as <em>legal rules + issues + findings to be made</em>, not as a disguised direction to certify.</p>
+  <h3>The statute: conditionally mandatory, in two stages</h3>
+  <ul>
+    <li><strong>Predicate stage (discretionary):</strong> the official determines (i) victim of qualifying activity and (ii) helpfulness — past, present, or likely future. The statute does not say “in the official’s sole discretion,” but it assigns the determination to the official, and the federal scheme treats it as discretionary. A court may not simply substitute its view of a genuinely debatable predicate.</li>
+    <li><strong>Consequence stage (ministerial):</strong> once the predicates are established — by the agency’s own findings, by undisputed facts, or by a lawful court finding on review — “shall certify” leaves <strong>no residual discretion</strong> to refuse for other reasons, and § 679.10(k)(3) bars refusal on the listed grounds.</li>
+    <li><strong>What is reviewable:</strong> whether the predicate determination was made under the correct legal standard, on relevant evidence, without prohibited grounds or materially inaccurate facts, and with the (h) presumption applied. That is the traditional-mandate attack — not a claim that “shall” alone entitles petitioner to a signature on demand.</li>
+  </ul>
+  <p>The Commission on State Mandates reads the statute the same way in substance: the test-claim statute “mandates the certifying entity to complete a U Visa certification when it has determined in the normal course of existing law enforcement duties that the qualifying criminal activity occurred … and that the victim … has not refused or failed to provide information and assistance reasonably requested.” <span class="badge idx">Index</span></p>
+  <h3>Binding vs. persuasive — keep the tiers straight</h3>
+  <p>California Supreme Court cases (<em>Common Cause, Saleeby, Western States, Mercer, Sanders</em>) are <span class="badge bind">Binding</span> on the superior court. California Court of Appeal cases (<em>CCSO, Jackson, Espinoza</em>) are <span class="badge bind">Binding</span> on a superior court absent contrary Supreme Court authority. Fifth Circuit / federal district cases (<em>Ordonez Orosco, Yoni</em>) and USCIS guidance are <span class="badge pers">Persuasive only</span> — and critically, they construe <em>federal</em> law, which does not displace a <em>state</em> statutory duty under § 679.10. They are the agency’s best authority, not a jurisdictional bar. USCIS Administrative Appeals Office decisions are non-precedential agency adjudications.</p>
+</section>
+
+<section class="block" id="s2">
+  <div class="kicker">Deliverable 2</div>
+  <h2>Best route to direct certification</h2>
+  <p>Direct certification requires <strong>all</strong> of the following. The absence of any one defeats it and collapses the remedy to remand.</p>
+  <ol>
+    <li><strong>Both predicates found by the court</strong> — qualifying activity (false imprisonment, Pen. Code § 236, or a substantially similar offence under § 679.10(d), including § 146(a) pleaded that way) <em>and</em> helpfulness with the (h) presumption applied — on undisputed facts or facts found after a focused hearing under Code Civ. Proc. §§ 1090–1091.</li>
+    <li><strong>The “only one choice” showing:</strong> “Where only one choice can be a reasonable exercise of discretion, a court may compel an official to make that choice.” <em>California Correctional Supervisors Organization v. Department of Corrections</em> (2002) 96 Cal.App.4th 824, 827, citing <em>Bank of Italy v. Johnson</em> (1926) 200 Cal. 1, 31. <span class="badge ver">Verified live</span> This must be <em>proved</em>, not asserted: if any reasonable view of the probable-cause or helpfulness facts supports denial, the test fails.</li>
+    <li><strong>The <em>Common Cause</em> branch:</strong> the entity “has no discretion to exercise” (duty made ministerial by statute), <em>or</em> it “fails to exercise that discretion after being given a reasonable opportunity to do so” (the <em>Reinecke</em> branch). <em>Common Cause v. Board of Supervisors</em> (1989) 49 Cal.3d 432, 446. <span class="badge ver">Verified live</span> Note the posture candidly: <em>Common Cause</em> <em>reversed</em> an order requiring a particular discretionary programme — it is authority <em>against</em> direct relief where discretion remains.</li>
+    <li><strong>A truthful attestation is possible:</strong> the designated official can truthfully sign the Supplement B, including that the agency investigated the incident / qualifying activity (see the attestation problem in §5 of this memo / Q5 of the research). A court cannot order a false attestation.</li>
+    <li><strong>Narrow scope:</strong> the order directs only completion, signing, and forwarding of the Supplement B with the § 679.10(i)(1) specific details, by a date certain. It does not direct USCIS to grant status and does not decide substantial abuse, admissibility, or any other USCIS element. USCIS has sole jurisdiction over U petitions (8 C.F.R. § 214.14(c)(1)).</li>
+  </ol>
+  <div class="callout bad"><strong>The central vulnerability — plead it openly, do not hide it.</strong> CHP investigated a <em>DUI by the victim</em>, not a <em>false imprisonment by its own officer</em>. A Supplement B signed by CHP would attest the agency is investigating or prosecuting <em>false imprisonment</em> (8 C.F.R. § 214.14(c)(2)(i)). Petitioner’s best answer: § 679.10(k)(1) (no current investigation required) + the agency <em>did</em> investigate the underlying incident in the normal course, and the qualifying activity arises from that incident. The agency’s best answer: that reads “investigating or prosecuting [the qualifying activity]” out of the form. The research found this tension <strong>unresolved</strong> in the authorities. Do not present either reading as settled.</div>
+  <p><strong>Narrowest findings that could justify direct relief</strong> (avoid everything unnecessary): intentional restraint against will + absence of lawful authority (no probable cause, <em>or</em> no Pen. Code § 836 presence and no Veh. Code § 40300.5 trigger) + direct, proximate harm + unrebutted helpfulness presumption + no (k)(3) ground + only-one-reasonable-choice. See §13 for the full findings list.</p>
+  <p><strong>Do not</strong> ask the writ judge to sign the Supplement B personally as an alternative. A judge is a certifying official under 8 C.F.R. § 214.14(a)(2)–(3) and § 679.10(a)(3), (b)(3) — but the writ judge did not investigate or prosecute the officer’s conduct, and a judge-signed certification where the judge is also adjudicator raises attestation and impartiality problems no authority found addresses.</p>
+</section>
+
+<section class="block" id="s3">
+  <div class="kicker">Deliverable 3</div>
+  <h2>Best route to vacatur and mandatory reconsideration</h2>
+  <p>This is the <em>Saleeby</em> remedy, and the safest. In <em>Saleeby v. State Bar</em> (1985) 39 Cal.3d 547, the procedures were deficient because they denied an opportunity to be heard and “sufficient findings to afford review”; findings must be “sufficient to apprise interested parties and the courts of the bases for the administrative action” (id. at pp. 566–567, quoting <em>Topanga Assn. v. County of Los Angeles</em> (1974) 11 Cal.3d 506, 515–517 — findings “conduce the administrative body to draw legally relevant sub-conclusions” and “minimize the likelihood that the agency will randomly leap from evidence to conclusions”). The Court <em>declined</em> to decide the merits — “we have no basis on which to evaluate the bar’s determination” — remanded for further consideration, and stated: “We express no view on the merits of petitioner’s claim” (id. at p. 568). The peremptory writ commanded rule reformulation, a reasonable opportunity to be heard, and sufficient findings (id. at p. 575). <span class="badge ver">Verified live</span></p>
+  <h3>What the remand should require CHP to do</h3>
+  <ul>
+    <li>Vacate the April 20, 2026 denial and reconsider the original request;</li>
+    <li>Apply the correct definitions of qualifying criminal activity, including § 679.10(c)(18)–(19) and the (d) substantially-similar test (nature <em>and</em> elements);</li>
+    <li>Apply § 679.10(c), (d), (g), (h), (i), and (k) — including the (h) presumption and the (k)(1)–(3) prohibitions;</li>
+    <li>Consider the authenticated recording and other properly admitted evidence that was before the agency or properly before the court;</li>
+    <li>Correct any material factual error the court identifies with particularity;</li>
+    <li>Not treat absence of prosecution, conviction, or officer discipline as dispositive — § 679.10(k)(1)–(2) forecloses that;</li>
+    <li>Not rely on any § 679.10(k)(3) ground: (A) criminal history, (B) immigration history, (C) gang membership/affiliation, (D) belief USCIS will not approve, (E) open case with another entity, (F) extent of harm, (G) inability to produce a crime report, (H) cooperation/refusal in a separate case;</li>
+    <li>Consider helpfulness <em>separately</em> from qualifying victimhood;</li>
+    <li>If certification is again denied, provide the written explanation § 679.10(i)(2) requires (see the scope caution in §4); and</li>
+    <li>File a verified statement of compliance by a date certain (see the drafting caution in §15 — no CCP section verified in this research itself authorises a post-judgment compliance return; build it into the judgment).</li>
+  </ul>
+  <div class="callout good"><strong>Why this does not “dictate the result.”</strong> Forbidding reliance on a prohibited ground or a legally erroneous probable-cause theory is not controlling discretion — it is stating the law the discretion must be exercised <em>under</em>, which <em>Common Cause</em> expressly permits: mandamus lies “to compel an official both to exercise his discretion … and to exercise it under a proper interpretation of the applicable law” (49 Cal.3d at pp. 442–443). Requiring a <em>factual finding</em> (“you must find no probable cause”) <em>is</em> controlling discretion — unless the direct-certification test in §2 is met. Keep the remand on the lawful side of that line.</div>
+</section>
+
+<section class="block" id="s4">
+  <div class="kicker">Deliverable 4</div>
+  <h2>Required statutory findings — § 679.10 mapped</h2>
+  <p>Primary text: <a href="https://california.public.law/codes/penal_code_section_679.10">Penal Code § 679.10 (2025 text)</a> <span class="badge ver">Verified live</span> — cross-check against California Legislative Information before filing. The current statute runs to subdivision (o); (l)–(o) matter to remedy and victim status.</p>
+  <table>
+    <thead><tr><th>Subdivision</th><th>Rule</th><th>Use in the motion</th></tr></thead>
+    <tbody>
+      <tr><td><strong>(a) Certifying entity</strong></td><td>State/local law enforcement agency; prosecutor; judge; any other authority with responsibility for detection, investigation, or prosecution of a qualifying crime; agencies with criminal detection/investigative jurisdiction in their area.</td><td>Identify the correct respondent entity.</td></tr>
+      <tr><td><strong>(b) Certifying official</strong></td><td>Head of the entity; a supervisor specifically designated by the head; a judge; or a certifying official under 8 C.F.R. § 214.14(a)(2).</td><td>Respondent must be the entity <em>and</em>, where possible, the designated official — a writ against a line officer who is not designated invites a “wrong respondent” defence.</td></tr>
+      <tr><td><strong>(c) Qualifying activity</strong></td><td>“Same meaning as” INA § 101(a)(15)(U)(iii), “includes, but is not limited to” 28 items — including <strong>(18) unlawful criminal restraint</strong> and <strong>(19) false imprisonment</strong>. The list is expressly non-exhaustive.</td><td>Plead (c)(18)/(19) directly. Non-exhaustive language supports the (d) argument.</td></tr>
+      <tr><td><strong>(d) Substantially similar</strong></td><td>Includes offences whose “nature and elements” are substantially similar to (c), plus attempt, conspiracy, solicitation. Mirrors 8 C.F.R. § 214.14(a)(9).</td><td>Pen. Code § 146(a) is <strong>not</strong> enumerated in (c). Plead it, if at all, as substantially similar — by element comparison, not by label.</td></tr>
+      <tr><td><strong>(f) Police report</strong></td><td>On request, an agency with whom the victim filed a report “shall provide a copy … within seven days.”</td><td>Freestanding ministerial duty; breach supports a writ apart from certification, and refusal cannot then be used to fault the victim under (k)(3)(G).</td></tr>
+      <tr><td><strong>(g)(1) “Shall certify”</strong></td><td>“[A] certifying official … <strong>shall certify</strong> victim helpfulness on the Form I-918 Supplement B certification, <strong>when</strong> the victim was a victim of a qualifying criminal activity <strong>and</strong> has been helpful, is being helpful, or is likely to be helpful…” Forward without requiring government-issued ID.</td><td>The centre of the case. Conditionally mandatory — see §1.</td></tr>
+      <tr><td><strong>(g)(2)</strong></td><td>Victim need not be present in the U.S. when requesting or filing; may apply from outside the U.S.</td><td>Presence is not a predicate.</td></tr>
+      <tr><td><strong>(h) Helpfulness presumption</strong></td><td>Rebuttable presumption of helpfulness “if the victim has not refused or failed to provide information and assistance reasonably requested.” If the victim reasonably asserts they were unaware of a request, failure does not rebut.</td><td>The agency bears the practical burden: identify a <em>specific reasonable request</em> + refusal/failure. Silence or no request does not rebut. “Likely to be helpful” is forward-looking — no completed cooperation required. Where no entity requested information, the presumption is <em>stronger</em>, not weaker. Federal analogue: 8 C.F.R. § 214.14(b)(3).</td></tr>
+      <tr><td><strong>(i)(1) Signed certification</strong></td><td>Official “shall fully complete and sign” and include “specific details about the nature of the crime investigated or prosecuted and a detailed description of the victim’s helpfulness or likely helpfulness.”</td><td>Shows the Legislature expects particularised, reasoned decisions.</td></tr>
+      <tr><td><strong>(i)(2) Written denial</strong></td><td>“If a certifying entity does not certify …, they shall provide a written explanation for the denial. The written denial shall include specific details of any reasonable requests for cooperation and a detailed description of how the victim refused to cooperate.”</td><td><strong>Scope caution:</strong> read literally, the second sentence prescribes content for a denial <em>premised on non-cooperation</em>. Do <strong>not</strong> claim (i)(2) alone requires a crime-by-crime analysis. Argue instead: (a) a denial invoking non-cooperation without (i)(2) specifics is insufficient on its face; (b) a “no qualifying crime” denial with no reasoning is still vulnerable under <em>Saleeby</em>’s findings principle and as failure to proceed as required by law; (c) (i)(1) confirms particularised reasoning is expected.</td></tr>
+      <tr><td><strong>(j) Deadlines</strong></td><td>30 days from request; 7 days if the noncitizen is in removal proceedings; 7 days if a qualifying family member will lose eligibility within 60 days (sibling turning 18, child turning 21, victim turning 21).</td><td>Delay is a separate ministerial breach supporting urgency — but delay alone does not prove entitlement to certification.</td></tr>
+      <tr><td><strong>(k)(1)–(2)</strong></td><td>“A current investigation, the filing of charges, an apprehension of the suspect …, closing of a case, and a prosecution or conviction are <strong>not required</strong>.” Official “shall not refuse solely because a case has already been prosecuted or otherwise closed, or because the time for commencing a criminal action has expired.”</td><td>Forecloses “no prosecution = no certification.” <strong>Asymmetry to concede:</strong> (k)(1) says no <em>current</em> investigation is required; it does not eliminate the (g) helpfulness predicate. Answer with (h): likely helpfulness + presumption. Do not overclaim (k)(1).</td></tr>
+      <tr><td><strong>(k)(3) Prohibited grounds</strong></td><td>Shall not refuse for: (A) criminal history; (B) immigration history; (C) gang membership/affiliation; (D) belief the petition will not be approved by USCIS; (E) open case with another certifying entity; (F) extent of harm; (G) inability to produce a crime report; (H) cooperation/refusal in a <em>separate</em> case.</td><td>Any denial resting on these is “in derogation of the applicable legal standards” (<em>CCSO</em>, p. 827) on its face.</td></tr>
+      <tr><td><strong>(l)–(o)</strong></td><td>(l) Withdrawal only if victim refuses reasonably requested assistance. (m) No disclosure of immigration status except per federal law/process or authorisation. (n) Annual legislative reporting. (o) Victim categories: (o)(1) an entity <em>may</em> certify for direct, indirect, bystander/witness victims; (o)(2) direct victim = direct/proximate harm; (o)(3) indirect victim = qualifying family member of an incompetent/incapacitated/deceased direct victim; (o)(4) bystander/witness = unusually direct injury.</td><td>Agency will cite (o)(1)’s “may” as discretionary. Response: (o) expands <em>who</em> may be certified; (g) governs <em>when</em> certification must follow once victimhood + helpfulness are found.</td></tr>
+    </tbody>
+  </table>
+  <h3>Federal framework — what certification is and is not</h3>
+  <ul>
+    <li><strong>Statute/regulation:</strong> 8 U.S.C. § 1101(a)(15)(U); certification under 8 U.S.C. § 1184(p)(1); 8 C.F.R. § 214.14 (<a href="https://www.law.cornell.edu/cfr/text/8/214.14">Cornell LII text</a> <span class="badge ver">Verified live</span>). “Victim” = direct and proximate harm (§ 214.14(a)(14)); “any similar activity” = nature <em>and</em> elements substantially similar (§ 214.14(a)(9)).</li>
+    <li><strong>No conviction, prosecution, or ongoing investigation is required</strong> under either federal or California law. USCIS guidance: certification may issue at various stages, including before charges.</li>
+    <li><strong>Both sides of the determination:</strong> the Supplement B attests to <em>both</em> victimhood and helpfulness. USCIS guidance states certifying agencies “may be in the best position to determine if a qualifying crime has taken place” and that “[w]hether a certifying agency or official signs the certification is under the authority of the agency or official” (<a href="https://www.uscis.gov/sites/default/files/document/guides/U_Visa_Law_Enforcement_Resource_Guide.pdf">USCIS U Visa Law Enforcement Resource Guide</a> <span class="badge idx">Index</span>). USCIS then “determines, in its sole discretion, the credibility of and weight given to all of the evidence, including the Supplement B” (8 U.S.C. § 1184(p)(4)). The agency’s determination is <em>necessary</em> but not <em>sufficient</em> — a point to state expressly to defuse pre-emption objections: ordering certification is not ordering USCIS to grant status.</li>
+    <li><strong>State court’s role, in two senses:</strong> (1) <em>Mandate review</em> — the superior court necessarily decides, as a predicate to review, whether the agency’s qualifying-activity determination was legally erroneous, unsupported, or based on prohibited grounds. Ordinary judicial review; does not bind USCIS. (2) <em>Judge as certifier</em> — theoretically available, but not recommended here for the attestation reasons in §2.</li>
+  </ul>
+</section>
+
+<section class="block" id="s5">
+  <div class="kicker">Deliverable 5</div>
+  <h2>Element-by-element false-imprisonment analysis</h2>
+  <h3>The offences</h3>
+  <p><strong>Pen. Code § 236:</strong> “False imprisonment is the unlawful violation of the personal liberty of another.” (<a href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=PEN&sectionNum=236.">Legislative Information</a> <span class="badge idx">Index</span>) CALCRIM No. 1240: the prosecution must prove (1) the defendant intentionally and unlawfully restrained, detained, or confined a person; and (2) the act made that person stay or go somewhere against that person’s will. Felony false imprisonment adds violence, menace, fraud, or deceit (Pen. Code § 237(a)). <strong>No movement is required</strong> (that distinguishes § 236 from kidnapping, § 207) and <strong>no minimum duration</strong> — even a brief unlawful, non-consensual detention suffices.</p>
+  <p><strong>Pen. Code § 146(a):</strong> “Every public officer, or person pretending to be a public officer, who, under the pretense or color of any process or other legal authority, does any of the following, <strong>without a regular process or other lawful authority</strong>, is guilty of a misdemeanor: (a) Arrests any person or detains that person against his or her will…” (<a href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=146.&lawCode=PEN">Legislative Information</a> <span class="badge idx">Index</span>) Elements: (i) officer (or pretended-officer) status; (ii) under pretense/colour of process or legal authority; (iii) arrest/detention against will; (iv) absence of regular process <em>or other lawful authority</em>. § 146 is a misdemeanour; § 236 is a wobbler.</p>
+  <h3>Can an officer’s unlawful arrest be false imprisonment? Yes — in principle</h3>
+  <ul>
+    <li>“A police officer who makes an arrest without a warrant and without justification may be held civilly liable for false arrest and imprisonment” (<em>Dragna v. White</em> (1955) 45 Cal.2d 469, 471 <span class="badge idx">Index</span>); “false arrest is but one way of committing a false imprisonment” (<em>Asgari v. City of Los Angeles</em> (1997) 15 Cal.4th 744, 752 fn. 3 <span class="badge idx">Index</span>).</li>
+    <li>The converse immunity confirms the dividing line: Pen. Code § 847(b)(1) gives <em>no</em> civil liability only if “[t]he arrest was lawful, or the peace officer, at the time of the arrest, had reasonable cause to believe the arrest was lawful.” The scheme treats <em>lawfulness / reasonable cause to believe lawfulness</em> as the line — an arrest that is neither is the paradigm false imprisonment. This negative implication is petitioner’s best doctrinal anchor.</li>
+  </ul>
+  <h3>The concession that must be made — probable cause defeats the offence</h3>
+  <div class="callout warn"><strong>Probable cause — even if later shown debatable — defeats the § 236 / § 146 predicate, if it was objectively reasonable at the time.</strong> Probable cause “depends upon the reasonable conclusion to be drawn from the facts known to the arresting officer at the time of the arrest” (<em>Devenpeck v. Alford</em> (2004) 543 U.S. 146, 152–153 <span class="badge idx">Index</span>); the officer’s subjective motive is irrelevant; the question is whether a reasonable officer in the same position would conclude probable cause existed (<em>Espinoza v. Shiomoto</em> <span class="badge idx">Index</span>). Probable cause is “a probability or substantial chance of criminal activity, not an actual showing” (<em>District of Columbia v. Wesby</em> (2018) 583 U.S. 48, 57). Petitioner must therefore show <em>no</em> reasonable officer would have found probable cause — <em>or</em>, for § 146 / <em>Mercer</em>, no regular process and no other lawful authority (no Pen. Code § 836 basis and no Veh. Code § 40300.5 exception). Proof the DUI could not be proved beyond a reasonable doubt, or that charges were dropped, does <strong>not</strong> establish false imprisonment.</div>
+  <h3>The reasoning chain the court must adopt — step by step</h3>
+  <table>
+    <thead><tr><th>Step</th><th>What must be shown</th><th>Objection / response</th></tr></thead>
+    <tbody>
+      <tr><td>1. Intentional restraint</td><td>Officers intentionally restrained petitioner through commands, handcuffing, transportation, and custody.</td><td>Largely undisputed on a custody record; restraint element is the easy element. Do not spend briefing capital here.</td></tr>
+      <tr><td>2. Against will</td><td>Restraint was against petitioner’s will — compelled stay/go (CALCRIM 1240).</td><td>Submission to asserted authority under colour of law is not consent. Keep the showing factual and specific.</td></tr>
+      <tr><td>3. Justification judged at the time</td><td>The asserted legal justification is evaluated on facts known at the relevant time (<em>Devenpeck</em>; <em>Sanders</em> by analogy — see §6).</td><td>Agency will invoke totality + collective knowledge. Pin the timeline: who knew what, when, and what was communicated before arrest.</td></tr>
+      <tr><td>4. Justification undermined</td><td>Material evidence undermines the asserted lawful basis — no observed volitional movement (<em>Mercer</em>), no § 40300.5 trigger proved on pre-arrest facts, walk-and-turn discrepancy, PAS-refusal limits.</td><td>The contested step. Win on <em>both</em> prongs analysis: (a) no probable cause, <em>or</em> (b) probable cause but no § 836 presence + no § 40300.5 trigger.</td></tr>
+      <tr><td>5. Elements made out</td><td>On the facts found, the conduct supports § 236 or substantially similar § 146(a) conduct under § 679.10(d).</td><td><strong>Open extension — say so openly:</strong> no published California holding found holds a <em>Mercer</em>-unlawful DUI arrest <em>is</em> a § 236/§ 146 offence. <em>Mercer</em> was a licence-revocation case. Petitioner asks the court to extend it from licence law to criminal-activity characterisation.</td></tr>
+      <tr><td>6. Helpfulness</td><td>Petitioner provided information and remains willing to assist investigation of <em>that</em> conduct; (h) presumption unrebutted.</td><td>Plead specific information possessed and offered — a bare assertion of willingness, with nothing to give, is the agency’s best rebuttal.</td></tr>
+      <tr><td>7. Predicates satisfied</td><td>§ 679.10(g) conditions met; no (k) bar applies.</td><td>Keep victimhood and helpfulness as <em>separate</em> analyses — conflation is a briefing error (see §10).</td></tr>
+      <tr><td>8. Remedy</td><td>Refusal must be vacated for reconsideration — or replaced with a certification order if no lawful alternative remains (<em>CCSO</em> only-one-choice test).</td><td>Remedy follows the findings, not the rhetoric. See §§2–3.</td></tr>
+    </tbody>
+  </table>
+  <h3>Do not conflate a Fourth Amendment violation with the statutory crime</h3>
+  <ul>
+    <li>A Fourth Amendment violation turns on objective reasonableness / probable cause at seizure. A § 236 conviction additionally requires intentional, unlawful restraint proved beyond a reasonable doubt; § 146 requires the colour-of-authority + absence-of-lawful-authority elements.</li>
+    <li>A seizure can be <em>unconstitutional</em> without necessarily being a <em>crime</em> by the officer (good-faith mistaken arrest; § 847(b)(1)’s “reasonable cause to believe lawful” zone). Conversely, a seizure can be criminally unlawful in the § 146 sense even if Fourth Amendment analysis would focus on a different defect.</li>
+    <li><strong>Certification standard:</strong> petitioner does <em>not</em> need to prove the officer’s guilt beyond a reasonable doubt. § 679.10 asks whether the victim “was a victim of a qualifying criminal activity” and prescribes no burden of proof; no case found sets one. Argue the standard is the agency’s normal-course determination on a preponderance / reasonable-grounds showing — while candidly flagging the agency will demand more and the court has not ruled. Plead: “on the facts found, the elements are made out, and no lawful authority existed” — not “the officer committed § 236 beyond a reasonable doubt.”</li>
+  </ul>
+  <p><strong>Strongest factual theory:</strong> the arrest itself as the crime — intentional custody without probable cause <em>and</em> without an in-presence / § 40300.5 basis. <strong>Weakest / distracting facts:</strong> the urine cup (no verified authority links it to DUI or impairment — see §6), the initial vehicle-door opening as a lead theory, and any framing that the DUI investigation <em>alone</em> is a qualifying crime. Concede the DUI investigation alone is not; the petition stands or falls on the arrest’s lawfulness.</p>
+</section>
+
+<section class="block" id="s6">
+  <div class="kicker">Deliverable 6</div>
+  <h2>Material-factual-error analysis — probable cause, disciplined</h2>
+  <p><em>Scope discipline:</em> this is not a DUI suppression memorandum. Every factor below is included only because it advances (a) unlawful restraint, (b) materiality of CHP’s factual error, (c) invalidity of the denial, (d) need for reconsideration, or (e) direct certification. The standard is totality, judged objectively on facts known at arrest. Petitioner must win on <strong>both</strong> prongs: (1) no probable cause to believe DUI, <em>or</em> (2) probable cause but no § 40300.5 trigger (misdemeanour DUI + no § 836(a)(1) presence).</p>
+  <h3>The legal frame</h3>
+  <ul>
+    <li><strong>Veh. Code § 40300.5</strong> (<a href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=40300.5.&lawCode=VEH">Legislative Information</a> <span class="badge idx">Index</span>): in addition to Pen. Code § 836(a)(1), an officer may arrest without a warrant with reasonable cause to believe the person had been driving under the influence when: (a) traffic crash; (b) person observed in or about a vehicle obstructing a roadway; (c) person will not be apprehended unless immediately arrested; (d) person may cause injury to self or damage property unless immediately arrested; (e) person may destroy or conceal evidence unless immediately arrested. <strong>§ 40300.5 excuses <em>presence</em>, not probable cause</strong> — it still requires reasonable cause to believe the person <em>had been driving</em> under the influence. § 40300.6 requires liberal interpretation for arrests within a reasonable time/distance from a traffic accident.</li>
+    <li><strong><em>Mercer v. DMV</em> (1991) 53 Cal.3d 753</strong> <span class="badge bind">Binding</span>: § 23152 “requires proof of volitional movement of a vehicle”; because Pen. Code § 836 permits a warrantless misdemeanour arrest only if the offence occurs in the officer’s presence, and the officer did not see Mercer’s vehicle move, Mercer was not “lawfully arrested” for licence-revocation purposes (id. at pp. 769–770 <span class="badge idx">Index — re-check before filing</span>). <em>Mercer</em> also states observed movement is <em>not</em> necessary to support a <em>conviction</em> — conviction may rest on circumstantial proof of past movement. <strong>That distinction is the battleground:</strong> the agency conflates “could a jury find driving circumstantially?” with “was this a lawful in-presence arrest?” Different questions, different answers.</li>
+    <li><strong>Agency’s better § 40300.5 arguments</strong> are (e) — alcohol dissipates with time (<em>People v. Schofield</em> (2001) 90 Cal.App.4th 968 <span class="badge idx">Index</span>) — and, if petitioner was asleep at the wheel positioned to resume driving, (d). (c) is weak if petitioner was identified, stationary, and asleep — but the agency will argue flight risk once awakened. Each trigger must be proved with <em>pre-arrest</em> facts, not post hoc rationalisation.</li>
+  </ul>
+  <table>
+    <thead><tr><th>Fact</th><th>Petitioner</th><th>Agency</th><th>Assessment / remedial use</th></tr></thead>
+    <tbody>
+      <tr><td>Stationary vehicle; found asleep; no observed movement</td><td><em>Mercer</em>: no observed volitional movement → no § 836(a)(1) in-presence arrest. Sleep alone is not driving.</td><td>Alone in driver’s seat on a freeway shoulder supports an inference of recent driving (circumstantial-driving cases).</td><td><strong>Genuinely contested.</strong> Sleep + stationary defeats <em>presence</em>, not <em>circumstantial</em> reasonable cause that the person <em>had been</em> driving. Fight over § 40300.5. Supports remand; supports direct relief only joined with a failed § 40300.5 trigger.</td></tr>
+      <tr><td>Admission of earlier driving (Oakland toward Stockton)</td><td>—</td><td>Direct evidence of the driving element; with intoxication signs, classic probable-cause material.</td><td><strong>Strong for agency on driving</strong> <em>if</em> authenticated and pre-arrest. Does not alone prove <em>under the influence while driving</em> (vs. drinking after stopping) — press timing/sequence; do not deny admissions count.</td></tr>
+      <tr><td>Empty alcohol container</td><td>Proves at most past drinking — not intoxication while driving, not driving.</td><td>Visible container + other signs supports drinking-and-driving inference; routinely cited as PC material.</td><td><strong>Weak-to-moderate, cumulative only.</strong> Argue it is not, without more, PC of under-the-influence driving — do not argue it is legally irrelevant.</td></tr>
+      <tr><td>Cup identified as urine</td><td>No verified California authority treats a cup of urine as evidence of DUI or impairment. Shows nothing about alcohol/drug influence, driving, or timing.</td><td>May argue incapacitation / inability to care for self, supporting § 40300.5(d) — speculation without foundation linking the cup to intoxication.</td><td><strong>Weak for both; do not over-invest.</strong> Best use: arrest narrative padded with non-probative observations — only if the denial actually relied on it. Recommend substantially shortening (§10).</td></tr>
+      <tr><td>Odour / speech observations <em>not communicated</em> before arrest</td><td>PC is judged on “facts known to the arresting officer at the time” (<em>Devenpeck</em>). Uncommunicated observations by another officer cannot retroactively supply PC.</td><td>Collective-knowledge / fellow-officer doctrine if acting as a team or the observation was communicated, even briefly, before arrest. Arresting officer’s <em>own</em> observations count in full.</td><td><strong>Turns entirely on the record:</strong> who observed what, when, said what to whom. Pin it down by declaration / dispatch / recording timeline. No settled California “no imputation without communication” rule was verified — frame it as <em>Devenpeck</em>’s timing/knowledge requirement and force the agency to prove communication.</td></tr>
+      <tr><td>Odour alone (if communicated)</td><td>Odour shows <em>some</em> drinking, not impairment to the § 23152(a) standard (CALCRIM No. 2110: no longer able to drive with the caution of a sober person using ordinary care).</td><td>Odour + slurred speech + admission + container, in totality, is routinely held to be PC (cf. <em>Espinoza</em>).</td><td>Odour is a <strong>building block, not a conclusion</strong>. Secondary commentary arguing odour alone cannot be PC is commentary, not a holding — never cite it as law.</td></tr>
+      <tr><td>Freeway shoulder / § 40300.5(b) “obstructing a roadway”</td><td>Plead (b) as <em>not established on this record</em>; force the agency to prove obstruction (position, lane encroachment, hazard).</td><td>Vehicle position on/near a freeway may be characterised as obstruction.</td><td><strong>Unverified:</strong> no case found holds a vehicle lawfully stopped on a shoulder is, or is not, “obstructing a roadway.” “Roadway” is defined at Veh. Code § 530 (not verified in the research). Do <strong>not</strong> assert as law that a shoulder can never be obstruction.</td></tr>
+    </tbody>
+  </table>
+  <h3>Later-acquired evidence cannot retroactively justify the restraint</h3>
+  <p><strong><em>People v. Sanders</em> (2003) 31 Cal.4th 318</strong> <span class="badge bind">Binding</span>: “an otherwise unlawful search … may not be justified by the circumstance that the suspect was subject to a search condition of which the law enforcement officers were unaware when the search was conducted” (id. at p. 335 <span class="badge idx">Index</span>); “such a search cannot be justified as a parole search, because the officer is not acting pursuant to the conditions of parole” (id. at p. 333 <span class="badge idx">Index</span>). <strong>Scope limit — state it openly:</strong> <em>Sanders</em> is a <em>search</em> case about an unknown parole search condition, not an arrest/probable-cause case. Its value is analogical + timing: justification is judged by what the officer knew and acted pursuant to <em>at the time</em>.</p>
+  <ul>
+    <li><strong>Post-arrest blood result:</strong> cannot create pre-arrest probable cause. It <em>can</em> be circumstantial evidence of intoxication around arrest <em>if</em> bridged by expert retrograde extrapolation (cf. <em>Jackson</em>, 189 Cal.App.4th at pp. 1465, 1468). A bare BAC number — no timing, no rising/falling analysis, no test foundation — proves little about PC at arrest and nothing about driving. Conversely, a low/zero later BAC does not alone prove no PC existed. A high BAC helps the agency on “was this person in fact under the influence?” — not on the <em>legal</em> question that matters for the § 236/§ 146 predicate: probable cause <em>and</em> a § 40300.5 trigger <em>before</em> arrest.</li>
+    <li><strong>Warrant obtained after arrest:</strong> cannot retroactively make the warrantless arrest lawful (general Fourth Amendment timing principle, <em>Devenpeck</em>). No California case on a post-arrest warrant curing a DUI arrest was verified — plead the principle, not an invented holding.</li>
+    <li><strong>Dispatch parole information learned after arrest:</strong> the <em>Sanders</em> analogy is strongest here — unknown status cannot justify the seizure/search after the fact. Caveat: information received <em>before</em> arrest and communicated counts. And parole status alone is not probable cause of DUI; it is at most a search-condition justification that must have been known and acted on.</li>
+  </ul>
+  <h3>PAS refusal — <em>Jackson</em>’s precise, narrow use</h3>
+  <p>Veh. Code § 23612(h)–(i) <span class="badge idx">Index</span>: a PAS test “may be used by an officer as a further investigative tool” to establish reasonable cause; the officer must advise of the right to refuse, and that the post-arrest chemical-test obligation is not satisfied by a PAS test. <strong><em>People v. Jackson</em> (2010) 189 Cal.App.4th 1461, 1466–1469</strong> <span class="badge ver">Verified live reproduction</span>: because § 23612 confers a right to refuse with required advisement, “it makes little sense to grant a right of refusal yet allow the prosecution to admit evidence of that refusal to establish consciousness of guilt” — admission at <em>trial</em> as consciousness of guilt was error (harmless on Jackson’s strong facts). <em>Jackson</em> distinguishes <em>standard FST refusal</em>, which <em>is</em> routinely admitted (<em>Marvin v. DMV</em> (1984) 161 Cal.App.3d 717, 719–720).</p>
+  <div class="callout warn"><strong>Scope — do not overcite <em>Jackson</em>.</strong> <em>Jackson</em> is a <em>trial-evidence</em> holding. It does <strong>not</strong> hold an officer may not consider PAS refusal in the pre-arrest totality. Use it only for: (1) scepticism where PAS refusal is the <em>central or sole</em> inculpatory fact — treating exercise of the right as inculpatory defeats the right; (2) PAS refusal must not be conflated with FST refusal — a PC narrative citing undifferentiated “refusal to cooperate with testing” is legally inaccurate; (3) if no § 23612(i) advisement was given, the refusal was not a knowing exercise of the right and its weight falls further. The agency’s response — objective totality, refusal as one factor, harmless-error affirmance — is credible where other PC facts exist.</div>
+  <h3>Detention certificate (Pen. Code §§ 849.5, 851.6) — what it does not prove</h3>
+  <p>When a person is arrested and released without an accusatory pleading, the event “shall not be deemed an arrest, but a detention only” (§ 849.5), and the agency must issue a certificate describing it as a detention (§ 851.6) <span class="badge idx">Index — verify exact text on Legislative Information before filing</span>. It proves <em>no charges were filed</em> and governs record/disclosure treatment. It does <strong>not</strong> adjudicate probable cause, prove the arrest unlawful, prove false imprisonment, or erase the detention. Use it only to show the DUI investigation ended without prosecution (consistent with § 679.10(k)(1)) and to rebut “charges prove a crime occurred.” Do not plead it as a finding of unlawful arrest.</p>
+  <h3>The walk-and-turn discrepancy — make it remedially useful</h3>
+  <p><strong>The conflict as framed in the brief:</strong> CHP Form 202 reportedly states petitioner chose not to perform the walk-and-turn because it was difficult and later relies on poor field-test performance; the recording indicates petitioner expressed willingness to attempt the test and Officer Melano decided not to administer it because the freeway shoulder was uneven. <em>(Record characterisations are as framed in the motion materials; the research did not independently resolve the underlying facts — see §8 authentication.)</em></p>
+  <ul>
+    <li><strong>Frame it as outcome-dependence, not a credibility sideshow.</strong> Materiality = the denial <em>depends</em> on the inaccurate fact. If the denial’s probable-cause linchpin was “poor field-test performance” / refusal, and the recording shows the test was never administered by the officer’s own choice, the finding lacks substantial support and the decision “randomly leap[s] from evidence to conclusions” (<em>Topanga</em> via <em>Saleeby</em>). If other PC facts remain independently sufficient, concede the discrepancy alone is immaterial — do not let it taint the petition’s credibility.</li>
+    <li><strong>Join it, don’t rest on it alone.</strong> Joined with (a) no observed movement / failed § 40300.5 trigger, (b) the PAS/FST conflation, and (c) any uncommunicated-observation gap, the discrepancy shows a <em>pattern</em>: the stated PC basis was materially inaccurate in a respect the denial relied on. Alone, it supports remand at most; joined, it supports the material-error finding in §14.</li>
+    <li><strong>Can the court resolve it?</strong> Yes — if the recording is authenticated, the court can compare Form 202 against the recording and documents without a swearing contest. If authentication or audibility is genuinely disputed, the route is a focused hearing (§7), not denial.</li>
+    <li><strong>Remedy supported:</strong> primarily <strong>remand</strong> (correct the material error and reconsider). It supports direct certification only as one link in the full only-one-choice chain in §2.</li>
+    <li><strong>Precise finding to request:</strong> “The April 20, 2026 denial relied on [the specified Form 202 characterisation of the walk-and-turn]. The authenticated recording shows [the specified contrary fact]. That reliance was material because [the specified role the fact played in the stated basis for arrest/custody and in the denial].” Fill the brackets from the authenticated record only — never from assertion.</li>
+  </ul>
+  <h3>What counts as “materially inaccurate” in mandate law</h3>
+  <p>No single California mandate case found states a freestanding “materially inaccurate fact = abuse of discretion” rule in those words. Build it from: a finding with <em>no</em> substantial evidentiary support, or a decision resting on a fact the record affirmatively disproves, is arbitrary / “beyond the bounds of reason” (<em>CCSO</em>, p. 827); a decision that ignores considerable relevant evidence before the agency is an abuse (<em>Citizens Assn. for Sensible Development of Bishop Area v. County of Inyo</em> (1985) 172 Cal.App.3d 151 <span class="badge idx">Index</span>, citing <em>No Oil</em> and <em>Brentwood Assn.</em> — “an agency may not refuse to consider uncontradicted testimony based upon objective data”); and a decision without findings showing its mode of analysis is unreviewable (<em>Saleeby/Topanga</em>). <strong>Tie every alleged inaccuracy to a predicate</strong> (probable cause, helpfulness, qualifying crime) and show the denial <em>depends</em> on it.</p>
+</section>
+
+<section class="block" id="s7">
+  <div class="kicker">Deliverable 7</div>
+  <h2>Traditional-mandate analysis — what the court may and may not do</h2>
+  <p><strong>Statutes:</strong> Code Civ. Proc. § 1085(a) — mandate lies “to compel the performance of an act which the law specially enjoins, as a duty resulting from an office, trust, or station…” § 1086 — writ “must be issued in all cases where there is not a plain, speedy, and adequate remedy, in the ordinary course of law” and “upon the verified petition of the party beneficially interested.” <span class="badge idx">Index</span> Petitioner’s two showings (<em>CCSO</em>, 96 Cal.App.4th at p. 827, quoting <em>People ex rel. Younger v. County of El Dorado</em> (1971) 5 Cal.3d 480, 490–491): (1) a clear, present, usually ministerial duty on the respondent; (2) a clear, present, beneficial right in the petitioner. <span class="badge ver">Verified live</span></p>
+  <table>
+    <thead><tr><th>Power</th><th>Rule</th><th>Key authority</th></tr></thead>
+    <tbody>
+      <tr><td>(i) Compel a mandatory duty</td><td>“Mandamus will lie to compel a public official to perform an official act required by law. Mandamus will not lie to control an exercise of discretion… Mandamus may issue, however, to compel an official both to exercise his discretion (if he is required by law to do so) and to exercise it under a proper interpretation of the applicable law.” Also lies “to correct an abuse of discretion by an official acting in an administrative capacity.”</td><td><em>Common Cause</em>, 49 Cal.3d at pp. 442–443 <span class="badge ver">Verified live</span></td></tr>
+      <tr><td>(ii) Order reconsideration under specified legal rules</td><td>The core <em>Saleeby</em> remedy: vacate, remand for reconsideration following corrected procedures, with sufficient findings, expressing no view on the merits unless the only-one-choice test is met.</td><td><em>Saleeby</em>, 39 Cal.3d at pp. 566–568, 575 <span class="badge ver">Verified live</span></td></tr>
+      <tr><td>(iii) Limit issues / findings on remand</td><td>Court states governing law and questions the agency must answer; agency decides them. Boundary: § 1094.5(f) proviso by analogy + <em>Common Cause</em> p. 446 — court “should not require a particular remedy unless [the entity] has no discretion to exercise… or unless… it fails to exercise that discretion after being given a reasonable opportunity.” Forbidding a prohibited ground = stating the law (permitted). Requiring a factual finding = controlling discretion (not permitted, absent (iv)).</td><td><em>Common Cause</em> p. 446 <span class="badge ver">Verified live</span></td></tr>
+      <tr><td>(iv) Order a particular result</td><td>Only where “only one choice can be a reasonable exercise of discretion.” Otherwise discretion abused only if the official acted “arbitrarily, beyond the bounds of reason or in derogation of the applicable legal standards.”</td><td><em>CCSO</em> p. 827 <span class="badge ver">Verified live</span></td></tr>
+      <tr><td>(v) Findings / focused hearing</td><td>§ 1090: court may, in its discretion, order an essential fact question “tried before a jury” (rare). § 1091: petitioner “is not precluded by the return from any valid objection to its sufficiency, and may countervail it by proof either in direct denial or by way of avoidance.” Practical route: focused hearing on declarations + agency record + authentication. <em>Western States</em> preserves extra-record evidence for <em>ministerial or informal</em> actions where facts are in dispute (9 Cal.4th at p. 576) — a § 679.10 decision is an individual, informal determination, not quasi-legislative rulemaking. Make that classification argument expressly.</td><td>CCP §§ 1090, 1091 <span class="badge idx">Index</span>; <em>Western States</em> p. 576 <span class="badge ver">Verified live</span></td></tr>
+      <tr><td>(vi) Retain jurisdiction / compliance return</td><td><strong>No CCP section verified in this research itself authorises a post-judgment “verified compliance return.”</strong> § 1089’s “return” (demurrer / verified answer) is the respondent’s <em>pleading</em> to the petition — not a compliance return. What is supported: <em>Saleeby</em> reserved jurisdiction for a defined post-judgment purpose (attorney fees, p. 575), and a peremptory writ is enforceable by further order/contempt (general principle; do not cite § 1097 — it was not verified). Draft the compliance mechanism into the <em>judgment</em> (see §15) and present it as the court’s power to enforce its writ, by analogy to <em>Saleeby</em> — not as a right conferred by § 1089.</td><td><em>Saleeby</em> p. 575 <span class="badge ver">Verified live</span></td></tr>
+    </tbody>
+  </table>
+  <h3>Abuse of discretion — the four pleadable forms</h3>
+  <ul>
+    <li><strong>Legal error / wrong standard:</strong> denial applies a federal “wholly discretionary” standard instead of § 679.10(g)/(h)/(k), or treats a (k)(3) ground as a reason — “in derogation of the applicable legal standards” (<em>CCSO</em> p. 827) on its face. Failure to apply the correct standard is itself a ground for the writ, without proving the ultimate outcome (<em>Common Cause</em> pp. 442–443).</li>
+    <li><strong>Failure to consider relevant evidence:</strong> denial ignores considerable evidence before the agency, or refuses to consider uncontradicted testimony on objective data (<em>Bishop Area</em>, 172 Cal.App.3d 151 <span class="badge idx">Index</span>). <em>Provided</em> the ignored evidence was actually before the agency or properly before the court under (v).</li>
+    <li><strong>No findings / unreviewable reasoning:</strong> conclusory denial with no mode of analysis (<em>Saleeby/Topanga</em>).</li>
+    <li><strong>Failure to exercise discretion at all:</strong> “While mandamus will not lie to compel governmental officials to exercise their discretionary powers in a particular manner, it will lie to compel them to exercise them in some manner” (<em>Ballard v. Anderson</em> (1971) 4 Cal.3d 873, 884; <em>Sego v. Santa Monica Rent Control Bd.</em> (1997) 57 Cal.App.4th 250, 255 <span class="badge idx">Index</span>).</li>
+  </ul>
+  <h3><em>Western States</em> — extra-record evidence, stated precisely</h3>
+  <p><em>Western States Petroleum Assn. v. Superior Court</em> (1995) 9 Cal.4th 559 <span class="badge bind">Binding</span> <span class="badge ver">Verified live</span>: for <em>quasi-legislative</em> decisions, courts “generally may not consider evidence not contained in the administrative record” (p. 565) and extra-record evidence is “generally not admissible” to show failure to proceed as required by law (pp. 565, 575–576). <strong>Preserved exception:</strong> “we will continue to allow admission of extra-record evidence in traditional mandamus actions challenging ministerial or informal administrative actions if the facts are in dispute” (p. 576). Narrow quasi-legislative exception: evidence (1) existed before the decision and (2) could not with reasonable diligence have been presented before decision (p. 578). Extra-record evidence “can never be admitted merely to contradict the evidence the administrative agency relied on… or to raise a question regarding the wisdom of that decision” for quasi-legislative decisions (p. 579). <strong>Do not cite <em>Western States</em> as if it generally permits extra-record evidence</strong> — the agency will quote pp. 565, 575–576 back. Frame the argument as: (a) informal/ministerial action within p. 576; and (b) in the alternative, the evidence existed before the denial and could not have been presented if the agency gave no opportunity to be heard / never disclosed its basis — a <em>Saleeby</em> defect that itself justifies remand for consideration of the evidence.</p>
+  <h3>Credibility and standard of review</h3>
+  <ul>
+    <li>A writ court <em>can</em> resolve credibility where it takes evidence and makes findings (§§ 1090–1091 presuppose it). It may <em>not</em> disbelieve the return on papers alone and substitute a credibility finding without an evidentiary basis. The agency’s “writ courts cannot resolve credibility” argument is overbroad as stated, correct only in its narrow paper-record form. Ask for the focused hearing; fallback is remand for agency fact-finding on specified issues — not denial.</li>
+    <li>On appeal: trial-court findings reviewed for substantial evidence; the appellate court “may make its own determination when the case involves resolution of questions of law where the facts are undisputed” (<em>CCSO</em> p. 827, quoting <em>Saathoff v. City of San Diego</em> (1995) 35 Cal.App.4th 697, 700). Statutory interpretation and application of law to undisputed facts are reviewed de novo (cf. <em>CV Amalgamated LLC v. City of Chula Vista</em> (2022) 82 Cal.App.5th 265, 279–280 <span class="badge idx">Index</span>). Hearing mechanics: § 1094 (no return → heard on applicant’s papers; return raising only law → court proceeds; § 1088.5 no-triable-issue petitions may be determined by noticed motion) <span class="badge idx">Index</span>.</li>
+  </ul>
+  <div class="callout neutral"><strong>Five things to keep distinct in briefing:</strong> (1) compelling a mandatory duty; (2) ordering reconsideration; (3) directing the agency to apply specified legal rules; (4) the court resolving disputed facts (only via §§ 1090–1091 process); (5) improperly substituting judgment for agency discretion. Every paragraph of the motion should be assignable to (1)–(4). If it reads as (5), rewrite it.</div>
+</section>
+
+<section class="block" id="s8">
+  <div class="kicker">Deliverable 8</div>
+  <h2>Evidence and authentication plan</h2>
+  <p><strong>Threshold rule:</strong> Evidence Code §§ 1400–1401 <span class="badge idx">Index</span> — authentication is required before a writing (including a transcript as secondary evidence of a recording’s contents) may be received. The threshold is low: “evidence sufficient to sustain a finding that it is the writing that the proponent claims it is” (§ 1400) — e.g., testimony of a witness with personal knowledge (§ 1410 <span class="badge idx">Index</span>), distinctive characteristics, or the agency’s own production/reliance. An unauthenticated transcript is not evidence of what was said.</p>
+  <table>
+    <thead><tr><th>Assertion / exhibit</th><th>What it needs</th><th>If it cannot be cured</th></tr></thead>
+    <tbody>
+      <tr><td>Recording contents (incl. walk-and-turn exchange; door chronology; advisements)</td><td>Native recording + authenticating declaration from recorder/custodian or witness with personal knowledge; transcript tied to the recording by declaration. Prefer the agency’s own production of the recording.</td><td>Do not rely on the transcript for a <em>predicate</em> fact. Rely on it only to show the agency’s stated basis is unsupported, or seek remand for the agency to consider the authenticated recording.</td></tr>
+      <tr><td>Form 202 characterisations; CHP reports; dispatch log; beat/incident records</td><td>Certified agency records or agency-produced copies with custodian foundation; pinpoint page/line cites.</td><td>Argue from the agency’s own return/record — agency records are not “extra-record” at all.</td></tr>
+      <tr><td>Pre-arrest timeline (observations, communications, admission, advisement)</td><td>Declarations pinning who observed what, when, and what was communicated to the arresting officer before arrest; dispatch timestamps; recording timestamps reconciled to reports.</td><td>Without a pinned timeline, the probable-cause / collective-knowledge fight is lost on papers — seek the focused hearing or remand for fact-finding.</td></tr>
+      <tr><td>§ 23612(i) PAS advisement (given or not given)</td><td>Recording + declaration. Absence must be proved, not assumed.</td><td>Drop the “unknowing refusal” weight argument; keep only the PAS/FST conflation point if the narrative supports it.</td></tr>
+      <tr><td>Blood result</td><td>Timing, chain/foundation, and — if used to prove intoxication at driving/arrest time — expert retrograde extrapolation. Without that bridge, limit both sides’ use of the number.</td><td>Argue the legal point only: a later result cannot retroactively supply pre-arrest probable cause.</td></tr>
+      <tr><td>Helpfulness</td><td>Petitioner declaration with <em>specifics</em>: information possessed, statements given, cooperation offered, continued availability; any agency request (or absence of any request) identified with dates.</td><td>A bare willingness assertion invites the agency’s best rebuttal. Do not file helpfulness on assertion alone.</td></tr>
+      <tr><td>Denial letter</td><td>The April 20, 2026 letter itself, plus the certification request and proof of receipt (for the (j) deadline analysis).</td><td>—</td></tr>
+      <tr><td>Detention certificate (§§ 849.5/851.6)</td><td>The certificate itself; verify statutory text on Legislative Information before characterising it.</td><td>Use only for the narrow “no charges filed” point (§6).</td></tr>
+    </tbody>
+  </table>
+  <p><strong>Classification discipline:</strong> for every factual assertion in the motion, label it in drafting as needing (a) the native recording, (b) a custodian/officer declaration, (c) a certified agency record, (d) a properly authenticated exhibit, (e) testimony at an evidentiary hearing, or (f) a more carefully worded petitioner declaration. Assertions that fit none of (a)–(f) do not go in the motion.</p>
+</section>
+
+<section class="block" id="s9">
+  <div class="kicker">Deliverable 9</div>
+  <h2>Likely CHP opposition and responses — all 13 arguments</h2>
+  <p>Use the tabs to work argument by argument. “Supports” = the remedy level the issue can carry if petitioner wins it.</p>
+  <div class="tabs" role="tablist" aria-label="Opposition arguments">
+    <button role="tab" aria-selected="true" data-p="o1">1–4 · Discretion &amp; crime</button>
+    <button role="tab" aria-selected="false" data-p="o2">5–8 · Facts &amp; proof</button>
+    <button role="tab" aria-selected="false" data-p="o3">9–13 · Helpfulness &amp; authority</button>
+  </div>
+  <div class="panel on" id="o1">
+    <table>
+      <thead><tr><th>CHP argument</th><th>Best authority for CHP</th><th>Best response</th><th>Supports</th></tr></thead>
+      <tbody>
+        <tr><td><strong>1. Certification is discretionary, full stop</strong></td><td>USCIS Guide: signing “is under the authority of the agency or official”; <em>Ordonez Orosco v. Napolitano</em>, 598 F.3d 222, 225–226 (5th Cir. 2010): certification decision “is a discretionary one” because helpfulness “is not an objective determination that can be made ministerially”; <em>Yoni v. Stawinski</em> (D.Md. 2018) <span class="badge idx">Index</span> — all <span class="badge pers">Persuasive only</span>, construing federal law.</td><td>Federal discretion does not repeal a state “shall.” California enacted § 679.10(g)(1) + (h) presumption + (k) prohibitions. Synthesis: discretion over predicate findings, ministerial consequence once found. <em>Ordonez</em> was a federal suit against federal officials, not a § 1085 petition under a state mandate statute — distinguish posture and sovereign. <em>Briefing line:</em> “Respondents’ federal authorities answer a question California law does not ask.”</td><td>Remand (primary); direct only via §2 test</td></tr>
+        <tr><td><strong>2. Court cannot order certification</strong></td><td><em>Common Cause</em>, 49 Cal.3d at pp. 442–443, 446: mandamus “will not lie to control an exercise of discretion”; no particular remedy unless no discretion remains.</td><td><em>Common Cause</em> also permits compelling exercise of discretion “under a proper interpretation of the applicable law” and correcting abuse of discretion (p. 442). Lead with controlled remand (<em>Saleeby</em>); reserve direct relief for the <em>CCSO</em> only-one-choice showing (p. 827).</td><td>Remand</td></tr>
+        <tr><td><strong>3. No qualifying crime — at most a disputed DUI investigation</strong></td><td>§ 679.10(c)/(g) predicate: petitioner must show a <em>listed or substantially similar</em> crime. Agency investigated DUI, not false imprisonment.</td><td>Plead the crime as the <em>arrest itself</em>: without PC and a § 40300.5 trigger, it is § 236 / substantially similar § 146(a) conduct. The DUI investigation is the <em>incident</em> investigated, with the crime correctly characterised. Concede the DUI investigation alone is not a qualifying crime. (k)(1): no prosecution/conviction of the officer is required.</td><td>Both — gateway issue</td></tr>
+        <tr><td><strong>4. Probable cause existed</strong></td><td><em>Devenpeck</em> objective test; <em>Espinoza</em> reasonable-officer test; totality (admission + container + odour/speech + asleep in car); § 847(b)(1) reasonable-cause shield.</td><td>Concede debatable PC defeats the predicate. Win only by pinning the pre-arrest timeline (uncommunicated observations excluded) and showing no § 40300.5 trigger on pre-arrest facts. If admission + impairment signs were pre-arrest and communicated, do not pursue direct relief on this theory — pursue remand on helpfulness / (i)(2) / prohibited grounds.</td><td>Direct only if timeline is won; otherwise remand on other grounds</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="panel" id="o2">
+    <table>
+      <thead><tr><th>CHP argument</th><th>Best authority for CHP</th><th>Best response</th><th>Supports</th></tr></thead>
+      <tbody>
+        <tr><td><strong>5. A single discrepancy is immaterial</strong></td><td>Substantial-evidence deference; a decision is not arbitrary merely because the record contains an inconsistency; courts do not reweigh (<em>Western States</em> pp. 573–574; <em>CCSO</em> deference).</td><td>Materiality is outcome-dependence: if the denial <em>depends</em> on the inaccurate fact and that fact was the PC linchpin, the finding lacks substantial support and the decision “randomly leap[s] from evidence to conclusions” (<em>Topanga</em> via <em>Saleeby</em>). If the discrepancy is peripheral, concede immateriality (see §6 walk-and-turn).</td><td>Remand; direct only as one link</td></tr>
+        <tr><td><strong>6. PAS refusal supports arrest</strong></td><td><em>Marvin</em> (FST refusal = consciousness of guilt); <em>Espinoza</em> (odour + FST refusal reasonably read as consciousness of guilt; objective test).</td><td><em>Jackson</em> distinguishes PAS from FST: § 23612(i) creates a <em>right</em> to refuse PAS with required advisement; trial use as consciousness of guilt was error (pp. 1466–1469). Argue <em>weight</em>, not exclusion: PAS refusal cannot be the central PC fact and must not be conflated with FST/chemical-test refusal. No advisement → weight falls further.</td><td>Corroboration for remand</td></tr>
+        <tr><td><strong>7. Writ courts cannot resolve credibility</strong></td><td><em>Western States</em> quasi-legislative bar (pp. 565, 575–576); substantial-evidence deference.</td><td><em>Western States</em> p. 576 preserves fact disputes for ministerial/informal actions; §§ 1090–1091 contemplate trial of essential facts and countervailing proof. Court <em>can</em> hold a focused hearing — it cannot resolve a swearing contest on papers by fiat. Ask for the hearing; fallback is remand for fact-finding, not denial.</td><td>Procedural — unlocks either remedy</td></tr>
+        <tr><td><strong>8. Recording/transcript authentication</strong></td><td>Evid. Code §§ 1400–1401: authentication required; unauthenticated transcript is not evidence of what was said.</td><td>Threshold is low (§ 1400): personal-knowledge testimony (§ 1410), distinctive characteristics, or the agency’s own production/reliance. Cure by recorder/custodian declaration or stipulation (see §8). If incurable, do not rest a predicate fact on the transcript.</td><td>Procedural</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="panel" id="o3">
+    <table>
+      <thead><tr><th>CHP argument</th><th>Best authority for CHP</th><th>Best response</th><th>Supports</th></tr></thead>
+      <tbody>
+        <tr><td><strong>9. Denial letter was sufficient</strong></td><td>§ 679.10(i)(2) literal text: cooperation specifics required — inapposite if denial was on “no qualifying crime,” not non-cooperation.</td><td>(a) If the denial invokes non-cooperation even in passing, (i)(2) is triggered and its absence violates the statute. (b) Even for a crime-based denial, <em>Saleeby/Topanga</em> require findings “sufficient to apprise … the courts of the bases” (pp. 566–567) — a conclusory letter with no § 236/§ 146(a)/similarity, PC, or helpfulness analysis is unreviewable and must be vacated. (c) (i)(1)’s “specific details” duty confirms particularised reasoning is expected.</td><td>Remand</td></tr>
+        <tr><td><strong>10. No duty to accept petitioner’s characterisation</strong></td><td>Agency is fact-finder for its certification; review is for abuse of discretion, not de novo substitution (<em>CCSO; Western States</em>).</td><td>Agree — and reframe: the motion does not ask the court to “accept petitioner’s characterisation.” It asks the court to hold the agency to <em>its own record</em> and the <em>correct legal standards</em>. Deference does not extend to legal error: a characterisation resting on a wrong standard is “in derogation of the applicable legal standards” (<em>CCSO</em> p. 827) regardless of deference.</td><td>Remand</td></tr>
+        <tr><td><strong>11. Helpfulness not established (no entity requested information)</strong></td><td>8 C.F.R. § 214.14(b)(3), (c)(2)(i): helpfulness is <em>to</em> an investigation/prosecution; if none exists and no request was made, there is nothing to have been helpful <em>to</em>.</td><td>§ 679.10(h) presumption + “likely to be helpful” (g)(1): no request = no refusal = presumption <em>unrebutted</em>. Agency must identify a specific reasonable request + refusal/failure; “no one asked” is not a refusal. (k)(1): no current investigation required. Petitioner must still show readiness + specific information possessed/offered.</td><td>Both — second predicate</td></tr>
+        <tr><td><strong>12. Extra-record evidence barred</strong></td><td><em>Western States</em> pp. 565, 575–576; § 1094.5(e) analogy (record-only review).</td><td>P. 576 preservation for ministerial/informal actions + §§ 1090–1091 + narrow p. 578 exception (existed before decision + could not with reasonable diligence have been presented). Agency records (report, recording, dispatch log) are not “extra-record” at all. Do not offer post-decision expert reports to contradict the agency’s wisdom — p. 579 forbids that.</td><td>Procedural</td></tr>
+        <tr><td><strong>13. Direct certification exceeds authority / controls future discretion</strong></td><td><em>Common Cause</em> p. 446 (narrow “no discretion” exception); § 1094.5(f) proviso by analogy; <em>Ordonez/Yoni</em>; Supplement B attestation — a court order cannot make a false attestation true.</td><td>Direct relief only on the <em>CCSO</em> only-one-choice showing + a record where the agency already had a reasonable opportunity and decided on an unlawful basis (<em>Common Cause</em> <em>Reinecke</em> branch). Plead it as alternative relief, remand as primary. Draft any direct order to require the <em>designated official</em> to sign a <em>truthful</em> Supplement B on the <em>found</em> facts — not to decide immigration status, bind USCIS, or control any future certification. Invite the fallback expressly.</td><td>Direct (defensive)</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section class="block" id="s10">
+  <div class="kicker">Deliverable 10</div>
+  <h2>Arguments to remove, narrow, or re-sequence</h2>
+  <table>
+    <thead><tr><th>Argument / move</th><th>Classification</th><th>Instruction</th></tr></thead>
+    <tbody>
+      <tr><td>§ 679.10 framework first; false-imprisonment elements second; Fourth Amendment as background only</td><td>Essential — sequencing</td><td><strong>Lead with § 679.10, then the statutory elements of false imprisonment.</strong> Do not lead with general Fourth Amendment principles. A constitutional violation is neither necessary nor sufficient for the § 236 predicate (see §5).</td></tr>
+      <tr><td>Mandatory consequence once predicates are found (“shall certify … when…”)</td><td>Essential to direct certification</td><td>Emphasise — but always paired with the candid two-stage concession in §1. Unqualified “shall = automatic” briefing will be dismantled by <em>Ordonez</em> + the USCIS Guide.</td></tr>
+      <tr><td>Direct certification as primary request; remand as alternative</td><td>Reverse it</td><td><strong>Present controlled remand as the primary prayer and direct certification in the alternative.</strong> The research’s order of strength is remand first. Leading with the first-impression, high-risk prayer invites the court to deny the petition wholesale.</td></tr>
+      <tr><td>Walk-and-turn discrepancy</td><td>Essential to remand — as corroboration, not the whole case</td><td>Use as evidence of <em>material factual error the denial depended on</em>, joined with the § 40300.5 / timeline points (§6). Never as a standalone theory.</td></tr>
+      <tr><td>Victimhood and helpfulness as separate sections</td><td>Essential to both tracks</td><td>Separate them. Separate analyses, separate findings, separate opposition treatment. Conflation lets CHP defeat both by defeating one.</td></tr>
+      <tr><td>Initial vehicle-door opening</td><td>Potentially distracting</td><td><strong>Reduce reliance.</strong> It belongs, if anywhere, as background to the restraint chronology — not as a lead theory. The remedy turns on the <em>arrest/custody</em> lawfulness, not the door. Reserve detailed search/entry theory for the separate civil-rights claims.</td></tr>
+      <tr><td>PAS refusal</td><td>Useful corroboration — narrow it</td><td><strong>Reduce reliance.</strong> One focused passage on the <em>Jackson</em> PAS/FST distinction and weight (§6). Do not cite <em>Jackson</em> as a probable-cause bar.</td></tr>
+      <tr><td>Urine cup</td><td>Potentially distracting</td><td>Substantially shorten to a single point (non-probative padding) — and only if the denial relied on it. No verified authority gives it DUI weight for either side.</td></tr>
+      <tr><td>Odour-alone commentary (“odour can never be PC”)</td><td>Legally weak</td><td>Remove. The source is commentary, not a holding. Argue totality and timing instead.</td></tr>
+      <tr><td>“Shoulder can never obstruct a roadway” as a statement of law</td><td>Factually unsupported as law</td><td>Remove as law; plead as “not established on this record” and put the agency to proof (§6).</td></tr>
+      <tr><td>Detention certificate as proof of unlawful arrest</td><td>Legally weak</td><td>Remove. Keep only the narrow “no charges filed / (k)(1)” use.</td></tr>
+      <tr><td>Later BAC / warrant / parole dispatch as retroactive justification (attacking CHP’s use)</td><td>Essential to remand</td><td>Keep — framed as the <em>Sanders/Devenpeck</em> timing principle, with <em>Sanders</em>’ search-case scope limit conceded.</td></tr>
+      <tr><td>Perjury as a standalone qualifying crime (Pen. Code § 118.1 theory)</td><td>Legally weak unless knowledge is pinned</td><td>Do not plead report inaccuracies as a standalone perjury qualifying crime without pinning knowledge. Use discrepancies as <em>evidence</em> of material factual error instead. (Consistent with the motion-draft history in the case file.)</td></tr>
+      <tr><td>Focused evidentiary hearing</td><td>Useful — conditional</td><td>Request <em>only if necessary</em>: if authentication or the pre-arrest timeline is genuinely disputed on declarations. Frame it as focused (§§ 1090–1091), with the remand-for-fact-finding fallback stated in the same paragraph.</td></tr>
+      <tr><td>Proposed judgment asking for broader findings than the remedy needs</td><td>Overreach risk</td><td>Revise to the minimum findings in §§13–14. Every extra finding (officer’s criminal guilt, civil liability, immigration status) is reversible surplusage — see overreach flags in §14.</td></tr>
+      <tr><td>Broader constitutional / civil-rights theories (door entry, search, § 1983 liability)</td><td>Better reserved for a separate claim</td><td>Keep out of the writ’s merits core. The writ decides only whether the <em>certification denial</em> was lawful — different proceeding, burdens, and parties.</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section class="block" id="s11">
+  <div class="kicker">Deliverable 11</div>
+  <h2>Authority audit — what holds, what is limited, what has no case</h2>
+  <table>
+    <thead><tr><th>Authority</th><th>Status</th><th>Verified proposition (pincite)</th><th>Audit note</th></tr></thead>
+    <tbody>
+      <tr><td><em>Common Cause v. Bd. of Supervisors</em> (1989) 49 Cal.3d 432</td><td><span class="badge bind">Binding — Sup. Ct.</span> <span class="badge ver">Verified live</span></td><td>Mandamus compels acts required by law; will not control discretion; may compel exercise of discretion “under a proper interpretation of the applicable law”; corrects abuse of discretion in administrative acts (pp. 442–443). No particular remedy unless no discretion / failure after reasonable opportunity (p. 446).</td><td>Double-edged: the case <em>reversed</em> a particular-remedy order. Cite both pincites together; never cite p. 442 without p. 446.</td></tr>
+      <tr><td><em>Saleeby v. State Bar</em> (1985) 39 Cal.3d 547</td><td><span class="badge bind">Binding — Sup. Ct.</span> <span class="badge ver">Verified live</span></td><td>Findings must apprise parties/courts of the bases (pp. 566–567, via <em>Topanga</em>); remand without deciding merits, “no view on the merits” (p. 568); writ: reformulate rules + opportunity to be heard + findings; jurisdiction reserved for fees (p. 575).</td><td>The remand template. Its restraint is the point — do not cite it for direct relief.</td></tr>
+      <tr><td><em>CCSO v. Dept. of Corrections</em> (2002) 96 Cal.App.4th 824</td><td><span class="badge bind">Binding — Ct. Appeal</span> <span class="badge ver">Verified live</span></td><td>Two writ requirements; abuse = arbitrary / beyond bounds of reason / in derogation of legal standards; “only one choice can be a reasonable exercise” → court may compel that choice (p. 827).</td><td>Petitioner’s single best direct-certification sentence. It must be proved on found facts.</td></tr>
+      <tr><td><em>Western States Petroleum Assn. v. Superior Court</em> (1995) 9 Cal.4th 559</td><td><span class="badge bind">Binding — Sup. Ct.</span> <span class="badge ver">Verified live</span></td><td>Quasi-legislative extra-record bar (pp. 565, 575–576); preservation for ministerial/informal actions (p. 576); narrow exception (p. 578); never merely to contradict wisdom (p. 579).</td><td>Most mis-citable case in the packet. Always pair the bar with the p. 576 preservation and classify the § 679.10 decision as informal.</td></tr>
+      <tr><td><em>Mercer v. DMV</em> (1991) 53 Cal.3d 753</td><td><span class="badge bind">Binding — Sup. Ct.</span> <span class="badge idx">Index — pincites via reproduction</span></td><td>“Driving” = volitional movement; no observed movement → not “lawfully arrested” under § 836 for licence purposes (pp. 769–770).</td><td>Licence case, not an officer-crime case. The extension to § 236/§ 146 is unheld — flag it. Re-check pincites on the official reports before filing.</td></tr>
+      <tr><td><em>People v. Sanders</em> (2003) 31 Cal.4th 318</td><td><span class="badge bind">Binding — Sup. Ct.</span> <span class="badge idx">Index — via later-case quotations</span></td><td>Unknown parole search condition cannot justify a search (pp. 333, 335).</td><td>Search case. Analogical/timing use only for arrest justification. Re-check pincites before filing.</td></tr>
+      <tr><td><em>People v. Jackson</em> (2010) 189 Cal.App.4th 1461</td><td><span class="badge bind">Binding — Ct. Appeal</span> <span class="badge ver">Verified live reproduction</span></td><td>PAS refusal at trial as consciousness of guilt = error (harmless there) (pp. 1466–1469); distinguishes FST refusal (<em>Marvin</em>).</td><td>Trial-evidence holding only. Never cite as a probable-cause bar.</td></tr>
+      <tr><td><em>Espinoza v. Shiomoto</em> (2017)</td><td><span class="badge bind">Binding — Ct. Appeal</span> <span class="badge idx">Index</span></td><td>Objective reasonable-officer probable-cause test; odour + FST refusal read as consciousness of guilt.</td><td>Agency-favourable on totality. Distinguish PAS from FST; attack timeline, not the test.</td></tr>
+      <tr><td><em>Bishop Area</em> (1985) 172 Cal.App.3d 151; <em>Ballard</em> (1971) 4 Cal.3d 873, 884; <em>Sego</em> (1997) 57 Cal.App.4th 250, 255</td><td><span class="badge bind">Binding</span> <span class="badge idx">Index</span></td><td>Failure to consider considerable evidence = abuse; mandamus compels exercise of discretion “in some manner.”</td><td>Useful secondary anchors. Verify quotations before filing.</td></tr>
+      <tr><td><em>Dragna</em> (1955) 45 Cal.2d 469, 471; <em>Asgari</em> (1997) 15 Cal.4th 744, 752 fn. 3; Pen. Code § 847(b)(1)</td><td><span class="badge bind">Binding</span> <span class="badge idx">Index</span></td><td>Civil false arrest = false imprisonment; immunity only if lawful or reasonably believed lawful.</td><td>Best doctrinal anchor for officer false imprisonment — by negative implication. Civil, not criminal, holdings; say so.</td></tr>
+      <tr><td><em>Devenpeck</em> (2004) 543 U.S. 146; <em>Wesby</em> (2018) 583 U.S. 48</td><td><span class="badge pers">Persuasive framework — federal PC law applied in CA</span> <span class="badge idx">Index</span></td><td>Objective PC on facts known at arrest; PC = probability/substantial chance.</td><td>Both sides’ frame. Petitioner wins inside this test or not at all.</td></tr>
+      <tr><td><em>Ordonez Orosco</em>, 598 F.3d 222 (5th Cir. 2010); <em>Yoni</em> (D.Md. 2018); USCIS Resource Guide</td><td><span class="badge pers">Persuasive only</span> <span class="badge idx">Index</span></td><td>Signing is discretionary under federal law/guidance.</td><td>Agency’s best authority — and distinguishable: no § 679.10 in those cases. Never omit them; distinguish them.</td></tr>
+      <tr><td>Commission on State Mandates, U Visa test claim (17-TC-01)</td><td><span class="badge pers">Persuasive — admin. decision</span> <span class="badge idx">Index</span></td><td>Statute mandates completion once the entity has determined the predicates in the normal course.</td><td>Reimbursement decision, not writ relief. Support for the two-stage reading only.</td></tr>
+      <tr><td>California case ordering (or refusing) direct Supplement B certification under § 679.10</td><td><span class="badge none">None found</span></td><td>Searches returned the statute, the Mandates decision, USCIS guidance, and federal discretion cases — <strong>no published California decision granting or denying direct certification relief</strong>.</td><td>Present direct relief as first-impression application of <em>Common Cause/CCSO</em>. Never imply such a case exists.</td></tr>
+    </tbody>
+  </table>
+  <p><strong>Statutes verified live:</strong> Pen. Code § 679.10 (2025 text); 8 C.F.R. § 214.14. <strong>Statutes relied on via index — verify on Legislative Information before filing:</strong> Pen. Code §§ 146, 236, 847, 836, 849.5, 851.6; Veh. Code §§ 40300.5, 40300.6, 23612, 530; Code Civ. Proc. §§ 1085, 1086, 1089, 1090, 1091, 1094, 1094.5; Evid. Code §§ 1400–1401, 1410. See Sources.</p>
+</section>
+
+<section class="block" id="s12">
+  <div class="kicker">Deliverable 12</div>
+  <h2>Recommended revised motion structure</h2>
+  <ol>
+    <li><strong>Relief requested (one page, two levels).</strong> Primary: vacatur + controlled remand with the §3 directions. Alternative: direct certification on the §2 test. Express fallback invitation.</li>
+    <li><strong>§ 679.10 framework.</strong> (g)(1) two-stage reading; (c)(18)–(19) + (d); (h) presumption; (i) reasoned-decision duties; (k) prohibitions; (j) deadlines. Federal framework in a short subsection (no conviction/prosecution required; USCIS decides status, this court reviews the denial).</li>
+    <li><strong>Why the denial cannot stand (remand merits).</strong> Legal error with particularity → prohibited/irrelevant grounds → (i)(2)/<em>Saleeby</em> findings failure → material factual error the denial depends on (walk-and-turn joined with timeline/§ 40300.5 points).</li>
+    <li><strong>Qualifying activity — elements.</strong> § 236 elements → restraint/against-will → lawfulness judged at the time → <em>Mercer</em>/§ 40300.5 analysis → § 146(a) substantially-similar comparison in the alternative. Concede debatable PC defeats the predicate; prove the timeline.</li>
+    <li><strong>Probable-cause record (disciplined).</strong> Only the §6 factors, each tied to a remedial use. No freestanding DUI essay.</li>
+    <li><strong>Helpfulness (separate).</strong> (h) presumption; no specific reasonable request + refusal proved; specific information possessed/offered; (k)(1).</li>
+    <li><strong>Traditional mandate.</strong> § 1085/§ 1086 elements; the five-way distinction (§7 callout); <em>Western States</em> classification argument; focused-hearing request in the alternative.</li>
+    <li><strong>Direct certification (alternative section).</strong> <em>CCSO</em> only-one-choice showing on found/undisputed facts; attestation candour; narrow order scope.</li>
+    <li><strong>Proposed judgment.</strong> Two alternatives (§15), minimum findings (§§13–14), date certain, compliance statement, compliance-only retained jurisdiction, scope disclaimer.</li>
+  </ol>
+  <p>Keep the opposition’s best cases (<em>Ordonez</em>, USCIS Guide, <em>Common Cause</em> p. 446, § 1094.5(f) proviso) <em>inside</em> this structure, distinguished where they arise — not in a footnote. A Whitman-court motion capped by standing-order page discipline (confirm the current limit before filing) cannot afford a separate rebuttal sprawl; the concessions in §§5–6 are what buy credibility for the asks in §§2–3.</p>
+</section>
+
+<section class="block" id="s13">
+  <div class="kicker">Deliverable 13</div>
+  <h2>Proposed findings for direct certification — all required</h2>
+  <ol>
+    <li><strong>Standing / duty / no adequate remedy:</strong> petitioner is the victim (or authorised requester under (g)(1)), made a proper request to the correct entity/official, and has no plain, speedy, adequate remedy (§ 1086) — e.g., no other certifying entity with responsibility for the incident; USCIS cannot act without a Supplement B.</li>
+    <li><strong>Qualifying activity — found, not alleged:</strong> on facts found after a focused hearing or on undisputed facts, the elements of § 236 (or a (d) substantially similar offence, including § 146(a) if pleaded that way) are made out — intentional restraint against will <em>and</em> absence of lawful authority (no probable cause, <em>or</em> no § 836 presence + no § 40300.5 trigger, each analysed separately).</li>
+    <li><strong>Victimhood:</strong> direct and proximate harm from <em>that</em> activity (§ 679.10(o)(2); 8 C.F.R. § 214.14(a)(14)) — not merely harm from the DUI investigation or from being a DUI suspect.</li>
+    <li><strong>Helpfulness:</strong> has been / is being / is likely to be helpful to detection/investigation/prosecution of <em>that</em> activity; (h) presumption applied; any claimed rebuttal (specific reasonable request + knowing refusal/failure) found not proved.</li>
+    <li><strong>No prohibited ground:</strong> the denial did not — and the new decision will not — rest on any (k)(3) ground, on a prosecution/conviction/current-investigation requirement ((k)(1)–(2)), or on a belief about USCIS approval ((k)(3)(D)).</li>
+    <li><strong>Only-one-reasonable-choice:</strong> on the found facts, no reasonable official applying the correct (g)/(h)/(k) standards could deny (<em>CCSO</em> p. 827) — <em>and</em> the agency already had a reasonable opportunity to exercise its discretion (<em>Common Cause</em> p. 446, <em>Reinecke</em> branch).</li>
+    <li><strong>Truthful attestation possible:</strong> the designated official can truthfully sign the Supplement B as the form requires, including the agency’s investigation of the incident/qualifying activity. If it cannot be truthfully signed, direct relief against the agency is unavailable — do not order a false attestation.</li>
+    <li><strong>Scope limit:</strong> order directs only completion, signing, and forwarding (with (i)(1) details) by a date certain; it does not direct USCIS, decide substantial abuse/admissibility, or bind future certifications.</li>
+  </ol>
+</section>
+
+<section class="block" id="s14">
+  <div class="kicker">Deliverable 14</div>
+  <h2>Proposed findings for remand — the minimum set</h2>
+  <ol>
+    <li><strong>Reviewability:</strong> the denial is reviewable under § 1085 (not § 1094.5 — no statutorily required hearing); petitioner is beneficially interested with no adequate alternative remedy.</li>
+    <li><strong>Legal error, with particularity:</strong> e.g., denial applied a “wholly discretionary / requires prosecution or ongoing investigation” standard contrary to (g)/(h)/(k)(1); treated a (k)(3) ground as a reason; required a crime report contrary to (k)(3)(G); or failed to apply the (h) presumption / treated absence of a request as non-helpfulness. <em>(Plead only the errors the actual denial letter commits — read it against this list line by line.)</em></li>
+    <li><strong>Factual/evidentiary defect, with particularity:</strong> denial rests on a materially inaccurate fact on which it depends (specify fact, record cite, outcome-dependence); <em>or</em> ignores considerable relevant evidence before the agency (specify it — <em>Bishop Area</em>); <em>or</em> contains no findings sufficient to show its mode of analysis (<em>Saleeby/Topanga</em>).</li>
+    <li><strong>Procedural defect, if any:</strong> (i)(2) specifics missing where non-cooperation was invoked; no reasonable opportunity to be heard/respond (<em>Saleeby</em>); (f) report or (j) deadline breached.</li>
+    <li><strong>Remand directions (law, issues, findings — not outcome):</strong> vacate; reconsider (i) under the correct (g)/(h)/(k) standards as stated in the judgment, (ii) on the specified issues (qualifying activity incl. substantially-similar analysis; victimhood; helpfulness with presumption; PC/§ 40300.5 analysis where the theory depends on it), (iii) with written findings sufficient to apprise the parties and the court, including (i)(2) specifics if denial is again on non-cooperation, (iv) by a date certain (apply (j) periods by analogy).</li>
+    <li><strong>Compliance mechanism:</strong> verified statement of compliance filed/served by the date certain (new decision + signed Supplement B or new written denial + record relied on); jurisdiction retained <em>solely</em> to determine compliance / enforce the writ; express statement that the court expresses no view on the remand outcome except as stated in the legal directions (<em>Saleeby</em> p. 568 model).</li>
+  </ol>
+  <div class="callout bad"><strong>Overreach flags — do not include:</strong> directing a future discretionary outcome while claiming discretion remains (contradictory; reversible under <em>Common Cause</em> p. 446 / § 1094.5(f) proviso) · deciding or directing immigration status (USCIS sole jurisdiction, 8 C.F.R. § 214.14(c)(1)) · adjudicating the officer’s criminal guilt, civil false-arrest liability, or § 1983 liability in the writ judgment · ordering an investigation or prosecution of the officer ((k)(1) creates no such duty) · ordering a false Supplement B attestation · binding future certifications for other victims/incidents · retaining jurisdiction to re-decide the remand outcome de novo (retention is for compliance only).</div>
+</section>
+
+<section class="block" id="s15">
+  <div class="kicker">Deliverable 15</div>
+  <h2>Proposed language for the judgment and writ</h2>
+  <p><em>Drafting models synthesised from the research’s remedy findings (§§13–14). Bracketed items must be completed from the authenticated record and the actual denial letter. These are proposals for the proposed judgment — not filed language.</em></p>
+  <h3>Common architecture (both alternatives)</h3>
+  <ol>
+    <li>Findings establishing the governing statutory framework (§ 679.10(g), (h), (k); CCP §§ 1085–1086);</li>
+    <li>Findings identifying the material factual or legal error, with particularity;</li>
+    <li>Determination that the April 20, 2026 denial cannot stand;</li>
+    <li>Operative determination — Alternative 1 <em>or</em> Alternative 2;</li>
+    <li>Precise deadline for compliance;</li>
+    <li>Verified statement of compliance;</li>
+    <li>Any renewed denial must identify its statutory basis and comply with § 679.10(i);</li>
+    <li>Reservation of jurisdiction to determine compliance only;</li>
+    <li>Scope statement: the judgment does not confer immigration status and does not decide claims outside the surviving cause of action.</li>
+  </ol>
+  <h3>Alternative 1 — Judgment ordering certification</h3>
+  <blockquote class="judge">
+    <p>The Court finds, on [the undisputed facts / the facts found after hearing on ___], that: (1) petitioner was intentionally restrained against his will by respondents’ officers through [commands / handcuffing / transportation / custody]; (2) the restraint lacked lawful authority because [no probable cause existed on the facts known to the arresting officer before arrest / no offence was committed in the officer’s presence within Penal Code section 836 and no Vehicle Code section 40300.5 circumstance was established on pre-arrest facts]; (3) the conduct therefore constitutes false imprisonment within Penal Code sections 236 and 679.10(c)(19) [and/or unlawful criminal restraint within section 679.10(c)(18) / conduct substantially similar thereto within section 679.10(d)]; (4) petitioner suffered direct and proximate harm from that activity; (5) petitioner has been, is being, or is likely to be helpful within section 679.10(g)(1), the presumption of section 679.10(h) applies and has not been rebutted by proof of a specific reasonable request for cooperation that petitioner refused or failed to meet; and (6) on these findings, no reasonable certifying official applying section 679.10(g), (h), and (k) could deny certification.</p>
+    <p>IT IS ORDERED that a peremptory writ of mandate issue commanding respondent [certifying entity], by its designated certifying official, to fully complete, sign, and forward to petitioner the Form I-918, Supplement B certification, with the specific details required by Penal Code section 679.10(i)(1), no later than [date certain]. Respondent shall file and serve a verified statement of compliance, attaching the completed certification as forwarded, no later than [date]. This judgment directs only the completion, signing, and forwarding of the certification. It does not confer immigration status, does not direct the United States Citizenship and Immigration Services to grant any petition, and does not decide any claim outside the surviving cause of action in this proceeding. The Court retains jurisdiction solely to determine compliance with this judgment and to enforce the writ.</p>
+  </blockquote>
+  <p><strong>Findings necessary for Alternative 1:</strong> all eight in §13. If finding (6) or finding (7) (truthful attestation) cannot be made, Alternative 1 must not issue.</p>
+  <h3>Alternative 2 — Judgment vacating the denial and ordering legally controlled reconsideration</h3>
+  <blockquote class="judge">
+    <p>The Court finds that the April 20, 2026 denial cannot stand because [specify each ground with particularity: e.g., it applied a legal standard contrary to Penal Code section 679.10(g), (h), and (k)(1) by ___; it relied on ___ , a ground section 679.10(k)(3)(__) forbids; it failed to apply the helpfulness presumption of section 679.10(h); it rested on the materially inaccurate fact that ___, on which its stated basis depended, as shown by ___; it failed to provide the written explanation / findings required for meaningful review]. The Court expresses no view on the ultimate outcome of reconsideration except as stated in the legal directions below.</p>
+    <p>IT IS ORDERED that a peremptory writ of mandate issue commanding respondents to: (1) vacate the April 20, 2026 denial; (2) reconsider petitioner’s original certification request under Penal Code section 679.10, including subdivisions (c), (d), (g), (h), (i), and (k), applying the definitions and rules stated in this judgment; (3) consider [the authenticated recording and the other evidence specified in the findings]; (4) not treat the absence of a prosecution, conviction, or officer discipline as dispositive, and not rely on any ground listed in section 679.10(k)(3); (5) assess helpfulness separately from qualifying victimhood, applying the presumption of section 679.10(h); (6) issue a new written decision no later than [date certain] that either forwards a completed and signed Form I-918, Supplement B certification with the details required by section 679.10(i)(1), or provides a written explanation for denial that identifies its statutory basis and, if non-cooperation is relied on, includes the specific details required by section 679.10(i)(2), with findings sufficient to apprise the parties and the Court of the bases for the decision; and (7) file and serve a verified statement of compliance, attaching the new decision and the record relied on, no later than [date]. This judgment does not confer immigration status and does not decide any claim outside the surviving cause of action in this proceeding. The Court retains jurisdiction solely to determine compliance with this judgment and to enforce the writ.</p>
+  </blockquote>
+  <p><strong>Findings necessary for Alternative 2:</strong> the minimum set in §14 — reviewability plus at least one particularised legal, factual/evidentiary, or procedural defect. The directions must stay on the “law + issues + findings” side of the §7 line.</p>
+  <div class="callout warn"><strong>Compliance-return caution (repeat of §7(vi)):</strong> no CCP section verified in this research itself authorises a post-judgment verified compliance return in traditional mandate; § 1089’s verified answer is the return <em>to the petition</em>. Present the verified statement of compliance as a term of the <em>judgment</em> enforcing the writ (by analogy to <em>Saleeby</em>’s reservation of jurisdiction, p. 575) — not as a right conferred by § 1089. Do not cite CCP § 1097 without independently verifying it; it was not verified in the research.</div>
+</section>
+
+<section class="block" id="s16">
+  <div class="kicker">Deliverable 16</div>
+  <h2>Additional evidence needed</h2>
+  <ul>
+    <li><strong>Authenticated native recording(s)</strong> with a recorder/custodian declaration, plus a transcript tied to the recording — without this, every recording-dependent predicate fact is exposed (see §8).</li>
+    <li><strong>A pinned pre-arrest timeline declaration set:</strong> who observed what (movement, odour, speech, container), when, and what was communicated to the arresting officer before arrest; reconciled to dispatch timestamps and recording timestamps.</li>
+    <li><strong>Certified / agency-produced records:</strong> Form 202, CHP 202/DS 367 materials, incident/beat records, dispatch log — with pinpoint cites for every characterisation attributed to them, including the walk-and-turn passages.</li>
+    <li><strong>The April 20, 2026 denial letter + the certification request + proof of receipt,</strong> mapped line-by-line against § 679.10(g)/(h)/(i)/(k) and the §14 findings list. The research did not independently review the letter’s full text; no remand finding should be pleaded until that mapping is done.</li>
+    <li><strong>Helpfulness declaration with specifics:</strong> information possessed about the restraint, statements already given, cooperation offered, and continuing availability; identification of any agency request for cooperation (or an explicit showing that none was made).</li>
+    <li><strong>PAS advisement proof:</strong> recording/declaration evidence whether the § 23612(i) advisement was given.</li>
+    <li><strong>Blood-test foundation (defensive):</strong> timing and, if CHP relies on the result for intoxication-at-driving, the absence/presence of retrograde extrapolation — needed to hold CHP to the timing principle in §6.</li>
+    <li><strong>Designated-official identification:</strong> evidence identifying CHP’s designated certifying official under § 679.10(b), so the writ runs against the right respondent.</li>
+    <li><strong>Attestation record (for Alternative 1 only):</strong> a record basis on which the designated official could truthfully complete the Supplement B attestation regarding investigation of the incident — or an express decision to drop Alternative 1 to a fallback paragraph.</li>
+  </ul>
+  <p><em>Record-specific facts the research expressly could not resolve:</em> what was observed, communicated, admitted, and when; what the denial letter actually says; whether a § 23612(i) advisement was given; blood-test timing/foundation. These are the evidentiary record the petition must build — legal research cannot supply them, and disputed facts must never be pleaded as established merely because petitioner asserts them.</p>
+</section>
+
+<section class="block" id="s17">
+  <div class="kicker">Deliverable 17</div>
+  <h2>Final prioritised revision checklist + open questions</h2>
+  <ol class="checklist">
+    <li><strong>P1 — Re-sequence the prayers:</strong> controlled remand primary, direct certification alternative, with an express fallback invitation (§§2–3, 12).</li>
+    <li><strong>P1 — Map the denial letter</strong> line-by-line to § 679.10(g)/(h)/(i)/(k) and §14; plead only the errors it actually commits.</li>
+    <li><strong>P1 — Authenticate the recording</strong> (native file + custodian/recorder declaration + tied transcript) before relying on it for any predicate fact (§8).</li>
+    <li><strong>P1 — Pin the pre-arrest timeline</strong> by declaration/dispatch/recording; separate probable cause from § 836 presence / § 40300.5 trigger throughout (§6).</li>
+    <li><strong>P1 — Verify every “index” citation</strong> on the primary source (Legislative Information / official reports), especially <em>Mercer</em> pp. 769–770, <em>Sanders</em> pp. 333, 335, and Pen. Code §§ 836, 847, 849.5, 851.6; Veh. Code §§ 40300.6, 23612, 530; Evid. Code §§ 1410, 1421 (§11).</li>
+    <li><strong>P2 — Rebuild the qualifying-activity section</strong> element-by-element (§5), with the debatable-PC concession and the <em>Mercer</em>-extension flag in the text, not a footnote.</li>
+    <li><strong>P2 — Separate helpfulness</strong> into its own section with a specifics-based declaration; plead the (h) presumption as burden-allocating (§§4–5).</li>
+    <li><strong>P2 — Reframe walk-and-turn</strong> as joined material error with a bracket-precise requested finding; concede standalone immateriality (§6).</li>
+    <li><strong>P2 — Narrow PAS, urine-cup, door-opening, and certificate passages</strong> per §10; delete odour-commentary and shoulder-as-law assertions.</li>
+    <li><strong>P2 — Replace the proposed judgment</strong> with the §15 two-alternative architecture and the §§13–14 minimum findings; delete overreach items (§14 callout).</li>
+    <li><strong>P3 — Address the attestation problem head-on</strong> in the direct-certification section, or demote Alternative 1 to a short fallback paragraph (§2).</li>
+    <li><strong>P3 — Add the <em>Western States</em> classification argument</strong> (informal/ministerial, p. 576) and the conditional focused-hearing request with remand fallback (§7).</li>
+  </ol>
+  <h3>Open questions — do not brief as settled law without further research</h3>
+  <ol>
+    <li>No California published direct-certification case — first-impression issue (§11).</li>
+    <li>Burden / standard of proof for the § 679.10 predicate findings — no statute or case found prescribing preponderance, substantial evidence, or another standard.</li>
+    <li>Whether a <em>Mercer</em>-unlawful DUI arrest <em>is</em> a § 236 / § 146(a) offence — no officer-prosecution case found.</li>
+    <li>Whether a vehicle on a freeway shoulder “obstructs a roadway” under Veh. Code § 40300.5(b) — no case found; § 530 definition not verified in the research.</li>
+    <li>Collective-knowledge / uncommunicated-observation rule in California — <em>Devenpeck</em>’s timing principle verified; a settled California imputation rule was not.</li>
+    <li>Scope of § 679.10(i)(2) for denials not premised on non-cooperation — literal text vs. <em>Saleeby</em> findings principle (argued in §4, not settled).</li>
+    <li>Post-judgment verified compliance return / retained jurisdiction — no CCP section verified as authorising it; <em>Saleeby</em> reservation is by analogy only; CCP § 1097 not verified.</li>
+    <li>Exact current text of Pen. Code §§ 849.5, 851.6, 847, 836; Veh. Code §§ 23612, 40300.6; Evid. Code §§ 1410, 1421 — relied on via snippets/summaries; verify on Legislative Information before filing.</li>
+    <li>Record-specific facts (observations, communications, admissions, timing; denial-letter contents; § 23612(i) advisement; blood-test foundation) — evidentiary, not research, questions (§16).</li>
+  </ol>
+</section>
+
+<section class="block" id="sources">
+  <h2>Sources</h2>
+  <p><small>URLs copied verbatim from the October 24, 2026 research report. “Verified live” = full text read in that session; “Index” = snippet/secondary reproduction — re-check before filing.</small></p>
+  <h3>Statutes — primary</h3>
+  <ul class="src">
+    <li>Pen. Code § 679.10 — <a href="https://california.public.law/codes/penal_code_section_679.10">california.public.law/codes/penal_code_section_679.10</a> — verified live</li>
+    <li>Pen. Code § 146 — <a href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=146.&lawCode=PEN">leginfo.legislature.ca.gov</a> — index</li>
+    <li>Pen. Code § 236 — <a href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=PEN&sectionNum=236.">leginfo.legislature.ca.gov</a> — index</li>
+    <li>Pen. Code § 847 — <a href="https://law.justia.com/codes/california/code-pen/part-2/title-3/chapter-5/section-847/">law.justia.com</a> — index</li>
+    <li>Veh. Code § 40300.5 — <a href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=40300.5.&lawCode=VEH">leginfo.legislature.ca.gov</a> — index</li>
+    <li>Veh. Code § 23612 — <a href="https://law.justia.com/codes/california/2012/veh/division-11.5/chapter-4/article-1/section-23612/">law.justia.com</a> — index</li>
+    <li>Code Civ. Proc. § 1085 — <a href="https://law.justia.com/codes/california/code-ccp/part-3/title-1/chapter-2/section-1085/">law.justia.com</a> — index · § 1086 — <a href="https://www.casemine.com/act/us/6438e9f1d0293739de160ddc">casemine.com</a> — index · § 1089 — <a href="https://law.justia.com/codes/california/2021/code-ccp/part-3/title-1/chapter-2/section-1089/">law.justia.com</a> — index · § 1090 — <a href="https://law.justia.com/codes/california/2020/code-ccp/part-3/title-1/chapter-2/section-1090/">law.justia.com</a> — index · § 1091 — <a href="https://california.public.law/codes/code_of_civil_procedure_section_1091">california.public.law</a> — index · § 1094 — <a href="https://law.justia.com/codes/california/code-ccp/part-3/title-1/chapter-2/section-1094/">law.justia.com</a> — index · § 1094.5 — <a href="https://law.justia.com/codes/california/code-ccp/part-3/title-1/chapter-2/section-1094-5/">law.justia.com</a> — index</li>
+    <li>Evid. Code § 1401 — <a href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=EVID&nodeTreePath=12.1.1&sectionNum=1401.">leginfo.legislature.ca.gov</a> — index</li>
+  </ul>
+  <h3>Federal — primary / guidance</h3>
+  <ul class="src">
+    <li>8 C.F.R. § 214.14 — <a href="https://www.law.cornell.edu/cfr/text/8/214.14">law.cornell.edu/cfr/text/8/214.14</a> — verified live</li>
+    <li>USCIS U Visa Law Enforcement Resource Guide — <a href="https://www.uscis.gov/sites/default/files/document/guides/U_Visa_Law_Enforcement_Resource_Guide.pdf">uscis.gov</a> — index</li>
+  </ul>
+  <h3>California cases — binding</h3>
+  <ul class="src">
+    <li><em>Common Cause v. Board of Supervisors</em> (1989) 49 Cal.3d 432 — <a href="https://law.justia.com/cases/california/supreme-court/3d/49/432.html">law.justia.com</a> — verified live (pp. 442–443, 446)</li>
+    <li><em>Saleeby v. State Bar</em> (1985) 39 Cal.3d 547 — <a href="https://law.justia.com/cases/california/supreme-court/3d/39/547.html">law.justia.com</a> — verified live (pp. 566–568, 575)</li>
+    <li><em>Western States Petroleum Assn. v. Superior Court</em> (1995) 9 Cal.4th 559 — <a href="https://law.justia.com/cases/california/supreme-court/4th/9/559.html">law.justia.com</a> — verified live (pp. 565, 573–579)</li>
+    <li><em>Mercer v. DMV</em> (1991) 53 Cal.3d 753 — <a href="https://scocal.stanford.edu/opinion/mercer-v-department-motor-vehicles-31352">scocal.stanford.edu</a> — index (pp. 769–770)</li>
+    <li><em>People v. Sanders</em> (2003) 31 Cal.4th 318 — <a href="https://scocal.stanford.edu/opinion/people-v-sanders-33308">scocal.stanford.edu</a> — index (pp. 333, 335)</li>
+    <li><em>CCSO v. Dept. of Corrections</em> (2002) 96 Cal.App.4th 824 — <a href="https://static.case.law/cal-app-4th/96/case-pdfs/0824-01.pdf">static.case.law</a> — verified live (p. 827)</li>
+    <li><em>People v. Jackson</em> (2010) 189 Cal.App.4th 1461 — <a href="https://www.michaelrehm.com/people-v-jackson-189-ca4th-1461-2010">michaelrehm.com reproduction</a> — verified live reproduction (pp. 1466–1469)</li>
+    <li><em>Espinoza v. Shiomoto</em> (2017) — <a href="https://law.justia.com/cases/california/court-of-appeal/2017/e064252a.html">law.justia.com</a> — index · <em>Bishop Area</em> (1985) 172 Cal.App.3d 151 — <a href="https://law.justia.com/cases/california/court-of-appeal/3d/172/151.html">law.justia.com</a> — index · <em>Topanga Assn.</em> (1974) 11 Cal.3d 506, 515–517 — quoted in <em>Saleeby</em>, verified live via <em>Saleeby</em></li>
+  </ul>
+  <h3>Federal cases — persuasive only in state court; other</h3>
+  <ul class="src">
+    <li><em>Ordonez Orosco v. Napolitano</em>, 598 F.3d 222 (5th Cir. 2010) — <a href="https://caselaw.findlaw.com/us-5th-circuit/1521517.html">caselaw.findlaw.com</a> — index · <em>Yoni v. Stawinski</em>, No. 8:18-cv-00423 (D.Md. 2018) — <a href="https://law.justia.com/cases/federal/district-courts/maryland/mddce/8:2018cv00423/413425/13/">law.justia.com</a> — index · <em>Devenpeck v. Alford</em> (2004) 543 U.S. 146 — via 9th Cir. materials, <a href="https://ce9.uscourts.gov/jury-instructions/node/160">ce9.uscourts.gov</a> — index</li>
+    <li>Commission on State Mandates, U Visa 918 Form test claim, Corrected Decision (17-TC-01) — <a href="https://csm.ca.gov/matters/documents/CorrectedDecisionandPsandGswebfinal.pdf">csm.ca.gov</a> — index · Detention-certificate summary (Pen. Code §§ 849.5, 851.6) — <a href="https://legalclarity.org/what-is-a-detention-certificate-in-california/">legalclarity.org</a> — index, verify on Legislative Information</li>
+  </ul>
+  <footer>
+    <p>Research memorandum synthesising the October 24, 2026 deep-research report on Penal Code § 679.10 certification and traditional mandate in <em>Newanforbi v. California Highway Patrol</em>, No. 26CV191136. Advocacy-oriented research work product for motion revision — not legal advice to any other person, not a filed document, and not a representation that any disputed fact has been established. Every “index” citation must be re-verified on the primary source before filing.</p>
+  </footer>
+</section>
+
+</main>
+</div>
+</div>
+<script>
+document.querySelectorAll('.tabs button').forEach(function(b){
+  b.addEventListener('click', function(){
+    document.querySelectorAll('.tabs button').forEach(function(x){x.setAttribute('aria-selected','false')});
+    b.setAttribute('aria-selected','true');
+    document.querySelectorAll('.panel').forEach(function(p){p.classList.remove('on')});
+    document.getElementById(b.getAttribute('data-p')).classList.add('on');
+  });
+});
+</script>
+</body>
+</html>
