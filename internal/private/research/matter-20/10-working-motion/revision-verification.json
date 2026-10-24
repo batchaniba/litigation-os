@@ -1,0 +1,226 @@
+{
+  "date": "2026-10-24",
+  "baseline_packet": {
+    "path": "00-user-inputs/Newanforbi_26CV191136_Writ_Motion_Packet.pdf",
+    "sha256": "03d89a03a776b3b723c4937f7d6c9e1d8260c87e8871427a266f47c96968daa0",
+    "pages": 30
+  },
+  "federal_order": {
+    "path": "00-user-inputs/Newanforbi-v-Serrato-USDC-NDCal-IFP-Granted-Complaint-Sufficient-Jun-29-2026.pdf",
+    "sha256": "9f00bb4d807287a39687835a503beb4a2754bef01b9bd5b38f0339ba25c7f444",
+    "pages": 5
+  },
+  "revision": {
+    "inserted_at_pdf_page": 9,
+    "inserted_at_memorandum_page": 6,
+    "packet_pages": 31,
+    "memorandum_pages": 12,
+    "body_line_count_on_insert": 21,
+    "original_packet_body_preserved": true,
+    "original_other_documents_preserved": true,
+    "only_original_page_changes": "Memorandum footer page numbers 6\u201311 renumbered 7\u201312",
+    "federal_order_attached_as_new_exhibit": false,
+    "judicial_notice_request_created_or_filed": false,
+    "live_federal_docket_checked": false,
+    "hearing_or_reservation_confirmed": false
+  },
+  "outputs": [
+    {
+      "path": "10-working-motion/Newanforbi_26CV191136_Working_Motion_Packet_Federal_Order_Revision.pdf",
+      "sha256": "a98e515c4fec344d072b7c219570c6c14433b30fe10a86202c194d7e2334d6ff",
+      "bytes": 159296
+    },
+    {
+      "path": "10-working-motion/Matter-20-Writ-Memorandum-Federal-Order-Revision.pdf",
+      "sha256": "31d7bfe8a6266c7e8ad890a2f0b2f9dbca4ddea652bb9d7490eaf343997998e3",
+      "bytes": 107629
+    },
+    {
+      "path": "10-working-motion/Federal-Screening-Order-Insertion.pdf",
+      "sha256": "5e5bdb64711c749ddaefed52c45703b9686eeabea0626e2b49181ea38b4657d6",
+      "bytes": 66152
+    }
+  ],
+  "source_page_preservation": [
+    {
+      "source_pdf_page": 1,
+      "revised_pdf_page": 1,
+      "comparison": "entire page",
+      "pixel_identical": true
+    },
+    {
+      "source_pdf_page": 2,
+      "revised_pdf_page": 2,
+      "comparison": "entire page",
+      "pixel_identical": true
+    },
+    {
+      "source_pdf_page": 3,
+      "revised_pdf_page": 3,
+      "comparison": "entire page",
+      "pixel_identical": true
+    },
+    {
+      "source_pdf_page": 4,
+      "revised_pdf_page": 4,
+      "comparison": "entire page",
+      "pixel_identical": true
+    },
+    {
+      "source_pdf_page": 5,
+      "revised_pdf_page": 5,
+      "comparison": "entire page",
+      "pixel_identical": true
+    },
+    {
+      "source_pdf_page": 6,
+      "revised_pdf_page": 6,
+      "comparison": "entire page",
+      "pixel_identical": true
+    },
+    {
+      "source_pdf_page": 7,
+      "revised_pdf_page": 7,
+      "comparison": "entire page",
+      "pixel_identical": true
+    },
+    {
+      "source_pdf_page": 8,
+      "revised_pdf_page": 8,
+      "comparison": "entire page",
+      "pixel_identical": true
+    },
+    {
+      "source_pdf_page": 9,
+      "revised_pdf_page": 10,
+      "comparison": "entire page above memorandum footer",
+      "pixel_identical": true
+    },
+    {
+      "source_pdf_page": 10,
+      "revised_pdf_page": 11,
+      "comparison": "entire page above memorandum footer",
+      "pixel_identical": true
+    },
+    {
+      "source_pdf_page": 11,
+      "revised_pdf_page": 12,
+      "comparison": "entire page above memorandum footer",
+      "pixel_identical": true
+    },
+    {
+      "source_pdf_page": 12,
+      "revised_pdf_page": 13,
+      "comparison": "entire page above memorandum footer",
+      "pixel_identical": true
+    },
+    {
+      "source_pdf_page": 13,
+      "revised_pdf_page": 14,
+      "comparison": "entire page above memorandum footer",
+      "pixel_identical": true
+    },
+    {
+      "source_pdf_page": 14,
+      "revised_pdf_page": 15,
+      "comparison": "entire page above memorandum footer",
+      "pixel_identical": true
+    },
+    {
+      "source_pdf_page": 15,
+      "revised_pdf_page": 16,
+      "comparison": "entire page",
+      "pixel_identical": true
+    },
+    {
+      "source_pdf_page": 16,
+      "revised_pdf_page": 17,
+      "comparison": "entire page",
+      "pixel_identical": true
+    },
+    {
+      "source_pdf_page": 17,
+      "revised_pdf_page": 18,
+      "comparison": "entire page",
+      "pixel_identical": true
+    },
+    {
+      "source_pdf_page": 18,
+      "revised_pdf_page": 19,
+      "comparison": "entire page",
+      "pixel_identical": true
+    },
+    {
+      "source_pdf_page": 19,
+      "revised_pdf_page": 20,
+      "comparison": "entire page",
+      "pixel_identical": true
+    },
+    {
+      "source_pdf_page": 20,
+      "revised_pdf_page": 21,
+      "comparison": "entire page",
+      "pixel_identical": true
+    },
+    {
+      "source_pdf_page": 21,
+      "revised_pdf_page": 22,
+      "comparison": "entire page",
+      "pixel_identical": true
+    },
+    {
+      "source_pdf_page": 22,
+      "revised_pdf_page": 23,
+      "comparison": "entire page",
+      "pixel_identical": true
+    },
+    {
+      "source_pdf_page": 23,
+      "revised_pdf_page": 24,
+      "comparison": "entire page",
+      "pixel_identical": true
+    },
+    {
+      "source_pdf_page": 24,
+      "revised_pdf_page": 25,
+      "comparison": "entire page",
+      "pixel_identical": true
+    },
+    {
+      "source_pdf_page": 25,
+      "revised_pdf_page": 26,
+      "comparison": "entire page",
+      "pixel_identical": true
+    },
+    {
+      "source_pdf_page": 26,
+      "revised_pdf_page": 27,
+      "comparison": "entire page",
+      "pixel_identical": true
+    },
+    {
+      "source_pdf_page": 27,
+      "revised_pdf_page": 28,
+      "comparison": "entire page",
+      "pixel_identical": true
+    },
+    {
+      "source_pdf_page": 28,
+      "revised_pdf_page": 29,
+      "comparison": "entire page",
+      "pixel_identical": true
+    },
+    {
+      "source_pdf_page": 29,
+      "revised_pdf_page": 30,
+      "comparison": "entire page",
+      "pixel_identical": true
+    },
+    {
+      "source_pdf_page": 30,
+      "revised_pdf_page": 31,
+      "comparison": "entire page",
+      "pixel_identical": true
+    }
+  ]
+}

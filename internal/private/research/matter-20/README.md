@@ -6,6 +6,8 @@ The initial collection contains 92 unique PDFs and 268 source/derivative assets 
 
 ## Start here
 
+- **Current working-motion revision and review prompt**: `10-working-motion/README.md` identifies the user-designated working packet, the limited federal-order insertion, the revised memorandum and a copy-ready prompt for a substantive prefiling review. This narrow draft edit does not represent that the larger review has been completed or that the packet is ready to file.
+
 - **Record-to-argument map**: `09-evidence-map/Matter-20-Record-to-Argument-Evidence-Map.md` connects the surviving writ theory to primary-record pinpoints, contrary evidence, proof gaps and conditional remedies. It is newly authored analysis, separate from the baseline collection's 268 indexed assets.
 - **Federal screening-order supplement**: The June 29, 2026 federal order is preserved in `00-user-inputs/` and added to the map as R15/A19–A20, with assumed-true limits, page-specific quotations and a proposed limited-use paragraph. Its two source/derived assets are separately hash-indexed in `08-audit/supplemental-manifest-federal-screening-order-2026-10-24.json`; the original 268-asset/92-PDF baseline is unchanged.
 - **Requested packets**: `00-user-inputs/Newanforbi_26CV191136_Writ_Motion_Packet.pdf` and `00-user-inputs/Matter20_Merged_v3.pdf` are preserved under their original filenames. Inclusion does not independently establish that a packet was filed, served or admitted.
