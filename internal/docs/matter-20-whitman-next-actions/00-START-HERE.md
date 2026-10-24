@@ -43,11 +43,12 @@ Make the next steps verifiable and procedurally sound: secure the decision file;
 07-ROADWAY-AND-APRIL-DECISION-THEORIES.md — current §40300.5 and roadway definition, Music/Villalobos adverse-case split, AG 2024 bulletin and decision-file discovery questions.
 08-EARLY-VEHICLE-ENTRY-CONSENT-AND-U-VISA-THRESHOLD.md — prior vehicle-entry analysis, **corrected to remove unsupported assertion that Plaintiff remained asleep at 00:56:43; see 09**.
 09-TRANSCRIPT-RECONCILIATION-AND-DOOR-OPENING.md — **read first for door issue**: full primary Exhibit A transcript, 00:56:40 'Open the window' / 00:56:43 officer door opening, awakened-by-knock correction, distinct 00:59:46 rear search and can chronology, prior FAC conflict and actual CHP report comparison.
-10-PEREMPTORY-WRIT-MOTION-DRAFT.md — **review-only, user-authorized Oct 23 opening merits motion** (Notice + MPA), primary direct certification/alternative remand; only Count One.
-11-PETITIONER-DECLARATION-DRAFT.md — unsigned firsthand declaration with open proof/knowledge brackets for verification before signing.
-12-PROPOSED-JUDGMENT-AND-WRIT-DRAFT.md — alternative primary/conditional relief; select judicially supported route before lodging.
+10-PEREMPTORY-WRIT-MOTION-DRAFT.md — **REVISED Oct 23, 2026** after audit #14: Serrato's April 20 threshold decision first, substantive statutory error/abuse, limited qualifying-crime record, separate helpfulness and conditional relief. Previous text preserved in Git history.
+11-PETITIONER-DECLARATION-DRAFT.md — **REVISED Oct 23** unsigned declaration; firsthand window correction, evidence/truthfulness brackets remain.
+12-PROPOSED-JUDGMENT-AND-WRIT-DRAFT.md — **REVISED Oct 23** proposed judgment requires specific agency-error and factual findings; mutually exclusive certification/reconsideration outcomes.
 13-PREFILING-CHECKS-AND-ETHICAL-ADVOCACY.md — primary-source and CMC prerequisites, video/parole search knowledge verification, Rule 3.3 candor, service/exhibit and reservation checks.
 14-MERITS-WRIT-DECISION-FOCUS-AUDIT.md — **read before revising the motion**; candid 'not yet winning' audit centered on Serrato's April 20 qualifying-offense determination, full five-sentence FAC-reproduced denial, three key legal proof gaps, and a revised merits-brief structure.
 
 
 **Do not mark external action completed until the evidentiary receipt, accepted filing, written agreement, or response is added to the case graph.**
+**October 23 drafting note:** The revised PDF/DOCX packet is available as direct ChatGPT downloads in the drafting conversation. These are review drafts, **not filed or served**; relevant verification and case-management issues remain unresolved. No binary PDF/DOCX was added to this PR.
