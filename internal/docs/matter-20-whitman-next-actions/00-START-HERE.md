@@ -41,5 +41,6 @@ Make the next steps verifiable and procedurally sound: secure the decision file;
 05-PEREMPTORY-WRIT-MERITS-BRAINSTORM.md — motion/MPA outline, specific disputed facts and hard defense counterevidence, statutory test, remedies and required evidence.
 06-JUDICIAL-FINDINGS-AND-EVIDENCE-GATES.md — element-by-element proof/adverse-case ledger, judge-ready findings, and multi-model red-team questions.
 07-ROADWAY-AND-APRIL-DECISION-THEORIES.md — current §40300.5 and roadway definition, Music/Villalobos adverse-case split, AG 2024 bulletin and decision-file discovery questions.
+08-EARLY-VEHICLE-ENTRY-CONSENT-AND-U-VISA-THRESHOLD.md — timeline of exterior peering, the 00:56:09 “booze” remark, 00:56:43 passenger-door opening, cup inspection, conflicting report chronology, Ngumezi/Mardis legal authorities, and limits of using an unlawful search to establish criminal false imprisonment.
 
 **Do not mark external action completed until the evidentiary receipt, accepted filing, written agreement, or response is added to the case graph.**
