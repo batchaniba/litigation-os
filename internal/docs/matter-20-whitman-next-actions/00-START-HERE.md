@@ -40,5 +40,6 @@ Make the next steps verifiable and procedurally sound: secure the decision file;
 04-POST-CMC-MERITS-FILING-SEQUENCE.md — conditional first post-CMC document (if court orders a briefing stipulation), first substantive noticed writ motion, §1094 no-triable-fact threshold vs §1090 factual disputes, exact filing package and safeguards.
 05-PEREMPTORY-WRIT-MERITS-BRAINSTORM.md — motion/MPA outline, specific disputed facts and hard defense counterevidence, statutory test, remedies and required evidence.
 06-JUDICIAL-FINDINGS-AND-EVIDENCE-GATES.md — element-by-element proof/adverse-case ledger, judge-ready findings, and multi-model red-team questions.
+07-ROADWAY-AND-APRIL-DECISION-THEORIES.md — current §40300.5 and roadway definition, Music/Villalobos adverse-case split, AG 2024 bulletin and decision-file discovery questions.
 
 **Do not mark external action completed until the evidentiary receipt, accepted filing, written agreement, or response is added to the case graph.**
