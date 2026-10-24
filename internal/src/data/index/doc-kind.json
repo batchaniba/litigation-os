@@ -90,6 +90,12 @@
     {
       "path": "internal/docs/STIPULATION_DEFENSE.md",
       "doc_kind": "analysis"
+    },
+    {
+      "path": "internal/docs/seo-public-record/CONTENT_PLAN.md",
+      "doc_kind": "analysis",
+      "as_of": "2026-10-11",
+      "note": "Five-platform public-record SEO plan. Not a clock. Nothing in it is approved for publication."
     }
   ]
 }
