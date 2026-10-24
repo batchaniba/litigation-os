@@ -47,6 +47,7 @@ Make the next steps verifiable and procedurally sound: secure the decision file;
 11-PETITIONER-DECLARATION-DRAFT.md — unsigned firsthand declaration with open proof/knowledge brackets for verification before signing.
 12-PROPOSED-JUDGMENT-AND-WRIT-DRAFT.md — alternative primary/conditional relief; select judicially supported route before lodging.
 13-PREFILING-CHECKS-AND-ETHICAL-ADVOCACY.md — primary-source and CMC prerequisites, video/parole search knowledge verification, Rule 3.3 candor, service/exhibit and reservation checks.
+14-MERITS-WRIT-DECISION-FOCUS-AUDIT.md — **read before revising the motion**; candid 'not yet winning' audit centered on Serrato's April 20 qualifying-offense determination, full five-sentence FAC-reproduced denial, three key legal proof gaps, and a revised merits-brief structure.
 
 
 **Do not mark external action completed until the evidentiary receipt, accepted filing, written agreement, or response is added to the case graph.**
