@@ -27,10 +27,22 @@
     "date": "2026-09-30",
     "date_label": "Sep. 30, 2026",
     "kind": "deadline",
-    "status": "open",
+    "status": "satisfied",
     "source_dkt": 17,
     "title": "Plaintiff's reply due in support of Dkt. 17 motion to strike \u2014 Nforbi v. Candelaria et al. (3:26-cv-08272-RFL), Sep. 30, 2026.",
-    "actor": "you"
+    "actor": "you",
+    "retired_reason": "Moot: Dkt. 24 (Oct. 13, 2026) granted the Dkt. 17 motion to strike without a hearing; struck Dkt. 11 answer and Dkt. 5."
+  },
+  {
+    "id": "33-deadline-7",
+    "date": "2026-10-27",
+    "date_label": "Oct. 27, 2026",
+    "kind": "deadline",
+    "status": "open",
+    "source_dkt": 24,
+    "title": "WATCH \u2014 Defendants' response to First Amended Complaint (Dkt. 6) due \u2014 Nforbi v. Candelaria et al. (3:26-cv-08272-RFL). Set by Dkt. 24 Order Granting Motion to Strike (Oct. 13, 2026), which struck Defendants' Sep. 4 answer (Dkt. 11) to the superseded complaint.",
+    "actor": "opposing",
+    "source": "/documents/matter-33/ndcal/Dkt 24 - Order Granting Motion to Strike (Filed Oct 13 2026).pdf"
   },
   {
     "id": "33-deadline-2",
@@ -64,9 +76,10 @@
     "kind": "hearing",
     "status": "open",
     "source_dkt": 4,
-    "title": "Initial Case Management Conference and Dkt. 17 motion-to-strike hearing, 10:00 a.m. before Hon. Rita F. Lin \u2014 Nforbi v. Candelaria et al. (3:26-cv-08272-RFL).",
+    "title": "Initial Case Management Conference, 10:00 a.m. before Hon. Rita F. Lin \u2014 Nforbi v. Candelaria et al. (3:26-cv-08272-RFL).",
     "actor": "you",
-    "source": "/documents/matter-33/ndcal/Dkt 04 - Order Setting Initial Case Management Conference and ADR Deadlines (Aug 10 2026).pdf"
+    "source": "/documents/matter-33/ndcal/Dkt 04 - Order Setting Initial Case Management Conference and ADR Deadlines (Aug 10 2026).pdf",
+    "note": "Dkt. 17 motion-to-strike hearing removed: motion granted without hearing by Dkt. 24 (Oct. 13, 2026). CMC unchanged."
   },
   {
     "id": "33-cisneros-disclosures",

@@ -47,8 +47,8 @@ All current and future matters follow the [Stipulation Defense — Plaintiff-Fir
 | Plaintiff | Brendan Ngehsi Newanforbi |
 | Representation | Pro Se / In Propria Persona |
 | Jurisdictions | USDC E.D. Cal., USDC N.D. Cal., San Joaquin Sup. Ct., Alameda Sup. Ct., Sacramento Sup. Ct., Santa Clara Sup. Ct. |
-| Total Matters | 42 |
-| Active / Open | 23 |
+| Total Matters | 43 |
+| Active / Open | 24 |
 | — of which Settled | 1 (Matter 22 — Newanforbi v. Pilot Travel Centers LLC, Jul. 14, 2026) |
 | Dismissed / Closed / Abandoned | 19 |
 | Aggregate Exposure (Conservative) | ~$1,456,000+ |
@@ -112,7 +112,7 @@ The largest cluster — 14 matters — targeting CDCR's parole supervision appar
 
 <!-- PORTFOLIO:CLUSTER_HEADING_3:START -->
 <a id="cluster-3"></a>
-### Cluster 3 — Employment Violations (Matters 22–23, 25–27, 29, 31, 36–39, 42)
+### Cluster 3 — Employment Violations (Matters 22–23, 25–27, 29, 31, 36–39, 42–43)
 <!-- PORTFOLIO:CLUSTER_HEADING_3:END -->
 
 Cluster 3 centers on employer-side Penal Code § 290.46(j)(2)(E) claims and related background-screening theories. Matter 31 (First Advantage) is now a **conditional vendor-liability investigation**, not presumed additive liability: after the September 18 Carrillo/Mendoza stress test, any complaint must identify a First Advantage-specific FCRA/ICRAA breach rather than merely repackaging the employers' alleged registry misuse. Matters 36-39 are executed San Joaquin packets (AT&T, Home Depot, Swift, Best Buy) prepared for a September 8, 2026 walk-up and still unfiled as of September 7, 2026. Matter 40 (Uber Technologies, Inc. / TaskUs staffing) is a prospective monitoring file — Offer of Temporary Employment signed September 14, 2026 ($22/hour); same-day TA Ops hold of the September 23 start pending the First Advantage report (Order WPS-361214148; PRINSOS still running); MAA signed; no report viewable and no adverse action yet. (Matters 32 and 33 are CHP / DMV APS filings — see Cluster 1.)
@@ -208,13 +208,14 @@ Standalone retail civil-rights matter arising from an August 25, 2026 consumer r
 | 33 | Nforbi v. Candelaria et al. | 3:26-cv-08272-RFL | USDC N.D. Cal. (San Francisco Div.) | Federal | RFL reassignment; reply Sep. 30; CMC Dec. 9 |
 | 34 | Newanforbi v. Counseling and Psychotherapy Center, Inc., et al. | TBD | USDC N.D. Cal. (San Jose Div.) / Santa Clara Sup. Ct. | Federal | Pre-filing — intake & compliance monitoring |
 | 35 | Ngwa Nforbi v. Ross Stores, Inc., et al. | 26CV501995 | Santa Clara Sup. Ct. (Downtown / First Street) | State | File caption request — then serve Ross ~Oct 25 |
-| 36 | Brendan Ngwa Nforbi v. AT&T Mobility Services LLC | TBD | USDC E.D. Cal. (Sep. 16 walk-up; unfiled) / San Joaquin Sup. Ct. (Sep. 8 packet LOCKED, unfiled) | Federal | EDCA walk-up Sep. 16 — unfiled |
+| 36 | Brendan Ngwa Nforbi v. AT&T Mobility Services LLC | 2:26-cv-03314-DJC-AC (PS) | USDC E.D. Cal. | Federal | IFP granted / screened in — USM service pending |
 | 37 | Brendan Ngwa Nforbi v. Home Depot U.S.A., Inc. | TBD | USDC E.D. Cal. (Sep. 16 walk-up; unfiled) / San Joaquin Sup. Ct. (Sep. 8 packet LOCKED, unfiled) | Federal | EDCA walk-up Sep. 16 — unfiled |
 | 38 | Brendan Ngwa Nforbi v. Swift Transportation Co. of Arizona LLC | 2:26-cv-03312-DC-SCR | USDC E.D. Cal. (Sacramento Div.) | Federal | IMPORTANT — IFP denied; renew or pay fee by Oct. 26 |
-| 39 | Brendan Ngwa Nforbi v. Best Buy Co., Inc. | TBD | USDC E.D. Cal. (Sep. 16 walk-up; unfiled) / San Joaquin Sup. Ct. (Sep. 8 packet LOCKED, unfiled) | Federal | EDCA walk-up Sep. 16 — unfiled |
+| 39 | Brendan Ngwa Nforbi v. Best Buy Co., Inc. | 2:26-cv-03315-DC-CKD (PS) | USDC E.D. Cal. (Sacramento Div.) | Federal | Filed Sep. 18 — IFP application pending |
 | 40 | Brendan Ngwa Nforbi v. Uber Technologies, Inc. | TBD | TBD (pre-dispute — offer received Sep. 14, 2026) | State | Start withheld — complaint signed, not filed |
 | 41 | Brendan Ngwa Nforbi v. Nuro, Inc. | TBD | TBD (pre-dispute — application Sep. 9, 2026) | State | Pending — pre-background-check |
 | 42 | Nforbi v. Staples Retail et al. | TBD | TBD (pre-dispute — onboarding Sep. 29–30, 2026) | State | Pending — FADV public-record notice Oct. 7 |
+| 43 | Ngwa Nforbi v. Hertz Global Holdings, Inc. | TBD | TBD — no action filed | State | Offer accepted — HireRight screening active |
 <!-- PORTFOLIO:ACTIVE_MATTERS:END -->
 
 *Settled matters stay in the table above until dismissal is entered — a settlement resolves the merits, but the matter is still open on the docket. Their Status column reads "Settled" (see the Overview count above for which ones).*
@@ -260,39 +261,42 @@ Standalone retail civil-rights matter arising from an August 25, 2026 consumer r
 |---|---|---|
 | Sep. 4, 2026 | 32 | OVERDUE — Jose Melano response to operative FAC. Served Aug. 14, 2026; no response on PACER as of Sep. 28, 2026. Default posture; verify docket before seeking Rule 55(a) relief. |
 | Sep. 17, 2026 | 32 | FILE — signed 415.20(b) declaration + Exhibit A USPS receipt + POS in Nforbi v. Meza-Gonzalez et al. (4:26-cv-08271-ASK) after the September 17 postmark. San… |
-| Sep. 20, 2026 | 20 | AMENDMENT DUE (optional) — if Petitioner elects to amend Count 4, file and serve an amended Petition within 20 days of notice of entry of the August 29, 2026… |
 | Sep. 25, 2026 | 41 | WATCH — one week post-driving-eval: check for any Checkr background-check authorization/disclosure email from Nuro. None signed as of Sep. 18, 2026. The vendor step is the next event in the sequence. |
 | Sep. 26, 2026 | 38 | OUTER BOUND — CCP § 338(a) three-year statutory-liability clock on the Swift § 290.46(j) / ICRAA counts if accrual is the Sept. 26, 2023 pre-adverse email.… |
 | Sep. 30, 2026 | 29 | 28 U.S.C. §1447(c) remand window closes (computed) — Newanforbi v. Amazon.com Services, LLC et al., USDC N.D. Cal. No. 3:26-cv-09249-ASK. Thirty days from the… |
-| Sep. 30, 2026 | 33 | Plaintiff's reply due in support of Dkt. 17 motion to strike — Nforbi v. Candelaria et al. (3:26-cv-08272-RFL), Sep. 30, 2026. |
 | Oct. 1, 2026 | 19 | Habeas ruling calendar (computed) — Newanforbi v. Macomber (C2604791). CRC 4.551(a)(6)(B) runs 30 days from the September 1, 2026 in-person filing of the… |
 | Oct. 6, 2026 | 20 | TARGET — File & serve CM-110 with attachments + proof of service (ideal window Oct 6–8; hard deadline Oct 13, 15 calendar days before Oct 28 CMC per CRC 3.725). |
 | Oct. 8, 2026 | 25 | HEARING — Status (Pretrial Scheduling) Conference in Newanforbi v. Federal Express Corporation (E.D. Cal. 2:26-cv-02881-DAD-SCR), Thursday, October 8, 2026,… |
 | Oct. 9, 2026 | 27 | WATCH — Randstad settlement payment due: 14 calendar days after the Sep. 25, 2026 Effective Date. Checks by tracked overnight courier; tracking number to be emailed on dispatch. Confirm receipt and clearing. |
 | Oct. 13, 2026 | 20 | Case Management Statement due (computed) — Newanforbi v. CHP et al. (26CV191136), 15 calendar days before the Oct. 28, 2026 CMC per CRC 3.725. |
+| Oct. 14, 2026 | 29 | WATCH — CRD right-to-sue GAP for Claim 2 (Fair Chance Act, Gov. Code §12952). No CRD complaint or right-to-sue notice found in the repo, matter.json, the complaint, or Gmail, and the complaint pleads no exhaustion. |
 | Oct. 14, 2026 | 42 | WATCH — Staples / First Advantage (Matter 42): First Advantage file requested and received? Staples pre-adverse notice or Fair Chance Act preliminary decision (Gov. |
-| Oct. 16, 2026 | 20 | Hearing on CHP demurrer and the individual respondents' joinders/demurrers to the Petition for Writ of Mandate, Newanforbi v. California Highway Patrol, et al.… |
-| Oct. 17, 2026 | 39 | OUTER BOUND — CCP § 338(a) three-year statutory-liability clock on the Best Buy § 290.46(j) count if accrual is the Oct. 17, 2023 offer / same-day screen week.… |
 | Oct. 19, 2026 | 32 | WATCH — Meza-Gonzalez Rule 12(a) responsive deadline (computed from a September 17, 2026 CCP § 415.20(b) mailing) in Nforbi v. Meza-Gonzalez et al.… |
 | Oct. 20, 2026 | 20 | WATCH — CHP written responses to RFP Set One (Count 1) in Newanforbi v. CHP et al. (26CV191136). Clock is October 20 if the September 16 email to Ing is valid… |
 | Oct. 20, 2026 | 28 | Civil L.R. 7-3(d)(1) objection to new evidence in reply: due within 7 days after the reply is filed (filed Oct. 13 → Oct. 20). |
 | Oct. 20, 2026 | 29 | Civil L.R. 7-3(d)(1) objection to new evidence in reply: due within 7 days after the reply is filed (served Oct. 13 → Oct. 20). NOT NEEDED: Amazon's 6-page reply attaches no declarations, exhibits, or RJN. Newanforbi v. |
-| Oct. 22, 2026 | 33 | Deadline to file ADR Certification (ADR L.R. 3) and to meet and confer regarding initial disclosures, early settlement, ADR process selection, and a discovery… |
-| Oct. 23, 2026 | 20 | Continued hearing on the Dutra joinder and demurrer to the Petition for Writ of Mandate, Newanforbi v. California Highway Patrol, et al. (Matter 20) — Dept.… |
-| Oct. 25, 2026 | 35 | OPEN TASK — Serve Ross Stores, Inc. and Ross Dress for Less, Inc. in Matter 35 (26CV501995) with the Verified Complaint, issued Summons, ADR Information Sheet,… |
+| Oct. 21, 2026 | 35 | OPEN TASK — Matter 35 (26CV501995) meet-and-confer with Ross counsel (Vogl Meredith) re Oct 15 Verified Answer before demurrer/motion to strike (CCP §§ 430.41(a)(2), 435.5). |
 | Oct. 26, 2026 | 27 | Response deadline for Randstad US, LLC and The RK Logistics Group, Inc., extended by stipulation through Oct. 26, 2026 (no further extensions). |
 | Oct. 26, 2026 | 27 | PRIVATE — outside date under the confidential agreement: if the checks are not delivered by today or any check is dishonored, Plaintiff may proceed with the case or enforce the agreement (Paras. 2, 21). |
+| Oct. 26, 2026 | 35 | OPEN TASK — Matter 35: demurrer / motion to strike Ross's Oct 15 answer (CCP §§ 430.40(b), 435), OR file § 430.41(a)(2) declaration for automatic 30-day extension (to Nov. 25, 2026). |
 | Oct. 26, 2026 | 38 | IMPORTANT — DUE — Renewed IFP motion (complete AO 239: monthly income, monthly expenses, assets, all money received in the past 12 months) OR pay the filing fee — Brendan Ngwa Nforbi v. Swift Transportation Company (E.D. |
 | Oct. 27, 2026 | 28 | Initial CMC (continued) and hearing on Dkt. 15 motion to dismiss — Newanforbi v. Smith / HOPE (3:26-cv-07504-LJC), Oct. 27, 2026, 10:30 a.m., Courtroom G, Hon. Lisa J. |
+| Oct. 27, 2026 | 33 | WATCH — Defendants' response to First Amended Complaint (Dkt. 6) due — Nforbi v. Candelaria et al. (3:26-cv-08272-RFL). |
 | Oct. 28, 2026 | 20 | Case Management Conference (continued from Sep. 2, 2026) — Newanforbi v. CHP et al. (26CV191136), 4:00 p.m., Dept. 25, Rene C. Davidson Courthouse, Hon. Jenna… |
 | Oct. 29, 2026 | 25 | CONTINGENT — FedEx responses to Plaintiff's Interrogatories, RFAs, and RFPs (Set One). Not yet served by mail as of Sep. 25, 2026. |
+| Oct. 29, 2026 | 36 | DEADLINE — USM service packet and Notice of Submission in Brendan Ngwa Nforbi v. AT&T Mobility Services LLC (E.D. Cal. 2:26-cv-03314-DJC-AC (PS)). Within 15 days of Dkt. 4 (Oct. 14): deliver to the U.S. |
 | Nov. 1, 2026 | 1, 2, 32 | CCP §335.1 two-year statute of limitations (computed) backstop, running from the Nov. 1, 2024 incident. (1) Matter 1's Fourth Amendment §1983 claim (borrowed… |
 | Nov. 2, 2026 | 20 | TARGET — File & serve motion package for peremptory writ (notice + MPA with CRS receipt, declaration, proposed judgment, proposed writ, POS); hard deadline Dec 11 (16 court days + 2 for e-service, CCP §1005(b)). |
+| Nov. 5, 2026 | 25 | WATCH — FedEx responses to Plaintiff's Interrogatories, RFAs, and RFPs (Set One) due, Newanforbi v. Federal Express Corporation (E.D. Cal. 2:26-cv-02881-DAD-SCR). |
+| Nov. 6, 2026 | 29 | Rule 26(f) / ADR L.R. 3-5 meet-and-confer, Fri. Nov. 6, 2026, 1:00–1:30 p.m. PT (invite sent as 3:00–3:30 p.m. Central), by Microsoft Teams — Newanforbi v. Amazon.com Services, LLC et al. (4:26-cv-09249-ASK). |
 | Nov. 10, 2026 | 29 | Deadline to file ADR Certification (ADR L.R. 3) and to meet and confer regarding initial disclosures, early settlement, ADR process selection, and a discovery… |
+| Nov. 13, 2026 | 28 | PROPOSED (Plaintiff, Joint CMS Dkt. 28): prior discovery re-production/authorization completed — 3:26-cv-07504-LJC |
 | Nov. 13, 2026 | 29 | WATCH — Accurate Background reinvestigation due (15 U.S.C. §1681i(a)(1)(A) / Civ. Code §1786.24: 30 days from Plaintiff's Oct. 14, 2026 dispute of ref 496623722 |
 | Nov. 13, 2026 | 29 | OPTIONAL: last day to request a Zoom appearance for the Nov. 18 Dkt. 19 MTD hearing. Krishnan Civil Standing Order (8/20/26) p.2: law-and-motion hearings are in person |
 | Nov. 16, 2026 | 24 | Email appearance names to crbcrd@cand.uscourts.gov |
+| Nov. 17, 2026 | 35 | OPEN TASK — Matter 35: serve verified responses to Ross Form Interrogatories, Special Interrogatories (27), and RFPs (24), Set One (served Oct 15 by mail + email; 30 days + 2 court days, CCP § 1010.6). |
 | Nov. 18, 2026 | 29 | Hearing on Dkt. 19 motion to dismiss — Newanforbi v. Amazon.com Services, LLC et al. (4:26-cv-09249-ASK), Nov. 18, 2026, 1:30 p.m., Courtroom 4, 3rd Floor, Hon. Ajay S. Krishnan. |
+| Nov. 18, 2026 | 33 | Deadline to file ADR Certification (ADR L.R. 3) and to meet and confer regarding initial disclosures, early settlement, ADR process selection, and a discovery… (adjusted to Dec 9 CMC per Dkt. 4/Dkt. 23) |
 | Nov. 20, 2026 | 24 | MTD FAC (Dkt. 18) Zoom before Judge Breyer |
 | Nov. 24, 2026 | 29 | Deadline to make initial disclosures (Fed. R. Civ. P. 26(a)(1)) and to file the Joint Case Management Statement (Standing Order for All Judges of the Northern… |
 | Nov. 24, 2026 | 29 | OPTIONAL: request that the Dec. 1 initial CMC be held in person (in the Joint CMC Statement or a separate filing no later than seven days before the conference). Krishnan Civil Standing Order (8/20/26) p.4. |
@@ -300,7 +304,7 @@ Standalone retail civil-rights matter arising from an August 25, 2026 consumer r
 | Nov. 28, 2026 | 29 | WATCH: Amazon CCPA request-to-know response due (Civ. Code §1798.130(a)(2)(A): 45 calendar days from receipt; extendable once by 45 days with notice). Letter 3 emailed Oct. 14, 2026, 2:48 p.m. |
 | Dec. 1, 2026 | 29 | Initial Case Management Conference, 1:30 p.m. by Zoom (cand.uscourts.gov/ask) before Magistrate Judge Ajay S. Krishnan — Newanforbi v. Amazon.com Services, LLC… |
 | Dec. 2, 2026 | 33 | Deadline to make initial disclosures and file the Case Management Statement — Nforbi v. Candelaria et al. (3:26-cv-08272-RFL), per Sep. 28 PACER true-up. |
-| Dec. 9, 2026 | 33 | Initial Case Management Conference and Dkt. 17 motion-to-strike hearing, 10:00 a.m. before Hon. Rita F. Lin — Nforbi v. Candelaria et al. (3:26-cv-08272-RFL). |
+| Dec. 9, 2026 | 33 | Initial Case Management Conference, 10:00 a.m. before Hon. Rita F. Lin — Nforbi v. Candelaria et al. (3:26-cv-08272-RFL). |
 | Dec. 11, 2026 | 12 | Further Case Management Conference, 8:30 AM, Dept. 11B, Hon. Robert T. Waters — Ngwa Nforbi v. Diamond Truck Sales, Inc. et al. (STK-CV-UF-2026-0001094), set… |
 | Dec. 11, 2026 | 20 | DEADLINE — Motion for peremptory writ of mandate filed & served (16 court days + 2 for e-service before Jan 8, 2027 hearing, CCP §1005(b)). |
 | Dec. 17, 2026 | 27 | Case Management Conference, Newanforbi v. Randstad US LLC and RK Logistics Group, Inc. (Matter 27) — Hon. Thomas Weathers, Dept. 20, Rene C. Davidson… |
@@ -309,9 +313,12 @@ Standalone retail civil-rights matter arising from an August 25, 2026 consumer r
 | Jan. 7, 2027 | 20 | WATCH — Tentative ruling posts (afternoon); read it. To argue, follow Dept. 25 contest procedure. |
 | Jan. 8, 2027 | 20 | HEARING — Motion for peremptory writ of mandate, 9:00 a.m., Dept. 25, Hon. Jenna M. Whitman (Reservation ID 958052306492). |
 | Jan. 12, 2027 | 35 | OPEN TASK — Matter 35 (26CV501995) meet-and-confer with appearing parties at least 30 calendar days before the Feb. 11, 2027 CMC (Santa Clara Civil Lawsuit… |
+| Jan. 12, 2027 | 36 | WATCH — U.S. Marshal 90-day service deadline in Brendan Ngwa Nforbi v. AT&T Mobility Services LLC (E.D. Cal. 2:26-cv-03314-DJC-AC (PS)) (Dkt. 4; Fed. R. Civ. P. 4(m); 90 days from Oct. 14, 2026). |
 | Jan. 27, 2027 | 35 | OPEN TASK — File and serve Case Management Statement (CM-110) in Matter 35 (26CV501995) at least 15 calendar days before the Feb. 11, 2027 CMC. |
 | Feb. 11, 2027 | 35 | CASE MANAGEMENT CONFERENCE — Ngwa Nforbi v. Ross Stores, Inc., et al. (Matter 35, Santa Clara Sup. Ct. No. 26CV501995), Hon. Vince Parrett, Dept. 16 (stamp… |
+| Feb. 11, 2027 | 35 | OPEN TASK — Matter 35: post Plaintiff's $150 jury fee (or confirm fee-waiver coverage) on or before initial CMC (CCP § 631(c)(2)). |
 | Mar. 1, 2027 | 30 | OUTER STATUTE OF LIMITATIONS (computed) — Government Claims Act six-month suit-filing window for the Bane Act and IIED state-law claims, Newanforbi v. Moua, et… |
+| Jul. 27, 2028 | 29 | OUTER BOUND (conservative, computed) — FCRA (15 U.S.C. §1681p: 2 years from discovery, 5 years from violation) and ICRAA (Civ. |
 <!-- PORTFOLIO:UPCOMING_DEADLINES:END -->
 
 [↑ Contents](#contents)

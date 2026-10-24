@@ -135,9 +135,32 @@ export interface PublicDocketRow {
 /** Stored clocks.json / D1 status. overdue is derived, never stored. See clock-status.mjs. */
 export type StoredClockStatus = "open" | "set" | "contingent" | "vacated" | "satisfied";
 
+/** Known clocks.json `kind` values. Free-form strings are still accepted. */
+export type ClockKind =
+  | "deadline"
+  | "hearing"
+  | "cmc"
+  | "court_order"
+  | "expiry"
+  | "filing"
+  | "watch"
+  | "meet-and-confer";
+
+/** Display labels for known clock kinds. */
+export const CLOCK_KIND_LABELS: Record<ClockKind, string> = {
+  deadline: "Deadline",
+  hearing: "Hearing",
+  cmc: "CMC",
+  court_order: "Court order",
+  expiry: "Expiry",
+  filing: "Filing",
+  watch: "Watch",
+  "meet-and-confer": "Meet & Confer",
+};
+
 export interface PublicClock {
   date: string;
-  kind: string;
+  kind: ClockKind | (string & {});
   status: StoredClockStatus;
   title: string;
   actor?: string;
