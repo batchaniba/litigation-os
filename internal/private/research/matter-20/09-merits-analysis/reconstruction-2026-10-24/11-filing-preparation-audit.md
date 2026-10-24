@@ -36,6 +36,7 @@
 
 - [ ] **OPEN — KeyCite/Shepard's verification (ALL authorities).** Not run (Westlaw blocked October 24, 2026). Public-source verification only to date. Run before filing.
 - [ ] **OPEN — Pincite verification.** Espinoza 101–103 (not read); Troppman footnote 11 content (not read — body proposition verified); Schofield full facts (not read — holding verified); Thompson 38 Cal.4th at 818 (order citation only); Wolterman (order citation only); Berch reporter cite (none shown); CCP §§ 1085/1086/1091/1094/1088.5 standard text (re-verify); § 679.10(o)(2) (re-verify).
+- [ ] **OPEN — Integrated-authority verification (Westlaw integration, Oct. 24).** Verify quotes + KeyCite flags for CV Amalgamated 283/286, Crestwood 16, Alameda Health 1177, Hagberg 372 fn. 7/372–373, Asgari 752–753 (resolve pin), Gov. Code § 820.4, and the Western States *576 second sentence ("do not merit such deference") before filing. Review Common Cause's 8 negative entries. American Medical Response is EXCLUDED pending flag verification — do not cite it.
 - [ ] **OPEN — No § 679.10-construing / § 146(a) officer case.** None found. Do not imply otherwise in any filing. The direct-certification risk assessment (product 00) reflects this absence.
 
 ## F. SERVICE / FILING MECHANICS

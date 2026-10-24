@@ -22,12 +22,15 @@
 | 11 | `10-alternative-procedural-order.md` | Alternative procedural order (Q1–Q5, witnesses, authentication, burden, § 1090 mechanism) |
 | 12 | `11-filing-preparation-audit.md` | Filing-preparation audit (private checklist; every unresolved execution, evidentiary, procedural, service issue) |
 | 13 | `12-before-and-after-change-report.md` | Before-and-after change report (why the replacement is materially better; what was deliberately not done; relationship to the Oct. 24 revision and the 12-review) |
+| + | `13-westlaw-integration-note.md` | Westlaw integration note (second commit: adopted/rejected/held items, verification homework, files changed) |
 | — | `MANIFEST.md` (this file) | Manifest, branch/commit record, and source notes |
 
 ## Branch and commit
 
 - **Parent branch:** `research/matter-20-2026-10-24` (research-only; another agent is actively committing there — this reconstruction does not touch it).
-- **Child branch:** created for this reconstruction; name and commit hash are recorded in the delivery message (the branch was created from the parent branch tip at push time). If the push was unavailable, this manifest instead records local-only delivery and no commit is claimed.
+- **Child branch:** `research/matter-20-2026-10-24-reconstruction`.
+- **First commit:** `c9f8c627` (14 files: products 00–12 + MANIFEST).
+- **Second commit (Westlaw integration):** hash recorded in the delivery message (products 03, 05, 11, 12 patched; product 13 added; MANIFEST updated). 15 files total on the branch after the second commit.
 - **Merge:** NONE. No merge to main or to the parent branch is requested or authorized by this assignment.
 
 ## Source notes (what was read for this reconstruction)
