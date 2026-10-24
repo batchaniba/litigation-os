@@ -1,0 +1,37 @@
+# [ALTERNATIVE A — PROPOSED] JUDGMENT GRANTING FIRST CAUSE OF ACTION AND DIRECTING EXECUTION OF FORM I-918 SUPPLEMENT B
+Superior Court of California, County of Alameda, No. 26CV191136  
+*Brendan Ngehsi Newanforbi v. California Highway Patrol; G. Serrato (official capacity)*  
+Hon. Jenna M. Whitman, Dept. 25 — Hearing: [ACTUAL SETTING TO BE VERIFIED]
+
+**This form is tendered ONLY if the Court actually makes the findings below after receiving competent evidence. It is not a representation that the findings have already been made.**
+
+This cause came before the Court on [date] upon Petitioner's noticed motion under Code of Civil Procedure section 1085 and Penal Code section 679.10, limited to the First Cause of Action. The Court considered [IDENTIFY EVIDENCE ACTUALLY ADMITTED AND ARGUMENT HEARD].
+
+### Findings of fact and law
+1. CHP is a certifying entity, and [IDENTIFY ACTUAL AUTHORIZED SIGNATORY] is a certifying official for purposes of Penal Code section 679.10(a)–(b). Petitioner submitted a Form I-918 Supplement B request on April 9, 2026; CHP declined it on April 20 on the stated ground that the conduct was neither qualifying nor substantially similar criminal activity.
+
+2. **Only if found following the merits hearing:** Officers intentionally detained, arrested, handcuffed and transported Petitioner against his will during the November 1, 2024 incident.
+
+3. **Only if found:** At the relevant compulsory-arrest stage no lawful authority or objectively sufficient basis existed, including no applicable factual predicate under Vehicle Code section 40300.5 or other lawful arrest authority. The specific material findings and relied-on evidence are: [JUDGE INSERTS ACTUAL FINDINGS, e.g., statutory predicate and credited report/video findings; do not prepopulate hypothetical facts as established].
+
+4. **Only if found:** The restraint described in Findings 2–3 constituted qualifying *criminal* false imprisonment under Penal Code section 236 and Penal Code section 679.10(c)(19), or independently qualifying criminal restraint under [SPECIFY OFFENSE AND STATUTORY BASIS], directly causing injury or harm to Petitioner within section 679.10(o)(2). No prosecution/conviction is required under section 679.10(k)(1).
+
+5. **Only if found:** Petitioner has been, is being or is likely to be helpful to detection or investigation of that qualifying conduct. The evidence of help includes [IDENTIFY PROVED SUBMISSIONS/RESPONSES]. The section 679.10(h) presumption has not been rebutted by any qualifying failure to provide reasonably requested assistance.
+
+6. On the evidentiary and legal findings above, **only one lawful disposition remains** under section 679.10(g)(1): execution of the certification. The Court determines that the April 20 refusal is unlawful and contrary to the specially imposed duty. No separate damages or other cause is adjudicated.
+
+### Judgment
+7. Judgment is entered for Petitioner on First Cause of Action. The April 20, 2026 refusal is set aside.
+
+8. A peremptory writ shall issue directing CHP, through an authorized certifying official, within **30 calendar days after service of the writ**, to fully complete, sign and forward Form I-918 Supplement B to Petitioner in the manner required by Penal Code section 679.10. The officer shall supply factual descriptions consistent with the Court's binding findings and the governing form instructions; the writ does not itself confer immigration status.
+
+9. Within **45 calendar days after service**, Respondents shall file and serve a verified return attaching the executed certification and proof of delivery, with any legally appropriate privacy precautions.
+
+10. The Court retains jurisdiction to determine compliance with its writ. Costs, if any, shall be fixed under applicable law after lawful application. The judgment determines no dismissed counts and no immigration benefit apart from execution of the certification.
+
+IT IS SO ORDERED.
+Dated: _____________
+________________________________  
+JUDGE OF THE SUPERIOR COURT
+
+*This Alternative A is mutually exclusive with Alternative B, which assumes further authorized discretion remains.*
