@@ -21,6 +21,7 @@ The initial collection contains 92 unique PDFs and 268 source/derivative assets 
 - **`06-source-snapshots/`**: Read-only copies of relevant Matter 20 graph siblings and selected historical manifest data. Consult the actual live `clocks.json` and `docket.json` for current calendar and pleading information.
 - **`07-source-text/`**: Existing sidecars, recovered R2 text and generated `pdftotext -layout` output. The original PDF controls; text extraction is not an OCR-accuracy or transcription certification.
 - **`08-audit/`**: Inventory, hashes, source provenance, R2 key audits, exclusions and remaining retrieval gaps.
+- **`09-merits-analysis/`**: Added October 24 as a separate research-only layer: the full remedy-focused writ research memorandum with citations to the two original uploaded packets, plus a use/verification guide. Not counted among the 268 preserved source assets.
 
 ## Important discoveries and limits
 
