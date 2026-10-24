@@ -1,0 +1,5 @@
+# Preserve imported evidence and historical source formatting verbatim.
+* -whitespace
+*.pdf binary
+*.PDF binary
+*.docx binary

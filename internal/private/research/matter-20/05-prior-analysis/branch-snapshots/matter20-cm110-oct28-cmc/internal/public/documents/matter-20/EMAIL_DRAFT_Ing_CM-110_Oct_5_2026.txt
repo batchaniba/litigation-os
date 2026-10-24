@@ -1,0 +1,26 @@
+To: Vanessa.Ing@doj.ca.gov
+Cc: Mark.Beckington@doj.ca.gov
+Subject: Newanforbi v. California Highway Patrol, No. 26CV191136 — Petitioner's Case Management Statement (Oct. 28 CMC)
+
+Attach:
+- Case Management Statement CM-110 (Oct 28 2026 CMC) (Executed Oct 5 2026).pdf
+- Proof of Electronic Service - CM-110 (Oct 5 2026).pdf
+
+---
+
+Ms. Ing:
+
+Attached is Petitioner's Case Management Statement for the October 28, 2026 case management conference, with proof of electronic service. It reflects our October 1 meet and confer.
+
+Thank you,
+
+Brendan Ngwa Nforbi
+Plaintiff, In Propria Persona
+
+---
+Note to self (do not send this footer):
+- File the CM-110 (with attachments) through One Legal first, then send this email the same day so the proof date matches.
+- If filing or service slips past October 5, 2026, change EXEC_DATE in the script and regenerate; the form date, signature date, and proof date must match the actual day.
+- Hard deadline: October 13, 2026 (rule 3.725, 15 calendar days before the CMC).
+- Do not attach the combined "with POS" packet in place of the two files.
+- Confirm before filing: no amended petition on the Fourth Cause of Action was filed (Attachment 18, item 3; Item 4a).

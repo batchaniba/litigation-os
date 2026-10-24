@@ -1,0 +1,656 @@
+ 1   ROB BONTA                                                    Exempt from Filing Fees --
+     Attorney General of California                               Gov’t Code § 6103
+ 2   MARK R. BECKINGTON
+     Supervising Deputy Attorney General
+ 3   VANESSA ING
+     Deputy Attorney General
+ 4   State Bar No. 329577
+      455 Golden Gate Avenue, Suite 11000
+ 5    San Francisco, CA 94102-7004
+      Telephone: (415) 510-3464
+ 6    Fax: (415) 703-5480
+      E-mail: Vanessa.Ing@doj.ca.gov
+ 7   Attorneys for Respondent
+     California Highway Patrol
+ 8
+                        SUPERIOR COURT OF THE STATE OF CALIFORNIA
+ 9
+                                      COUNTY OF ALAMEDA
+10
+
+11
+
+12
+
+13   BRENDAN NGEHSI NEWANFORBI,                          Case No. 26CV191136
+
+14                                      Petitioner, RESPONDENT CALIFORNIA
+                                                    HIGHWAY PATROL’S REPLY IN
+15                 v.                               SUPPORT OF DEMURRER TO
+                                                    PETITION FOR WRIT OF MANDATE
+16
+     CALIFORNIA HIGHWAY PATROL; G.                       Date:        August 28, 2026
+17   SERRATO, in his official capacity as                Time:        9:00 a.m.
+     Captain and Commander of the California             Dept:        25
+18   Highway Patrol Dublin Area; GARY PAUL,              Judge:       The Honorable Jenna M.
+     in his official capacity as Lieutenant of the                    Whitman
+19   of the California Highway Patrol Dublin             Trial Date: None Set
+     Area; ERIC DUTRA, in his official capacity          Action Filed: May 29, 2026
+20   as Sergeant of the California Highway
+     Patrol Dublin Area; and DOES 1 through              Reservation Number: 811363998599
+21   10, inclusive,
+
+22                                   Respondents.
+
+23
+
+24
+
+25
+
+26
+
+27
+
+28
+                                                     1
+                                            Reply iso Demurrer to Petition for Writ of Mandate (26CV191136)
+ 1                                                     TABLE OF CONTENTS
+ 2                                                                                                                                        Page
+ 3
+
+ 4
+     INTRODUCTION .......................................................................................................................... 4
+ 5   ARGUMENT .................................................................................................................................. 5
+ 6        I.   Petitioner Fails to State Facts Sufficient to Constitute Any Cause of Action......... 5
+               A.          Petitioner Fails to Allege that Respondent Had a Ministerial Duty to
+ 7                         Certify Petitioner’s Form B......................................................................... 5
+ 8             B.          Petitioner Fails to Allege that He Has a Clear, Present, and
+                           Beneficial Right to a Form B Certification. ................................................ 6
+ 9             C.          Petitioner Fails to Allege that Respondent Did Not Provide a
+                           Written Explanation for the Form B Certification Denial. ......................... 7
+10
+               D.          Petitioner Fails to Allege that Respondent Had a Ministerial Duty to
+11                         Apply the Rebuttal Presumption of Helpfulness on the Facts
+                           Alleged. ....................................................................................................... 9
+12             E.          Petitioner Fails to Explain Why He is Entitled to Declaratory
+                           Relief. ........................................................................................................ 10
+13
+          II.  Petitioner Cannot Cure the Defects in His Petition Through Amendment. .......... 10
+14   CONCLUSION ............................................................................................................................. 11
+15
+
+16
+
+17
+
+18
+
+19
+
+20
+
+21
+
+22
+
+23
+
+24
+
+25
+
+26
+
+27
+
+28
+                                                                           2
+                                                                Reply iso Demurrer to Petition for Writ of Mandate (26CV191136)
+ 1                                                     TABLE OF AUTHORITIES
+ 2                                                                                                                                               Page
+ 3   CASES
+ 4   Blank v. Kirwan
+        (1985) 39 Cal.3d 311 ................................................................................................................ 4
+ 5
+
+ 6   Blatty v. New York Times Co. (1986)
+        42 Cal.3d 1033 .......................................................................................................................... 4
+ 7
+     County of San Diego v. State of California
+ 8      (2008) 164 Cal.App.4th 580 ............................................................................................... 5, 10
+
+ 9   Griset v. Fair Political Practices Commission
+        (2001) 25 Cal. 4th 688 ............................................................................................................ 10
+10
+     Holland v. Morse Diesel Int’l, Inc.
+11
+        (2001) 86 Cal.App.4th 1443 ................................................................................................ 5, 6
+12
+     Nelson v. Tucker Ellis, LLP
+13      (2020) 48 Cal.App.5th 827 ..................................................................................................... 10
+
+14   Shaeffer v. Califia Farms, LLC
+        (2020) 44 Cal.App.5th 1125 ................................................................................................... 10
+15
+     SJJC Aviation Servs., LLC v. City of San Jose
+16      (2017) 12 Cal.App.5th 1043 ..................................................................................................... 4
+17
+     Yvanova v. New Century Mortg. Corp.
+18      (2016) 62 Cal.4th 919 ........................................................................................................... 4, 6
+
+19   STATUTES
+
+20   United States Code, Title 42 § 1983 ............................................................................................... 7
+21   California Code of Civil Procedure § 430.10.................................................................................. 4
+22   California Penal Code
+23      § 679.10 ......................................................................................................................... 4, 5, 6, 8
+        § 679.10, subd. (i)(2) ................................................................................................................. 7
+24      § 679.10, subd. (h) .................................................................................................................... 9
+        § 851.6 ....................................................................................................................................... 6
+25
+
+26
+
+27
+
+28
+                                                                              3
+                                                                   Reply iso Demurrer to Petition for Writ of Mandate (26CV191136)
+ 1                                           INTRODUCTION
+
+ 2         Petitioner’s opposition fails to squarely address California Highway Patrol’s (“CHP”)
+
+ 3   demurrer arguments. First, Petitioner appears to concede that mandamus cannot lie to compel
+
+ 4   CHP to issue a Form B certification to him. (See Petitioner’s Opposition to CHP’s Demurrer
+
+ 5   (“Opp.”) at 5-6 [“Mandamus ‘does not lie to compel a public agency to exercise discretionary
+
+ 6   powers in a particular manner, only to compel it to exercise them in some manner’”].) Second,
+
+ 7   Petitioner continues to attack CHP’s written explanation for its Form B certification denial as not
+
+ 8   “legally adequate” by characterizing it as “no explanation at all,” without providing any basis for
+
+ 9   his demand that CHP provide a written explanation in a form not required by the statute. Third,
+
+10   Petitioner’s argument that CHP has misapplied the rebuttable presumption of helpfulness from
+
+11   Penal Code section 679.10 relies on Petitioner’s misreading of the statute. Fourth, Petitioner
+
+12   simply fails to engage with Respondent’s arguments as to why declaratory relief may not issue.
+
+13         Fundamentally, Petitioner’s arguments arise from a misapplication of the demurrer
+
+14   standard. “[T]he function of a demurrer is not to test the truth or accuracy of the facts alleged in
+
+15   the complaint . . . [the court’s] focus is on the legal sufficiency of the complaint.” (SJJC Aviation
+
+16   Servs., LLC v. City of San Jose (2017) 12 Cal.App.5th 1043, 1051-52.) A court does not accept
+
+17   as true “contentions, deductions, or conclusions of fact or law” in that pleading. (Yvanova v. New
+
+18   Century Mortg. Corp. (2016) 62 Cal.4th 919, 924.) In other words, CHP’s demurrer challenges
+
+19   the facial legal defects in the Petition and argues that Petitioner has simply not pled enough to
+
+20   state any cause of action. (See Code Civ. Proc., § 430.10.) In doing so, the Petition must be
+
+21   given “a reasonable interpretation, reading it as a whole and its parts in their context.” (Blank v.
+
+22   Kirwan (1985) 39 Cal.3d 311, 318.)
+
+23         Petitioner’s arguments fail to recognize that while the Court may consider matters that may
+
+24   be judicially noticed, as well as take judicial notice of facts appearing in any exhibits attached to
+
+25   the petition and complaint, the Court may not “assume the truth of ‘mere contentions or assertions
+
+26   contradicted by judicially noticeable facts.’” (SJJC Aviation Servs., LLC v. City of San Jose,
+
+27   supra, 12 Cal.App.5th at p. 1052, citing Evans v. City of Berkeley (2006) 38 Cal.4th 1, 20; Blatty
+
+28   v. New York Times Co. (1986) 42 Cal.3d 1033, 1040 [“when the allegations of the complaint
+                                                        4
+                                                Reply iso Demurrer to Petition for Writ of Mandate (26CV191136)
+ 1   contradict or are inconsistent with such facts, we accept the latter and reject the former”]; Holland
+
+ 2   v. Morse Diesel Int’l, Inc. (2001) 86 Cal.App.4th 1443, 1447 [“We may also take notice of
+
+ 3   exhibits attached to the complaints. If facts appearing in the exhibits contradict those alleged, the
+
+ 4   facts in the exhibits take precedence.”].)
+
+ 5                                                ARGUMENT
+ 6   I.    PETITIONER FAILS TO STATE FACTS SUFFICIENT TO CONSTITUTE ANY CAUSE OF
+           ACTION.
+ 7
+
+ 8         Each of Petitioner’s writ causes of action, as well as cause of action for declaratory relief, is
+
+ 9   subject to dismissal. For each writ of cause of action, Petitioner has failed to allege that
+
+10   Respondent “has a clear, present, and ministerial duty to act in a particular way” or that Petitioner
+
+11   “has a clear, present and beneficial right to performance of that duty.” (County of San Diego v.
+
+12   State of California (2008) 164 Cal.App.4th 580, 593.) Further, Petitioner is not entitled to his
+
+13   requested declaratory relief because he seeks advisory opinions on purely legal questions and to
+
+14   reverse a past administrative decision.
+
+15         A.    Petitioner Fails to Allege that Respondent Had a Ministerial Duty to
+                 Certify Petitioner’s Form B.
+16
+
+17         Although Petitioner previously argued that Respondents failed to perform a mandatory duty
+
+18   by “refus[ing] to certify [his Form B] on the asserted ground that the underlying conduct does not
+
+19   constitute ‘qualifying criminal activity,’” Petitioner now attempts to reframe his argument as one
+
+20   that CHP failed to perform its ministerial duty to comply with its “procedural obligations” under
+
+21   Penal Code section 679.10. See Opp. at 6. Petitioner argues that “[t]he Petition plausibly alleges
+
+22   that CHP failed to apply the governing standards to the material records before it.” (Opp. at 7.)
+
+23         However, nowhere does Petitioner identify these “governing standards” or “procedural
+
+24   obligations” that purportedly arise from the statute. (See Opp. at 6-7.)1 Rather, Petitioner points
+
+25
+     1
+       Petitioner instead argues that CHP “ignored the enumerated qualifying offenses the statute
+26   incorporates by reference,” “failed to address CHP’s own detention certificate reflecting that no
+     accusatory pleading was filed,” “failed to address CHP’s own dashcam recording,” and “gave no
+27   explanation whether it improperly treated the absence of a charge, investigation, or prosecution as
+     dispositive.” (See Opp. at 6-7.) But these alleged “governing standards” are nowhere to be found
+28   in Section 679.10.
+                                                          5
+                                                  Reply iso Demurrer to Petition for Writ of Mandate (26CV191136)
+ 1   to the Section 679.10’s mandate that a certifying entity “process” requests within the statutory
+
+ 2   deadline, “complete and sign” the Form B presented to it, and “certify victim helpfulness when
+
+ 3   the statutory conditions are met.” (Opp. at 5 (emphasis added).) Petitioner does not allege that
+
+ 4   CHP failed to process his request, conduct an investigation, or complete any necessary
+
+ 5   paperwork. Instead, Petitioner alleges that CHP rejected Petitioner’s basis for seeking a Form B
+
+ 6   certification. (See Opp. at 6-7.) At bottom, Petitioner takes issue with CHP’s investigation and
+
+ 7   finding that the statutory conditions for certifying victim helpfulness were not met, based on its
+
+ 8   evaluation of the materials presented by Petitioner. In other words, Petitioner objects to CHP
+
+ 9   exercising its discretion in a particular manner, which Petitioner himself admits is beyond the
+
+10   reach of mandamus. (See Opp. at 5-6.)
+
+11         B.    Petitioner Fails to Allege that He Has a Clear, Present, and Beneficial
+                 Right to a Form B Certification.
+12
+
+13         Petitioner has not pled sufficient facts to support his bare legal conclusion that he was the
+
+14   victim of “false imprisonment, unlawful criminal restraint, felonious assault, obstruction of
+
+15   justice, [and] perjury.” (See Pet., ¶ 82.) In his Opposition, Petitioner insists that he has alleged
+
+16   enough, pointing to “fourteen exhibits, including the denial letter itself (Ex. 1), Petitioner’s eight-
+
+17   page legal analysis identifying four contradictions by dashcam timestamp (Ex. 3), the verbatim
+
+18   dashcam transcript2 (Ex. 5), the CHP arrest report containing the disputed statements (Ex. 6), and
+
+19   the section 851.6 detention certificate (Ex. 7).” (Opp. at 4.) While Petitioner is correct that the
+
+20   Court should consider these exhibits as part of his pleading (see Holland v. Morse Diesel Int’l,
+
+21   Inc., supra, 86 Cal.App.4th at p. 1447), Petitioner is wrong that his contentions, inferences, and
+
+22   legal conclusions drawn from these exhibits should be taken as true. (See Yvanova v. New
+
+23   Century Mortg. Corp., 62 Cal.4th at p. 924 [courts do not accept as true “contentions, deductions,
+
+24   or conclusions of fact or law in that pleading”].)
+
+25         Petitioner incorrectly presumes that Respondent asks this Court to “weigh competing
+
+26   inferences.” (Opp. at 5.) Not so. Rather, Respondent asks this Court to evaluate the face of the
+
+27
+     2
+       Notably, this transcript was prepared by Petitioner himself after he viewed the dashcam
+28   recording. (See Pet., Ex. 5 at 15.)
+                                                          6
+                                                Reply iso Demurrer to Petition for Writ of Mandate (26CV191136)
+ 1   Petition and find that Petitioner has simply not alleged enough facts to support his legal
+
+ 2   conclusion that he was the victim of numerous crimes. Indeed, where Petitioner does allege
+
+ 3   relevant facts, those do not support his conclusion. For example, Petitioner himself alleges (and
+
+ 4   supports with an exhibit) that a CHP officer provided a sworn statement that he “could smell the
+
+ 5   distinct odor of an alcohol beverage emitting from within the vehicle” and “from Newanforbi’s
+
+ 6   breath and person.” (See Pet., ¶ 44; id., Ex. 6 at 4.) Petitioner then insists that the Court must
+
+ 7   infer from the absence of any remark regarding alcoholic odor in the dashcam transcript (that
+
+ 8   Petitioner prepared) that the CHP officer was lying. But the Court is not obligated to take
+
+ 9   Petitioner’s inference as true. In fact, Petitioner himself alleges that a CHP officer observed an
+
+10   empty can of alcohol in his vehicle. (See Pet., ¶ 47 [“[a]n empty Mike’s Hard Lemonade can was
+
+11   observed”]; see id., Ex. 5, at 4 [identifying the Mike’s Hard Lemonade as “source alcohol”].)
+
+12         Petitioner argues that this Court should be persuaded by a federal court order screening his
+
+13   42 U.S.C. section 1983 complaint and granting him status to proceed in forma pauperis. (See
+
+14   Opp. at 5, citing Newanforbi v. Serrato, No. 4:26-cv-05953-ASK, Dkt. No. 1 (Jun. 17, 2026).)
+
+15   However, that complaint is not before this Court, and so any order screening that complaint
+
+16   should not be considered during this Court’s evaluation of the Petition.
+
+17         C.    Petitioner Fails to Allege that Respondent Did Not Provide a Written
+                 Explanation for the Form B Certification Denial.
+18
+
+19         Petitioner insists that Respondent did not comply with Section 679.10, subdivision (i)(2)’s
+
+20   requirement that a certifying entity provide a written explanation for denying Form B
+
+21   certification. (Opp. at 7-9.) However, Petitioner’s insistence relies upon his invention of a legal
+
+22   standard that does not exist. Section 679.10, subdivision (i)(2) provides, in full:
+
+23         If a certifying entity does not certify a Form I-918 Supplement B certification, they shall
+           provide a written explanation for the denial of the Form I-918 Supplement B certification.
+24
+           The written denial shall include specific details of any reasonable requests for cooperation
+25         and a detailed description of how the victim refused to cooperate.
+
+26         Respondent does not dispute that Section 679.10, subdivision (i)(2) requires a written
+
+27   explanation from a certifying entity that denies a Form B certification. That is, Respondent
+
+28   agrees that “any denial must be accompanied by a written explanation.” See Opp. at 8. As shown
+                                                        7
+                                                Reply iso Demurrer to Petition for Writ of Mandate (26CV191136)
+ 1   by Petitioner’s Exhibit 1, Respondent did, in fact, provide a written explanation for its Form B
+
+ 2   certification denial. (See Pet., Ex. 1.) CHP did not, as Petitioner asserts, “merely restate[] the
+
+ 3   ultimate conclusion.” (See Opp. at 9.) Rather, CHP wrote to Petitioner:
+
+ 4         A thorough review of this incident was conducted. Unfortunately, this incident does not
+           meet the standard of qualifying criminal activity identified in Section 679.10 of the
+ 5
+           California Penal Code (PC) . . . Additionally, this review found no substantially similar
+ 6         qualifying criminal activity as defined in Section 679.10(d) PC.
+
+ 7   (Pet., Ex. 1.)
+
+ 8         That is precisely the explanation that Petitioner now states is “legally adequate.” (See Opp.
+
+ 9   at 9.) Petitioner argues that to be legally adequate, a written explanation must “disclose whether
+
+10   CHP rejected the request because it found no qualifying criminal activity, no substantially similar
+
+11   activity, insufficient victim status, lack of helpfulness, or other legally permissible basis.” (See
+
+12   id.) CHP did just that, disclosing to Petitioner that it had rejected his request because it found no
+
+13   qualifying criminal activity or substantially similar activity.
+
+14         To the extent Petitioner relies on the Attorney General’s Information Bulletin No. 2024-
+
+15   DLE-05 (see Pet., Ex. 14), Petitioner reads the FAQ answer out of context. That guidance
+
+16   provided: “There is a rebuttable presumption that a victim is helpful, has been helpful, or is likely
+
+17   to be helpful, if the victim has not refused or failed to provide information and assistance
+
+18   reasonably requested by law enforcement. To comply with the rebuttable presumption of
+
+19   helpfulness in the VTVPA, the reason for denial of certification should be clearly articulated
+
+20   and specific (i.e., non-cooperative because of three unreturned phone calls on dates X, Y, and
+
+21   Z).” (Pet., Ex. 14 at 5 (emphasis added).) In other words, the bulletin recommended specificity
+
+22   in situations where the applicant’s helpfulness was at issue. In this instance, Respondent’s
+
+23   helpfulness was not at issue, because CHP had already found no qualifying criminal activity or
+
+24   substantially similar activity.
+
+25
+
+26
+
+27
+
+28
+                                                        8
+                                                Reply iso Demurrer to Petition for Writ of Mandate (26CV191136)
+ 1         D.    Petitioner Fails to Allege that Respondent Had a Ministerial Duty to Apply
+                 the Rebuttal Presumption of Helpfulness on the Facts Alleged.
+ 2
+
+ 3         Contrary to Petitioner’s assertions, Respondent’s demurrer does not “flip[] the presumption
+
+ 4   of helpfulness on its head” or render the presumption “meaningless.” (See Opp. at 9-10.) Rather,
+
+ 5   it is Petitioner who contorts the statute beyond its intended purpose.
+
+ 6         As an initial matter, Petitioner’s reading of Section 679.10, where “agencies could defeat
+
+ 7   the presumption simply by never asking for help,” relies on his assumption that the statute was
+
+ 8   designed to address situations where the certifying agency is also accused of subjecting the
+
+ 9   applicant to a crime, or at the very least is in an adversarial opposition to the applicant. As laid
+
+10   out in Respondent’s demurrer, Section 679.10 was enacted to impose procedural requirements on
+
+11   law enforcement agencies processing Form B certification requests (some of which had declined
+
+12   altogether to issue such certifications), not necessarily to broaden the scope of the U Visa statute.3
+
+13         It is Petitioner who reads out critical language from Section 679.10 by insisting that CHP
+
+14   was required to apply the rebuttable presumption of helpfulness to him because he did not refuse
+
+15   or fail to cooperate. See Opp. at 10. The statute provides: “[T]here is a rebuttable presumption
+
+16   that a victim is helpful, has been helpful, or is likely to be helpful, if the victim has not refused or
+
+17   failed to provide information and assistance reasonably requested by law enforcement.” (Pen.
+
+18   Code, § 679.10, subd. (h) (emphasis added).) Petitioner ignores the requirement that information
+
+19   and assistance be first reasonably requested by law enforcement.
+
+20         Petitioner’s reading would allow almost every immigrant to be presumed helpful to a
+
+21   criminal investigation and eligible for a Form B certification by virtue of “not refusing or failing
+
+22   to provide information,” regardless of whether any information or assistance was actually
+
+23   solicited by law enforcement. More specifically, Petitioner’s reading would also allow every
+
+24   immigrant who lodged a complaint against a law enforcement agency to be presumed helpful
+
+25   simply by virtue of “affirmative provision of information,” as Petitioner alleges. See Opp. at 10.
+
+26
+     3
+      As set forth in Respondent’s Demurrer, one of the primary objectives of the U Visa, which was
+27   created as part of the reauthorization of the Violence Against Women Act, was to remove
+     obstacles that could hinder battered immigrants from fleeing domestic violence safely and
+28   prosecuting their abusers. (See MPA in support of CHP’s Demurrer at 7.)
+                                                         9
+                                                 Reply iso Demurrer to Petition for Writ of Mandate (26CV191136)
+ 1         E.    Petitioner Fails to Explain Why He is Entitled to Declaratory Relief.
+
+ 2         Petitioner fails to substantively engage with Respondent’s arguments that declaratory relief
+
+ 3   is not appropriate to review a past administrative decision. (See MPA in support of CHP’s
+
+ 4   Demurrer at 19.) Instead, Petitioner insists that an actual controversy exists, because he asks the
+
+ 5   Court to declare whether CHP’s denial letter satisfied the Penal Code. (Opp. at 10.) However, as
+
+ 6   Respondent explained, “[d]eclaratory relief operates prospectively to declare future rights, rather
+
+ 7   than to redress past wrongs.” (County of San Diego v. State of California, supra, 164
+
+ 8   Cal.App.4th at p. 607.) Petitioner does not deny that CHP issued him a denial letter on April 20,
+
+ 9   2026, over three months ago.
+
+10         Further, Petitioner’s attempt to distinguish Griset v. Fair Political Practices Commission
+
+11   (2001) 25 Cal. 4th 688, 697-700, misinterprets Respondent’s argument regarding mootness. (See
+
+12   MPA in support of CHP’s Demurrer at 19-20.) To be clear, Respondent argument was that, if the
+
+13   Court determined as a legal matter, that “there is no ministerial duty compelling CHP to provide a
+
+14   written denial in the form demanded by Petitioner,” the declaration sought by Petitioner (that
+
+15   CHP’s denial letter does not satisfy Section 679.10) becomes moot. (See id. at 20.) Petitioner’s
+
+16   general statements regarding whether a declaratory cause of action is subject to demurrer are not
+
+17   adequately responsive.
+
+18   II.   PETITIONER CANNOT CURE THE DEFECTS IN HIS PETITION THROUGH
+           AMENDMENT.
+19
+
+20         Petitioner bears the burden of showing amendment is not futile. He cannot meet this
+
+21   burden. As an initial matter, Petitioner’s suggested amendments, which indicate Petitioner would
+
+22   “identify more specifically the factual basis of each alleged qualifying or substantially similar
+
+23   criminal activity” and “plead with greater specificity the materials submitted to CHP” lack any
+
+24   factual details about what those amendments would involve and are plainly insufficient. (Nelson
+
+25   v. Tucker Ellis, LLP (2020) 48 Cal.App.5th 827, 849 [leave to amend futile where plaintiff had
+
+26   “not identified any additional facts” to overcome legal barriers]; see also Shaeffer v. Califia
+
+27   Farms, LLC (2020) 44 Cal.App.5th 1125, 1145 [“the onus is on the plaintiff to articulate the
+
+28   ‘specifi[c] ways’ to cure the identified defect.”] [citation omitted].)
+                                                       10
+                                                Reply iso Demurrer to Petition for Writ of Mandate (26CV191136)
+ 1         More fundamentally, amendment would be futile because no additional facts alleged could
+
+ 2   alter the Petition’s facial deficiencies: CHP maintained discretion to issue him a denial (and so
+
+ 3   had no ministerial duty to issue him a Form B certification); CHP provided Petitioner with a
+
+ 4   written explanation for this denial; and the reasonable presumption of helpfulness was not
+
+ 5   applicable given that CHP (or any other law enforcement agency) did not request any information
+
+ 6   or assistance from Petitioner. Accordingly, leave to amend should be denied.
+
+ 7                                            CONCLUSION
+ 8         The Court should sustain CHP’s demurrer without leave to amend.
+
+ 9
+
+10   Dated: August 21, 2026                                Respectfully submitted,
+11                                                         ROB BONTA
+                                                           Attorney General of California
+12                                                         MARK R. BECKINGTON
+                                                           Supervising Deputy Attorney General
+13
+
+14
+
+15                                                          /s/ Vanessa Ing
+                                                           VANESSA ING
+16                                                         Deputy Attorney General
+                                                           Attorneys for Respondent
+17                                                         California Highway Patrol
+18   SA2026303341
+     45173451
+19
+
+20
+
+21
+
+22
+
+23
+
+24
+
+25
+
+26
+
+27
+
+28
+                                                      11
+                                               Reply iso Demurrer to Petition for Writ of Mandate (26CV191136)
+                DECLARATION OF SERVICE BY E-MAIL and U.S. MAIL
+
+Case Name:     Newanforbi, Brendan Ngehsi v. California Highway Patrol, et al.
+Case No.:      26CV191136
+
+I declare:
+
+I am employed in the Office of the Attorney General, which is the office of a member of the
+California State Bar, at which member's direction this service is made. I am 18 years of age or
+older and not a party to this matter. My business address is: 455 Golden Gate Avenue, Suite
+11000, San Francisco, CA 94102-7004. My electronic service address is
+Melissa.Mendiola@doj.ca.gov. I am familiar with the business practice at the Office of the
+Attorney General for collection and processing of correspondence for mailing with the United
+States Postal Service. In accordance with that practice, correspondence placed in the internal
+mail collection system at the Office of the Attorney General is deposited with the United States
+Postal Service with postage thereon fully prepaid that same day in the ordinary course of
+business.
+
+On August 21, 2026, I served the attached:
+
+     •     RESPONDENT CALIFORNIA HIGHWAY PATROL’S REPLY IN SUPPORT OF
+           DEMURRER TO PETITION FOR WRIT OF MANDATE
+
+by transmitting a true copy via electronic mail. In addition, I placed a true copy thereof enclosed
+in a sealed envelope, in the internal mail system of the Office of the Attorney General, addressed
+as follows:
+
+Brendan Ngehsi Newanforbi
+1455 Cat Tail Drive
+Stockton, CA 95204
+E-Mail: bnn.cdl@gmail.com
+
+Petitioner, In Pro Per
+
+I declare under penalty of perjury under the laws of the State of California and the United States
+of America the foregoing is true and correct and that this declaration was executed on August 21,
+2026, at San Francisco, California.
+
+                M. Mendiola
+                 Declarant                                            Signature
+SA2026303341
+

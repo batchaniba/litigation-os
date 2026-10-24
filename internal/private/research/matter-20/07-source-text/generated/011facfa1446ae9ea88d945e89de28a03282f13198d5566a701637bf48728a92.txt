@@ -1,0 +1,487 @@
+ 1   ROB BONTA                                                   Exempt from Filing Fees --
+     Attorney General of California                              Gov’t Code § 6103
+ 2   MARK R. BECKINGTON
+     Supervising Deputy Attorney General
+ 3   VANESSA ING
+     Deputy Attorney General
+ 4   State Bar No. 329577
+      455 Golden Gate Avenue, Suite 11000
+ 5    San Francisco, CA 94102-7004
+      Telephone: (415) 510-3464
+ 6    Fax: (415) 703-5480
+      E-mail: Vanessa.Ing@doj.ca.gov
+ 7   Attorneys for Respondents
+     Gerardo Serrato, Gary Paul, and Eric Dutra
+ 8
+                       SUPERIOR COURT OF THE STATE OF CALIFORNIA
+ 9
+                                        COUNTY OF ALAMEDA
+10
+
+11
+
+12
+
+13   BRENDAN NGEHSI NEWANFORBI,                           Case No. 26CV191136
+
+14                                        Petitioner, REPLY IN SUPPORT OF DEMURRER
+                                                      BY RESPONDENTS GERARDO
+15                    v.                              SERRATO, GARY PAUL, AND ERIC
+                                                      DUTRA TO PETITION FOR WRIT OF
+16                                                    MANDATE; NOTICE OF JOINDER
+     CALIFORNIA HIGHWAY PATROL; G.
+17   SERRATO, in his official capacity as             Date:        September 18, 2026
+     Captain and Commander of the California          Time:        9:00 a.m.
+18   Highway Patrol Dublin Area; GARY PAUL, Dept:                  25
+     in his official capacity as Lieutenant of the    Judge:       The Honorable Jenna M.
+19   of the California Highway Patrol Dublin                       Whitman
+     Area; ERIC DUTRA, in his official capacity Trial Date: None Set
+20   as Sergeant of the California Highway            Action Filed: May 29, 2026
+     Patrol Dublin Area; and DOES 1 through
+21   10, inclusive,                                   Reservation Number: 487924635411
+
+22                                    Respondents.
+
+23
+
+24
+
+25
+
+26
+
+27
+
+28
+                                                      1
+                       Individual Respondents’ Reply iso Demurrer to Petition for Writ of Mandate (26CV191136)
+ 1                                                TABLE OF CONTENTS
+ 2                                                                                                                           Page
+ 3
+
+ 4
+     NOTICE OF JOINDER TO CALIFORNIA HIGHWAY PATROL’S REPLY IN
+ 5        SUPPORT OF CHP’S DEMURRER ................................................................................. 4
+     MEMORANDUM OF POINTS AND AUTHORITIES ................................................................ 6
+ 6
+          I.    INTRODUCTION .................................................................................................. 6
+ 7        II.   ARGUMENT .......................................................................................................... 6
+ 8              A.   Petitioner Has Waived Any Objection to the Joinders of
+                     Respondents Gerardo Serrato, Gary Paul, or Eric Dutra. ........................... 6
+ 9              B.   Petitioner Has Failed to State Facts Sufficient to Allege that Either
+                     Lt. Paul or Sgt. Dutra is a “Certifying Official” Within the Meaning
+10                   of Penal Code section 679.10(b). ................................................................ 6
+11        III.  CONCLUSION ....................................................................................................... 8
+
+12
+
+13
+
+14
+
+15
+
+16
+
+17
+
+18
+
+19
+
+20
+
+21
+
+22
+
+23
+
+24
+
+25
+
+26
+
+27
+
+28
+                                                                    2
+                               Individual Respondents’ Reply iso Demurrer to Petition for Writ of Mandate (26CV191136)
+ 1                                                    TABLE OF AUTHORITIES
+ 2                                                                                                                                            Page
+ 3   CASES
+ 4   Yvanova v. New Century Mortg. Corp.
+        (2016) 62 Cal.4th 919 ............................................................................................................... 6
+ 5
+
+ 6   STATUTES
+
+ 7   California Code of Civil Procedure § 430.10, subd. (e).................................................................. 4
+
+ 8   California Penal Code
+        § 679.10(b) ............................................................................................................................ 4, 6
+ 9      § 679.10(b)(1) ........................................................................................................................... 7
+        § 679.10(b)(2) ........................................................................................................................... 7
+10      § 679.10(b)(3) ........................................................................................................................... 7
+11      § 679.10(b)(4) ........................................................................................................................... 7
+
+12   Code of Federal Regulations, Title 8 § 214.14(a)(2) ...................................................................... 7
+
+13
+
+14
+
+15
+
+16
+
+17
+
+18
+
+19
+
+20
+
+21
+
+22
+
+23
+
+24
+
+25
+
+26
+
+27
+
+28
+                                                                            3
+                                   Individual Respondents’ Reply iso Demurrer to Petition for Writ of Mandate (26CV191136)
+ 1         NOTICE OF JOINDER TO CALIFORNIA HIGHWAY PATROL’S REPLY IN
+
+ 2                                  SUPPORT OF CHP’S DEMURRER
+
+ 3         TO ALL PARTIES AND THEIR COUNSEL OF RECORD:
+
+ 4         PLEASE TAKE NOTICE that Respondents Gerardo Serrato (“Capt. Serrato”), Gary Paul
+
+ 5   (“Lt. Paul”), and Eric Dutra (“Sgt. Dutra”) (collectively, the “Individual Respondents” or “CHP
+
+ 6   Officers”) hereby join in Respondent California Highway Patrol’s (“CHP”) Reply in support of
+
+ 7   its Demurrer to the Petition for Writ of Mandate (“CHP’s Reply”) as to all causes of action in the
+
+ 8   petition on the ground that the petition does not state facts sufficient to constitute a cause of
+
+ 9   action. (See Code Civ. Proc. § 430.10, subd. (e).) In support of their Joinder, the Individual
+
+10   Respondents (a) adopt the points and authorities on these arguments filed in support of CHP’s
+
+11   Reply, incorporating them herein by this reference; and (b) submit additional points and
+
+12   authorities in support of their Reply in support of their Demurrer to the Petition for Writ of
+
+13   Mandate.
+
+14         The arguments described in CHP’s Reply are relevant to the defenses and demurrers of
+
+15   Capt. Serrato, Lt. Paul, and Sgt. Dutra because the basis for Petitioner’s requested relief, as
+
+16   articulated in his petition, is the same as to all Respondents, including the Individual
+
+17   Respondents. Further, the relief sought by CHP would benefit Capt. Serrato, Lt. Paul, and Sgt.
+
+18   Dutra, as Petitioner alleges that all three are “certifying official[s]” within the meaning of Penal
+
+19   Code section 679.10(b).
+
+20         For these reasons, Capt. Serrato, Lt. Paul, and Sgt. Dutra join in CHP’s Reply in support of
+
+21   its Demurrer to the Petition for Writ of Mandate as to all causes of action in the petition, and
+
+22   adopt the points and authorities filed in support of CHP’s Reply.
+
+23                                       [signature on following page]
+
+24
+
+25
+
+26
+
+27
+
+28
+                                                         4
+                          Individual Respondents’ Reply iso Demurrer to Petition for Writ of Mandate (26CV191136)
+ 1   Dated: August 21, 2026                                Respectfully submitted,
+
+ 2                                                         ROB BONTA
+                                                           Attorney General of California
+ 3                                                         MARK R. BECKINGTON
+                                                           Supervising Deputy Attorney General
+ 4
+
+ 5
+
+ 6                                                          /s/ Vanessa Ing
+                                                           VANESSA ING
+ 7                                                         Deputy Attorney General
+                                                           Attorneys for Respondents
+ 8                                                         Gerardo Serrato, Gary Paul, and Eric
+                                                           Dutra
+ 9
+
+10
+
+11
+
+12
+
+13
+
+14
+
+15
+
+16
+
+17
+
+18
+
+19
+
+20
+
+21
+
+22
+
+23
+
+24
+
+25
+
+26
+
+27
+
+28
+                                                      5
+                       Individual Respondents’ Reply iso Demurrer to Petition for Writ of Mandate (26CV191136)
+ 1                        MEMORANDUM OF POINTS AND AUTHORITIES
+
+ 2   I.    INTRODUCTION
+ 3         The Court should sustain the demurrers by Respondents Gerardo Serrato, Gary Paul, and
+
+ 4   Eric Dutra (collectively, the “Individual Respondents” or “CHP Officers”) to the petition for writ
+
+ 5   of mandate. For the reasons articulated in Respondent California Highway Patrol’s (“CHP”)
+
+ 6   demurrer to the petition for writ of mandate, and CHP’s reply in support of its demurrer, each of
+
+ 7   Petitioner’s four causes of action fails to state facts sufficient to constitute a cause of action. See
+
+ 8   Respondent CHP’s Demurrer to Petition for Writ of Mandate; see also CHP’s Reply in support of
+
+ 9   Demurrer to Petition for Writ of Mandate.
+
+10         Further, Petitioner has failed to state facts sufficient to allege that either Sgt. Dutra or Lt.
+
+11   Paul is a “certifying official” within the meaning of Penal Code section 679.10(b). Therefore, the
+
+12   CHP Officers respectfully request that the Court sustain the Individual Respondents’ demurrers
+
+13   and dismiss this action against them without leave to amend.
+
+14   II.   ARGUMENT
+15         A.    Petitioner Has Waived Any Objection to the Joinders of Respondents
+                 Gerardo Serrato, Gary Paul, or Eric Dutra.
+16
+
+17         As an initial matter, Petitioner made no objection to the CHP Officers joining in CHP’s
+
+18   demurrer arguments. Thus, to the extent that Petitioner objects or intends to object to the CHP
+
+19   Officers’ incorporation by reference of all points and authorities filed in support of CHP’s
+
+20   Demurrer, Petitioner has waived such objections and should not be permitted to raise them.
+
+21         B.    Petitioner Has Failed to State Facts Sufficient to Allege that Either Lt. Paul
+                 or Sgt. Dutra is a “Certifying Official” Within the Meaning of Penal Code
+22               section 679.10(b).
+23         Petitioner is mistaken that the Court must accept as true his bare legal conclusions that Lt.
+
+24   Paul and Sgt. Dutra are “certifying official[s]” within the meaning of Penal Code section
+
+25   679.10(b). A court does not accept as true “contentions, deductions, or conclusions of fact or law
+
+26   in that pleading.” (Yvanova v. New Century Mortg. Corp. (2016) 62 Cal.4th 919, 924.) Section
+
+27   679.10(b) provides that a “certifying official” is: (1) the head of the certifying entity; (2) a person
+
+28   in a supervisory role who has been specifically designated by the head of the certifying entity to
+                                                         6
+                          Individual Respondents’ Reply iso Demurrer to Petition for Writ of Mandate (26CV191136)
+ 1   issue Form I-918 Supplement B certifications on behalf of that agency; (3) a judge; and (4) any
+
+ 2   other certifying official defined under Section 214.14(a)(2) of the Title 8 of the Code of Federal
+
+ 3   Regulations. (See Penal Code § 679.10(b)(1), (b)(2), (b)(3), (b)(4).)
+
+ 4         At most, Petitioner alleges that Lt. Paul “is a CHP supervisory official with responsibility
+
+ 5   for processing the certification request” who “acknowledged receipt” of Petitioner’s certification
+
+ 6   request and was identified as the point of contact for “additional questions.” (Pet., ¶ 15.) But
+
+ 7   nowhere in the petition does it state that Lt. Paul was the head of the certifying entity (i.e., the
+
+ 8   head of CHP) or that he had been specifically designated by CHP to issue a Form B certification
+
+ 9   on behalf of CHP. And were Petitioner now to say so, the April 20, 2026 Form B certification
+
+10   denial letter, which was signed by Capt. Serrato, would belie such assertions. (Pet., ¶ 14; id., Ex.
+
+11   1.) Indeed, to infer that Lt. Paul was the head of CHP or that he had been specifically designated
+
+12   by CHP to issue a Form B certification based on these allegations is not reasonable, and the Court
+
+13   is not obligated to make such an inference. It does not reasonably follow that a CHP officer who
+
+14   received and processed a certification request and serves as the point-of-contact for additional
+
+15   questions is the “head” of CHP, or has the authority to approve and issue the certification.
+
+16         Similarly, Petitioner alleges that Sgt. Dutra was “the assigned investigator and designated
+
+17   recipient on the Supplement B,” to whom Petitioner submitted his certification request. (Pet., ¶
+
+18   16.). But again, nowhere in the petitioner does it state that Sgt. Dutra was the head of CHP or
+
+19   that he had been specifically designated by CHP to issue a Form B certification on behalf of CHP.
+
+20   Petitioner is simply wrong that the demurrer standard requires inferring from allegations that Sgt.
+
+21   Dutra had been assigned to investigate Petitioner’s complaint and received Petitioner’s Form B
+
+22   certification request that Sgt. Dutra also had been specifically designated to issue said
+
+23   certification on behalf of CHP. Again, it does not reasonably follow that a CHP officer who was
+
+24   assigned to investigate Petitioner’s complaint and who received Petitioner’s certification request
+
+25   is the “head” of CHP, or has the authority to approve and issue the certification. Further, if
+
+26   Petitioner were to amend his allegations to so state, those allegations would be contradicted by
+
+27   the April 20, 2026 Form B certification denial letter signed by Capt. Serrato.
+
+28
+                                                         7
+                          Individual Respondents’ Reply iso Demurrer to Petition for Writ of Mandate (26CV191136)
+ 1   III. CONCLUSION
+
+ 2         For these reasons, because Petitioner cannot cure the defects identified above, the CHP
+
+ 3   Officers request that this Court sustain their demurrers without leave to amend.
+
+ 4
+
+ 5   Dated: August 21, 2026                                  Respectfully submitted,
+
+ 6                                                           ROB BONTA
+                                                             Attorney General of California
+ 7                                                           MARK R. BECKINGTON
+                                                             Supervising Deputy Attorney General
+ 8
+
+ 9
+
+10                                                            /s/ Vanessa Ing
+                                                             VANESSA ING
+11                                                           Deputy Attorney General
+                                                             Attorneys for Respondent
+12                                                           California Highway Patrol
+13   SA2026303341
+     45210815
+14
+
+15
+
+16
+
+17
+
+18
+
+19
+
+20
+
+21
+
+22
+
+23
+
+24
+
+25
+
+26
+
+27
+
+28
+                                                        8
+                         Individual Respondents’ Reply iso Demurrer to Petition for Writ of Mandate (26CV191136)
+                DECLARATION OF SERVICE BY E-MAIL and U.S. MAIL
+
+Case Name:      Newanforbi, Brendan Ngehsi v. California Highway Patrol, et al.
+Case No.:       26CV191136
+
+I declare:
+
+I am employed in the Office of the Attorney General, which is the office of a member of the
+California State Bar, at which member's direction this service is made. I am 18 years of age or
+older and not a party to this matter. My business address is: 455 Golden Gate Avenue, Suite
+11000, San Francisco, CA 94102-7004. My electronic service address is
+Melissa.Mendiola@doj.ca.gov. I am familiar with the business practice at the Office of the
+Attorney General for collection and processing of correspondence for mailing with the United
+States Postal Service. In accordance with that practice, correspondence placed in the internal
+mail collection system at the Office of the Attorney General is deposited with the United States
+Postal Service with postage thereon fully prepaid that same day in the ordinary course of
+business.
+
+On August 21, 2026, I served the attached:
+
+     •     REPLY IN SUPPORT OF DEMURRER BY RESPONDENTS GERARDO
+           SERRATO, GARY PAUL, AND ERIC DUTRA TO PETITION FOR WRIT OF
+           MANDATE; NOTICE OF JOINDER
+
+by transmitting a true copy via electronic mail. In addition, I placed a true copy thereof enclosed
+in a sealed envelope, in the internal mail system of the Office of the Attorney General, addressed
+as follows:
+
+Brendan Ngehsi Newanforbi
+1455 Cat Tail Drive
+Stockton, CA 95204
+E-Mail: bnn.cdl@gmail.com
+
+Petitioner, In Pro Per
+
+I declare under penalty of perjury under the laws of the State of California and the United States
+of America the foregoing is true and correct and that this declaration was executed on August 21,
+2026, at San Francisco, California.
+
+                M. Mendiola
+                 Declarant                                            Signature
+SA2026303341
+

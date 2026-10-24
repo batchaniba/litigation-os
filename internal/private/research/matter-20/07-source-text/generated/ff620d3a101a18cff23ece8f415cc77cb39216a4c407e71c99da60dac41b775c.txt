@@ -1,0 +1,475 @@
+  DRAFT — FOR PETITIONER'S REVIEW ONLY — NOT FILED — NOT SERVED — UNSIGNED.
+  This draft supersedes the September 30, 2026 motion package for the same January 8, 2027
+  hearing. It incorporates the October 12, 2026 Verified Answer and the October 23, 2026
+  production, and follows the locked four-part skeleton in internal/docs/matter-20-serrato-
+  whitman/10-skeleton.md plus the filled cells of 07-two-column-table.md . Filing/service
+  deadline: December 11, 2026 (16 court days + 2 for e-service, CCP § 1005(b)). Before filing: (1)
+  fill the verbatim April 20 letter quotations in § V.D from Petition Exhibit 1 (PDF p. 45); (2)
+  supplement the declaration with production/Answer paragraphs; (3) update the proposed
+  judgment and proposed writ to carry BOTH primary and alternative relief; (4) confirm the
+  January 8 setting and the briefing timetable; (5) verify the August 29 Order quotations
+  against the stamped Order (carried here from the September 30 draft).
+
+
+
+
+BRENDAN NGEHSI NEWANFORBI, Petitioner In Pro Per 1455 Cat Tail Drive, Stockton, CA 95204
+— Telephone: (209) 801-4442 — E-mail: bnn.cdl@gmail.com
+
+SUPERIOR COURT OF THE STATE OF CALIFORNIA, COUNTY OF ALAMEDA
+
+BRENDAN NGEHSI NEWANFORBI, Petitioner, v. CALIFORNIA HIGHWAY PATROL; G. SERRATO, in his
+official capacity as Captain and Commander of the CHP Dublin Area; and DOES 1 through 10,
+inclusive, Respondents.
+
+Case No. 26CV191136
+
+PETITIONER'S NOTICE OF MOTION AND MOTION FOR ISSUANCE OF PEREMPTORY WRIT OF
+MANDATE (Code Civ. Proc., § 1085; Pen. Code, § 679.10)
+
+Date: January 8, 2027 — Time: 9:00 a.m. — Dept.: 25 — Hon. Jenna M. Whitman Reservation ID:
+958052306492 — Action Filed: May 29, 2026
+
+
+
+
+NOTICE OF MOTION AND MOTION
+
+TO RESPONDENTS AND THEIR COUNSEL OF RECORD:
+
+PLEASE TAKE NOTICE that on January 8, 2027, at 9:00 a.m., or as soon thereafter as the matter
+may be heard, in Department 25 of the Alameda County Superior Court, Rene C. Davidson
+Courthouse, 1225 Fallon Street, Oakland, California, Petitioner Brendan Ngehsi Newanforbi will
+and hereby does move for judgment granting a peremptory writ of mandate on the First Cause of
+Action of the Petition for Writ of Mandate.
+
+Primary relief. A writ commanding Respondent California Highway Patrol ("CHP") to set aside its
+April 20, 2026 denial and, within 30 days after service of the writ, to complete, sign, and deliver to
+Petitioner the Form I-918, Supplement B, U Nonimmigrant Status Certification requested on April
+9, 2026.
+
+Alternative relief. If the Court concludes that CHP must make the statutory determination in the
+first instance, a writ commanding CHP to set aside the denial, reconsider the request within 30
+days in conformity with the Court's findings and Penal Code section 679.10, and file a return to
+the writ within 45 days. The 30-day period is a requested judicial remand term, not a statutory
+remand deadline; section 679.10, subdivision (j)'s original-request clock is distinct.
+
+The motion is made under Code of Civil Procedure sections 1085, 1086, and 1088 and Penal Code
+section 679.10. Petitioner contends the present record establishes the statutory predicates for
+certification and that, once those predicates are established, section 679.10, subdivision (g)(1)
+uses mandatory language. If the Court concludes a material factual issue remains, Petitioner
+requests that the Court determine the appropriate procedure under Code of Civil Procedure
+section 1090. Petitioner requests a nonjury merits determination and does not request a jury,
+while recognizing the Court's procedural authority under section 1090.
+
+The motion is based on this notice and memorandum, the Declaration of Brendan Ngehsi
+Newanforbi (executed September 30, 2026, to be supplemented before filing with
+production/Answer paragraphs), the Verified Petition and its exhibits, the Notice of Lodging of the
+November 1, 2024 CHP dashcam recording filed September 8, 2026, the Court's August 29, 2026
+Order Sustaining Demurrer In Part, Respondents' Verified Answer filed October 12, 2026, CHP's
+October 23, 2026 Production of Documents, Set One, the files and records of this action, and any
+evidence and argument properly received by the Court.
+
+Court Reservation System Reservation ID: 958052306492.
+
+
+
+
+MEMORANDUM OF POINTS AND AUTHORITIES
+
+I. INTRODUCTION
+
+The Court has already framed the merits issue. In overruling CHP's demurrer to the First Cause of
+Action, the Court stated that if it credits Petitioner's showing "that neither he nor his vehicle
+smelled of alcohol, that he showed no signs of impairment in talking with the officers or in
+performing the physical field sobriety tests he agreed to perform, and that the arresting officers
+lied about it in their police report, it could reasonably find probable cause for arrest was lacking,
+which could support a finding that the CHP abused its discretion in refusing to certify Petitioners
+Form I-918." (Order Sustaining Demurrer In Part, Aug. 29, 2026 ("Order"), at p. 4.)
+
+The present motion asks the Court to decide that surviving claim on the evidentiary record. The
+April 9 certification package included CHP's arrest-investigation report, Petitioner's transcript of
+CHP's dashcam recording, and CHP's Penal Code section 851.6 certificate; the underlying
+recording itself is lodged with the Court. The recording does not contain several material
+observations recited in the report. CHP's denial letter identifies only an asserted absence of
+qualifying criminal activity and does not identify lack of helpfulness as a reason for denial.
+Petitioner therefore requests a merits determination and a writ directing the statutory act if the
+Court finds the predicates established, or vacatur and remand in the alternative.
+
+
+II. STATEMENT OF FACTS
+
+A. The November 1, 2024 detention. Shortly before 1:00 a.m. on November 1, 2024, CHP officers
+approached Petitioner asleep in a parked, engine-off rental vehicle on the shoulder of eastbound
+Interstate 580 in Livermore, where he had pulled over because he was tired while traveling home
+to Stockton. (Pet. ¶ 34; Pet. Ex. 5; Newanforbi Decl. ¶¶ 3-4.) He had driven earlier from Oakland
+toward Stockton; no officer observed the vehicle moving or observed Petitioner driving. (Decl. ¶ 3;
+Pet. Ex. 6 [DS 367: "driving observed by this officer" unchecked; "driver admitted to driving"
+checked; citation on information and belief under Veh. Code § 40600].) He told the officers he had
+not been drinking. (Pet. Ex. 5 at p. 3; Pet. Ex. 6 [pre-FST interview: "What have you been drinking?
+Nothing"].) An empty Mike's Hard Lemonade can was found in the vehicle; Petitioner denied
+drinking from it. (Pet. Ex. 5 at pp. 4-6; Pet. ¶ 47.) A cup in the vehicle was examined on the
+recording and identified aloud by an officer as urine. (Pet. Ex. 5 at 00:58:51–00:59:05; Answer [cup
+liquid identified as urine].) The pre-arrest door sequence is pleaded here only as chronology, not
+as a standalone claim: the federal complaint alleges that at about 00:56:09 an officer said "I think
+it's booze" before occupant contact, that officers looked through the windows with flashlights,
+and that at about 00:56:43 an officer opened the front passenger-side door while the occupant
+was still asleep, without consent. (Matter 32 FAC ¶¶ 14-16.) Those are allegations, not established
+facts, and native-video verification is outstanding. The knowledge-gate point is narrow and is the
+only use Petitioner makes of the sequence in this motion: observations first acquired by opening
+the door cannot supply the justification for opening it, and the pre-contact "booze" hypothesis
+dissipated as to the cup when the liquid was identified aloud as urine. Any unlawful-search theory
+arising from the entry belongs to the federal case, not to this Count 1 certification motion, and
+none is pleaded here.
+
+The officers administered horizontal-gaze nystagmus testing (01:05:22–01:07:04) and a modified
+Romberg test (timer 01:08:02–01:08:45; report: 30 seconds estimated as 43 actual, eyelid flutters).
+One-leg stand and walk-and-turn were declined as "difficult" in the report; on the recording, at
+01:10:23–01:10:30, Officer Melano identifies uneven freeway ground and says "I wouldn't do that
+one" — the report attributes the walk-and-turn choice/difficulty to the subject. (Pet. Ex. 6 at p. 3,
+line 18; Pet. Ex. 5 at 01:10:23–01:10:30.) The officer then gave the preliminary alcohol screening
+admonition, told Petitioner he was not required to take it, and told him arrest was within the
+officer's discretion; Petitioner declined, and was handcuffed and arrested. (Pet. Ex. 5 at 01:10:54,
+01:11:15–01:11:33; Pet. Ex. 6 at p. 5; Order at p. 3.) A chemical-test admonition followed at 01:20
+and was refused; a warrant affidavit was sworn at 02:30:22; warrant WAR913372 was signed by
+Judge Amy Sekany at 02:34:50; blood was drawn at 02:38 in Dublin by phlebotomist Aziza Ghaleb;
+Petitioner was booked at Santa Rita at 03:25 and held until November 5, 2024. (Pet. ¶¶ 38-42;
+Decl. ¶ 6; Production Ex. 5.)
+B. CHP's report asserts what CHP's recording does not show — and the Answer admits the
+gap. CHP's arrest-investigation report states that Petitioner exhibited a "strong distinct odor of an
+alcoholic beverage," "slurred" speech, and a "very confused and disoriented" demeanor, and that
+a beverage was present. (Pet. Ex. 6.) CHP's dashcam recording contains no recorded statement by
+an officer that Petitioner's breath or person smelled of alcohol, and Respondents admit neither
+officer stated aloud on the recording that they smelled alcohol and neither told Petitioner his
+speech was slurred, hesitant, or impaired. (Pet. Ex. 5; Answer.) Petitioner's recorded speech is
+clear and responsive: he pronounced his surname at 00:59:57, identified Livermore and read
+highway signs aloud, and answered location questions at 00:57:43, 00:57:49, and 01:00:41. (Pet.
+Ex. 5; Answer [correct Livermore identification, signs read aloud, surname spelled].) Petitioner's
+April 9, 2026 supporting memorandum identified the asserted contradictions by timestamp. (Pet.
+Ex. 3.)
+
+Petitioner states these limits plainly, because the record requires them. The recording's silence on
+odor is not sensory disproof of odor; no independently verified audio assessment of speech is in
+the record; and the report's HGN observations have no transcript disproof. What the record does
+establish is narrower and still material: the officers never verbalized the odor or speech claims on
+the recording, the liquid examined was identified aloud as urine, and the walk-and-turn account
+in the report is contradicted by an officer's own recorded words about uneven ground. The
+Romberg timing in the report (30 estimated as 43 actual) agrees with the recorded timer and
+supplies no established "pass"; Petitioner does not claim one. The walk-and-turn discrepancy is
+drawn from the submitted transcript (Pet. Ex. 5/A); reconfirmation against the native MP4 is
+outstanding and should be completed before filing.
+
+C. The toxicology, the warrant affidavit, and the driving element. Blood drawn at 02:38 was
+tested by Ascertain Forensics: ethanol 0.073 ± 0.004 g% — below the 0.08 per se level — inactive
+THC-COOH only (3.0 ng/mL), all other drugs negative. (Production Ex. 5, AGO 000029–000053.)
+Petitioner does not contend toxicology retroactively defeats probable cause, which is judged at
+arrest; the result is corroboration, not a retroactive adjudication, and the 0.08 per se theory fails
+on CHP's own lab work. The warrant affidavit sworn at 02:30:22 is thinner than the report: it omits
+the HGN details, the Romberg numbers, the one-leg-stand and walk-and-turn refusals, and the
+cup and can, stating only that field sobriety tests were "not perform[ed] as instructed or
+demonstrated." Petitioner does not ask the Court to find fraud on these omissions; omissions that
+make an affidavit less inculpatory cut the other way, and the affidavit argument here is about the
+thinness of the probable-cause showing, not a standalone falsity claim. The driving element rests
+on admission, not observation: DS 367 leaves "driving observed" unchecked and the citation
+declares the violation "not committed in my presence, declared on information and belief." (Veh.
+Code § 40600.) The time of any impairment while driving remains unresolved on this record, and
+Petitioner does not claim otherwise.
+
+D. CHP issued a section 851.6 certificate, and no criminal charge was filed. The certificate
+(Pet. Ex. 7) records release on November 5, 2024, and classifies the event as "a detention only, not
+an arrest" because there were "insufficient grounds for making a criminal complaint." The
+certificate document bears a May 12, 2025, 11:53 a.m. preparation footer; custody, release, and
+preparation are distinct facts, and Petitioner does not conflate them. No accusatory pleading was
+ever filed arising from the November 1, 2024 incident, a fact Respondents admit. (Pet. ¶ 42; Decl.
+¶ 11; Answer.) Petitioner does not contend the certificate itself adjudicates probable cause, and
+no independent district-attorney no-case document is in the record; he relies on the certificate as
+part of CHP's own record bearing on the merits of the certification decision, and on the absence
+of charges as corroboration, not as proof of a crime.
+
+E. The certification request and denial. On April 9, 2026, Petitioner submitted Form I-918,
+Supplement B to CHP with a supporting memorandum, the dashcam transcript, the arrest report,
+and the section 851.6 certificate. (Pet. ¶¶ 55-58, Exs. 2-8; Decl. ¶ 2.) Petitioner had already filed a
+citizen complaint and a POST complaint about the incident and provided CHP the dashcam
+transcript. (Pet. ¶¶ 7, 87; Decl. ¶ 12.) Eleven days later, CHP denied the request in a five-sentence
+letter stating that the incident "does not meet the standard of qualifying criminal activity" under
+section 679.10 or 8 U.S.C. section 1101(a)(15)(U)(iii). (Pet. Ex. 1.) The denial does not identify lack of
+helpfulness as a basis. (Ibid.; Order at p. 4.)
+
+F. The October 23, 2026 production. CHP's Production of Documents, Set One (12 files: 8 PDFs, 4
+videos; SHA-256-verified) produced the CAD incident log, beat sheet, CHP 202 / DS 367 / warrant-
+affidavit packet (AGO 000029–000053), both officers' CHP 415s, a privilege log withholding 10
+items, and proof of service. The withheld items — the civilian-complaint file and two May 9, 2026
+internal-review memoranda (one reviewing the MVARS video, one interviewing Officer Meza-
+Gonzales) — postdate the April 20, 2026 denial by nineteen days and prove nothing about what
+Captain Serrato knew in April; Petitioner does not use them for that purpose, and their contents
+are not pleaded here. They are noted only because the privilege fight (motion to compel / in-
+camera review) is a separate track from this motion's merits, which rest on the pre-denial record.
+
+
+III. PROCEDURAL HISTORY
+
+Petitioner filed the Verified Petition on May 29, 2026. By Order entered August 29, 2026 (notice of
+entry August 31, 2026), the Court overruled CHP's demurrer to the First Cause of Action under
+Code of Civil Procedure section 1085 and Penal Code section 679.10, sustained the demurrer
+without leave to amend as to the Second and Third Causes of Action, and sustained it with leave
+to amend as to the Fourth. The leave period expired September 20, 2026, and Petitioner did not
+amend; he proceeds on the First Cause of Action alone. Respondents Dutra and Paul were
+dismissed by stipulation on August 28, 2026. CHP and G. Serrato remain respondents to the
+surviving writ proceeding. Respondents filed their Verified Answer on October 12, 2026. Petitioner
+served Requests for Production, Set One, on September 16, 2026; CHP produced Set One on
+October 23, 2026. The merits hearing is set for January 8, 2027, at 9:00 a.m., in Department 25
+(Reservation ID 958052306492, converted from reserved to scheduled). [Confirm the January 8
+setting and the briefing timetable against the operative case-management order before filing.]
+
+
+IV. LEGAL STANDARD
+Code of Civil Procedure section 1085 authorizes mandate to compel performance of an act
+specially enjoined by law. (Code Civ. Proc., § 1085, subd. (a).) Mandamus generally does not
+control how an official exercises genuine discretion, but it may compel the official to exercise
+discretion under the correct legal standard and may correct an abuse of administrative discretion.
+(Common Cause v. Board of Supervisors (1989) 49 Cal.3d 432, 442-443.) Section 1088 further
+permits issuance of a peremptory writ in the first instance when the application is made upon
+due notice; the notice must be at least ten days. (Code Civ. Proc., § 1088.) If a return raises a
+factual question essential to determination of the motion and affecting the parties' substantial
+rights, Code of Civil Procedure section 1090 permits the Court, in its discretion, to order that
+question tried; Petitioner requests a nonjury merits determination and does not request a jury.
+(Code Civ. Proc., § 1090.) No plain, speedy, and adequate remedy exists in the ordinary course of
+law: Penal Code section 679.10 provides no administrative appeal from CHP's certification denial,
+and an award of damages would not supply the certification, which must come from an
+authorized certifying official or entity. (Code Civ. Proc., § 1086.)
+
+Penal Code section 679.10, subdivision (g)(1) provides that, upon the victim's request, a certifying
+official "shall certify victim helpfulness on the Form I-918 Supplement B certification" when the
+victim was a victim of qualifying criminal activity and has been, is being, or is likely to be helpful to
+detection, investigation, or prosecution. Section 679.10 expressly includes false imprisonment
+and unlawful criminal restraint among qualifying criminal activity and extends to state offenses
+whose nature and elements are substantially similar to the enumerated activity. (Pen. Code, §
+679.10, subds. (c), (d); 8 U.S.C. § 1101(a)(15)(U)(iii).) Subdivision (h) supplies a rebuttable
+presumption of helpfulness where the victim has not refused or failed to provide information and
+assistance reasonably requested by law enforcement. Subdivision (k) provides that certification
+does not require an investigation, charge, apprehension, prosecution, or conviction, and that
+separate-case cooperation cannot be a denial reason. (Pen. Code, § 679.10, subd. (k)(1), (k)(3)(H).)
+[Quote § 679.10, subds. (b), (h), and (k) from the official text in the filed version.]
+
+The review standard is abuse of discretion. (Saleeby v. State Bar (1985) 39 Cal.3d 547, 562.) A
+particular result may be compelled where the governmental entity has no discretion left to
+exercise because the duty has become ministerial under the governing law. (Common Cause,
+supra, 49 Cal.3d at pp. 442-443; California Correctional Supervisors, 96 Cal.App.4th at 827.) Direct
+certification is therefore available only if the proven record establishes the statutory predicates
+and leaves no lawful reasonable alternative; otherwise the remedy is vacatur and remand for
+lawful reconsideration.
+
+
+V. ARGUMENT
+
+A. The existing record permits a finding that probable cause for the DUI arrest was lacking.
+Probable cause exists when the facts known to the arresting officer would persuade a person of
+reasonable caution that the person arrested committed a crime. (People v. Thompson (2006) 38
+Cal.4th 811, 818; Order at p. 3.) Here, the Court has already held that if it credits Petitioner's
+factual showing concerning the absence of alcohol odor, the absence of impairment in speech
+and field sobriety testing, and false statements in the report, it could reasonably find probable
+cause lacking. (Order at p. 4.)
+
+The recording is objective evidence bearing on that question. It contains no statement by an
+officer that Petitioner's breath or person smelled of alcohol; the liquid examined in the vehicle is
+identified on the recording as urine; and Petitioner's speech is recorded throughout the
+encounter. (Pet. Ex. 5; Decl. ¶¶ 7-10.) Petitioner performed the field sobriety tests the officers
+administered. The preliminary alcohol screening test was described to him by the officer as not
+required, and arrest followed refusal within about a minute. (Pet. Ex. 5 at 01:10:54, 01:11:15–
+01:11:33; Order at p. 3.) The strongest focused discrepancy in the filled record is the walk-and-
+turn: the report attributes the choice/difficulty to the subject, while the recording has Officer
+Melano identifying uneven freeway ground and saying "I wouldn't do that one." (Pet. Ex. 6 at p. 3,
+line 18; Pet. Ex. 5 at 01:10:23–01:10:30.) On the record as framed by the Court, Petitioner asks the
+Court to find the arrest lacked probable cause.
+
+CHP's section 851.6 certificate supplies additional contemporaneous evidence. CHP documented
+that there were "insufficient grounds for making a criminal complaint," and no criminal charge
+followed. (Pet. Ex. 7; Decl. ¶ 11.) Petitioner offers that record as corroborative evidence, not as a
+substitute for the Court's independent determination of the probable-cause question, and not as
+an adjudication of it.
+
+B. If the detention lacked lawful authority, the alleged conduct falls within or is
+substantially similar to qualifying criminal activity. False imprisonment is the unlawful
+violation of the personal liberty of another. (Pen. Code, § 236.) Penal Code section 146, subdivision
+(a) criminalizes a public officer's arrest or detention of a person against that person's will under
+color of legal authority but without lawful authority — an offense substantially similar in nature
+and elements to false imprisonment. Penal Code section 679.10 expressly identifies false
+imprisonment and unlawful criminal restraint as qualifying activity and extends to offenses
+substantially similar in nature and elements. (Pen. Code, § 679.10, subds. (c), (d).)
+
+Petitioner does not ask this Court to convict any officer of a crime. He asks the Court to determine
+whether the conduct shown by the record constitutes qualifying criminal activity for the limited
+certification question. Section 679.10 does not require an investigation, charge, apprehension,
+prosecution, or conviction as a condition of obtaining certification. (Pen. Code, § 679.10, subd. (k)
+(1).) Petitioner deliberately does not plead perjury or any officer-false-statement theory as an
+independent qualifying crime: the knowledge element of such a theory is not pinned in this
+record, and the report-vs-recording discrepancies are offered as evidence for the false-
+imprisonment showing, not as a standalone crime. No felonious-assault or obstruction theory is
+pleaded.
+
+C. The existing record establishes helpfulness for purposes of the certification request.
+Petitioner reported the incident through a citizen complaint and a POST complaint, gave CHP a
+transcript of its own recording keyed by timestamp to the asserted contradictions in its report,
+and declares that no one from CHP or any other agency has ever asked him for information or
+assistance concerning this incident that he refused or failed to provide. (Pet. ¶¶ 7, 87; Pet. Ex. 3;
+Decl. ¶ 12.) CHP's April 20 denial did not identify helpfulness as a reason for denial. (Pet. Ex. 1;
+Order at p. 4.) And Respondents' Answer denies that any investigating entity ever requested
+information from Petitioner. (Answer ¶ 57.)
+
+That denial helps, not hurts, the helpfulness predicate. Subdivision (h) presumes helpfulness
+where the victim has not refused or failed to provide information and assistance reasonably
+requested; it does not expressly make an actual prior request a prerequisite, and a reasonable
+assertion of unawareness prevents failure to cooperate from rebutting the presumption. (See
+Attorney General Information Bulletin DLE-2024-05, Pet. Ex. 14, at pp. 2, 5.) Where no request was
+made at all — as the Answer states — there can have been no refusal of one, and the
+presumption stands unrebutted. CHP's demurrer argument that the presumption never triggers
+absent an actual request is a preserved legal argument, but the statutory text and the Attorney
+General's bulletin can also be read to treat absence of refusal as satisfying the condition.
+Petitioner's refusals of the voluntary PAS and post-arrest chemical testing concern DUI testing
+during the incident, not a later request for assistance in detecting, investigating, or prosecuting
+alleged officer criminal activity, and are not automatically noncooperation. Separate-case
+cooperation cannot be a denial reason. (Pen. Code, § 679.10, subd. (k)(3)(H).) Helpfulness is
+pleaded here only as an element of Count 1, not as a revived standalone claim, and only because
+CHP has put cooperation at issue.
+
+D. The April 20 denial letter, sentence by sentence. The denial is Petition Exhibit 1 (PDF p. 45).
+Its five sentences are addressed in order. Exact quotations are inserted from the scan in the filed
+version; the characterizations below are taken from the October 2 skeleton and are not a
+substitute for the quotations.
+
+    Sentence 1 — acknowledges materials. [INSERT VERBATIM QUOTATION — Pet. Ex. 1.]
+    Acknowledgment does not establish the extent of actual review. What Captain Serrato
+    actually reviewed is the subject of the pending RFP 8 decision-file track; this motion does not
+    assert nonreview from the letter's silence, because missing discussion is an observation, not
+    proof of statutory violation or nonreview.
+    Sentence 2 — states the threshold outcome. [INSERT VERBATIM QUOTATION — Pet. Ex. 1.
+    Substance quoted in the September 30 draft: the incident "does not meet the standard of
+    qualifying criminal activity" under section 679.10 or 8 U.S.C. section 1101(a)(15)(U)(iii).] The
+    sentence states an outcome under qualifying/substantially similar activity but does not
+    identify a particular offense or map its elements to the record. That omission is the legal-
+    error core: the statute requires a determination about a qualifying crime, and a threshold
+    conclusion without an offense or an elements mapping is not that determination.
+    Sentence 3 — recognizes general victim assistance. [INSERT VERBATIM QUOTATION — Pet. Ex. 1.]
+    General recognition does not apply section 679.10, subdivision (h) to any pinned request,
+    refusal, or failure, and the denial does not rest on helpfulness in any event.
+    Sentence 4 — describes CHP's role. [INSERT VERBATIM QUOTATION — Pet. Ex. 1.] The sentence
+    contains no dashcam discussion — no engagement with the transcript, the urine
+    identification, the walk-and-turn contradiction, or the DS 367 gaps that were in the April 9
+    package.
+    Sentence 5 — expresses concern. [INSERT VERBATIM QUOTATION — Pet. Ex. 1.] The sentence
+    contains no certificate discussion — no engagement with the section 851.6 certificate or the
+    absence of charges that were likewise in the package.
+
+The letter, taken as a whole, decides the threshold question without identifying the offense,
+without mapping elements, without applying subdivision (h), and without engaging the dashcam
+record or the certificate. That is legal error reviewable in mandate, whether the Court
+characterizes it as failure to apply the correct legal standard or as an abuse of discretion on the
+record presented. This motion does not revive any standalone explanation duty; it asks the Court
+to review the decision that was actually made, on the record that was actually before the
+decisionmaker.
+
+E. CHP's best case, stated fairly and answered. CHP's totality case is not frivolous, and this
+motion does not pretend otherwise. The report records red, watery eyes; HGN clues (lack of
+smooth pursuit, distinct and sustained nystagmus at maximum deviation, onset before 45
+degrees, lack of convergence); a Romberg estimate of 30 seconds against 43 actual with eyelid
+flutters; a 21-and-over wristband; a party admission and admitted driving from Oakland; an
+empty alcohol can; a vehicle seat adjusted to Petitioner's stature; pre-FST answers; and refusals of
+the PAS and chemical tests; with a later blood result of 0.073. Taken together, CHP will argue,
+those facts support reasonable cause notwithstanding the disputed facts.
+
+The answer is the totality, correctly weighed. No officer observed driving or a moving vehicle; the
+driving element is admission-based and declared on information and belief. The odor and speech
+claims are paper-only and were never verbalized on the recording. The walk-and-turn account is
+contradicted by an officer's own recorded words. The blood result is below the per se level and
+was drawn nearly three hours after the stop. No charge was ever filed, and CHP's own certificate
+reclassified the event as a detention for insufficient grounds. A court may credit the report's
+observations and still find that the arrest lacked probable cause on this record — which is exactly
+the finding the Court's demurrer order contemplated. Petitioner asks the Court to make it.
+
+A.1. Arrest authority under Vehicle Code section 40300.5 is independently in issue. The arrest
+is recorded as made for Vehicle Code section 23152(a) per section 40300.5. That statute permits a
+warrantless DUI arrest without observed driving only where there is reasonable cause of
+preceding impaired driving AND an enumerated condition: a crash, a person in or about a vehicle
+obstructing a roadway, immediate apprehension necessary, immediate danger absent immediate
+arrest, or destruction or concealment of evidence absent immediate arrest. (Veh. Code § 40300.5.)
+No officer observed driving or a moving vehicle, so the arrest cannot rest on observation; it must
+rest on an enumerated condition. The only condition CHP could plausibly invoke on this record is
+obstruction of a roadway — and a freeway shoulder is not automatically a "roadway" (Veh. Code §
+530: the portion of a highway improved, designed, or ordinarily used for vehicular travel).
+Whether any part of the Tesla intruded on live lanes, posed an obstruction, or created immediate
+danger is genuinely unresolved on the produced record; it requires the native forward video,
+location frames and road markings, and the officers' exact factual allegations, none of which
+establish obstruction on the current paper. Petitioner acknowledges CHP's best authority:
+Villalobos v. Zolin (1995) 35 Cal.App.4th 556 upheld a section 40300.5 arrest where a DUI-
+symptomatic person occupied a vehicle obstructing an interstate highway — direct defense
+precedent IF CHP shows obstruction of the traveled roadway, which must be distinguished on
+verified actual position, not rhetorical description. Petitioner's authorities are Mercer v.
+Department of Motor Vehicles (1991) 53 Cal.3d 753 and Music v. Department of Motor Vehicles
+(1990) 221 Cal.App.3d 841 (no observed movement and no statutory exception can invalidate a
+warrantless DUI arrest), subject to the modern section 40300.5(c)-(e) exceptions those cases did
+not address. Petitioner does not assert section 40300.5 is categorically inapplicable because the
+vehicle was stopped; he asks the Court to find the enumerated condition unproved on this record,
+which is a further failure of lawful authority for the restraint — and therefore of the false-
+imprisonment predicate's "without lawful privilege" element — not a standalone claim.
+
+F. Remedy. The primary rule is that mandate will not compel an official to exercise genuine
+discretion in a particular manner. But a particular result may be compelled where the
+governmental entity has no discretion left to exercise because the duty has become ministerial
+under the governing law. (Common Cause, supra, 49 Cal.3d at pp. 442-443.) Here, section 679.10,
+subdivision (g)(1) states that the certifying official "shall certify" when the statutory predicates are
+met. If the Court finds those predicates established on the record and no lawful reasonable
+alternative remaining, direct certification is the appropriate writ relief. (California Correctional
+Supervisors, 96 Cal.App.4th at 827.)
+
+If the Court concludes that CHP retains a determination that must be made in the first instance,
+Petitioner alternatively requests a writ commanding CHP to set aside the denial and reconsider
+the April 9 request within 30 days in conformity with the Court's findings and Penal Code section
+679.10 — including subdivision (h)'s helpfulness presumption and subdivision (k)'s rule that no
+charge, prosecution, or conviction is required — on the properly lodged record, and to file a
+return within 45 days so the Court can determine compliance. The Court retains jurisdiction until
+the return is filed and approved.
+
+
+VI. CONCLUSION
+
+Petitioner respectfully requests that the Court grant the motion, enter judgment on the First
+Cause of Action, and issue a peremptory writ commanding CHP to set aside its April 20, 2026
+denial and complete, sign, and deliver Form I-918 Supplement B within 30 days after service of
+the writ. In the alternative, Petitioner requests a writ directing CHP to set aside the denial,
+reconsider the request within 30 days in conformity with the Court's findings and Penal Code
+section 679.10, and file a return within 45 days.
+
+Respectfully submitted,
+
+Dated: [DATE — to be inserted on filing]
+BRENDAN NGEHSI NEWANFORBI Petitioner, In Pro Per
+
+
+
+
+SUPPORTING PAPERS NOTE (not part of the motion; remove
+before filing)
+
+   Declaration of Brendan Ngehsi Newanforbi (executed September 30, 2026): supplement
+   before filing with paragraphs covering the October 12 Answer admissions/denials (including
+   ¶ 57), the October 23 production Bates, and the toxicology result.
+   Proposed Judgment and Proposed Peremptory Writ (September 30, 2026 versions carry direct
+   certification only): update to carry BOTH primary and alternative relief, tracking § VI.
+   Proof of service on Respondents' counsel (Vanessa Ing, CA DOJ) to be completed on filing.
+   Verify before filing: verbatim April 20 letter quotations (§ V.D); § 679.10(b), (h), (k) quotations
+   from official text (§ IV); August 29 Order quotations against the stamped Order; January 8
+   setting and briefing timetable; video playback access for the Court (September 8 lodging
+   ambiguity); CM-110 / November 4 CMC stipulation status; native-MP4 reconfirmation of the
+   walk-and-turn sequence (§§ II.B, V.A).
+   Formatting for filing: conform the memorandum to CRC 3.1113(d) (15-page limit for an
+   ordinary opening memorandum; table of contents and table of authorities if over 10 pages)
+   and 3.1113(k) (exhibit citations by letter/number, page, and paragraph/line, plus video
+   timecodes); lodge and serve proposed orders/judgments separately rather than attaching
+   them to the memorandum (CRC 3.1113(m)). This draft is written in full; the filed version must
+   be checked against the page limit in pleading-paper formatting.
+   Procedure note: this draft proceeds under CCP § 1085 with § 1090 for any disputed-fact
+   procedure, because the August 29 demurrer order fixed Count 1 under § 1085. CCP § 1094
+   (administrative mandate) was flagged in the companion file 05-PEREMPTORY-WRIT-MERITS-
+   BRAINSTORM.md as a question; it is not adopted here, because the operative order is a §
+   1085 order.
+

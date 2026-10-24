@@ -1,0 +1,369 @@
+{
+  "tool": "execute",
+  "result": {
+    "index_entries": 1726,
+    "selected_count": 90,
+    "entries": [
+      {
+        "path": "/documents/matter-20/01_Motion_for_Peremptory_Writ_MPA_with_CRS_Receipt.pdf",
+        "sha256": "dcf900e98d084282088db53436bfadbab8813448d231490f734881a4aee5d7fc"
+      },
+      {
+        "path": "/documents/matter-20/01_Motion_for_Peremptory_Writ_MPA_with_CRS_Receipt.txt",
+        "sha256": "6b9ae8ba64744a538442ff9f5bf45db882fcca6cd3dd0baa838370a9d1d42249"
+      },
+      {
+        "path": "/documents/matter-20/02_Declaration_ISO_Motion_for_Peremptory_Writ.pdf",
+        "sha256": "f730bc4b9fe3a2e0913e9f8ef169e476b4a5f17e15d4cd14225a81365661b436"
+      },
+      {
+        "path": "/documents/matter-20/02_Declaration_ISO_Motion_for_Peremptory_Writ.txt",
+        "sha256": "0b5b60eec6a419f0ca1d65481a302e39d5a2adc58bc7231c767b0dd293402db0"
+      },
+      {
+        "path": "/documents/matter-20/03_Attachment_to_CM110_Oct28_CMC.pdf",
+        "sha256": "f7e579658773cf05d42a6d47f59fd6cdaff68c11162886566547be51b5a2091c"
+      },
+      {
+        "path": "/documents/matter-20/03_Attachment_to_CM110_Oct28_CMC.txt",
+        "sha256": "bb6f4908159eaf6756c90cf3a49aa398a0a1a4f1a9f0a4dcd2af398c338ebc32"
+      },
+      {
+        "path": "/documents/matter-20/04_Proposed_Judgment_Granting_Peremptory_Writ.pdf",
+        "sha256": "b3f656cefd6fde46351d945cc1c4accebc822f04f7e5c3f0239fe6dbc37ed2b0"
+      },
+      {
+        "path": "/documents/matter-20/04_Proposed_Judgment_Granting_Peremptory_Writ.txt",
+        "sha256": "b1c1797692815ba94a70f68bcb1e9f9ed2b14586474c4926e6c9f0490eddcfd0"
+      },
+      {
+        "path": "/documents/matter-20/05_Proposed_Peremptory_Writ_of_Mandate.pdf",
+        "sha256": "5536eee00deeb692c28d40a0d296bffbfa14267b485eb01065d9afc219b0a417"
+      },
+      {
+        "path": "/documents/matter-20/05_Proposed_Peremptory_Writ_of_Mandate.txt",
+        "sha256": "d67ea0c2882753586d06d05a1a9ef04bcc448efb8709ae232e17ef4c76ef91c2"
+      },
+      {
+        "path": "/documents/matter-20/Declaration ISO Notice of Lodging Nov 1 2024 CHP Dashcam (Sep 8 2026).pdf",
+        "sha256": "062f7803d19dd250d4662499e3b52aaaa0a4f9945e3743456e013efaa9c2ad88"
+      },
+      {
+        "path": "/documents/matter-20/EMAIL_DRAFT_Ing_RFP_Set_One_CHP.txt",
+        "sha256": "7d50b79abe3881fb6932f45440a927e43a15ad31f839c877827de32fc2b141f3"
+      },
+      {
+        "path": "/documents/matter-20/EMAIL_DRAFT_Ing_secure_dashcam_upload.txt",
+        "sha256": "41e6baf9dab9e573f24dbd4d40b4b68f36de056d79268a9b82bb29fc3223da06"
+      },
+      {
+        "path": "/documents/matter-20/EMAIL_DRAFT_One_Legal_Court_Fees_Already_Waived.txt",
+        "sha256": "ee9e266045436422085884c86b8c73ea091cdc18115c9a8c8afaf9de6bee4146"
+      },
+      {
+        "path": "/documents/matter-20/FW-003 Order on Court Fee Waiver - GRANTED (One Legal download, Jun 3 2026).pdf",
+        "sha256": "e87f595a8f5adf569ce571890d19a651a68238e12feec41fc9c9d5f3841f9439"
+      },
+      {
+        "path": "/documents/matter-20/Gmail - Ing asks for secure dashcam upload link (Sep 10 2026).pdf",
+        "sha256": "6d1a120eece53e37360e0f80d64a1f5d98ffddf1b39da9ff99d20fe671f358ae"
+      },
+      {
+        "path": "/documents/matter-20/Gmail - Newanforbi v CHP - Notice of Lodging Dashcam to Ing (Sent Sep 8 2026).pdf",
+        "sha256": "2ed6735907774dc67235ce457b00632c1640a5f4c48828780ad3426ebda04134"
+      },
+      {
+        "path": "/documents/matter-20/Matter20_CM110_with_PleadingPaper_Attachments.pdf",
+        "sha256": "75503402cdc292adeb24538b4f5637fda2472d71d68e164aa2550872dbe7c11a"
+      },
+      {
+        "path": "/documents/matter-20/Matter20_CM110_with_PleadingPaper_Attachments.txt",
+        "sha256": "9bbab3004494b6f89df6c136f448a012cae69c4e93cf31c06f24ce61177b511a"
+      },
+      {
+        "path": "/documents/matter-20/Newanforbi_v._California_Highway_Patrol__No._26CV191136___Rule_3.724_meet_and_co.pdf",
+        "sha256": "8583d6e0676da8b558c8b0de0ce02bdcfce6df427f581278f1c19adc2ea8c312"
+      },
+      {
+        "path": "/documents/matter-20/Newanforbi_v._California_Highway_Patrol__No._26CV191136___Rule_3.724_meet_and_co.txt",
+        "sha256": "5ede10125b16d288d8c34ead9c4a63bbf62c801018a3a063c5976b56be3b3670"
+      },
+      {
+        "path": "/documents/matter-20/Notice of Confirmation of Electronic Filing - Notice of Lodging (POS rejected Sep 8 2026).pdf",
+        "sha256": "dbb87fa7ec5b12aeb83f2215100022c9907b47f996616e06d72130d1d6567f6d"
+      },
+      {
+        "path": "/documents/matter-20/Notice of Lodging - Nov 1 2024 CHP Dashcam Exhibit 5 Source (Sep 8 2026).pdf",
+        "sha256": "06508235ccde8f532743b5c4b3c89e6a3693e50db3210b07707ca33927d7378d"
+      },
+      {
+        "path": "/documents/matter-20/Proof of Electronic Service - RFP Set One CHP (Sep 16 2026).pdf",
+        "sha256": "d46c5eeb770d330a6d66a336b11a76ab136fcae9a02d5a91d9c130176e1db5e2"
+      },
+      {
+        "path": "/documents/matter-20/Proof of Service - Notice of Lodging Nov 1 2024 CHP Dashcam (Sep 8 2026).pdf",
+        "sha256": "274dee78d5d476e0e2f796b62de850137426dffa28f64e643cc14c0c764444b2"
+      },
+      {
+        "path": "/documents/matter-20/Proof of Service - RFP Set One CHP (Sep 15 2026).pdf",
+        "sha256": "f37303950c92331bab159e5bb6787987ec306b396a0127fc0cbcdf3f4349c3e0"
+      },
+      {
+        "path": "/documents/matter-20/Proof of Service by First-Class Mail - RFP Set One CHP (Sep 16 2026).pdf",
+        "sha256": "69bceb3491f656979a95052f0046b451917fc3d2d2aca5e4ef6a48a444e56bab"
+      },
+      {
+        "path": "/documents/matter-20/Request for Production of Documents Set One - CHP (Sep 15 2026).pdf",
+        "sha256": "6eeaeee9ab521e4452705e3fe1f2fd9006d26c64416605ec960db79f29aa3cdb"
+      },
+      {
+        "path": "/documents/matter-20/Request for Production of Documents Set One - CHP (Sep 16 2026).pdf",
+        "sha256": "9728db9053ea01339c71387ab37c213883da9773fa5f3800c32847a979943e38"
+      },
+      {
+        "path": "/documents/matter-20/Request for Production of Documents Set One - CHP with Mail POS (Sep 16 2026).pdf",
+        "sha256": "793ce2b72ae8a5dc89aeec5cbd30e6bef0605b99dc90d661cc87258aaf9ddbaa"
+      },
+      {
+        "path": "/documents/matter-20/Request for Production of Documents Set One - CHP with POS (Sep 15 2026).pdf",
+        "sha256": "2dba0eaeca4c05b28e15ec7ff624b829870b881c84ba6685dd8299e2b3c71a42"
+      },
+      {
+        "path": "/documents/matter-20/Request for Production of Documents Set One - CHP with POS (Sep 16 2026).pdf",
+        "sha256": "e56eb9ebe34646718ffc076e960428e8773b3a4adf2b04d3cd9ad5b8e914ca2f"
+      },
+      {
+        "path": "/documents/matter-20/Stipulation to Advance Hearing Date.docx",
+        "sha256": "0a209a1d1f0c24dc19696c59a2eadefee79f5fe82321e7e1c984fccc40cda70e"
+      },
+      {
+        "path": "/documents/matter-24/Exhibit A Cover - Whitman Order (Aug 29 2026).pdf",
+        "sha256": "a4595248d3cf2671a0f9f67669b4cb943d9aee7933c33f3cf00ef9cfb1db533e"
+      },
+      {
+        "path": "/documents/matter-24/Notice of Lodging - Whitman Order - Serrato MTD (Sep 8 2026).pdf",
+        "sha256": "e3f1875922ea478511e4642a03057a409492652de51c0ae0cbac40c1248bcd6d"
+      },
+      {
+        "path": "/documents/matter-24/Notice of Lodging - Whitman Order with POS (Sep 8 2026).pdf",
+        "sha256": "4c2aa1ce4916df88c7006a81c60a901ceb458725f31c75c5497b2ba184f1e773"
+      },
+      {
+        "path": "/documents/matter-32/from-20/0.Newanforbi v. CHP - Writ of Mandate.pdf",
+        "sha256": "9446a3ad43e60b9d1d11c1797f5862a2233b7c0662b71088fe8d45182f08163c"
+      },
+      {
+        "path": "/documents/matter-32/from-20/AG Decl. Vanessa Ing - Meet and Confer (Individual Respondents).pdf",
+        "sha256": "ca2250c66e84a165c75c68b34abab1ab30b9a51bcacece184b43255dad0995c7"
+      },
+      {
+        "path": "/documents/matter-32/from-20/AG Decl. Vanessa Ing - Meet and Confer.pdf",
+        "sha256": "6ca332a5a129f1525aa701f0dcb820b17e1c86e40b7a2aea4030c2b425a95cd7"
+      },
+      {
+        "path": "/documents/matter-32/from-20/AG Demurrer to Petition.pdf",
+        "sha256": "4467d4ab708d28faf3b39871e0373a564fc0105b34a1e9cd23e4f9c21fadc0d6"
+      },
+      {
+        "path": "/documents/matter-32/from-20/AG MPA ISO Demurrer.pdf",
+        "sha256": "fe01b98b2fba097fd6809f27443e25a43aafe0fb6746079322741a327e558b1b"
+      },
+      {
+        "path": "/documents/matter-32/from-20/AG Proposed Order on Demurrer.pdf",
+        "sha256": "9cdb2632a8b6c416814a6e2a3b46d3b80ebbf93d5aa168e4d19fc93426e5ec46"
+      },
+      {
+        "path": "/documents/matter-32/from-20/Alameda Sheriff Service Packet - Eric Dutra (SER-001, FW-003, Opposition-MPA) (Aug 3 2026).pdf",
+        "sha256": "b32fa3046940278f728c0a3b8de63c6e7271e1483f4e81a6dfbde208af19942f"
+      },
+      {
+        "path": "/documents/matter-32/from-20/Alameda Sheriff Service Packet - G Serrato (SER-001, FW-003, Opposition-MPA) (Aug 3 2026).pdf",
+        "sha256": "e63c9e79dcd5b4f23ca5fd6339cc80be3e05871977235c8938d75c9448e39241"
+      },
+      {
+        "path": "/documents/matter-32/from-20/Alameda Sheriff Service Packet - Gary Paul (SER-001, FW-003, Opposition-MPA) (Aug 3 2026).pdf",
+        "sha256": "a320bfea698703c6922f4475353c7af64014dbafb54e2c0be102aafc581f91d6"
+      },
+      {
+        "path": "/documents/matter-32/from-20/Case Management Statement (CM-110) (filed June 30, 2026).pdf",
+        "sha256": "4a8158830d687b1c7c3c0dba1a5ef578a262da82f204249e7842275563ae9571"
+      },
+      {
+        "path": "/documents/matter-32/from-20/Declaration of Petitioner ISO Opposition.pdf",
+        "sha256": "b641eadf181f213b791a49f53fdfb339ef01620c50758566391a5852f3712620"
+      },
+      {
+        "path": "/documents/matter-32/from-20/Dutra MPA ISO Joinder and Demurrer.pdf",
+        "sha256": "e720646beba5ad4777d459d55df821d826edd3b7235f62b6ba3bfcf6255e7a44"
+      },
+      {
+        "path": "/documents/matter-32/from-20/Dutra Notice of Joinder and Demurrer.pdf",
+        "sha256": "e7af1c4254484879ce4d69df51236a019de5ae63e8dcbd7e6737804869d5decc"
+      },
+      {
+        "path": "/documents/matter-32/from-20/Filing Receipt - One Legal.pdf",
+        "sha256": "54bd40c85a6cc34dfb1ae01aa19e01a5fd6d84895e89f792fdfd5b45cf11c169"
+      },
+      {
+        "path": "/documents/matter-32/from-20/FW-003 Order on Court Fee Waiver - GRANTED (Jun 3 2026).pdf",
+        "sha256": "d1839ae4909c7b9392b9b1486a63aa9a66e80e8c538074101978a2f93d83f12c"
+      },
+      {
+        "path": "/documents/matter-32/from-20/Gmail - Alameda Superior Court EPOST - 26CV191136 Whitman Order (Aug 31 2026).pdf",
+        "sha256": "615c4b8944d39f8e970efef94f349f4a7716803f5a4c9da1ab947a2670d58ee6"
+      },
+      {
+        "path": "/documents/matter-32/from-20/Gmail - USPS eReceipt - Alameda Sheriff Service Packet Postage (Aug 3 2026).pdf",
+        "sha256": "bcb521622a9bf3ac8eae0783f0205cf5a45564c5607cddedfe1b097faa15effa"
+      },
+      {
+        "path": "/documents/matter-32/from-20/Joint Stipulation to Advance Hearing Dates - Individual Respondents; Proposed Order.pdf",
+        "sha256": "22a96ce5760386fcfce4b04339a3533f8c4b32ae967e53267fb0f60b5a734d6c"
+      },
+      {
+        "path": "/documents/matter-32/from-20/Notice of Case Management Conference.pdf",
+        "sha256": "f5a2ae09a80f402c25d02acc83468c2920a9a8e681d71cd377326c7bf8c3f8c1"
+      },
+      {
+        "path": "/documents/matter-32/from-20/Notice of Change of Address (July 7, 2026).pdf",
+        "sha256": "91878485c9a2eb40e839bc238d513caeef4b7996d48bfe90342d04eda69f9101"
+      },
+      {
+        "path": "/documents/matter-32/from-20/Notice of E-Filing Confirmation.pdf",
+        "sha256": "2af5d1edff4165d2f1daab15a39d6b76fed6595a8473e3d3d4d7485f044102db"
+      },
+      {
+        "path": "/documents/matter-32/from-20/Opposition to Demurrer.pdf",
+        "sha256": "be7d36116a262d0ccd98b8f2b504411896d1e62d9572d152206eeb735f3106ed"
+      },
+      {
+        "path": "/documents/matter-32/from-20/Opposition-to-Individual-Respondents-Demurrers.pdf",
+        "sha256": "8a2e557eaa4ee97b4f7de893606de4d69747c08946fd447db9d7e1efd120d11f"
+      },
+      {
+        "path": "/documents/matter-32/from-20/Oral Argument Script - CHP Demurrer Hearing (Aug 28 2026).pdf",
+        "sha256": "8fb1038ab47d0c105ff1fd67756f4ef4db6aaaf858782826bbee7996e22e1986"
+      },
+      {
+        "path": "/documents/matter-32/from-20/Order Sustaining Demurrer In Part - Whitman (Aug 29 2026) (Notice of Entry Aug 31 2026).pdf",
+        "sha256": "28f8309b7ce06b2cd50eb06e125fc295dde1b2f8b7337c66ce36a2e28d7b265f"
+      },
+      {
+        "path": "/documents/matter-32/from-20/Order Sustaining Demurrer In Part - Whitman (Aug 29 2026).pdf",
+        "sha256": "f5b4129c47327c510458a7cbc69920f1c1cb0ba42635582bcf952ee9f25689fb"
+      },
+      {
+        "path": "/documents/matter-32/from-20/Paul MPA ISO Joinder and Demurrer.pdf",
+        "sha256": "85a5419c2b617b1c31eb33ee17567ecdd4f1794a83bb0c1d49348a28f755b8b2"
+      },
+      {
+        "path": "/documents/matter-32/from-20/Paul Notice of Joinder and Demurrer.pdf",
+        "sha256": "f8b7b2df0732006078c47ecde8acab639093b848d41e24af60e58f9e58f8be30"
+      },
+      {
+        "path": "/documents/matter-32/from-20/Petition for Writ of Mandate.pdf",
+        "sha256": "9f9bdbf535937dc654afb6d487925b1b0a27b1ef2587129001e5a820d9d7e411"
+      },
+      {
+        "path": "/documents/matter-32/from-20/Proof of Service - Opposition to Demurrer.pdf",
+        "sha256": "5e8b5c6472385980ff0b5861b1d43cd7a6fd5a01267d8cc7da134844cb38ec90"
+      },
+      {
+        "path": "/documents/matter-32/from-20/Proposed Order Granting Joinders; Sustaining Demurrers - Individual Respondents.pdf",
+        "sha256": "3e1fffb267ed72a64da8dd28503380513f11eb7b7de18e2e6397e84532fa380f"
+      },
+      {
+        "path": "/documents/matter-32/from-20/Proposed Order Overruling Demurrer.pdf",
+        "sha256": "5598127f7a93be620d83dc912097b57ab7896ccf1768e6e3742d6135e2000c0e"
+      },
+      {
+        "path": "/documents/matter-32/from-20/RECEIPT.pdf",
+        "sha256": "51448295104adfcf706901ec9c2527455f1b7ead17c0bbbb8a74cf211dcf9f4c"
+      },
+      {
+        "path": "/documents/matter-32/from-20/Reply ISO Demurrer - California Highway Patrol (hearing Aug 28 2026).pdf",
+        "sha256": "5581e6cb8f6d8825b7e4548b2514e93dbcd75bd0bef436b944b2d923a37999b6"
+      },
+      {
+        "path": "/documents/matter-32/from-20/Reply ISO Demurrer - Serrato Paul Dutra and Notice of Joinder (hearing Sep 18 2026).pdf",
+        "sha256": "011facfa1446ae9ea88d945e89de28a03282f13198d5566a701637bf48728a92"
+      },
+      {
+        "path": "/documents/matter-32/from-20/Request for Judicial Notice with Exhibits.pdf",
+        "sha256": "2f07291565d266f89aa064afb9cabf602fa57a4bc823df71c41c58eea5307cf2"
+      },
+      {
+        "path": "/documents/matter-32/from-20/Request to Waive Court Fees.pdf",
+        "sha256": "f9597420984d4dfbe7dc8cb7f5d629358010b0028698b9bda56b55e6b6a37eeb"
+      },
+      {
+        "path": "/documents/matter-32/from-20/SER-001 Request for Sheriff to Serve Court Papers - California Highway Patrol (Jul 31 2026).pdf",
+        "sha256": "aacadb4a220a1071eb32a0b9a438de5f31276c3f68479a074bd2f3b3d6a729ef"
+      },
+      {
+        "path": "/documents/matter-32/from-20/SER-001 Request for Sheriff to Serve Court Papers - Eric Dutra (Jul 31 2026).pdf",
+        "sha256": "7d8d9eca507d663b99aa0b602c0d919adc1087bacf519da676d68f76a778c8d7"
+      },
+      {
+        "path": "/documents/matter-32/from-20/SER-001 Request for Sheriff to Serve Court Papers - G Serrato (Jul 31 2026).pdf",
+        "sha256": "63e984e4979c4e6f3c24c9d0e23d7f4d55eda42c7cd3a1f96b5366e7e048ca52"
+      },
+      {
+        "path": "/documents/matter-32/from-20/SER-001 Request for Sheriff to Serve Court Papers - Gary Paul (Jul 31 2026).pdf",
+        "sha256": "9417fe38f03ecaf90769d1ce01d5eeafe174899a97f2e69848afee2a7d1c67a3"
+      },
+      {
+        "path": "/documents/matter-32/from-20/Serrato MPA ISO Joinder and Demurrer.pdf",
+        "sha256": "c298892af10986ddd42994c24bbb3059918547a1363a70016088148aa4836613"
+      },
+      {
+        "path": "/documents/matter-32/from-20/Serrato Notice of Joinder and Demurrer.pdf",
+        "sha256": "1e0b81950eb485458e63bcbcceec1832020d3513f936233f4ec04a376ec7c898"
+      },
+      {
+        "path": "/documents/matter-32/from-20/Summons on Petition.pdf",
+        "sha256": "92304888d59a79dd74b346422a3b4773ad7cedb039369d0eeadb8c7b3b814a96"
+      },
+      {
+        "path": "/documents/matter-32/from-20/Tentative Ruling - CHP Demurrer (Dept 25 Whitman, Aug 27 2026 for Aug 28 hearing).pdf",
+        "sha256": "1fd6f0194c030ac99467ad8a27dc180abc9f07dd1c5422f43b433b0fb220b004"
+      },
+      {
+        "path": "/documents/matter-32/from-20/Tentative Ruling on CMC Continuance - Hon. Jenna Whitman (July 12, 2026).pdf",
+        "sha256": "d9caa9a431af198c802168b898a6786c4e64e2d76c5d64df95db4cf0d8dc8428"
+      },
+      {
+        "path": "/documents/matter-33/incident/Arrest Report.pdf",
+        "sha256": "7bd81bb64499da50020b641182ae1d474d7ea1f86187ff6a1350dcc6585e6548"
+      },
+      {
+        "path": "/documents/matter-33/incident/Centerline Wage Reference.pdf",
+        "sha256": "23acb3048cb990b53d588ca046334f6f34f3b1019796f08d91df278abe2bcc9d"
+      },
+      {
+        "path": "/documents/matter-33/incident/DAD 2024-12-04.pdf",
+        "sha256": "7dd92be7e30290cf1341e6502f75e5a483061ec4e7d4e727f69123e67d4fb1f3"
+      },
+      {
+        "path": "/documents/matter-33/incident/Discovery-Response.pdf",
+        "sha256": "2d2312ca30c15f34a2d6b7c6acf4d466885f14bce1bfdfdf83d8e86886498943"
+      },
+      {
+        "path": "/documents/matter-33/incident/DS2044 Notification of Discovery 34739340.pdf",
+        "sha256": "9fcc0c53450352e0388c68a846731afa1904687a144f53fb87514d17f05527a3"
+      },
+      {
+        "path": "/documents/matter-33/incident/ds367 ngwanforbi f7953179.pdf",
+        "sha256": "432ecc55cbac370b49053b364713b52ed0b00785a604f87040b1f163bd5d824f"
+      },
+      {
+        "path": "/documents/matter-33/incident/Exhibit_A_CHP_Video_Transcript.pdf",
+        "sha256": "3750927a89170c8d4702cb7dfab4d2b96fda1e31d7662ffc524e07763d1b6660"
+      },
+      {
+        "path": "/documents/opinions/Newanforbi v California CHP - Alameda Sup Ct - Order Sustaining Demurrer In Part Aug 29 2026.pdf",
+        "sha256": "f5b4129c47327c510458a7cbc69920f1c1cb0ba42635582bcf952ee9f25689fb"
+      }
+    ]
+  }
+}

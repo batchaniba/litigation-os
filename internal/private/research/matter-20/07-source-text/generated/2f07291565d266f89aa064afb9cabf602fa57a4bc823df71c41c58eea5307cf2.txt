@@ -1,0 +1,771 @@
+ 1   BRENDAN NGEHSI NEWANFORBI
+     Petitioner In Pro Per
+ 2   1455 Cat Tail Drive
+     Stockton, CA 95204
+ 3
+     Telephone: (209) 801-4442
+ 4   E-mail: bnn.cdl@gmail.com
+
+ 5                        SUPERIOR COURT OF THE STATE OF CALIFORNIA
+
+ 6                                        COUNTY OF ALAMEDA
+
+ 7
+
+ 8    BRENDAN NGEHSI NEWANFORBI,                             Case No. 26CV191136
+
+ 9                    Petitioner,                            PETITIONER'S REQUEST FOR
+                                                             JUDICIAL NOTICE IN SUPPORT
+10        v.                                                 OF OPPOSITION TO DEMURRER
+
+11
+      CALIFORNIA HIGHWAY PATROL,                             [Evid. Code §§ 452, subds. (c), (d), 453]
+      et al.,
+12
+                                                             Date: August 28, 2026
+13                    Respondents.                           Time: 9:00 a.m.
+                                                             Assigned for All Purposes to:
+14                                                           Hon. Jenna M. Whitman, Dept. 25
+
+15                                   REQUEST FOR JUDICIAL NOTICE
+
+16
+
+17             Petitioner Brendan Ngehsi Newanforbi respectfully requests that this Court take judicial
+
+18   notice, pursuant to Evidence Code sections 452, subdivisions (c) and (d), and 453, of the
+
+19   following matters:
+
+20
+
+21             Exhibit A: Order Re Motion to Proceed In Forma Pauperis (Dkt. No. 5), filed June 29,
+
+22   2026, in Newanforbi v. Serrato, Case No. 4:26-cv-05953-ASK, United States District Court,
+
+23   Northern District of California (Magistrate Judge Ajay S. Krishnan). This order grants Plaintiff's
+
+24   application to proceed in forma pauperis and, upon mandatory screening under 28 U.S.C. section
+
+25   1915(e)(2), concludes that the operative complaint—which arises from the same underlying
+
+26   incident and the same April 20, 2026 certification denial at issue in this Petition—is sufficient to
+
+27   state claims for relief. Noticeable under Evidence Code section 452, subdivision (d) (records of
+
+28   any court of record of the United States).
+
+                                                    Page 1
+                   REQUEST FOR JUDICIAL NOTICE — NEWANFORBI v. CHP, ET AL. (26CV191136)
+ 1          Exhibit B: Assembly Bill No. 1261 (2023-2024 Reg. Sess.), chapter 679, Stats. 2023, as
+
+ 2   chaptered and filed with the Secretary of State on October 10, 2023, including the Legislative
+
+ 3   Counsel's Digest printed as a preface thereto. Noticeable under Evidence Code section 452,
+
+ 4   subdivision (c) (official acts of the legislative department of any state).
+
+ 5
+
+ 6   RELEVANCE
+
+ 7
+
+ 8          Exhibit A. Respondent's demurrer argues that Petitioner's factual allegations are
+
+ 9   conclusory and insufficient to state a cause of action. (Dem. MPA at 13-15.) The screening order
+
+10   is persuasive—though not binding—authority that a federal court, reviewing substantially the
+
+11   same factual allegations based on the same underlying incident and the same certification denial,
+
+12   concluded that those allegations plausibly support inferences of false imprisonment based on
+
+13   fabricated evidence and a plausible retaliation claim arising from the denial itself. (Exhibit A at
+
+14   3-4.) Petitioner does not contend that the federal order decides the merits of this state-court
+
+15   mandate action or that it binds this Court. Petitioner offers it solely to demonstrate that
+
+16   Respondent's competing factual inferences do not render Petitioner's allegations facially deficient
+
+17   at the pleading stage.
+
+18
+
+19          Exhibit B. The Legislative Counsel's Digest of AB 1261 is relevant to the construction of
+
+20   Penal Code section 679.10, subdivision (i)(2), which is squarely at issue on the demurrer to the
+
+21   second cause of action. The Digest describes the written-explanation requirement enacted by AB
+
+22   1261 as an obligation attaching to any denial of certification—without limitation to
+
+23   cooperation-based denials—and is entitled to great weight in construing the enactment. (Jones v.
+
+24   Lodge at Torrey Pines Partnership (2008) 42 Cal.4th 1158, 1169-1170.)
+
+25
+
+26   LEGAL BASIS
+
+27
+
+28          Evidence Code section 452, subdivision (d) permits judicial notice of "[r]ecords of . . . any
+
+                                                    Page 2
+                 REQUEST FOR JUDICIAL NOTICE — NEWANFORBI v. CHP, ET AL. (26CV191136)
+ 1   court of this state or any court of record of the United States." (People v. Preslie (1977) 70
+
+ 2   Cal.App.3d 486, 493; Lockley v. Law Office of Cantrell, Green, Pekich, Cruz & McCort (2001)
+
+ 3   91 Cal.App.4th 401, 406.) Evidence Code section 452, subdivision (c) permits judicial notice of
+
+ 4   "[o]fficial acts of the legislative . . . department[] . . . of any state," which includes the Legislative
+
+ 5   Counsel's Digest. Evidence Code section 453 requires the Court to take judicial notice of these
+
+ 6   matters when properly requested.
+
+ 7
+
+ 8           True and correct copies of Exhibits A and B are attached hereto.
+
+ 9
+
+10                                                                                  Dated: July 13, 2026
+
+11
+
+12
+
+13
+
+14
+
+15
+
+16                                                              BRENDAN NGEHSI NEWANFORBI
+
+17                                                                                  Petitioner, In Pro Per
+
+18
+
+19
+
+20
+
+21
+
+22
+
+23
+
+24
+
+25
+
+26
+
+27
+
+28
+
+                                                     Page 3
+                  REQUEST FOR JUDICIAL NOTICE — NEWANFORBI v. CHP, ET AL. (26CV191136)
+                   EXHIBIT A
+
+Order Re Motion to Proceed In Forma Pauperis, Newanforbi v.
+ Serrato, No. 4:26-cv-05953-ASK (N.D. Cal. June 29, 2026)
+                    EXHIBIT B
+
+Assembly Bill No. 1261, Chapter 679, Stats. 2023 (Approved by
+                Governor October 10, 2023)
+                                                        Assembly Bill No. 1261
+
+                                                           CHAPTER 679
+
+     An act to amend Sections 679.10 and 679.11 of, and to add Section 679.13 to, the Penal Code, relating to crime.
+
+
+            [ Approved by Governor October 10, 2023. Filed with Secretary of State
+                                    October 10, 2023. ]
+
+
+                                LEGISLATIVE COUNSEL'S DIGEST
+
+     AB 1261, Santiago. Crime: witnesses and informants.
+
+     Existing state law requires, upon request by specified persons, that a certifying official from a
+     certifying entity, as defined, certify “victim helpfulness” or “victim cooperation” on specified federal
+     supplemental forms relating to immigration when the person was a victim of a qualifying criminal
+     activity or human trafficking, and has, is, or is likely to be helpful or cooperative regarding the
+     investigation or prosecution of that qualifying criminal activity, as specified.
+
+     This bill would specify that a person submitting those forms does not have to be present in the
+     United States at the time of filing, and would require the certifying entity to forward the form to the
+     victim or other specified individuals without requiring the victim to provide government-issued
+     identification. The bill would require a certifying entity that does not certify the form regarding
+     “victim helpfulness” to provide a written explanation for the denial of the certification. The bill
+     would require a certifying entity to certify that form for direct victims, indirect victims, and
+     bystander or witness victims, as specified. The bill would prohibit a certifying entity from refusing to
+     complete either of those forms for specified reasons, including, among others, the informant’s
+     criminal history information or immigration history. The bill would require the certifying entities to
+     process those forms within 7 days if the victim asserts a qualifying family member of the victim will
+     lose eligibility for specified immigration statuses within 60 days. By imposing additional duties on
+     local law enforcement, this bill would impose a state-mandated local program.
+
+     Existing federal law provides a petition form to request temporary immigration benefits for a person
+     who is a witness or informant, as specified.
+
+     This bill would authorize a certifying official from a certifying entity, as defined, to certify that a
+
+
+
+    https://legiscan.com/CA/text/AB1261/id/2845281/California-2023-AB1261-Chaptered.html                 7/11/26, 6 04 AM
+                                                                                                              Page 1 of 12
+
+
+
+
+:
+     person is a witness or informant on that federal petition form when the person is an informant with
+     reliable information about an important aspect of a crime or pending commission of a crime, the
+     person is willing to share that information with law enforcement officials or become a witness in
+     court, and the person’s presence in the United States is important and leads to the successful
+     investigation or prosecution of that crime.
+
+     The California Constitution requires the state to reimburse local agencies and school districts for
+     certain costs mandated by the state. Statutory provisions establish procedures for making that
+     reimbursement.
+
+     This bill would provide that, if the Commission on State Mandates determines that the bill contains
+     costs mandated by the state, reimbursement for those costs shall be made pursuant to the statutory
+     provisions noted above.
+
+
+     Digest Key
+     Vote: majority Appropriation: no Fiscal Committee: yes Local Program: yes
+
+
+     Bill Text
+
+     THE PEOPLE OF THE STATE OF CALIFORNIA DO
+     ENACT AS FOLLOWS:
+
+     SECTION 1. Section 679.10 of the Penal Code is amended to read:
+     679.10. (a) For purposes of this section, a “certifying entity” is any of the following:
+
+
+         (1) A state or local law enforcement agency, including, without limitation, the police department
+         of the University of California, a California State University campus, or the police department of a
+         school district, established pursuant to Section 38000 of the Education Code.
+
+         (2) A prosecutor.
+
+         (3) A judge.
+
+         (4) Any other authority that has responsibility for the detection or investigation or prosecution of a
+         qualifying crime or criminal activity.
+
+
+
+
+    https://legiscan.com/CA/text/AB1261/id/2845281/California-2023-AB1261-Chaptered.html            7/11/26, 6 04 AM
+                                                                                                        Page 2 of 12
+
+
+
+
+:
+         (5) Agencies that have criminal detection or investigative jurisdiction in their respective areas of
+         expertise, including, but not limited to, child protective services, the Civil Rights Department, and
+         the Department of Industrial Relations.
+
+     (b) For purposes of this section, a “certifying official” is any of the following:
+
+         (1) The head of the certifying entity.
+
+         (2) A person in a supervisory role who has been specifically designated by the head of the
+         certifying entity to issue Form I-918 Supplement B certifications on behalf of that agency.
+
+         (3) A judge.
+
+         (4) Any other certifying official defined under Section 214.14 (a)(2) of Title 8 of the Code of
+         Federal Regulations.
+
+     (c) “Qualifying criminal activity” has the same meaning as qualifying criminal activity pursuant to
+     Section 101(a)(15)(U)(iii) of the federal Immigration and Nationality Act which includes, but is not
+     limited to, the following crimes:
+
+         (1) Rape.
+
+         (2) Torture.
+
+         (3) Human trafficking.
+
+         (4) Incest.
+
+         (5) Domestic violence.
+
+         (6) Sexual assault.
+
+         (7) Abusive sexual conduct.
+
+         (8) Prostitution.
+
+         (9) Sexual exploitation.
+
+         (10) Female genital mutilation.
+
+         (11) Being held hostage.
+
+         (12) Peonage.
+
+
+
+
+    https://legiscan.com/CA/text/AB1261/id/2845281/California-2023-AB1261-Chaptered.html           7/11/26, 6 04 AM
+                                                                                                       Page 3 of 12
+
+
+
+
+:
+         (13) Perjury.
+
+         (14) Involuntary servitude.
+
+         (15) Slavery.
+
+         (16) Kidnapping.
+
+         (17) Abduction.
+
+         (18) Unlawful criminal restraint.
+
+         (19) False imprisonment.
+
+         (20) Blackmail.
+
+         (21) Extortion.
+
+         (22) Manslaughter.
+
+         (23) Murder.
+
+         (24) Felonious assault.
+
+         (25) Witness tampering.
+
+         (26) Obstruction of justice.
+
+         (27) Fraud in foreign labor contracting.
+
+         (28) Stalking.
+
+     (d) A “qualifying crime” includes criminal offenses for which the nature and elements of the offenses
+     are substantially similar to the criminal activity described in subdivision (c), and the attempt,
+     conspiracy, or solicitation to commit any of those offenses.
+
+     (e) A “representative fully accredited by the United States Department of Justice” is a person who is
+     approved by the United States Department of Justice to represent individuals before the Board of
+     Immigration Appeals, the immigration courts, or the Department of Homeland Security. The
+     representative shall be a person who works for a specific nonprofit, religious, charitable, social
+     service, or similar organization that has been recognized by the United States Department of Justice
+     to represent those individuals and whose accreditation is in good standing.
+
+     (f) Upon the request of a victim, licensed attorney representing the victim, or representative fully
+
+
+
+    https://legiscan.com/CA/text/AB1261/id/2845281/California-2023-AB1261-Chaptered.html       7/11/26, 6 04 AM
+                                                                                                   Page 4 of 12
+
+
+
+
+:
+     accredited by the United States Department of Justice authorized to represent the victim in
+     immigration proceedings, a state or local law enforcement agency with whom the victim had filed a
+     police report shall provide a copy of the police report within seven days of the request.
+
+     (g) (1) Upon the request of the victim, victim’s family member, licensed attorney representing the
+     victim, or representative fully accredited by the United States Department of Justice authorized to
+     represent the victim in immigration proceedings, a certifying official from a certifying entity shall
+     certify victim helpfulness on the Form I-918 Supplement B certification, when the victim was a
+     victim of a qualifying criminal activity and has been helpful, is being helpful, or is likely to be
+     helpful to the detection or investigation or prosecution of that qualifying criminal activity. The
+     certifying entity shall forward completed Form I-918 Supplemental B certification to the victim,
+     victim’s family member, licensed attorney representing the victim, or representative fully accredited
+     by the United States Department of Justice authorized to represent the victim in immigration
+     proceedings without requiring the victim to provide government-issued identification.
+
+         (2) A victim who submits a Form I-918 Supplement B certification to a certifying entity does not
+         have to be present in the United States at time of submitting the certification request or filing the
+         petition with the government and may apply for certification while outside of the United States.
+
+     (h) For purposes of determining helpfulness pursuant to subdivision (g), there is a rebuttable
+     presumption that a victim is helpful, has been helpful, or is likely to be helpful to the detection or
+     investigation or prosecution of that qualifying criminal activity, if the victim has not refused or failed
+     to provide information and assistance reasonably requested by law enforcement. If the victim
+     reasonably asserts they were unaware of a request for cooperation, their failure to cooperate does not
+     rebut the presumption of helpfulness.
+
+     (i) (1) The certifying official shall fully complete and sign the Form I-918 Supplement B certification
+     and, regarding victim helpfulness, include specific details about the nature of the crime investigated
+     or prosecuted and a detailed description of the victim’s helpfulness or likely helpfulness to the
+     detection or investigation or prosecution of the criminal activity.
+
+         (2) If a certifying entity does not certify a Form I-918 Supplement B certification, they shall
+         provide a written explanation for the denial of the Form I-918 Supplement B certification. The
+         written denial shall include specific details of any reasonable requests for cooperation and a
+         detailed description of how the victim refused to cooperate.
+
+     (j) (1) A certifying entity shall process a Form I-918 Supplement B certification within 30 days of
+     request, unless the noncitizen is in removal proceedings, in which case the certification shall be
+     processed within 7 days of the first business day following the day the request was received.
+
+         (2) A certifying agency shall process a Form I-918 Supplement B certification within 7 days of the
+         first business day following the day the request was received if the victim asserts a qualifying
+
+
+
+    https://legiscan.com/CA/text/AB1261/id/2845281/California-2023-AB1261-Chaptered.html            7/11/26, 6 04 AM
+                                                                                                        Page 5 of 12
+
+
+
+
+:
+         family member of the victim will lose eligibility for U nonimmigrant status in 60 days or fewer
+         because the victim’s noncitizen sibling will turn 18 years of age, the victim’s noncitizen child will
+         turn 21 years of age, or the victim will turn 21 years of age.
+
+     (k) (1) A current investigation, the filing of charges, an apprehension of the suspect who committed
+     the qualifying crime, closing of a case, and a prosecution or conviction are not required for the
+     victim to request and obtain the Form I-918 Supplement B certification from a certifying official.
+
+         (2) A certifying official shall not refuse to complete the Form I-918 Supplement B certification or
+         to otherwise certify that a victim has been helpful, solely because a case has already been
+         prosecuted or otherwise closed, or because the time for commencing a criminal action has expired.
+
+         (3) A certifying entity shall not refuse to complete the Form I-918 Supplement B certification and
+         provide it to the victim, the victim’s family member, licensed attorney representing the victim, or
+         representative fully accredited by the United States Department of Justice authorized to represent
+         the victim in immigration proceedings for any of the following reasons:
+
+              (A) The victim’s criminal history information.
+
+              (B) The victim’s immigration history.
+
+              (C) The victim’s gang membership or gang affiliation.
+
+              (D) The certifying entity’s belief that the Form I-918 Supplement B petition will not be
+              approved by United States Citizenship and Immigration Services.
+
+              (E) The victim has an open case with another certifying entity.
+
+              (F) The extent of the harm the victim suffered.
+
+              (G) The victim’s inability to produce a crime report from a law enforcement agency.
+
+              (H) The victim’s cooperation or refusal to cooperate in a separate case.
+
+     (l) A certifying official may only withdraw the certification if the victim refuses to provide
+     information and assistance when reasonably requested.
+
+     (m) A certifying entity is prohibited from disclosing the immigration status of a victim or person
+     requesting the Form I-918 Supplement B certification, except to comply with federal law or legal
+     process, or if authorized by the victim or person requesting the Form I-918 Supplement B
+     certification.
+
+     (n) A certifying entity that receives a request for a Form I-918 Supplement B certification shall
+
+
+
+    https://legiscan.com/CA/text/AB1261/id/2845281/California-2023-AB1261-Chaptered.html            7/11/26, 6 04 AM
+                                                                                                        Page 6 of 12
+
+
+
+
+:
+     report to the Legislature, on or before January 1, 2017, and annually thereafter, the number of
+     victims that requested Form I-918 Supplement B certifications from the entity, the number of those
+     certification forms that were signed, and the number that were denied. A report pursuant to this
+     subdivision shall comply with Section 9795 of the Government Code.
+
+     (o) (1) A certifying entity may certify a Form I-918 Supplement B certification for direct victims,
+     indirect victims, and bystander or witness victims.
+
+         (2) A direct victim is any person who has suffered direct harm or who is directly and proximately
+         harmed as a result of the criminal activity.
+
+         (3) (A) An indirect victim is a qualifying family member of a direct victim if the direct victim is
+         incompetent, incapacitated, or deceased, including spouses, unmarried children under the age of
+         21, parents if the direct victim was under the age of 21, and siblings under the age of 18 if the
+         direct victim was under 21 years of age. Indirect victims shall cooperate in the investigation or
+         prosecution but are not required to possess information about the crime itself.
+
+              (B) Indirect victim cooperation includes parents who make their children available to
+              communicate with the certifying entity.
+
+         (4) A bystander or witness victim is any individual who was not the direct target of a crime, but
+         who nevertheless suffered unusually direct injury as a result of the qualifying crime.
+
+     SEC. 2. Section 679.11 of the Penal Code is amended to read:
+     679.11. (a) For purposes of this section, a “certifying entity” is any of the following:
+
+
+         (1) A state or local law enforcement agency, including, without limitation, the police department
+         of the University of California, a California State University campus, or the police department of a
+         school district, established pursuant to Section 38000 of the Education Code.
+
+         (2) A prosecutor.
+
+         (3) A judge.
+
+         (4) The Department of Industrial Relations.
+
+         (5) Any other state or local government agencies that have criminal, civil, or administrative
+         investigative or prosecutorial authority relating to human trafficking.
+
+     (b) For purposes of this section, a “certifying official” is any of the following:
+
+         (1) The head of the certifying entity.
+
+
+
+    https://legiscan.com/CA/text/AB1261/id/2845281/California-2023-AB1261-Chaptered.html          7/11/26, 6 04 AM
+                                                                                                      Page 7 of 12
+
+
+
+
+:
+         (2) A person in a supervisory role who has been specifically designated by the head of the
+         certifying entity to issue Form I-914 Supplement B declarations on behalf of that agency.
+
+         (3) A judge.
+
+         (4) Any other certifying official defined under Section 214.14(a)(2) of Title 8 of the Code of
+         Federal Regulations.
+
+     (c) “Human trafficking” has the same meaning as “severe forms of trafficking in persons” pursuant
+     to Section 7102 of Title 22 of the United States Code and includes either of the following:
+
+         (1) Sex trafficking in which a commercial sex act is induced by force, fraud, or coercion, or in
+         which the person induced to perform such act has not attained 18 years of age.
+
+         (2) The recruitment, harboring, transportation, provision, or obtaining of a person for labor or
+         services, through the use of force, fraud, or coercion for the purpose of subjection to involuntary
+         servitude, peonage, debt bondage, or slavery.
+
+     (d) “Human trafficking” also includes criminal offenses for which the nature and elements of the
+     offenses are substantially similar to the criminal activity described in subdivision (c), and the
+     attempt, conspiracy, or solicitation to commit any of those offenses.
+
+     (e) A “representative fully accredited by the United States Department of Justice” is a person who is
+     approved by the United States Department of Justice to represent individuals before the Board of
+     Immigration Appeals, the immigration courts, or the Department of Homeland Security. The
+     representative shall be a person who works for a specific nonprofit, religious, charitable, social
+     service, or similar organization that has been recognized by the United States Department of Justice
+     to represent those individuals and whose accreditation is in good standing.
+
+     (f) (1) Upon the request of the victim, victim’s family member, licensed attorney representing the
+     victim, or representative fully accredited by the United States Department of Justice authorized to
+     represent the victim in immigration proceedings, a certifying official from a certifying entity shall
+     certify victim cooperation on the Form I-914 Supplement B declaration, when the victim was a
+     victim of human trafficking and has been cooperative, is being cooperative, or is likely to be
+     cooperative to the investigation or prosecution of human trafficking. The certifying entity shall
+     forward completed Form I-914 Supplemental B certification to the victim, victim’s family member,
+     licensed attorney representing the victim, or representative fully accredited by the United States
+     Department of Justice authorized to represent the victim in immigration proceedings without
+     requiring the victim to provide government-issued identification.
+
+         (2) A victim who submits a Form I-914 Supplement B declaration to a certifying entity does not
+         have to be present in the United States at time of submitting the certification request or filing the
+
+
+
+    https://legiscan.com/CA/text/AB1261/id/2845281/California-2023-AB1261-Chaptered.html           7/11/26, 6 04 AM
+                                                                                                       Page 8 of 12
+
+
+
+
+:
+         petition with the government and may apply for certification while outside of the United States.
+
+     (g) For purposes of determining cooperation pursuant to subdivision (f), there is a rebuttable
+     presumption that a victim is cooperative, has been cooperative, or is likely to be cooperative to the
+     investigation or prosecution of human trafficking, if the victim has not refused or failed to provide
+     information and assistance reasonably requested by law enforcement. If the victim reasonably asserts
+     they were unaware of a request for cooperation, their failure to cooperate does not rebut the
+     presumption of helpfulness.
+
+     (h) The certifying official shall fully complete and sign the Form I-914 Supplement B declaration
+     and, regarding victim cooperation, include specific details about the nature of the crime investigated
+     or prosecuted and a detailed description of the victim’s cooperation or likely cooperation to the
+     detection, investigation, or prosecution of the criminal activity.
+
+     (i) (1) A certifying entity shall process a Form I-914 Supplement B declaration within 30 days of
+     request, unless the noncitizen is in removal proceedings, in which case the declaration shall be
+     processed within 7 days of the first business day following the day the request was received.
+
+         (2) A certifying agency shall process a Form I-918 Supplement B certification within 7 days of the
+         first business day following the day the request was received if the victim asserts a qualifying
+         family member of the victim will lose eligibility for T nonimmigrant status in 60 days or fewer
+         because the victim’s noncitizen sibling will turn 18 years of age, the victim’s noncitizen child will
+         turn 21 years of age, or the victim will turn 21 years of age.
+
+     (j) (1) A current investigation, an apprehension of the suspect who committed the qualifying crime,
+     the filing of charges, closing of a case, or a prosecution or conviction is not required for the victim to
+     request and obtain the Form I-914 Supplement B declaration from a certifying official.
+
+         (2) A certifying official shall not refuse to complete the Form I-914 Supplement B declaration and
+         provide it to the victim, the victim’s family member, licensed attorney representing the victim, or
+         representative fully accredited by the United States Department of Justice authorized to represent
+         the victim in immigration proceedings or to otherwise certify that a victim has been helpful, solely
+         because a case has already been prosecuted or otherwise closed, or because the time for
+         commencing a criminal action has expired.
+
+         (3) A certifying entity shall not refuse to complete the Form I-914 Supplement B declaration for
+         any of the following reasons:
+
+              (A) The victim’s criminal history information.
+
+              (B) The victim’s immigration history.
+
+
+
+
+    https://legiscan.com/CA/text/AB1261/id/2845281/California-2023-AB1261-Chaptered.html            7/11/26, 6 04 AM
+                                                                                                        Page 9 of 12
+
+
+
+
+:
+              (C) The victim’s gang membership or gang affiliation.
+
+              (D) The certifying entity’s belief that the Form I-914 Supplement B petition will not be
+              approved by United States Citizenship and Immigration Services.
+
+              (E) The victim has an open case with another certifying entity.
+
+              (F) The certifying entity’s belief that the victim is eligible for relief or protection under Section
+              679.10 or any other provision of law.
+
+              (G) The victim’s inability to produce a crime report from a law enforcement agency.
+
+              (H) The victim’s cooperation or refusal to cooperate in a separate case.
+
+     (k) A certifying official may only withdraw the certification if the victim refuses to provide
+     information and assistance when reasonably requested.
+
+     (l) A certifying entity is prohibited from disclosing the immigration status of a victim or person
+     requesting the Form I-914 Supplement B declaration, except to comply with federal law or legal
+     process, or if authorized by the victim or person requesting the Form I-914 Supplement B
+     declaration.
+
+     (m) A certifying entity that receives a request for a Form I-914 Supplement B declaration shall report
+     to the Legislature, on or before January 1, 2018, and annually thereafter, the number of victims who
+     requested Form I-914 Supplement B declarations from the entity, the number of those declaration
+     forms that were signed, and the number that were denied. A report pursuant to this subdivision shall
+     comply with Section 9795 of the Government Code.
+
+     SEC. 3. Section 679.13 is added to the Penal Code, to read:
+     679.13. (a) For purposes of this section, a “certifying entity” is any of the following:
+
+
+         (1) A state or local law enforcement agency, including, without limitation, the police department
+         of the University of California, a California State University campus, or the police department of a
+         school district, established pursuant to Section 38000 of the Education Code.
+
+         (2) A prosecutor.
+
+         (3) A judge.
+
+         (4) Any other authority that has responsibility for the detection or investigation or prosecution of a
+         qualifying crime or criminal activity.
+
+
+
+
+    https://legiscan.com/CA/text/AB1261/id/2845281/California-2023-AB1261-Chaptered.html                7/11/26, 6 04 AM
+                                                                                                           Page 10 of 12
+
+
+
+
+:
+         (5) Agencies that have criminal detection or investigative jurisdiction in their respective areas of
+         expertise, including, but not limited to, child protective services, the Civil Rights Department, and
+         the Department of Industrial Relations.
+
+     (b) For purposes of this section, a “certifying official” is any of the following:
+
+         (1) The head of the certifying entity.
+
+         (2) A person in a supervisory role who has been specifically designated by the head of the
+         certifying entity to issue Form I-854A certifications on behalf of that agency.
+
+         (3) A judge.
+
+         (4) Any other certifying official defined under Section 214.14 (a)(2) of Title 8 of the Code of
+         Federal Regulations.
+
+     (c) “Qualified criminal informant” is an individual who meets the following requirements:
+
+         (1) The informant must have reliable information about an important aspect of a crime or pending
+         commission of a crime.
+
+         (2) The informant must be willing to share that information with United States law enforcement
+         officials or become a witness in court.
+
+         (3) The informant’s presence in the United States is important and leads to the successful
+         investigation or prosecution of that crime.
+
+     (d) A certifying entity may apply for and may certify a Form I-854A certification for a qualified
+     criminal informant. A qualified informant does not have to be present in the United States for
+     certification pursuant to this section.
+
+     (e) The certifying official shall fully complete and sign the Form I-854A certification and, regarding
+     the qualified criminal informant’s helpfulness, include specific details about the nature of the crime
+     investigated or prosecuted and a detailed description of the qualified criminal informant’s
+     helpfulness or likely helpfulness to the detection or investigation or prosecution of the criminal
+     activity.
+
+     (f) A certifying official may only withdraw the certification if the qualified criminal informant
+     refuses to provide information and assistance when reasonably requested.
+
+     (g) A certifying entity is prohibited from disclosing the immigration status of the qualified criminal
+     informant for whom Form I-854A certification has been completed, except to comply with federal
+     law or legal process, or if authorized by the qualified criminal informant.
+
+
+
+    https://legiscan.com/CA/text/AB1261/id/2845281/California-2023-AB1261-Chaptered.html           7/11/26, 6 04 AM
+                                                                                                       Page 11 of 12
+
+
+
+
+:
+     SEC. 4. If the Commission on State Mandates determines that this act contains costs mandated by
+     the state, reimbursement to local agencies and school districts for those costs shall be made pursuant
+     to Part 7 (commencing with Section 17500) of Division 4 of Title 2 of the Government Code.
+
+
+
+
+    https://legiscan.com/CA/text/AB1261/id/2845281/California-2023-AB1261-Chaptered.html        7/11/26, 6 04 AM
+                                                                                                   Page 12 of 12
+
+
+
+
+:
+

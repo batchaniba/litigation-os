@@ -1,0 +1,698 @@
+ 1   BRENDAN NGEHSI NEWANFORBI
+     Petitioner In Pro Per
+ 2   1455 Cat Tail Drive
+     Stockton, CA 95204
+ 3
+     Telephone: (209) 801-4442
+ 4   E-mail: bnn.cdl@gmail.com
+
+ 5                        SUPERIOR COURT OF THE STATE OF CALIFORNIA
+
+ 6                                        COUNTY OF ALAMEDA
+
+ 7
+
+ 8    BRENDAN NGEHSI NEWANFORBI,                             Case No. 26CV191136
+
+ 9                    Petitioner,                            PETITIONER'S OPPOSITION TO
+                                                             DEMURRER TO PETITION FOR
+10        v.                                                 WRIT OF MANDATE;
+                                                             MEMORANDUM OF POINTS
+11
+      CALIFORNIA HIGHWAY PATROL;                             AND AUTHORITIES
+      G. SERRATO, in his official capacity
+12
+      as Captain and Commander of the CHP                    Date: August 28, 2026
+13    Dublin Area; GARY PAUL, in his                         Time: 9:00 a.m.
+      official capacity as Lieutenant of the                 Assigned for All Purposes to:
+14    CHP Dublin Area; ERIC DUTRA, in his                    Hon. Jenna M. Whitman, Dept. 25
+      official capacity as Sergeant of the
+15    CHP Dublin Area; and DOES 1 through                    Action Filed: May 29, 2026
+      10, inclusive,                                         Trial Date: Not set
+16
+                      Respondents.
+17
+
+18
+
+19                                             INTRODUCTION
+
+20
+
+21             The demurrer can be resolved on settled pleading and statutory-construction principles.
+
+22   CHP's own contemporaneous records—its dashcam audio-video recording, its sworn
+
+23   arrest-investigation report, and its Penal Code section 851.6 detention certificate stating that no
+
+24   accusatory pleading was filed and reclassifying the incident as a detention only for insufficient
+
+25   grounds for making a criminal complaint—were all placed before the certifying official as part of
+
+26   Petitioner's April 9, 2026 certification request. (Pet. ¶¶ 55-58, Exs. 2-8.) CHP's denial letter does
+
+27   not mention any of them. It does not identify which statutory element of Penal Code section
+
+28   679.10 it found unsatisfied. It does not name a single enumerated qualifying offense. It does not
+
+                                                    Page 1
+               OPPOSITION TO DEMURRER — NEWANFORBI v. CALIFORNIA HIGHWAY PATROL, ET AL.
+ 1   acknowledge the statutory rebuttable presumption of helpfulness. (Pet. ¶ 62.)
+
+ 2
+
+ 3          Respondent's demurrer asks the Court to do three things it cannot do at the pleading stage.
+
+ 4   First, it asks the Court to resolve disputed factual questions—whether Petitioner was the victim
+
+ 5   of qualifying criminal activity—that are merits questions for the writ hearing. Second, it asks the
+
+ 6   Court to adopt a construction of Penal Code section 679.10, subdivision (i)(2) that would
+
+ 7   eliminate the written-explanation requirement AB 1261 enacted—reading the first sentence of
+
+ 8   subdivision (i)(2) out of the statute entirely. Third, it asks the Court to import into subdivision (h)
+
+ 9   a threshold requirement—that the agency must first request cooperation before the presumption
+
+10   of helpfulness attaches—that appears nowhere in the text and would place the agency in sole
+
+11   control of whether the presumption ever operates.
+
+12
+
+13          Petitioner does not ask this Court, on demurrer, to decide disputed facts or to order
+
+14   execution of Form I-918, Supplement B on the pleadings alone. Petitioner seeks judicial review
+
+15   of CHP's compliance with the mandatory procedures governing a denial under section
+
+16   679.10—including the duty to apply the governing statutory framework, consider the helpfulness
+
+17   presumption, and provide an adequate written explanation. At minimum, the appropriate remedy
+
+18   is vacatur and remand for a new determination under the correct legal standards. The Petition
+
+19   alleges each element of each cause of action; the demurrer should be overruled. In the alternative,
+
+20   leave to amend should be freely granted.
+
+21
+
+22                                     STATEMENT OF THE CASE
+
+23
+
+24          The Petition sets forth the facts in detail (Pet. ¶¶ 1-71) and Petitioner will not restate them.
+
+25   In brief: On November 1, 2024, CHP officers subjected Petitioner to a traffic stop, arrest,
+
+26   handcuffing, and involuntary blood draw on Interstate 580 East in Livermore, Alameda County.
+
+27   (Pet. ¶¶ 33-46.) Four days later, CHP issued a Penal Code section 851.6 detention certificate
+
+28   stating that no accusatory pleading was filed and reclassifying the incident as "a detention only,
+
+                                                   Page 2
+             OPPOSITION TO DEMURRER — NEWANFORBI v. CALIFORNIA HIGHWAY PATROL, ET AL.
+ 1   not an arrest" for "insufficient grounds for making a criminal complaint." (Pet. ¶ 42, Ex. 7.) No
+
+ 2   criminal charges were ever filed.
+
+ 3
+
+ 4          On April 9, 2026, Petitioner submitted to CHP a formal request for Form I-918,
+
+ 5   Supplement B certification, together with a pre-completed Form B, an eight-page supporting
+
+ 6   legal-and-evidentiary memorandum identifying—by dashcam timestamp—four specific
+
+ 7   contradictions between CHP's arrest-investigation report and CHP's own dashcam recording, a
+
+ 8   verbatim transcript of the dashcam, the CHP arrest report, the section 851.6 detention certificate,
+
+ 9   and additional documentary exhibits. (Pet. ¶¶ 55-58, Exs. 2-8.) Eleven days later, on April 20,
+
+10   2026, CHP issued the one-page denial that did not disclose how it applied the statutory criteria to
+
+11   the materials identified in Petitioner's request. (Pet. ¶¶ 60-63, Ex. 1.)
+
+12
+
+13          The Petition asserts four causes of action: (1) failure to perform the mandatory duty to
+
+14   certify under section 679.10, subdivision (b); (2) failure to perform the ministerial reason-giving
+
+15   duty under section 679.10, subdivisions (g) and (i)(2); (3) failure to apply the rebuttable
+
+16   presumption of helpfulness under section 679.10, subdivision (h); and (4) declaratory relief. (Pet.
+
+17   ¶¶ 72-95.)
+
+18
+
+19                                          LEGAL STANDARD
+
+20
+
+21          A demurrer tests the legal sufficiency of the pleading. The Court "treat[s] the demurrer as
+
+22   admitting all material facts properly pleaded, but not contentions, deductions or conclusions of
+
+23   fact or law." (Blank v. Kirwan (1985) 39 Cal.3d 311, 318.) Facts appearing in exhibits attached to
+
+24   the pleading and incorporated by reference are also accepted as true. (Barnett v. Fireman's Fund
+
+25   Ins. Co. (2001) 90 Cal.App.4th 500, 505.) A demurrer must be overruled if the pleading states a
+
+26   cause of action on any theory. (Longshore v. County of Ventura (1979) 25 Cal.3d 14, 21.) The
+
+27   same standards govern demurrers to mandamus petitions. (Pinto Lake MHP LLC v. County of
+
+28   Santa Cruz (2020) 56 Cal.App.5th 1006, 1012.) If any defect can be cured by amendment, leave
+
+                                                    Page 3
+             OPPOSITION TO DEMURRER — NEWANFORBI v. CALIFORNIA HIGHWAY PATROL, ET AL.
+ 1   to amend must be granted. (McKenney v. Purepac Pharmaceutical Co. (2008) 167 Cal.App.4th
+
+ 2   72, 78.)
+
+ 3
+
+ 4          Under these standards, the Petition survives demurrer because: (a) it alleges CHP failed to
+
+ 5   apply mandatory statutory standards to CHP's own evidentiary record; (b) it incorporates by
+
+ 6   reference CHP's own documents—the dashcam transcript, the detention certificate, the arrest
+
+ 7   report—which support rather than negate the allegations; and (c) it states a justiciable controversy
+
+ 8   over whether CHP's conclusory denial satisfies section 679.10.
+
+ 9
+
+10                                              ARGUMENT
+
+11
+
+12   I. RESPONDENT'S DEMURRER IMPROPERLY ASKS THE COURT TO
+
+13      RESOLVE DISPUTED MERITS QUESTIONS AT THE PLEADING STAGE.
+
+14
+
+15          Respondent's brief repeatedly argues that the underlying incident does not, in fact,
+
+16   constitute qualifying criminal activity. (See Dem. MPA at 13-15.) That argument mistakes the
+
+17   office of a demurrer. On demurrer, a court "may not consider . . . the truth of the allegations, but
+
+18   only whether they state a cause of action." (Committee on Children's Television, Inc. v. General
+
+19   Foods Corp. (1983) 35 Cal.3d 197, 213-214.) The Petition alleges that Petitioner is the victim of
+
+20   enumerated qualifying offenses and cites the specific documentary evidence supporting each.
+
+21   (Pet. ¶¶ 4, 34-46, 62(a)-(h), 74-76.) Whether that record ultimately proves qualifying criminal
+
+22   activity is a merits question for the writ hearing—not a pleading question for demurrer.
+
+23
+
+24          The Petition incorporates by reference fourteen exhibits, including the denial letter itself
+
+25   (Ex. 1), Petitioner's eight-page legal analysis identifying four contradictions by dashcam
+
+26   timestamp (Ex. 3), the verbatim dashcam transcript (Ex. 5), the CHP arrest report containing the
+
+27   disputed statements (Ex. 6), and the section 851.6 detention certificate (Ex. 7). On demurrer, the
+
+28   Court must consider these exhibits as part of the pleading. (Barnett, supra, 90 Cal.App.4th at p.
+
+                                                   Page 4
+                OPPOSITION TO DEMURRER — NEWANFORBI v. CALIFORNIA HIGHWAY PATROL, ET AL.
+ 1   505.) These are not mere allegations; they are documents in CHP's own custody that were placed
+
+ 2   before the certifying official and are admitted for all purposes on demurrer. Respondent's
+
+ 3   insistence that Petitioner's transcript "undermines" his allegations (Dem. MPA at 15) asks the
+
+ 4   Court to weigh competing inferences from documents—precisely what demurrer law prohibits.
+
+ 5
+
+ 6          This conclusion is reinforced by a parallel federal proceeding. In Newanforbi v. Serrato,
+
+ 7   No. 4:26-cv-05953-ASK (N.D. Cal.), the United States District Court reviewed substantially the
+
+ 8   same underlying allegations—based on the same dashcam recording, the same arrest report, and
+
+ 9   the same detention certificate—and concluded at screening that Petitioner's pleaded facts
+
+10   plausibly support inferences of false imprisonment based on fabricated evidence and a plausible
+
+11   retaliation claim arising from the certification denial itself. (Order dated June 29, 2026, at 3-4.)
+
+12   That order is not binding on this Court and does not decide California mandate law, but it is
+
+13   persuasive authority that Respondent's competing factual inferences do not render Petitioner's
+
+14   allegations facially deficient at the pleading stage.
+
+15
+
+16   II. THE FIRST CAUSE OF ACTION STATES A CLAIM: SECTION 679.10
+
+17      DOES NOT PERMIT CHP TO DENY CERTIFICATION UNDER AN
+
+18      UNSTATED OR LEGALLY ERRONEOUS STANDARD.
+
+19
+
+20          Section 679.10 uses mandatory language throughout: a certifying entity "shall process"
+
+21   requests within the statutory deadline (Pen. Code, § 679.10, subd. (j)); "shall fully complete and
+
+22   sign" the Form I-918, Supplement B (id., subd. (i)(1)); and "shall certify victim helpfulness"
+
+23   when the statutory conditions are met (id., subd. (g)(1)). "Shall" is mandatory. (Gov. Code, § 14;
+
+24   Haggis v. City of Los Angeles (2000) 22 Cal.4th 490, 498-499; Common Cause v. Board of
+
+25   Supervisors (1989) 49 Cal.3d 432, 443.)
+
+26
+
+27          Mandamus law distinguishes between the duty to act and the manner of acting. Mandamus
+
+28   "does not lie to compel a public agency to exercise discretionary powers in a particular manner,
+
+                                                    Page 5
+             OPPOSITION TO DEMURRER — NEWANFORBI v. CALIFORNIA HIGHWAY PATROL, ET AL.
+ 1   only to compel it to exercise them in some manner"—that is, under the legal standards the
+
+ 2   Legislature has prescribed. (Common Cause v. Board of Supervisors (1989) 49 Cal.3d 432, 442.)
+
+ 3   A public entity likewise "has a ministerial duty to comply with its own rules and regulations
+
+ 4   where they are valid and unambiguous." (Kern County Hospital Authority v. Dept. of Corrections
+
+ 5   & Rehabilitation (2023) 91 Cal.App.5th 1313, 1325.) Galzinski v. Somers (2016) 2 Cal.App.5th
+
+ 6   1164 applied these principles to a law enforcement agency: even though the substance of a police
+
+ 7   department's response to a citizen complaint was discretionary, mandamus lay to compel the
+
+ 8   department to perform its procedural obligations—to conduct an investigation sufficient to
+
+ 9   support a finding, and to make one of the enumerated findings. (Id. at pp. 1171-1173; accord, CV
+
+10   Amalgamated LLC v. City of Chula Vista (2022) 82 Cal.App.5th 265, 283 [agency's "failure to
+
+11   follow its own procedures provides the basis for the issuance of a traditional writ of mandate"].)
+
+12   Here the procedural obligations arise not from a published internal procedure but from a
+
+13   statute—a stronger footing still.
+
+14
+
+15          Accordingly, even assuming CHP retains fact-finding judgment concerning whether a
+
+16   requestor is a victim of qualifying criminal activity, ordinary mandate reaches CHP's failure to
+
+17   exercise that judgment under the controlling statutory framework, its failure to apply the
+
+18   mandatory presumption, and action taken in derogation of statutory standards. (Common Cause,
+
+19   supra, 49 Cal.3d at p. 442; Cal. Correctional Peace Officers Assn. v. State Personnel Bd. (1995)
+
+20   10 Cal.4th 1133, 1154.) The Court need not decide now whether the pleaded record compels
+
+21   certification. It need decide only whether the Petition plausibly alleges that CHP failed to
+
+22   perform, or lawfully exercise, duties section 679.10 imposes.
+
+23
+
+24          The Petition alleges the denial: (a) applied an unstated "standard" nowhere found in
+
+25   section 679.10; (b) ignored the enumerated qualifying offenses the statute incorporates by
+
+26   reference from 8 U.S.C. section 1101(a)(15)(U)(iii); (c) failed to address CHP's own detention
+
+27   certificate reflecting that no accusatory pleading was filed—a material agency record submitted
+
+28   with the request; (d) failed to address CHP's own dashcam recording; and (e) gave no explanation
+
+                                                   Page 6
+             OPPOSITION TO DEMURRER — NEWANFORBI v. CALIFORNIA HIGHWAY PATROL, ET AL.
+ 1   whether it improperly treated the absence of a charge, investigation, or prosecution as
+
+ 2   dispositive—considerations subdivision (k) prohibits from serving as a basis for refusal. (Pet. ¶¶
+
+ 3   62-63, 74-76.) The Petition plausibly alleges that CHP failed to apply the governing standards to
+
+ 4   the material records before it. That is sufficient to state a claim under section 1085.
+
+ 5
+
+ 6          Respondent's reliance on Catholic Charities CYO v. Chertoff (N.D. Cal. 2008) 622
+
+ 7   F.Supp.2d 865 (Dem. MPA at 8) is misplaced. Catholic Charities construed the federal U-visa
+
+ 8   statute in 2008, before California enacted section 679.10 in 2015 and long before AB 1261's 2024
+
+ 9   amendments imposed the procedural obligations at issue here. The Legislature enacted section
+
+10   679.10 precisely because federal law was permissive and the resulting unfettered discretion had
+
+11   produced systemic under-certification. A pre-statute federal decision does not defeat a state-law
+
+12   writ claim that turns on the state statute's mandatory commands.
+
+13
+
+14          Petitioner has also pleaded the two remaining writ elements: a "clear, present and
+
+15   beneficial" right because CHP's denial forecloses access to the certification required to pursue a
+
+16   U-visa petition and leaves Petitioner without an administrative mechanism to obtain review (Pet.
+
+17   ¶¶ 51-54, 76); and no adequate alternative remedy—section 679.10 provides no administrative
+
+18   appeal, USCIS has no power to compel state certification, and no comparable state-court process
+
+19   exists (Pet. ¶ 77; Code Civ. Proc., § 1086).
+
+20
+
+21   III. THE SECOND CAUSE OF ACTION STATES A CLAIM: RESPONDENT'S
+
+22      READING OF SECTION 679.10(i)(2) WOULD NULLIFY THE WRITTEN-
+
+23      EXPLANATION REQUIREMENT AB 1261 ENACTED.
+
+24
+
+25          Section 679.10, subdivision (i)(2) contains two sentences:
+
+26
+
+27                  "If a certifying entity does not certify a Form I-918 Supplement B certification,
+
+28          they shall provide a written explanation for the denial of the Form I-918 Supplement B
+
+                                                    Page 7
+             OPPOSITION TO DEMURRER — NEWANFORBI v. CALIFORNIA HIGHWAY PATROL, ET AL.
+ 1          certification. The written denial shall include specific details of any reasonable requests
+
+ 2          for cooperation and a detailed description of how the victim refused to cooperate."
+
+ 3
+
+ 4          The first sentence is a stand-alone command: the entity "shall provide a written
+
+ 5   explanation for the denial." The second sentence adds a specific application: if the denial rests on
+
+ 6   non-cooperation, the explanation must include details about the requests and the refusal. The
+
+ 7   second sentence supplements the first; it does not replace it. (Manufacturers Life Ins. Co. v.
+
+ 8   Superior Court (1995) 10 Cal.4th 257, 274; DuBois v. Workers' Comp. Appeals Bd. (1993) 5
+
+ 9   Cal.4th 382, 388 ["[A] construction making some words surplusage is to be avoided."].)
+
+10
+
+11          The two-sentence structure is not accidental. The first sentence is the general rule: any
+
+12   denial must be accompanied by a written explanation. The second sentence is a specific
+
+13   application for cooperation-based denials. To read the second sentence as the only requirement
+
+14   would mean that an agency could deny certification based on a failure to prove
+
+15   victimization—the most common and most consequential category of denial—with no
+
+16   explanation at all. That is precisely the result AB 1261 was enacted to prevent.
+
+17
+
+18          The legislative history removes any doubt. The Legislative Counsel's Digest of AB
+
+19   1261—which "is printed as a preface to every bill considered by the Legislature" and is entitled to
+
+20   great weight in construing the enactment (Jones v. Lodge at Torrey Pines Partnership (2008) 42
+
+21   Cal.4th 1158, 1169-1170)—describes the requirement without qualification: "The bill would
+
+22   require a certifying entity that does not certify the form regarding 'victim helpfulness' to provide a
+
+23   written explanation for the denial of the certification." (Legis. Counsel's Dig., Assem. Bill No.
+
+24   1261 (2023-2024 Reg. Sess.), Stats. 2023, ch. 679.) The Digest states the written-explanation
+
+25   duty as a free-standing obligation attaching to every non-certification—not as a duty confined to
+
+26   cooperation-based denials. Had the Legislature intended the narrower duty Respondent proposes,
+
+27   the Digest would have said so. The Court may take judicial notice of the Digest as an official
+
+28   legislative act. (Evid. Code, § 452, subd. (c).)
+
+                                                    Page 8
+             OPPOSITION TO DEMURRER — NEWANFORBI v. CALIFORNIA HIGHWAY PATROL, ET AL.
+ 1           The Attorney General's Information Bulletin No. 2024-DLE-05, incorporated by reference
+
+ 2   into the Petition (Pet. ¶ 32, Ex. 10), instructs law enforcement agencies statewide that the
+
+ 3   reason-for-denial "should be clearly articulated and specific." The Attorney General's
+
+ 4   construction is entitled to "substantial weight." (Yamaha Corp. of America v. State Bd. of
+
+ 5   Equalization (1998) 19 Cal.4th 1, 12-14.) Respondent's demurrer does not mention the Bulletin,
+
+ 6   does not distinguish it, and does not offer any competing agency interpretation.
+
+ 7
+
+ 8           A legally adequate explanation need not resemble a judicial opinion or discuss every item
+
+ 9   submitted. But it must state enough of the actual ground for denial to disclose whether CHP
+
+10   rejected the request because it found no qualifying criminal activity, no substantially similar
+
+11   activity, insufficient victim status, lack of helpfulness, or another legally permissible basis. CHP's
+
+12   letter merely restates the ultimate conclusion and does not disclose the operative reasoned basis
+
+13   for that conclusion. (Pet. ¶¶ 62, 82.) The ministerial character of the reason-giving duty is not in
+
+14   serious dispute: like the duty to investigate and make findings enforced in Galzinski, the duty to
+
+15   explain is a procedural obligation that does not depend on the merits of the underlying
+
+16   certification decision. (Galzinski, supra, 2 Cal.App.5th at pp. 1171-1173; cf. Topanga Assn. for a
+
+17   Scenic Community v. County of Los Angeles (1974) 11 Cal.3d 506, 514-515.) The second cause of
+
+18   action states a claim.
+
+19
+
+20   IV. THE THIRD CAUSE OF ACTION STATES A CLAIM: RESPONDENT'S
+
+21      CIRCULAR CONSTRUCTION OF SUBDIVISION (h) FLIPS THE
+
+22      PRESUMPTION OF HELPFULNESS ON ITS HEAD.
+
+23
+
+24           Section 679.10, subdivision (h) provides: "[T]here is a rebuttable presumption that a
+
+25   victim is helpful, has been helpful, or is likely to be helpful to the detection, investigation, or
+
+26   prosecution of that qualifying criminal activity, if the victim has not refused or failed to provide
+
+27   information and assistance reasonably requested."
+
+28
+
+                                                    Page 9
+             OPPOSITION TO DEMURRER — NEWANFORBI v. CALIFORNIA HIGHWAY PATROL, ET AL.
+ 1          Respondent argues the presumption does not apply because Petitioner has not alleged that
+
+ 2   CHP requested cooperation. (Dem. MPA at 17.) That construction would render the presumption
+
+ 3   meaningless. Under Respondent's reading: (a) the presumption applies only if the agency first
+
+ 4   requests cooperation; (b) but if the agency never requests cooperation, the presumption never
+
+ 5   attaches; (c) thus, agencies could defeat the presumption simply by never asking for
+
+ 6   help—placing the agency in sole control of whether the presumption ever operates. That is the
+
+ 7   opposite of what a statutory presumption does.
+
+ 8
+
+ 9          The statute expressly makes refusal or failure to provide reasonably requested assistance
+
+10   the relevant condition. The Petition alleges no request, refusal, or failure; it further alleges
+
+11   affirmative provision of information through the citizen complaint, the POST complaint, the
+
+12   DMV proceedings, and production of the dashcam transcript. (Pet. ¶¶ 7, 87.) CHP's denial letter
+
+13   contains no finding of refusal or failure to cooperate and identifies no fact that could rebut the
+
+14   presumption. (Pet. ¶ 62(f).) At minimum, those allegations plausibly require CHP to address the
+
+15   presumption rather than silently disregard it. The failure to apply a controlling statutory
+
+16   presumption is itself reviewable by mandamus. (Cf. Fukuda v. City of Angels (1999) 20 Cal.4th
+
+17   805, 819.)
+
+18
+
+19   V. THE FOURTH CAUSE OF ACTION STATES A CLAIM: AN ACTUAL
+
+20      CONTROVERSY EXISTS OVER THE CONSTRUCTION OF SECTION 679.10.
+
+21
+
+22          Respondent argues declaratory relief is "advisory" or "moot." (Dem. MPA at 17-20.)
+
+23   Neither succeeds. The Petition asks the Court to declare the parties' rights with respect to a
+
+24   concrete controversy: whether CHP's April 20, 2026 denial letter satisfies subdivision (i)(2). (Pet.
+
+25   ¶ 93(c).) That is an "actual controversy relating to the legal rights and duties of the respective
+
+26   parties." (Code Civ. Proc., § 1060; Linda Vista Village San Diego Homeowners Assn., Inc. v.
+
+27   Tecolote Investors, LLC (2015) 234 Cal.App.4th 166, 181.)
+
+28
+
+                                                   Page 10
+             OPPOSITION TO DEMURRER — NEWANFORBI v. CALIFORNIA HIGHWAY PATROL, ET AL.
+ 1          Griset v. Fair Political Practices Commission (2001) 25 Cal.4th 688 (Dem. MPA at
+
+ 2   19-20) does not support dismissal at the pleading stage. Griset held that once writ claims were
+
+ 3   adjudicated, declaratory relief was resolved by res judicata. (Id. at pp. 697-700.) Griset did not
+
+ 4   hold—and could not hold—that a declaratory cause of action is subject to demurrer merely
+
+ 5   because it might later be resolved by the writ decision. Petitioner does not seek an abstract
+
+ 6   construction of section 679.10 divorced from an actual dispute. If the Court concludes declaratory
+
+ 7   relief is duplicative of ordinary mandate, Petitioner requests leave to treat the requested
+
+ 8   declaration as ancillary to the mandate remedy rather than dismissing it without leave to amend.
+
+ 9
+
+10   VI. IN THE ALTERNATIVE, LEAVE TO AMEND SHOULD BE GRANTED.
+
+11
+
+12          Should the Court sustain any part of the demurrer, leave to amend should be granted
+
+13   freely. "[I]t is an abuse of discretion for the court to deny leave to amend where there is any
+
+14   reasonable possibility that plaintiff can state a good cause of action." (Kong v. City of Hawaiian
+
+15   Gardens Redevelopment Agency (2002) 108 Cal.App.4th 1028, 1037.) This is the first challenge
+
+16   to the pleading; leave to amend has not previously been denied.
+
+17
+
+18          If the Court identifies any pleading gap, Petitioner can amend to: (1) clarify that the
+
+19   requested principal remedy is vacatur and remand for a new decision under the correct statutory
+
+20   standards, rather than an immediate compelled certification; (2) identify more specifically the
+
+21   factual basis of each alleged qualifying or substantially similar criminal activity; (3) plead with
+
+22   greater specificity the materials submitted to CHP and the absence of any refusal of a reasonable
+
+23   request for assistance; (4) distinguish the detention certificate as evidence that no accusatory
+
+24   pleading was filed, rather than an adjudication of probable cause; and (5) narrow the requested
+
+25   declaratory relief to the concrete controversy concerning the legal sufficiency of CHP's denial
+
+26   procedure. No prejudice would result from granting leave to amend.
+
+27
+
+28                                             CONCLUSION
+
+                                                  Page 11
+             OPPOSITION TO DEMURRER — NEWANFORBI v. CALIFORNIA HIGHWAY PATROL, ET AL.
+ 1          The Petition does not ask the Court to decide disputed evidence or compel certification on
+
+ 2   the pleadings. It plausibly alleges that CHP denied Petitioner's request without disclosing an
+
+ 3   adequate statutory basis, without addressing the applicable helpfulness presumption, and without
+
+ 4   applying the governing framework to the submitted materials. Those allegations state claims for
+
+ 5   ordinary mandate and declaratory relief. The demurrer should be overruled in its entirety. In the
+
+ 6   alternative, any sustained claim should be granted leave to amend.
+
+ 7
+
+ 8                                                                             Dated: July 13, 2026
+
+ 9
+
+10
+
+11
+
+12
+
+13
+
+14                                                           BRENDAN NGEHSI NEWANFORBI
+
+15                                                                             Petitioner, In Pro Per
+
+16
+
+17
+
+18
+
+19
+
+20
+
+21
+
+22
+
+23
+
+24
+
+25
+
+26
+
+27
+
+28
+
+                                                 Page 12
+             OPPOSITION TO DEMURRER — NEWANFORBI v. CALIFORNIA HIGHWAY PATROL, ET AL.
+

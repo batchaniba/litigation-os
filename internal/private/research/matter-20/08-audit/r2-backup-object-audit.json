@@ -1,0 +1,30 @@
+{
+  "tool": "execute",
+  "result": {
+    "bucket": "ilp-backups",
+    "observed_at": "2026-10-24T16:52:58.311Z",
+    "pages": 1,
+    "total_objects": 4,
+    "matching": [],
+    "archiveSamples": [
+      [
+        "d1/litigation-portfolio/litigation-portfolio-20261015-171607-documents_fts.json",
+        9680578
+      ],
+      [
+        "d1/litigation-portfolio/litigation-portfolio-20261015-171607.sql",
+        657125
+      ],
+      [
+        "d1/litigation-portfolio/litigation-portfolio-20261015-174107-documents_fts.json",
+        9668036
+      ],
+      [
+        "d1/litigation-portfolio/litigation-portfolio-20261015-174107.sql",
+        657125
+      ]
+    ],
+    "completed": true,
+    "scope": "Object-key inventory only; archive contents not unpacked."
+  }
+}

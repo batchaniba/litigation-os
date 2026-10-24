@@ -1,0 +1,251 @@
+      SUPERIOR COURT OF CALIFORNIA, COUNTY OF ALAMEDA
+                                   Rene C. Davidson Courthouse
+
+
+
+Brendan Ngehsi Newanforbi                          No.         26CV191136
+                Plaintiff/Petitioner(s)
+               vs.                                 Date:       08/29/2026
+California Highway Patrol et                       Time:       12:45 AM
+al                                                 Dept:       25
+                Defendant/Respondent
+(s)                                                Judge:      Jenna Whitman
+
+                                                     ORDER Sustaining Demurrer In Part,
+                                                                  with Leave to Amend
+
+
+
+
+PROCEDURAL AND LEGAL BACKGROUND AND ALLEGATIONS. Brendan Ngehsi
+Newanforbi (“Petitioner”) has filed a Petition for Writ of Mandate seeking the issuance of writ
+relief and declaratory relief against the California Highway Patrol (“CHP”) and individual
+respondents Gerardo Serrato (“Serrato”), Gary Paul (“Paul”), and Eric Dutra (“Dutra”)
+(collectively, “Respondents”). The Petition challenges the CHP's refusal to execute a Federal
+Immigration Form I-918 Supp. B U Nonimmigrant Status Certification (the “I-918 Form” or “I-
+918”) submitted by Petitioner following his allegedly false arrest by CHP officers.
+
+By way of background, under federal immigration law, a noncitizen immigrant may apply for an
+immigration status benefit if: (I) the alien has suffered physical or mental abuse as result of being
+victim of criminal activity; (II) alien possesses information concerning criminal activity; (III)
+alien is being helpful in investigating criminal activity; and (IV) violated laws of the united states
+or occurred in the united states. (8 U.S.C. § 1101(a)(15)(U)(i).) "[T]he criminal activity referred
+to in this clause is that involving one or more of the following or any similar activity in violation
+of Federal, State, or local criminal law: rape; torture; trafficking; incest; domestic violence;
+sexual assault; abusive sexual contact; prostitution; sexual exploitation; stalking; female genital
+mutilation; being held hostage; peonage; involuntary servitude; slave trade; kidnapping;
+abduction; unlawful criminal restraint; false imprisonment; blackmail; extortion; manslaughter;
+murder; felonious assault; witness tampering; obstruction of justice; perjury; fraud in foreign
+labor contracting (as defined in section 1351 of title 18); or attempt, conspiracy, or solicitation to
+commit any of the above mentioned crimes.” (8 U.S.C. § 1101, subd. (a)(15)(U)(iii).)
+
+California law also governs certain aspects of this process. Penal Code, section 679.10(g)(1)
+provides in relevant part: "“Upon the request of the victim, ..., a certifying official from a
+certifying entity shall certify victim helpfulness on the Form I-918 Supplement B certification,
+when the victim was a victim of a qualifying criminal activity and has been helpful, is being
+helpful, or is likely to be helpful to the detection or investigation or prosecution of that
+qualifying criminal activity. The certifying entity shall forward completed Form I-918
+Supplemental B certification to the victim, ..."
+
+
+ORDER Sustaining Demurrer In Part, with Leave to Amend                                    Page 1 of 6
+       SUPERIOR COURT OF CALIFORNIA, COUNTY OF ALAMEDA
+                                Rene C. Davidson Courthouse
+California law further provides, “If a certifying entity does not certify a Form I- 918 Supplement
+B certification, they shall provide a written explanation for the denial of the Form I-918
+Supplement B certification. The written denial shall include specific details of any reasonable
+requests for cooperation and a detailed description of how the victim refused to cooperate.” (Pen.
+Code, § 679.10, subd. (i)(2).)
+
+Petitioner alleges he submitted a completed Form I-918 Supp. B to the CHP's Dublin Area
+offices on 4/9/2026, which respondent Officer Serrato, as the alleged Captain and Commander of
+CHP’s Dublin Area station, denied on 4/20/2026. Serrato’s rejection letter states:
+
+        “A thorough review of this incident was conducted. Unfortunately, this
+        incident does not meet the standard of qualifying criminal activity identified in
+        Section 679.10 of the California Penal Code (PC), nor does it meet the
+        standards of the Immigration and Nationality Act Sectioh [sic]
+        101(a)(15)(U)(iii). Additionally, this review found no substantially similar
+        qualifying criminal activity as defined in Section 679.10(d) PC. Therefore,
+        your request to certify your Form I-918, Supplement B, U Nonimmigrant
+        Status Certification, was denied.
+
+(Petition, Ex. 1.)
+
+Petition alleges an entitlement to writ relief based upon Respondents’ (1) failure to perform a
+mandatory duty under Penal Code section 679.10(b); (2) to Comply with the Reason-Giving
+Requirement for the Denial (§ 679.10(i)(2)); and (3) to apply rebuttable presumption of
+helpfulness (§ 679.10(h)). Petitioner also seeks related declaratory relief. Additional allegations
+of the Petition, to the extent relevant, are incorporated in the analysis below.
+
+Respondent CHP has filed a demurrer, in which individual respondents also join.
+
+APPICLABLE LEGAL STANDARD. "A demurrer tests the legal sufficiency of the factual
+allegations in a [pleading]." (Redfearn v. Trader Joe's Co. (2018) 20 Cal.App.5th 989, 996.) The
+Court must determine "whether the [pleading] alleges facts sufficient to state a cause of action
+[or other claim for relief] or discloses a complete defense." (Id.) The court assumes "the truth of
+the properly pleaded factual allegations, facts that reasonably can be inferred from those
+expressly pleaded and matters of which judicial notice has been taken." (Id.) "As a general rule
+in testing a pleading against a demurrer the facts alleged in the pleading are deemed to be true,
+however improbable they may be," unless the "complaint contains allegations of fact inconsistent
+with attached documents, or allegations contrary to facts which are judicially noticed." (Del E.
+Webb Corp. v. Structural Materials Co. (1981) 123 Cal.App.3d 593, 604.) "The court does not,
+however, assume the truth of contentions, deductions or conclusions of law." (Aubry v. Tri-City
+Hosp. Dist. (1992) 2 Cal.4th 962, 967.) Courts "give the complaint a reasonable interpretation,
+reading it as a whole and its parts in their context." (Goncharov v. Uber Techs., Inc. (2018) 19
+Cal.App.5th 1157, 1165.)
+
+ANALYSIS. Respondents demur on several grounds, which are taken in turn.
+
+Ministerial Duty to Certify Petitioner’s I-918 Form. Petitioner alleges that he was the victim of
+ORDER Sustaining Demurrer In Part, with Leave to Amend                                      Page 2 of 6
+       SUPERIOR COURT OF CALIFORNIA, COUNTY OF ALAMEDA
+                                  Rene C. Davidson Courthouse
+the following crimes enumerated in § 1101(a)(15)(U)(iii) in connection with his alleged
+wrongful arrest for driving while intoxicated (DUI) shortly before 1:00 a.m. on the morning of
+Friday, 11/1/2024 by CHP officers not named as respondents to the Petition: False
+Imprisonment/Unlawful Criminal Restraint; Felonious Assault/Battery; Obstruction of Justice;
+and Perjury.
+
+Respondent CHP argues (and the other Respondents join) that the act of evaluating and
+certifying an I-918 Form is inherently discretionary, such that there can be no “ministerial duty”
+to certify a request, including Petitioner’s, and no writ relief available. However, Respondent
+also acknowledges that writ relief may lie for an abuse of that discretion. Respondent then argues
+that “Petitioner’s factual allegations do not support his bare legal conclusions that he was the
+victim of” any of the claimed crimes. In essence, the CHP asks the Court to determine that, based
+upon the facts alleged in the Petition (including its attachments) the CHP and Serrato cannot
+have abused their discretion in declining to certify Petitioner’s I-918 Form.
+
+Petitioner alleges that at the time of the incident, he was lawfully parked and chose to pull over
+and rest due to fatigue (Pet. ¶ 34.) Petitioner also alleges that he was not intoxicated, exhibited no
+signs of impairment, and was arrested solely for refusing to take a PAS test. (Id., ¶¶ 37-38.) He
+alleges that there was no probable cause for his arrest, and that contradictions in the evidence
+support his contention that the evidence against him constituted fabrication and perjury. (Id., ¶¶
+44-48.)
+
+Petitioner’s own Petition, particularly the attachments, undermines his credibility in some
+respects and includes information that tends to suggest probable cause for arrest. For example,
+Petitioner alleges that he is professionally employed as a truck driver, but the exhibits to his
+Petition disclose that at the time of his 11/1/2024 arrest, he was not driving a commercial truck,
+but rather a rented Tesla Model Y. (Petition Exh. 5 at p. 2 at 00:55:25 and Exh. 6.) Petitioner was
+apparently en route to his home in Stockton when he pulled over onto the shoulder of Interstate-
+580 (I-580) at a little after midnight and took a nap in the Tesla. (Id., Exh. 5 at p.3 at 00:57:30.)
+ After asking Petitioner if he had been drinking, which he denied, the officers asked Petitioner to
+step out of the vehicle and for his driver’s license. One of the officers found an empty can of
+Mike’s Hard Lemonade, an alcoholic beverage, in the Tesla. Petitioner denied that he consumed
+the drink while he had been parked there or previously. (Id. at pp. 4-6 and Petition ¶ 47.) When
+the officers administered field sobriety tests, Petitioner resisted one of the tests. (Pet., Exh. 5 at
+pp. 8-9.) One of the officers then requested that Petitioner take a preliminary, voluntary alcohol
+screening test. (Id. at p. 10.) Plaintiff refused to take the test, and the officer arrested him. (Ibid.)
+ In sum, Petitioner was parked on the shoulder of an interstate highway sleeping in his vehicle at
+approximately in the early morning hours with an open alcohol container in this car, and he
+refused to submit to a preliminary alcohol test when investigating CHP officers requested he do
+so. (People v. Thompson (2006) 38 Cal.4th 811, 818 [“Probable cause exists when the facts
+known to the arresting officer would persuade someone of ‘reasonable caution’ that the person
+arrested committed a crime]; see also Veh. Code, §§ 23152(a), 23222(a), 23612(a).)
+
+The CHP contends that the allegations in the Petition are misleading and undermined, in some
+respects, by Petitioner’s own transcription of the dashcam, and that the facts cannot possibly
+support a finding that he was the victim of obstruction of justice or perjury. Petitioner argues that
+his allegations, taken as true, are sufficient to plead a claim that the CHP had a duty to certify his
+ORDER Sustaining Demurrer In Part, with Leave to Amend                                       Page 3 of 6
+       SUPERIOR COURT OF CALIFORNIA, COUNTY OF ALAMEDA
+                                 Rene C. Davidson Courthouse
+I-918, and the demurrer improperly asks the Court to resolve disputed merits questions. The
+Court agrees that the kind of weighing of facts Respondents seek “frames an issues for trial, not
+demurrer.” (Committee on Children's Television, Inc. v. General Foods Corp. (1983) 35 Cal.3d
+197, 213-214.)
+
+If, at the trial on the merits, the Court were to credit Plaintiff’s allegations that neither he nor his
+vehicle smelled of alcohol, that he showed no signs of impairment in talking with the officers or
+in performing the physical field sobriety tests he agreed to perform, and that the arresting officers
+lied about it in their police report, it could reasonably find probable cause for arrest was lacking,
+which could support a finding that the CHP abused its discretion in refusing to certify Petitioners
+Form I-918. (See People v. Wolterman (1992) 11 Cal.App.4th Supp. 15, 18; Espinoza v.
+Shiomoto (2017) 10 Cal.App.5th 85, 101-102.) Thus, Respondents’ demurrer to the first cause of
+action is OVERRULED.
+
+Reason-Giving Cause of Action. Respondents also challenge the sufficiency of Petitioner’s
+pleading as to the second, “reason-giving” cause of action. The Penal Code requires a certifying
+entity, when declining to certify a Form I-918, to “provide a written explanation for the denial of
+the Form I-918 Supplement B certification. The written denial shall include specific details of
+any reasonable requests for cooperation and a detailed description of how the victim refused to
+cooperate.” (Pen. Code, § 679.10, subd. (i)(2).) Respondents are correct that the only specificity
+the statute requires concerns a requestor’s failure to cooperate with reasonable requests for
+cooperation. Here, however, the denial was not based upon Petitioner’s noncooperation; it was
+based upon the failure to “meet the standard of qualifying criminal activity.” (CHP Denial Letter,
+Pet. Ex. 1.)
+
+As outlined above, the denial letter did provide an explanation. The underlying incident did not
+fall within any of the statutorily identified crimes which would qualify the application for
+certification. There is no basis for requiring more detail here, because the statute only requires
+specificity as to noncooperation. Under the canon of statutory interpretation expresio unius est
+exclusion alterius – the expression of one thing is the exclusion of another; thus, we read the
+statute to say that such detail is required only for noncooperation, but not to other cited reasons
+for rejection.
+
+Even if such detail were required, it is immaterial here, where noncooperation was not the basis
+for denial. It would appear that there are no circumstances under which Petitioner could amend
+to remedy this defect. Thus, the Demurrer to the Second Cause of Action for Failure to Comply
+with Reason Giving Requirement is SUSTAINED WITHOUT LEAVE TO AMEND.
+
+Rebuttable Presumption of Helpfulness. Accepting Petitioner’s allegations that he “cooperated
+with every investigative channel available to him and has never refused or failed to provide any
+information or assistance reasonably requested” (Pet. ¶ 4), the allegation appears to be
+immaterial, where the Petition admits that refusal to cooperate was not a reason for denial.
+Petitioner’s request was denied for a wholly independent reason (no proof of qualifying criminal
+activity) such that CHP did not need to consider whether Petitioner had cooperated. Thus, there
+was no opportunity to apply the presumption, and it is plainly not applicable. Thus, the Third
+Cause of Action has no merit as a matter of law. Petitioner cannot plead additional facts to
+remedy this defect, as the reason for rejection is memorialized in the CHP letter. (Petition Ex. 1.)
+ORDER Sustaining Demurrer In Part, with Leave to Amend                                      Page 4 of 6
+      SUPERIOR COURT OF CALIFORNIA, COUNTY OF ALAMEDA
+                                Rene C. Davidson Courthouse
+Thus, the demurrer is SUSTAINED WTIHOUT LEAVE TO AMEND as to the third cause of
+action.
+
+Declaratory Relief. Upon further reflection, the Court agrees with Respondent that Petitioner
+has not stated a valid claim for declaratory relief. The Fourth Cause of Action does not seek
+declarations concerning the respective rights or duties of the parties, but pure questions of law.
+ Respondents’ other arguments are less persuasive, and Petitioner specifically seeks leave to
+amend to narrow the requested declaratory relief to the concrete controversy at hand. Thus, the
+demurrer to the fourth cause of action for declaratory relief is SUSTAINED WITH LEAVE TO
+AMEND.
+
+ORDER. The CHP’s Demurrer is OVERRULED as to the first cause of action; SUSTAINED
+without leave to amend as to the second and third causes of action; and SUSTAINED with leave
+to amend as to the fourth cause of action. If Petitioner elects to amend, he shall file and serve an
+amended Petition, consistent with this decision, within 20 days of notice of entry of order.
+Respondents shall file a responsive pleading within 20 days thereafter.
+
+At the hearing, Petitioner stipulated to dismiss respondents Dutra and Paul. Thus, the hearing on
+the demurrers filed by those individual Respondents will be dropped as moot.
+
+
+The Hearing on Demurrer Demurrer to Petition for Writ of Mandate; filed by Gary Paul, in his
+official capacity as Lieutenant of the California Highway Patrol Dublin Area; (Respondent)
+CRS# 892736633033 scheduled for 09/18/2026, the Hearing on Demurrer Demurrer to Petition
+for Writ of Mandate; filed by G. Serrato, in his official capacity as Captain and Commander of
+the California Highway Patrol Dublin Area; (Respondent) CRS# 487924635411 scheduled for
+09/18/2026, and the Hearing on Demurrer Demurrer to Petition for Writ of Mandate CRS#
+238548651553 scheduled for 09/18/2026 are vacated .
+
+The Initial Case Management Conference scheduled for 09/02/2026 is continued to 10/28/2026
+at 04:00 PM in Department 25 at Rene C. Davidson Courthouse .
+
+
+
+Dated : 08/29/2026
+
+
+
+
+ORDER Sustaining Demurrer In Part, with Leave to Amend                                   Page 5 of 6
+      SUPERIOR COURT OF CALIFORNIA, COUNTY OF ALAMEDA
+                               Rene C. Davidson Courthouse
+
+
+
+
+ORDER Sustaining Demurrer In Part, with Leave to Amend       Page 6 of 6
+
