@@ -6,6 +6,7 @@ The initial collection contains 92 unique PDFs and 268 source/derivative assets 
 
 ## Start here
 
+- **Record-to-argument map**: `09-evidence-map/Matter-20-Record-to-Argument-Evidence-Map.md` connects the surviving writ theory to primary-record pinpoints, contrary evidence, proof gaps and conditional remedies. It is newly authored analysis, separate from the baseline collection's 268 indexed assets.
 - **Requested packets**: `00-user-inputs/Newanforbi_26CV191136_Writ_Motion_Packet.pdf` and `00-user-inputs/Matter20_Merged_v3.pdf` are preserved under their original filenames. Inclusion does not independently establish that a packet was filed, served or admitted.
 - **Human-readable inventory**: `08-audit/inventory.md` lists each unique research file, PDF page count, size, hash and source count. Its retrieval-gap section identifies known material not yet imported as original bytes.
 - **Provenance manifest**: `08-audit/manifest.json` records source paths, branches, immutable commits, duplicate aliases, historical inventory filing labels, retrieval method and targeted R2 object locations. `08-audit/SHA256SUMS` permits byte-level verification from this folder.
