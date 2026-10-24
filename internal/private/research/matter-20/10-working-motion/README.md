@@ -4,6 +4,8 @@ The user designated the newly uploaded 30-page motion packet as the working base
 
 ## Deliverables and scope
 
+**Subsequent review:** The user later authorized execution of the prompt. The bounded review, materially revised memorandum, source checks, separate proposed orders, comparison and readiness assessment are in `../12-material-improvement-review/`; the original outputs below remain preserved as the comparison baseline.
+
 - **Revised working packet**: `Newanforbi_26CV191136_Working_Motion_Packet_Federal_Order_Revision.pdf`. Adds one memorandum page after original PDF page 8 / memorandum page 5, before section V; the packet now has 31 pages and the memorandum has 12.
 - **Revised memorandum**: `Matter-20-Writ-Memorandum-Federal-Order-Revision.pdf`. Extracts the 12-page memorandum from the revised packet; the added argument is memorandum page 6.
 - **Editable insertion**: `federal-screening-order-insertion.md`. Preserves the exact added argument independently of its PDF layout; it is not a complete editable reconstruction of the working packet.

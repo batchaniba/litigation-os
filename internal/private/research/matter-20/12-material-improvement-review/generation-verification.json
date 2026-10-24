@@ -1,0 +1,109 @@
+{
+  "review_date": "2026-10-24",
+  "baseline_sha256": "a98e515c4fec344d072b7c219570c6c14433b30fe10a86202c194d7e2334d6ff",
+  "baseline_preserved": true,
+  "memo_body_pages": 11,
+  "memo_frontmatter_pages": 5,
+  "memo_total_pages": 16,
+  "public_authority_count": 25,
+  "source_notice_declaration_service_pages": [
+    1,
+    2,
+    3,
+    16,
+    17,
+    18,
+    19,
+    29,
+    30,
+    31
+  ],
+  "neutral_title_corrections": [
+    {
+      "source_page": 2,
+      "before": "record; the verified Answer and agency-produced reports identify materially disputed accounts",
+      "after": "record; the Answer and agency-produced reports identify materially disputed accounts",
+      "bbox": [
+        104.4000015258789,
+        374.9640197753906,
+        559.6200561523438,
+        390.9720153808594
+      ],
+      "purpose": "neutral document-title correction"
+    },
+    {
+      "source_page": 3,
+      "before": "its previously filed Exhibits 1\u20137, Respondents' Verified Answer dated October 12, 2026, the",
+      "after": "its previously filed Exhibits 1\u20137, Respondents' Answer dated October 12, 2026, the",
+      "bbox": [
+        104.4000015258789,
+        86.96397399902344,
+        547.5120239257812,
+        102.97197723388672
+      ],
+      "purpose": "neutral document-title correction"
+    },
+    {
+      "source_page": 19,
+      "before": "12. Exhibit E is a copy of Respondents' Verified Answer to Verified Petition for Writ of",
+      "after": "12. Exhibit E is a copy of Respondents' Answer to Verified Petition for Writ of",
+      "bbox": [
+        104.4000015258789,
+        86.96397399902344,
+        527.1719970703125,
+        102.97197723388672
+      ],
+      "purpose": "neutral document-title correction"
+    }
+  ],
+  "before_quotes_checked_against_actual_baseline": [
+    "The record identifies a stationary vehicle on a freeway shoulder; it does not, simply by those words, establish roadway obstruction or another statutory exception.",
+    "If the original recording corroborates the exchange, the report materially misattributes the reason for nonperformance and cannot fairly count that nonperformance as Petitioner's failure.",
+    "The holding concerned evidentiary use at trial and did not itself decide every possible prearrest reasonable-cause application.",
+    "No finding of legal error is sought merely because the denial letter is brief or an internal memorandum bears a later date."
+  ],
+  "new_memo_section_pages": {
+    "Introduction": 1,
+    "The surviving claim and the actual denial": 2,
+    "Governing duty, burden and scope of review": 3,
+    "Qualifying restraint requires absence of lawful authority": 4,
+    "Test the discrepancy and the remaining evidence together": 6,
+    "Link established facts to the certification determination": 8,
+    "Evidence, factual procedure and relief": 9,
+    "Conclusion": 11
+  },
+  "outputs": {
+    "Matter-20-Revised-Writ-Memorandum.pdf": {
+      "sha256": "bd6e0013d223f9ab65791b98ce7bf71432810b0615eea5612f9cecf0abc7b281",
+      "pages": 16
+    },
+    "Matter-20-Revised-Moving-Papers-Review-Compilation.pdf": {
+      "sha256": "6aa44d74b2017bd0af6a9cb0b7db793beef3b3736ebf179d79f551cd9912c6f8",
+      "pages": 26
+    },
+    "Proposed-Conditional-Direct-Certification-Order.pdf": {
+      "sha256": "8c6fddc7e956ee95fba9b1d83a911cf4e1aef9eff46d86bf6358a57955510d06",
+      "pages": 3
+    },
+    "Proposed-Focused-Factual-Proceeding-Order.pdf": {
+      "sha256": "12d62befc27a48ebb1447dbc246d5829262d8b0c9eefd7da0c8b8e3434c7c871",
+      "pages": 3
+    },
+    "Proposed-Peremptory-Writ-Remand.pdf": {
+      "sha256": "5c87a4730974f9fdf33b6f67d12dd7ca74f2ccf10f362c8598a98d9a5b94f52c",
+      "pages": 3
+    },
+    "Proposed-Remand-Judgment.pdf": {
+      "sha256": "7f1e44c40aeb83289730188b36dafbcd3be9fc78ab57625ae1f4a64bfb019a4f",
+      "pages": 3
+    }
+  },
+  "not_completed": [
+    "native MP4 review",
+    "live state/federal docket confirmation",
+    "original reservation receipt recovery",
+    "exhibit A-E assembly/authentication",
+    "signatures and service",
+    "subscription citator and final historical-version check"
+  ]
+}

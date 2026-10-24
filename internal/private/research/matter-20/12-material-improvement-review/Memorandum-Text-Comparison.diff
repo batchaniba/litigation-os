@@ -1,0 +1,729 @@
+# Mechanical text comparison. PDF extraction retains line wraps; this is not tracked Word markup.
+--- Working memorandum: physical PDF pages 4-15
++++ Revised memorandum: clean text without web-footnote numbers
+@@ -1,685 +1,85 @@
+-BRENDAN NGEHSI NEWANFORBI
+-1455 Cat Tail Drive
+-Stockton, CA 95204
+-Telephone: (209) 801-4442
+-Email: bnn.cdl@gmail.com
+-Petitioner, in propria persona
+-4
++Introduction
+ 
+-5
++The surviving First Cause of Action challenges CHP's April 20, 2026 determination that the November 1, 2024 incident involved no qualifying or substantially similar criminal activity. Petitioner does not ask the Court to convert a pleading-stage ruling into a merits finding, require a criminal prosecution of an officer, or revive the dismissed explanation and helpfulness causes of action. He asks the Court to decide whether competent evidence establishes a materially erroneous certification determination under Penal Code section 679.10.
+ 
+-SUPERIOR COURT OF THE STATE OF CALIFORNIA
++The strongest identified discrepancy is specific. CHP Form 202 says Petitioner chose not to perform the walk-and-turn because it was difficult; the submitted transcript records willingness to attempt it followed by Officer Melano advising against the test because of the uneven shoulder. (CHP Form 202, AGO 000031–000032; Pet., Ex. 5, printed p. 9, approximately 01:10:14–01:10:30.) The discrepancy requires comparison with the authenticated recording. Its existence alone does not resolve the other impairment observations, the lawful-authority question, or its materiality to the certification decision.
+ 
+-COUNTY OF ALAMEDA
++Petitioner principally seeks vacatur and lawful reconsideration if a material error is established. Direct certification remains conditional on established statutory predicates, an adequately noticed and available remedy, and no reasonable lawful alternative. If essential incident facts require credibility determinations, Petitioner requests an appropriate factual-resolution procedure before merits judgment rather than a judgment that assumes his allegations true.
+ 
+-8
++The surviving claim and the actual denial
+ 
+-BRENDAN NGEHSI NEWANFORBI,                             Case No. 26CV191136
++The August 29 order overruled the demurrer to Count One because findings crediting Petitioner's allegations concerning absence of odor and impairment and false reporting could support lack of probable cause and an abusive certification refusal. The Court did not make those findings; it also identified evidence potentially supporting probable cause. (Order Sustaining Demurrer in Part, Aug. 29, 2026, pp. 3–4.) Counts Two and Three were dismissed without leave; Count Four received leave to amend, and Petitioner stipulated to dismiss Paul and Dutra. (Id., pp. 4–5.) This motion seeks relief on Count One, not a determination that an amended declaratory claim is pending.
+ 
+-MEMORANDUM OF POINTS AND
+-Petitioner,
+-AUTHORITIES
++The signed April 20 letter states that a thorough review found no qualifying or substantially similar criminal activity. It does not deny certification for noncooperation. (Pet., Ex. 1.) Respondents' October 12 Answer admits receipt of the April 9 form and supporting materials and issuance of the April 20 denial. (Answer, ¶¶ 2–3.) Those admissions establish receipt and the decision, not acceptance of Petitioner's factual account.
+ 
+-v.
+-Hon. Jenna M. Whitman, Dept. 25
+-Hearing: January 8, 2027, 9:00 a.m., Department
+-CALIFORNIA HIGHWAY PATROL;
+-25; Reservation No. 958052306492
+-G. SERRATO, in his official capacity
+-Action filed May 29, 2026
+-as Captain and
+-Trial: Not set
+-Commander of CHP Dublin Area,
++Petitioner does not seek vacatur merely because the letter lacks more detail, or because later discovery has not disclosed every review step. The necessary showing is a legal or factual error that actually undermines the no-qualifying-activity determination.
+ 
+-Respondents.
+-17
++Governing duty, burden and scope of review
+ 
+-18
++Section 679.10 expressly lists unlawful criminal restraint and false imprisonment. Its subdivision (g)(1) directs certification when qualifying victimhood and helpfulness are established; subdivision (h) supplies a rebuttable helpfulness presumption on the stated conditions, not a substitute for victimhood. No current investigation, charge, prosecution or conviction is required. (Pen. Code, § 679.10, subds. (c)(18)–(19), (g)(1), (h), (k)(1). )
+ 
+-I. INTRODUCTION
++Traditional mandate may compel a legally required act and correct an abuse of discretion, but it does not ordinarily dictate how lawful discretion must be exercised. (Code Civ. Proc., § 1085 ; Common Cause v. Board of Supervisors (1989) 49 Cal.3d 432, 442 .) Where discretion remains, Petitioner must establish arbitrary action, action beyond reason, or disregard of applicable legal standards; a particular outcome may be compelled when only one choice can reasonably remain. (California Correctional Supervisors Organization, Inc. v. Department of Corrections (2002) 96 Cal.App.4th 824, 827 .)
+ 
+-20
++As the person whose certification request was denied, Petitioner asserts a direct beneficial interest in a lawful determination; the verified petition alleges no plain, speedy and adequate ordinary remedy. (Pet., ¶ 7.) This motion concerns that certification decision, not an award of damages or a court adjudication of immigration status. (Code Civ. Proc., § 1086 .)
+ 
+-This proceeding concerns CHP's statutory certification decision. On April 9, 2026,
++Petitioner must prove facts essential to his requested relief; absent a different applicable standard, the ordinary civil burden is preponderance of the evidence. This is not an officer's criminal prosecution requiring proof beyond a reasonable doubt. (Evid. Code, §§ 115 , 500 .) Nor does the existence of a factual dispute itself establish an abuse of discretion.
+ 
+-Petitioner submitted Form I-918, Supplement B and supporting materials asking CHP to
++This is a challenge to an individual certification refusal, not a request to import wholesale the hearing requirements of a different administrative scheme. Saleeby supports review of discretion but does not create an additional section 679.10 explanation claim after this Court's ruling. (Saleeby v. State Bar (1985) 39 Cal.3d 547, 560–563 ; Aug. 29 Order, p. 4.)
+ 
+-certify his helpfulness concerning unlawful restraint and false imprisonment during a
++Qualifying restraint requires absence of lawful authority
+ 
+-November 1, 2024 encounter. Captain Serrato's April 20 letter rejected qualifying and
++False imprisonment is the unlawful violation of another's personal liberty; the misdemeanor theory requires intentional restraint without consent or lawful justification, not necessarily the violence or menace that would elevate the offense. (Pen. Code, § 236 ; CALCRIM No. 1242 .) The admitted handcuffing and transport support intentional custody, but not its unlawfulness. (Answer, ¶ 39.) The disputed lawful-authority question remains central.
+ 
+-substantially similar criminal activity. The surviving First Cause of Action asks whether that
++The encounter must be assessed in stages, without assuming that every initial contact required arrest-level probable cause. The submitted transcript places door opening at approximately 00:56:43 and the later parole discussion around 01:11:42. (Pet., Ex. 5.) An otherwise unlawful search cannot be justified by a parole condition unknown to the officers when they searched. (People v. Sanders (2003) 31 Cal.4th 318, 332–335 .) That principle does not establish that the initial contact or search was unlawful, or that a search violation by itself constitutes qualifying criminal restraint; actual restraint and its lawful basis at each material stage still require findings.
+ 
+-determination was a lawful exercise of authority under Penal Code section 679.10. It is not a
++Officers did not observe the car moving, and the Answer admits that fact; it denies that the shoulder parking was lawful. (Answer, ¶ 34.) No observed driving is not a complete answer to the arrest question. Mercer addressed the statutes then in force; Troppman explains the Legislature's later expansion of warrantless DUI arrest authority, including evidence dissipating through metabolism. (Mercer v. Department of Motor Vehicles (1991) 53 Cal.3d 753, 768–769 ; Troppman v. Valverde (2007) 40 Cal.4th 1121, 1137, fn. 11 .)
+ 
+-claim that an officer's every unconstitutional act automatically qualifies for certification.
++Section 40300.5 requires reasonable cause to believe the person had been driving under the influence plus an enumerated circumstance. Its evidence-destruction provision is not confined to deliberate concealment; Schofield applies it to metabolic dissipation. (Veh. Code, § 40300.5 ; People v. Schofield (2001) 90 Cal.App.4th 968, 973–975 , disapproved on another point in People v. Thompson (2006) 38 Cal.4th 811, 829, fn. 3 .) Petitioner therefore does not contend that stationary parking, lack of flight, or absence of deliberate evidence destruction defeats every statutory arrest ground.
+ 
+-28
++The Court should instead assess whether reliable facts known at the arrest supported DUI and any other asserted lawful custody ground. The report invokes section 40300.5 and cites impairment observations, Petitioner's account of earlier driving, his seat position, field-test information and no drinking after stopping. (AGO 000032–000033.) Those matters must be evaluated, not erased by correcting a single test entry.
+ 
++The Court's cited Espinoza decision is adverse as well as instructive: coherent speech did not negate the other indicators there, and objective facts, not the officer's asserted subjective reason alone, determined probable cause. (Espinoza v. Shiomoto (2017) 10 Cal.App.5th 85, 101–103 .) Public intoxication likewise requires its own statutory conditions, including the relevant inability-to-care or public-way obstruction condition; it should neither be assumed from alcohol consumption nor ignored if actually supported by facts known at the time. (Pen. Code, § 647, subd. (f) ; People v. Wolterman (1992) 11 Cal.App.4th Supp. 15, 18–21 .)
+ 
+-A discrete conflict in CHP's account warrants particular attention. CHP Form 202
++Test the discrepancy and the remaining evidence together
+ 
+-describes Petitioner as choosing not to perform the walk-and-turn because he found it difficult
++The report states: “Walk and Turn: Newanforbi chose not to perform this test and related it was difficult.” (AGO 000031.) The submitted transcript instead records Petitioner saying, “I mean I think we can do that,” followed by Melano's advice against the test because of uneven ground. (Pet., Ex. 5, printed p. 9, approximately 01:10:23–01:10:30.) This concerns walk-and-turn, not the preceding one-leg-stand discussion.
+ 
+-and incorporates field-test performance into its custody rationale. The transcript submitted
++If the authenticated recording confirms that exchange, the Court should determine whether attributing nonperformance to Petitioner was false, whether nonperformance actually supported the report's “poor performance” assessment, and whether correcting it materially changes the totality. (AGO 000031–000032.) It would not alone establish that every field-test observation was fabricated.
+ 
+-with the certification request, however, records Petitioner expressing willingness to attempt
++The report separately describes HGN findings, a 43-second estimate in the Romberg test, eyelid flutter, strong alcohol odor, red/watery eyes and slurred speech. (AGO 000030–000032.) Petitioner disputes impairment, but an absence of audible criticism does not itself disprove odor or technical HGN observations. The admitted urine contents resolve the particular cup, not the separate empty Mike's Hard Lemonade can or every claimed source of odor. (Answer, ¶¶ 36–37, 44, 47.)
+ 
+-that test and Officer Melano advising against its administration because the freeway shoulder
++The transcript places the advised voluntary PAS refusal shortly before handcuffing and the chemical-test discussion later. (Pet., Ex. 5, printed pp. 10–12; approximately 01:10:54–01:11:33 and 01:15:54 onward.) The applicable PAS provision requires an advisement of its purpose and the right to refuse; Jackson rejects using an exercise of that voluntary statutory right as trial consciousness-of-guilt evidence. (Veh. Code, § 23612, subds. (h)–(i) ; People v. Jackson (2010) 189 Cal.App.4th 1461, 1466–1469 .) Petitioner does not enlarge that holding into an adjudication that this arrest lacked probable cause; nor does timing alone eliminate other known facts. A later chemical-test refusal cannot supply an observation not yet known at the initial arrest.
+ 
+-was uneven. (CHP Form 202, AGO 000031–000032; Pet., Ex. 5, approximately
++The laboratory report is not negative: it records ethanol at 0.073 ± 0.004 grams % from the later blood sample. (AGO 000034; Answer, ¶ 40 [draw at 2:38 a.m.].) Petitioner does not extrapolate an earlier concentration without foundation or equate a below-0.08 result with absence of impairment. The subsequent warrant and test do not resolve what facts were reliably known when handcuffs were applied; likewise, release, no filed charges and the detention certificate do not independently adjudicate probable cause. (AGO 000033–000034; Answer, ¶¶ 41–42; Pet., Ex. 7.)
+ 
+-01:10:14–01:10:30.) The original recording—not the litigant's characterization—should
++Link established facts to the certification determination
+ 
+-control. This conflict bears directly on the reliability of a stated basis for the restraint. The
++The April submission included a specific qualifying-crime account and transcript; receipt is admitted. (Answer, ¶ 2; Pet., Exs. 2–5.) If the Court finds that the supported account establishes qualifying unlawful restraint, it must then determine whether the no-qualifying-activity conclusion can lawfully stand under section 679.10 and this Court's Count One framework. A disagreement with a police report is not enough unless the underlying findings and material certification error are established.
+ 
+-Court must evaluate its materiality alongside the evidence supporting and contesting the
++The denial says a thorough review occurred. Discovery Nos. 6–8 do not identify every April review step and include production commitments; that incompleteness is not an admission that no review occurred. (CHP Responses to Requests for Production, Set One, Nos. 6–8; merged production, PDF pp. 29–31.) Later-dated internal review records do not, by their dates alone, establish what Serrato did or did not review before April 20. (Privilege Log, entries 9–14.)
+ 
+-asserted lawful authority for custody.
++Nor does the absence of requests for assistance establish qualifying victimhood. If qualifying victimhood is found, helpfulness must then be addressed on its actual statutory terms, including the presumption and any supported rebuttal. (Answer, ¶ 57; Pen. Code, § 679.10, subds. (g)(1), (h), (k)(1), (k)(3)(H) .) Petitioner does not use the PAS/chemical-test dispute in the underlying DUI investigation as an automatic determination of cooperation concerning the alleged officer misconduct.
+ 
+-11
++The related federal order supplies only limited persuasive support for plausibility. “[A]ccepting Mr. Newanforbi's alleged facts as true,” it found plausible inferences of false imprisonment based on fabricated evidence and retaliatory certification denial at section 1915 screening. (Newanforbi v. Serrato (N.D.Cal. June 29, 2026, No. 4:26-cv-05953-ASK) ECF No. 5, p. 4, lines 17–25; p. 5, lines 1–6.) Petitioner does not assert binding or issue-preclusive effect, factual findings, entitlement to certification or a new retaliation claim. Its general discretion language does not displace California's conditional statutory duty; Count One depends on this Court's own evidentiary findings.
+ 
+-The Court preserved Count One at the pleading stage, expressly recognizing that proof
++Evidence, factual procedure and relief
+ 
+-contradicting the officers' claimed impairment observations could support a finding of absent
++Petitioner requests consideration of properly authenticated incident evidence for this informal, individual certification decision. Western States preserves admission of extra-record evidence in traditional mandate challenging ministerial or informal action when facts are disputed; it does not make every submitted item admissible or convert the proceeding into an unrestricted damages trial. (Western States Petroleum Assn. v. Superior Court (1995) 9 Cal.4th 559, 575–576 .) The Court should identify which evidence it receives, for what purpose, and whether credibility or foundation disputes require testimony.
+ 
+-probable cause and an abusive refusal to certify. (Order Sustaining Demurrer in Part, Aug. 29,
++Section 1094 permits noticed-motion determination where its no-triable-issue or administrative-record condition is satisfied. If the Court instead needs to resolve an essential factual dispute, Petitioner requests a defined factual-resolution procedure before merits judgment; section 1090 makes a jury reference discretionary, not automatic, and section 1091 permits counterproof to the return. (Code Civ. Proc., §§ 1090 , 1091 , 1094 .) No final merits disposition should rest on treating the demurrer order, the Answer's denials, or an untested transcript as adjudicated incident facts.
+ 
+-2026, pp. 3–4.) Petitioner seeks a decision on that actual question. He principally requests
++The essential questions are whether the recording confirms the walk-and-turn exchange; which remaining impairment observations and earlier-driving facts are reliable; what lawful custody authority follows from the totality; and whether the resulting qualifying-activity findings establish a material error in the certification denial. If those questions prevent paper disposition, Petitioner requests directions defining the factual issues, evidence, witness procedure and schedule rather than an assumption that additional discovery proves the claim.
+ 
+-vacatur and reconsideration if material abuse is found, while preserving direct certification
++If a material abuse or legal error is found but the record leaves a lawful eligibility determination for CHP, the appropriate requested relief is to set aside the April 20 denial and require reconsideration consistent with the Court's actual findings and section 679.10. A proposed compliance and return period is subject to the Court's order, not an assertion of an automatic post-remand statutory deadline. If all predicates are established and only certification can lawfully remain, Petitioner preserves the narrower conditional request for execution and delivery of Supplement B, subject to the operative pleading and adequate notice. (California Correctional Supervisors Organization, supra, 96 Cal.App.4th at p. 827.)
+ 
+-only on findings establishing the statutory predicates and a single permissible result.
++Conclusion
+ 
+-18
+-
+-II. THE REQUEST, DECISION, AND CHP'S VERIFIED ADMISSIONS
+-
+-20
+-
+-CHP admits that its officers approached Petitioner's stationary car on the I-580
+-
+-shoulder as a welfare check, that the car was not moving when observed, and that the
+-
+-encounter was substantially recorded by a dashcam. (Respondents' Verified Answer, Oct. 12,
+-
+-2026 ("Answer"), ¶¶ 34–35.) CHP further admits the officers initially questioned a cup's
+-
+-contents and subsequently identified that liquid as urine. (Answer ¶¶ 36, 47.) This is
+-
+-significant because it objectively resolves what that particular cup held; it does not purport to
+-
+-adjudicate the source of every alleged sensory observation.
+-
+-28
+-
+-
+-CHP also admits the officers did not tell Petitioner they smelled alcohol emanating
+-
+-from him or his vehicle, did not tell him his speech was slurred, hesitant, or impaired, and that
+-
+-Petitioner correctly identified Livermore and read highway signs aloud. (Answer ¶¶ 37,
+-
+-45–46.) These are admissions about the officers' statements and documented conduct, not
+-
+-concessions that the officers could not have perceived an odor or visual impairment signs.
+-
+-CHP acknowledges that the officer's report checked the box for alcoholic beverage presence
+-
+-and that an empty can of Mike's Hard Lemonade was located. (Answer ¶ 47.) The Court can
+-
+-evaluate the probative weight and chronology of these distinct items without conflating the
+-
+-urine cup with the separate empty can.
+-
+-10
+-
+-On April 9, Petitioner transmitted his certification request and incident exhibits. CHP
+-
+-admits the email was sent with exhibits. (Answer ¶ 58; Pet., Exs. 2–3.) Its April 20 letter
+-
+-asserts that a review was conducted, rejects qualifying criminal activity under section 679.10
+-
+-and federal U-visa law, and also rejects substantially similar activity. (Pet., Ex. 1.) The letter
+-
+-does not identify lack of helpfulness as the reason for refusal. This motion challenges the
+-
+-legality of that qualifying-activity conclusion, not merely the length of the response.
+-
+-17
+-
+-III. THE GOVERNING DUTY AND STANDARD OF REVIEW
+-
+-19
+-
+-California expressly lists false imprisonment and unlawful criminal restraint among the
+-
+-qualifying activities. (Pen. Code, § 679.10, subds. (c)(18)–(19), (d).) Upon request, the
+-
+-certifying official "shall certify victim helpfulness" when a person was the victim of
+-
+-qualifying criminal activity and has been, is being, or is likely to be helpful to its detection,
+-
+-investigation, or prosecution. (Id., subd. (g)(1).) Subdivision (h) establishes a rebuttable
+-
+-helpfulness presumption where the victim has not refused or failed to provide reasonably
+-
+-requested assistance. The statute does not condition certification on an investigation remaining
+-
+-open, charges, arrest of a suspect, prosecution, or conviction. (Id., subd. (k)(1).) Nor may an
+-
+-official deny for reasons forbidden by subdivision (k)(3), including cooperation or refusal to
+-
+-
+-cooperate in a separate case. These rules are concrete limits on certification discretion, not
+-
+-substitutes for proof of qualifying victimhood.
+-
+-3
+-
+-Under Code of Civil Procedure sections 1085 and 1086, traditional mandate may
+-
+-enforce a duty imposed by law and correct a material abuse of discretion when ordinary
+-
+-remedies are inadequate. A court may require an official to act under the governing law; it
+-
+-ordinarily does not select among genuinely lawful discretionary outcomes. (Common Cause v.
+-
+-Board of Supervisors (1989) 49 Cal.3d 432, 442–443; Saleeby v. State Bar (1985) 39 Cal.3d
+-
+-547, 560–562.) When only one outcome is lawfully reasonable after facts are established, the
+-
+-writ may compel that result. (California Correctional Supervisors Organization, Inc. v.
+-
+-Department of Corrections (2002) 96 Cal.App.4th 824, 827.) Petitioner's direct personal
+-
+-interest and the absence of another remedy that supplies the requested certification satisfy
+-
+-sections 1085–1086.
+-
+-14
+-
+-IV. THE QUALIFYING CRIME IS UNLAWFUL PERSONAL RESTRAINT;
+-
+-THE RECORD REQUIRES ITS ELEMENTS TO BE DECIDED
+-
+-17
+-
+-False imprisonment is the unlawful violation of another's personal liberty. (Pen. Code,
+-
+-§ 236.) Penal Code section 146(a) separately identifies arrest or detention against a person's
+-
+-will by a public officer acting under color of legal authority without lawful authority; to the
+-
+-extent CHP evaluates section 146(a) as a substantially similar criminal restraint offense under
+-
+-section 679.10(d), its actual elements and the alleged conduct must be assessed. Petitioner was
+-
+-handcuffed, involuntarily transported and held in custody. (CHP Form 202, AGO
+-
+-000031–000033; Answer ¶¶ 38–39; Newanforbi Decl. ¶¶ 2, 6.) That restraint was intentional;
+-
+-the decisive issue is lawful authority for it. The criminal-activity theory does not turn on
+-
+-whether the officers were later charged or prosecuted. (Pen. Code, § 679.10, subd. (k)(1).)
+-
+-27
+-
+-The contemporaneous recording, where properly authenticated and compared with the
+-
+-
+-officer's report, bears materially on lawful authority. Before any sobriety investigation, the
+-
+-officers approached a stationary vehicle as a welfare inquiry. In the transcript, Officer Melano
+-
+-directed Petitioner to lower the window at approximately 00:56:40, then opened the passenger
+-
+-door three seconds later. The officers' inquiry thereafter developed into detention, tests,
+-
+-handcuffing and custody. (Pet., Ex. 5, 00:56:07–00:59:46, 01:10:14–01:11:33.) Petitioner asks
+-
+-the Court to distinguish lawful welfare assistance from subsequent compulsory restraint and to
+-
+-evaluate the justification existing at each relevant stage. The initial passenger-door opening is
+-
+-not asserted to be an independently enumerated U-visa offense; it is evidence bearing on the
+-
+-encounter's progression and the alleged restraint. The transcript first places the dispatch
+-
+-discussion of parole at approximately 01:11:42, after the earlier opening of the front and rear
+-
+-passenger doors. (Pet., Ex. 5, 00:56:43, 00:59:46, 01:11:42.) Later-acquired knowledge of a
+-
+-search condition cannot itself retrospectively justify a prior search. (People v. Sanders (2003)
+-
+-31 Cal.4th 318, 330–332.) This chronology is offered for its bearing on the authority asserted
+-
+-at the time, not as a separate cause of action for a vehicle search.
+-
+-15
+-
+-The officers did not observe Petitioner driving. (Answer ¶ 34.) Vehicle Code section
+-
+-40300.5 permits specified exceptions to the in-presence rule for warrantless misdemeanor DUI
+-
+-arrests, but an arrest based on earlier driving must satisfy the applicable statutory
+-
+-circumstances and reasonable-cause standard. The record identifies a stationary vehicle on a
+-
+-freeway shoulder; it does not, simply by those words, establish roadway obstruction or another
+-
+-statutory exception. (Veh. Code, § 40300.5; see Mercer v. Department of Motor Vehicles
+-
+-(1991) 53 Cal.3d 753, 768–769 [driving requires volitional movement].) The agency must
+-
+-identify the applicable facts supporting lawful authority rather than equate the encounter's DUI
+-
+-label with an answer to the qualifying-restraint allegation.
+-
+-25
+-
+-26
+-
+-27
+-
+-28
+-
+-
+-LIMITED PERSUASIVE SUPPORT FROM THE RELATED FEDERAL SCREENING
+-
+-ORDER
+-
+-3
+-
+-In the related federal action, the court stated at screening that, “[a]ccepting Mr.
+-
+-Newanforbi’s alleged facts as true,” the complaint supported plausible inferences of false
+-
+-imprisonment based on fabricated evidence and retaliatory denial of certification. (Newanforbi v.
+-
+-Serrato (N.D.Cal. June 29, 2026, No. 4:26-cv-05953-ASK) ECF No. 5, p. 4, lines 17–25.) The
+-
+-court found the complaint sufficient under 28 U.S.C. section 1915(e)(2), not proved on the merits.
+-
+-(Id., p. 5, lines 1–6.)
+-
+-10
+-
+-Petitioner cites that order only as persuasive support for the legal plausibility of the
+-
+-qualifying-crime theory. It does not establish fabrication, unlawful restraint, retaliatory motive, or
+-
+-entitlement to certification. Petitioner seeks neither issue preclusion nor a new retaliation claim.
+-
+-The surviving Count One requires competent evidence and this Court’s own findings under its
+-
+-August 29 order; neither court’s threshold ruling replaces that proof.
+-
+-16
+-
+-The federal order describes certification as discretionary. (ECF No. 5, p. 3, lines 24–27.)
+-
+-California’s conditional “shall certify” requirement must instead be applied to the statutory
+-
+-predicates actually established here. (Pen. Code, § 679.10, subd. (g)(1).) Petitioner therefore relies
+-
+-on the federal order only for the limited point above, not to enlarge the surviving claim or bypass
+-
+-the required victimhood and helpfulness determinations. 1
+-
+-22
+-
+-23
+-
+-24
+-
+-25
+-
+-1. Penal Code § 679.10(g)(1), official text:
+-https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?
+-27
+-lawCode=PEN&sectionNum=679.10.
+-28
+-
+-
+-V. THE MOST PROBATIVE DOCUMENTED DISCREPANCY IS THE
+-
+-WALK-AND-TURN ACCOUNT
+-
+-3
+-
+-CHP Form 202 states: "Walk and Turn: Newanforbi chose not to perform this test and
+-
+-related it was difficult." It later incorporates "poor performance on the FST's" into the arrest
+-
+-analysis. (AGO 000031–000032.) The submitted transcript records Petitioner saying, "I mean
+-
+-I think we can do that" at 01:10:23, followed by Melano's concern that "it's on the side of the
+-
+-freeway and it's like uneven ground. I wouldn't do that one," and his partner's acceptance of
+-
+-that assessment. (Pet., Ex. 5, printed p. 9, 01:10:14–01:10:30; Newanforbi Decl. ¶ 5.)
+-
+-10
+-
+-That sequence is not an effort to relabel an earlier one-leg-stand discussion. It concerns
+-
+-a separate proposed walk-and-turn that the officers, rather than Petitioner, decided not to
+-
+-administer. If the original recording corroborates the exchange, the report materially
+-
+-misattributes the reason for nonperformance and cannot fairly count that nonperformance as
+-
+-Petitioner's failure. The Court should compare the native video, contemporaneous report and
+-
+-witness testimony. In determining whether the resulting certification rejection can stand, a
+-
+-material error in a stated basis for the arrest warrants more than automatic deference to the
+-
+-report's characterization.
+-
+-19
+-
+-VI. A VOLUNTARY PAS REFUSAL DOES NOT SUPPLY AN INFERENCE
+-
+-OF GUILT
+-
+-22
+-
+-The transcript records Meza-Gonzales advising that the roadside preliminary alcohol
+-
+-screening test was not required, Petitioner's refusal at approximately 01:11:15, and the
+-
+-immediate direction to turn around. (Pet., Ex. 5, approximately 01:10:54–01:11:33;
+-
+-Newanforbi Decl. ¶ 6.) Section 23612 expressly requires advice of the right to decline PAS.
+-
+-(See Veh. Code, § 23612, subds. (h)–(i).)
+-
+-28
+-
+-
+-The First District held in People v. Jackson (2010) 189 Cal.App.4th 1461 that it was
+-
+-error to admit refusal of a voluntary PAS as consciousness-of-guilt evidence at a DUI trial,
+-
+-because doing so would undermine the statutory right to refuse. The holding concerned
+-
+-evidentiary use at trial and did not itself decide every possible prearrest reasonable-cause
+-
+-application. Its controlling distinction nonetheless defeats treatment of exercising that
+-
+-legislatively protected choice as a substitute for objective evidence of criminal conduct. The
+-
+-Court should evaluate what information actually supported custody before the refusal, rather
+-
+-than deriving an adverse inference merely from the exercise of the statutory choice. (Id. at pp.
+-
+-1465–1470; Veh. Code, § 23612(i).)
+-
+-10
+-
+-VII. THE COURT SHOULD ASSESS THE TOTALITY ON THE RECORD
+-
+-ACTUALLY PROVED, WITHOUT RETROSPECTIVE SUBSTITUTES
+-
+-13
+-
+-Petitioner does not ask for a finding of unlawful arrest from the failure to file charges.
+-
+-Nor does he propose retroactive invalidation of prearrest probable cause from a blood draw at
+-
+-02:38 a.m. The produced laboratory record reports 0.073 ± 0.004 g% ethanol at that later
+-
+-collection time; it does not establish a scientifically defensible earlier concentration absent
+-
+-additional foundation, nor does it decide impairment under Vehicle Code section 23152(a).
+-
+-(AGO 000033–000034.) The subsequent judicial warrant authorized acquisition of evidence at
+-
+-its time of issuance; its existence does not replace analysis of what was known at the earlier
+-
+-arrest.
+-
+-22
+-
+-Similarly, the section 851.6 certificate is an official custody-classification document,
+-
+-relevant to the incident and absence of a filed complaint but not a judicial judgment that the
+-
+-officers lacked probable cause. (Pet., Ex. 7; Pen. Code, §§ 849.5, 851.6.) These limits prevent
+-
+-later events from obscuring the concrete prearrest evidence. They also avoid confusing
+-
+-certification with a criminal prosecution of the officers: Penal Code section 679.10 requires a
+-
+-qualifying-activity finding, not a prior conviction.
+-
+-
+-1
+-
+-CHP's Answer and production are significant because they permit precise tests of the
+-
+-incident account rather than speculation about motive. CHP's statutory evaluation must rest on
+-
+-a sound understanding of the asserted offense, the officers' actual conduct, and materially
+-
+-reliable evidence. A legitimate welfare inquiry or initial DUI investigation is not categorically
+-
+-inconsistent with later criminally unlawful restraint. The Court should adjudicate the question
+-
+-on the actual chronology.
+-
+-8
+-
+-VIII. SERRATO'S QUALIFYING-ACTIVITY DETERMINATION MUST
+-
+-WITHSTAND REVIEW ON ITS MATERIAL FACTUAL BASIS
+-
+-11
+-
+-The April 20 decision denies qualifying and substantially similar activity. (Pet., Ex. 1.)
+-
+-If the factfinder credits the objective recording and determines that materially false report
+-
+-statements supplied the unlawful custody rationale, it may conclude that the agency's refusal
+-
+-to recognize qualifying restraint was an arbitrary or legally erroneous application of section
+-
+-679.10. Judge Whitman's August 29 order expressly preserved Count One on that premise.
+-
+-(Order, pp. 3–4.) The critical connection is between a proved error bearing on lawful custody
+-
+-and the statutory victimhood decision, not a demand that Serrato write a longer letter.
+-
+-19
+-
+-CHP's Verified Answer supplies admissions bearing on that evaluation: the vehicle
+-
+-was stationary; the officers initially treated the cup as suspect but identified it as urine; they
+-
+-did not verbally disclose an odor allegation or tell Petitioner his speech was impaired; and
+-
+-Petitioner correctly identified his location and read signs. (Answer ¶¶ 34–37, 45–47.) These
+-
+-admissions narrow the factual inquiry and permit the Court to test the officer narrative against
+-
+-the recorded sequence. The additional walk-and-turn comparison provides a specific,
+-
+-independently checkable inconsistency. Its significance is not that one discrepancy
+-
+-automatically proves a crime, but that the certifying decision must not rest on a materially
+-
+-inaccurate account of the confinement.
+-
+-
+-1
+-
+-Petitioner does not assert knowledge of Serrato's undisclosed deliberations. The
+-
+-October 23 production and privilege log establish the existence and dates of produced and
+-
+-withheld materials, not the contents of privileged writings or what Serrato privately
+-
+-considered on April 20. (Newanforbi Decl. ¶¶ 10–12, Exs. A–C.) No finding of legal error is
+-
+-sought merely because the denial letter is brief or an internal memorandum bears a later date.
+-
+-Instead, Petitioner requests relief on affirmative facts the Court finds established and material
+-
+-to the no-qualifying-activity determination.
+-
+-9
+-
+-IX. THE HELPFULNESS REQUIREMENT IS SUPPORTED BY THE
+-
+-SUBMITTED COMPLAINT AND WILLINGNESS TO ASSIST
+-
+-12
+-
+-Petitioner made complaints to CHP and POST, provided a timeline and transcript of
+-
+-the incident, identified the specific officers and supplied incident records with his certification
+-
+-request. He remains willing to supply truthful information and reasonable assistance
+-
+-concerning the alleged unlawful restraint. (Newanforbi Decl. ¶¶ 7–9; Pet., Exs. 2–3.) CHP's
+-
+-Answer denies that an investigating entity requested information from Petitioner. (Answer ¶
+-
+-57.) The statutory presumption of helpfulness applies where a victim has not refused or failed
+-
+-to provide reasonably requested assistance. (Pen. Code, § 679.10, subd. (h).)
+-
+-20
+-
+-The relevant assistance concerns detection or investigation of the qualifying activity
+-
+-alleged against the officers. Declining a voluntary PAS during a DUI investigation of
+-
+-Petitioner is not, by itself, a refusal to aid investigation of the alleged unlawful restraint. Nor
+-
+-may a separate-case cooperation decision become a forbidden reason for denying certification.
+-
+-(Id., subd. (k)(3)(H).) Once qualifying victimhood is established, these facts independently
+-
+-support helpfulness and the conditional certification obligation; they do not create qualifying
+-
+-victimhood by themselves.
+-
+-28
+-
+-
+-X. JUDGMENT, REMAND, OR A FOCUSED DETERMINATION OF
+-
+-ESSENTIAL FACTS
+-
+-3
+-
+-The Court may enter judgment granting traditional mandate when the proven facts
+-
+-establish a material abuse of certification discretion. (Code Civ. Proc., §§ 1085–1086;
+-
+-Common Cause, supra, 49 Cal.3d at p. 442.) In the first instance, Petitioner requests that the
+-
+-Court set aside the April 20 refusal and direct CHP's authorized official to reconsider the
+-
+-request in accordance with the Court's actual findings, the enumerated offense definitions, and
+-
+-the nonprosecution/helpfulness provisions of Penal Code section 679.10. A remand would
+-
+-leave genuinely discretionary determinations to CHP and require compliance with the material
+-
+-finding that made the prior decision unlawful.
+-
+-12
+-
+-If the Court instead finds the alleged qualifying offense and helpfulness conclusively
+-
+-established and no reasonable lawful disposition other than certification, it may direct
+-
+-certification itself. (California Correctional Supervisors Organization, supra, 96 Cal.App.4th at
+-
+-p. 827.) Direct certification is sought only on those findings, not simply from submission of
+-
+-the request.
+-
+-18
+-
+-If the Court cannot resolve genuinely material factual disputes on this motion, it should
+-
+-set an evidentiary procedure focused on the disputed grounds for restraint, the accuracy of the
+-
+-report where material to the custody decision, and the statutory criteria. Code of Civil
+-
+-Procedure section 1094 permits noticed-motion judgment when no triable factual issue
+-
+-remains or decision rests solely on an administrative record. Section 1090 governs trial of
+-
+-essential factual issues raised by a return. For informal administrative action subject to
+-
+-traditional mandate, California law permits relevant extra-record evidence where facts are
+-
+-contested. (Western States Petroleum Assn. v. Superior Court (1995) 9 Cal.4th 559, 575–576.)
+-
+-Any presentation remains subject to authentication and the ordinary evidence rules. Petitioner
+-
+-requests the narrowest procedure necessary to reach a final determination on Count One.
+-
+-
+-1
+-
+-XI. CONCLUSION
+-
+-3
+-
+-Petitioner respectfully requests judgment on Count One and a peremptory writ
+-
+-vacating the April 20 denial and directing lawful reconsideration upon a finding of material
+-
+-abuse of discretion or legal error. Alternatively, if all certification conditions are established
+-
+-and discretion permits no other lawful outcome, he requests execution and delivery of Form
+-
+-I-918 Supplement B. If essential factual disputes prevent judgment on this record, he requests
+-
+-a focused evidentiary hearing or trial-setting order. Petitioner seeks no relief on dismissed
+-
+-claims and no adjudication of immigration status.
+-
+-11
++Petitioner requests judgment on Count One and a writ setting aside the April 20 denial only upon findings establishing a material legal or factual error, with lawful reconsideration as the principal remedy. Direct certification is requested only if the Court finds every statutory predicate established, the relief properly before it, and no reasonable lawful alternative. If essential factual disputes prevent that determination, Petitioner requests an appropriately defined factual proceeding before merits judgment. No damages, relief against the dismissed respondents, adjudication of immigration status, or relief on the dismissed causes of action is requested.
+ 
+ DATED: ______________________
+-
+-13
+-
+-14
+-
+-/s/ Brendan Ngehsi Newanforbi
+ 
+ ____________________________________
+ 
+ BRENDAN NGEHSI NEWANFORBI
+ 
+-Petitioner, In Pro Per
+-
+-19
+-
+-20
+-
+-21
+-
+-22
+-
+-23
+-
+-24
+-
+-25
+-
+-26
+-
+-27
+-
+-28
+-
++Petitioner, in propria persona

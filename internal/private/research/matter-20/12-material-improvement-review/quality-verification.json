@@ -1,0 +1,92 @@
+{
+  "syntax_and_page_boxes": {
+    "Matter-20-Revised-Moving-Papers-Review-Compilation.pdf": {
+      "qpdf_check": "passed",
+      "pages": 26
+    },
+    "Matter-20-Revised-Writ-Memorandum.pdf": {
+      "qpdf_check": "passed",
+      "pages": 16
+    },
+    "Proposed-Conditional-Direct-Certification-Order.pdf": {
+      "qpdf_check": "passed",
+      "pages": 3
+    },
+    "Proposed-Focused-Factual-Proceeding-Order.pdf": {
+      "qpdf_check": "passed",
+      "pages": 3
+    },
+    "Proposed-Peremptory-Writ-Remand.pdf": {
+      "qpdf_check": "passed",
+      "pages": 3
+    },
+    "Proposed-Remand-Judgment.pdf": {
+      "qpdf_check": "passed",
+      "pages": 3
+    }
+  },
+  "source_page_preservation": [
+    {
+      "source_page": 1,
+      "compilation_page": 1,
+      "status": "pixel-identical"
+    },
+    {
+      "source_page": 2,
+      "compilation_page": 2,
+      "status": "unchanged outside declared title-correction line"
+    },
+    {
+      "source_page": 3,
+      "compilation_page": 3,
+      "status": "unchanged outside declared title-correction line"
+    },
+    {
+      "source_page": 16,
+      "compilation_page": 20,
+      "status": "pixel-identical"
+    },
+    {
+      "source_page": 17,
+      "compilation_page": 21,
+      "status": "pixel-identical"
+    },
+    {
+      "source_page": 18,
+      "compilation_page": 22,
+      "status": "pixel-identical"
+    },
+    {
+      "source_page": 19,
+      "compilation_page": 23,
+      "status": "unchanged outside declared title-correction line"
+    },
+    {
+      "source_page": 29,
+      "compilation_page": 24,
+      "status": "pixel-identical"
+    },
+    {
+      "source_page": 30,
+      "compilation_page": 25,
+      "status": "pixel-identical"
+    },
+    {
+      "source_page": 31,
+      "compilation_page": 26,
+      "status": "pixel-identical"
+    }
+  ],
+  "all_output_pages_rendered": true,
+  "local_review_sheets": [
+    "/home/user/workspace/matter20-review-qa/review-sheet-01.png",
+    "/home/user/workspace/matter20-review-qa/review-sheet-02.png",
+    "/home/user/workspace/matter20-review-qa/review-sheet-03.png",
+    "/home/user/workspace/matter20-review-qa/review-sheet-04.png",
+    "/home/user/workspace/matter20-review-qa/review-sheet-05.png",
+    "/home/user/workspace/matter20-review-qa/review-sheet-06.png",
+    "/home/user/workspace/matter20-review-qa/review-sheet-07.png",
+    "/home/user/workspace/matter20-review-qa/review-sheet-08.png"
+  ],
+  "warning": "Mechanical checks do not establish admissibility, current docket status or filing readiness."
+}
