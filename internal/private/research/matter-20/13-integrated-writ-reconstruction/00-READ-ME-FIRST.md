@@ -14,6 +14,10 @@ This is a new child branch of `research/matter-20-2026-10-24` synthesizing **the
 7. [07-ORDER-FACTFINDING.md](07-ORDER-FACTFINDING.md) — no merits adjudication; schedules limited disputed fact questions under CCP §§1090–1094.
 8. [08-PROOF-OF-SERVICE-BLANK.md](08-PROOF-OF-SERVICE-BLANK.md) — **must be completed after service by qualified nonparty**, not pre-signed.
 
+## Exhibit assembly and exact filing placement
+
+- [10-EXHIBIT-SCHEDULE-AND-FILING-PLACEMENT.md](10-EXHIBIT-SCHEDULE-AND-FILING-PLACEMENT.md) — **use this as the controlling exhibit assembly register** for the integrated motion. Maps proposed Exhibits A–J to exact repository paths, original petition and production PDF/Bates pages, declaration/MPA issues, court-record RJN, separately lodged native media, optional discovery and authentication, and execution/filing status. Flags CAD's 01:07:29 parole dispatch entry, which requires limiting prior search-knowledge assertions.
+
 ## Internal attorney-style peer audit
 9. [09-MATERIAL-IMPROVEMENT-AND-REDLINE.md](09-MATERIAL-IMPROVEMENT-AND-REDLINE.md) — judge/opposition/appellate test, ranking of material changes, and verification blockers. Includes the correction most consequential to this iteration.
 
