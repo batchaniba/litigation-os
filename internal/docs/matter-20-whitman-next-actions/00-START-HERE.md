@@ -38,5 +38,7 @@ Make the next steps verifiable and procedurally sound: secure the decision file;
 02-EVIDENCE-MATRIX.md — Count-1 elements and the produced record, including counterevidence.
 03-DISCOVERY-AND-COURT-PLAN.md — deficiency matrix, compel decision tree, CMC agenda, motion preparation, unsent counsel email and red-team gates.
 04-POST-CMC-MERITS-FILING-SEQUENCE.md — conditional first post-CMC document (if court orders a briefing stipulation), first substantive noticed writ motion, §1094 no-triable-fact threshold vs §1090 factual disputes, exact filing package and safeguards.
+05-PEREMPTORY-WRIT-MERITS-BRAINSTORM.md — motion/MPA outline, specific disputed facts and hard defense counterevidence, statutory test, remedies and required evidence.
+06-JUDICIAL-FINDINGS-AND-EVIDENCE-GATES.md — element-by-element proof/adverse-case ledger, judge-ready findings, and multi-model red-team questions.
 
 **Do not mark external action completed until the evidentiary receipt, accepted filing, written agreement, or response is added to the case graph.**
