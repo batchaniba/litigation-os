@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "added_date": "2026-10-24",
+  "branch": "research/matter-20-2026-10-24",
+  "record_id": "R15",
+  "source": {
+    "type": "user-upload",
+    "filename": "Newanforbi-v-Serrato-USDC-NDCal-IFP-Granted-Complaint-Sufficient-Jun-29-2026.pdf",
+    "received_date": "2026-10-24",
+    "copy_status": "User-supplied scanned copy with ECF header and judicial signature; no independent live-docket verification",
+    "case_name": "Newanforbi v. Serrato",
+    "case_number": "4:26-cv-05953-ASK",
+    "court": "United States District Court, Northern District of California",
+    "document_number": 5,
+    "filed_date_as_shown": "2026-06-29",
+    "judge_as_shown": "Ajay S. Krishnan",
+    "order_title": "ORDER RE MOTION TO PROCEED IN FORMA PAUPERIS",
+    "purpose": "Limited persuasive screening-stage support; not merits evidence or part of the April agency decision record"
+  },
+  "baseline": {
+    "manifest": "08-audit/manifest.json",
+    "indexed_assets": 268,
+    "unique_pdfs": 92,
+    "unchanged": true
+  },
+  "supplement_counts": {
+    "indexed_assets": 2,
+    "pdfs": 1,
+    "derived_text_files": 1
+  },
+  "records": [
+    {
+      "storage_path": "00-user-inputs/Newanforbi-v-Serrato-USDC-NDCal-IFP-Granted-Complaint-Sufficient-Jun-29-2026.pdf",
+      "sha256": "9f00bb4d807287a39687835a503beb4a2754bef01b9bd5b38f0339ba25c7f444",
+      "bytes": 564497,
+      "pages": 5,
+      "kind": "user-uploaded federal screening order",
+      "source_bytes_preserved": true
+    },
+    {
+      "storage_path": "07-source-text/generated/9f00bb4d807287a39687835a503beb4a2754bef01b9bd5b38f0339ba25c7f444.txt",
+      "sha256": "4e11d2637fe3a2c4a0cd0c5913ef5d5c1fcea342412db9d01e2fb5cbe74f91af",
+      "bytes": 11032,
+      "kind": "derived searchable text; source PDF controls",
+      "method": "pdftotext -layout",
+      "source_sha256": "9f00bb4d807287a39687835a503beb4a2754bef01b9bd5b38f0339ba25c7f444",
+      "accuracy_certified": false
+    }
+  ],
+  "analysis_path": "09-evidence-map/Matter-20-Record-to-Argument-Evidence-Map.md",
+  "scope_limits": [
+    "The screening order accepts allegations as true and does not adjudicate disputed underlying facts.",
+    "It does not direct certification or establish retaliation, false imprisonment, fabrication or constitutional liability.",
+    "No later federal rulings or operative federal pleading were independently verified for this supplement.",
+    "No court filing, judicial-notice request, service, public registration, docket change, calendar change or R2 write was performed.",
+    "The baseline seven-PDF and one-text retrieval gaps remain unresolved."
+  ]
+}

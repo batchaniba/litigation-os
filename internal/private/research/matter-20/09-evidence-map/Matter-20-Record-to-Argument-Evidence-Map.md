@@ -10,6 +10,8 @@ The immediate weakness is not proof that restraint occurred or that CHP received
 
 The best-supported drafting position is therefore conditional: seek merits relief upon established Count 1 findings, preserve a narrower reconsideration remedy if a material error is established but eligibility remains unresolved, and request an appropriate factual-resolution procedure if genuinely material disputes prevent decision on the papers. Do not portray any of those remedies as automatically available merely because discovery or the explanation is incomplete. See [CCP § 1085](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CCP&sectionNum=1085.), [CCP § 1094](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CCP&sectionNum=1094.) and [California Correctional Supervisors Organization v. Department of Corrections (2002) 96 Cal.App.4th 824, 827](https://law.justia.com/cases/california/court-of-appeal/4th/96/824.html).
 
+The June 29 federal screening order is added as R15 and arguments A19–A20 below. It provides limited persuasive support for legal plausibility, not a merits finding, an admission by CHP or proof that any disputed event occurred; it does not change the findings required by A05–A18.
+
 ## How to read the map
 
 - **Record pinpoints**: PDF page numbers are one-based pages in the named source, not search-text line numbers. Bates numbers and Answer paragraph numbers are given where available; the merged packet's page numbering is not interchangeable with a standalone exhibit's numbering.
@@ -19,7 +21,7 @@ The best-supported drafting position is therefore conditional: seek merits relie
 
 ## Record key
 
-All paths below are relative to `internal/private/research/matter-20/`. The original collection's `08-audit/manifest.json` supplies complete SHA-256 values, aliases and source commits; this map does not replace that inventory.
+All paths below are relative to `internal/private/research/matter-20/`. The original collection's `08-audit/manifest.json` supplies complete SHA-256 values, aliases and source commits; this map does not replace that inventory. The later R15 upload and its extracted text are separately recorded in `08-audit/supplemental-manifest-federal-screening-order-2026-10-24.json`, leaving the original 268-asset baseline intact.
 
 | ID | Source and precise location | Relevant use and limits |
 |---|---|---|
@@ -37,6 +39,7 @@ All paths below are relative to `internal/private/research/matter-20/`. The orig
 | R12 | `01-portfolio-records/matter-20/Notice of Confirmation of Electronic Filing - Notice of Lodging (POS rejected Sep 8 2026).pdf`, pp. 1–2 | September 8 lodging confirmation distinguishes acceptance of notice/declaration from rejection of the related proof of service. Acceptance of papers is not a ruling admitting the media. Related notice, declaration, email and service-proof aliases are retained in the manifest. |
 | R13 | `00-user-inputs/Newanforbi_26CV191136_Writ_Motion_Packet.pdf`, 30 pages; memorandum pp. 7–13; proposed declaration pp. 15–18 | Argument baseline only. The declaration's execution date, place and signature remain blank on p. 18; it is not an executed declaration proving personal-knowledge assertions. |
 | R14 | Original petition PDF p. 141: March 26, 2026 complaint-assignment letter; p. 143: POST acknowledgment; R02 ¶¶ 49, 54 | Complaint routing and opportunity to assist. The complaint assignment is not an admission of misconduct, not the detention certificate, and not proof of biased certification review. |
+| R15 | `00-user-inputs/Newanforbi-v-Serrato-USDC-NDCal-IFP-Granted-Complaint-Sufficient-Jun-29-2026.pdf`, 5 pages: Newanforbi v. Serrato, No. 4:26-cv-05953-ASK, ECF No. 5, filed June 29, 2026; Magistrate Judge Ajay S. Krishnan | P. 3 describes certification as discretionary; p. 4 expressly assumes allegations true and finds plausible inferences of false imprisonment/fabricated evidence and retaliatory denial; p. 5 passes § 1915 screening and directs summons/Marshal service. User-supplied copy with ECF header and signature, visually reviewed; current federal docket and later rulings were not independently verified. Not a merits adjudication or certification order. |
 
 The court-facing citation for R12 should identify the actual filed notice/declaration, any service cure and the offered exhibit, not a repository path. Do not confuse the lodging confirmation with the transcript pages in the merged packet.
 
@@ -95,6 +98,31 @@ For the evidence route, Western States distinguishes quasi-legislative review fr
 
 CCP § 1094's noticed-motion language is conditional; CCP § 1090 authorizes discretionary jury trial of distinctly stated essential factual questions rather than an automatic jury entitlement. Request an appropriate factual-resolution procedure without inventing a mandatory hearing or a mandatory jury. See [CCP § 1094](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CCP&sectionNum=1094.) and [CCP § 1090](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CCP&sectionNum=1090.).
 
+## Limited use of the related federal screening order
+
+The useful point is that the federal court treated the pleaded false-imprisonment/fabrication theory and alleged retaliatory certification denial as plausible at screening. The key qualification is the court's express assumption that the allegations were true; the order does not resolve the evidentiary conflicts identified in this map. R15 p. 4, lines 17–25.
+
+| Argument | Record to cite | Fair inference and defense response | Foundation or missing proof | Present use |
+|---|---|---|---|---|
+| **A19. The pleaded qualifying-crime theory received favorable screening treatment.** | R15 p. 4, lines 17–25; p. 5, lines 1–6; R01 p. 4. | The federal court accepted the allegations as true and found plausible inferences of false imprisonment based on fabricated evidence. This reinforces legal plausibility, not factual truth, and does not bind the state court to find victimhood, false reporting, lack of probable cause or statutory eligibility. | Preserve the complete five-page order; check subsequent federal rulings and the operative pleading before filing. Prove the underlying facts independently through A05–A11, then the material certification error through A17. | **Persuasive screening support only.** Cite briefly after the state court's own conditional Count 1 pathway, not as a second court's merits determination. |
+| **A20. Discretion is not permission to retaliate, but retaliation remains unproved here.** | R15 p. 4, lines 19–22; p. 3, lines 24–27; R05; A01/A17–A18. | The order expressly distinguishes certification discretion from permission to retaliate. It does not find retaliatory motive, causation, constitutional liability, or a right to a signature; CHP can dispute the allegations and point to the order's general discretionary language. | Identify competent proof of an improper purpose if that argument is within the operative Count 1 claim; do not silently add a retaliation cause of action, resurrect Counts 2–3, or substitute the screening inference for proof. | **Limited improper-purpose principle.** Preserve the existing pleading boundaries and distinguish general federal discretion from California's conditional statutory duty. |
+
+California's statute uses a conditional “shall certify” formulation when qualifying-victim and helpfulness predicates are met; the federal order's general discretionary description does not itself resolve those state-law predicates. Cite the statute directly rather than presenting R15 as having adjudicated the California duty. See [Penal Code § 679.10(g)(1)](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=PEN&sectionNum=679.10.).
+
+### Judicial-notice limits
+
+A proposed request should seek notice of the existence, filing date, text and screening disposition of ECF No. 5, attaching all five pages. It should not seek judicial notice that officers fabricated evidence, that false imprisonment actually occurred, that Serrato retaliated, or that petitioner is entitled to certification; those are not established by the screening order.
+
+California permits judicial notice of federal court records, but the existence and legal effect of a court record must be distinguished from the truth of disputed factual assertions or findings recited in it. Frame the request accordingly. See [Evidence Code § 452(d)](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=EVID&sectionNum=452.) and [Sosinsky v. Grant (1992) 6 Cal.App.4th 1548, 1564–1569](https://law.justia.com/cases/california/court-of-appeal/4th/6/1548.html).
+
+### Suggested limited-use paragraph
+
+The following is proposed advocacy, not a quotation of the entire federal order. Use it only after checking later federal rulings; no current-docket check is represented by this map.
+
+> In the related federal action, the court concluded at screening that, “[a]ccepting Mr. Newanforbi’s alleged facts as true,” the complaint supported plausible inferences of false imprisonment based on fabricated evidence and retaliatory denial of certification. (Newanforbi v. Serrato, No. 4:26-cv-05953-ASK, ECF No. 5, June 29, 2026, p. 4.) Petitioner cites that order only as persuasive support for the legal plausibility of the theory, not as an adjudication of the underlying facts. The surviving Count 1 must be decided on the evidentiary record and findings made in this proceeding.
+
+Keep this supplemental use separate from the April decision-time record. No request for judicial notice, amendment, service, court filing, docket update or calendar change has been made by adding the order to this research room.
+
 ## High-value quotation and contradiction ledger
 
 These entries are deliberately narrow. The source must accompany the proposition; neither an opponent's admission of document contents nor a transcript preparer's interpretation becomes a judicial finding.
@@ -111,6 +139,9 @@ These entries are deliberately narrow. The source must accompany the proposition
 | Q08 | Synthesis, not quotation: R02 ¶ 38 describes arrest shortly after a chemical-test refusal, while transcript/CAD/report place arrest around 01:11–01:12 and the transcript begins chemical-test discussion at 01:15:54. | R02 p. 8; R06 PDF pp. 77–78; R07 p. 5; R09 p. 1. | Ask which refusal the defense means and reconcile clocks/test categories. Do not silently make the Answer say “PAS.” |
 | Q09 | Exact numeric field: ethanol `0.073 ± 0.004`, units `grams %`. | R07 p. 6, AGO 000034; visually checked. | Correct zero/negative-BAC claims. Do not convert a below-0.08 result into proof that no impairment or probable cause existed. |
 | Q10 | Synthesis: certificate copy records release November 5, 2024; preparation footer May 12, 2025; Answer admits November 5 issuance. | R08, petition PDF p. 90; R02 ¶ 42. | Identify a provenance/date question without accusing either source of falsification or collapsing the dates. |
+| Q11 | Verbatim: “Accepting Mr. Newanforbi’s alleged facts as true, his complaint supports the plausible inferences that CHP officers falsely imprisoned him in November 2024 based on fabricated evidence.” | R15 p. 4, lines 17–19. | Retain the assumed-true qualification and “plausible” limitation; do not excerpt this as a finding that fabrication or false imprisonment occurred. |
+| Q12 | Verbatim: “While Defendant Serrato had discretion to certify the request, he did not have discretion to retaliate against Mr. Newanforbi.” | R15 p. 4, lines 21–22. | Limited legal principle, not an adjudication of retaliatory motive or proof of a presently pleaded state claim. |
+| Q13 | Verbatim: “For the reasons set forth above, the allegations in Mr. Newanforbi’s complaint are sufficient under 28 U.S.C. § 1915(e)(2).” | R15 p. 5, lines 1–3. | State the actual disposition and screening standard, rather than claiming a final judgment, certification directive or merits victory. |
 
 ## Decision-time versus later-proof ledger
 
@@ -119,6 +150,7 @@ These entries are deliberately narrow. The source must accompany the proposition
 | April 9 request, form, supporting memorandum, petitioner transcript, report copy and certificate copy | Submitted before April 20, as specifically admitted in R02 ¶ 2; exact attachment set should be preserved | CHP received these identified materials, including an allegation of qualifying misconduct. | Which reviewer used each item; receipt does not admit truth. |
 | April 10 Paul email | Predecision acknowledgment | The request was received and described as under review. | Scope, participants and substance of the review. |
 | April 20 Serrato letter | Challenged decision | Stated no qualifying/substantially similar activity; no stated noncooperation ground. | Facts/criteria actually applied and whether any demonstrated error was material. |
+| June 29 federal ECF No. 5 screening order | Later judicial reasoning on the pleaded allegations; not part of the April agency record | The federal court passed the complaint through § 1915 screening, accepting allegations as true, and directed summons/service. | Independent proof of the alleged facts, current federal procedural status, and satisfaction of the state writ's predicates. |
 | 2024 recordings, report, warrant and lab evidence produced in October | Older underlying evidence, later produced in this litigation | Establishes what authenticated older records contain; may bear on contemporaneous incident facts. | Availability/actual reliance before April 20; separate admissibility route for later submissions. |
 | May 9 review/interview memoranda, May 20 interview, August 18 letter identified in privilege log | Postdecision materials by listed dates | Their existence/date/claimed subject is logged. | Their contents; whether they reference an earlier review; any independent nonprivileged foundation. |
 | October 12 Answer and October 20-verified/October 23-served discovery package | Later litigation positions, admissions, responses and production provenance | Narrow disputed issues and identify promised/withheld records. | Operative filing status of Answer; completeness and admissibility of discovery proof. |
@@ -130,6 +162,7 @@ These entries are deliberately narrow. The source must accompany the proposition
 - **Third: complete the lawful-authority analysis.** Address all material observations and statutory/alternative grounds, including unfavorable HGN/Romberg evidence, roadway conditions, the empty can and the nonzero lab result. Do not offer selective clips as if they resolve odor, impairment and prior driving. Arguments A08–A11.
 - **Fourth: identify a material certification error.** Seek nonprivileged information about the actual April reviewer, sources available, criteria and reliance, particularly the unanswered routing/receipt substance of RFP No. 6 and qualified responses to Nos. 7–8. Meet and confer and calculate any discovery deadlines from actual service, governing rules and extensions; this map does not set deadlines or update clocks.
 - **Fifth: select the remedy after the findings.** Show which established fact makes the no-qualification decision unlawful or unreasonable; then distinguish a legally compelled signature from a supported reconsideration order or an essential factual question requiring resolution. Do not substitute discovery dissatisfaction for the necessary merits showing.
+- **Supplemental citation check**: Before using R15, check later federal rulings, preserve the assumed-true language and attach the complete order to any appropriately limited judicial-notice request. It is not a substitute for any of the five proof priorities above.
 
 ## Corrections to carry into the next writ revision
 
@@ -142,5 +175,6 @@ These entries are deliberately narrow. The source must accompany the proposition
 - **No automatic video admission or signed-declaration claim**: Lodging acceptance and the unsigned proposed declaration do not supply those foundations.
 - **No “all records withheld” or “complete agency file” claim**: The package includes substantial production and 15 logged entries, but neither fact establishes completeness of the April decision record.
 - **No borrowed draft hearing date**: Confirm any current notice, reservation, service and hearing independently before filing; this map makes no calendar changes.
+- **No screening-to-merits leap**: R15 assumes allegations true, passes § 1915 review and directs summons/service; it does not adjudicate fabrication, false imprisonment, retaliation, constitutional liability or entitlement to certification.
 
-The primary-record review for this map focused on the sources and pinpoints identified above, including visual checks of the scanned denial, certificate, selected report/lab pages and signed discovery verification. It was not an independent review of all native videos, every collected PDF, withheld records or the live court register; the original research collection's seven PDF and one text retrieval gaps remain unresolved.
+The primary-record review for this map focused on the sources and pinpoints identified above, including visual checks of the scanned denial, certificate, selected report/lab pages, signed discovery verification and all five pages of R15. It was not an independent review of all native videos, every collected PDF, withheld records or the live state/federal court registers; the original research collection's seven PDF and one text retrieval gaps remain unresolved.
