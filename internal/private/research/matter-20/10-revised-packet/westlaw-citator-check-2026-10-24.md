@@ -44,10 +44,22 @@
 
 ## Open
 
-- [ ] Read Perez Perez in full.
-- [ ] Targeted search "Immigrant Victims of Crime Equity Act" / "Penal Code section 679.10".
-- [ ] Capture Vichy Springs star page and Gascon/Water Audit official cites.
-- [ ] Read rest of Feah.
-- [ ] Review Hagberg negative treatment.
-- [ ] Check Penal Code 847.
-- Note: no California case found holding fabricated evidence supports false imprisonment.
+Updated after the second Westlaw pass (Oct 24, 2026). Full analysis: `Westlaw_Research_Analysis_2026-10-24.md` / `.pdf` (supersedes entries above where they conflict).
+
+- [x] Read Perez Perez in full. (Majority read in full; Callahan dissent partly. Holding: "qualifying criminal activity" is a reviewable legal question, 943 F.3d at 863, 866-68.)
+- [x] Targeted search "Immigrant Victims of Crime Equity Act" / "Penal Code section 679.10". (0 / 0; `"U visa" & mandamus & certif!` 0; `679.10 & certif!` 2 - People v. Agustin (unpublished, red) and In re Retirement Cases (irrelevant). No California case construes 679.10 certification.)
+- [x] Capture Vichy Springs star page. (Resolved: the CCSO "only one choice" quote and East Shore Parks quote are in UNPUBLISHED parts II-V, after *61 - do not cite Vichy; cite CCSO 827 directly.)
+- [x] Water Audit official cite: 111 Cal.App.5th 1147, Common Cause passage 1180-81 (*1181); negative: Dummer v. CCSF (2026) distinguished.
+- [ ] Gascon official cite - not captured (red flag; avoid list only, low priority).
+- [ ] Read rest of Feah. (Partly read; second attempt blocked by document limit. Low priority - unpublished, distinguished CV Amalgamated on ministerial point only.)
+- [x] Review Hagberg negative treatment. (14 entries, all Civ. Code 47(b)/anti-SLAPP - off point. 372 fn. 7 and 372-73 read; no longer "headnote only".)
+- [x] Check Penal Code 847. (847(b) read; also Gov. Code 820.4.)
+- [x] Read Penal Code 679.10 on Westlaw (current eff. Jan 1, 2024, through (o)(1); (c)(19) false imprisonment qualifies; (g)(1), (h), (i)(2), (j), (k)(3)).
+- [ ] Resolve Asgari pin 752 vs 753 (cite 752-753 meanwhile).
+- [ ] Pull Penal Code 236 (and 146(a)) on Westlaw; confirm 679.10(c)(18) wording.
+- [ ] Verify AMR v. County of San Bernardino (2025) 117 Cal.App.5th 856 flag (red in a citing list, none in header).
+- [ ] Review Common Cause's own 8 negative entries; capture flags for Crestwood, Alameda Health, Common Cause, Western States, Jackson.
+- [ ] Deeper 2015+ citing refs for Common Cause 442 / CCSO 827.
+- [ ] Open and KeyCite Citizens for East Shore Parks (2011) 202 Cal.App.4th 549, 573 before any use.
+- [ ] Read secondary articles in full (53 Cal. W. L. Rev. 149; 22 San Joaquin Agric. L. Rev. 141).
+- Note: still no California case expressly holding an officer's fabricated-evidence arrest is false imprisonment; rely on 679.10(c)(19), Hagberg, Asgari, Gov. Code 820.4, Pen. Code 847(b), Schmidlin (elements), and the Krishnan order (persuasive).
