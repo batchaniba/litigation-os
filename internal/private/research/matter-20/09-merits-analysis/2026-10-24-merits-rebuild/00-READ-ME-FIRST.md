@@ -28,6 +28,8 @@
 13. [13-ALTERNATIVE-ORDER-LIMITED-EVIDENTIARY-PROCEEDINGS.md](13-ALTERNATIVE-ORDER-LIMITED-EVIDENTIARY-PROCEEDINGS.md)
 14. [14-PROPOSED-PROOF-OF-SERVICE-BLANK.md](14-PROPOSED-PROOF-OF-SERVICE-BLANK.md)
 
+15. [Westlaw report critical review](15-WESTLAW-RESEARCH-2026-10-24-CRITICAL-REVIEW.md): supplemental audit of the October 24 authority report and its inaccurate characterization of the April 20 denial.
+
 ## Findings behind the reconstruction
 1. R01 Judge Whitman's signed Aug29 demurrer order held the legal theory viable **if factual predicates later proved**; it did not find lawless custody or abuse.
 2. The greatest record deficiency is **proof of why Serrato's April20 substantive no-qualifying-crime determination is legally untenable**, not merely that the letter is short.
