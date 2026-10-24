@@ -6,7 +6,8 @@ The initial collection contains 92 unique PDFs and 268 source/derivative assets 
 
 ## Start here
 
-- **Current working-motion revision and review prompt**: `10-working-motion/README.md` identifies the user-designated working packet, the limited federal-order insertion, the revised memorandum and a copy-ready prompt for a substantive prefiling review. This narrow draft edit does not represent that the larger review has been completed or that the packet is ready to file.
+- **October 24 comprehensive revision (research draft — do not file)**: `10-revised-packet/` contains the citation audit, strategy note, rewritten notice/MPA/declaration/proposed order/POS, RJN, notice of lodging, red-team, open questions, redline summary, and pleading-paper PDFs. It supersedes the working packet as the current research draft. It is unsigned and not a representation of filing readiness.
+- **Prior working-motion revision and review prompt**: `10-working-motion/README.md` identifies the user-designated 30-page working packet, the limited federal-order insertion, and a copy-ready prompt. That narrow splice is preserved; it is not the later comprehensive rewrite.
 
 - **Record-to-argument map**: `09-evidence-map/Matter-20-Record-to-Argument-Evidence-Map.md` connects the surviving writ theory to primary-record pinpoints, contrary evidence, proof gaps and conditional remedies. It is newly authored analysis, separate from the baseline collection's 268 indexed assets.
 - **Federal screening-order supplement**: The June 29, 2026 federal order is preserved in `00-user-inputs/` and added to the map as R15/A19–A20, with assumed-true limits, page-specific quotations and a proposed limited-use paragraph. Its two source/derived assets are separately hash-indexed in `08-audit/supplemental-manifest-federal-screening-order-2026-10-24.json`; the original 268-asset/92-PDF baseline is unchanged.
