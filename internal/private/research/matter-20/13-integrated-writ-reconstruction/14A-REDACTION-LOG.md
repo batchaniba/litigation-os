@@ -33,3 +33,7 @@ Not redacted (judgment call): the rental vehicle's VIN (055, 028) — it belongs
 Declaration (standalone and packet): the EXHIBITS paragraph now states that identifiers and offense descriptions were redacted under CRC 1.201 and that unredacted copies are available to the Court on request. No MPA or declaration text quoted a redacted value.
 
 Verification (2026-10-24): a regex search of the text layers, a scan of the raw decompressed streams, and a fresh 300-dpi OCR of every redacted page found zero surviving values (including partial and variant forms) in the Appendix (84 pp), the Declaration with Exhibits (91 pp), and the Motion Packet with Exhibits (117 pp). Handwritten fields were also checked visually.
+
+## Revision 2026-10-24 (box tightening)
+
+Page list and categories unchanged. Redaction boxes were tightened so each covers only the redacted value's own line (ink extent plus ~1.5 pt; manual boxes on App 019, 023, 039–041, 044, 049 re-measured to ±0.5 pt). Rule lines are excluded when sizing boxes. Pages re-rasterized at 200 dpi; text layers, raw streams, and 300-dpi OCR re-verified with zero hits.
