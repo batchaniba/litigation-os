@@ -1,0 +1,1452 @@
+ 1   BRENDAN NGEHSI NEWANFORBI
+     Plaintiff In Pro Per
+ 2   1455 Cat Tail Drive
+     Stockton, CA 95204
+ 3
+     Tel: (209) 801-4442
+ 4   E-mail: bnn.cdl@gmail.com
+
+ 5                                   UNITED STATES DISTRICT COURT
+
+ 6                                  NORTHERN DISTRICT OF CALIFORNIA
+
+ 7
+
+ 8    BRENDAN NGEHSI NEWANFORBI,                                 Case No.: _______________
+
+ 9                    Plaintiff,                                 COMPLAINT FOR DAMAGES AND
+                                                                 INJUNCTIVE RELIEF
+10        v.
+                                                                 DEMAND FOR JURY TRIAL
+11
+      SHANNON SMITH, LCSW, Chief
+      Executive Officer and Founder of                           42 U.S.C. § 1983; 18 U.S.C. § 1962;
+12
+      HOPE Program, an individual; and                           Cal. Civ. Code § 52.1; Common Law
+13    HOPE PSYCHOTHERAPY, INC., d/b/a
+      HOPE PROGRAM, a California
+14    corporation,
+
+15                    Defendants.
+
+16
+
+17                                              I. INTRODUCTION
+
+18
+
+19             1. This is a civil rights action arising from a private, for-profit corporation's deliberate
+
+20   exploitation of its government-conferred monopoly power over mandatory sex offender treatment
+
+21   to systematically deprive a California parolee of his constitutional rights. Defendant SHANNON
+
+22   SMITH, LCSW, as Chief Executive Officer and Founder of HOPE Psychotherapy, Inc.
+
+23   ("HOPE"), personally approved, implemented, and enforced a blanket retention policy under
+
+24   which no parolee could ever be determined to have completed sex offender treatment prior to
+
+25   discharge from parole, regardless of individual clinical progress, compliance, risk reduction, or
+
+26   homework completion. Defendant HOPE, acting under color of state law as CDCR's contracted
+
+27   treatment provider, maintained and enforced this policy across all of its facilities statewide.
+
+28
+
+                                                       Page 1
+                       COMPLAINT FOR DAMAGES AND INJUNCTIVE RELIEF — NEWANFORBI v. SMITH, ET AL.
+ 1          2. Smith oversaw this policy from HOPE's headquarters in Hayward, California. Smith
+
+ 2   knew the policy was unlawful: it had been judicially condemned in In re Dwyer, No.
+
+ 3   SC-080355A (San Mateo County Super. Ct., Mar. 20, 2023), where the court found that HOPE's
+
+ 4   policy "vitiates the Legislature's directive" under Penal Code Section 3008(d)(2). HOPE's own
+
+ 5   Executive Director of Clinical Training, Dr. Cristina Loree, testified under oath in Dwyer that
+
+ 6   HOPE requires continuous treatment for all parolees until parole discharge. Yet Smith took no
+
+ 7   corrective action.
+
+ 8
+
+ 9          3. HOPE's own Clinical Operational Manual (September 2024 edition) confirms the
+
+10   scheme in writing. On one page, the Manual states HOPE is "prohibited from discharging a client
+
+11   from treatment for any reason." On the next page, the Manual describes a six-step graduation
+
+12   process culminating in a Treatment Completion Certificate that clinicians are "not permitted to
+
+13   provide directly to clients." HOPE thus created the illusion of an achievable completion pathway
+
+14   while maintaining a corporate policy that made completion structurally impossible.
+
+15
+
+16          4. The documentary record confirms the policy's systematic operation. In verified
+
+17   discovery responses in the related state action, HOPE admitted that at every Containment Team
+
+18   Meeting ("CTM") during the relevant period, HOPE recommended continued treatment for
+
+19   Plaintiff and never recommended a treatment-completion determination. HOPE's site Director
+
+20   admitted she never recommended Plaintiff for treatment completion at any CTM she attended.
+
+21   Yet in the same discovery responses, HOPE claimed that "multiple clients" at the Stockton
+
+22   facility completed treatment pre-discharge, while simultaneously refusing to identify a single
+
+23   such client. This contradiction is the hallmark of a fabricated defense.
+
+24
+
+25          5. As a direct result, Plaintiff Brendan Ngehsi Newanforbi has been trapped in mandatory
+
+26   treatment since March 2021, subjected to false reports to CDCR characterizing him as not having
+
+27   completed treatment or homework, denied parole discharge, subjected to continued GPS
+
+28   monitoring and curfew restrictions, and deprived of over $109,000 in lost wages from his career
+
+                                                    Page 2
+                    COMPLAINT FOR DAMAGES AND INJUNCTIVE RELIEF — NEWANFORBI v. SMITH, ET AL.
+ 1   as a Class A CDL commercial truck driver. When Plaintiff complained about HOPE's practices,
+
+ 2   HOPE's site Director retaliated by labeling him a "ringleader" and "abhorrent" in front of his
+
+ 3   parole agents at a CTM on August 19, 2025, chilling his exercise of protected speech.
+
+ 4
+
+ 5          6. Plaintiff brings this action under 42 U.S.C. Section 1983 for deprivation of his rights
+
+ 6   under the First and Fourteenth Amendments, under 18 U.S.C. Section 1962 for racketeering,
+
+ 7   under California Civil Code Section 52.1 (the Bane Act) for interference with constitutional and
+
+ 8   statutory rights by threat, intimidation, and coercion, and under California common law for fraud
+
+ 9   and negligent misrepresentation. Plaintiff seeks compensatory damages, treble damages, punitive
+
+10   damages, declaratory and injunctive relief, and reasonable attorney's fees and costs.
+
+11
+
+12                                   II. JURISDICTION AND VENUE
+
+13
+
+14          7. This Court has original subject matter jurisdiction under 28 U.S.C. Section 1331
+
+15   because this action arises under the laws of the United States, including 42 U.S.C. Section 1983
+
+16   and 18 U.S.C. Section 1962. This Court has supplemental jurisdiction over Plaintiff's state-law
+
+17   claims under 28 U.S.C. Section 1367 because they form part of the same case or controversy as
+
+18   the federal claims and derive from a common nucleus of operative fact.
+
+19
+
+20          8. Venue is proper in this District under 28 U.S.C. Section 1391(b)(2) because a
+
+21   substantial part of the events giving rise to the claims occurred in this District. Defendant Smith
+
+22   works at and directs HOPE's operations from HOPE's principal place of business and
+
+23   headquarters at 1245 B Street, Hayward, California 94541 (Alameda County), where corporate
+
+24   policies, including the blanket retention policy at issue, were formulated, approved, and
+
+25   disseminated. HOPE also maintains a corporate address at 3170 Crow Canyon Place, Suite 135,
+
+26   San Ramon, California 94583 (Contra Costa County), within this District.
+
+27
+
+28          9. Venue is also proper under 28 U.S.C. Section 1391(b)(1) because both Defendants
+
+                                                    Page 3
+                    COMPLAINT FOR DAMAGES AND INJUNCTIVE RELIEF — NEWANFORBI v. SMITH, ET AL.
+ 1   reside in this District.
+
+ 2
+
+ 3           10. No administrative exhaustion is required for Plaintiff's Section 1983 claims. Patsy v.
+
+ 4   Board of Regents, 457 U.S. 496, 516 (1982).
+
+ 5
+
+ 6                                                III. PARTIES
+
+ 7
+
+ 8           11. Plaintiff BRENDAN NGEHSI NEWANFORBI is a natural person and resident of San
+
+ 9   Joaquin County, California. Plaintiff is a CDCR parolee (CDCR No. BF3571) assigned to the
+
+10   Stockton 2 GPS parole unit under the "SA" (Sex Offender Active) supervision tier, with a
+
+11   Controlling Discharge Date of December 2, 2030 and a California Static Risk Assessment
+
+12   (CSRA) score of 2 (Moderate). Plaintiff possesses a Class A Commercial Driver's License and,
+
+13   prior to the events described herein, maintained active employment relationships with multiple
+
+14   commercial carriers.
+
+15
+
+16           12. Defendant SHANNON SMITH is a natural person, a Licensed Clinical Social Worker
+
+17   (LCSW), and the Chief Executive Officer and Founder of HOPE Psychotherapy, Inc., which she
+
+18   founded in September 2008. Smith resides and works in California. Smith is the named insured
+
+19   on HOPE's Healthcare Professional Liability policy (Philadelphia Indemnity Policy No. 067968,
+
+20   per-incident limits of $1 million, aggregate limits of $5 million). Smith personally approves,
+
+21   implements, and enforces the corporate policies described herein. HOPE's Employee Handbook
+
+22   states: "No one other than Shannon Smith, CEO, has the authority to enter into any other
+
+23   agreement that modifies Company policy." Smith is sued in her individual capacity.
+
+24
+
+25           13. Defendant HOPE PSYCHOTHERAPY, INC. (d/b/a HOPE Program) is a Licensed
+
+26   Clinical Social Worker Professional Corporation organized under California law, with its
+
+27   principal place of business at 1245 B Street, Hayward, California 94541. HOPE is a
+
+28   CASOMB-certified sex offender treatment provider that contracts with CDCR to provide
+
+                                                     Page 4
+                     COMPLAINT FOR DAMAGES AND INJUNCTIVE RELIEF — NEWANFORBI v. SMITH, ET AL.
+ 1   mandatory SOMP services to parolees throughout Northern California, including at the Stockton
+
+ 2   facility at 5403 N. Pershing Avenue, Suite 200, Stockton, California 95207. HOPE describes
+
+ 3   itself as "California's largest sex offender rehabilitation initiative" and operates sixteen locations
+
+ 4   statewide, from San Francisco to San Diego. HOPE has also done business as "Hope
+
+ 5   Psychotherapy, Inc." and "HOPE Program, A Licensed Clinical Social Worker Professional
+
+ 6   Corporation."
+
+ 7
+
+ 8                                     IV. FACTUAL ALLEGATIONS
+
+ 9
+
+10                            A. CDCR's Sex Offender Management Program
+
+11
+
+12          14. Under California Penal Code Section 3008, CDCR requires parolees to participate in a
+
+13   sex offender management program for a period determined on an individualized basis between
+
+14   one year and the parole term, "as determined by the certified sex offender management
+
+15   professional in consultation with the parole officer." Section 3008(d)(2) presupposes a
+
+16   meaningful possibility of completion before discharge from parole.
+
+17
+
+18          15. Title 15, California Code of Regulations, Section 3574 (effective April 17, 2025)
+
+19   codifies SOMP standards. Section 3574(f)(1) expressly provides that treatment completion and
+
+20   parole discharge are legally separate decisions. Section 3574(e)(2) establishes that the second
+
+21   CTM is "the first review to determine whether the supervised person's sex offender management
+
+22   program requirements have been satisfied." The regulation was adopted to implement the
+
+23   settlement in Alliance for Constitutional Sex Offense Laws, Inc. v. Macomber (L.A. Super. Ct.
+
+24   Case No. 23STCP02378), which was filed in July 2023 challenging an unwritten CDCR policy
+
+25   requiring all registrants to remain in treatment for the entire parole term. NCR 25-01 confirms the
+
+26   regulatory history.
+
+27
+
+28          16. CASOMB's Treatment Completion Guidelines (2018) require structured clinical
+
+                                                     Page 5
+                     COMPLAINT FOR DAMAGES AND INJUNCTIVE RELIEF — NEWANFORBI v. SMITH, ET AL.
+ 1   judgment and direct that the determination be a yes-or-no conclusion about whether treatment has
+
+ 2   been completed. CASOMB's Maintenance and Aftercare Guidelines (September 2024) state:
+
+ 3   "Discharge planning starts at intake. The final determination regarding whether an individual has
+
+ 4   'completed' treatment should never come as a surprise to the client."
+
+ 5
+
+ 6          17. In the Stockton region, HOPE was the sole CASOMB-certified SOMP provider during
+
+ 7   the period relevant to this action, holding an exclusive monopoly over mandatory treatment for
+
+ 8   sex offender parolees.
+
+ 9
+
+10                                         B. HOPE as State Actor
+
+11
+
+12          18. HOPE acts under color of state law within the meaning of 42 U.S.C. Section 1983.
+
+13   HOPE contracts with CDCR to provide mandatory sex offender treatment, a function CDCR is
+
+14   statutorily required to administer under Penal Code Section 3008. HOPE admitted in verified
+
+15   discovery responses that it is a CASOMB-certified provider contracting with CDCR's Division of
+
+16   Adult Parole Operations to deliver sex-offender treatment under Penal Code Section 3008 and 15
+
+17   CCR Section 3574. HOPE's treatment determinations directly control parolees' liberty: Plaintiff's
+
+18   parole agents have each separately stated to Plaintiff, in substance, that "HOPE controls" and that
+
+19   "without sex-offender completion there will be no discharge from parole."
+
+20
+
+21          19. Under West v. Atkins, 487 U.S. 42, 54 (1988), a private entity that contracts with the
+
+22   state to provide services to persons in state custody acts under color of state law when the services
+
+23   are a traditional and exclusive public function. HOPE's role as sole certified provider, its
+
+24   submission of clinical reports to CDCR that directly affect parole decisions, and its performance
+
+25   of mandatory state-ordered treatment makes HOPE a state actor.
+
+26
+
+27                                  C. HOPE's Blanket Retention Policy
+
+28
+
+                                                    Page 6
+                    COMPLAINT FOR DAMAGES AND INJUNCTIVE RELIEF — NEWANFORBI v. SMITH, ET AL.
+ 1          20. HOPE maintains a blanket retention policy under which no parolee is determined to
+
+ 2   have completed treatment prior to discharge from parole. HOPE's four-phase program structure
+
+ 3   (preparatory, core, maintenance, aftercare) treats the aftercare phase as mandatory for parolees
+
+ 4   and voluntary only post-discharge. This structure makes completion structurally impossible while
+
+ 5   a participant remains on parole.
+
+ 6
+
+ 7          21. HOPE's Clinical Operational Manual (September 2024 edition) confirms this policy in
+
+ 8   its own words. On page 294, the Manual states: "Due to specific guidelines within our contracts,
+
+ 9   HOPE is prohibited from discharging a client from treatment for any reason." On the next page
+
+10   (p. 295), the Manual describes a six-step graduation process: (1) completion of the Maintenance
+
+11   Program; (2) adherence to all HOPE titration criteria; (3) a non-deceptive maintenance polygraph;
+
+12   (4) clinician presentation to staff in group supervision; (5) Clinical Director approval or denial of
+
+13   the CASOMB titration form; and (6) completion of a Treatment Completion Certificate. The
+
+14   Manual further provides: "Clinicians are not permitted to provide this certificate directly to
+
+15   clients. Clients can reach out via parole to obtain this documentation if they wish."
+
+16
+
+17          22. The juxtaposition of these provisions reveals the fraudulent architecture: HOPE
+
+18   created a detailed graduation pathway to maintain the appearance that completion is achievable,
+
+19   while simultaneously maintaining a blanket prohibition on discharge that ensures no client can
+
+20   ever reach the end of that pathway during the period of mandatory participation.
+
+21
+
+22          23. HOPE's blanket retention policy was judicially condemned in In re Dwyer, No.
+
+23   SC-080355A (San Mateo County Super. Ct., Mar. 20, 2023) (Hill, J.). HOPE's own Executive
+
+24   Director of Clinical Training, Dr. Cristina Loree, testified under oath that HOPE requires
+
+25   continuous treatment for all parolees until discharge. The court found that HOPE's policy "vitiates
+
+26   the Legislature's directive" under Penal Code Section 3008(d)(2) and terminated the petitioner's
+
+27   treatment.
+
+28
+
+                                                    Page 7
+                    COMPLAINT FOR DAMAGES AND INJUNCTIVE RELIEF — NEWANFORBI v. SMITH, ET AL.
+ 1          24. Despite the Dwyer ruling, HOPE did not modify its blanket retention policy. The
+
+ 2   September 2024 Clinical Operational Manual, issued eighteen months after Dwyer, continues to
+
+ 3   prohibit discharge for any reason. In verified discovery responses, HOPE admitted it did not
+
+ 4   modify its treatment-completion policies or practices in any material respect after the April 17,
+
+ 5   2025 effective date of 15 CCR Section 3574(f)(1) -- the regulation enacted specifically to stop the
+
+ 6   very practice HOPE continues.
+
+ 7
+
+ 8                      D. Verified Discovery Admissions Confirming the Policy
+
+ 9
+
+10          25. In verified responses served in the related state action (San Joaquin County Superior
+
+11   Court Case No. STK-CV-UF-2026-0001032), Defendants made the following admissions that
+
+12   independently confirm the blanket retention policy:
+
+13
+
+14          (a) HOPE admitted that at every CTM held during the relevant period concerning
+
+15   Plaintiff, HOPE recommended continued treatment for Plaintiff and did not recommend a
+
+16   treatment-completion determination. (HOPE RFA No. 4.)
+
+17
+
+18          (b) HOPE's site Director Katie Palacios admitted that at all CTMs concerning Plaintiff
+
+19   that she attended, she did not recommend that Plaintiff be deemed to have completed treatment.
+
+20   (Palacios RFA No. 6.)
+
+21
+
+22          (c) HOPE admitted it characterized Plaintiff as having "partially completed" homework
+
+23   packets in one or more Form 3043 submissions to CDCR. (HOPE RFA No. 18.)
+
+24
+
+25          (d) In HOPE's Form Interrogatory 17.1 response, HOPE claimed it had determined that
+
+26   "multiple clients" at the Stockton facility successfully completed sex-offender treatment prior to
+
+27   discharge from parole. Yet when asked in Special Interrogatory No. 6 to identify any such client
+
+28   -- even using anonymized identifiers -- HOPE refused entirely, stating: "Responding Party cannot
+
+                                                    Page 8
+                    COMPLAINT FOR DAMAGES AND INJUNCTIVE RELIEF — NEWANFORBI v. SMITH, ET AL.
+ 1   and will not respond." This contradiction supports the inference that no pre-discharge treatment
+
+ 2   completion has ever occurred at the Stockton facility.
+
+ 3
+
+ 4          (e) HOPE admitted the existence of an Individualized Treatment Plan dated October 18,
+
+ 5   2023, authored by clinician Bernadette Marie Tassone, in Plaintiff's clinical file. (HOPE RFA No.
+
+ 6   10.) Palacios admitted this plan was never presented to Plaintiff for his review, signature,
+
+ 7   acknowledgment, or input. (Palacios RFA No. 8.) HOPE confirmed the plan was provided to
+
+ 8   CDCR but has never been revised. (HOPE SROG No. 14.) CASOMB's Maintenance and
+
+ 9   Aftercare Guidelines require that "the final determination regarding whether an individual has
+
+10   'completed' treatment should never come as a surprise to the client" and that "regular reviews of
+
+11   progress in which the treatment provider and client collaborate" are "necessary." HOPE's
+
+12   concealment of the Tassone plan violates these standards.
+
+13
+
+14          (f) When asked to state all reasons Plaintiff was not eligible for treatment completion at
+
+15   each CTM, HOPE gave the identical response for every CTM from August 2022 through August
+
+16   2025: "Plaintiff had not completed Block I of treatment." (HOPE SROG No. 11.) This rote,
+
+17   identical justification across seven CTMs spanning three years -- unchanged despite Plaintiff's
+
+18   continuous attendance and homework completion -- is the documentary fingerprint of a blanket
+
+19   policy, not individualized clinical judgment.
+
+20
+
+21                    E. Plaintiff's Enrollment and HOPE's False Representations
+
+22
+
+23          26. On or about March 5, 2021, Plaintiff was enrolled in HOPE's SOMP at the Stockton
+
+24   facility. At no time during intake, group sessions, individual sessions, or CTMs did HOPE
+
+25   disclose to Plaintiff that HOPE maintained a blanket retention policy under which no parolee
+
+26   would ever be determined to have completed treatment prior to discharge from parole. The
+
+27   existence of this policy was intentionally concealed from Plaintiff.
+
+28
+
+                                                     Page 9
+                    COMPLAINT FOR DAMAGES AND INJUNCTIVE RELIEF — NEWANFORBI v. SMITH, ET AL.
+ 1          27. In or about November 2022, HOPE clinician Pamela Akins, acting under the
+
+ 2   supervision and direction of site Director Katie Palacios, stated to Plaintiff in substance that
+
+ 3   individuals are titrating and completing the HOPE program, and that participants who complete
+
+ 4   their assignments and comply with treatment can titrate and complete. The clinician did not
+
+ 5   disclose that HOPE's blanket retention policy forecloses completion for all parolees prior to
+
+ 6   discharge.
+
+ 7
+
+ 8          28. In or about January 2024, during a group session at the Stockton facility, a HOPE
+
+ 9   clinician acting under the supervision and direction of Palacios repeated the substance of these
+
+10   representations.
+
+11
+
+12          29. In or about June 2024, a HOPE clinician stated to Plaintiff that she had personally
+
+13   checked with Palacios regarding Plaintiff's homework packets and was informed by Palacios that
+
+14   no homework completed by Plaintiff had ever been found in HOPE's records. This statement was
+
+15   false. Plaintiff had consistently and fully completed all assigned homework. As Palacios herself
+
+16   later admitted during a video-recorded group session in August 2025, HOPE routinely loses client
+
+17   homework packets.
+
+18
+
+19          30. Plaintiff justifiably relied on HOPE's representations by enrolling and continuously
+
+20   participating in HOPE's program from March 2021 through the present, structuring his CDL
+
+21   employment around HOPE's schedule, refraining from seeking an alternative provider, and
+
+22   foregoing earlier judicial relief under Penal Code Section 3008(d)(2). Plaintiff did not discover
+
+23   the impossibility of completion until he reviewed the Dwyer order in late 2025.
+
+24
+
+25                                        F. False Reports to CDCR
+
+26
+
+27          31. From 2021 through the present, Palacios (acting as HOPE's agent under policies set by
+
+28   CEO Shannon Smith) prepared and submitted treatment-status content to CDCR using CDCR
+
+                                                    Page 10
+                    COMPLAINT FOR DAMAGES AND INJUNCTIVE RELIEF — NEWANFORBI v. SMITH, ET AL.
+ 1   Form 3043 and contributed to CDCR's Discharge Review Report (Form 1502-DR). These forms
+
+ 2   were transmitted to CDCR agents via United States mail and electronic mail.
+
+ 3
+
+ 4           32. Palacios's CTM submissions included representations in substance that: "Subject
+
+ 5   partially participates in discussion. Subject has partially completed homework packets. Subject
+
+ 6   demonstrates partial understanding of the subject material. Subject is fixated on lawsuits instead
+
+ 7   of subject material." These submissions characterized Plaintiff's status as not having completed
+
+ 8   sex-offender treatment. These are statements of purported historical fact -- what assignments
+
+ 9   Plaintiff completed and whether treatment is complete -- not opinions or clinical judgments.
+
+10
+
+11           33. These representations were false. HOPE admitted that it characterized Plaintiff as
+
+12   having "partially completed" homework in its Form 3043 submissions. (HOPE RFA No. 18.) Yet
+
+13   Plaintiff had completed all assigned homework. The characterization of Plaintiff as not having
+
+14   completed treatment was the predetermined output of HOPE's blanket retention policy, not the
+
+15   product of individualized clinical assessment.
+
+16
+
+17           34. On or about March 31, 2026, Parole Agent Long Moua sent an email to HOPE (with
+
+18   Supervisor Gary Noguchi copied) acknowledging that Plaintiff had experienced "a technological
+
+19   error" that prevented him from joining a group session, yet instructing HOPE to "mark him as a
+
+20   no show." This directive -- instructing a treatment provider to record a false attendance record
+
+21   despite acknowledging the absence was not Plaintiff's fault -- exemplifies the collaborative
+
+22   mechanism by which HOPE and CDCR agents generated false records that were then used
+
+23   against Plaintiff.
+
+24
+
+25                                G. The November 2025 Discharge Review
+
+26
+
+27           35. The November 2025 Discharge Review Report (CDCR Form 1502-DR), signed by
+
+28   Parole Agent Long Moua on November 14, 2025 and Unit Supervisor Gary Noguchi on
+
+                                                     Page 11
+                     COMPLAINT FOR DAMAGES AND INJUNCTIVE RELIEF — NEWANFORBI v. SMITH, ET AL.
+ 1   November 19, 2025, incorporated HOPE's reporting expressly: "Subject's Sex Offender
+
+ 2   Treatment Progress (HOPE): 10/15/2024 Stable 6/LSCMI 5. Level 2 below average Risk ... Core
+
+ 3   Phase of treatment and working in Block 1 Module 4/7 ... HOPE SOT recommends continued
+
+ 4   treatment ... Continued DAPO supervision is warranted and recommended." The agent
+
+ 5   recommendation was "Discharge Denied/No Action."
+
+ 6
+
+ 7          36. CDCR justifiably relied on HOPE's representations because HOPE was the sole
+
+ 8   CASOMB-certified provider serving the Stockton region, and DAPO institutionally defers to the
+
+ 9   treatment provider's determinations. But for HOPE's non-completion characterization and its
+
+10   repeated false partial homework reports, the November 2025 discharge review would not have
+
+11   had the treatment-based justification on which it expressly rested.
+
+12
+
+13          37. HOPE's false reports to CDCR directly caused Plaintiff's continued deprivation of
+
+14   liberty, including: (a) continued GPS monitoring restricting his movement; (b) curfew restrictions
+
+15   limiting his employment opportunities; (c) mandatory HOPE attendance forcing him to miss
+
+16   work; and (d) denial of parole discharge. These deprivations shock the conscience under County
+
+17   of Sacramento v. Lewis, 523 U.S. 833 (1998), because HOPE knowingly fabricated
+
+18   treatment-status evidence to prolong Plaintiff's supervision for financial gain.
+
+19
+
+20                                  H. Retaliation for Protected Speech
+
+21
+
+22          38. Prior to August 2025, Plaintiff exercised his First Amendment rights by making
+
+23   complaints to HOPE regarding HOPE's retention policy, loss of homework records, clinician
+
+24   turnover, phase progression, and treatment completion.
+
+25
+
+26          39. On August 19, 2025, during a CTM held at a CDCR parole office in Stockton,
+
+27   Palacios made retaliatory statements in the presence of Plaintiff's parole agents, including that
+
+28   Plaintiff was "disruptive," a "ringleader," "abhorrent," "often disrespectful," and that his
+
+                                                    Page 12
+                    COMPLAINT FOR DAMAGES AND INJUNCTIVE RELIEF — NEWANFORBI v. SMITH, ET AL.
+ 1   demeanor was "an acting job." Palacios stated in substance that "when you start complaining then
+
+ 2   the other guys chime in," explicitly linking her characterization of Plaintiff to his protected
+
+ 3   complaints about HOPE's practices.
+
+ 4
+
+ 5          40. These statements were made in a CTM that directly determined Plaintiff's parole
+
+ 6   conditions. A reasonable person in Plaintiff's position would have been deterred from exercising
+
+ 7   his right to complain for fear of adverse parole consequences.
+
+ 8
+
+ 9          41. On January 6, 2026, the day Plaintiff's complaint was served, Palacios prepared a
+
+10   same-day collateral note documenting notification to her supervisor Mark Delucchi, Dr. Carrie
+
+11   Shinske (Executive Director of Clinical Operations), and CEO Shannon Smith, followed by a
+
+12   forwarded email to CDCR contacts titled "Fwd: Newanforbi." This same-day notification chain,
+
+13   escalating directly from site Director to CEO to CDCR agents, is consistent with a pattern of
+
+14   retaliatory coordination.
+
+15
+
+16               I. Shannon Smith's Personal Involvement and Deliberate Indifference
+
+17
+
+18          42. Shannon Smith, as CEO and Founder of HOPE, personally approved, implemented,
+
+19   and enforced the blanket retention policy. Smith is the only individual with authority to modify
+
+20   HOPE's corporate policies. Smith directed the Clinical Operational Manual containing both the
+
+21   blanket no-discharge prohibition and the illusory graduation pathway.
+
+22
+
+23          43. Smith personally assigned homework to Plaintiff, including the "Prep: Wheel of Life
+
+24   Homework" assigned on July 5, 2021. Smith received notice of this lawsuit on January 6, 2026
+
+25   via the Palacios notification chain and took no corrective action regarding HOPE's blanket
+
+26   retention policy.
+
+27
+
+28          44. Smith knew the blanket retention policy violated Plaintiff's constitutional rights. The
+
+                                                    Page 13
+                    COMPLAINT FOR DAMAGES AND INJUNCTIVE RELIEF — NEWANFORBI v. SMITH, ET AL.
+ 1   Dwyer order was issued on March 20, 2023, and HOPE's own employee was the witness whose
+
+ 2   testimony established the policy's unlawfulness. The September 2024 Clinical Operational
+
+ 3   Manual, issued eighteen months after Dwyer, continued to prohibit discharge. HOPE admitted in
+
+ 4   verified discovery responses that it did not modify its policies after the April 17, 2025 effective
+
+ 5   date of 15 CCR Section 3574(f)(1). Smith acted with deliberate indifference.
+
+ 6
+
+ 7                                   J. Financial Incentive Architecture
+
+ 8
+
+ 9          45. HOPE's fee-for-service contract with CDCR creates a direct financial incentive to
+
+10   retain clients indefinitely. Under Alameda County Probation Department Procurement Contract
+
+11   No. 26374 (First Amendment approved January 9, 2024), HOPE bills $100 per group
+
+12   psychotherapy session, $100 per CTM, $200 per individual session, $125 per quarterly treatment
+
+13   plan, and $500 per polygraph examination. A psychosexual evaluation is billed at $1,800. No fee
+
+14   is paid for successful treatment completion.
+
+15
+
+16          46. At baseline billing rates, a single parolee retained in treatment for a ten-year parole
+
+17   term generates approximately $106,000 to $111,000 in guaranteed corporate revenue. Every
+
+18   successful treatment completion eliminates a recurring revenue stream. HOPE's blanket retention
+
+19   policy serves a direct corporate financial interest.
+
+20
+
+21          47. HOPE's Clinical Director job description, produced in discovery, states that the
+
+22   position includes "Profit Sharing and Competitive compensation with performance bonus" and
+
+23   lists "50-60% utilization target" and "Accountable for operational performance of a clinic/site."
+
+24   The job description confirms the position is "bonus eligible." These compensation structures tie
+
+25   Clinical Director pay to client volume and clinic revenue, creating a financial incentive at the
+
+26   supervisory level to retain clients rather than complete them.
+
+27
+
+28                                                K. Damages
+
+                                                    Page 14
+                    COMPLAINT FOR DAMAGES AND INJUNCTIVE RELIEF — NEWANFORBI v. SMITH, ET AL.
+ 1          48. As a direct and proximate result of Defendants' conduct, Plaintiff has suffered and
+
+ 2   continues to suffer the following injuries:
+
+ 3
+
+ 4          49. Economic damages. Plaintiff maintained active, recurring commercial driving
+
+ 5   relationships with United Road, Keurig Dr Pepper, Tiger Lines LLC, US-1 Shorthaul, Lazer Spot,
+
+ 6   Inc., and Centerline Drivers. Due to HOPE's false reporting and the resulting parole constraints,
+
+ 7   Plaintiff was forced to resign from United Road in January 2022 after his parole agent threatened
+
+ 8   a parole violation for a scheduling conflict with mandatory treatment. Federal W-2 wage
+
+ 9   statements document lost CDL wages of no less than $109,408 for the years 2022 through 2024,
+
+10   measured against a but-for earning capacity of approximately $72,000 per year.
+
+11
+
+12          50. Loss of liberty. Plaintiff remains subject to GPS monitoring, curfew restrictions,
+
+13   mandatory treatment attendance, and parole supervision conditions that would not have been
+
+14   imposed or continued but for HOPE's false treatment-status reports and blanket retention policy.
+
+15
+
+16          51. Emotional distress. Plaintiff has suffered severe emotional distress, including
+
+17   anxiety, depression, feelings of helplessness, and mental anguish, caused by the knowledge that
+
+18   his liberty, career, and livelihood are controlled by a provider that maintains a policy making his
+
+19   completion impossible.
+
+20
+
+21          52. Reputational harm. HOPE's false characterizations of Plaintiff as having only
+
+22   partially completed homework and being "fixated on lawsuits," "disruptive," a "ringleader," and
+
+23   "abhorrent" were communicated to CDCR agents who determine Plaintiff's parole conditions.
+
+24
+
+25                                       V. CLAIMS FOR RELIEF
+
+26
+
+27                                                 COUNT I
+
+28                             42 U.S.C. Section 1983 -- Individual Capacity
+
+                                                    Page 15
+                    COMPLAINT FOR DAMAGES AND INJUNCTIVE RELIEF — NEWANFORBI v. SMITH, ET AL.
+ 1                                  (Against Defendant Shannon Smith)
+
+ 2
+
+ 3          53. Plaintiff incorporates paragraphs 1 through 52 as though fully set forth herein.
+
+ 4
+
+ 5          54. Smith personally approved, implemented, and enforced the blanket retention policy.
+
+ 6   Smith is the sole individual with authority to modify HOPE's policies. Smith knew the policy
+
+ 7   violated Plaintiff's constitutional rights: the Dwyer order was issued in March 2023, and HOPE's
+
+ 8   own employee's sworn testimony established the policy's unlawfulness. Smith's September 2024
+
+ 9   Clinical Operational Manual continued to prohibit discharge eighteen months later. HOPE
+
+10   admitted it did not modify its policies after the April 17, 2025 effective date of 15 CCR Section
+
+11   3574(f)(1). Smith acted with deliberate indifference.
+
+12
+
+13          55. As a direct and proximate result, Plaintiff suffered deprivation of his rights under the
+
+14   First and Fourteenth Amendments. Plaintiff is entitled to compensatory and punitive damages.
+
+15   Plaintiff specifically seeks punitive damages against Smith in her individual capacity to punish
+
+16   and deter her deliberate indifference to Plaintiff's constitutional rights and her personal approval
+
+17   of HOPE's unlawful policy, which she maintained despite judicial condemnation, regulatory
+
+18   prohibition, and notice of this lawsuit.
+
+19
+
+20                                                 COUNT II
+
+21                               42 U.S.C. Section 1983 -- Monell Liability
+
+22                           (Against Defendant HOPE Psychotherapy, Inc.)
+
+23
+
+24          56. Plaintiff incorporates paragraphs 1 through 52 as though fully set forth herein.
+
+25
+
+26          57. HOPE, acting under color of state law, maintained a policy, custom, or practice of: (a)
+
+27   applying a blanket retention policy under which no parolee could be deemed to have completed
+
+28   sex offender treatment prior to parole discharge; (b) submitting false reports to CDCR regarding
+
+                                                    Page 16
+                    COMPLAINT FOR DAMAGES AND INJUNCTIVE RELIEF — NEWANFORBI v. SMITH, ET AL.
+ 1   Plaintiff's treatment status and homework completion; and (c) retaliating against Plaintiff for
+
+ 2   exercising his First Amendment rights.
+
+ 3
+
+ 4          58. HOPE's blanket retention policy was the moving force behind the constitutional
+
+ 5   violations alleged herein. The policy was formulated and approved at HOPE's Hayward
+
+ 6   headquarters by CEO Shannon Smith, disseminated through the Clinical Operational Manual, and
+
+ 7   implemented uniformly at all facilities including Stockton. HOPE's verified discovery admission
+
+ 8   that it recommended continued treatment and never recommended completion at every CTM
+
+ 9   (HOPE RFA No. 4) confirms the policy was a corporate directive, not the product of individual
+
+10   clinical judgment.
+
+11
+
+12          59. As a direct and proximate result, Plaintiff suffered deprivation of his rights under the
+
+13   First Amendment (retaliation for protected speech) and the Fourteenth Amendment (deprivation
+
+14   of liberty without due process through false reports and a blanket policy that eliminates
+
+15   individualized assessment). Plaintiff is entitled to compensatory and punitive damages.
+
+16
+
+17                                                COUNT III
+
+18                            California Civil Code Section 52.1 (Bane Act)
+
+19                                         (Against All Defendants)
+
+20
+
+21          60. Plaintiff incorporates paragraphs 1 through 52 as though fully set forth herein.
+
+22
+
+23          61. Plaintiff had rights secured by the Constitution and laws of the State of California and
+
+24   the United States, including: (a) the right under Penal Code Section 3008(d)(2) to have SOMP
+
+25   participation determined on an individualized basis; (b) the right under 15 CCR Section
+
+26   3574(f)(1) to have treatment completion and parole discharge maintained as legally separate
+
+27   decisions; (c) First Amendment rights to petition and complain; and (d) Fourteenth Amendment
+
+28   rights to liberty and due process.
+
+                                                    Page 17
+                    COMPLAINT FOR DAMAGES AND INJUNCTIVE RELIEF — NEWANFORBI v. SMITH, ET AL.
+ 1           62. Defendants interfered with Plaintiff's rights by threat, intimidation, and coercion,
+
+ 2   including: (a) the practical coercion exerted through HOPE's exclusive gatekeeping role as sole
+
+ 3   CASOMB-certified provider in Stockton, with knowledge that its non-completion
+
+ 4   characterizations would result in continued GPS monitoring, curfew, and threat of parole
+
+ 5   violation; (b) Palacios's August 19, 2025 retaliatory CTM statements labeling Plaintiff as
+
+ 6   "disruptive," a "ringleader," and "abhorrent," made in front of his parole agents, explicitly linking
+
+ 7   those characterizations to Plaintiff's protected complaints; (c) threatening Plaintiff with parole
+
+ 8   violations for scheduling conflicts with mandatory treatment; and (d) the coercive linkage
+
+ 9   between acceptance of the blanket retention policy and avoidance of parole-violation
+
+10   consequences.
+
+11
+
+12           63. Each act was a separate violation of the Bane Act. Plaintiff is entitled to actual
+
+13   damages, statutory damages of $25,000 for each violation, attorney's fees and costs, and
+
+14   injunctive relief.
+
+15
+
+16                                                 COUNT IV
+
+17                                 Fraud and Negligent Misrepresentation
+
+18                                          (Against All Defendants)
+
+19
+
+20           64. Plaintiff incorporates paragraphs 1 through 52 as though fully set forth herein.
+
+21
+
+22           65. Defendants made affirmative misrepresentations to Plaintiff and to CDCR, including
+
+23   representations that Plaintiff had an individualized path to treatment completion, that his
+
+24   non-completion status reflected individualized clinical assessment, and that he had only "partially
+
+25   completed" homework packets. Defendants further concealed: (a) the blanket retention policy; (b)
+
+26   the October 18, 2023 Tassone Treatment Completion Plan, which was placed in Plaintiff's file
+
+27   and sent to CDCR but never shown to Plaintiff; and (c) that HOPE's internal policy, not Plaintiff's
+
+28   performance, precluded completion.
+
+                                                     Page 18
+                     COMPLAINT FOR DAMAGES AND INJUNCTIVE RELIEF — NEWANFORBI v. SMITH, ET AL.
+ 1          66. These representations and omissions were false and material. HOPE's actual operating
+
+ 2   policy was the blanket retention policy condemned in Dwyer. Plaintiff's homework was in fact
+
+ 3   fully completed; any absence from HOPE's files was HOPE's loss or mishandling, as Palacios
+
+ 4   admitted on video in August 2025. Defendants knew these representations were false: the policy
+
+ 5   was admitted under oath by Dr. Loree in March 2023; HOPE admitted in discovery that it
+
+ 6   recommended continued treatment and never recommended completion at every CTM (HOPE
+
+ 7   RFA No. 4); and Palacios admitted she never recommended Plaintiff for completion (Palacios
+
+ 8   RFA No. 6).
+
+ 9
+
+10          67. Plaintiff justifiably relied on Defendants' representations by enrolling and
+
+11   continuously participating from March 2021 through the present, foregoing legal action, and
+
+12   structuring his CDL career around HOPE's schedule. As a direct and proximate result, Plaintiff
+
+13   suffered economic losses, emotional distress, and loss of liberty as described herein.
+
+14
+
+15                                                 COUNT V
+
+16                                 18 U.S.C. Section 1962(c)-(d) (RICO)
+
+17                                         (Against All Defendants)
+
+18
+
+19          68. Plaintiff incorporates paragraphs 1 through 52 as though fully set forth herein.
+
+20
+
+21          69. The enterprise is an association-in-fact under 18 U.S.C. Section 1961(4), consisting
+
+22   of: HOPE Psychotherapy, Inc. (the corporate entity); Shannon Smith (CEO and policy-maker);
+
+23   Katie Palacios (Clinical Director who implemented the policy and submitted false reports); Dr.
+
+24   Cristina Loree (Executive Director of Training and Development, who testified to the policy
+
+25   under oath in Dwyer); Dr. Drew Kingston (Chief Clinical Officer); Dr. Carrie Shinske (Executive
+
+26   Director of Clinical Operations); Kristine Hansen (Director of Quality and Compliance); and
+
+27   front-line clinicians who carried out the policy. The enterprise has a common purpose (retaining
+
+28   parolees in treatment to generate fee-for-service revenue), ongoing relationships (corporate
+
+                                                    Page 19
+                    COMPLAINT FOR DAMAGES AND INJUNCTIVE RELIEF — NEWANFORBI v. SMITH, ET AL.
+ 1   hierarchy, training, supervision, CTMs), and longevity (operating since at least 2021 at the
+
+ 2   Stockton facility and since 2008 statewide).
+
+ 3
+
+ 4          70. Defendants conducted the affairs of this enterprise through a pattern of racketeering
+
+ 5   activity in violation of 18 U.S.C. Section 1962(c), consisting of at least two predicate acts within
+
+ 6   ten years:
+
+ 7
+
+ 8          (a) Mail Fraud (18 U.S.C. Section 1341): From 2021 through the present, Defendants
+
+ 9   used the United States mails to transmit false CDCR Form 3043 reports and Discharge Review
+
+10   Reports stating Plaintiff had not completed treatment and had only partially completed
+
+11   homework, when in fact the non-completion characterization was the predetermined output of a
+
+12   blanket retention policy. Each mailing constitutes a separate predicate act.
+
+13
+
+14          (b) Wire Fraud (18 U.S.C. Section 1343): From 2021 through the present, Defendants
+
+15   transmitted false treatment-status reports to CDCR via electronic mail, including the November
+
+16   2025 Discharge Review Report content. Each transmission constitutes a separate predicate act.
+
+17
+
+18          (c) Obstruction (18 U.S.C. Section 1519): Defendants destroyed, altered, or failed to
+
+19   preserve homework completion records, audit logs, and metadata, knowing such records were
+
+20   relevant to pending or anticipated litigation and to CDCR's discharge review process. Palacios
+
+21   admitted on video in August 2025 that HOPE routinely loses client homework packets,
+
+22   confirming the systematic failure to preserve records that would have disproved HOPE's false
+
+23   "partial completion" reports.
+
+24
+
+25          71. The predicate acts share a common purpose (revenue retention), common participants
+
+26   (HOPE, Smith, and their agents), common method (false reports to a government agency), and
+
+27   common victims (Plaintiff and similarly situated parolees). The pattern was open-ended and
+
+28   continued through at least November 2025.
+
+                                                    Page 20
+                    COMPLAINT FOR DAMAGES AND INJUNCTIVE RELIEF — NEWANFORBI v. SMITH, ET AL.
+ 1          72. As a direct and proximate result of Defendants' pattern of racketeering activity,
+
+ 2   Plaintiff suffered injury to his business and property, including lost wages exceeding $109,408,
+
+ 3   continued parole supervision, and deprivation of his CDL career. Plaintiff is entitled to treble
+
+ 4   damages under 18 U.S.C. Section 1964(c), plus reasonable attorney's fees and costs.
+
+ 5
+
+ 6          73. Defendants further conspired to violate 18 U.S.C. Section 1962(c) in violation of 18
+
+ 7   U.S.C. Section 1962(d).
+
+ 8
+
+ 9                                      VI. PRAYER FOR RELIEF
+
+10
+
+11          WHEREFORE, Plaintiff respectfully requests that this Court:
+
+12
+
+13          (a) Enter judgment in favor of Plaintiff and against Defendants on all claims;
+
+14
+
+15          (b) Award Plaintiff compensatory damages for economic loss, emotional distress, loss of
+
+16   liberty, and reputational harm, according to proof;
+
+17
+
+18          (c) Award Plaintiff treble damages on the RICO claim pursuant to 18 U.S.C. Section
+
+19   1964(c);
+
+20
+
+21          (d) Award Plaintiff punitive damages against Defendant Shannon Smith in her individual
+
+22   capacity, to punish and deter her deliberate indifference to Plaintiff's constitutional rights and her
+
+23   personal approval and maintenance of HOPE's unlawful policy;
+
+24
+
+25          (e) Award Plaintiff statutory damages of $25,000 per violation of the Bane Act pursuant to
+
+26   Civil Code Section 52.1;
+
+27
+
+28          (f) Issue a declaratory judgment that HOPE's blanket retention policy violates 42 U.S.C.
+
+                                                    Page 21
+                    COMPLAINT FOR DAMAGES AND INJUNCTIVE RELIEF — NEWANFORBI v. SMITH, ET AL.
+ 1   Section 1983, 15 CCR Section 3574(f)(1), and Penal Code Section 3008(d)(2);
+
+ 2
+
+ 3          (g) Issue a permanent injunction under 42 U.S.C. Section 1983 and 18 U.S.C. Section
+
+ 4   1964(a) barring HOPE from applying its blanket retention policy to Plaintiff or any other parolee,
+
+ 5   and requiring HOPE to conduct individualized assessments of treatment completion based on
+
+ 6   published, objective clinical criteria, consistent with CASOMB's Treatment Completion
+
+ 7   Guidelines, within thirty (30) days of this Order;
+
+ 8
+
+ 9          (h) Award Plaintiff reasonable attorney's fees and costs pursuant to 42 U.S.C. Section
+
+10   1988, 18 U.S.C. Section 1964(c), and Civil Code Section 52.1(i);
+
+11
+
+12          (i) Grant such other and further relief as the Court deems just and proper.
+
+13
+
+14                                  VII. DEMAND FOR JURY TRIAL
+
+15
+
+16          Plaintiff demands a trial by jury on all issues so triable.
+
+17
+
+18                                          VIII. VERIFICATION
+
+19
+
+20          I, BRENDAN NGEHSI NEWANFORBI, declare under penalty of perjury under the laws
+
+21   of the United States of America that I have read the foregoing Complaint, that the factual
+
+22   allegations therein are true and correct to the best of my knowledge, information, and belief, and
+
+23   that the legal contentions therein are warranted by existing law or by a nonfrivolous argument for
+
+24   extending, modifying, or reversing existing law or for establishing new law.
+
+25
+
+26
+
+27
+
+28
+
+                                                    Page 22
+                    COMPLAINT FOR DAMAGES AND INJUNCTIVE RELIEF — NEWANFORBI v. SMITH, ET AL.
+ 1                                                                   Dated: July 16, 2026
+
+ 2
+
+ 3
+
+ 4                                          ___________________________________
+
+ 5                                               BRENDAN NGEHSI NEWANFORBI
+
+ 6                                                                    Plaintiff, In Pro Per
+
+ 7
+
+ 8
+
+ 9
+
+10
+
+11
+
+12
+
+13
+
+14
+
+15
+
+16
+
+17
+
+18
+
+19
+
+20
+
+21
+
+22
+
+23
+
+24
+
+25
+
+26
+
+27
+
+28
+
+                                     Page 23
+     COMPLAINT FOR DAMAGES AND INJUNCTIVE RELIEF — NEWANFORBI v. SMITH, ET AL.
+ 1                                     CERTIFICATE OF SERVICE
+
+ 2
+
+ 3          I, BRENDAN NGEHSI NEWANFORBI, declare under penalty of perjury under the laws
+
+ 4   of the United States of America that on July 16, 2026, I caused a true and correct copy of the
+
+ 5   foregoing COMPLAINT FOR DAMAGES AND INJUNCTIVE RELIEF to be served upon
+
+ 6   the following by United States first-class mail, postage prepaid, and additionally by email:
+
+ 7
+
+ 8
+
+ 9          Defendant SHANNON SMITH (individually):
+
+10          c/o HOPE Psychotherapy, Inc.
+
+11          1245 B Street
+
+12          Hayward, CA 94541
+
+13
+
+14          Defendant HOPE PSYCHOTHERAPY, INC.:
+
+15          c/o Shannon Smith, CEO
+
+16          1245 B Street
+
+17          Hayward, CA 94541
+
+18
+
+19          Counsel of Record (courtesy copy):
+
+20          Blaze Van Dine, Esq.
+
+21          SIMS, LAWRENCE & BROGHAMMER
+
+22          1478 Stone Point Drive, Suite 450
+
+23          Roseville, CA 95661
+
+24          Email: blaze@sims-law.net; SLB-eservice@sims-law.net
+
+25
+
+26
+
+27
+
+28
+
+                                                    Page 24
+                    COMPLAINT FOR DAMAGES AND INJUNCTIVE RELIEF — NEWANFORBI v. SMITH, ET AL.
+ 1                                 Executed on July 16, 2026, at Stockton, California.
+
+ 2
+
+ 3
+
+ 4                                          ___________________________________
+
+ 5                                               BRENDAN NGEHSI NEWANFORBI
+
+ 6                                                                    Plaintiff, In Pro Per
+
+ 7
+
+ 8
+
+ 9
+
+10
+
+11
+
+12
+
+13
+
+14
+
+15
+
+16
+
+17
+
+18
+
+19
+
+20
+
+21
+
+22
+
+23
+
+24
+
+25
+
+26
+
+27
+
+28
+
+                                     Page 25
+     COMPLAINT FOR DAMAGES AND INJUNCTIVE RELIEF — NEWANFORBI v. SMITH, ET AL.
+

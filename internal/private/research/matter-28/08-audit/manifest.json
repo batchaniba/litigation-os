@@ -1,0 +1,501 @@
+{
+  "version": 1,
+  "created": "2026-10-25",
+  "timezone": "America/Los_Angeles",
+  "baseline_commit": "eaacea3e448e8296ca7747b5765b4ccb5d15cb4b",
+  "scope": "private_hearing_preparation",
+  "source_asset_count": 41,
+  "preserved_pdf_count": 18,
+  "sources": [
+    {
+      "path": "internal/private/research/matter-28/01-portfolio-records/Dkt 11 - Order Regarding Filing Fee IFP and Directing Service (Filed Aug 26 2026).pdf",
+      "git_blob_sha": "fce97ba3759befd2c16d0be20daf8632862d9431",
+      "source_path": "documents/matter-28/Dkt 11 - Order Regarding Filing Fee IFP and Directing Service (Filed Aug 26 2026).pdf",
+      "source_ref": "eaacea3e448e8296ca7747b5765b4ccb5d15cb4b",
+      "category": "court_record_or_served_document",
+      "size": 134726,
+      "sha256": "1ef8feea410fe7c5bda2d53e8e9ee2a8c12d07300a2875c3ba7dc807824d832a",
+      "sha256_status": "registered_manifest_hash_not_independently_rehashed"
+    },
+    {
+      "path": "internal/private/research/matter-28/01-portfolio-records/Dkt 13 - Proof of Service of Rule 4 Packet on SLB (Filed Sep 3 2026).pdf",
+      "git_blob_sha": "931c7bd5035540dd4fd34667834e823ada0d83ad",
+      "source_path": "documents/matter-28/Dkt 13 - Proof of Service of Rule 4 Packet on SLB (Filed Sep 3 2026).pdf",
+      "source_ref": "eaacea3e448e8296ca7747b5765b4ccb5d15cb4b",
+      "category": "court_record_or_served_document",
+      "size": 683716,
+      "sha256": "d775ed4ed918f1aadb3d66403014a40ba948fe332666ee81cf6ef6945822eeae",
+      "sha256_status": "registered_manifest_hash_not_independently_rehashed"
+    },
+    {
+      "path": "internal/private/research/matter-28/01-portfolio-records/Dkt 15 - Defendants Smith and HOPE Motion to Dismiss (Filed Sep 21 2026).pdf",
+      "git_blob_sha": "4a141ca9872f73eb64abd0e8a65b7a215fb34970",
+      "source_path": "documents/matter-28/Dkt 15 - Defendants Smith and HOPE Motion to Dismiss (Filed Sep 21 2026).pdf",
+      "source_ref": "eaacea3e448e8296ca7747b5765b4ccb5d15cb4b",
+      "category": "court_record_or_served_document",
+      "size": 506291,
+      "sha256": "b8af72cf0bc4224430262c833b8fa156b932ad2fe04697f0fe039245e0832dac",
+      "sha256_status": "independently_rehashed"
+    },
+    {
+      "path": "internal/private/research/matter-28/01-portfolio-records/Dkt 15-1 - Defendants Smith and HOPE Request for Judicial Notice ISO Motion to Dismiss (Filed Sep 21 2026).pdf",
+      "git_blob_sha": "3cb712361df8e9a598ffdb997e7f9d049102ea21",
+      "source_path": "documents/matter-28/Dkt 15-1 - Defendants Smith and HOPE Request for Judicial Notice ISO Motion to Dismiss (Filed Sep 21 2026).pdf",
+      "source_ref": "eaacea3e448e8296ca7747b5765b4ccb5d15cb4b",
+      "category": "court_record_or_served_document",
+      "size": 1091580,
+      "sha256": "39cfc036dd887ea33ce4105402d9b7d72c72f6d44c712061815f6a58a2b74709",
+      "sha256_status": "registered_manifest_hash_not_independently_rehashed"
+    },
+    {
+      "path": "internal/private/research/matter-28/01-portfolio-records/Dkt 15-2 - Proposed Order on Defendants Smith and HOPE Motion to Dismiss (Filed Sep 21 2026).pdf",
+      "git_blob_sha": "d125a6cbb8ccff4226eb46e3875304ef79c57b53",
+      "source_path": "documents/matter-28/Dkt 15-2 - Proposed Order on Defendants Smith and HOPE Motion to Dismiss (Filed Sep 21 2026).pdf",
+      "source_ref": "eaacea3e448e8296ca7747b5765b4ccb5d15cb4b",
+      "category": "court_record_or_served_document",
+      "size": 91618,
+      "sha256": "26363f0e2feb3ff20cd52ef50c69fa61d3ced9fa17f8eb7fe8494ba7c4548c69",
+      "sha256_status": "registered_manifest_hash_not_independently_rehashed"
+    },
+    {
+      "path": "internal/private/research/matter-28/01-portfolio-records/Dkt 28 - Joint Case Management Statement (Filed Oct 5 2026).pdf",
+      "git_blob_sha": "854407811d17954452461fdf221e581c4b061018",
+      "source_path": "documents/matter-28/Dkt 28 - Joint Case Management Statement (Filed Oct 5 2026).pdf",
+      "source_ref": "eaacea3e448e8296ca7747b5765b4ccb5d15cb4b",
+      "category": "court_record_or_served_document",
+      "size": 231601,
+      "sha256": "0329c8b773565272695a813ad5a5fc9ee80f8abbdfa3f1a1c95202099b1d0f1b",
+      "sha256_status": "registered_manifest_hash_not_independently_rehashed"
+    },
+    {
+      "path": "internal/private/research/matter-28/01-portfolio-records/Dkt 29 - Order Continuing Case Management Conference (Filed Oct 8 2026).pdf",
+      "git_blob_sha": "3da5248f8b96201682f2f417ff83d95e91337a1c",
+      "source_path": "documents/matter-28/Dkt 29 - Order Continuing Case Management Conference (Filed Oct 8 2026).pdf",
+      "source_ref": "eaacea3e448e8296ca7747b5765b4ccb5d15cb4b",
+      "category": "court_record_or_served_document",
+      "size": 132113,
+      "sha256": "abc170af2789df9dc5686394e6d50031046f46ca52c84b79ec6d84de3b49b6d1",
+      "sha256_status": "registered_manifest_hash_not_independently_rehashed"
+    },
+    {
+      "path": "internal/private/research/matter-28/01-portfolio-records/Dkt_30-1_-_Defendants_Smith_and_HOPE_Supplemental_Request_for_Judicial_Notice_ISO_MTD__N.D._Cal._3-26-cv-07504-LJC___Filed_Oct_13_2026__3ed9.pdf",
+      "git_blob_sha": "30cfdcac7e3477a7c832581fc96c6ad08c89c250",
+      "source_path": "documents/matter-28/Dkt_30-1_-_Defendants_Smith_and_HOPE_Supplemental_Request_for_Judicial_Notice_ISO_MTD__N.D._Cal._3-26-cv-07504-LJC___Filed_Oct_13_2026__3ed9.pdf",
+      "source_ref": "eaacea3e448e8296ca7747b5765b4ccb5d15cb4b",
+      "category": "court_record_or_served_document",
+      "size": 208497,
+      "sha256": "34300b16f443e3303226f87b0f3b6ea7dd7f34c4135553674086fbefd63b4081",
+      "sha256_status": "independently_rehashed"
+    },
+    {
+      "path": "internal/private/research/matter-28/01-portfolio-records/Dkt_30-2_-_Certificate_of_Service_for_Reply_and_Supplemental_RFJN__N.D._Cal._3-26-cv-07504-LJC___Filed_Oct_13_2026__04a3.pdf",
+      "git_blob_sha": "09318e4ba56ce44050d8bbc0c83583806cc97d91",
+      "source_path": "documents/matter-28/Dkt_30-2_-_Certificate_of_Service_for_Reply_and_Supplemental_RFJN__N.D._Cal._3-26-cv-07504-LJC___Filed_Oct_13_2026__04a3.pdf",
+      "source_ref": "eaacea3e448e8296ca7747b5765b4ccb5d15cb4b",
+      "category": "court_record_or_served_document",
+      "size": 122005,
+      "sha256": "6bbe56b2c933563ebb9055a3d9752f8a3641bea8a7a835113e671b4d60737ea8",
+      "sha256_status": "registered_manifest_hash_not_independently_rehashed"
+    },
+    {
+      "path": "internal/private/research/matter-28/01-portfolio-records/Dkt_30_-_Defendants_Smith_and_HOPE_Reply_ISO_Motion_to_Dismiss__N.D._Cal._3-26-cv-07504-LJC___Filed_Oct_13_2026__8fc9.pdf",
+      "git_blob_sha": "d7e867f2ed7867c8e8519b4decfcdb35c1a4643c",
+      "source_path": "documents/matter-28/Dkt_30_-_Defendants_Smith_and_HOPE_Reply_ISO_Motion_to_Dismiss__N.D._Cal._3-26-cv-07504-LJC___Filed_Oct_13_2026__8fc9.pdf",
+      "source_ref": "eaacea3e448e8296ca7747b5765b4ccb5d15cb4b",
+      "category": "court_record_or_served_document",
+      "size": 232419,
+      "sha256": "0bf240f05eff21b580df3923f2c56e834cf1b2145741c8ad61a694af65e1f595",
+      "sha256_status": "registered_manifest_hash_not_independently_rehashed"
+    },
+    {
+      "path": "internal/private/research/matter-28/01-portfolio-records/Doc 9 - Notice of Payment of Filing Fee and Filing of State Court Decision (filed Jul 30 2026).pdf",
+      "git_blob_sha": "5c9ab90974a2abb2eb8b04ad66f9b74b717c800c",
+      "source_path": "documents/matter-28/Doc 9 - Notice of Payment of Filing Fee and Filing of State Court Decision (filed Jul 30 2026).pdf",
+      "source_ref": "eaacea3e448e8296ca7747b5765b4ccb5d15cb4b",
+      "category": "court_record_or_served_document",
+      "size": 1062754,
+      "sha256": "95c056cd58ef2d6f9cafb4a0592f139444bebb0cc719ddbee5168ac40c45e0a8",
+      "sha256_status": "registered_manifest_hash_not_independently_rehashed"
+    },
+    {
+      "path": "internal/private/research/matter-28/01-portfolio-records/Plaintiff's Rule 26(a)(1) Initial Disclosures - Nforbi v Smith 3-26-cv-07504-LJC (Signed, Served Oct 14 2026).pdf",
+      "git_blob_sha": "9af2c18e19a70678b551be1b9d82c2fe54b415d9",
+      "source_path": "documents/matter-28/Plaintiff's Rule 26(a)(1) Initial Disclosures - Nforbi v Smith 3-26-cv-07504-LJC (Signed, Served Oct 14 2026).pdf",
+      "source_ref": "eaacea3e448e8296ca7747b5765b4ccb5d15cb4b",
+      "category": "court_record_or_served_document",
+      "size": 429009,
+      "sha256": "21b08682551549417bbac21b717fb8b8ee20a8500ad3863e8eb50df32cc5f93e",
+      "sha256_status": "registered_manifest_hash_not_independently_rehashed"
+    },
+    {
+      "path": "internal/private/research/matter-28/04-drafts-and-working-papers/Proposed Stipulated Protective Order - as filed by SLB (courtesy copy Oct 14 2026).pdf",
+      "git_blob_sha": "8b787fd4e65ec3506bb45aaf4f72cf066d01fa55",
+      "source_path": "internal/docs/matter-28/discovery-workspace/incoming-2026-10-14/Proposed Stipulated Protective Order - as filed by SLB (courtesy copy Oct 14 2026).pdf",
+      "source_ref": "eaacea3e448e8296ca7747b5765b4ccb5d15cb4b",
+      "category": "proposed_order_or_courtesy_copy",
+      "size": 274738
+    },
+    {
+      "path": "internal/private/research/matter-28/04-drafts-and-working-papers/Certificate of Service re Proposed Stipulated Protective Order (Oct 14 2026).pdf",
+      "git_blob_sha": "f788e13d2423f20d6df7d06946105006ee32846d",
+      "source_path": "internal/docs/matter-28/discovery-workspace/incoming-2026-10-14/Certificate of Service re Proposed Stipulated Protective Order (Oct 14 2026).pdf",
+      "source_ref": "eaacea3e448e8296ca7747b5765b4ccb5d15cb4b",
+      "category": "proposed_order_or_courtesy_copy",
+      "size": 103496
+    },
+    {
+      "path": "internal/private/research/matter-28/05-prior-analysis/discovery-workspace/README.md",
+      "git_blob_sha": "ee290b5150c11e2dbc278392ab77c90432a27455",
+      "source_path": "internal/docs/matter-28/discovery-workspace/README.md",
+      "source_ref": "eaacea3e448e8296ca7747b5765b4ccb5d15cb4b",
+      "category": "historical_analysis_not_adopted",
+      "size": 12317
+    },
+    {
+      "path": "internal/private/research/matter-28/05-prior-analysis/discovery-workspace/ANALYSIS.md",
+      "git_blob_sha": "349bb4e4e66723ba4c2b6429b611ae94da97bb5c",
+      "source_path": "internal/docs/matter-28/discovery-workspace/ANALYSIS.md",
+      "source_ref": "eaacea3e448e8296ca7747b5765b4ccb5d15cb4b",
+      "category": "historical_analysis_not_adopted",
+      "size": 27090
+    },
+    {
+      "path": "internal/private/research/matter-28/05-prior-analysis/discovery-workspace/DISCOVERY_PLAN.md",
+      "git_blob_sha": "f75fdb97e9403c038a9adb4c8feb36266176bc86",
+      "source_path": "internal/docs/matter-28/discovery-workspace/DISCOVERY_PLAN.md",
+      "source_ref": "eaacea3e448e8296ca7747b5765b4ccb5d15cb4b",
+      "category": "historical_analysis_not_adopted",
+      "size": 7365
+    },
+    {
+      "path": "internal/private/research/matter-28/05-prior-analysis/discovery-workspace/NEXT_MOVES.md",
+      "git_blob_sha": "3065ba097408bbd7e3d427dbbd6d7a5fcb6ad1ed",
+      "source_path": "internal/docs/matter-28/discovery-workspace/NEXT_MOVES.md",
+      "source_ref": "eaacea3e448e8296ca7747b5765b4ccb5d15cb4b",
+      "category": "historical_analysis_not_adopted",
+      "size": 8695
+    },
+    {
+      "path": "internal/private/research/matter-28/05-prior-analysis/discovery-workspace/drafts/PO_STRATEGY_AND_ADDENDUM.md",
+      "git_blob_sha": "3237941c6912a038b42f02b47fdf2ae3a29a6c02",
+      "source_path": "internal/docs/matter-28/discovery-workspace/drafts/PO_STRATEGY_AND_ADDENDUM.md",
+      "source_ref": "eaacea3e448e8296ca7747b5765b4ccb5d15cb4b",
+      "category": "historical_analysis_not_adopted",
+      "size": 4138
+    },
+    {
+      "path": "internal/private/research/matter-28/05-prior-analysis/discovery-workspace/drafts/sets-v1/00_CHAMBER_MEMO.md",
+      "git_blob_sha": "ad64b68ad9bc9f530ed97d51356ed14f058c2194",
+      "source_path": "internal/docs/matter-28/discovery-workspace/drafts/sets-v1/00_CHAMBER_MEMO.md",
+      "source_ref": "eaacea3e448e8296ca7747b5765b4ccb5d15cb4b",
+      "category": "historical_analysis_not_adopted",
+      "size": 7210
+    },
+    {
+      "path": "internal/private/research/matter-28/05-prior-analysis/lisa-j-cisneros-2026.md",
+      "git_blob_sha": "31d8b60d21465800199ea04710c0e61beb572b21",
+      "source_path": "internal/docs/legal-intel/judges/lisa-j-cisneros-2026.md",
+      "source_ref": "eaacea3e448e8296ca7747b5765b4ccb5d15cb4b",
+      "category": "historical_judge_memo_superseded_rules",
+      "size": 10660
+    },
+    {
+      "path": "internal/private/research/matter-28/05-prior-analysis/MATTER_28_SAFE_CITE_LIST.md",
+      "git_blob_sha": "95a0c9faf39de3649ac1b41916c5ca5b7185b56e",
+      "source_path": "internal/docs/MATTER_28_SAFE_CITE_LIST.md",
+      "source_ref": "eaacea3e448e8296ca7747b5765b4ccb5d15cb4b",
+      "category": "historical_citation_review_not_current_negative_treatment",
+      "size": 28179
+    },
+    {
+      "path": "internal/private/research/matter-28/06-source-snapshots/claims.json",
+      "git_blob_sha": "2a9e5f55f38caac5a0dcfaa15fe4fb0869fb2675",
+      "source_path": "internal/src/data/matters/28/claims.json",
+      "source_ref": "eaacea3e448e8296ca7747b5765b4ccb5d15cb4b",
+      "category": "graph_snapshot_not_live",
+      "size": 847
+    },
+    {
+      "path": "internal/private/research/matter-28/06-source-snapshots/clocks.json",
+      "git_blob_sha": "69c16d23d46baa7a337dab048b95e796031e8f7a",
+      "source_path": "internal/src/data/matters/28/clocks.json",
+      "source_ref": "eaacea3e448e8296ca7747b5765b4ccb5d15cb4b",
+      "category": "graph_snapshot_not_live",
+      "size": 6700
+    },
+    {
+      "path": "internal/private/research/matter-28/06-source-snapshots/counsel.json",
+      "git_blob_sha": "9e841b1e0ec727ce4ed18c25cf8c62adad76410d",
+      "source_path": "internal/src/data/matters/28/counsel.json",
+      "source_ref": "eaacea3e448e8296ca7747b5765b4ccb5d15cb4b",
+      "category": "graph_snapshot_not_live",
+      "size": 376
+    },
+    {
+      "path": "internal/private/research/matter-28/06-source-snapshots/damages.json",
+      "git_blob_sha": "f731185a27fc4c279b7737b55382d7a4b36c1af2",
+      "source_path": "internal/src/data/matters/28/damages.json",
+      "source_ref": "eaacea3e448e8296ca7747b5765b4ccb5d15cb4b",
+      "category": "graph_snapshot_not_live",
+      "size": 1693
+    },
+    {
+      "path": "internal/private/research/matter-28/06-source-snapshots/docket.json",
+      "git_blob_sha": "5cbacf295cab2e7eff8c8d6368336adc21c3b06a",
+      "source_path": "internal/src/data/matters/28/docket.json",
+      "source_ref": "eaacea3e448e8296ca7747b5765b4ccb5d15cb4b",
+      "category": "graph_snapshot_not_live",
+      "size": 10869
+    },
+    {
+      "path": "internal/private/research/matter-28/06-source-snapshots/documents.json",
+      "git_blob_sha": "43cb997f49da5043cb3df5934127a8125d0760ab",
+      "source_path": "internal/src/data/matters/28/documents.json",
+      "source_ref": "eaacea3e448e8296ca7747b5765b4ccb5d15cb4b",
+      "category": "graph_snapshot_not_live",
+      "size": 12934
+    },
+    {
+      "path": "internal/private/research/matter-28/06-source-snapshots/events.jsonl",
+      "git_blob_sha": "e2f01db153dbbf010984201bd6dca07ad0411a66",
+      "source_path": "internal/src/data/matters/28/events.jsonl",
+      "source_ref": "eaacea3e448e8296ca7747b5765b4ccb5d15cb4b",
+      "category": "graph_snapshot_not_live",
+      "size": 32939
+    },
+    {
+      "path": "internal/private/research/matter-28/06-source-snapshots/evidence.json",
+      "git_blob_sha": "e843815355ece4e03d5c648d9d75b9b6cbd570ce",
+      "source_path": "internal/src/data/matters/28/evidence.json",
+      "source_ref": "eaacea3e448e8296ca7747b5765b4ccb5d15cb4b",
+      "category": "graph_snapshot_not_live",
+      "size": 9334
+    },
+    {
+      "path": "internal/private/research/matter-28/06-source-snapshots/matter.json",
+      "git_blob_sha": "ee1ba938b236fd5069b40c354d176aa5b1cd093b",
+      "source_path": "internal/src/data/matters/28/matter.json",
+      "source_ref": "eaacea3e448e8296ca7747b5765b4ccb5d15cb4b",
+      "category": "graph_snapshot_not_live",
+      "size": 4271
+    },
+    {
+      "path": "internal/private/research/matter-28/06-source-snapshots/parties.json",
+      "git_blob_sha": "d28237b881d0b09b40279681bc7859d113a098f2",
+      "source_path": "internal/src/data/matters/28/parties.json",
+      "source_ref": "eaacea3e448e8296ca7747b5765b4ccb5d15cb4b",
+      "category": "graph_snapshot_not_live",
+      "size": 2531
+    },
+    {
+      "path": "internal/private/research/matter-28/06-source-snapshots/prose.json",
+      "git_blob_sha": "0bf307f7829d820142cf4cb59ef7b8f4ffed6197",
+      "source_path": "internal/src/data/matters/28/prose.json",
+      "source_ref": "eaacea3e448e8296ca7747b5765b4ccb5d15cb4b",
+      "category": "graph_snapshot_not_live",
+      "size": 7760
+    },
+    {
+      "path": "internal/private/research/matter-28/07-source-text/Dkt-30-Reply.txt",
+      "git_blob_sha": "9ad68fb4d50cd7508d5a3cb4b293f1d514dd930e",
+      "source_path": "internal/docs/matter-28/discovery-workspace/incoming-2026-10-14/Dkt 30 - Defendants Reply ISO Motion to Dismiss (Filed Oct 13 2026).txt",
+      "source_ref": "eaacea3e448e8296ca7747b5765b4ccb5d15cb4b",
+      "category": "existing_text_sidecar",
+      "size": 30172
+    },
+    {
+      "path": "internal/private/research/matter-28/07-source-text/Plaintiff-Opposition-Served-2026-09-22.txt",
+      "git_blob_sha": "92937f99280e24293f37e3de651846abd1fd38e0",
+      "source_path": "internal/public/documents/matter-28/Plaintiff's Opposition to Defendants' Motion to Dismiss (N.D. Cal. 3-26-cv-07504-LJC) (Served Sep 22 2026).txt",
+      "source_ref": "eaacea3e448e8296ca7747b5765b4ccb5d15cb4b",
+      "category": "existing_text_sidecar",
+      "size": 51976
+    },
+    {
+      "path": "internal/private/research/matter-28/07-source-text/Dkt-30-1-Supplemental-RJN.txt",
+      "git_blob_sha": "b1c0d85b507f4cfe2e95504406c29f9a74f815d9",
+      "source_path": "internal/docs/matter-28/discovery-workspace/incoming-2026-10-14/Dkt 30-1 - Defendants RFJN ISO Reply (Filed Oct 13 2026).txt",
+      "source_ref": "eaacea3e448e8296ca7747b5765b4ccb5d15cb4b",
+      "category": "existing_text_sidecar",
+      "size": 5551
+    },
+    {
+      "path": "internal/private/research/matter-28/07-source-text/Proposed-Stipulated-Protective-Order-2026-10-14.txt",
+      "git_blob_sha": "90f1f2faf9a8c7ef9a2eb4c5b00bd0fb34e09624",
+      "source_path": "internal/docs/matter-28/discovery-workspace/incoming-2026-10-14/Proposed Stipulated Protective Order - as filed by SLB (courtesy copy Oct 14 2026).txt",
+      "source_ref": "eaacea3e448e8296ca7747b5765b4ccb5d15cb4b",
+      "category": "existing_text_sidecar",
+      "size": 33226
+    },
+    {
+      "path": "internal/private/research/matter-28/02-prior-proceeding/State-Order-Sustaining-Demurrer-2026-07-15.pdf",
+      "git_blob_sha": "01fb3e400588617a9bb67bbc03ef5e88ed62922d",
+      "source_path": "internal/public/documents/matter-05/Order Sustaining Demurrer to FAC WOLA - Jul 15 2026.pdf",
+      "source_ref": "eb5b5be9cb25366349441ca7075d8ae7bddc8230",
+      "category": "signed_prior_state_order",
+      "size": 123759,
+      "sha256": "5f6014f547ff693ac1d3ce49fd0869579251f500ea67dd3efe360635061fb02a",
+      "sha256_status": "independently_rehashed"
+    },
+    {
+      "path": "internal/private/research/matter-28/02-prior-proceeding/State-FAC-legacy-copy.pdf",
+      "git_blob_sha": "fb95bc0a126508b65580cb7ecd1c45b735296194",
+      "source_path": "internal/public/documents/matter-05/FAC_STK-CV-UF-2026-1032.pdf",
+      "source_ref": "eb5b5be9cb25366349441ca7075d8ae7bddc8230",
+      "category": "prior_state_pleading_legacy_copy",
+      "size": 211364,
+      "sha256": "16b68957649f578e4b43c5eacdab3fc643d25f734cf640895a653419c6c9085d",
+      "sha256_status": "registered_manifest_hash_not_independently_rehashed"
+    },
+    {
+      "path": "internal/private/research/matter-28/02-prior-proceeding/State-FAC-court-scan.pdf",
+      "git_blob_sha": "7d18fe30dd1c499c381f00c40c7b9e124b5f835f",
+      "source_path": "internal/public/documents/matter-05/FAC_STKCVUF20261032.pdf",
+      "source_ref": "eb5b5be9cb25366349441ca7075d8ae7bddc8230",
+      "category": "prior_state_pleading_court_scan",
+      "size": 3441435,
+      "sha256": "9d45361160a7a611919ac6332e7176afb9cc99e15d1da1dd085194d8f361cde5",
+      "sha256_status": "registered_manifest_hash_not_independently_rehashed"
+    },
+    {
+      "path": "internal/private/research/matter-28/01-portfolio-records/Complaint-as-filed-copy.pdf",
+      "git_blob_sha": "019dcea252232bf793ef9bbe8d7fae72e3e02c6d",
+      "source_path": "internal/public/documents/matter-28/Complaint_Newanforbi_v_Smith_NDCA (as filed, served on SLB Jul 22 2026).pdf",
+      "source_ref": "893e4169fc91c973731bd7a0b91c59f5f632f994",
+      "category": "filed_designated_copy_unstamped",
+      "size": 97212,
+      "sha256": "6c1ca03b81305c2066fba9d6ac488208237c14c24f0df866f4b85ae3bc9353af",
+      "verification": "downloaded_and_sha256_verified",
+      "sha256_status": "independently_rehashed"
+    }
+  ],
+  "new_analysis_and_derivatives": [
+    {
+      "path": "internal/private/research/matter-28/00-user-inputs/REQUEST.md",
+      "size": 705,
+      "sha256": "bba8ff6032b2498a8b9adc5fc9c8d85f1e320be28ce3859819da26871a28420c",
+      "kind": "new_analysis_or_new_derivative"
+    },
+    {
+      "path": "internal/private/research/matter-28/03-discovery-production/LOCATOR-AND-USE-BOUNDARY.md",
+      "size": 1548,
+      "sha256": "02a07603a616b2f1727da7de9fd8e84bb698f54492f2b532f9653377932d647c",
+      "kind": "new_analysis_or_new_derivative"
+    },
+    {
+      "path": "internal/private/research/matter-28/06-source-snapshots/CURRENT-COURT-RULES-REVIEW.md",
+      "size": 3671,
+      "sha256": "6260de37a6d0979189a902e76537ed086d1838326916e6eae151c48f14f99cb0",
+      "kind": "new_analysis_or_new_derivative"
+    },
+    {
+      "path": "internal/private/research/matter-28/06-source-snapshots/litigation-docs-matter-28-2026-10-25.json",
+      "size": 14813,
+      "sha256": "205dd20b9cfc8bd2d146b430bb944a94849f964aa863c817f65ba2f980f8f4c1",
+      "kind": "new_analysis_or_new_derivative"
+    },
+    {
+      "path": "internal/private/research/matter-28/07-source-text/Complaint-as-filed-copy.txt",
+      "size": 50509,
+      "sha256": "370e2ed5caea3242e0e7016a0aabae81aa3f38d31ac11405ab716f9b6b03d764",
+      "kind": "new_analysis_or_new_derivative"
+    },
+    {
+      "path": "internal/private/research/matter-28/07-source-text/ECF-15-Motion-to-Dismiss.txt",
+      "size": 95533,
+      "sha256": "19cb2b1fa87f01024bde6cb777c109ef6e5841a509a3151c8993c78bcbb26cc6",
+      "kind": "new_analysis_or_new_derivative"
+    },
+    {
+      "path": "internal/private/research/matter-28/07-source-text/ECF-28-Joint-CMS.txt",
+      "size": 20241,
+      "sha256": "6073d9144872e01a29714cfda8312118b91ca1c90fb2cf7a2a037314f8ee5ef5",
+      "kind": "new_analysis_or_new_derivative"
+    },
+    {
+      "path": "internal/private/research/matter-28/07-source-text/ECF-29-Combined-Hearing-Order.txt",
+      "size": 2393,
+      "sha256": "fa2e89fdc79dee58113f5dfebbe74cd179d2ce6569388bd28fc0a67b08590965",
+      "kind": "new_analysis_or_new_derivative"
+    },
+    {
+      "path": "internal/private/research/matter-28/07-source-text/State-Order-Sustaining-Demurrer-2026-07-15.txt",
+      "size": 5082,
+      "sha256": "448f21da473d33f4461b51f25f80ba984f0fbf03d57ddc038175aa974b1e97e7",
+      "kind": "new_analysis_or_new_derivative"
+    },
+    {
+      "path": "internal/private/research/matter-28/08-audit/GAPS-AND-CONFLICTS.md",
+      "size": 5352,
+      "sha256": "c339cfd6c831f14f90e3eeb2879f4ba20a5ad59e90b0c5ba19a8fe98837dfb8d",
+      "kind": "new_analysis_or_new_derivative"
+    },
+    {
+      "path": "internal/private/research/matter-28/08-audit/SUPPLEMENTAL-RJN-VISUAL-REVIEW.md",
+      "size": 1309,
+      "sha256": "05536100b85d96ea9c2fb763d39fd86cdd2064bb2694930a892630d77c1fbf62",
+      "kind": "new_analysis_or_new_derivative"
+    },
+    {
+      "path": "internal/private/research/matter-28/08-audit/VERIFICATION.md",
+      "size": 3023,
+      "sha256": "e6959095b453ea3928d7d76636b7366f61d6a4687f3708c28f7c6210cdc3f2ee",
+      "kind": "new_analysis_or_new_derivative"
+    },
+    {
+      "path": "internal/private/research/matter-28/09-evidence-map/RECORD-TO-ARGUMENT-MAP.md",
+      "size": 6646,
+      "sha256": "40e8754ba02c9a1cf4a411713fb2afb5a56575908b74edbd6abaabfcdda4a180",
+      "kind": "new_analysis_or_new_derivative"
+    },
+    {
+      "path": "internal/private/research/matter-28/09-merits-analysis/AUTHORITY-LEDGER.md",
+      "size": 5606,
+      "sha256": "f90d5734f2624dc35a9d85a3ba9c0af48c21a04e1881e19f8f99fe7b52b489b5",
+      "kind": "new_analysis_or_new_derivative"
+    },
+    {
+      "path": "internal/private/research/matter-28/10-hearing-prep/00-HEARING-COMMAND-SHEET.md",
+      "size": 4707,
+      "sha256": "acf6106ee10c466c3ae1def64b47f49d95c923309c5446c0b5aecc6ff2b6d4ff",
+      "kind": "new_analysis_or_new_derivative"
+    },
+    {
+      "path": "internal/private/research/matter-28/10-hearing-prep/01-ORAL-ARGUMENT.md",
+      "size": 6877,
+      "sha256": "e7530a5fac52e6c546e856300943dd0745651e0154b16b30baeda754ccb1458e",
+      "kind": "new_analysis_or_new_derivative"
+    },
+    {
+      "path": "internal/private/research/matter-28/10-hearing-prep/02-JUDGE-QUESTIONS.md",
+      "size": 8306,
+      "sha256": "e3447859d22a5b9b93c7c24481a625157e103a2ab63a5fbe155a172934d39dd0",
+      "kind": "new_analysis_or_new_derivative"
+    },
+    {
+      "path": "internal/private/research/matter-28/10-hearing-prep/03-AMENDMENT-PROFFER.md",
+      "size": 4911,
+      "sha256": "6c252b612eb17045d46389aab9220b08d651a5740f83e567b2207849fcc7d7e8",
+      "kind": "new_analysis_or_new_derivative"
+    },
+    {
+      "path": "internal/private/research/matter-28/10-hearing-prep/04-CMC-AND-PROTECTIVE-ORDER.md",
+      "size": 5770,
+      "sha256": "c9e1320b0c6a9ce0a5e500b0532a6d8e6a93b0a64aaddce6b6933945701641a1",
+      "kind": "new_analysis_or_new_derivative"
+    },
+    {
+      "path": "internal/private/research/matter-28/10-hearing-prep/05-REHEARSAL-AND-OUTCOMES.md",
+      "size": 4319,
+      "sha256": "280c40157983bc1f4796bb4ec5ae51ea43874452adfa078e24017da436c065f3",
+      "kind": "new_analysis_or_new_derivative"
+    },
+    {
+      "path": "internal/private/research/matter-28/README.md",
+      "size": 6102,
+      "sha256": "db70568e557cd6445aebf112941f21edd537afc5570f74b6b21b88ce7d20e3ea",
+      "kind": "new_analysis_or_new_derivative"
+    }
+  ],
+  "hash_note": "Source Git blob identity preserves exact bytes. Registered SHA-256 is independently verified only where marked. Audit files generated after this manifest are excluded from the new-file hash list to avoid self-reference."
+}

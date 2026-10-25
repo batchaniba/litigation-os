@@ -1,0 +1,35 @@
+{
+  "summary": "42 U.S.C. §1983 (Monell + Individual Capacity); Bane Act (Cal. Civ. Code §52.1); Fraud / Negligent Misrepresentation; RICO (18 U.S.C. §1962(c)-(d))",
+  "counts": [
+    {
+      "id": 1,
+      "status": "live",
+      "theory_ids": [],
+      "title": "42 U.S.C. §1983 — Monell (HOPE)"
+    },
+    {
+      "id": 2,
+      "status": "live",
+      "theory_ids": [],
+      "title": "42 U.S.C. §1983 — Individual Capacity (Shannon Smith)"
+    },
+    {
+      "id": 3,
+      "status": "live",
+      "theory_ids": [],
+      "title": "Bane Act (Cal. Civ. Code §52.1)"
+    },
+    {
+      "id": 4,
+      "status": "live",
+      "theory_ids": [],
+      "title": "Fraud and Negligent Misrepresentation"
+    },
+    {
+      "id": 5,
+      "status": "live",
+      "theory_ids": [],
+      "title": "RICO (18 U.S.C. §1962(c)-(d))"
+    }
+  ]
+}
