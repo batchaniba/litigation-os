@@ -492,8 +492,32 @@
     },
     {
       "path": "internal/private/research/matter-28/README.md",
-      "size": 6102,
-      "sha256": "db70568e557cd6445aebf112941f21edd537afc5570f74b6b21b88ce7d20e3ea",
+      "size": 6710,
+      "sha256": "a7ce235a77a0ee8f4a1794a921ef951663a1f21eababa9232045749915ad1afd",
+      "kind": "new_analysis_or_new_derivative"
+    },
+    {
+      "path": "internal/private/research/matter-28/09-evidence-map/TIMELINE.md",
+      "size": 3388,
+      "sha256": "f9aee9a97429cf045623c623d44cea475a51abef615d2eb212ec70744f518eca",
+      "kind": "new_analysis_or_new_derivative"
+    },
+    {
+      "path": "internal/private/research/matter-28/09-merits-analysis/CITATION-TABLE.md",
+      "size": 20903,
+      "sha256": "cf7b2b617c34814e6b95077ee48c5ab0bf59bb1c231fcf67836114b3b4b405d6",
+      "kind": "new_analysis_or_new_derivative"
+    },
+    {
+      "path": "internal/private/research/matter-28/10-hearing-prep/06-VERIFIED-HEARING-FACTS.md",
+      "size": 4234,
+      "sha256": "32f335142c6aaca52517c8072c4f29481ae81e13b25c013eab5842f3ac640ea1",
+      "kind": "new_analysis_or_new_derivative"
+    },
+    {
+      "path": "internal/private/research/matter-28/10-hearing-prep/07-REPLY-REBUTTAL-MATRIX.md",
+      "size": 7341,
+      "sha256": "a5db1336143a2f9aae8eaef94c88fe37d8f663d43d81720e18f940537d1c79e0",
       "kind": "new_analysis_or_new_derivative"
     }
   ],

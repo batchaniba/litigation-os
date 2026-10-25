@@ -13,7 +13,11 @@ Prepared October 25, 2026, America/Los_Angeles. Private working analysis; nothin
 5. [Amendment proffer](10-hearing-prep/03-AMENDMENT-PROFFER.md): specific cures to identify if the Court finds pleading defects; no invented facts or automatic concessions.
 6. [CMC and protective-order plan](10-hearing-prep/04-CMC-AND-PROTECTIVE-ORDER.md): the existing scheduling proposals, practical discovery sequence, and prior-production issue.
 7. [Rehearsal and outcome checklist](10-hearing-prep/05-REHEARSAL-AND-OUTCOMES.md): preparation order, hearing notes, and next steps for each ruling.
-8. [Authority verification](09-merits-analysis/AUTHORITY-LEDGER.md) and [record conflicts](08-audit/GAPS-AND-CONFLICTS.md): what has actually been checked and what remains open.
+8. [Verified hearing facts](10-hearing-prep/06-VERIFIED-HEARING-FACTS.md): setting, in-person rule, tentative-ruling procedure (there is none), chambers-contact rules, morning-of checklist.
+9. [Reply rebuttal matrix](10-hearing-prep/07-REPLY-REBUTTAL-MATRIX.md): each ECF 30 argument, a short spoken answer, locators, and what not to say.
+10. [Timeline](09-evidence-map/TIMELINE.md): sourced chronology through the hearing and the post-ruling deadlines.
+11. [Citation table](09-merits-analysis/CITATION-TABLE.md): every reported case in the motion, reply, and opposition, existence-checked; two unverified.
+12. [Authority verification](09-merits-analysis/AUTHORITY-LEDGER.md) and [record conflicts](08-audit/GAPS-AND-CONFLICTS.md): what has actually been checked and what remains open.
 
 ## Hearing identity
 
