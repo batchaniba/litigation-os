@@ -41,3 +41,7 @@ Captain Serrato's April 20 letter said **the incident did not involve qualifying
 **Ready to serve/file:** **No.** Verify the native incident evidence and remaining adjudicative facts, review request materials actually furnished to Serrato, settle source pinpoints, confirm controlling order and legally available noticed relief, and truthfully execute/service documents first.
 
 This workspace does not claim an adverse legal decision was reversed or that a court may order certification solely from statutory wording.
+
+## Parallel certification and independent federal I-918 preparation
+
+New research-only companion: [14-parallel-uvisa-certification](../14-parallel-uvisa-certification/00-PARALLEL-CERTIFICATION-AND-I918-PLAN.md). It audits independent certifier routes, the existing June 18 Fickes judicial-certification denial **reported in the related federal case** (signed order not yet recovered), a DA intake/§679.10 request template, an Alameda court-procedure-only inquiry, and the federal I-918/I-192 evidence checklist. It **does not** modify this merits motion or authorize agency outreach.
