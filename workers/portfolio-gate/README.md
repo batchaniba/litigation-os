@@ -22,13 +22,15 @@ GitHub pull_request (base=main)
         ▼
 Orchestrator Worker  (this directory)
         │  GitHub App JWT → installation token
+        │  singleton FIFO (one live run; extra SHAs wait)
         │  Checks:write  →  pending Check Run `portfolio-gate`
         ▼
 GateRunner Durable Object + Cloudflare Container
+        │  one standard-2 instance (max_instances = 1)
         │  clone head SHA → npm ci → npm run gate
         │  PORTFOLIO_SKIP_DISK_DOCS=1  VITE_COPY_DOCUMENTS=0
         ▼
-PATCH Check Run  success | failure
+PATCH Check Run  success | failure | cancelled (superseded)
 ```
 
 Why official **Containers** and not Sandbox SDK: the Sandbox SDK
@@ -43,13 +45,13 @@ custom Dockerfile on [`@cloudflare/containers`](https://developers.cloudflare.co
 
 | Event | Behavior |
 |---|---|
-| `pull_request` `opened` / `synchronize` / `reopened` and `base.ref === "main"` | Create pending `portfolio-gate`, start one Container for that SHA |
+| `pull_request` `opened` / `synchronize` / `reopened` and `base.ref === "main"` | Queue `portfolio-gate` for that SHA. One container runs at a time; others wait |
 | Same events, `base.ref !== "main"` | **No-op** (HTTP 200, no Check Run, no Container) |
-| `check_run` `rerequested` for name `portfolio-gate` on a PR targeting `main` | Re-run that SHA |
+| `check_run` `rerequested` for name `portfolio-gate` on a PR targeting `main` | Re-run that SHA (queued behind any live run) |
 | Fork head (head repo ≠ installation repo) | Check Run **failure** — clone is same-repo only |
 | Invalid / missing webhook signature | HTTP **401**. No Container. No success conclusion. |
 | Container cannot start, or no result within the timeout | Check Run conclusion **`failure`** (never `neutral`) |
-| New `synchronize` on the same PR | Cancel in-progress `portfolio-gate` runs on the previous SHA; one live run per SHA |
+| New `synchronize` on the same PR | Drop waiting jobs for that PR; preempt an in-flight run (Check Run `cancelled`); queue the new SHA |
 
 Required check missing also blocks merge once branch protection requires
 `portfolio-gate`. Unsigned payloads are not trusted enough to pick a SHA, so
@@ -62,24 +64,31 @@ If the Container does not return a result in that window, the Worker
 concludes the Check Run as **`failure`**.
 
 Where the run executes matters. The webhook only **queues** the job on the
-`GateOrchestrator` Durable Object (one per head SHA) and answers 202; the
-DO's **alarm** runs it. Do not move the run back into the webhook's
+singleton `GateOrchestrator` Durable Object and answers 202; the DO's
+**alarm** runs **one job at a time**. Extra SHAs wait in FIFO instead of
+starting another container (`max_instances = 1`). A newer push on the same
+PR drops waiting jobs and preempts an in-flight run so obsolete clones do
+not burn GiB-seconds. Do not move the run back into the webhook's
 `ctx.waitUntil()`: Cloudflare cancels that work 30 seconds after the response
 ([Workers limits](https://developers.cloudflare.com/workers/platform/limits/)),
 which killed every full run until Oct. 2026 and left Check Runs
 `in_progress` forever (#958, #962) while the orphaned containers filled the
 `max_instances` slots (#961: "Maximum number of running container instances
 exceeded"). Alarms get 15 minutes, so the timeout stays under that. After
-each run the container is stopped to free its slot.
+each run the container is destroyed to free its slot. If two PRs arrive
+together, the second Check Run appears when the first finishes.
 
 **Stale sweep.** Every 30 minutes a cron concludes as `failure` any
 `portfolio-gate` check on an open PR to `main` still `in_progress` more than
 timeout + 5 minutes after it started (runner lost without reporting). Use
 "Re-run" on the check to try again.
 
-Cloudflare does not document a hard max instance runtime; the Container class
-`sleepAfter` is **15 minutes** here: longer than the 12-minute gate timeout,
-so idle-sleep cannot end a live run.
+Cloudflare does not document a hard max instance runtime. The Container class
+`sleepAfter` is **3 minutes** here: a leak backstop, not the primary free.
+Incoming requests reset that timer, so an in-flight `POST /run` is activity
+and cannot be slept. 3m is longer than `portReadyTimeoutMS` (90s) so startup
+cannot be slept either. `onActivityExpired` calls `destroy()` (SIGKILL), not
+`stop()` (SIGTERM), because SIGTERM used to leak instances.
 
 **Freeing instances.** After every run the orchestrator calls `cancel()`,
 which `destroy()`s (SIGKILL) the container so its `max_instances` slot is
@@ -90,7 +99,8 @@ handles SIGTERM/SIGINT explicitly. Before Oct. 2026 neither was true:
 fourth run in a window failed with "Maximum number of running container
 instances exceeded". Host moves can still SIGTERM a container (see
 [Containers FAQ](https://developers.cloudflare.com/containers/faq/)); that
-path is also concluded as failure.
+path is also concluded as failure. A start that races a just-destroyed
+instance retries on the capacity error (four tries, ~17s).
 
 ## Runner command
 
@@ -108,7 +118,9 @@ typecheck, `validate-portfolio`, golden damages, `vitest run`, citation
 `--check`.
 
 Instance type **`standard-2`** (1 vCPU / 6 GiB / 12 GB). `lite` / `basic`
-will OOM on `npm ci`.
+will OOM on `npm ci`. Do not downsize without measuring a full `npm run gate`
+in the image. Concurrency is capped at **one** instance; the orchestrator
+queues rather than raising `max_instances`.
 
 ## Secrets (Worker only — never commit)
 
@@ -206,8 +218,8 @@ the rule.
 
 1. Open a PR against `main`. GitHub should show `portfolio-gate` pending,
    then success or failure with a truncated log.
-2. Push a new commit (`synchronize`). The previous SHA's pending run is
-   cancelled; the new SHA gets its own run.
+2. Push a new commit (`synchronize`). A waiting run for that PR is dropped;
+   an in-flight run is preempted (`cancelled`); the new SHA is queued.
 3. Open a PR against some other branch. The Worker returns `ignored` and
    does **not** create a check.
 4. **Re-run** on the Check Run should start a new run for that SHA.
@@ -221,8 +233,8 @@ npx vitest run workers/portfolio-gate
 ```
 
 Covers webhook HMAC, main-only no-op, fail-closed conclusions (start
-failure + timeout), JWT signing, and superseded-SHA cancel. Does not start
-a Container.
+failure + timeout), JWT signing, FIFO queueing, superseded-SHA drop/preempt,
+and capacity-error retries. Does not start a Container.
 
 `npx wrangler dev --enable-containers=false` exercises the Worker process
 without Docker.
@@ -236,14 +248,15 @@ without Docker.
 |---|---|
 | `src/index.mjs` | Worker `fetch` + `scheduled` (sweep, digest); exports `GateRunner`, `GateOrchestrator` |
 | `src/handler.mjs` | Signature check, routing, queue the job |
-| `src/orchestrator.mjs` | `GateOrchestrator` DO: queue + alarm runs the job |
+| `src/orchestrator.mjs` | Singleton `GateOrchestrator` DO: FIFO + alarm runs one job |
+| `src/retry.mjs` | Retry `startAndWaitForPorts` on a max_instances race |
 | `src/policy.mjs` | Main-only / rerequest / fork policy |
 | `src/webhook.mjs` | `X-Hub-Signature-256` |
 | `src/github.mjs` | App JWT + Checks API |
-| `src/orchestrate.mjs` | Pending check → runner → success/failure; queue/drain; stop container |
+| `src/orchestrate.mjs` | Pending check → runner → success/failure/cancelled; FIFO + supersede |
 | `src/sweep.mjs` | Fail checks left `in_progress` past the timeout |
 | `src/digest.mjs` | Daily deadline digest from `main`'s `clocks.json` |
-| `src/runner.mjs` | `@cloudflare/containers` `Container` subclass |
+| `src/runner.mjs` | `@cloudflare/containers` `Container` subclass; 3m sleepAfter + destroy |
 | `src/check.mjs` | Locked name, truncated log, fail-closed conclusion |
 | `container/server.mjs` | HTTP server on 8080 inside the image |
 | `container/run-gate.sh` | clone + `npm ci` + `npm run gate` |

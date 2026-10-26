@@ -9,31 +9,50 @@
 // custom Dockerfile on official Containers is the documented fit.
 
 import { Container } from "@cloudflare/containers";
+import { retryOnCapacity } from "./retry.mjs";
 
 export class GateRunner extends Container {
   defaultPort = 8080;
-  // Idle backstop if a run's cleanup never ran. Longer than GATE_TIMEOUT_MS
-  // (12m) so idling can never end a live run; short enough that a leaked
-  // container frees its max_instances slot quickly.
-  sleepAfter = "15m";
+  // Leak backstop only. cancel() destroy()s after every run, and an in-flight
+  // POST /run counts as activity (incoming requests reset sleepAfter). 3m is
+  // longer than portReadyTimeoutMS (90s) so startup cannot be slept; much
+  // shorter than the old 15m idle bill if destroy() is skipped.
+  sleepAfter = "3m";
   enableInternet = true;
+
+  // Default onActivityExpired calls stop() (SIGTERM). destroy() is SIGKILL and
+  // is what actually frees the max_instances slot.
+  async onActivityExpired() {
+    try {
+      if (typeof this.destroy === "function") {
+        await this.destroy();
+      }
+    } catch {
+      // already stopped
+    }
+  }
 
   async runJob(job) {
     try {
+      if (typeof this.renewActivityTimeout === "function") {
+        this.renewActivityTimeout();
+      }
       if (!this.ctx.container?.running) {
-        await this.startAndWaitForPorts({
-          startOptions: {
-            enableInternet: true,
-            envVars: {
-              PORTFOLIO_SKIP_DISK_DOCS: "1",
-              VITE_COPY_DOCUMENTS: "0",
+        await retryOnCapacity(() =>
+          this.startAndWaitForPorts({
+            startOptions: {
+              enableInternet: true,
+              envVars: {
+                PORTFOLIO_SKIP_DISK_DOCS: "1",
+                VITE_COPY_DOCUMENTS: "0",
+              },
             },
-          },
-          cancellationOptions: {
-            instanceGetTimeoutMS: 60_000,
-            portReadyTimeoutMS: 90_000,
-          },
-        });
+            cancellationOptions: {
+              instanceGetTimeoutMS: 60_000,
+              portReadyTimeoutMS: 90_000,
+            },
+          }),
+        );
       }
 
       const res = await this.containerFetch("http://container/run", {
