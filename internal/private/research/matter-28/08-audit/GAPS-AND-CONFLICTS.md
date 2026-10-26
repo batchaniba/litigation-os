@@ -6,10 +6,10 @@
 | P0 | Reply-evidence objection | Oct 20 clock remains open; no accepted objection retrieved | Obtain stamped filing/NEF or confirm none; no assumption of either timely filing or waiver of every merits argument |
 | P0 | State finality | July 15 signed demurrer order; reply asserts “Case Disposed” screenshot | Obtain the complete current register and every judgment/dismissal/notice of entry/appeal; visually reviewed ECF 30-1 pp.4-5; obtain the complete current register and operative instruments |
 | P0 | Claimed exhaustion-only disposition | Signed order instead says failure to state any cause of action | Obtain minute order, tentative adopted ruling, transcript, and briefs before asserting exclusive exhaustion basis |
-| P0 | Federal PO entry/redline | Oct 14 proposed order; history reports redline request | Obtain actual request, revised clean/redline/declaration, signed order, and any cross-use/re-production agreement |
-| P1 | Opposition docket identity | Served text exists; Dkt 30 calls it ECF 23 | Current docket or stamped PDF to confirm ECF number, acceptance, and exact filed text |
+| RESOLVED 10/25 | Federal PO entry/redline (ECF 32 order; ECF 34 defense redline; ECF 36 plaintiff response; ECF 35 order granting PO Oct 20) | Oct 14 proposed order; history reports redline request | Obtain actual request, revised clean/redline/declaration, signed order, and any cross-use/re-production agreement |
+| RESOLVED 10/25 | Opposition docket identity (ECF 23 per PACER report 10/15) | Served text exists; Dkt 30 calls it ECF 23 | Current docket or stamped PDF to confirm ECF number, acceptance, and exact filed text |
 | P1 | Original opposition PDF | Registered hash and extracted text; import status separately recorded in manifest | Retrieve and verify original bytes if absent from this room; text does not replace original |
-| P1 | Defendants' disclosures | Dkt 28 promised Oct 15; plaintiff service is separately documented | Obtain actual disclosure package/service proof; do not assert defense default from plaintiff's satisfied clock |
+| RESOLVED 10/25 | Defendants' disclosures (served Oct 15; preserved in 01-portfolio-records) | Dkt 28 promised Oct 15; plaintiff service is separately documented | Obtain actual disclosure package/service proof; do not assert defense default from plaintiff's satisfied clock |
 | P1 | Operative complaint | Recovered historical filed-designated copy; Dkt 15 quotes matching paragraphs | Check ECF 1 and absence of superseding amendment; recovered PDF has blank case-number line |
 | P1 | Count labels | Graph labels I/II opposite complaint | Use complaint I Smith / II HOPE; graph remains preserved, unedited |
 | P1 | Statutory pinpoints | Complaint/briefs use 3574(f)(1) too broadly | Use 3574(d), (e), and introductory (f); (f)(1) concerns LS/CMI score |
@@ -38,3 +38,11 @@ This is not an exhaustive scan of every branch, historical commit, Library file,
 - Policy text and compulsory attendance do not automatically prove scienter, mail/wire fraud, causation, or RICO injury.
 - Insurance limits are not a settlement floor, and W-2 earnings are not themselves a lost-wage calculation.
 - Private preparation is not automatically privileged work product merely because a historical memo called it that.
+
+
+## Update 2026-10-25 — Gmail review of everything after Oct 13 (no contact made)
+
+| P0 | Remote appearance | Defense no-objection email Oct 23; no motion/order | In person unless Court orders otherwise |
+| P1 | ECF 33 | Not in Gmail NEFs | Check PACER |
+| P1 | ECF 35 original PDF | Read from chat attachment; bytes not on box | Save the PDF into 01-portfolio-records as `Dkt 35 - Stipulated Protective Order Granted (Filed Oct 20 2026).pdf` |
+| P1 | Reply-evidence objection / name-conform motion | None on docket through 32 or NEFs 34-36 | Treat as not filed |

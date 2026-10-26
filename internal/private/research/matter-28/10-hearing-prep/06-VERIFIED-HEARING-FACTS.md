@@ -30,3 +30,13 @@ Checked October 25, 2026 (America/Los_Angeles). Each line names its source. "Ver
 - [ ] Bring a government photo ID; expect building security.
 - [ ] Bring printed binder tabs A-I (command sheet) and a pen. Phone on silent.
 - [ ] Arrive around 9:45 a.m. (personal target, not a court requirement).
+
+
+## Update 2026-10-25 — Gmail review of everything after Oct 13 (no contact made)
+
+- **Hearing unchanged as of Oct 25:** MTD (ECF 15) + Initial CMC, **Tue Oct 27, 2026, 10:30 AM PT, Courtroom G, 15th Floor, San Francisco, IN PERSON** (ECF 22, ECF 29). No vacatur, reset, submission-without-argument, or remote-appearance order found in Gmail NEFs (only NEFs after Oct 12: ECF 34, 35, 36).
+- **Remote appearance:** Brendan asked Martinez Oct 23 10:21 AM PT to stipulate to Zoom. Martinez replied Oct 23 5:09 PM PT: no time to draft a stipulation, but "no objection to Tuesday's hearing being held remotely" and Brendan may state defendants have no objection in his own motion. **No motion filed and no order exists** — remote is NOT authorized unless the Court grants a request. Plan to appear in person.
+- **ECF 23 confirmed** as Plaintiff's Opposition (filed 9/22, entered 9/23) per PACER docket report pulled 10/15/26 (`01-portfolio-records/PACER Docket Report through Dkt 32 (Pulled Oct 15 2026).pdf`).
+- **Protective order entered:** ECF 35, Oct 20, 2026 — "PURSUANT TO STIPULATION, IT IS SO ORDERED" (Cisneros, J.) granting ECF 31; §2.14 pro se direct access; §13 self-represented archival copy.
+- **Only opposing-counsel email to chambers found:** Kim Schmitt (SLB) to ljcpo@cand.uscourts.gov, Oct 14, 9:36 AM PT, Word version of proposed stipulated PO (Brendan cc'd). Nothing on the merits or hearing logistics.
+- No objection to reply evidence and no name-conform motion/ruling appear on the docket through ECF 32 or in NEFs 34–36. ECF 33 contents unknown (no NEF in Gmail).

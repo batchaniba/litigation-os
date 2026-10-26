@@ -25,3 +25,8 @@ Use [02-JUDGE-QUESTIONS.md](02-JUDGE-QUESTIONS.md). If neither file covers it, s
 ## Fill before the hearing
 
 Row 9 summarizes Complaint ¶62(b)-(d) (`07-source-text/Complaint-as-filed-copy.txt`, complaint p.17 lines 1-10). These are allegations, not findings. Lead with (c), the most concrete threat. Reply §IV only addresses (a), the gatekeeping theory.
+
+
+## Update 2026-10-25 — Gmail review of everything after Oct 13 (no contact made)
+
+- Opposition is confirmed as ECF 23 (PACER). Cite it as "Opp. (ECF 23)" throughout. Defendants' own Rule 26 disclosure lists six parole officials as witnesses on "the incidents alleged"; this is usable at the CMC, not as merits evidence on a 12(b)(6) motion.

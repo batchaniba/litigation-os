@@ -367,6 +367,60 @@
       "sha256": "6c1ca03b81305c2066fba9d6ac488208237c14c24f0df866f4b85ae3bc9353af",
       "verification": "downloaded_and_sha256_verified",
       "sha256_status": "independently_rehashed"
+    },
+    {
+      "path": "internal/private/research/matter-28/01-portfolio-records/PACER Docket Report through Dkt 32 (Pulled Oct 15 2026).pdf",
+      "size": 142595,
+      "sha256": "ccee363aec1e977ec6ea12694c34787f77d0a9af8272b62828f2e2e5d828e43b",
+      "kind": "new_analysis_or_new_derivative"
+    },
+    {
+      "path": "internal/private/research/matter-28/01-portfolio-records/Dkt 34 - Defendants Response to Oct 15 Order with Redline PO (Filed Oct 19 2026).pdf",
+      "size": 550897,
+      "sha256": "8099d737c571129a80d8286424945405a8f03713c17072041c0c0d4f1d0ea410",
+      "kind": "new_analysis_or_new_derivative"
+    },
+    {
+      "path": "internal/private/research/matter-28/01-portfolio-records/Dkt 36 - Plaintiff Response to Oct 15 2026 Order (Dated Oct 16, Filed Oct 19 2026, served copy).pdf",
+      "size": 394158,
+      "sha256": "e759d27de3ba60aeb285931bc54204c618a7d9332667b15071c59fcb3a97b394",
+      "kind": "new_analysis_or_new_derivative"
+    },
+    {
+      "path": "internal/private/research/matter-28/01-portfolio-records/Defendants Smith and HOPE Initial Rule 26 Disclosure (Dated and Served Oct 15 2026).pdf",
+      "size": 137629,
+      "sha256": "eab249c8b4b61c9eaab188e59855f8202f56b860533305d32979ab6fad1c820e",
+      "kind": "new_analysis_or_new_derivative"
+    },
+    {
+      "path": "internal/private/research/matter-28/10-hearing-prep/06-VERIFIED-HEARING-FACTS.md",
+      "size": 5828,
+      "sha256": "e00d506a6b40fc7ed571708881b5983ac6de5870f5cca9fd2989eff9527a9926",
+      "kind": "new_analysis_or_new_derivative"
+    },
+    {
+      "path": "internal/private/research/matter-28/10-hearing-prep/07-REPLY-REBUTTAL-MATRIX.md",
+      "size": 7686,
+      "sha256": "da5fdea1c68336a318c7792dbb38cbec6001ef1316aa2241db30196d57c8d7ea",
+      "kind": "new_analysis_or_new_derivative"
+    },
+    {
+      "path": "internal/private/research/matter-28/10-hearing-prep/00-HEARING-COMMAND-SHEET.md",
+      "size": 5743,
+      "sha256": "83ac6284c7bbd1bc092f1ac88ccc759027d715e3cbad19f88d0d461028b44a17",
+      "kind": "new_analysis_or_new_derivative"
+    },
+    {
+      "path": "internal/private/research/matter-28/09-evidence-map/TIMELINE.md",
+      "size": 4791,
+      "sha256": "8bd69bd865b4e7a749a3ea9a0ee8df925e5be382632843d64cc54bfccd9b4d35",
+      "kind": "new_analysis_or_new_derivative"
+    },
+    {
+      "path": "internal/private/research/matter-28/08-audit/GAPS-AND-CONFLICTS.md",
+      "size": 6137,
+      "sha256": "5e3532673dceefb21abd60838d49cf3e0b6ef1330fa00e283c28124af1b75261",
+      "kind": "new_analysis_or_new_derivative"
     }
   ],
   "new_analysis_and_derivatives": [

@@ -28,3 +28,21 @@ Built October 25, 2026 from the preserved sources in this room. Each date names 
 | Oct 20 | Civil L.R. 7-3(d) reply-evidence objection window (7 days after Oct 13) closes | Rule computation; repo clock still open. **Filing status unverified** |
 | **Oct 27, 10:30 a.m.** | **Combined MTD hearing + initial CMC, Courtroom G, in person** | ECF 29; [06-VERIFIED-HEARING-FACTS.md](../10-hearing-prep/06-VERIFIED-HEARING-FACTS.md) |
 | After ruling | If dismissed with leave: the amendment deadline is whatever the order sets. If denied: answer due 14 days after notice of the ruling (FRCP 12(a)(4)(A)) unless the Court sets a different time | FRCP 12(a)(4) (ledger) |
+
+
+## Update 2026-10-25 — Gmail review of everything after Oct 13 (no contact made)
+
+| Date (PT) | Event | Source |
+|---|---|---|
+| Oct 13 | Brendan sends executed stipulated PO; Martinez: will file tomorrow | Gmail |
+| Oct 14 | ECF 31 stipulated PO filed; SLB emails Word version to ljcpo@ (9:36 AM); Brendan serves Rule 26 disclosures (9:46 AM) | PACER report; Gmail |
+| Oct 15 | ECF 32 text order: redline vs. Model PO or confirm no differences by Oct 19 | PACER report |
+| Oct 15 | Defendants serve Initial Rule 26 Disclosure (16 named witnesses + all plaintiff witnesses; documents and insurance policy promised "upon entry of a protective order"; no damages claimed) | Gmail 11:44 AM courtesy copy |
+| Oct 15 | Brendan serves First RFPs, First RFAs to HOPE, preservation letter | Gmail |
+| Oct 16 | Brendan declines joint response; serves own response | Gmail 5:35 PM |
+| Oct 19 | ECF 34 defendants' response with redline (15 pp.) | NEF; Gmail |
+| Oct 19 (entered Oct 21) | ECF 36 Plaintiff's response re ECF 32 (does not oppose entry; lists AEO omission, §2.14, §13 differences) | NEF |
+| Oct 20 | ECF 35 Order granting stipulated PO | NEF; attached PDF |
+| Oct 20 | Brendan granted CAND e-filing access | Gmail |
+| Oct 23 | Remote request to Martinez; Martinez no objection but will not stipulate | Gmail |
+| Oct 27 10:30 AM | Hearing + CMC, in person, Courtroom G (unchanged) | ECF 22, 29 |

@@ -56,3 +56,17 @@ If the Court is inclined to find preclusion, ask it to identify the state dispos
 - No §1519 RICO predicate and no private $25,000 Bane penalty; both positions were already stated in the opposition.
 - Treatment completion and discharge from parole/GPS are separate. Do not promise one automatically causes the others.
 - If a date, document, or fact is unverified: “I would need to verify that against the record.”
+
+
+## Update 2026-10-25 — Gmail review of everything after Oct 13 (no contact made)
+
+**Status:** Still Oct 27, 10:30 AM PT, Courtroom G, in person. No remote order.
+
+**Before Tuesday (Brendan decides — nothing filed by this workspace):**
+1. If he wants Zoom: only path is his own request to the Court (e.g., administrative motion) stating defendants do not object (Martinez email Oct 23, 5:09 PM PT). Filing on Sunday/Monday leaves little time to rule — default plan stays in person.
+2. Check PACER Monday for any order (vacatur/submission/remote) and identify ECF 33.
+
+**CMC talking points (new):**
+- PO entered Oct 20 (ECF 35). Defendants' Oct 15 disclosures promised documents and the insurance policy "upon entry of a protective order" — ask that production occur by a date certain.
+- Brendan's RFPs/RFAs served Oct 15; responses ~30 days (verify method-of-service extension before stating a date).
+- Defendants' witness list includes six parole officials at 612 Carlton Ave. — relevant to state-actor / causation framing.
