@@ -65,10 +65,12 @@ export async function handleWebhook({ rawBody, signatureHeader, eventName, env, 
   job.timeoutMs = timeoutMs(env);
   if (decision.action === "fail") job.refusal = decision.reason || "refused before start";
 
-  // Queue only. Running the gate here under ctx.waitUntil() is cancelled 30s
-  // after this response, which is what left Check Runs stuck in_progress.
-  // No Check Run exists yet if queueing fails, so the required check stays
-  // missing and merge stays blocked (fail-closed).
+  // Queue only (singleton FIFO on GateOrchestrator). Running the gate here
+  // under ctx.waitUntil() is cancelled 30s after this response, which is
+  // what left Check Runs stuck in_progress. No Check Run exists yet if
+  // queueing fails, so the required check stays missing and merge stays
+  // blocked (fail-closed). Busy container → wait in line, do not start a
+  // second instance.
   try {
     await enqueue(job);
   } catch (err) {

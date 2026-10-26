@@ -11,6 +11,7 @@
 //   - runner lost without reporting → stale sweep concludes failure
 //   - never conclude `neutral`
 
+import { GATE_QUEUE_NAME } from "./constants.mjs";
 import { handleWebhook, healthBody, json, timeoutMs } from "./handler.mjs";
 import { GateRunner } from "./runner.mjs";
 import { GateOrchestrator } from "./orchestrator.mjs";
@@ -46,7 +47,7 @@ export default {
         eventName: request.headers.get("x-github-event"),
         env,
         enqueue: (job) =>
-          env.GATE_ORCHESTRATOR.get(env.GATE_ORCHESTRATOR.idFromName(job.sha)).enqueue(job),
+          env.GATE_ORCHESTRATOR.get(env.GATE_ORCHESTRATOR.idFromName(GATE_QUEUE_NAME)).enqueue(job),
       });
     }
 

@@ -8,17 +8,20 @@ main = "src/index.mjs"
 compatibility_date = "2026-09-20"
 
 # standard-2 = 1 vCPU / 6 GiB / 12 GB disk — npm ci + vitest will OOM on lite/basic.
+# One instance. GateOrchestrator FIFO-queues extra SHAs instead of starting
+# more 6 GiB containers. Overlapping instances were the bulk of the Sep–Oct
+# 2026 Containers bill.
 [[containers]]
 class_name = "GateRunner"
 image = "./Dockerfile"
-max_instances = 3
+max_instances = 1
 instance_type = "standard-2"
 
 [[durable_objects.bindings]]
 name = "GATE_RUNNER"
 class_name = "GateRunner"
 
-# Queues each gate job and runs it from an alarm (15-minute wall limit).
+# Singleton FIFO: one live gate at a time (15-minute alarm wall limit).
 # The webhook's ctx.waitUntil() is cancelled 30s after the response, which
 # killed every full run and left Check Runs in_progress forever.
 [[durable_objects.bindings]]

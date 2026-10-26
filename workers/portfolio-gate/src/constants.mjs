@@ -18,3 +18,8 @@ export const UA = "ilp-portfolio-gate";
 
 export const PR_ACTIONS = new Set(["opened", "synchronize", "reopened"]);
 export const SHA_RE = /^[0-9a-f]{40}$/i;
+
+/** Singleton GateOrchestrator name. Every SHA shares one FIFO so jobs queue instead of starting more containers. */
+export const GATE_QUEUE_NAME = "gate";
+/** Singleton GateRunner id. One live standard-2 instance; max_instances = 1. */
+export const GATE_RUNNER_ID = "gate";
