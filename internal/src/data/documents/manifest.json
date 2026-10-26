@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "fileCount": 1746,
-  "totalBytes": 1022517839,
+  "fileCount": 1762,
+  "totalBytes": 1025104690,
   "files": [
     {
       "path": "/documents/_form-library/ao239-blank-template.pdf",
@@ -8632,6 +8632,86 @@
       "path": "/documents/matter-42/ndcal/to-file/JS-CAND 44 Civil Cover Sheet (fillable) - Ngwa Nforbi v. Staples The Office Superstore, LLC (N.D. Cal.) (Oct 19 2026).pdf",
       "size": 2218661,
       "sha256": "a94ea99d2d586ae8ab3880104d31b7967615f4ffc92f6c9e280caa456b7b746b"
+    },
+    {
+      "path": "/documents/matter-43/ADP - Tax Credit Screening Confirmation (Oct 22 2026).pdf",
+      "size": 49578,
+      "sha256": "cdddb4d40676acfa6cf315b959154d3fa2d2412551320fc09552b5d6e2edc3d2"
+    },
+    {
+      "path": "/documents/matter-43/ADP - WOTC Screening Request (Hertz Global Holdings, Oct 22 2026).pdf",
+      "size": 39797,
+      "sha256": "c088ac29416eceee2892723708474a1b0b1850a50e3fd7b836946388dd0b0d1f"
+    },
+    {
+      "path": "/documents/matter-43/Hertz - Pre-Boarding Instructions (Req 43711, Oct 23 2026).pdf",
+      "size": 41562,
+      "sha256": "b7051b3e6212bf39899fe3829990d50767cf9aad586a67afa5fd0bf2fe46bbd1"
+    },
+    {
+      "path": "/documents/matter-43/Hertz Careers - Additional Application Information Request (Oct 22 2026).pdf",
+      "size": 46306,
+      "sha256": "3fc83173537154d92c6feb8a265febe20981a4b285ace10986ac3bfb751eb367"
+    },
+    {
+      "path": "/documents/matter-43/Hertz Careers - Application Status Offer Accepted (Req 43711, Oct 22 2026).pdf",
+      "size": 55698,
+      "sha256": "a421d0f922a2a6583e24f2124d9f479a475c77819f3d6c1756c07c03932a5c28"
+    },
+    {
+      "path": "/documents/matter-43/Hertz Careers - Manager Trainee Offer Extended (Oct 22 2026).pdf",
+      "size": 33273,
+      "sha256": "07f4b7d0d666fbe9ec699721d49f46babd5d6839a8e78ee7d0e78cba40cb2df3"
+    },
+    {
+      "path": "/documents/matter-43/Hertz Careers - Offer Acceptance Confirmation (Oct 22 2026).pdf",
+      "size": 32955,
+      "sha256": "0b793e70532b52ae0a286dbf972ea2667af3095b0dac6a5e865b5bb09854ceda"
+    },
+    {
+      "path": "/documents/matter-43/Hertz Talent Acquisition - Offer Follow-Up (Oct 22 2026).pdf",
+      "size": 35020,
+      "sha256": "0cd2cc56c2b4840bf8e0e3a49e415bd867774ed2a6684c27e95c5a13a8037e25"
+    },
+    {
+      "path": "/documents/matter-43/HireRight - Acknowledgments and Authorization (Signed Oct 23 2026).pdf",
+      "size": 32860,
+      "sha256": "e6bf9c1759f7062b51aa43be9943ea87e51dac7ff16b66322c4271a91db75a6f"
+    },
+    {
+      "path": "/documents/matter-43/HireRight - Background Verification Consent Forms Email (Oct 23 2026).pdf",
+      "size": 35316,
+      "sha256": "3d84f8b7fb8f341de0b3e3d1980e211891df95468f329e39a727bfafc96665e7"
+    },
+    {
+      "path": "/documents/matter-43/HireRight - Background Verification Request (Oct 23 2026).pdf",
+      "size": 46716,
+      "sha256": "750a1344e19e406b17e3dd2064fb28b127b4a5b40d2149bf0f2d4e3453260f6e"
+    },
+    {
+      "path": "/documents/matter-43/HireRight - MVR Express Furnishing Notice to Hertz (Oct 23 2026).pdf",
+      "size": 37086,
+      "sha256": "61979d924cb4290e691935d9da9fa7466663f5d445812fffdf3bfc93c22418db"
+    },
+    {
+      "path": "/documents/matter-43/HireRight - Other Disclosures and Authorizations (Signed Oct 23 2026).pdf",
+      "size": 1143243,
+      "sha256": "be42a13b2c50e446efe71c9a7f514b4ab5998ec5a10e0cf8d0bcd1e9b7d900e8"
+    },
+    {
+      "path": "/documents/matter-43/HireRight - Screening Disclosure and Authorization (Signed Oct 23 2026).pdf",
+      "size": 34203,
+      "sha256": "2d726d995a5640f9bef60ca0c9bdc05657fdaf15fa05635c81ab120031269162"
+    },
+    {
+      "path": "/documents/matter-43/HireRight - Submission Received (Request OR-102326-NH87V, Oct 23 2026).pdf",
+      "size": 35350,
+      "sha256": "3e09152dba49f32bbd6cbe080fd412757152f9364af1ec47f16f34d554c96540"
+    },
+    {
+      "path": "/documents/matter-43/Offer Letter - Manager Trainee, Palo Alto ($23 per hour) (Oct 22 2026).pdf",
+      "size": 887888,
+      "sha256": "a52a25984f8cc1ce053701c60be586617daab014164b3b3e7a8af62733f53aeb"
     },
     {
       "path": "/documents/matter-5/Complaint - Newanforbi v. Palacios, et al. (filing packet).pdf",
