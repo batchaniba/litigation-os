@@ -1,0 +1,848 @@
+     PRIVILEGED RESEARCH MEMORANDUM (PLAINTIFF'S WORK
+                   PRODUCT, NOT FOR FILING)
+
+To     Brendan Ngwa Nforbi (also Brendan Ngehsi Newanforbi), Plaintiff, in propria persona
+From Research assistant (non-attorney research; not legal advice)
+Date October 25, 2026
+Re     Nforbi v. Candelaria et al., N.D. Cal. No. 3:26-cv-08272 — trial-carrying issues, recommended strategy, and citation
+       corrections for the First Amended Complaint (ECF No. 6, filed Aug. 17, 2026)
+
+
+Docket note. The FAC caption reads 3:26-cv-08272-LJC (Magistrate Judge Lisa J. Cisneros).
+Defendants declined magistrate-judge jurisdiction. The case was reassigned to U.S. District Judge
+Rita F. Lin and now carries the suffix -RFL. Dkt. 24 (Order Granting Motion to Strike, Oct. 13, 2026)
+bears the RFL caption. It struck the Sept. 4 answer (Dkt. 11) because that answer responded to the
+superseded complaint, and it ordered Defendants to respond to the FAC by October 27, 2026. Use "-
+RFL" on all future papers. The Dkt. 11 answer was stricken, but it previews the defenses: quasi-judicial
+immunity (Aff. Def. 31, citing Butz), qualified immunity (32), Eleventh Amendment (11), venue (8),
+res judicata/collateral estoppel for failure to exhaust judicial remedies (23), lack of standing and
+ripeness (1, 7), and mitigation and causation (19, 25). Expect a Rule 12 motion on Oct. 27 raising most
+of these.
+
+How to read the verification labels. Every authority below carries one of these tags:
+
+      • [W]: Checked on Westlaw with KeyCite on Oct. 25, 2026, on a public law-library seat (results-
+        batch1/batch2.csv). The flag color is noted where relevant.
+      • [F]: Not KeyCited. Existence, citation, and the quoted or paraphrased language were confirmed
+        against free full text on Oct. 25, 2026: CourtListener full-text search, Justia,
+        leginfo.legislature.ca.gov, or Cornell LII. Subsequent history has not been checked.
+      • [U]: Unverified. Named only as a lead. Do not cite it until it is pulled and read.
+
+Quotations are reproduced only where the exact words were matched in a source. Everything else is
+paraphrase. This memo is research, not legal advice. Before you rely on any authority in a filing, re-
+read it and run a citator check (Westlaw KeyCite or Lexis Shepard's).
+
+
+
+1. Executive summary: top findings
+
+     1. Absolute immunity is the biggest threat to the damages counts (Counts I–II), and the
+        FAC's "she acted as an advocate, not a judge" theory does not escape it as pleaded. Butz
+        gives absolute immunity to agency adjudicators. It also extends it to agency officials performing
+        functions "analogous to those of a prosecutor" [W/F]. Imbler protects advocacy "intimately
+        associated with the judicial phase" [F]. Marshaling and offering exhibits at the hearing is either
+        adjudicative or prosecutorial, and both are absolutely immune. The viable path is the Cleavinger
+        line: the "independence" and procedural-safeguard factors. Cleavinger denied absolute
+
+
+
+                                          Privileged research memo — Page 1 of 18
+    immunity to prison discipline-committee members who were "not 'independent'" [W/F]. Cal.
+    DUI Lawyers supports that line: it describes DMV hearing officers as agency employees
+    assigned an advocacy role (77 Cal.App.5th 517) [W; text read on Justia]. Reframe ¶¶98 and
+    118 around the Cleavinger factors (lack of structural independence and safeguards), not
+    around "advocacy."
+ 2. Preclusion is a more serious risk than Heck. Under Univ. of Tenn. v. Elliott [F], federal courts
+    give an unreviewed state agency's judicial-capacity factfinding the preclusive effect it would get
+    in state court. Miller v. County of Santa Cruz and White v. City of Pasadena apply this in the
+    Ninth Circuit [F]. Johnson v. City of Loma Linda [F] holds that if a party does not challenge an
+    agency's adverse findings by a mandate action, "those findings are binding in later civil actions."
+    No timely Veh. Code § 13559 petition (30 days) was filed. The Sacramento mandamus petition
+    (No. 26WM000135, filed around May 2026) was abandoned after the fee waiver was denied.
+    The best answer is that a hearing without a neutral adjudicator lacks the "judicial
+    capacity" and "adequate opportunity to litigate" that preclusion requires. That is a strong
+    argument, but it is untested in this specific setting.
+ 3. Mercer is no longer good authority for the proposition the FAC uses it for. Veh. Code §
+    40300.5(e) (added in 1996) superseded Mercer's presence-rule holding. Troppman v. Valverde
+    (2007) 40 Cal.4th 1121, fn. 11, says so [F, not KeyCited]. Westlaw flags Mercer yellow,
+    "Superseded by Statute as Stated in" Troppman v. Gourley and Dyer [W]. Calling Mercer
+    "binding" and "controlling" (¶¶4(b), 59, 91, 102(b)) is a candor problem. Reframe to a no-
+    probable-cause and lawful-arrest theory. Troppman fn. 12 preserves the requirement that the
+    DMV find a lawful arrest, "dependent upon an officer's possessing probable cause" [F].
+ 4. Qualified immunity on Count I is a real risk because the clearly established law comes
+    from state intermediate courts that disagree with each other. Cal. DUI Lawyers (2022)
+    expressly held that combining advocate and adjudicator in one DMV hearing officer violates the
+    Fourteenth Amendment. It also produced a permanent injunction against that practice [read on
+    Justia]. But Supreme Court law requires "controlling authority" or "a robust 'consensus of cases
+    of persuasive authority'" (Wesby) [F], so that the question is "beyond debate" (al-Kidd) [F].
+    Knudsen (case-by-case) and the KeyCite-flagged Chi and Romane decisions (no advocacy
+    found) undercut "beyond debate." Plead the existing injunction plus Candelaria's specific
+    acts. Argue Hope v. Pelzer obviousness and Murchison as the general rule. Expect QI to be
+    decided early.
+ 5. The remedies need to be trimmed now.
+ 6. Kay v. Ehrler bars § 1988 attorney's fees for a pro se litigant [W]. Costs remain available.
+ 7. Carey v. Piphus caps recovery at nominal damages ("not to exceed one dollar") if the same
+    result would have followed with proper process [W/F].
+ 8. Lost-wage causation is weak for the period after Dec. 4, 2024, because the temporary license
+    already barred commercial driving before Candelaria acted.
+ 9. The $125 fee refund is retrospective money relief, which the Eleventh Amendment bars
+    (Edelman) [F].
+10. The suspension expired Feb. 19, 2026, so relief directed at it is moot.
+11. What remains live for Ex parte Young is the SR-22 (through about May 2029) and the record
+    entry. Those are "continuing, present adverse effects" (Villa/O'Shea) [W].
+
+
+
+                               Privileged research memo — Page 2 of 18
+2. Issue 1: Quasi-judicial absolute immunity for the DMV hearing officer
+
+Controlling law.
+
+     • Butz v. Economou, 438 U.S. 478, 511–13 (1978) [W, yellow; core holding intact].
+     • Federal administrative law judges and agency officials receive absolute immunity when the role
+       is "functionally comparable" to a judge's [F].
+     • Officials "performing certain functions analogous to those of a prosecutor" receive the same
+       protection [F].
+     • The rationale rests on built-in safeguards: insulation from political influence, the adversary
+       process, and correctability of error on appeal (511–12) [W].
+     • Cleavinger v. Saxner, 474 U.S. 193, 202 (1985) [W] lists the six factors: (a) need to perform the
+       function without harassment; (b) safeguards that reduce the need for damages actions; (c)
+       insulation from political influence; (d) importance of precedent; (e) adversary nature of the
+       process; (f) correctability of error on appeal.
+     • It denied absolute immunity to prison discipline-committee members. They were "not
+       'independent'" and were in a relationship "hardly ... conducive to a truly adjudicatory
+       performance" [F].
+     • Forrester v. White, 484 U.S. 219, 227–30 (1988) [W]: immunity follows function, not title.
+     • Stump v. Sparkman, 435 U.S. 349 (1978), and Mireles v. Waco, 502 U.S. 9 (1991) [F]: judicial
+       acts are immune even when erroneous or malicious. The exceptions are non-judicial acts and
+       acts "taken in the complete absence of all jurisdiction" [F, phrase matched in Mireles].
+     • Imbler v. Pachtman, 424 U.S. 409 (1976) [F]: prosecutorial acts "intimately associated with the
+       judicial phase" are absolutely immune.
+
+Ninth Circuit.
+
+     • Mishler v. Clift, 191 F.3d 998 (9th Cir. 1999) [F]: a state medical board receives absolute
+       immunity for quasi-judicial acts.
+     • Olsen v. Idaho State Bd. of Medicine, 363 F.3d 916 (9th Cir. 2004) [F]: absolute immunity for
+       quasi-judicial and quasi-prosecutorial acts. Westlaw notes Olsen as a citing reference on
+       Forrester [W].
+     • Buckwalter v. Nevada Bd. of Med. Examiners, 678 F.3d 737 (9th Cir. 2012) [F]: applies the
+       Cleavinger factors. It addresses absolute immunity for a board's summary license suspension.
+     • Swift v. California, 384 F.3d 1184, 1191–92 (9th Cir. 2004) [W]: parole officials are immune for
+       adjudicative acts but not for law-enforcement-type acts.
+     • Gap: I found no published Ninth Circuit decision applying quasi-judicial immunity specifically
+       to a California DMV Driver Safety hearing officer [U]. Unpublished district-court rulings
+       probably exist. Search CourtListener for "driver safety" "hearing officer" "quasi-judicial."
+
+How it cuts.
+
+     • Against Brendan:
+
+
+
+                                  Privileged research memo — Page 3 of 18
+     • Conducting the hearing, ruling on objections, admitting exhibits, and deciding the case are core
+       adjudicative acts.
+     • Marshaling and offering DMV exhibits is prosecutorial in nature. Under Butz and Imbler, that is
+       also absolutely immune. ¶¶98 and 118 argue that advocacy defeats immunity, which gets the
+       doctrine backwards.
+     • California provides review by writ (Veh. Code § 13559; CCP § 1094.5), which supports the
+       "correctability of error" factor.
+     • The ruling would likely be made on the pleadings, and immunity would defeat the damages
+       counts entirely. Counts III–IV against Gordon are unaffected, because absolute immunity does
+       not bar official-capacity prospective relief.
+     • For Brendan (the Cleavinger route):
+     • The APS hearing officer is a subordinate civil-service employee of the agency that is a party, not
+       an independent ALJ. California's APA separation-of-functions statute (Gov. Code § 11425.30(a))
+       is expressly made inapplicable by Veh. Code § 14112(b). Cal. DUI Lawyers describes and
+       quotes this [read on Justia; statutes not separately pulled, so U for exact text].
+     • CDLA describes the hearing officer as performing both advocate and fact-finder roles under
+       DMV practice [Justia text; confirm specific record details, such as manager review of decisions,
+       before pleading them — U].
+     • Those facts map onto Cleavinger factors (b), (c), and (e).
+     • The same logic shows that the process lacks the Butz "safeguards" that justify absolute
+       immunity.
+
+Strategy.
+
+    1. Amend ¶¶98 and 118, or argue in opposition, using the Cleavinger factors. Rely on CDLA's
+       findings about the structure of DMV hearings, and on the Feb. 11, 2025 decision's own wording
+       ("no evidence was presented to the contrary").
+    2. Identify conduct outside the hearing that is administrative or investigative rather than
+       adjudicative, such as acts before the hearing or record-keeping. Forrester and Swift say such acts
+       get no absolute immunity. Plead those acts only if they are true.
+    3. Preserve the issue for appeal. Denial of absolute immunity is immediately appealable by the
+       defendant [U, collateral-order doctrine; verify].
+    4. Keep Counts III–IV fully independent of Counts I–II so that an immunity ruling does not take
+       down the whole case.
+
+
+
+3. Issue 2: Qualified immunity and "clearly established" law
+
+Controlling law.
+
+     • Pearson v. Callahan, 555 U.S. 223 (2009) [F]: courts may decide either prong first.
+     • Ashcroft v. al-Kidd, 563 U.S. 731 (2011) [F]: existing precedent must place the question
+       "beyond debate."
+
+
+
+
+                                  Privileged research memo — Page 4 of 18
+     • District of Columbia v. Wesby, 583 U.S. 48 (2018) [F]: the rule must be dictated by "controlling
+       authority" or "a robust 'consensus of cases of persuasive authority.'"
+     • Hope v. Pelzer, 536 U.S. 730, 741 (2002) [W]: a general rule can give fair warning in an
+       obvious case.
+     • Drummond ex rel. Drummond v. City of Anaheim, 343 F.3d 1052 (9th Cir. 2003) [F]: quoting
+       earlier authority, "in the absence of binding precedent, a court should look to whatever
+       decisional law is available." Only that fragment was matched; read the full passage before
+       quoting more.
+     • Due-process baseline:
+     • In re Murchison, 349 U.S. 133, 136 (1955) [W]: "[N]o man can be a judge in his own case"; "A
+       fair trial in a fair tribunal is a basic requirement of due process."
+     • Withrow v. Larkin, 421 U.S. 35, 46–47 (1975) [W]: combining investigative and adjudicative
+       functions does not by itself violate due process. A challenger "must overcome a presumption of
+       honesty and integrity in those serving as adjudicators" [F].
+     • Caperton, 556 U.S. 868, 883–84 (2009) [W]: the test is the "probability of actual bias" [F].
+
+What California decisions do in federal court.
+
+     • Cal. DUI Lawyers Ass'n v. DMV (2022) 77 Cal.App.5th 517 [W, yellow: distinguished by
+       Kazelka v. DMV].
+     • The court held (paraphrase) that combining the roles of advocate and adjudicator in a single
+       DMV hearing officer violates due process under the Fourteenth Amendment and Cal. Const. art.
+       I, § 7 [Justia text; re-read before quoting].
+     • It held Veh. Code § 14112(b) unconstitutional to that extent.
+     • It directed a permanent injunction against DMV "having its APS hearing officers function as
+       advocates for the position of the DMV in addition to being finders of fact" [Justia].
+     • It is therefore a federal-law holding, not only a state-law one.
+     • A state intermediate appellate court's reading of the Fourteenth Amendment does not bind a
+       federal court. It is persuasive at most.
+     • The later cases point different ways:
+     • Knudsen v. DMV (2024) 101 Cal.App.5th 186, 207 [W]: "The analysis will necessarily depend
+       on the unique facts of each hearing."
+     • Clarke v. Gordon (2024) 104 Cal.App.5th 1267, 1277 [W]: found advocacy where the hearing
+       officer "marshalled, identified, and offered into evidence the DMV's exhibits."
+     • KeyCite shows Chi v. DMV (1st Dist.) "disagreed with" Clarke, and Romane v. DMV (4th Dist.,
+       Apr. 23, 2025) distinguished Knudsen [W, citing references only; not read].
+     • That split is the defense's best argument that the law was not "beyond debate" on Jan. 24, 2025.
+
+How it cuts.
+
+     • For Brendan:
+     • The general rule (a neutral decisionmaker; no one judges their own case) is as old as Murchison.
+     • By Jan. 2025, the DMV and its Director had been subject for nearly three years to a permanent
+       injunction against exactly this dual role.
+
+
+
+                                 Privileged research memo — Page 5 of 18
+     • A reasonable hearing officer would know that "marshal, offer, admit, decide" was the conduct
+       Clarke condemned.
+     • Hope allows obviousness without a factually identical case.
+     • Against Brendan:
+     • There is no Supreme Court or Ninth Circuit case holding that an APS hearing officer's dual role
+       violates due process. Withrow points the other way at a general level.
+     • Knudsen makes the question fact-specific, and Chi and Romane went the other way. Courts
+       routinely grant QI in that situation.
+     • QI would not apply to Counts III–IV (official capacity, prospective relief). QI is a defense to
+       damages only [U for a specific cite].
+
+Strategy.
+
+    1. Plead specific facts tracking Clarke's three acts: marshaling and offering, ruling on her own
+       exhibits, and the lack of any separate DMV representative. Cite any DMV form or policy
+       language (e.g., DS 2304, if its text is confirmed) as a policy admission [U].
+    2. Argue the "obvious case" route (Hope, Murchison), plus Drummond's look-to-available-
+       decisional-law rule. Add the 2022 injunction as notice to the agency. (CDLA named the
+       Director; Candelaria's personal notice is a fact question.)
+    3. Concede candidly that QI is contested, so that losing it does not cost credibility on Counts III–
+       IV.
+
+
+
+4. Issue 3: Heck / Edwards and preclusion from the unreviewed DMV decision
+
+Heck and Edwards.
+
+     • Heck v. Humphrey, 512 U.S. 477 (1994) [F]: a § 1983 damages claim is barred if judgment for
+       the plaintiff would "necessarily imply the invalidity" of a conviction or sentence that has not
+       been set aside.
+     • Edwards v. Balisok, 520 U.S. 641 (1997) [F]: extended Heck to a prison-discipline procedural
+       claim based on "deceit and bias" of the hearing officer.
+     • Nonnette v. Small, 316 F.3d 872 (9th Cir. 2002) [F]: Heck does not bar a § 1983 claim where
+       habeas was unavailable because the challenged custody had been fully served.
+     • Lyall v. City of Los Angeles, 807 F.3d 1178 (9th Cir. 2015) [F; existence confirmed]: discusses
+       Nonnette. Per the secondary summaries I saw, it limits the Nonnette exception to former
+       prisoners challenging matters such as good-time credits or parole. Read Lyall before citing it
+       either way.
+
+
+
+
+                                  Privileged research memo — Page 6 of 18
+Application to a civil license suspension: unsettled [U]. I did not locate controlling Ninth Circuit
+authority applying Heck to a civil administrative license suspension of a person who was never in
+custody and never convicted. Arguments:
+
+     • For Brendan: there is no "conviction or sentence," the DA declined to file, and habeas was
+       never available. Heck's logic is tied to the custody and habeas channel.
+     • Against Brendan: Edwards shows that a claim of a biased adjudicator can imply the invalidity of
+       the result. Some courts extend Heck-type reasoning to other unreversed adjudications.
+
+Preclusion (the bigger risk).
+
+     • Univ. of Tenn. v. Elliott, 478 U.S. 788 (1986) [F]: when a state agency acts "in a judicial
+       capacity," federal courts give its factfinding the "same preclusive effect" it would have in state
+       court. This applies to § 1983 claims.
+     • Kremer v. Chemical Constr. Corp., 456 U.S. 461 (1982) [F, existence only]: preclusion of state-
+       court judgments.
+     • Miller v. County of Santa Cruz, 39 F.3d 1030 (9th Cir. 1994) [F] and White v. City of Pasadena,
+       671 F.3d 918 (9th Cir. 2012) [F]: apply Elliott to unreviewed California administrative findings.
+       The analysis uses United States v. Utah Constr. & Mining Co., 384 U.S. 394, 422 (1966) (cited
+       in White) [F as cited].
+     • Johnson v. City of Loma Linda (2000) 24 Cal.4th 61 [F]: unless a party challenges the agency's
+       adverse findings "by means of a mandate action in superior court, those findings are binding in
+       later civil actions." The dissent refers to the Westlake "requirement that a party exhaust judicial
+       remedies" [F].
+     • People v. Sims (1982) 32 Cal.3d 468 [F, existence and topic only]: collateral estoppel from
+       administrative decisions.
+     • Veh. Code § 13559(a) [F, leginfo]: allows a petition for review "within 30 days of the issuance
+       of the notice of determination." Review is on the record. Subdivision (b) bars collateral estoppel
+       only in a later criminal prosecution; it says nothing about civil suits.
+     • Facts:
+     • The decision issued Feb. 11, 2025, so the 30-day window closed around mid-March 2025.
+     • The Sacramento petition (26WM000135) was filed around May 2026, outside that window. It
+       was abandoned after the fee waiver was denied and the fee deadline lapsed (around July 27,
+       2026, per matter records).
+     • Pull the docket to see whether it was dismissed and whether the dismissal was with or without
+       prejudice.
+     • Patsy v. Board of Regents, 457 U.S. 496 (1982) [W] (no exhaustion requirement for § 1983)
+       answers administrative exhaustion. It does not answer preclusion by unreviewed findings. ¶117
+       conflates the two.
+
+
+
+
+                                  Privileged research memo — Page 7 of 18
+How it cuts.
+
+     • The DMV found that the officer had reasonable cause, that there was an arrest, and that there
+       was a refusal. If those findings are binding, Count II ("fair hearing") and the damages-causation
+       theory, which depends on showing the result was wrong, weaken sharply.
+     • Brendan's counter is that preclusion applies only to agencies acting "in a judicial capacity" with
+       an adequate opportunity to litigate (Elliott; Utah Construction). A tribunal whose adjudicator
+       also served as advocate arguably fails that test. That is the very defect CDLA found
+       unconstitutional.
+     • Issue preclusion also should not reach the procedural question of whether the tribunal was
+       neutral, because the DMV never decided it.
+
+Strategy.
+
+    1. Frame Count I as a structural claim about the tribunal, not a challenge to the correctness of the
+       findings.
+    2. Argue that the hearing lacked the "judicial capacity" and fairness preconditions for preclusion.
+    3. Do not argue that the suspension findings were wrong as a basis for damages unless preclusion
+       is defeated.
+    4. Correct ¶117. Patsy is about exhaustion; address Elliott and Johnson directly.
+    5. Disclose the Sacramento petition accurately if it is raised. Do not let the defense frame it as
+       concealed.
+
+
+
+5. Issue 4: Procedural due process adequacy (Mathews, Mackey, Parratt/Zinermon)
+
+Controlling law.
+
+     • Mathews v. Eldridge, 424 U.S. 319 (1976) [W; pin 344–45 is loosely supportive, so recheck
+       343–45]: the three-factor balance (private interest, risk of error and value of added safeguards,
+       government interest).
+     • Bell v. Burson, 402 U.S. 535, 539 (1971) [W]: a driver's license is a protected property interest.
+     • Mackey v. Montrym, 443 U.S. 1, 10–11 (1979) [W]: upheld summary suspension for refusal
+       before a hearing, applying Mathews.
+     • Dixon v. Love, 431 U.S. 105 (1977) [F]: upheld an initial summary decision based on official
+       records, followed by a full hearing.
+     • Loudermill, 470 U.S. 532, 541 (1985) [W]: what process is due is a federal question. Property
+       "cannot be defined by the procedures provided for its deprivation."
+     • Goldberg v. Kelly, 397 U.S. 254, 271 (1970) [W]: "the decision maker should state the reasons
+       for his determination and indicate the evidence he relied on." This was said in the welfare-
+       termination context; its application to APS hearings is argued by analogy.
+     • Parratt v. Taylor, 451 U.S. 527 (1981) and Hudson v. Palmer, 468 U.S. 517 (1984) [F]: for
+       "random and unauthorized" deprivations, an adequate state post-deprivation remedy satisfies
+       due process.
+
+
+
+                                  Privileged research memo — Page 8 of 18
+     • Zinermon v. Burch, 494 U.S. 113 (1990) [F]: Parratt does not apply where the deprivation
+       occurs at a "specific, predictable point" in an established procedure, and the state could have
+       provided pre-deprivation safeguards.
+
+How it cuts.
+
+     • Mackey and Dixon defeat any claim that summary suspension without a pre-suspension hearing
+       is unconstitutional. Do not plead that.
+     • A Parratt/Zinermon dilemma:
+     • If Candelaria's dual role followed DMV policy (the Driver Safety Manual or DMV forms),
+       Zinermon applies, Parratt does not, and the § 13559 writ does not cure the defect. That reading
+       helps Counts I and III–IV.
+     • If DMV had abolished the dual role after the 2022 injunction and Candelaria departed from the
+       new policy, Defendants will call her conduct "random and unauthorized" and argue that § 13559
+       and § 1094.5 review was adequate (Parratt/Hudson). That helps them on Count I. It also
+       undercuts the ongoing-policy premise of Counts III–IV.
+     • Discovery priority: DMV's post-CDLA written policies and Driver Safety Manual revisions in
+       effect on Jan. 24, 2025.
+     • Count II ("no reasoned engagement"; "no evidence was presented to the contrary") risks being
+       treated as a claim that the decision was erroneous, which is a state-law writ issue, rather than as
+       a constitutional procedure defect. Goldberg's statement-of-reasons rule is the best federal hook.
+       Plead that the decision ignored record evidence that was actually submitted (the § 851.6
+       certificate and the dashcam), so that the statement of reasons was illusory.
+
+
+
+6. Issue 5: Mercer superseded by Veh. Code § 40300.5(e); reframing to no probable
+cause
+
+     • Mercer v. DMV (1991) 53 Cal.3d 753, 760–61 [W, yellow: "Superseded by Statute as Stated in"
+       Troppman v. Gourley (2005) and Dyer v. DMV (2008)]. It held that, under the statutes then in
+       force, a warrantless DUI arrest required the misdemeanor to be committed in the officer's
+       presence, meaning observed volitional movement.
+     • Veh. Code § 40300.5 [F, leginfo; subd. (e) added by Stats. 1996, ch. 1078]: permits a
+       warrantless DUI arrest on reasonable cause when, among other conditions, "(e) The person may
+       destroy or conceal evidence of the crime unless immediately arrested."
+     • Troppman v. Valverde (2007) 40 Cal.4th 1121 [F: language matched in CourtListener full-text
+       search Oct. 25, 2026; footnote numbering per the scocal.stanford.edu text; NOT KeyCited
+       because the Westlaw document limit was reached]:
+     • Footnote 11: after Mercer, "the Legislature took such action, allowing warrantless arrest for a
+       misdemeanor driving-while-under-the-influence violation not committed in the arresting
+       officer's presence, in circumstances in which the person otherwise might destroy or conceal
+       evidence," citing § 40300.5(e) and People v. Schofield (2001) 90 Cal.App.4th 968, 974–975.
+
+
+
+
+                                  Privileged research memo — Page 9 of 18
+     • Footnote 12: "Sections 13353 and 23612 both condition the loss-of-license sanction upon the
+       DMV's finding of a lawful arrest ... a finding that is dependent upon an officer's possessing
+       probable cause to believe the person was driving" under the influence.
+     • Body text: the statute "does not require evidence that actual driving occurred immediately prior
+       to the arrest."
+     • People v. Schofield (2001) 90 Cal.App.4th 968 [F, existence only]: subdivision (e) covers
+       metabolic dissipation of evidence, per Troppman's parenthetical.
+     • Dyer v. DMV (2008) 163 Cal.App.4th 161 [W, no flag]: says Mercer rested on statutes "as then
+       written" and on statutory construction. Dyer does not itself say Mercer is superseded. That
+       characterization is Westlaw's editorial flag.
+     • Brierton v. DMV (2005) 130 Cal.App.4th 499 and Gikas v. Zolin (1993) 6 Cal.4th 841 [F,
+       existence only]: on whether a lawful arrest is an issue at the APS hearing. Read both before
+       citing.
+
+Reframing. Delete "binding/controlling Mercer" (¶¶4(b), 37, 59, 61, 91, 102(b), 104). Replace it with
+three points:
+
+    1. Under Troppman fn. 12 and § 23612(a)(1)(A) ("lawfully arrested"), the DMV had to find a
+       lawful arrest supported by probable cause to believe he had been driving under the influence.
+    2. The record before Candelaria contradicted probable cause: the dashcam ("I think it's booze,"
+       then "this is piss"), no verbalized odor of alcohol, a PAS test described as voluntary, the § 851.6
+       certificate, the § 849(b)(1) release, and the DA's declination.
+    3. The decision did not engage with that evidence.
+
+Candor: circumstantial evidence will likely satisfy "reasonable cause to believe ... had been driving":
+he was alone in the driver's seat on a freeway shoulder. Subdivision (e) of § 40300.5 will likely be held
+satisfied. Behan ("Once a lawful arrest, always a lawful arrest") [W] and Armondo [W, name corrected]
+limit what the § 849(b)(1) release does in APS proceedings. In federal court this is chiefly background
+to the fairness claim. It is not an independent federal claim.
+
+
+
+7. Issue 6: Ex parte Young scope (Counts III–IV)
+
+Controlling law.
+
+     • Ex parte Young, 209 U.S. 123 (1908) [W, yellow; core doctrine intact; the better pin is about
+       155–60].
+     • Verizon Md. v. PSC, 535 U.S. 635, 645 (2002) [W]: a "straightforward inquiry" into whether the
+       complaint alleges an ongoing violation of federal law and seeks relief properly characterized as
+       prospective. Verizon is quoting Justice O'Connor's concurrence in Idaho v. Coeur d'Alene
+       Tribe, 521 U.S. 261, 296 (1997).
+     • Edelman v. Jordan, 415 U.S. 651 (1974) [F]: no retroactive monetary relief.
+     • Green v. Mansour, 474 U.S. 64 (1986) [F]: no declaratory judgment that state officials violated
+       federal law in the past, absent an ongoing violation.
+
+
+
+                                  Privileged research memo — Page 10 of 18
+     • Flint v. Dennison, 488 F.3d 816 (9th Cir. 2007) [F]: an order to expunge records was sought and
+       treated as prospective relief. Verify the pin before citing.
+     • Doe v. Lawrence Livermore Nat'l Lab., 131 F.3d 836 (9th Cir. 1997) [F]: "request for
+       reinstatement constitutes prospective injunctive relief."
+     • Villa v. Maricopa County, 865 F.3d 1224, 1229 (9th Cir. 2017) [W]; O'Shea, 414 U.S. 488, 496
+       [W]; Lyons, 461 U.S. 95, 111 [W]: standing for prospective relief.
+     • Will v. Mich. Dep't of State Police, 491 U.S. 58, 71 n.10 (1989) [quoted in CDLA; U
+       independently]: official-capacity suits for prospective relief are against a "person."
+
+Application.
+
+Requested relief                 Likely treatment           Notes
+Vacate the suspension            Moot in part               The suspension ran Feb. 20, 2025 to Feb. 19, 2026.
+Lift the SR-22 (through about    Strongest prospective      A continuing present adverse effect (Villa/O'Shea). Confirm the
+May 2029)                        claim                      statutory source of the 3-year term; see the § 16430 correction
+                                                            below.
+Expunge or correct the DMV       Likely prospective (Flint; Tie it to concrete ongoing harm: CDL record, insurance, employer
+record of the APS action         Doe)                       screening.
+Refund the $125 reissue fee      Barred (retrospective      Note that §§ 14904(b) and 14906(b) waive the fee when a
+                                 money; Edelman)            suspension is "set aside," which could follow indirectly from vacatur.
+Order a neutral decisionmaker in Standing risk (Lyons)      There is no pending or likely APS hearing. CDLA already enjoins the
+any future hearing                                          practice statewide, so this is arguably redundant.
+Declarations ¶108(a)–(d) about   Barred if only             Tie each declaration to the SR-22 and record relief.
+past conduct                     retrospective (Green)
+
+
+Proper defendant and Rule 25(d). As of October 2026, DMV's official leadership page, the 2026–
+2031 DMV Strategic Plan letter, and AP and Governor's Office items from Mar.–Apr. 2026 identify
+Steve Gordon as DMV Director [web sources, Oct. 25, 2026]. No substitution is needed now. If he
+leaves office, Fed. R. Civ. P. 25(d) substitutes his successor automatically [LII; U for exact text].
+Gordon must have a "fairly direct" connection to enforcing the SR-22 and record [U, Ninth Circuit
+"connection" cases not pulled]. As Director of the agency that keeps the record and enforces the SR-22,
+that connection is likely.
+
+
+
+8. Issue 7: Damages and fees
+
+     • Carey v. Piphus, 435 U.S. 247, 264–67 (1978) [W, pins 264–65; F for the quote]:
+     • Distress damages require proof of actual injury.
+     • If the deprivation would have occurred anyway, recovery is limited to nominal damages "not to
+       exceed one dollar."
+     • Memphis Cmty. Sch. Dist. v. Stachura, 477 U.S. 299 (1986) [F]: no damages based on the
+       "abstract value" of constitutional rights.
+     • Smith v. Wade, 461 U.S. 30, 56 (1983) [W]: punitive damages require evil motive or intent, or
+       "reckless or callous indifference" to federally protected rights.
+
+
+
+
+                                        Privileged research memo — Page 11 of 18
+    • Westlaw's yellow "superseded by statute as stated in" Ngo v. Reno Hilton (9th Cir. 1998) appears
+      to concern Title VII damages caps, not § 1983 [W note; reason not read].
+    • Punitive damages are unavailable against Gordon in his official capacity.
+    • The post-2022 injunction is the best evidence of reckless indifference.
+    • Causation of lost wages.
+    • The Dec. 4, 2024 stay and temporary license already barred commercial driving, before the Jan.
+      24 hearing and the Feb. 11 decision.
+    • Wages lost Nov. 2024–Feb. 2025 flow from the arrest, the DS-367, and the statutory scheme,
+      not from Candelaria. Those losses belong, if anywhere, in the CHP-officer case.
+    • Losses from Feb. 20, 2025 forward are recoverable only if a neutral adjudicator would probably
+      have set the suspension aside (Carey). Under Troppman's reasonable-cause standard, that is an
+      uphill showing.
+    • Mitigation will be pressed (Answer Aff. Def. 19).
+    • Avoid double recovery across the related actions.
+    • Kay v. Ehrler, 499 U.S. 432 (1991) [W]: a pro se litigant, even a lawyer, cannot recover § 1988
+      attorney's fees. Costs remain recoverable. Delete or limit the fees prayer (¶9; Prayer C.5) unless
+      counsel appears.
+    • Nominal damages plus prospective relief is a realistic floor. Plead nominal damages expressly.
+
+
+
+9. Issue 8: Venue
+
+    • 28 U.S.C. § 1391(b) [F, LII]: venue lies (1) where any defendant resides, if all defendants reside
+      in the same state, or (2) where "a substantial part of the events or omissions" occurred.
+    • Facts cutting against N.D. Cal.
+    • The hearing was held on Microsoft Teams.
+    • The record suggests Candelaria and Gordon were served through Sacramento, which is in E.D.
+      Cal.
+    • The decision was mailed to Brendan in Stockton (San Joaquin County, E.D. Cal.).
+    • The suspension and SR-22 harms are felt in E.D. Cal.
+    • Facts for N.D. Cal.
+    • The arrest, the DS-367, the § 851.6 certificate, and the CHP Dublin Area records arose in
+      Alameda County.
+    • The hearing evaluated those events.
+    • Venue can be proper in more than one district.
+    • Posture.
+    • The stricken answer pleaded "Venue does not lie in this Court" (Aff. Def. 8).
+    • Under Fed. R. Civ. P. 12(h)(1), improper venue is waived if it is omitted from a Rule 12 motion
+      or the first responsive pleading [U for exact rule text]. Watch the Oct. 27 filing.
+    • If venue is challenged, the usual remedy is transfer under 28 U.S.C. § 1406(a) or § 1404(a)
+      rather than dismissal [U]. Transfer to E.D. Cal. (Sacramento) is low-cost.
+
+
+
+
+                                Privileged research memo — Page 12 of 18
+     • The prior E.D. Cal. action (2:26-cv-00983-DC-CSK) was voluntarily dismissed after Magistrate
+       Judge Kim's June 15, 2026 F&R recommended dismissal. Expect Defendants to raise that
+       history; the F&R's text was not available to me [U].
+     • Plead the § 1391(b)(2) facts precisely: the APS proceeding adjudicated an Alameda County
+       arrest on Alameda County records.
+     • The FAC's "Intradistrict Assignment" heading should read "Divisional Assignment" under Civil
+       L.R. 3-5(b) [statute check].
+
+
+
+10. Citation corrections for the complaint (FAC, ECF No. 6)
+
+#   FAC         Problem                                                               Correction                            Source
+    location
+1   ¶¶68(a), 96 Cal. DUI Lawyers cited as 11 Cal.App.5th 517. That cite is            77 Cal.App.5th 517 (2022)             [W]
+                Hinrichs v. Melton (2017).
+2   ¶38         "Arnondo/Annondo v. DMV"                                              Armondo v. Department of Motor [W]
+                                                                                      Vehicles (1993) 15 Cal.App.4th
+                                                                                      1174
+3   ¶45         People v. Medina (1972) 6 Cal.3d 484: RED flag, disapproved by        Remove it, or confirm it is not       [W]; [F]
+                Kowis v. Howard (1992) 3 Cal.4th 888. Kowis cites Medina at p.        cited for the disapproved point.      Kowis
+                490 on summary denial of a pretrial writ.
+4   ¶37         Music v. DMV, 221 Cal.App.3d 841, 850: p. 850 concerns the          Fix the pin or the proposition.         [W]
+                presence and volitional-movement rule, not "lawfulness of arrest is Consider Troppman fn. 12 instead.
+                a hearing issue." The case is yellow-flagged.
+5   ¶109        Ex parte Young, 209 U.S. at 157–59: 157 concerns the officer's        Use 155–60 (or 155–56, 159–60).       [W]
+                connection to enforcement.
+6   ¶¶64, 101   Mathews, 424 U.S. at 344–45: only loosely supports "eliminating       Recheck 343–45; paraphrase            [W]
+                meaningful factual inquiry."                                          without quotation marks.
+7   ¶¶57, 64,   Goldberg, 397 U.S. at 271: accurate as a paraphrase only. The         Do not present the paraphrase in      [W]
+    101, 103    source reads "the decision maker should state the reasons for his     quotation marks. Quote the source
+                determination and indicate the evidence he relied on."                verbatim if quoting.
+8   ¶36(c)      Pen. Code § 851.6(a) misquoted ("shall issue to that person a         Actual text: "the person shall be     [F]
+                certificate...").                                                     issued a certificate, signed by the   leginfo
+                                                                                      releasing officer or his superior
+                                                                                      officer, describing the action as a
+                                                                                      detention."
+9   ¶¶3, 53,    Veh. Code § 16430 only defines "proof of financial responsibility"    Cite the actual source of the 3-year [F]
+    82–83,      (repealed and re-added, operative Jan. 1, 2025). It does not impose   term (likely § 13353.4 or §§
+    114(c), 125 the 3-year SR-22 requirement.                                         16480–16484; unverified, so
+                                                                                      confirm). Quote § 16430 only as
+                                                                                      the decision's wording.
+10 ¶28          Veh. Code §§ 13353.1 and 13389 cover the under-21 / DUI-              State that they appear only as        [F]
+                probation PAS refusal and are inapplicable. § 13353.2 is the          printed on the DS-367 form, and
+                0.08% per se suspension, not a refusal suspension.                    that they do not apply.
+11 ¶¶17, 76     "§§ 13353–13389" range misdescribes the hearing procedure.            Add §§ 13557(b)(1), 13558(c)(1),      [F]
+                                                                                      13559, and 14100 et seq.
+12 ¶23                                                                                Delete or soften.
+
+
+
+
+                                          Privileged research memo — Page 13 of 18
+#   FAC         Problem                                                                 Correction                             Source
+    location
+                "Federal Hours-of-Service rules" (49 C.F.R. Part 395) govern on-                                               [F]
+                duty commercial motor vehicle drivers. He was in a passenger                                                   eCFR
+                rental car.
+13 ¶121         Verizon/Coeur d'Alene attribution: the "straightforward inquiry"  Cite Verizon, 535 U.S. at 645                [W]/[U]
+                test comes from Justice O'Connor's concurrence in Coeur           (quoting Coeur d'Alene, 521 U.S.
+                d'Alene, 521 U.S. at 296, as adopted by Verizon, 535 U.S. at 645. at 296 (O'Connor, J., concurring in
+                The 276–77 passage is from a part of Justice Kennedy's opinion    part and concurring in the
+                that may not command a majority (Westlaw reviewer's recollection; judgment)).
+                unconfirmed).
+14 ¶¶4(b), 59, Mercer called "binding" and "controlling" without disclosing §           See § 6 above. Disclose the statute    [W]/[F]
+   61, 91,     40300.5(e) or Troppman.                                                  and reframe.
+   102(b)
+15 (any use of Dyer does not say Mercer was superseded. That is Westlaw's flag          Cite Troppman fn. 11 for               [W]
+   Dyer)       language.                                                                supersession. Cite Dyer only for
+                                                                                        "as then written" and "statutory
+                                                                                        construction."
+16 ¶91; Prayer Smith v. Wade: yellow flag ("superseded by statute as stated in"         Keep the cite; note it as unverified   [W]
+   A.2         Ngo). This appears unrelated to the § 1983 punitive standard, but        in the internal file.
+               the reason was not read.
+17 ¶¶98, 118    Forrester: yellow ("superseded by statute as stated in" Olsen, 9th      Keep the cite; reframe the             [W]
+                Cir. 2004); the specific reason was not read. The FAC's use of it       immunity argument per § 2.
+                (functional approach) is accurate.
+18 ¶117         Patsy is cited as if it answers the § 1094.5 question. Patsy concerns Add an Elliott/Johnson preclusion        [W]/[F]
+                exhaustion only. Westlaw notes PLRA abrogation, which is              response.
+                irrelevant here.
+19 ¶9; Prayer   § 1988 attorney's fees are not available to a pro se litigant (Kay v.   Limit the request to costs.            [W]
+   C.5          Ehrler).
+20 ¶¶72, 118    Knudsen at 207: the quote is verified.                                  No change.                             [W]
+21 ¶69          Clarke, 104 Cal.App.5th at 1277: quote verified; the ellipsis and       No change. Note the Chi                [W]
+                "[and]" are acceptable.                                                 disagreement.
+22 ¶¶93, 119    Murchison at 136: quotes verified.                                      No change.                             [W]
+23 ¶¶90, 110,   Villa at 1229: quote verified, with acceptable bracketed alterations. No change.                               [W]
+   123
+24 ¶¶13, 14     L.R. 3-5(b) heading; the L.R. 3-12 relation motion goes in the          Retitle as "Divisional Assignment." [F]
+                lowest-numbered case.                                                   Note that Dkt. 13 denied relation to
+                                                                                        Serrato.
+25 Caption      -LJC suffix                                                             Use 3:26-cv-08272-RFL going            Dkt. 24
+                                                                                        forward.
+
+
+
+
+11. Recommended near-term actions (deadline-driven)
+
+    1. Oct. 27, 2026: Defendants' response to the FAC is due (Dkt. 24). If it is a Rule 12 motion, the
+       opposition clock is governed by Civil L.R. 7-3. Confirm on the notice of motion.
+    2. Prepare the opposition themes now:
+
+
+
+
+                                          Privileged research memo — Page 14 of 18
+   3. the Cleavinger independence factors against absolute immunity;
+   4. Hope/Murchison plus the 2022 CDLA injunction against QI;
+   5. preclusion fails for lack of a neutral, judicial-capacity tribunal;
+   6. the SR-22 and record as the ongoing violation for Ex parte Young;
+   7. concede that the $125 refund and retrospective declarations are not available.
+   8. Consider seeking leave to file a Second Amended Complaint (Rule 15(a)(2)) that fixes the § 10
+      citation table, reframes away from Mercer, drops the § 1988 fees request, and pleads nominal
+      damages.
+   9. Discovery targets after the pleadings stage:
+  10. DMV Driver Safety Manual and hearing-officer policies in effect on Jan. 24, 2025, and any
+      post-CDLA reorganization;
+  11. Candelaria's training;
+  12. whether any DMV presenter or advocate existed in other hearings at that time;
+  13. the hearing audio.
+  14. Pull the 26WM000135 docket to confirm how it ended. Obtain the E.D. Cal. F&R text (2:26-
+      cv-00983, ECF No. 6). Neither was available to this research.
+
+
+
+Appendix A: Verification table
+
+Legend: W = Westlaw KeyCite, Oct. 25, 2026 (flag shown). F = free full-text source, Oct. 25, 2026 (no
+citator). U = unverified.
+
+Authority                                            Status    Flag / notes                       Source
+Ex parte Young, 209 U.S. 123 (1908)                  W         Yellow; core intact; pin 155–60    results-batch1
+Mercer v. DMV, 53 Cal.3d 753 (1991)                  W         Yellow; superseded by statute as   batch1
+                                                               stated in Troppman v. Gourley;
+                                                               Dyer
+Music v. DMV, 221 Cal.App.3d 841 (1990)              W         Yellow; pin problem                batch1
+Behan v. Alexis, 116 Cal.App.3d 403 (1981)           W         No flag; quote verified            batch1
+Armondo v. DMV, 15 Cal.App.4th 1174 (1993)           W         Yellow (unrelated); name           batch1
+                                                               corrected
+Cal. DUI Lawyers Ass'n v. DMV, 77 Cal.App.5th 517 W + F        Yellow (distinguished by           batch1; Justia
+(2022)                                                         Kazelka); text read on Justia
+Knudsen v. DMV, 101 Cal.App.5th 186 (2024)           W         Yellow (distinguished by           batch1
+                                                               Romane)
+Clarke v. Gordon, 104 Cal.App.5th 1267 (2024)        W         Yellow (disagreed with by Chi)     batch1
+Chi v. DMV; Romane v. DMV (2025); Kazelka v.         U         Seen only as KeyCite citing        batch1 notes
+DMV                                                            references
+People v. Torres, 173 Cal.App.4th 977 (2009)         W         Yellow                             batch1
+Wong Sun; Terry; Florida v. Royer; Brown v. Texas;   W         Yellow; core intact                batch1
+Brown v. Illinois
+People v. Medina, 6 Cal.3d 484 (1972)                W         RED: disapproved by Kowis v.       batch1
+                                                               Howard
+
+
+
+
+                                        Privileged research memo — Page 15 of 18
+Authority                                            Status        Flag / notes                      Source
+Kowis v. Howard, 3 Cal.4th 888 (1992)                F             Discusses Medina at 490           CourtListener
+McDonnell v. DMV, 45 Cal.App.3d 653 (1975)           W             Yellow (out-of-state)             batch1
+Goldberg v. Kelly, 397 U.S. 254 (1970)               W             Yellow; paraphrase only           batch1
+Mathews v. Eldridge, 424 U.S. 319 (1976)             W             Yellow; pin partial               batch1
+Withrow v. Larkin, 421 U.S. 35 (1975)                W+F           Yellow                            batch1; CL
+In re Murchison, 349 U.S. 133 (1955)                 W             Yellow; quotes verified           batch1
+Caperton, 556 U.S. 868 (2009)                        W+F           Yellow                            batch2; CL
+Bell v. Burson, 402 U.S. 535 (1971)                  W             Yellow                            batch2
+Mackey v. Montrym, 443 U.S. 1 (1979)                 W             Yellow                            batch2
+Loudermill, 470 U.S. 532 (1985)                      W             Yellow                            batch2
+Butz v. Economou, 438 U.S. 478 (1978)                W+F           Yellow                            batch2; CL
+Forrester v. White, 484 U.S. 219 (1988)              W             Yellow (reason not read)          batch2
+Cleavinger v. Saxner, 474 U.S. 193 (1985)            W+F           Yellow                            batch2; CL
+Swift v. California, 384 F.3d 1184 (9th Cir. 2004)   W             Yellow (minor)                    batch2
+Ashcroft v. Iqbal, 556 U.S. 662 (2009)               W             Yellow                            batch2
+Hope v. Pelzer, 536 U.S. 730 (2002)                  W             Yellow                            batch2
+Verizon Md. v. PSC, 535 U.S. 635 (2002)              W             Yellow; O'Connor-concurrence      batch2
+                                                                   attribution
+Idaho v. Coeur d'Alene Tribe, 521 U.S. 261 (1997)    W+F           Yellow; majority status of 276–   batch2; CL
+                                                                   77 unconfirmed
+Villa v. Maricopa County, 865 F.3d 1224 (9th Cir.    W             Yellow (trivial)                  batch2
+2017)
+O'Shea v. Littleton, 414 U.S. 488 (1974)             W             Yellow                            batch2
+City of Los Angeles v. Lyons, 461 U.S. 95 (1983)     W             Yellow                            batch2
+Carey v. Piphus, 435 U.S. 247 (1978)                 W+F           Yellow                            batch2; CL
+Smith v. Wade, 461 U.S. 30 (1983)                    W+F           Yellow (reason not read)          batch2; CL
+Patsy v. Board of Regents, 457 U.S. 496 (1982)       W             Yellow (PLRA; irrelevant)         batch2
+Dyer v. DMV, 163 Cal.App.4th 161 (2008)              W             No flag                           batch2
+Kay v. Ehrler, 499 U.S. 432 (1991)                   W+F           Yellow; holding intact            batch2; CL
+Troppman v. Valverde, 40 Cal.4th 1121 (2007)         F, not        fn. 11/12 language matched        CourtListener; scocal
+                                                     KeyCited
+People v. Schofield, 90 Cal.App.4th 968 (2001)       F             Not read                          CL
+                                                     (existence)
+Brierton v. DMV, 130 Cal.App.4th 499 (2005)          F             Not read                          CL
+                                                     (existence)
+Gikas v. Zolin, 6 Cal.4th 841 (1993)                 F             Not read                          CL
+                                                     (existence)
+Imbler v. Pachtman, 424 U.S. 409 (1976)              F             Phrase matched                    CL
+Stump v. Sparkman, 435 U.S. 349 (1978)               F                                               CL
+                                                     (existence)
+
+
+
+
+                                           Privileged research memo — Page 16 of 18
+Authority                                               Status        Flag / notes                   Source
+Mireles v. Waco, 502 U.S. 9 (1991)                      F             Phrase matched                 CL
+Mishler v. Clift, 191 F.3d 998 (9th Cir. 1999)          F             Phrase matched                 CL
+Olsen v. Idaho State Bd. of Med., 363 F.3d 916 (9th     F             Phrase matched                 CL
+Cir. 2004)
+Buckwalter v. Nev. Bd. of Med. Exam'rs, 678 F.3d        F             Phrase matched                 CL
+737 (9th Cir. 2012)
+Pearson v. Callahan, 555 U.S. 223 (2009)                F                                            CL
+                                                        (existence)
+Ashcroft v. al-Kidd, 563 U.S. 731 (2011)                F             "beyond debate" matched        CL
+District of Columbia v. Wesby, 583 U.S. 48 (2018)       F             "robust 'consensus'" matched   CL
+Drummond v. City of Anaheim, 343 F.3d 1052 (9th         F             Fragment matched               CL
+Cir. 2003)
+Heck v. Humphrey, 512 U.S. 477 (1994)                   F             Phrase matched                 CL
+Edwards v. Balisok, 520 U.S. 641 (1997)                 F             Phrase matched                 CL
+Nonnette v. Small, 316 F.3d 872 (9th Cir. 2002)         F                                            CL; Justia
+Lyall v. City of Los Angeles, 807 F.3d 1178 (9th Cir.   F             Holding on Nonnette not read   CL
+2015)                                                   (existence)
+Univ. of Tenn. v. Elliott, 478 U.S. 788 (1986)          F             Phrases matched                CL
+Kremer v. Chemical Constr., 456 U.S. 461 (1982)         F                                            CL
+                                                        (existence)
+Miller v. County of Santa Cruz, 39 F.3d 1030 (9th       F                                            CL
+Cir. 1994)
+White v. City of Pasadena, 671 F.3d 918 (9th Cir.       F                                            CL
+2012)
+Johnson v. City of Loma Linda, 24 Cal.4th 61 (2000) F                 Phrase matched                 CL
+People v. Sims, 32 Cal.3d 468 (1982)                    F (topic)                                    CL
+Dixon v. Love, 431 U.S. 105 (1977)                      F                                            CL
+Parratt v. Taylor, 451 U.S. 527 (1981)                  F                                            CL
+Hudson v. Palmer, 468 U.S. 517 (1984)                   F                                            CL
+                                                        (existence)
+Zinermon v. Burch, 494 U.S. 113 (1990)                  F             Phrases matched                CL
+Edelman v. Jordan, 415 U.S. 651 (1974)                  F                                            CL
+Green v. Mansour, 474 U.S. 64 (1986)                    F                                            CL
+Flint v. Dennison, 488 F.3d 816 (9th Cir. 2007)         F             "expungement" matched; pin not CL
+                                                                      checked
+Doe v. Lawrence Livermore, 131 F.3d 836 (9th Cir.       F             Phrase matched                 CL
+1997)
+Memphis Cmty. Sch. Dist. v. Stachura, 477 U.S. 299      F             Phrase matched                 CL
+(1986)
+Will v. Mich. Dep't of State Police, 491 U.S. 58        U             Quoted within CDLA only        Justia (CDLA)
+(1989)
+
+
+
+
+                                           Privileged research memo — Page 17 of 18
+Authority                                             Status     Flag / notes                      Source
+U.S. v. Utah Constr. & Mining, 384 U.S. 394 (1966)    U          As cited in White                 CL (White)
+Veh. Code §§ 13353, 13557, 13558, 13559, 14904,       F          Official text                     leginfo (results-
+14906, 16020, 16430, 23612, 40300.5; Pen. Code §§                                                  statutes.csv; § 13559
+849, 849.5, 851.6; CCP § 1094.5                                                                    fetched Oct. 25)
+Veh. Code § 14112(b); Gov. Code § 11425.30            U          As quoted in CDLA                 Justia (CDLA)
+Veh. Code § 13353.4; §§ 16480–16484 (SR-22 3-         U          Must confirm                      none
+year source)
+28 U.S.C. §§ 1331, 1343, 1391, 2201–2202; 42          F                                            Cornell LII
+U.S.C. §§ 1983, 1988
+Fed. R. Civ. P. 12(h)(1), 25(d); 28 U.S.C. §§ 1404,   U          Standard rules; text not pulled   none
+1406
+
+
+Unverified items to clear before filing: the Chi, Romane, and Kazelka holdings; Lyall's holding; the
+source of the SR-22 3-year term; Veh. Code § 14112(b) and Gov. Code § 11425.30 text; the Coeur
+d'Alene majority/plurality status of 276–77; the reasons behind the Smith v. Wade and Forrester flags;
+any federal decision applying quasi-judicial immunity to a DMV hearing officer; whether Heck reaches
+civil license suspensions; the E.D. Cal. F&R text; the 26WM000135 disposition; KeyCite for
+Troppman and all F-tier cases.
+
+
+
+
+                                          Privileged research memo — Page 18 of 18
+
