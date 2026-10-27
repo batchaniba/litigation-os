@@ -6,7 +6,7 @@
 **Primary branch source:** Matter 20, Exhibit A CHP transcript, 19 pages, SHA-256 3750927a89170c8d4702cb7dfab4d2b96fda1e31d7662ffc524e07763d1b6660  
 **Cross-check source:** Library copy Exhibit_A_CHP_Video_Transcript(7).pdf, 19 pages, 196,424 bytes  
 **Reconciliation source:** Matter 20, 09-TRANSCRIPT-RECONCILIATION-AND-DOOR-OPENING.md, October 23, 2026  
-**Status:** Internal attorney work product / drafting analysis. This is not a substitute for reviewing and authenticating the original video.
+**Status:** Internal litigation-strategy and drafting analysis. This is not a substitute for reviewing and authenticating the original video.
 
 ## Executive finding
 
