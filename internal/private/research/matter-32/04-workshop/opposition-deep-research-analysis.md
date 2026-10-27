@@ -3,8 +3,8 @@
 **Case:** *Nforbi v. Meza-Gonzalez, et al.*, N.D. Cal. No. 4:26-cv-08271-ASK  
 **Target:** Defendants' ECF 22 motion to dismiss and motion to strike, filed October 26, 2026  
 **Operative pleading:** ECF 5 First Amended Complaint ("FAC")  
-**Status:** Internal litigation work product. Research and drafting architecture—not a filing and not a substitute for final source, citation, docket, and Rule 11 review.  
-**Research current through:** October 27, 2026, except where a source or gate is expressly identified as incomplete.
+**Status:** Internal litigation work product. This memo intentionally red-teams Plaintiff's position. Adverse analyses, unraised defenses, and evidence outside the pleadings are not approved for insertion into the opposition.  
+**Research current through:** October 26, 2026, except where a source or gate is expressly identified as incomplete.
 
 ---
 
@@ -42,6 +42,66 @@ Lead with the distinction between **what the Court may assume at Rule 12** and *
 - For amendment and ultimate proof, Plaintiff cannot ignore the actual warrant affidavit, transcript, form labels, toxicology, or prior litigation. The opposition should concede clear mistakes and explain exactly what can be corrected.
 
 That two-layer approach is stronger than either extreme: it avoids allowing the defense to win factual disputes on a motion to dismiss, and it avoids asking the Court to credit assertions the preserved sources no longer support.
+
+## 1A. Adversarial-leakage audit: what must stay internal
+
+This memorandum is deliberately broader and more candid than the opposition should be. Its purpose is to identify every material risk before drafting. A response brief has a narrower job: answer the grounds Defendants actually raised, preserve favorable factual inferences, and request leave where necessary. It should not supply missing defense authorities, introduce extrinsic adverse evidence, concede disputed elements, or invite the Court to decide alternative grounds not presented in ECF 22.
+
+The governing distinction is **correction versus volunteering**:
+
+- Plaintiff should not repeat a factual proposition that the source record disproves.
+- Plaintiff does not need to volunteer unrelated adverse evidence or construct a stronger defense than ECF 22 presents.
+- A point needed for a Rule 11-compliant amendment can remain internal until amendment is authorized.
+- If Defendants raise a matter in reply for the first time, preserve the objection that new arguments should not be considered and request leave to respond if the Court is inclined to reach them.
+
+### Specific leakage inventory
+
+| Location in this memorandum | How it may do Defendants' or the Court's work | Filing protocol |
+|---|---|---|
+| Executive discussion of the 0.073 g% result and adverse transcript content | Introduces evidence outside the FAC and supplies a corroboration theory Defendants did not develop in ECF 22 | **Internal only.** Do not mention toxicology or adverse transcript passages unless Defendants properly place them before the Court or the Court converts the motion under Rule 12(d) |
+| Claim-ranking labels such as “weakest,” “high dismissal risk,” and recommendations to abandon counts | Gives the Court a ready-made roadmap for dismissal and can be mistaken for a legal concession | **Internal only.** The filed brief should request denial on every claim reasonably defensible under the FAC and seek alternative leave without ranking claims |
+| Section 4.1 form-label correction | A necessary accuracy repair can become an unnecessary admission that Count 1 fails | Correct narrowly: Plaintiff does not rely on a physical-beverage checkbox characterization. Then return to the disputed odor and warrant allegations. Do not argue Defendants' materiality case for them |
+| Section 4.2 separate warrant affidavit | If the actual affidavit is not attached to the FAC or properly presented by Defendants, discussing its full contents may expand the Rule 12 record and expose a new merits attack | Use only to support a specific leave-to-amend proffer or if the Court properly considers the affidavit. Do not introduce its adverse contents to rescue ECF 22 |
+| Section 4.3 recording duration | The duration mistake is immaterial to most Rule 12 issues and volunteering it may distract from the pleaded sequence | Stop saying “over two hours.” No affirmative discussion is needed unless Defendants make duration material |
+| Section 4.4 post-arrest chemical-test refusal | Supplies an additional probable-cause fact from outside the FAC and risks conflating post-arrest conduct with the earlier arrest | **Internal amendment analysis only.** It cannot retroactively establish probable cause for the 01:12 arrest. Address it only if the actual affidavit is properly at issue |
+| Section 4.5 limits of video on odor | The proposition is accurate, but an affirmative concession can strengthen Defendants' factual narrative unnecessarily | If needed, say the recording and surrounding circumstances support a factual dispute; do not announce in the opening that Plaintiff cannot disprove odor |
+| Sections 4.6 and 4.7 on toxicology and transcript weaknesses | Authenticates or summarizes adverse material Defendants may not be entitled to use on a motion to dismiss | **Internal only.** These are Rule 11, amendment, discovery, and summary-judgment considerations—not affirmative opposition content |
+| Stage B discussion of the “strongest” emergency-aid facts | Can add factual inferences beyond the FAC and help the Court find the entry objectively reasonable | Because ECF 22 raises emergency aid, answer it—but confine the analysis to the FAC, the motion, the narrow exception, and Defendants' burden. Do not add hypothetical knocks, breathing observations, traffic conditions, or medical indicators absent from the pleadings |
+| Stage C discussion of plain view and the automobile exception | Supplies doctrinal routes ECF 22 barely or inadequately develops | State that Defendants must identify and establish a recognized exception. Do not brief every uninvoked exception or cure their lack of authority |
+| Stage D list of party travel, wristband, confusion, and other adverse facts | Assembles a stronger reasonable-suspicion totality from the warrant packet rather than the FAC | Use only facts properly alleged and properly considered. Do not import the later affidavit into the earlier detention analysis |
+| Stage E reference to the 0.073 result | Offers post-arrest corroboration that cannot have informed the arrest and is outside the pleading-stage record | Delete from the filed arrest argument. Probable cause turns on facts known at the moment of arrest |
+| Section 7 evidence-stage conclusion that the corrected affidavit “likely” establishes probable cause | Performs the materiality determination for the Court and concedes the core element before a proper record exists | **Internal only.** In the opposition, argue that materiality cannot be resolved by accepting contested statements and seek leave for an actual-affidavit pleading. Do not concede that the corrected affidavit establishes probable cause |
+| Section 8 discussion of Fourth Amendment displacement, parole-hold intervention, and administrative-property injury | Develops alternative grounds beyond ECF 22's stated “no criminal charges” argument | Answer the argument presented: binding law does not require a conviction, and the FAC alleges report-caused deprivations. Reserve the precise constitutional vehicle and causation details for amendment unless Defendants squarely raise them |
+| Section 9 protected-activity and Nieves analysis | ECF 22 attacks but-for causation; a new argument that PAS refusal is not protected activity or that Nieves bars the claim gives Defendants additional dismissal grounds | **Do not volunteer these grounds.** Defend causation with the alleged statement, 18-second sequence, and absence of intervening evidence. Keep protected-activity and Nieves risk internal unless raised |
+| Section 10 defendant-specific limits | Useful drafting discipline can turn into concessions that a defendant lacked participation | Plead and argue the affirmative acts already alleged. Do not concede lack of integral participation or failure-to-intervene liability unless the governing facts require it |
+| Section 11 qualified-immunity risk map | Shows the Court how to grant immunity claim by claim | **Internal only as a risk map.** The filed brief should emphasize accepted allegations, factual predicates that cannot be resolved against Plaintiff, and the most specific favorable authority available |
+| Section 12 damages-causation audit | Introduces intervening parole, DMV, towing, and employment causation defenses not raised against compensatory damages | **Internal only.** ECF 22 challenges punitive damages and pro se fees, not every compensatory category. Do not expand the motion |
+| Section 13 Rule 41 and preclusion analysis | Alerts Defendants and the Court to defenses ECF 22 did not assert | **Do not include Rule 41 or preclusion in the opposition.** Respond only that litigation history does not establish futility and that the proposed cures must be evaluated on their merits |
+| Section 14 full amendment details | An over-detailed proffer can reveal the complete amended theory, expose additional attack points, and convert alternative leave into merits concessions | Give enough detail to show curability: correct document identity and labels, particularize acts, and separate the intrusions. Keep the full corrected-affidavit and adverse-evidence reconstruction internal |
+| Proposed opening's phrase “contains correctable errors” | Invites the Court to search for defects and sounds like a global concession | Prefer: “Even if the Court identifies a pleading deficiency, the record-based amendments described below establish that dismissal with prejudice is unwarranted” |
+| Proposed relief suggesting denial only for “supportable” claims | Implies Plaintiff agrees other claims should be dismissed | Request denial of ECF 22; in the alternative, request claim-specific leave. Make any affirmative concession separately and only if strategically selected |
+
+### Material that should affirmatively drive the opposition
+
+The following analysis advances Plaintiff's burden without supplying a new defense:
+
+1. **Rule 12 document discipline:** ECF 22 cannot convert challenged police observations into established facts.
+2. **Temporal segmentation:** Entry, cup handling, continued detention, arrest, and warrant procurement require separate justifications based on knowledge at each time.
+3. **No retroactivity:** Facts learned after an intrusion cannot justify it retroactively; post-arrest conduct and later toxicology cannot establish the earlier arrest.
+4. **Motion-specific deficiencies:** Defendants must identify the exception, authority, defendant, and accepted allegation supporting each requested dismissal.
+5. **Rule 12(f):** Whittlestone defeats use of Rule 12(f) merely to strike a damages demand as unavailable.
+6. **Specific leave to amend:** Correcting document identity, labels, duration, actor attribution, and search particularity demonstrates that amendment is not categorically futile.
+7. **No dismissal through adverse inference:** Emergency aid, probable cause, materiality, causation, and qualified immunity cannot be resolved by selecting Defendants' version of disputed facts.
+
+### Three-tier filing rule
+
+**Tier 1 — Use affirmatively:** Khoja/Grier, separate-intrusion analysis, Ngumezi's search holding, disputed probable-cause facts, the statement and 18-second sequence, Whittlestone, and a focused amendment proffer.
+
+**Tier 2 — Use only to answer ECF 22:** emergency aid, qualified immunity, no-charge fabrication, punitive damages, pro se fees, and prior litigation as relevant to futility.
+
+**Tier 3 — Keep internal unless triggered:** toxicology, adverse transcript passages, the warrant affidavit's full adverse remainder, likely materiality outcome, alternative automobile-search exceptions, unraised protected-activity/Nieves defects, Rule 41/preclusion, downstream damages causation, and voluntary claim abandonment.
+
+This audit does not authorize repeating a known factual error. It controls **where and when** a correction is made so accuracy does not become unnecessary advocacy for the opposing side.
 
 ---
 
@@ -82,7 +142,7 @@ ECF 22 noticed a December 9, 2026 hearing before Magistrate Judge Ajay S. Krishn
 
 ## 4. Nonnegotiable factual corrections
 
-These points should be disclosed and corrected, not buried. Voluntary correction will improve the Court's willingness to credit the remaining disputes.
+These points must be corrected wherever the filing relies on them. They should not be volunteered when immaterial to ECF 22. The filing protocol in Section 1A controls.
 
 ### 4.1 The form does not say “Beverage Present: Yes”
 
@@ -114,13 +174,13 @@ The absence of an audible statement about odor does not establish that an office
 
 **Opposition treatment:** Avoid “the video proves there was no odor.” The responsible allegation, if supported after original-video review, is that odor is disputed and that surrounding objective facts may bear on credibility—not that silence alone proves deliberate falsity.
 
-### 4.6 Toxicology is adverse as well as potentially useful
+### 4.6 Toxicology is adverse as well as potentially useful — internal only at Rule 12
 
 The later blood analysis reports ethanol at **0.073 ± 0.004 g%**. It is below 0.08 on its face, but it is not zero and does not exclude impairment under Vehicle Code § 23152(a). Because the draw occurred roughly 86 minutes after the arrest, no retrograde inference should be made without qualified analysis of absorption, elimination, timing, food, and uncertainty. The result may support a defense inference that an odor observation was genuine.
 
 The drug panel did not detect THC or 11-hydroxy-THC but reported THC-COOH at 3.0 ng/mL. Do not describe the complete toxicology as simply “negative.”
 
-### 4.7 The transcript contains adverse facts and reliability problems
+### 4.7 The transcript contains adverse facts and reliability problems — internal only unless properly raised
 
 The plaintiff-created transcript reportedly reproduces groggy or confused answers, including an initial “parking lot” response; it has name, pagination, and timestamp anomalies. It is not a one-directional plaintiff exhibit.
 
