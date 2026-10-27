@@ -1,6 +1,6 @@
 # Matter 32 — MTD Opposition Deep Research / Drafting Architecture
 
-**Compiled:** October 26, 2026 (America/Los_Angeles)  
+**Compiled:** October 26, 2026 (America/Los_Angeles); § 18 audit added the same evening.  
 **Case:** *Nforbi v. Meza-Gonzalez and Melano*, N.D. Cal. No. **4:26-cv-08271-ASK** (opened as 3:26-cv-08271-PHK; related Serrato 4:26-cv-05953-ASK).  
 **Motion:** ECF 22, filed October 26, 2026 — Rule 12(b)(6) dismissal of the FAC with prejudice + Rule 12(f) strike of punitive damages and attorney’s fees. Hearing noticed December 9, 2026, 1:30 p.m., Courtroom 4.  
 **Operative pleading:** ECF 5, First Amended Complaint, filed August 17, 2026 (21 pages). ECF 6 is an earlier stamped FAC; do not defend it.  
@@ -16,13 +16,14 @@ This is the opposition *architecture*. It is engineered so the next drafting pas
 
 Read in this order:
 
-1. § 1 — what the opposition must force the Court to decide.
-2. § 2 — clocks and ECF 23. Reassignment is not a stay.
-3. § 5 — page budget. Steal from weak counts; do not write a six-count encyclopedia.
-4. § 11–12 — concessions and do-not-argue list. Internalize these before drafting.
-5. §§ 6–10 — the argument blocks, in the order they should appear.
-6. § 13 — the amendment proffer. Write it now; it is the backstop.
-7. § 14 — cite hygiene. Existence is not a holding. Unverified pins stay out of the brief.
+1. § 18 — work we did for opposing counsel or the Court. Internal only. Do not export those sentences into the brief.
+2. § 1 — what the opposition must force the Court to decide.
+3. § 2 — clocks and ECF 23. Reassignment is not a stay.
+4. § 5 — page budget. Steal from weak counts; do not write a six-count encyclopedia.
+5. § 11–12 — concessions and do-not-argue list. Internalize these before drafting.
+6. §§ 6–10 — the argument blocks, in the order they should appear.
+7. § 13 — the amendment proffer. Write it now; it is the backstop.
+8. § 14 — cite hygiene. Existence is not a holding. Unverified pins stay out of the brief.
 
 Every factual sentence in a later draft must be tagged as **allegation (FAC ¶)**, **defense characterization (ECF 22 p.)**, **source statement (AGO / warrant / DS-367)**, or **unverified / watch-the-video**. Do not launder a workshop inference into a record citation.
 
@@ -502,7 +503,9 @@ If any count is dismissed, Plaintiff can cure as follows. This is the futility a
 
 ---
 
-## 17. Disposition map (paste into the conclusion)
+## 17. Disposition map (internal working chart — do not paste into the conclusion)
+
+The filed conclusion is: deny the motion; in the alternative, grant leave to amend. See § 18.2.C–D. This chart is a research device, not a proposed order.
 
 | Count | If the Court accepts well-pleaded timed facts | If the Court finds a pleading defect |
 |---|---|---|
@@ -520,4 +523,79 @@ If any count is dismissed, Plaintiff can cure as follows. This is the futility a
 
 ---
 
-*End of architecture. Next artifact is a 25-page opposition and a paragraph-level amendment proffer, not another inventory.*
+---
+
+## 18. Work this memo did for opposing counsel or the Court
+
+Honesty inside a research file is not the same as a sentence on pleading paper. Several passages below were written to keep Plaintiff from walking into a trap. They also write the reply, or the order, if a drafter copies them forward. **This section stays internal.** The filed opposition answers ECF 22 as filed. It does not improve ECF 22, and it does not tell the Court which of Plaintiff’s counts to kill.
+
+Two tests:
+
+- **Opposing counsel’s job:** Did we supply a theory, distinction, cite, or fact-package that ECF 22 did not make, or make as well?
+- **The Court’s job:** Did we announce a merits finding, a QI grant, a dismissal, or a futility conclusion that the motion still has to earn?
+
+A correction of **our** record (the beverage-field mislabel; *Kay* on a prayer they already attacked; refusing to argue “the camera smelled nothing”) is not their work. Volunteering a better defense, or a proposed ruling, is.
+
+### 18.1 Gifts to opposing counsel (they did not make these moves, or not this well)
+
+| # | Where in this memo | What we handed them | What ECF 22 actually did | Export lock |
+|---|---|---|---|---|
+| 1 | § 3.2; § 7.III “totality package” | Built the *Wesby* stack: asleep + recency + party + “parking lot” + odor + tests + PAS/chemical refusal + initial cup. That is a closing argument. | Their PC list (ECF 22 pp. 9–10) is shorter and leans on the report plus “asleep + urine cup.” They did not assemble the full stack. | Do not print our stack in the brief. Answer **their** seven numbered “facts.” If they omit recency, the party, or the wristband, do not add them. |
+| 2 | § 7.IV QI; § 8 door row | Distinguished *Ngumezi* for them: convenience lean-in during a stop, not a sleeping freeway driver; “no emergency-aid holding.” | They cited *Mincey*, not *Ngumezi*. They never distinguished *Ngumezi*. | Cite *Ngumezi* for the search holding. Do not preview the sleeping-motorist distinction unless the **reply** makes it. |
+| 3 | § 7.IV *Caniglia*; § 14 ledger | “Motorist-aid dicta cuts both ways.” That is their best answer to *Caniglia*. | They did not cite *Caniglia* or community caretaking. They used *Mincey* emergency aid. | Use *Brigham City* against *Mincey*. Leave *Caniglia* on the shelf unless they reach for *Cady*. |
+| 4 | § 4.1 III.A; § 7.IV | “Best defense fact pattern. Fight the standard and the timing, **not the existence of a welfare interest**.” | They asserted emergency aid. The FAC (¶¶ 16, 56) alleges no medical emergency was present or articulated and that the pre-entry words were investigative. | Do not concede a welfare interest. Their burden is an objectively reasonable belief of **serious injury or imminent serious injury**. A parked, intact car and an occupant in a normal resting posture, as pleaded, is the denial. Timing still matters. Existence is not stipulated. |
+| 5 | § 7.IV VC 21718 | “Even if stopping on a freeway shoulder can be a Vehicle Code problem…” | They argued § 21718. They did not need us to bless the predicate. | Deny that a suspected stopping/parking offense authorizes interior entry. Do not concede the Vehicle Code violation. The FAC pleads lawful fatigue rest. |
+| 6 | § 7.V; § 3.2 urine row | Clean reply sentence: urine ID “does not erase a later odor/FST theory if those facts are true.” | They treat urine as still incriminating and stack report observations. They did not write this limiting sentence. | Argue dissipation of the **cup-as-alcohol** fact. Do not write the odor-survival sentence for them. Keep odor **disputed**. That is enough. |
+| 7 | § 3.2 01:10:54; § 7.VI | “Correct VC § 23612(i) advisement.” We validated their “he only told the truth about PAS being voluntary” point. | They said the advisement was proper and that discretion to arrest survived refusal. | The FAC already quotes the advisement. Do not call it “correct” in the brief. The fight is the 18-second arrest and the “discretion” condition, not whether PAS is voluntary. |
+| 8 | § 7.VI *Nieves* paragraph | “Officer statements about motive are **irrelevant** to the objective exception.” That is the knife they need against the “discretion” quote. | They briefed *Ford* / *Bostock* but-for. They did not cite *Nieves* or *Gonzalez*. | Do not import *Nieves*’s motive-irrelevance rule unless we are using *Nieves* to **save** the count on a no-PC path. Do not improve their causation section. |
+| 9 | § 7.II; § 14 CAUTION | *Albright* / *Graham* more-specific-provision; *Devereaux* “charge-flavored.” | They used *Caldwell* and Model Instr. 9.38. They did not raise *Albright*. | Beat *Caldwell*. Do not brief *Albright* into existence. If they add it on reply, answer then. |
+| 10 | § 7.VI “The problem”; § 8 Count VI; § 11 | “PAS refusal is not obviously First Amendment speech”; “PAS-as-speech is not clearly established.” | They assumed a retaliation framework and attacked but-for. They did not argue “PAS is not speech” or “the speech right is not clearly established.” | Do not concede the protected-activity element in the brief. Defend the FAC’s theory (statutory right + *Nieves* no-PC alternative) or seek leave. Do not write the missing element for them. |
+| 11 | § 6.3 | “*Grier* affirmed dismissal.” | They did not cite *Grier*. | Use the footnote. Do not volunteer the affirmance as a reason this FAC fails. |
+| 12 | § 3.4; § 7.I table | Gift-wrapped the warrant remainder (21+ band, party, parking-lot words, denial already in the affidavit, chemical-test refusal). | They never reconstructed the actual affidavit. That is their defect. | Internal *Chism* work stays internal. The brief says they attacked the wrong document and that disputed odor/FST/confusion facts cannot be treated as remainder bricks at Rule 12. Do not print a “substantial basis still exists” table. |
+| 13 | § 7.I “FAC is thinner here; they noticed that” | Amplified their FST-silence point. | They said the FAC does not allege falsified FST **results**. | Do not agree the FST record is conceded. The FAC alleges unsuitable ground and declined tests (¶¶ 19, 50). That is the answer. |
+| 14 | § 7.IV ask | “¶ 58 is thin” as to Meza on the door. | Joint motion. No personal-participation split. | Do not invite dismissal of Meza from Count IV. The FAC pleads presence and non-intervention. If more is needed, put it in the proffer. Do not mark the count thin in the brief. |
+| 15 | § 8 arrest row | “Arguable-PC is their best case. We win only if disputed facts must be taken as true.” | Their QI paragraph is general. | That sentence is a proposed QI grant. Brief: disputed facts are taken as true; they did not do the particularized analogue. Stop. |
+
+### 18.2 Work we did for the Court (proposed rulings)
+
+| # | Where | Proposed ruling we wrote | Why it is the Court’s job | Export lock |
+|---|---|---|---|---|
+| A | § 3.4 last paragraph | “If those remainder facts still give a magistrate a substantial basis… Count I loses on materiality.” | Materiality after a completed *Franks* correction is a finding, usually after a developed record. *Chism* itself is summary judgment. | Do not concede Count I is lost. At Rule 12, well-pleaded falsity of odor/confusion/tests plus a known urine omission is enough to deny, or to take leave. The Court can do the remainder math later. |
+| B | § 8 door row; § 7.IV QI | “Do not claim *Ngumezi* ended the clearly-established inquiry”; name the “research hole.” | Plaintiff must eventually show clearly established law. We do not have to pre-defeat our own analogue or announce the hole in the brief. | Argue: opening the door and entering is a search (*Ngumezi*); no exception is well-pleaded; *Keates* takes the FAC’s sequence as true. If they want a sleeping-driver distinction, they can write it. |
+| C | § 17 disposition map | Rows that say “deny only…”, “or drop”, “or dismiss the count”, “this count is mis-aimed.” | That is a proposed order dismissing or narrowing claims Plaintiff has not withdrawn. | The brief’s conclusion is **deny the motion**. Leave is the alternative if the Court finds a defect **they identified**. Do not pre-dismiss Counts I, II, or VI. |
+| D | § 1 organizing proposition | “if any count is thin — grant targeted leave.” | Signals thinness before they prove it. | “If the Court finds a defect, leave to amend should be granted because…” — after denying. Not “some counts are thin.” |
+| E | § 5 / § 11 / § 13.6–7 | Drafting instruction to cut, narrow, or drop fabrication and retaliation. | Case-management of Plaintiff’s complaint. | Internal page-budget is fine. The filed brief still opposes dismissal of every count they moved on, unless Plaintiff has already decided to withdraw one. Withdrawal is a Plaintiff decision, not a research-memo default. |
+| F | § 13.6 | “drop the count as independent.” | Same. | Proffer additional facts. Do not offer a dismissal. |
+| G | § 15 Rule 41 gate | Framing a two-dismissal problem as something to “count… before saying anything.” | They argued serial lawsuits / futility. They did not argue Rule 41(a)(1)(B). | Keep the count off the page. Internal check only. Do not educate the Court about a two-dismissal bar they did not raise. |
+| H | § 6.1 | “What we want the Court to say” is proper advocacy. The defect is § 17’s mixed deny/dismiss chart sitting next to it. | The Court writes the order. | One ask: deny. Alternative: leave on identified cures. No menu of which counts lose. |
+
+### 18.3 What looks like a gift but is not
+
+These stay. They are responses to arguments **they already made**, or repairs to **our** paper.
+
+| Item | Why it is our work |
+|---|---|
+| *Kay* concession on pro se § 1988 time | They moved under *Kay*. Binding law. Answering is not volunteering. |
+| Beverage-field correction | Our FAC mislabeled a form. Rule 11 / credibility. They will find it. Hiding it is worse than correcting it by amendment. |
+| No “camera proves no odor” | Refusing a losing argument. Not a concession of odor. |
+| No “zero BAC / no charges = no PC” | They already cite later nonprosecution as context and QI. Do not hand them an easy overclaim. |
+| *Whittlestone* against 12(f) | They used the exact move *Whittlestone* forbids. |
+| *Caldwell* misfit | They cited it. Correcting a miscited case is opposition work. |
+| Kim date 2026 not 2025 | They put the wrong year in a futility narrative. |
+| Refusal to volunteer *Heck* / *Younger* / service / official capacity | Already locked in § 4.3. Keep that lock. |
+
+### 18.4 How the next draft should use the architecture after this audit
+
+The architecture in §§ 1–17 remains the research spine. The brief is narrower than the spine:
+
+1. Answer their headings, in their order, with our facts. Do not supply missing headings.
+2. Do not distinguish a case they did not cite (*Ngumezi*, *Caniglia*, *Nieves*, *Albright*) except where we are **affirmatively using** it. When we use it, state the holding we need. Do not add the limiting sentence they will want.
+3. Do not concede an element they did not contest (PAS as protected activity; existence of a welfare emergency; a Vehicle Code violation; Meza’s participation).
+4. Do not perform the *Franks* remainder as a finding. Perform it as a **pleading**: identified falsehoods and omissions, taken as true, leave a warrant without PC — or, if the Court disagrees, leave to amend.
+5. Conclusion: deny ECF 22 in full. Leave to amend in the alternative. No count is donated.
+
+The internal remainder table, the *Wesby* stack, the *Ngumezi* sleeping-driver distinction, and the “PAS is not speech” analysis remain in **this** file so Plaintiff does not walk into those traps later (reply, hearing, or summary judgment). They are not concessions, and they are not sentences for Judge Krishnan or a successor.
+
+---
+
+*End of architecture. Next artifact is a 25-page opposition that answers ECF 22 — not a better version of ECF 22, and not a proposed order dismissing Plaintiff’s own counts.*
