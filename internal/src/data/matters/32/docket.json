@@ -1,5 +1,23 @@
 [
   {
+    "dkt": 22,
+    "date": "2026-10-26",
+    "filer": "defendant",
+    "type": "motion",
+    "title": "Dkt 22 - Defendants Motion to Dismiss and Strike (Filed Oct 26 2026)",
+    "path": "/documents/matter-32/ndcal/Dkt 22 - Defendants Motion to Dismiss and Strike (Filed Oct 26 2026).pdf",
+    "filed": true
+  },
+  {
+    "dkt": 23,
+    "date": "2026-10-26",
+    "filer": "defendant",
+    "type": "other",
+    "title": "Dkt 23 - Magistrate Jurisdiction Declination (Filed Oct 26 2026)",
+    "path": "/documents/matter-32/ndcal/Dkt 23 - Magistrate Jurisdiction Declination (Filed Oct 26 2026).pdf",
+    "filed": true
+  },
+  {
     "dkt": null,
     "date": null,
     "filer": "plaintiff",

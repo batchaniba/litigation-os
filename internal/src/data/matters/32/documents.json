@@ -855,5 +855,13 @@
   {
     "path": "/documents/matter-32/ndcal/Exhibit A Cover - ECF Help Desk (September 14, 2026).pdf",
     "filed": false
+  },
+  {
+    "path": "/documents/matter-32/ndcal/Dkt 22 - Defendants Motion to Dismiss and Strike (Filed Oct 26 2026).pdf",
+    "filed": true
+  },
+  {
+    "path": "/documents/matter-32/ndcal/Dkt 23 - Magistrate Jurisdiction Declination (Filed Oct 26 2026).pdf",
+    "filed": true
   }
 ]
