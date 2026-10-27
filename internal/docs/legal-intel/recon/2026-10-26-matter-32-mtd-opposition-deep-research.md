@@ -516,6 +516,8 @@ If any count is dismissed, Plaintiff can cure as follows. This is the futility a
 
 ## 16. Drafting sequence for the next pass
 
+0. A working opposition draft now lives at `internal/docs/legal-intel/recon/2026-10-26-matter-32-opposition-to-ecf-22.md` (copy under `documents/matter-32/ndcal/`). It answers ECF 22, stays inside the § 18 export locks, and leaves the ¶ 16 wake correction in the proffer. It is not ready to print until the video is watched and PACER confirms the judge and the 7-3 clock.
+
 1. Confirm November 9 and the assigned judge. Caption the brief for that judge.
 2. Write the one-page introduction and the requested disposition table first. If those are wrong, the rest is waste.
 3. Write the door section and the *Khoja*/*Grier* section second. Those are the only sections that must be beautiful.
@@ -634,7 +636,11 @@ The internal remainder table, the *Wesby* stack, the *Ngumezi* sleeping-driver d
 
 ### 19.0 Matter 20 copies, and the sleep-at-the-door correction
 
-The working copies on the Matter 20 research room (`research/matter-20-2026-10-24` and the October 23 whitman-next-actions snapshot) are **the same 19-page Exhibit A PDF** we already used (git blob `abca08c1…`), plus a 15-page typesetting of the same clock (`CHP Transcript.pdf` in the document index). The stamps in § 19.1 did not move. What was fresher — and what the first § 19 pass missed — is Plaintiff’s **October 23, 2026 correction** in Matter 20 memos 08 and 09, read against that PDF (the personal-library file those memos call `Exhibit_A_CHP_Video_Transcript(7).pdf`).
+The working copies on the Matter 20 research room (`research/matter-20-2026-10-24` and the October 23 whitman-next-actions snapshot) are **the same 19-page Exhibit A PDF** we already used (git blob `abca08c1…`), plus a 15-page typesetting of the same clock (`CHP Transcript.pdf` in the document index).
+
+**Three-copy diff (October 26, 2026, later the same night).** Stamp inventory: 19-page Exhibit A (document-index extract) 347 lines; Matter 20 `pdftotext -layout` of the same PDF 347 lines; 15-page `CHP Transcript.pdf` 346 lines. Shared lock stamps (00:56:07 knock / 00:56:09 booze / 00:56:40 window / 00:56:43 door / 00:56:47 okay / 00:58:51 urine / 00:59:02 Meza will not smell / 01:00:09 Mike’s can / 01:11:15–16–33 refusal-command-cuffs / 01:11:42 parole / 01:23:33 start warrant / 01:57:10 end caption) are present in all three. 19-page vs Matter 20 pdftotext: **zero** material spoken-word diffs after whitespace normalization. 19-page vs 15-page: 61 apparent diffs, all line-wrap / OCR continuation (the 15-page extract often keeps the rest of a sentence the 19-page extract broke). No stamp moved. No spoken line was added or dropped on a lock fact. The 15-page file is an earlier typesetting of the same clock, not a later re-transcription of the video.
+
+The stamps in § 19.1 did not move. What was fresher — and what the first § 19 pass missed — is Plaintiff’s **October 23, 2026 correction** in Matter 20 memos 08 and 09, read against that PDF (the personal-library file those memos call `Exhibit_A_CHP_Video_Transcript(7).pdf`).
 
 **The correction, in his words as recorded there:** he **awoke when the officers knocked**; he heard “Open the window” at 00:56:40; Melano opened the passenger door at 00:56:43 **before he had a chance to lower it**. No further argument should claim he remained asleep when the door opened. FAC ¶ 16’s “still asleep” line is a historically filed assertion. Do not edit the filed PDF. Do not repeat the line. Reconcile it by a truthful amendment or sworn clarification.
 
@@ -812,4 +818,4 @@ That is covering the bases. It is not a better defense brief, and it is not a pr
 
 ---
 
-*End of architecture. Next artifact is a 25-page opposition that answers ECF 22 — not a better version of ECF 22, and not a proposed order dismissing Plaintiff’s own counts. Watch the video before a timestamp leaves this file.*
+*Draft opposition (October 26, 2026, later the same night): `internal/docs/legal-intel/recon/2026-10-26-matter-32-opposition-to-ecf-22.md` (copy under `documents/matter-32/ndcal/`). Not for filing until the video is watched and PACER confirms the judge and the 7-3 clock. Watch the video before a timestamp leaves that file.*
