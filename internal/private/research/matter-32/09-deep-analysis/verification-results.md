@@ -9,7 +9,7 @@ This records research-integrity and repository checks, not a finding that the cl
 - **Adverse law:** The memorandum addresses Lingo, Wesby, Estrella, Payne, Galbraith, and Moore, plus the limits of the favorable authorities.
 - **Fabrication causation:** Separate checks of Caldwell and Richards qualify the charge-only and strict-but-for formulations rather than treating either as a categorical rule.
 - **Historical drafts:** Original scaffold and the separately added upstream `5b306800` memo are preserved with supersession banners; no substantive upstream analysis was silently overwritten.
-- **Concurrent current synthesis:** The newer `475e628a` / `81c0be54` synthesis and its controlling README link are retained. Its exact SHA-256 is checked separately so this package does not overwrite or silently supersede the concurrent work.
+- **Concurrent current synthesis:** The synthesis and its controlling README link are retained. The preservation baseline now includes the independently added `f174b536` Section 1A leakage audit; its exact SHA-256 is `020d1c44ce234dc8464856de9d6bb4b836480bee3faba0b110ff97d94b2cea91`. This companion update does not edit that upstream synthesis.
 - **Preserved formatting:** That concurrent synthesis contains intentional Markdown hard-break spaces and upstream formatting. It is excluded from authored-text whitespace normalization and checked byte-for-byte instead.
 
 ## Integrity checks
@@ -17,7 +17,10 @@ This records research-integrity and repository checks, not a finding that the cl
 - **Original collection:** The original 224-asset manifest remains unchanged. The original room validator verifies source hashes, sizes, provenance and source-ID existence; selected exact-original retrieval gaps remain eleven.
 - **Supplemental collection:** The separate manifest registers public URLs and original PDF captures with SHA-256 hashes and byte sizes. HTML pages remain explicitly linked but not archived as binary originals.
 - **New analysis validator:** Checks required deliverables, current FAC hash and count ranges, defendant scope, original-source IDs, local links, registered external URLs, supplemental PDF signatures/hashes, required critical-risk markers, and supersession notices.
+- **Adversarial-leakage audit:** Twenty-two uniquely indexed findings have verbatim excerpts checked against current source text, source-line locations and source hashes. This audit adds drafting controls; it does not certify a legal outcome, withdraw a claim, or establish a privilege.
+- **Expanded authority register:** Thirty-five URLs are registered, with 23 captured PDF originals. The added Rule 11 text and Gonzalez comparator decision were reviewed but are explicitly not represented as additional archived PDFs.
 - **Export:** `build-deliverable.mjs` assembles the standalone Markdown from the source modules without changing their legal substance.
+- **Export publication control:** The combined internal export includes the full leakage audit, and the decision memorandum and brief blueprint route readers to it before any court-facing reuse. The export remains private research, not a filing-ready opposition.
 - **Runtime isolation:** Changes stay inside the private Matter 32 research room; no public application, matter graph, procedural clock, Cloudflare object or deployment configuration is changed.
 
 ## Checks and limits

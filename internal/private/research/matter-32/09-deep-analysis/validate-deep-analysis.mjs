@@ -77,10 +77,37 @@ for (const file of fs.readdirSync(path.join(room, '04-workshop')).filter(name =>
     errors.push(`Old scaffold not marked superseded: ${file}`);
   }
 }
+const auditText = fs.readFileSync(path.join(here, 'adversarial-leakage-audit.md'), 'utf8');
+const index = JSON.parse(fs.readFileSync(path.join(here, 'adversarial-leakage-index.json'), 'utf8'));
+if (sha(auditText) !== index.audit_sha256) errors.push('Audit index content hash is stale');
+if (index.findings.length !== 22 || new Set(index.findings.map(f => f.id)).size !== 22) {
+  errors.push('Audit must contain 22 uniquely indexed findings');
+}
+for (const finding of index.findings) {
+  if (!auditText.includes(`### ${finding.id}: ${finding.title}`) ||
+      !auditText.includes(`“${finding.verbatim_excerpt}”`)) errors.push(`Audit/index mismatch: ${finding.id}`);
+  if (!finding.anchors.length) errors.push(`No source anchor: ${finding.id}`);
+  for (const anchor of finding.anchors) {
+    if (!/^(04-workshop|09-deep-analysis)\/[^/]+\.md$/.test(anchor.path)) {
+      errors.push(`Unsafe audit source: ${anchor.path}`);
+      continue;
+    }
+    const source = fs.readFileSync(path.join(room, anchor.path), 'utf8');
+    const offset = source.indexOf(finding.verbatim_excerpt);
+    if (sha(source) !== anchor.sha256 || offset < 0 ||
+        source.slice(0, offset).split('\n').length !== anchor.line_start ||
+        source.slice(0, offset + finding.verbatim_excerpt.length).split('\n').length !== anchor.line_end) {
+      errors.push(`Stale or incorrect source excerpt: ${finding.id}`);
+    }
+  }
+}
+const combined = fs.readFileSync(path.join(here, 'deliverables/Matter-32-Opposition-Research-Engine.md'), 'utf8');
+if (!combined.includes(auditText.replace(/^(#{1,5}) /gm, '$1# '))) errors.push('Combined export missing current audit');
 const result = {
   ok: errors.length === 0,
   claim_modules: controls.claims.length,
   authored_markdown_outputs: controls.required_outputs.length,
+  verified_adversarial_leakage_findings: index.findings.length,
   approximate_words: wordCount,
   original_source_records: original.records.length,
   registered_authority_urls: supplemental.records.length,

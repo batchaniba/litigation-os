@@ -6,12 +6,13 @@ The separately authored [upstream controlling synthesis](../04-workshop/oppositi
 
 ## Read in this order
 
+- **[Adversarial-leakage and judicial-work audit](adversarial-leakage-audit.md)**: Read before drafting. Twenty-two findings separate internal defense research from responsive argument, identify unnecessary concessions and proof-burden inflation, and provide narrower drafting alternatives. [Exact-quote index](adversarial-leakage-index.json) supplies source lines and content hashes.
 - **[Decision memorandum](opposition-decision-memorandum.md)**: The core synthesis, ranked opportunities, six claim modules, actual corrected-affidavit analysis, qualified-immunity divisions, historical comparison, damages causation, and recommended disposition.
 - **[Evidence-to-claim matrix](evidence-to-claim-matrix.md)**: What each material proposition actually establishes, what it does not establish, its source locator, and its proper use at pleading, amendment, or proof.
 - **[Authority treatment ledger](authority-treatment-ledger.md)**: Favorable, adverse, and mixed authorities, with primary-text links, limits, temporal eligibility, and research status.
 - **[Amendment and proof proffer](amendment-and-proof-proffer.md)**: Concrete corrections to the operative paragraphs, conditional amendment options, and the records needed to support them.
 - **[Red team and brief blueprint](red-team-and-brief-blueprint.md)**: The strongest defense version, issue allocation for a bounded brief, proposed argument language, and questions a skeptical judge is likely to ask.
-- **[Research controls](research-controls.json)**: Machine-readable claim map and filing gates. Run `node internal/private/research/matter-32/09-deep-analysis/validate-deep-analysis.mjs` from the repository root to verify internal consistency and supplemental-source hashes.
+- **[Research controls](research-controls.json)**: Machine-readable claim map and filing gates. Run `node internal/private/research/matter-32/09-deep-analysis/build-leakage-index.mjs`, then `node internal/private/research/matter-32/09-deep-analysis/build-deliverable.mjs`, then `node internal/private/research/matter-32/09-deep-analysis/validate-deep-analysis.mjs` from the repository root to verify internal consistency, exact audit quotations, and supplemental-source hashes.
 
 ## Important findings
 

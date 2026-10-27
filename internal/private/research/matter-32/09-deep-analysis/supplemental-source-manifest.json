@@ -4,6 +4,18 @@
   "note": "Separate from the original 224-record evidence manifest. A downloaded opinion is not a citator clearance.",
   "records": [
     {
+      "url": "https://www.law.cornell.edu/rules/frcp/rule_11",
+      "reviewed_on": "2026-10-26",
+      "status": "linked_html_not_archived",
+      "review": "Rule 11(a) and (b)(2)-(4) checked for audit accuracy and pleading/proof distinction"
+    },
+    {
+      "url": "https://www.supremecourt.gov/opinions/23pdf/22-1025_1a72.pdf",
+      "reviewed_on": "2026-10-26",
+      "status": "reviewed_pdf_not_archived",
+      "review": "Gonzalez comparator holding checked; not added to captured-PDF count"
+    },
+    {
       "url": "https://caselaw.findlaw.com/court/us-9th-circuit/1277663.html",
       "retrieved_at": "2026-10-27T01:58:35.740Z",
       "status": "linked_html_not_archived"

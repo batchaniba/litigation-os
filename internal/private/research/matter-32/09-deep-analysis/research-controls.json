@@ -24,12 +24,13 @@
     "evidence-to-claim-matrix.md",
     "authority-treatment-ledger.md",
     "amendment-and-proof-proffer.md",
-    "red-team-and-brief-blueprint.md"
+    "red-team-and-brief-blueprint.md",
+    "adversarial-leakage-audit.md"
   ],
   "parallel_upstream_synthesis": {
     "path": "04-workshop/opposition-deep-research-analysis.md",
-    "source_commit": "475e628a01eddd7b76b61911b2019e922086c8d4",
-    "sha256": "3b1b85a5d3394ba805d94502b7965103059de07fa88732994bb8b4be1ec1d08e",
+    "source_commit": "f174b536b7e4407f63157c5f2a19e5c2e1ed6f4a",
+    "sha256": "020d1c44ce234dc8464856de9d6bb4b836480bee3faba0b110ff97d94b2cea91",
     "substantive_edits": false,
     "status": "preserved_current_companion_not_superseded"
   },

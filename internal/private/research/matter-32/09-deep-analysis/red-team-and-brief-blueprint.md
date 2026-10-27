@@ -1,5 +1,7 @@
 # Matter 32: Red Team and Brief Blueprint
 
+Publication control: The [adversarial-leakage audit](adversarial-leakage-audit.md), especially A01–A09 and A15, qualifies this workbench and its sample language. Researching the strongest defense does not require presenting every unraised defense, adverse inference, or internal concession in the opposition.
+
 The opposition should withstand the strongest coherent defense, not merely rebut the motion's least precise wording. This workbench pairs each serious objection with the best bounded response and a stop condition that prevents unsupported advocacy.
 
 ## Red-team tests

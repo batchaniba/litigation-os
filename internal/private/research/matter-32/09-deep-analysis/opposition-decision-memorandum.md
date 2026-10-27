@@ -1,5 +1,7 @@
 # Matter 32: Opposition Decision Memorandum
 
+Publication control: Read the [adversarial-leakage audit](adversarial-leakage-audit.md) before adapting this internal analysis into an opposition. Its 22 findings distinguish a private stress test from arguments, evidence and concessions appropriate for filing; the discussion below is preserved, not approved for wholesale export into a brief.
+
 The strongest opposition is not the longest defense of every existing sentence. It is a temporally precise, defendant-specific argument that preserves independently actionable conduct, corrects demonstrable pleading errors, answers adverse authority before the reply does, and supplies a concrete amendment alternative where the present allegations are insufficient.
 
 Internal research as of October 26, 2026. This memorandum analyzes the operative ECF 5 FAC, ECF 22 motion, preserved historical papers, and Matter 20 production; it is not a court filing and does not claim commercial-citator clearance or a current live-docket check.

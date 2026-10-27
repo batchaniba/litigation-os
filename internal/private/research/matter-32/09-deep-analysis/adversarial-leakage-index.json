@@ -1,0 +1,294 @@
+{
+  "title": "Matter 32 Adversarial-Leakage Audit Index",
+  "audit_path": "09-deep-analysis/adversarial-leakage-audit.md",
+  "audit_sha256": "4cc6670f0aeada99ced5e0c253cc17573ea4854f31b9c8b45db947a5f1d92385",
+  "note": "Exact excerpts and immutable-content locators; findings are internal drafting controls, not adjudications.",
+  "findings": [
+    {
+      "id": "A01",
+      "title": "Supplying a parole-search defense",
+      "verbatim_excerpt": "while creating a substantial alternative justification for later searches",
+      "anchors": [
+        {
+          "path": "09-deep-analysis/opposition-decision-memorandum.md",
+          "line_start": 98,
+          "line_end": 98,
+          "sha256": "62d0ed5f899fdd1683592b69ae3b0f64247bba9ddc4ed1a19a1aadf049287bf6"
+        }
+      ]
+    },
+    {
+      "id": "A02",
+      "title": "Volunteering the Lingo defense in proposed argument language",
+      "verbatim_excerpt": "Lingo forecloses that shortcut",
+      "anchors": [
+        {
+          "path": "09-deep-analysis/red-team-and-brief-blueprint.md",
+          "line_start": 47,
+          "line_end": 47,
+          "sha256": "d7d9710e34df57423aaeb3c4e79efe2627db41fb600c47ac9b1d12818e797981"
+        }
+      ]
+    },
+    {
+      "id": "A03",
+      "title": "Providing Rule 41 and preclusion research",
+      "verbatim_excerpt": "Rose Court identifies four requirements for the federal two-dismissal rule",
+      "anchors": [
+        {
+          "path": "09-deep-analysis/opposition-decision-memorandum.md",
+          "line_start": 258,
+          "line_end": 258,
+          "sha256": "62d0ed5f899fdd1683592b69ae3b0f64247bba9ddc4ed1a19a1aadf049287bf6"
+        }
+      ]
+    },
+    {
+      "id": "A04",
+      "title": "Constructing compensatory-damages and mitigation defenses",
+      "verbatim_excerpt": "independent parole or medical restrictions, renewal records, pay records, work availability, mitigation",
+      "anchors": [
+        {
+          "path": "09-deep-analysis/opposition-decision-memorandum.md",
+          "line_start": 266,
+          "line_end": 266,
+          "sha256": "62d0ed5f899fdd1683592b69ae3b0f64247bba9ddc4ed1a19a1aadf049287bf6"
+        }
+      ]
+    },
+    {
+      "id": "A05",
+      "title": "Introducing adverse toxicology",
+      "verbatim_excerpt": "It is not a negative alcohol result",
+      "anchors": [
+        {
+          "path": "09-deep-analysis/opposition-decision-memorandum.md",
+          "line_start": 34,
+          "line_end": 34,
+          "sha256": "62d0ed5f899fdd1683592b69ae3b0f64247bba9ddc4ed1a19a1aadf049287bf6"
+        }
+      ]
+    },
+    {
+      "id": "A06",
+      "title": "Writing the magistrate's adverse affidavit remainder for the defense",
+      "verbatim_excerpt": "does not demonstrate that the actual odor, initial confusion, recent-driving and FST narrative fails probable cause",
+      "anchors": [
+        {
+          "path": "09-deep-analysis/opposition-decision-memorandum.md",
+          "line_start": 143,
+          "line_end": 143,
+          "sha256": "62d0ed5f899fdd1683592b69ae3b0f64247bba9ddc4ed1a19a1aadf049287bf6"
+        }
+      ]
+    },
+    {
+      "id": "A07",
+      "title": "Handing over a new Moore/protected-activity route",
+      "verbatim_excerpt": "Moore's treatment of silence and retaliatory investigation is adverse enough",
+      "anchors": [
+        {
+          "path": "09-deep-analysis/opposition-decision-memorandum.md",
+          "line_start": 223,
+          "line_end": 223,
+          "sha256": "62d0ed5f899fdd1683592b69ae3b0f64247bba9ddc4ed1a19a1aadf049287bf6"
+        }
+      ]
+    },
+    {
+      "id": "A08",
+      "title": "Creating a comparator burden in response to a causation argument",
+      "verbatim_excerpt": "identify the actual objective evidence needed for an exception",
+      "anchors": [
+        {
+          "path": "09-deep-analysis/opposition-decision-memorandum.md",
+          "line_start": 229,
+          "line_end": 229,
+          "sha256": "62d0ed5f899fdd1683592b69ae3b0f64247bba9ddc4ed1a19a1aadf049287bf6"
+        }
+      ]
+    },
+    {
+      "id": "A09",
+      "title": "Arguing a broader constitutional-channel dismissal than the motion develops",
+      "verbatim_excerpt": "Galbraith, a defense-cited authority, is adverse to simply repackaging the same pretrial seizure injury",
+      "anchors": [
+        {
+          "path": "09-deep-analysis/opposition-decision-memorandum.md",
+          "line_start": 173,
+          "line_end": 173,
+          "sha256": "62d0ed5f899fdd1683592b69ae3b0f64247bba9ddc4ed1a19a1aadf049287bf6"
+        }
+      ]
+    },
+    {
+      "id": "A10",
+      "title": "Promoting a proof workbench into a pleading prerequisite",
+      "verbatim_excerpt": "No completed DMV but-for chain or continuous-loss certification",
+      "anchors": [
+        {
+          "path": "09-deep-analysis/amendment-and-proof-proffer.md",
+          "line_start": 48,
+          "line_end": 48,
+          "sha256": "a7ecc18d6e3e921de43be9e50b410251105ae4641b6f6b0726c381d70e0022ab"
+        }
+      ]
+    },
+    {
+      "id": "A11",
+      "title": "Replacing causation law with a more demanding self-imposed test",
+      "verbatim_excerpt": "Why outcome changes without it",
+      "anchors": [
+        {
+          "path": "09-deep-analysis/evidence-to-claim-matrix.md",
+          "line_start": 52,
+          "line_end": 52,
+          "sha256": "bfc3abd018eceb440cc7fa4ae3214aac9e49f983daf09dc601a8195d97d902ef"
+        }
+      ]
+    },
+    {
+      "id": "A12",
+      "title": "Giving the court dismissal-ready claim rankings",
+      "verbatim_excerpt": "QI likely",
+      "anchors": [
+        {
+          "path": "04-workshop/opposition-deep-research-analysis.md",
+          "line_start": 404,
+          "line_end": 404,
+          "sha256": "020d1c44ce234dc8464856de9d6bb4b836480bee3faba0b110ff97d94b2cea91"
+        }
+      ]
+    },
+    {
+      "id": "A13",
+      "title": "Treating a count heading as a dispositive merits ruling",
+      "verbatim_excerpt": "any proposed expansion requires an express amendment",
+      "anchors": [
+        {
+          "path": "09-deep-analysis/opposition-decision-memorandum.md",
+          "line_start": 70,
+          "line_end": 70,
+          "sha256": "62d0ed5f899fdd1683592b69ae3b0f64247bba9ddc4ed1a19a1aadf049287bf6"
+        }
+      ]
+    },
+    {
+      "id": "A14",
+      "title": "Requiring the plaintiff to negate every hypothetical alternative offense",
+      "verbatim_excerpt": "address all genuinely available indicia and alternative offenses",
+      "anchors": [
+        {
+          "path": "09-deep-analysis/opposition-decision-memorandum.md",
+          "line_start": 28,
+          "line_end": 28,
+          "sha256": "62d0ed5f899fdd1683592b69ae3b0f64247bba9ddc4ed1a19a1aadf049287bf6"
+        }
+      ]
+    },
+    {
+      "id": "A15",
+      "title": "Adopting the officer's innocent explanation for PAS timing",
+      "verbatim_excerpt": "a voluntary test might otherwise have supplied exculpatory information",
+      "anchors": [
+        {
+          "path": "09-deep-analysis/opposition-decision-memorandum.md",
+          "line_start": 205,
+          "line_end": 205,
+          "sha256": "62d0ed5f899fdd1683592b69ae3b0f64247bba9ddc4ed1a19a1aadf049287bf6"
+        }
+      ]
+    },
+    {
+      "id": "A16",
+      "title": "Announcing “missing elements” before testing the existing pleading",
+      "verbatim_excerpt": "Separate the missing elements",
+      "anchors": [
+        {
+          "path": "09-deep-analysis/opposition-decision-memorandum.md",
+          "line_start": 225,
+          "line_end": 225,
+          "sha256": "62d0ed5f899fdd1683592b69ae3b0f64247bba9ddc4ed1a19a1aadf049287bf6"
+        }
+      ]
+    },
+    {
+      "id": "A17",
+      "title": "Overbuilding the government's search exception",
+      "verbatim_excerpt": "any legitimately known odor supplied automobile-search probable cause",
+      "anchors": [
+        {
+          "path": "09-deep-analysis/opposition-decision-memorandum.md",
+          "line_start": 88,
+          "line_end": 88,
+          "sha256": "62d0ed5f899fdd1683592b69ae3b0f64247bba9ddc4ed1a19a1aadf049287bf6"
+        }
+      ]
+    },
+    {
+      "id": "A18",
+      "title": "Leading with an inventory of plaintiff errors",
+      "verbatim_excerpt": "Credibility concession",
+      "anchors": [
+        {
+          "path": "09-deep-analysis/opposition-decision-memorandum.md",
+          "line_start": 275,
+          "line_end": 275,
+          "sha256": "62d0ed5f899fdd1683592b69ae3b0f64247bba9ddc4ed1a19a1aadf049287bf6"
+        }
+      ]
+    },
+    {
+      "id": "A19",
+      "title": "Supplying withdrawal or abandonment language without authorization",
+      "verbatim_excerpt": "abandon or substantially narrow Count 1",
+      "anchors": [
+        {
+          "path": "04-workshop/opposition-deep-research-analysis.md",
+          "line_start": 614,
+          "line_end": 614,
+          "sha256": "020d1c44ce234dc8464856de9d6bb4b836480bee3faba0b110ff97d94b2cea91"
+        }
+      ]
+    },
+    {
+      "id": "A20",
+      "title": "Narrowing punitive damages by claim label rather than alleged conduct",
+      "verbatim_excerpt": "preserve punitive damages only against an officer for whom deliberate deception, deliberate fabrication, or intentional retaliation remains plausibly alleged",
+      "anchors": [
+        {
+          "path": "04-workshop/opposition-deep-research-analysis.md",
+          "line_start": 419,
+          "line_end": 419,
+          "sha256": "020d1c44ce234dc8464856de9d6bb4b836480bee3faba0b110ff97d94b2cea91"
+        }
+      ]
+    },
+    {
+      "id": "A21",
+      "title": "Making binding-law research more restrictive than the law requires",
+      "verbatim_excerpt": "Identify a controlling pre-incident basis",
+      "anchors": [
+        {
+          "path": "09-deep-analysis/opposition-decision-memorandum.md",
+          "line_start": 227,
+          "line_end": 227,
+          "sha256": "62d0ed5f899fdd1683592b69ae3b0f64247bba9ddc4ed1a19a1aadf049287bf6"
+        }
+      ]
+    },
+    {
+      "id": "A22",
+      "title": "Treating an internal audit as an unlimited permission to omit",
+      "verbatim_excerpt": "Do not mention toxicology or adverse transcript passages unless Defendants properly place them before the Court or the Court converts the motion under Rule 12(d)",
+      "anchors": [
+        {
+          "path": "04-workshop/opposition-deep-research-analysis.md",
+          "line_start": 61,
+          "line_end": 61,
+          "sha256": "020d1c44ce234dc8464856de9d6bb4b836480bee3faba0b110ff97d94b2cea91"
+        }
+      ]
+    }
+  ]
+}

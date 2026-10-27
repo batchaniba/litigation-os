@@ -26,7 +26,7 @@ for(const file of fs.readdirSync(workshop).filter(x=>x.endsWith('.md'))){
   // Preserve the separately authored upstream memo without mechanical rewriting.
   // Its historical-status banner routes readers to the corrected analysis.
   const unchangedParallelSynthesis=file==='opposition-deep-research-analysis.md'&&
-    sha(fs.readFileSync(path.join(workshop,file)))==='3b1b85a5d3394ba805d94502b7965103059de07fa88732994bb8b4be1ec1d08e';
+    sha(fs.readFileSync(path.join(workshop,file)))==='020d1c44ce234dc8464856de9d6bb4b836480bee3faba0b110ff97d94b2cea91';
   if(/[—]/.test(text)&&!text.includes('Preserved upstream document from commit `5b306800`')&&!unchangedParallelSynthesis)errors.push(`Style: em dash in ${file}`);
 }
 if(errors.length){console.error(errors.join('\n'));process.exitCode=1;}
