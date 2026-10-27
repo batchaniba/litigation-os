@@ -1,3 +1,5 @@
+> Historical scaffold. Preserved upstream document from commit `5b306800`, integrated without rewriting its substantive text. The [new decision memorandum](../09-deep-analysis/opposition-decision-memorandum.md) and [authority ledger](../09-deep-analysis/authority-treatment-ledger.md) supersede its older anchors, unpleaded protected-speech suggestions, incomplete toxicology treatment, and two-dismissal discussion.
+
 # Meza-Gonzalez MTD Opposition — Research Analysis
 
 **Matter:** Nforbi v. Meza-Gonzalez and Melano, N.D. Cal. 4:26-cv-08271-ASK (Matter 32)  

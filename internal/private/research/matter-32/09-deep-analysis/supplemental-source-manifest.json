@@ -1,0 +1,241 @@
+{
+  "title": "Supplemental authority-source manifest",
+  "generated_at": "2026-10-27T01:58:37.191Z",
+  "note": "Separate from the original 224-record evidence manifest. A downloaded opinion is not a citator clearance.",
+  "records": [
+    {
+      "url": "https://caselaw.findlaw.com/court/us-9th-circuit/1277663.html",
+      "retrieved_at": "2026-10-27T01:58:35.740Z",
+      "status": "linked_html_not_archived"
+    },
+    {
+      "url": "https://cases.justia.com/federal/appellate-courts/ca9/10-35085/10-35085-2011-11-07.pdf?ts=1411064324",
+      "retrieved_at": "2026-10-27T01:58:35.740Z",
+      "status": "captured_pdf",
+      "path": "authority-originals/8139fd072c-10-35085-2011-11-07.pdf",
+      "size": 149810,
+      "sha256": "ef3d06979435abd3831f22e7223b618b0bfa16e778ce78afd2cdb0e9a03154f4"
+    },
+    {
+      "url": "https://cdn.ca9.uscourts.gov/datastore/jury-instructions/civil/9-38-particular-rights-fourteenth-amendment-due-process-deliberate-fabrication-of-evidence.pdf",
+      "retrieved_at": "2026-10-27T01:58:35.903Z",
+      "status": "captured_pdf",
+      "path": "authority-originals/3e2eea0801-9-38-particular-rights-fourteenth-amendment-due-process-deliberate-fabrication-of-evidence.pdf",
+      "size": 10917,
+      "sha256": "862ddad93cc03a59691c9d0acc45ac5ef3ca6923909a1603492c5ec6e3358bc5"
+    },
+    {
+      "url": "https://cdn.ca9.uscourts.gov/datastore/opinions/2010/08/17/09-16353.pdf",
+      "retrieved_at": "2026-10-27T01:58:36.168Z",
+      "status": "captured_pdf",
+      "path": "authority-originals/fa1ab910da-09-16353.pdf",
+      "size": 57100,
+      "sha256": "4182fd5f9a0efc293cb58d6be34488da665c2f4a2ac76c03cc69577c7b460bbf"
+    },
+    {
+      "url": "https://cdn.ca9.uscourts.gov/datastore/opinions/2016/05/24/14-55387.pdf",
+      "retrieved_at": "2026-10-27T01:58:36.194Z",
+      "status": "captured_pdf",
+      "path": "authority-originals/18c13a4fad-14-55387.pdf",
+      "size": 139584,
+      "sha256": "b2f86b633e1d7e0427c2bbe7ee5bcd02b8a17f85541496ba5cc1dd1032967d9a"
+    },
+    {
+      "url": "https://cdn.ca9.uscourts.gov/datastore/opinions/2016/08/08/14-35344.pdf",
+      "retrieved_at": "2026-10-27T01:58:36.206Z",
+      "status": "captured_pdf",
+      "path": "authority-originals/3881d09338-14-35344.pdf",
+      "size": 108802,
+      "sha256": "2327915b4615f82f8d319033d832189e1997a6f3dbc7d58d787112040ea7a983"
+    },
+    {
+      "url": "https://cdn.ca9.uscourts.gov/datastore/opinions/2017/05/18/14-35689.pdf",
+      "retrieved_at": "2026-10-27T01:58:36.260Z",
+      "status": "captured_pdf",
+      "path": "authority-originals/9bebe70f94-14-35689.pdf",
+      "size": 145906,
+      "sha256": "08b09b0e534021e9a354714b96b72494e98e75c79d8d8073435e6a5211e60cb8"
+    },
+    {
+      "url": "https://cdn.ca9.uscourts.gov/datastore/opinions/2018/02/26/15-35292.pdf",
+      "retrieved_at": "2026-10-27T01:58:36.272Z",
+      "status": "captured_pdf",
+      "path": "authority-originals/f66de10e9d-15-35292.pdf",
+      "size": 120125,
+      "sha256": "eeec015411349cff22bc4e2bf76f0dc0852ecc3f98dca74f62fa0fbbdb7aec0a"
+    },
+    {
+      "url": "https://cdn.ca9.uscourts.gov/datastore/opinions/2018/03/06/16-16568.pdf",
+      "retrieved_at": "2026-10-27T01:58:36.281Z",
+      "status": "captured_pdf",
+      "path": "authority-originals/52117024ba-16-16568.pdf",
+      "size": 156272,
+      "sha256": "2b9d670d0f462c302581e2050682852f83b647cb553f7d596be8e056e9abec5b"
+    },
+    {
+      "url": "https://cdn.ca9.uscourts.gov/datastore/opinions/2018/05/11/16-15473.pdf",
+      "retrieved_at": "2026-10-27T01:58:36.331Z",
+      "status": "captured_pdf",
+      "path": "authority-originals/6af08c3bf2-16-15473.pdf",
+      "size": 171494,
+      "sha256": "a1f0f8e915d0d051c4ede988b95382dac19ba88e05bd8566c9392d705d646ea4"
+    },
+    {
+      "url": "https://cdn.ca9.uscourts.gov/datastore/opinions/2018/08/13/16-56069.pdf",
+      "retrieved_at": "2026-10-27T01:58:36.599Z",
+      "status": "captured_pdf",
+      "path": "authority-originals/7e2f11e764-16-56069.pdf",
+      "size": 287005,
+      "sha256": "c3e92de722772c29a5ea5c81675976f2d65287d1a021b74a4f263b82a47c5e47"
+    },
+    {
+      "url": "https://cdn.ca9.uscourts.gov/datastore/opinions/2020/11/20/19-10243.pdf",
+      "retrieved_at": "2026-10-27T01:58:36.648Z",
+      "status": "captured_pdf",
+      "path": "authority-originals/3268ed43b3-19-10243.pdf",
+      "size": 59728,
+      "sha256": "93e66bf52d668c5ee22284dec491ac7ec048109f6ade0c09dedbcc95ce1dc6aa"
+    },
+    {
+      "url": "https://cdn.ca9.uscourts.gov/datastore/opinions/2021/04/12/19-55274.pdf",
+      "retrieved_at": "2026-10-27T01:58:36.694Z",
+      "status": "captured_pdf",
+      "path": "authority-originals/b6bdbd0236-19-55274.pdf",
+      "size": 331093,
+      "sha256": "a6c7b1b8a25e76a1de499f5c61ad9185baf20c6f24b3648b796d6d51c35a742c"
+    },
+    {
+      "url": "https://cdn.ca9.uscourts.gov/datastore/opinions/2022/03/08/20-16805.pdf",
+      "retrieved_at": "2026-10-27T01:58:36.706Z",
+      "status": "captured_pdf",
+      "path": "authority-originals/e89a9e39c8-20-16805.pdf",
+      "size": 204150,
+      "sha256": "4aeda1de597efed4e9ecdbc034eeac38f7b2a04714c8279feb6c49823734b34c"
+    },
+    {
+      "url": "https://cdn.ca9.uscourts.gov/datastore/opinions/2022/06/24/19-56205.pdf",
+      "retrieved_at": "2026-10-27T01:58:36.716Z",
+      "status": "captured_pdf",
+      "path": "authority-originals/437b06993f-19-56205.pdf",
+      "size": 303984,
+      "sha256": "ca6416624e6638d22b139f1fd7c35fa7d65bb23dfd75ead956132b999b1259a1"
+    },
+    {
+      "url": "https://cdn.ca9.uscourts.gov/datastore/opinions/2023/01/20/21-16702.pdf",
+      "retrieved_at": "2026-10-27T01:58:36.737Z",
+      "status": "captured_pdf",
+      "path": "authority-originals/438035ec00-21-16702.pdf",
+      "size": 238834,
+      "sha256": "c358f5c7436afa7ef0292d82f068b3f7742da03b42d6b9f49797f280ad07c269"
+    },
+    {
+      "url": "https://cdn.ca9.uscourts.gov/datastore/opinions/2023/06/06/22-10027.pdf",
+      "retrieved_at": "2026-10-27T01:58:36.745Z",
+      "status": "captured_pdf",
+      "path": "authority-originals/01e2c6ee53-22-10027.pdf",
+      "size": 323244,
+      "sha256": "837fe618a24b06b3f57714fb3e6b688bc0e6305e3a668fdb8c34f06759945e0f"
+    },
+    {
+      "url": "https://cdn.ca9.uscourts.gov/datastore/opinions/2023/09/29/22-16236.pdf",
+      "retrieved_at": "2026-10-27T01:58:36.758Z",
+      "status": "captured_pdf",
+      "path": "authority-originals/f2d8d9619a-22-16236.pdf",
+      "size": 286997,
+      "sha256": "61fd52d5dff3ea3946eadfe3219793e13317ff71822291228936bcc5b516cf22"
+    },
+    {
+      "url": "https://cdn.ca9.uscourts.gov/datastore/opinions/2024/04/17/22-50262.pdf",
+      "retrieved_at": "2026-10-27T01:58:36.772Z",
+      "status": "captured_pdf",
+      "path": "authority-originals/c25a9ae9cb-22-50262.pdf",
+      "size": 245799,
+      "sha256": "801b16704f9c6885fc8e17d5d5d5bd04b74c72fd3486403058153a8a8b719752"
+    },
+    {
+      "url": "https://cdn.ca9.uscourts.gov/datastore/opinions/2026/06/05/24-3308.pdf",
+      "retrieved_at": "2026-10-27T01:58:36.780Z",
+      "status": "captured_pdf",
+      "path": "authority-originals/f219ecca3f-24-3308.pdf",
+      "size": 356985,
+      "sha256": "b6be959209f4266103df21412977c4a3db173513d6f25be446c473eab85f1d3b"
+    },
+    {
+      "url": "https://cdn.ca9.uscourts.gov/datastore/opinions/2026/07/17/23-469.pdf",
+      "retrieved_at": "2026-10-27T01:58:36.791Z",
+      "status": "captured_pdf",
+      "path": "authority-originals/7e4c19a5e5-23-469.pdf",
+      "size": 423258,
+      "sha256": "62229c9bf1d8f29107058ec1c26ba61a16303595e2a89502ed4380d9a83447c6"
+    },
+    {
+      "url": "https://law.justia.com/cases/california/court-of-appeal/2024/a164843.html",
+      "retrieved_at": "2026-10-27T01:58:36.800Z",
+      "status": "linked_html_not_archived"
+    },
+    {
+      "url": "https://law.justia.com/cases/california/supreme-court/3d/53/753.html",
+      "retrieved_at": "2026-10-27T01:58:36.800Z",
+      "status": "linked_html_not_archived"
+    },
+    {
+      "url": "https://law.justia.com/cases/federal/appellate-courts/F3/307/1119/521840/",
+      "retrieved_at": "2026-10-27T01:58:36.800Z",
+      "status": "linked_html_not_archived"
+    },
+    {
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=VEH&sectionNum=13353.",
+      "retrieved_at": "2026-10-27T01:58:36.800Z",
+      "status": "linked_html_not_archived"
+    },
+    {
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=VEH&sectionNum=21718.",
+      "retrieved_at": "2026-10-27T01:58:36.800Z",
+      "status": "linked_html_not_archived"
+    },
+    {
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23612.&lawCode=VEH",
+      "retrieved_at": "2026-10-27T01:58:36.800Z",
+      "status": "linked_html_not_archived"
+    },
+    {
+      "url": "https://scocal.stanford.edu/opinion/troppman-v-valverde-33720/",
+      "retrieved_at": "2026-10-27T01:58:36.800Z",
+      "status": "linked_html_not_archived"
+    },
+    {
+      "url": "https://www.courtlistener.com/opinion/10913465/brendan-ngehsi-newanforbi-v-state-of-california-et-al/",
+      "retrieved_at": "2026-10-27T01:58:36.800Z",
+      "status": "linked_html_not_archived"
+    },
+    {
+      "url": "https://www.courtlistener.com/opinion/180346/costanich-v-dept-of-social-and-health-services/",
+      "retrieved_at": "2026-10-27T01:58:36.800Z",
+      "status": "linked_html_not_archived"
+    },
+    {
+      "url": "https://www.govinfo.gov/content/pkg/USCOURTS-ca9-21-16663/pdf/USCOURTS-ca9-21-16663-0.pdf",
+      "retrieved_at": "2026-10-27T01:58:36.800Z",
+      "status": "captured_pdf",
+      "path": "authority-originals/87bc7d5224-USCOURTS-ca9-21-16663-0.pdf",
+      "size": 332395,
+      "sha256": "f73c0f437554bd5310f8a8b866e251c45aa4fe8e362b65ec6b92de5b87d610e0"
+    },
+    {
+      "url": "https://www.supremecourt.gov/opinions/17pdf/15-1485_1qm2.pdf",
+      "retrieved_at": "2026-10-27T01:58:36.960Z",
+      "status": "captured_pdf",
+      "path": "authority-originals/e9f766af78-15-1485_1qm2.pdf",
+      "size": 159110,
+      "sha256": "c0112c6ac1cf05c6ca82fcdba8fe2fec65187ae4e3caf36058bad0668a8fea32"
+    },
+    {
+      "url": "https://www.supremecourt.gov/opinions/23pdf/22-1025_1a72.pdf",
+      "retrieved_at": "2026-10-27T01:58:37.085Z",
+      "status": "captured_pdf",
+      "path": "authority-originals/4e9842fad1-22-1025_1a72.pdf",
+      "size": 170742,
+      "sha256": "41482c8ef11e63fc91246388f66b12c27ac9b6c7b8d3722b22fcdd0f5c115eb9"
+    }
+  ]
+}

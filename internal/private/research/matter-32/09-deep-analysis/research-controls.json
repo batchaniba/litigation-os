@@ -1,0 +1,60 @@
+{
+  "title": "Matter 32 Opposition Research Engine",
+  "research_date": "2026-10-26",
+  "branch": "research/matter-32-mtd-opposition-2026-10-26",
+  "status": "research_complete_for_current_access_not_filing_ready",
+  "authoritative_fac": {
+    "record": "R125",
+    "ecf": 5,
+    "filed": "2026-08-17",
+    "pages": 21,
+    "sha256": "ef504353bbbaae36b2d317f447a7e7d98c73ab6e89a86166c5bf934745794dcc"
+  },
+  "claims": [
+    {"count": 1, "paragraphs": [38, 42], "defendants": ["Meza", "Does"], "module": "actual_affidavit_materiality"},
+    {"count": 2, "paragraphs": [43, 47], "defendants": ["Meza", "Does"], "module": "distinct_deprivation_fabrication_causation"},
+    {"count": 3, "paragraphs": [48, 53], "defendants": ["Meza", "Melano", "Does"], "module": "arrest_time_totality"},
+    {"count": 4, "paragraphs": [54, 58], "defendants": ["Melano", "Does"], "module": "initial_door_entry"},
+    {"count": 5, "paragraphs": [59, 63], "defendants": ["Meza", "Melano", "Does"], "module": "discrete_cup_and_subsequent_searches"},
+    {"count": 6, "paragraphs": [64, 70], "defendants": ["Meza", "Melano", "Does"], "module": "pas_refusal_retaliation"}
+  ],
+  "required_outputs": [
+    "README.md",
+    "opposition-decision-memorandum.md",
+    "evidence-to-claim-matrix.md",
+    "authority-treatment-ledger.md",
+    "amendment-and-proof-proffer.md",
+    "red-team-and-brief-blueprint.md"
+  ],
+  "source_anchors": {
+    "form_label": {"record": "R195", "pdf_page": 2, "bates": "AGO 000030", "review": "visual"},
+    "ethanol": {"record": "R195", "pdf_page": 6, "bates": "AGO 000034", "review": "visual", "result": "0.073 ± 0.004 grams %"},
+    "drug_panel": {"record": "R195", "pdf_page": 7, "bates": "AGO 000035", "review": "visual", "warning": "marijuana metabolite positive; active THC not detected; do not call whole panel negative"},
+    "warrant": {"record": "R195", "pdf_pages": [20, 21], "bates": ["AGO 000048", "AGO 000049"], "review": "visual"},
+    "parole": {"record": "R193", "time": "01:07:29", "review": "source-text", "warning": "first preserved log entry is not necessarily earliest officer knowledge"},
+    "state_dismissal": {"record": "R090", "pdf_page": 1, "review": "visual", "filed_and_entered": "2026-08-21"}
+  },
+  "filing_gates": [
+    {"gate": "live_current_and_historical_dockets", "status": "open", "blocks": "deadline/finality certification"},
+    {"gate": "original_four_mp4_verification_here", "status": "open", "blocks": "independently verified transcript/video contradictions"},
+    {"gate": "complete_magistrate_submission", "status": "partial", "blocks": "assertion all report pages were before issuing judge"},
+    {"gate": "final_dmv_decision_and_license_histories", "status": "open", "blocks": "completed DMV and wage but-for chain"},
+    {"gate": "actual_parole_conditions_and_knowledge", "status": "partial", "blocks": "categorical no-parole-authorization argument"},
+    {"gate": "subsequent_authority_treatment", "status": "open", "blocks": "citator-cleared filing representation"},
+    {"gate": "complete_dismissal_event_audit", "status": "partial", "blocks": "categorical preclusion/two-dismissal conclusion"}
+  ],
+  "preservation": {
+    "original_manifest_records": 224,
+    "original_manifest_pdfs": 153,
+    "original_retrieval_gaps": 11,
+    "original_source_assets_must_remain_unchanged": true,
+    "new_authority_captures_separate": true
+  },
+  "scope": {
+    "main_merge": false,
+    "public_deployment": false,
+    "cloudflare_write": false,
+    "live_graph_or_clock_write": false,
+    "court_filing_or_service": false
+  }
+}

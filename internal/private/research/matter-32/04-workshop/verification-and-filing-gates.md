@@ -1,5 +1,7 @@
 # Verification and Filing Gates
 
+> Historical scaffold. Read [the new research controls](../09-deep-analysis/research-controls.json) and [amendment/proof proffer](../09-deep-analysis/amendment-and-proof-proffer.md) first; no old checklist certifies the current docket, original media, or final DMV findings.
+
 The workshop is intentionally not filing-ready. A completed checklist requires inspecting originals and current orders, not changing status labels because a draft sounds persuasive.
 
 ## Immediate procedural control

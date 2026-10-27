@@ -1,5 +1,7 @@
 # Corrected-Affidavit Workbench
 
+> Superseded analytical scaffold. Use [the actual-affidavit analysis](../09-deep-analysis/opposition-decision-memorandum.md) and [evidence matrix](../09-deep-analysis/evidence-to-claim-matrix.md); the real affidavit does not expressly assert an alcoholic cup or slurred speech.
+
 Unfinished analytical model, not a declaration that probable cause was absent. Controlling source for this exercise is the produced Exhibit 5 PDF, R195, pp. 20–21, AGO 000048–000049, not the differently formatted CHP 202 or DS 367.
 
 ## Source identity
