@@ -66,7 +66,6 @@ VII. CONCLUSION
 *Costanich v. Department of Social & Health Services*, 627 F.3d 1101 (9th Cir. 2010)  
 *Devenpeck v. Alford*, 543 U.S. 146 (2004)  
 *Garity v. APWU National Labor Organization*, 828 F.3d 848 (9th Cir. 2016)  
-*In re Finjan Holdings, Inc. Securities Litigation (Grier)*, No. 21-16702 (9th Cir. Jan. 20, 2023) [VERIFY PINPOINT]  
 *Khoja v. Orexigen Therapeutics, Inc.*, 899 F.3d 988 (9th Cir. 2018)  
 *Lacey v. Maricopa County*, 693 F.3d 896 (9th Cir. 2012) (en banc)  
 *Lingo v. City of Salem*, 832 F.3d 953 (9th Cir. 2016)  
