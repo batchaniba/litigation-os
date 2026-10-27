@@ -51,7 +51,7 @@ SCRATCH_DIR = Path(
     "5d8752f5-0059-5673-9c7e-bba513c7c835/scratchpad"
 )
 
-SIGNATURE_PATH = str(REPO_ROOT / "internal/assets/signature/brendan-newanforbi-signature-v3-oct26.png")
+SIGNATURE_PATH = str(REPO_ROOT / "internal/assets/signature/brendan-newanforbi-signature-v3-oct26-900w.png")
 
 
 def _png_size(path: str) -> tuple[int, int]:
@@ -459,6 +459,9 @@ def combine() -> None:
     out = PdfWriter()
     for p in (OPP_PDF, POS_PDF):
         out.append(str(p))
+    for page in out.pages:
+        page.compress_content_streams()
+    out.compress_identical_objects(remove_identicals=True, remove_orphans=True)
     with open(COMBINED_PDF, "wb") as fh:
         out.write(fh)
     print(f"Wrote {COMBINED_PDF.name} ({len(out.pages)} pages)")
