@@ -40,12 +40,12 @@ BORDER_R = 568.0
 # Top/bottom edges inset from the page margins (nudged up from the prior pass).
 BORDER_T = 70.0
 BORDER_B = 715.0
-# Opt-in e-filing frame (ecf_header_border=True): top and bottom rules sit one inch
+# Opt-in e-filing frame (ecf_header_border=True): top and bottom rules sit 3/4 inch
 # from the edge, well clear of the CM/ECF header ("Case ... Document ... Page"),
 # measured on N.D. Cal. stamps at 13.7-25.0 pt from the page top; bottom rule
 # mirrors it. Content keeps its BORDER_T/BORDER_B layout.
-ECF_BORDER_T = 72.0
-ECF_BORDER_B = 720.0
+ECF_BORDER_T = 54.0
+ECF_BORDER_B = 738.0
 
 FS = 10.0
 LEADING = 14.0
