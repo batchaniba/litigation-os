@@ -66,9 +66,9 @@ The governing distinction is **correction versus volunteering**:
 | Section 4.4 post-arrest chemical-test refusal | Supplies an additional probable-cause fact from outside the FAC and risks conflating post-arrest conduct with the earlier arrest | **Internal amendment analysis only.** It cannot retroactively establish probable cause for the 01:12 arrest. Address it only if the actual affidavit is properly at issue |
 | Section 4.5 limits of video on odor | The proposition is accurate, but an affirmative concession can strengthen Defendants' factual narrative unnecessarily | If needed, say the recording and surrounding circumstances support a factual dispute; do not announce in the opening that Plaintiff cannot disprove odor |
 | Sections 4.6 and 4.7 on toxicology and transcript weaknesses | Authenticates or summarizes adverse material Defendants may not be entitled to use on a motion to dismiss | **Internal only.** These are Rule 11, amendment, discovery, and summary-judgment considerations—not affirmative opposition content |
-| Transcript timing audit: 36 seconds of knocking, early confusion, hard-lemonade can, and later chemical refusal | Supplies emergency-aid, intoxication, and implied-consent facts that may be outside the Rule 12 record | Use the timing audit for verification and amendment design. Do not introduce the adverse compilation merely because it exists; if a timing point is properly at issue, disclose the full local sequence rather than a selective clip |
+| Transcript timing audit: 36 seconds of knocking, corrected wake-up account, early confusion, hard-lemonade can, and later chemical refusal | Supplies emergency-aid, impeachment, intoxication, and implied-consent facts that may be outside the Rule 12 record | Use the timing audit for verification and amendment design. Do not introduce the adverse compilation merely because it exists; if a timing point is properly at issue, disclose the full local sequence rather than a selective clip |
 | Transcript timing audit: parole status at 01:11:42 | Later status may tempt the Court to collapse all vehicle searches into one parole search | Enforce the knowledge cutoff. Status learned after the arrest and initial search cannot travel backward; analyze only later searching under any parole rationale |
-| Stage B discussion of the “strongest” emergency-aid facts | Can add factual inferences beyond the FAC and help the Court find the entry objectively reasonable | Because ECF 22 raises emergency aid, answer it—but confine the analysis to the FAC, the motion, the narrow exception, and Defendants' burden. Do not add hypothetical knocks, breathing observations, traffic conditions, or medical indicators absent from the pleadings |
+| Stage B discussion of the “strongest” emergency-aid facts and corrected wake-up account | Can add factual inferences beyond the FAC, expose a pleading conflict, and help the Court find the entry objectively reasonable | Because ECF 22 raises emergency aid, answer it from the operative pleadings. Do not repeat “still asleep” as current truth. Put the later correction—awakened by knocking, heard the window command, door opened three seconds later—into a precise alternative amendment proffer rather than silently rewriting the FAC |
 | Stage C discussion of plain view and the automobile exception | Supplies doctrinal routes ECF 22 barely or inadequately develops | State that Defendants must identify and establish a recognized exception. Do not brief every uninvoked exception or cure their lack of authority |
 | Stage D list of party travel, wristband, confusion, and other adverse facts | Assembles a stronger reasonable-suspicion totality from the warrant packet rather than the FAC | Use only facts properly alleged and properly considered. Do not import the later affidavit into the earlier detention analysis |
 | Stage E reference to the 0.073 result | Offers post-arrest corroboration that cannot have informed the arrest and is outside the pleading-stage record | Delete from the filed arrest argument. Probable cause turns on facts known at the moment of arrest |
@@ -184,11 +184,15 @@ The drug panel did not detect THC or 11-hydroxy-THC but reported THC-COOH at 3.0
 
 ### 4.7 The transcript contains adverse facts and reliability problems — internal only unless properly raised
 
-The plaintiff-created transcript reproduces groggy or confused early answers, including an initial “parking lot” response; it also depicts an alleged rear-seat search at 00:59:46 and discovery of a Mike's Hard Lemonade can by 01:00:06–01:00:09. Those adverse facts mean it is not a one-directional plaintiff exhibit. At the same time, the transcript places the arrest command one second after the final PAS refusal and the first dispatch disclosure of parole status after the arrest and initial vehicle search.
+The Matter 20 branch preserves the 19-page transcript source, a separate production-description memo identifying both 15-page and 19-page transcript forms, and an October 23 door-opening reconciliation. The 19-page branch extraction and the separately stored Exhibit_A_CHP_Video_Transcript(7).pdf contain the same 347 timestamped event lines in the same order; there is no newer substantive timestamp sequence.
 
-The transcript has name, pagination, interpretive-bracket, and timestamp-order anomalies. The dedicated [CHP video transcript timing audit](chp-video-transcript-timing-audit.md) reconstructs the sequence, identifies facts that would do Defendants' or the Court's work if unnecessarily volunteered, and supplies an original-video shot list.
+The fresher Matter 20 work adds a critical firsthand correction: Plaintiff says the knocking woke him, he heard “Open the window” at 00:56:40, and Melano opened the door three seconds later before Plaintiff had a meaningful opportunity to lower the window. That account conflicts with FAC paragraph 16's allegation that Plaintiff remained asleep. It potentially strengthens the merits theory against immediate entry while creating impeachment and amendment risk.
 
-**Opposition treatment:** Use only quotations and visible acts verified against the original recording. Until then, use the transcript as a navigation aid, keep adverse extra-record material internal unless the motion properly triggers it, and prevent later-learned facts from retroactively justifying earlier intrusions.
+The transcript also reproduces groggy or confused early answers, including an initial “parking lot” response; it depicts an alleged rear-seat search at 00:59:46 and discovery of a Mike's Hard Lemonade can by 01:00:06–01:00:09. Those adverse facts mean it is not a one-directional plaintiff exhibit. At the same time, it places the arrest command one second after the final PAS refusal and the first dispatch disclosure of parole status after the arrest and initial vehicle search.
+
+The transcript has name, pagination, interpretive-bracket, and timestamp-order anomalies. The dedicated [CHP video transcript timing audit](chp-video-transcript-timing-audit.md) now reconciles the Matter 20 sources, the wake-up correction, every legal transition, adversarial leakage, and the original-video shot list.
+
+**Opposition treatment:** Do not repeat “still asleep” as current fact and do not silently replace the FAC allegation through briefing. Argue the operative pleading at Rule 12, then state in the alternative amendment proffer that Plaintiff awoke from the knocking, heard the window command, and was given only three seconds before the door was opened. Verify visible conduct against the original recording before presenting it as video fact.
 
 ---
 
@@ -207,6 +211,7 @@ This doctrine is not a license to disregard exhibits. A court may reject allegat
 
 | Issue | FAC allegation to be accepted if well pleaded | Document proposition Defendants may not automatically establish | Correction Plaintiff must make |
 |---|---|---|---|
+| Wake-up / entry | FAC says Plaintiff remained asleep; later firsthand correction says knocks woke him before the 00:56:40 window command | Defense may use the FAC's existing allegation to strengthen emergency aid | Do not silently rewrite the FAC; request leave to plead the corrected three-second compliance sequence |
 | Speech | Extended coherent speech; ability to spell name and discuss details | DS 367 characterization of slurred speech | Quote and cite only after original-video verification |
 | Orientation | Later correct identification of Livermore/signage | Report's global “very confused and disoriented” characterization | Acknowledge any initial “parking lot” or groggy response |
 | Cup | Officer identified handled liquid as urine | Precontact visual suspicion of alcohol | Do not say urine identification retroactively erased all suspicion |
@@ -236,11 +241,13 @@ Opening a vehicle door and intruding into the interior is a Fourth Amendment sea
 
 The defense's strongest answer is emergency aid. The current Ninth Circuit model instruction states two requirements: objectively reasonable grounds at the time to believe an emergency created an immediate need to protect against serious harm, and a scope and manner reasonable to meet that need. The exception is narrow and evaluated under the totality. See *Bonivert v. City of Clarkston*, 883 F.3d 865, 877 (9th Cir. 2018); *Sheehan v. City & County of San Francisco*, 743 F.3d 1211, 1221 (9th Cir. 2014), rev'd in part on other grounds, 575 U.S. 600 (2015).
 
-**Plaintiff's best position:** The FAC pleads a normal resting posture, intact vehicle, no collision/fire/medical indicator, and pre-entry words directed at a rental car and suspected cup rather than a medical emergency. At Rule 12, Defendants cannot transform “asleep” into “unconscious and medically endangered” and demand the inference that immediate entry was reasonable.
+**Plaintiff's best position under the present FAC:** The pleading alleges a normal resting posture, intact vehicle, no collision/fire/medical indicator, and pre-entry words directed at a rental car and suspected cup rather than a medical emergency. At Rule 12, Defendants cannot automatically convert “asleep” into “unconscious and medically endangered.”
 
-**Defense and QI risk:** A person apparently unresponsive in the driver's seat of a vehicle on an interstate shoulder after midnight presents an objectively plausible safety emergency. The FAC itself says Plaintiff was asleep until the door opened. *Ngumezi* involved an awake driver at a gas station and no emergency; it does not clearly establish that an officer must wait longer or use a different method under these facts. Even if the complaint states a merits violation, qualified immunity is a major risk.
+**Corrected merits account and amendment need:** The Matter 20 reconciliation records that knocking woke Plaintiff, he heard “Open the window” at 00:56:40, and Melano opened the door at 00:56:43 before Plaintiff had a meaningful opportunity to comply. The transcript proves the three-second interval; Plaintiff's recollection supplies the wake-up fact. FAC paragraph 16 says he remained asleep, so the opposition cannot present the correction as though already pleaded. The high-value move is a specific alternative amendment proffer, not defense of a known factual conflict.
 
-**Facts that decide the issue:** number and duration of knocks; verbal attempts before opening; visible breathing/movement; window position; traffic danger; precise posture; officer statements; whether Melano merely opened the door or also leaned/reached in; and whether conduct after waking stayed within the aid rationale.
+**Defense and QI risk:** Officers knocked for approximately 36 seconds, and an apparently unresponsive person in the driver's seat on an interstate shoulder after midnight presents a plausible safety concern. Defendants will argue they need not wait after repeated knocking. Plaintiff's answer is narrower: once the officer issued a window command to an occupant who had awakened, only three seconds elapsed before physical entry, and the first express welfare question came afterward. *Ngumezi* involved an awake driver at a gas station and no emergency, so qualified immunity remains substantial.
+
+**Facts that decide the issue:** exact wake-up moment; visible movement or response before 00:56:43; whether Plaintiff moved toward the window control; number and force of knocks; breathing; window position; traffic danger; posture; officer statements; whether Melano only opened the door or leaned/reached in; and whether the scope remained tied to aid after Plaintiff responded.
 
 ### Stage C — Handling and smelling the cup
 
@@ -305,7 +312,7 @@ A civil judicial-deception claim requires a deliberate or reckless false stateme
 |---|---|---|
 | Tesla on I-580 shoulder; Plaintiff asleep in driver's seat | Retain | Supports welfare concern and recent vehicle operation |
 | Orange 21+ wristband | Retain unless video/source disproves | Supports party/alcohol context, though weak alone |
-| Officers knocked/woke Plaintiff | Verify exact sequence; correct only with original video | Relevant to emergency entry and alertness |
+| Officers knocked/woke Plaintiff | Retain knocking; clarify that Plaintiff says the knocks woke him before the window command, while the transcript does not fix the exact wake second; verify visible conduct from video | Relevant to emergency entry, alertness, and the FAC inconsistency |
 | Confused/disoriented; said he was in a parking lot | Separate exact words from officer characterization; retain any initial mistaken response | Significant support for impairment unless context neutralizes it |
 | Odor from vehicle | Disputed; cup urine does not necessarily eliminate simultaneous alcohol odor | Significant if retained |
 | Drove from Oakland party | Retain if admitted | Supports recent driving and alcohol context |
@@ -498,13 +505,14 @@ If the Court finds any count insufficient, the opposition should request leave a
 4. Identify Judge Amy Sekany, WAR913372, affidavit time, warrant time, and the actual affiant.
 5. Stop alleging that the DS 367 and CHP report were the warrant affidavit unless the warrant record proves incorporation.
 6. Plead each defendant's conduct separately.
+7. Correct the FAC's “still asleep” allegation through authorized amendment: Plaintiff says the knocking woke him before the 00:56:40 window command and the door was opened at 00:56:43 before meaningful compliance was possible.
 
 ### Count-specific amendment
 
 - **Judicial deception:** Quote each challenged actual-affidavit statement; plead the nonconclusory basis for falsity; plead knowledge/recklessness; add supported omissions known before 02:30; reproduce a complete corrected affidavit; explain materiality without deleting unaffected facts.
 - **Fabrication:** Identify the document, author, fabricated proposition, decisionmaker who used it, distinct deprivation, and factual/proximate causation. Omit the claim if it only duplicates the warrant theory.
 - **Arrest:** Plead facts known by 01:12 in sequence, including adverse facts; identify which FSTs occurred and why alleged performance descriptions are false; do not rely on later nonprosecution as the probable-cause test.
-- **Entry:** Plead pre-opening knocks, statements, visible condition, posture, elapsed time, traffic/safety facts, and exact physical intrusion after original-video review.
+- **Entry:** Plead the 36-second knocking period, Plaintiff's wake-up from the knocks, the 00:56:40 window command, the three-second interval before door opening, lack of consent, visible response, traffic/safety facts, and exact physical intrusion after original-video review. Expressly supersede—not silently contradict—the FAC's “still asleep” allegation.
 - **Search:** Identify the cup search and any separate post-cup search by object, location, actor, and time.
 - **Retaliation:** Identify actual protected speech and objective *Nieves* evidence, or omit the count. Do not label PAS refusal First Amendment activity without supporting authority.
 - **Damages:** Plead the causal source of the parole hold, DMV suspension, confinement, and claimed economic losses.
@@ -590,6 +598,7 @@ The final opposition should not say any of the following unless new verified evi
 - “The recording was over two hours.”
 - “The DS 367 and arrest report were the warrant affidavit.”
 - “The PAS refusal and chemical-test refusal were the same refusal.”
+- “Plaintiff remained asleep until the door opened,” as a present factual assertion; the Matter 20 reconciliation records that the knocking woke him.
 - “The officers observed Plaintiff correctly identify his location from the beginning,” without acknowledging any initial contrary response.
 - “No charges means no probable cause.”
 - “The detention certificate is a judicial finding of false arrest.”
@@ -605,9 +614,11 @@ The final opposition should not say any of the following unless new verified evi
 
 ### Door entry
 
-- If original video shows meaningful attempts to wake Plaintiff and apparent nonresponsiveness: acknowledge emergency-aid strength; preserve only scope/manner and post-waking conduct.
-- If video shows Plaintiff responsive before the door opened or no objective distress after minimal/no contact: press Count 4, but still address QI with fact-specific authority.
-- If video is unavailable: argue Rule 12 from pleaded facts and avoid factual assertions beyond the FAC.
+- Treat the FAC's “still asleep” sentence as a correction target, not a fact to repeat.
+- If original video shows Plaintiff awakening or moving before 00:56:43: press the three-second compliance theory, identify the visible response precisely, and seek leave to conform the pleading.
+- If the video does not show awakening before entry: rely on Plaintiff's firsthand account only if it can be stated truthfully and explain why the video angle does not resolve it.
+- If the video shows continued apparent nonresponsiveness: acknowledge emergency-aid strength and preserve only scope/manner and post-waking conduct.
+- If video is unavailable: argue Rule 12 from the FAC, then provide the corrected account solely as a concrete alternative amendment proffer.
 
 ### Arrest
 
