@@ -4,7 +4,7 @@ Private, branch-only research room for Nforbi v. Meza-Gonzalez and Melano, N.D. 
 
 ## Start here
 
-- **Controlling synthesis:** `04-workshop/opposition-deep-research-analysis.md` converts the record into claim triage, corrected-affidavit analysis, a conduct-specific immunity map, amendment proffer, page budget, and ranked completion plan.
+- **Controlling synthesis:** `04-workshop/opposition-deep-research-analysis.md` converts the record into claim triage, corrected-affidavit analysis, a conduct-specific immunity map, an adversarial-leakage audit, amendment proffer, page budget, and ranked completion plan.
 - **Companion research engine:** [Opposition Research Engine](09-deep-analysis/README.md) adds a 5,000+ word decision memorandum, corrected FAC map, evidence matrix, authority treatment, amendment proffer, and red-team brief architecture. Read it with the controlling synthesis, especially for pre-parole timing, the distinct DMV/property theory, and the Richards causation qualification.
 - **Supersession notice:** The original seven `04-workshop` scaffolds and the earlier `5b306800` analysis remain as historical drafts. Some use obsolete FAC paragraph anchors or incomplete no-charges, toxicology, protected-activity, or two-dismissal analysis; use the two research syntheses above instead.
 - **Decision memo:** `04-workshop/strategy-and-risk.md` identifies the strongest lanes and the factual concessions that improve credibility.
