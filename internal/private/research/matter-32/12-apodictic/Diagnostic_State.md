@@ -13,8 +13,7 @@ Last updated: 2026-10-27 (run `runs/2026-10-27_audit/`)
 | D7 | OB2, RT2 | Count I materiality: FAC ¶ 30 not cited; odor entry uncontested (Intentional Risk) | Brief §V.E | Should-Fix (Manageable) | ¶ 30 cited; odor choice stands |
 | D8 | SM4-adjacent, RT9 | Serrato screening relied on a complaint incl. the withdrawn "Beverage Present" item | Brief §V.H | Could-Fix (Manageable) | Open |
 | D9 | SM0 | Count V "continuing search" after urine identification is not specified | Brief §V.C | Could-Fix | Open |
-| D10 | RT6 | "Minute by minute" + duration correction; "Bostock … error" overstatement | Brief §I, §V.F | Cosmetic | Open |
+| D10 | RT6 | "Minute by minute" + duration correction; "Bostock … error" overstatement | Brief §I, §V.F | Cosmetic | Addressed |
 | G1 | (gate) | Proffer item "Door sequence" volunteers "knocking" without Plaintiff's response; verify on video 00:56:00-00:56:50 before filing | Brief line 145 | Pre-filing factual gate | Resolved on Plaintiff's account + transcript; native video still recommended |
-| B1 | (blind spot) | Field reconnaissance not run: literature-counterevidence not surveyed | n/a | Disclosure | Open |
-
 | D11 | (Rule 11) | "Only suspected beverage was urine" contradicted by transcript (Mike's Hard Lemonade can at 00:59:46-01:00:09) | Brief §V.D | Must-correct (factual accuracy) | Fixed Oct. 27 |
+| B1 | (blind spot) | Field reconnaissance not run: literature-counterevidence not surveyed | n/a | Disclosure | Open |
