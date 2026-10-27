@@ -4,6 +4,7 @@ Private, branch-only research room for Nforbi v. Meza-Gonzalez and Melano, N.D. 
 
 ## Start here
 
+- **Opposition research v2 (Oct. 27, controls):** `04-workshop/opposition-deep-research-v2-2026-10-27.md`. It is keyed to ECF 5's actual paragraph numbers and folds in the Matter 20 production (blood ethanol 0.073 g%, HGN/Romberg, door sequence, parole-status timing). It supersedes the FAC paragraph cites in the response matrix.
 - **Decision memo:** `04-workshop/strategy-and-risk.md` identifies the strongest lanes and the factual concessions that improve credibility.
 - **Response map:** `04-workshop/mtd-response-matrix.md` tracks every numbered defense argument.
 - **Historical comparison:** `04-workshop/chi-soo-kim-to-current-fac.md` confronts the April 2026 adverse reasoning and distinguishes procedural history from merits.
