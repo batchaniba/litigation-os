@@ -9,6 +9,8 @@ This records research-integrity and repository checks, not a finding that the cl
 - **Adverse law:** The memorandum addresses Lingo, Wesby, Estrella, Payne, Galbraith, and Moore, plus the limits of the favorable authorities.
 - **Fabrication causation:** Separate checks of Caldwell and Richards qualify the charge-only and strict-but-for formulations rather than treating either as a categorical rule.
 - **Historical drafts:** Original scaffold and the separately added upstream `5b306800` memo are preserved with supersession banners; no substantive upstream analysis was silently overwritten.
+- **Concurrent current synthesis:** The newer `475e628a` / `81c0be54` synthesis and its controlling README link are retained. Its exact SHA-256 is checked separately so this package does not overwrite or silently supersede the concurrent work.
+- **Preserved formatting:** That concurrent synthesis contains intentional Markdown hard-break spaces and upstream formatting. It is excluded from authored-text whitespace normalization and checked byte-for-byte instead.
 
 ## Integrity checks
 

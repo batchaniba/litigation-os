@@ -2,6 +2,8 @@
 
 This is an internal, decision-oriented research product for opposing ECF 22, not a filing-ready brief or an assurance that all six counts survive. It replaces the earlier workshop scaffold as the analytical starting point and integrates the Matter 20 production with the operative FAC, actual blood-warrant application, historical Chi Soo Kim recommendation, and favorable and adverse authority.
 
+The separately authored [upstream controlling synthesis](../04-workshop/opposition-deep-research-analysis.md), added while this package was being finalized, is preserved unchanged and should be read alongside this package. The companion analysis adds particular emphasis to the 01:07:29 parole-log boundary, independent DMV/property causation, and Richards's qualification of a universal strict-but-for formulation.
+
 ## Read in this order
 
 - **[Decision memorandum](opposition-decision-memorandum.md)**: The core synthesis, ranked opportunities, six claim modules, actual corrected-affidavit analysis, qualified-immunity divisions, historical comparison, damages causation, and recommended disposition.

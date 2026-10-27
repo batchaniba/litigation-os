@@ -4,8 +4,9 @@ Private, branch-only research room for Nforbi v. Meza-Gonzalez and Melano, N.D. 
 
 ## Start here
 
-- **Primary research product:** [Opposition Research Engine](09-deep-analysis/README.md) supersedes the earlier scaffold below. Begin with its 5,000+ word decision memorandum, corrected FAC map, evidence matrix, favorable/adverse authority treatment, paragraph-level amendment proffer, and red-team brief architecture.
-- **Supersession notice:** The `04-workshop` files remain as historical drafts, not current analytical guidance, including the separately added upstream analysis preserved from commit `5b306800`. Some use obsolete FAC paragraph anchors and overstate or misdescribe the no-charges, toxicology, protected-activity, or two-dismissal issues; use `09-deep-analysis` instead.
+- **Controlling synthesis:** `04-workshop/opposition-deep-research-analysis.md` converts the record into claim triage, corrected-affidavit analysis, a conduct-specific immunity map, amendment proffer, page budget, and ranked completion plan.
+- **Companion research engine:** [Opposition Research Engine](09-deep-analysis/README.md) adds a 5,000+ word decision memorandum, corrected FAC map, evidence matrix, authority treatment, amendment proffer, and red-team brief architecture. Read it with the controlling synthesis, especially for pre-parole timing, the distinct DMV/property theory, and the Richards causation qualification.
+- **Supersession notice:** The original seven `04-workshop` scaffolds and the earlier `5b306800` analysis remain as historical drafts. Some use obsolete FAC paragraph anchors or incomplete no-charges, toxicology, protected-activity, or two-dismissal analysis; use the two research syntheses above instead.
 - **Decision memo:** `04-workshop/strategy-and-risk.md` identifies the strongest lanes and the factual concessions that improve credibility.
 - **Response map:** `04-workshop/mtd-response-matrix.md` tracks every numbered defense argument.
 - **Historical comparison:** `04-workshop/chi-soo-kim-to-current-fac.md` confronts the April 2026 adverse reasoning and distinguishes procedural history from merits.
