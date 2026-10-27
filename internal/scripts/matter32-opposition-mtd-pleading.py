@@ -434,8 +434,10 @@ def render(out_path: Path, toc_pages: dict, toa_pages: dict,
             current_cat = cat
         toc_row(d, display, fmt_pages(toa_pages.get(display, set())))
 
-    # Body
-    d.start_new_page()
+    # Body: three lines below the table of authorities
+    d.blank_line()
+    d.blank_line()
+    d.blank_line()
     body_first_page = d.page_num
     for c_type, text in CONTENT:
         if c_type == H:
