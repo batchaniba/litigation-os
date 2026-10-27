@@ -11,7 +11,84 @@
 
 ---
 
+## Where We Did Their Job For Them
+
+**Purpose.** Audit of the research analysis and workshop sources (`strategy-and-risk.md`, `corrected-affidavit-workbench.md`, `opposition-working-draft.md`, `mtd-response-matrix.md`, `verification-and-filing-gates.md`, `chi-soo-kim-to-current-fac.md`, `authority-ledger.md`) for places where we volunteered adverse arguments the motion did **not** make, conceded beyond need, resolved facts against Brendan, adopted defense framing, supplied missing authority for a thin defense brief, put extra-pleading matter into play, or assumed the judge’s conclusion.  
+**Rule of use.** Items marked **INTERNAL** stay in workshop/reply/hearing prep and must **not** appear in the filed Opposition unless defendants raise them first (or controlling candor requires a one-line acknowledgment). New arguments raised for the first time in a reply are generally improper; do not invite them. Rule 12(b)(6) does not authorize the Court to try contested extra-pleading facts.
+
+### A. Volunteered doctrines / frameworks the motion did not brief
+
+| # | Locate | What we did | Why it helps them | Risk | Corrective | Recommended phrasing (if anything) |
+|---|---|---|---|---|---|---|
+| A1 | Analysis §V / Canvas matrix V; strategy “Protected speech”; working-draft retaliation | Flagged that motion “Omits Nieves PC bar,” then built our response around Nieves/Gonzalez | Motion argued Ford/Bostock but-for only. Volunteering Nieves upgrades their theory and invites a PC-bar dismissal they under-briefed | Invitation; reply cure; waiver of “they never raised it” | **INTERNAL** full Nieves/Gonzalez research. Opposition answers **their** Ford/Bostock framing; do not teach Nieves unless FAC already forces it or they raise it | “Defendants’ but-for argument fails on the pleaded sequence of protected speech and arrest. They have not established, on the pleadings, the absence of a viable First Amendment claim as they framed it.” |
+| A2 | Analysis §9 / Canvas “Wesby counter”; strategy “Adverse totality”; page budget 3–8 “Wesby counter” | Built a full totality package (sleep, party, parking-lot, odor, FSTs, refusal) and a “plaintiff counter” | Motion cites Wesby for QI particularity, not as a complete PC adjudication toolkit. We assembled the adverse mosaic for the Court | Invitation; Rule 12 scope; judge adopts our mosaic as undisputed | **INTERNAL** Wesby war-game. Filed brief: demand time-specific analysis of **pleaded** facts; do not narrate the defense mosaic | “Probable cause cannot be established at Rule 12 by stacking contested report assertions the FAC specifically challenges.” |
+| A3 | Analysis §VII / open Q8; verification gates; authority-ledger “Preclusion / Rule 41” | Introduced Rule 41(a)(1)(B) two-dismissal and claim/issue preclusion analysis the motion did not specifically brief | Motion uses “4th suit” / futility rhetoric. We named the harsher procedural hammer | Invitation; court may apply two-dismissal if we brief it | **INTERNAL** verify dismissal sequence. Opposition: history ≠ futility; do **not** brief Rule 41 unless raised | “Prior venue dispositions and voluntary dismissals are not a merits adjudication that amendment of **this** pleading is futile.” |
+| A4 | Analysis §II adverse; strategy DP fabrication; working-draft Albright note | Introduced Albright/Graham more-specific-provision and Devereaux’s charge-focused formulation as adverse when motion relied on Caldwell/Model 9.38 | Supplies better adverse authority than they cited | Invitation; kills DP path they under-argued | **INTERNAL** Albright research for amendment strategy. Opposition: attack Caldwell mischaracterization; preserve 4th Am warrant path; do not cite Albright against ourselves | “Caldwell does not hold what defendants claim. The FAC’s warrant/blood-draw injuries are independently cognizable under the Fourth Amendment.” |
+| A5 | Analysis §VII adverse; matrix VII | Cited Broam for the proposition that courts may consider facts outside the complaint on futility | Hands them a tool to import Kim/report facts on leave-to-amend | Invitation; expands record against plaintiff | **Omit** Broam from opposition. If they cite it in reply, address then | (Omit.) |
+| A6 | Strategy QI: “The motion’s generalized argument is not a waiver of the defense” | Told ourselves (and implicitly a brief reader) their thin QI is still live | Relieves them of a thin, non-claim-specific QI brief | Softens forfeiture/waiver argument | **INTERNAL**. Opposition may note QI is undeveloped **claim-by-claim** without conceding non-waiver forever | “Defendants’ QI argument is categorical and does not analyze the pleaded door-entry, warrant, or deception theories under clearly established law as of November 1, 2024.” |
+
+### B. Extra-pleading / affidavit facts put into play (Rule 12 scope)
+
+| # | Locate | What we did | Why it helps them | Risk | Corrective | Recommended phrasing |
+|---|---|---|---|---|---|---|
+| B1 | Corrected-affidavit workbench table; analysis §1 response; working-draft judicial deception | Listed as “unaffected” affidavit facts: parking-lot response, party travel, admission of driving, vehicle/person odor, FST deficits, chemical refusal (AGO 000048–49) | Motion did **not** reconstruct the warrant affidavit. We imported the officer’s narrative into the Rule 12 fight | Court may treat these as true / JN them; 12(b)(6) extra-pleading misuse | Workbench stays **INTERNAL**. Opposition: identify that judicial-deception analysis requires the **actual** affidavit and that defendants failed to do that materiality work; do not quote the full adverse remainder into the brief | “Defendants ask for dismissal of judicial-deception claims without reconstructing Meza’s actual warrant affidavit or applying a corrected-affidavit materiality analysis. That is their burden of persuasion on this motion, not plaintiff’s opportunity to stipulate the affidavit’s contested contents.” |
+| B2 | Strategy “Actual warrant facts”; analysis record anchors | Treated produced Exhibit 5 / AGO packet as if already in the Rule 12 record | Production packet ≠ automatically before the Court on this MTD | Extra-record consideration | Confirm what ECF 5 actually attaches. Do not attach new affidavit pages through the opposition text | “To the extent the Court considers identified warrant materials, it must also take as true the FAC’s specific challenges to those materials’ truthfulness.” |
+| B3 | Strategy “Transcript problems”; gates; matrix IV adverse | Flagged Joselyn misnomer, out-of-order timestamps, and that transcript “reproduces groggy/confused responses the defense may use” | Hands them plaintiff’s draft transcript as an admission package | Credibility hit; 12(b)(6) improper facts | **INTERNAL**. Do not cite transcript anomalies or groggy answers against Brendan in the opposition | (Omit from brief.) |
+| B4 | Analysis §9 Wesby package; strategy adverse totality | Packaged “parking lot” / party / sleep / refusal as the “defense totality” | Same mosaic-building problem as A2 | Invitation | **INTERNAL** | Same as A2 |
+
+### C. Resolved credibility / facts against Brendan or adopted defense framing
+
+| # | Locate | What we did | Why it helps them | Risk | Corrective | Recommended phrasing |
+|---|---|---|---|---|---|---|
+| C1 | Strategy “Recording limits”; concessions “Silent video = no odor”; Canvas concessions | Affirmative concession: “It cannot directly negate odor” / “Camera cannot smell” | Defense argued silence ≠ fabrication; we **ratified** odor as unfalsifiable by video | Locks plaintiff out of sequence-based odor challenge | **Reframe**, don’t concede odor. Candor = don’t claim camera chemically disproves smell. Still argue sequence, urine ID timing, contradictions | “Plaintiff does not ask the Court to treat a camera as a nose. Plaintiff alleges specific contradictions and timing facts that, taken as true, make the odor assertions implausible or reckless.” |
+| C2 | Working-draft / strategy temporal discipline: “urine cannot retroactively negate earlier appearance of suspicious cup” | Stated the defense-favorable half of temporal logic in advocacy-facing prose | Validates their initial-suspicion narrative | Soft admission of RS/PC predicate | **INTERNAL** both halves. Filed brief: only “later facts cannot justify earlier door entry” | “Facts allegedly learned after the passenger door was opened cannot supply the justification for that earlier search.” |
+| C3 | Workbench: “A semantic mistake in plaintiff’s characterization is not evidence of officer fabrication” | Correct as internal discipline; if echoed in brief, sounds like admitting no fabrication | Undercuts fabrication/deception | Tone / invitation | Keep as **INTERNAL** Rule 11 note. Brief: correct the field and restate the odor challenge | “Plaintiff corrects the form-label characterization and continues to challenge the truth of the odor assertions on the facts pleaded.” |
+| C4 | Workbench conclusion: “If the remainder still supports the warrant, revise or abandon judicial-deception” | Assumes materiality loss and abandonment | Sounds like near-certain loss | Defeatism; waiver risk if filed | **INTERNAL** amendment gate only | (Omit from opposition.) |
+| C5 | Concessions / strategy: “Zero BAC / no charges ⇒ no PC — DO NOT ARGUE” | Correct discipline; if phrased as “plaintiff concedes later tox is irrelevant,” over-narrows damages/credibility uses | Defense will quote “irrelevant” | Over-concession | Keep limit on **PC timing**; preserve damages/credibility use | “Later nonprosecution and toxicology do not retroactively invent probable cause; neither do they erase damages from an unlawful seizure or compelled blood draw.” |
+
+### D. Supplied missing authority / fixed a thin defense brief
+
+| # | Locate | What we did | Why it helps them | Risk | Corrective | Recommended phrasing |
+|---|---|---|---|---|---|---|
+| D1 | Analysis III.A; matrix; page budget | Motion cites **Mincey** only; we briefed Brigham City / Fisher / Caniglia / Cady for them | Teaches the governing emergency-aid test they omitted — often easier for them than Mincey’s home framing | Reply adopts our cites; court uses better standard against us | Opposition: argue **their citation fails** (Mincey is home-entry; no vehicle-door application pleaded). Do **not** complete their research memo. Keep Brigham City line **INTERNAL** for hearing if Court asks, or for QI CE analysis only as needed for **plaintiff’s** burden | “Defendants rely on Mincey, a home-entry case, and do not identify authority authorizing a passenger-door intrusion on these pleaded facts.” |
+| D2 | QI matrix / strategy | Motion’s QI section cites no on-point clearly-established analogue for these facts; TOA lists 3 cases; we volunteer Ngumezi/Chism as the CE map and also that “sleeping freeway + FSTs look like arguable PC” | Second clause does their particularity argument; first clause is partly plaintiff’s CE burden | Defeatist framing; helps QI grant | **Must** cite CE law for claims plaintiff wants to preserve (Romero/plaintiff burden ≈ candor/duty). **Must not** editorialize that facts “look like arguable PC.” Separate: note TOA thinness optionally, without writing their brief | “As of November 1, 2024, Ngumezi clearly established that opening a vehicle door and entering its interior is a search requiring justification. Defendants identify no contrary clearly established authority.” |
+| D3 | Errors list TOA / caption / Kim date | Catalogued motion defects | Mostly helps **us**; over-focus wastes pages and looks hypertechnical | Opportunity cost | Keep Kim date + Iqbal pin + Caldwell mischaracterization. Soft-pedal TOA/caption unless space | Short footnote or one sentence on Kim date / Caldwell; skip TOA theater |
+
+### E. Assumed the judge’s conclusion / near-certain loss ratings
+
+| # | Locate | What we did | Why it helps them | Risk | Corrective |
+|---|---|---|---|---|---|
+| E1 | Matrix risk: Judicial deception **HIGH**; Fabrication **HIGH**; Retaliation **HIGH**; QI **HIGH** on arrest | Framed as if dismissal likely | Invites Court (or next draft) to treat claims as doomed | Defeatist tone bleeds into brief | Risk ratings = **INTERNAL briefing allocation only**. Opposition tone: claims are adequately pleaded / amendable |
+| E2 | Strategy table: deception “materiality remains a serious barrier”; DP fabrication “Significant doctrinal … risk”; retaliation “Serious Nieves … barriers” | Same | Same | Same | Keep in workshop; scrub from filed prose |
+| E3 | Page budget labels “Fabrication (candid limits)” / “Retaliation (candid limits)” | Builds the brief around confessing weakness | Signals retreat | Waiver optics | Rename internally: “elements and authorities”; file affirmative elements sections |
+
+### F. Genuine candor — **must stay** (not strategic over-disclosure)
+
+| Item | Why it must stay | How to keep it narrow |
+|---|---|---|
+| **Kay §1988 pro se fees** | Controlling Supreme Court adverse authority; prior ED Cal withdrawal; Rule 11 / credibility | One-sentence concession; preserve costs; reserve future counsel fees |
+| **Beverage → breath-odor correction** | Record contradiction (AGO 000030); Rule 11; do not defend a false form reading | Correct via amendment proffer; do **not** add “therefore no fabrication” |
+| **Kim R&R date is 2026, not 2025** | Correcting **their** error; accuracy | One sentence |
+| **Acknowledge litigation history exists** | Futility section requires it; denying history destroys credibility | Distinguish recommendation / venue / voluntary dismissal from claim-preclusive merits judgment — without briefing Rule 41 |
+| **Do not claim silent video chemically disproves odor** | Honesty; avoid frivolous inference | See C1 reframe — challenge odor other ways |
+| **Do not claim zero BAC alone = no PC at arrest** | Black-letter timing of PC | See C5 — preserve damages theory |
+| **Chism materiality requires confronting remainder** | If plaintiff presses judicial deception, candor requires not hiding unaffected affidavit facts **in the theory** — but that work is for a **corrected pleading / internal workbench**, not for volunteering the officer’s narrative as Rule 12 “facts” | Amend FAC with particularized challenges; don’t dump AGO 000048–49 prose into the opposition |
+
+### Operating rules for the filed Opposition
+
+1. Answer **only** arguments defendants made (plus controlling adverse authority actually necessary for the claims plaintiff presses).  
+2. Do not reconstruct the warrant affidavit’s adverse remainder in the brief; force materiality onto **them** or cure it by **amended pleading**.  
+3. Do not brief Nieves, Rule 41, Albright, Broam, or a full Wesby mosaic unless raised or truly required for a claim plaintiff insists on maintaining.  
+4. Risk ratings and “abandon if…” gates stay in the workshop.  
+5. Plaintiff’s QI burden to identify clearly established law is **not** “doing their job”; editorializing that the facts show arguable PC **is**.  
+6. New issues in their reply → move to strike / disregard or address at hearing; do not pre-load the reply for them.
+
+
+---
+
 ## 1. Executive strategy and recommended 25-page architecture
+
+> **Drafting discipline:** See **Where We Did Their Job For Them** above. Risk ratings below are internal allocation only. Do not import volunteered Nieves/Rule 41/Albright/Broam, full AGO 000048–49 remainder, transcript anomalies, or defeatist “HIGH = lose” tone into the filed Opposition.
 
 ### Core theory
 Treat ECF 22 as an attempt to collapse four temporally distinct intrusions into one presumed-justified encounter. Force claim-by-claim, time-specific analysis: (1) passenger-door opening; (2) cup/vehicle search; (3) investigatory detention / arrest; (4) blood-draw warrant / judicial deception. At Rule 12, disputed police-report facts challenged by specific FAC allegations are not automatically true merely because reports are attached or identified (Khoja; Grier n.1).
