@@ -195,7 +195,7 @@ The transcript's bracket says the officers calibrated the PAS device at 01:11:11
 
 The transcript's first dispatch statement about parole/registration status is at 01:11:42. On this clock, it follows:
 
-- the 00:56:43 door opening by 15: - actually 14:59;
+- the 00:56:43 door opening by 14:59;
 - the 00:58:49 cup-inspection demand by 12:53;
 - the 00:59:46 alleged rear-seat search by 11:56;
 - the 01:11:16 arrest command by 26 seconds; and
@@ -213,7 +213,6 @@ Use a hard chronological firewall in both pleading and briefing:
 | Arrest command | No | Cannot justify arrest |
 | Post-01:11:42 search | Yes | Must analyze parole-search scope, knowledge, purpose, state law, and QI separately |
 
-The clause “by 15: - actually 14:59” above reflects a drafting calculation and should not appear in filed prose; the correct elapsed time from 00:56:43 to 01:11:42 is **14:59**.
 
 ## 9. Post-arrest chemical refusal and warrant chronology
 
