@@ -88,3 +88,10 @@ Sources: `opposition-to-motion-to-dismiss-clean.pdf` (the parallel markdown draf
 6. Both drafts argue the odor entry was never perceived (Draft A Intro, §§ A.1, C.2, E; Conclusion's "sober-appearing"). Given the produced 0.073 g% result, **don't advocate odor falsity or sobriety** (Rule 11(b)(3)).
 7. Pins I couldn't verify: Benavidez (ledger UNVERIFIED), Sialoi 1231–33, and Nieves 398–99, 404.
 8. Both drafts defend Counts II and VI in full. This draft keeps non-opposition with leave. If you'd rather fight, Draft A's §§ B and D are the best versions. Fix the Chism and Bell v. Burson pins first, and know that Draft A's Count VI section highlights that Defendants didn't raise the protected-activity problem.
+
+## Serrato screening order (ECF 5, 3:26-cv-05953-CRB, June 29, 2026, Krishnan, M.J.): folded in Oct. 27
+
+- **Fact check 3 resolved.** The order is ECF No. 5 in *Serrato*, dated June 29, 2026. It's now cited by docket and page, with the quote "supports the plausible inferences that CHP officers falsely imprisoned [Plaintiff] in November 2024 based on fabricated evidence" (4:17-19). The brief describes it as a § 1915(e)(2) screening under the Rule 12(b)(6) standard, not a ruling on Defendants' arguments.
+- **Standard-of-review language** taken from the order (a court's own citations, which corroborate the pins): Hebbe, 627 F.3d at 342 ("construe the pleadings liberally . . . to afford the petitioner the benefit of any doubt," cleaned up); Franklin v. Murphy, 745 F.2d 1221, 1235 n.9; Lopez v. Smith, 203 F.3d at 1130-31.
+- **Deliberately not used:** the order's recital of "incarceration at Santa Rita Jail for approximately five days" (Serrato complaint ¶ 22; the Matter 20 Answer disputes custody details), and its reference to "four material fabrications," which includes the Beverage Present item.
+- **Risk:** Judge Breyer has a motion to dismiss pending in *Serrato* (hearing Nov. 20, 2026). If he dismisses before our reply, the screening order's persuasive weight drops. Check the Serrato docket before filing and adjust the sentence if needed.
