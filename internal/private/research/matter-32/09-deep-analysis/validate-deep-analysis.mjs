@@ -66,8 +66,10 @@ for (const required of ['0.073', '01:07:29', 'Lingo', 'Costanich', 'Moore', 'oth
 }
 if (core.split(/\s+/).length < 4500) errors.push('Decision memorandum below intended substantive scope');
 for (const file of fs.readdirSync(path.join(room, '04-workshop')).filter(name => name.endsWith('.md'))) {
-  if (`04-workshop/${file}` === controls.parallel_upstream_synthesis.path) {
-    if (sha(fs.readFileSync(path.join(room, '04-workshop', file))) !== controls.parallel_upstream_synthesis.sha256) {
+  const preserved = [controls.parallel_upstream_synthesis, controls.parallel_upstream_timing_audit]
+    .find(entry => entry.path === `04-workshop/${file}`);
+  if (preserved) {
+    if (sha(fs.readFileSync(path.join(room, '04-workshop', file))) !== preserved.sha256) {
       errors.push('Preserved parallel synthesis changed');
     }
     continue;

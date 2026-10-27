@@ -29,8 +29,15 @@
   ],
   "parallel_upstream_synthesis": {
     "path": "04-workshop/opposition-deep-research-analysis.md",
-    "source_commit": "f174b536b7e4407f63157c5f2a19e5c2e1ed6f4a",
-    "sha256": "020d1c44ce234dc8464856de9d6bb4b836480bee3faba0b110ff97d94b2cea91",
+    "source_commit": "e57a6ceb20f31331451a50b727c21626d256b1c8",
+    "sha256": "619c1bc644f45ae6f09e92e88e7c62fe929fa2b7c3289c13fa8c0a3ae814e23e",
+    "substantive_edits": false,
+    "status": "preserved_current_companion_not_superseded"
+  },
+  "parallel_upstream_timing_audit": {
+    "path": "04-workshop/chp-video-transcript-timing-audit.md",
+    "source_commit": "fd8535aad3dd538b659a8919b36e17d521ebf64c",
+    "sha256": "9a4d2bd5fcc598e718d3aabbcf1a7b1119fd795812d9553c7c86074f8378423a",
     "substantive_edits": false,
     "status": "preserved_current_companion_not_superseded"
   },

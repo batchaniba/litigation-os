@@ -9,6 +9,8 @@ Read the adversarial-leakage audit before selecting any court-facing language. T
 
 Publication control: Read the adversarial-leakage audit (included in this export) before adapting this internal analysis into an opposition. Its 22 findings distinguish a private stress test from arguments, evidence and concessions appropriate for filing; the discussion below is preserved, not approved for wholesale export into a brief.
 
+Concurrent timing qualification: The new transcript audit reports a one-second refusal-to-arrest-command interval and an 18-second refusal-to-handcuffing interval, not an 18-second interval to the initial command. Its 01:11:42 parole dispatch counter and R193's 01:07:29 log are distinct, unreconciled source clocks; see the leakage audit's timing qualification before reusing the earlier shorthand below.
+
 The strongest opposition is not the longest defense of every existing sentence. It is a temporally precise, defendant-specific argument that preserves independently actionable conduct, corrects demonstrable pleading errors, answers adverse authority before the reply does, and supplies a concrete amendment alternative where the present allegations are insufficient.
 
 Internal research as of October 26, 2026. This memorandum analyzes the operative ECF 5 FAC, ECF 22 motion, preserved historical papers, and Matter 20 production; it is not a court filing and does not claim commercial-citator clearance or a current live-docket check.
@@ -795,6 +797,18 @@ Pre-incident specificity is an important internal research check, but the phrase
 The anti-volunteering objective is sound, but the instruction is too categorical if read as a legal rule. A plaintiff's own necessary reliance, proper incorporation, an actual disclosure order or an obligation to avoid a misleading presentation can matter; proper consideration does not invariably require conversion, and “not raised” is not a universal withholding entitlement. ([Khoja](https://cdn.ca9.uscourts.gov/datastore/opinions/2018/08/13/16-56069.pdf); [Rule 11](https://www.law.cornell.edu/rules/frcp/rule_11))
 
 **Treatment:** Use a relevance/record/duty gate, not a blanket ban. Do not continue advocating a known false proposition while waiting for amendment authorization, and do not describe private repository storage or an “internal” label as a privilege determination.
+
+### Concurrent transcript-timing qualification
+
+The independently added `04-workshop/chp-video-transcript-timing-audit.md` was preserved during integration. Its transcript sequence places the final PAS refusal at 01:11:15, the arrest command at 01:11:16, handcuffing at 01:11:33, and dispatch parole information at 01:11:42; these are transcript-counter claims awaiting original-video verification, not independently authenticated occurrence times.
+
+The research engine's earlier 18-second shorthand must therefore be specified as refusal-to-handcuffing, not refusal-to-first arrest command. For A15, the one-second command sequence is the narrower reported fact; neither interval alone establishes all retaliation elements, and absence of a new spoken observation is not proof that no observation occurred.
+
+Keep R193's 01:07:29 log entry distinct from R183's 01:11:42 transcript counter until the clocks and sources are reconciled. Do not choose whichever time favors a conclusion or claim that either conclusively proves each officer's earliest knowledge.
+
+The new transcript audit also identifies a rear-seat search and a hard-lemonade can distinct from the urine cup. That is an internal verification and amendment issue, not a reason to volunteer a new adverse-evidence package; equally, do not continue asserting that the urine cup was the only alcohol-related object if the record does not support that statement.
+
+One upstream timing-table inconsistency remains expressly flagged rather than silently overwritten: its 01:11:42 row says “1:56” after the 00:59:46 search, while its later analysis correctly says “11:56.” Timestamp subtraction gives 11 minutes 56 seconds; the original concurrent document is preserved, and the shorter table interval must not be reused.
 
 ### What should not be removed as supposed leakage
 

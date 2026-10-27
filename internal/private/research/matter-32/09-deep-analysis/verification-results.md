@@ -9,7 +9,8 @@ This records research-integrity and repository checks, not a finding that the cl
 - **Adverse law:** The memorandum addresses Lingo, Wesby, Estrella, Payne, Galbraith, and Moore, plus the limits of the favorable authorities.
 - **Fabrication causation:** Separate checks of Caldwell and Richards qualify the charge-only and strict-but-for formulations rather than treating either as a categorical rule.
 - **Historical drafts:** Original scaffold and the separately added upstream `5b306800` memo are preserved with supersession banners; no substantive upstream analysis was silently overwritten.
-- **Concurrent current synthesis:** The synthesis and its controlling README link are retained. The preservation baseline now includes the independently added `f174b536` Section 1A leakage audit; its exact SHA-256 is `020d1c44ce234dc8464856de9d6bb4b836480bee3faba0b110ff97d94b2cea91`. This companion update does not edit that upstream synthesis.
+- **Concurrent current synthesis:** The synthesis and its controlling README link are retained. The preservation baseline includes the independently added Section 1A leakage audit and `e57a6ceb` timing refinements; its exact SHA-256 is `619c1bc644f45ae6f09e92e88e7c62fe929fa2b7c3289c13fa8c0a3ae814e23e`. This companion update does not edit that upstream synthesis.
+- **Concurrent transcript audit:** The `fd8535aa` timing audit is also preserved unchanged and hash-checked. The companion distinguishes the reported one-second arrest-command interval from the 18-second cuffing interval, flags unreconciled log/transcript clocks, and identifies an upstream 1:56/11:56 table inconsistency without overwriting that concurrent work.
 - **Preserved formatting:** That concurrent synthesis contains intentional Markdown hard-break spaces and upstream formatting. It is excluded from authored-text whitespace normalization and checked byte-for-byte instead.
 
 ## Integrity checks

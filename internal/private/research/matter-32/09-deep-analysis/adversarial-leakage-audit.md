@@ -217,6 +217,18 @@ The anti-volunteering objective is sound, but the instruction is too categorical
 
 **Treatment:** Use a relevance/record/duty gate, not a blanket ban. Do not continue advocating a known false proposition while waiting for amendment authorization, and do not describe private repository storage or an “internal” label as a privilege determination.
 
+## Concurrent transcript-timing qualification
+
+The independently added `04-workshop/chp-video-transcript-timing-audit.md` was preserved during integration. Its transcript sequence places the final PAS refusal at 01:11:15, the arrest command at 01:11:16, handcuffing at 01:11:33, and dispatch parole information at 01:11:42; these are transcript-counter claims awaiting original-video verification, not independently authenticated occurrence times.
+
+The research engine's earlier 18-second shorthand must therefore be specified as refusal-to-handcuffing, not refusal-to-first arrest command. For A15, the one-second command sequence is the narrower reported fact; neither interval alone establishes all retaliation elements, and absence of a new spoken observation is not proof that no observation occurred.
+
+Keep R193's 01:07:29 log entry distinct from R183's 01:11:42 transcript counter until the clocks and sources are reconciled. Do not choose whichever time favors a conclusion or claim that either conclusively proves each officer's earliest knowledge.
+
+The new transcript audit also identifies a rear-seat search and a hard-lemonade can distinct from the urine cup. That is an internal verification and amendment issue, not a reason to volunteer a new adverse-evidence package; equally, do not continue asserting that the urine cup was the only alcohol-related object if the record does not support that statement.
+
+One upstream timing-table inconsistency remains expressly flagged rather than silently overwritten: its 01:11:42 row says “1:56” after the 00:59:46 search, while its later analysis correctly says “11:56.” Timestamp subtraction gives 11 minutes 56 seconds; the original concurrent document is preserved, and the shorter table interval must not be reused.
+
 ## What should not be removed as supposed leakage
 
 - **The actual form wording:** Correct the physical-beverage misreading. That correction does not concede the truth of reported odor or the legality of any intrusion.

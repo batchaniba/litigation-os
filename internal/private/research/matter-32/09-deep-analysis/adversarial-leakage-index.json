@@ -1,7 +1,7 @@
 {
   "title": "Matter 32 Adversarial-Leakage Audit Index",
   "audit_path": "09-deep-analysis/adversarial-leakage-audit.md",
-  "audit_sha256": "4cc6670f0aeada99ced5e0c253cc17573ea4854f31b9c8b45db947a5f1d92385",
+  "audit_sha256": "29adddabdb25cfd9b3fba9c9263cfa6ef9256d95e928fdbc1ecea12c0dfc751b",
   "note": "Exact excerpts and immutable-content locators; findings are internal drafting controls, not adjudications.",
   "findings": [
     {
@@ -11,9 +11,9 @@
       "anchors": [
         {
           "path": "09-deep-analysis/opposition-decision-memorandum.md",
-          "line_start": 98,
-          "line_end": 98,
-          "sha256": "62d0ed5f899fdd1683592b69ae3b0f64247bba9ddc4ed1a19a1aadf049287bf6"
+          "line_start": 100,
+          "line_end": 100,
+          "sha256": "1e9f6b8723fa18d36512fb184dcbb9a0c02c944177ef56660ca9fee26d6b3be3"
         }
       ]
     },
@@ -37,9 +37,9 @@
       "anchors": [
         {
           "path": "09-deep-analysis/opposition-decision-memorandum.md",
-          "line_start": 258,
-          "line_end": 258,
-          "sha256": "62d0ed5f899fdd1683592b69ae3b0f64247bba9ddc4ed1a19a1aadf049287bf6"
+          "line_start": 260,
+          "line_end": 260,
+          "sha256": "1e9f6b8723fa18d36512fb184dcbb9a0c02c944177ef56660ca9fee26d6b3be3"
         }
       ]
     },
@@ -50,9 +50,9 @@
       "anchors": [
         {
           "path": "09-deep-analysis/opposition-decision-memorandum.md",
-          "line_start": 266,
-          "line_end": 266,
-          "sha256": "62d0ed5f899fdd1683592b69ae3b0f64247bba9ddc4ed1a19a1aadf049287bf6"
+          "line_start": 268,
+          "line_end": 268,
+          "sha256": "1e9f6b8723fa18d36512fb184dcbb9a0c02c944177ef56660ca9fee26d6b3be3"
         }
       ]
     },
@@ -63,9 +63,9 @@
       "anchors": [
         {
           "path": "09-deep-analysis/opposition-decision-memorandum.md",
-          "line_start": 34,
-          "line_end": 34,
-          "sha256": "62d0ed5f899fdd1683592b69ae3b0f64247bba9ddc4ed1a19a1aadf049287bf6"
+          "line_start": 36,
+          "line_end": 36,
+          "sha256": "1e9f6b8723fa18d36512fb184dcbb9a0c02c944177ef56660ca9fee26d6b3be3"
         }
       ]
     },
@@ -76,9 +76,9 @@
       "anchors": [
         {
           "path": "09-deep-analysis/opposition-decision-memorandum.md",
-          "line_start": 143,
-          "line_end": 143,
-          "sha256": "62d0ed5f899fdd1683592b69ae3b0f64247bba9ddc4ed1a19a1aadf049287bf6"
+          "line_start": 145,
+          "line_end": 145,
+          "sha256": "1e9f6b8723fa18d36512fb184dcbb9a0c02c944177ef56660ca9fee26d6b3be3"
         }
       ]
     },
@@ -89,9 +89,9 @@
       "anchors": [
         {
           "path": "09-deep-analysis/opposition-decision-memorandum.md",
-          "line_start": 223,
-          "line_end": 223,
-          "sha256": "62d0ed5f899fdd1683592b69ae3b0f64247bba9ddc4ed1a19a1aadf049287bf6"
+          "line_start": 225,
+          "line_end": 225,
+          "sha256": "1e9f6b8723fa18d36512fb184dcbb9a0c02c944177ef56660ca9fee26d6b3be3"
         }
       ]
     },
@@ -102,9 +102,9 @@
       "anchors": [
         {
           "path": "09-deep-analysis/opposition-decision-memorandum.md",
-          "line_start": 229,
-          "line_end": 229,
-          "sha256": "62d0ed5f899fdd1683592b69ae3b0f64247bba9ddc4ed1a19a1aadf049287bf6"
+          "line_start": 231,
+          "line_end": 231,
+          "sha256": "1e9f6b8723fa18d36512fb184dcbb9a0c02c944177ef56660ca9fee26d6b3be3"
         }
       ]
     },
@@ -115,9 +115,9 @@
       "anchors": [
         {
           "path": "09-deep-analysis/opposition-decision-memorandum.md",
-          "line_start": 173,
-          "line_end": 173,
-          "sha256": "62d0ed5f899fdd1683592b69ae3b0f64247bba9ddc4ed1a19a1aadf049287bf6"
+          "line_start": 175,
+          "line_end": 175,
+          "sha256": "1e9f6b8723fa18d36512fb184dcbb9a0c02c944177ef56660ca9fee26d6b3be3"
         }
       ]
     },
@@ -154,9 +154,9 @@
       "anchors": [
         {
           "path": "04-workshop/opposition-deep-research-analysis.md",
-          "line_start": 404,
-          "line_end": 404,
-          "sha256": "020d1c44ce234dc8464856de9d6bb4b836480bee3faba0b110ff97d94b2cea91"
+          "line_start": 410,
+          "line_end": 410,
+          "sha256": "619c1bc644f45ae6f09e92e88e7c62fe929fa2b7c3289c13fa8c0a3ae814e23e"
         }
       ]
     },
@@ -167,9 +167,9 @@
       "anchors": [
         {
           "path": "09-deep-analysis/opposition-decision-memorandum.md",
-          "line_start": 70,
-          "line_end": 70,
-          "sha256": "62d0ed5f899fdd1683592b69ae3b0f64247bba9ddc4ed1a19a1aadf049287bf6"
+          "line_start": 72,
+          "line_end": 72,
+          "sha256": "1e9f6b8723fa18d36512fb184dcbb9a0c02c944177ef56660ca9fee26d6b3be3"
         }
       ]
     },
@@ -180,9 +180,9 @@
       "anchors": [
         {
           "path": "09-deep-analysis/opposition-decision-memorandum.md",
-          "line_start": 28,
-          "line_end": 28,
-          "sha256": "62d0ed5f899fdd1683592b69ae3b0f64247bba9ddc4ed1a19a1aadf049287bf6"
+          "line_start": 30,
+          "line_end": 30,
+          "sha256": "1e9f6b8723fa18d36512fb184dcbb9a0c02c944177ef56660ca9fee26d6b3be3"
         }
       ]
     },
@@ -193,9 +193,9 @@
       "anchors": [
         {
           "path": "09-deep-analysis/opposition-decision-memorandum.md",
-          "line_start": 205,
-          "line_end": 205,
-          "sha256": "62d0ed5f899fdd1683592b69ae3b0f64247bba9ddc4ed1a19a1aadf049287bf6"
+          "line_start": 207,
+          "line_end": 207,
+          "sha256": "1e9f6b8723fa18d36512fb184dcbb9a0c02c944177ef56660ca9fee26d6b3be3"
         }
       ]
     },
@@ -206,9 +206,9 @@
       "anchors": [
         {
           "path": "09-deep-analysis/opposition-decision-memorandum.md",
-          "line_start": 225,
-          "line_end": 225,
-          "sha256": "62d0ed5f899fdd1683592b69ae3b0f64247bba9ddc4ed1a19a1aadf049287bf6"
+          "line_start": 227,
+          "line_end": 227,
+          "sha256": "1e9f6b8723fa18d36512fb184dcbb9a0c02c944177ef56660ca9fee26d6b3be3"
         }
       ]
     },
@@ -219,9 +219,9 @@
       "anchors": [
         {
           "path": "09-deep-analysis/opposition-decision-memorandum.md",
-          "line_start": 88,
-          "line_end": 88,
-          "sha256": "62d0ed5f899fdd1683592b69ae3b0f64247bba9ddc4ed1a19a1aadf049287bf6"
+          "line_start": 90,
+          "line_end": 90,
+          "sha256": "1e9f6b8723fa18d36512fb184dcbb9a0c02c944177ef56660ca9fee26d6b3be3"
         }
       ]
     },
@@ -232,9 +232,9 @@
       "anchors": [
         {
           "path": "09-deep-analysis/opposition-decision-memorandum.md",
-          "line_start": 275,
-          "line_end": 275,
-          "sha256": "62d0ed5f899fdd1683592b69ae3b0f64247bba9ddc4ed1a19a1aadf049287bf6"
+          "line_start": 277,
+          "line_end": 277,
+          "sha256": "1e9f6b8723fa18d36512fb184dcbb9a0c02c944177ef56660ca9fee26d6b3be3"
         }
       ]
     },
@@ -245,9 +245,9 @@
       "anchors": [
         {
           "path": "04-workshop/opposition-deep-research-analysis.md",
-          "line_start": 614,
-          "line_end": 614,
-          "sha256": "020d1c44ce234dc8464856de9d6bb4b836480bee3faba0b110ff97d94b2cea91"
+          "line_start": 620,
+          "line_end": 620,
+          "sha256": "619c1bc644f45ae6f09e92e88e7c62fe929fa2b7c3289c13fa8c0a3ae814e23e"
         }
       ]
     },
@@ -258,9 +258,9 @@
       "anchors": [
         {
           "path": "04-workshop/opposition-deep-research-analysis.md",
-          "line_start": 419,
-          "line_end": 419,
-          "sha256": "020d1c44ce234dc8464856de9d6bb4b836480bee3faba0b110ff97d94b2cea91"
+          "line_start": 425,
+          "line_end": 425,
+          "sha256": "619c1bc644f45ae6f09e92e88e7c62fe929fa2b7c3289c13fa8c0a3ae814e23e"
         }
       ]
     },
@@ -271,9 +271,9 @@
       "anchors": [
         {
           "path": "09-deep-analysis/opposition-decision-memorandum.md",
-          "line_start": 227,
-          "line_end": 227,
-          "sha256": "62d0ed5f899fdd1683592b69ae3b0f64247bba9ddc4ed1a19a1aadf049287bf6"
+          "line_start": 229,
+          "line_end": 229,
+          "sha256": "1e9f6b8723fa18d36512fb184dcbb9a0c02c944177ef56660ca9fee26d6b3be3"
         }
       ]
     },
@@ -286,7 +286,7 @@
           "path": "04-workshop/opposition-deep-research-analysis.md",
           "line_start": 61,
           "line_end": 61,
-          "sha256": "020d1c44ce234dc8464856de9d6bb4b836480bee3faba0b110ff97d94b2cea91"
+          "sha256": "619c1bc644f45ae6f09e92e88e7c62fe929fa2b7c3289c13fa8c0a3ae814e23e"
         }
       ]
     }

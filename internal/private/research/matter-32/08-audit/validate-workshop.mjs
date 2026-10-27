@@ -25,8 +25,12 @@ for(const file of fs.readdirSync(workshop).filter(x=>x.endsWith('.md'))){
   for(const id of text.match(/\bR\d{3}\b/g)||[])if(!ids.has(id))errors.push(`Unknown source ID ${id} in ${file}`);
   // Preserve the separately authored upstream memo without mechanical rewriting.
   // Its historical-status banner routes readers to the corrected analysis.
-  const unchangedParallelSynthesis=file==='opposition-deep-research-analysis.md'&&
-    sha(fs.readFileSync(path.join(workshop,file)))==='020d1c44ce234dc8464856de9d6bb4b836480bee3faba0b110ff97d94b2cea91';
+  const preservedUpstreamHashes={
+    'opposition-deep-research-analysis.md':'619c1bc644f45ae6f09e92e88e7c62fe929fa2b7c3289c13fa8c0a3ae814e23e',
+    'chp-video-transcript-timing-audit.md':'9a4d2bd5fcc598e718d3aabbcf1a7b1119fd795812d9553c7c86074f8378423a'
+  };
+  const unchangedParallelSynthesis=preservedUpstreamHashes[file]&&
+    sha(fs.readFileSync(path.join(workshop,file)))===preservedUpstreamHashes[file];
   if(/[—]/.test(text)&&!text.includes('Preserved upstream document from commit `5b306800`')&&!unchangedParallelSynthesis)errors.push(`Style: em dash in ${file}`);
 }
 if(errors.length){console.error(errors.join('\n'));process.exitCode=1;}
