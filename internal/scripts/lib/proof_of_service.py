@@ -40,6 +40,12 @@ BORDER_R = 568.0
 # Top/bottom edges inset from the page margins (nudged up from the prior pass).
 BORDER_T = 70.0
 BORDER_B = 715.0
+# Opt-in e-filing frame (ecf_header_border=True): top rule sits just under the
+# baseline of the blue CM/ECF header ("Case ... Document ... Filed ... Page"),
+# measured on N.D. Cal. stamps at 13.7-25.0 pt from the page top; bottom rule
+# mirrors it. Content keeps its BORDER_T/BORDER_B layout.
+ECF_BORDER_T = 24.0
+ECF_BORDER_B = 768.0
 
 FS = 10.0
 LEADING = 14.0
@@ -76,6 +82,9 @@ class ProofOfServiceFields:
     # Default recites first-class mail. Set True when service was by email
     # (no postage, no envelope, no United States Mail).
     by_email: bool = False
+    # Stretch the frame's top and bottom rules toward the page edges so the
+    # CM/ECF header stamped on e-filing sits on the top rule.
+    ecf_header_border: bool = False
 
 
 def _hline(c: canvas.Canvas, x0: float, x1: float, y: float, width: float = 0.7) -> None:
@@ -84,14 +93,15 @@ def _hline(c: canvas.Canvas, x0: float, x1: float, y: float, width: float = 0.7)
     c.line(x0, y, x1, y)
 
 
-def _draw_border(c: canvas.Canvas) -> None:
+def _draw_border(c: canvas.Canvas, ecf: bool = False) -> None:
+    top, bottom = (ECF_BORDER_T, ECF_BORDER_B) if ecf else (BORDER_T, BORDER_B)
     c.setStrokeColorRGB(0, 0, 0)
     c.setLineWidth(0.9)
     c.rect(
         BORDER_L,
-        PAGE_H - BORDER_B,
+        PAGE_H - bottom,
         BORDER_R - BORDER_L,
-        BORDER_B - BORDER_T,
+        bottom - top,
         stroke=1,
         fill=0,
     )
@@ -264,7 +274,7 @@ def build_proof_of_service(path: Path | str, fields: ProofOfServiceFields) -> Pa
     path = Path(path)
     path.parent.mkdir(parents=True, exist_ok=True)
     c = canvas.Canvas(str(path), pagesize=letter)
-    _draw_border(c)
+    _draw_border(c, fields.ecf_header_border)
 
     y = PAGE_H - BORDER_T - 44
 
@@ -400,7 +410,7 @@ def build_proof_of_service(path: Path | str, fields: ProofOfServiceFields) -> Pa
     if two_page:
         _page_label(c, 1, 2)
         c.showPage()
-        _draw_border(c)
+        _draw_border(c, fields.ecf_header_border)
         y = _draw_continuation_header(c, fields)
         c.setFont("Times-Roman", FS)
         c.drawString(

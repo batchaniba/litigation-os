@@ -451,6 +451,7 @@ def pos_fields() -> pos.ProofOfServiceFields:
         stamp_signature=True,
         district_line=pos.DISTRICT_NDCAL,
         by_email=True,
+        ecf_header_border=True,
     )
 
 
