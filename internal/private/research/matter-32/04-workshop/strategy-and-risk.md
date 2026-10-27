@@ -1,5 +1,7 @@
 # Strategy and Risk
 
+> Superseded analytical scaffold. Use [the new decision memorandum](../09-deep-analysis/opposition-decision-memorandum.md); the operative FAC anchors, actual toxicology, and PAS-only protected-activity theory require the corrected treatment there rather than suggestions of unpleaded supervisor requests or negative alcohol results.
+
 Working synthesis, not a prediction or filing-ready legal opinion. Source IDs refer to `08-audit/manifest.json`; references to FAC paragraphs and MTD printed pages refer to the actual preserved filings, not their filename labels.
 
 ## Central approach

@@ -1,5 +1,7 @@
 # Opposition Working Draft
 
+> Superseded and not filing-ready. Do not build a filing from this scaffold's old paragraph references; use [the new decision memorandum](../09-deep-analysis/opposition-decision-memorandum.md), [brief blueprint](../09-deep-analysis/red-team-and-brief-blueprint.md), and [amendment proffer](../09-deep-analysis/amendment-and-proof-proffer.md).
+
 BRANCH WORKSHOP ONLY. This is an editable advocacy scaffold, not an approved opposition, declaration, or representation that every factual contention is supported. Bracketed gates must be resolved; remove drafting notes and complete source/authority checks before any filing.
 
 ## Proposed opening

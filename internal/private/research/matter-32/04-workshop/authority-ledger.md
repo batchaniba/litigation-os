@@ -1,5 +1,7 @@
 # Authority Ledger
 
+> Superseded analytical scaffold. Use [the new authority treatment ledger](../09-deep-analysis/authority-treatment-ledger.md) and [decision memorandum](../09-deep-analysis/opposition-decision-memorandum.md); the older analysis is preserved only for history and must not be used as a current verification record.
+
 Research status as of October 26, 2026. “Verified” below means the identified proposition was checked against retrieved primary text, not that comprehensive subsequent-history or negative-treatment review is complete.
 
 ## Checked authorities and scope

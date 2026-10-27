@@ -1,5 +1,7 @@
 # From Chi Soo Kim to the Current FAC
 
+> Superseded analytical scaffold. Use [the decision memorandum's historical comparison](../09-deep-analysis/opposition-decision-memorandum.md) and [amendment proffer](../09-deep-analysis/amendment-and-proof-proffer.md); verify the current FAC map and final disposition rather than relying on the old analysis.
+
 Historical comparison using preserved filings and a public reproduction of the April 20, 2026 recommendation. This is not a certified docket history: the original stamped recommendation PDF, exact earlier amended complaint PDF, any adoption/rejection order, and final closure entries remain verification targets.
 
 ## What Kim actually reasoned

@@ -1,5 +1,7 @@
 # MTD Response Matrix
 
+> Superseded analytical scaffold with incorrect FAC paragraph anchors and inaccurate “largely uncited” and “negative later tox” descriptions. Use [the corrected claim/evidence map](../09-deep-analysis/evidence-to-claim-matrix.md) and [decision memorandum](../09-deep-analysis/opposition-decision-memorandum.md); the actual ethanol report is 0.073 ± 0.004 grams %.
+
 Working synthesis keyed to ECF 22, R001. Page numbers below are the motion's printed memorandum pages, with the 19-page supplied PDF preserved unchanged; this table is an issue map, not a substitute for the full motion.
 
 | Defense issue | Current FAC anchors | Strongest supportable response | Adverse fact or required verification | Work status |

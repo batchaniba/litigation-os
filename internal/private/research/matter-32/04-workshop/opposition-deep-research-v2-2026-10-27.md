@@ -6,6 +6,8 @@
 **Opposition due:** **Mon. Nov. 9, 2026.** Civil L.R. 7-3(a) gives 14 days from *filing*, so Rule 6(d) adds nothing. Their reply is due Nov. 16 (L.R. 7-3(c)). Opposition limit is 25 pages (L.R. 7-3(a), 7-4(b)). Treat the date as firm unless an order resets it. Reassignment after ECF 23 does not by itself move the deadline.
 **Prepared:** Oct. 27, 2026. This supersedes the issue map in `mtd-response-matrix.md`, whose FAC ¶ cites do not match ECF 5 (see § 11). It builds on `mtd-opposition-research-analysis-2026-10-26.md`.
 
+**Parallel work:** Two other syntheses landed on this branch concurrently (`04-workshop/opposition-deep-research-analysis.md`; `09-deep-analysis/`). They agree on the core calls. Two reconciliation points: (1) they do not recommend non-opposition on Counts 2 and 6; this document does (§ 3.1). (2) Their Rule 41 section dates the E.D. Cal. notice to Aug. 11, 2026, but Matter 1 data shows it was *executed* Aug. 11 and *e-filed* Aug. 15. Filing time controls the § 7.4 sequence, so confirm on PACER. They also cite *United States v. Prescott*, 581 F.2d 1343, 1351 (9th Cir. 1978), and *United States v. Krupa*, 658 F.3d 1174, 1177-78 (9th Cir. 2011), for the refusal-of-consent rule. Both are stronger anchors than *Thomas v. Dillard* for § 5.4 [VERIFY].
+
 **Status:** Research for drafting only. Nothing here is filed, served, or sent. Every authority carries a verification tag (§ 9). Nothing tagged [VERIFY] goes into a filed brief until it clears.
 
 ---
