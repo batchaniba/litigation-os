@@ -435,7 +435,8 @@ def render(out_path: Path, toc_pages: dict, toa_pages: dict,
     body_first_page = d.page_num
     for c_type, text in CONTENT:
         if c_type == H:
-            d.ensure_space(4)
+            # Keep the conclusion together with the signature block.
+            d.ensure_space(17 if text.endswith("CONCLUSION") else 4)
             if capture is not None:
                 capture[text] = d.page_num
             d.write_line(text, bold=True, center=True)
