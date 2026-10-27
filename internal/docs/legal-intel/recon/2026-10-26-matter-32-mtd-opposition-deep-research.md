@@ -1,10 +1,10 @@
 # Matter 32 — MTD Opposition Deep Research / Drafting Architecture
 
-**Compiled:** October 26, 2026 (America/Los_Angeles); § 18 audit added the same evening.  
+**Compiled:** October 26, 2026 (America/Los_Angeles); § 18 audit and § 19 transcript lock added the same evening.  
 **Case:** *Nforbi v. Meza-Gonzalez and Melano*, N.D. Cal. No. **4:26-cv-08271-ASK** (opened as 3:26-cv-08271-PHK; related Serrato 4:26-cv-05953-ASK).  
 **Motion:** ECF 22, filed October 26, 2026 — Rule 12(b)(6) dismissal of the FAC with prejudice + Rule 12(f) strike of punitive damages and attorney’s fees. Hearing noticed December 9, 2026, 1:30 p.m., Courtroom 4.  
 **Operative pleading:** ECF 5, First Amended Complaint, filed August 17, 2026 (21 pages). ECF 6 is an earlier stamped FAC; do not defend it.  
-**Status:** Research memorandum and brief architecture only. Not a filing. Not a declaration. Not a live-docket certification. Build the opposition against ECF 22’s exact headings, then verify every pin and every timestamp against the original recording before a sentence goes on pleading paper.
+**Status:** Research memorandum and brief architecture only. Not a filing. Not a declaration. Not a live-docket certification. Build the opposition against ECF 22’s exact headings, then verify every pin and every timestamp against the original recording before a sentence goes on pleading paper. Exhibit A (plaintiff-certified CHP dashcam transcript, E.D. Cal. 2:25-cv-01460) was re-read in full for § 19. It is not a substitute for watching the video.
 
 **Companion sources (do not merge the archive):** A separate research branch assembled hashes, extracted text, and workshop notes. This file is the decision spine. Use that room for source lookup. Do not copy its 396-file dump onto `main`.
 
@@ -17,13 +17,14 @@ This is the opposition *architecture*. It is engineered so the next drafting pas
 Read in this order:
 
 1. § 18 — work we did for opposing counsel or the Court. Internal only. Do not export those sentences into the brief.
-2. § 1 — what the opposition must force the Court to decide.
-3. § 2 — clocks and ECF 23. Reassignment is not a stay.
-4. § 5 — page budget. Steal from weak counts; do not write a six-count encyclopedia.
-5. § 11–12 — concessions and do-not-argue list. Internalize these before drafting.
-6. §§ 6–10 — the argument blocks, in the order they should appear.
-7. § 13 — the amendment proffer. Write it now; it is the backstop.
-8. § 14 — cite hygiene. Existence is not a holding. Unverified pins stay out of the brief.
+2. § 19 — timed sequence from Exhibit A. Timing is the case. Lock the clock before writing a paragraph.
+3. § 1 — what the opposition must force the Court to decide.
+4. § 2 — clocks and ECF 23. Reassignment is not a stay.
+5. § 5 — page budget. Steal from weak counts; do not write a six-count encyclopedia.
+6. § 11–12 — concessions and do-not-argue list. Internalize these before drafting.
+7. §§ 6–10 — the argument blocks, in the order they should appear.
+8. § 13 — the amendment proffer. Write it now; it is the backstop.
+9. § 14 — cite hygiene. Existence is not a holding. Unverified pins stay out of the brief.
 
 Every factual sentence in a later draft must be tagged as **allegation (FAC ¶)**, **defense characterization (ECF 22 p.)**, **source statement (AGO / warrant / DS-367)**, or **unverified / watch-the-video**. Do not launder a workshop inference into a record citation.
 
@@ -38,8 +39,8 @@ The organizing proposition:
 The opposition wins if the assigned judge writes down, in the alternative:
 
 1. **Pleading rule.** A police report or DS-367 identified or attached to the FAC is not a legally operative instrument whose contested factual recitations automatically control. *Khoja*; *Grier* n.1. The Court may look at the document; it may not convert a challenged odor/slur/confusion/beverage characterization into an undisputed brick.
-2. **Door entry is independent.** Opening the passenger door at 00:56:43, while Plaintiff was still asleep and before any welfare question, is a search. *Ngumezi*. Emergency aid is judged then, under *Brigham City*’s objective serious-injury standard — not later, after odor, FSTs, or a urine identification.
-3. **Search and arrest are later questions.** Apparent “booze” through a window and a sleeping freeway driver may support inquiry. They do not automatically authorize interior seizure of the cup, a continuing search after Melano said “this is piss,” or a custodial arrest 18 seconds after a voluntary PAS refusal.
+2. **Door entry is independent.** Opening the passenger door at 00:56:43, while Plaintiff was still asleep (FAC ¶ 16) and **before any welfare question**, is a search. *Ngumezi*. A knock on the window is not the door, and it is not “Are you okay?” Emergency aid is judged at the moment of entry, under *Brigham City*’s objective serious-injury standard — not later, after odor, FSTs, or a urine identification. See § 19.2.
+3. **Search and arrest are later questions.** Apparent “booze” through a window and a sleeping freeway driver may support inquiry. They do not automatically authorize interior seizure of the cup, a continuing search after Melano said “this is piss,” or a custodial arrest whose command comes **one second** after a voluntary PAS refusal (cuffs at eighteen).
 4. **Warrant theory uses the actual affidavit.** Judicial deception is tested against Meza’s warrant affidavit to Judge Amy Sekany (WAR913372, ~02:34), not against a misread CHP 202 checkbox. *Chism* / *Franks* require deliberate or reckless falsity **and** materiality after correction. If materiality cannot be pleaded honestly, seek leave or narrow; do not invent a remainder that deletes unaffected facts.
 5. **QI is conduct-specific and pleading-constrained.** *Keates*. A categorical “asleep on a freeway + some tests = immunity” paragraph does not decide the door-opening claim, the warrant claim, or any count whose predicate facts are specifically disputed.
 6. **Futility fails.** Kim’s April 20, **2026** recommendation (the motion says 2025) is adverse reasoning on a different complaint. E.D. Cal. and Alameda ended by voluntary dismissal. Serrato is a different defendant and theory. Concrete amendments are identified. *Lopez v. Smith*.
@@ -84,25 +85,38 @@ The live `claims.json` renumbers the counts. The FAC caption and ECF 22 use this
 | **V** | Fourth Amendment — unlawful search (cup / interior) | Both | ¶¶ 15–18, 59–63 | Deny as to the door-to-cup sequence; be honest that later search after urine ID is a separate, thinner slice |
 | **VI** | First Amendment — retaliation for PAS refusal | Both | ¶¶ 21–24, 64–70 | Preserve only as alternative if no PC; otherwise seek leave to particularize protected **speech**, or narrow |
 
-### 3.2 Timed fact spine (as pleaded)
+### 3.2 Timed fact spine (as pleaded; transcript-checked in § 19)
 
-All times are FAC allegations drawn from the officers’ dashcam (CHP Case RJ68845). They are not independently certified in this memo. Watch the original video before locking them.
+All times below that appear in the FAC are **allegation (FAC ¶)**. Times that appear only on Exhibit A are flagged. None of them are independently video-certified in this memo. Watch the original recording before locking a sentence. Full clock, anomalies, and export locks: **§ 19**.
 
-| Time | Pleaded act | Legal significance |
+| Time | Act | Legal significance |
 |---|---|---|
-| 00:54:36 | Patrol stop behind parked Tesla; recording starts | Contact begins |
-| 00:55:53 | Melano: “It’s a rental.” | Pre-contact observation |
-| 00:56:05–07 | Flashlight look; “It wasn’t here earlier when we passed by.” | Possible recency of parking — **defense** fact |
-| 00:56:09 | Melano: “I think it’s booze.” | Investigative hypothesis **before** waking Plaintiff |
-| **00:56:43** | Melano opens front passenger door; Plaintiff still asleep; no consent; no warrant; no articulated emergency | **Count IV.** *Ngumezi* search. Emergency-aid clock starts and, on the FAC, ends here. |
-| 00:58:49–00:59:07 | Melano seizes cup, smells it: “this is piss” | **Count V.** Dissipation of the cup-as-alcohol hypothesis. Does **not** retroactively legalize the door. Does **not** erase a later odor/FST theory if those facts are true. |
-| 01:10:54 | Meza: PAS “You’re not required to do this.” | Correct VC § 23612(i) advisement |
-| 01:11:03 | Meza: arrest “up to my discretion” if no consent | Defense will call this a legal advisement. Plaintiff calls it conditioning. |
-| 01:11:15–33 | PAS refusal; arrest 18 seconds later | **Counts III and VI.** No new observation alleged in between. |
-| ~01:12 | Arrest time recited in later paperwork | Affidavit is later than the arrest |
-| ~02:30–02:34 | Meza affidavit; Judge Amy Sekany warrant WAR913372 | **Count I.** Different document from CHP 202 / DS-367. Different judicial officer from any Whitman custody review. |
+| 00:54:36 | Patrol stop behind parked Tesla; recording starts (FAC ¶ 13) | Contact begins |
+| 00:55:53 | Melano: “It’s a rental.” (FAC ¶ 14) | Pre-contact observation |
+| 00:56:05–07 | Flashlight look; “It wasn’t here earlier when we passed by.” (FAC ¶ 14) | Possible recency — **do not add to their PC list if they omit it** (§ 18.1 #1) |
+| 00:56:07–40 | **Transcript only.** Meza knocks on the passenger window; Melano says “Open the window.” | A knock is a wake *attempt*. It is **not** the door and **not** a welfare question. Do not write “no wake attempt.” Do not concede the knock completed emergency aid. |
+| 00:56:09 | Melano: “I think it’s booze.” (FAC ¶ 15) | Investigative hypothesis **before** any word to Plaintiff. Transcript lists this stamp before 00:56:07; watch the video for order. |
+| **00:56:43** | Melano opens front passenger door; Plaintiff still asleep; no consent; no warrant; no articulated emergency (FAC ¶ 16) | **Count IV.** *Ngumezi* search. Emergency-aid clock is judged **here**. |
+| 00:56:46–48 | **Transcript only.** Melano: “Hello.” Plaintiff: “Uh-huh.” Melano: “Are you okay?” Plaintiff: “Yeah, we good.” | First speech and first welfare question are **after** the door. FAC does **not** plead these words. If the video agrees, they are the best sequence fact in the case. Put them in the proffer, not as if they are already in ¶ 16. |
+| 00:58:49–00:59:07 | Melano seizes cup, smells it: “this is piss” (FAC ¶¶ 17–18) | **Count V.** Cup-as-alcohol hypothesis dissipates on their own words. |
+| 00:59:02 | **Transcript only.** Meza: “No I’m not gonna smell that.” | The only smell talk on this recording is urine. Still do **not** argue “camera proves no odor.” |
+| 00:59:12 | Meza orders Plaintiff out (FAC ¶ 19) | Detention continues after urine ID. |
+| 00:59:46 | **Transcript only.** Melano opens a rear door and searches while Meza escorts Plaintiff | Separate interior search. FAC Count V is the cup. Split in the proffer if used. |
+| 01:00:06–09 | **Transcript only.** Melano produces an empty Mike’s Hard Lemonade can: “Source alcohol.” Plaintiff denies. | **Not in the FAC.** Whitman already maps “BEVERAGE PRESENT” to this can. **Do not print it** unless they raise it (§ 18.1 #16). |
+| 00:57:43–49 / 01:00:40–46 | Groggy “parking lot” answers, then Livermore + highway-sign reading | FAC ¶ 20 pleads only the coherent later answers. Do not hide the groggy window internally. Do not gift the parking-lot brick (§ 18.1 #1). |
+| 01:02:26–34 | **Transcript only.** Plaintiff discloses pre-diabetes; no insulin | After exit, before FSTs and before the warrant. **Not in this FAC.** Candidate omission only if we plead it. Cluster risk if we revive it after dropping it here. |
+| 01:05:22–01:10:30 | HGN; Romberg ~38–43s; one-leg offered then questioned; WAT skipped for uneven freeway ground | FAC ¶ 19 has the ground/skip. Do not argue a “passed” Romberg. Do not concede FST results. |
+| 01:10:54 | Meza: PAS “You’re not required to do this.” (FAC ¶ 21) | FAC already quotes the advisement. Do not call it “correct” in the brief (§ 18.1 #7). |
+| 01:11:03 | Meza: arrest “up to my discretion” if no consent (FAC ¶ 22) | Conditioning, as pleaded. |
+| **01:11:15** | “I don’t consent to that.” (FAC ¶¶ 23–24) | PAS refusal. |
+| **01:11:16** | **Transcript tightens FAC.** “Turn around… hands behind your back.” | Arrest **command** is **one second** after refusal. FAC’s “eighteen seconds” is refusal-to-cuffs (01:11:33). Use both: command at :16, cuffs at :33. No new observation in between. |
+| 01:11:42 | **Transcript only.** Dispatch: parole / 290 — **after** the cuffs | Officers do not know parole at the arrest moment. Do not let them backfill PC with it. FAC uses the later parole hold as custody damage, not as a fact known at 01:11. |
+| 01:23:26–33 | **Transcript only.** Melano: “piss everywhere”; “start your warrant” | Urine ID is known before warrant drafting begins roadside. |
+| ~01:12 / ~02:34 | Arrest time on paperwork; Meza/Sekany WAR913372 | **Count I.** Different document from CHP 202 / DS-367. Different judicial officer from any Whitman review. |
+| 01:37 | **Transcript only.** Post-arrest implied-consent / Miranda discussion | No pre-arrest Miranda, supervisor request, or counsel request. Do not invent one for Count VI. |
+| 01:57:10 | Exhibit A end stamp. Transcript labels this “Santa Rita.” **That label is wrong.** | Matter 20 video notes: squad still in the roadside/tow window; Santa Rita arrival is the 02:46 clip; booked ~03:25. Do not cite 01:57:10 as jail arrival. |
 | Nov. 5, 2024 | CHP PC § 851.6 detention certificate | Damages / credibility. **Not** a legal finding of no PC for § 1983. |
-| Later | DA declined to file | Same. *Rosenbaum* / *Wesby* cut this both ways. |
+| Later | DA declined to file | Same. Do not overclaim. |
 
 ### 3.3 The form-label landmine (must correct)
 
@@ -246,7 +260,7 @@ Kim’s April 20, 2026 recommendation treated attached report observations as su
 
 **Their VC 21718 move.** Even if stopping on a freeway shoulder can be a Vehicle Code problem, *Devenpeck* does not turn a suspected parking/stopping offense into interior-search authority. The FAC alleges the pre-entry words were rental / “wasn’t here earlier” / “I think it’s booze” — investigative, not “this person is dying.”
 
-**Video gate.** The FAC and the produced report narrative both have “are you okay?” **after** the door is open. If the original recording agrees, that is the best fact in the case. If it does not, rewrite before filing.
+**Video gate.** Exhibit A has the welfare question **after** the door: knock 00:56:07–00:56:40 → “Open the window” 00:56:40 → door 00:56:43 → “Hello” / “Uh-huh” 00:56:46 → “Are you okay?” 00:56:47. The FAC (¶ 16) pleads the door, sleep, and no articulated emergency. It does **not** plead the knock or the “okay” line. If the original recording agrees with Exhibit A’s order, that sequence is the best fact in the case — put the words in the proffer or a watched-video declaration, not as if they are already in ¶ 16. If the recording disagrees, rewrite before filing. Do not write “no wake attempt”; they knocked. Do not treat the knock as the emergency-aid showing.
 
 **QI on this count.** See § 8. This is where they can still win even if the search is a search. Need pre-November 1, 2024 analogue for: sleeping / apparently unresponsive driver, intact car, freeway shoulder, door opened before a wake attempt. *Ngumezi* is a convenience/lean-in-during-a-stop case, not a sleeping-motorist case. Research the sleeping-driver / welfare-check line before claiming clearly established law. If the analogue is thin, ask the Court to deny QI at Rule 12 because the **sequence** is disputed, not because *Ngumezi* “clearly establishes” this exact welfare check.
 
@@ -254,7 +268,9 @@ Kim’s April 20, 2026 recommendation treated attached report observations as su
 
 **Ask:** Deny as to the initial reach-and-seize of the cup if it is the fruit of an unjustified door opening, or if no exception authorized handling the cup.
 
-**Do not argue:** “urine therefore every later search was illegal.” After Melano identifies urine, the cup-as-alcohol fact dissipates. Independent odor / FST / admission facts, **if true and already known**, can still support continued investigation. The FAC’s job is to keep those later facts **disputed**, not to pretend they became impossible.
+**Second slice, transcript-only.** Exhibit A has Melano opening a rear door at 00:59:46 and searching while Meza walks Plaintiff to the patrol car — after urine ID, after the exit order. FAC Count V is the cup (¶¶ 17–18, 59–63). The rear search is a proffer fact, not a brief gift about a later “thinner” concession. If it is maintained, split it in the amendment. Do not volunteer the empty can that comes out of that search.
+
+**Do not argue:** “urine therefore every later search was illegal.” After Melano identifies urine, the cup-as-alcohol fact dissipates. Independent odor / FST / admission facts, **if true and already known**, can still support continued investigation. The FAC’s job is to keep those later facts **disputed**, not to pretend they became impossible. Do not write the odor-survival sentence for them (§ 18.1 #6).
 
 Automobile exception / plain view: sight of an ambiguous cup through a window is not the same as probable cause to empty the cabin. Verify pins if used.
 
@@ -308,7 +324,7 @@ Liberty/property they actually pleaded: compelled blood, roadside and jail custo
 
 ### VI. Retaliation — candid
 
-**Ask:** If the Court finds no PC for the arrest, the *Nieves* bar is not the issue and the 18-second sequence plus the “discretion” line is enough to survive *Mt. Healthy* pleading. If the Court finds (or assumes) PC, this count needs **objective evidence** under *Nieves* / *Gonzalez*, or it should be narrowed / repleaded around actual protected **speech**.
+**Ask:** If the Court finds no PC for the arrest, the *Nieves* bar is not the issue and the one-second command / eighteen-second cuff sequence plus the “discretion” line is enough to survive *Mt. Healthy* pleading. If the Court finds (or assumes) PC, this count needs **objective evidence** under *Nieves* / *Gonzalez*, or it should be narrowed / repleaded around actual protected **speech**. Exhibit A has no pre-arrest supervisor, criticism, or counsel request.
 
 **The problem.** The FAC’s protected-activity theory is the statutory right to refuse a PAS. That is a **statutory investigative-tool right**, not obviously First Amendment speech. *Camara* is a Fourth Amendment consent-search case. *Ballentine v. Tucker*, 28 F.4th 54, 62 (9th Cir. 2022), is real Ninth Circuit retaliation law — **verify it is not being asked to do PAS-refusal work it did not do.** *Ford v. City of Yakima*, 706 F.3d 1188 (9th Cir. 2013), is the motion’s framework and is pre-*Nieves*; do not pretend *Nieves* did not happen.
 
@@ -318,7 +334,7 @@ Liberty/property they actually pleaded: compelled blood, roadside and jail custo
 
 **Do not use *Tobey v. Jones* as binding Ninth Circuit law.** Fourth Circuit; pre-*Nieves*.
 
-**If the video has a supervisor request, criticism, or counsel request** with a timestamp before the arrest, that is the amendment. If it does not, do not invent one.
+**If the video has a supervisor request, criticism, or counsel request** with a timestamp before the arrest, that is the amendment. Exhibit A has none. The only Miranda talk is post-arrest at 01:37 (Plaintiff asks; Melano says they will not read Miranda because they “already have everything”). Do not invent a pre-arrest speech act.
 
 ---
 
@@ -330,7 +346,7 @@ Their QI section decides the case at a high level of generality (“asleep on a 
 
 | Count | Violation theory (accepted facts) | Clearly-established analogue to find or concede is missing | Rule 12 ask |
 |---|---|---|---|
-| IV Door | Door opened before wake / aid question; words show investigation | *Ngumezi* = search. Emergency-aid analogue for this sequence is the research hole | Deny QI or defer; do not claim *Ngumezi* ended the clearly-established inquiry |
+| IV Door | Door opened after a knock, still before any aid question; FAC alleges Plaintiff still asleep; pre-entry words are investigative | *Ngumezi* = search. Emergency-aid analogue for this sequence is the research hole | Deny QI or defer; do not claim *Ngumezi* ended the clearly-established inquiry |
 | V Search | Cup seized after unjustified entry, or after urine ID without new PC | Automobile-exception / fruit cases — verify | Deny if entry survives; otherwise narrow |
 | III Arrest | Disputed odor/FST + dissipated cup + PAS refusal | Arguable-PC is their best case (*Johnson* / *Rosenbaum*). We win only if disputed facts must be taken as true | Deny because PC facts are disputed; do not claim “no DUI PC” was beyond debate as a general rule |
 | I Warrant | Reckless material falsehoods in **this** affidavit | *Franks* / *Chism* if deception is well-pleaded | Deny if deception is in; lose if only “warrant lacked PC” |
@@ -400,9 +416,14 @@ These are not tone. They are strategy.
 5. Do not file the default packet in the same breath as this opposition.
 6. Do not put a GitHub, R2, or Worker URL in the brief or a covering email.
 7. Do not quote the private valuation file or any settlement number.
-8. Do not rely on the plaintiff-prepared transcript as “official.” It has speaker-name errors and timestamp disorder.
+8. Do not rely on the plaintiff-prepared transcript as “official.” It has speaker-name errors and timestamp disorder. Watch the video; then cite the recording.
 9. Do not conflate Judge Sekany’s blood warrant with any Whitman probable-cause / custody review.
 10. Do not say Melano is in default in a paper filed after Li’s appearance.
+11. Do not write “no wake attempt.” Exhibit A has knocking from 00:56:07. Write: they knocked; they opened the door anyway; the first welfare question came after the interior was open.
+12. Do not introduce the empty Mike’s Hard Lemonade can (01:00:09) unless they put it in play. It is not in this FAC. It is a reply fact, not an opposition gift.
+13. Do not backfill arrest PC with parole / 290. Dispatch says it at 01:11:42, after the cuffs.
+14. Do not argue the Romberg was “passed” because the timer ran ~38–43 seconds. The report’s 43 seconds agrees with the transcript window and proves no established pass.
+15. Do not cite Exhibit A’s 01:57:10 stamp as Santa Rita arrival. That label is wrong.
 
 ---
 
@@ -413,13 +434,15 @@ If any count is dismissed, Plaintiff can cure as follows. This is the futility a
 1. Replace every “Beverage Present” / physical-beverage-checkbox allegation with the actual **breath-odor** field language; plead any remaining falsity of odor on sequence, narration contrast, and contradictions, not on a misread label.
 2. Identify the **actual** warrant: affiant Meza (source spelling), Judge Amy Sekany, WAR913372, ~02:34; attach or quote the affidavit pages; separate the Whitman review.
 3. Insert a *Chism* table: each challenged statement or omission; the unaffected remainder; why the remainder lacks a substantial basis **if** that is still the theory.
-4. Add a four-row knowledge chart: facts known at door / cup / arrest / warrant.
-5. Split Melano and Meza by personal participation (who opened, who seized the cup, who ran FSTs, who advised PAS, who arrested, who swore).
-6. Retaliation: either plead a specific protected verbal act with timestamp, or drop the count as independent and keep it only as an alternative no-PC theory.
+4. Add a four-row knowledge chart: facts known at door / cup / arrest / warrant. Arrest-row must **exclude** parole (learned 01:11:42). Warrant-row may include the 01:23:26–33 urine-everywhere / “start your warrant” lines if the video confirms them.
+5. Split Melano and Meza by personal participation (who opened, who seized the cup, who ran the rear search, who produced the can, who ran FSTs, who advised PAS, who arrested, who swore).
+6. Retaliation: Exhibit A has no pre-arrest supervisor, criticism, or counsel request. Either plead a specific protected verbal act the **video** actually has, or keep the count only as an alternative no-PC theory. Do not invent speech.
 7. Fabrication: name the liberty/property deprivation and causation, or fold it into Count I / III.
 8. Punitive: reallege reckless/deliberate facts; explain the relationship to the prior without-prejudice withdrawal.
 9. Drop or cabin the § 1988 request for pro se time; keep costs.
 10. Cite the recording by authenticated timestamp after the video is watched; stop relying on the unofficial transcript’s anomalies.
+11. After the video is watched: plead the knock → door → “Are you okay?” order if it holds; plead the one-second arrest command (01:11:16) alongside the eighteen-second cuff mark; plead the rear-door search as a separate Count V slice if it is being maintained.
+12. Pre-diabetes (01:02:26–34) is on the recording and on the CHP interview form. It is **not** in this FAC. Add it only as a conscious amendment, with eyes on the Matter 1 / 7 / 20 narrative-drift risk. Do not sneak it into the opposition.
 
 ---
 
@@ -465,7 +488,7 @@ If any count is dismissed, Plaintiff can cure as follows. This is the futility a
 **Record**
 
 - [ ] PACER pull: ECF 22/23, judge after declination, briefing and hearing still live, standing orders.
-- [ ] Watch the original recording. Hash it. Confirm 00:56:09 / 00:56:43 / “are you okay?” order / urine ID / PAS / arrest.
+- [ ] Watch the original recording. Hash it. Confirm, in this order: 00:56:07 knock start vs 00:56:09 “booze” (transcript lists them out of order); 00:56:40 “Open the window”; 00:56:43 door; 00:56:46–48 Hello / Uh-huh / “Are you okay?” / “Yeah, we good”; cup/urine 00:58:51–00:59:07; rear search 00:59:46; Mike’s can 01:00:06–09; Livermore + signs 01:00:40–46; pre-diabetes 01:02:26–34; HGN / Romberg / WAT skip; PAS 01:10:33–01:11:15; arrest command 01:11:16; cuffs 01:11:33; parole dispatch 01:11:42; “start your warrant” 01:23:33; 01:57:10 is **not** Santa Rita.
 - [ ] Compare ECF 5’s actual exhibits to produced Exhibit 5. If the FAC attached a different scan of the DS-367, say so.
 - [ ] Stamped Kim R&R + any adoption / transfer / dismissal order. Public HTML is not the stamped PDF.
 - [ ] Alameda dismissal: with or without prejudice, entered order.
@@ -482,11 +505,12 @@ If any count is dismissed, Plaintiff can cure as follows. This is the futility a
 
 **Facts Brendan must answer in one sitting**
 
-1. Exact wake-vs-door sequence on the video he will swear to.
-2. What medical facts were said, to whom, and when.
-3. Supervisor / criticism / counsel-request timestamps, if any.
-4. Whether punitive is being maintained after the E.D. Cal. withdrawal, and why.
-5. Whether a proposed SAC will be lodged with the opposition or only described.
+1. Exact knock / window / door / “okay” sequence on the video he will swear to. Exhibit A has knock then door then “okay.” FAC ¶ 16 has door + still asleep and skips the words.
+2. What medical facts were said, to whom, and when. Transcript: pre-diabetes and no insulin at 01:02:26–34; high blood pressure at 01:04:44. Not in this FAC.
+3. Supervisor / criticism / counsel-request timestamps, if any. Exhibit A: none before arrest.
+4. Whether the empty Mike’s can is being met now, saved for reply, or left alone. Default: leave it alone unless they raise it.
+5. Whether punitive is being maintained after the E.D. Cal. withdrawal, and why.
+6. Whether a proposed SAC will be lodged with the opposition or only described.
 
 ---
 
@@ -499,7 +523,7 @@ If any count is dismissed, Plaintiff can cure as follows. This is the futility a
 5. Cut fabrication and retaliation to the page budget in § 5.
 6. Drop in the amendment proffer and the *Kay* / *Whittlestone* close.
 7. Citation pass against § 14. Anything unverified becomes a research task, not a brief sentence.
-8. Freeze. Watch the video. Change whatever the video changes. Then print.
+8. Freeze. Watch the video against the § 19 clock. Change whatever the video changes. Then print.
 
 ---
 
@@ -555,6 +579,10 @@ A correction of **our** record (the beverage-field mislabel; *Kay* on a prayer t
 | 13 | § 7.I “FAC is thinner here; they noticed that” | Amplified their FST-silence point. | They said the FAC does not allege falsified FST **results**. | Do not agree the FST record is conceded. The FAC alleges unsuitable ground and declined tests (¶¶ 19, 50). That is the answer. |
 | 14 | § 7.IV ask | “¶ 58 is thin” as to Meza on the door. | Joint motion. No personal-participation split. | Do not invite dismissal of Meza from Count IV. The FAC pleads presence and non-intervention. If more is needed, put it in the proffer. Do not mark the count thin in the brief. |
 | 15 | § 8 arrest row | “Arguable-PC is their best case. We win only if disputed facts must be taken as true.” | Their QI paragraph is general. | That sentence is a proposed QI grant. Brief: disputed facts are taken as true; they did not do the particularized analogue. Stop. |
+| 16 | § 3.2 01:00:09; § 19.4 | The empty Mike’s Hard Lemonade can + “Source alcohol.” That is their best remaining-container fact after urine. Whitman already uses it as the beverage-present analogue. | ECF 22, as briefed in this memo, leans on the report plus asleep + urine cup. They did not need us to add the can. | Do not print the can unless **they** put it in the motion or the reply. If they do, the answer is: empty can from a rear search after the cup was already urine; Plaintiff denied it on the recording; it does not convert the door; it does not turn a breath-odor checkbox into a recovered beverage. Do not write “urine does not negate a separate container” for them. |
+| 17 | § 3.2 knock row; § 7.IV video gate | “They knocked for ~33 seconds, so the welfare check was underway.” | They asserted emergency aid from sleep on a freeway. They did not reconstruct the knock→door→“okay” order. | A knock is not entry. The FAC alleges Plaintiff was still asleep when the door opened. The first aid question is after the interior is open. Do not concede the knock completed *Brigham City*. |
+| 18 | § 3.2 orientation row; § 7.I table | Initial “parking lot” / “two o’clock” grogginess as a confusion remainder; 43-second Romberg as a failed test. | They said the FAC is silent on FST **results** and leaned on the report’s confusion language. | FAC ¶ 20 pleads later coherence (Livermore, signs, surname, CDL, Tesla). Do not hide the groggy window internally. Do not gift it as a remainder brick. Do not argue the Romberg was passed. |
+| 19 | § 3.2 01:11:42; § 19.3 | Parole / 290 as a fact supporting the arrest or the search. | They did not need us to tell them dispatch announced parole **after** the cuffs. | Knowledge chart: parole is unknown at 01:11:16. Later inventory / “guns” talk is a different seizure. Do not backfill. |
 
 ### 18.2 Work we did for the Court (proposed rulings)
 
@@ -594,8 +622,174 @@ The architecture in §§ 1–17 remains the research spine. The brief is narrowe
 4. Do not perform the *Franks* remainder as a finding. Perform it as a **pleading**: identified falsehoods and omissions, taken as true, leave a warrant without PC — or, if the Court disagrees, leave to amend.
 5. Conclusion: deny ECF 22 in full. Leave to amend in the alternative. No count is donated.
 
-The internal remainder table, the *Wesby* stack, the *Ngumezi* sleeping-driver distinction, and the “PAS is not speech” analysis remain in **this** file so Plaintiff does not walk into those traps later (reply, hearing, or summary judgment). They are not concessions, and they are not sentences for Judge Krishnan or a successor.
+The internal remainder table, the *Wesby* stack, the *Ngumezi* sleeping-driver distinction, the “PAS is not speech” analysis, and the Mike’s-can / knock / parole-after-arrest locks in § 19 remain in **this** file so Plaintiff does not walk into those traps later (reply, hearing, or summary judgment). They are not concessions, and they are not sentences for Judge Krishnan or a successor.
 
 ---
 
-*End of architecture. Next artifact is a 25-page opposition that answers ECF 22 — not a better version of ECF 22, and not a proposed order dismissing Plaintiff’s own counts.*
+## 19. Transcript lock — Exhibit A timed sequence
+
+**Pass:** October 26, 2026 (America/Los_Angeles). Full re-read of the plaintiff-certified transcript, not of the original video.
+
+**Source.** Exhibit A, *Newanforbi v. Meza-Gonzalez*, E.D. Cal. No. 2:25-cv-01460-DC-CSK. Caption: “Transcript of California Highway Patrol Dashcam Video and Audio Recording,” incident November 1, 2024, I-580 East, Livermore, CHP Case RJ68845, stated window **00:54:36–01:57:10**. Plaintiff-certified March 21, 2026. Speaker legend: Meza-Gonzalez #023295; Melano #023054.
+
+**What this is not.** It is not an official court reporter’s transcript. It is not independently video-verified in this memo. The local sidecar at `internal/public/documents/matter-33/incident/Exhibit_A_CHP_Video_Transcript.txt` is a four-point hand extract, not the full text. Matter 20 production notes already treat the Camera-1 audio as transcribed for this window and place Santa Rita on a later clip. **Watch the original recording before any of the times below go on pleading paper.**
+
+**How the next draft uses it.** A brief sentence is tagged **allegation (FAC ¶)**, **transcript-only / proffer**, **defense characterization**, or **unverified / watch-the-video**. Do not cite Exhibit A as if the N.D. Cal. FAC attached it unless ECF 5 actually did. Do not export the gift locks in § 19.6.
+
+### 19.1 Master clock
+
+Order below follows the **story**, not the disordered stamp list. Where Exhibit A’s own stamps fight each other, the row says so.
+
+| Time | Who / what | On the FAC? | Why the second matters |
+|---|---|---|---|
+| 00:54:36 | CHP eastbound I-580 | ¶ 13 | Recording start |
+| 00:55:25–37 | Pulls in; stop; audio on | — | Physical arrival |
+| 00:55:53 | Melano: “It’s a rental. Huh.” | ¶ 14 | Before they reach the Tesla |
+| 00:55:57–00:56:05 | Both out, flashlights, peering in passenger side | ¶ 14 | Visual search of the interior **through glass** |
+| 00:56:07 | Meza **knocks** on the front passenger window. Melano: “It wasn’t here earlier when we passed by.” | ¶ 14 has the recency line, **not** the knock. Transcript lists these stamps **after** 00:56:09. | Wake *attempt* begins. Recency talk is investigative. Watch the video for whether knock or “booze” is first. |
+| 00:56:09 | Melano: “I think it’s booze.” | ¶ 15 | Hypothesis **before** any word to Plaintiff. Directed at a visible cup, as pleaded. |
+| 00:56:30 | Melano: “Oh look at this.” Meza still knocking. | — | Still outside. Still looking. Still knocking. |
+| 00:56:40 | Melano: “Open the window.” | — | Command to an occupant they have not yet spoken with. Not an aid question. |
+| **00:56:43** | Passenger door opened. Transcript names “Officer Joselyn Melano.” That first name is a **speaker error** (Jose Melano). | ¶ 16 | **Count IV.** Interior opened. FAC: still asleep; no consent; no warrant; no articulated emergency. |
+| 00:56:46 | Melano: “Hello.” Plaintiff: “Uh-huh.” | — | First speech. After the door. |
+| 00:56:47–48 | Melano: “Are you okay?” Plaintiff: “Yeah, we good.” | — | **First welfare question. After the door.** FAC does not plead these words. |
+| 00:56:49–00:56:58 | “Why are you here? Just tired?” Plaintiff: repeated “no,” then “We’re good… Yeah we’re straight.” | — | Still immediately post-entry |
+| 00:57:11 | “We’re coming from uh, uh, a party.” | Later affidavit / report | Party is already a remainder risk (§ 3.4). Do not add it to their motion if they omitted it. |
+| 00:57:30–00:57:49 | How long parked; “parking lot”; “This is not a parking lot.”; “Two… two o’clock.”; “[Plaintiff still groggy from sleep.]” Stamps 00:57:35 / 00:57:30 are reversed. | FAC ¶ 20 pleads later coherence, not these lines | Groggy window. Internal honesty. Not a brief gift. |
+| 00:57:51–00:58:06 | Dash 12:57 a.m.; Plaintiff: should be home by 1:30; then “like 5-7 minutes.” | — | Time answers tighten after the first groggy pass |
+| 00:58:30–00:58:38 | “How much have you had to drink…?” “Zero.” “You haven’t had anything?” “No, no.” Stamp 00:58:34 (“What’s in that cup”) is listed after 00:58:38. | Denial is already in the affidavit (§ 3.4) | Cannot be an omission. Watch video for cup-question order. |
+| 00:58:46 | “Don’t drink it. Yeah don’t drink it.” | — | Plaintiff does not identify the liquid as alcohol |
+| **00:58:49–00:59:07** | Melano: “What is it? Let me see.” “Is it water? No this is piss. This is pee.” “It smells like piss.” Meza: “No I’m not gonna smell that.” “Leave it there. Put it back.” | ¶¶ 17–18 | **Count V.** Cup-as-alcohol dies on their words. Only smell talk on this recording is urine. |
+| 00:59:12–00:59:25 | “Step out”; Plaintiff crosses to the driver side and exits | ¶ 19 | Detention continues after urine ID |
+| 00:59:38–01:00:01 | Name, “NEW-WAN-FOR-BI,” walk to the patrol car. Bracket: “calmly complying… no signs of impairment.” | ¶ 20 uses the spelling | Compliance / speech. The “no impairment” bracket is a transcriber gloss — do not cite the gloss as video. |
+| 00:59:46 | Bracket: Melano opens a **rear** door and searches while Meza escorts Plaintiff. Stamp sits after 01:00:01 in the printout. | Not in FAC | Separate cabin search. Count V split. |
+| **01:00:06–09** | Melano walks over with an empty can. Meza: “Did you drink that?” “No.” Melano: “Mike’s Hard Lemonade. Source alcohol.” Plaintiff nods no. | **Not in FAC** | Reply fact. Export lock § 18.1 #16. |
+| 01:00:11–14 | “You haven’t drank anything since you’ve been parked?” “No.” | — | Second denial, now about the can |
+| 01:00:24–39 | Cat Tail address; party “wasn’t all the way in Oakland”; going home to Stockton | — | “Wasn’t all the way in Oakland” is softer than a clean Oakland-origin brick |
+| **01:00:40–46** | “You know where you’re at right now?” “Right now, Livermore.” Reads a highway sign ~50 yards out: Isabella / Portola / ___ Avenue. Meza: “Correct.” | ¶ 20 | Oriented. Same encounter as the earlier “parking lot” lines. Use both internally. Print the FAC’s coherence. Do not gift the groggy half. |
+| 01:00:50–56 | Alcohol since parked? At the party? “No sir.” / “No.” | — | Third denial cluster |
+| 01:01:16–01:01:56 | Why stopped: CDL fatigue protocol, pull over, nap, same mentality in a personal car | ¶ 20 (CDL fatigue) | Innocent explanation they need not rule out — and not a brief essay |
+| 01:01:58–01:02:06 | Rental; no known mechanical defect | — | Matches the interview form |
+| **01:02:26–34** | “Are you diabetic or epileptic?” “I have been diagnosed with pre-diabetes.” No insulin. | **Not in this FAC** | Disclosed after exit, before FSTs, before the warrant. Amendment only, and only with eyes on the Matter 1 / 7 / 20 narrative-drift file. |
+| 01:02:51–01:03:31 | Spit / “hotdog, from the hotdog stand”; last sleep ~7 minutes; last eat ~11:30 | — | On the interview form. Not a PC gift we volunteer. |
+| 01:03:47–01:04:14 | Driving from Oakland toward Stockton; knows he is in Livermore; no alcohol | — | Repeats orientation and denial |
+| 01:04:18–01:04:56 | Bump head “I’m not sure”; primary-care name unknown; recent high-blood-pressure visit; “No drugs or medicine.” | — | Medical talk continues. High blood pressure is a second disclosure this FAC also omits. |
+| 01:05:07–01:07:04 | Instruction; HGN (“eyes test”); ends 01:07:04 | FAC silent on HGN results | Administration only. No result is verbalized. Do not claim the transcript disproves HGN findings. |
+| 01:07:06–33 | What he drives; Tesla Model Y; Class A / semi | — | Occupational coherence |
+| 01:08:02–01:08:45 | Romberg: timer start; eyes open 01:08:40; “Stop?”; timer stop 01:08:45 (~38–43 s) | FAC silent on results | Report’s 43 seconds **agrees** with this window. Do not argue a pass. Do not concede a fail. |
+| 01:08:58–01:10:12 | One-leg offered; Plaintiff: “Really?”; “you’re giving me all these tests”; “I don’t know if I can balance on one knee.” Meza: “It’s fine if you don’t.” Melano: “there’s not pass or fail.” | — | Declination / questioning, not a verbalized failure |
+| **01:10:23–30** | WAT offered. Melano: “It’s kind of sketch here bro.” “uneven ground. I wouldn’t do that one.” Meza: “Alright then.” | ¶ 19 | Their skip. Keep. |
+| 01:10:33–01:10:56 | PAS request; “You may refuse”; “You’re not required to do this.” | ¶ 21 | FAC already quotes the voluntary line |
+| 01:11:01–03 | “If I choose not to consent?” “it’ll be up to my discretion whether I put you under arrest for DUI or not.” | ¶ 22 | Conditioning, as pleaded |
+| 01:11:11–13 | Both **calibrating the breathalyzer**; “Yes or no?” | — | They are ready to run it when he refuses |
+| **01:11:15** | “I don’t consent to that.” | ¶¶ 23–24 | Refusal |
+| **01:11:16** | “OK. Brendan. Alright then. I’m gonna have you just turn around please. Place your hands behind your back.” | FAC’s “eighteen seconds” starts here but cites :15–:33 | **Arrest command = one second.** No new observation. |
+| 01:11:31–33 | Repeat “hands behind your back”; “Separate your feet…”; cuffs on | ¶ 24 | Cuffs at eighteen seconds. Use :16 and :33 together. |
+| **01:11:36–42** | Melano radios. Dispatch: “he is on parole for PC 289. He’s also a 290 registrant.” | FAC uses a later parole **hold** as custody damage | **Unknown at the arrest command.** Do not backfill PC. |
+| 01:12:32–54 | “He’s on parole.” Pat-down. Ankle bracelet. | — | Post-arrest search of the person |
+| 01:14:30–01:15:06 | Inventory ask; phone / wallet / keys; into the patrol car, cuffed to the frame | — | Post-arrest |
+| 01:15:54–01:22:21 | Chemical breath or blood; DMV-sheet consequences; Plaintiff: “if that’s what the DMV has to do”; “So you’re refusing to take a test?” | Affidavit remainder | Post-arrest implied-consent fight. Not arrest PC. |
+| 01:18:32–34 | Melano still searching the Tesla: “I need to make sure there’s no guns. He’s on parole.” | — | They are now using parole for the **cabin** search. That is after 01:11. |
+| **01:23:11–36** | “write what time we last passed him here because he wasn’t here earlier.” Meza: “he said he was here for seven minutes.” Melano: search first “because he’s on parole.” “Let me sanitize my gloves, there was piss everywhere. Gross.” “Yeah you want to start your warrant?” “I could start the CLETS.” | — | Recency talk is still investigative. Urine is known **before** warrant drafting starts roadside. |
+| 01:24:17–21 | “Any additional charges because he’s on parole?” | — | They are shopping a parole add-on after the DUI arrest |
+| 01:36:47–01:38:35 | Melano reads implied consent. Plaintiff: “It’s not a Miranda right?” Melano: no; “We already have everything we need”; will not read Miranda. Plaintiff: “Neither.” Melano: “we’re getting a warrant.” Stamps in this block are disordered (01:37:32 listed after 01:37:39). | — | No pre-arrest Miranda. No counsel request. No supervisor request. Do not invent Count VI speech. |
+| 01:44:21–01:45:45 | Tesla / alternator / supercharger conversation | ¶ 20 | Post-arrest coherence. FAC already uses it. |
+| 01:52:05 | Squad leaves the scene | — | Still not jail |
+| 01:57:10 | Exhibit A ends. Printout: “arrives at the Santa Rita Jail, Dublin CHP transfer.” | ¶ 13 treats 01:57:10 as the encounter window | **Label is wrong.** Matter 20 video descriptions: this window is roadside / tow; Santa Rita is the 02:46–02:49 clip; booked ~03:25. Do not cite 01:57:10 as jail arrival. |
+
+### 19.2 Four acts, tightened
+
+Timing is the case because each Fourth Amendment question has its own clock. Exhibit A does not collapse them.
+
+**1. Door (Count IV) — 00:56:43.**
+
+They looked (00:56:05). They hypothesized booze (00:56:09). They knocked (~00:56:07–00:56:40). They said “Open the window” (00:56:40). They opened the passenger door (00:56:43). They said “Hello” (00:56:46). They asked “Are you okay?” (00:56:47).
+
+The knock is real. “No wake attempt” is too strong and will get us hurt if the video shows ~30 seconds of knocking. The knock still does not open the cabin. The first aid question is four seconds **after** the cabin is open. FAC ¶ 16 remains the pleaded fact: Plaintiff was still asleep; no emergency was articulated. Emergency aid is judged at entry, not after the “okay” line, not after urine, not after FSTs.
+
+**2. Cup and cabin (Count V) — 00:58:49, then 00:59:46.**
+
+Meza asks about the cup. Plaintiff says don’t drink it. Melano takes it, identifies urine, says it smells like piss. Meza refuses to smell it. They put it back. Then they pull him out. Then Melano opens a rear door and searches while Meza has him at the patrol car. Then the empty can appears.
+
+Two slices, not one: (a) reach-and-seize of the cup from the already-opened cabin; (b) continuing rear-cabin search after urine ID and after the exit. FAC pleads (a). (b) is proffer. The can is a third object. Leave it off the page unless they put it on.
+
+**3. Arrest (Counts III / VI) — command 01:11:16, cuffs 01:11:33.**
+
+PAS is offered as voluntary. Discretion is tied to refusal. The box is being calibrated. “I don’t consent.” One second later: turn around, hands behind your back. Seventeen seconds after that: cuffs. Dispatch announces parole **after** the cuffs. No new observation, no odor verbalized, no FST result verbalized, no supervisor request, no counsel request.
+
+FAC’s “eighteen seconds” is true as refusal-to-cuffs. The tighter fact is the one-second command. Plead both after the video is watched. Do not call the PAS advisement “correct” in the brief (§ 18.1 #7). Do not invent First Amendment speech the recording does not have.
+
+**4. Warrant (Count I) — roadside start 01:23:33; Sekany ~02:34.**
+
+By the time Melano says “start your warrant,” they have already said “piss” / “piss everywhere,” they have already arrested him, and they have already learned parole. The affidavit is still the Sekany instrument, not the CHP 202. Urine-known-before-02:34 is an omission candidate. The empty can, if it enters the case, is a remainder risk — which is why we do not volunteer it. Pre-diabetes, if pleaded, is an omission candidate that this FAC does not make.
+
+### 19.3 What the recording does **not** say
+
+These absences are as important as the stamps. Do not fill them.
+
+- **No officer verbalizes an odor of alcohol.** Ever. The only smell words are about urine (00:58:51–00:59:04, 01:23:26). FAC ¶ 20 already pleads the silence. Keep it. Do **not** convert silence into “therefore no odor.” A camera cannot smell. That lock is unchanged.
+- **No officer says his speech is slurred.** They take the name three times and he spells it. They do not announce a speech finding.
+- **No HGN or eyelid finding is spoken.** Administration is visible; results are not.
+- **No “you failed” on Romberg or one-leg.** Melano says there is “not pass or fail.” WAT is skipped for the ground.
+- **No pre-arrest Miranda.** The Miranda discussion is 01:37, after custody, and they refuse to read it.
+- **No supervisor request. No lawyer / attorney / counsel request. No criticism that Count VI can use as speech.** Exhibit A does not have the amendment the retaliation section was hoping for.
+- **No parole knowledge at the arrest command.** 01:11:42 is after 01:11:16.
+
+FAC ¶ 20’s “over two hours of continuous recording” is looser than Exhibit A’s ~62-minute window (00:54:36–01:57:10). Matter 20’s Camera-1 clip runs a couple of minutes past 01:57; then there is a gap until 02:46. Do not repeat “over two hours” unless a watched compilation actually covers it.
+
+### 19.4 What Exhibit A has that this FAC omitted
+
+Internal inventory. Not a list to dump into the opposition.
+
+| Omitted fact | Clock | Use |
+|---|---|---|
+| Knock + “Open the window” | 00:56:07–40 | Proffer the sequence. Do not write “no wake attempt.” |
+| “Hello” / “Are you okay?” after the door | 00:56:46–47 | Best Count IV sequence fact if the video agrees. FAC skipped the words. |
+| Meza will not smell the cup | 00:59:02 | Supports “only smell talk is urine.” Still not “no odor.” |
+| Rear-door search while Plaintiff is escorted | 00:59:46 | Count V split |
+| Empty Mike’s Hard Lemonade can | 01:00:06–09 | **Stay silent** unless they raise it |
+| Livermore + sign-reading after the groggy window | 01:00:40–46 | FAC ¶ 20 already has the coherence half |
+| Pre-diabetes / no insulin; later high blood pressure | 01:02:26–34; 01:04:44 | Amendment only. Cluster drift risk. |
+| HGN window; Romberg ~38–43 s; one-leg hesitation | 01:05–01:10 | Do not claim a pass. Do not concede results. |
+| Arrest command at one second | 01:11:16 | Tighten ¶ 24 after the video |
+| Parole / 290 announced after cuffs | 01:11:42 | Knowledge chart. Damages later, not arrest PC. |
+| “Piss everywhere” / “start your warrant” | 01:23:26–33 | Urine known before the affidavit is started |
+| Post-arrest “we already have everything” / no Miranda | 01:37 | Not a Count VI speech act |
+
+### 19.5 Anomalies — do not put these on pleading paper
+
+1. **Timestamp disorder.** 00:56:09 before 00:56:07; 00:57:35 before 00:57:30; 00:58:34 after 00:58:38; 00:59:46 rear-search note after 01:00:01; 01:37 block scrambled (01:37:32 after 01:37:39).
+2. **Speaker error.** “Officer Joselyn Melano” at 00:56:43. The officer is Jose Melano #023054.
+3. **Wrong end-caption.** 01:57:10 is not Santa Rita. Do not copy the printout’s jail line.
+4. **Transcriber glosses.** “appearing to search the interior”; “still groggy from sleep”; “calmly complying… no signs of impairment.” Those are not spoken words. Cite speech and visible acts after watching, not the brackets.
+5. **Pagination fight.** Header toggles “Page N of 20” / “Page N of 19.”
+6. **Close.** The exhibit’s declaration uses “In Pro Per.” That does not change the counsel-email close on outgoing messages, and it does not make this an official transcript.
+
+### 19.6 Export locks from this pass
+
+These sit with § 18. They are why the re-read was worth doing.
+
+1. **Do not write “no wake attempt.”** They knocked. Write the order: knock → door → “Are you okay?”
+2. **Do not concede emergency aid from the knock.** A knock on glass is not an objectively reasonable basis that an occupant is seriously injured. FAC ¶ 16 is still the denial.
+3. **Do not print the Mike’s can.** Empty, produced from a rear search after urine, denied on the recording, absent from this FAC. If they raise it, answer it. Do not improve ECF 22 with it.
+4. **Do not write “urine does not negate a separate container.”** That is the Whitman red-team sentence. It is their line.
+5. **Do not gift the parking-lot / two-o’clock window or the 43-second Romberg as remainder bricks.** Keep them in this file so we are not surprised. Print FAC ¶ 20’s coherence and ¶ 19’s ground skip.
+6. **Do not backfill the arrest with parole.** 01:11:42 is after 01:11:16.
+7. **Do not invent Count VI speech.** Exhibit A has none before the arrest.
+8. **Do not sneak pre-diabetes into the opposition.** It is on the recording. It is not in this FAC. Adding it is an amendment decision, not a research-memo default.
+9. **Do not argue silent video = no odor**, even though they never verbalize one.
+10. **Do not cite 01:57:10 as Santa Rita.**
+
+### 19.7 What the opposition should do with the clock
+
+Lead with the four acts, each at the moment it happened, using facts **already in the FAC**:
+
+> They said “I think it’s booze” before they spoke to him. They opened the passenger door at 00:56:43 while he was still asleep, without a warrant, without consent, and without articulating an emergency. They then identified the cup as urine. They told him the PAS was not required, tied arrest to “discretion” if he refused, and — on the recording — had him turning around one second after “I don’t consent,” cuffs on at eighteen. No officer said they smelled alcohol. The blood warrant is Meza’s later affidavit to Judge Sekany, not a misread beverage checkbox.
+
+After the video is watched, the proffer (not the opposition-as-amendment) can add: the knock-then-door-then-“okay” order; the rear search; the one-second command as a pleaded timestamp; the parole-after-cuffs knowledge line; the 01:23 warrant-start line.
+
+That is covering the bases. It is not a better defense brief, and it is not a proposed order.
+
+---
+
+*End of architecture. Next artifact is a 25-page opposition that answers ECF 22 — not a better version of ECF 22, and not a proposed order dismissing Plaintiff’s own counts. Watch the video before a timestamp leaves this file.*
