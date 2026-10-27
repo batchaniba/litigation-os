@@ -14,7 +14,7 @@ Private, branch-only research room for Nforbi v. Meza-Gonzalez and Melano, N.D. 
 - **Decision memo:** `04-workshop/strategy-and-risk.md` identifies the strongest lanes and the factual concessions that improve credibility.
 - **Response map:** `04-workshop/mtd-response-matrix.md` tracks every numbered defense argument.
 - **Historical comparison:** `04-workshop/chi-soo-kim-to-current-fac.md` confronts the April 2026 adverse reasoning and distinguishes procedural history from merits.
-- **Working brief:** `04-workshop/opposition-working-draft.md` supplies editable advocacy language, with unresolved portions expressly blocked.
+- **Historical brief scaffold:** `04-workshop/opposition-working-draft.md` is superseded by the filing-shaped draft above and remains only as a drafting-history artifact.
 - **Warrant workbench:** `04-workshop/corrected-affidavit-workbench.md` keeps the actual affidavit, alleged corrections, remaining facts, and materiality analysis separate.
 - **Filing gates:** `04-workshop/verification-and-filing-gates.md` covers docket, briefing clock, source, video, authority, and amendment checks.
 - **Authority status:** `04-workshop/authority-ledger.md` separates verified holdings from research leads and adverse authority.
