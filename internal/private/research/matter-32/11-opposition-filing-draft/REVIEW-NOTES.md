@@ -64,3 +64,27 @@ Run `citation-verify` (`npm run citations:index`, then `citations:lookup:matter 
 
 - Counts II and VI: concede with leave (this draft), or defend (parallel draft).
 - Whether to keep the proffer's "Form wording" item (the Beverage Present correction). Recommended: keep it. It's a Rule 11 candor fix, and it heads off a reply built on the FAC's own error.
+
+## Merge pass (Oct. 27): what came in from the two uploaded versions
+
+Sources: `opposition-to-motion-to-dismiss-clean.pdf` (the parallel markdown draft, rendered) and `Nforbi-Opposition-to-MTD-DRAFT.pdf` (the `10-draft-opposition/` build, "Draft A").
+
+**Adopted (each checked against ECF 22 or saved opinion text where possible):**
+- Part A now opens with the motion's own narrative that isn't in the FAC: "stopped to check if [Plaintiff] needed assistance" and "noticed a strong smell of alcohol" (Mot. 2:7-9; both confirmed in ECF 22). It says only that neither appears in the FAC; it does not argue the odor was false.
+- Legal standard: Twombly's "savvy judge" sentence (550 U.S. at 556), and Starr's two-plausible-explanations language quoted verbatim [UNVERIFIED pin 1216].
+- Count IV: Brigham City's "seriously injured or imminently threatened" standard (547 U.S. at 400) [UNVERIFIED pin], and Mincey's "strictly circumscribed by the exigencies" for the scope prong (437 U.S. at 393, quoting Terry) [UNVERIFIED pin].
+- Count III: the statutory advisement language of § 23612(i) [UNVERIFIED text; leginfo].
+- Count I: the Hervey summary-judgment distinction (Mot. 5:19-23 confirmed), and Chism's "all bolster the case for probable cause" inference. **The Chism quote was corrected to the actual text.** Draft A's version ("served to bolster, not undermine") is not in the opinion.
+- Part H: the Lopez v. Smith "could not possibly be cured" quote [UNVERIFIED pin 1130]; Eminence Capital, 316 F.3d at 1052 [UNVERIFIED]; and Khoja on judicial notice of other courts' records (confirmed in slip text; reporter pin 999 [UNVERIFIED]).
+- Proffer: conform the FAC's "two hours" descriptions (¶¶ 1, 20, 26(a)) to ¶ 13's timestamps (00:54:36 to about 01:57:10, roughly 62 minutes).
+- Fees: costs preserved under Rule 54(d).
+
+**Rejected, and why. Do not let these migrate into any filing:**
+1. Draft A § V.C.1: "No officer knocked, called out, or otherwise attempted to rouse Plaintiff before opening the door. (Id. ¶¶ 15–16.)" The FAC doesn't say that, and the transcript shows Meza knocking from about 00:56:07 to 00:56:43. **False statement of fact; Rule 11.**
+2. Draft A § V.C: "Defendants concede … that opening the door … was a search." They don't. The motion only assumes it for argument (Mot. 8:14-16).
+3. Draft A quotes the motion as saying the refusal "further supported" probable cause (Mot. 11), "signs of impairment" (Mot. 6), and "open containers of alcohol" / "believed" (Mot. 13). **None of those phrases appears in ECF 22.**
+4. Draft A misquotes Chism (see above).
+5. Draft A says "Defendants' remaining cases involved … 911 calls, visible injuries, or ongoing violence." Defendants cite only Mincey for emergency aid.
+6. Both drafts argue the odor entry was never perceived (Draft A Intro, §§ A.1, C.2, E; Conclusion's "sober-appearing"). Given the produced 0.073 g% result, **don't advocate odor falsity or sobriety** (Rule 11(b)(3)).
+7. Pins I couldn't verify: Benavidez (ledger UNVERIFIED), Sialoi 1231–33, and Nieves 398–99, 404.
+8. Both drafts defend Counts II and VI in full. This draft keeps non-opposition with leave. If you'd rather fight, Draft A's §§ B and D are the best versions. Fix the Chism and Bell v. Burson pins first, and know that Draft A's Count VI section highlights that Defendants didn't raise the protected-activity problem.
