@@ -110,3 +110,21 @@ Sources: `opposition-to-motion-to-dismiss-clean.pdf` (the parallel markdown draf
 - Proffer item 1 now states the corrected sequence (awakened by knocking; "Open the window" at 00:56:40; door opened at 00:56:43 before he could comply; first welfare question after entry). Gate G1 is resolved on Plaintiff's firsthand account plus the transcript. Native-video confirmation of 00:55:50-00:57:05 remains best practice before filing.
 
 **Still deliberately excluded:** the 36-second knocking duration, the can, the rear-seat search, parole status, toxicology, and early "parking lot" answers. Adverse authority to know about (not cited, and Defendants didn't cite it): *Mardis v. Superior Court* (1963) 218 Cal.App.2d 70 (opening a sleeping person's car door in a highway context).
+
+## Plaintiff's Westlaw cite-check (Matter32-Cite-Check-and-MTD-Analysis.pdf, Oct. 26): applied Oct. 27
+
+**Applied:**
+- **Franklin v. Murphy removed** (KeyCite RED, abrogated by Neitzke). Akhtar, Lopez, and Eminence carry the point.
+- **Galbraith removed** (KeyCite "Abrogation Recognized," including in Newanforbi v. Barocio, 2026 WL 1389969, Plaintiff's own Matter 18). Elements are now cited to Chism, 661 F.3d at 386; the pleading standard to Iqbal at 678.
+- **Nieves and Bostock removed** from Part F and the proffer (don't teach Defendants the probable-cause bar they under-briefed).
+- **Eminence now leads** the leave-to-amend paragraph; Lopez is secondary.
+- **Motion errors added to Part A:** the "[or search]" insertion into the Devenpeck quotation (Mot. 9:10-12; confirmed in R001); the FAC ¶ 16 cite for the urine identification, which is ¶ 17 (Mot. 9:1-2); and the Iqbal 667/678 pin.
+- **Ngumezi strengthened** with the bright-line sentence (verbatim, saved opinion lines 311-313) and the "modest" intrusion line (lines 299-301), citing New York v. Class, 475 U.S. at 115 (pin as cited in Ngumezi).
+
+**Not applied, with reasons:**
+- **"Non-verbatim Ngumezi quotes."** The saved opinion (`03-authorities/Ngumezi-980-F3d-1285.pdf`, lines 285-288) reads verbatim "Willmes entered the interior space of the vehicle when he leaned in across the plane of the door. As several recent Supreme Court decisions have confirmed, that physical intrusion is constitutionally significant." Both quotes stay. If the bound F.3d text differs from the slip opinion, recheck against the reporter.
+- **"Grier is unpublished."** The saved opinion's first line reads "FOR PUBLICATION." Grier stays; add the F.4th reporter cite [UNVERIFIED].
+- **Spencer, Sialoi, Thomas additions:** Count II is conceded, so Spencer isn't needed. Sialoi and Thomas pins were unconfirmed in the report itself; Lopez and Prescott carry those points.
+- **Zamani "called into doubt" (Hilton):** kept. The brief uses it only for the discretionary "need not consider" proposition.
+
+**Open from the report:** reconcile with the separate `final/Opposition-to-MTD-ECF22.pdf` lineage mentioned in its § 6 (not in this repository).
