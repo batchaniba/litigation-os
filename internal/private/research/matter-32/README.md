@@ -4,6 +4,7 @@ Private, branch-only research room for Nforbi v. Meza-Gonzalez and Melano, N.D. 
 
 ## Start here
 
+- **Apodictic stress test (Oct. 27):** `12-apodictic/` has the dialectical audit and red-team memo for opposition draft v2. Verdict WARRANTED, 0 Must-Fix; the Count IV and Count III corridors are flagged. See `12-apodictic/SYNTHESIS.md`.
 - **Opposition DRAFT v2 (pleading paper, signature image):** `11-opposition-filing-draft/` holds the PDF, the text, and `REVIEW-NOTES.md`, built by `internal/scripts/matter32-opposition-mtd-pleading.py`. It differs from the filing-shaped draft above on Counts II and VI (non-opposition with leave), on the signature (image, not /s/), and on its authority set. See REVIEW-NOTES.md.
 - **Filing-shaped opposition draft:** `04-workshop/opposition-to-motion-to-dismiss-draft.md` is the current court-facing draft. It answers every section of ECF 22, leads with the time-sequenced entry/search theories, preserves claim-specific alternatives, corrects known record problems only through a targeted amendment proffer, and includes a removable filing checklist. It is not ready to file until the reassignment, live deadline, original video, citations, and typesetting are verified.
 - **Controlling synthesis:** `04-workshop/opposition-deep-research-analysis.md` converts the record into claim triage, corrected-affidavit analysis, a conduct-specific immunity map, an adversarial-leakage audit, amendment proffer, page budget, and ranked completion plan.
