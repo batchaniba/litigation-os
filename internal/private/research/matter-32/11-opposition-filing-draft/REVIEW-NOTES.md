@@ -95,3 +95,18 @@ Sources: `opposition-to-motion-to-dismiss-clean.pdf` (the parallel markdown draf
 - **Standard-of-review language** taken from the order (a court's own citations, which corroborate the pins): Hebbe, 627 F.3d at 342 ("construe the pleadings liberally . . . to afford the petitioner the benefit of any doubt," cleaned up); Franklin v. Murphy, 745 F.2d 1221, 1235 n.9; Lopez v. Smith, 203 F.3d at 1130-31.
 - **Deliberately not used:** the order's recital of "incarceration at Santa Rita Jail for approximately five days" (Serrato complaint ¶ 22; the Matter 20 Answer disputes custody details), and its reference to "four material fabrications," which includes the Beverage Present item.
 - **Risk:** Judge Breyer has a motion to dismiss pending in *Serrato* (hearing Nov. 20, 2026). If he dismisses before our reply, the screening order's persuasive weight drops. Check the Serrato docket before filing and adjust the sentence if needed.
+
+## Count IV / Count III repair pass (Oct. 27, after the Apodictic stress test)
+
+**Sources read first:** Matter 20 `09-TRANSCRIPT-RECONCILIATION-AND-DOOR-OPENING.md` (branch `agent/matter-20-whitman-next-actions-2026-10-23`), which records Plaintiff's firsthand account that the knocking woke him and the door opened before he could lower the window. Also the 19-page Exhibit A transcript (hash 3750927a…) and `04-workshop/chp-video-transcript-timing-audit.md`, which confirms the Library copy and the branch copy have identical event lines.
+
+**Changes:**
+- Count IV: the brief no longer recasts FAC ¶ 16 as "resting." It argues sleep is not distress; drops "It wasn't here earlier" from the no-emergency list (it can support a welfare rationale); fits Ngumezi to the pleaded opening (00:56:43) plus the reach-in (00:58:49, FAC ¶¶ 17, 60); answers Ngumezi's "particularized justification" language; removes the unsupported burden statement; and points to the corrected door sequence in the proffer.
+- Count IV QI: notes the motion makes no entry-specific clearly-established argument (Mot. 12:7-13:21; Zamani for reply), then the merits standards.
+- Count III: the totality now includes every pleaded fact Defendants rely on (asleep in the driver's seat on the shoulder near 1:00 a.m., the cup suspicion, FSTs administered). The PAS sequence is recast in objective terms (no new fact; refusal can't supply PC). The QI paragraph engages Defendants' Rosenbaum arguable-PC standard (pin 1076 as cited in Mot. 12:14-18 [UNVERIFIED]).
+- Count I: cites FAC ¶ 30. The omission is phrased as "the cup suspected of holding alcohol."
+- Count V: "Facts discovered in a later search cannot justify the search that produced them."
+- **Rule 11 removal:** the draft no longer says "the only suspected 'beverage' had been identified as urine." The transcript shows a Mike's Hard Lemonade can found in a rear-seat search at 00:59:46 to 01:00:09. The brief doesn't mention the can (it isn't pleaded), but it no longer makes a statement the can contradicts.
+- Proffer item 1 now states the corrected sequence (awakened by knocking; "Open the window" at 00:56:40; door opened at 00:56:43 before he could comply; first welfare question after entry). Gate G1 is resolved on Plaintiff's firsthand account plus the transcript. Native-video confirmation of 00:55:50-00:57:05 remains best practice before filing.
+
+**Still deliberately excluded:** the 36-second knocking duration, the can, the rear-seat search, parole status, toxicology, and early "parking lot" answers. Adverse authority to know about (not cited, and Defendants didn't cite it): *Mardis v. Superior Court* (1963) 218 Cal.App.2d 70 (opening a sleeping person's car door in a highway context).
