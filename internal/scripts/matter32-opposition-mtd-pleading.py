@@ -405,8 +405,10 @@ def render(out_path: Path, toc_pages: dict, toa_pages: dict,
     d.blank_line()
     d.write_wrapped(HEARING_LINE, first_indent=0)
 
-    # Table of contents
-    d.start_new_page()
+    # Table of contents: two lines below the hearing paragraph
+    d.blank_line()
+    d.blank_line()
+    d.ensure_space(4)
     d.write_line("TABLE OF CONTENTS", bold=True, center=True)
     d.blank_line()
     for ctype, text in CONTENT:
@@ -417,8 +419,10 @@ def render(out_path: Path, toc_pages: dict, toa_pages: dict,
         toc_row(d, label, str(toc_pages.get(label, "0")), bold=(level == "roman"),
                 indent=(0 if level == "roman" else 18))
 
-    # Table of authorities
-    d.start_new_page()
+    # Table of authorities: two lines below the table of contents
+    d.blank_line()
+    d.blank_line()
+    d.ensure_space(4)
     d.write_line("TABLE OF AUTHORITIES", bold=True, center=True)
     d.blank_line()
     current_cat = None
