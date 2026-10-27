@@ -293,17 +293,6 @@ def hanging(d, label: str, text: str, label_x: float, text_indent: float, bold: 
     d.write_wrapped(f"<<b:{text}>>" if bold else text, indent=text_indent, first_indent=0)
 
 
-def signature_lines() -> list[str]:
-    return [
-        f"Dated: {SIGN_DATE}",
-        "",
-        "Respectfully submitted,",
-        "___________________________________",
-        PLAINTIFF_NAME,
-        "Plaintiff, In Pro Per",
-    ]
-
-
 def render(out_path: Path, toc_pages: dict, toa_pages: dict,
            capture: dict | None = None, cites: dict | None = None) -> int:
     out_path.parent.mkdir(parents=True, exist_ok=True)
@@ -361,7 +350,7 @@ def render(out_path: Path, toc_pages: dict, toa_pages: dict,
         start = d.page_num
         if tag == H:
             if text.endswith("CONCLUSION"):
-                d.ensure_space(14)  # keep the conclusion with the signature
+                d.ensure_space(14)  # keep the conclusion with the signature (heading, text, 7-line block)
             else:
                 d.ensure_space(4)
             # One blank before a Roman heading, but not right after the
@@ -391,21 +380,22 @@ def render(out_path: Path, toc_pages: dict, toa_pages: dict,
                     cites.setdefault(display, set()).update(range(start, d.page_num + 1))
         prev = tag
 
-    d.ensure_space(8)
-    for line in signature_lines():
-        if line.startswith("_"):
-            d.draw_signature_image(
-                SIGNATURE_PATH, SIG_IMG_W_PX, SIG_IMG_H_PX, line,
-                width=SIG_WIDTH, right_margin_offset=SIG_RIGHT_OFFSET,
-                height_scale=SIG_HEIGHT_SCALE, above_lines=1,
-            )
-        if line == "":
-            d.blank_line()
-            continue
-        if line.startswith("Dated"):
-            d.write_line(line)
-        else:
-            d.write_line(line, right=True, right_margin_offset=SIG_RIGHT_OFFSET)
+    # Seven lines: date, "Respectfully submitted,", two lines of air for the
+    # stamp (one clear line above it), the signature rule, name, and role.
+    d.ensure_space(7)
+    d.write_line(f"Dated: {SIGN_DATE}")
+    d.write_line("Respectfully submitted,", right=True, right_margin_offset=SIG_RIGHT_OFFSET)
+    d.blank_line()
+    d.blank_line()
+    rule = "___________________________________"
+    y = d._line_y(d.current_line)
+    img_h = SIG_WIDTH * (SIG_IMG_H_PX / SIG_IMG_W_PX) * SIG_HEIGHT_SCALE
+    line_right = CONTENT_RIGHT - SIG_RIGHT_OFFSET
+    line_center = line_right - d.c.stringWidth(rule, "Times-Roman", 12) / 2
+    d.c.drawImage(SIGNATURE_PATH, line_center - SIG_WIDTH / 2, y + 3, width=SIG_WIDTH,
+                  height=img_h, mask="auto", preserveAspectRatio=False)
+    for line in (rule, PLAINTIFF_NAME, "Plaintiff, In Pro Per"):
+        d.write_line(line, right=True, right_margin_offset=SIG_RIGHT_OFFSET)
     body_last_page = d.page_num
 
     d.save()
