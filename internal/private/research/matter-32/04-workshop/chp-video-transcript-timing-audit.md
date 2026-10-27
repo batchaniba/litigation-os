@@ -2,9 +2,10 @@
 
 **Matter:** Nforbi v. Meza-Gonzalez and Melano  
 **Incident:** November 1, 2024  
-**Audit date:** October 27, 2026  
-**Source audited:** Exhibit A, plaintiff-created CHP dashcam transcript, recording counter 00:54:36–01:57:10  
-**Source hash:** 3750927a89170c8d4702cb7dfab4d2b96fda1e31d7662ffc524e07763d1b6660  
+**Audit date:** October 26, 2026  
+**Primary branch source:** Matter 20, Exhibit A CHP transcript, 19 pages, SHA-256 3750927a89170c8d4702cb7dfab4d2b96fda1e31d7662ffc524e07763d1b6660  
+**Cross-check source:** Library copy Exhibit_A_CHP_Video_Transcript(7).pdf, 19 pages, 196,424 bytes  
+**Reconciliation source:** Matter 20, 09-TRANSCRIPT-RECONCILIATION-AND-DOOR-OPENING.md, October 23, 2026  
 **Status:** Internal attorney work product / drafting analysis. This is not a substitute for reviewing and authenticating the original video.
 
 ## Executive finding
@@ -22,6 +23,7 @@ The transcript does not support a single, undifferentiated encounter. It supplie
 The highest-value timing points are these:
 
 - The transcript places the first knock at 00:56:07 and the door opening at 00:56:43: 36 seconds.
+- The later Matter 20 reconciliation records Plaintiff's firsthand correction that the knocking woke him, he heard “Open the window” at 00:56:40, and Melano opened the door three seconds later before Plaintiff had a meaningful opportunity to lower the window. The transcript itself does not identify the exact second Plaintiff awoke.
 - The first express welfare question, “Are you okay?”, appears at 00:56:47: four seconds after the door was opened.
 - The cup is described as urine by 00:58:51 and ordered put back at 00:59:07; the order to exit follows five seconds later.
 - A bracketed entry says Melano opened the rear passenger door and searched at 00:59:46. Twenty seconds later, the transcript depicts him bringing over an empty Mike's Hard Lemonade can.
@@ -32,9 +34,15 @@ The highest-value timing points are these:
 
 The audit also reveals a material omission in the earlier synthesis: the alleged 00:59:46 rear-seat search and 01:00:06–01:00:09 hard-lemonade-can discovery. That fact cuts both ways. It may strengthen the defense's intoxication and vehicle-search narrative after discovery, but the can cannot bootstrap the legality of the search that allegedly produced it, and later-learned parole status cannot justify that earlier search.
 
+The Matter 20 reconciliation also exposes a pleading conflict that must be handled affirmatively: the filed FAC says Plaintiff remained asleep when the door opened, while Plaintiff's later firsthand correction says he had awakened from the knocking. The opposition cannot silently rewrite the FAC. The clean route is to stop repeating the “still asleep” allegation and make the corrected wake-up sequence part of a specific alternative request for leave to amend.
+
 ## 1. Source discipline
 
-This transcript is useful as a navigation index, not self-authenticating video proof. It was prepared and certified by Plaintiff, but it contains reliability warnings:
+The Matter 20 branch and the separately stored Exhibit_A_CHP_Video_Transcript(7).pdf were compared event by event. Both contain 347 timestamped event lines in the same order with no substantive event-line differences. The Library copy has different file bytes and size, but it does not supply a newer chronology. The fresher value in Matter 20 is the October 23 reconciliation memo and its preserved firsthand wake-up correction, not a changed timestamp sequence.
+
+Matter 20 also identifies a 15-page standalone CHP Transcript.pdf in the repository document index. The hash-preserved branch source and the 19-page Library copy remain the versions directly checked in this pass; any 15-page version should be compared before it is separately cited.
+
+The transcript is useful as a navigation index, not self-authenticating video proof. It was prepared and certified by Plaintiff, but it contains reliability warnings:
 
 - a wrong or unexplained name at the door-opening event (“Officer Joselyn Melano” rather than Jose Melano);
 - duplicated and misaligned page numbering;
@@ -67,9 +75,9 @@ The source text contains at least these order inversions:
 | Officers peer with flashlights | 00:56:05 | +0:28 | Visual observation begins | “Appearing to search” is the transcriber's inference |
 | First knock / prior-pass statement | 00:56:07 | +0:02 | Knocking and “wasn't here earlier” | Prior-pass fact may support welfare rationale |
 | “I think it's booze” | 00:56:09 | +0:02 | Investigative suspicion stated before entry | Relevant to purpose, but not conclusive of subjective or objective legal basis |
-| Continued knock | 00:56:30 | +0:21 | Knocking persists | Defense emergency-aid fact; precise number/intensity unknown |
-| “Open the window” | 00:56:40 | +0:10 | Verbal request | Three seconds before opening |
-| Passenger door opened | 00:56:43 | +0:03 | Physical entry point | 36 seconds after first knock; actor/name must be verified |
+| Continued knock | 00:56:30 | +0:21 | Knocking persists | Plaintiff's later recollection says the knocking woke him; transcript gives no precise wake second |
+| “Open the window” | 00:56:40 | +0:10 | Verbal request | Plaintiff says he heard it; only three seconds elapsed before opening |
+| Passenger door opened | 00:56:43 | +0:03 | Physical entry point | 36 seconds after first knock; Plaintiff says no meaningful chance to lower window; actor/name and visible response must be verified |
 | First welfare question | 00:56:47 | +0:04 | “Are you okay?” | Appears after opening, not before |
 | Cup question | 00:58:34 | +1:47 | “What's in that cup?” | Begins object-specific inquiry |
 | Request to inspect cup | 00:58:49 | +0:15 | “Let me see” | Does not itself prove consent or seizure mechanics |
@@ -107,17 +115,23 @@ The source text contains at least these order inversions:
 
 ## 3. Door-opening analysis: what the 36 seconds does and does not establish
 
-The transcript supports a defense-friendly fact that must not be omitted: officers knocked for approximately 36 seconds before the door was opened. It also supports a plaintiff-friendly fact: the first transcribed express welfare question occurs four seconds after the door opened. Before entry, the recorded statements are about the rental vehicle, prior observation, suspected “booze,” something noticed inside, continued knocking, and an instruction to open the window.
+The transcript supports a defense-friendly fact that must not be omitted when the door-opening sequence is properly at issue: officers knocked for approximately 36 seconds before the door was opened. The Matter 20 reconciliation adds Plaintiff's firsthand account that the knocking woke him, he heard the instruction to open the window at 00:56:40, and the door was opened three seconds later before he could lower it. The transcript supports the three-second interval but does not identify the precise wake-up moment or visibly prove an attempted reach for the window switch.
 
-The correct argument is not that the officers made no effort to wake Plaintiff. They did. Nor does the sequence conclusively disprove emergency aid. The strongest supportable formulation is:
+It also supplies a plaintiff-friendly fact: the first transcribed express welfare question occurs four seconds after the door opened. Before entry, the recorded statements concern the rental vehicle, prior observation, suspected “booze,” something noticed inside, continued knocking, and the instruction to open the window.
+
+The strongest supportable formulation is:
 
 - approach, illumination, and knocking were lawful welfare-check measures;
-- the transcript does not contain an express medical or safety inquiry before entry;
-- the officers' pre-entry words include an apparent evidentiary suspicion;
-- the exact visible facts—breathing, movement, posture, window condition, traffic exposure, and response to knocks—control whether immediate entry at 36 seconds was objectively reasonable; and
-- the original video, not the transcriber's bracketed gloss, is essential to that determination.
+- Plaintiff no longer maintains as a matter of fact that he remained asleep until the door opened;
+- the officer directed the occupant to open the window and waited only three seconds before opening the door;
+- the transcript contains no express medical or safety inquiry before entry;
+- the pre-entry words include an apparent evidentiary suspicion;
+- the objective question is whether visible facts at 00:56:43 required immediate physical access rather than allowing compliance with the officer's own instruction; and
+- the original video must establish breathing, movement, posture, window condition, traffic exposure, response to knocks, and the physical scope of entry.
 
-**Do not do the defense's job:** do not lead the opposition with the 36-second knocking period unless the defense or a properly considered source puts it in issue. If it must be addressed, concede it accurately and argue the remaining objective-fact dispute. Omitting it while quoting the after-entry welfare question would create an avoidable credibility problem.
+This creates a stronger merits theory but a sharper pleading problem. FAC paragraph 16 says Plaintiff was still asleep. An opposition cannot replace that allegation with a new account. Use the filed allegation only for the Rule 12 posture; do not repeat it as present factual truth. In the alternative leave section, identify the corrected allegation precisely: Plaintiff awoke from knocking, heard the window command, had three seconds or less to respond, did not consent to door opening, and was denied a meaningful opportunity to comply.
+
+**Adversarial-use rule:** do not gratuitously foreground the 36-second period or the pleading conflict. If the entry claim or emergency-aid theory requires the sequence, disclose the complete local chronology and pair the correction with a concrete amendment proffer. Selectively quoting only the post-entry welfare question would create a credibility problem.
 
 ## 4. Cup, initial rear-seat search, and can discovery
 
@@ -253,15 +267,16 @@ The answer is not concealment. It is relevance discipline. The opposition must d
 Avoid these formulations:
 
 1. **“The video proves there was no emergency.”** The transcript alone does not show all visible facts, and 36 seconds of knocking is material.
-2. **“Plaintiff was never confused.”** The early answers are inconsistent with that absolute claim.
-3. **“The cup eliminated all alcohol suspicion.”** The transcript later depicts a hard-lemonade can, and other claimed observations remain disputed.
-4. **“All FSTs were invalid because the shoulder was uneven.”** The officers' terrain discussion is specifically tied to the walk-and-turn.
-5. **“The arrest was unlawful because it happened 18 seconds after refusal.”** The arrest command appears after one second; timing is evidence, while independent probable cause remains the legal test.
-6. **“Parole authorized the search.”** That statement would concede away the earlier search despite the transcript showing status learned later.
-7. **“The first chemical refusal occurred at 01:22:15.”** The answer is not clearly transcribed; use 01:38:08–01:38:09 as the clearest event unless video establishes an earlier refusal.
-8. **“The transcript is verbatim and synchronized.”** Its internal anomalies make that categorical representation unsafe without correction.
-9. **“Melano had not searched before 01:14:56.”** “I haven't checked yet” is ambiguous and may concern inventory or valuables.
-10. **“The warrant process is shown on the dashcam.”** The recording ends before the reported 02:30 affidavit and 02:34 warrant.
+2. **“Plaintiff remained asleep until the door opened.”** The Matter 20 reconciliation records the opposite firsthand account. Do not repeat the known conflict as current truth; route the correction through a specific leave-to-amend proffer.
+3. **“Plaintiff was never confused.”** The early answers are inconsistent with that absolute claim.
+4. **“The cup eliminated all alcohol suspicion.”** The transcript later depicts a hard-lemonade can, and other claimed observations remain disputed.
+5. **“All FSTs were invalid because the shoulder was uneven.”** The officers' terrain discussion is specifically tied to the walk-and-turn.
+6. **“The arrest was unlawful because it happened 18 seconds after refusal.”** The arrest command appears after one second; timing is evidence, while independent probable cause remains the legal test.
+7. **“Parole authorized the search.”** That statement would concede away the earlier search despite the transcript showing status learned later.
+8. **“The first chemical refusal occurred at 01:22:15.”** The answer is not clearly transcribed; use 01:38:08–01:38:09 as the clearest event unless video establishes an earlier refusal.
+9. **“The transcript is verbatim and synchronized.”** Its internal anomalies make that categorical representation unsafe without correction.
+10. **“Melano had not searched before 01:14:56.”** “I haven't checked yet” is ambiguous and may concern inventory or valuables.
+11. **“The warrant process is shown on the dashcam.”** The recording ends before the reported 02:30 affidavit and 02:34 warrant.
 
 ## 12. Amendment-ready chronology
 
@@ -269,16 +284,17 @@ If amendment becomes necessary and original-video verification confirms the even
 
 1. Officers stopped behind the vehicle at approximately 00:55:37 and began looking through the windows by approximately 00:56:05.
 2. The recorded audio includes a first knock at approximately 00:56:07, a statement “I think it's booze” at approximately 00:56:09, and continued knocking through approximately 00:56:30.
-3. The passenger door was opened at approximately 00:56:43; the first transcribed “Are you okay?” occurs at approximately 00:56:47.
-4. Melano requested and physically handled the cup at approximately 00:58:49, identified it as urine by approximately 00:58:51, and directed that it be put back at approximately 00:59:07.
-5. Meza-Gonzalez ordered Plaintiff from the vehicle at approximately 00:59:12.
-6. At approximately 00:59:46, Melano opened the rear passenger door and searched the back-seat area; by approximately 01:00:06 he displayed a Mike's Hard Lemonade can. The pleading must allege whether the can was visible before the search, where it was located, and how it was obtained.
-7. Plaintiff correctly identified Livermore at approximately 01:00:41 after earlier groggy or mistaken answers.
-8. The FST sequence ran from approximately 01:05:07 to 01:10:30, with test-specific allegations rather than a global pass/fail label.
-9. Plaintiff declined the voluntary PAS at approximately 01:11:15; Meza-Gonzalez began the arrest command at approximately 01:11:16 and handcuffed him by approximately 01:11:33.
-10. Dispatch first reported parole/registration status at approximately 01:11:42.
-11. Post-arrest chemical-test requests began at approximately 01:15:54; the clearest recorded chemical-test refusal occurred at approximately 01:38:08–01:38:09.
-12. The recording ended at approximately 01:57:10, before the later warrant affidavit and issuance.
+3. Plaintiff awoke from the knocking and heard the instruction “Open the window” at approximately 00:56:40; Melano opened the passenger door approximately three seconds later, before Plaintiff had a meaningful opportunity to lower the window. This allegation rests on Plaintiff's firsthand account plus the recorded three-second interval and must be conformed to the original video.
+4. The first transcribed “Are you okay?” occurs at approximately 00:56:47, four seconds after the door opening.
+5. Melano requested and physically handled the cup at approximately 00:58:49, identified it as urine by approximately 00:58:51, and directed that it be put back at approximately 00:59:07.
+6. Meza-Gonzalez ordered Plaintiff from the vehicle at approximately 00:59:12.
+7. At approximately 00:59:46, Melano opened the rear passenger door and searched the back-seat area; by approximately 01:00:06 he displayed a Mike's Hard Lemonade can. The pleading must allege whether the can was visible before the search, where it was located, and how it was obtained.
+8. Plaintiff correctly identified Livermore at approximately 01:00:41 after earlier groggy or mistaken answers.
+9. The FST sequence ran from approximately 01:05:07 to 01:10:30, with test-specific allegations rather than a global pass/fail label.
+10. Plaintiff declined the voluntary PAS at approximately 01:11:15; Meza-Gonzalez began the arrest command at approximately 01:11:16 and handcuffed him by approximately 01:11:33.
+11. Dispatch first reported parole/registration status at approximately 01:11:42.
+12. Post-arrest chemical-test requests began at approximately 01:15:54; the clearest recorded chemical-test refusal occurred at approximately 01:38:08–01:38:09.
+13. The recording ended at approximately 01:57:10, before the later warrant affidavit and issuance.
 
 These are model allegations, not filing-ready facts. They require original-video verification and reconciliation with the FAC, police reports, actual affidavit, and governing amendment procedure.
 
@@ -286,7 +302,7 @@ These are model allegations, not filing-ready facts. They require original-video
 
 The next review should be frame- and audio-specific:
 
-- 00:55:25–00:56:50: vehicle position, shoulder danger, cabin visibility, breathing/movement, number and force of knocks, window condition, response before opening, exact actor, extent of entry, and officer focus.
+- 00:55:25–00:56:50: vehicle position, shoulder danger, cabin visibility, breathing/movement, exact wake-up moment, any movement toward the window control, number and force of knocks, window condition, response before opening, exact actor, extent of entry, and officer focus.
 - 00:58:30–00:59:15: cup visibility, location, appearance, who touched it, whether permission was sought or given, reach depth, smell mechanics, replacement, and order-out.
 - 00:59:35–01:00:15: rear-door opening, search area, can location, whether visible from outside, whether moved/seized, label, condition, and chain of custody.
 - 01:00:15–01:05:07: gait, balance, speech, location response, sign visibility, and coherence.
