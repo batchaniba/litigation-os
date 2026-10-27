@@ -86,9 +86,126 @@
 
 ---
 
+## Timeline Audit (CHP video transcript × CAD / forms / FAC / MTD)
+
+**Sources re-read:** Exhibit A transcript (R183 / `3750927a…`, plaintiff-prepared, certified Mar 21, 2026; window labeled 00:54:36–01:57:10); Matter 20 video descriptions (Oct 23, 2026); Incident Log 241101GG0064 (Ex 3); Beat sheet (Ex 4); CHP 415 Meza (Ex 8) & Melano (Ex 11); Exhibit 5 CHP 202/DS 367/warrant affidavit (AGO packet); Arrest Report narrative; FAC ECF 5 ¶¶ 1, 14–33, 48–69; ECF 22 sequence pp. 9–13.  
+**Discipline:** Transcript is **not** a substitute for the original MP4 (`7659@20241101005536-0.mp4`). Bracketed actions and disputed timing need **video confirmation**. Per **Where We Did Their Job For Them**, facts that help the defense stay **INTERNAL** unless already in the FAC or necessary candor. Do not dump the full adverse mosaic into the Opposition.
+
+### Master timeline (Nov 1, 2024)
+
+| Clock | Event (exact / near-exact quote) | Source | Claim / MTD hook | In FAC? | Notes |
+|---|---|---|---|---|---|
+| ~00:54:36 | Patrol approaches I-580 E Tesla on shoulder | Tr. I; Video desc. | Approach | ¶14 context | VIDEO CONFIRM |
+| 00:55:25–37 | Pull onto shoulder; full stop; audio on | Tr. | Approach | ¶14 | |
+| **00:55** | Report: on duty, welfare check start; Beat: PA activity EB 580 WO Isabel, 22651(h)(1), elapsed **2:35** | Arrest rpt; Beat Ex 4 | Welfare vs investigation | FAC says asleep/parked ¶¶1,14 | Beat start aligns video; CAD “arrived” does **not** (below) |
+| 00:55:53 | Melano: **“It's a rental. Huh.”** | Tr. | Pre-contact observation | **¶14** | Investigatory remark before contact |
+| 00:56:00–05 | Flashlights; peering into windows | Tr. | Window view / search prelude | **¶14** | |
+| **00:56:09** | Melano: **“I think it's booze.”** | Tr. | **Investigatory intent before aid words**; MTD crime/emergency | **¶15** | Printed **before** 00:56:07 knock line — stamp order anomaly |
+| 00:56:07 | Melano: “It wasn't here earlier when we passed by.”; Meza begins knocking passenger window | Tr. | Knock / wake attempt | **¶14** | VIDEO: knock duration |
+| 00:56:30 | Melano: “Oh look at this.”; knocking continues | Tr. | Pre-door | ¶14–15 | |
+| 00:56:40 | Melano: “Open the window.” | Tr. | Pre-door | | |
+| **00:56:43** | **Passenger door opened by Melano** (Tr. action: “Officer Joselyn Melano”) | Tr. | **Door search (Ngumezi)**; MTD emergency aid / Mincey | **¶16** | Name anomaly **Joselyn≠Jose**; VIDEO: who/which door/asleep? |
+| **00:56:46–47** | Melano: “Hello.” / Pl: “Uh-huh.” / Melano: **“Are you okay?”** | Tr. | First welfare words **after** door | **¶16** (asleep at open) | **Sequence defeats pure aid-first narrative** |
+| 00:56:48–58 | Pl: “Yeah, we good.” / “We're good…” | Tr. | Responsiveness | ¶16–18 | |
+| 00:57:05–11 | “Where were you coming from?” / Pl: “a party.” | Tr. | Totality / affidavit | ¶s later; affidavit | **INTERNAL** party travel if not needed |
+| 00:57:30–58 | Duration parked; Pl: “parking lot”; Meza: “This is not a parking lot.”; dash “12:57 a.m.”; Pl: “5-7 minutes” | Tr. | Orientation / affidavit | FAC challenges “confused” **¶26(c)** | **INTERNAL** parking-lot quote for defense; FAC already frames orientation |
+| 00:58:06–38 | Alone? Driving? Drink? Pl: **“Zero.”** / “No, no.” | Tr. | Denial already on tape | Affidavit includes denial | |
+| **00:58:49–00:59:07** | Melano seizes cup: **“No this is piss. This is pee.”** / “It smells like piss.” Meza: **“No I'm not gonna smell that.”** | Tr. | **Urine ID ~2 min after door**; dissipates open-container hypothesis; MTD says urine only upon “search” | **¶¶17–18** | MTD miscites ¶16 for urine |
+| 00:59:12–25 | Exit vehicle commanded | Tr. | Detention expands | ¶19 | |
+| ~00:59:46 | Melano opens rear/backseat; search while Pl escorted | Tr. bracket | Continuing search after urine ID | **¶¶60–61** | VIDEO CONFIRM |
+| **01:00:09** | Melano: **“Mike's Hard Lemonade. Source alcohol.”** (empty can) | Tr. | Post-exit search find | Not emphasized in FAC | **INTERNAL** — helps defense open-container/odor narrative |
+| 01:00:40–44 | “You know where you're at?” Pl: “Livermore.” Reads highway signs | Tr. | Orientation | **¶26(c)** | |
+| 01:01:21–01:05:00 | Truck-driver fatigue explanation; pre-diabetes; hotdog; last sleep ~7 min; Meza: “right now it's 1 AM” | Tr. | Medical / fatigue | Open Q medical disclosure | |
+| 01:05:07–01:07:04 | HGN / “Eyes test” | Tr. | FST | ¶19 | |
+| 01:07:34–01:08:45 | Romberg / modified balance; Pl signals ~01:08:40 | Tr. | FST | ¶19; report claims 43s | Report vs video — VIDEO |
+| 01:09:14–01:10:30 | One-leg offered; Pl questions difficulty; Melano: uneven freeway ground — **skip walk-and-turn** | Tr. | Incomplete FSTs | **¶19, ¶27** | |
+| **01:10:33–01:10:58** | PAS admonition; “**You're not required to do this.**” | Tr. | PAS voluntary | **¶¶21–22** | |
+| **01:11:03** | Meza: “If you choose to not consent … **it'll be up to my discretion** whether I put you under arrest for DUI or not.” | Tr. | Retaliation / but-for | **¶22** | |
+| **01:11:15–16** | Pl: “I don't consent.” Meza: “turn around… hands behind your back.” | Tr. | **~18 sec refusal→arrest** | **¶¶23–24, 50** | |
+| 01:11:33–42 | Handcuffs; dispatch parole/290 | Tr. | Arrest moment | ¶24 | |
+| **01:12** | Report arrest time **0112**; CAD 01:12:33 “1015 AT 0112*****” | Rpt; Log Ex 3 | Arrest clock | FAC uses video 01:11:15–33 | Conflict: video vs 0112 vs CAD |
+| 01:12:54+ | Pat-down; inventory ask; Pl in rear of patrol car ~01:15:06 | Tr. | Post-arrest | | |
+| 01:15:54–01:22:15 | Chemical breath/blood choice; DMV suspension warning; Pl refuses | Tr. | Implied consent / refusal | ¶27 | Distinct from PAS |
+| 01:18:34–01:23:26 | Melano vehicle search (parole); “piss everywhere”; “**you want to start your warrant?**” | Tr. | Warrant path begins on scene | ¶29 | |
+| 01:36:47–01:38:10 | Melano reads implied consent; Pl: “Neither?” | Tr. | Warrant confirmation | | Out-of-order stamps 01:37:32 after 01:37:39 |
+| 01:52:05 / 01:57:10 | Leave scene / Santa Rita transfer (Tr. end) | Tr. | Transport | | Video desc. forward clip to ~01:59:51 |
+| **01:04:13** | CAD: Phone pickup / **1st unit arrived** / enroute/arrived all stamped same second | Log Ex 3 | **Clock conflict** | Not in FAC | Officers already on video ~9 min |
+| 01:53:48 | CAD: “PTY IS A REFUSAL” | Log | Refusal logged | | |
+| 02:00:57 | CAD: BT via BloodBot | Log | Blood tech | | |
+| **02:30:22** | Affiant declaration time (Meza) | Ex 5 AGO 000048–49 | Warrant | ¶¶29–30 | |
+| **02:34:50** | Judge Amy Sekany warrant WAR913372 | Ex 5 | Warrant approval | ¶29 | Report: ~0234 |
+| **02:38** | Blood draw (phlebotomist Aziza Ghaleb) | Arrest rpt / Ex 5 | Compelled blood | ¶31 | ~1.5 hrs after arrest |
+| 02:46–02:50 | Facility / Rita arrival (video + CAD) | Video desc.; Log | Booking path | ¶31 | |
+| **03:25–03:26** | Booked 23152(a); CAD closed 03:27:52 | Log; rpt | Booking | ¶31 | |
+| Nov 5, 2024 | PC 851.6 Detention Certificate — “detention only… insufficient grounds” | FAC | Post-hoc reclass | **¶¶32–33, 51** | Evidence/FAC |
+
+**Odor on recording:** No officer says they smell alcohol on Plaintiff or from his breath during the transcribed roadside audio. Verbalized smell words: Melano cup = piss; Meza refuses to smell cup. “Booze” = cup hypothesis at 00:56:09. “Mike's Hard Lemonade” = empty can narrative at 01:00:09. Written “strong distinct odor” appears in DS-367/arrest report/affidavit — **after** the encounter, not timed as a spoken on-scene observation.
+
+**Supervisor / counsel:** Transcript has Melano calling Meza “boss,” and Pl asking if advisement is Miranda — **no Plaintiff request for a supervisor or counsel** on this transcript. FAC retaliation is framed as PAS statutory-right exercise (¶¶64–69), not supervisor-request speech.
+
+### (a) Sequencing that defeats MTD on its own FAC cites
+
+1. **Aid vs investigatory intent (MTD Mincey / emergency; FAC ¶¶15–16).** On the recording Melano says **“I think it's booze” (00:56:09)** and peers with flashlights **before** door open (00:56:43) and **before** “Are you okay?” (00:56:47). MTD cites FAC ¶16 for emergency door-opening while asleep; the same FAC ¶15 (which MTD also cites for the booze remark) places investigatory cup hypothesis first. Knocking occurred, but first welfare question is post-entry.
+2. **MTD urine-after-odor sequence is backwards (MTD pp. 12–13 steps 4–5).** MTD lists report odor/slur (step 4, citing “¶16 p.8:5-11”) **then** urine ID (step 5, ¶17). Actual FAC/transcript: urine ID **00:58:49–00:59:07**; odor is a **later written** claim never verbalized on video (FAC ¶26(a)). Cite ¶16 for urine is wrong — ¶16 is door open; urine is ¶17. Page “8:5-11” does not match conformed FAC ¶16 location (p.5).
+3. **MTD “urine only upon search” (citing ¶16).** Cup ID as urine occurs in the open doorway interaction ~2 minutes after door open (¶17), not as a delayed post-search revelation that somehow restores booze PC. Continuing search **after** urine ID is the FAC ¶¶60–61 point.
+4. **PAS → discretion → 18-second arrest (MTD retaliation; FAC ¶¶22–24, 50).** “Up to my discretion” (01:11:03) then refusal (01:11:15) then cuffing command (01:11:16). Temporal sequence is pleaded and on tape.
+5. **No on-tape odor to bridge door→arrest (MTD PC / deception).** MTD leans on report odor; FAC ¶26(a) + transcript show officers narrate rental/booze/piss/Mike's but **never** narrate smelling alcohol on Plaintiff before arrest.
+
+### (b) Timestamp / source conflicts
+
+| Conflict | Detail |
+|---|---|
+| Transcript print order | 00:56:09 “booze” printed before 00:56:07 knock; 00:57:35 before 00:57:30; 00:58:34 before 00:58:30; 01:37:32/34 after 01:37:39 |
+| Pagination | Headers flip “Page X of 19/20” |
+| Speaker label | Door action attributes “Joselyn Melano” (Jose) |
+| CAD vs video | Log “arrived” **01:04:13** vs video stop ~**00:55** / door **00:56** |
+| Arrest clocks | Video **01:11:15–33**; report **0112**; CAD note **01:12:33** “1015 AT 0112” |
+| Incident vs arrest time fields | Report: arrest 0112 / incident 0055 |
+| Transcript end vs MP4 | Tr. 01:57:10 vs forward dashcam ~01:59:51; gap to 02:46 facility clip |
+| Warrant / blood | Affiant 02:30:22; warrant **02:34:50**; blood **0238** |
+| Duration claim | Some descriptions “two-hour dashcam” vs Tr. span ~1:02:34 of labeled window |
+
+### (c) INTERNAL — helps defense (do not volunteer in Opposition)
+
+- Empty **Mike's Hard Lemonade** can narration (01:00:09) after exit.
+- Party travel, “parking lot,” groggy early answers, 21+ wristband (report/affidavit).
+- Report’s Romberg **43 seconds** claim; incomplete FSTs still leave HGN/Romberg in play.
+- Beat/CAD documenting a long DUI/welfare event; partners on same 415 shift.
+- **Ethanol 0.073 ± 0.004** in Exhibit 5 lab materials — **powerful adverse; INTERNAL only** (candor if Court somehow has it on this motion is different from volunteering it). Later tox ≠ PC at 01:11, but do not arm reply.
+- Affidavit remainder (sleep, freeway, party, driving, refusal) — keep in workbench, not opposition mosaic.
+
+### (d) FAC vs transcript — must-fix / video gates before amendment
+
+| FAC allegation | Transcript tension | Action |
+|---|---|---|
+| ¶15: booze remark “before any welfare observation” | Knocking may already be underway (00:56:07); “Are you okay?” is later | Soften to “before any welfare **question** / before Plaintiff awake” after video |
+| ¶16: still asleep when door opened | Report: knocked → woke → contacted through open door; Tr. has knock then door then Hello | **VIDEO CONFIRM** asleep-at-open |
+| ¶26(a)/odor theory | Correct that no alcohol-odor narration; do not overclaim “camera proves no odor” | Keep ¶26(a); apply camera-cannot-smell reframe from Job audit |
+| Retaliation if any draft relied on supervisor request | **No supervisor/counsel request by Plaintiff on this transcript** | FAC as filed uses PAS statutory right — do not add supervisor facts you cannot prove |
+| ¶19 Melano “administered” some FSTs | Meza leads FSTs; Melano comments / skips walk-and-turn | Clarify personal participation |
+| Beverage checkbox (elsewhere) | Breath-odor field | Already flagged — correct |
+
+### (e) Timing facts worth adding in a proposed amendment
+
+1. Knock → door → **“Are you okay?” after entry** sequence with timestamps.
+2. Explicit: Melano’s **“I think it's booze”** precedes any welfare question (investigatory purpose).
+3. Urine ID timestamps **before** exit, FSTs, PAS, and arrest — and MTD’s odor-before-urine ordering is false.
+4. **No verbalized alcohol odor** on continuous roadside audio through arrest; contrast written DS-367/report/affidavit.
+5. PAS advisement + “discretion” + **≤18 seconds** to cuffing command.
+6. Melano: door open, urine ID, post-exit search, warrant prompt (“start your warrant?”).
+7. Clock reconciliation table: video / 0112 / CAD 01:04 & 01:12 / warrant 02:34 / blood 02:38 / book 03:25.
+8. Optional: Detention Certificate Nov 5 reclassification (already ¶¶32–33) tied to timing of “insufficient grounds.”
+
+### Opposition use (narrow)
+
+Lead with **pleaded** FAC timestamps defendants already cited (¶¶15–17, 22–24). Use transcript only to show MTD’s own sequence is internally inconsistent with those paragraphs. Do **not** attach a second-by-second evidence dump or the INTERNAL column to the brief.
+
+
+---
+
 ## 1. Executive strategy and recommended 25-page architecture
 
-> **Drafting discipline:** See **Where We Did Their Job For Them** above. Risk ratings below are internal allocation only. Do not import volunteered Nieves/Rule 41/Albright/Broam, full AGO 000048–49 remainder, transcript anomalies, or defeatist “HIGH = lose” tone into the filed Opposition.
+> **Drafting discipline:** See **Where We Did Their Job For Them** above. Risk ratings below are internal allocation only. Do not import volunteered Nieves/Rule 41/Albright/Broam, full AGO 000048–49 remainder, INTERNAL timeline defense facts (Mike’s can, 0.073 tox, parking-lot mosaic), raw transcript anomalies as admissions, or defeatist “HIGH = lose” tone into the filed Opposition.
 
 ### Core theory
 Treat ECF 22 as an attempt to collapse four temporally distinct intrusions into one presumed-justified encounter. Force claim-by-claim, time-specific analysis: (1) passenger-door opening; (2) cup/vehicle search; (3) investigatory detention / arrest; (4) blood-draw warrant / judicial deception. At Rule 12, disputed police-report facts challenged by specific FAC allegations are not automatically true merely because reports are attached or identified (Khoja; Grier n.1).
