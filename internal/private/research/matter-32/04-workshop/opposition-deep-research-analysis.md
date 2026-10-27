@@ -66,6 +66,8 @@ The governing distinction is **correction versus volunteering**:
 | Section 4.4 post-arrest chemical-test refusal | Supplies an additional probable-cause fact from outside the FAC and risks conflating post-arrest conduct with the earlier arrest | **Internal amendment analysis only.** It cannot retroactively establish probable cause for the 01:12 arrest. Address it only if the actual affidavit is properly at issue |
 | Section 4.5 limits of video on odor | The proposition is accurate, but an affirmative concession can strengthen Defendants' factual narrative unnecessarily | If needed, say the recording and surrounding circumstances support a factual dispute; do not announce in the opening that Plaintiff cannot disprove odor |
 | Sections 4.6 and 4.7 on toxicology and transcript weaknesses | Authenticates or summarizes adverse material Defendants may not be entitled to use on a motion to dismiss | **Internal only.** These are Rule 11, amendment, discovery, and summary-judgment considerations—not affirmative opposition content |
+| Transcript timing audit: 36 seconds of knocking, early confusion, hard-lemonade can, and later chemical refusal | Supplies emergency-aid, intoxication, and implied-consent facts that may be outside the Rule 12 record | Use the timing audit for verification and amendment design. Do not introduce the adverse compilation merely because it exists; if a timing point is properly at issue, disclose the full local sequence rather than a selective clip |
+| Transcript timing audit: parole status at 01:11:42 | Later status may tempt the Court to collapse all vehicle searches into one parole search | Enforce the knowledge cutoff. Status learned after the arrest and initial search cannot travel backward; analyze only later searching under any parole rationale |
 | Stage B discussion of the “strongest” emergency-aid facts | Can add factual inferences beyond the FAC and help the Court find the entry objectively reasonable | Because ECF 22 raises emergency aid, answer it—but confine the analysis to the FAC, the motion, the narrow exception, and Defendants' burden. Do not add hypothetical knocks, breathing observations, traffic conditions, or medical indicators absent from the pleadings |
 | Stage C discussion of plain view and the automobile exception | Supplies doctrinal routes ECF 22 barely or inadequately develops | State that Defendants must identify and establish a recognized exception. Do not brief every uninvoked exception or cure their lack of authority |
 | Stage D list of party travel, wristband, confusion, and other adverse facts | Assembles a stronger reasonable-suspicion totality from the warrant packet rather than the FAC | Use only facts properly alleged and properly considered. Do not import the later affidavit into the earlier detention analysis |
@@ -95,7 +97,7 @@ The following analysis advances Plaintiff's burden without supplying a new defen
 
 ### Three-tier filing rule
 
-**Tier 1 — Use affirmatively:** Khoja/Grier, separate-intrusion analysis, Ngumezi's search holding, disputed probable-cause facts, the statement and 18-second sequence, Whittlestone, and a focused amendment proffer.
+**Tier 1 — Use affirmatively:** Khoja/Grier, separate-intrusion analysis, Ngumezi's search holding, disputed probable-cause facts, the officer's statement, the one-second refusal-to-arrest-command sequence when properly in the record, Whittlestone, and a focused amendment proffer.
 
 **Tier 2 — Use only to answer ECF 22:** emergency aid, qualified immunity, no-charge fabrication, punitive damages, pro se fees, and prior litigation as relevant to futility.
 
@@ -182,9 +184,11 @@ The drug panel did not detect THC or 11-hydroxy-THC but reported THC-COOH at 3.0
 
 ### 4.7 The transcript contains adverse facts and reliability problems — internal only unless properly raised
 
-The plaintiff-created transcript reportedly reproduces groggy or confused answers, including an initial “parking lot” response; it has name, pagination, and timestamp anomalies. It is not a one-directional plaintiff exhibit.
+The plaintiff-created transcript reproduces groggy or confused early answers, including an initial “parking lot” response; it also depicts an alleged rear-seat search at 00:59:46 and discovery of a Mike's Hard Lemonade can by 01:00:06–01:00:09. Those adverse facts mean it is not a one-directional plaintiff exhibit. At the same time, the transcript places the arrest command one second after the final PAS refusal and the first dispatch disclosure of parole status after the arrest and initial vehicle search.
 
-**Opposition treatment:** Use only verified quotations from the original recording. Until then, describe the transcript as a navigation aid and treat any material quotation as unverified.
+The transcript has name, pagination, interpretive-bracket, and timestamp-order anomalies. The dedicated [CHP video transcript timing audit](chp-video-transcript-timing-audit.md) reconstructs the sequence, identifies facts that would do Defendants' or the Court's work if unnecessarily volunteered, and supplies an original-video shot list.
+
+**Opposition treatment:** Use only quotations and visible acts verified against the original recording. Until then, use the transcript as a navigation aid, keep adverse extra-record material internal unless the motion properly triggers it, and prevent later-learned facts from retroactively justifying earlier intrusions.
 
 ---
 
@@ -260,21 +264,23 @@ Probable cause exists when reasonably trustworthy facts known at the time create
 
 **Merits and QI assessment:** The surviving totality remains significant: Plaintiff was asleep in the driver's seat on an interstate shoulder after driving from an Oakland party; reportedly wore a 21+ party wristband; initially gave a confused location answer; allegedly performed tests contrary to instructions; and allegedly refused post-arrest chemical testing. The 0.073 result, though later and not part of the arrest knowledge, weakens an inference that the odor account was invented. Even if actual probable cause is disputed, a court may find arguable probable cause and qualified immunity.
 
-**PAS refusal:** Refusal of consent cannot itself establish probable cause or reasonable suspicion. See *United States v. Prescott*, 581 F.2d 1343, 1351 (9th Cir. 1978); *United States v. Krupa*, 658 F.3d 1174, 1177–78 (9th Cir. 2011). But an officer may decide to arrest after a refusal if independent facts already establish probable cause. The 18-second timing and the officer's statement are evidence of decision sequence and possible motive; they are not a substitute for the objective probable-cause analysis.
+**PAS refusal:** Refusal of consent cannot itself establish probable cause or reasonable suspicion. See *United States v. Prescott*, 581 F.2d 1343, 1351 (9th Cir. 1978); *United States v. Krupa*, 658 F.3d 1174, 1177–78 (9th Cir. 2011). But an officer may decide to arrest after a refusal if independent facts already establish probable cause. The transcript places the arrest command one second after the final refusal and handcuffing 18 seconds after it, with no new spoken observation in between. That sequence and the officer's statement are evidence of decision sequence and possible motive; they are not a substitute for the objective probable-cause analysis.
 
-### Stage F — Any vehicle search after the cup
+### Stage F — Vehicle searches after the cup
 
-The existing FAC alleges a “continuing warrantless search” but specifically describes only door entry and cup handling. That makes Count 5 vulnerable after the cup was identified. An amended pleading should identify:
+The transcript materially changes the prior issue framing. A bracketed entry depicts Melano opening the rear/back-seat passenger door and searching at 00:59:46 while Meza-Gonzalez escorts Plaintiff away. At 01:00:06 the transcript depicts Melano approaching with an empty can; at 01:00:09 he says, “Mike's Hard Lemonade. Source alcohol.” The original video must verify the search, the can's location and visibility, whether it was empty, what was moved, and how it was obtained.
 
-- the area searched;
-- the item moved, opened, seized, or examined;
-- the officer who acted;
-- the approximate timestamp;
-- Plaintiff's location and degree of restraint;
-- the exception Defendants might assert and why it had ended or did not apply; and
-- the injury or evidence caused by that search.
+This sequence cuts both ways. A lawfully observed can can strengthen suspicion from discovery forward. But the can cannot bootstrap the legality of the search that produced it, and the transcript does not report parole status until dispatch at 01:11:42—11:56 after the alleged rear-seat search and after the arrest. Later statements at 01:18:34 and 01:23:20 invoke parole and gun-safety rationales for continued searching; those rationales must be confined to conduct occurring after the officers learned the status.
 
-If no additional search occurred, Count 5 should be narrowed to the cup seizure/examination rather than overstate the record.
+The existing FAC's generalized “continuing warrantless search” remains too vague. An amendment should separate at least:
+
+1. the 00:56:43 door opening;
+2. the 00:58:49–00:59:07 cup handling;
+3. the alleged 00:59:46 rear-seat search and can discovery;
+4. any post-01:11:42 parole-based search; and
+5. any inventory or impound search.
+
+For each act, plead the area, object, actor, time, then-known facts, asserted exception, and injury. Do not allege that the urine cup was the only alcohol-related object. Do not concede that later parole knowledge authorized the earlier search.
 
 ---
 
