@@ -66,13 +66,13 @@ VII. CONCLUSION
 *Costanich v. Department of Social & Health Services*, 627 F.3d 1101 (9th Cir. 2010)  
 *Devenpeck v. Alford*, 543 U.S. 146 (2004)  
 *Garity v. APWU National Labor Organization*, 828 F.3d 848 (9th Cir. 2016)  
-*Grier v. Kizer*, 62 F.4th 828 (9th Cir. 2023) [VERIFY REPORTER/PINPOINT]  
+*In re Finjan Holdings, Inc. Securities Litigation (Grier)*, No. 21-16702 (9th Cir. Jan. 20, 2023) [VERIFY PINPOINT]  
 *Khoja v. Orexigen Therapeutics, Inc.*, 899 F.3d 988 (9th Cir. 2018)  
 *Lacey v. Maricopa County*, 693 F.3d 896 (9th Cir. 2012) (en banc)  
 *Lingo v. City of Salem*, 832 F.3d 953 (9th Cir. 2016)  
 *Lopez v. Smith*, 203 F.3d 1122 (9th Cir. 2000) (en banc)  
 *Mincey v. Arizona*, 437 U.S. 385 (1978)  
-*Ngumezi v. United States*, 980 F.3d 1285 (9th Cir. 2020)  
+*United States v. Ngumezi*, 980 F.3d 1285 (9th Cir. 2020)  
 *Rosenbaum v. Washoe County*, 663 F.3d 1071 (9th Cir. 2011)  
 *Sialoi v. City of San Diego*, 823 F.3d 1223 (9th Cir. 2016)  
 *Smith v. Wade*, 461 U.S. 30 (1983)  
@@ -126,7 +126,7 @@ The FAC alleges that Meza-Gonzalez thereafter executed sworn investigative docum
 
 A Rule 12(b)(6) motion tests the complaint’s legal sufficiency. The Court accepts well-pleaded factual allegations as true and draws reasonable inferences in Plaintiff’s favor. *Iqbal*, 556 U.S. at 678; *Twombly*, 550 U.S. at 555–56. A court may disregard a legal conclusion, but it may not discard a specific factual allegation merely because the defendant offers another explanation.
 
-This distinction matters where a complaint challenges the truth of government records. Incorporation by reference and judicial notice cannot be used “to resolve factual disputes against the plaintiff’s well-pled complaint.” *Khoja*, 899 F.3d at 1014. Even where an external document may properly be considered, it is not automatically assumed to establish the truth of contested statements within it. See id. at 999–1003; *Grier*, 62 F.4th at [VERIFY PINPOINT]. Here Defendants submitted no evidentiary material and sought no judicial notice. The Court therefore evaluates the pleaded facts—not Defendants’ preferred reconstruction.
+This distinction matters where a complaint challenges the truth of government records. Incorporation by reference and judicial notice cannot be used “to resolve factual disputes against the plaintiff’s well-pled complaint.” *Khoja*, 899 F.3d at 1014. Even where an external document may properly be considered, it is not automatically assumed to establish the truth of contested statements within it. See id. at 999–1003; *Grier*, No. 21-16702, slip op. at [VERIFY PINPOINT]. Here Defendants submitted no evidentiary material and sought no judicial notice. The Court therefore evaluates the pleaded facts—not Defendants’ preferred reconstruction.
 
 Because Plaintiff proceeds pro se, his pleading is construed liberally, and leave to amend should be granted unless amendment would be futile. *Garity*, 828 F.3d at 854; *Lopez*, 203 F.3d at 1130–31. Rule 15 embodies an “extreme liberality” policy. *Lacey*, 693 F.3d at 926.
 
