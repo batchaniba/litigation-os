@@ -1,0 +1,23 @@
+{
+  "summary": "False Imprisonment, Battery, Bane Act",
+  "counts": [
+    {
+      "id": 1,
+      "status": "live",
+      "theory_ids": [],
+      "title": "False Imprisonment"
+    },
+    {
+      "id": 2,
+      "status": "live",
+      "theory_ids": [],
+      "title": "Battery"
+    },
+    {
+      "id": 3,
+      "status": "live",
+      "theory_ids": [],
+      "title": "Bane Act (Civ. Code 52.1)"
+    }
+  ]
+}

@@ -1,0 +1,224 @@
+360918e1c5e3e313da78885c3c36e1b5d6799593037e147a54764dc0302748c6  00-user-inputs/ND-Cal-MTD-Operative.pdf
+1e7f3f59ab55e02c536fada76348b0ff90abf703752ef66e01de68d11f352b67  00-user-inputs/ND-Cal-MTD-Meza-Gonzalez.pdf
+8e15dbc9ae6f30290cc7088ec88d00d256a4def4ae893c3ace57be36a03a5ced  06-source-snapshots/matters/01/claims.json
+012552a127e56eda8d0d7c6170627525452e93ba12200d58c555b4830d97086c  06-source-snapshots/matters/01/clocks.json
+e21edf134b8dc8fa2c838e26b7eb11f996bc7baec40ce0366be90b72f2f58fee  06-source-snapshots/matters/01/counsel.json
+b32c0380785ae0f4d8e0d89c84f2912fa4b8c70f85d8bc4ef9a3e3ec85f2a924  06-source-snapshots/matters/01/damages.json
+78e0c26a81fef3501e90012a3139609e999f8c2c417ff64d71b6d4cfd3c34c7d  06-source-snapshots/matters/01/docket.json
+58a338ef267fef95271040197964d41a7deaa51cb90e0cd912d7d916c6fad33b  06-source-snapshots/matters/01/documents.json
+1c98fda32b020bb1e2e8ce103a5d6e65f121d02aa21c45efa8f11b16525f838f  06-source-snapshots/matters/01/events.jsonl
+187cc01444b6685e69e8a70f727561770e952c407d0f80aa651d3aa7537017b3  06-source-snapshots/matters/01/evidence.json
+2e52f70d04e397f5b4094c80fafcd3f24ee14f93c32fb15c4d7e3bdcffd961b0  06-source-snapshots/matters/01/matter.json
+4aca7e618eb2c3d0f6357ecac3e87eddc1ac301711bfbb63dedbd65903bbe6ef  06-source-snapshots/matters/01/parties.json
+11863317e59e869745f1716187eddb7ea60a66cbdb99a765aa58dfd7c68002ed  06-source-snapshots/matters/01/prose.json
+a4d14ed7e7189f8a44bfe9e3a309ead9ff08ee9dfc5e3c2e6797bbe8259eb05d  06-source-snapshots/matters/02/claims.json
+ca69d6651b6764ede19c767b194c1f263552a7dd9b418afce74d0f43ddf7e2e0  06-source-snapshots/matters/02/clocks.json
+77db52911f691c78616df832da4be52cb6541238bfeb9cfbac31d8c80b1143a4  06-source-snapshots/matters/02/damages.json
+3a35d40efcd686049f799f90af95c52ac54c2978e9eae812f9d0ae2dc59a95f3  06-source-snapshots/matters/02/docket.json
+d0f792f5ca511467e62e4295e588a1f8a11c337608808ef1dad962a069a139bb  06-source-snapshots/matters/02/documents.json
+5769bdd5c97879bd59e87449a763c5242b2f4436f0d7cad8b74d1a5a1f90550f  06-source-snapshots/matters/02/events.jsonl
+1187112f22a3b701ec9765f7b3bf6c5d0a1ac0a8746c6497140c704d7dd6a39d  06-source-snapshots/matters/02/evidence.json
+bcaf2494fef75926fddb269b369a1bfa0aa50dcb3a7e2fc48a482b091bd70616  06-source-snapshots/matters/02/matter.json
+649bdea7e8973f2b6ffd5333ac8338fe0ce221252a2e854879138e4aa6028f84  06-source-snapshots/matters/02/parties.json
+2aea160d5ff6eb30a531716b4941c0c86772b36befd2c98f38cffc96eac0cbb1  06-source-snapshots/matters/02/prose.json
+952a4682b7a2aba30592227fce6d8f3dd11f62356281d95c4eb530a43f161f85  06-source-snapshots/matters/20/claims.json
+659cd1fda7afc8720f5b00b2c474c847a4566333ee9883b065188ef2302ed2c2  06-source-snapshots/matters/20/clocks.json
+3c239ae45e65c482f2f0b0bb1faa23a5465388ffbc9316dda8b0bab50947960a  06-source-snapshots/matters/20/damages.json
+62644ef3508680d69725531b99786ad3f10106433cde91dcf5f115da2765c2de  06-source-snapshots/matters/20/docket.json
+9cb2c8dc85bfc798d9e42c4628e9591ec774f00404c98aff0d446514525f3c14  06-source-snapshots/matters/20/documents.json
+cae7dc45ab2fbaf737a5904297a457c082085fe90da17e0577880d552786423b  06-source-snapshots/matters/20/events.jsonl
+20a6f88a87b1493a60ba68b18d3f0b6530d8781cfbc0b919157ebee524c6a58b  06-source-snapshots/matters/20/evidence.json
+798caefc4d54a4fe4fabf9c68fd17d788199552f4041d14495f1466b1e27f5f0  06-source-snapshots/matters/20/matter.json
+d08de9b6a31be230aeef36627bc8ea736081d0296efdd17652838438865d4aec  06-source-snapshots/matters/20/parties.json
+2ee29ee365e459d82892e09ffc97f920f15efb8a07487ec10eac2251d57f763b  06-source-snapshots/matters/20/prose.json
+27686589eff0000ce93965d641560b909a3dcb873340c0b814e52866d7a3461b  06-source-snapshots/matters/24/claims.json
+078a760d2e94131e7e963a30584428e7a15effb1c3d8b3ae47802f1be7bbdd04  06-source-snapshots/matters/24/clocks.json
+b01061677ee98ff00499993486525d1dca9eeef5f2faa440cd854faddbfcfba8  06-source-snapshots/matters/24/counsel.json
+4b547809e401a6f593d58f57aef7914bd36dbe515983e70d103eb193ec2bf40b  06-source-snapshots/matters/24/damages.json
+d66fc41f613f63648befa99548504872cb693b03a16a59e1896d6c814bfa8d78  06-source-snapshots/matters/24/docket.json
+e5eb4ae57c0c8134c0108328148f93b1835620a07ba2fa0e8c2e19c34c0dd3f6  06-source-snapshots/matters/24/documents.json
+7d07697cc110c849fa98b789441fd0f7eadf5d96e21649ff54011a917d06039b  06-source-snapshots/matters/24/events.jsonl
+4dcfcd4ee3a7b36f091e42c9872f628b3630d8000bbe24ec4df889845baf607d  06-source-snapshots/matters/24/evidence.json
+203f600c310e41cfc2482d1d85a7f7f7259bd34b3ca602447986b17cf93270db  06-source-snapshots/matters/24/matter.json
+cca64f73606296ac25eeab5e9921df9aa5ed79ada5462bb3f135ae299d5f9b37  06-source-snapshots/matters/24/parties.json
+379a8acc1150fe8117a4562cd4e7e8579703a93d1bacfd6f97f73aa49363a866  06-source-snapshots/matters/24/prose.json
+7707ed7917c2eadae055495a5c067e80db1ed2a27580b00d7286ea16ea2382cd  06-source-snapshots/matters/32/claims.json
+84718fc99eae0905df2ca8cfb0fd883298663eacd8517f1f02cddd70d46e2ae1  06-source-snapshots/matters/32/clocks.json
+7d020bf78f7017f5c375f94754ee3682764d769b1c250b7584b7b8c74c1d777b  06-source-snapshots/matters/32/damages.json
+cea867633c7a811218ee5e2b25d392c47b78769212c4d5533eb2b383f784def4  06-source-snapshots/matters/32/docket.json
+5bc1a1adcc7841653d7f67defbcfa900413f582a4ee897041a0f8e51042aefca  06-source-snapshots/matters/32/documents.json
+4c45b301b5371a3a8029339e8b3973da8d11f0c401e959bb42fa1cf2b615b7d5  06-source-snapshots/matters/32/events.jsonl
+ab2b42e93e6b2bc3bebd1ada4c75be992f04175bd0c76eb56936fc90eb3f9282  06-source-snapshots/matters/32/evidence.json
+4103d0769bc0e01932df83c409bbe5d4a3262ec87d1a283cfd32051b1dce2fad  06-source-snapshots/matters/32/matter.json
+bb66cc9d74972b7a41eed15e8cc45e126d802ccf9e42800b15e89e426ce4b0be  06-source-snapshots/matters/32/parties.json
+e57b5fefdf601b4b38cfb97895d6b6f620b8fc148d5b5fff0a6de4900fc1b4a3  06-source-snapshots/matters/32/prose.json
+08efccb60d2c50ba388571ba736ebe6377def2d88d45d87e662c9391b9a8abbc  06-source-snapshots/matters/33/claims.json
+66053e3b1126b30a347f09f5141edc57b29d6d26442839155cfb323ef18fc25d  06-source-snapshots/matters/33/clocks.json
+4ab7b418a3a056d3af310ee2d3bd079269c22c80d10d0ee0ce497c3420f8042d  06-source-snapshots/matters/33/damages.json
+4b3347a25c7da2dd8e74c9b872f786faddaf164f797654a520d985cbc6533d3f  06-source-snapshots/matters/33/docket.json
+89151257e43c515c7387680cd832a78da42fed6558c1d0c7d29ad80b89082805  06-source-snapshots/matters/33/documents.json
+128f18bc7484c513c26529245ea5c94984c0bba8a412be0ec6a145cb169763de  06-source-snapshots/matters/33/events.jsonl
+0f5079efbabfc9e0d0fd4e054cc825c78e9263f6b5d5c81e57e7b8cc5333d415  06-source-snapshots/matters/33/evidence.json
+91905df2b0fb1c60a89ebf42993fca5a030e3cff5cbe3752d3e58c797f5b4ed5  06-source-snapshots/matters/33/matter.json
+e3b57039a716129ff1dc9c258545a4d95a69a22ee24b55cb71dbbdc242e968b8  06-source-snapshots/matters/33/parties.json
+4088deabea5e015d2afede16d330fbbc02469cf3017c61003792dbcee5572d1a  06-source-snapshots/matters/33/prose.json
+3105e59e4dc831e716db86208a487a7b0741a44128e6dd7615cf1d1291e44730  01-portfolio-records/_migrated/docs/matter-24-opposition-critique-pack/02_Defendant_Serrato_MTD_and_Strike_Aug26_2026.pdf
+9f00bb4d807287a39687835a503beb4a2754bef01b9bd5b38f0339ba25c7f444  01-portfolio-records/_migrated/docs/matter-24-opposition-critique-pack/03_Krishnan_IFP_Screening_Order_Dkt5_Jun29_2026.pdf
+c835e932c5e486a60333d27f73e38d1ada0515d1aedabe2f036632d51ddb45d5  01-portfolio-records/_migrated/docs/matter-24-opposition-critique-pack/05_Notice_of_Errata_re_FAC_Doc12.pdf
+bbc20f39fc7a703437ec7eef57d4423ceaf0da9ce73ee79a4d875d37d297965e  01-portfolio-records/_migrated/docs/matter-24-opposition-critique-pack/09_Alameda_AG_Opposition_to_Judicial_UVisa_Certification_Fickes_Context.pdf
+5ec1a1c446b93a99c9b07009fca4862c6d2d5259c3b719e341dbc921c1fffd1e  01-portfolio-records/matter-24/Clerk's Notice Resetting Hearing on Motion to Dismiss (Dkt 21, Filed Aug 28 2026).pdf
+0903d7162ecfc8707c8198e62dfb821975cc1fcc7c0471330bc441e59b52302e  01-portfolio-records/matter-32/from-01/0.Newanforbi v. CHP.pdf
+a46865b5d6a06d304d6562dbdd45a1ef8cdfcbcdc6f8702e298e3cc3be844580  01-portfolio-records/matter-32/from-01/01_Lawsuit_Cover_Sheet.pdf
+e1dec2e606595dcabfc2be62fade7023f104da92d8ff2af654c3b8c1d47f3768  01-portfolio-records/matter-32/from-01/02_Initial_Scheduling_Order.pdf
+9738b9deb39d9314ef1cfdadf6ecb07ef58fc625b00d58a930dc688393d19769  01-portfolio-records/matter-32/from-01/03_Magistrate_Judge_Consent.pdf
+3e1228cc36b79ed7619c4282ca55a9023e25e50a60d5947a37a72a51e8fb52c7  01-portfolio-records/matter-32/from-01/04_Magistrate_Judge_Availabilty.pdf
+3b137f6a8ff77636205385070c5ffb816a518f92a3eab2fe6469849281d7337c  01-portfolio-records/matter-32/from-01/05_Magistrate_Judge_Consent_Decline_Sheet.pdf
+a412409fd2ff5b6b393cf6cde282fa30ab8cf2bb7f567cc2360d18c44dcb248d  01-portfolio-records/matter-32/from-01/06_Notice_of_E-Filing_1.pdf
+416a1ce3f43c37e7afe8188ab2f966b70ffd29c59fe6c5b2d23fc3f394c272b3  01-portfolio-records/matter-32/from-01/07_Summons_Sheet.pdf
+5832a2785a0a28849339a32a86d07857fecce6a21e6905d31d3939c33376b01c  01-portfolio-records/matter-32/from-01/08_Return_of_Service.pdf
+cab23617060b2a60dedf2201b1add1aa8a4ea59d9ba546c72a21b2690230e16e  01-portfolio-records/matter-32/from-01/09_Notice_of_E-Filing_2.pdf
+0169fb25a23d4cc03aa748f9429cc5bdf74ce54dbab193f44ae54d2071bd5aad  01-portfolio-records/matter-32/from-01/10_Filing_Fee_Receipt.pdf
+c22f2241899562d5289ed2925123fd41f07a112f1d83e259a124d505761a7666  01-portfolio-records/matter-32/from-01/18_Civil_Cover_Sheet.pdf
+e6b12fe1ec86ec3b308c57ecafdeea873ca761c71676ca856f4173a261f4138d  01-portfolio-records/matter-32/from-01/CHP Motion To Dismiss.pdf
+4d424a35603060aba61c6bc57a4d23278615e94139ef78270751acb7361b7d25  01-portfolio-records/matter-32/from-01/Notice of Change of Address (July 7, 2026).pdf
+f3677f0606e3ed00c64495a6bdbba1d2b41a8bd63d1e018ee7a0e59f025922d6  01-portfolio-records/matter-32/from-01/Notice of Supplemental Authority - Serrato Order - July 7 2026.pdf
+c69d53752c176112c29b04b24595555ae8a4fa8c51928e35d2d585e66cf36bd0  01-portfolio-records/matter-32/from-01/Notice of Voluntary Dismissal Without Prejudice (Aug 11 2026).pdf
+a4a5cbeef343243b236ba2215d69465c4f97f37f40d21de6f34103a3819aad77  01-portfolio-records/matter-32/from-01/Objections to FR - April 21 2026.pdf
+cdf235051ac986ebc302bd0fae3221a883366bb47049109de5b943b326083133  01-portfolio-records/matter-32/from-01/Opposition for Motion to Dismiss.pdf
+7a006f6ca2fef32666ccdd47a6da2a637fa1a5ab0ed93f8d6b087ddd97316a86  01-portfolio-records/matter-32/from-01/Reply - CHP.pdf
+e5ac33628ca4cc47bfa7cbce55d9172b7add5572cc411482608c2fc9d66aa535  01-portfolio-records/matter-32/from-02/CIV-110 Request for Dismissal - Meza Alameda 26CV168913 (Aug 14 2026).pdf
+3a532635f68e1f1cec8f08017f1bba7279a246c4f70ea08105f1cf62f3b2d295  01-portfolio-records/matter-32/from-02/CIV-110 Request for Dismissal Entered - Meza Alameda 26CV168913 (Aug 21 2026).pdf
+a9f39bc1e6cdaaecfa61109a261deeeb7f310e58e874102e59f0281f6b8e6b63  01-portfolio-records/matter-32/from-02/Ex Parte Application for Extension of Time to Serve Pleading and Orders.pdf
+53753d1a12bb655a24e73a711a9566ec50f261c30f7aef0e632872185b9fb202  01-portfolio-records/matter-32/from-02/FW-001 Approved Fee Waiver.pdf
+b781fd7faacc5a67d738a5562b7949413afe1506d354c725be746b2cbb9febf0  01-portfolio-records/matter-32/from-02/Newanforbi v. Meza Gonzalez et al.pdf
+85fd9e3c0f540b51a0bf6f9b5830cf10a6ec524097b3c983b6596a3df43e3999  01-portfolio-records/matter-32/from-02/Notice of Case Assignment.pdf
+90d8a8c63a53ae97e02ca53b4625f0ba9be0ffce95f9ea6d23164e5dc1ff3b96  01-portfolio-records/matter-32/from-02/Notice of Case Management Conference.pdf
+e66f1a1af5ae5ecb46b84e58d6abff4cefd3f3b9132b5de74b89141da4391b50  01-portfolio-records/matter-32/from-02/Notice of Change of Address (July 7, 2026).pdf
+bc75f0b15d512604cc816f7052ed336001d1ff1a56c3a148bf98fac246a37fa6  01-portfolio-records/matter-32/from-02/Notice of E-Filing Confirmation.pdf
+89e54c02e6c430a86a9601aaefcdda165198625fbc032ba9b50d6ec15472c64b  01-portfolio-records/matter-32/from-02/RECEIPT.pdf
+52c084f1e75403bdd01963a6cbb926931a3fe3b52808936c27577b89570a517b  01-portfolio-records/matter-32/from-02/Reply ISO UVisa Cert 10pg.pdf
+ff62eee279e87dd34452128239b086e4b8c2d1073be355a9a57c83a5eabe2fe7  01-portfolio-records/matter-32/from-02/Request for Dismissal Without Prejudice (Draft, Aug 11 2026).pdf
+309c2dc12982ba3790c814686bdf2ab03398c2a28705e3a34fa2d9b28693a9a1  01-portfolio-records/matter-32/ndcal/Administrative Motion - Conform Plaintiff's Name - Meza-Gonzalez (N.D. Cal. 4-26-cv-08271-ASK) (September 14, 2026).pdf
+9f9eb8bc291a45b475b837672605c522793ddfa0ffc7b89c767839ae4f6590a4  01-portfolio-records/matter-32/ndcal/Administrative Motion - DAG Li to Accept Service for Meza-Gonzalez (N.D. Cal. 4-26-cv-08271-ASK) (Sep 1 2026).pdf
+a4f6745dc9c8eefbd4d112981f6b1c63c935740c456ce84f94d2492748d1486f  01-portfolio-records/matter-32/ndcal/Administrative Motion Packet - DAG Li to Accept Service for Meza-Gonzalez (N.D. Cal. 4-26-cv-08271-ASK) (Sep 1 2026).pdf
+2fceea556b7c8665f51a6852d81da54ea224f54a6bdfae58ad13d456b6b110d5  01-portfolio-records/matter-32/ndcal/AO 440 Summons - Jose Melano (N.D. Cal.) (Aug 7 2026).pdf
+eb39114f49cb4cfa2d94962924c62c94d8ef983131bdcacaaafbd263c6916997  01-portfolio-records/matter-32/ndcal/AO 440 Summons - Santiago Meza-Gonzalez (N.D. Cal.) (Aug 7 2026).pdf
+2c9b403692dc280a481ab4c1c2eceb6e59088068f22beadf5389612fa156e02e  01-portfolio-records/matter-32/ndcal/AO398-Meza-Waiver-Request-COPY-1.pdf
+7dc5eb20d85487247f64bdf5b41bddd356616718a2bb5517d646a083596af3d5  01-portfolio-records/matter-32/ndcal/AO399-Meza-Waiver-Form-COPY-1.pdf
+3d47a25c7458f2d968464b52e66ef53fc05fb34aa3d0aab4064df490d7ca2d10  01-portfolio-records/matter-32/ndcal/CCP 415.20(b) Mailing Bundle - Meza-Gonzalez (N.D. Cal. 4-26-cv-08271-ASK) (September 17, 2026).pdf
+701d64e373617e0c48836edc3901f971b197e01fbad02b364f99dcee504d8a54  01-portfolio-records/matter-32/ndcal/CCP 415.20(b) Mailing Filing Packet - Meza-Gonzalez (N.D. Cal. 4-26-cv-08271-ASK) (September 17, 2026).pdf
+708f384d44e516c8203a4c2972016949d195d4fc0ad95853fc7782f32d046c2f  01-portfolio-records/matter-32/ndcal/Certification of Conflicts Interested Entities and Persons (Meza Melano) (Sep 4 2026).pdf
+b9d9cab1ce28638491537ad99d734faa1d671518ca7a8d023ec25d1583fcbe28  01-portfolio-records/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal 2.pdf
+8ca798c6bfab2383c3d417c0db2c5891b8824e39e68e0cc2b79654cb73636a06  01-portfolio-records/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal 3 Operative.pdf
+11f4c0142f9f12e36d97c4d8260e3da3e3d800faea3cad451cc12d4bccd543ff  01-portfolio-records/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal.pdf
+f6f543dba7528dae2b5981f264df1b9e89b6b9ef1658b805da684b45589a93e0  01-portfolio-records/matter-32/ndcal/Consent to Magistrate Judge Jurisdiction - Ngwa Nforbi v. Meza-Gonzalez (N.D. Cal.) (Aug 7 2026).pdf
+53d0a05d4c14b479b141a74a4c9d3b69de67bc71f2188171dc553d94304623fa  01-portfolio-records/matter-32/ndcal/Declaration ISO Administrative Motion - Conform Plaintiff's Name - Meza-Gonzalez (N.D. Cal. 4-26-cv-08271-ASK) (September 14, 2026).pdf
+96619dfe497aa39f367cc7ec55e5891b4bb343d8858e9e1b4a241e8807c76a38  01-portfolio-records/matter-32/ndcal/Declaration ISO Administrative Motion - DAG Li to Accept Service (Meza-Gonzalez) (Sep 1 2026).pdf
+a681de8d821b6a710a117bcd931eab55f3b044cfb56ebbe2c817a8ca0ff5eacf  01-portfolio-records/matter-32/ndcal/Declaration of Mailing - CCP 415.20(b) Follow-Up to Dkt 16 - Meza-Gonzalez (N.D. Cal. 4-26-cv-08271-ASK) (September 16, 2026).pdf
+4b9eecfbe5e24812249d7cc6f587fe9831dab4126b24c65a8ea52f5a5ced06ca  01-portfolio-records/matter-32/ndcal/Declaration of Mailing - CCP 415.20(b) Follow-Up to Dkt 16 - Meza-Gonzalez (N.D. Cal. 4-26-cv-08271-ASK) (September 17, 2026).pdf
+d81b42eda7078e06cc810f2ed8afcb4210a2cbfb0a561919536e8b027cd45ebb  01-portfolio-records/matter-32/ndcal/Dkt 01 - Complaint (CONFORMED, Filed Aug 10 2026).pdf
+6ff84245f9098b346fd0bbd9cbce815201c17775fff51f9a279f1e870b65413a  01-portfolio-records/matter-32/ndcal/Dkt 01-1 - Civil Filing Fee Receipt (Aug 10 2026).pdf
+621bc8f56281fb6869e80fa406958f5927e744a1a0a34a2401c36cb9e17b0424  01-portfolio-records/matter-32/ndcal/Dkt 01-2 - JS-CAND 44 Civil Cover Sheet (Aug 10 2026).pdf
+3d9f475aefb6c1317c6bfe0444badc3f26b9c8af011095f8967295a107b6cc04  01-portfolio-records/matter-32/ndcal/Dkt 02 - Consent to Magistrate Judge Jurisdiction - CONSENT (Aug 10 2026).pdf
+3b4cde9e98f6c7fc47a7349c9d43de64ec8e6567c002ead2629b1c2e6fcf698b  01-portfolio-records/matter-32/ndcal/Dkt 03 - Summons Issued - Meza-Gonzalez and Melano (Aug 10 2026).pdf
+a4b3b270f70b1f840f0b6f8141d9ebf7f51c8dc88d49c7239c1627b498311375  01-portfolio-records/matter-32/ndcal/Dkt 04 - Order Setting Initial Case Management Conference and ADR Deadlines (Aug 10 2026).pdf
+ef504353bbbaae36b2d317f447a7e7d98c73ab6e89a86166c5bf934745794dcc  01-portfolio-records/matter-32/ndcal/Dkt 05 - First Amended Complaint (CONFORMED, Filed Aug 17 2026).pdf
+f1548757316ec77d7048dc402059e0cf6f4c5bfc8f2b9fc43d0a7ee0c2de07ea  01-portfolio-records/matter-32/ndcal/Dkt 05 - First Amended Complaint (Filed Aug 17 2026) (alternate scan).pdf
+483061394ce55a14c277ac29e999504bb62f78cd4cb6af45a8865ae8c88312e4  01-portfolio-records/matter-32/ndcal/Dkt 05-1 - Proof of Service of Summons - Jose Melano (Filed Aug 17 2026).pdf
+c3b0f861b5acc0061eb6b1a4020ee33bc583c35afb55c57623574cf27e3b31ad  01-portfolio-records/matter-32/ndcal/Dkt 06 - First Amended Complaint (CONFORMED, Filed Aug 14 2026).pdf
+31a7434295ba25bc071941d8dfd8aa165b68679d1b60bc9e4d1605e7fb23eaa7  01-portfolio-records/matter-32/ndcal/Dkt 13 - Administrative Motion - DAG Li to Accept Service (Filed Sep 3 2026).pdf
+48b6738e055726dabbd516bcd1c1455941e46a2a10d2f6e2b8de69ebfd5a7b91  01-portfolio-records/matter-32/ndcal/Dkt 13 - Administrative Motion Packet - DAG Li to Accept Service (Filed Sep 3 2026).pdf
+4fd134837a2fcdb5360e51c30dd538be7df57e61fd691a6b001e16a53a859fd6  01-portfolio-records/matter-32/ndcal/Dkt 13-1 - Declaration and Exhibits A-C ISO Admin Motion (Filed Sep 3 2026).pdf
+02e30244fb056793c2db7d935d057f1aafe32a165f3a11eb705ebe87a661e16e  01-portfolio-records/matter-32/ndcal/Dkt 13-2 - Proof of Service - Admin Motion DAG Li (Filed Sep 3 2026).pdf
+9aa303b4db8484dd7a523a19f8cfe1fa760a1732ce729190ef69f22afad40f03  01-portfolio-records/matter-32/ndcal/Dkt 13-3 - Mailing Envelope - Admin Motion (Filed Sep 3 2026).pdf
+4e8472552a9f128f5f826324cc6b52e03f8a847218bf2dc33f280aeb2a2bb1ba  01-portfolio-records/matter-32/ndcal/Dkt 14 - Proof of Service - FAC Dkt 05 Mailed to Melano (Filed Sep 8 2026).pdf
+baeab402d7bbc0e3c801e0fc3511c061f8b30c66d81e8a1b685442c238412426  01-portfolio-records/matter-32/ndcal/Dkt 15 - Plaintiff's Certification of Conflicts (Filed Sep 9 2026).pdf
+95ceeea690c42976ea29fdfbacf7b926fe862bd74baf326b39341ca2a9cf41e7  01-portfolio-records/matter-32/ndcal/Dkt 17 Packet - Request for Clerk Entry of Default Meza-Gonzalez and Melano (Sep 18 2026).pdf
+f5a0eece4dd61cde16428edd9dcd92446eeea715050a61443d9440aa872ae7cc  01-portfolio-records/matter-32/ndcal/DRAFT - Exhibit A Cover Page - Serrato Related-Cases Admin Motion.pdf
+2900ef58cf1bc6a13ca3c4fad5644d4b91318c8495c3519914b5838a9a1dda0c  01-portfolio-records/matter-32/ndcal/DRAFT - Notice of Filing of Administrative Motion to Relate Cases (Meza-Gonzalez).pdf
+aac10b3eb29c88d300705604d889218a415d06c6f8d770b0fa7a742127ed480c  01-portfolio-records/matter-32/ndcal/Draft - Request for Clerk Entry of Default Meza-Gonzalez and Melano (Sep 18 2026).pdf
+a8be36ec0a6233b65ac459f2c996c17c66f16d9ccd7f017f448985ba082392ec  01-portfolio-records/matter-32/ndcal/Exhibit A - Caption Page - ED Cal MTD Li Appearance (Dec 10 2025).pdf
+628db79854cd9a144d6ffab95fbeec9b88be9faae8dacaf2d2981da1491d054b  01-portfolio-records/matter-32/ndcal/Exhibit A - USPS eReceipt FAC Service on Melano (Aug 21 2026).pdf
+c0a390600b8957d760b972f2c09a909a904800856263b675ce39fbfc47df98d3  01-portfolio-records/matter-32/ndcal/Exhibit A Cover - ECF Help Desk - Meza-Gonzalez (N.D. Cal. 4-26-cv-08271-ASK) (September 14, 2026).pdf
+7ea5bb42a700e2981468c1aac8e90bf6d9bd0b4886d3cfca60b40eaf9a441b25  01-portfolio-records/matter-32/ndcal/Exhibit A Cover - ECF Help Desk (September 14, 2026).pdf
+a20b8291b72f901021c0e24e03c9b93d28131d083af9c9731f7b9222e21ad0db  01-portfolio-records/matter-32/ndcal/Exhibit A Cover - ED Cal MTD Caption Li for Meza-Gonzalez (Sep 1 2026).pdf
+88a7b719acf67e215a8d2e07da3ed6ef4c73f862c57241395c45931454e7d360  01-portfolio-records/matter-32/ndcal/Exhibit A Cover - USPS eReceipt FAC Service on Melano (Aug 21 2026).pdf
+10916bdb5c0ee4d70fe6ebe8846b4bbdf9e69bd0185f439294f8c226d96b947e  01-portfolio-records/matter-32/ndcal/Exhibit A Cover Page - Serrato Supplemental Related-Cases Motion (Aug 21 2026).pdf
+9ebabd0e9534a18dc40e0f02d2716530b974c84d12db690ae7edbeaca387a0b6  01-portfolio-records/matter-32/ndcal/Exhibit B - Caption Page - Alameda U-Visa Opposition Li Appearance.pdf
+7f6270d5c84fcc919227bb9d8b16852819a270fffc7c18ce889e5f305c2ad1a3  01-portfolio-records/matter-32/ndcal/Exhibit B Cover - Alameda U-Visa Opposition Caption Li (Sep 1 2026).pdf
+ee291b34e95ea11f2aaf17f3aa95b8bc5a641e89c821da273549b9282bbbaa9e  01-portfolio-records/matter-32/ndcal/Exhibit C - Caption Page - Serrato MTD Li Appearance (Aug 26 2026).pdf
+20c2ab61b418fb95580a273930b6cf8deca9f4e754053aee14e2249dfa8efe22  01-portfolio-records/matter-32/ndcal/Exhibit C Cover - Serrato MTD Caption Li Appearance (Sep 1 2026).pdf
+7ec9895545970afca9970e4b7f7bed23d10dae1110d8a709be7501ae42cb4783  01-portfolio-records/matter-32/ndcal/FAC Nforbi v Meza-Gonzalez and Melano NDCal - OPERATIVE UNSIGNED (Aug 12 2026).pdf
+e36aa839a4c6495d0bd1792ce6663a5d8bfc7ba6917d5c8a6ade2f157905b24c  01-portfolio-records/matter-32/ndcal/FAC Ngwa Nforbi v Meza-Gonzalez and Melano NDCal (as submitted Aug 10 2026, superseded).pdf
+1006f617dfe3a4e9b3583235637a9b057dd20abb749f1b7ea2bfd61a8f8c7e4e  01-portfolio-records/matter-32/ndcal/FAC Ngwa Nforbi v Meza-Gonzalez and Melano NDCal (Aug 11 2026).pdf
+e1da12a1ed36b8db69be136c3dd54fc2c8842a2264379bc65ea608d89dd74fbc  01-portfolio-records/matter-32/ndcal/JS 44 Civil Cover Sheet - Ngwa Nforbi v. Meza-Gonzalez (N.D. Cal.) (Aug 7 2026).pdf
+75344b79b311d1991bf3469a2b2e060074f40a65a0ed4b9d1b6eb16c66214140  01-portfolio-records/matter-32/ndcal/Meza-Docket-Bundle-81pp-COPY-1.pdf
+2f9308262b28b820fbadfa7a696ca01666cdb39b2641a290a70e01b58581fb15  01-portfolio-records/matter-32/ndcal/Meza-Gonzalez Private Process Server Bundle (Aug 25 2026).pdf
+cb4441d55fd66810e5c4f3dbc53d4ffea30ae17a94a13f78185eeeeeb9a60d4d  01-portfolio-records/matter-32/ndcal/Meza-Gonzalez Process Server Cover Sheet (Aug 25 2026).pdf
+d2641c287b147f80ce4016ac3f7caed5d089cc0023f371bc5a49ce52852e1caa  01-portfolio-records/matter-32/ndcal/N.D. Cal. Intake Packet (print copy) - Ngwa Nforbi v. Meza-Gonzalez (Aug 7 2026).pdf
+9f7ba6a27ea00ffd5403a6fa70d59a9f95a483094b3ccbe731e7c17a4b9b3ac9  01-portfolio-records/matter-32/ndcal/Name Conform Administrative Motion Packet - Meza-Gonzalez (N.D. Cal. 4-26-cv-08271-ASK) (September 14, 2026).pdf
+afd369257656ff2852d2dac622d7632a825d572cb510e5f3df11b65a6a6194d3  01-portfolio-records/matter-32/ndcal/Notice Identifying Operative First Amended Complaint (Meza) (Aug 24 2026).pdf
+3ac171ac8993e20a3d63d95ec67f9e6015920223228060481cabeca5bd5d6976  01-portfolio-records/matter-32/ndcal/Notice of Filing of Supplemental Administrative Motion to Relate Cases (Aug 21 2026).pdf
+8a5aea498ae2abbcc65cb2cb13f1659220cf216f33cd7475f99bbe5cec6ff005  01-portfolio-records/matter-32/ndcal/Order Granting Administrative Motion to Relate Cases - Serrato and Meza (Aug 24 2026).pdf
+deb96ccd96d87d23a742adc5442885ec2d6c5a7ea9318c45f5875a889b3ef280  01-portfolio-records/matter-32/ndcal/Proof of Service - Administrative Motion DAG Li to Accept Service (Meza-Gonzalez) (Sep 1 2026).pdf
+3a0569fb5a9f282bbb1ef430a4ef75828b2f04042bd94b1a93b8ab4bb9a2a43d  01-portfolio-records/matter-32/ndcal/Proof of Service - Certification of Conflicts (Meza Melano) (Sep 4 2026).pdf
+5d16298dbb392d163b893d98f1c1a9069045fb851dec6e1853847bd5a39899d1  01-portfolio-records/matter-32/ndcal/Proof of Service - FAC Dkt 05 Mailed to Melano (Aug 21 2026).pdf
+cb6f8d8ebda5902ca3da7225f7d70215771f84669f5d7e5b631e7018cb2a3700  01-portfolio-records/matter-32/ndcal/Proof of Service - Name Conform Administrative Motion - Meza-Gonzalez (N.D. Cal. 4-26-cv-08271-ASK) (September 14, 2026).pdf
+c4cbfae7fd84f02bb9d085f7baddbace2a392b5e9151b1d0cf1a8e0694a52b51  01-portfolio-records/matter-32/ndcal/Proof of Service of Summons - Jose Melano (C&P Process Server original, clerk-stamped Aug 31 2026).pdf
+f85f1868746e90d1fb522d85894ef411d40787992e6044f89ba6d74127e71b4b  01-portfolio-records/matter-32/ndcal/Proof of Service of Summons - Jose Melano (C&P Process Server return, Aug 14 2026).pdf
+2cc4d1d5cd8ee5f5cb69d6e8f2daaa0d1522c0c8cca36af012da1d01700da0e6  01-portfolio-records/matter-32/ndcal/Proof of Service Packet - FAC Dkt 05 Mailed to Melano with Exhibit A (Aug 21 2026).pdf
+e480b28b05c005222e25d3fbc3779985c47ef220e05d97210e98af236dc888a3  01-portfolio-records/matter-32/ndcal/Proposed Order - Conform Plaintiff's Name - Meza-Gonzalez (N.D. Cal. 4-26-cv-08271-ASK) (September 14, 2026).pdf
+27ba6d82af1556c864a7a8882a1c823f93571294bfa8714f14e75582a4264a63  01-portfolio-records/matter-32/ndcal/Proposed Order - DAG Li to Accept Service for Meza-Gonzalez (N.D. Cal. 4-26-cv-08271-ASK) (Sep 1 2026).pdf
+45d61c13d8568573654b81410e48c50bfe3be8e217af48e4d6a6724ffa369cca  01-portfolio-records/matter-32/ndcal/Run With It - Declaration of Service and Diligence - Meza-Gonzalez (Order 15645547, Signed Sep 3 2026).pdf
+fd6d715a338ae0fc45c24fc655c9c889ba5cf6baea629693ec69a29d23942396  01-portfolio-records/matter-32/ndcal/SER-001 Request for Sheriff to Serve Court Papers - Jose Melano (Sacramento, Aug 13 2026).pdf
+d060690e44ec3813fab5ce0ebfce8880d0d7534bb820851d63e1afe029439050  01-portfolio-records/matter-32/ndcal/SER-001 Request for Sheriff to Serve Court Papers - Santiago Meza-Gonzalez (Stanislaus, Aug 13 2026).pdf
+0c62c38f91bbdf9ac5b5f8e27beab882512a8f298419e60b5c264fb382b1fa90  01-portfolio-records/matter-32/ndcal/Summons Issued - Jose Melano only (N.D. Cal. Dkt. 3) (Aug 10 2026).pdf
+b6aab0838f06b2203aa4fc367d7d1261412fabdb444de7cbe7151d9a2057d54e  01-portfolio-records/matter-32/ndcal/USPS eReceipt - First-Class Large Envelope to Sacramento 95823 (Aug 21 2026).pdf
+ef1722dd6af97c9cf1e82e7d8b0257b7e9f1b029074412155a93327390c96ecc  01-portfolio-records/matter-32/ndcal/USPS eReceipt - Service of FAC on Melano and other Mailings (Aug 21 2026).pdf
+3bfbdd7a7ae778fe74076dc0a57d760264593a653873d6d07db7de9c6ea6650a  01-portfolio-records/matter-32/ndcal/Wage Reference.pdf
+7bd81bb64499da50020b641182ae1d474d7ea1f86187ff6a1350dcc6585e6548  02-incident-and-production/matter-20-branch/02-incident-evidence/matter-33/incident/Arrest Report.pdf
+7dd92be7e30290cf1341e6502f75e5a483061ec4e7d4e727f69123e67d4fb1f3  02-incident-and-production/matter-20-branch/02-incident-evidence/matter-33/incident/DAD 2024-12-04.pdf
+9fcc0c53450352e0388c68a846731afa1904687a144f53fb87514d17f05527a3  02-incident-and-production/matter-20-branch/02-incident-evidence/matter-33/incident/DS2044 Notification of Discovery 34739340.pdf
+2d2312ca30c15f34a2d6b7c6acf4d466885f14bce1bfdfdf83d8e86886498943  02-incident-and-production/matter-20-branch/02-incident-evidence/matter-33/incident/Discovery-Response.pdf
+3750927a89170c8d4702cb7dfab4d2b96fda1e31d7662ffc524e07763d1b6660  02-incident-and-production/matter-20-branch/02-incident-evidence/matter-33/incident/Exhibit_A_CHP_Video_Transcript.pdf
+432ecc55cbac370b49053b364713b52ed0b00785a604f87040b1f163bd5d824f  02-incident-and-production/matter-20-branch/02-incident-evidence/matter-33/incident/ds367 ngwanforbi f7953179.pdf
+c8472a9d6c15f76a99e9e67097d1e35ffbfd7ab0a7d0d72df1051820337c4dc0  02-incident-and-production/matter-20-branch/03-discovery-production/branch-snapshots/agent__matter-20-production-map/internal/docs/matter-20-production-set-one/Dashcam Videos Coversheet.pdf
+06508235ccde8f532743b5c4b3c89e6a3693e50db3210b07707ca33927d7378d  02-incident-and-production/matter-20-branch/03-discovery-production/matter-20/Notice of Lodging - Nov 1 2024 CHP Dashcam Exhibit 5 Source (Sep 8 2026).pdf
+6eeaeee9ab521e4452705e3fe1f2fd9006d26c64416605ec960db79f29aa3cdb  02-incident-and-production/matter-20-branch/03-discovery-production/matter-20/Request for Production of Documents Set One - CHP (Sep 15 2026).pdf
+9728db9053ea01339c71387ab37c213883da9773fa5f3800c32847a979943e38  02-incident-and-production/matter-20-branch/03-discovery-production/matter-20/Request for Production of Documents Set One - CHP (Sep 16 2026).pdf
+793ce2b72ae8a5dc89aeec5cbd30e6bef0605b99dc90d661cc87258aaf9ddbaa  02-incident-and-production/matter-20-branch/03-discovery-production/matter-20/Request for Production of Documents Set One - CHP with Mail POS (Sep 16 2026).pdf
+2dba0eaeca4c05b28e15ec7ff624b829870b881c84ba6685dd8299e2b3c71a42  02-incident-and-production/matter-20-branch/03-discovery-production/matter-20/Request for Production of Documents Set One - CHP with POS (Sep 15 2026).pdf
+e56eb9ebe34646718ffc076e960428e8773b3a4adf2b04d3cd9ad5b8e914ca2f  02-incident-and-production/matter-20-branch/03-discovery-production/matter-20/Request for Production of Documents Set One - CHP with POS (Sep 16 2026).pdf
+f6c013637f82aa9143c7271653111c1ae0a8253eeda4fcc3c5316f7ee3d0b664  02-incident-and-production/matter-20-branch/03-discovery-production/session-uploads/Exhibit-11-CHP-415-Melano-10-31-2024.pdf
+201cacaed9a228daa17b579e1a46b72b66706304f93c0b6de0dd868809140aa8  02-incident-and-production/matter-20-branch/03-discovery-production/session-uploads/Exhibit-3-Incident-Log-241101GG0064.pdf
+e1814786b9a8210608f574b17249bdfa83f6efd5d6d83c6d05151603a9423ded  02-incident-and-production/matter-20-branch/03-discovery-production/session-uploads/Exhibit-4-Beat-sheet-10-31-2024.pdf
+320533ac9d50323cf49abd59506b0a8bd0db3e42fc9f895ac8c7d055259aa012  02-incident-and-production/matter-20-branch/03-discovery-production/session-uploads/Exhibit-5-CHP-202-DS-367-Warrant-Affidavit.pdf
+36781c9e379c04e9e602162505f7c4ed7e80e6219040e44fa6be8f2d0cd1d166  02-incident-and-production/matter-20-branch/03-discovery-production/session-uploads/Exhibit-8-CHP-415-Meza-Gonzales-10-31-2024.pdf
+cabad17f0d00dcd92c9ebcdabb1955b2442b9c96e53c2e755d2cebbe30991063  02-incident-and-production/matter-20-branch/03-discovery-production/session-uploads/Privilege-Log.pdf
+9a5e64430ef4428dadaa735b91e6c417d014b35eb8ebb8d363a2d08592bc2683  02-incident-and-production/matter-20-branch/03-discovery-production/session-uploads/Production_of_Documents__Set_One_-_Newanforbi__Brendan_Ngehsi_v._California_High.pdf
+c15d4fa96e4a398ed1562261e2b0080efe58c04165719a7b8276349bf2e89ef8  02-incident-and-production/matter-20-branch/03-discovery-production/session-uploads/Proof-of-Service.pdf
+be04b90e18f4f852a53351b0192d2c2a3710e6d89b5ad2fd424950575d3e330f  05-prior-analysis/matter-20-audit/inventory.md
+a384fecc86289715e22768f58ca7d4109bb911e67d1b4ad7fe671cb45fdf89f8  05-prior-analysis/matter-20-audit/manifest.json
+5a337d269b8f6b6d366be79d2037c861502c9c7436a586cddcc73460953bbc6c  05-prior-analysis/main/internal/docs/matter-20-production-set-one/Matter 20 - CHP Production Set One Video (MP4) Descriptions (Oct 23 2026).md
+f08de75031c4c234eb5580f74bc74f92cef5b44de45600092341bc530d6a0980  01-portfolio-records/_migrated/docs/matter-24-opposition-critique-pack/01_Opposition_to_Serrato_MTD_v4_Pleading_Paper.pdf
+0da9e38f7579ae72c5a91bd6d35e9855004fc3fcf281774191d5b0924473bc83  01-portfolio-records/_migrated/docs/matter-24-opposition-critique-pack/04_FAC_Doc10_Text_Extract_for_LLM.pdf
+ffe52299370b371f6756ae57a5ba3ca54ebf1bc20abc9f470fb8fbfd74e1d283  01-portfolio-records/_migrated/docs/matter-24-opposition-critique-pack/06_Critique_Briefing_and_Prompt.pdf
+163e2a48552be77092f998cf2018ff3fe158ba26e59fe3fb9240477a966cfb4a  01-portfolio-records/_migrated/docs/matter-24-opposition-critique-pack/07_MTD_Attack_Map_and_Error_Inventory.pdf
+7ea4d6250af2003bfee7c903137d5419be5bf5a112b590d0e929966518207ac1  01-portfolio-records/_migrated/docs/matter-24-opposition-critique-pack/08_Authorities_and_PC_67910_Cheat_Sheet.pdf
+6f281a13f2c39409510d18d896aa60acc6f6d3df7c3ba6941056013a9ffca40a  01-portfolio-records/_migrated/docs/matter-24-opposition-critique-pack/10_Case_Chronology_and_Theory_Map.pdf
+411cf8ca3097852bd270e426830ea39da7b6aee87090dcf5a11ce71538d8473b  01-portfolio-records/matter-32/ndcal/Draft - Request for Clerk Entry of Default Meza-Gonzalez and Melano with Proposed Form Note (Sep 18 2026).pdf
+4e46cb82a9bbf5fb94ac9ca39ac7d9154e6efbdc36347044bec35e7e7f517f08  01-portfolio-records/matter-32/ndcal/PACER Docket Report - N.D. Cal. 4-26-cv-08271-ASK (Meza served, Sep 2026).pdf
+23acb3048cb990b53d588ca046334f6f34f3b1019796f08d91df278abe2bcc9d  01-portfolio-records/matter-33/incident/Centerline Wage Reference.pdf
+c3e92de722772c29a5ea5c81675976f2d65287d1a021b74a4f263b82a47c5e47  03-authorities/Khoja-899-F3d-988.pdf
+c358f5c7436afa7ef0292d82f068b3f7742da03b42d6b9f49797f280ad07c269  03-authorities/Grier-21-16702.pdf
+93e66bf52d668c5ee22284dec491ac7ec048109f6ade0c09dedbcc95ce1dc6aa  03-authorities/Ngumezi-980-F3d-1285.pdf
+4a0f573eb2b9bf3fe082bf3df5175fc625e90f48ae429a0847f21fb90eaa548b  03-authorities/Chism-661-F3d-380.pdf
+4182fd5f9a0efc293cb58d6be34488da665c2f4a2ac76c03cc69577c7b460bbf  03-authorities/Whittlestone-618-F3d-970.pdf
+41482c8ef11e63fc91246388f66b12c27ac9b6c7b8d3722b22fcdd0f5c115eb9  03-authorities/Gonzalez-v-Trevino-2024.pdf
+c0112c6ac1cf05c6ca82fcdba8fe2fec65187ae4e3caf36058bad0668a8fea32  03-authorities/Wesby-583-US-48.pdf
+75e69352b46fc31557f433cb227f238ffc44fc1c243f03f9cb2911c804713378  03-authorities/Kim-2026-04-20-public-text-reproduction.txt
+35d99260d50eeabf24cf79beaa6fb0db3693f87860dc49333ddef42f64fe6575  08-audit/cloudflare-r2-index-inspection.json
+027db2f114995bb5b8405f415abc75a8c7e21130e3d4b269d86fde15affe9de6  08-audit/collection-scripts/collect-m32.mjs
+9cd1801e2a2c7a916f7d9fc3d6c3f0562edf23a17eeec3e217dd88ab008b5500  08-audit/collection-scripts/recover-m32.mjs
+0d6fae89aeda229977c473ea957649334a7d20cd4525fdf0c10ee305b82a5c68  08-audit/collection-scripts/ocr-m32.mjs
+921245addb761bbd47b22f3e96d302cdf02e4bb2aa31fa55d6fc96e26fcff53c  08-audit/collection-scripts/finish-m32.mjs

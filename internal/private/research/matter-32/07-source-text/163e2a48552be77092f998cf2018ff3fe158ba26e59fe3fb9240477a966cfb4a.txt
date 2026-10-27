@@ -1,0 +1,57 @@
+                             MTD Attack Map & Error Inventory
+
+Matter 24 — Newanforbi v. Serrato, N.D. Cal. 4:26-cv-05953-ASK
+
+DEFENDANT NOTICE GROUNDS → OPP RESPONSE MAP
+
+Ground 1 — SDP/PDP fail because certification is discretionary.
+Opp §§ B–C: Concedes federal discretion; argues § 679.10 creates mandatory processing / explanation /
+helpfulness constraints; Catholic Charities is pre-statute; screening order already rejected sufficiency
+challenge under § 1915.
+
+Ground 2 — Retaliation fails because Plaintiff not entitled to certification / civil action is not qualifying
+crime.
+Opp § D: Perry / Umbehr — benefits may not be denied for retaliatory reasons even if discretionary; Ford
+but-for; five reinforcing allegations; Krishnan quote that Serrato lacked discretion to retaliate.
+
+Ground 3 — Strike declaratory relief / fourth cause.
+Opp § E: Concedes may be treated as prayer; keeps prospective official-capacity relief.
+
+Ground 4 — Strike injunction (Winter factors).
+Opp §§ A & E: Whittlestone — Rule 12(f) is wrong vehicle; ongoing injury allegations support
+forward-looking relief; remedy is process correction not compelled signature.
+
+Ground 5 — Strike attorney fees (pro se).
+Opp § A: Whittlestone; fees issue premature; Kay v. Ehrler goes to recoverability not 12(f) strike.
+
+Ground 6 — Qualified immunity (individual capacity).
+Opp § G: QI does not reach official-capacity Ex parte Young; clearly established retaliation + non-arbitrary
+decisionmaking; Pearson sequencing.
+
+Also: Related-case futility / serial-litigation narrative (leave to amend).
+Opp §§ F & H: Accept narrative; distinguish Fickes / E.D. Cal. / Meza-Gonzalez; no preclusion briefed;
+leave if any deficiency; FAC ¶ 21 PC cross-reference hedges.
+
+MTD ERROR INVENTORY (VERIFIED FROM FILED PDF)
+
+1. Footer case number (26CV168913) on every page — wrong court/case.
+2. Action Filed date July 21, 2026 — incorrect.
+3. "First Amended Complain" (missing t) on notice page.
+4. Notice ground 4: "payer" for prayer.
+5. "an individual s in the United States".
+6. Courtroom line blank; Judge line awkward ("Magistrate Judge Honorable Ajay Krishnan.").
+7. "Case ,Newanforbi, v. Meza-Gonzalez" punctuation garble.
+8. Cites "Complaint ¶" while arguing FAC in places.
+9. Uses Winter PI standard as 12(f) strike theory for permanent injunction prayer.
+10. 21 days' notice for Sep. 16 hearing (served Aug. 26) vs Civil L.R. 7-2(a) 35-day rule.
+
+HOW STRONG EACH DEFENSE IS (PLAIN VIEW)
+
+Discretionary-certification blunderbuss: rhetorically strong, doctrinally overstated after § 679.10 / AB 1261
+and after Dkt. 5.
+Retaliation "no entitlement": weakest Notice ground; Opp should win this framing fight.
+12(f) strikes: Opp favored under Whittlestone.
+QI: live fight; Opp's best QI path is retaliation clearly-established + official-capacity carveout.
+Fickes atmosphere: dangerous if court equates judicial-cert denial with Serrato denial; Opp's distinguish
+must stay crisp.
+

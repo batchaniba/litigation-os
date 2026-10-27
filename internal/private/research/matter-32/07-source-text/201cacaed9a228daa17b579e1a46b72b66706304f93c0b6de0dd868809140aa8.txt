@@ -1,0 +1,319 @@
+5/10/26, 12:17 PM                                                               Inform Browser : 22.313.1164.0 - Reports - Incident Report
+
+                                                                        Incident Detail Report
+                                                                                    Data Source: Data Warehouse
+                                                                                        Incident Status: Closed
+                                                                                   Incident number: 241101GG0064
+                                                                                            Case Numbers:
+                                                                                  Incident Date: 11/1/2024 01:04:13
+                                                                                Report Generated: 5/10/2026 12:17:38
+
+ Incident Information
+ Incident Type:                                  CHP No Response                                  Alarm Level:
+ Priority:                                       5                                                Problem:                                       1015-Prisoner In Custody
+ Determinant:                                                                                     Agency:                                        CHP
+ Base Response#:                                                                                  Jurisdiction:                                  GG
+ Confirmation#:                                                                                   Division:                                      118-Dublin
+ Taken By:                                       Lynn N Keith                                     Battalion:
+ Response Area:                                                                                   Response Plan:
+ Disposition:                                    F-File                                           Command Ch:
+ Cancel Reason:                                  RD-Radio Desk                                    Primary TAC:
+ Incident Status:                                Closed                                           Secondary TAC:
+ Certification:                                                                                   Delay Reason (if any):
+ Longitude:                                      121808836                                        Latitude:                                      37700761
+
+ Incident Location
+ Location Name:                                  EB 580 JWO ISABEL                                County:                                        Alameda
+ Address:                                        I580 E / ISABEL AVE W OFR                        Location Type:
+ Apartment:                                                                                       Cross Street:
+ Building:                                                                                        Map Reference:
+ City, State, Zip:                               Livermore CA 94551
+
+ Supplemental Information - Vehicle
+ VEHICLE 1
+ License:                                        9EAX768 - CA - Passenger Car
+
+ Call Receipt
+ Caller Name:
+ Method Received:                                                                                 Call Back Phone:
+ Caller Type:                                                                                     Caller Location:
+ Caller Address:                                                                                  Caller Location Phone:
+ Caller Building:                                                                                 Caller Apartment:
+ Caller City, State, Zip:                                                                         Caller County:
+
+ Time Stamps                                                                                      Elapsed Times
+ Description                          Date                Time                  User              Description                                                                Time
+ Phone Pickup                         11/1/2024           01:04:13
+ 1st Key Stroke                       11/1/2024           01:04:13                                Received to In Queue                                                       00:00:00
+ In Waiting Queue                     11/1/2024           01:04:13                                Call Taking                                                                00:00:00
+ Call Taking Complete                 11/1/2024           01:04:13              Lynn N Keith      In Queue to 1st Assign                                                     00:00:00
+ 1st Unit Assigned                    11/1/2024           01:04:13                                Call Received to 1st Assign                                                00:00:00
+ 1st Unit Enroute                     11/1/2024           01:04:13                                Assigned to 1st Enroute                                                    00:00:00
+ 1st Unit Arrived                     11/1/2024           01:04:13                                Enroute to 1st Arrived                                                     00:00:00
+ Closed                               11/1/2024           03:27:52              Lynn N Keith      Incident Duration                                                          02:23:39
+
+ Resources Assigned
+                                                                                                                                                                       Odm. Odm. Cancel
+ Unit            Primary Flag     Assigned        Disposition        Enroute           Staged           Arrived        At Patient      Delay Avail    Complete         EnrouteArrivedReason
+ C118-068        N                01:04:13        RU-Reassign        01:04:13                           01:04:13                                      03:25:57                       RU-
+                                                  Unit or Incident                                                                                                                   Reassign
+                                                                                                                                                                                     Unit
+
+ Personnel Assigned
+ Unit            Name
+ C118-068        Jose C Melano (023054); Santiago A Meza Gonzales (023295)
+
+ Caution Notes
+ No Caution Notes found
+
+ Permits
+ No Permit Information
+
+ Pre-Scheduled Information
+ No Pre-Scheduled Information
+
+ Transports
+ No Transports Information
+
+ Transport Legs
+ No Transports Information
+
+ Comments
+ Date                  Time              User                    Type                           Conf.        Comments
+ 11/1/2024             01:04:16          A13903                  Response                        Y           [1] [Query] C118-068, CLETS/NCIC Vehicle Inquiry: C,CA,9EAX768,PC,4,T
+ 11/1/2024             01:04:30          A13903                  Response                        Y           [2] [Query] C118-068, 1. 1127: C,CA,L1,F7953179
+ 11/1/2024             01:04:35          A13903                  Response                                    [3] C118-068 REQ 29 SUB
+ 11/1/2024             01:06:42          A13903                  Response                        Y           [4] [Query] C118-068, SRF Person Inq by Number: C,F7953179
+                                                                                                             [5] [Query] C118-068, Wanted Person Inquiry by Name: C,NGWANFORBI BRENDAN
+ 11/1/2024             01:07:01              A13903              Response                        Y
+                                                                                                             N,091696,M
+ 11/1/2024             01:07:08              A13903              Response                        Y           [6] [Query] C118-068, Gun Inquiry by Name: C,NGWANFORBI BRENDAN N,091696
+ 11/1/2024             01:07:29              A13903              Response                                    [7] PER NCIC, SUBJ ON CDC PAROLE FOR 289 A1 PC
+ 11/1/2024             01:08:22              A13903              Response                                    [8] PER NCIC, SUBJ IS A 290 REGISTRANT
+ 11/1/2024             01:10:11              A13903              Response                                    [9] LL W/ SAN JOAQUIN CO
+ 11/1/2024             01:11:29              A13903              Response                                    [10] SUBJ CLR SAN JOAQUIN
+ 11/1/2024             01:12:33              A13903              Response                                    [11] 118-68 OFCR MEZA 23295 1015 AT 0112*****
+ 11/1/2024             01:12:39              A13903              Response                                    [12] 118-68 REQ 1185 FOR TESLA
+                                                                                                             [13] [Notification] [CHP]-Problem changed from STOP to 1015-Prisoner In Custody by
+ 11/1/2024             01:12:42              A13903              Response
+                                                                                                             CHP
+ 11/1/2024             01:14:14              A12772              Response                                    [14] [Rotation Request Comment] 1039 UNITED TOWING LVMR 925-777-7778
+ 11/1/2024             01:14:19              A13903              Response                                    [15] SUBJ CLR AWS
+                                                                                                             [16] 180 INFO: 2023 TESLA MODEL Y, SUV, GRY IN COLOR, 9EAX768, TWO
+ 11/1/2024             01:53:17              023295              Response                        Y
+                                                                                                             PLATES, TAKEN FOR 22651(h)(1) VC BY OFFICER MELANO 23054
+ 11/1/2024             01:53:39              A13903              Response                                    [17] C118-068 BM 14799 TO OFC
+ 11/1/2024             01:53:48              A13903              Response                                    [18] C118-068 PTY IS A REFUSAL
+ 11/1/2024             01:53:52              A13903              Response                                    [19] Secondary Location for C118-068: OFC,
+ 11/1/2024             01:54:00              A13903              Response                                    [20] 118-S7 CPYS
+                                                                                                                                                       AGO 000022
+chpggp30web01.visicad.local/VisiNetBrowser/Search/IncidentReport.aspx?id=23324262&ds=a                                                                                                        1/3
+5/10/26, 12:17 PM                                                     Inform Browser : 22.313.1164.0 - Reports - Incident Report
+ 11/1/2024          01:59:41         A13903              Response                             [21] C118-068 EM 805 @ OFC
+ 11/1/2024          01:59:46         A13903              Response                             [22] C118-068 REQ BT TO DUB OFC
+ 11/1/2024          02:00:57         A13903              Response                             [23] 1039 BT VIA BLOODBOT
+ 11/1/2024          02:07:43         A08297              Response                      Y      [24] [Notification] [CHP]-BT ETA TO DUBLIN OFC 15 MINS // 510.472.4538
+                                                                                              [25] [Query] 118-CLETS, 1. Vehicle - Stored:
+ 11/1/2024          02:11:59         A13903              Response                      Y      C,9EAX768,CA,25,PC,7SAYGDEE3PF638736,23,TESL,TY,LL,GRY,110124,V0147839
+                                                                                              024,UNITED TOW 925-777-7778/22651H/GG0064/A13903
+ 11/1/2024          02:12:18         A13903              Response                             [26] FCN/1202430600385 / V-Number: 01478-390-24 / 9EAZ768
+ 11/1/2024          02:47:26         A13903              Response                             [27] C118-068 BM 805 TO RITA
+ 11/1/2024          02:47:30         A13903              Response                             [28] Secondary Location for C118-068: RITA,
+ 11/1/2024          02:50:12         A13903              Response                             [29] C118-068 EM 806 @ RITA
+ 11/1/2024          03:25:50         023295              Response                      Y      [30] PARTY BOOKED FOR 23152(a) VC
+ 11/1/2024          03:26:17         A13903              Response                             [31] BOLO Entry: IC - In Custody Added By A13903 for Incident# 23324262
+                                                                                              [32] LOCATED/CONTACTED FCN/H092033700531NAM/NEWANFORBI,BRENDAN
+ 11/1/2024          04:23:38         A13903              Response
+                                                                                              NGEHSI********** END OF SRF CONTACT MESSAGE **********
+ 11/1/2024          04:23:45         A13903              Response                             [33] CONTACT MSG SENT FOR PAROLE
+
+ Address Changes
+ Date            Time            Location/Address                                                                                                         User
+ 11/1/2024       01:06:16        EB 580 JWO ISABEL / Eb Jwo Isa                                                                                           LNK
+
+ Priority Changes
+ No Priority Changes
+
+ Alarm Level Changes
+ No Alarm Level Changes
+
+ Activity Log
+ Date           Time           Radio          Activity                        Location                     Log Entry                                         User
+ 11/1/2024      01:04:13       C118-068       10-97                           Eb Jwo Isa                                                                     A13903
+ 11/1/2024      01:04:13                      Supplemental Information        Eb Jwo Isa                   Supplemental Vehicle record 3509537 was added for A13903
+                                                                                                           license plate 9EAX768
+ 11/1/2024      01:04:13                      License Plate                   Eb Jwo Isa                   Plate Number 9EAX768 has been added.              A13903
+ 11/1/2024      01:04:16       C118-068       [Query]                                                      [Query] CLETS/NCIC Vehicle Inquiry:               A13903
+                                                                                                           C,CA,9EAX768,PC,4,T
+ 11/1/2024      01:04:16                      Read Comment                    Eb Jwo Isa                   Comment for Incident 262 was marked as read.      A13903
+ 11/1/2024      01:04:30       C118-068       [Query]                                                      [Query] 1. 1127: C,CA,L1,F7953179                 A13903
+ 11/1/2024      01:06:04                      Read Incident                                                Incident 262 was Marked as Read.                  A13903
+ 11/1/2024      01:06:04                      Read Comment                                                 Comment for Incident 262 was Marked as Read.      A13903
+ 11/1/2024      01:06:11       C118-068       Update Unit Address             Eb Jwo Isa                                                                     A13903
+ 11/1/2024      01:06:17       C118-068       Update Unit Address             I580 E / ISABEL AVE W OFR                                                      A13903
+ 11/1/2024      01:06:42       C118-068       [Query]                                                      [Query] SRF Person Inq by Number: C,F7953179      A13903
+ 11/1/2024      01:06:42                      Read Comment                    I580 E / ISABEL AVE W OFR    Comment for Incident 262 was marked as read.      A13903
+ 11/1/2024      01:07:01       C118-068       [Query]                                                      [Query] Wanted Person Inquiry by Name:            A13903
+                                                                                                           C,NGWANFORBI BRENDAN N,091696,M
+ 11/1/2024      01:07:08       C118-068       [Query]                                                      [Query] Gun Inquiry by Name: C,NGWANFORBI         A13903
+                                                                                                           BRENDAN N,091696
+ 11/1/2024      01:12:42                      Problem Nature                  I580 E / ISABEL AVE W OFR    Incident problem nature changed from STOP to      A13903
+                                                                                                           1015-Prisoner In Custody
+ 11/1/2024      01:12:51       C118-068       Task Request Sent               I580 E                       Task request: REQ 1185 THX. The request was sent A13903
+                                                                                                           to advisor role(s): SCGG.
+ 11/1/2024      01:12:53                      UserAction                                                   User clicked Exit/Save                            A13903
+ 11/1/2024      01:13:20       C118-068       Task Request Accepted           I580 E                       Request: REQ 1185 THX. The request was accepted A12772
+                                                                                                           by Fara Farrales (A12772)
+ 11/1/2024      01:13:22       C118-068       Rotation Request Entered        I580 E / ISABEL AVE W OFR    Rotation Request 11012024-0001106 entered.        A12772
+                                                                              Livermore, CA 94551
+ 11/1/2024      01:13:55       C118-068       Task Request Declined           I580 E                        Request: TASK REQUEST: 262, C118-068 TEXT:       A19710
+                                                                                                            REQ 1185 THX. The request was declined by
+                                                                                                            Matthew P Venoya (A19710)
+ 11/1/2024      01:14:14                      Read Comment                                                  Comment for Incident 262 was Marked as Read.     A13903
+ 11/1/2024      01:14:14                      Read Comment                    I580 E / ISABEL AVE W OFR     Comment for Incident 262 was marked as read.     A12772
+ 11/1/2024      01:14:15                      Read Comment                                                  Comment for Incident 262 was Marked as Read.     A13903
+ 11/1/2024      01:14:15       C118-068       Rotation Provider Assigned      I580 E / ISABEL AVE W OFR     [RR 945675] Rotation Provider United Towing LVMR A12772
+                                                                              Livermore, CA 94551           assigned to request.
+ 11/1/2024      01:14:19                      Read Comment                    I580 E / ISABEL AVE W OFR     Comment for Incident 262 was marked as read.     A13903
+ 11/1/2024      01:14:32                      UserAction                                                    User clicked Exit/Save                           A13903
+ 11/1/2024      01:15:34                      UserAction                                                    User clicked Exit/Save                           A12772
+ 11/1/2024      01:21:07                      UserAction                                                    User clicked Exit/Save                           CT_NMARKOS
+ 11/1/2024      01:53:52       C118-068       ENRT ALT                        OFC                           Incident ID = 23324262, 0, 0, ,                  A13903
+ 11/1/2024      01:53:56                      Read Comment                                                  Comment for Incident 262 was Marked as Read.     A13903
+ 11/1/2024      01:54:00                      UserAction                                                    User clicked Exit/Save                           A13903
+ 11/1/2024      01:54:00                      Read Comment                    I580 E / ISABEL AVE W OFR     Comment for Incident 262 was marked as read.     A13903
+ 11/1/2024      01:59:28       C118-068       10-97 ALT                       OFC                           Incident ID = 23324262, 0, 0, ,                  A13903
+ 11/1/2024      01:59:56                      Read Comment                                                  Comment for Incident 262 was Marked as Read.     A13903
+ 11/1/2024      02:00:57                      Read Comment                    I580 E / ISABEL AVE W OFR     Comment for Incident 262 was marked as read.     A13903
+ 11/1/2024      02:01:03                      UserAction                                                    User clicked Exit/Save                           A13903
+ 11/1/2024      02:07:01                      Read Comment                                                  Comment for Incident 262 was Marked as Read.     A13903
+ 11/1/2024      02:07:43                      Read Comment                    I580 E / ISABEL AVE W OFR     Comment for Incident 262 was marked as read.     A08297
+ 11/1/2024      02:07:45                      UserAction                                                    User clicked Exit/Save                           A08297
+ 11/1/2024      02:11:59       118-CLETS      [Query]                                                       [Query] 1. Vehicle - Stored:                     A13903
+                                                                                                            C,9EAX768,CA,25,PC,7SAYGDEE3PF638736,23,TESL,TY,LL,GRY,110
+                                                                                                            TOW 925-777-7778/22651H/GG0064/A13903
+ 11/1/2024      02:12:20                      UserAction                                                    User clicked Exit/Save                           A13903
+ 11/1/2024      02:26:35                      Read Comment                                                  Comment for Incident 262 was Marked as Read.     A13903
+ 11/1/2024      02:26:39                      UserAction                                                    User clicked Exit/Save                           A13903
+ 11/1/2024      02:39:22                      UserAction                                                    User clicked Exit/Save                           CT_WAU
+ 11/1/2024      02:44:09                      UserAction                                                    User clicked Exit/Save                           A13903
+ 11/1/2024      02:47:26                      Read Comment                    I580 E / ISABEL AVE W OFR     Comment for Incident 262 was marked as read.     A13903
+ 11/1/2024      02:47:30       C118-068       ENRT ALT                        RITA                          Incident ID = 23324262, 0, 0, ,                  A13903
+ 11/1/2024      02:47:31                      UserAction                                                    User clicked Exit/Save                           A13903
+ 11/1/2024      02:50:01       C118-068       10-97 ALT                       RITA                          Incident ID = 23324262, 0, 0, ,                  A13903
+ 11/1/2024      03:25:57       C118-068       Disposition                     EB 580 JWO ISABEL             RU-Reassign Unit or Incident                     C118-068
+ 11/1/2024      03:25:57       C118-068       10-8                            I580 E / ISABEL AVE W OFR [EB Unit Cleared From Incident 241101GG0064          C118-068
+                                                                              580 JWO ISABEL]
+ 11/1/2024      03:25:58       C118-068       Available                                                     Request to Cancel By mobile unit (C118-068)      C118-068
+ 11/1/2024      03:25:58       C118-068       Reassign Vehicle                                              ReAssign Reason: RU-Reassign Unit                C118-068
+ 11/1/2024      03:25:58       C118-068       Reassign Response                                             ReAssign Reason: RU-Reassign Unit                C118-068
+ 11/1/2024      03:25:58       C118-068       Reassign Response                                             Clearing Primary Vehicle Flag                    C118-068
+ 11/1/2024      03:26:05                      Read Comment                                                  Comment for Incident 262 was Marked as Read.     A13903
+ 11/1/2024      03:27:47                      Create BOLO Record              I580 E / ISABEL AVE W OFR     BOLO Entry: IC - In Custody Added By A13903 for A13903
+                                                                                                            Incident# 23324262
+ 11/1/2024      03:27:47                      Read Comment                    I580 E / ISABEL AVE W OFR     Comment for Incident 262 was marked as read.     A13903
+ 11/1/2024      03:27:50                      UserAction                                                    User clicked Cancel                              A13903
+ 11/1/2024      03:27:52                      Cancel Response                 EB 580 JWO ISABEL             Cancellation Reason: RD-Radio Desk, Response     A13903
+
+                                                                                                                                     AGO 000023
+                                                                                                            Disposition: F-File
+
+chpggp30web01.visicad.local/VisiNetBrowser/Search/IncidentReport.aspx?id=23324262&ds=a                                                                                2/3
+5/10/26, 12:17 PM                                                   Inform Browser : 22.313.1164.0 - Reports - Incident Report
+ 11/1/2024       04:21:56                    Read Comment                                                  Comment for Incident 262 was Marked as Read.     A13903
+ 11/1/2024       04:23:38                    Read Comment                   I580 E / ISABEL AVE W OFR      Comment for Incident 262 was marked as read.     A13903
+ 11/1/2024       04:24:07                    UserAction                                                    User clicked Exit/Save                           A13903
+
+ Edit Log
+ Date            Time       Field          Changed From                    Changed To                   Reason          Table                             WorkstationUser
+ 11/1/2024       01:04:16   Unread Comment False                           True                         (Response       Incident                          GG040      A13903
+                                                                                                        Viewer)
+ 11/1/2024       01:06:04   Read Comment      False                        True                         (Response       Response_Master_Incident          GG040      A13903
+                                                                                                        Viewer)
+ 11/1/2024       01:06:04   Read Call         False                        True                         (Response       Response_Master_Incident          GG040      A13903
+                                                                                                        Viewer)
+ 11/1/2024       01:06:11   Location_Name                                  EB 580 JWO ISABEL            (Response       Response_Master_Incident          GG040      A13903
+                                                                                                        Viewer)
+ 11/1/2024       01:06:13   Address           Eb Jwo Isa                   I580 E/ Isa                  Address Change Response_Master_Incident           GG040      A13903
+ 11/1/2024       01:06:16   Address           I580 E/ Isa                  I580 E / ISABEL AVE W OFR    Change Verified Response_Master_Incident          GG040      A13903
+ 11/1/2024       01:06:16   County                                         Alameda                      (Response       Response_Master_Incident          GG040      A13903
+                                                                                                        Viewer)
+ 11/1/2024       01:06:16   IntersectionStreetIDNULL                       954116                       (Response       Response_Master_Incident          GG040      A13903
+                                                                                                        Viewer)
+ 11/1/2024       01:06:16   Street_Id         NULL                         954115                       (Response       Response_Master_Incident          GG040      A13903
+                                                                                                        Viewer)
+ 11/1/2024       01:06:16   Longitude         0                            121808836                    (Response       Response_Master_Incident          GG040      A13903
+                                                                                                        Viewer)
+ 11/1/2024       01:06:16   Latitude          0                            37700761                     (Response       Response_Master_Incident          GG040      A13903
+                                                                                                        Viewer)
+ 11/1/2024       01:06:16   Postal_Code                                    94551                        (Response       Response_Master_Incident          GG040      A13903
+                                                                                                        Viewer)
+ 11/1/2024       01:06:16   State                                          CA                           (Response       Response_Master_Incident          GG040      A13903
+                                                                                                        Viewer)
+ 11/1/2024       01:06:16   City                                           Livermore                    (Response       Response_Master_Incident          GG040      A13903
+                                                                                                        Viewer)
+ 11/1/2024       01:06:16   Address           Eb Jwo Isa                   I580 E / ISABEL AVE W OFR    (Response       Response_Master_Incident          GG040      A13903
+                                                                                                        Viewer)
+ 11/1/2024       01:06:17   LAW                                            LVMR                         (Response       Incident                          GG040      A13903
+                                                                                                        Viewer)
+ 11/1/2024       01:06:17   FIRE                                           ACRECC                       (Response       Incident                          GG040      A13903
+                                                                                                        Viewer)
+ 11/1/2024       01:06:17   EMS                                            ACRECC                       (Response       Incident                          GG040      A13903
+                                                                                                        Viewer)
+ 11/1/2024       01:06:42   Unread Comment False                           True                         (Response       Incident                          GG040      A13903
+                                                                                                        Viewer)
+ 11/1/2024       01:12:42   Incident_Type     1 CHP Unit Incident          CHP No Response              (Response       Response_Master_Incident          GG040      A13903
+                                                                                                        Viewer)
+ 11/1/2024       01:12:42   Problem           STOP                         1015-Prisoner In Custody     (Response       Response_Master_Incident          GG040      A13903
+                                                                                                        Viewer)
+ 11/1/2024       01:14:14   Read Comment      False                        True                         (Response       Response_Master_Incident          GG040      A13903
+                                                                                                        Viewer)
+ 11/1/2024       01:14:14   Unread Comment False                           True                         (Response       Incident                          GG017      A12772
+                                                                                                        Viewer)
+ 11/1/2024       01:14:15   Read Comment      False                        True                         (Response       Response_Master_Incident          GG040      A13903
+                                                                                                        Viewer)
+ 11/1/2024       01:14:19   Unread Comment False                           True                         (Response       Incident                          GG040      A13903
+                                                                                                        Viewer)
+ 11/1/2024       01:53:56   Read Comment      False                        True                         (Response       Response_Master_Incident          GG040      A13903
+                                                                                                        Viewer)
+ 11/1/2024       01:54:00   Unread Comment False                           True                         (Response       Incident                          GG040      A13903
+                                                                                                        Viewer)
+ 11/1/2024       01:59:56   Read Comment      False                        True                         (Response       Response_Master_Incident          GG040      A13903
+                                                                                                        Viewer)
+ 11/1/2024       02:00:57   Unread Comment False                           True                         (Response       Incident                          GG040      A13903
+                                                                                                        Viewer)
+ 11/1/2024       02:07:01   Read Comment      False                        True                         (Response       Response_Master_Incident          GG040      A13903
+                                                                                                        Viewer)
+ 11/1/2024       02:07:43   Unread Comment False                           True                         (Response       Incident                          GG035      A08297
+                                                                                                        Viewer)
+ 11/1/2024       02:26:35   Read Comment      False                        True                         (Response       Response_Master_Incident          GG040      A13903
+                                                                                                        Viewer)
+ 11/1/2024       02:47:26   Unread Comment False                           True                         (Response       Incident                          GG040      A13903
+                                                                                                        Viewer)
+ 11/1/2024       03:26:05   Read Comment      False                        True                         (Response       Response_Master_Incident          GG040      A13903
+                                                                                                        Viewer)
+ 11/1/2024       03:27:47   Unread Comment False                           True                         (Response       Incident                          GG040      A13903
+                                                                                                        Viewer)
+ 11/1/2024       04:21:56   Read Comment      False                        True                         (Response       Response_Master_Incident          GG040      A13903
+                                                                                                        Viewer)
+ 11/1/2024       04:23:38   Unread Comment False                           True                         (Response       Incident                          GG040      A13903
+                                                                                                        Viewer)
+
+ Custom Time Stamps
+ No Custom Time Stamps
+
+ Custom Data Fields
+ Description                                                                                                          Data                                 User
+ EMS                                                                                                                  ACRECC                               A13903
+ FIRE                                                                                                                 ACRECC                               A13903
+ LAW                                                                                                                  LVMR                                 A13903
+
+ Attachments
+ No Attachment
+
+
+
+
+                                                                                                                                    AGO 000024
+chpggp30web01.visicad.local/VisiNetBrowser/Search/IncidentReport.aspx?id=23324262&ds=a                                                                                   3/3
+

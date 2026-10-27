@@ -1,0 +1,472 @@
+                        FOR PUBLICATION
+
+    UNITED STATES COURT OF APPEALS
+         FOR THE NINTH CIRCUIT
+
+
+ UNITED STATES OF AMERICA,                       No. 19-10243
+            Plaintiff-Appellee,
+                                                  D.C. No.
+                   v.                       3:18-cr-00358-CRB-1
+
+ MALIK NGUMEZI,
+         Defendant-Appellant.                      OPINION
+
+         Appeal from the United States District Court
+           for the Northern District of California
+         Charles R. Breyer, District Judge, Presiding
+
+              Argued and Submitted June 8, 2020
+                  San Francisco, California
+
+                    Filed November 20, 2020
+
+  Before: Eric D. Miller and Danielle J. Hunsaker, Circuit
+      Judges, and Patrick J. Schiltz, * District Judge.
+
+                     Opinion by Judge Miller
+
+
+
+
+    *
+      The Honorable Patrick J. Schiltz, United States District Judge for
+the District of Minnesota, sitting by designation.
+2                 UNITED STATES V. NGUMEZI
+
+                          SUMMARY **
+
+
+                          Criminal Law
+
+     The panel reversed the district court’s denial of a motion
+to suppress a firearm found in a search of the defendant’s
+car, vacated his conviction for being a felon in possession of
+a firearm, and remanded for further proceedings.
+
+    The panel held that police officers who have reasonable
+suspicion sufficient to justify a traffic stop—but who lack
+probable cause or any other particularized justification, such
+as a reasonable belief that the driver poses a danger—may
+not open the door to a vehicle and lean inside.
+
+    Because opening the car door and leaning into the car
+constituted an unlawful search under the Fourth
+Amendment, the panel considered what remedy is
+appropriate in this case. The panel held that the exclusionary
+rule applies to the loaded handgun found under the driver’s
+seat because the government made no effort to satisfy its
+burden to show that the gun is not “the fruit of the poisonous
+tree,” did not invoke the attenuation doctrine, and did not
+argue that the inevitable-discovery doctrine applies.
+
+
+                            COUNSEL
+
+Steven J. Koeninger (argued) and Jonathan Abel, Assistant
+Federal Public Defenders; Steven G. Kalar, Federal Public
+
+    **
+       This summary constitutes no part of the opinion of the court. It
+has been prepared by court staff for the convenience of the reader.
+                UNITED STATES V. NGUMEZI                     3
+
+Defender; Office of the Federal Public Defender, San
+Francisco, California; for Defendant-Appellant.
+
+Briggs Matheson (argued), Assistant United States Attorney;
+Merry Jean Chan, Chief, Appellate Section, Criminal
+Division; David L. Anderson, United States Attorney;
+United States Attorney’s Office, San Francisco, California;
+for Plaintiff-Appellee.
+
+
+                         OPINION
+
+MILLER, Circuit Judge:
+
+    Following a bench trial, Malik Ngumezi was convicted
+of being a felon in possession of a firearm, in violation of
+18 U.S.C. § 922(g)(1). He appeals the denial of his motion
+to suppress the firearm, which was found in a search of his
+car. Because we conclude that the search violated the Fourth
+Amendment, we reverse the denial of the suppression
+motion, vacate the conviction, and remand for further
+proceedings.
+
+    The search at issue occurred in the early morning hours
+of May 6, 2018, after a San Francisco police officer, Kolby
+Willmes, saw Ngumezi’s car parked at a gas station with
+Ngumezi in the driver’s seat. The car had no license plates,
+in apparent violation of section 5200(a) of the California
+Vehicle Code. See People v. Dotson, 101 Cal. Rptr. 3d 897,
+901 (Cal. Ct. App. 2009). Ngumezi had recently purchased
+the car, and a bill of sale was affixed to the lower passenger-
+side corner of the windshield.
+
+   Willmes approached the car to investigate; because a gas
+pump blocked access to the driver side, he went to the
+passenger side. According to Ngumezi, Willmes then
+4               UNITED STATES V. NGUMEZI
+
+opened the passenger door, leaned into the car, and asked
+Ngumezi for his driver’s license and vehicle registration. For
+his part, Willmes agrees that he asked for Ngumezi’s license
+and registration and does not deny that he first opened the
+door and leaned inside. Willmes says that he does not
+remember whether he opened the door, or whether he instead
+spoke to Ngumezi through an open window.
+
+    Ngumezi produced a California identification card but
+not a driver’s license. Willmes asked Ngumezi if his license
+was suspended, and Ngumezi admitted that it was. Another
+officer then ran a license check and confirmed that
+Ngumezi’s license was suspended and that Ngumezi had
+three prior citations for driving with a suspended license.
+
+    San Francisco Police Department policy requires
+officers to inventory and tow a vehicle when a driver lacks a
+valid license and has at least one prior citation for driving
+without a valid license. Consistent with that policy, the
+officers prepared to have Ngumezi’s car towed. In
+conducting the inventory search, they found a loaded
+.45 caliber handgun under the driver’s seat. The officers then
+ran a background check and learned that Ngumezi was
+prohibited from possessing firearms because of a previous
+felony conviction.
+
+    Ngumezi was charged with one count of being a felon in
+possession of a firearm, in violation of 18 U.S.C.
+§ 922(g)(1). He moved to suppress the firearm as fruit of an
+unlawful search. He conceded that “Officer Willmes . . . had
+articulable facts and reasonable suspicion to approach the
+vehicle” when Willmes saw that it had no plates. But he
+argued that once Willmes approached, “he necessarily was
+in eyesight of the proof of sale affixed to the front right-side
+windshield,” and the bill of sale “dissipated reasonable
+suspicion that the car was not registered.” Because
+                UNITED STATES V. NGUMEZI                      5
+
+reasonable suspicion had dissipated, Ngumezi argued, “no
+Fourth Amendment exception permitted the officer’s further
+interrogation, pulling the defendant out of the car, or
+searching the car.”
+
+    The district court denied the motion to suppress. The
+court assumed the correctness of Ngumezi’s version of the
+facts. It emphasized, however, that the “reasonable suspicion
+inquiry is based on what the officer is aware of, and therefore
+reasonable suspicion cannot be dispelled by facts unknown
+to the officer.” The court noted that Ngumezi did “not allege
+that Willmes actually saw the proof of sale, only that it was
+in his line of sight.” It concluded that “[w]ithout any
+evidence, or indeed even the assertion, that the officer in fact
+actually saw the proof of sale, its existence could not have
+factored into his analysis of the situation and thus could not
+have dispelled his reasonable suspicion.”
+
+    After the district court denied the suppression motion,
+Ngumezi waived his right to a jury trial and requested a
+bench trial on stipulated facts. The court found Ngumezi
+guilty and sentenced him to 18 months of imprisonment, to
+be followed by two years of supervised release.
+
+    On appeal, Ngumezi challenges only the denial of the
+motion to suppress, which we review de novo. United
+States v. Ped, 943 F.3d 427, 430 (9th Cir. 2019). His
+principal argument is that whether or not Officer Willmes
+had reasonable suspicion at the time he opened the door,
+opening the door and leaning inside constituted a search that
+violated the Fourth Amendment because it was not
+authorized by any exception to the warrant requirement.
+
+    As we have explained, the district court focused on a
+different argument—that reasonable suspicion should have
+been dispelled because the bill of sale was visible in the
+6               UNITED STATES V. NGUMEZI
+
+windshield—and it did not address the argument that
+opening the door and leaning inside was an unlawful search.
+We can hardly fault the district court for ignoring that issue
+because Ngumezi raised it only in a footnote in his reply in
+support of his motion to suppress. We have held that “a
+perfunctory request, buried amongst the footnotes, does not
+preserve an argument on appeal.” Coalition for a Healthy
+Cal. v. FCC, 87 F.3d 383, 384 n.2 (9th Cir. 1996). Thus, had
+the government argued that the issue was forfeited, we
+would have been compelled to agree. In that case, we could
+have considered Ngumezi’s argument only if he could show
+good cause for not properly raising it in his motion to
+suppress. United States v. Guerrero, 921 F.3d 895, 897–98
+(9th Cir. 2019) (per curiam); see Fed. R. Crim. P. 12(c)(3).
+But the government has not made a forfeiture argument.
+Instead, it has addressed the issue on the merits and invited
+us to do so as well. We conclude that the government has
+forfeited any claim of forfeiture, so we proceed to consider
+the merits. United States v. Doe, 53 F.3d 1081, 1083 (9th
+Cir. 1995).
+
+    In doing so, we assume, as the district court did, that
+Ngumezi’s version of the facts is correct. The key facts are
+not disputed: Ngumezi says that Willmes opened the car
+door and leaned into the car, and Willmes does not
+specifically deny that that is what he did. We therefore must
+consider whether police officers who have reasonable
+suspicion sufficient to justify a traffic stop—but who lack
+probable cause or any other particularized justification, such
+as a reasonable belief that the driver poses a danger—may
+open the door to a vehicle and lean inside. We conclude they
+may not.
+
+   We begin by examining the Supreme Court’s decision in
+New York v. Class, 475 U.S. 106 (1986), which sets out the
+                UNITED STATES V. NGUMEZI                      7
+
+principles that control this case. In Class, police officers
+stopped a car for speeding. Id. at 107–08. During the stop,
+an officer opened the door to read the vehicle identification
+number printed on the doorjamb. Id. at 108. When he did not
+find the VIN there, he decided to search the dashboard,
+where the VIN for newer cars is located. Id. Because the VIN
+on the dashboard was covered by papers, the officer opened
+the door and reached inside to move them out of the way;
+while doing so, he saw a gun hidden under the seat. Id.
+
+    The Supreme Court held that the officer’s conduct did
+not violate the Fourth Amendment. The Court explained that
+“a car’s interior as a whole is . . . subject to Fourth
+Amendment protection from unreasonable intrusions by the
+police.” Class, 475 U.S. at 114–15. And it had no difficulty
+in concluding that “the intrusion into that space” by the
+officer “constituted a ‘search.’” Id. at 115. Nevertheless, it
+held that the search was valid because “the governmental
+interest in highway safety served by obtaining the VIN is of
+the first order,” and the VIN’s location on the dashboard is
+“ordinarily in plain view of someone outside the
+automobile,” so the intrusion involved in searching it is
+“minimal.” Id. at 117–18. The Court made clear that the
+result would have been different had the VIN not been
+covered by papers: “If the VIN is in the plain view of
+someone outside the vehicle, there is no justification for
+governmental intrusion into the passenger compartment to
+see it.” Id. at 119.
+
+    Class establishes that a physical intrusion into the
+interior of a car constitutes a search. Although the search in
+Class was justified because of the specific need—finding the
+VIN—and its minimal intrusiveness, neither of those
+considerations is present here. The government has pointed
+to no justification for a search. It has not argued that Willmes
+8                UNITED STATES V. NGUMEZI
+
+had probable cause, nor has it suggested that Willmes had
+any reason to fear that Ngumezi might be dangerous. See
+Michigan v. Long, 463 U.S. 1032, 1049 (1983) (authorizing
+a protective search of a vehicle’s passenger compartment
+“when police have a reasonable belief that the suspect poses
+a danger”). Instead, it relies on the general principle that a
+driver has a “diminished” expectation of privacy in a vehicle.
+Class, 475 U.S. at 113. That is true, but as the Court made
+clear in Class, a driver retains important privacy interests, id.
+at 112–14, which is why, in most circumstances, “probable
+cause is necessary to conduct a warrantless search of a
+vehicle,” United States v. Rodgers, 656 F.3d 1023, 1024 (9th
+Cir. 2011).
+
+    The government argues that Ngumezi would have had to
+speak with Willmes one way or another, and therefore
+opening the door and leaning in was “minimally intrusive”
+because, as a practical matter, it “did not alter Ngumezi’s
+circumstances—it merely facilitated communication.” It
+analogizes Willmes’s action to that of shining a flashlight
+into a car, which the Supreme Court has held is not a search.
+See Texas v. Brown, 460 U.S. 730, 740 (1983) (plurality
+opinion). That reasoning is flawed because it ignores that
+Willmes entered the interior space of the vehicle when he
+leaned in across the plane of the door. As several recent
+Supreme Court decisions have confirmed, that physical
+intrusion is constitutionally significant: “When ‘the
+Government obtains information by physically intruding’ on
+persons, houses, papers, or effects, ‘a “search” within the
+original meaning of the Fourth Amendment’ has
+‘undoubtedly occurred.’” Florida v. Jardines, 569 U.S. 1, 5
+(2013) (quoting United States v. Jones, 565 U.S. 400, 406
+n.3 (2012)); see Jones, 565 U.S. at 408 n.5 (explaining that
+a physical intrusion “conjoined with . . . an attempt to find
+something or to obtain information” constitutes a search).
+                 UNITED STATES V. NGUMEZI                       9
+
+Although the intrusion here may have been modest, the
+Supreme Court has never suggested that the magnitude of a
+physical intrusion is relevant to the Fourth Amendment
+analysis. Jones, for example, involved the attachment of a
+GPS tracker that was “a small, light object that [did] not
+interfere in any way with the car’s operation,” yet the Court
+still held that the attachment effected a search. 565 U.S.
+at 424–25 (Alito, J., concurring in the judgment). Nor do we
+see how courts could administer a test that would require
+them to distinguish between Willmes leaning into the
+passenger-side area of Ngumezi’s car and, say, an officer
+crawling into the back of a car to look under the seats.
+Instead, we apply a bright-line rule that opening a door and
+entering the interior space of a vehicle constitutes a Fourth
+Amendment search. See Class, 475 U.S. at 115.
+
+    The government emphasizes that, under Pennsylvania v.
+Mimms, 434 U.S. 106 (1977) (per curiam), an officer “may
+as a matter of course order the driver of a lawfully stopped
+car to exit his vehicle.” Maryland v. Wilson, 519 U.S. 408,
+410 (1997); see id. (extending that rule to passengers). In the
+government’s view, opening a door and leaning into a car is
+less intrusive than ordering a driver to get out of a car, so if
+the latter is permissible, then the former must be permissible
+as well. Ordering a driver out of a car is indeed an “intrusion
+into the driver’s personal liberty”—albeit one that the Court
+in Mimms described as a “de minimis” intrusion that “hardly
+rises to the level of a ‘petty indignity.’” 434 U.S. at 111
+(quoting Terry v. Ohio, 392 U.S. 1, 17 (1968)). But even if
+opening a door and leaning into the car is a lesser intrusion
+on the driver’s liberty, it is a greater intrusion on the driver’s
+privacy interest in the car’s interior. Indeed, the Court
+emphasized in Mimms that a driver ordered out of a car “is
+being asked to expose to view very little more . . . than is
+already exposed,” something that is not true when an officer
+10               UNITED STATES V. NGUMEZI
+
+enters the vehicle. Id. The rule in Mimms does not support
+Willmes’s action here.
+
+    The government also relies on United States v. Brown,
+334 F.3d 1161 (D.C. Cir. 2003), and United States v.
+Stanfield, 109 F.3d 976 (4th Cir. 1997), which both upheld
+the opening of car doors by police during traffic stops. But
+in both cases, the courts identified particularized reasons for
+the officers to fear danger. In Brown, the court pointed to
+several factors “support[ing] both the officers’ suspicion of
+criminal activity and their fear of physical harm,” including
+that the officers were responding to a reported shooting, that
+passengers in the car made furtive movements as the officers
+approached, and that the car’s windows “were darkly tinted,
+preventing the officers from having a clear view of the car’s
+occupants.” 334 F.3d at 1168–69. Similarly, in Stanfield, the
+court described the car as one “with windows so heavily
+tinted that [the officers] are unable to view the interior of the
+stopped vehicle,” and it characterized the inspection as one
+“to ascertain whether the driver is armed, whether he has
+access to weapons, or whether there are other occupants of
+the vehicle who might pose a danger to the officers.”
+109 F.3d at 981. And, crucially, in both cases the court
+emphasized that the inspection was conducted “without
+breaking the plane of the car’s surface.” Brown, 334 F.3d
+at 1169; accord Stanfield, 109 F.3d at 981. That fact
+distinguishes the officers’ conduct in those cases from the
+physical entry into the car that occurred here.
+
+    Cases in which courts have upheld an entry into a car
+also have involved some particularized justification. For
+example, in United States v. Ryles, 988 F.2d 13 (5th Cir.
+1993), an officer stopped a car for suspected drunk driving,
+determined that the driver lacked a valid license, and then
+opened the door and looked in the car to see whether the
+                 UNITED STATES V. NGUMEZI                     11
+
+passenger, “who would ultimately be driving” the vehicle,
+was impaired. Id. at 15. The court held that the inspection
+was permissible in those circumstances but expressly
+rejected the suggestion “that a police officer may in all
+circumstances constitutionally intrude into the interior of a
+vehicle simply because he has temporarily lawfully detained
+the vehicle because of a traffic violation.” Id. at 16; see also,
+e.g., United States v. Meredith, 480 F.3d 366, 367 (5th Cir.
+2007) (upholding opening of door for “minimally necessary
+visual inspection” of driver who claimed to be unable to exit
+the vehicle after being ordered to do so); United States v.
+Cotton, 721 F.2d 350, 352 & n.1 (11th Cir. 1983) (officer
+permissibly opened door to effect arrest when faced with a
+clear possibility of danger). We are aware of no authority
+upholding an entry in circumstances similar to this case.
+
+    Because the opening of the car door and leaning into the
+car constituted an unlawful search, we must consider what
+remedy is appropriate. The exclusionary rule generally
+applied in Fourth Amendment cases requires courts to
+suppress any evidence obtained as a “‘direct result of an
+illegal search or seizure,’” as well as “‘evidence later
+discovered and found to be derivative of an illegality,’ the
+so-called ‘fruit of the poisonous tree.’” Utah v. Strieff, 136 S.
+Ct. 2056, 2061 (2016) (quoting Segura v. United States,
+468 U.S. 796, 804 (1984)). Here, the evidence sought to be
+suppressed is the gun that was found under the seat. Officer
+Willmes did not see the gun while he was leaning into the
+car; he found it only in the subsequent inventory search,
+which was conducted because Ngumezi’s suspended license
+required his car to be impounded. Ngumezi contends that the
+gun is nevertheless the fruit of the unlawful search because
+if Willmes had not leaned into the car, Ngumezi “might have
+been less intimidated” and could have directed Willmes to
+the bill of sale on the windshield, dispelling any suspicion
+12              UNITED STATES V. NGUMEZI
+
+and ending the encounter before the officers learned of his
+suspended license. The “fruit of the poisonous tree” doctrine
+does not require a particularly tight causal chain between the
+illegal search and the discovery of the evidence sought to be
+suppressed. See, e.g., United States v. Johns, 891 F.2d 243,
+245 (9th Cir. 1989). Even so, we have some doubt whether
+it can accommodate a chain with quite so many speculative
+links as Ngumezi’s. We need not resolve that question,
+however, because “[t]he government has the burden to show
+that the evidence is not ‘the fruit of the poisonous tree,’” and
+here the government has made no effort to do so. United
+States v. Twilley, 222 F.3d 1092, 1097 (9th Cir. 2000)
+(quoting Johns, 891 F.2d at 245). Nor has it invoked the
+closely related “attenuation” doctrine, which would allow it
+to avoid suppression by showing that “the connection
+between unconstitutional police conduct and the evidence is
+remote.” Strieff, 136 S. Ct. at 2061.
+
+    In addition, despite what would seem to be a plausible
+argument that the gun would have been discovered even
+without the constitutional violation, the government has not
+argued that the inevitable-discovery doctrine applies. See
+Nix v. Williams, 467 U.S. 431 (1984). It is the government’s
+burden to show inevitable discovery, so its failure to make
+the argument prevents us from upholding the denial of the
+suppression motion on that theory. See United States v.
+Ruckes, 586 F.3d 713, 719 (9th Cir. 2009).
+
+    Instead, as the government confirmed at oral argument,
+it has made only one argument against exclusion—namely,
+that we should not apply the exclusionary rule because the
+benefits of deterrence do not outweigh the social costs of
+suppression. The government emphasizes two points: that
+Willmes’s conduct was not “flagrantly illegal” and that
+suppression would let a guilty defendant go free. We find
+                UNITED STATES V. NGUMEZI                   13
+
+neither persuasive. First, although the flagrancy of the
+government’s conduct is relevant to the attenuation doctrine,
+see Strieff, 136 S. Ct. at 2063, lack of flagrancy is not a
+freestanding basis for avoiding the application of the
+exclusionary rule—at least not where, as here, it falls short
+of establishing that the officer had an “objectively
+‘reasonable good-faith belief’” in the lawfulness of his
+conduct, United States v. Lustig, 830 F.3d 1075, 1080 (9th
+Cir. 2016) (quoting Davis v. United States, 564 U.S. 229,
+238 (2011)). Second, while it is true that applying the
+exclusionary rule in this case will mean that a guilty
+defendant goes free, that is true of applying the exclusionary
+rule in essentially every case. Nothing about this case calls
+for a remedy other than “[t]he typical remedy for a Fourth
+Amendment violation,” which “is the exclusion of evidence
+discovered as a result of that violation from criminal
+proceedings against the defendant.” United States v. Garcia,
+974 F.3d 1071, 1075 (9th Cir. 2020).
+
+   We reverse the denial of the suppression motion, vacate
+Ngumezi’s conviction, and remand for further proceedings.
+See United States v. Cano, 934 F.3d 1002, 1010 (9th Cir.
+2019).
+
+   REVERSED, VACATED, AND REMANDED.
+

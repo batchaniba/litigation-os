@@ -1,0 +1,49 @@
+                      Authorities & Penal Code § 679.10 Cheat Sheet
+
+Matter 24 — Newanforbi v. Serrato, N.D. Cal. 4:26-cv-05953-ASK
+
+CORE AUTHORITIES THE OPP RELIES ON (CHECK THESE)
+
+Screening / pro se / 12(b)(6)
+- 28 U.S.C. § 1915; Lopez v. Smith; Hebbe v. Pliler; Erickson v. Pardus
+- Ashcroft v. Iqbal; Bell Atl. Corp. v. Twombly
+- Krishnan Dkt. 5 (June 29, 2026) — IFP granted; complaint sufficient
+
+U-visa / certification / California statute
+- 8 U.S.C. § 1101(a)(15)(U); 8 U.S.C. § 1184(p); 8 C.F.R. § 214.14
+- Cal. Penal Code § 679.10 (esp. (g), (h), (i), (k)); AB 1261 (eff. Jan. 1, 2024)
+- Perez Perez v. Wolf, 943 F.3d 853 (9th Cir. 2019) — federal discretion
+- Catholic Charities CYO v. Chertoff, 622 F. Supp. 2d 865 (N.D. Cal. 2008) — pre-§679.10; Opp
+distinguishes
+
+Due process
+- County of Sacramento v. Lewis; Mathews v. Eldridge; Goldberg v. Kelly
+- Shanks v. Dressel (non-arbitrary decisionmaking / mandatory duties theme)
+- Withrow v. Larkin (bias / structural concern themes as argued)
+
+Retaliation
+- Mt. Healthy; Hartman v. Moore; Nieves v. Bartlett (context)
+- Ford v. City of Yakima, 706 F.3d 1188 (9th Cir. 2013) — but-for
+- Perry v. Sindermann; Bd. of Cnty. Comm'rs v. Umbehr — unconstitutional conditions / discretionary
+benefits
+- Borough of Duryea v. Guarnieri; Capp v. Cnty. of San Diego; Pratt v. Rowland
+
+Strike / remedies / QI / leave
+- Whittlestone, Inc. v. Handi-Craft Co., 618 F.3d 970 (9th Cir. 2010)
+- Winter v. NRDC (Defendant's PI cite — Opp says wrong vehicle)
+- Ex parte Young; Pearson v. Callahan; Hope v. Pelzer; District of Columbia v. Wesby
+- Kay v. Ehrler (pro se fees)
+- Smith v. Wade (punitive)
+- Lopez / Garity / Lathus (leave to amend)
+
+LOCAL RULES / NOTICE
+- Civil L.R. 7-2(a) (35 days); 7-3(a) (opposition 14 days before hearing)
+- Hearing noticed Sep. 16, 2026 1:30 p.m.; Opp deadline Sep. 2, 2026; execution date on Opp: Aug. 27,
+2026
+
+STATUTORY PRESSURE POINTS TO VERIFY
+- Does § 679.10(g)/(i) actually require signing when victim + helpfulness are found, or only require
+processing/explanation while leaving the findings discretionary?
+- What does subdivision (k) do to Defendant's "no charges = civil tort only" argument?
+- Does the helpfulness presumption apply when CHP never requested cooperation?
+

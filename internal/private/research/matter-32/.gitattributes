@@ -1,0 +1,4 @@
+# Preserve original PDF bytes and avoid treating PDF syntax as editable text.
+*.pdf binary
+# Extracted/OCR text is a generated navigation artifact, not a hand-edited diff.
+07-source-text/** -diff -merge -text

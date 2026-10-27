@@ -1,0 +1,255 @@
+   Case 4:26-cv-05953-ASK Document5 Filed 06/29/26 Page1lof5
+
+
+
+
+                                       UNITED STATES DISTRICT COURT
+
+                                   NORTHERN DISTRICT OF CALIFORNIA
+
+
+
+
+   BRENDAN NGEHSI NEWANFORBI, Case No.26-cv-05953-ASK
+
+                      Plaintiff, ORDER RE MOTION TO PROCEED
+                                                          IN FORMA PAUPERIS
+
+                                                                     Re: Dkt. No. 2
+  .G. SERRATO,
+
+                      Defendant.
+
+         On June 17, 2026, Plaintiff Brendan Ngehsi Newanforbi filed this civil action and an
+
+application to proceed in forma pauperis. The Court GRANTS Mr. Newanforbi's application to
+
+proceed in forma pauperis. The Court now screens his complaint pursuant to 28 U.S.C. § 1915,
+
+and, for the reasons set forth below, concludes that the operative complaint is sufficient.
+
+         BACKGROUND
+
+         Mr. Newanforbi alleges that, in November 2024, two California Highway Patrol officers
+
+
+"subjected [him] toa false arrest, fabricated material statements in a sworn report, and forced an
+involuntary blood draw through a warrant procured by those fabrications" in relation to a traffic
+
+stop on Interstate 580 East in Livermore, Alameda County. Dkt. 1 at 1 4 2. Based on this
+
+November 2024 incident, Mr. Newanforbi submitted a request to Defendant Serrato, the Captain
+
+and Commander of the California Highway Patrol ("CHP"), to certify his "Form ]-918
+
+Supplement B, U Nonimmigrant Status Certification[.]" Jd. at 7-8 | 25. Defendant Serrato denied
+
+Mr. Newanforbi's certification request on the grounds that the November 2024
+
+
+                   incident does not meet the standard of qualifying criminal activity
+                   identified in Section 679.10 of the California Penal Code (PC), nor
+                   does it meet the standards of the Immigration and Nationality Act
+                   Section 101(a)(15)(U)(iii). Additionally, this review found no
+                   substantially similar qualifying criminal activity as defined in Section
+                   679.10(d) PC.
+ Id. at 8-9 4 29. Mr. Newanforbi brings this civil rights action against Defendant Serrato for denial
+
+ of his certification request, accusing Defendant Serrato of violating his substantive and procedural
+
+ due process rights under the Fourteenth Amendment and retaliating against him in violation of the
+
+ First Amendment.
+
+
+  Il. LEGAL STANDARD
+
+           The in forma pauperis statute provides that the Court shall dismiss the case if at any time
+
+ the Court determines that the allegation of poverty is untrue, or that the action (1) is frivolous or
+
+ malicious, (2) fails to state a claim on which-relief may be granted, or (3) seeks monetary relief
+
+ against a defendant who is immune from such relief. 28 U.S.C. § 1915(e)(2).
+
+          A complaint is frivolous under § 1915 where the Court lacks subject matter jurisdiction.
+
+ See Castillo v. Marshall, 207 F.3d 15, 15 (9th Cir. 1997) (citation omitted); see also Pratt v.
+
+ Sumner, 807 F.2d 817, 819 (9th Cir. 19987) (recognizing the general proposition that a complaint
+
+ should be dismissed as frivolous on § 1915 review where subject matter jurisdiction is lacking).
+
+          A complaint may also be dismissed for failure to state a claim, because § 1915(e)(2)
+
+parallels the language of Federal Rule of Civil Procedure 12(b)(6). Lopez v. Smith, 203 F.3d 1122,
+
+ 1126-27 (9th Cir. 2000). The complaint, therefore, must allege facts that plausibly establish the
+
+defendant's liability. See Bell Atl. Corp. v. Twombly, 550 U.S. 544, 555-57 (2007). When the
+
+complaint has been filed by an unrepresented plaintiff, courts must "construe the pleadings
+
+liberally .. to afford the petitioner the benefit of any doubt." Hebbe v. Pliler, 627 F.3d 338, 342
+
+(9th Cir. 2010) (cleaned up). Upon dismissal, unrepresented plaintiffs proceeding in forma
+
+pauperis must be given leave to "amend their complaint unless it is absolutely clear that the
+
+deficiencies of the complaint could not be cured by amendment." Franklin v. Murphy, 745 F.2d
+
+ 1221, 1235 n.9 (9th Cir. 1984) (cleaned up); Lopez v. Smith, 203 F.3d 1122, 1130-31 (9th Cir.
+
+
+
+
+          As courts of limited jurisdiction, "federal courts have an independent obligation to ensure
+
+that they do not exceed the scope of their jurisdiction." Henderson ex rel. Henderson v. Shinseki,
+    Case 4:26-cv-05953-ASK Document5 Filed 06/29/26 Page 3of5
+
+
+
+
+ 562 U.S. 428, 434 (2011); Valdez v. Allstate Ins. Co., 372 F.3d 1115, 1116 (9th Cir. 2004) (noting
+
+ that district courts are "obligated to consider sua sponte whether [they] have subject matter
+
+jurisdiction"). There are two bases for federal subject matter jurisdiction: (1) federal question
+
+jurisdiction under 28 U.S.C. § 1331 and (2) diversity jurisdiction under 28 U.S.C. § 1332. A
+
+district court has federal question jurisdiction in "all civil actions arising under the Constitution,
+
+laws, or treaties of the United States." Jd. at § 1331. A cause of action "arises under federal law
+
+only when the plaintiff's well-pleaded complaint raises issues of federal law." Hansen v. Blue
+
+Cross of Cal., 891 F.2d 1384, 1386 (9th Cir. 1989): A district court has diversity jurisdiction
+
+"where the matter in controversy exceeds the sum or value of $75,000 and is between citizens
+
+of different states, or citizens of a State and citizens or subjects of a foreign state." Jd.
+
+          Because Mr. Newanforbi's claims arise under federal law, the Court has federal subject
+
+matter jurisdiction over his complaint. So, the Court proceeds to determine whether Mr.
+
+Newanforbi's complaint states a claim.
+
+          "Congress created U nonimmigrant status as part of the Victims of Trafficking and
+
+Violence Protection Act of 2000 ('VT VPA')." Perez Perez v. Wolf, 943 F.3d 853, 856 (9th Cir.
+
+
+
+
+                    To be eligible for a U visa, a petitioner must establish that he or she:
+                    (1) "has suffered substantial physical or mental abuse as a result of
+                    having been a victim of qualifying criminal activity"; (2) "possesses seus un een
+
+                    helpful, is being helpful, or is likely to be helpful" to an authority
+                    "investigating or prosecuting" qualifying criminal activity.
+
+Id. at 857. "To apply for a U visa, a petitioner must file with USCIS a Form IJ-918, Petition for U
+
+Nonimmigrant Status." Jd. That form requires U visa petitioners to "obtain a certification from a
+
+Federal, State, or local law enforcement official, prosecutor, judge, or other Federal, State, or local
+
+authority investigating criminal activity." Jd. at 863 (cleaned up). Law enforcement's "decision of
+
+whether or not to issue certification to qualify for U Nonimmigrant status is discretionary." United
+
+States v. Biao, No. 98CR2812-BTM, 2011 WL 607087, at *1 (S.D. Cal. Feb. 11, 2011) (citing
+
+Orosco v. Napolitano, 598 F.3d 222, 226 (Sth Cir.2010)).
+           Qualifying criminal activity
+
+                      involve[es] one or more of the following or any similar activity in
+                      violation of Federal, State, or local criminal law: rape; torture;
+                      trafficking; incest; domestic violence; sexual assault; abusive sexual
+                      contact; prostitution; sexual exploitation; stalking; female genital
+                      mutilation; being held hostage; peonage; involuntary servitude; slave
+                      trade; kidnapping; abduction; unlawful criminal restraint; false
+                      imprisonment; blackmail; extortion; manslaughter; murder; felonious
+                      assault; witness tampering; obstruction of justice; perjury; fraud in
+                      foreign labor contracting (as defined in section 1351 of Title 18); or
+                      attempt, conspiracy, or solicitation to commit any of the above
+                     mentioned crimes[.]
+
+ 8 U.S.C. § 1101(a)(15)(U) (iii). Here, Mr. Newanforbi-alleges that he was the victim of the
+
+ qualifying crimes of false imprisonment, unlawful criminal restraint, felonious assault, and
+
+ obstruction of justice. Dkt. 1 at 6 | 21. More specifically, Mr. Newanforbi alleges that he was
+
+wrongfully arrested, detained, and subjected to a blood test for driving under the influence based
+
+on a CHP report "containing four material fabrications[.]" Jd. at 5 § 17. Because of the fabricated
+
+report, Mr. Newanforbi "suffered incarceration at Santa Rita Jail for approximately five days[,]"
+
+among other things. Jd. at 6-7 22. Mr. Newanforbi "filed a formal complaint with CHP regarding
+
+the officers' conduct" and "a complaint with the Commission on Peace Officer Standards and
+
+Training[.]" Jd. at 7 J 23.
+
+
+          Accepting Mr. Newanforbi's alleged facts as true, his complaint supports the plausible
+
+inferences that CHP officers falsely imprisoned him in November 2024 based on fabricated
+
+evidence. It also supports the plausible inference that, despite his status as a victim of the
+
+qualifying crime of false imprisonment, Defendant Serrato retaliated against him by wrongfully
+
+denying his certification request. While Defendant Serrato had discretion to certify the request, he
+
+did not have discretion to retaliate against Mr. Newanforbi. Mr. Newanforbi has thus set forth "a
+
+short and plain statement of the claim showing that the pleader is entitled to relief" as required by
+
+Rule 8 of the Federal Rules of Civil Procedure. Accordingly, the Court concludes that the
+
+complaint is sufficient to satisfy § 1915 review.
+ IV. CONCLUSION
+
+          For the reasons set forth above,.the allegations in Mr. Newanforbi's complaint are
+
+sufficient under 28 U.S.C. § 1915(e)(2). The Clerk of Court shall issue the summons.
+
+Furthermore, the U.S. Marshal for the Northern District of California shall serve, without
+
+prepayment of fees, a copy of the complaint, any amendments or attachments, and this Order upon
+
+Defendant Serrato.
+
+         While this case is pending, Mr. Newanforbi must promptly inform the Court of any change
+
+of address. Failure to do so may result in dismissal' of this action.
+
+         In amending the complaint, Mr. Newanforbi may wish to contact the Federal Pro Bono
+
+Project's Help Desk for assistance-a free service for unrepresented litigants-by calling (415)
+
+782-8982 to make an appointment. While the Help Desk does not provide legal representation, a
+
+licensed attorney may assist Mr. Newanforbi in determining whether there are viable claims, and
+
+how to properly plead them.
+
+         Mr. Newanforbi may also wish to consult a manual the court has adopted to assist
+
+unrepresented litigants in presenting their case. This manual, and other free information for
+
+unrepresented litigants, is available online at: https://cand.uscourts.gov/pro-se-litigants/.
+
+         IT IS SO ORDERED.
+
+
+
+
+                                                                   Unitdd States Magistrate Judge
+

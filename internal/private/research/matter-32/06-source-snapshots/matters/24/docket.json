@@ -1,0 +1,481 @@
+[
+  {
+    "dkt": null,
+    "date": null,
+    "filer": "plaintiff",
+    "type": "other",
+    "title": "Name Conform Administrative Motion Packet - Serrato (N.D. Cal. 3-26-cv-05953-CRB) (September 15, 2026)",
+    "path": "/documents/matter-24/Name Conform Administrative Motion Packet - Serrato (N.D. Cal. 3-26-cv-05953-CRB) (September 15, 2026).pdf",
+    "filed": false,
+    "packet": "crb-packet"
+  },
+  {
+    "dkt": null,
+    "date": null,
+    "filer": "plaintiff",
+    "type": "other",
+    "title": "Administrative Motion - Conform Plaintiff's Name - Serrato (N.D. Cal. 3-26-cv-05953-CRB) (September 15, 2026)",
+    "path": "/documents/matter-24/Administrative Motion - Conform Plaintiff's Name - Serrato (N.D. Cal. 3-26-cv-05953-CRB) (September 15, 2026).pdf",
+    "filed": false,
+    "packet": "crb-packet"
+  },
+  {
+    "dkt": null,
+    "date": null,
+    "filer": "plaintiff",
+    "type": "other",
+    "title": "Declaration ISO Administrative Motion - Conform Plaintiff's Name - Serrato (N.D. Cal. 3-26-cv-05953-CRB) (September 15, 2026)",
+    "path": "/documents/matter-24/Declaration ISO Administrative Motion - Conform Plaintiff's Name - Serrato (N.D. Cal. 3-26-cv-05953-CRB) (September 15, 2026).pdf",
+    "filed": false,
+    "packet": "crb-packet"
+  },
+  {
+    "dkt": null,
+    "date": null,
+    "filer": "plaintiff",
+    "type": "order",
+    "title": "Proposed Order - Conform Plaintiff's Name - Serrato (N.D. Cal. 3-26-cv-05953-CRB) (September 15, 2026)",
+    "path": "/documents/matter-24/Proposed Order - Conform Plaintiff's Name - Serrato (N.D. Cal. 3-26-cv-05953-CRB) (September 15, 2026).pdf",
+    "filed": false,
+    "packet": "crb-packet"
+  },
+  {
+    "dkt": null,
+    "date": null,
+    "filer": "plaintiff",
+    "type": "proof_of_service",
+    "title": "Proof of Service - Name Conform Administrative Motion - Serrato (N.D. Cal. 3-26-cv-05953-CRB) (September 15, 2026)",
+    "path": "/documents/matter-24/Proof of Service - Name Conform Administrative Motion - Serrato (N.D. Cal. 3-26-cv-05953-CRB) (September 15, 2026).pdf",
+    "filed": false,
+    "packet": "crb-packet"
+  },
+  {
+    "dkt": null,
+    "date": null,
+    "filer": "plaintiff",
+    "type": "other",
+    "title": "Exhibit A Cover - ECF Help Desk - Serrato (N.D. Cal. 3-26-cv-05953-CRB) (September 15, 2026)",
+    "path": "/documents/matter-24/Exhibit A Cover - ECF Help Desk - Serrato (N.D. Cal. 3-26-cv-05953-CRB) (September 15, 2026).pdf",
+    "filed": false,
+    "packet": "crb-packet"
+  },
+  {
+    "dkt": null,
+    "date": null,
+    "filer": "plaintiff",
+    "type": "other",
+    "title": "ECF Docket Report - N.D. Cal. 3-26-cv-05953-CRB (Pulled Sep 14 2026)",
+    "path": "/documents/matter-24/ECF Docket Report - N.D. Cal. 3-26-cv-05953-CRB (Pulled Sep 14 2026).pdf",
+    "filed": false,
+    "packet": "crb-packet"
+  },
+  {
+    "dkt": 25,
+    "date": null,
+    "filer": "court",
+    "type": "order",
+    "title": "Dkt 25 - Order Continuing Initial CMC (Filed Sep 9 2026)",
+    "path": "/documents/matter-24/Dkt 25 - Order Continuing Initial CMC (Filed Sep 9 2026).pdf",
+    "filed": true
+  },
+  {
+    "dkt": null,
+    "date": null,
+    "filer": "plaintiff",
+    "type": "other",
+    "title": "Name Conform Administrative Motion Packet - Serrato (N.D. Cal. 4-26-cv-05953-ASK) (September 14, 2026)",
+    "path": "/documents/matter-24/Name Conform Administrative Motion Packet - Serrato (N.D. Cal. 4-26-cv-05953-ASK) (September 14, 2026).pdf",
+    "filed": false,
+    "packet": "ask-packet",
+    "superseded_by": "crb-packet",
+    "operative": false
+  },
+  {
+    "dkt": null,
+    "date": null,
+    "filer": "plaintiff",
+    "type": "other",
+    "title": "Administrative Motion - Conform Plaintiff's Name - Serrato (N.D. Cal. 4-26-cv-05953-ASK) (September 14, 2026)",
+    "path": "/documents/matter-24/Administrative Motion - Conform Plaintiff's Name - Serrato (N.D. Cal. 4-26-cv-05953-ASK) (September 14, 2026).pdf",
+    "filed": false,
+    "packet": "ask-packet",
+    "superseded_by": "crb-packet",
+    "operative": false
+  },
+  {
+    "dkt": null,
+    "date": null,
+    "filer": "plaintiff",
+    "type": "other",
+    "title": "Declaration ISO Administrative Motion - Conform Plaintiff's Name - Serrato (N.D. Cal. 4-26-cv-05953-ASK) (September 14, 2026)",
+    "path": "/documents/matter-24/Declaration ISO Administrative Motion - Conform Plaintiff's Name - Serrato (N.D. Cal. 4-26-cv-05953-ASK) (September 14, 2026).pdf",
+    "filed": false,
+    "packet": "ask-packet",
+    "superseded_by": "crb-packet",
+    "operative": false
+  },
+  {
+    "dkt": null,
+    "date": null,
+    "filer": "plaintiff",
+    "type": "order",
+    "title": "Proposed Order - Conform Plaintiff's Name - Serrato (N.D. Cal. 4-26-cv-05953-ASK) (September 14, 2026)",
+    "path": "/documents/matter-24/Proposed Order - Conform Plaintiff's Name - Serrato (N.D. Cal. 4-26-cv-05953-ASK) (September 14, 2026).pdf",
+    "filed": false,
+    "packet": "ask-packet",
+    "superseded_by": "crb-packet",
+    "operative": false
+  },
+  {
+    "dkt": null,
+    "date": null,
+    "filer": "plaintiff",
+    "type": "proof_of_service",
+    "title": "Proof of Service - Name Conform Administrative Motion - Serrato (N.D. Cal. 4-26-cv-05953-ASK) (September 14, 2026)",
+    "path": "/documents/matter-24/Proof of Service - Name Conform Administrative Motion - Serrato (N.D. Cal. 4-26-cv-05953-ASK) (September 14, 2026).pdf",
+    "filed": false,
+    "packet": "ask-packet",
+    "superseded_by": "crb-packet",
+    "operative": false
+  },
+  {
+    "dkt": null,
+    "date": null,
+    "filer": "plaintiff",
+    "type": "other",
+    "title": "Exhibit A Cover - ECF Help Desk - Serrato (N.D. Cal. 4-26-cv-05953-ASK) (September 14, 2026)",
+    "path": "/documents/matter-24/Exhibit A Cover - ECF Help Desk - Serrato (N.D. Cal. 4-26-cv-05953-ASK) (September 14, 2026).pdf",
+    "filed": false,
+    "packet": "ask-packet",
+    "superseded_by": "crb-packet",
+    "operative": false
+  },
+  {
+    "dkt": 24,
+    "date": null,
+    "filer": "plaintiff",
+    "type": "other",
+    "title": "Dkt 24 - Joint Case Management Conference Statement (Filed Sep 8 2026)",
+    "path": "/documents/matter-24/Dkt 24 - Joint Case Management Conference Statement (Filed Sep 8 2026).pdf",
+    "filed": true
+  },
+  {
+    "dkt": 23,
+    "date": null,
+    "filer": "court",
+    "type": "order",
+    "title": "Dkt 23 - Related Case Order - Candelaria Not Related (Filed Sep 8 2026)",
+    "path": "/documents/matter-24/Dkt 23 - Related Case Order - Candelaria Not Related (Filed Sep 8 2026).pdf",
+    "filed": true
+  },
+  {
+    "dkt": null,
+    "date": null,
+    "filer": "plaintiff",
+    "type": "proof_of_service",
+    "title": "Proof of Service - Rule 26 Initial Disclosures (Sep 8 2026)",
+    "path": "/documents/matter-24/Proof of Service - Rule 26 Initial Disclosures (Sep 8 2026).pdf",
+    "filed": false
+  },
+  {
+    "dkt": 22,
+    "date": null,
+    "filer": "court",
+    "type": "order",
+    "title": "Dkt 22 - Joint Stipulation to Continue Initial CMC and Proposed Order (Filed Sep 3 2026)",
+    "path": "/documents/matter-24/Dkt 22 - Joint Stipulation to Continue Initial CMC and Proposed Order (Filed Sep 3 2026).pdf",
+    "filed": true
+  },
+  {
+    "dkt": 22,
+    "date": null,
+    "filer": "plaintiff",
+    "type": "correspondence",
+    "title": "Gmail - Ngehsi Newanforbi v Serrato - Li JCMS fallback if Dkt 22 unsigned (Sep 7 2026)",
+    "path": "/documents/matter-24/Gmail - Ngehsi Newanforbi v Serrato - Li JCMS fallback if Dkt 22 unsigned (Sep 7 2026).pdf",
+    "filed": false
+  },
+  {
+    "dkt": null,
+    "date": null,
+    "filer": "plaintiff",
+    "type": "proof_of_service",
+    "title": "Proof of Service - Certification of Conflicts (Serrato) (Sep 4 2026)",
+    "path": "/documents/matter-24/Proof of Service - Certification of Conflicts (Serrato) (Sep 4 2026).pdf",
+    "filed": false
+  },
+  {
+    "dkt": null,
+    "date": null,
+    "filer": "court",
+    "type": "order",
+    "title": "Order Granting Administrative Motion to Relate Cases - Serrato and Meza (Aug 24 2026)",
+    "path": "/documents/matter-24/Order Granting Administrative Motion to Relate Cases - Serrato and Meza (Aug 24 2026).pdf",
+    "filed": true
+  },
+  {
+    "dkt": 1,
+    "date": null,
+    "filer": "plaintiff",
+    "type": "complaint",
+    "title": "Complaint (Doc 1, Filed Jun 17 2026)",
+    "path": "/documents/matter-24/Complaint (Doc 1, Filed Jun 17 2026).pdf",
+    "filed": true
+  },
+  {
+    "dkt": 4,
+    "date": null,
+    "filer": "court",
+    "type": "order",
+    "title": "Order Setting Initial CMC and ADR Deadlines (Doc 4, Filed Jun 17 2026)",
+    "path": "/documents/matter-24/Order Setting Initial CMC and ADR Deadlines (Doc 4, Filed Jun 17 2026).pdf",
+    "filed": true
+  },
+  {
+    "dkt": null,
+    "date": null,
+    "filer": "plaintiff",
+    "type": "other",
+    "title": "Newanforbi v Serrato - USDC NDCal - IFP Granted Complaint Sufficient Jun 29 2026",
+    "path": "/documents/opinions/Newanforbi v Serrato - USDC NDCal - IFP Granted Complaint Sufficient Jun 29 2026.pdf",
+    "filed": true
+  },
+  {
+    "dkt": 6,
+    "date": null,
+    "filer": "plaintiff",
+    "type": "summons",
+    "title": "Summons Issued (Doc 6, Filed Jun 29 2026)",
+    "path": "/documents/matter-24/Summons Issued (Doc 6, Filed Jun 29 2026).pdf",
+    "filed": true
+  },
+  {
+    "dkt": 8,
+    "date": null,
+    "filer": "plaintiff",
+    "type": "other",
+    "title": "Consent to Magistrate Judge Jurisdiction (Doc 8, Filed Jun 29 2026)",
+    "path": "/documents/matter-24/Consent to Magistrate Judge Jurisdiction (Doc 8, Filed Jun 29 2026).pdf",
+    "filed": true
+  },
+  {
+    "dkt": null,
+    "date": null,
+    "filer": "plaintiff",
+    "type": "summons",
+    "title": "Nd Cal Proposed Summons",
+    "path": "/documents/matter-32/from-24/Nd Cal Proposed Summons.pdf",
+    "filed": false
+  },
+  {
+    "dkt": 10,
+    "date": null,
+    "filer": "plaintiff",
+    "type": "amended_complaint",
+    "title": "First Amended Complaint (Doc 10, Filed Jul 15 2026)",
+    "path": "/documents/matter-24/First Amended Complaint (Doc 10, Filed Jul 15 2026).pdf",
+    "filed": true,
+    "operative": true
+  },
+  {
+    "dkt": 12,
+    "date": null,
+    "filer": "plaintiff",
+    "type": "amended_complaint",
+    "title": "Notice of Errata re First Amended Complaint (Doc 12, Filed Jul 15 2026)",
+    "path": "/documents/matter-24/Notice of Errata re First Amended Complaint (Doc 12, Filed Jul 15 2026).pdf",
+    "filed": true
+  },
+  {
+    "dkt": 15,
+    "date": null,
+    "filer": "plaintiff",
+    "type": "other",
+    "title": "USM-285 Process Receipt and Return - Service Executed on Serrato (Doc 15, Filed Aug 6 2026)",
+    "path": "/documents/matter-24/USM-285 Process Receipt and Return - Service Executed on Serrato (Doc 15, Filed Aug 6 2026).pdf",
+    "filed": true
+  },
+  {
+    "dkt": null,
+    "date": null,
+    "filer": "plaintiff",
+    "type": "other",
+    "title": "Administrative Motion to Consider Whether Cases Should Be Related - Serrato and Meza-Gonzalez (Filed Aug 20 2026)",
+    "path": "/documents/matter-24/Administrative Motion to Consider Whether Cases Should Be Related - Serrato and Meza-Gonzalez (Filed Aug 20 2026).pdf",
+    "filed": true
+  },
+  {
+    "dkt": null,
+    "date": null,
+    "filer": "plaintiff",
+    "type": "other",
+    "title": "Supplemental Administrative Motion to Relate Cases (Aug 21 2026)",
+    "path": "/documents/matter-24/Supplemental Administrative Motion to Relate Cases (Aug 21 2026).pdf",
+    "filed": false
+  },
+  {
+    "dkt": null,
+    "date": null,
+    "filer": "plaintiff",
+    "type": "other",
+    "title": "Supplemental Declaration ISO Administrative Motion to Relate Cases (Aug 21 2026)",
+    "path": "/documents/matter-24/Supplemental Declaration ISO Administrative Motion to Relate Cases (Aug 21 2026).pdf",
+    "filed": false
+  },
+  {
+    "dkt": null,
+    "date": null,
+    "filer": "court",
+    "type": "order",
+    "title": "Proposed Order Granting Supplemental Administrative Motion to Relate Cases (Aug 21 2026)",
+    "path": "/documents/matter-24/Proposed Order Granting Supplemental Administrative Motion to Relate Cases (Aug 21 2026).pdf",
+    "filed": false
+  },
+  {
+    "dkt": null,
+    "date": null,
+    "filer": "defendant",
+    "type": "amended_complaint",
+    "title": "Defendant Serrato Motion to Dismiss FAC and Strike (Aug 26 2026)",
+    "path": "/documents/matter-24/Defendant Serrato Motion to Dismiss FAC and Strike (Aug 26 2026).pdf",
+    "filed": true
+  },
+  {
+    "dkt": null,
+    "date": null,
+    "filer": "plaintiff",
+    "type": "amended_complaint",
+    "title": "Opposition to Serrato MTD FAC and Strike v4 - Pleading Paper (Sep 2 2026)",
+    "path": "/documents/matter-24/Opposition to Serrato MTD FAC and Strike v4 - Pleading Paper (Sep 2 2026).pdf",
+    "filed": false
+  },
+  {
+    "dkt": null,
+    "date": null,
+    "filer": "plaintiff",
+    "type": "amended_complaint",
+    "title": "Opposition to Serrato MTD FAC and Strike v4 (Sep 2 2026)",
+    "path": "/documents/matter-24/Opposition to Serrato MTD FAC and Strike v4 (Sep 2 2026).pdf",
+    "filed": false
+  },
+  {
+    "dkt": null,
+    "date": null,
+    "filer": "plaintiff",
+    "type": "amended_complaint",
+    "title": "Opposition to Serrato MTD FAC and Strike v4 (Sep 2 2026)",
+    "path": "/documents/matter-24/Opposition to Serrato MTD FAC and Strike v4 (Sep 2 2026).docx",
+    "filed": false
+  },
+  {
+    "dkt": null,
+    "date": null,
+    "filer": "plaintiff",
+    "type": "amended_complaint",
+    "title": "Opposition to Serrato MTD FAC and Strike v3 (Sep 2 2026)",
+    "path": "/documents/matter-24/Opposition to Serrato MTD FAC and Strike v3 (Sep 2 2026).docx",
+    "filed": false
+  },
+  {
+    "dkt": null,
+    "date": null,
+    "filer": "plaintiff",
+    "type": "motion_to_dismiss",
+    "title": "Opposition to Serrato MTD with Proof of Service by Email (Aug 27 2026)",
+    "path": "/documents/matter-24/Opposition to Serrato MTD with Proof of Service by Email (Aug 27 2026).pdf",
+    "filed": true
+  },
+  {
+    "dkt": null,
+    "date": null,
+    "filer": "plaintiff",
+    "type": "opposition",
+    "title": "Opposition v4 Page 1 Scan (Filed-Stamped Aug 27 2026)",
+    "path": "/documents/matter-24/Opposition v4 Page 1 Scan (Filed-Stamped Aug 27 2026).pdf",
+    "filed": false
+  },
+  {
+    "dkt": null,
+    "date": null,
+    "filer": "plaintiff",
+    "type": "motion_to_dismiss",
+    "title": "Proof of Service by Email - Opposition to Serrato MTD (Aug 27 2026)",
+    "path": "/documents/matter-24/Proof of Service by Email - Opposition to Serrato MTD (Aug 27 2026).pdf",
+    "filed": false
+  },
+  {
+    "dkt": 21,
+    "date": null,
+    "filer": "defendant",
+    "type": "motion_to_dismiss",
+    "title": "Clerk's Notice Resetting Hearing on Motion to Dismiss (Dkt 21, Filed Aug 28 2026)",
+    "path": "/documents/matter-24/Clerk's Notice Resetting Hearing on Motion to Dismiss (Dkt 21, Filed Aug 28 2026).pdf",
+    "filed": true
+  },
+  {
+    "dkt": null,
+    "date": null,
+    "filer": "court",
+    "type": "order",
+    "title": "Notice of Lodging - Whitman Order with POS (Sep 8 2026)",
+    "path": "/documents/matter-24/Notice of Lodging - Whitman Order with POS (Sep 8 2026).pdf",
+    "filed": false
+  },
+  {
+    "dkt": null,
+    "date": null,
+    "filer": "court",
+    "type": "motion_to_dismiss",
+    "title": "Notice of Lodging - Whitman Order - Serrato MTD (Sep 8 2026)",
+    "path": "/documents/matter-24/Notice of Lodging - Whitman Order - Serrato MTD (Sep 8 2026).pdf",
+    "filed": false
+  },
+  {
+    "dkt": null,
+    "date": null,
+    "filer": "court",
+    "type": "order",
+    "title": "Exhibit A Cover - Whitman Order (Aug 29 2026)",
+    "path": "/documents/matter-24/Exhibit A Cover - Whitman Order (Aug 29 2026).pdf",
+    "filed": false
+  },
+  {
+    "dkt": null,
+    "date": null,
+    "filer": "plaintiff",
+    "type": "proof_of_service",
+    "title": "Proof of Service by Email - Notice of Lodging Whitman (Sep 8 2026)",
+    "path": "/documents/matter-24/Proof of Service by Email - Notice of Lodging Whitman (Sep 8 2026).pdf",
+    "filed": false
+  },
+  {
+    "dkt": null,
+    "date": null,
+    "filer": "plaintiff",
+    "type": "proof_of_service",
+    "title": "Proof of Service by Email - Notice of Supplemental Authority Whitman (Aug 31 2026)",
+    "path": "/documents/matter-24/Proof of Service by Email - Notice of Supplemental Authority Whitman (Aug 31 2026).pdf",
+    "filed": false
+  },
+  {
+    "dkt": null,
+    "date": null,
+    "filer": "plaintiff",
+    "type": "proof_of_service",
+    "title": "Proof of Service by Email - Notice of Supplemental Authority Whitman (Aug 28 2026)",
+    "path": "/documents/matter-24/Proof of Service by Email - Notice of Supplemental Authority Whitman (Aug 28 2026).pdf",
+    "filed": false
+  },
+  {
+    "dkt": null,
+    "date": null,
+    "filer": "plaintiff",
+    "type": "other",
+    "title": "PACER Docket Report - N.D. Cal. 4-26-cv-05953-ASK (Sep 4 2026)",
+    "path": "/documents/matter-24/PACER Docket Report - N.D. Cal. 4-26-cv-05953-ASK (Sep 4 2026).pdf",
+    "filed": false,
+    "packet": "ask-packet",
+    "superseded_by": "crb-packet",
+    "operative": false
+  }
+]

@@ -1,0 +1,67 @@
+                      Critique Briefing & Prompt for External LLMs
+
+Matter 24 — Newanforbi v. Serrato, N.D. Cal. 4:26-cv-05953-ASK
+
+PURPOSE OF THIS PACK
+
+This pack is for external LLM critique of Plaintiff's Opposition to Defendant Captain G. Serrato's August
+26, 2026 Rule 12(b)(6) / 12(f) motion. Critique the Opposition's strategy, doctrine, citation accuracy,
+concessions, and vulnerabilities — not Plaintiff's life story.
+
+CASE IN ONE PARAGRAPH
+
+Plaintiff sues Serrato (individual + official capacity) under § 1983 over the April 20, 2026 denial of a U-visa
+Form I-918 Supplement B certification. Claims: substantive due process, procedural due process, First
+Amendment retaliation, plus declaratory/injunctive relief. Magistrate Judge Ajay S. Krishnan screened the
+original complaint under 28 U.S.C. § 1915 (Dkt. 5, June 29, 2026) and held it sufficient, including: Serrato
+had discretion to certify but not to retaliate.
+
+STRATEGIC POSTURE OF THE OPP (v4)
+
+1. Lead with Krishnan's screening order — Defendant must talk past a judicial finding of plausibility.
+2. Keep SDP/PDP alive via California Penal Code § 679.10 mandatory duties / helpfulness presumption /
+(k), while accepting federal certification discretion (Perez Perez / Catholic Charities timing distinction).
+3. Lean hard into First Amendment retaliation with but-for causation under Ford v. City of Yakima; restore
+Perry / Umbehr against Defendant's "no entitlement" Notice ground.
+4. Soften the remedy: do not demand a forced "yes" certification; seek vacatur / redo under correct
+standards; concede fourth cause of action can be a prayer rather than a standalone claim.
+5. Accept Defendant's related-case narrative as true for Rule 12 purposes (including Judge Fickes's denial of
+judicial certification in Alameda 26CV168913) and distinguish: different certifying official, different legal
+question, different conflict posture.
+6. Kill Rule 12(f) strike of damages/fees/injunction under Whittlestone.
+7. QI: official-capacity Ex parte Young survives; individual-capacity contested via clearly established
+retaliation + non-arbitrary decisionmaking.
+
+KNOWN DEFENDANT DRAFTING ERRORS (credibility only — do not make the Opp a typo brief)
+
+- Every MTD page footer ends with "(26CV168913)" — Alameda Superior Court case number, not
+4:26-cv-05953-ASK.
+- Caption "Action Filed: July 21, 2026" — this federal action filed June 17, 2026; FAC July 15.
+- Typos: "Complain," "payer" for prayer, blank courtroom, garbled related-case punctuation.
+- Notice ground 2 conflates retaliation with lack of entitlement to the benefit.
+- Catholic Charities (2008) predates § 679.10 (2015) and AB 1261 (2024).
+- Noticed hearing with 21 days; Civil L.R. 7-2(a) wants 35; Opp due Sep. 2 under 7-3(a). Hearing noticed
+for Sep. 16, 2026, 1:30 p.m.
+
+WHAT TO CRITIQUE (ASK THE MODEL)
+
+A. Does the Opp overclaim that § 679.10 converts federal discretion into a mandatory duty to certify when
+elements are met?
+B. Is the "redo under correct standards" remedy clean enough, or does residual language still read as
+compel-certification?
+C. Are the five retaliation but-for factors actually Ford-sufficient at the pleading stage, or does Haiyang's
+innocent-explanation theory still land?
+D. Is the Fickes distinguish strong enough if the court takes judicial notice aggressively?
+E. QI: weakest claim? Strongest?
+F. Citation hygiene: any miscites, pin cites, or TOA drift?
+G. What one-page rewrite would most improve the brief before e-filing?
+H. Should SDP/PDP be de-emphasized further in favor of retaliation-only?
+
+CONSTRAINTS FOR THE CRITIQUING MODEL
+
+- Treat FAC well-pleaded facts as true (Rule 12).
+- Treat Haiyang's related-case factual narrative as true for purposes of distinction (per Plaintiff instruction).
+- Do not invent docket entries.
+- Prefer concrete edits (quote → rewrite) over vague "strengthen causation" advice.
+- Flag anything that could anger Krishnan by contradicting Dkt. 5 or by seeking a forced certification order.
+

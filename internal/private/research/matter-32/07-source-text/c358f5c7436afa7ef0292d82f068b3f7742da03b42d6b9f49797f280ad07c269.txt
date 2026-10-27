@@ -1,0 +1,1051 @@
+                     FOR PUBLICATION
+
+   UNITED STATES COURT OF APPEALS
+        FOR THE NINTH CIRCUIT
+
+In re: FINJAN HOLDINGS, INC.                    No. 21-16702
+SECURITIES LITIGATION,
+                                               D.C. No. 3:20-cv-
+------------------------------                   04289-EMC
+
+ROBERT GRIER,
+          Plaintiff-Appellant,                    OPINION
+
+  v.
+
+FINJAN HOLDINGS, INC., and
+PHILIP HARTSTEIN,
+           Defendants-Appellees.
+
+         Appeal from the United States District Court
+            for the Northern District of California
+          Edward M. Chen, District Judge, Presiding
+
+          Argued and Submitted November 30, 2022
+                  San Francisco, California
+
+                      Filed January 20, 2023
+
+       Before: Michael Daly Hawkins, Carlos T. Bea, and
+             Jacqueline H. Nguyen, Circuit Judges.
+
+                      Opinion by Judge Bea
+2                 GRIER V. FINJAN HOLDINGS, INC.
+
+
+                          SUMMARY *
+
+
+                        Securities Fraud
+
+    The panel affirmed the district court’s dismissal of a
+securities fraud action alleging the use of false or misleading
+statements in connection with a tender offer, in violation of
+§ 14(e) of the Securities Exchange Act of 1934.
+    The board of directors of Finjan Holdings, Inc., struck a
+deal with Fortress Investment Group LLC for Fortress to
+purchase all Finjan shares. Finjan’s shareholders approved
+the deal. Shareholder Robert Grier then sued Finjan, its
+CEO, and members of its board of directors, alleging that
+revenue predictions and share-value estimations sent by
+Finjan management to shareholders before the sale had been
+false.
+    The panel held that, to state a claim under § 14(e), Grier
+was required to plausibly allege that (1) Finjan management
+did not actually believe the revenue protections/share-value
+estimations they issued to the Finjan shareholders
+(“subjective falsity”), (2) the revenue protections/share-
+value estimations did not reflect the company’s likely future
+performance      (“objective falsity”),      (3) shareholders
+foreseeably relied on the revenue-projections/share-value
+estimations in accepting the tender offer, and (4)
+shareholders suffered an economic loss as a result of the deal
+with Fortress.
+
+
+
+*
+ This summary constitutes no part of the opinion of the court. It has
+been prepared by court staff for the convenience of the reader.
+                 GRIER V. FINJAN HOLDINGS, INC.               3
+
+
+    The district court ruled that the subjective falsity element
+of Grier’s claim required allegations of a conscious,
+fraudulent state-of-mind, also called “scienter.” Thus, the
+district court required that Grier’s allegations include
+enough factual material to create a “strong inference” of
+subjective falsity, as is required, under the heightened
+pleading standard set forth in 15 U.S.C. § 78u-4(b)(2)(A),
+for a claim under § 10(b) of the Securities Exchange
+Act. The panel, however, held that, for Grier’s claim under
+§ 14(e), scienter was not required, and his allegations need
+provide only enough factual material to create a “reasonable
+inference,” not a “strong inference,” of subjective falsity.
+    The panel held that, nonetheless, Grier’s allegations did
+not create even a “reasonable inference” of subjective
+falsity. The panel concluded that it was not reasonable to
+infer from the allegations of the second amended complaint
+that Finjan management believed that the sale price of $1.55
+per share was too low. None of the allegations, standing
+alone, created a reasonable inference of subjective
+falsity. Further, even under a holistic review, taking Grier’s
+factual allegations together, it was not reasonable to infer
+subjective falsity. Thus, Grier failed to allege a critical
+element of his § 14(e) claim. The panel therefore affirmed
+the district court’s dismissal of Grier’s second amended
+complaint, despite the district court’s erroneous application
+of a “strong inference” requirement for subjective falsity.
+4                GRIER V. FINJAN HOLDINGS, INC.
+
+
+                         COUNSEL
+
+Juan E. Monteverde (argued), Monteverde & Associates PC,
+New York, New York, for Plaintiff-Appellant.
+James L. Jacobs (argued) and Valerie M. Wagner, GCA Law
+Partners LLP, Mountain View, California, for Defendants-
+Appellees.
+
+
+
+                         OPINION
+
+BEA, Circuit Judge:
+
+    In the summer of 2020, the board of directors of Finjan
+Holdings, Inc. (“Finjan”), struck a deal with Fortress
+Investment Group LLC (“Fortress”) for Fortress to purchase
+all Finjan shares at $1.55 per share. Finjan’s shareholders
+subsequently approved the deal.
+    Robert Grier, a Finjan shareholder at the time of the sale,
+then sued Finjan, its CEO Philip Hartstein, and members of
+the Finjan board of directors, alleging that revenue
+predictions and share-value estimations sent by Finjan
+management to shareholders before the sale had been false.
+Grier alleged that Finjan management knowingly provided
+deflated numbers to create the appearance that the sale price
+offered by Fortress was a good bargain for Finjan
+shareholders, thereby to convince shareholders to accept the
+sale.
+   Grier alleged that Finjan management was afraid of a
+hostile takeover of Finjan by a third party known as Party B,
+which Grier alleged would have removed Finjan
+management from their employment positions. In the deal
+                 GRIER V. FINJAN HOLDINGS, INC.              5
+
+
+with Fortress, however, Finjan management retained their
+positions. Thus, Grier alleged that Finjan management had
+a motive to provide deflated revenue projections and
+estimated share values to shareholders: to keep their jobs at
+Finjan after the sale to Fortress.
+    Grier based his claim on Section 14(e) of the Securities
+Exchange Act of 1934 (“Exchange Act”), 15 U.S.C. §
+78n(e), which prohibits the use of false or misleading
+statements in connection with a tender offer. As we
+explained in Varjabedian v. Emulex Corp., 888 F.3d 399
+(9th Cir. 2018), there are significant differences between
+Section 14(e) and Section 10(b)—the securities fraud
+provision most commonly addressed in our jurisprudence
+that deals generally with falsities in the purchase and sale of
+securities.
+    As explained below, Section 14(e) and relevant Supreme
+Court precedent have established four elements for Grier’s
+claim.     Grier must plausibly allege that (1) Finjan
+management did not actually believe the revenue
+projections/share-value estimations they issued to the Finjan
+shareholders (“subjective falsity”), (2) the revenue
+projections/share-value estimations did not reflect the
+company’s likely future performance (“objective falsity”),
+(3) shareholders foreseeably relied on the revenue
+projections/share-value estimations in accepting the tender
+offer, and (4) shareholders suffered an economic loss as a
+result of the deal with Fortress.
+    The district court characterized Grier’s claim as
+sounding in fraud and applied three heightened pleading
+standards, discussed further below. The district court then
+dismissed Grier’s first amended complaint with leave to
+amend for failure to plead sufficient factual material to
+6                GRIER V. FINJAN HOLDINGS, INC.
+
+
+support the requisite inference of subjective falsity. Grier
+filed a second amended complaint, which the district court
+dismissed on the same grounds, this time without leave to
+amend.
+   We review a district court’s dismissal under Rule
+12(b)(6) of the Federal Rules of Civil Procedure de novo.
+Varjabedian, 888 F.3d at 403.
+    The district court held that the subjective falsity element
+of Grier’s claim requires allegations of a conscious,
+fraudulent state-of-mind, also called “scienter.” Thus, the
+district court required that Grier’s allegations include
+enough factual material to create a “strong inference” of
+subjective falsity.     See 15 U.S.C. § 78u-4(b)(2)(A).
+However, the subjective falsity required by Section 14(e) is
+not equivalent to the scienter requirement referenced in 15
+U.S.C. § 78u-4(b)(2)(A) nor that required by, for example,
+Section 10(b). Therefore Grier’s allegations need provide
+only enough factual material to create a “reasonable
+inference”—not a “strong inference”—of subjective falsity,
+in addition to various particularity requirements. Ashcroft v.
+Iqbal, 556 U.S. 662, 663 (2009); see Varjabedian, 888 F.3d
+at 404.
+    Nonetheless, Grier’s allegations do not create even a
+“reasonable inference” of subjective falsity. It is not
+reasonable to infer from the allegations of the second
+amended complaint that Finjan management believed that
+the sale price was too low. Thus, Grier failed sufficiently to
+allege subjective falsity, a critical element of his claim. We
+affirm the district court’s dismissal of Grier’s second
+amended complaint despite the district court’s erroneous
+application of a “strong inference” requirement for
+subjective falsity.
+                    GRIER V. FINJAN HOLDINGS, INC.                        7
+
+
+       I. FACTS AND PROCEDURAL HISTORY 1
+    Finjan holds itself out as a “cybersecurity” company. It
+develops security technologies for mobile devices and
+invests in intellectual property related to mobile and
+computer security. However, Finjan does not use this
+intellectual property to produce any products of its own.
+Instead, Finjan derives most of its revenue from lawsuits
+accusing others of infringing on its intellectual property or
+from extracting licenses for use of the intellectual property
+under threat of a patent infringement lawsuit.
+   Finjan became a publicly traded company in 2013 and
+was listed on the Nasdaq in 2014. Since 2014, Philip
+Hartstein has served as its President and Chief Executive
+Officer.
+   In March 2018, Finjan’s board of directors initiated and
+announced a “strategic review process,” which included an
+
+
+1
+  The facts are related as stated in Grier’s second amended complaint and
+in the various documents incorporated into the second amended
+complaint by reference. When a general conclusion in a complaint
+contradicts specific facts retold in a document attached to the complaint,
+incorporated by reference in the complaint, or subject to judicial notice,
+those specific facts are controlling. Similarly, where a complaint
+incorrectly summarizes or characterizes a legally operative document
+attached to the complaint, incorporated by reference in the complaint, or
+subject to judicial notice, the document itself is controlling. See Ott v.
+Home Sav. & Loan Ass’n, 265 F.2d 643, 646 n.1 (9th Cir. 1958);
+Imported Liquors Co. v. Los Angeles Liquor Co., 152 F.2d 549, 552 (9th
+Cir. 1945); Alexander v. De Witt, 141 F.2d 573, 576 (9th Cir. 1944). But
+if specific facts alleged in the complaint contradict specific facts related
+in a non-legally-operative document attached to the complaint,
+incorporated by reference in the complaint, or subject to judicial notice,
+the conflict is resolved in the plaintiff’s favor. See Khoja v. Orexigen
+Therapeutics, Inc., 899 F.3d 988, 1003 (9th Cir. 2018).
+8                GRIER V. FINJAN HOLDINGS, INC.
+
+
+exploration of opportunities to sell Finjan to another entity.
+Finjan hired Atlas Technology Group LLC (“Atlas”)—a
+technology-focused investment bank—to act as its financial
+advisor with respect to the possible sale of Finjan shares and
+to assist in communication with potential buyers. On the day
+Finjan announced that it hired Atlas, Finjan’s common stock
+closed trading at $3.94 per share on Nasdaq.
+    From August 2018 through November 2018, Atlas
+contacted more than fifty parties to explore if they had any
+interest in a transaction with Finjan. Several parties
+expressed interest, including Fortress and an entity known as
+Party B.
+    In Fall 2018, Finjan received offers to purchase all Finjan
+shares for prices from $4.29 to $5.10 per share. However,
+Finjan’s stock, which had traded at around $3.50 to $4.50
+per share for most of 2018, sunk to around $2.50 to $3.00
+per share in December 2018, which stalled negotiations.
+After further business setbacks in December 2018, offers
+received in early 2019 were as low as $1.86 per share.
+     In April 2019, Finjan started a new effort to reach out to
+potential acquirers, but only Fortress and Party B expressed
+further interest. Over the next several months, bids from
+Fortress and Party B decreased from $3.00 to $3.40 per share
+to $2.30 to $2.60 per share. During this time, Party B sent a
+letter to the Finjan board of directors with criticisms of
+Finjan’s sale process.
+    In December 2019, Finjan management delivered a
+presentation to shareholders in which Finjan management
+projected that Finjan’s patent licensing and enforcement
+business line would generate $200 million to $400 million in
+revenue from 2019 through 2022.
+                GRIER V. FINJAN HOLDINGS, INC.              9
+
+
+    Significant setbacks hampered Finjan operations in early
+2020, including an adverse decision in a case in which Finjan
+was the plaintiff and the onset of COVID-19, which caused
+delays of Finjan’s patent enforcement trials.
+    On February 3, 2020, Party B sent a letter to the Finjan
+board of directors indicating that Party B wished to deal
+directly with the board of directors on any further
+discussions. The parties here disagree on who Party B
+wanted to circumvent by dealing directly with the board, but
+it was presumably Atlas, Hartstein, or both. Members of the
+board did meet with representatives for Party B after
+receiving Party B’s letter, but no deal resulted from the
+discussions.
+    On March 4, 2020, Finjan publicly announced an end to
+the strategic review process. On a call with investors that
+day, Hartstein commented on the close of the strategic
+review process, saying: “As you most likely read in the press
+release today, this process is now formally concluded.
+While we didn’t consummate a transaction, we are confident
+in our path forward as an independent entity.” On March 18,
+2020, Finjan’s stock closed trading at $0.78 per share.
+    On April 1, 2020, Party B informed Finjan of its intent
+to purchase enough Finjan shares in the open market to
+increase its ownership of Finjan to an amount greater than
+five percent of the company, which purchase would have
+triggered a requirement for Party B to notify the Securities
+and Exchange Commission of its shares purchase. See 17
+C.F.R. § 240.13d-1. The purchase of shares in the open
+market sometimes presages a hostile takeover. But Party B
+also offered to purchase all Finjan shares for $1.50 per share
+and asked for an opportunity to reopen negotiations.
+   On April 12, 2020, Finjan contacted Fortress to ask
+10               GRIER V. FINJAN HOLDINGS, INC.
+
+
+whether Fortress had an interest in resuming acquisitions
+discussions. The next day, Finjan agreed to provide Party B
+with exclusivity in negotiations through April 20, 2020 for
+the purchase and sale of shares. Party B agreed to halt any
+open-market purchases of Finjan shares.
+    On April 29, 2020, Party B informed Finjan that it was
+no longer willing to pursue a transaction at $1.50 per share
+and proposed restructuring the transaction as a purchase of
+Finjan assets rather than of Finjan shares. After confirming
+that Fortress was still interested in negotiating a purchase of
+Finjan’s shares, Finjan’s board instructed Atlas to pursue
+further negotiations with Fortress.
+    Fortress submitted a proposal for $1.50 per share, and
+later raised the proposal to $1.55 per share. On June 9, 2020,
+Finjan’s board approved the purchase and sale agreement,
+opening a period for shareholders to tender their shares to
+Fortress and agreeing to recommend that shareholders do so.
+On that day, Finjan’s stock closed trading at $1.33 per share
+on the open market.
+    Finjan management directed Atlas to prepare an opinion
+to provide to shareholders as to the fairness of the agreement,
+including Atlas’s assessment of the value of Finjan shares.
+Finjan management provided financial data to Atlas and
+instructed Atlas to assume certain facts as true, including a
+projected total revenue of $166 million from 2020 to 2024—
+considerably less than the 2019–2022 revenue projections
+Finjan had presented to shareholders in December 2019 (pre-
+COVID). Grier alleges that this projected revenue was
+unreasonable and was known to Finjan management to be
+unreasonable.
+    Atlas conducted various calculations based on the
+financial information provided by Finjan management and
+                GRIER V. FINJAN HOLDINGS, INC.             11
+
+
+data from similar transactions to estimate the value of
+Finjan’s shares. These various calculations are discussed in
+greater detail in the discussion section below. In its cash
+flow analysis, which relied heavily on the projected revenue
+figures provided by Finjan management, Atlas concluded
+that the sale price of $1.55 per share was with the range of
+reasonable prices. Grier alleges that this estimation of the
+value of Finjan’s shares was unreasonable and was known to
+Finjan management to be unreasonable.
+    Finjan management included the projected revenue
+figures and Atlas’s estimation of the share value in a
+statement to shareholders. The statement said that the
+projected revenue figures and share-value estimations were
+“reasonable” based on Atlas’s cash flow analysis. The
+statement recommended that shareholders approve the
+agreement with Fortress. Finjan shareholders accepted the
+agreement, and the sale occurred on July 22, 2020.
+    On June 29, 2020, Robert Grier, then a Finjan
+shareholder, filed this putative class action on behalf of
+Finjan shareholders against Finjan, Hartstein, and several
+other members of the Finjan board, alleging that the
+defendants had violated Section 14(e) by issuing the revenue
+projections and share-value estimations to shareholders. The
+district court ordered that two related class actions filed by
+other Finjan shareholders be consolidated with Grier’s and
+ordered Grier to file a consolidated amended complaint.
+Grier filed the amended complaint, which the district court
+dismissed with leave to amend.
+   Grier then filed a second amended complaint, now the
+operative pleading. Grier’s second amended complaint
+brought claims against Finjan and Hartstein, but not the other
+members of Finjan’s board of directors. On September 13,
+12                 GRIER V. FINJAN HOLDINGS, INC.
+
+
+2021, the district court dismissed the second amended
+complaint without leave to amend and entered final
+judgment. On October 12, 2021, Grier timely filed a notice
+of appeal.
+                        II. DISCUSSION
+     Under Section 14(e), it is
+
+        unlawful for any person to make any untrue
+        statement of a material fact or omit to state
+        any material fact necessary in order to make
+        the statements made, in the light of the
+        circumstances under which they are made,
+        not misleading, or to engage in any
+        fraudulent, deceptive, or manipulative acts or
+        practices, in connection with any tender offer
+        or request or invitation for tenders, or any
+        solicitation of security holders in opposition
+        to or in favor of any such offer, request, or
+        invitation.
+
+15 U.S.C. § 78n(e).
+    To state a claim under Section 14(e), a plaintiff must
+allege that (1) the defendant made a false statement of
+material fact or misleadingly incomplete statement, (2)
+shareholders relied on the false or misleadingly incomplete
+statement in accepting or rejecting the tender offer, and (3)
+shareholders suffered an economic loss as a result of the
+acceptance or rejection of the tender offer. 2 See 15 U.S.C. §
+78u-4(b); see also Varjabedian, 888 F.3d at 404–08; City of
+
+2
+  We refer to these last two requirements together as “loss causation.”
+See 15 U.S.C. § 78u-4(b)(4).
+                    GRIER V. FINJAN HOLDINGS, INC.                      13
+
+
+Dearborn Heights Act 345 Police & Fire Ret. Sys. v. Align
+Tech., Inc., 856 F.3d 605, 615–16 (9th Cir. 2017).
+    Grier challenged three statements made by Finjan
+management in the communication to Finjan shareholders.
+First, Grier alleged that the revenue projections provided by
+Finjan management to Atlas, projecting a total revenue of
+$166 million through 2024, were false. Second, Grier
+alleged that Atlas’s estimation of the value of Finjan’s
+shares, which concluded that the sale price of $1.55 per share
+was within the range of reasonable prices, was false. Third,
+Grier alleged that statements by Finjan management in their
+communication to Finjan shareholders, which endorsed the
+revenue projections and estimated share values as
+“reasonable,” were false.
+    The statements challenged by Grier are all statements of
+opinion. Because the Exchange Act regulates statements of
+“material fact,” a statement of opinion will run afoul of the
+Act only in special circumstances. Wochos v. Tesla, Inc.,
+985 F.3d 1180, 1188–89 (9th Cir. 2021); In re Atossa
+Genetics Inc Sec. Litig., 868 F.3d 784, 802 (9th Cir. 2017).
+The Supreme Court has identified three such special
+circumstances: subjective falsity, embedded statements of
+fact, 3 and misleading omissions.4 See Omnicare, Inc. v.
+
+3
+  Take, for example, the statement “I believe our TVs have the highest
+resolution available because we use a patented technology to which our
+competitors do not have access.” If the author of this statement did not
+in fact have a patented technology to which his competitors do not have
+access, then the statement would be false. Although the sentence begins
+with an assertion of opinion, the last half of the sentence qualifies as an
+assertion of fact. See Omnicare, Inc. v. Laborers Dist. Council Const.
+Indus. Pension Fund, 575 U.S. 175, 185 (2015).
+4
+ Take, for example, the statement “We believe our TV sales practices
+comply with the law.” If the author of this statement makes this assertion
+14                 GRIER V. FINJAN HOLDINGS, INC.
+
+
+Laborers Dist. Council Const. Indus. Pension Fund, 575
+U.S. 175, 184–89 (2015).
+    In this case, both parties agree that the statements
+challenged by Grier could be false only under a theory of
+subjective falsity. Subjective falsity attacks the basic factual
+assertion that underlies all statements of opinion: the
+assertion that the author holds and believes the stated
+opinion. Take, for example, the statement “I believe our
+TVs have the highest resolution available.” The phrase “I
+believe” asserts a fact: that the author holds the belief. No
+matter whether the TVs in fact have the highest resolution
+available, if the author of the statement did not believe that
+his company’s TVs had the highest resolution available, then
+the statement would contain a false statement of fact. See id.
+at 184.
+    However, the Supreme Court has held that subjective
+falsity alone is not enough to impose liability: “to recognize
+liability on mere disbelief or undisclosed motive without any
+demonstration that the . . . statement was false or misleading
+about its subject would authorize . . . litigation confined
+solely to what one skeptical court spoke of as the ‘impurities’
+of a director’s ‘unclean heart.’” Virginia Bankshares, Inc. v.
+Sandberg, 501 U.S. 1083, 1096 (1991) (quoting Stedman v.
+Storer, 308 F. Supp. 881, 887 (S.D.N.Y. 1969)). This rule
+is akin to a harmless error rule. Take again, for example, the
+statement “I believe our TVs have the highest resolution
+available.” If the author’s TVs do have the highest
+
+“without having consulted a lawyer, it could be misleadingly incomplete.
+In the context of the securities market, an investor, though recognizing
+that legal opinions can prove wrong in the end, still likely expects such
+an assertion to reason on some meaningful legal inquiry—rather than,
+say, on mere intuition, however sincere.” Id. at 188.
+                GRIER V. FINJAN HOLDINGS, INC.             15
+
+
+resolution available, then it is of little consequence whether
+the author believed that the TVs have the highest resolution
+available. The listener has not been misled as to the
+resolution quality of the TVs.
+    Thus, where a plaintiff relies on a theory of subjective
+falsity, the plaintiff must allege “both that ‘the speaker did
+not hold the belief she professed’ and that the belief is
+objectively untrue.” Dearborn Heights, 856 F.3d at 615–16
+(quoting Omnicare, 575 U.S. at 186). These are known as
+the “subjective falsity” and “objective falsity” requirements,
+respectively. See Rubke v. Capitol Bancorp Ltd, 551 F.3d
+1156, 1162 (9th Cir. 2009).
+    In sum, Grier must plausibly allege that (1) Finjan
+management did not believe the revenue projections/share-
+value estimations (subjective falsity), (2) the revenue
+projections/share-value estimations did not reflect Finjan’s
+likely future performance (objective falsity), (3)
+shareholders foreseeably relied on the revenue
+projections/share-value estimations in accepting the tender
+offer, and (4) shareholders suffered an economic loss as a
+result of the deal with Fortress.
+                  A. Pleading Standard
+    Except where a heightened pleading standard applies, a
+motion to dismiss under Rule 12(b)(6) of the Federal Rules
+of Civil Procedure is analyzed using the plausibility pleading
+standards of Rule 8(a), Bell Atlantic Corp. v. Twombly, 550
+U.S. 544 (2007), and Ashcroft v. Iqbal, 556 U.S. 662 (2009).
+The district court applied the heightened pleading standards
+of Rule 9(b) and of two provisions in the Private Securities
+Litigation Reform Act (“PSLRA”), 15 U.S.C. § 78u-4(b).
+We address the applicability of each heightened standard in
+turn.
+16                GRIER V. FINJAN HOLDINGS, INC.
+
+
+                          1. Rule 9(b)
+    Under Rule 9(b), “[i]n alleging fraud or mistake, a party
+must state with particularity the circumstances constituting
+fraud or mistake.” Fed. R. Civ. P. 9(b). “To comply with
+Rule 9(b), allegations of fraud must be ‘specific enough to
+give defendants notice of the particular misconduct which is
+alleged to constitute the fraud charged so that they can
+defend against the charge and not just deny that they have
+done anything wrong.’” Bly-Magee v. California, 236 F.3d
+1014, 1019 (9th Cir. 2001) (quoting Neubronner v. Milken,
+6 F.3d 666, 672 (9th Cir. 1993)). “The complaint must
+specify such facts as the times, dates, places, benefits
+received, and other details of the alleged fraudulent activity.”
+Neubronner, 6 F.3d at 672.
+     Rule 9(b) applies where a claim is “grounded in fraud”
+or “sound[s] in fraud,” even if fraud is not an essential
+element of the cause of action. Vess v. Ciba-Geigy Corp.
+USA, 317 F.3d 1097, 1103 (9th Cir. 2003). In other words,
+if “a plaintiff . . . choose[s] . . . to allege in the complaint that
+the defendant has engaged in fraudulent conduct,” then “the
+pleading of that claim as a whole must satisfy the
+particularity requirement of Rule 9(b).” Id. at 1103–04.
+    Because Grier’s claim asserts that Finjan management
+knew that the revenue predictions they gave to Atlas were
+incorrect and that they endorsed the predictions and the
+resulting analysis of Atlas as “reasonable” to convince
+shareholders to accept the sale to Fortress, Grier’s claim
+“sounds in fraud.” Thus, the pleading of his claim must
+comply with Rule 9(b), even if fraud is not an essential
+element of the claim. The district court was correct to apply
+Rule 9(b).
+                 GRIER V. FINJAN HOLDINGS, INC.               17
+
+
+ 2. PSLRA Part One: Particularity Requirements for
+   Allegations of Untrue Statements of Material Fact
+    The district court applied two pleading standards from
+the PSLRA, separate from Rule 9(b)’s pleading
+requirements for fraud allegations, in its analysis of the
+sufficiency of the allegations. First, the district court applied
+a heightened standard which requires increased particularity
+for allegations of untrue statements of material fact:
+
+        In any private action arising under [the
+        Exchange Act] in which the plaintiff alleges
+        that the defendant . . . made an untrue
+        statement of a material fact . . . the complaint
+        shall specify each statement alleged to have
+        been misleading, the reason or reasons why
+        the statement is misleading, and, if an
+        allegation regarding the statement or
+        omission is made on information and belief,
+        the complaint shall state with particularity all
+        facts on which that belief is formed.
+
+15 U.S.C. § 78u-4(b)(1) (“Section 4(b)(1)”). We have said
+that Section 4(b)(1) commands a plaintiff to “reveal ‘the
+sources of [his] information,’” Rubke, 551 F.3d at 1166
+(quoting In re Silicon Graphics Inc. Sec. Litig., 183 F.3d
+970, 985 (9th Cir. 1999), as amended (Aug. 4, 1999)), and
+requires a complaint to “include . . . corroborating details.”
+Silicon Graphics, 183 F.3d at 985. The particularity
+requirements of Section 4(b)(1) and Rule 9(b) are not
+identical, but they are similar.
+   It is undisputed that Section 4(b)(1) applies to all Section
+14(e) actions, including this one. See Rubke, 551 F.3d at
+1167. The district court was correct to apply Section 4(b)(1).
+18               GRIER V. FINJAN HOLDINGS, INC.
+
+
+     3. PSLRA Part Two: Plausibility Requirement for
+               State-of-Mind Allegations
+    Second, the district court applied a heightened pleading
+standard applicable to state-of-mind allegations:
+
+         [I]n any private action arising under [the
+         Exchange Act] in which the plaintiff may
+         recover money damages only on proof that
+         the defendant acted with a particular state of
+         mind, the complaint shall, with respect to
+         each act or omission alleged to violate [the
+         Exchange Act], state with particularity facts
+         giving rise to a strong inference that the
+         defendant acted with the required state of
+         mind.
+
+15 U.S.C. § 78u-4(b)(2)(A) (“Section 4(b)(2)”).
+    Unlike Section 4(b)(1), Section 4(b)(2) substantially
+increases the pleading requirement. “PSLRA’s ‘strong
+inference’ requirement has teeth. It is an ‘exacting’ pleading
+obligation that ‘presents no small hurdle for the securities
+fraud plaintiff.’” Nguyen v. Endologix, Inc., 962 F.3d 405,
+414 (9th Cir. 2020) (alteration adopted) (first quoting Zucco
+Partners, LLC v. Digimarc Corp., 552 F.3d 981, 990 (9th
+Cir. 2009), then quoting Schueneman v. Arena Pharms., Inc.,
+840 F.3d 698, 705 (9th Cir. 2016)). The “strong inference”
+requirement is exacting because the Supreme Court has said
+that a “strong” inference “must be cogent and at least as
+compelling as any opposing inference of nonfraudulent
+intent.” Tellabs, 551 U.S. at 314. Thus, unlike the
+particularity requirements of Rule 9(b) and Section 4(b)(1),
+Section 4(b)(2) increases the plausibility requirement,
+setting a bar significantly above the pleading requirements
+                 GRIER V. FINJAN HOLDINGS, INC.             19
+
+
+of Twombly and Iqbal.
+    To determine whether Section 4(b)(2) applies, we must
+decide whether Grier’s Section 14(e) claim requires “proof
+that the defendant acted with a particular state of mind.”
+This kind of state-of-mind requirement involved in fraud
+cases is referred to as a “scienter” requirement. See Ernst &
+Ernst v. Hochfelder, 425 U.S. 185, 188 (1976) (defining
+scienter as “an allegation of intent to deceive, manipulate, or
+defraud on the part of the defendant”). It is not enough that
+the complaint “sounded in fraud” or that the allegations tend
+to expound a theory of fraud. The question is instead
+whether the cause of action itself has scienter as a required
+element.
+    In Varjabedian, a panel of this court was faced with a
+question similar to the one here—whether Section 4(b)(2)
+applies in Section 14(e) cases. 888 F.3d at 404. Analyzing
+the text of Section 14(e), the panel concluded that a Section
+14(e) plaintiff could succeed with proof of negligence, and
+that proof of scienter is not necessary. Id. at 407. Because
+negligence does not require proof of a mental state, see
+DSAM Glob. Value Fund v. Altris Software, Inc., 288 F.3d
+385, 391 (9th Cir. 2002), Section 4(b)(2) does not apply as a
+pleading standard to a Section 14(e) case. Varjabedian, 888
+F.3d at 409–10.
+   Yet here, the district court nonetheless held that Grier’s
+Section 14(e) claim had a scienter requirement and
+accordingly applied Section 4(b)(2). The district court gave
+two reasons for doing so. Neither is convincing.
+    First, the district court noted that “as a factual matter,
+[Grier has] put forward a theory that Defendants knew that
+the financial projections given to Atlas were false.”
+20               GRIER V. FINJAN HOLDINGS, INC.
+
+
+    Grier indeed alleged that Finjan management knowingly
+misrepresented the value of Finjan. However, the question
+is whether Section 14(e) itself requires a plaintiff to make
+such allegations of fraud to state a proper claim for relief.
+Section 4(b)(2)’s pleading standard takes effect only in a
+“private action . . . in which the plaintiff may recover money
+damages only on proof [of scienter].” § 78u-4(b)(2)(A)
+(emphasis added). The language of Section 4(b)(2) focuses
+on the proof demanded by the nature of the “action,” not on
+the particularities of the allegations in the complaint. Thus,
+the mere fact that a plaintiff has included allegations of fraud
+will not by itself add a scienter element to every cause of
+action alleged in the complaint. See Vess, 317 F.3d at 1103.
+     Second, the district court noted that “where opinions are
+at issue, a plaintiff must plead not only objective falsity but
+also subjective falsity, which is essentially a state-of-mind
+requirement.”
+    As mentioned above, because the statements at issue in
+this case are statements of opinion, Grier must allege, inter
+alia, that “the speaker did not hold the belief [the speaker]
+professed.” Omnicare, 575 U.S. at 186. It is rare for a
+speaker to express an opinion without knowing that he is
+doing so. But it is not impossible. For example, an
+individual could negligently issue a statement that includes
+an opinion that the speaker does not hold. If a corporate
+executive prepares a statement truthfully indicating that he
+believes his corporation will have a revenue of $400 million
+over the next year, but through a scrivener’s error the
+statement is released to the public with the figure instead
+reading $40 million, then the corporate executive has
+perhaps negligently released a statement to the public with
+an opinion that the corporate executive does not believe.
+Were this to happen, then the statement would be
+                     GRIER V. FINJAN HOLDINGS, INC.              21
+
+
+subjectively false, but the author would not have acted with
+scienter.
+    Because an author could negligently state an opinion in
+which he does not subjectively believe, subjective falsity
+does not necessarily require scienter. Thus, Section 14(e)
+can be satisfied without scienter, even when the statements
+at issue are statements of opinion. Varjabedian is thus
+indistinguishable, and we are bound by it 5: Section 4(b)(2)
+does not apply in Section 14(e) actions, even when the
+challenged statement is a statement of opinion.
+    We now proceed to an analysis of the case using Rule
+9(b), Section 4(b)(1) of PSLRA, and Twombly/Iqbal—the
+proper pleading standards. As discussed below, even under
+these less exigent pleading requirements, Grier failed to
+allege facts sufficient to state a plausible claim to relief.
+Thus, although the district court erroneously applied Section
+4(b)(2), the error was harmless.
+          B. Grier’s Allegations of Subjective Falsity
+    At issue is whether Grier included factual allegations
+sufficient to create a reasonable inference that Finjan
+management did not believe the sale price of $1.55 per share
+was reasonable. 6 Grier’s complaint and the documents
+incorporated by reference into the complaint provided ten
+facts that tend to represent Finjan’s true value.
+    To determine whether these facts give rise to a
+reasonable inference that Finjan management did not believe
+
+5
+    See Miller v. Gammie, 335 F.3d 889, 900 (9th Cir. 2003).
+6
+  Grier challenges both the estimated share values and the projected
+revenue figures. However, the projected revenue figures are a factor
+subsumed into the discussion of the estimated share values.
+22                 GRIER V. FINJAN HOLDINGS, INC.
+
+
+in the reasonableness of the $1.55 sale price, “we will
+conduct a dual inquiry: first, we will determine whether any
+of the plaintiff’s allegations, standing alone, are sufficient to
+create a [reasonable] inference of [subjective falsity];
+second, if no individual allegations are sufficient, we will
+conduct a ‘holistic’ review of the same allegations to
+determine whether the insufficient allegations combine to
+create a [reasonable] inference of [subjective falsity].”
+Zucco Partners, 552 F.3d at 992.
+    1. After an open sale process involving the solicitation
+of bids from more than fifty entities, the final share-purchase
+offers were $1.50 per share from Party B (which Party B
+later withdrew in favor of a proposal to purchase Finjan
+assets) and $1.55 per share from Fortress.
+    This strongly supports the conclusion that Finjan
+management did not believe the sale price was too low. As
+the Delaware Supreme Court has recognized, a “price
+resulting from arms-length negotiations where there are no
+claims of collusion is a very strong indication of fair value.”
+M.P.M. Enterprises, Inc. v. Gilbert, 731 A.2d 790, 797 (Del.
+1999). 7 Finjan’s management would presumably hold the
+same belief.
+    2. In the year prior to the sale, Finjan’s shares were
+trading on the open market for prices ranging from $0.78 to
+$2.36 per share.
+   These numbers are of no great use because they vary
+widely, and as revealed by Atlas’s studies, the sale price of
+a company sold through tender offer can be drastically
+
+7
+ There are no claims of collusion, strictly speaking, because Grier did
+not allege any collusive communication between Fortress and Finjan
+management.
+                GRIER V. FINJAN HOLDINGS, INC.             23
+
+
+different from the open-market price.
+    3. Finjan conducted an analysis of its liquidation value
+and concluded that a sale of Finjan’s assets would result in a
+net value of $0.70 per share.
+    This number is of no great use because the complaint
+does not indicate any typical relationship between a
+liquidation valuation and reasonable sale price. However,
+the liquidation valuation does imply that the sale price of
+$1.55 per share would have offered a better deal to
+shareholders than a sale of Finjan’s assets, which Party B
+had offered to Finjan shortly before Finjan finalized the deal
+with Fortress.
+    4. Atlas conducted a “Premiums Paid Analysis,” which
+looked at acquisitions of twenty-one other publicly traded
+technology companies in the United States since January 1,
+2017, with transaction values between $15 million and $100
+million. Atlas compared the sale price of these transactions
+to the open-market price of the acquired company’s shares
+one day prior, one week prior, and one month prior to the
+announcement of the transaction. Finding that the sale price
+typically exceeds the trading price by 18.4% (one day prior),
+21.0% (one week prior), and 33.2% (one month prior) per
+share, Atlas concluded that Finjan’s sale price would be
+expected to be between $1.56 per share and $1.64 per share.
+    This analysis is inconclusive. Historic sales are not
+necessarily indicative of the reasonableness of a particular
+sale price, and even assuming they are, the estimated range
+of values in the Premiums Paid Analysis had a low end of
+$1.56 per share—only one cent above the sale price.
+   5. Atlas conducted a “Discounted Cash Flow
+Analysis,” a complicated analysis that involved an
+24               GRIER V. FINJAN HOLDINGS, INC.
+
+
+assessment of the cash that each Finjan asset is expected to
+generate and when it is expected to generate the cash. This
+analysis relied on the projected revenue figures provided by
+Finjan management. It was conducted using two different
+sets of assumptions, with the first set resulting in a predicted
+share value of $1.27 to $1.68 and the second resulting in a
+predicted share value of $1.42 to $1.55. Even Grier
+acknowledges that the Discounted Cash Flow Analysis is
+“recognized as the most important valuation.”
+    This analysis strongly supports the conclusion that
+Finjan management did not believe the sale price for $1.55
+was too low because $1.55 falls within the range of
+reasonable shares under either set of assumptions used by
+Atlas.
+    Grier attacks the Discounted Cash Flow Analysis on the
+basis that it relied on the revenue projections from Finjan
+management that materially differed from the December
+2019 revenue projections. But for the reasons discussed
+below, the December 2019 revenue projections are too
+remote to have been used as a basis for assessing Finjan’s
+value after the onset of the COVID-19 pandemic in 2020,
+and there are no factual allegations tending to show that
+Finjan management continued to believe in the December
+2019 revenue projections after the onset of the pandemic.
+Grier provides no other basis for inferring that the
+Discounted Cash Flow Analysis was objectively false or
+believed to be false by Finjan management.
+    6. Atlas conducted an analysis of “Selected Public
+Company Trading Multiples.” This analysis compared the
+revenue and open-market share prices of four similar
+publicly traded technology companies. Using Finjan’s
+historic revenue data, Atlas predicted a share value of $1.62
+                 GRIER V. FINJAN HOLDINGS, INC.             25
+
+
+to $1.63 for Finjan’s shares. Atlas provided this prediction
+to shareholders alongside several clearly stated caveats,
+including that the four other companies are not exactly
+similar to Finjan, that there was limited financial data on the
+selected companies, and that comparisons among companies
+with intellectual property licensing business models using
+historical and projected data may not be meaningful because
+their revenue events can span years.
+    Because Atlas’s own statements suggested that this
+analysis had low utility, it is not reasonable to infer that
+Finjan’s management put much faith in this analysis.
+    7. An article from a “sophisticated Finjan investor”
+predicted that Finjan’s shares were worth 4.8 to 10 times the
+$1.50 share price. The complaint alleges that this article
+relied on “public statements made by [Finjan] and
+management,” but there is no allegation regarding how the
+“sophisticated Finjan investor” calculated the estimated
+share value, nor what specific “public statements” made by
+Finjan were relied upon by the “sophisticated Finjan
+investor.”
+    This article is irrelevant because there is no allegation
+that Finjan management knew of the article. There is no way
+to infer whether Finjan management could have reached the
+same conclusion because there are no allegations regarding
+how the “sophisticated Finjan investor” reached his
+conclusion.
+    8. An article from a financial investment website in
+May 2020 claimed that Finjan was worth $5.00 per share.
+The complaint alleges that this figure represents an average
+of multiple estimations by “Wall Street analysts,” but again
+there is no allegation regarding who were the analysts nor
+how they conducted their own calculations of the estimated
+26                 GRIER V. FINJAN HOLDINGS, INC.
+
+
+share value.
+    This article is also irrelevant because there is no
+allegation that Finjan management knew of the article.
+There is no way to infer whether Finjan management could
+have reached the same conclusion because there are no
+allegations regarding how the financial investment website
+reached its conclusion.
+    9. Finjan told shareholders in December 2019 (pre-
+COVID) that Finjan’s licensing and enforcement division
+would generate $200 to $400 million total revenue over the
+next three years. Grier uses these revenue predictions to
+calculate that Finjan’s shares were worth $4.36 to $15.50 per
+share.
+    The December 2019 revenue projections carry little
+weight for two reasons. First, these projections were made
+before the COVID-19 pandemic.             Although Finjan
+management expressed optimism in the face of the
+pandemic, 8 Grier’s complaint also details many ways in
+which the pandemic affected Finjan’s operations, including
+delaying Finjan’s patent enforcement trials and forcing
+Finjan to reduce non-litigation expenses by 25%. Grier
+points out that, as of May 2020, Finjan’s enforcement trials
+were still expected to occur by 2024, within the timeframe
+for the revenue projections Finjan provided to Atlas.
+Nevertheless, delays involve uncertainty, and in any event,
+
+8
+  In a March 2020 presentation to investors, Hartstein stated that he had
+“average to possibly even high expectations that [Finjan’s licensing]
+portfolio will certainly yield more profit than it did expense.” In the
+same presentation, a slide displayed Finjan’s response to the pandemic,
+noting that Finjan would continue to conduct “Business as Usual”—
+meaning that Finjan would continue to pursue licensing deals and
+litigation settlements.
+                 GRIER V. FINJAN HOLDINGS, INC.               27
+
+
+the completion of a trial is not guaranteed to generate
+revenue even were Finjan to prevail if, for example, the
+defendant appeals or fails immediately to pay the judgment.
+Thus, the pre-COVID revenue figures are too remote to
+create the reasonable inference that Finjan’s post-COVID
+revenue would be similar.
+    Second, Grier’s own calculations show that the pre-
+COVID revenue figures would support a valuation of $4.36
+to $15.50 per share. This figure is anomalous when read
+alongside the considerably lower valuations provided by
+every other calculation (except the unexplained calculations
+by the “sophisticated Finjan investor”). Even had Finjan
+management once believed in these pre-COVID revenue
+projections, Grier has failed to allege sufficient facts to infer
+that such revenue predictions continue to hold any water or
+that Finjan management continued to believe those
+projections were accurate.
+     10. Grier’s complaint also includes a motive allegation
+relevant to this assessment of subjective falsity: Grier alleges
+that Finjan management feared a hostile takeover by Party B
+because Party B would remove the then-leaders of Finjan
+from their positions. Party B was a strategic acquirer with
+its own management team already in place, and Grier alleges
+that Party B therefore would not have needed the then-
+existing Finjan leadership. Grier also alleges that, by asking
+to deal directly with the Finjan board and by criticizing the
+sale process, Grier alleges that Party B had expressed
+displeasure with the then-existing Finjan leadership.
+Further, Grier alleges that Party B’s threat of purchasing
+more shares on the open market caused Finjan’s board to
+28                GRIER V. FINJAN HOLDINGS, INC.
+
+
+reopen the sales process only weeks after closing it. 9
+    Grier’s motive allegation is implausible.          Grier
+essentially alleges that Party B’s April 1, 2020
+communication (notifying Finjan’s board of Party B’s intent
+to acquire additional shares in the open market) triggered a
+dash for Finjan to secure a deal with Fortress, with Finjan
+management manipulating revenue figures to convince
+Finjan shareholders that the deal with Fortress should be
+accepted. This is not plausible for four reasons:
+   First, the allegedly faulty revenue predictions were
+generated on April 25, 2020, updated on May 27, 2020, and
+provided to Fortress before the agreement was executed on
+June 10, 2020. Thus, if Finjan management were falsely to
+lowball Finjan’s revenue predictions, it could have
+convinced Fortress that the deal was bad just as much, if not
+more, than it would have convinced shareholders that the
+deal was good.
+    Second, Finjan management did not need false revenue
+figures to steer the deal toward Fortress. Party B had
+withdrawn its final offer for $1.50 per share, but Fortress was
+willing to go through with a deal for $1.55 per share.
+Fortress simply offered the better deal. 10
+
+9
+   Grier’s complaint also contains allegations that Hartstein was
+motivated by the monetary compensation that he received as a result of
+the sale under his Finjan employment contract. However, Grier
+abandoned this theory below when it became clear that Hartstein would
+have received more monetary benefits from a deal with Party B than he
+received in the deal with Fortress, thus undermining Grier’s theory.
+Grier does not raise the issue on appeal.
+10
+  At oral argument, Grier’s counsel argued that Finjan management
+should have avoided any sale of the company. This argument contradicts
+one of the core allegations in Grier’s complaint: Finjan management
+                   GRIER V. FINJAN HOLDINGS, INC.                   29
+
+
+    Third, on April 13, 2020—weeks after Party B
+threatened to acquire additional shares—Finjan entered into
+an agreement with Party B, providing Party B with the
+exclusive right to negotiate with Finjan through April 20,
+2020. This demonstrates that Finjan was not averse to
+dealing with Party B despite the alleged threat of a hostile
+takeover.
+     Fourth, Grier’s factual allegations are insufficient to
+create a reasonable inference that Finjan management would
+lose their jobs in a deal with Party B. The complaint asserts
+that Party B is “a publicly traded strategic acquirer” and
+therefore would not need the Finjan management team. This
+is too great of an inferential leap. That Party B is “a publicly
+traded strategic acquirer” does not imply any particular
+leadership structure for Party B, nor does it imply that Finjan
+management could not continue in leadership positions after
+the sale.
+                              *   *    *
+    Thus, none of the allegations, standing alone, creates a
+reasonable inference of subjective falsity—a reasonable
+inference that Finjan management believed that the revenue
+projections or share-value estimations provided to
+shareholders were inaccurate.
+    Even taking Grier’s factual allegations together, it is not
+reasonable to infer subjective falsity. The only facts that
+have any tendency to support this conclusion are Finjan’s
+
+allegedly believed that a failure to sell the company would result in a
+hostile takeover by Party B. A sale to Fortress for $1.55 per share was
+better for shareholders than a hostile takeover by Party B, in which
+shareholders would have presumably received only the market rate for
+their shares, $1.33—a clearly inferior option.
+30               GRIER V. FINJAN HOLDINGS, INC.
+
+
+pre-COVID open-market share prices and Finjan’s
+December 2019 revenue predictions. However, it is not
+reasonable to infer from the allegations of the complaint that
+Finjan management still believed these figures were
+predictive    post-COVID.            Finjan    management’s
+announcement of a 25% reduction in non-litigation expenses
+indicates that it believed COVID had a serious impact on
+Finjan.
+    Any minimal faith in the old revenue predictions must
+have been defeated as Finjan management watched the sale
+process play out. More than fifty parties were contacted, and
+several engaged in negotiations; that $1.55 per share was the
+best final offer received “is a very strong indication” that this
+share price was a “fair value.” Gilbert, 731 A.2d at 797. It
+is unreasonable to infer from these factual allegations that
+Finjan management subjectively believed that the revenue
+projections or the estimated share values produced therefrom
+were too low.
+    Accordingly, Grier failed to provide a plausible
+allegation of subjective falsity, a critical element of his
+Section 14(e) claim.
+                    III. CONCLUSION
+   For the foregoing reasons, we AFFIRM the district
+court’s dismissal of Grier’s second amended complaint.
+

@@ -1,0 +1,987 @@
+ 1   that holding. He does not ask this Court to compel a Form I-918 Supplement B signature. He
+
+ 2   asks the Court to deny dismissal of claims that Serrato's April 20, 2026 denial was retaliatory and
+
+ 3   that the denial process failed constitutional and statutory minima.
+
+ 4
+
+ 5          Two judicial determinations already confirm that Plaintiff is not entitled, in this Section
+
+ 6   1983 action, to an order compelling a Form B signature. First, this Court expressly recognized
+
+ 7   Serrato's discretion to certify. (Dkt. No. 5 at 4.) Second, Judge Fickes denied Plaintiff's motion
+
+ 8   for judicial U-visa certification in Alameda Superior Court Case No. 26CV168913. Plaintiff
+
+ 9   accepts both determinations for purposes of the relief sought here: he does not ask this Court to
+
+10   force a Supplement B signature. That acceptance is limited to this federal pleading posture. It
+
+11   does not waive, and is not intended to waive, Petitioner's position in the pending Alameda writ
+
+12   proceeding (Case No. 26CV191136) that Penal Code section 679.10 imposes enforceable
+
+13   state-law duties-including mandatory processing, explanation, and related ministerial
+
+14   obligations-reviewable by mandate, with vacatur and remand for a new decision under the
+
+15   correct standards as the principal remedy. Defendant's motion, however, treats discretion as a
+
+16   license to retaliate and as a free pass for a boilerplate denial. The Court's prior screening
+
+17   determination is highly persuasive here: Defendant now attacks essentially the same factual
+
+18   theory under the same Rule 12(b)(6) plausibility standard, and the Court has already identified a
+
+19   plausible retaliation inference on that theory. (Dkt. No. 5 at 3-4.)
+
+20
+
+21          Accordingly, this opposition leads with the First Amendment retaliation claim-the claim
+
+22   this Court already found plausible and the claim least affected by certification discretion. Perry v.
+
+23   Sindermann, 408 U.S. 593, 597 (1972); Bd. of Cnty. Comm'rs v. Umbehr, 518 U.S. 668, 674
+
+24   (1996); Ford v. City of Yakima, 706 F.3d 1188, 1193 (9th Cir. 2013). The due-process claims are
+
+25   preserved as secondary theories: not as a demand that Serrato must certify, but as claims that
+
+26   California Penal Code section 679.10 constrains how a denial may be reached and explained.
+
+27   Under federal law, the decision whether to sign remains discretionary. Perez Perez v. Wolf, 943
+
+28   F.3d 853, 863 (9th Cir. 2019). Section 679.10 nonetheless uses mandatory language, creates a
+
+                                                    Page 2
+                OPPOSITION TO MTD / MOTION TO STRIKE -- NEWANFORBI v. SERRATO (N.D. Cal.)
+ 1   rebuttable presumption of helpfulness, requires a written explanation for denial, mandates timely
+
+ 2   processing, and prohibits treating the absence of charges or prosecution as dispositive. Those
+
+ 3   process constraints-not a right to a compelled yes-are what the due-process claims put at issue.
+
+ 4
+
+ 5            Defendant also moves under Rule 12(f) to strike Plaintiff's prayers for declaratory relief,
+
+ 6   injunctive relief, attorney fees, and punitive damages. The Ninth Circuit has held that Rule 12(f)
+
+ 7   does not authorize striking a claim for damages on the ground that it is not recoverable as a
+
+ 8   matter of law. Whittlestone, Inc. v. Handi-Craft Co., 618 F.3d 970, 974-75 (9th Cir. 2010).
+
+ 9   Several of Defendant's grounds fail on that threshold alone.
+
+10
+
+11            Finally, Defendant leans on related-case history-including Judge Fickes's denial,
+
+12   Plaintiff's voluntary dismissals, and an Eastern District report and recommendation-to argue
+
+13   retaliation is implausible and leave to amend futile. Even accepting those facts as true, they do
+
+14   not defeat this FAC. A different certifying official's decision on a different request does not
+
+15   determine whether Captain Serrato's April 20, 2026 denial-issued while supervising the accused
+
+16   officers and while those officers were defendants in pending civil suits-was free of retaliatory
+
+17   motive. This is the only action asserting Section 1983 claims against Defendant Serrato in his
+
+18   individual capacity for that denial. And this Court has already held those claims plausible.
+
+19
+
+20       1 Plaintiff also notes that the motion was served on August 26, 2026 and noticed for hearing on September 16,
+
+21   2026-21 days' notice. Civil L.R. 7-2(a) requires 35 days. Plaintiff opposes on the merits without waiving any
+
+22   objection to the deficient notice period. The opposition deadline under Civil L.R. 7-3(a) is September 2, 2026.
+
+23
+
+24                                          II. STANDARD OF REVIEW
+
+25
+
+26            A motion to dismiss under Rule 12(b)(6) tests the legal sufficiency of the complaint.
+
+27   Navarro v. Block, 250 F.3d 729, 732 (9th Cir. 2001). To survive, a complaint must contain
+
+28   "sufficient factual matter, accepted as true, to 'state a claim to relief that is plausible on its face.'"
+
+                                                           Page 3
+                 OPPOSITION TO MTD / MOTION TO STRIKE -- NEWANFORBI v. SERRATO (N.D. Cal.)
+ 1   Ashcroft v. Iqbal, 556 U.S. 662, 678 (2009). The court must "accept all factual allegations in the
+
+ 2   complaint as true and construe the pleadings in the light most favorable to the nonmoving party."
+
+ 3   Knievel v. ESPN, 393 F.3d 1068, 1072 (9th Cir. 2005). Where competing inferences may be
+
+ 4   drawn from the same set of facts, the complaint survives-"even if it strikes a savvy judge that
+
+ 5   actual proof of the facts alleged is improbable." Bell Atl. Corp. v. Twombly, 550 U.S. 544, 556
+
+ 6   (2007).
+
+ 7
+
+ 8             Pro se pleadings are held "to less stringent standards than formal pleadings drafted by
+
+ 9   lawyers" and must be construed liberally. Erickson v. Pardus, 551 U.S. 89, 94 (2007); Hebbe v.
+
+10   Pliler, 627 F.3d 338, 342 (9th Cir. 2010). Dismissal with prejudice is warranted only when it is
+
+11   "absolutely clear that the deficiencies of the complaint could not be cured by amendment." Lopez
+
+12   v. Smith, 203 F.3d 1122, 1137 (9th Cir. 2000) (en banc) (quoting Noll v. Carlson, 809 F.2d 1446,
+
+13   1448 (9th Cir. 1987)). "[T]he rule favoring liberality in amendments to pleadings is particularly
+
+14   important for the pro se litigant." Id. at 1131 (quoting Noll, 809 F.2d at 1448).
+
+15
+
+16                                             III. ARGUMENT
+
+17
+
+18   A. Defendant's Rule 12(f) Motions to Strike Are Improper Under Whittlestone.
+
+19
+
+20             Defendant moves under Rule 12(f) to strike Plaintiff's fourth cause of action and prayers
+
+21   for declaratory relief, injunctive relief, attorney fees, and punitive damages. (MTD at 12-14.)
+
+22   Each motion fails at the threshold.
+
+23
+
+24             In Whittlestone, Inc. v. Handi-Craft Co., 618 F.3d 970 (9th Cir. 2010), the Ninth Circuit
+
+25   held that Rule 12(f) "does not authorize a district court to strike a claim for damages on the
+
+26   ground that such damages are precluded as a matter of law." Id. at 971, 974-75. Rule 12(f)
+
+27   authorizes striking only "redundant, immaterial, impertinent, or scandalous" matter. Id. at 973
+
+28   (quoting Fed. R. Civ. P. 12(f)). Challenges that test the legal sufficiency of a damages prayer "are
+
+                                                    Page 4
+                  OPPOSITION TO MTD / MOTION TO STRIKE -- NEWANFORBI v. SERRATO (N.D. Cal.)
+ 1   better suited for a Rule 12(b)(6) motion or a Rule 56 motion, not a Rule 12(f) motion." Id. at 974.
+
+ 2   Defendant's reliance on Bureerong v. Uvawas, 922 F. Supp. 1450 (C.D. Cal. 1996), and
+
+ 3   Wilkerson v. Butler, 229 F.R.D. 166 (E.D. Cal. 2005), is misplaced. Both predate Whittlestone
+
+ 4   and are no longer good law on this point in the Ninth Circuit.
+
+ 5
+
+ 6            To the extent the Court construes these arguments as part of the Rule 12(b)(6) motion,
+
+ 7   they fail on the merits as well.
+
+ 8
+
+ 9            Punitive damages. The FAC alleges Defendant (a) denied certification despite possessing
+
+10   the dashcam recording and Detention Certificate proving fabricated evidence, (b) issued a
+
+11   boilerplate denial engaging with no evidence, and (c) did so amid a concrete institutional
+
+12   incentive to deny while supervising the accused officers. (FAC ¶¶ 37, 49.) These allegations
+
+13   plausibly state "reckless or callous indifference to the federally protected rights of others." Smith
+
+14   v. Wade, 461 U.S. 30, 56 (1983). That the FAC disclaims relitigating the officers' underlying tort
+
+15   liability does not erase Serrato's own conduct: refusing to engage with evidence in his own
+
+16   custody when deciding a certification request under section 679.10.
+
+17
+
+18            Injunctive relief. The FAC alleges an ongoing deprivation of access to the U-visa process,
+
+19   continuing immigration uncertainty, inability to obtain employment authorization and removal
+
+20   protections, and dignitary injury from the unresolved denial. (FAC ¶¶ 39, 44, 51, Prayer ¶¶ E-F.)
+
+21   Those allegations speak directly to Winter's irreparable-harm and balance-of-equities inquiries.
+
+22   Winter v. Nat. Res. Def. Council, Inc., 555 U.S. 7, 20 (2008). Whether Plaintiff ultimately
+
+23   obtains an injunction is a merits question; it is not a basis to strike the prayer at the pleading
+
+24   stage.
+
+25
+
+26            Attorney fees. Plaintiff does not contend he may recover fees for his own pro se work
+
+27   under Kay v. Ehrler, 499 U.S. 432, 438 (1991). To the extent counsel is later retained or
+
+28   appointed-including through the Federal Pro Bono Project referral (Dkt. No. 5 at 5)-the prayer
+
+                                                    Page 5
+                 OPPOSITION TO MTD / MOTION TO STRIKE -- NEWANFORBI v. SERRATO (N.D. Cal.)
+ 1   may matter. Either way, Rule 12(f) is not the vehicle to resolve that contingency now.
+
+ 2
+
+ 3   B. The First Amendment Retaliation Claim Is Well-Pleaded.
+
+ 4
+
+ 5           Defendant's second ground in the Notice is that retaliation fails "because Plaintiff was not
+
+ 6   entitled to U-visa certification as a matter of law." (MTD at 2.) That gets the doctrine
+
+ 7   backwards-and ignores this Court's screening holding that Serrato's certification discretion does
+
+ 8   not include discretion to retaliate. (Dkt. No. 5 at 4.) "[E]ven though a person has no 'right' to a
+
+ 9   valuable governmental benefit and even though the government may deny him the benefit for
+
+10   any number of reasons, there are some reasons upon which the government may not rely. It may
+
+11   not deny a benefit to a person on a basis that infringes his constitutionally protected
+
+12   interests-especially, his interest in freedom of speech." Perry v. Sindermann, 408 U.S. 593, 597
+
+13   (1972); see also Bd. of Cnty. Comm'rs v. Umbehr, 518 U.S. 668, 674 (1996). Discretionary
+
+14   benefits are precisely where retaliation doctrine operates. Whether Plaintiff had a freestanding
+
+15   "right" to certification is irrelevant to whether Defendant denied it in retaliation for protected
+
+16   activity.
+
+17
+
+18           To state a First Amendment retaliation claim, Plaintiff must allege that he engaged in
+
+19   protected activity, that Defendant took adverse action that would chill a person of ordinary
+
+20   firmness, and that Defendant's desire to chill that speech was a but-for cause of the adverse
+
+21   action. Ford v. City of Yakima, 706 F.3d 1188, 1193 (9th Cir. 2013). At the pleading stage,
+
+22   Plaintiff need only allege facts making retaliatory but-for causation plausible-not prove it, and
+
+23   not disprove every innocent explanation. Ashcroft v. Iqbal, 556 U.S. 662, 678 (2009); Capp v.
+
+24   Cnty. of San Diego, 940 F.3d 1046, 1055 (9th Cir. 2019). The Mt. Healthy burden-shift-under
+
+25   which the defendant may show it would have taken the same action anyway-is an affirmative
+
+26   defense for summary judgment or trial, not a pleading barrier. Mt. Healthy City Sch. Dist. Bd. of
+
+27   Educ. v. Doyle, 429 U.S. 274, 287 (1977).
+
+28
+
+                                                    Page 6
+                 OPPOSITION TO MTD / MOTION TO STRIKE -- NEWANFORBI v. SERRATO (N.D. Cal.)
+ 1           The FAC more than satisfies Ford's but-for standard through five mutually reinforcing
+
+ 2   allegations:
+
+ 3
+
+ 4           Documented knowledge. Defendant's own March 26, 2026 letter expressly acknowledges
+
+ 5   Plaintiff's citizen complaint and assigns an investigator. (FAC ¶ 48.) This is a contemporaneous
+
+ 6   written admission-not an inference. Defendant's response-that assigning an investigator is
+
+ 7   proper-misses the point. The letter proves knowledge of protected activity before the denial.
+
+ 8   Knowledge plus adverse action in close proximity is classic retaliation circumstantial evidence.
+
+ 9
+
+10           Tight temporal proximity. POST forwarded the complaint on March 23. Serrato assigned
+
+11   an investigator on March 26. Plaintiff submitted the certification request on April 9. Serrato
+
+12   denied it on April 20-eleven days later-without substantive analysis. (FAC ¶ 49(b).) Pratt v.
+
+13   Rowland, 65 F.3d 802, 808 (9th Cir. 1995). Defendant's "prompt action reflects responsiveness"
+
+14   theory is a competing inference. Competing inferences must be resolved in Plaintiff's favor at
+
+15   this stage. Twombly, 550 U.S. at 556.
+
+16
+
+17           Concrete institutional incentive. Certifying the Supplement B would have required
+
+18   Serrato to attest under penalty of perjury that his subordinate officers committed qualifying
+
+19   criminal activity-while CHP was defending those same officers in two pending civil lawsuits.
+
+20   (FAC ¶ 49(c).) That incentive is not "Plaintiff's decision to sue"; it is Serrato's institutional
+
+21   interest in avoiding an official admission that would undermine those defenses.
+
+22
+
+23           Pretextual reasoning. The denial offered no engagement with any evidence, identified no
+
+24   deficient statutory element, and applied no statutory standard. That absence of any
+
+25   evidence-based justification supports a plausible inference that the denial would not have
+
+26   occurred but for retaliatory animus: on this pleaded record, no legitimate, non-retaliatory ground
+
+27   for the boilerplate refusal appears. Capp, 940 F.3d at 1055; Nieves v. Bartlett, 587 U.S. 391, 406
+
+28   (2019). (FAC ¶ 49(d).)
+
+                                                    Page 7
+                OPPOSITION TO MTD / MOTION TO STRIKE -- NEWANFORBI v. SERRATO (N.D. Cal.)
+ 1
+
+ 2          Structural conflict. Defendant simultaneously occupied two incompatible roles:
+
+ 3   supervisor of the accused officers and certifier of whether they committed qualifying crimes.
+
+ 4   (FAC ¶ 49(e).) Withrow v. Larkin, 421 U.S. 35, 47 (1975). Defendant's observation that Plaintiff
+
+ 5   "could have" sought certification from another entity (MTD at 11) does not erase that conflict:
+
+ 6   CHP was the detecting agency possessing the dashcam recording, the Detention Certificate, and
+
+ 7   the underlying records, and that agency's commander was structurally compromised as
+
+ 8   circumstantial evidence of retaliatory motive.
+
+ 9
+
+10          This Court found these allegations plausible at screening: "While Defendant Serrato had
+
+11   discretion to certify the request, he did not have discretion to retaliate against Mr. Newanforbi."
+
+12   (Dkt. No. 5 at 4.) Defendant's motion simply asserts that each factor in isolation has an innocent
+
+13   explanation. That is a summary-judgment argument, not a Rule 12(b)(6) dismissal ground.
+
+14
+
+15   C. The Procedural Due Process Claim Is Well-Pleaded.
+
+16
+
+17          Even accepting Serrato's substantive discretion to deny certification, the manner of denial
+
+18   must still satisfy the process section 679.10 requires. Defendant argues the denial letter "lays out
+
+19   the reason behind the denial" and that "is all the procedural due process the law requires." (MTD
+
+20   at 9.) The FAC alleges otherwise. Procedural due process first requires a protected liberty or
+
+21   property interest. Bd. of Regents v. Roth, 408 U.S. 564, 577 (1972). Plaintiff does not claim a
+
+22   protected interest in the ultimate certification result. The interest alleged is narrower: section
+
+23   679.10's mandatory criteria and denial procedures materially constrain official discretion and
+
+24   create a legitimate entitlement to a non-retaliatory, statutorily compliant decisional
+
+25   process-including a meaningful written explanation-even if not to a compelled Form B signature.
+
+26   (FAC ¶¶ 40-44.)
+
+27
+
+28          Section 679.10, subdivision (i)(2), requires "a written explanation for the denial." Where
+
+                                                    Page 8
+                OPPOSITION TO MTD / MOTION TO STRIKE -- NEWANFORBI v. SERRATO (N.D. Cal.)
+ 1   the denial rests on non-cooperation, the explanation must include "specific details of any
+
+ 2   reasonable requests for cooperation and a detailed description of how the victim refused to
+
+ 3   cooperate." The first sentence is a stand-alone command applicable to every denial; the second
+
+ 4   supplements it for cooperation-based denials. To read the second as the only requirement would
+
+ 5   mean an agency could deny certification on the most common ground-a finding the applicant was
+
+ 6   not a crime victim-with no meaningful explanation at all. That is what AB 1261 was enacted to
+
+ 7   prevent. The Legislative Counsel's Digest describes the written-explanation duty without
+
+ 8   qualification: a certifying entity that does not certify "shall provide a written explanation for the
+
+ 9   denial of the certification." (Stats. 2023, ch. 679.)
+
+10
+
+11           The FAC specifically alleges the five-sentence boilerplate was legally deficient because
+
+12   it: (a) did not address the dashcam evidence; (b) did not address the section 851.6 Detention
+
+13   Certificate; (c) did not identify which statutory element was unsatisfied; (d) did not acknowledge
+
+14   the rebuttable presumption of helpfulness; and (e) did not provide specific reasons as required by
+
+15   statute. (FAC ¶¶ 31, 37, 43.) A conclusory assertion that the incident "does not meet the
+
+16   standard"-without identifying the standard applied, the element found wanting, or any
+
+17   engagement with the agency's own exculpatory records-is not a "written explanation" in any
+
+18   meaningful sense. It is the form of denial AB 1261 was written to abolish.
+
+19
+
+20           If that interest is protected, Mathews v. Eldridge, 424 U.S. 319, 335 (1976), confirms the
+
+21   process alleged here was inadequate: the private interest in access to the U-visa gateway is
+
+22   substantial; the risk of erroneous deprivation from a five-sentence boilerplate engaging with no
+
+23   evidence is extreme; and the governmental interest in withholding a reasoned explanation is
+
+24   minimal because the Supplement B is a factual certification, not a visa approval. (FAC ¶ 38.)
+
+25   Goldberg v. Kelly, 397 U.S. 254, 262 (1970). These allegations state a plausible procedural due
+
+26   process claim.
+
+27
+
+28
+
+                                                    Page 9
+                OPPOSITION TO MTD / MOTION TO STRIKE -- NEWANFORBI v. SERRATO (N.D. Cal.)
+ 1   D. The Substantive Due Process Claim Is Well-Pleaded.
+
+ 2
+
+ 3          Plaintiff does not assert a federal right to U-visa certification. Nor does he argue that
+
+ 4   section 679.10 eliminates all discretion. To the extent FAC paragraph 35 can be read as alleging
+
+ 5   that section 679.10 eliminates all substantive certification discretion or that the official "must
+
+ 6   sign" whenever statutory elements are met, Plaintiff does not rely on that proposition here. The
+
+ 7   surviving constitutional theory concerns retaliatory motive and mandatory procedural constraints.
+
+ 8   He accepts this Court's holding that Serrato had discretion to certify for purposes of the
+
+ 9   compel-signature theory Defendant attributes to the FAC. (Dkt. No. 5 at 4.) That acceptance does
+
+10   not waive Plaintiff's separate state-mandate arguments under section 679.10. The claim here is
+
+11   narrower: where California has enacted a statute that (a) uses mandatory language ("shall"), (b)
+
+12   creates a rebuttable presumption of helpfulness, (c) requires specific written reasons for denial,
+
+13   (d) mandates processing within 30 days, and (e) expressly provides that investigation, charges,
+
+14   prosecution, or conviction are not required for certification, a certifying official who ignores
+
+15   those constraints and issues a boilerplate denial without engaging with the evidence in his own
+
+16   custody has acted arbitrarily.
+
+17
+
+18          Under federal law, the decision to sign a certification is discretionary. Perez Perez v. Wolf
+
+19   , 943 F.3d 853, 863 (9th Cir. 2019). This Court quoted that principle at screening and still held
+
+20   the complaint sufficient. (Dkt. No. 5 at 3-4.) Federal discretion does not erase California's
+
+21   subsequent statutory constraints. Defendant's reliance on Catholic Charities CYO v. Chertoff,
+
+22   622 F. Supp. 2d 865 (N.D. Cal. 2008), is misplaced: that case addressed the federal statute-which
+
+23   lacked mandatory language-and was decided seven years before section 679.10 and sixteen years
+
+24   before AB 1261. The secondary substantive due process theory is preserved, but it is not the lead
+
+25   claim and does not depend on forcing a certification signature.
+
+26
+
+27          Defendant's "civil tort" label rests on the absence of criminal charges. Section 679.10,
+
+28   subdivision (k)(1), expressly provides that investigation, charges, prosecution, or conviction "are
+
+                                                   Page 10
+                OPPOSITION TO MTD / MOTION TO STRIKE -- NEWANFORBI v. SERRATO (N.D. Cal.)
+ 1   not required" for certification. The FAC identifies enumerated qualifying criminal activity under
+
+ 2   8 U.S.C. § 1101(a)(15)(U)(iii) and section 679.10(c)-false imprisonment, unlawful criminal
+
+ 3   restraint, felonious assault, perjury, and obstruction of justice. (FAC ¶ 21.) This Court already
+
+ 4   accepted those allegations as supporting a plausible inference of false imprisonment based on
+
+ 5   fabricated evidence. (Dkt. No. 5 at 4.) And Defendant's attack on the helpfulness presumption
+
+ 6   inverts subdivision (h): if no assistance was requested, the victim has not "refused or failed to
+
+ 7   provide" it. The FAC further alleges affirmative cooperation through complaints and production
+
+ 8   of the agency's own records. (FAC ¶¶ 23, 47.)
+
+ 9
+
+10   E. Declaratory and Injunctive Relief Are Proper.
+
+11
+
+12          Plaintiff does not oppose treating the fourth cause of action as a prayer for remedy rather
+
+13   than a standalone cause of action. Declaratory relief is properly characterized as a form of relief.
+
+14   The relief sought, however, remains proper and should not be stricken. Plaintiff does not seek an
+
+15   order compelling Defendant to sign the Supplement B in this action. Consistent with this Court's
+
+16   recognition of certification discretion for Section 1983 purposes, Plaintiff seeks vacatur of the
+
+17   April 20, 2026 denial and a remand for a new decision that applies the correct statutory
+
+18   standards, engages with the evidence, and is free of retaliatory motive-leaving Defendant's
+
+19   substantive certification judgment intact while correcting the constitutional defects. Nothing in
+
+20   that federal remedy request waives Petitioner's state-law mandate claims in Case No.
+
+21   26CV191136 concerning section 679.10's enforceable processing and explanation duties.
+
+22
+
+23          The FAC seeks prospective relief against Defendant in his official capacity: a declaration
+
+24   that the April 20, 2026 denial violated constitutional standards and that Plaintiff is entitled to a
+
+25   new certification decision applying the correct standards to the evidence in CHP's possession,
+
+26   together with corresponding injunctive relief. (FAC ¶¶ 53-54, Prayer ¶¶ E-F.) To the extent any
+
+27   prayer language could be read more broadly, Plaintiff clarifies that the operative request on this
+
+28   motion is process correction-vacatur and redo-not a directed Form B signature. That is
+
+                                                   Page 11
+                OPPOSITION TO MTD / MOTION TO STRIKE -- NEWANFORBI v. SERRATO (N.D. Cal.)
+ 1   prospective relief authorized by Ex parte Young, 209 U.S. 123 (1908). It is not duplicative of the
+
+ 2   damages claims against Defendant in his individual capacity.
+
+ 3
+
+ 4          Defendant's authorities involve plaintiffs seeking declarations about completed
+
+ 5   foreclosures or other purely past wrongs with no forward-looking component. (MTD at 12.) Here
+
+ 6   an actual controversy remains live: Plaintiff's certification remains denied; he still needs a lawful
+
+ 7   certification decision to pursue U nonimmigrant status; and the parties dispute whether the April
+
+ 8   20 denial complied with constitutional and statutory standards. A new decision on a correct legal
+
+ 9   standard is forward-looking relief, not a retrospective damages substitute.
+
+10
+
+11   F. The Related-Case Narrative Does Not Defeat the FAC.
+
+12
+
+13          Defendant argues that Judge Fickes's denial of Plaintiff's judicial U-visa certification
+
+14   motion in Case No. 26CV168913, Plaintiff's voluntary dismissals of earlier actions, and an
+
+15   Eastern District report and recommendation show that retaliation is implausible and that leave to
+
+16   amend would be futile. (MTD at 11, 16-17.) Plaintiff accepts those procedural facts for purposes
+
+17   of this opposition. They still do not warrant dismissal.
+
+18
+
+19   1. Extrinsic Materials Are Improper on a Bare Rule 12(b)(6) Record.
+
+20
+
+21          On a Rule 12(b)(6) motion, the court generally may not consider materials outside the
+
+22   pleadings. Lee v. City of Los Angeles, 250 F.3d 668, 688-89 (9th Cir. 2001). Judicial notice may
+
+23   reach an order's existence but not the truth of disputed matters recited within it, and may not be
+
+24   used to supply missing elements or to resolve competing inferences against the plaintiff. Khoja v.
+
+25   Orexigen Therapeutics, Inc., 899 F.3d 988, 998-1003 (9th Cir. 2018). Defendant submits no
+
+26   request for judicial notice, no declaration, and no exhibits. Even if the Court takes notice that
+
+27   Judge Fickes denied a certification motion and that other cases were dismissed, those facts do not
+
+28   establish-much less conclusively establish-that Serrato's April 20 denial was lawful or
+
+                                                  Page 12
+                OPPOSITION TO MTD / MOTION TO STRIKE -- NEWANFORBI v. SERRATO (N.D. Cal.)
+ 1   non-retaliatory. What Defendant actually asks is that the Court draw adverse inferences about
+
+ 2   Plaintiff's credibility and litigation motives from materials the Court cannot test on this record.
+
+ 3   That is the functional equivalent of a credibility determination-exactly what Rule 12(b)(6)
+
+ 4   forbids.
+
+ 5
+
+ 6   2. Judge Fickes's Denial Does Not Resolve This Case.
+
+ 7
+
+ 8           Accepting that Judge Fickes denied Plaintiff's motion for judicial U-visa certification on
+
+ 9   June 18, 2026, that denial does not defeat the FAC for at least four independent reasons.
+
+10
+
+11           First, different certifying official. Section 679.10 and 8 C.F.R. § 214.14(a)(2) authorize
+
+12   multiple categories of certifying officials, including judges and law-enforcement supervisors.
+
+13   Judge Fickes's decision concerned whether a superior-court judge should certify Form I-918
+
+14   Supplement B in a stayed civil tort action. This case concerns whether Captain
+
+15   Serrato-Commander of the CHP Dublin Area, supervisor of the accused officers, and the official
+
+16   who signed the April 20, 2026 denial-violated Plaintiff's constitutional rights in performing that
+
+17   agency certification function. One certifying official's denial does not immunize another's
+
+18   allegedly retaliatory or arbitrary denial.
+
+19
+
+20           Second, different legal question. The Fickes motion asked a state judge to issue an
+
+21   affirmative certification. This action asks whether Serrato's existing denial was
+
+22   unconstitutional-because it was motivated by retaliation for protected petitioning and because the
+
+23   denial process ignored statutory explanation and evidence-engagement requirements. A "no" on
+
+24   judicial certification is not a "yes" on the lawfulness of Serrato's motive or process. Even if Judge
+
+25   Fickes's denial was substantively correct, that would not immunize Serrato's allegedly retaliatory
+
+26   or procedurally defective denial. The constitutional violation is in the how, not just the what.
+
+27
+
+28           Third, different record posture and conflict. Serrato decided the request while personally
+
+                                                   Page 13
+                OPPOSITION TO MTD / MOTION TO STRIKE -- NEWANFORBI v. SERRATO (N.D. Cal.)
+ 1   supervising the accused officers, after acknowledging Plaintiff's POST/citizen complaint, and
+
+ 2   while those officers were defendants in pending civil suits. (FAC ¶¶ 48-49.) Judge Fickes did not
+
+ 3   occupy that structural conflict. The retaliation and bias allegations that this Court found plausible
+
+ 4   at screening are specific to Serrato.
+
+ 5
+
+ 6             Fourth, no preclusion showing. Defendant has not pleaded or briefed claim preclusion,
+
+ 7   issue preclusion, or Rooker-Feldman. He offers the Fickes denial as atmosphere for a futility /
+
+ 8   "serial litigation" narrative. Atmosphere is not a Rule 12(b)(6) defense. And Defendant cannot
+
+ 9   use another forum's certification denial to contradict this Court's screening determination that
+
+10   false imprisonment based on fabricated evidence is plausibly pleaded qualifying criminal activity
+
+11   here. (Dkt. No. 5 at 4.)
+
+12
+
+13   3. The Related Actions Are Not Duplicative of This One.
+
+14
+
+15             As the FAC discloses, the related actions involve different defendants, different legal
+
+16   theories, and different forms of relief. (FAC ¶¶ 11-12.) The Eastern District case concerned
+
+17   Fourth Amendment claims against the arresting officers. The Alameda tort case concerned false
+
+18   imprisonment, battery, and Bane Act theories against those officers and the State. The Alameda
+
+19   writ case (Matter 20) seeks state-law mandamus against CHP in its official capacity under Code
+
+20   of Civil Procedure section 1085. This case-the only one asserting Section 1983 damages and Ex
+
+21   parte Young relief against Defendant Serrato for his certification denial-is not duplicative.
+
+22   Voluntary dismissals without prejudice of other dockets do not adjudicate the merits of these
+
+23   claims.
+
+24
+
+25
+
+26
+
+27
+
+28
+
+                                                    Page 14
+                  OPPOSITION TO MTD / MOTION TO STRIKE -- NEWANFORBI v. SERRATO (N.D. Cal.)
+ 1   G. Qualified Immunity Does Not Apply.
+
+ 2
+
+ 3          As a threshold matter, qualified immunity does not reach Plaintiff's official-capacity
+
+ 4   claims for prospective injunctive and declaratory relief. Defendant's own notice limits qualified
+
+ 5   immunity to his individual capacity. (MTD at 2, 14.) Qualified immunity provides no defense to
+
+ 6   those official-capacity prospective claims.
+
+ 7
+
+ 8          As to the individual-capacity claims, qualified immunity protects officials "from liability
+
+ 9   for civil damages insofar as their conduct does not violate clearly established statutory or
+
+10   constitutional rights of which a reasonable person would have known." Pearson v. Callahan, 555
+
+11   U.S. 223, 231 (2009). Dismissal on qualified-immunity grounds at the 12(b)(6) stage is
+
+12   inappropriate "unless the court can determine from the complaint alone that qualified immunity
+
+13   applies." Keates v. Koile, 883 F.3d 1228, 1235 (9th Cir. 2018). It cannot do so here.
+
+14
+
+15   1. Defendant Violated Constitutional Rights.
+
+16
+
+17          As set forth above, the FAC adequately alleges violations of substantive and procedural
+
+18   due process and First Amendment retaliation. This Court has already found these allegations
+
+19   sufficient: the complaint "supports the plausible inferences that CHP officers falsely imprisoned
+
+20   him in November 2024 based on fabricated evidence" and that "Defendant Serrato retaliated
+
+21   against him by wrongfully denying his certification request." (Dkt. No. 5 at 4.)
+
+22
+
+23   2. The Unlawfulness Was Clearly Established.
+
+24
+
+25          The clearly established law is clearest on retaliation-and that is enough to defeat qualified
+
+26   immunity on the lead claim.
+
+27
+
+28          First, it was clearly established by April 2026 that a government official may not deny a
+
+                                                   Page 15
+               OPPOSITION TO MTD / MOTION TO STRIKE -- NEWANFORBI v. SERRATO (N.D. Cal.)
+ 1   discretionary benefit in retaliation for protected petitioning. Perry v. Sindermann, 408 U.S. 593,
+
+ 2   597 (1972); Bd. of Cnty. Comm'rs v. Umbehr, 518 U.S. 668, 674 (1996); Borough of Duryea v.
+
+ 3   Guarnieri, 564 U.S. 379, 387 (2011); Hartman v. Moore, 547 U.S. 250, 256 (2006). The
+
+ 4   analogue here is concrete: denying a statutory certification benefit because the applicant filed
+
+ 5   complaints and litigation against officers under the official's supervision. Defendant's own
+
+ 6   authority confirms the elements: Ford v. City of Yakima, 706 F.3d at 1193. Capp, 940 F.3d at
+
+ 7   1055, reversed dismissal of a retaliation claim on analogous pleading of retaliatory motive.
+
+ 8   Wesby's caution against defining clearly established law at too high a level of generality, 583
+
+ 9   U.S. at 64, does not require a prior case about U-visa certifications; it requires that the
+
+10   unlawfulness follow from established principles. Retaliatory denial of a discretionary benefit for
+
+11   protected petitioning is not a close call-especially after this Court stated that Serrato "did not
+
+12   have discretion to retaliate." (Dkt. No. 5 at 4.)
+
+13
+
+14           Second, as to the secondary due-process theories, section 679.10's specific
+
+15   written-explanation and non-dispositive-absence-of-charges requirements gave Defendant fair
+
+16   notice that a boilerplate denial ignoring the agency's own evidence would violate those
+
+17   constraints. Hope v. Pelzer, 536 U.S. 730, 741 (2002). Those theories are preserved; they are not
+
+18   the lead clearly-established path.
+
+19
+
+20   H. If Any Claim Is Dismissed, Leave to Amend Must Be Granted.
+
+21
+
+22           Defendant argues leave to amend should be denied because Plaintiff has "substantial
+
+23   experience with the legal process," has already amended once, and has pursued related litigation.
+
+24   (MTD at 16-17.) The standard does not turn on litigation history or amendment count; it turns on
+
+25   whether amendment would be futile. "[T]he rule favoring liberality in amendments to pleadings
+
+26   is particularly important for the pro se litigant." Lopez v. Smith, 203 F.3d 1122, 1131 (9th Cir.
+
+27   2000) (en banc). Leave should be granted unless it is "absolutely clear that the deficiencies of the
+
+28   complaint could not be cured by amendment." Id. at 1137 (quoting Noll v. Carlson, 809 F.2d
+
+                                                    Page 16
+                OPPOSITION TO MTD / MOTION TO STRIKE -- NEWANFORBI v. SERRATO (N.D. Cal.)
+ 1   1446, 1448 (9th Cir. 1987)). This Court granted leave to file the First Amended Complaint. A
+
+ 2   single prior amendment does not establish futility; the question is whether the deficiencies could
+
+ 3   be cured, not how many times the complaint has been amended. Defendant has not demonstrated
+
+ 4   futility.
+
+ 5
+
+ 6               Even accepting Defendant's related-case narrative in full, it does not show futility. The
+
+ 7   Eastern District report and recommendation addressed different claims against different
+
+ 8   defendants and never became a final judgment-the action was dismissed without prejudice. Judge
+
+ 9   Fickes's denial of a judicial certification motion does not adjudicate Serrato's individual-capacity
+
+10   liability for a retaliatory or arbitrary agency denial. The pending state writ petition seeks
+
+11   mandamus against CHP under state law, not Section 1983 damages against Serrato. And this
+
+12   Court has already held the operative theory here plausible. (Dkt. No. 5 at 4.)
+
+13
+
+14               To the extent Defendant quarrels with the FAC's illustrative California Penal Code
+
+15   cross-references for the enumerated federal qualifying crimes (FAC ¶ 21), any such pleading gap
+
+16   is curable by amendment and is not a basis for dismissal with prejudice. The federal
+
+17   categories-false imprisonment, unlawful criminal restraint, felonious assault, perjury, and
+
+18   obstruction of justice-are pleaded under 8 U.S.C. § 1101(a)(15)(U)(iii) and were accepted as
+
+19   plausible at screening. (Dkt. No. 5 at 4.) Denial of leave to amend based on characterizations of
+
+20   other litigation-particularly where this Court has already screened these claims as
+
+21   sufficient-would be an abuse of discretion.
+
+22
+
+23                                               IV. CONCLUSION
+
+24
+
+25               Plaintiff respectfully requests that this Court: (1) deny Defendant's motion to dismiss in
+
+26   its entirety, with particular emphasis on the First Amendment retaliation claim already found
+
+27   plausible at screening; (2) deny Defendant's motions to strike; (3) permit Plaintiff to treat the
+
+28   fourth cause of action as a prayer for declaratory and injunctive process-correction relief rather
+
+                                                      Page 17
+                    OPPOSITION TO MTD / MOTION TO STRIKE -- NEWANFORBI v. SERRATO (N.D. Cal.)
+ 1   than a standalone claim or a compel-certification order; and (4) in the alternative, grant leave to
+
+ 2   amend should the Court find any deficiency in the current pleading.
+
+ 3
+
+ 4                                                                          Dated: August 27, 2026
+
+ 5
+
+ 6                                                                          Respectfully submitted,
+
+ 7
+
+ 8
+
+ 9                                                     ___________________________________
+
+10                                                          BRENDAN NGEHSI NEWANFORBI
+
+11                                                                              Plaintiff, In Pro Per
+
+12
+
+13
+
+14
+
+15
+
+16
+
+17
+
+18
+
+19
+
+20
+
+21
+
+22
+
+23
+
+24
+
+25
+
+26
+
+27
+
+28
+
+                                                  Page 18
+               OPPOSITION TO MTD / MOTION TO STRIKE -- NEWANFORBI v. SERRATO (N.D. Cal.)
+

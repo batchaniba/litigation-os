@@ -1,0 +1,1190 @@
+                    First Amended Complaint (Doc. 10) — Text Extract
+
+Matter 24 — Newanforbi v. Serrato, N.D. Cal. 4:26-cv-05953-ASK
+
+LLM-friendly text extraction from the filed FAC PDF (Doc. 10, July 15, 2026). Use this instead of the ~11 MB
+image-heavy filing PDF when prompting other models. Page markers preserved.
+
+EXTRACT
+        ===== FAC PAGE 1 =====
+        BRENDAN NGEHSI NEWANFORBI
+        Plaintiff, In Pro Per
+        1455 Cat Tail Drive
+        Stockton, CA 95204
+        Telephone: (209) 801-4442
+        E-mail: bnn.cdl@gmail.coin
+        1
+        2
+        3
+        4
+        5
+        UNITED STATES DISTRICT COURT
+        6
+        NORTHERN DISTRICT OE CALIEORNIA
+        7
+        8
+        9
+        BRENDAN NGEHSI NEWANFORBI,
+        Case No. 4:26-cv-05953-ASK
+        10
+        FIRST AMENDED COMPLAINT
+        FOR DAMAGES, DECLARATORY
+        RELIEF, AND INJUNCTIVE RELIEF
+        Plaintiff,
+        11
+        V.
+        12
+        CAPTAIN G. SERRATO, in his individual
+        and official capacities as Commander,
+        Dublin Area, California Highway Patrol,
+        (42 U.S.C. Section 1983)
+        13
+        (!) Fourteenth Amendment —
+        Substantive Due Process:
+        (2) Fourteenth Amendment —
+        Procedural Due Process;
+        (3) First Amendment —
+        Retaliation:
+        (4) Declaratory Relief
+        14
+        Defendant.
+        15
+        16
+        17
+        DEMAND FOR JURY TRIAL
+        18
+        19
+        INTRODUCTION
+        20
+        21
+        1. This action challenges the arbitrary denial of Plaintiffs request for U Nonimmigrant
+        Status Certification (Fonn 1-918, Supplement B) by Captain G. Serrato, Commander of the
+        California Highway Patrol Dublin Area, on April 20, 2026.
+        22
+        23
+24
+25
+2. The underlying facts are stark: On November 1,2024, CHP Officers Santiago
+Meza-Gonzalez and Jose Melano subjected Plaintiff to a false arrest, fabricated material
+statements in a sworn report, and forced an involuntary blood draw through a warrant procured by
+26
+27
+28
+Page
+1
+FIRST AMENDED COMPLAINT - NEWANFORBI v. SERRATO (N.D. Cal.)
+Case 4:26-cv-05953-ASK     Document 10     Filed 07/15/26     Page 1 of 22
+===== FAC PAGE 2 =====
+those fabrications -- all on Interstate 580 East in Livermore, Alameda County. CHP's own
+dashcam recording, in CHP's own custody, conclusively disproves every material representation
+in the sworn report. CHP itself conceded the arrest was unlawful by issuing a Penal Code section
+851.6 Detention Certificate reclassifying the incident as "a detention only, not an arrest" based on
+"insufficient grounds for making a criminal complaint." No criminal charges were ever filed. The
+officers' underlying conduct is the subject of pending litigation in both state and federal court, as
+described in paragraph 11 below.
+1
+2
+3
+4
+5
+6
+7
+8
+3. When Plaintiff exercised his rights under federal and California law to request U Visa
+certification of those qualifying crimes. Captain Serrato denied the request in a five-sentence
+boilerplate letter. That denial did not address the dashcam evidence. It did not address the section
+851.6 Detention Certificate. It did not address the four documented fabrications. It did not apply
+the statutory rebuttable presumption of helpfulness. It did not identify which statutory element
+was unsatisfied. It provided no specific reasons, as required by law.
+9
+10
+11
+12
+13
+14
+15
+4. This complaint does not seek to relitigate the officers' underlying conduct. It challenges
+a discrete, subsequent constitutional violation: Captain Serrato's arbitrary refusal to perform a
+mandatory statutory duty - a refusal that deprives Plaintiff of meaningful access to the
+immigration protections Congress and the California Legislature have established for victims of
+qualifying criminal activity.
+16
+17
+18
+19
+20
+21
+JURISDICTION AND VENUE
+22
+23
+5. This Court has subject matter jurisdiction under 28 U.S.C. section 1331 (federal
+question) because this action arises under the First and Fourteenth Amendments to the United
+States Constitution, as enforced through 42 U.S.C. section 1983.
+24
+25
+26
+27
+6. Venue is proper in this District under 28 U.S.C. section 1391(b)(2) because a
+28
+Page 2
+FIRST AMENDED COMPLAINT - NEWANFORBI v. SERRATO (N.D. Cal.)
+Case 4:26-cv-05953-ASK     Document 10     Filed 07/15/26     Page 2 of 22
+===== FAC PAGE 3 =====
+substantial part of the events giving rise to the claims occurred in Alameda County, California.
+The certification request was directed to CHP Dublin Area, 4999 Gleason Drive, Dublin,
+Alameda County. The denial letter was issued from that office. The underlying qualifying
+criminal activity occurred in Livermore, Alameda County.
+1
+2
+3
+4
+5
+7. Assignment to the Oakland Division is proper under Civil Local Rule 3-2(c) because
+the events giving rise to this action occurred in Alameda County.
+6
+7
+8
+8. This Court has authority to grant declaratory relief under 28 U.S.C. sections 2201 and
+2202 and injunctive relief under Rule 65 of the Federal Rules of Civil Procedure. Plaintiffs
+claims for prospective injunctive relief against Defendant Serrato in his official capacity are
+9
+10
+11
+authorized by Ex parte Young, 209 U.S. 123 (1908).
+12
+13
+PARTIES
+14
+15
+9. Plaintiff BRENDAN NGEHSI NEWANFORBI is a natural person and resident of
+16
+Milpitas, Santa Clara County, California. Plaintiff holds Alien Registration Number
+A-203-115-087. At the time of the events described herein, Plaintiff held a valid California Class
+17
+18
+A Commercial Driver's License and was employed as a commercial truck driver.
+19
+20
+10. Defendant CAPTAIN G. SERRATO is sued in his individual capacity for damages
+and in his official capacity for prospective declaratory and injunctive relief At all relevant times,
+Serrato served as Captain and Commander of the California Flighway Patrol, Dublin Area,
+located at 4999 Gleason Drive, Dublin, CA 94568. In that capacity, Serrato functioned as a
+certifying official under California Penal Code section 679.10 and possessed the authority to
+execute, approve, or deny Form 1-918, Supplement B, U Nonimmigrant Status Certifications. On
+April 20, 2026, acting under color of state law. Serrato denied Plaintiffs certification request.
+21
+22
+23
+24
+25
+26
+27
+28
+Page 3
+FIRST AMENDED COMPLAINT - NEWANFORBI v. SERRATO (N.D. Cal.)
+Case 4:26-cv-05953-ASK     Document 10     Filed 07/15/26     Page 3 of 22
+===== FAC PAGE 4 =====
+RELATED ACTIONS
+1
+2
+11. Plaintiff discloses the following related pending actions arising from the same
+underlying incident of November 1, 2024, or from the same April 20, 2026 U-Visa certification
+3
+4
+denial:
+5
+6
+a. Newanforbi v. Meza-Gonzalez, et al., Alameda County Superior Court
+Case No. 26CV168913. State tort action filed February 4, 2026, asserfng claims for false
+imprisonment, battery, and violafon of Civil Code section 52.1 (Tom Bane Civil Rights
+Act) against Officers Meza-Gonzalez and Melano and the State of California. This action
+does not name Captain Serrato and does not challenge the U-Visa certification denial.
+7
+8
+9
+10
+11
+12
+b. Newanforbi v. State ofCalifornia, et al.. United States District Court,
+Eastern District of California, Case No. 2:25-CV-01460-DC-CSK. Federal civil rights
+action filed May 27, 2025, asserting claims under 42 U.S.C. section 1983 for Fourth and
+Fourteenth Amendment violations and Monell liability against the State of California,
+CHP, and Officers Meza-Gonzalez and Melano. This action does not name Captain
+Serrato and does not challenge the U-Visa certification denial.
+13
+14
+15
+16
+17
+18
+19
+c. Newanforbi v. California Highway Patrol, et al., Alameda County
+Superior Court Case No. 26CV191136. State petition for writ of mandate filed May 29,
+2026, pursuant to Code of Civil Procedure section 1085, challenging the same April 20,
+2026 denial of Plaintiffs U-Visa certification request that is at issue in this action. The
+petition names Captain G. Serrato in his official capacity as a respondent, together with
+the California Highway Patrol, Lieutenant Gary Paul, and Sergeant Eric Dutra. The state
+action seeks prospective relief in the form of a peremptory writ of mandate compelling
+reconsideration of the certification denial. A demurrer filed by the California Flighway
+Patrol is set for hearing on August 28, 2026.
+20
+21
+22
+23
+24
+25
+26
+27
+28
+Page 4
+FIRST AMENDED COMPLAINT - NEWANFORBI v. SERRATO (N.D. Cal.)
+Case 4:26-cv-05953-ASK     Document 10     Filed 07/15/26     Page 4 of 22
+===== FAC PAGE 5 =====
+1
+12. The state tort action (item a) and the federal civil rights action (item b) do not assert
+any claim against Captain Serrato and do not challenge the April 20, 2026 U-Visa certification
+denial. The state writ action (item c) names Captain Serrato in his official capacity only and
+challenges the same certification denial, but seeks prospective relief (a writ of mandate
+compelling reconsideration) against CHP and its officials in their official capacities. This action
+seeks retrospective monetary relief (compensatory and punitive damages) against Captain Serrato
+in his individual capacity for constitutional violations under 42 U.S.C. section 1983. The claims,
+defendants-in-capacity, and forms of relief are distinct. This action raises no claims that duplicate
+or overlap with the related actions.
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+FACTUAL ALLEGATIONS
+12
+13
+A. The Underlying Qualifying Criminal Activity (November 1-2, 2024)
+14
+15
+13. The following facts are established by CHP's own contemporaneous evidence -
+specifically, the dashcam audio and video recording of the entire encounter and CHP's subsequent
+section 851.6 Detention Certificate - and are the subject of the related actions identified above.
+16
+17
+18
+19
+14. On November 1, 2024, at approximately 0045 hours, CHP Officers Santiago
+Meza-Gonzalez (#023295) and Jose Melano (#023054) stopped Plaintiff on Interstate 580 East in
+Livermore, Alameda County. Plaintiff, a commercial truck driver, had pulled over to rest because
+he was fatigued.
+20
+21
+22
+23
+24
+15. Throughout the encounter, the dashcam recorded that Plaintiff spoke coherently and
+articulately; correctly identified his location, read distant highway signs, and explained his
+professional CDL fatigue protocols; and exhibited no objective signs of impairment. Neither
+officer verbalized detecting any odor of alcohol from Plaintiff at any point. The only odor
+25
+26
+27
+28
+Page 5
+FIRST AMENDED COMPLAINT - NEWANFORBI v. SERRATO (N.D. Cal.)
+Case 4:26-cv-05953-ASK     Document 10      Filed 07/15/26    Page 5 of 22
+===== FAC PAGE 6 =====
+discussed was the odor of urine from a cup, which Officer Melano identified as such on the
+1
+dashcam (00:58:51-00:59:04).
+2
+3
+16. Meza-Gonzalez advised Plaintiff that the preliminary alcohol screening test was
+voluntary ("You're not required to do this," Dashcam 01:10:54). When Plaintiff exercised his
+lawful right to decline, Meza-Gonzalez immediately placed him under arrest (Dashcam
+4
+5
+6
+01:11:15-01:11:33).
+7
+8
+17. Meza-Gonzalez then prepared CHP Report No. RJ68845, a sworn law enforcement
+report, containing four material fabrications conclusively disproven by the dashcam recording: (a)
+a fabricated claim of "strong distinct odor of an alcoholic beverage" from Plaintiffs breath and
+person - never verbalized during the encounter; (b) a false characterization of Plaintiffs speech
+as "slurred" - contradicted by coherent, articulate speech throughout; (c) a false claim that
+Plaintiff "seemed very confused and disoriented" - contradicted by Plaintiff correctly identifying
+9
+10
+11
+12
+13
+14
+his location and reading highway signs; and (d) a false entry of "BEVERAGE PRESENT: YES
+15
+- the only liquid found was urine in a cup.
+16
+17
+18. These contradictions are not matters of interpretation or professional disagreement.
+The report asserts an odor of alcohol so "strong" and "distinct" that it permeated the vehicle
+interior and emanated from Plaintiffs breath - yet the dashcam audio captures the entire
+encounter and at no point does either officer verbalize detecting any alcohol odor, even as they
+discuss other observations in detail. The report calls Plaintiffs speech "slurred" — yet the dashcam
+captures him spelling his last name on request, discussing alternator mechanics, and explaining
+his CDL training in extended, fluent conversation. The report states Plaintiff was "very confused
+and disoriented" — yet the dashcam shows him correctly identifying his location as Livermore and
+reading highway signs approximately 50 yards away. The content of the sworn report cannot be
+reconciled with the contemporaneous recording.
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+Page 6
+FIRST AMENDED COMPLAINT - NEWANEORBI v. SERRATO (N.D. Cal.)
+Case 4:26-cv-05953-ASK     Document 10     Filed 07/15/26     Page 6 of 22
+===== FAC PAGE 7 =====
+19. The fabricated report was submitted to a magistrate to obtain Search Warrant No.
+WAR913372 (approved by Judge A. Sekany at approximately 0234 hours, November 2, 2024).
+At approximately 0238 hours, phlebotomist Aziza Ghaleb extracted two vials of blood from
+Plaintiffs right arm at the CHP Dublin Area Office pursuant to the fraudulently obtained warrant.
+1
+2
+3
+4
+5
+20. CHP conceded the arrest was unlawful. On or about November 5, 2024, CHP issued a
+6
+Detention Certificate under Penal Code section 851.6 reclassifying the incident as "a detention
+only, not an arrest" based on "insufficient grounds for making a criminal complaint." No criminal
+charges were ever filed.
+7
+8
+9
+10
+21. The officers' conduct constitutes, at minimum, the following qualifying criminal
+activity under 8 U.S.C. section 1101(a)(15)(U)(iii): false imprisonment/ unlawful criminal
+restraint (Cal. Penal Code section 236); felonious assault / battery (Cal. Penal Code section 242);
+perjury (Cal. Penal Code section 118); and obstruction of justice / fabrication of evidence (Cal.
+Penal Code section 182).
+11
+12
+13
+14
+15
+16
+B. Consequences to Plaintiff
+17
+18
+22. As a direct result of the officers' fabricated report. Plaintiff suffered incarceration at
+Santa Rita Jail for approximately five days; a one-year suspension of his Class A Commercial
+Driver's License (effective February 20, 2025 through February 19, 2026); loss of employment
+and wages conservatively estimated at $112,000; and severe emotional distress. These
+consequences are the subject of the related actions and are referenced here solely as context for
+the certification request.
+19
+20
+21
+22
+23
+24
+25
+C. Plaintiffs Cooperation with Investigative Channels
+26
+27
+23. Following the incident. Plaintiff cooperated extensively and affirmatively with every
+28
+Page 7
+FIRST AMENDED COMPLAINT - NEWANFORBI v. SERRATO (N.D. Cal.)
+Case 4:26-cv-05953-ASK     Document 10     Filed 07/15/26     Page 7 of 22
+===== FAC PAGE 8 =====
+available investigative channel: (a) Plaintiff filed a formal complaint with CHP regarding the
+officers' conduct; (b) Plaintiff filed a complaint with the Commission on Peace Officer Standards
+1
+2
+and Training ("POST"), processed under Case No. PUBLlC-26-000371 and forwarded to CHP on
+3
+March 23, 2026; (c) On March 26, 2026, Defendant Serrato acknowledged receipt of the
+complaint by letter, assigning Dublin Area Sergeant Eric Dutra, ID 19981, as the investigator; (d)
+Plaintiff preserved and produced the complete dashcam transeript, the CHP Report, the Detention
+Certificate, and all supporting documentation; (e) Plaintiff participated in DMV administrative
+proeeedings; and (f) at no time has Plaintiff refused or failed to provide information or assistanee
+reasonably requested by any law enforcement agency.
+4
+5
+6
+7
+8
+9
+10
+24. Under California Penal Code section 679.10(h), these facts create a "rebuttable
+presumption that the victim is helpful, has been helpful, or is likely to be helpful" in the
+investigation or prosecution of the qualifying criminal activity.
+11
+12
+13
+14
+D. The Certification Request
+15
+16
+25. On April 9, 2026, Plaintiff submitted a formal, comprehensive request for U
+Nonimmigrant Status Certification to Sergeant Dutra, with a copy to Defendant Serrato. The
+request included: (a) a completed Form 1-918, Supplement B (unsigned, ready for signature); (b)
+a detailed legal memorandum identifying the qualifying criminal activity and the statutory
+authority mandating certification; (c) the POST Letter of Acknowledgment; (d) Defendant
+Serrato's own Complaint Assignment Letter; and (e) supporting exhibits including the dashcam
+transcript, CHP Report, and Detention Certificate.
+17
+18
+19
+20
+21
+22
+23
+24
+26. On April 10, 2026, Lieutenant Gary Paul of CHP Dublin Area confirmed receipt by
+email: "Your email has been received and your request is under review."
+25
+26
+27
+27. California Penal Code section 679.10(j) requires the certifying entity to process a
+28
+Page 8
+FIRST AMENDED COMPLAINT - NEWANFORBI v. SERRATO (N.D. Cal.)
+Case 4:26-cv-05953-ASK     Document 10     Filed 07/15/26     Page 8 of 22
+===== FAC PAGE 9 =====
+certification request within 30 days of receipt. The statutory deadline was May 9, 2026.
+1
+2
+E. Captain Serrato's Arbitrary Denial
+3
+4
+28. On April 20, 2026 - eleven days after receipt and well before any meaningful review
+could have occurred - Defendant Serrato issued a letter denying Plaintiffs certification request.
+The letter claims that "[a] thorough review of this incident was conducted." That statement is
+demonstrably false on this record. No thorough review of a submission containing a multi-page
+legal memorandum, a detailed dashcam transcript with timestamped citations, eight supporting
+exhibits, and a completed Supplement B form could have been completed in eleven days by an
+office simultaneously conducting an internal affairs investigation into the same officers. The
+recitation of a "thorough review" was an official statement that finds no support in the record and
+that was deployed to create the appearance of compliance with section 679.10 where none
+existed.
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+29. The letter's entire substantive analysis, verbatim, states: "Recently, you requested that
+the California Highway Patrol (CHP) Dublin Area certify your Form 1-918 Supplement B, U
+Nonimmigrant Status Certification, stemming from an incident that occurred on November 1,
+2024. A thorough review of this incident was conducted. Unfortunately, this incident does not
+meet the standard of qualifying criminal activity identified in Section 679.10 of the California
+Penal Code, nor does it meet the standards of the Immigration and Nationality Act Section
+101(a)(15)(U)(iii). Additionally, this review found no substantially similar qualifying criminal
+activity as defined in Section 679.10(d) PC. Therefore, your request to certify your Form 1-918,
+Supplement B, U Nonimmigrant Status Certification, was denied."
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+30. Defendant Serrato was not merely aware of the underlying incident — he was formally
+put on notice of the specific evidence proving his officers committed qualifying criminal activity.
+Plaintiffs submission identified the precise dashcam timestamps at which each fabrication is
+26
+27
+28
+Page 9
+FIRST AMENDED COMPLAINT - NEWANFORBI v. SERRATO (N.D. Cal.)
+Case 4:26-cv-05953-ASK     Document 10     Filed 07/15/26     Page 9 of 22
+===== FAC PAGE 10 =====
+disproven (00:58:51, 00:59:05, 01:00:41, 01:03:54, 01:11:15). Serrato personally possessed the
+1
+dashcam recording. He personally possessed the CHP Report containing the fabricated
+statements. He personally possessed the section 851.6 Detention Certificate conceding
+insufficient grounds. His denial reflects not a good-faith exercise ofjudgment but a deliberate
+refusal to engage with evidence that would require acknowledging his subordinate officers'
+criminal conduct.
+2
+3
+4
+5
+6
+7
+31. The denial is legally deficient in the following material respects:
+8
+9
+a. No engagement with the evidence. The denial does not address the
+dashcam recording that disproves the CHP Report. It does not address the section 851.6
+Detention Certificate in which CHP itself conceded the arrest lacked probable cause. It
+does not address the four documented fabrications. The conclusory statement that "a
+thorough review" was conducted is belied by the absence of any substantive analysis.
+10
+11
+12
+13
+14
+15
+b. No element-by-element analysis. Section 679.10 requires certification
+when three elements are met: (1) the petitioner was a victim of qualifying criminal
+activity; (2) the petitioner possesses information concerning the criminal activity; and (3)
+the petitioner has been helpful or is likely to be helpful. The denial does not identify
+which element Serrato found unsatisfied or explain why.
+16
+17
+18
+19
+20
+21
+c. Failure to apply the rebuttable presumption. Section 679.10(h)
+creates a rebuttable presumption of helpfulness. The denial neither acknowledges this
+presumption nor identifies any evidence rebutting it.
+22
+23
+24
+25
+d. Failure to provide specific reasons. Section 679.10(g) requires "a
+written explanation of the specific reasons for the denial." A five-sentence boilerplate that
+does not engage with any evidence does not satisfy this statutory mandate.
+26
+27
+28
+Page 10
+FIRST AMENDED COMPLAINT - NEWANFORBI v. SERRATO (N.D. Cal.)
+Case 4:26-cv-05953-ASK     Document 10     Filed 07/15/26     Page 10 of 22
+===== FAC PAGE 11 =====
+1
+e. Internal contradiction. CHP's own section 851.6 Detention Certificate
+2
+concedes the arrest lacked justification -- yet the denial concludes, without explanation,
+that the officers' conduct does not constitute qualifying criminal activity. These positions
+3
+4
+are irreconcilable.
+5
+6
+f Structural conflict of interest. Serrato was asked to certify that his own
+subordinate officers committed qualifying crimes. Due process requires a neutral
+7
+8
+decision-maker. Withrow v. Larkin, 421 U.S. 35, 47 (1975).
+9
+10
+F. The Absence of Alternative Remedies
+11
+12
+32. There is no internal administrative appeal or grievance process under California Penal
+Code section 679.10 for the denial of a U Visa certification request. USCIS cannot remedy the
+absence of an executed Form 1-918, Supplement B. The denial is a final agency action with no
+adequate alternative remedy.
+13
+14
+15
+16
+17
+FIRST CAUSE OF ACTION
+18
+19
+Violation of the Fourteenth Amendment — Substantive Due Process
+20
+(42 .US.C. section 1983 - Against Defendant Serrato)
+21
+22
+33. Plaintiff incorporates by reference all preceding paragraphs.
+23
+24
+34. The Fourteenth Amendment prohibits state actors from depriving persons of liberty or
+property without due process of law. Where a state creates a statutory framework with mandatory
+procedures and ascertainable standards, a decision-maker's arbitrary and capricious refusal to
+apply those standards violates substantive due process. County ofSacramento v. Lewis, 523 U.S.
+25
+26
+27
+28
+Page 11
+FIRST AMENDED COMPLAINT - NEWANFORBI v. SERRATO (N.D. Cal.)
+Case 4:26-cv-05953-ASK     Document 10     Filed 07/15/26     Page 11 of 22
+===== FAC PAGE 12 =====
+833, 845-46 (1998); Shanks v. Dressel, 540 F.3d 1082, 1087 (9th Cir. 2008).
+1
+2
+35. California Penal Code section 679.10 creates a comprehensive statutory framework
+governing U Visa certification. The statute uses mandatory language ("shall"), converting what
+might otherwise be a discretionary act into a mandatory ministerial duty. When the statutory
+elements are met and the rebuttable presumption of helpfulness is unrebutted, the certifying
+official must sign - section 679.10 leaves no room for unfettered discretion. The statute creates a
+rebuttable presumption of helpfulness (section 679.10(h)). It requires specific written reasons for
+denial (section 679.10(g)). It mandates processing within 30 days (section 679.10(j)). The
+Legislature eliminated the requirement of prosecution, conviction, or pending investigation
+3
+4
+5
+6
+7
+8
+9
+10
+(section 679.10(h)), and strengthened these obligations through AB 1261 (Stats. 2023, Ch. 679),
+11
+effective January 1, 2024. These mandatory constraints remove the "unfettered discretion" that
+ordinarily defeats due process claims and create a legitimate claim of entitlement under the
+Fourteenth Amendment.
+12
+13
+14
+15
+36. Plaintiff possesses a protected liberty interest in the meaningful application of this
+statutory framework. U Visa certification is a necessary predicate to applying for lawful
+immigration status, employment authorization, and protection from removal under 8 U.S.C.
+16
+17
+18
+section 1101(a)(15)(U).
+19
+20
+37. Defendant Serrato's April 20, 2026 denial was arbitrary and conscience-shocking in
+that it: (a) concluded that the officers' conduct did not constitute qualifying criminal activity
+despite CHP's own dashcam proving the report was fabricated and CFIP's own section 851.6
+Certificate conceding insufficient grounds; (b) failed to address any of the evidence submitted; (c)
+failed to identify which statutory element was unsatisfied; (d) failed to apply the rebuttable
+presumption of helpfulness; (e) failed to provide specific written reasons as required by section
+679.10(g); (f) reached a conclusion no rational decision-maker could reach on this record; and (g)
+was rendered by a structurally biased decision-maker.
+21
+22
+23
+24
+25
+26
+27
+28
+Page 12
+FIRST AMENDED COMPLAINT - NEWANFORBI v. SERRATO (N.D. Cal.)
+Case 4:26-cv-05953-ASK     Document 10     Filed 07/15/26      Page 12 of 22
+===== FAC PAGE 13 =====
+1
+38. Under the Mathews v. Eldridge, 424 U.S. 319 (1976) balancing test: (a) Plaintiffs
+2
+private interest is substantial - U Visa certification is a gateway to lawful status and work
+authorization; (b) the risk of erroneous deprivation is extreme — the five-sentence boilerplate
+engaged with no evidence; and (c) the governmental interest in denying certification is minimal -
+the Supplement B is a factual certification, not a visa approval.
+3
+4
+5
+6
+7
+39. As a direct and proximate result of Defendant Serrato's violation of Plaintiffs
+Fourteenth Amendment rights, Plaintiff has been deprived of meaningful access to the U Visa
+process, causing ongoing uncertainty regarding immigration status, inability to obtain
+employment authorization and removal protections, and emotional distress.
+8
+9
+10
+11
+12
+SECOND CAUSE OF ACTION
+13
+14
+Violation of the Fourteenth Amendment - Procedural Due Process
+15
+(42 .US.C. section 1983 — Against Defendant Serrato)
+16
+17
+40. Plaintiff incorporates by reference all preceding paragraphs.
+18
+19
+41. The Fourteenth Amendment's procedural due process protections require, at minimum,
+that a state actor provide notice and a meaningful opportunity to be heard before depriving a
+person of a protected liberty or property interest. Mathews v. Eldridge, 424 U.S. 319, 333 (1976).
+Where a state statute creates a legitimate claim of entitlement by constraining official discretion
+with mandatory language and ascertainable standards, a protected interest arises that may not be
+extinguished without adequate process. Goldberg v. Kelly, 397 U.S. 254, 262 (1970); Board of
+20
+21
+22
+23
+24
+25
+Regents v. Roth, 408 U.S. 564, 577 (1972).
+26
+27
+42. California Penal Code section 679.10 constrains the certifying entity's discretion
+28
+Page 13
+FIRST AMENDED COMPLAINT - NEWANFORBI v. SERRATO (N.D. Cal.)
+Case 4:26-cv-05953-ASK     Document 10     Filed 07/15/26      Page 13 of 22
+===== FAC PAGE 14 =====
+through mandatory language ("shall"), a rebuttable presumption of helpfulness (section
+679.10(h)), and a requirement of specific written reasons for denial (section 679.10(g)). These
+provisions create a protected interest in receiving a reasoned, individualized certification decision
+that engages with the evidence and applies the statutory standards. The interest is particularly
+weighty because certification is the sole gateway to a federal immigration benefit that Plaintiff
+cannot obtain through any other mechanism.
+1
+2
+3
+4
+5
+6
+7
+43. Defendant Serrato deprived Plaintiff of this protected interest without any process
+whatsoever: (a) no hearing or opportunity to respond before denial; (b) no individualized
+explanation identifying which statutory element was found unsatisfied; (c) no engagement with
+any evidence submitted -- the dashcam transcript, the CHP Report, the Detention Certificate, or
+the legal memorandum; (d) no application of the statutory rebuttable presumption of helpfulness;
+and (e) no mechanism for administrative review or reconsideration. The denial letter is a
+five-sentence boilerplate that could have been issued without reading a single page of the
+submission.
+8
+9
+10
+11
+12
+13
+14
+15
+16
+44. The process afforded - a conclusory form denial with no reasoning, no evidentiary
+engagement, and no opportunity to respond - falls far below the minimum the Constitution
+requires. As a direct and proximate result. Plaintiff has been deprived of meaningful access to the
+U Visa certification process without constitutionally adequate procedures.
+17
+18
+19
+20
+21
+THIRD CAUSE OF ACTION
+22
+23
+24
+Violation of the First Amendment - Retaliation for Protected Petitioning Activity
+(42 U.S.C. section 1983 — Against Defendant Serrato)
+25
+26
+45. Plaintiff incorporates by reference all preceding paragraphs.
+27
+28
+Page 14
+FIRST AMENDED COMPLAINT - NEWANFORBI v. SERRATO (N.D. Oal.)
+Case 4:26-cv-05953-ASK     Document 10     Filed 07/15/26     Page 14 of 22
+===== FAC PAGE 15 =====
+46. The First Amendment, as applied to the states through the Fourteenth Amendment,
+proteets the right to petition the government for redress of grievances. This protection extends to
+filing complaints with law enforcement agencies, filing civil lawsuits against government
+officials, and participating in oversight processes such as POST investigations. Borough of
+Duryea v. Guarnieri, 564 U.S. 379, 387 (2011); Soranno’s Gasco, Inc. v. Morgan Hill Uniifed
+Sch. Dist., 874 F.2d 1310, 1314 (9th Cir. 1989). To state a retaliation claim. Plaintiff must allege
+that he engaged in constitutionally protected activity; that Defendant took an adverse action
+against him; and that the protected activity was a substantial or motivating factor for the adverse
+1
+2
+3
+4
+5
+6
+7
+8
+action. Pinard v. Clatskanie Sch. Dist. 6J, 467 F.3d 755, 770 (9th Cir. 2006).
+9
+10
+47. Plaintiff engaged in extensive constitutionally protected activity prior to the April 20,
+2026 denial: (a) filing a formal citizen complaint with the California Highway Patrol regarding
+Officers Meza-Gonzalez and Melano; (b) filing a complaint with the Commission on Peace
+11
+12
+13
+Officer Standards and Training, docketed as Case No. PUBLIC-26-000371; (c) filing the
+14
+Alameda County Superior Court tort action (Case No. 26CV168913) on February 4, 2026; (d)
+filing the Eastern District of California civil rights action (Case No. 2:25-CV-01460-DC-CSK) on
+May 27, 2025; and (e) submitting the April 9, 2026 certification request itself, which attached the
+dashcam transcript, the CHP Report, and documented the officers' fabrications in detail.
+15
+16
+17
+18
+19
+48. Defendant Serrato had direct, documented knowledge of Plaintiffs protected activity
+before he issued the denial. Serrato's own letter dated March 26, 2026 expressly acknowledges
+receipt of Plaintiffs POST/citizen complaint and states that Serrato "assigned Dublin Area
+Sergeant Eric Dutra, ID 19981, as the assigned investigator." This is not an inference of
+knowledge - it is a contemporaneous written admission by Defendant himself Serrato was
+therefore personally aware, at minimum, that Plaintiff had filed a complaint targeting his
+subordinate officers and that an active investigation into his command was underway when
+Plaintiff submitted the certification request just two weeks later.
+20
+21
+22
+23
+24
+25
+26
+27
+28
+Page 15
+FIRST AMENDED COMPLAINT - NEWANFORBI v. SERRATO (N.D. Cal.)
+Case 4:26-cv-05953-ASK     Document 10     Filed 07/15/26     Page 15 of 22
+===== FAC PAGE 16 =====
+49. The following facts, taken together, make a retaliatory motive plausible and, indeed,
+the most natural explanation for the denial:
+1
+2
+3
+a. Documented knowledge. Serrato personally acknowledged the
+protected activity in his March 26, 2026 assignment letter.
+4
+5
+6
+b. Tight temporal proximity. POST forwarded the complaint to CHP on
+March 23, 2026. Serrato assigned an investigator on March 26. Plaintiff submitted the
+certification request on April 9. Serrato denied it on April 20 - eleven days later -
+without any substantive analysis.
+7
+8
+9
+10
+11
+c. Concrete institutional incentive. Certifying the Supplement B would
+have required Serrato, as Commander, to officially attest under penalty of perjury that his
+subordinate officers committed qualifying criminal activity - including perjury, false
+imprisonment, and felonious assault — precisely while CHP was defending those same
+officers in two pending civil lawsuits. The institutional incentive to deny was not
+speculative; it was direct, concrete, and obvious on the face of the record.
+12
+13
+14
+15
+16
+17
+18
+d. Pretextual reasoning. The denial offered no engagement with any
+evidence, identified no deficient statutory element, and applied no statutory standard. The
+absence of any legitimate justification supports the inference that the stated reason was
+pretextual and the actual motivation was retaliatory. Nieves v. Bartlett, 587 U.S. 391,406
+(2019) (absence of legitimate basis strengthens inference of retaliatory motive).
+19
+20
+21
+22
+23
+24
+e. Conflict of role. Serrato simultaneously occupied two incompatible
+roles — supervisor of the accused officers and certifier of whether they committed
+qualifying crimes against Plaintiff The structural conflict made impartial decision-making
+impossible and made retaliation the path of least resistance.
+25
+26
+27
+28
+Page 16
+FIRST AMENDED COMPLAINT - NEWANEORBI v. SERRATO (N.D. Cal.)
+Case 4:26-cv-05953-ASK     Document 10     Filed 07/15/26     Page 16 of 22
+===== FAC PAGE 17 =====
+1
+50. A reasonable person in Plaintiffs position would be deterred from engaging in further
+protected activity by Defendant's conduct. The denial communicates that complainants who
+pursue accountability against CHP officers will be punished through the denial of unrelated
+statutory benefits within CHP's control.
+2
+3
+4
+5
+6
+51. As a direct and proximate result of Defendant Serrato's retaliatory conduct, Plaintiff
+has been deprived of U Visa certification, suffered ongoing immigration uncertainty, and
+experienced a chilling effect on his exercise of First Amendment rights.
+7
+8
+9
+10
+FOURTH CAUSE OF ACTION
+11
+12
+Declaratory Relief (28 U.S.C. sections 2201-2202)
+13
+(Against Defendant Serrato in His Ofifcial Capacity)
+14
+15
+52. Plaintiff incorporates by reference all preceding paragraphs.
+16
+17
+53. An actual controversy exists between Plaintiff and Defendant Serrato regarding
+whether the April 20, 2026 denial complied with constitutional and statutory standards, and
+whether Plaintiff is entitled to a new certification decision that applies the correct standards to the
+evidence in CFlP's own possession.
+18
+19
+20
+21
+22
+54. Plaintiff is entitled to a judicial declaration that: (a) the April 20, 2026 denial violated
+the Fourteenth Amendment's substantive due process protections by reaching a conclusion no
+rational decision-maker could reach on this record; (b) the April 20, 2026 denial violated the
+Fourteenth Amendment's procedural due process protections by depriving Plaintiff of the specific
+procedural safeguards and protected interests created by California Penal Code section 679.10(g)
+and (h); (c) the April 20, 2026 denial violated the First Amendment by retaliating against Plaintiff
+23
+24
+25
+26
+27
+28
+Page 17
+FIRST AMENDED COMPLAINT - NEWANFORBI v. SERRATO (N.D. Cal.)
+Case 4:26-cv-05953-ASK     Document 10     Filed 07/15/26     Page 17 of 22
+===== FAC PAGE 18 =====
+for protected petitioning activity; (d) Plaintiff possesses a federally protected interest in U Visa
+certification because the undisputed evidentiary record demonstrates he satisfies the mandatory
+criteria that give rise to his constitutional entitlement; and (e) Defendant Serrato is required to
+issue a new certification decision that satisfies the constitutional minimum of reasoned.
+1
+2
+3
+4
+individualized decision-making or, in the alternative, to execute Form 1-918, Supplement B.
+5
+6
+QUALIFIED IMMUNITY IS NOT AVAILABLE
+7
+8
+55. To the extent Defendant Serrato asserts qualified immunity, it does not apply. The
+right to non-arbitrary decision-making by state officials exercising mandatory statutory duties is
+9
+10
+clearly established. Shanks v. Dressel, 540 F.3d 1082 (9th Cir. 2008). The right to be free from
+11
+First Amendment retaliation for petitioning the government is clearly established. Borough of
+12
+Duryea v. Guarnieri, 564 U.S. 379 (2011); Hartman v. Moore, 547 U.S. 250 (2006). The specific
+13
+statutory requirements of California Penal Code section 679.10 - mandatory certification
+language, rebuttable presumption, specific-reasons requirement — gave Defendant fair notice that
+a boilerplate denial ignoring all evidence and all statutory standards would violate Plaintiffs
+constitutional rights. An official can be on notice that his conduct violates established law even in
+novel factual circumstances where the violation is obvious. Hope v. Pelzer, 536 U.S. 730, 741
+14
+15
+16
+17
+18
+(2002).
+19
+20
+PRAYER FOR RELIEF
+21
+22
+WFIEREFORE, Plaintiff respectfully prays for judgment as follows:
+23
+24
+A. Compensatory damages against Defendant Serrato in his individual
+capacity for the First, Second, and Third Causes of Action, in an amount to be proven at
+trial;
+25
+26
+27
+28
+Page 18
+FIRST AMENDED COMPLAINT - NEWANFORBI v. SERRATO (N.D. Cal.)
+Case 4:26-cv-05953-ASK     Document 10     Filed 07/15/26     Page 18 of 22
+===== FAC PAGE 19 =====
+B. Punitive damages against Defendant Serrato in his individual capacity,
+in an amount sufficient to punish and deter, based on his deliberate indifference to
+Plaintiffs constitutional rights, his recitation of a "thorough review" unsupported by the
+record, and his willful refusal to engage with evidence in his own possession proving that
+his subordinate officers committed qualifying criminal activity. The punitive award is
+further justified by the severe and continuing harm Defendanfs conduct has inflicted on
+Plaintiff, including ongoing immigration uncertainty, deprivation of access to lawful work
+authorization and removal protections, severe emotional distress, anxiety, and the
+dignitary injury of having a state actor refuse to acknowledge documented criminal
+misconduct by his own subordinates;
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+C. A declaratory judgment that Defendant Serrato's April 20, 2026 denial
+violated the Fourteenth Amendmenfs Due Process Clause by depriving Plaintiff of the
+specific procedural safeguards and protected liberty interests mandated by California
+Penal Code section 679.10(g) and (h);
+12
+13
+14
+15
+16
+D. A declaratory judgment that Plaintiff possesses a federally protected
+interest in U Visa certification because the undisputed evidentiary record demonstrates he
+satisfies the mandatory statutory criteria of California Penal Code section 679.10;
+17
+18
+19
+20
+E. A preliminary injunction requiring Defendant Serrato to preserve all
+evidence related to the certification request, including the dashcam recording, and to
+refrain from destroying or altering any such evidence;
+21
+22
+23
+24
+F. A permanent injunction vacating the April 20, 2026 denial and ordering
+Defendant Serrato, in his official capacity, to issue a new certification decision that
+satisfies the constitutional minimum of reasoned, individualized decision-making within
+thirty (30) days of entry ofjudgment, or in the alternative, to execute Form 1-918,
+25
+26
+27
+28
+Page 19
+FIRST AMENDED COMPLAINT - NEWANFORBI v. SERRATO (N.D. Cal.)
+Case 4:26-cv-05953-ASK     Document 10     Filed 07/15/26     Page 19 of 22
+===== FAC PAGE 20 =====
+Supplement B;
+1
+2
+G. In the further alternative, an order remanding the certification request to
+a neutral, unconflicted certifying official for de novo review consistent with constitutional
+due process requirements;
+3
+4
+5
+6
+H. Retained jurisdiction for twelve (12) months to enforce compliance;
+7
+8
+I. Reasonable attorneys' fees and costs pursuant to 42 U.S.C. section
+1988(b) and California Code of Civil Procedure section 1021.5;
+9
+10
+11
+J. Pre-judgment and post-judgment interest as allowed by law;
+12
+13
+K. Such other and further relief as the Court deems just and proper.
+14
+15
+DEMAND FOR JURY TRIAL
+16
+17
+Plaintiff hereby demands a trial by jury on all issues so triable.
+18
+19
+VERIFICATION
+20
+21
+I, Brendan Ngehsi Newanforbi, am the Plaintiff in this action.
+I have read the foregoing
+First Amended Complaint and know its contents. The factual allegations set forth therein are true
+of my own knowledge, except as to matters stated on information and belief, and as to those
+matters
+I believe them to be true.
+22
+23
+24
+25
+26
+I declare under penalty of perjury under the laws of the United States of America that the
+foregoing is true and correct.
+27
+28
+Page 20
+FIRST AMENDED COMPLAINT - NEWANFORBI v. SERRATO (N.D. Cal.)
+Case 4:26-cv-05953-ASK     Document 10     Filed 07/15/26      Page 20 of 22
+===== FAC PAGE 21 =====
+1
+Dated: July 13, 2026
+2
+3
+4
+5
+\
+2
+6
+4
+7
+BRENDAN NGEHSI NEWANFORBI
+8
+Plaintiff, In Pro Per
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+Page 21
+FIRST AMENDED COMPLAINT - NEWANFORBI v. SERRATO (N.D. Cal.)
+Case 4:26-cv-05953-ASK     Document 10     Filed 07/15/26     Page 21 of 22
+===== FAC PAGE 22 =====
+UNITED STATES DISTRICT COURT
+NORTHERN DISTRICT OF CALIFORNIA
+BRENDAN NGEHSI NEWANFORBI,
+Plaintiff,
+Case No. 4:26-cv-05953-ASK
+V.
+CAPTAIN G. SERRATO, in his individual
+and official capacities as Commander,
+Dublin Area, California Highway Patrol,
+Defendant.
+CERTIFICATE OF SERVICE
+/
+I, BRENDAN NGEHSI NEWANFORBI, hereby certify that on July 13, 2026,1 served a true and correct
+copy of the following documents on the parties listed below by United States Postal Service Certified Mail
+Return Receipt Requested: (1) First Amended Complaint for Damages, Declaratory Relief, and Injunctive
+Relief; (2) Notice of Related Cases (Civil L.R. 3-12); and (3) Notice of Errata Re First Amended
+Complaint.
+Defendant Captain G. Serrato (Individual and Official Capacity):
+Captain G. Serrato, Commander
+California Highway Patrol, Dublin Area
+4999 Gleason Drive, Dublin, CA 94568
+Via USPS Certified Mail Return Receipt Requested
+California Attorney General's Office (Official-Capacity Claims):
+Office of the Attorney General
+1300
+1 Street, Suite 125
+Sacramento, CA 95814-2919
+Via USPS Certified Mail Return Receipt Requested
+Dated: July 13, 2026
+BRENDAN NGEHSI NEWANFORBI
+Plaintiff, In Pro Per
+1455 Cat Tail Drive
+Stockton, CA 95204
+(209) 801-4442
+BNN.CDL@GMA1L.COM
+Case 4:26-cv-05953-ASK     Document 10     Filed 07/15/26     Page 22 of 22
+

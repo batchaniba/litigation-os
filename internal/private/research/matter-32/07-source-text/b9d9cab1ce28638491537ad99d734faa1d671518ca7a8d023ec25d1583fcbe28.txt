@@ -1,0 +1,1045 @@
+ 1   BRENDAN NGWA NFORBI
+     Plaintiff, In Pro Per
+ 2
+     1455 Cat Tail Drive
+ 3   Stockton, CA 95204
+     Telephone: (209) 801-4442
+ 4   E-mail: bnn.cdl@gmail.com
+ 5
+
+ 6                                   UNITED STATES DISTRICT COURT
+
+ 7                                  NORTHERN DISTRICT OF CALIFORNIA
+
+ 8
+
+ 9    BRENDAN NGWA NFORBI,                                    Case No. __________________
+
+10                    Plaintiff,                              COMPLAINT FOR DAMAGES
+
+11        v.                                                  (42 U.S.C. § 1983)
+
+12
+      SANTIAGO MEZA-GONZALEZ                                  (1) 4th Amend. -- Judicial
+      (CHP Badge #023295), in his individual                       Deception;
+13
+      capacity; JOSE MELANO (CHP Badge                        (2) 14th Amend. -- Fabrication of
+14    #023054), in his individual capacity;                        Evidence;
+      and DOES 1 through 10, inclusive,                       (3) 4th Amend. -- Unlawful Arrest;
+15                                                            (4) 4th Amend. -- Unlawful Entry;
+                      Defendants.                             (5) 4th Amend. -- Unlawful Search.
+16
+                                                              [DEMAND FOR JURY TRIAL]
+17
+
+18
+
+19             Plaintiff BRENDAN NGWA NFORBI, appearing in propria persona, brings this action
+
+20   against Defendants SANTIAGO MEZA-GONZALEZ and JOSE MELANO, in their individual
+
+21   capacities, and alleges as follows:
+
+22
+
+23                                             INTRODUCTION
+
+24
+
+25             1. This is a civil rights action under 42 U.S.C. section 1983 arising from an arrest on
+
+26   November 1, 2024, on the shoulder of Interstate 580 East in Livermore, Alameda County,
+
+27   California. Plaintiff Brendan Ngwa Nforbi, a commercial truck driver holding a Class A
+
+28   Commercial Driver's License (No. F7953179), was parked and asleep in his vehicle when
+
+                                                     Page 1
+                 COMPLAINT FOR DAMAGES -- NGWA NFORBI v. MEZA-GONZALEZ, ET AL. (N.D. Cal.)
+ 1   California Highway Patrol Officers Santiago Meza-Gonzalez and Jose Melano approached. Over
+
+ 2   the course of two hours -- captured in their entirety on the officers' own dashcam recording (CHP
+
+ 3   Case No. RJ68845) -- the officers opened the vehicle without consent or warrant, identified the
+
+ 4   only cup in the vehicle as containing urine, continued the investigation after the basis for their
+
+ 5   initial suspicion had dissipated, arrested Plaintiff within eighteen seconds of his exercise of the
+
+ 6   statutory right to decline a voluntary preliminary alcohol screening test, and then generated sworn
+
+ 7   statements containing material representations that are contradicted by the same recording in the
+
+ 8   CHP's own custody.
+
+ 9
+
+10          2. After the arrest, Officer Meza-Gonzalez executed under penalty of perjury a DS-367
+
+11   Officer's Statement and a CHP Arrest-Investigation Report, both of which were used to obtain a
+
+12   blood-draw warrant from a magistrate, to initiate a one-year administrative suspension of
+
+13   Plaintiff's commercial driving privileges, and to refer criminal charges to the Alameda County
+
+14   District Attorney. The DS-367 and arrest report contain at least four representations that are
+
+15   materially contradicted by the dashcam recording: a claimed "strong distinct odor of an alcoholic
+
+16   beverage" that neither officer ever verbalizes on the recording; a characterization of Plaintiff's
+
+17   speech as "slurred" when the recording captures extended coherent conversation; a claim that
+
+18   Plaintiff was "very confused and disoriented" when the recording shows him correctly identifying
+
+19   his location and reading distant signage; and a checked box for "Beverage Present: Yes" when the
+
+20   only liquid the officers found was, in Officer Melano's own contemporaneous words on the
+
+21   recording, "piss." Four days later, CHP itself issued a Penal Code section 851.6 Detention
+
+22   Certificate reclassifying the event as "a detention only, not an arrest" for "insufficient grounds."
+
+23   The Alameda County District Attorney declined to file any charges.
+
+24
+
+25          3. Plaintiff brings five claims against Defendants in their individual capacities: judicial
+
+26   deception in support of a blood-draw warrant; deliberate fabrication of evidence; unlawful arrest
+
+27   without probable cause; unlawful warrantless entry into a private vehicle; and unlawful search.
+
+28   Plaintiff seeks compensatory and punitive damages and reasonable attorney's fees under 42
+
+                                                   Page 2
+               COMPLAINT FOR DAMAGES -- NGWA NFORBI v. MEZA-GONZALEZ, ET AL. (N.D. Cal.)
+ 1   U.S.C. section 1988.
+
+ 2
+
+ 3                                    JURISDICTION AND VENUE
+
+ 4
+
+ 5          4. This Court has original subject-matter jurisdiction under 28 U.S.C. section 1331
+
+ 6   (federal question) and 28 U.S.C. section 1343(a)(3) and (a)(4) (civil rights). The claims arise
+
+ 7   under the First, Fourth, and Fourteenth Amendments to the United States Constitution, as
+
+ 8   enforced through 42 U.S.C. section 1983.
+
+ 9
+
+10          5. Venue is proper in the Northern District of California under 28 U.S.C. section
+
+11   1391(b)(2). All events giving rise to this action occurred in Livermore and Dublin, Alameda
+
+12   County, California, within this District.
+
+13
+
+14          6. Under Civil Local Rule 3-2(c) and (d), this action arose in Alameda County and is
+
+15   appropriately assigned to the San Francisco Division or the Oakland Division.
+
+16
+
+17                                                PARTIES
+
+18
+
+19          7. Plaintiff BRENDAN NGWA NFORBI is a natural person and a resident of the County
+
+20   of San Joaquin, State of California. At all relevant times, he held a valid California Class A
+
+21   Commercial Driver's License (No. F7953179) with endorsements for doubles/triples and tank
+
+22   vehicles.
+
+23
+
+24          8. Defendant SANTIAGO MEZA-GONZALEZ (CHP Badge #023295) is a sworn peace
+
+25   officer employed by the California Highway Patrol, assigned to the CHP Dublin Area. He was
+
+26   acting under color of state law at all relevant times. He is sued in his individual capacity only.
+
+27
+
+28          9. Defendant JOSE MELANO (CHP Badge #023054) is a sworn peace officer employed
+
+                                                   Page 3
+                 COMPLAINT FOR DAMAGES -- NGWA NFORBI v. MEZA-GONZALEZ, ET AL. (N.D. Cal.)
+ 1   by the California Highway Patrol, assigned to the CHP Dublin Area. He was acting under color of
+
+ 2   state law at all relevant times. He is sued in his individual capacity only.
+
+ 3
+
+ 4           10. The true names of Defendants DOES 1 through 10 are presently unknown. On
+
+ 5   information and belief, each participated in, approved, or acquiesced in the conduct alleged
+
+ 6   herein. Each is sued in his or her individual capacity. Plaintiff will seek leave to amend when
+
+ 7   their identities are ascertained.
+
+ 8
+
+ 9                                       FACTUAL ALLEGATIONS
+
+10
+
+11   A. Plaintiff Was Lawfully Parked and Asleep
+
+12
+
+13           11. On the evening of October 31, 2024, and into the early hours of November 1, 2024,
+
+14   Plaintiff was driving a rented gray Tesla Model Y eastbound on Interstate 580. Feeling fatigued,
+
+15   he exited active travel lanes and parked on the right shoulder just west of the Isabel Avenue exit
+
+16   in Livermore, Alameda County. He then rested in the driver's seat. He was not driving. No officer
+
+17   observed him in volitional movement of the vehicle.
+
+18
+
+19           12. Plaintiff is a professional commercial truck driver. Pulling off the road to rest when
+
+20   fatigued is consistent with federal Hours-of-Service principles and with CHP's own public safety
+
+21   guidance to drowsy motorists.
+
+22
+
+23   B. The Officers' Pre-Contact Hypothesis
+
+24
+
+25           13. At approximately 00:54:36, the CHP patrol vehicle's dashcam recording activated as it
+
+26   came to a stop behind Plaintiff's parked Tesla. The recording ran continuously through
+
+27   approximately 01:57:10, capturing the entirety of the encounter.
+
+28
+
+                                                   Page 4
+               COMPLAINT FOR DAMAGES -- NGWA NFORBI v. MEZA-GONZALEZ, ET AL. (N.D. Cal.)
+ 1          14. At 00:55:53, before either officer had approached the vehicle, Officer Melano
+
+ 2   remarked on the recording: "It's a rental. Huh." At 00:56:05, both officers approached and peered
+
+ 3   through the windows with flashlights while Plaintiff remained asleep inside. At 00:56:07, Melano
+
+ 4   stated: "It wasn't here earlier when we passed by."
+
+ 5
+
+ 6          15. At 00:56:09 -- before either officer had spoken a word to Plaintiff, before Plaintiff was
+
+ 7   awake, and before any welfare observation had been made -- Officer Melano stated on the
+
+ 8   recording: "I think it's booze." That statement, directed at a cup visible through the vehicle
+
+ 9   window, was formed before any contact with Plaintiff and before any observation of his
+
+10   condition.
+
+11
+
+12   C. Warrantless Entry
+
+13
+
+14          16. At 00:56:43, Officer Melano opened the front passenger-side door of Plaintiff's
+
+15   vehicle. Plaintiff was still asleep. He had not consented to entry. No warrant had been obtained.
+
+16   No exigent circumstance -- no medical emergency, no ongoing crime, no fire, no destruction of
+
+17   evidence, no hot pursuit -- was present or articulated. The door was opened because Officer
+
+18   Melano decided to open it.
+
+19
+
+20   D. The Cup Is Identified as Urine;
+
+21   the Initial Suspicion Dissipates
+
+22
+
+23          17. Between 00:58:49 and 00:59:07, Officer Melano seized the cup from the vehicle
+
+24   interior, smelled it, and identified its contents on the recording:
+
+25
+
+26          Melano: "Is it water? No this is piss. This is pee."
+
+27
+
+28          Plaintiff: "I don't know what that is."
+
+                                                      Page 5
+                  COMPLAINT FOR DAMAGES -- NGWA NFORBI v. MEZA-GONZALEZ, ET AL. (N.D. Cal.)
+ 1
+
+ 2          Melano: "I'm telling you it's piss. It smells like piss."
+
+ 3
+
+ 4          18. Officer Melano's own contemporaneous identification of the cup's contents as urine is
+
+ 5   inconsistent with his earlier hypothesis that the cup contained alcohol. Whatever investigative
+
+ 6   suspicion the cup had generated dissipated at the moment the officer handling it identified it as
+
+ 7   something other than an alcoholic beverage and said so aloud.
+
+ 8
+
+ 9   E. Continued Detention, Field Sobriety Exercises,
+
+10   and PAS Advisement
+
+11
+
+12          19. The officers did not terminate the encounter. They ordered Plaintiff out of the vehicle
+
+13   onto uneven ground and administered field sobriety exercises. Officer Melano acknowledged on
+
+14   the recording that the ground conditions were not suitable for reliable FST administration and
+
+15   declined to perform certain balance-dependent exercises for that reason.
+
+16
+
+17          20. Throughout the encounter, Plaintiff spoke coherently and articulately. The dashcam
+
+18   audio captures him spelling his surname on request, discussing the alternator design of the rental
+
+19   Tesla, explaining CDL fatigue protocols, and correctly identifying his location as Livermore. At
+
+20   no point in over two hours of continuous recording does either officer verbalize any observation
+
+21   of an alcohol odor emanating from Plaintiff.
+
+22
+
+23          21. At 01:10:54, Officer Meza-Gonzalez advised Plaintiff that the preliminary alcohol
+
+24   screening ("PAS") test was voluntary: "You're not required to do this." That advisement is legally
+
+25   accurate. Under California Vehicle Code section 23612(i), a PAS is a preliminary investigative
+
+26   tool, and a driver not on DUI probation may lawfully decline it.
+
+27
+
+28
+
+                                                    Page 6
+               COMPLAINT FOR DAMAGES -- NGWA NFORBI v. MEZA-GONZALEZ, ET AL. (N.D. Cal.)
+ 1   F. PAS Refusal and Immediate Arrest
+
+ 2
+
+ 3          22. Plaintiff declined the PAS test.
+
+ 4
+
+ 5          23. At 01:11:15 through 01:11:33 -- eighteen seconds after the refusal -- Officer
+
+ 6   Meza-Gonzalez placed Plaintiff under arrest. No new observation or piece of evidence intervened
+
+ 7   between the refusal and the arrest. The temporal sequence is captured on the recording.
+
+ 8
+
+ 9   G. The DS-367 and Arrest Report:
+
+10   Four Material Contradictions with the Dashcam
+
+11
+
+12          24. Following the arrest, Defendant Meza-Gonzalez prepared, executed under penalty of
+
+13   perjury, and submitted to DMV, to the reviewing magistrate, and to the Alameda County District
+
+14   Attorney: (a) a DS-367 Age 21 and Older Officer's Statement; and (b) a CHP Arrest-Investigation
+
+15   Report (Case No. RJ68845).
+
+16
+
+17          25. Each document contains representations that are materially contradicted by the
+
+18   dashcam recording:
+
+19
+
+20          (a) Odor. The DS-367 and arrest report state Meza-Gonzalez detected a "strong distinct
+
+21          odor of an alcoholic beverage" from Plaintiff. In over two hours of continuous dashcam
+
+22          audio, neither officer verbalizes any observation of an alcohol odor at any point. Officers
+
+23          routinely narrate significant observations on dashcam -- Melano narrates his cup
+
+24          hypothesis (00:56:09), his urine identification (00:58:49-00:59:07), and vehicle details
+
+25          (00:55:53) -- but neither officer narrates detecting an alcohol odor.
+
+26
+
+27          (b) Speech. The DS-367 characterizes Plaintiff's speech as "slurred." The recording
+
+28          captures Plaintiff in extended coherent conversation, including spelling his surname
+
+                                                   Page 7
+               COMPLAINT FOR DAMAGES -- NGWA NFORBI v. MEZA-GONZALEZ, ET AL. (N.D. Cal.)
+ 1          letter-by-letter and discussing mechanical details of the rental vehicle.
+
+ 2
+
+ 3          (c) Orientation. The arrest report states Plaintiff "seemed very confused and disoriented."
+
+ 4          The recording captures Plaintiff correctly identifying his location as Livermore and
+
+ 5          reading distant highway signage.
+
+ 6
+
+ 7          (d) Beverage. The DS-367 contains a checked box for "Beverage Present: Yes." The only
+
+ 8          liquid the officers found and discussed on the recording was identified by Officer Melano
+
+ 9          as urine, not a beverage.
+
+10
+
+11          26. The arrest report also omits material facts: that the suspected alcohol in the cup was
+
+12   identified on the recording as urine; that Officer Melano declined to administer certain FSTs due
+
+13   to ground conditions; that Officer Meza-Gonzalez expressly advised Plaintiff the PAS was
+
+14   voluntary; and that no officer had observed Plaintiff driving or in volitional control of the vehicle.
+
+15
+
+16          27. Of the four contradictions, the "Beverage Present" entry is the most objectively
+
+17   verifiable: the officers' own contemporaneous words on their own recording identify the only
+
+18   liquid as urine, and the DS-367 checkbox characterizes it as a beverage. The odor, speech, and
+
+19   orientation entries are experiential observations that were not verbalized on the recording;
+
+20   Plaintiff alleges they are materially contradicted by the objective record, and their truth or falsity
+
+21   is a question the recording can help resolve.
+
+22
+
+23   H. The Blood-Draw Warrant and Forced Extraction
+
+24
+
+25          28. Based on the DS-367 and arrest report, a magistrate authorized a warrant for the
+
+26   involuntary extraction of Plaintiff's blood. Plaintiff was transported to the CHP Dublin Area
+
+27   office, where a blood sample was forcibly drawn pursuant to that warrant. A compelled blood
+
+28   draw is a significant bodily intrusion within the meaning of the Fourth Amendment. Missouri v.
+
+                                                     Page 8
+               COMPLAINT FOR DAMAGES -- NGWA NFORBI v. MEZA-GONZALEZ, ET AL. (N.D. Cal.)
+ 1   McNeely, 569 U.S. 141, 148 (2013).
+
+ 2
+
+ 3          29. If the four contradicted representations identified in paragraph 25 are set aside, and if
+
+ 4   the omitted facts identified in paragraph 26 are restored, the warrant application would have
+
+ 5   reflected: a commercial driver parked and asleep on a highway shoulder; a cup identified by the
+
+ 6   investigating officer as urine; coherent, oriented conversation; no verbalized alcohol odor; and
+
+ 7   refusal of a test the officer had just described as voluntary. Whether those facts, standing alone,
+
+ 8   would have supported probable cause for a blood-draw warrant is a question that should be
+
+ 9   resolved on a developed record, not on the pleadings.
+
+10
+
+11   I. Booking and Extended Detention
+
+12
+
+13          30. Following the blood extraction, Plaintiff was transported to and booked at Santa Rita
+
+14   Jail in Dublin, California. A parole hold was placed based on the arrest report, extending
+
+15   Plaintiff's custodial confinement beyond the initial arrest.
+
+16
+
+17   J. CHP's Subsequent Reclassification:
+
+18   The Penal Code Section 851.6 Detention Certificate
+
+19
+
+20          31. On November 5, 2024, the Dublin CHP issued a Detention Certificate under
+
+21   California Penal Code section 851.6, referencing CHP Case No. RJ68845. The Certificate states
+
+22   that Plaintiff's taking into custody "was a detention only, not an arrest" and that he was released
+
+23   under Penal Code section 849(b)(1) for "insufficient grounds for making a criminal complaint."
+
+24   By operation of Penal Code sections 849(c) and 849.5, the encounter is thereafter not deemed an
+
+25   arrest but a detention only.
+
+26
+
+27          32. The Detention Certificate is a subsequent official reclassification by the arresting
+
+28   agency itself. It does not, standing alone, establish that the arrest violated the Fourth Amendment
+
+                                                   Page 9
+               COMPLAINT FOR DAMAGES -- NGWA NFORBI v. MEZA-GONZALEZ, ET AL. (N.D. Cal.)
+ 1   at the moment it occurred. It does, however, constitute contemporaneous evidence from the
+
+ 2   agency best positioned to evaluate the encounter -- evidence consistent with and corroborative of
+
+ 3   Plaintiff's allegation that the arrest lacked probable cause.
+
+ 4
+
+ 5   K. The District Attorney's Declination
+
+ 6
+
+ 7          33. CHP referred charges to the Alameda County District Attorney under Vehicle Code
+
+ 8   sections 23152(a), 23152(b), and 23578. The District Attorney declined to file any accusatory
+
+ 9   pleading. No criminal case was initiated.
+
+10
+
+11   L. Alias Note and Related Action
+
+12
+
+13          34. Plaintiff has appeared in prior court and administrative proceedings arising from this
+
+14   incident under the name variant "Brendan Ngehsi Newanforbi." That is the same individual as
+
+15   Plaintiff in this action. This Complaint uses "Brendan Ngwa Nforbi" throughout except where
+
+16   quoting from a prior record. In a related action in this District, N.D. Cal. Case No.
+
+17   4:26-cv-05953-ASK, a coordinate Article III judge screened a complaint resting on a substantially
+
+18   overlapping factual record and found it sufficient to proceed under 28 U.S.C. section 1915(e).
+
+19
+
+20   M. Damages
+
+21
+
+22          35. As a direct and proximate result of Defendants' conduct, Plaintiff has suffered: (a) loss
+
+23   of liberty from custodial confinement at the roadside, at the CHP Dublin Area office, and at Santa
+
+24   Rita Jail; (b) a compelled blood extraction; (c) a one-year administrative suspension of his Class
+
+25   A Commercial Driver's License (Feb. 20, 2025 through Feb. 19, 2026), with an accompanying
+
+26   one-year commercial disqualification, resulting in the loss of his employment and approximately
+
+27   $69,368 in base wages, plus overtime and premium pay, plus employment benefits; (d) a
+
+28   three-year SR-22 financial-responsibility requirement running through approximately February
+
+                                                   Page 10
+               COMPLAINT FOR DAMAGES -- NGWA NFORBI v. MEZA-GONZALEZ, ET AL. (N.D. Cal.)
+ 1   2028, with annual premiums of $281.28; (e) a $125.00 CDL reissue fee; (f) vehicle towing and
+
+ 2   impound fees; (g) continuing career harm from the disqualification event on his
+
+ 3   commercial-driving record; and (h) emotional distress, anxiety, humiliation, sleep disturbance,
+
+ 4   and reputational injury from having his professional reputation damaged by sworn statements that
+
+ 5   are materially contradicted by the recording.
+
+ 6
+
+ 7          36. Without the contradicted representations in the DS-367, DMV would have lacked the
+
+ 8   factual basis for the administrative-per-se suspension that stripped Plaintiff of his commercial
+
+ 9   driving privileges. The suspension and its downstream consequences -- the SR-22, the reissue fee,
+
+10   the commercial-record disqualification event -- are direct and foreseeable results of the execution
+
+11   of the DS-367 under penalty of perjury.
+
+12
+
+13                                      FIRST CAUSE OF ACTION
+
+14
+
+15   Fourth Amendment -- Judicial Deception and Unlawful
+
+16   Bodily Intrusion Under a Warrant Obtained Through
+
+17   Materially False or Misleading Statements
+
+18   (42 U.S.C. § 1983 -- Against Defendant Meza-Gonzalez and DOES 1-10)
+
+19
+
+20          37. Plaintiff re-alleges paragraphs 1 through 36.
+
+21
+
+22          38. An officer violates the Fourth Amendment by submitting a warrant application
+
+23   containing statements that are deliberately or recklessly false, or that omit material facts, if the
+
+24   application -- stripped of the false statements and supplemented with the omitted facts -- would
+
+25   not support probable cause. Franks v. Delaware, 438 U.S. 154, 155-56 (1978); Chism v.
+
+26   Washington State, 661 F.3d 380, 386 (9th Cir. 2011).
+
+27
+
+28          39. Defendant Meza-Gonzalez executed under penalty of perjury the DS-367 and arrest
+
+                                                   Page 11
+               COMPLAINT FOR DAMAGES -- NGWA NFORBI v. MEZA-GONZALEZ, ET AL. (N.D. Cal.)
+ 1   report containing the four contradicted representations identified in paragraph 25 and the material
+
+ 2   omissions identified in paragraph 26. Those documents formed the basis of the warrant
+
+ 3   authorizing the involuntary extraction of Plaintiff's blood. When the contradicted representations
+
+ 4   are set aside and the omitted facts are restored, the remaining application does not plausibly
+
+ 5   support probable cause to believe Plaintiff was driving under the influence.
+
+ 6
+
+ 7          40. Defendant Meza-Gonzalez acted with at least reckless disregard for the truth. An
+
+ 8   officer who executes a sworn statement while a contemporaneous recording of the same
+
+ 9   encounter -- stored on his own patrol vehicle -- contains information materially inconsistent with
+
+10   that sworn statement acts with reckless disregard, at minimum. The right to be free from a
+
+11   warrant obtained through materially false or misleading statements was clearly established before
+
+12   November 1, 2024. Franks, 438 U.S. at 155-56; Chism, 661 F.3d at 386; Galbraith v. County of
+
+13   Santa Clara, 307 F.3d 1119, 1126 (9th Cir. 2002).
+
+14
+
+15          41. As a direct and proximate result, Plaintiff suffered a compelled blood extraction
+
+16   without valid probable cause, and the further damages alleged in paragraphs 35-36.
+
+17
+
+18                                   SECOND CAUSE OF ACTION
+
+19
+
+20   Fourteenth Amendment -- Deliberate Fabrication of Evidence
+
+21   (42 U.S.C. § 1983 -- Against Defendant Meza-Gonzalez and DOES 1-10)
+
+22
+
+23          42. Plaintiff re-alleges paragraphs 1 through 36.
+
+24
+
+25          43. The Fourteenth Amendment prohibits state actors from deliberately fabricating
+
+26   evidence and using it to bring about deprivations of liberty or property. Devereaux v. Abbey, 263
+
+27   F.3d 1070, 1076 (9th Cir. 2001) (en banc). Qualified immunity is not available to officers who
+
+28   deliberately fabricate evidence. Costanich v. Dep't of Social & Health Servs., 627 F.3d 1101,
+
+                                                  Page 12
+               COMPLAINT FOR DAMAGES -- NGWA NFORBI v. MEZA-GONZALEZ, ET AL. (N.D. Cal.)
+ 1   1115-16 (9th Cir. 2010).
+
+ 2
+
+ 3            44. Defendant Meza-Gonzalez executed sworn statements containing the four materially
+
+ 4   contradicted representations identified in paragraph 25. Those statements were used to obtain the
+
+ 5   blood-draw warrant, to sustain custodial confinement (including under a parole hold), to initiate
+
+ 6   and sustain the DMV administrative-per-se suspension of Plaintiff's Class A CDL, and to refer
+
+ 7   charges to the District Attorney.
+
+ 8
+
+ 9            45. Defendant Meza-Gonzalez knew, or in the exercise of reasonable care should have
+
+10   known, that the representations were materially inconsistent with the contemporaneous recording
+
+11   stored on his own agency's equipment. An officer who generates sworn statements containing
+
+12   factual assertions that his own recording does not corroborate -- and that the recording, on at least
+
+13   one point ("Beverage Present: Yes" versus contemporaneous identification of the liquid as urine),
+
+14   directly contradicts -- acts deliberately or with reckless disregard sufficient to state a fabrication
+
+15   claim.
+
+16
+
+17            46. As a direct and proximate result, Plaintiff has suffered the damages alleged in
+
+18   paragraphs 35-36.
+
+19
+
+20                                       THIRD CAUSE OF ACTION
+
+21
+
+22   Fourth Amendment -- Unlawful Arrest and Detention
+
+23   (42 U.S.C. § 1983 -- Against Both Defendants and DOES 1-10)
+
+24
+
+25            47. Plaintiff re-alleges paragraphs 1 through 36.
+
+26
+
+27            48. The Fourth Amendment requires probable cause for a warrantless arrest. Probable
+
+28   cause exists when the facts and circumstances known to the officer at the time are sufficient for a
+
+                                                   Page 13
+                COMPLAINT FOR DAMAGES -- NGWA NFORBI v. MEZA-GONZALEZ, ET AL. (N.D. Cal.)
+ 1   prudent person to believe that the suspect has committed a crime. Devenpeck v. Alford, 543 U.S.
+
+ 2   146, 152 (2004).
+
+ 3
+
+ 4          49. At the moment of arrest (01:11:15-01:11:33), the facts known to the officers, as
+
+ 5   reflected on the recording, included: Plaintiff was parked and asleep when contacted; the only
+
+ 6   suspected "beverage" had been identified as urine; Plaintiff had spoken coherently and identified
+
+ 7   his location; no officer had verbalized an alcohol odor; Officer Melano had declined to administer
+
+ 8   certain FSTs due to ground conditions; and Plaintiff had exercised his statutory right to decline a
+
+ 9   test the officers had described as voluntary. No new observation or evidence intervened between
+
+10   the PAS refusal and the arrest.
+
+11
+
+12          50. CHP's subsequent issuance of the Penal Code section 851.6 Detention Certificate --
+
+13   reclassifying the event as a detention for "insufficient grounds" -- and the Alameda County
+
+14   District Attorney's declination to file charges are consistent with and corroborative of Plaintiff's
+
+15   allegation that the arrest lacked probable cause.
+
+16
+
+17          51. The right to be free from arrest without probable cause was clearly established well
+
+18   before November 1, 2024. Beck v. Ohio, 379 U.S. 89 (1964); Devenpeck, 543 U.S. at 152.
+
+19
+
+20          52. As a direct and proximate result, Plaintiff was subjected to custodial confinement and
+
+21   has suffered the damages alleged in paragraphs 35-36.
+
+22
+
+23                                     FOURTH CAUSE OF ACTION
+
+24
+
+25
+
+26
+
+27
+
+28
+
+                                                   Page 14
+               COMPLAINT FOR DAMAGES -- NGWA NFORBI v. MEZA-GONZALEZ, ET AL. (N.D. Cal.)
+ 1   Fourth Amendment -- Unlawful Warrantless Entry
+
+ 2   (42 U.S.C. § 1983 -- Against Defendant Melano and DOES 1-10)
+
+ 3
+
+ 4           53. Plaintiff re-alleges paragraphs 1 through 36.
+
+ 5
+
+ 6           54. A warrantless entry into a constitutionally protected area is presumptively
+
+ 7   unreasonable absent consent or a recognized exception. Payton v. New York, 445 U.S. 573,
+
+ 8   585-90 (1980); Collins v. Virginia, 584 U.S. 586, 592-93 (2018). The interior of a passenger
+
+ 9   vehicle is a constitutionally protected area.
+
+10
+
+11           55. At 00:56:43, Defendant Melano opened the front passenger-side door of Plaintiff's
+
+12   vehicle while Plaintiff was asleep. No consent was given. No warrant existed. No exigent
+
+13   circumstance was present. The officers' own words on the recording preceding the entry ("It's a
+
+14   rental," "It wasn't here earlier," "I think it's booze") reflect investigative interest, not a response to
+
+15   an observable medical emergency. Even if a welfare rationale had been present, the community
+
+16   caretaking exception does not authorize warrantless entry absent an imminent threat to safety.
+
+17   Caniglia v. Strom, 593 U.S. 194, 197-99 (2021).
+
+18
+
+19           56. The right to be free from warrantless entry into a vehicle absent consent, exigency, or
+
+20   an applicable exception was clearly established before November 1, 2024. Payton, 445 U.S. at
+
+21   585-90; Collins, 584 U.S. at 592-93; Caniglia, 593 U.S. at 197-99.
+
+22
+
+23           57. As a direct and proximate result, Plaintiff has suffered the damages alleged in
+
+24   paragraphs 35-36.
+
+25
+
+26
+
+27
+
+28
+
+                                                     Page 15
+                COMPLAINT FOR DAMAGES -- NGWA NFORBI v. MEZA-GONZALEZ, ET AL. (N.D. Cal.)
+ 1                                     FIFTH CAUSE OF ACTION
+
+ 2
+
+ 3   Fourth Amendment -- Unlawful Search
+
+ 4   (42 U.S.C. § 1983 -- Against Both Defendants and DOES 1-10)
+
+ 5
+
+ 6          58. Plaintiff re-alleges paragraphs 1 through 36.
+
+ 7
+
+ 8          59. Following the warrantless entry, Defendants searched Plaintiff's vehicle -- including
+
+ 9   seizing and examining the cup from the center console area and searching additional portions of
+
+10   the cabin. No consent was given. No warrant existed. No exigent circumstance was present.
+
+11
+
+12          60. To the extent the search was justified by any suspicion arising from the visible cup,
+
+13   that suspicion dissipated when Officer Melano identified the cup's contents as urine
+
+14   (00:58:49-00:59:07). Continuing a search after the articulable basis for it has dissipated is
+
+15   unreasonable. Rodriguez v. United States, 575 U.S. 348, 355 (2015).
+
+16
+
+17          61. The right to be free from a warrantless search absent probable cause, consent, or an
+
+18   applicable exception was clearly established before November 1, 2024. Arizona v. Gant, 556 U.S.
+
+19   332, 343-44 (2009); Rodriguez, 575 U.S. at 355.
+
+20
+
+21          62. As a direct and proximate result, Plaintiff has suffered the damages alleged in
+
+22   paragraphs 35-36.
+
+23
+
+24                                        PRAYER FOR RELIEF
+
+25
+
+26          WHEREFORE, Plaintiff BRENDAN NGWA NFORBI respectfully prays for judgment
+
+27   against Defendants SANTIAGO MEZA-GONZALEZ and JOSE MELANO, in their individual
+
+28   capacities, as follows:
+
+                                                  Page 16
+               COMPLAINT FOR DAMAGES -- NGWA NFORBI v. MEZA-GONZALEZ, ET AL. (N.D. Cal.)
+ 1
+
+ 2          A. Compensatory damages against each Defendant in an amount according to proof at
+
+ 3          trial, including loss of liberty, physical pain and suffering from the compelled blood
+
+ 4          extraction, lost wages and lost earning capacity during the one-year commercial driving
+
+ 5          disqualification, continuing career impact, out-of-pocket expenses (SR-22 premiums,
+
+ 6          reissue fee, vehicle impound costs), and emotional distress, humiliation, and reputational
+
+ 7          injury;
+
+ 8
+
+ 9          B. Punitive damages against each Defendant in an amount sufficient to punish and deter;
+
+10
+
+11          C. Reasonable attorney's fees and costs pursuant to 42 U.S.C. section 1988;
+
+12
+
+13          D. Pre- and post-judgment interest; and
+
+14
+
+15          E. Such other and further relief as this Court deems just and proper.
+
+16
+
+17                                     DEMAND FOR JURY TRIAL
+
+18
+
+19          Pursuant to Rule 38 of the Federal Rules of Civil Procedure and the Seventh Amendment
+
+20   to the United States Constitution, Plaintiff demands a trial by jury on all issues so triable.
+
+21
+
+22
+
+23
+
+24
+
+25
+
+26
+
+27
+
+28
+
+                                                   Page 17
+               COMPLAINT FOR DAMAGES -- NGWA NFORBI v. MEZA-GONZALEZ, ET AL. (N.D. Cal.)
+ 1
+
+ 2   Dated: August 7, 2026
+
+ 3
+
+ 4                                                                      Respectfully submitted,
+
+ 5
+
+ 6
+
+ 7                                                  ___________________________________
+
+ 8                                                               BRENDAN NGWA NFORBI
+
+ 9                                                                          Plaintiff, In Pro Per
+
+10
+
+11
+
+12
+
+13
+
+14
+
+15
+
+16
+
+17
+
+18
+
+19
+
+20
+
+21
+
+22
+
+23
+
+24
+
+25
+
+26
+
+27
+
+28
+
+                                              Page 18
+              COMPLAINT FOR DAMAGES -- NGWA NFORBI v. MEZA-GONZALEZ, ET AL. (N.D. Cal.)
+

@@ -1,0 +1,982 @@
+ 1   `ROB BONTA
+     Attorney General of California
+ 2   ELIZABETH S. ANGRES
+     Supervising Deputy Attorney General
+ 3   HAIYANG A. LI
+     Deputy Attorney General
+ 4   State Bar No. 288063
+      300 South Spring Street, Suite 1702
+ 5    Los Angeles, CA 90013-1230
+      Telephone: (213) 269-6404
+ 6    Fax: (916) 731-2120
+      E-mail: Haiyang.Li@doj.ca.gov
+ 7   Attorneys for Defendant
+     Captain G. Serrato, in both his individual and
+ 8   official capacities
+
+ 9                           IN THE UNITED STATES DISTRICT COURT
+
+10                        FOR THE NORTHERN DISTRICT OF CALIFORNIA
+
+11
+
+12
+
+13                                                     4:26-cv-05953-ASK
+     BRENDAN NGEHSI NEWANFORBI,
+14                                                 DEFENDANT CAPTAIN G. SERRATO’S
+                                        Plaintiff, NOTICE OF MOTION TO DISMISS
+15                                                 PLAINTIFF’S FIRST AMENDED
+                    v.                             COMPLAINT AND/OR MOTION TO
+16                                                 STRIKE PORTIONS OF THE FIRST
+                                                   AMENDED COMPLAINT;
+17   CAPTAIN G. SERRATO in his individual          MEMORANDUM OF POINTS AND
+     and official capacities as Commander,         AUTHORITIES
+18   Dublin Area, California Highway Patrol.
+                                                   Date:        September 16, 2026
+19                                   Defendants. Time:          1:30 p.m.
+                                                   Courtroom:
+20                                                 Judge:       Magistrate Judge Honorable
+                                                                Ajay Krishnan.
+21                                                 Trial Date: None Set
+                                                   Action Filed: July 21, 2026
+22
+
+23
+
+24         NOTICE IS HEREBY GIVEN that on September 16, 2026, at 1:30 p.m., in the above-
+
+25   entitled Court, located at 1301 Clay Street, Oakland, California, Defendant Captain G. Serrato, in
+
+26   both his individual and official capacities (“Defendant”) will and hereby does move this Court for
+27   an order dismissing Plaintiff’s First Amended Complaint, with prejudice, and striking portions of
+28   the First Amended Complain1t pursuant to Federal Rule of Civil Procedure
+               DEFENDANT CAPTAIN G. SERRATO’S NOTICE OF MOTION TO DISMISS PLAINTIFF’S FIRST
+               AMENDED COMPLAINT AND/OR MOTION TO STRIKE PORTIONS OF THE FIRST AMENDED
+                                                                    COMPLAINT (26CV168913)
+ 1   12(b)(6) and 12(f) and the following grounds:
+
+ 2          1.    Plaintiff’s substantive due process and procedural due process claims fail as a matter
+
+ 3                of law because there is no right to a U-visa certification as signing a U-visa
+
+ 4                certification is discretionary pursuant to statute.
+
+ 5          2.    Plaintiff’s First Amendment Retaliation claim fails because Plaintiff was not entitled
+
+ 6                to U-visa certification as a matter of law as pursuing a civil action does not meet the
+
+ 7                requirements for U-visa certification.
+
+ 8          3.    Plaintiff’s cause of action and prayer for declaratory relief should be stricken as
+
+ 9                declaratory relief is not proper under the facts alleged within the First Amended
+
+10                Complaint.
+
+11          4.    Plaintiff’s payer for a permanent injunction should be stricken as Plaintiff has not
+
+12                pled facts justifying injunctive relief.
+
+13          5.    Plaintiff’s prayer for attorney fees should be stricken as Plaintiff is not entitled to
+
+14                attorney’s fees as a pro se litigant.
+
+15          6.    Defendant is entitled to qualified immunity in his individual capacity and is therefore
+
+16                not liable for any of the causes of action contained in Plaintiff’s First Amended
+
+17                Complaint;
+
+18
+
+19
+     Dated: August 26, 2026                                   Respectfully submitted,
+20
+                                                              ROB BONTA
+21                                                            Attorney General of California
+                                                              ELIZABETH S. ANGRES
+22                                                            Supervising Deputy Attorney General
+23
+                                                              /s/ Haiyang A. Li
+24
+                                                              HAIYANG A. LI
+25                                                            Deputy Attorney General
+                                                              Attorneys for Defendant
+26                                                            Captain G. Serrato, in both his individual
+                                                              and official capacities
+27   \
+
+28                                                        2
+                 DEFENDANT CAPTAIN G. SERRATO’S NOTICE OF MOTION TO DISMISS PLAINTIFF’S FIRST
+                 AMENDED COMPLAINT AND/OR MOTION TO STRIKE PORTIONS OF THE FIRST AMENDED
+                                                                      COMPLAINT (26CV168913)
+ 1                        MEMORANDUM OF POINTS AND AUTHORITIES
+
+ 2   I.    INTRODUCTION
+
+ 3         Defendant Captain Gerardo Serrato (“Defendant” or “Defendant Serrato”) moves to dismiss
+
+ 4   Plaintiff Brendan Newanforbi’s (“Plaintiff”) 42 U.S.C. Section 1983 action against him in both
+
+ 5   his individual and official capacities pursuant to Federal Rule of Civil Procedure 12(b)(6) for
+
+ 6   failure to state a claim as Plaintiff does not have any statutory right to demand a U nonimmigrant
+
+ 7   visa (U-visa) certification based upon his civil allegations against the California Highway Patrol
+
+ 8   (“CHP”). Defendant further moves pursuant to Federal Rules of Civil Procedure 12(f) to strike
+
+ 9   Plaintiff’s fourth cause of action and prayer for declaratory relief, as declaratory relief is a
+
+10   remedy, not a separate cause of action, and declaratory relief would serve no purpose in this case.
+
+11   Plaintiff’s prayer for attorney fees and injunctive relief should also be stricken as Plaintiff is not
+
+12   entitled to attorneys’ fees as a pro se litigant and Plaintiff has not alleged facts justifying
+
+13   injunctive relief.
+
+14         Plaintiff alleges that Captain Serrato’s refusal to provide Plaintiff with a U-visa certification
+15   violated Plaintiff’s Fourteenth Amendment due process rights and constituted First Amendment
+16   retaliation against Plaintiff for reporting alleged wrongdoing by CHP officers. In addition to
+17   monetary damages against Captain Serrato in his individual capacity, Plaintiff also seeks
+18   injunctive and declaratory relief against Captain Serrato in his official capacity. (Complaint ¶ 3
+19   21-22.) As Defendant Serrato has the discretion to deny a U-visa certification request and
+20   Plaintiff’s civil allegations do not meet the statutory definition of “criminal activity” within
+21   Section 679.10 of the California Penal Code and 8 U.S.C. Section 1101, each cause of action
+22   within Plaintiff’s First Amended Complaint (“FAC”) should be dismissed with prejudice.
+23   II.   LEGAL BACKGROUND REGARDING U-VISA CERTIFICATION.
+24         Federal immigration law allows an individual s in the United States to apply for a U visa,
+25   when the individual has suffered “substantial physical or mental abuse” as a result of enumerated
+26   qualifying “criminal activity” and the individual has been helpful to the investigation or
+27   prosecution of the crime. 8 U.S.C. § 1101(a)(15)(U)(i),(iii) (2012). In 2000, Congress created
+28                                                      3
+                DEFENDANT CAPTAIN G. SERRATO’S NOTICE OF MOTION TO DISMISS PLAINTIFF’S FIRST
+                AMENDED COMPLAINT AND/OR MOTION TO STRIKE PORTIONS OF THE FIRST AMENDED
+                                                                     COMPLAINT (26CV168913)
+ 1   the U visa as part of the reauthorization of the Violence Against Women Act to provide
+
+ 2   immigrant crime victims an avenue to obtain lawful immigration status and thus encourage
+
+ 3   cooperation with law enforcement by undocumented victims of crime. Senate Rules Committee
+
+ 4   Report, 2015 California Senate Bill No. 674, California 2015-2016 Regular Session (May 31,
+
+ 5   2015)/ As articulated by a co-sponsor of the Act’s reauthorization, one of the primary objectives
+
+ 6   was to “remov[e] obstacles inadvertently interposed by our immigration laws that many [sic]
+
+ 7   hinder or prevent battered immigrants from fleeing domestic violence safely and prosecuting their
+
+ 8   abusers by allowing an abusive citizen or lawful permanent resident to blackmail the abused
+
+ 9   spouse through threats related to the abused spouse’s immigration status.” 146 Cong. Rec. S10,
+
+10   192 (daily ed. Oct. 11, 2000) (statement of Sen. Hatch).
+
+11         As part of his or her application, a U visa applicant must file a Form I-918, Supplement B,
+
+12   U Nonimmigrant Status Certification (“Form B”) signed by a qualifying law enforcement agency
+
+13   or other certifying entity. 8 C.F.R. § 214.14(c)(2)(i) (2007). The certification must state that the
+
+14   applicant “has been helpful, is being helpful, or is likely to be helpful” in the investigation or
+
+15   prosecution of criminal activity. 8 U.S.C. § 1184(p)(1). Those qualified to certify Form B
+
+16   include state or local law enforcement officials. 8 C.F.R. § 214.14(a)(3). Under federal law, the
+
+17   denial to certify a Form B is a “discretionary act and not subject to judicial review.” Catholic
+
+18   Charities CYO v. Chertoff, 622 F. Supp. 2d 865, 887 (N.D. Cal. 2008) (“[T]he statute does not
+
+19   contain any mandatory language with regard to actions by law enforcement officials.
+
+20   Specifically, there is no statutory directive to law enforcement officials to issue [law enforcement
+
+21   certifications].”). As a result, some law enforcement agencies declined to issue Form B
+
+22   certifications altogether. See Leslye E. Orloff et. al., Mandatory U-Visa Certification
+
+23   Unnecessarily Undermines the Purpose of the Violence Against Women Act's Immigration
+
+24   Protections and Its "Any Credible Evidence" Rules-A Call for Consistency, 11 Geo. J. Gender &
+
+25   L. 619, 637 (2010) (describing various police departments nationwide that stopped issuing Form
+
+26   B certifications).
+
+27         In 2015, the California Legislature, seeking to impose certain procedural requirements on
+
+28   qualifying law enforcement agencies upon receipt
+                                                   4 of a Form B, added Section 679.10 to the
+                DEFENDANT CAPTAIN G. SERRATO’S NOTICE OF MOTION TO DISMISS PLAINTIFF’S FIRST
+                AMENDED COMPLAINT AND/OR MOTION TO STRIKE PORTIONS OF THE FIRST AMENDED
+                                                                     COMPLAINT (26CV168913)
+ 1   California Penal Code. Legislative Counsel’s Digest, 2015 California Senate Bill No. 674,
+
+ 2   California 2015-2016 Regular Session (February 27, 2015). Specifically, the Penal Code now
+
+ 3   requires that upon request, a certifying entity “shall fully complete and sign the Form I-918
+
+ 4   Supplement B certification” and “shall certify victim helpfulness . . . when the victim was a
+
+ 5   victim of a qualifying criminal activity and has been helpful, is being helpful or is likely to be
+
+ 6   helpful in the detection or investigation or prosecution of that qualifying criminal activity.” Cal.
+
+ 7   Penal Code §§ 679.10(g)(1), 679.10(i)(1). The Penal Code also now requires a Form B
+
+ 8   certification denial to be accompanied with a written explanation for the denial, which “shall
+
+ 9   include specific details of any reasonable requests for cooperation and a detailed description of
+
+10   how the victim refused to cooperate.” Id. § 679.10(i)(2). However, while the Penal Code now
+
+11   requires that certifying entities process Form B certifications upon receipt, the Penal Code does
+
+12   not require the certifying entity to find that the requestor is a victim of a qualifying criminal
+
+13   activity, or to find that the requestor has been helpful. In other words, certifying entities retain
+
+14   discretion to deny a Form B certification request.
+
+15   III. PLAINTIFF’S ALLEGATIONS AGAINST DEFENDANT SERRATO.
+16         Plaintiff alleges that on November 1, 2024, CHP officers subjected Plaintiff to a false arrest
+
+17   and forced Plaintiff to submit to an involuntary blood draw through false reporting. (FAC 1:26-
+
+18   2:1.) Plaintiff does not allege that Defendant Serrato was involved in this incident. Rather,
+
+19   Plaintiff alleges that Defendant Serrato’s denial of his U-visa certification based upon the
+
+20   November 1st incident constitutes a “separate constitutional violation” and was done in retaliation
+
+21   against Plaintiff for filing complaints and civil lawsuits against the CHP and individual officers.
+
+22   (FAC 2:16-19; 14:24.) As discussed in further detail below, Plaintiff’s allegations fail to state
+
+23   valid causes of action and Defendant is entitled to the dismissal of all causes of action within the
+
+24   FAC with prejudice.
+
+25   IV.   ARGUMENT
+26         A.    A Motion to Dismiss is Appropriate
+27         A defendant may assert a defense that a complaint served upon him fails to state a claim
+
+28   upon which relief may be granted by way of a motion
+                                                   5     pursuant to Federal Rule of Civil Procedure
+                DEFENDANT CAPTAIN G. SERRATO’S NOTICE OF MOTION TO DISMISS PLAINTIFF’S FIRST
+                AMENDED COMPLAINT AND/OR MOTION TO STRIKE PORTIONS OF THE FIRST AMENDED
+                                                                     COMPLAINT (26CV168913)
+ 1   12(b)(6). The purpose of a motion to dismiss under Rule 12(b)(6) is to test the legal sufficiency of
+
+ 2   the claims asserted in the complaint. Navarro v. Black, 250 F.3d 729, 732 (9th Cir. 2001). To
+
+ 3   survive a motion to dismiss, the plaintiff's complaint “must contain sufficient factual matter,
+
+ 4   accepted as true, to ‘state a claim to relief that is plausible on its face.’” Ashcroft v. Iqbal, 556
+
+ 5   U.S. 662, 678 (2009) (quoting Bell Atlantic Corp. v. Twombly, 550 U.S. 544, 570 (2007)). A
+
+ 6   claim is facially plausible “when the plaintiff pleads factual content that allows the court to draw
+
+ 7   the reasonable inference that the defendant is liable for the misconduct alleged.” Iqbal, 556 U.S.
+
+ 8   at 678.
+
+ 9         Although generally in reviewing a motion to dismiss the court must accept as true all
+
+10   allegations contained in the subject Complaint, “threadbare recitals of the elements of a cause of
+
+11   action, supported by mere conclusory statements, do not suffice.” Id. at 678.
+
+12         B.    Plaintiff’s First Cause of Action for Violation of 14th Amendment
+                 Substantive Due Process Fails as There is No Constitutional or Statutory
+13               Right To U-Visa Certification
+14         42 U.S.C. Section 1983 “provides a cause of action for the deprivation of any rights,
+
+15   privileges, or immunities secured by the Constitution and laws of the United States.” Wilder v.
+
+16   Virginia Hosp. Ass'n, 496 U.S. 498, 508 (1990) (internal quotation marks omitted). “Section 1983
+
+17   is not itself a source of substantive rights but merely provides a method for vindicating federal
+
+18   rights elsewhere conferred.” Albright v. Oliver, 510 U.S. 266, 271 (1994) (citation and internal
+
+19   quotation marks omitted). To state a cognizable Section 1983 claim, a plaintiff must allege the
+
+20   violation of a right protected by the Constitution and laws of the United States, and that the
+
+21   alleged deprivation was committed by a person who acted under color of state law. 42 U.S.C. §
+
+22   1983. See also Florer v. Congregation Pidyon Shevuyim, N.A., 639 F.3d 916, 921 (9th Cir. 2011).
+
+23   An individual defendant is not liable on a civil rights claim unless the facts establish the
+
+24   defendant's personal involvement in the constitutional deprivation or a causal connection between
+
+25   the defendant's wrongful conduct and the alleged constitutional deprivation. See Hansen v. Black,
+
+26   885 F.2d 642, 645 (9th Cir. 1989); Johnson v. Duffy, 588 F.2d 740, 743-44 (9th Cir. 1978).
+
+27
+
+28                                                       6
+                DEFENDANT CAPTAIN G. SERRATO’S NOTICE OF MOTION TO DISMISS PLAINTIFF’S FIRST
+                AMENDED COMPLAINT AND/OR MOTION TO STRIKE PORTIONS OF THE FIRST AMENDED
+                                                                     COMPLAINT (26CV168913)
+ 1                      a.    U-Visa Certification Is Discretionary.
+
+ 2         Here, Plaintiff’s Fourteenth Amendment substantive due process cause of action fails as a
+
+ 3   matter of law because Plaintiff has no substantive due process right to U-visa certification. See
+
+ 4   e.g. Perez Perezv. Wolf 943 F.3d 853 [noting the decision to sign or decline to sign a certification
+
+ 5   is discretionary].) United States v. Biao, No. 98CR2812-BTM, 2011 WL 607087, at *1 (S.D. Cal.
+
+ 6   Feb. 11, 2011) (citing Orosco v. Napolitano, 598 F.3d 222, 226 (5th Cir.2010).)
+
+ 7         Although, California Penal Code Section 679.10 requires that upon request, a certifying
+
+ 8   entity “shall fully complete and sign the Form I-918 Supplement B certification,” (Cal Pen. Code,
+
+ 9   § 679.10, subd. (i)(1)), nowhere in section 679.10 is there a requirement that the certifying entity
+
+10   must find that the requestor is, in fact, a victim of a qualifying criminal activity, as those terms are
+
+11   defined in the statute, or to find that the requestor has been helpful. In fact, Section 679.10
+
+12   contemplates that certifying entities retain discretion to find otherwise. The statute provides, in
+
+13   relevant part:
+
+14         If a certifying entity does not certify a Form I-918 Supplement B certification, they shall
+
+15         provide a written explanation for the denial of the Form I-918 Supplement B certification.
+
+16   (§ 679.10, subd. (i)(2) (emphasis added).)
+
+17         As U-visa certification is a discretionary act, Plaintiff has no substantive right to a U-visa
+
+18   certification.
+
+19                      b.    Plaintiff Has Not Pled Facts Showing That He Meets the
+                              Requirements for U-Visa Certification and the “Presumption of
+20                            Helpfulness” Does Not Apply.
+
+21         The FAC alleges that when the U-visa statutory elements are met and the rebuttable
+
+22   presumption of helpfulness is unrebutted, the certifying official must sign the U-visa certification.
+
+23   (FAC 12:5-7.) This is improper argument that is not entitled to the presumption of truth on a
+
+24   Motion to Dismiss. See Paulsen v. CNF Inc., 559 F.3d 1061, 1071 (9th Cir. 2009)(holding that
+
+25   the Court does not assume the truth of any conclusory factual allegations or legal conclusions.)
+
+26   Furthermore, the facts alleged within the FAC have not shown that Plaintiff meets the
+
+27   requirements for U-visa certification nor has Plaintiff shown that the presumption of helpfulness
+
+28   applies. The “presumption of helpfulness” within
+                                                    7 Penal Code Section 679.10 provides as
+                DEFENDANT CAPTAIN G. SERRATO’S NOTICE OF MOTION TO DISMISS PLAINTIFF’S FIRST
+                AMENDED COMPLAINT AND/OR MOTION TO STRIKE PORTIONS OF THE FIRST AMENDED
+                                                                     COMPLAINT (26CV168913)
+ 1   follows:
+
+ 2            “[T]here is a rebuttable presumption that a victim is helpful, has been helpful, or is likely to
+
+ 3            be helpful to the detection or investigation or prosecution of that qualifying criminal
+
+ 4            activity, if the victim has not refused or failed to provide information and assistance
+
+ 5            reasonably requested by law enforcement.” (Pen. Code, § 679.10, subd. (h)
+
+ 6            Here, Plaintiff has not met the requirements of U-visa certification because Plaintiff has
+
+ 7   alleged, at most, that he was the victim of a civil tort, not that he was a victim of “qualifying
+
+ 8   criminal activity.” Furthermore, Plaintiff has not alleged that the CHP (or any other agency, for
+
+ 9   that matter) requested information and assistance into “the detection, investigation, or prosecution
+
+10   of a qualifying criminal activity.” See Pen. Code, § 679.10, subd. (h). Accordingly, Plaintiff has
+
+11   not shown that he meets the requirements for U-visa certification, and the presumption of
+
+12   helpfulness is plainly not applicable when no assistance was sought in this case.
+
+13            Based upon the above, the denial of Plaintiff’s U-visa certification does not violate any of
+
+14   Plaintiff’s constitutional or statutory rights and Plaintiff’s improper legal argument within the FAC
+
+15   that Defendant did not have the discretion to deny his request for U-visa certification is without
+
+16   merit.
+
+17            C.    Plaintiff’s Second Cause of Action for Procedural Due Process Fails
+                    Because Defendant Serrato’s Denial of Plaintiff’s Request for U-Visa
+18                  Certification Met all Relevant Statutory Requirements.
+19            The FAC contains an independent cause of action for violation of procedural due process.
+
+20   Plaintiff alleges, in a conclusory fashion, that the denial of his request for U-visa certification falls
+
+21   below the minimum that the Constitution requires. (FAC 14:17-20.) As stated above, there is no
+
+22   constitutional right to U-visa certification and thus law enforcement departments can (and do)
+
+23   decline to issue U-visa certifications altogether without running afoul of the Constitution.
+
+24   Catholic Charities CYO v. Chertoff, 622 F. Supp. 2d 865, 887 (N.D. Cal. 2008) (“[T]he statute
+
+25   does not contain any mandatory language with regard to actions by law enforcement officials.
+
+26   Specifically, there is no statutory directive to law enforcement officials to issue [law enforcement
+
+27   certifications].”)
+
+28            Specifically, Plaintiff alleges that the denial8 of his request for certification violated his right
+                   DEFENDANT CAPTAIN G. SERRATO’S NOTICE OF MOTION TO DISMISS PLAINTIFF’S FIRST
+                   AMENDED COMPLAINT AND/OR MOTION TO STRIKE PORTIONS OF THE FIRST AMENDED
+                                                                        COMPLAINT (26CV168913)
+ 1   to procedural due process because the denial, among other alleged shortcomings, did not give him
+
+ 2   “a hearing or opportunity to respond,” did not discuss the evidence Plaintiff submitted, and
+
+ 3   contained “no mechanism for administrative review or reconsideration.” (FAC 14:8-15.) There
+
+ 4   is nothing in any applicable statute that requires Defendant Serrato or any certifying entity to
+
+ 5   provide what Plaintiff seeks when issuing a denial of a U-visa certification and the FAC does not
+
+ 6   cite to any statute or other authority containing such requirements. The only relevant statute
+
+ 7   governing what Defendant Serrato must do after denying a U-visa certification request is
+
+ 8   California Penal Code Section 679.10. subdivision (i)(2), which requires that Defendant Serrato
+
+ 9   to provide a “written explanation for the denial of the Form I-918 Supplement B certification. The
+
+10   written denial shall include specific details of any reasonable requests for cooperation and a
+
+11   detailed description of how the victim refused to cooperate.” (Pen. Code, § 679.10, subd. (i)(2).)
+
+12   As the FAC alleges, Plaintiff received a denial letter that states, in relevant part:
+
+13         Unfortunately, the [November 1, 2024] incident does not meet the standard of qualifying
+
+14         criminal activity identified in Section 679.10 of the California Penal Code, nor does it meet
+
+15         the standards of the Immigration and Nationality Act Section 101(a)(15)(U)(iii).
+
+16         Additionally, this review found no substantially similar qualifying criminal activity as
+
+17         defined in Section 679.l0(d) PC….” (FAC 9:19-23.)
+
+18          Consistent with the requirement within California Penal Code Section 679.10 subdivision
+
+19   (i)(2), the letter lays out the reason behind the denial. Since there was no request for Plaintiff’s
+
+20   assistance, (not surprising as what Plaintiff alleges is a civil tort), that is all the procedural due
+
+21   process the law requires. Plaintiff’s cause of action for procedural due process violation should
+
+22   therefore be denied with prejudice.
+
+23         D.     Plaintiff’s FAC Fails to Allege Sufficient Facts to Show Plausible “But-
+                  For” Causation Necessary for a Valid Claim of Retaliation.
+24
+
+25         To establish a viable First Amendment retaliation claim, Plaintiff must (1) allege that the
+
+26   alleged conduct would chill a person of ordinary firmness from future First Amendment activity
+
+27   and (2) allege that the officer's desire to chill his speech was a “but-for” cause of the alleged
+
+28   unlawful conduct. Ford v. City of Yakima, 706 F.3d
+                                                    9 1188, 1193 (9th Cir. 2013). The Supreme
+                DEFENDANT CAPTAIN G. SERRATO’S NOTICE OF MOTION TO DISMISS PLAINTIFF’S FIRST
+                AMENDED COMPLAINT AND/OR MOTION TO STRIKE PORTIONS OF THE FIRST AMENDED
+                                                                     COMPLAINT (26CV168913)
+ 1   Court has defined “but for” causation as being “established whenever a particular outcome would
+
+ 2   not have happened ‘but for’ the purported cause.” Bostock v. Clayton Cnty., 590 U.S. 644, 656
+
+ 3   (2020). “In other words, a but-for test directs [the Court] to change one thing at a time and see if
+
+ 4   the outcome changes. If it does, [there exists] a but-for cause.” Id. Under this test, if the outcome
+
+ 5   (the adverse action) would not have occurred without the government official's retaliatory
+
+ 6   animus, then that animus was a but-for cause of the adverse action. See id. Conversely, if the
+
+ 7   government officials would have taken the same adverse action even in the absence of their
+
+ 8   animus or retaliatory motive arising from the plaintiff’s speech, then the officials' animus was not
+
+ 9   a but-for cause of the adverse action, and there was no violation of the plaintiff's constitutional
+
+10   rights. See id.
+
+11         Here, Plaintiff alleges that Defendant Serrato denied Plaintiff’s request for U-visa
+
+12   certification to retaliate against Plaintiff for filing complaints and civil lawsuits against the CHP
+
+13   and its officers. (FAC 17:2-5.) Plaintiff alleges that several factors that he claims make retaliation
+
+14   “plausible.” However, a review of the FAC shows that Plaintiff’s allegations of retaliatory
+
+15   motive are not based on facts, but rather improper speculation and innuendo.
+
+16         Plaintiff first alleges that Defendant Serrato acknowledged Plaintiff’s engagement in
+
+17   “protected activity” when Defendant Serrato assigned an investigator to investigate Plaintiff’s
+
+18   complaints in a letter dated March 26, 2026. (FAC 16:4-5.) As a basis for retaliatory motive,
+
+19   this is nonsensical. There is nothing improper in assigning someone to investigate complaints.
+
+20   Indeed, had Defendant Serrato not done so, Plaintiff would likely have accused Defendant of
+
+21   attempting a cover-up.
+
+22         Plaintiff also alleges that the “tight temporal proximity” between Defendant Serrato
+
+23   assigning an investigator for Plaintiff’s complaints and Defendant’s denial of Plaintiff’s request
+
+24   for U-visa certification is another factor suggesting retaliatory motive. (FAC 16:7-10.) Plaintiff
+
+25   does not elaborate on how the timing of these events shows retaliatory motive. Defendant notes
+
+26   that Plaintiff, not Defendant, was the one responsible for the timing of Plaintiff’s request for U-
+
+27   visa certification and his complaints against CHP and Defendant’s prompt action in response to
+
+28   both reflects a commitment to responding to Plaintiff
+                                                    10     in a timely manner, rather than suggesting
+                DEFENDANT CAPTAIN G. SERRATO’S NOTICE OF MOTION TO DISMISS PLAINTIFF’S FIRST
+                AMENDED COMPLAINT AND/OR MOTION TO STRIKE PORTIONS OF THE FIRST AMENDED
+                                                                     COMPLAINT (26CV168913)
+ 1   anything unlawful.
+
+ 2         Plaintiff alleges that Defendant has an “institutional incentive” to deny the wrongdoings of
+
+ 3   CHP officers because Plaintiff is currently suing the CHP in two separate lawsuits. (FAC 12-17.)
+
+ 4   However, this does not mean that Defendant engaged in First Amendment retaliation and
+
+ 5   Plaintiff’s decision to pursue legal action is not evidence of wrongdoing on the part of Defendant
+
+ 6   or Defendant’s employees.
+
+ 7         Plaintiff further alleges, without any evidence, that Defendant’s reasoning for the denial of
+
+ 8   his request for U-visa certification is “pretextual.” (FAC 16:19.) As stated above, Defendant
+
+ 9   explained the reasoning for the denial of U-visa certification in accordance with the requirements
+
+10   within Penal Code Section 679.10. subdivision (i)(2). Just because Plaintiff disagrees with
+
+11   Defendant’s decision does not render Defendant’s reasoning pretextual.
+
+12         Finally, Plaintiff alleges that Defendant has a “conflict of roles.” (FAC 16:25.) Again, this
+
+13   is not evidence of retaliatory motive. Moreover, Plaintiff made the decision to direct his request
+
+14   for U-visa certification to Defendant when Plaintiff could have requested certification from any
+
+15   authorized law enforcement, government or judicial agency. See 8 C.F.R. § 214.14 subd. (a)(2).
+
+16   Furthermore, Defendant is not the only certifying entity who has denied Plaintiff’s request for U-
+
+17   visa certification. On June 18, 2026, Judge Mark Fickes of the Alameda Superior Court denied
+
+18   Plaintiff’s request for U-visa certification via Court Order in Case No. 26CV168913. Thereafter,
+
+19   Plaintiff voluntarily dismissed his case against individual CHP defendants before Judge Fickes
+
+20   arising from the November 1, 2024, incident. (See Alameda Superior Court Case No.
+
+21   26CV168913, Request for Dismissal filed August 21, 2026.)
+
+22         As shown above, Plaintiff’s allegations related to retaliation are not factual, but improper
+
+23   speculation based upon either Plaintiff’s own actions or actions which have a more plausible non-
+
+24   retaliatory explanation. The FAC has failed to allege sufficient facts to make retaliatory motive
+
+25   plausible, especially given the difference between “qualifying criminal activity” and the civil
+
+26   complaints Plaintiff describes within the FAC.
+
+27
+
+28                                                    11
+               DEFENDANT CAPTAIN G. SERRATO’S NOTICE OF MOTION TO DISMISS PLAINTIFF’S FIRST
+               AMENDED COMPLAINT AND/OR MOTION TO STRIKE PORTIONS OF THE FIRST AMENDED
+                                                                    COMPLAINT (26CV168913)
+ 1         E.     Plaintiff’s Cause of Action and Prayer for Declaratory Relief, Prayer for a
+                  Permanent Injunction, Prayer for Attorneys’ Fees and Prayer for Punitive
+ 2                Damages Should Be Stricken.
+
+ 3   Federal Rule of Civil Procedure Rule 12(f) authorizes the striking of all or any portion of a
+ 4   pleading that is “redundant” or “immaterial.” The function of Rule 12(f) is to avoid the
+ 5   expenditure of time and money that must arise from litigating spurious issues by dispensing with
+ 6   those issues prior to trial. Sidney-Vinstein v. A.H. Robins Co. (9th Cir., 1983) 697 F. 2d 880, 885;
+
+ 7   Fantasy Inc. v. Fogerty (9th Cir., 1993) 984 F.2d 1524, 1527.
+
+ 8                1.    Declaratory Relief Is Not Proper Cause of Action Under the Facts
+                        Alleged Within the FAC.
+ 9
+
+10         Plaintiff’s fourth cause of action seeks declaratory relief. (FAC 17: 13.) However,
+
+11   declaratory relief is not a proper cause of action under the facts alleged in the FAC. Plaintiff’s
+
+12   claims are based on allegations regarding Defendant Serrato’s past wrongs, a claim under the
+
+13   Declaratory Relief Act is improper and is duplicative of Plaintiff’s other causes of action.
+
+14   Mangindin v. Washington Mut. Bank, 637 F.Supp.2d 700, 707 (N.D.Cal.2009) (“A claim for
+
+15   declaratory relief is unnecessary where an adequate remedy exists under some other cause of
+
+16   action.”); Ruiz v. Mortg. Elec. Registration Sys., Inc., 2009 WL 2390824, at *6 (E.D.Cal. Aug. 3,
+
+17   2009) (dismissing claim for declaratory judgment where foreclosure already occurred such that
+
+18   the plaintiff was seeking “to redress past wrongs”); Edejer v. DHI Mortg. Co., 2009 WL
+
+19   1684714, at *11 (N.D.Cal. June 12, 2009) (“Plaintiff's declaratory relief cause of action fails
+
+20   because she seeks to redress past wrongs rather than a declaration as to future rights.”).
+
+21                2     Plaintiff Has Not Pled Facts to Justify Injunctive Relief.
+
+22         The Prayer for Relief section of the FAC requests both a preliminary injunction and a
+
+23   permanent injunction. (FAC 19:21-28.) Plaintiff’s request for injunctive relief should be stricken
+
+24   as Plaintiff has not pled facts justifying injunctive relief.
+
+25         “A party seeking a preliminary injunction must establish: (1) that it is likely to succeed on
+
+26   the merits, (2) that it will likely suffer irreparable harm in the absence of injunctive relief, (3) that
+
+27   the balance of equities or hardships tips in its favor, and (4) that an injunction is in the public
+
+28   interest. Winter v. NRDC, Inc., 555 U.S. 7, 20 (2008).
+                                                      12    Here, Plaintiff has not demonstrated any of
+                DEFENDANT CAPTAIN G. SERRATO’S NOTICE OF MOTION TO DISMISS PLAINTIFF’S FIRST
+                AMENDED COMPLAINT AND/OR MOTION TO STRIKE PORTIONS OF THE FIRST AMENDED
+                                                                     COMPLAINT (26CV168913)
+ 1   the above factors, as Plaintiff’s FAC fails to allege any reason for injunctive relief and only
+
+ 2   describes the injunctive relief sought at the very end of the FAC in the Prayer for Relief section.
+
+ 3   (FAC 19:21-20:1.)
+
+ 4         As the FAC contains no facts to support a request for injunctive relief, Plaintiff’s prayer for
+
+ 5   injunctive relief should properly be stricken.
+
+ 6               3.      Plaintiff Has Not Alleged Facts Supporting Punitive Damages.
+
+ 7         Plaintiff's request for punitive damages against Defendant Serrato should be stricken
+
+ 8   because Plaintiff has not alleged any facts giving rise to punitive damages. A Motion to Strike
+
+ 9   “may be used to strike any part of the Prayer for Relief when the damages sought are not
+
+10   recoverable as a matter of law.” Bureerong v. Uvawas, 922 F.Supp. 1450, 1479 n. 34 (CD. Cal.
+
+11   1996); Wilkerson v. Butler, 229 F.R.D. 166, 172 (E.D. Cal. 2005) (stating that “a motion to strike
+
+12   is appropriate to address requested relief, such as punitive damages, which is not recoverable as a
+
+13   matter of law.”).
+
+14         A jury can assess punitive damages in a federal Section 1983 action “when the defendant’s
+
+15   conduct is shown to be motivated by evil motive or intent, or when it involves reckless or callous
+
+16   indifference to the federally protected rights of others.” Smith v. Wade, 461 U.S. 30, 56 (1983).
+
+17         Here, Plaintiff's FAC is devoid of any allegations that may support an award of punitive
+
+18   damages against Defendant Serrato. The sole reference to punitive damages within the FAC
+
+19   appears in the Prayer for Relief where Plaintiff wrongly alleges that Defendant Serrato was
+
+20   “deliberately indifferent” to unspecified constitutional rights. (FAC 19:2-3.) As stated above, the
+
+21   denial of U-Visa certification does not implicate any statutory or constitutional rights.
+
+22         It is further unclear what Plaintiff means when he alleges that punitive damages are
+
+23   warranted due to Defendant Serrato’s “willful refusal to engage with evidence proving his
+
+24   subordinates committed qualifying criminal activity.” (FAC 19:4-5.) After expressly claiming
+
+25   that the FAC “does not seek to relitigate the officers' underlying conduct” during the November 1,
+
+26   2024, incident, (FAC 2:16), Plaintiff’s inclusion of punitive damages against Defendant Serrato
+
+27   within his Prayer for Relief based upon what other CHP officers allegedly did is not well-taken.
+
+28   Accordingly, Plaintiff's prayer for punitive damages
+                                                     13 found in Prayer for Relief within the FAC
+               DEFENDANT CAPTAIN G. SERRATO’S NOTICE OF MOTION TO DISMISS PLAINTIFF’S FIRST
+               AMENDED COMPLAINT AND/OR MOTION TO STRIKE PORTIONS OF THE FIRST AMENDED
+                                                                    COMPLAINT (26CV168913)
+ 1   should be stricken.
+
+ 2               4.    Plaintiff Is Not Entitled to Attorneys’ Fees as a Pro Se Litigant.
+ 3         Plaintiff seeks attorneys’ fees as part of his Prayer for Relief. (FAC 20:9-10.) While 42
+ 4   U.S.C. § 1988 allows for attorney's fees for plaintiffs who prevail in Section 1983 actions, an
+ 5   award of attorneys’ fees is not available to pro se litigants. See Kay v. Ehrler, 499 U.S. 432, 438
+ 6   (1991). Accordingly, Plaintiff's prayer for attorneys’ fees found in Prayer for Relief within the
+ 7   FAC should be stricken.
+ 8         F. Defendant Serrato is Entitled to Qualified Immunity as to Each Claim Brought
+ 9         Against Him in his Personal Capacity as No “Clearly Established” Law Existed to
+10         Place Defendant on Notice that a Denial of U-Visa Certification in the Circumstances
+11         Alleged Within the FAC Would Violate Any Constitutional Right.
+12         “[Q]ualified immunity protects government officials ‘from liability for civil damages
+13   insofar as their conduct does not violate clearly established statutory or constitutional rights of
+14   which a reasonable person would have known.’” Pearson v. Callahan, 555 U.S. 223, 231 (2009).
+15   “When properly applied, it protects all but the plainly incompetent or those who knowingly
+16   violate the law.” Ashcroft v. al Kidd, 563 U.S. 731, 743 (2011) (simplified). “Under [Supreme
+17   Court] precedents, law enforcement personnel are entitled to qualified immunity under §1983
+18   unless (1) they violated a federal statutory or constitutional right, and (2) the unlawfulness of their
+19   conduct was ‘clearly established at the time.’” District of Columbia v. Wesby, 583 U.S. 48, 62-63
+20   (2018) (emphasis added). A plaintiff must overcome both prongs of qualified immunity. Felarca
+21   v. Birgeneau, 891 F.3d 809, 815 (9th Cir. 2018); see also Smith v. Adepa, 81 F.4th 994, 1004 n.4
+22   (9th Cir. 2023) (“[T]he burden is not on the officers to prove they fit perfectly within the facts of
+23   a case granting qualified immunity; the burden is on the plaintiff to show a violation of a clearly
+24   established right in the specific circumstances at issue.”).
+25         Here, the FAC alleges that qualified immunity “does not apply.” (FAC 18:9.) However,
+26   Plaintiff does not identify any case law that would have placed Defendant Serrato on notice that it
+27   would be unlawful to deny Plaintiff’s request for U-visa certification. Instead, Plaintiff alleges
+28                                                     14
+               DEFENDANT CAPTAIN G. SERRATO’S NOTICE OF MOTION TO DISMISS PLAINTIFF’S FIRST
+               AMENDED COMPLAINT AND/OR MOTION TO STRIKE PORTIONS OF THE FIRST AMENDED
+                                                                    COMPLAINT (26CV168913)
+ 1   that Shanks v. Dressel, 540 F.3d 1082 (9th Cir. 2008) established the right to “non-arbitrary
+
+ 2   decision-making by state officials exercising mandatory statutory duties.” (FAC 18:10.)
+
+ 3   However, the Shanks case involves the enforcement of city zoning provisions and has nothing to
+
+ 4   do with U-visa certification. Id. Moreover, the Shanks case held its plaintiffs failed to state a
+
+ 5   viable due process claim based upon executive action because there is an “exceedingly high
+
+ 6   burden required to show [government actors] behaved in a constitutionally arbitrary fashion.” Id.
+
+ 7   1088. To the extent that Shanks has any application to the case here, it shows that Defendant did
+
+ 8   not violate Plaintiff’s constitutional rights. Moreover, while it is true that the right of Plaintiff to
+
+ 9   engage in protected speech without fear of retaliation is clearly established, the Supreme has
+
+10   cautioned that ‘“courts must not define clearly established law at a high level of generality[.]”
+
+11   Ashcroft v. Al-Kidd (2011) 563 U.S. 731, 742. A rule is too general if the unlawfulness of [the
+
+12   actor’s] conduct does not follow immediately from the conclusion that the rule was firmly
+
+13   established.” District of Columbia v. Wesby, 583 U.S. 48, 64.
+
+14         As Plaintiff has not identified any case law which would put Defendant Serrato on notice
+15   that his denial of Plaintiff’s U-visa certification in the circumstances as alleged within the FAC
+
+16   would be unlawful, Defendant Serrato is entitled to qualified immunity as to all of Plaintiff’s
+
+17   claims against him in his personal capacity.
+
+18
+
+19
+
+20
+
+21
+
+22
+
+23
+
+24
+
+25
+
+26
+
+27
+
+28                                                      15
+                DEFENDANT CAPTAIN G. SERRATO’S NOTICE OF MOTION TO DISMISS PLAINTIFF’S FIRST
+                AMENDED COMPLAINT AND/OR MOTION TO STRIKE PORTIONS OF THE FIRST AMENDED
+                                                                     COMPLAINT (26CV168913)
+ 1           G.       Leave To Amend Should Be Denied as Futile.
+
+ 2           Upon dismissal of any claims, the court must tell a pro se plaintiff of a pleading’s
+
+ 3   deficiencies and provide an opportunity to cure such defects. Garity v. APWU Nat'l Lab. Org.,
+
+ 4   828 F.3d 848, 854 (9th Cir. 2016). However, if amendment would be futile, no leave to amend
+     need be given. Lathus v. City of Huntington Beach, 56 F.4th 1238, 1243 (9th Cir. 2023). A court
+ 5
+     may consider facts outside of the complaint when deciding whether to grant leave to amend.
+ 6
+     Broam v. Bogan, 320 F.3d 1023, 1026 n.2 (9th Cir. 2003).
+ 7
+             Not only has Plaintiff already amended his complaint once before this Court, Plaintiff has
+ 8
+     now filed at least three separate lawsuits against the CHP and its individual officers based upon
+ 9
+     allegations arising from the November 1, 2024, incident, not including an additional petition for a
+10
+     writ of mandate against Defendant Serrato seeking U-visa certification, which is currently
+11
+     pending. Plaintiff voluntarily dismissed one of his prior actions in the Eastern District Court,
+12
+     Newanforbi v. State of California, et al., Case No. 2:25-CV-1460-DC-CSK PS, following the
+13   Magistrate Judge’s Report and Recommendation that Plaintiff’s Complaint be dismissed with
+14   prejudice, before the District Court had officially adopted the Report and Recommendation. (See
+15   Eastern District Court, Case No. 2:25-CV-1460-DC-CSK PS; ECF No. 12, Report and
+16   Recommendation dated April 20, 2025.) Plaintiff also recently dismissed a state court case
+17   arising from the same incident, filed in the Alameda Superior Court, after the Judge in that case
+18   denied Plaintiff’s request for U-visa certification on the same facts. (See Alameda Superior Court
+
+19   Case ,Newanforbi, v. Meza-Gonzalez, et al., Case No. 26CV168913.) After dismissing the prior
+
+20   two lawsuits, Plaintiff has now filed a third action against CHP officers with substantively the
+
+21   same allegations. (See Related Case, Nforbi v. Meza-Gonzalez et al., No. 3:26-cv-08271-PHK.)
+
+22   Defendant offers the above as context to show why leave to amend should not be granted.
+     Plaintiff’s prior litigation shows that, despite being pro se, Plaintiff is a litigant who has
+23
+     substantial experience with the legal process. This is not a case where Plaintiff has viable claims
+24
+     but is hampered by his legal lack of knowledge. Rather, Plaintiff has adopted a strategy of filing
+25
+     multiple lawsuits based on the same substantive claims, only to strategically dismiss each suit
+26
+     after a court finds his claims to be without merit to file new lawsuits elsewhere. It is now long
+27
+     past time for Plaintiff’s meritless litigation against the CHP and its employees to end.
+28                                                      16
+                  DEFENDANT CAPTAIN G. SERRATO’S NOTICE OF MOTION TO DISMISS PLAINTIFF’S FIRST
+                  AMENDED COMPLAINT AND/OR MOTION TO STRIKE PORTIONS OF THE FIRST AMENDED
+                                                                       COMPLAINT (26CV168913)
+ 1                                            CONCLUSION
+
+ 2         For the foregoing reasons, Defendant respectfully requests that the Court dismiss all claims
+
+ 3   within Plaintiff’s FAC with prejudice and strike Plaintiff’s cause of action for declaratory relief,
+
+ 4   Plaintiff’s prayer for declaratory and injunctive relief, Plaintiff’s request for attorney’s fees and
+
+ 5   Plaintiff’s prayer for punitive damages against Defendant Serrato in his personal capacity.
+
+ 6   Dated: August 26, 2026                                 Respectfully submitted,
+
+ 7                                                          ROB BONTA
+                                                            Attorney General of California
+ 8                                                          ELIZABETH S. ANGRES
+                                                            Supervising Deputy Attorney General
+ 9
+
+10                                                           /s/ Haiyang A. Li
+
+11                                                          HAIYANG A. LI
+                                                            Deputy Attorney General
+12                                                          Attorneys for Defendant
+                                                            Captain G. Serrato, in both his individual
+13                                                          and official capacities
+
+14
+
+15
+
+16
+
+17
+
+18
+
+19
+
+20
+
+21
+
+22
+
+23
+
+24
+
+25
+
+26
+
+27
+
+28                                                     17
+               DEFENDANT CAPTAIN G. SERRATO’S NOTICE OF MOTION TO DISMISS PLAINTIFF’S FIRST
+               AMENDED COMPLAINT AND/OR MOTION TO STRIKE PORTIONS OF THE FIRST AMENDED
+                                                                    COMPLAINT (26CV168913)
+                         DECLARATION OF SERVICE BY E-MAIL
+
+ Case Name:              Brendan N. Newanforbi v. Captain G. Serrato, et al.
+ Case Number:            4:26-cv-05953-ASK
+ Party Represented:      Defendant, Captain G. Serrato, in both his individual and official
+                         capacities
+
+Declaration of Electronic Service
+
+    1. I am at least 18 years of age and not a party to this matter.
+
+    2. I am employed in the Office of the Attorney General of the State of California. My
+       business address is 300 South Spring Street, Suite 1702, Los Angeles, CA 90013-1230,
+       County of Los Angeles.
+
+    3. My electronic service address is Diana.Montufar@doj.ca.gov.
+
+    4. On August 26, 2026, I electronically served the following document[s]:
+
+               a. DEFENDANT CAPTAIN G. SERRATO’S NOTICE OF MOTION TO
+                  DISMISS PLAINTIFF’S FIRST AMENDED COMPLAINT AND/OR
+                  MOTION TO STRIKE PORTIONS OF THE FIRST AMENDED
+                  COMPLAINT; MEMORANDUM OF POINTS AND AUTHORITIES
+
+    5. I electronically served the aforementioned document[s] by emailing them to the
+       following individual[s]:
+
+
+Brendan Newanforbi
+1455 Cat Tail Drive
+Stockton, CA 95204
+E-mail Address: BNN.CDL@gmail.com
+Plaintiff in Pro Per
+
+
+
+I declare under penalty of perjury under the laws of the State of California and the United States
+of America that the foregoing is true and correct, and that this declaration was executed on
+August 26, 2026.
+
+
+                 Diana Montufar
+                    Declarant                                          Signature
+OK2026603012
+68685318
+

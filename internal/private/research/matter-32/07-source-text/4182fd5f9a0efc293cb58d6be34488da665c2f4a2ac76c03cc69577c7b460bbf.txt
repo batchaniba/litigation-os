@@ -1,0 +1,395 @@
+                 FOR PUBLICATION
+ UNITED STATES COURT OF APPEALS
+      FOR THE NINTH CIRCUIT
+
+WHITTLESTONE, INC., a California      
+corporation,
+                                             No. 09-16353
+               Plaintiff-Appellant,
+               v.                             D.C. No.
+                                          4:08-cv-04193-SBA
+HANDI-CRAFT COMPANY, a Missouri
+                                              OPINION
+corporation,
+              Defendant-Appellee.
+                                      
+       Appeal from the United States District Court
+          for the Northern District of California
+      Saundra B. Armstrong, District Judge, Presiding
+
+                 Argued and Submitted
+         May 13, 2010—San Francisco, California
+
+                   Filed August 17, 2010
+
+    Before: Stephen Reinhardt, William A. Fletcher and
+             N. Randy Smith, Circuit Judges.
+
+              Opinion by Judge N. R. Smith
+
+
+
+
+                           12059
+               WHITTLESTONE v. HANDI-CRAFT CO.            12061
+
+
+
+
+                         COUNSEL
+
+Russell J. Hanlon (argued), San Jose, California, for plaintiff-
+appellant WHITTLESTONE, INC.
+
+Peter W. Herzog (argued) & Michael A. Vitale of Herzog
+Crebs, LLP, St. Louis, Missouri; Dean Pollack & Rohit A.
+Sabnis of Burnham Brown, PLC, Oakland, California for
+defendant-appellee HANDI-CRAFT COMPANY.
+
+
+                          OPINION
+
+N.R. SMITH, Circuit Judge:
+
+   In this case of first impression, we hold that Rule 12(f) of
+the Federal Rules of Civil Procedure does not authorize a dis-
+12062            WHITTLESTONE v. HANDI-CRAFT CO.
+trict court to strike a claim for damages on the ground that
+such damages are precluded as a matter of law. We reverse
+and remand.
+
+                        I.    Background
+
+   In March 2006, Whittlestone (a California corporation with
+its principal place of business in California) and Handi-Craft
+(a Missouri corporation with its principal place of business in
+Missouri) entered into a written, twenty-year contract. In the
+contract, Handi-Craft was obligated to make minimum annual
+unit or dollar amount purchases of Whittlestone products for
+resale to third parties.
+
+  Relevant paragraphs of the contract stated:
+
+       5. Term. The “Term” of this Agreement shall
+    begin on the date of this Agreement and end after the
+    initial term described below, unless sooner termi-
+    nated pursuant to the Agreement.
+
+        ....
+
+        20.    Termination.
+
+       a. This Agreement may be terminated as to any or
+    all of the Whittlestone Products at any time by the
+    mutual written consent of both parties.
+
+       b. This Agreement may be terminated as to any or
+    all of the Whittlestone Products by Handi-Craft upon
+    at least forty-five (45) days prior written notice to
+    Whittlestone in the event of the occurrence of any of
+    the following events and Whittlestone’s failure to
+    cure said default within said time:
+
+          1. The insolvency of Whittlestone; . . . .
+          WHITTLESTONE v. HANDI-CRAFT CO.            12063
+    2. If Whittlestone shall at any time commit
+    a breach of its obligations or fails or omits
+    to perform any of its material obligations
+    contained herein.
+
+   c. This Agreement may be terminated as to any or
+all of the Whittlestone Products by Whittlestone
+upon at least forty-five (45) days prior written notice
+to Handi-Craft in the event of the occurrence of any
+of the following events and Handi-Craft’s failure to
+cure said default within said time:
+
+    1. The insolvency of Handi-Craft; . . . .
+
+    2. If Handi-Craft shall at any time commit
+    a breach of its obligations or fails or omits
+    to perform any of its material obligations
+    contained herein.
+
+   d. Neither party, by reason of the termination or
+nonrenewal of this Agreement for any or all of the
+Whittlestone Products, shall be liable to the other for
+compensation, reimbursement or damages because
+of the loss of anticipated sales or prospective profits
+or because of expenditures, investments, leases,
+property improvements or other matters related to
+the business or good will of either party.
+
+  ....
+
+   f. Upon termination of this Agreement as to any
+or all of the Whittlestone Products as a result of a
+material breach by Whittlestone, Handi-Craft, at its
+option, shall be relieved from any obligation to dis-
+tribute any further shipment of any Whittlestone
+Products and may cancel all of its unshipped orders
+for such Whittlestone Products. . . . Upon termina-
+tion of this Agreement as to any or all of the Whittle-
+12064          WHITTLESTONE v. HANDI-CRAFT CO.
+    stone Products as a result of a material breach by
+    Handi-Craft, Whittlestone at its option, shall be
+    relieved from any obligation to ship any further ship-
+    ment of any Whittlestone Products, and Handi-Craft
+    must accept delivery of any remaining shipped or
+    unshipped orders for such Whittlestone Products and
+    Handi-Craft will be held liable for any and all such
+    orders.
+
+        ....
+
+       i. This Agreement may be terminated by Whittle-
+    stone, at any time after the date that is eighteen (18)
+    months following a Change in Control in the owner-
+    ship of Handi-Craft upon ten (10) days prior written
+    notice to Handi-Craft.
+
+      j. This Agreement may be terminated by Handi-
+    Craft, at any time after the date that is eighteen (18)
+    months following a Change in Control in the owner-
+    ship of Whittlestone upon ten (10) days prior written
+    notice to Whittlestone.
+
+   Handi-Craft unilaterally withdrew from the contract in June
+2008—only two years into the twenty-year term. Shortly
+thereafter, Whittlestone filed suit against Handi-Craft for
+breach of contract, and requested damages, “including loss of
+the value of the twenty year contract for Whittlestone prod-
+ucts including minimum annual unit or dollar purchases by
+Handi-Craft, lost profits, consequential damages [and] other-
+wise unearned credits and discounts granted to Handi-Craft is
+[sic] excess of $250,000.” (hereinafter, these various damages
+are referred to generally as “lost profits and consequential
+damages”). Whittlestone also requested restitutionary relief.
+
+                A.   The Rule 12(f) Motion
+
+  On October 9, 2008, Handi-Craft filed a Rule 12(f) motion
+to strike those portions of Whittlestone’s complaint that
+               WHITTLESTONE v. HANDI-CRAFT CO.            12065
+sought the recovery of lost profits and consequential damages.
+Handi-Craft claimed that such damages were barred by Para-
+graph 20(d) of the contract.
+
+   In an order dated November 18, 2008, the district court
+granted Handi-Craft’s motion to strike. Without deciding
+which state’s law governed the contract, the district court
+found that the provision limiting lost profits and consequential
+damages was enforceable under either Missouri or California
+law. It then found that the contract between the two parties
+clearly excluded the damages sought by Whittlestone.
+Accordingly, it struck Whittlestone’s claim for “lost profits,”
+“consequential damages,” the “loss of value of the twenty
+year contract for Whittlestone products including minimum
+annual unit or dollar purchases by Handi-Craft,” and other
+“unearned credits and discounts” from the complaint. Whittle-
+stone then filed a motion for reconsideration, which was
+denied. Whittlestone now appeals.
+
+                  II.   Standard of Review
+
+   “We review the district court’s decision to strike matter
+pursuant to Federal Rule of Civil Procedure 12(f) for abuse of
+discretion.” Nurse v. United States, 226 F.3d 996, 1000 (9th
+Cir. 2000). However, the issue presented here is not whether
+the district court properly struck the matter under Rule 12(f),
+but whether Rule 12(f) authorizes the district court to strike
+such matter at all. The panel reviews this purely legal issue de
+novo. California Scents v. Surco Prods., Inc., 406 F.3d 1102,
+1105 (9th Cir. 2005) (“This court reviews de novo a district
+court’s interpretation of the Federal Rules of Civil Proce-
+dure.”).
+
+                        III.   Discussion
+
+   Whittlestone argues that the district court erred by striking
+its claim for lost profits and consequential damages from the
+complaint, because courts may not resolve “disputed and sub-
+12066          WHITTLESTONE v. HANDI-CRAFT CO.
+stantial factual or legal issue[s] in deciding . . . a motion to
+strike.” We agree and remand this case back to the district
+court with instructions that the relevant portions of Whittle-
+stone’s complaint not be stricken under Rule 12(f).
+
+  A.    Whether the District Court Erred by Striking a
+        Claim for Damages in a Rule 12(f) Motion
+
+   [1] Rule 12(f) of the Federal Rules of Civil Procedure
+states that a district court “may strike from a pleading an
+insufficient defense or any redundant, immaterial, imperti-
+nent, or scandalous matter.” “The function of a 12(f) motion
+to strike is to avoid the expenditure of time and money that
+must arise from litigating spurious issues by dispensing with
+those issues prior to trial . . . .” Fantasy, Inc. v. Fogerty, 984
+F.2d 1524, 1527 (9th Cir. 1993) (quotation marks, citation,
+and first alteration omitted), rev’d on other grounds by
+Fogerty v. Fantasy, Inc., 510 U.S. 517 (1994). Our interpreta-
+tion of the Federal Rules of Civil Procedure begins with the
+relevant rule’s “plain meaning.” Kootenai Tribe of Idaho v.
+Veneman, 313 F.3d 1094, 1111 (9th Cir. 2002). Thus, we
+begin our analysis by determining whether Whittlestone’s
+claim for lost profits and consequential damages was: (1) an
+insufficient defense; (2) redundant; (3) immaterial; (4) imper-
+tinent; or (5) scandalous.
+
+   [2] It is quite clear that none of the five categories covers
+the allegations in the pleading sought to be stricken by Handi-
+Craft. First, the claim for damages is clearly not an insuffi-
+cient defense; nobody has suggested otherwise. Second, the
+claim for damages could not be redundant, as it does not
+appear anywhere else in the complaint. Third, the claim for
+damages is not immaterial, because whether these damages
+are recoverable relates directly to the plaintiff’s underlying
+claim for relief. See Fogerty, 984 F.2d at 1527 (“Immaterial
+matter is that which has no essential or important relationship
+to the claim for relief or the defenses being plead.”) (quoting
+5A Charles A. Wright & Arthur R. Miller, Federal Practice
+                 WHITTLESTONE v. HANDI-CRAFT CO.                    12067
+and Procedure § 1382, at 706-07 (1990) (quotation marks
+omitted)). Fourth, the claim for damages is not impertinent,
+because whether these damages are recoverable pertains
+directly to the harm being alleged. Id. (“Impertinent matter
+consists of statements that do not pertain, and are not neces-
+sary, to the issues in question.”) (quotation marks and citation
+omitted). Finally, a claim for damages is not scandalous, and
+Handi-Craft has not alleged as much.
+
+   [3] Notwithstanding this, Handi-Craft argues that Whittle-
+stone’s claim for lost profits and consequential damages
+should be stricken from the complaint, because such damages
+are precluded as a matter of law. Thus, Handi-Craft’s 12(f)
+motion was really an attempt to have certain portions of Whit-
+tlestone’s complaint dismissed or to obtain summary judg-
+ment against Whittlestone as to those portions of the suit—
+actions better suited for a Rule 12(b)(6) motion or a Rule 56
+motion, not a Rule 12(f) motion.1 Compare Yamamoto v.
+Omiya, 564 F.2d 1319, 1327 (9th Cir. 1977) (“Rule 12(f) is
+‘neither an authorized nor a proper way to procure the dis-
+missal of all or a part of a complaint.’ ”) (citing 5A Charles
+A. Wright & Arthur R. Miller, Federal Practice and Proce-
+dure § 1380, at 782 (1969)), with Rutman Wine Co. v. E.&J.
+Gallo Winery, 829 F.2d 729, 738 (9th Cir. 1987) (“The pur-
+pose of [Rule] 12(b)(6) is to enable defendants to challenge
+the legal sufficiency of complaints . . . .”).
+
+    [4] Were we to read Rule 12(f) in a manner that allowed
+litigants to use it as a means to dismiss some or all of a plead-
+ing (as Handi-Craft would have us do here), we would be cre-
+ating redundancies within the Federal Rules of Civil
+Procedure, because a Rule 12(b)(6) motion (or a motion for
+  1
+   When, on a motion under Rule 12(b)(6), “matters outside the pleadings
+are presented to and not excluded by the court, the motion must be treated
+as one for summary judgment under Rule 56. All parties must be given a
+reasonable opportunity to present all the material that is pertinent to the
+motion.” Fed. R. Civ. P. 12(d).
+12068             WHITTLESTONE v. HANDI-CRAFT CO.
+summary judgment at a later stage in the proceedings) already
+serves such a purpose.
+
+   Moreover, Rule 12(f) motions are reviewed for “abuse of
+discretion,” Nurse, 226 F.3d at 1000, whereas 12(b)(6)
+motions are reviewed de novo, San Pedro Hotel Co., Inc. v
+City of Los Angeles, 159 F.3d 470, 477 (9th Cir. 1998). Thus,
+if a party may seek dismissal of a pleading under Rule 12(f),
+the district court’s action would be subject to a different stan-
+dard of review than if the district court had adjudicated the
+same substantive action under Rule 12(b)(6). Applying differ-
+ent standards of review, when the district court’s underlying
+action is the same, does not make sense.
+
+   [5] We therefore hold that Rule 12(f) does not authorize
+district courts to strike claims for damages on the ground that
+such claims are precluded as a matter of law.2
+                                               (Text continued on page 12070)
+
+  2
+    Even were we to examine the district court’s actions under Rule
+12(b)(6), we would be required to hold that the district court erred in dis-
+missing Whittlestone’s claim for lost profits and consequential damages.
+   Under both California law and Missouri law, “[t]he whole of a contract
+is to be taken together, so as to give effect to every part, if reasonably
+practicable, each clause helping to interpret the other.” Cal. Civ. Code
+§ 1641; Myers v. Union Elec. Light & Power Co., 66 S.W.2d 565, 568
+(Mo. 1933). Reviewing the entirety of the contract to determine the mean-
+ing of “termination” as used in Paragraph 20(d) and “constru[ing] the
+pleadings in the light most favorable to the nonmoving party,” Knievel v.
+ESPN, 393 F.3d 1068, 1072 (9th Cir. 2005), it appears the district court
+erred by ruling that Paragraph 20(d) necessarily precluded recovery of the
+damages sought by Whittlestone.
+   The contract states that the agreement is for a twenty-year term, “unless
+sooner terminated pursuant to the Agreement,” suggesting that a termina-
+tion must be done exclusively according to the terms of the contract. In
+a subsequent paragraph, Paragraph 20 entitled “Termination,” the contract
+prescribes four methods for terminating the contract. First, it notes that the
+contract may be terminated “by the mutual written consent of both par-
+ties.” Paragraph 20(a). Second, either party may terminate the contract,
+upon giving forty-five days prior written notice and a chance to cure, if
+the other party becomes insolvent. Paragrah 20(b)(1) & (c)(1). Third,
+                  WHITTLESTONE v. HANDI-CRAFT CO.                      12069
+either party may terminate the contract, upon giving forty-five days prior
+written notice and a chance to cure, if the other party breaches a material
+obligation under the contract. Paragraph 20(b)(2) & (c)(2). And finally,
+either party may terminate the contract if there is a change in control in
+the ownership of the other party. Paragraph 20(i) & (j). These are the only
+four methods for terminating the contract “spelled out” in Paragraph 20;
+unilateral withdrawal of a party from the contact is not one of them. Thus,
+as Whittlestone plausibly argues, “interpreting paragraph 20(d) in light of
+the other provisions in the agreement, . . . a ‘termination’ [triggering] the
+damages limitation provision [of Paragraph 20(d)] must be a termination
+under one of the four grounds and procedures specified elsewhere in para-
+graph 20 (or the expiration of the 20-year term of the agreement).” There-
+fore, construing the pleadings in the light most favorable to Whittlestone,
+Whittlestone’s claim for damages survives because the contract arguably
+was not terminated pursuant to Paragraph 20(d).
+   Pointing to language in paragraph 20(f) of the contract that described
+“termination . . . as a result of a material breach by [the parties],” the dis-
+trict court found that the “the term ‘termination’ and the ensuing damage
+limitation set forth in Paragraph 20(d) apply to terminations derived from
+breaches of the Agreement.” The district court reasoned that, “[t]his lan-
+guage demonstrates that the parties intended ‘termination,’ as used in the
+Agreement, to encompass termination resulting from a material breach of
+the Agreement.” Construing the pleadings in the light most favorable to
+Whittlestone, however, this reasoning fails. Whittlestone does not dispute
+that the contract can be terminated by one party’s material breach of the
+contract. Rather, Whittlestone argues that, under Paragraph 20(b)(2) &
+(c)(2) of the agreement, in the event of a breach of contract the contract
+may be terminated only by the non-breaching party. Thus, because Handi-
+Craft was the breaching party, it could not terminate the contract pursuant
+to Paragraph 20 (b)(2). Paragraph 20(f) is not inconsistent with this propo-
+sition, as it speaks in terms of the non-breaching party being able to termi-
+nate upon breach by the other party. Therefore, Whittlestone’s
+interpretation of the contract was at least as plausible as Handi-Craft’s,
+and the district court erred by ruling that Whittlestone’s proffered interpre-
+tation necessarily failed as a matter of law.
+   Construing the pleadings in the light most favorable to Whittlestone, it
+appears Whittlestone’s claim for lost profits and consequential damages is
+not per se barred by the contract. The parties may well argue at a later
+stage of litigation that the intent of the parties or properly admitted extrin-
+sic evidence supports their respective interpretations of the contract. ASP
+12070            WHITTLESTONE v. HANDI-CRAFT CO.
+                          IV.    Conclusion
+
+   [6] We hold that Rule 12(f) of the Federal Rules of Civil
+Procedure does not authorize a district court to dismiss a
+claim for damages on the basis it is precluded as a matter of
+law. Therefore, we remand this case back to the district court
+with specific instructions to not dismiss Whittlestone’s claim
+for lost profits and consequential damages under a Rule 12(f)
+motion.
+
+  REVERSED AND REMANDED.
+
+
+
+
+Props. Group v. Fard, Inc., 35 Cal. Rptr. 3d 343, 349 (Ct. App. 2005);
+Good Hope Missionary Baptist Church v, St. Louis Alarm Monitoring Co.,
+Inc., 306 S.W.3d 185, 192 (Mo. Ct. App. 2010). Such factually based
+arguments are appropriate on remand at a later stage of litigation, not on
+the pleadings.
+

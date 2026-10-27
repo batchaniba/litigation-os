@@ -1,0 +1,280 @@
+ 1   BRENDAN NGEHSI NEWANFORBI
+
+ 2   1455 Cat Tail Drive
+
+ 3   Stockton, CA 95204
+
+ 4   Plaintiff, Pro Se
+
+ 5
+
+ 6                                 UNITED STATES DISTRICT COURT
+
+ 7                                EASTERN DISTRICT OF CALIFORNIA
+
+ 8
+
+ 9   BRENDAN NGEHSI NEWANFORBI,                       )    Case No.: 2:25-cv-01460-DC-CSK PS
+
+10               Plaintiff,                           )
+
+11   v.                                               )    PLAINTIFF'S OBJECTIONS TO
+
+12   STATE OF CALIFORNIA, et al.,                     )    MAGISTRATE JUDGE'S FINDINGS
+
+13                                                    )    AND RECOMMENDATIONS
+
+14               Defendants.                          )    (ECF No. 23)
+
+15
+
+16          Plaintiff Brendan Ngehsi Newanforbi, proceeding pro se, respectfully submits these
+
+17   Objections to the Magistrate Judge’s Findings and Recommendations (“F&R”) issued April 20,
+
+18   2026 (ECF No. 23). Plaintiff consents to dismissal of the claims he previously withdrew (State of
+
+19   California, Monell claims against CHP, and official-capacity claims). Plaintiff objects, however,
+
+20   to the dismissal without leave to amend of his individual-capacity Fourth and Fourteenth
+
+21   Amendment claims against Officers Santiago Meza-Gonzalez and Jose Melano.
+
+22
+
+23          These Objections are timely under 28 U.S.C. § 636(b)(1) and Local Rule 302(c)(1).
+
+24   Plaintiff requests de novo review and denial of the motion to dismiss (ECF No. 12) or,
+
+25   alternatively, leave to amend.
+
+26
+
+27                                      I. SPECIFIC OBJECTIONS
+
+28
+
+                                                  Page 1
+                              PLAINTIFF'S OBJECTIONS TO MAGISTRATE JUDGE'S F&R
+ 1   Objection No. 1: The F&R errs by weighing disputed facts and crediting the CHP report over
+
+ 2   Plaintiff’s well-pleaded allegations (F&R at 5–6).
+
+ 3
+
+ 4           The F&R concludes that probable cause existed based on the late hour, shoulder location,
+
+ 5   and cup remark, while dismissing Plaintiff’s express allegations that (1) the officers had no
+
+ 6   probable cause, (2) the cup contained no alcohol, (3) the search found no evidence of intoxication
+
+ 7   or illegal activity, and (4) Plaintiff showed no signs of impairment. (Compl. ¶¶ 12–17.) It does so
+
+ 8   by crediting the CHP report’s contrary details (odor of alcohol, red/watery eyes, slurred speech,
+
+ 9   poor field sobriety tests).
+
+10
+
+11           This is reversible error. At the Rule 12(b)(6) stage the Court must accept all well-pleaded
+
+12   factual allegations as true and draw all reasonable inferences in Plaintiff’s favor. Ashcroft v.
+
+13   Iqbal, 556 U.S. 678, 678 (2009); Bell Atl. Corp. v. Twombly, 550 U.S. 544, 570 (2007). Pro se
+
+14   complaints receive especially liberal construction. Chambers v. Herrera, 78 F.4th 1100, 1104 (9th
+
+15   Cir. 2023). The Court may not weigh the CHP report’s version against Plaintiff’s version.
+
+16
+
+17           Two additional facts alleged in the Complaint make probable cause implausible on its
+
+18   face: (a) the District Attorney declined to file any charges, and (b) CHP itself issued a certificate
+
+19   under Penal Code § 851.6 characterizing the encounter as a mere detention (not an arrest) because
+
+20   no accusatory pleading was filed. (Compl. ¶ 18.) These facts must be taken as true. The F&R’s
+
+21   probable-cause ruling should be rejected.
+
+22
+
+23   Objection No. 2: The F&R errs in holding that the Fourteenth Amendment due-process claim
+
+24   fails to state a claim (F&R at 7).
+
+25
+
+26           The Complaint alleges that Defendants arbitrarily escalated a welfare check into a full
+
+27   custodial seizure (handcuffs, transport, chemical testing) without probable cause. (Compl. ¶¶
+
+28   17–19, 22–23.) These facts state a plausible claim of arbitrary deprivation of liberty. The F&R
+
+                                                   Page 2
+                            PLAINTIFF'S OBJECTIONS TO MAGISTRATE JUDGE'S F&R
+ 1   offers no analysis explaining why they are insufficient. The claim should not be dismissed.
+
+ 2
+
+ 3   Objection No. 3: The F&R errs in granting qualified immunity on the pleadings (F&R at 7).
+
+ 4
+
+ 5          Qualified immunity is an affirmative defense that is rarely resolved at the 12(b)(6) stage
+
+ 6   when the complaint alleges a clear constitutional violation. Pearson v. Callahan, 555 U.S. 223,
+
+ 7   236 (2009). Plaintiff’s allegations — a welfare check escalated, on nothing more than a cup
+
+ 8   speculation, into a warrantless vehicle search and custodial arrest with no evidence found — state
+
+ 9   a Fourth Amendment violation. The right at issue has been clearly established for decades:
+
+10   officers may not prolong a stop or conduct a warrantless search/arrest without probable cause.
+
+11   Rodriguez v. United States, 575 U.S. 348 (2015) (prolonged stops); Dunaway v. New York, 442
+
+12   U.S. 200 (1979); Arizona v. Gant, 556 U.S. 332 (2009). On the facts alleged in the Complaint,
+
+13   any reasonable officer would have known the conduct was unlawful. The F&R’s
+
+14   qualified-immunity ruling is premature.
+
+15
+
+16   Objection No. 4: The F&R errs in recommending dismissal without leave to amend (F&R at 7–8).
+
+17
+
+18          Leave to amend must be granted liberally to pro se plaintiffs unless it is clear that no
+
+19   amendment can cure the defects. Garity v. APWU Nat’l Lab. Org., 828 F.3d 848, 854 (9th Cir.
+
+20   2016). Plaintiff has already narrowed the claims in good faith, and the DA’s decision and Penal
+
+21   Code § 851.6 certificate provide concrete factual support for a refined Fourth Amendment theory.
+
+22   Amendment is not futile. Dismissal with prejudice at the pleading stage is an abuse of discretion.
+
+23
+
+24                         II. CONCLUSION AND REQUEST FOR RELIEF
+
+25
+
+26          Plaintiff respectfully requests that the District Judge:
+
+27
+
+28          1. Decline to adopt the portions of the F&R recommending dismissal of the Fourth and
+
+                                                   Page 3
+                           PLAINTIFF'S OBJECTIONS TO MAGISTRATE JUDGE'S F&R
+ 1   Fourteenth Amendment claims against Officers Meza-Gonzalez and Melano in their
+
+ 2   individual capacities;
+
+ 3
+
+ 4   2. Deny Defendants’ motion to dismiss (ECF No. 12) as to those claims; or, in the
+
+ 5   alternative,
+
+ 6
+
+ 7   3. Grant Plaintiff leave to amend the Complaint; and
+
+ 8
+
+ 9   4. Grant any other relief the Court deems just and proper.
+
+10
+
+11
+
+12                                                                  Dated: April 21, 2026
+
+13
+
+14
+
+15                                                                 Respectfully submitted,
+
+16
+
+17
+
+18                                              ___________________________________
+
+19                                                  BRENDAN NGEHSI NEWANFORBI
+
+20                                                                     Plaintiff, In Pro Per
+
+21
+
+22
+
+23
+
+24
+
+25
+
+26
+
+27
+
+28
+
+                                          Page 4
+                    PLAINTIFF'S OBJECTIONS TO MAGISTRATE JUDGE'S F&R
+                                      UNITED STATES DISTRICT COURT
+                                     EASTERN DISTRICT OF CALIFORNIA
+
+
+BRENDAN NGEHSI NEWANFORBI,
+                        Plaintiff,
+                                                                 Case Number: 2:25-cv-01460-DC-CSK
+v.
+
+STATE OF CALIFORNIA, et al.,
+                     Defendants.
+                                                                 CERTIFICATE OF SERVICE
+
+
+                                                          /
+
+
+
+
+I, Brendan Ngehsi Newanforbi, hereby certify that on April 21, 2026, I electronically served a true and correct
+copy of the foregoing PLAINTIFF’S OBJECTIONS TO MAGISTRATE JUDGE’S FINDINGS AND
+RECOMMENDATIONS (ECF No. 23) on Defendants’ counsel by email at the addresses shown below:
+
+
+Haiyang A. Li
+Deputy Attorney General
+Office of the Attorney General / Department of Justice
+300 South Spring Street, Suite 1702
+Los Angeles, CA 90013
+Haiyang.Li@doj.ca.gov
+
+
+Adriana Zagal
+Legal Secretary
+Adriana.Zagal@doj.ca.gov
+
+
+
+Dated: April 21, 2026
+
+
+                                                                 BRENDAN NGEHSI NEWANFORBI
+                                                                 Plaintiff, In Pro Per
+                                                                 1455 Cat Tail Drive
+                                                                 Stockton, CA 95204
+                                                                 (209) 801-4442
+                                                                 BNN.CDL@GMAIL.COM
+

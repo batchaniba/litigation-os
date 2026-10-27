@@ -1,0 +1,33 @@
+{
+  "defendants_label": "California Highway Patrol; G. Serrato, Captain and Commander CHP Dublin Area; DOES 1-10",
+  "serviceTracking": [
+    {
+      "name": "G. Serrato",
+      "title": "Captain and Commander",
+      "location": "CHP Dublin Area (Alameda)",
+      "served": true,
+      "dateServed": "June 30, 2026"
+    },
+    {
+      "name": "Gary Paul",
+      "title": "Lieutenant",
+      "location": "CHP Dublin Area (Alameda)",
+      "served": true,
+      "dateServed": "June 30, 2026"
+    },
+    {
+      "name": "Eric Dutra",
+      "title": "Sergeant",
+      "location": "CHP Dublin Area (Alameda)",
+      "served": true,
+      "dateServed": "June 30, 2026"
+    },
+    {
+      "name": "California Highway Patrol",
+      "title": "Organization",
+      "location": "CHP Sacramento (Sacramento)",
+      "served": true,
+      "dateServed": "June 3, 2026"
+    }
+  ]
+}

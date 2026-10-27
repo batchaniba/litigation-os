@@ -1,0 +1,621 @@
+     Case 2:25-cv-01460-DC-CSK              Document 12          Filed 12/10/25       Page 1 of 11
+
+
+ 1    ROB BONTA, State Bar No. 202668
+      Attorney General of California
+ 2    ELIZABETH S. ANGRES, State Bar No. 179523
+      Supervising Deputy Attorney General
+ 3    HAIYANG A. LI, State Bar No. 288063
+      Deputy Attorney General
+ 4     300 South Spring Street, Suite 1702
+       Los Angeles, CA 90013-1230
+ 5     Telephone: (213) 269-6404
+       Fax: (916) 731-2120
+ 6     E-mail: Haiyang.Li@doj.ca.gov
+      Attorneys for Defendants
+ 7    State of California, acting by and through the
+      California Highway Patrol, Santiago Meza-
+ 8    Gonzalez and Jose Melano
+
+ 9
+                                 IN THE UNITED STATES DISTRICT COURT
+10
+                              FOR THE EASTERN DISTRICT OF CALIFORNIA
+11
+
+12
+
+13
+
+14    BRENDAN NGEHSI NEWANFORBI,                               Case No. 2:25-cv-01460-DC-CSK
+
+15                                Plaintiff, DEFENDANTS’ NOTICE OF MOTION
+                                             AND MOTION TO DISMISS
+16              v.                           COMPLAINT WITH MOTION TO
+                                             STRIKE; MEMORANDUM OF POINTS
+17                                           AND AUTHORITIES
+      STATE OF CALIFORNIA; CALIFORNIA
+18    HIGHWAY PATROL; OFFICER                Date:         January 16, 2026
+      SANTIAGO MEZA-GONALEZ (#023295); Time:               1:30 p.m.
+19    OFFICER MELANO (#023054),              Courtroom: 10
+                                             Judge:        District Judge Dena Coggins
+20                              Defendants. Trial Date:    Not Set
+                                             Action Filed: May 27, 2025
+21
+
+22
+
+23          NOTICE IS HEREBY GIVEN that on January 16, 2026, at 1:30 p.m., in Courtroom 10 of
+
+24    the above-entitled Court, located at 501 “I” Street, Sacramento, California, Defendants State of
+
+25    California, Santiago Meza-Gonzalez and Jose Melano (collectively “Defendants”) will and
+
+26    hereby do move this Court for an order dismissing Plaintiff’s Complaint, with prejudice, on the
+
+27    following grounds:
+
+28
+                                                           1
+       Defendants’ Notice of Motion and Motion to Dismiss Complaint with Motion to Strike; Memorandum of Points and
+                                                                               Authorities (2:25-cv-01460-DC-CSK)
+     Case 2:25-cv-01460-DC-CSK                Document 12       Filed 12/10/25        Page 2 of 11
+
+
+ 1             1.     Pursuant to Federal Rule of Civil Procedure 12(b)(6) to dismiss all claims against
+
+ 2                    them on the grounds that Plaintiff fails to state a valid cause of action;
+
+ 3             2.     Defendants Meza-Gonzalez and Melano are entitled to Qualified Immunity in their
+
+ 4                    individual capacities and are therefore not liable for any of the causes of action
+
+ 5                    contained in Plaintiff’s Complaint;
+
+ 6             3.     Plaintiff’s official capacity claims against Defendants Meza-Gonzalez and Melano
+
+ 7                    and Monell liability claim against the State fail as a matter of law because the State is
+
+ 8                    not a “person” under 42 U.S.C. section 1983 and because such claims are barred by
+
+ 9                    the Eleventh Amendment;
+10             4.     Plaintiff’s prayer for punitive damages against the individual defendants and for
+
+11                    attorneys’ fees should be stricken as there are no facts to support an award of punitive
+
+12                    damages and Plaintiff is not entitled to attorneys’ fees under 42 U.S.C. section 1988
+
+13                    as a pro se litigant.
+
+14                  The parties did not meet and confer prior to filing this Motion as Plaintiff is proceeding
+
+15   pro se.
+
+16
+
+17    Dated: December 10, 2025                                  Respectfully submitted,
+18                                                              ROB BONTA
+                                                                Attorney General of California
+19                                                              ELIZABETH S. ANGRES
+                                                                Supervising Deputy Attorney General
+20
+
+21                                                              /s/Haiyang Allen Li
+22
+                                                                HAIYANG A. LI
+23                                                              Deputy Attorney General
+                                                                Attorneys for Defendants
+24                                                              State of California, acting by and through
+                                                                the California Highway Patrol, Santiago
+25                                                              Meza-Gonzalez and Jose Melano
+26
+
+27
+
+28
+                                                            2
+       Defendants’ Notice of Motion and Motion to Dismiss Complaint with Motion to Strike; Memorandum of Points and
+                                                                               Authorities (2:25-cv-01460-DC-CSK)
+     Case 2:25-cv-01460-DC-CSK              Document 12         Filed 12/10/25        Page 3 of 11
+
+
+ 1                          MEMORANDUM OF POINTS AND AUTHORITIES
+
+ 2    I.    INTRODUCTION
+
+ 3          This case involves a search of Plaintiff Brendan Newanforbi’s (“Plaintiff”) vehicle and the
+
+ 4    subsequent arrest of Plaintiff for driving under the influence (“DUI”). Plaintiff alleges that the
+
+ 5    CHP officers began a DUI investigation and arrested Plaintiff for driving under the influence after
+
+ 6    searching Plaintiff’s vehicle without probable cause or a warrant while Plaintiff was resting in his
+
+ 7    car on the on the side of Interstate 580 East. Plaintiff further alleges that the arrest triggered a
+
+ 8    parole violation hold and that he feared for his safety while in custody awaiting arraignment.
+
+ 9          Based upon the above, Plaintiff filed suit against Defendant State of California, by and
+
+10    through the California Highway Patrol (“Defendant CHP”), and CHP Officers Santiago Meza-
+
+11    Gonzalez (“Defendant Meza-Gonzalez”) and Jose Melano (“Defendant Melano”) (collectively
+
+12    “Defendants”). While the Complaint fails to specify which causes of actions are brought against
+
+13    which defendants, the Complaint states that Defendant Meza-Gonzalez and Defendant Melano
+
+14    are sued in both their individual and official capacities. The Complaint contains three causes of
+
+15    action all brought pursuant to 42 U.S.C. section 1983, alleging unreasonable search and seizure,
+
+16    violation of due process, and a Monell liability claim.
+
+17          This Motion to Dismiss with Motion to Strike is brought on behalf of all Defendants
+
+18    pursuant to Federal Rules of Civil Procedure 12(b)(6) and 12(f). Defendants Meza-Gonzalez and
+
+19    Melano should be granted qualified immunity for Plaintiff’s claims against them in their
+
+20    individual capacities as no constitutional violation occurred and/or the law is not clearly
+
+21    established regarding the particularized allegations in this case.
+
+22          Plaintiff’s official claims against Defendants Meza-Gonzalez and Melano and Monell
+
+23    liability claim against the State likewise fail as a matter of law because such claims are barred by
+
+24    the Eleventh Amendment and the State is not a “person” under 42 U.S.C. section 1983.
+
+25          Plaintiff’s prayer for punitive damages and attorneys’ fees should be stricken as the
+
+26    Complaint fails to allege any facts supporting an award of punitive damages and Plaintiff is not
+
+27    entitled to attorneys’ fees as a pro se litigant.
+
+28    ///
+                                                           3
+       Defendants’ Notice of Motion and Motion to Dismiss Complaint with Motion to Strike; Memorandum of Points and
+                                                                               Authorities (2:25-cv-01460-DC-CSK)
+     Case 2:25-cv-01460-DC-CSK              Document 12         Filed 12/10/25        Page 4 of 11
+
+
+ 1    II.   BACKGROUND FACTS
+
+ 2          According to the Complaint, in the early morning hours of November 1, 2024, Plaintiff was
+
+ 3    resting in a rental Tesla on the shoulder of Interstate 580 after feeling fatigued. (ECF No. 1
+
+ 4    Complaint, ¶ 10.) CHP Officers Meza-Gonzalez and Melano came up to Plaintiff’s vehicle and,
+
+ 5    upon observing a cup in the center console, stated: “I think it’s booze.” (Id. at ¶ 11.) The officers
+
+ 6    proceeded to order Plaintiff out of his vehicle, questioned Plaintiff, and subjected Plaintiff to field
+
+ 7    sobriety tests. (Id. at ¶ 14.) Plaintiff was then placed in handcuffs and transported for chemical
+
+ 8    testing under suspicion of DUI. (Id. at ¶ 17.) No charges were filed against Plaintiff, (Id. at ¶ 18)
+
+ 9    but the arrest triggered a parole hold and Plaintiff alleges that he feared for his safety while in
+
+10    custody awaiting arraignment. (Id. at ¶ 19.)
+
+11    III. A MOTION TO DISMISS IS APPROPRIATE
+
+12          A defendant may assert a defense that a complaint served upon him fails to state a claim
+
+13    upon which relief may be granted by way of a motion pursuant to Federal Rule of Civil Procedure
+
+14    12(b)(6). The purpose of a motion to dismiss under Rule 12(b)(6) is to test the legal sufficiency of
+
+15    the claims asserted in the complaint. Navarro v. Black, 250 F.3d 729, 732 (9th Cir. 2001).
+
+16    Although a complaint does not need to state detailed factual allegations, “a plaintiff’s obligation
+
+17    to provide the grounds of his ‘entitlement to relief’ requires more than labels and conclusions, and
+
+18    a formulaic recitation of the elements of a cause of action will not do.” Bell Atlantic Corp. v.
+
+19    Twombly, 550 U.S. 544, 555 (2007). A complaint that alleges “naked assertions” that are “devoid
+
+20    a further factual enhancement” will not suffice. Ashcroft v. Iqbal, 556 U.S. 662, 667 (2009).
+
+21    Although generally in reviewing a motion to dismiss the court must accept as true all allegations
+
+22    contained in the subject Complaint, “threadbare recitals of the elements of a cause of action,
+
+23    supported by mere conclusory statements, do not suffice.” Id. at 678.
+
+24    IV.   ARGUMENT
+
+25          A.     Defendants Meza-Gonzalez and Melano are Entitled to Qualified
+                   Immunity for Plaintiff’s Claims Against Them in Their Personal
+26                 Capacities.
+
+27          “Qualified immunity shields federal and state officials from money damages unless a
+
+28    plaintiff pleads facts showing (1) that the official violated a statutory or constitutional right, and
+                                                           4
+       Defendants’ Notice of Motion and Motion to Dismiss Complaint with Motion to Strike; Memorandum of Points and
+                                                                               Authorities (2:25-cv-01460-DC-CSK)
+     Case 2:25-cv-01460-DC-CSK              Document 12         Filed 12/10/25        Page 5 of 11
+
+
+ 1    (2) that the right was clearly established at the time of the challenged conduct.” Ashcroft v. al-
+
+ 2    Kidd, 563 U.S. 731, 735 (2011); accord Chavez v. Robinson, 12 F.4th 978, 995 (9th Cir. 2021).
+
+ 3                  1.    No constitutional violation exists under facts pled by the complaint.
+ 4          To establish a claim of unlawful search and seizure and violation of due process, Plaintiff
+
+ 5    must assert Defendants did not have probable cause to effectuate a search of Plaintiff’s vehicle
+
+ 6    and/or arrest Plaintiff. “[A] warrantless arrest [or search] by a law officer is reasonable under the
+
+ 7    Fourth Amendment where there is probable cause to believe that a criminal offense has been or is
+
+ 8    being committed.” Devenpeck v. Alford, 543 U.S. 146, 152 (2004) (citations omitted). Probable
+
+ 9    cause exists when a prudent person would have concluded there was a fair probability that the
+10    suspect had committed a crime, based on the totality of the circumstances known to the officer.
+
+11    Crowe v. County of San Diego, 608 F.3d 406, 434 (9th Cir. 2010). However, fair probability does
+
+12    not require “certainty or even a preponderance of the evidence.” United States v. Gourde, 440
+
+13    F.3d 1065, 1069 (9th Cir.2006). Whether probable cause existed on the facts known to the
+
+14    defendant is a question of law for the court. Roberts v. McAfee, Inc., 660 F.3d 1156, 1164 (9th
+
+15    Cir. 2011).
+
+16          California Vehicle Code section 23152(a) prohibits anyone from driving a vehicle while
+
+17    under the influence of alcohol. (Cal. Veh. Code § 23152(a)).
+
+18          The allegations in Plaintiff’s Complaint regarding the search of Plaintiff’s vehicle and
+
+19    Plaintiff’s subsequent arrest are as follows:
+20          1. Defendants Meza-Gonzalez and Melano encountered Plaintiff while he was “resting” in
+
+21    his vehicle on the side of Interstate 580 East at approximately 12:54 a.m. on November 1, 2024.
+
+22    (Complaint ¶ 10.)
+
+23          2. Defendants Meza-Gonzalez and Melano observed a cup in the center console of
+
+24    Plaintiff’s vehicle, and one officer remarked: “I think it’s booze.” (Complaint ¶ 11.)
+
+25          3. Plaintiff was subsequently ordered out of his vehicle, questioned, and subjected to field
+
+26    sobriety tests. (Complaint ¶ 14.)
+
+27    ///
+
+28    ///
+                                                           5
+       Defendants’ Notice of Motion and Motion to Dismiss Complaint with Motion to Strike; Memorandum of Points and
+                                                                               Authorities (2:25-cv-01460-DC-CSK)
+     Case 2:25-cv-01460-DC-CSK              Document 12         Filed 12/10/25        Page 6 of 11
+
+
+ 1          4. Defendants Meza-Gonzalez and Melano conducted an “invasive” search of Plaintiff’s
+
+ 2    vehicle, which included reaching into cupholders, examining the central console area, and
+
+ 3    scanning the footwells and floorboards of the vehicle. (Complaint ¶ 15.)
+
+ 4          5. Plaintiff was placed in handcuffs and transported for chemical testing under suspicion of
+
+ 5    DUI and was read “chemical test advisements” as part of his arrest (Complaint ¶ ¶ 17, 18.)
+
+ 6          Probable cause existed to search Plaintiff’s vehicle and arrest Plaintiff on suspicion of DUI
+
+ 7    based upon the totality of circumstances as shown by the facts alleged in the Complaint. The
+
+ 8    Complaint alleges that the investigatory stop began when Defendants Meza-Gonzalez and Melano
+
+ 9    stated that they saw a cup of what they believed to be alcohol in Plaintiff’s vehicle. (Complaint ¶
+10    11.) Defendants therefore had probable cause to believe that Plaintiff was in violation of
+
+11    California Vehicle Code section 23223, which prohibits possessing an open container of alcohol
+
+12    in a vehicle on a highway. (Cal. Veh. Code § 23223). Furthermore, Plaintiff was arrested for
+
+13    chemical testing only after Defendants conducted field sobriety tests and after Plaintiff
+
+14    (presumably) refused a breathalyzer test. (Complaint ¶ ¶ 17, 18.)
+
+15          While Plaintiff’s Complaint repeatedly denies that any signs of intoxication or evidence of
+
+16    a crime were found (Complaint ¶¶ 15, 16), these allegations are conclusory statements presented
+
+17    without factual support and are not entitled to the presumption of truth. Iqbal, 556 U.S. at 678.
+
+18    Notably, Plaintiff does not allege how he could have evaluated the results of his field sobriety
+
+19    tests or known whether he displayed certain signs of intoxication, such as bloodshot eyes, which
+20    would only be apparent to another observer.
+
+21          For the reasons stated above, probable cause existed for both Plaintiff’s arrest and the
+
+22    search of his vehicle. Therefore, Defendants Meza-Gonzalez and Melano are entitled to qualified
+
+23    immunity on all of Plaintiff’s causes of action against them in their individual capacities.
+
+24                 2.     No “clearly established” law exists to place defendants on notice that
+                          probable cause did not exist in the circumstances as pled in the
+25                        complaint.
+26          Assuming, arguendo, that no probable cause existed to support the search of Plaintiff’s
+
+27    vehicle and/or for Plaintiff’s arrest, Defendants Gonzalez and Melano would still be entitled to
+
+28
+                                                           6
+       Defendants’ Notice of Motion and Motion to Dismiss Complaint with Motion to Strike; Memorandum of Points and
+                                                                               Authorities (2:25-cv-01460-DC-CSK)
+     Case 2:25-cv-01460-DC-CSK              Document 12         Filed 12/10/25        Page 7 of 11
+
+
+ 1    qualified immunity as it was not “clearly established” that probable cause to search and arrest did
+
+ 2    not exist in the circumstances as pled by the Complaint.
+
+ 3          Qualified immunity, as it relates to arrests, is afforded to officers if they had probable cause
+
+ 4    to make the arrest, or if the officers reasonably believed they had probable cause to make the
+
+ 5    arrest. Rosenbaum v. Washoe County, 663, F.3d 1071, 1076 (9th Cir. 2011). This applies to
+
+ 6    knowledge at the time, and not whether or not an independent prosecutor declined to press
+
+ 7    charges, or the plaintiff was found innocent. Id. An officer’s decision to search or arrest is
+
+ 8    protected by qualified immunity unless “all reasonable officers would agree that there was no
+
+ 9    probable cause in this instance.” Johnson v. Barr 79 F.4th 996, 1005 (9th Cir. 2023).
+10          “While there does not have to be ‘a case directly on point,’ existing precedent must place
+
+11    the lawfulness of the particular arrest or search ‘beyond debate.’” District of Columbia v. Wesby,
+
+12    583 U.S. 48, 64 (2018) (quoting al-Kidd, 563 U.S. at 741). “The plaintiff bears the burden of
+
+13    proof that the right allegedly violated was clearly established at the time of the alleged
+
+14    misconduct.” Romero v. Kitsap Cty., 931 F.2d 624, 627 (9th Cir. 1991)).
+
+15          Here, there is no “clearly established” law that should have put Defendants Meza-Gonzalez
+
+16    and Melano on notice that all reasonable officers would believe that probable cause did not exist
+
+17    in the circumstances as pled in the Complaint. To the contrary, it is clearly established that
+
+18    probable cause exists when “a prudent person would have concluded there was a fair probability
+
+19    that the suspect had committed a crime, based on the totality of the circumstances known to the
+20    officer.” Crowe v. County of San Diego, 608 F.3d 406, 434 (9th Cir. 2010). Here, Plaintiff’s
+
+21    conclusory allegation that “no evidence of intoxication was found” notwithstanding, there is no
+
+22    “clearly established law” holding that probable cause for a vehicle search and/or arrest does not
+
+23    exist after Defendants Meza-Gonzalez and Melano found Plaintiff “resting” in his vehicle on the
+
+24    side of the freeway (Complaint ¶ 10), saw what appeared to be alcohol in the vehicle (Complaint
+
+25    ¶ 11), conducted field sobriety tests on Plaintiff (Complaint ¶ 14), and Plaintiff refused chemical
+
+26    testing (Complaint ¶ ¶ 17, 18).
+
+27    ///
+
+28    ///
+                                                           7
+       Defendants’ Notice of Motion and Motion to Dismiss Complaint with Motion to Strike; Memorandum of Points and
+                                                                               Authorities (2:25-cv-01460-DC-CSK)
+     Case 2:25-cv-01460-DC-CSK              Document 12         Filed 12/10/25        Page 8 of 11
+
+
+ 1            B.    Plaintiff’s Monell Claim Against the State and Official Capacity Claims
+                    Against Defendants Meza-Gonzales and Melano Fail as a Matter of Law
+ 2                  Due to Eleventh Amendment Sovereign Immunity and Because the State is
+                    Not a Person Under Section 1983.
+ 3
+
+ 4            The Complaint brings a Monell liability claim against the State and brings claims against
+
+ 5    Defendants Meza-Gonzalez and Melano in their official capacities. (Complaint ¶¶ 7, 8, 24, 25.)
+
+ 6    Plaintiff’s official capacity claims and Monell claim against the State are barred by the Eleventh
+
+ 7    Amendment and neither the State nor individuals sued in their official capacity qualify as
+
+ 8    “persons” under 42 U.S.C. section 1983.
+
+ 9            A damages action against a state official in his or her official capacity is treated like a suit
+
+10    against the State itself. Hartmann v. California Dep't of Corr. & Rehab., 707 F.3d 1114, 1127
+
+11    (9th Cir. 2013). That means absent consent from the State, “Eleventh Amendment immunity...
+
+12    shields state officials from official capacity suits.” Krainski v. Nevada ex rel. Bd. of Regents of
+
+13    Nevada Sys. of Higher Educ., 616 F.3d 963, 967 (9th Cir. 2010). Although a narrow exception
+
+14    exists for prospective relief under the Ex Parte Young doctrine, Plaintiff seeks no prospective
+
+15    relief here (see Complaint Prayer for Relief). Because the State has not consented to this damages
+
+16    action, Eleventh Amendment sovereign immunity bars all claims against Defendants Meza-
+
+17    Gonzalez and Melano in their official capacity, as well as Plaintiff’s Monell liability claim against
+
+18    the State.
+
+19            Moreover, Plaintiff cannot sue the State or Defendants Meza-Gonzalez and Melano in their
+
+20    official capacity because the State is not a “person” under Section 1983 and the Complaint
+
+21    contains no claims for injunctive relief. As the Supreme Court explained in Will v. Michigan
+
+22    Dep't of State Police, 491 U.S. 58, 65 (1989), a “State is not a ‘person’ within the meaning of §
+
+23    1983 ...[.]” Because “a suit against a state official in his or her official capacity is” essentially “a
+
+24    suit against the State itself,” “officials acting in their official capacities are [not] ‘persons’ under §
+
+25    1983” and thus cannot be sued under Section 1983. Id. at 71. For these reasons, Plaintiff’s claims
+
+26    against Defendants Meza-Gonzalez and Melano in their official capacity and Plaintiff’s Monell
+
+27    liability claim against the State in this damages-only action are not cognizable under Section
+
+28    1983.
+                                                           8
+       Defendants’ Notice of Motion and Motion to Dismiss Complaint with Motion to Strike; Memorandum of Points and
+                                                                               Authorities (2:25-cv-01460-DC-CSK)
+     Case 2:25-cv-01460-DC-CSK              Document 12         Filed 12/10/25        Page 9 of 11
+
+
+ 1          C.     Plaintiff’s Prayer for Attorneys’ Fees and for Punitive Damages Should Be
+                   Stricken.
+ 2
+
+ 3                 1.     Plaintiff has not alleged facts supporting punitive damages.
+
+ 4          Plaintiff's request for punitive damages should be stricken because Plaintiff has not alleged
+
+ 5    any facts giving rise to punitive damages. A Motion to Strike “may be used to strike any part of
+
+ 6    the Prayer for Relief when the damages sought are not recoverable as a matter of law.” Bureerong
+
+ 7    v. Uvawas, 922 F.Supp. 1450, 1479 n. 34 (CD. Cal. 1996); Wilkerson v. Butler, 229 F.R.D. 166,
+
+ 8    172 (E.D. Cal. 2005) (stating that “a motion to strike is appropriate to address requested relief,
+
+ 9    such as punitive damages, which is not recoverable as a matter of law.”).
+
+10          A jury can assess punitive damages in a federal Section 1983 action “when the defendant’s
+
+11    conduct is shown to be motivated by evil motive or intent, or when it involves reckless or callous
+
+12    indifference to the federally protected rights of others.” Smith v. Wade, 461 U.S. 30, 56 (1983).
+
+13    Here, Plaintiff's Complaint is devoid of any allegations that may support an award of punitive
+
+14    damages. Accordingly, Plaintiff's prayer for punitive damages found in Prayer for Relief #2 of
+
+15    the Complaint should be stricken.
+
+16          D.     Plaintiff is not entitled to attorneys’ fees as a pro se litigant.
+
+17          Plaintiff seeks attorneys’ fees as part of his Prayer for Relief. (Complaint Prayer for Relief
+
+18    #3.) While 42 U.S.C. § 1988 allows for attorney's fees for plaintiffs who prevail in Section 1983
+
+19    actions, an award of attorneys’ fees is not available to pro se litigants. See Kay v. Ehrler, 499 U.S.
+
+20    432, 438 (1991). Accordingly, Plaintiff's prayer for attorneys’ fees found in Prayer for Relief #3
+
+21    of the Complaint should be stricken.
+
+22    V.    CONCLUSION
+
+23          For the foregoing reasons, Defendants respectfully request that the Court dismiss all claims
+
+24    within Plaintiff’s Complaint with prejudice and strike Plaintiff’s prayer for punitive damages and
+
+25    attorneys’ fees from the Complaint.
+
+26    ///
+
+27    ///
+
+28    ///
+                                                           9
+       Defendants’ Notice of Motion and Motion to Dismiss Complaint with Motion to Strike; Memorandum of Points and
+                                                                               Authorities (2:25-cv-01460-DC-CSK)
+     Case 2:25-cv-01460-DC-CSK             Document 12          Filed 12/10/25       Page 10 of 11
+
+
+ 1     Dated: December 10, 2025                                 Respectfully submitted,
+
+ 2                                                              ROB BONTA
+                                                                Attorney General of California
+ 3                                                              ELIZABETH S. ANGRES
+                                                                Supervising Deputy Attorney General
+ 4
+
+ 5                                                              /s/ Haiyang Allen Li
+
+ 6
+                                                                HAIYANG A. LI
+ 7                                                              Deputy Attorney General
+                                                                Attorneys for Defendants
+ 8                                                              State of California, acting by and through
+                                                                the California Highway Patrol, Santiago
+ 9                                                              Meza-Gonzalez and Jose Melano
+10     SA2025605036
+       68121580.docx
+11
+
+12
+
+13
+
+14
+
+15
+
+16
+
+17
+
+18
+
+19
+20
+
+21
+
+22
+
+23
+
+24
+
+25
+
+26
+
+27
+
+28
+                                                           10
+       Defendants’ Notice of Motion and Motion to Dismiss Complaint with Motion to Strike; Memorandum of Points and
+                                                                               Authorities (2:25-cv-01460-DC-CSK)
+    Case 2:25-cv-01460-DC-CSK            Document 12        Filed 12/10/25       Page 11 of 11
+
+
+
+                                CERTIFICATE OF SERVICE
+Case Name:       Brendan N. Newanforbi v. State           No.    2:25-cv-01460-DC-CSK
+                 of California, et al.
+
+I hereby certify that on December 10, 2025, I electronically filed the following documents with
+the Clerk of the Court by using the CM/ECF system:
+DEFENDANTS’ NOTICE OF MOTION AND MOTION TO DISMISS COMPLAINT
+WITH MOTION TO STRIKE; MEMORANDUM OF POINTS AND AUTHORITIES
+I certify that all participants in the case are registered CM/ECF users and that service will be
+accomplished by the CM/ECF system.
+I declare under penalty of perjury under the laws of the State of California and the United States
+of America the foregoing is true and correct and that this declaration was executed on December
+10, 2025, at Los Angeles, California.
+
+
+                Adriana Zagal
+                 Declarant                                           Signature
+
+SA2025605036
+68121600.docx
+

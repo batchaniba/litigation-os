@@ -1,0 +1,1159 @@
+Case 4:26-cv-08271-ASK        Document 22         Filed 10/26/26         Page 1 of 19         PageID #:
+                                                164
+
+
+ 1   ROB BONTA
+     Attorney General of California
+ 2   ELIZABETH S. ANGRES
+     Supervising Deputy Attorney General
+ 3   HAIYANG A. LI
+     Deputy Attorney General
+ 4   State Bar No. 288063
+      300 South Spring Street, Suite 1702
+ 5    Los Angeles, CA 90013-1230
+      Telephone: (213) 269-6404
+ 6    Fax: (916) 731-2120
+      E-mail: Haiyang.Li@doj.ca.gov
+ 7   Attorney for Defendants
+     Santiago Meza-Gonzalez and Jose Melano
+ 8
+                              IN THE UNITED STATES DISTRICT COURT
+ 9
+                          FOR THE NORTHERN DISTRICT OF CALIFORNIA
+10
+
+11
+
+12
+
+13   BRENDAN NGWA NFORBI,                                  3:26-cv-08271-ASK
+
+14                                 Plaintiff, DEFENDANTS SANTIAGO MEZA-
+                                              GONZALEZ AND JOSE MELANO’S
+15              v.                            NOTICE OF MOTION AND MOTION TO
+                                              DISMISS PLAINTIFF’S FIRST AMENDED
+16                                            COMPLAINT AND MOTION TO STRIKE
+     SANTIAGO MEZA-GONZALEZ (CHP              PORTIONS OF THE FIRST AMENDED
+17   BADGE #023295), IN HIS INDIVIDUAL        COMPLAINT; MEMORANDUM OF
+     CAPACITY); JOSE MELANO (CHP              POINTS AND AUTHORITIES IN SUPPORT
+18   BADE #023054), IN HIS INDIVIDUAL         THEREOF
+     CAPACITY; AND DOES 1 THROUGH 10,
+19   INCLUSIVE,                               Date:        December 9, 2026
+                                              Time:        1:30 p.m.
+20                               Defendants. Courtroom: 4
+                                              Judge:       The Honorable. Ajay S.
+21                                                         Krishnan
+                                              Trial Date: Not Set
+22                                            Action Filed: August 10, 2026
+
+23
+
+24
+
+25
+
+26
+
+27
+
+28
+
+           Motion to Dismiss Plaintiff’s First Amended Complaint and Motion to Strike Portions of the First Amended
+                                                                                  Complaint (3:26-cv-08271-ASK)
+Case 4:26-cv-08271-ASK                   Document 22               Filed 10/26/26                 Page 2 of 19                PageID #:
+                                                                 165
+
+
+ 1                                                       TABLE OF CONTENTS
+ 2                                                                                                                                             Page
+ 3   Memorandum of Points and Authorities ......................................................................................... 2
+           I.        Introduction ............................................................................................................. 2
+ 4
+     Summary of Argument .................................................................................................................... 2
+ 5   Background and Applicable Law .................................................................................................... 4
+ 6         I.        Background Facts .................................................................................................... 4
+           II.       A Motion to Dismiss is Appropriate ....................................................................... 5
+ 7
+     Argument ........................................................................................................................................ 5
+ 8         I.        The FAC Fails to State a Valid Claim for Judicial Deception ................................ 5
+ 9         II.       The FAC Fails to State a Valid Claim for Fabrication of Evidence on the
+                     Additional Ground that Plaintiff Was Never Charged with Any Crime. ................ 7
+10         III.      Plaintiff’s Claim for Warrantless Entry of His Vehicle Fails as Defendants
+                     Had Reasonable Ground to Believe that Exigent Circumstances Existed
+11                   and/or That Plaintiff Had Committed a Crime........................................................ 7
+12                   A.          It is reasonable to assume that Plaintiff needed emergency
+                                 assistance upon finding Plaintiff unconscious in the driver’s seat of
+13                               his vehicle at the beginning of the encounter. ............................................. 7
+                     B.          It is reasonable to assume that Plaintiff committed a crime upon
+14                               seeing a cup of what appeared to be alcohol with Plaintiff while
+                                 Plaintiff’s vehicle was illegally parked on the side of the freeway............. 8
+15
+           IV.       Plaintiff’s Claim Related to the Search of His Vehicle and His Subsequent
+16                   Arrest Fail as There Existed Probably Cause Under the Facts as Alleged in
+                     the FAC ................................................................................................................... 9
+17         V.        Plaintiff’s FAC Fails to Allege Sufficient Facts to Show Plausible “But-
+                     For” Causation Necessary for a Valid Claim of Retaliation. ................................ 11
+18
+           VI.       Defendants Are Entitled to Qualified Immunity on Each of Plaintiff’s
+19                   Causes of Action. .................................................................................................. 12
+           VII. Leave to Amend Should be Denied as Futile ........................................................ 13
+20
+           VIII. Plaintiff’s Prayer for Attorney’s Fees and for Punitive Damages Should be
+21                   Stricken or Dismissed ........................................................................................... 14
+                     A.          Plaintiff has alleged no well-pled facts which supports punitive
+22                               damages against either Defendant ............................................................. 14
+23                               1.          Plaintiff is not entitled to attorneys; fees as a pro se litigant ........ 15
+     Conclusion .................................................................................................................................... 15
+24
+
+25
+
+26
+
+27
+
+28
+                                                                              i
+                Motion to Dismiss Plaintiff’s First Amended Complaint and Motion to Strike Portions of the First Amended
+                                                                                       Complaint (3:26-cv-08271-ASK)
+Case 4:26-cv-08271-ASK                   Document 22               Filed 10/26/26                 Page 3 of 19                PageID #:
+                                                                 166
+
+
+ 1                                                     TABLE OF AUTHORITIES
+ 2                                                                                                                                              Page
+ 3   CASES
+ 4   Ashcroft v. Iqbal
+        556 U.S. 662 (2009) .................................................................................................. 5, 6, 10, 12
+ 5
+
+ 6   Bell Atlantic Corp. v. Twombly
+         550 U.S. 544 (2007) .................................................................................................................. 5
+ 7
+     Navarro v. Black
+ 8      250 F.3d 729 (9th Cir. 2001)..................................................................................................... 5
+
+ 9   STATUTES
+10   United States Code Title 42
+        § 1983 .............................................................................................................................. 2, 7, 15
+11
+        § 1988 ...................................................................................................................................... 15
+12
+     California Vehicle Code
+13      § 21718 ...................................................................................................................................... 8
+        § 23152(a) ................................................................................................................................. 8
+14
+     CONSTITUTIONAL PROVISIONS
+15
+     United States Constitution
+16      First Amendment ..................................................................................................................... 11
+17      Fourth Amendment ............................................................................................................... 8, 9
+        Fourteenth Amendment ............................................................................................................. 7
+18
+     COURT RULES
+19
+     Federal Rules of Civil Procedure
+20      Rule 12(b)(6) ............................................................................................................................. 5
+        Rule 12(f) .................................................................................................................................. 2
+21
+
+22
+
+23
+
+24
+
+25
+
+26
+
+27
+
+28
+                                                                             ii
+                Motion to Dismiss Plaintiff’s First Amended Complaint and Motion to Strike Portions of the First Amended
+                                                                                       Complaint (3:26-cv-08271-ASK)
+Case 4:26-cv-08271-ASK           Document 22         Filed 10/26/26         Page 4 of 19        PageID #:
+                                                   167
+
+
+ 1          NOTICE IS HEREBY GIVEN that on December 9, 2026, at 1:30 p.m., in the above-
+
+ 2   entitled Court, located at 1301 Clay Street, Oakland, California, Defendants Santiago Meza
+
+ 3   Gonzalez and Jose Melano, (“Defendant Meza-Gonzalez,” Defendant Melano,” and collectively
+
+ 4   “Defendants”) will and hereby do move this Court for an order dismissing Plaintiff’s First
+
+ 5   Amended Complaint, (“FAC”) with prejudice, and striking portions of the FAC pursuant to
+
+ 6   Federal Rule of Civil Procedure 12(b)(6) and 12(f) on the following grounds:
+
+ 7           1.    Pursuant to Federal Rule of Civil Procedure 12(b)(6) as each of Plaintiff’s claims
+
+ 8                 within the FAC fails to state sufficient facts for a valid cause of action against
+
+ 9                 Defendants;
+
+10           2.    Defendants are entitled to qualified immunity and are therefore not liable for any of
+
+11                 the causes of action contained in the FAC
+
+12           3.    Plaintiff’s prayer for punitive damages and attorneys’ fees should be stricken as there
+
+13                 are no well-pled facts to support an award of punitive damages and Plaintiff is not
+
+14                 entitled to attorneys’ fees under 42 U.S.C. section 1988 as a pro se litigant.
+
+15          This Motion is based upon this Notice, the supporting Memorandum of Points and
+
+16   Authorities, the records and papers on file herein, and on such further oral and documentary
+
+17   evidence as may be presented at the hearing of this Motion.
+
+18   Dated: October 26, 2026                                       Respectfully submitted,
+19                                                                 ROB BONTA
+                                                                   Attorney General of California
+20                                                                 ELIZABETH S. ANGRES
+                                                                   Supervising Deputy Attorney General
+21
+
+22
+                                                                   /s/ Haiyang A. Li
+23
+                                                                   HAIYANG A. LI
+24                                                                 Deputy Attorney General
+                                                                   Attorney for Defendants
+25                                                                 Santiago Meza-Gonzalez and Jose Melano
+     SF2026603537
+26   Newanforbi - Motion to Dismiss (final with tables).docx
+
+27
+
+28
+                                                               1
+             Motion to Dismiss Plaintiff’s First Amended Complaint and Motion to Strike Portions of the First Amended
+                                                                                    Complaint (3:26-cv-08271-ASK)
+Case 4:26-cv-08271-ASK         Document 22         Filed 10/26/26         Page 5 of 19         PageID #:
+                                                 168
+
+
+ 1                        MEMORANDUM OF POINTS AND AUTHORITIES
+
+ 2   I.    INTRODUCTION
+
+ 3         This action arises from a search of Plaintiff Brendan Nforbi’s (“Plaintiff”) vehicle and
+
+ 4   Plaintiff’s subsequent arrest for driving under the influence (“DUI”) on November 1, 2024.
+
+ 5   California Highway Patrol (“CHP”) Officers Santiago Meza-Gonzalez (“Defendant Meza-
+
+ 6   Gonzalez”) and Jose Melano (“Defendant Melano”) (collectively “Defendants”) first noticed
+
+ 7   Plaintiff’s vehicle stopped on the side of the Interstate 580 and stopped to check if needed
+
+ 8   assistance. Upon seeing Plaintiff unconscious in the driver’s seat, Defendants opened the
+
+ 9   passenger side door and found Plaintiff was asleep but also noticed a strong smell of alcohol.
+
+10   Defendants began a DUI investigation and administered field sobriety tests before arresting
+
+11   Plaintiff on suspicion of DUI.
+
+12         Based upon the above, Plaintiff alleges that Defendants searched his vehicle and arrested
+
+13   him without probable cause or a warrant and falsified statements to obtain a search warrant to
+
+14   compel Plaintiff to submit to a blood draw. Although no criminal charges were filed, Plaintiff
+
+15   alleges that the arrest caused Plaintiff to be confined in Santa Rita Jail “under a parole hold” and
+
+16   led to a one-year suspension of Plaintiff’s commercial driver’s license, among other damages.
+
+17   (ECF No. 5, FAC, ¶ 36 p.11.)
+
+18                                      SUMMARY OF ARGUMENT
+
+19         Plaintiff filed suit against Defendants in their individual capacities alleging various causes
+
+20   of action under 42 U.S.C. section 1983. Defendants seek the dismissal of the entire FAC with
+
+21   prejudice. This Motion to Dismiss with Motion to Strike is brought on behalf of all Defendants
+
+22   pursuant to Federal Rules of Civil Procedure 12(b)(6) and 12(f) on the following grounds:
+
+23         1.    Plaintiff’s first cause of action for Judicial Deception against Defendant Meza-
+
+24   Gonzalez only fails as the inconsistencies between the video footage of the incident and
+
+25   Defendant Meza-Gonzalez’s sworn statement alleged within the FAC do not plausibly show that
+
+26   Defendant Meza-Gonzalez “made deliberately false statements or recklessly disregarded the
+
+27   truth” when applying for a warrant, nor does the FAC plausibly establish that the alleged
+
+28
+                                                          2
+            Motion to Dismiss Plaintiff’s First Amended Complaint and Motion to Strike Portions of the First Amended
+                                                                                   Complaint (3:26-cv-08271-ASK)
+Case 4:26-cv-08271-ASK            Document 22         Filed 10/26/26         Page 6 of 19         PageID #:
+                                                    169
+
+
+ 1   inconsistencies were “material” to the finding of probable cause. Galbraith v. Cnty. of Santa
+
+ 2   Clara, 307 F.3d 1119, 1126 (9th Cir. 2002).
+
+ 3            2.   Plaintiff’s second cause of action for Fabrication of Evidence against Defendant
+
+ 4   Meza-Gonzalez only fails as the alleged inconsistencies in the FAC do not plausibly show that
+
+ 5   Defendant Meza-Gonzalez knowingly fabricated evidence. Moreover, the FAC admits that no
+
+ 6   criminal charges were brought against Plaintiff due to this incident. (ECF No. 5, FAC, ¶ 34
+
+ 7   p.10.)
+
+ 8            3.   Plaintiff’s third cause of action for Unlawful Arrest and Detention against both
+
+ 9   Defendants fails as there existed probable cause for arrest under the facts as pled within the FAC.
+
+10            4.   Plaintiff’s fourth cause of action for Warrantless Entry fails as there existed exigent
+
+11   circumstances to open the door of Plaintiff’s vehicle without his consent, i.e., it was reasonable
+
+12   for Defendants to believe that Plaintiff may be in need of emergency medical assistance when
+
+13   they found Plaintiff unconscious or “asleep” in his vehicle on the side of the freeway. (See e.g.
+
+14   ECF No. 5, FAC, ¶ 1, p.2.) Furthermore, Defendants had probable cause for a search of
+
+15   Plaintiff’s vehicle based upon the totality of the circumstances.
+
+16            5.   Plaintiff’s fifth cause of action for Unlawful Search fails as there existed probable
+
+17   cause to search Plaintiff’s vehicle under the facts as alleged in the FAC.
+
+18            6.   Plaintiff’s sixth cause of action for Retaliation fails as the FAC fails to show that
+
+19   retaliatory animus was a “but-for” cause of Plaintiff’s arrest. Bostock v. Clayton Cnty., 590 U.S.
+
+20   644, 656 (2020).
+
+21            7.   Defendants are entitled to qualified immunity for Plaintiff’s claims against them as no
+
+22   constitutional violation occurred and/or Defendants violated no clearly established law that
+
+23   applies to the particularized allegations in this case. Pearson v. Callahan, 555 U.S. 223, 231
+
+24   (2009).
+
+25            8.   Plaintiff’s prayer for punitive damages and attorneys’ fees should be stricken as the
+
+26   Complaint fails to allege any well-pled facts supporting an award of punitive damages and
+
+27   Plaintiff is not entitled to attorneys’ fees as a pro se litigant.
+
+28
+                                                             3
+               Motion to Dismiss Plaintiff’s First Amended Complaint and Motion to Strike Portions of the First Amended
+                                                                                      Complaint (3:26-cv-08271-ASK)
+Case 4:26-cv-08271-ASK          Document 22         Filed 10/26/26         Page 7 of 19         PageID #:
+                                                  170
+
+
+ 1          9.    Leave to amend should not be granted as this is Plaintiff’s third lawsuit against
+
+ 2   Defendants with substantively similar claims and the fourth lawsuit against CHP arising out of
+
+ 3   Plaintiff’s November 1, 2024, arrest.
+
+ 4                               BACKGROUND AND APPLICABLE LAW
+ 5   I.     BACKGROUND FACTS
+ 6          According to the FAC, on November 1, 2024, Plaintiff was asleep in his vehicle while
+
+ 7   parked on the shoulder of Interstate 580 when Defendants opened his vehicle’s door without his
+
+ 8   consent or a warrant. (ECF No. 5 FAC ¶ 1, p.2:5.) Defendants then began a DUI investigation,
+
+ 9   claiming that there was a “strong distinct odor of an alcoholic beverage” coming from Plaintiff,
+
+10   although neither Defendant vocalized this finding on the video that captured the incident. (Id. at ¶
+
+11   2, p.2:16-17.) According to Plaintiff, Defendants did not terminate their investigation after
+
+12   Defendant Melano identified the only liquid found in Plaintiff’s vehicle as urine (Id. at ¶ 17, pp.
+
+13   5:25-6:9.) Defendant Meza-Gonzalez subsequently indicated incorrectly that there were
+
+14   beverages in Plaintiff’s vehicle on his statement regarding Plaintiff’s arrest. (Id. at ¶ 26, p. 8:13-
+
+15   15.)
+
+16          As part of their DUI investigation, Defendants ordered Plaintiff out of his vehicle and
+
+17   administrated some field sobriety tests but not others because of “uneven ground.” (Id. at ¶ 19,
+
+18   p.6:14-17.) Defendants noted that Plaintiff’s speech was slurred and that he appeared “very
+
+19   confused and disorientated.” (Id. at ¶ 2, p. 2:20.) Plaintiff alleges that video footage of his arrest
+
+20   shows that Plaintiff was able to correctly identify his location and engage in coherent
+
+21   conversation with Defendants. (Id.) Plaintiff refused to take a preliminary alcohol screening test
+
+22   and was subsequently arrested on suspicion of DUI. (Id. at ¶¶ 23 and 24, p.7:9-13.)
+
+23          Following his arrest, Plaintiff was compelled to submit to a blood draw based upon sworn
+
+24   statements by Defendant Meza-Gonzalez. (Id. at ¶ 29, p.9:3-5.) Plaintiff was placed on a parole
+
+25   hold due to his arrest, but ultimately no charges were filed, and Plaintiff received a certificate
+
+26   classifying the encounter as a detention rather than an arrest from the CHP. (Id. at ¶¶ 31. 32,
+
+27   pp.9:20-10:3.)
+
+28
+                                                           4
+             Motion to Dismiss Plaintiff’s First Amended Complaint and Motion to Strike Portions of the First Amended
+                                                                                    Complaint (3:26-cv-08271-ASK)
+Case 4:26-cv-08271-ASK          Document 22         Filed 10/26/26         Page 8 of 19         PageID #:
+                                                  171
+
+
+ 1   II.   A MOTION TO DISMISS IS APPROPRIATE
+
+ 2         A defendant may assert a defense that a complaint served upon him fails to state a claim
+
+ 3   upon which relief may be granted by way of a motion pursuant to Federal Rule of Civil Procedure
+
+ 4   12(b)(6). The purpose of a motion to dismiss under Rule 12(b)(6) is to test the legal sufficiency of
+
+ 5   the claims asserted in the complaint. Navarro v. Black, 250 F.3d 729, 732 (9th Cir. 2001).
+
+ 6   Although a complaint does not need to state detailed factual allegations, “a plaintiff’s obligation
+
+ 7   to provide the grounds of his ‘entitlement to relief’ requires more than labels and conclusions, and
+
+ 8   a formulaic recitation of the elements of a cause of action will not do.” Bell Atlantic Corp. v.
+
+ 9   Twombly, 550 U.S. 544, 555 (2007). A complaint that alleges “naked assertions” that are “devoid
+
+10   a further factual enhancement” will not suffice. Ashcroft v. Iqbal, 556 U.S. 662, 667 (2009).
+
+11   Although generally in reviewing a motion to dismiss the court must accept as true all allegations
+
+12   contained in the subject Complaint, “threadbare recitals of the elements of a cause of action,
+
+13   supported by mere conclusory statements, do not suffice.” Id. at 678.
+
+14                                                  ARGUMENT
+
+15   I.    THE FAC FAILS TO STATE A VALID CLAIM FOR JUDICIAL DECEPTION
+
+16         To state a claim for judicial deception, a plaintiff must show that the investigator “made
+
+17   deliberately false statements or recklessly disregarded the truth in the affidavit” and that the
+
+18   falsifications were “material” to the finding of probable cause. Galbraith v. Cnty. of Santa Clara,
+
+19   307 F.3d 1119, 1126 (9th Cir. 2002). A plaintiff must allege, and ultimately establish, that
+
+20   “without the dishonestly included or omitted information, the magistrate would not have issued
+
+21   the warrant. Thus, the plaintiff must establish that the remaining information in the affidavit is
+
+22   insufficient to support probable cause. Hervey v. Estes, 65 F.3d 784, 789 (9th Cir. 1995), as
+
+23   amended on denial of reh'g (Dec. 5, 1995).
+
+24               Plaintiff alleges there are four inconsistencies between the video of the incident and
+
+25   the contents of Defendant Meza-Gonzalez’s report as the basis for his claim of judicial deception.
+
+26   Despite Plaintiff’s unsupported assertions to the contrary, none of the factual allegations within
+
+27   the FAC plausibly allege that Defendant Meza-Gonzalez deliberately made false statements to the
+
+28   magistrate judge.
+                                                           5
+             Motion to Dismiss Plaintiff’s First Amended Complaint and Motion to Strike Portions of the First Amended
+                                                                                    Complaint (3:26-cv-08271-ASK)
+Case 4:26-cv-08271-ASK          Document 22         Filed 10/26/26         Page 9 of 19         PageID #:
+                                                  172
+
+
+ 1               Plaintiff alleges that Defendant Meza-Gonzalez states in his arrest report that he
+
+ 2   detected “strong distinct odor of an alcoholic beverage" from Plaintiff but neither Defendants
+
+ 3   ever verbalized “any observation of an alcohol odor at any point” on video. (See ECF No. 5,
+
+ 4   FAC, ¶ 26, p.7:8.) The simple explanation for this alleged inconsistency is that there was no need
+
+ 5   to declare the existence of the odor of alcohol aloud. Another possibility is that Defendants’
+
+ 6   statements regarding the odor of alcohol were not captured on video. The FAC cannot state a
+
+ 7   claim based upon implication or speculation alone, especially when equally or more likely
+
+ 8   innocent explanations exist. See Ashcroft v. Iqbal, 556 U.S. 662, 667 (2009)(holding where a
+
+ 9   complaint pleads facts that are “merely consistent with” a defendant's liability, it “stops short of
+
+10   the line between possibility and plausibility” and will not survive a Motion to Dismiss. Id.
+
+11   (internal quotations omitted).
+
+12         Similarly, Plaintiff denies that his speech was “slurred” because video footage shows him
+
+13   engaging in “coherent conversation, spelling his name letter by letter and discussing the
+
+14   mechanical details of his rental vehicle.” (ECF No. 5, FAC, ¶ 26, p.8:5-7). None of these
+
+15   allegations are inconsistent with slurred speech. Plaintiff also denies that he was “confused and
+
+16   disoriented” because Plaintiff claims that he was able to correctly identify his location and read
+
+17   “distant” signage at the time of his arrest. (Id. at ¶ 26, p. 8:9.) These allegations are irrelevant.
+
+18   Plaintiff’s subjective disagreement with Defendant Meza-Gonzalez’s determination that Plaintiff
+
+19   was under the influence cannot establish that Defendant Meza-Gonzalez engaged in judicial
+
+20   deception. Plaintiff does not allege that he has any experience as a drug recognition expert and his
+
+21   own opinions of how he looked on video at the time of his arrest are not facts.
+
+22         Finally, Plaintiff alleges that Defendant Meza-Gonzalez incorrectly stated that there were
+
+23   “beverages” in the vehicle when the only liquid found in the vehicle was urine. (Id. at ¶ 26
+
+24   p.8:13-15.) This allegation does not show deliberate fabrication. Moreover, based upon the
+
+25   totality of the circumstances, whether beverages were present in Plaintiff’s vehicle is not material
+
+26   to establishing probable cause for Plaintiff’s blood draw. The FAC admits that Defendants
+
+27   administered field sobriety tests prior to placing Plaintiff under arrest. (Id. at ¶ 53 p.16:9-11).
+
+28   Notably, the FAC is conspicuously silent as to the results of those tests.
+                                                     6
+             Motion to Dismiss Plaintiff’s First Amended Complaint and Motion to Strike Portions of the First Amended
+                                                                                    Complaint (3:26-cv-08271-ASK)
+Case 4:26-cv-08271-ASK          Document 22 Filed 10/26/26                 Page 10 of 19          PageID
+                                          #: 173
+
+
+ 1   II.   THE FAC FAILS TO STATE A VALID CLAIM FOR FABRICATION OF EVIDENCE ON
+           THE ADDITIONAL GROUND THAT PLAINTIFF WAS NEVER CHARGED WITH ANY
+ 2         CRIME.
+
+ 3         Plaintiff’s second cause of action for fabrication of evidence is duplicative of his first cause
+
+ 4   of action for judicial deception and fails for the same reasons stated above. However, Plaintiff’s
+
+ 5   fabrication of evidence claim also fails on the additional ground that Plaintiff cannot show that
+
+ 6   fabricated evidence was used to criminally charge, prosecute, or convict him because the FAC
+
+ 7   admits that no criminal charges were ever filed due to the incident. (ECF No. 5, FAC, ¶ 34 p.10.)
+
+ 8               The Ninth Circuit has held that a Section 1983 plaintiff need not be convicted based
+
+ 9   on fabricated evidence to have suffered a deprivation of liberty, and that being criminally charged
+
+10   is enough. Caldwell v. City and County of San Francisco, 889 F.3d 1105 (2018). The Manual of
+
+11   Model Civil Jury Instructions for the Ninth Circuit’s (Model Instructions) sets the standard jury
+
+12   instructions in the Ninth Circuit. The model instruction for fabrication of evidence states, in
+
+13   pertinent part, that “the Fourteenth Amendment protects against being subjected to criminal
+
+14   charges on the basis of false evidence that was deliberately fabricated.” See Model Instructions
+
+15   No.9.38 (emphasis added). Since Plaintiff was never subjected to criminal charges due to
+
+16   evidence presented by Defendant Meza-Gonzalez, Plaintiff’s cause of action for fabrication of
+
+17   evidence must be dismissed with prejudice.
+
+18   III. PLAINTIFF’S CLAIM FOR WARRANTLESS ENTRY OF HIS VEHICLE FAILS AS
+          DEFENDANTS HAD REASONABLE GROUND TO BELIEVE THAT EXIGENT
+19        CIRCUMSTANCES EXISTED AND/OR THAT PLAINTIFF HAD COMMITTED A CRIME
+
+20         Plaintiff alleges that Defendants unlawfully opened his vehicle’s door upon finding him
+
+21   asleep in his vehicle on the side of the freeway. Plaintiff’s claim fails as Defendants had
+
+22   reasonable grounds based upon the totality of the circumstances to believe that either Plaintiff had
+
+23   committed a crime, or that Plaintiff may have required emergency medical assistance when
+
+24   Defendants first encountered Plaintiff.
+
+25         A.    It is reasonable to assume that Plaintiff needed emergency assistance upon
+                 finding Plaintiff unconscious in the driver’s seat of his vehicle at the
+26               beginning of the encounter.
+
+27         The Ninth Circuit has held that law enforcement officers may enter a home or vehicle
+
+28   without consent or a warrant if necessary during an emergency. See Mincey v. Arizona, 437 U.S.
+                                                     7
+            Motion to Dismiss Plaintiff’s First Amended Complaint and Motion to Strike Portions of the First Amended
+                                                                                   Complaint (3:26-cv-08271-ASK)
+Case 4:26-cv-08271-ASK           Document 22 Filed 10/26/26                 Page 11 of 19          PageID
+                                           #: 174
+
+
+ 1   385, 392, (1978) (“[T]he Fourth Amendment does not bar police officers from making
+
+ 2   warrantless entries and searches when they reasonably believe that a person within is in need of
+
+ 3   immediate aid.”).
+
+ 4         Here, the FAC alleges that Plaintiff was parked on the side of the freeway prior to
+
+ 5   encountering Defendants. (ECF No. 5, FAC, p.4:13.) The FAC further states that Plaintiff was
+
+ 6   still asleep when Defendant Melano opened the passenger side door. (Id. at ¶ 16, p.5:16-17.)
+
+ 7   From the perspective of Defendants, they acted reasonably when they opened the door of
+
+ 8   Plaintiff’s vehicle to determine whether an unconscious driver needed emergency aid. Although
+
+ 9   Plaintiff alleges that no emergency existed, Defendants could not have known that before opening
+
+10   the door and awakening Plaintiff. As Defendants acted reasonably given the circumstances,
+
+11   Plaintiff’s claim for warrantless entry of his vehicle must fail.
+
+12         B.    It is reasonable to assume that Plaintiff committed a crime upon seeing a
+                 cup of what appeared to be alcohol with Plaintiff while Plaintiff’s vehicle
+13               was illegally parked on the side of the freeway
+14         Assuming arguendo that exigent circumstances did not exist and the opening of the
+
+15   passenger side door of Plaintiff’s vehicle constituted a warrantless search, Plaintiff’s claim of
+
+16   illegal entry would fail nonetheless because Defendants had probable cause to believe that
+
+17   Plaintiff had committed a crime. Devenpeck v. Alford, 543 U.S. 146, 152 (2004) (citations
+
+18   omitted). California Vehicle Code section 21718 prohibits a person from parking their vehicle on
+
+19   the side of the freeway except in emergency situations or when directed to do so by a law
+
+20   enforcement officer. If Plaintiff was not suffering from a medical emergency, then
+
+21   stopping/parking his vehicle on the side of the freeway would be a violation of Vehicle Code
+
+22   section 21718. If the exigent circumstances exception does not apply, then Defendants would be
+
+23   justified in opening the door of Plaintiff’s vehicle to investigate a crime.
+
+24         Defendants also had probable cause to believe that Plaintiff was driving while intoxicated
+
+25   upon seeing what appeared to be booze in Plaintiff’s vehicle. California Vehicle Code section
+
+26   23152(a) prohibits anyone from driving a vehicle while under the influence of alcohol. (Cal. Veh.
+
+27   Code § 23152(a).) Here, Plaintiff alleges that Defendant originally believed that Plaintiff had
+
+28   booze in his vehicle upon first encountering Plaintiff. (Id. at ¶ 15, p.5:10.) According to the
+                                                      8
+             Motion to Dismiss Plaintiff’s First Amended Complaint and Motion to Strike Portions of the First Amended
+                                                                                    Complaint (3:26-cv-08271-ASK)
+Case 4:26-cv-08271-ASK           Document 22 Filed 10/26/26                 Page 12 of 19          PageID
+                                           #: 175
+
+
+ 1   FAC, Defendants did not discover the cup in Plaintiff’s vehicle contained urine until they
+
+ 2   searched Plaintiff’s vehicle. (Id. at ¶ 16 p. 8:5-11.)
+
+ 3                Here, the existence of exigent circumstances and the existence of probable cause both
+
+ 4   justify Defendants’ alleged warrantless entry into Plaintiff’s vehicle at the beginning of the
+
+ 5   encounter.
+
+ 6   IV.   PLAINTIFF’S CLAIM RELATED TO THE SEARCH OF HIS VEHICLE AND HIS
+           SUBSEQUENT ARREST FAIL AS THERE EXISTED PROBABLY CAUSE UNDER THE
+ 7         FACTS AS ALLEGED IN THE FAC
+ 8         To establish a claim of unlawful search and seizure and and/or false arrest, Plaintiff must
+
+ 9   assert Defendants did not have probable cause to effectuate a search of Plaintiff’s vehicle and/or
+
+10   arrest Plaintiff. “[A] warrantless arrest [or search] by a law officer is reasonable under the Fourth
+
+11   Amendment where there is probable cause to believe that a criminal offense has been or is being
+
+12   committed.” Devenpeck v. Alford, 543 U.S. 146, 152 (2004) (citations omitted). Probable cause
+
+13   exists when a prudent person would have concluded there was a fair probability that the suspect
+
+14   had committed a crime, based on the totality of the circumstances known to the officer. Crowe v.
+
+15   County of San Diego, 608 F.3d 406, 434 (9th Cir. 2010). However, fair probability does not
+
+16   require “certainty or even a preponderance of the evidence.” United States v. Gourde, 440 F.3d
+
+17   1065, 1069 (9th Cir.2006). Whether probable cause existed on the facts known to the defendant is
+
+18   a question of law for the court. Roberts v. McAfee, Inc., 660 F.3d 1156, 1164 (9th Cir. 2011).
+
+19         Stripped of Plaintiff’s unsupported and conclusionary allegations of Defendants’
+
+20   impropriety, the factual allegations in the FAC regarding the search of Plaintiff’s vehicle and
+
+21   Plaintiff’s subsequent arrest are as follows:
+
+22         1. Defendants Meza-Gonzalez and Melano encounter Plaintiff while he was asleep in his
+
+23   vehicle on the side of Interstate 580 East. (ECF No. 5, FAC 4:13-16.)
+
+24         2. Defendants Meza-Gonzalez and Melano observe a cup in Plaintiff’s vehicle, and Officer
+
+25   Melano remarks: “I think it’s booze.” (Id. at ¶ 15, p. 5:10.)
+
+26         3. Defendants open Plaintiff’s passenger side door while Plaintiff was still asleep. (Id. at ¶
+
+27   16, p.5:16-17.)
+
+28
+                                                           9
+             Motion to Dismiss Plaintiff’s First Amended Complaint and Motion to Strike Portions of the First Amended
+                                                                                    Complaint (3:26-cv-08271-ASK)
+Case 4:26-cv-08271-ASK           Document 22 Filed 10/26/26                 Page 13 of 19          PageID
+                                           #: 176
+
+
+ 1         4. Officer Gonzalez states in his report that he detected a "strong distinct odor of an
+
+ 2   alcoholic beverage,” and notes slurred speech and other signs of intoxication from Plaintiff. (Id. at
+
+ 3   ¶ 16 p. 8:5-11.)
+
+ 4         5. Officer Gonzalez determines that the cup in Plaintiff’s vehicle is filled not with booze,
+
+ 5   but with urine. (Id. at ¶ 17 pp.5:22-6:4.)
+
+ 6         6. Defendants order Plaintiff out of his vehicle, question Plaintiff, and Defendant Melano
+
+ 7   administers some, but not all, field sobriety tests on Plaintiff as part of the DUI investigation. (Id.
+
+ 8   at ¶ 19, p.6 14-17.)
+
+ 9         7. Plaintiff refuses a voluntarily preliminary alcohol screening test and is subsequently
+
+10   arrested on suspicion of DUI (Id. at ¶ ¶ 23-24, p. 7:9-12.)
+
+11         Probable cause existed to search Plaintiff’s vehicle and arrest Plaintiff on suspicion of DUI
+
+12   under these facts. After determining that Plaintiff was not experiencing a medical emergency,
+
+13   Defendants saw that Plaintiff displayed signs of intoxication and had a cup of urine in his vehicle.
+
+14   While the FAC alleges that Defendant Meza-Gonzalez falsified some statements in his sworn
+
+15   statements regarding how Plaintiff appeared at the time of his arrest, those allegations are
+
+16   conclusory statements presented without factual support and are not entitled to the presumption of
+
+17   truth. Iqbal, 556 U.S. at 678. Moreover, a reasonable person could determine there were
+
+18   reasonable grounds to believe that Plaintiff had been operating his vehicle while intoxicated based
+
+19   on the facts which are admitted in the FAC: i.e., that Plaintiff was asleep in a vehicle parked on
+
+20   the side of the freeway with a cup of urine next to him. At the very least, Defendants had
+
+21   probable cause to order Plaintiff to perform field sobriety tests. Notably, the FAC does not allege
+
+22   that Defendant Meza-Gonzalez or Defendant Melano falsified the results of Plaintiff’s field
+
+23   sobriety tests, only that Defendant Melano “had declined to administer certain [field sobriety
+
+24   tests] due to ground conditions.” (Id. ¶ 50, p.15-17.)
+
+25         Based upon the totality of circumstances established by facts within the FAC, probable
+
+26   cause existed for both the search of Plaintiff’s vehicle and for his subsequent arrest.
+
+27
+
+28
+                                                           10
+             Motion to Dismiss Plaintiff’s First Amended Complaint and Motion to Strike Portions of the First Amended
+                                                                                    Complaint (3:26-cv-08271-ASK)
+Case 4:26-cv-08271-ASK           Document 22 Filed 10/26/26                 Page 14 of 19          PageID
+                                           #: 177
+
+
+ 1   V.    PLAINTIFF’S FAC FAILS TO ALLEGE SUFFICIENT FACTS TO SHOW PLAUSIBLE
+           “BUT-FOR” CAUSATION NECESSARY FOR A VALID CLAIM OF RETALIATION.
+ 2
+
+ 3         Plaintiff alleges that he was arrested in retaliation for his refusal to perform a voluntary
+
+ 4   preliminary alcohol screening test. The facts within the FAC do not support Plaintiff’s allegation
+
+ 5   that his arrest was due to retaliatory animus.
+
+ 6         To establish a viable First Amendment retaliation claim, Plaintiff must (1) allege that the
+
+ 7   alleged conduct would chill a person of ordinary firmness from future First Amendment activity
+
+ 8   and (2) allege that the officer's desire to chill his speech was a “but-for” cause of the alleged
+
+ 9   unlawful conduct. Ford v. City of Yakima, 706 F.3d 1188, 1193 (9th Cir. 2013). The Supreme
+
+10   Court has defined “but for” causation as being “established whenever a particular outcome would
+
+11   not have happened ‘but for’ the purported cause.” Bostock v. Clayton Cnty., 590 U.S. 644, 656
+
+12   (2020). “In other words, a but-for test directs [the Court] to change one thing at a time and see if
+
+13   the outcome changes. If it does, [there exists] a but-for cause.” Id. Under this test, if the outcome
+
+14   (the adverse action) would not have occurred without the government official's retaliatory
+
+15   animus, then that animus was a but-for cause of the adverse action. See id. Conversely, if the
+
+16   official would have taken the same adverse action even in the absence of their animus or
+
+17   retaliatory motive arising from the plaintiff’s speech, then the official’s animus was not a but-for
+
+18   cause of the adverse action, and there was no violation of the plaintiff's constitutional rights. See
+
+19   id.
+
+20         Here, Plaintiff alleges that his arrest soon after his refusal to take the preliminary alcohol
+
+21   screening test and Defendant Meza-Gonzalez’s statement that “If you choose to not consent to it,
+
+22   then it'll be up to my discretion whether I put you under arrest for DUI or not” proves retaliatory
+
+23   animus. (ECF No. 5, FAC ¶ 68 p.19-19:21.) This is not so. Defendant Meza-Gonzalez informed
+
+24   Plaintiff of the voluntary nature of the test prior to asking Plaintiff whether he consents to the test.
+
+25   (Id. ¶ 66, p.19:7-9.) Defendant Meza-Gonzalez also correctly stated that he had the discretion to
+
+26   arrest Plaintiff for DUI even if Plaintiff refuses the test. As is the pattern in the FAC, there is no
+
+27   indication that Defendant Meza-Gonzalez did anything improper on the facts, but Plaintiff
+
+28   nevertheless alleges that Defendant Meza-Gonzalez acted unlawfully. As the Court held in
+                                                  11
+             Motion to Dismiss Plaintiff’s First Amended Complaint and Motion to Strike Portions of the First Amended
+                                                                                    Complaint (3:26-cv-08271-ASK)
+Case 4:26-cv-08271-ASK           Document 22 Filed 10/26/26                 Page 15 of 19          PageID
+                                           #: 178
+
+
+ 1   Iqbal, not all allegations within a complaint are entitled to the presumption of truth at the
+
+ 2   pleadings stage and a complaint that alleges “naked assertions” that are “devoid a further factual
+
+ 3   enhancement” will not survive a Motion to Dismiss. Ashcroft v. Iqbal, 556 U.S. 662, 667 (2009).
+
+ 4   Because Plaintiff’s allegations do not show that he would not have been arrested but for his
+
+ 5   refusal to submit to the preliminary alcohol screening test, Plaintiff’s cause of action for
+
+ 6   retaliation should be dismissed with prejudice.
+
+ 7   VI.   DEFENDANTS ARE ENTITLED TO QUALIFIED IMMUNITY ON EACH OF PLAINTIFF’S
+           CAUSES OF ACTION.
+ 8
+
+ 9         Plaintiff’s claims against Defendants fail on the independent ground that qualified
+
+10   immunity applies. “Qualified immunity shields federal and state officials from money damages
+
+11   unless a plaintiff pleads facts showing (1) that the official violated a statutory or constitutional
+
+12   right, and (2) that the right was clearly established at the time of the challenged conduct.”
+
+13   Ashcroft v. al-Kidd, 563 U.S. 731, 735 (2011); accord Chavez v. Robinson, 12 F.4th 978, 995
+
+14   (9th Cir. 2021). Qualified immunity is afforded to officers if they had probable cause to make the
+
+15   arrest or search, or if the officers reasonably believed they had probable cause to make the arrest
+
+16   or search. Rosenbaum v. Washoe County, 663, F.3d 1071, 1076 (9th Cir. 2011). This applies to
+
+17   knowledge at the time, and not whether or not an independent prosecutor declined to press
+
+18   charges, or the plaintiff was found innocent. Id. An officer’s decision to search or arrest is
+
+19   protected by qualified immunity unless “all reasonable officers would agree that there was no
+
+20   probable cause in this instance.” Johnson v. Barr 79 F.4th 996, 1005 (9th Cir. 2023).
+
+21         Regarding the first prong of the qualified immunity analysis, Plaintiff has not shown any
+
+22   violation of his constitutional rights, as explained above. The qualified immunity analysis should
+
+23   end here.
+
+24               Regarding the second prong of the qualified immunity analysis, assuming, arguendo,
+
+25   that no probable cause existed to support the search of Plaintiff’s vehicle and/or for Plaintiff’s
+
+26   arrest, Defendants Meza-Gonzalez and Melano would still be entitled to qualified immunity as it
+
+27   was not “clearly established” that probable cause to search and arrest did not exist in the
+
+28   circumstances as pled in the FAC.
+                                                           12
+             Motion to Dismiss Plaintiff’s First Amended Complaint and Motion to Strike Portions of the First Amended
+                                                                                    Complaint (3:26-cv-08271-ASK)
+Case 4:26-cv-08271-ASK           Document 22 Filed 10/26/26                 Page 16 of 19          PageID
+                                           #: 179
+
+
+ 1         While there does not have to be a case directly on point, existing precedent must place the
+
+ 2   lawfulness of the particular arrest or search ‘beyond debate. District of Columbia v. Wesby, 583
+
+ 3   U.S. 48, 64 (2018). “The plaintiff bears the burden of proof that the right allegedly violated was
+
+ 4   clearly established at the time of the alleged misconduct.” Romero v. Kitsap Cty., 931 F.2d 624,
+
+ 5   627 (9th Cir. 1991). “Clearly established” law means precedent existing at the time of the
+
+ 6   conduct that “squarely governs the specific facts at issue.” Kisela v. Hughes, 584 U.S.100, 104
+
+ 7   (2018). “[C]ourts must not define clearly established law at a high level of generality[.]” Wesby,
+
+ 8   supra, 583 U.S. at 63.
+
+ 9         Here, there is no “clearly established” law that should have put Defendants on notice that
+
+10   all reasonable officers would know that probable cause to arrest and/or search Plaintiff did not
+
+11   exist in the circumstances as pled in the FAC. To the contrary, it is clearly established that
+
+12   probable cause exists when “a prudent person would have concluded there was a fair probability
+
+13   that the suspect had committed a crime, based on the totality of the circumstances known to the
+
+14   officer.” Crowe v. County of San Diego, 608 F.3d 406, 434 (9th Cir. 2010). Here, even if
+
+15   Defendants were factually mistaken and had arrested Plaintiff for DUI and searched Plaintiff’s
+
+16   vehicle despite Plaintiff not actually being intoxicated at the time, the doctrine of qualified
+
+17   immunity would still shield Defendants from claims related to the search of Plaintiff’s vehicle
+
+18   and his subsequent arrest because there is no “clearly established law” putting Defendants on
+
+19   notice that arresting Plaintiff for suspected DUI after finding plaintiff asleep in a vehicle on the
+
+20   side of a freeway and administrating some, but not all, field sobriety tests would violate Plaintiff’s
+
+21   constitutional rights if no alcohol was actually found in Plaintiff’s vehicle.
+
+22   VII. LEAVE TO AMEND SHOULD BE DENIED AS FUTILE
+23         Upon dismissal of any claims, the court must tell a pro se plaintiff of a pleading’s
+
+24   deficiencies and provide an opportunity to cure such defects. Garity v. APWU Nat'l Lab. Org.,
+
+25   828 F.3d 848, 854 (9th Cir. 2016). However, if amendment would be futile, no leave to amend
+
+26   need be given. Lathus v. City of Huntington Beach, 56 F.4th 1238, 1243 (9th Cir. 2023). A court
+
+27   may consider facts outside of the complaint when deciding whether to grant leave to amend.
+
+28   Broam v. Bogan, 320 F.3d 1023, 1026 n.2 (9th Cir. 2003).
+                                                  13
+             Motion to Dismiss Plaintiff’s First Amended Complaint and Motion to Strike Portions of the First Amended
+                                                                                    Complaint (3:26-cv-08271-ASK)
+Case 4:26-cv-08271-ASK           Document 22 Filed 10/26/26                 Page 17 of 19          PageID
+                                           #: 180
+
+
+ 1         Not only has Plaintiff already amended his complaint once before this Court, this is
+
+ 2   Plaintiff’s fourth lawsuit against the CHP and/or its individual officers in both state and federal
+
+ 3   courts based upon allegations arising from the November 1, 2024, incident. Prior to the filing of
+
+ 4   the instant action, Plaintiff voluntarily dismissed an action with substantively the same allegations
+
+ 5   against Defendants in the Eastern District Court, Newanforbi v. State of California, et al., Case
+
+ 6   No. 2:25-CV-1460-DC-CSK PS, following that Court’s Report and Recommendation that
+
+ 7   Plaintiff’s Complaint be dismissed with prejudice. (See Eastern District Court, Case No. 2:25-
+
+ 8   CV-1460-DC-CSK PS; ECF No. 12, Report and Recommendation dated April 20, 2025.)
+
+ 9   Plaintiff also recently dismissed a state court case arising from similar allegations against
+
+10   Defendants in the Alameda Superior Court. (See Alameda Superior Court Case, Newanforbi, v.
+
+11   Meza-Gonzalez, et al., Case No. 26CV168913.) Another action against CHP Captain Serrato by
+
+12   Plaintiff seeking U-visa certification based upon his allegations of false arrest from the same
+
+13   incident is currently pending. (See Northern District Court, Newanforbi v. Serrato, Case No
+
+14   3:26-cv-05953-CRB.)
+
+15         Defendants offer the above as context to show why leave to amend should not be granted.
+
+16   Plaintiff’s prior litigation shows that, despite being pro se, Plaintiff is a litigant who has
+
+17   substantial experience with the legal process. This is not a case where Plaintiff has viable claims
+
+18   but is hampered by his legal lack of knowledge. Rather, Plaintiff has adopted a strategy of filing
+
+19   multiple lawsuits based on the same substantive claims, only to strategically dismiss each suit
+
+20   after a court finds his claims to be without merit to file new lawsuits elsewhere. It is now long
+
+21   past time for Plaintiff’s meritless litigation against the CHP and its employees to end.
+
+22   VIII. PLAINTIFF’S PRAYER FOR ATTORNEY’S FEES AND FOR PUNITIVE DAMAGES
+           SHOULD BE STRICKEN OR DISMISSED
+23
+           A.    Plaintiff has alleged no well-pled facts which supports punitive damages
+24               against either Defendant
+25         Plaintiff's request for punitive damages should be stricken because Plaintiff has not alleged
+
+26   any well-pled facts that may support a finding of punitive damages. A Motion to Strike “may be
+
+27   used to strike any part of the Prayer for Relief when the damages sought are not recoverable as a
+
+28   matter of law.” Bureerong v. Uvawas, 922 F.Supp. 1450, 1479 n. 34 (CD. Cal. 1996); Wilkerson
+                                                  14
+             Motion to Dismiss Plaintiff’s First Amended Complaint and Motion to Strike Portions of the First Amended
+                                                                                    Complaint (3:26-cv-08271-ASK)
+Case 4:26-cv-08271-ASK           Document 22 Filed 10/26/26                 Page 18 of 19          PageID
+                                           #: 181
+
+
+ 1   v. Butler, 229 F.R.D. 166, 172 (E.D. Cal. 2005) (stating that “a motion to strike is appropriate to
+
+ 2   address requested relief, such as punitive damages, which is not recoverable as a matter of law.”).
+
+ 3         A jury can assess punitive damages in a federal Section 1983 action “when the defendant’s
+
+ 4   conduct is shown to be motivated by evil motive or intent, or when it involves reckless or callous
+
+ 5   indifference to the federally protected rights of others.” Smith v. Wade, 461 U.S. 30, 56 (1983).
+
+ 6   Here, although Plaintiff alleges that Defendant Meza-Gonzalez deliberately falsified sworn
+
+ 7   statements and fabricated evidence, a careful review of the FAC shows that Plaintiff’s allegations
+
+ 8   of malicious conduct by Defendant Meza-Gonzalez are based upon nothing more than his own
+
+ 9   disagreement over the result of Defendant Meza-Gonzalez’s DUI investigation. Since such
+
+10   allegations are not subject to the presumption of truth, they should not be sufficient to support
+
+11   punitive damages against either Defendant. Accordingly, Plaintiff's prayer for punitive damages
+
+12   found in Prayer for Relief FAC should be stricken.
+
+13               1.     Plaintiff is not entitled to attorneys; fees as a pro se litigant
+14         Plaintiff seeks attorneys’ fees as part of his Prayer for Relief. (ECF No. 5, FAC, Prayer for
+
+15   Relief pp.21-22.) While 42 U.S.C. section 1988 allows for attorney's fees for plaintiffs who
+
+16   prevail in section 1983 actions, an award of attorneys’ fees is not available to pro se litigants. See
+
+17   Kay v. Ehrler, 499 U.S. 432, 438 (1991). Accordingly, Plaintiff's prayer for attorneys’ fees
+
+18   should be stricken.
+
+19                                                CONCLUSION
+20         For the foregoing reasons, Defendants respectfully request that the Court dismiss all claims
+
+21   within Plaintiff’s FAC with prejudice and strike Plaintiff’s prayer for attorney’s fees and punitive
+
+22   damages against Defendants.
+
+23
+
+24
+
+25
+
+26
+
+27
+
+28
+                                                           15
+             Motion to Dismiss Plaintiff’s First Amended Complaint and Motion to Strike Portions of the First Amended
+                                                                                    Complaint (3:26-cv-08271-ASK)
+Case 4:26-cv-08271-ASK            Document 22 Filed 10/26/26                  Page 19 of 19        PageID
+                                            #: 182
+
+
+ 1   Dated: October 26, 2026                                        Respectfully submitted,
+
+ 2                                                                  ROB BONTA
+                                                                    Attorney General of California
+ 3                                                                  ELIZABETH S. ANGRES
+                                                                    Supervising Deputy Attorney General
+ 4
+
+ 5                                                                  /s/ Haiyang A. Li
+
+ 6                                                                  HAIYANG A. LI
+                                                                    Deputy Attorney General
+ 7                                                                  Attorney for Defendants
+                                                                    Santiago Meza-Gonzalez and Jose Melano
+ 8   SF2026603537
+     Newanforbi - Motion to Dismiss (final with tables).docx
+ 9
+
+10
+
+11
+
+12
+
+13
+
+14
+
+15
+
+16
+
+17
+
+18
+
+19
+
+20
+
+21
+
+22
+
+23
+
+24
+
+25
+
+26
+
+27
+
+28
+                                                               16
+             Motion to Dismiss Plaintiff’s First Amended Complaint and Motion to Strike Portions of the First Amended
+                                                                                    Complaint (3:26-cv-08271-ASK)
+

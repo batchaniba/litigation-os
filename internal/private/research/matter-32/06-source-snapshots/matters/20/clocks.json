@@ -1,0 +1,148 @@
+[
+  {
+    "id": "20-deadline-1",
+    "date": "2026-10-20",
+    "date_label": "Oct. 20, 2026",
+    "kind": "deadline",
+    "status": "open",
+    "source_dkt": null,
+    "title": "WATCH \u2014 CHP written responses to RFP Set One (Count 1) in Newanforbi v. CHP et al. (26CV191136). Clock is October 20 if the September 16 email to Ing is valid\u2026",
+    "actor": "opposing",
+    "source": "/documents/matter-20/Request for Production of Documents Set One - CHP with Mail POS (Sep 16 2026).pdf"
+  },
+  {
+    "id": "20-hearing-2",
+    "date": "2026-10-28",
+    "date_label": "Oct. 28, 2026",
+    "kind": "hearing",
+    "status": "open",
+    "source_dkt": null,
+    "title": "Case Management Conference (continued from Sep. 2, 2026) \u2014 Newanforbi v. CHP et al. (26CV191136), 4:00 p.m., Dept. 25, Rene C. Davidson Courthouse, Hon. Jenna\u2026",
+    "actor": "you",
+    "source": "/documents/matter-32/from-20/Order Sustaining Demurrer In Part - Whitman (Aug 29 2026) (Notice of Entry Aug 31 2026).pdf"
+  },
+  {
+    "id": "20-deadline-3",
+    "date": "2026-10-13",
+    "date_label": "Oct. 13, 2026",
+    "kind": "deadline",
+    "status": "open",
+    "source_dkt": null,
+    "title": "Case Management Statement due (computed) \u2014 Newanforbi v. CHP et al. (26CV191136), 15 calendar days before the Oct. 28, 2026 CMC per CRC 3.725.",
+    "actor": "you",
+    "source": "/documents/matter-32/from-20/Notice of Case Management Conference.pdf"
+  },
+  {
+    "id": "20-deadline-4",
+    "date": "2026-09-20",
+    "date_label": "Sep. 20, 2026",
+    "kind": "deadline",
+    "status": "satisfied",
+    "source_dkt": null,
+    "title": "AMENDMENT DUE (optional) \u2014 if Petitioner elects to amend Count 4, file and serve an amended Petition within 20 days of notice of entry of the August 29, 2026\u2026",
+    "actor": "you",
+    "source": "/documents/matter-32/from-20/Order Sustaining Demurrer In Part - Whitman (Aug 29 2026) (Notice of Entry Aug 31 2026).pdf",
+    "note": "No amended petition filed; Count 4 leave to amend lapsed."
+  },
+  {
+    "id": "20-deadline-5",
+    "date": "2026-10-16",
+    "date_label": "Oct. 16, 2026",
+    "kind": "deadline",
+    "status": "vacated",
+    "source_dkt": null,
+    "title": "Hearing on CHP demurrer and the individual respondents' joinders/demurrers to the Petition for Writ of Mandate, Newanforbi v. California Highway Patrol, et al.\u2026",
+    "actor": "you",
+    "source": "/documents/matter-32/from-20/Serrato Notice of Joinder and Demurrer.pdf",
+    "note": "Advanced to Aug 28 by stipulation; vacated as moot by Aug 29, 2026 Whitman order."
+  },
+  {
+    "id": "20-deadline-6",
+    "date": "2026-10-23",
+    "date_label": "Oct. 23, 2026",
+    "kind": "deadline",
+    "status": "vacated",
+    "source_dkt": null,
+    "title": "Continued hearing on the Dutra joinder and demurrer to the Petition for Writ of Mandate, Newanforbi v. California Highway Patrol, et al. (Matter 20) \u2014 Dept.\u2026",
+    "actor": "you",
+    "source": "/documents/matter-32/from-20/Dutra Notice of Joinder and Demurrer.pdf",
+    "note": "Advanced to Aug 28 by stipulation; vacated as moot by Aug 29, 2026 Whitman order."
+  },
+  {
+    "id": "20-deadline-7",
+    "date": "2026-10-06",
+    "date_label": "Oct. 6, 2026",
+    "kind": "deadline",
+    "status": "open",
+    "source_dkt": null,
+    "title": "TARGET \u2014 File & serve CM-110 with attachments + proof of service (ideal window Oct 6\u20138; hard deadline Oct 13, 15 calendar days before Oct 28 CMC per CRC 3.725).",
+    "actor": "you",
+    "source": "/documents/matter-20/Matter20_CM110_with_PleadingPaper_Attachments.pdf"
+  },
+  {
+    "id": "20-deadline-8",
+    "date": "2026-11-02",
+    "date_label": "Nov. 2, 2026",
+    "kind": "deadline",
+    "status": "open",
+    "source_dkt": null,
+    "title": "TARGET \u2014 File & serve motion package for peremptory writ (notice + MPA with CRS receipt, declaration, proposed judgment, proposed writ, POS); hard deadline Dec 11 (16 court days + 2 for e-service, CCP \u00a71005(b)).",
+    "actor": "you",
+    "source": "/documents/matter-20/01_Motion_for_Peremptory_Writ_MPA_with_CRS_Receipt.pdf"
+  },
+  {
+    "id": "20-deadline-9",
+    "date": "2026-12-11",
+    "date_label": "Dec. 11, 2026",
+    "kind": "deadline",
+    "status": "open",
+    "source_dkt": null,
+    "title": "DEADLINE \u2014 Motion for peremptory writ of mandate filed & served (16 court days + 2 for e-service before Jan 8, 2027 hearing, CCP \u00a71005(b)).",
+    "actor": "you",
+    "source": "/documents/matter-20/01_Motion_for_Peremptory_Writ_MPA_with_CRS_Receipt.pdf"
+  },
+  {
+    "id": "20-deadline-10",
+    "date": "2026-12-24",
+    "date_label": "Dec. 24, 2026",
+    "kind": "deadline",
+    "status": "open",
+    "source_dkt": null,
+    "title": "WATCH \u2014 CHP opposition due (~9 court days before Jan 8 hearing, CCP \u00a71005(b); user-calculated, confirm against court calendar once motion filed).",
+    "actor": "opposing",
+    "source": "/documents/matter-20/01_Motion_for_Peremptory_Writ_MPA_with_CRS_Receipt.pdf"
+  },
+  {
+    "id": "20-deadline-11",
+    "date": "2026-12-31",
+    "date_label": "Dec. 31, 2026",
+    "kind": "deadline",
+    "status": "open",
+    "source_dkt": null,
+    "title": "Reply due (5 court days before Jan 8 hearing); keep short, no new evidence.",
+    "actor": "you",
+    "source": "/documents/matter-20/01_Motion_for_Peremptory_Writ_MPA_with_CRS_Receipt.pdf"
+  },
+  {
+    "id": "20-deadline-12",
+    "date": "2027-01-07",
+    "date_label": "Jan. 7, 2027",
+    "kind": "deadline",
+    "status": "open",
+    "source_dkt": null,
+    "title": "WATCH \u2014 Tentative ruling posts (afternoon); read it. To argue, follow Dept. 25 contest procedure.",
+    "actor": "you",
+    "source": "/documents/matter-20/01_Motion_for_Peremptory_Writ_MPA_with_CRS_Receipt.pdf"
+  },
+  {
+    "id": "20-hearing-13",
+    "date": "2027-01-08",
+    "date_label": "Jan. 8, 2027",
+    "kind": "hearing",
+    "status": "open",
+    "source_dkt": null,
+    "title": "HEARING \u2014 Motion for peremptory writ of mandate, 9:00 a.m., Dept. 25, Hon. Jenna M. Whitman (Reservation ID 958052306492).",
+    "actor": "you",
+    "source": "/documents/matter-20/01_Motion_for_Peremptory_Writ_MPA_with_CRS_Receipt.pdf"
+  }
+]

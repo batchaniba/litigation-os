@@ -1,0 +1,19 @@
+{
+  "defendants_label": "Santiago Meza-Gonzalez (CHP #023295), individually; Jose Melano (CHP #023054), individually; and DOES 1–10 — N.D. Cal. operative complaint (Aug. 7, 2026). State-court Matter 2 tracks the same officers under a False Imprisonment / Battery / Bane Act caption.",
+  "serviceTracking": [
+    {
+      "name": "Santiago Meza-Gonzalez",
+      "title": "Defendant (CHP #023295, individually)",
+      "location": "CHP Modesto Area",
+      "served": true,
+      "dateServed": "August 27, 2026, 1:30 p.m. (substituted — left with Kim S. - H.R. at CHP Modesto Area, 4030 Kiernan Ave). Daniel Fischer / Run With It order 15645547; Declaration of Service and Diligence signed Sep. 3, 2026. Filed Sep. 14, 2026 as Dkt. 16 / 16-1. CCP §415.20 declaration dated Sep. 17; file after postmark. Do not start FRCP 12 from Aug. 27."
+    },
+    {
+      "name": "Jose Melano",
+      "title": "Defendant (CHP #023054, individually)",
+      "location": "CHP South Sacramento Area",
+      "served": true,
+      "dateServed": "August 14, 2026 (C&P Process Server Clifford Black on Officer Reed, CHP South Sacramento, 6 Massie Court; AO 440 POS filed Aug. 17, 2026 as Dkt. 5-1; clerk-stamped original scanned Aug. 31, 2026)"
+    }
+  ]
+}

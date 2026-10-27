@@ -1,0 +1,62 @@
+                                Case Chronology & Theory Map
+
+Matter 24 — Newanforbi v. Serrato, N.D. Cal. 4:26-cv-05953-ASK
+
+CHRONOLOGY (MATTER 24 FOCUS)
+
+Nov. 1, 2024 — Alleged CHP false arrest / fabricated report / blood-draw warrant (underlying incident; not
+the § 1983 claim against Serrato).
+Mar. 26, 2026 — Serrato letter acknowledging citizen complaint / assigning investigator (FAC retaliation
+knowledge allegation).
+Apr. 20, 2026 — Serrato denies U-visa certification (operative adverse action).
+Jun. 17, 2026 — Complaint filed (Doc. 1); case 4:26-cv-05953-ASK.
+Jun. 29, 2026 — Krishnan Dkt. 5: IFP granted; complaint sufficient under § 1915; "discretion to certify" ≠
+"discretion to retaliate."
+Jul. 15, 2026 — FAC (Doc. 10) + Notice of Errata (Doc. 12).
+Aug. 5–6, 2026 — USMS service on Serrato (Doc. 15).
+Aug. 20, 2026 — Admin motion to relate to Meza-Gonzalez (3:26-cv-08271-PHK).
+Aug. 26, 2026 — Haiyang Li files MTD/strike; noticed for Sep. 16, 2026 (21 days' notice).
+Aug. 27, 2026 — Opp v4 execution date (this draft).
+Sep. 2, 2026 — Opposition due (Civil L.R. 7-3(a)).
+Sep. 15, 2026 — Initial CMC.
+Sep. 16, 2026 — Noticed MTD hearing, 1:30 p.m., Mag. Krishnan.
+
+RELATED-CASE CLUSTER (ACCEPT AS TRUE FOR DISTINGUISH)
+
+- Alameda 26CV168913 (Meza-Gonzalez tort) — Judge Fickes denied judicial U-visa certification motion;
+Plaintiff later dismissed.
+- E.D. Cal. 2:25-CV-1460 — R&R adverse; Plaintiff dismissed before adoption.
+- Alameda writ 26CV191136 (Matter 20) — CHP demurrer track.
+- N.D. Cal. 3:26-cv-08271-PHK (Meza-Gonzalez federal) — related-case motion target.
+- Doc 09 in this pack is the AG's Alameda opposition to judicial U-visa certification — useful to see how
+Defendant previously framed "compel certification" vs how this Opp reframes Serrato's denial.
+
+THEORY HIERARCHY IN THE OPP
+
+Tier 1 (lead): First Amendment retaliation — but-for animus; Krishnan-compatible.
+Tier 2: Procedural due process — deficient denial explanation / statutory process under § 679.10(i).
+Tier 3: Substantive due process — non-arbitrary application of mandatory state duties (hardest sell; keep but
+don't lead).
+Remedy: Official-capacity prospective relief = new decision under correct standards; not a directed Form B
+signature.
+Procedural cleanup: Whittlestone vs 12(f); leave to amend if needed; FAC ¶ 21 PC cite hedges.
+
+DOCUMENTS IN THIS PACK
+
+01 — Opposition v4 pleading-paper PDF (the brief to critique)
+02 — Defendant MTD / Motion to Strike (Aug. 26, 2026)
+03 — Krishnan IFP / screening order (Dkt. 5)
+04 — FAC Doc. 10 text extract (LLM-friendly)
+05 — Notice of Errata (Doc. 12)
+06 — This pack's critique briefing & prompt
+07 — MTD attack map + error inventory
+08 — Authorities / § 679.10 cheat sheet
+09 — Alameda AG opposition to judicial U-visa certification (Fickes-context)
+10 — This chronology / theory map
+
+SUGGESTED UPLOAD ORDER FOR ANOTHER LLM
+
+06 → 01 → 02 → 03 → 07 → 04 → 08 → 09 → 10 → 05
+Then ask: "Critique Doc 01 only; use the others as context; return ranked vulnerabilities and concrete
+rewrites."
+
