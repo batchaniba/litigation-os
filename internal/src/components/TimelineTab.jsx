@@ -15,7 +15,7 @@ export const TimelineTab = ({ showPastEvents, setShowPastEvents }) => {
     const sorted = [...timeline].sort((a, b) => parseEventDatePDT(a.date) - parseEventDatePDT(b.date));
     return {
       pastEvents: sorted.filter(t => parseEventDatePDT(t.date) < cutoff),
-      recentEvents: sorted.filter(t => parseEventDatePDT(t.date) >= cutoff),
+      recentEvents: sorted.filter(t => t.upcoming && parseEventDatePDT(t.date) >= cutoff),
     };
   }, [cutoff]);
 

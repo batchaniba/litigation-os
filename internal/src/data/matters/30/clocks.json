@@ -9,7 +9,7 @@
     "title": "Anticipated filing date (computed) — Complaint v9 (Moua and DOES 1-10), Newanforbi v. Moua, et al. (Matter 30); 15 days after the anticipated Sep. 1, 2026…",
     "actor": "agency",
     "source": "/documents/matter-30/Complaint v9 Newanforbi v Moua NDCAL.pdf",
-    "retired_reason": "Anticipated Sep. 16 filing was not confirmed as filed. Outer GCA window remains Mar. 1, 2027."
+    "retired_reason": "Anticipated Sep. 16 filing was not confirmed as filed. No written Gov. Code §913 notice is in the file; §945.6(a)(1) six-month window is not a hard cutoff. Clock 30-deadline-2 restated under (a)(2)."
   },
   {
     "id": "30-deadline-2",
@@ -18,7 +18,7 @@
     "kind": "deadline",
     "status": "open",
     "source_dkt": null,
-    "title": "OUTER STATUTE OF LIMITATIONS (computed) — Government Claims Act six-month suit-filing window for the Bane Act and IIED state-law claims, Newanforbi v. Moua, et…",
+    "title": "Gov. Code §945.6(a)(2) two-year suit period (computed) — Bane Act and IIED state-law claims, Newanforbi v. Moua, et al. (Matter 30). No written §913 rejection notice is in the file, so the six-month (a)(1) window (which would have run to ~Mar. 1, 2027 from a Sep. 1, 2026 deemed rejection) does not control. Not a hard cutoff.",
     "actor": "agency",
     "source": "/documents/matter-30/Complaint v9 Newanforbi v Moua NDCAL.pdf"
   }

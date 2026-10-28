@@ -25,6 +25,7 @@ const GREEN = "#16a34a";
 
 const BANDS = [
   ["overdue", "Past due", RED],
+  ["opposing_overdue", "Opposing overdue", SLATE],
   ["critical", "Next 3 days", AMBER],
   ["soon", "This week", BLUE],
   ["upcoming", "Next 30 days", SLATE],
@@ -39,10 +40,16 @@ const ACTOR_PILL = {
 };
 
 function groupVisible(items, mineOnly) {
-  const visible = items.filter((item) => {
+  const remapped = items.map((item) => {
+    if (item.urgency === "overdue" && !isYours(item)) {
+      return { ...item, urgency: "opposing_overdue" };
+    }
+    return item;
+  });
+  const visible = remapped.filter((item) => {
     if (item.urgency === "later") return false;
     if (!mineOnly) return true;
-    return item.actor === "you" || item.actor === "unknown";
+    return isYours(item);
   });
   return BANDS.map(([key, label, color]) => ({
     key,

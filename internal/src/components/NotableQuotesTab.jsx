@@ -7,7 +7,6 @@ const AMBER  = "#d97706";
 const PURPLE = "#9333ea";
 const GREEN  = "#16a34a";
 const BLUE   = "#2563eb";
-const TEAL   = "#0d9488";
 
 const QUOTE_COLORS = {
   sharp:      { color: RED,    label: "Sharp"                },
@@ -15,7 +14,6 @@ const QUOTE_COLORS = {
   backhanded: { color: PURPLE, label: "Backhanded"           },
   vindication:{ color: GREEN,  label: "Vindication"          },
   procedural: { color: BLUE,   label: "Procedural"           },
-  meta:       { color: TEAL,   label: "Fourth Wall"          },
 };
 
 function QuoteCard({ item, theme }) {
@@ -83,11 +81,9 @@ function QuoteCard({ item, theme }) {
 
 export function NotableQuotesTab() {
   const theme = useTheme();
-  const quotes = [...(outcomes.notable_quotes ?? [])].sort((a, b) => {
-    if (a.category === "meta" && b.category !== "meta") return 1;
-    if (b.category === "meta" && a.category !== "meta") return -1;
-    return new Date(b.date) - new Date(a.date);
-  });
+  const quotes = [...(outcomes.notable_quotes ?? [])]
+    .filter((q) => q.category !== "meta")
+    .sort((a, b) => new Date(b.date) - new Date(a.date));
   const counts = quotes.reduce((acc, q) => {
     acc[q.category] = (acc[q.category] || 0) + 1;
     return acc;
@@ -116,7 +112,7 @@ export function NotableQuotesTab() {
 
       {/* Summary bar */}
       <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginBottom: 32 }}>
-        {["sharp", "dismissive", "backhanded", "procedural", "vindication", "meta"].map(cat => {
+        {["sharp", "dismissive", "backhanded", "procedural", "vindication"].map(cat => {
           const { color, label } = QUOTE_COLORS[cat];
           return (
             <div key={cat} style={{

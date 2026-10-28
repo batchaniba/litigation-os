@@ -165,6 +165,7 @@ export function JudicialOpinionsTab() {
   const adverseCount = opinions.filter(o => o.outcome === "adverse").length;
   const favorableCount = opinions.filter(o => o.outcome === "favorable").length;
   const mixedCount = opinions.filter(o => o.outcome === "mixed").length;
+  const proceduralCount = opinions.filter(o => o.outcome === "procedural").length;
 
   return (
     <div>
@@ -195,6 +196,7 @@ export function JudicialOpinionsTab() {
           { label: "Adverse",       count: adverseCount,    color: RED   },
           { label: "Favorable",     count: favorableCount,  color: GREEN },
           { label: "Mixed",         count: mixedCount,      color: AMBER },
+          { label: "Procedural",    count: proceduralCount, color: SLATE },
         ].map(({ label, count, color }) => (
           <div key={label} style={{
             background: theme.cardBg,
@@ -238,7 +240,8 @@ export function JudicialOpinionsTab() {
           lineHeight: 1.8, margin: 0,
         }}>
           Adverse rulings at the pleading stage are not merits losses — they reflect the procedural
-          limitations of Rule 12(b)(6) motions and magistrate F&Rs that are not yet final orders.
+          limitations of Rule 12(b)(6) motions. The Matter 1 and Matter 7 magistrate F&amp;Rs were
+          mooted by the August 15, 2026 voluntary dismissals and were not adopted.
           No ruling to date has resolved a matter on a fully developed factual record.
           The dashcam footage, blood-draw warrant, and structural-bias evidence that drive the
           underlying claims remain unreached by any court.
@@ -261,10 +264,11 @@ export function JudicialOpinionsTab() {
           lineHeight: 1.8, margin: "0 0 12px",
         }}>
           Magistrate Judge Chi Soo Kim has been assigned to three separate E.D. Cal. matters —
-          Matter 1 (2:25-cv-01460-DC-CSK), Matter 21 (2:26-cv-00191-DJC-CSK), and Matter 7
+          Matter 1 (2:25-cv-01460-DC-CSK), Matter 18 (2:26-cv-00191-DJC-CSK, Barocio), and Matter 7
           (2:26-cv-00983-DC-CSK) — and has ruled adversely in all three, in that order.
-          Matters 1 and 7 are assigned to District Judge Dena Coggins for de novo review;
-          Matter 21 is assigned to District Judge Daniel J. Calabretta.
+          Matters 1 and 7 were assigned to District Judge Dena Coggins; both were voluntarily
+          dismissed on August 15, 2026 before any F&amp;R was adopted. Matter 18 is assigned to
+          District Judge Daniel J. Calabretta. Matter 21 is Rojo, 2:26-cv-00193-DC-CKD — a different case.
         </p>
         <p style={{
           fontFamily: "'DM Sans', sans-serif", fontSize: 13, color: theme.secondaryText,
@@ -284,9 +288,10 @@ export function JudicialOpinionsTab() {
           of Supplemental Authority submitted in both Matter 1 and Matter 7, citing{" "}
           <em>Newanforbi v. Serrato</em> (N.D. Cal. June 29, 2026), in which Magistrate Judge Ajay
           Krishnan found the same November 2024 CHP incident allegations sufficient under § 1915 —
-          directly attacking the cross-reference and the frivolousness characterization. Both notices
-          are now before District Judge Dena Coggins on de novo review. The pattern warrants
-          continued monitoring for recusal grounds under 28 U.S.C. § 455 on future E.D. Cal. filings.
+          directly attacking the cross-reference and the frivolousness characterization. Both F&amp;Rs
+          and the notices became moot when Plaintiff voluntarily dismissed Matters 1 and 7 on
+          August 15, 2026; they were not adopted. The pattern warrants continued monitoring for
+          recusal grounds under 28 U.S.C. § 455 on future E.D. Cal. filings.
         </p>
       </div>
     </div>

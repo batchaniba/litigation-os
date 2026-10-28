@@ -1,5 +1,5 @@
 import type { TimelineEvent } from "../types/portfolio";
-import full from "./timeline.json";
+import publicTimeline from "./timeline.public.json";
 
-/** Full timeline event log — import only from route/search chunks, not the shell. */
-export const timeline = full as TimelineEvent[];
+/** Public timeline projection — the SPA never bundles the internal full log. */
+export const timeline = publicTimeline as TimelineEvent[];

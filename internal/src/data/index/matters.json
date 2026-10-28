@@ -16,14 +16,7 @@
       "lifecycle": "dismissed",
       "proceeding": "federal_civil",
       "phase": "terminal",
-      "next_clock": {
-        "id": "01-deadline-1",
-        "date": "2026-11-01",
-        "kind": "deadline",
-        "status": "open",
-        "title": "CCP §335.1 two-year statute of limitations (computed) backstop, running from the Nov. 1, 2024 incident. (1) Matter 1's Fourth Amendment §1983 claim (borrowed…",
-        "source_dkt": null
-      },
+      "next_clock": null,
       "overdue": false,
       "last_updated": "2026-09-16",
       "files": [
@@ -882,9 +875,9 @@
       "cluster": 3,
       "related": [],
       "same_incident": null,
-      "lifecycle": "active",
+      "lifecycle": "settled",
       "proceeding": "state_civil",
-      "phase": "cmc",
+      "phase": "terminal",
       "next_clock": {
         "id": "27-deadline-3",
         "date": "2026-12-17",
@@ -1004,7 +997,7 @@
         "date": "2027-03-01",
         "kind": "deadline",
         "status": "open",
-        "title": "OUTER STATUTE OF LIMITATIONS (computed) — Government Claims Act six-month suit-filing window for the Bane Act and IIED state-law claims, Newanforbi v. Moua, et…",
+        "title": "Gov. Code §945.6(a)(2) two-year suit period (computed) — Bane Act and IIED state-law claims, Newanforbi v. Moua, et al. (Matter 30). No written §913 rejection notice is in the file, so the six-month (a)(1) window (which would have run to ~Mar. 1, 2027 from a Sep. 1, 2026 deemed rejection) does not control. Not a hard cutoff.",
         "source_dkt": null
       },
       "overdue": false,
@@ -1060,7 +1053,7 @@
       "layout": "split",
       "caption": "Nforbi v. Meza-Gonzalez, et al",
       "case_no": "4:26-cv-08271-ASK",
-      "court": "USDC N.D. Cal. (Oakland; 4:26-cv-08271-ASK; opened as 3:26-cv-08271-PHK; related Serrato 3:26-cv-05953-CRB and Candelaria 3:26-cv-08272-LJC)",
+      "court": "USDC N.D. Cal. (Oakland; 4:26-cv-08271-ASK, formerly 3:26-cv-08271-PHK; related Serrato 3:26-cv-05953-CRB and Candelaria 3:26-cv-08272-RFL, formerly LJC)",
       "judge": "Hon. Ajay S. Krishnan, U.S. Magistrate Judge (N.D. Cal.) — reassigned Aug. 24, 2026 from Mag. Kang (related to Serrato 3:26-cv-05953-CRB)",
       "cluster": 1,
       "related": [],

@@ -10,8 +10,8 @@
     "docket_url": "/docket/74699765/ps-newanforbi-v-federal-express-corp/"
   },
   "claims": "PC §290.46(j)(2)(E) Violation, Failure to Hire (Tameny), ICRAA, Invasion of Privacy, Negligence Per Se, UCL §17200",
-  "status": "FedEx status report filed Sep. 24 (Dkt. 10). Plaintiff's mailed Sep. 14 report: confirm docket number. Oct. 8, 2026 status (pretrial scheduling) conference date has passed; no minute order ingested as of Oct. 28, 2026 true-up. Written discovery Set One served by email Oct. 6; FedEx responses watch Nov. 5, 2026.",
-  "status_label": "Oct. 8 conf. passed — order not ingested",
+  "status": "Last confirmed docket event: FedEx status report filed Sep. 24 (Dkt. 10). Plaintiff's mailed Sep. 14 report: confirm docket number. Oct. 8, 2026 status conference outcome not verified — no minute order ingested as of Oct. 28, 2026. Written discovery Set One served by email Oct. 6; FedEx responses watch Nov. 5, 2026.",
+  "status_label": "Dkt. 10 Sep. 24 — Oct. 8 outcome not verified",
   "lifecycle": "active",
   "proceeding": "federal_civil",
   "phase": "discovery",

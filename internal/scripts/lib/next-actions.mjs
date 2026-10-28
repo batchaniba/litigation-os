@@ -142,11 +142,20 @@ export function touchesActiveMatter(matters, byNumber) {
   });
 }
 
-/** Urgency band. Overdue first, then a 3/7/30-day ladder. */
-export function urgencyFor(daysOut, horizonDays) {
+/** Whole days remaining in the current Sunday–Saturday week (PT civil date). */
+export function daysUntilSaturday(fromKey) {
+  const [y, m, d] = String(fromKey).split("-").map(Number);
+  if (!y || !m || !d) return 6;
+  const dow = new Date(Date.UTC(y, m - 1, d)).getUTCDay(); // 0 Sun … 6 Sat
+  return 6 - dow;
+}
+
+/** Urgency band. Overdue first, then 3-day critical, then the rest of this calendar week. */
+export function urgencyFor(daysOut, horizonDays, todayKey) {
   if (daysOut < 0) return "overdue";
   if (daysOut <= 3) return "critical";
-  if (daysOut <= 7) return "soon";
+  const weekLeft = todayKey ? daysUntilSaturday(todayKey) : 6;
+  if (daysOut <= weekLeft) return "soon";
   if (daysOut <= horizonDays) return "upcoming";
   return "later";
 }
@@ -238,7 +247,7 @@ export function buildQueue(timeline, summaries, options = {}) {
     }
 
     const daysOut = daysBetween(today, dateKey);
-    items.push({ ...shared, dateKey, daysOut, urgency: urgencyFor(daysOut, horizonDays) });
+    items.push({ ...shared, dateKey, daysOut, urgency: urgencyFor(daysOut, horizonDays, today) });
   }
 
   items.sort((a, b) => {
@@ -271,4 +280,9 @@ export function yourQueue(queue) {
   return queue.items.filter(
     (i) => i.urgency !== "later" && (i.actor === "you" || i.actor === "unknown"),
   );
+}
+
+/** Next dated obligation on the litigant's desk that is not already overdue. */
+export function nextOnYourDesk(queue) {
+  return yourQueue(queue).find((i) => i.urgency !== "overdue") ?? null;
 }

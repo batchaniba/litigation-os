@@ -6,6 +6,7 @@ import {
   daysBetween,
   inferAction,
   inferActor,
+  nextOnYourDesk,
   precedentPeers,
   touchesActiveMatter,
   urgencyFor,
@@ -154,9 +155,18 @@ describe("urgencyFor", () => {
     expect(urgencyFor(-1, 30)).toBe("overdue");
     expect(urgencyFor(0, 30)).toBe("critical");
     expect(urgencyFor(3, 30)).toBe("critical");
-    expect(urgencyFor(7, 30)).toBe("soon");
+    expect(urgencyFor(7, 30)).toBe("upcoming");
     expect(urgencyFor(30, 30)).toBe("upcoming");
     expect(urgencyFor(31, 30)).toBe("later");
+  });
+
+  it("treats 'soon' as the rest of the current Sunday–Saturday week", () => {
+    // Monday 2026-08-10: weekLeft = 5 (through Saturday). Day 5 is soon; day 6 is next week.
+    expect(urgencyFor(5, 30, "2026-08-10")).toBe("soon");
+    expect(urgencyFor(6, 30, "2026-08-10")).toBe("upcoming");
+    // Saturday: nothing left in the week beyond today (already covered as critical if ≤3).
+    expect(urgencyFor(1, 30, "2026-08-08")).toBe("critical");
+    expect(urgencyFor(4, 30, "2026-08-08")).toBe("upcoming");
   });
 });
 
@@ -222,9 +232,9 @@ describe("buildQueue", () => {
   });
 
   it("puts past-due items first and counts the days negatively", () => {
-    // With the abandoned Matter 3 entry retired, the opposition brief is first.
+    // TODAY is Saturday 2026-08-08; Aug. 14 is 6 days out, which is next week → upcoming.
     expect(queue.items[0].event).toBe("Deadline — file opposition brief");
-    expect(queue.items[0].urgency).toBe("soon");
+    expect(queue.items[0].urgency).toBe("upcoming");
     expect(queue.items[0].daysOut).toBe(6);
   });
 
@@ -264,6 +274,19 @@ describe("buildQueue", () => {
       "Deadline — file opposition brief",
       "Deadline — ADR certification",
     ]);
+  });
+
+  it("nextOnYourDesk skips overdue and returns the next upcoming item that is yours", () => {
+    const withOverdue = buildQueue(
+      [
+        entry({ date: "Aug. 1, 2026", event: "Deadline — file opposition (late)", matters: [20] }),
+        entry({ date: "Aug. 14, 2026", event: "Deadline — file opposition brief", matters: [20] }),
+      ],
+      fixtureSummaries,
+      { today: TODAY, horizonDays: 30 },
+    );
+    expect(nextOnYourDesk(withOverdue).event).toBe("Deadline — file opposition brief");
+    expect(nextOnYourDesk(withOverdue).urgency).not.toBe("overdue");
   });
 
   it("copies a /documents/ source onto the queue row", () => {

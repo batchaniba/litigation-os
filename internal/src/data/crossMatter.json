@@ -81,7 +81,7 @@
           "kinds": [
             "same_incident"
           ],
-          "significance": "Matter 32 is captioned Nforbi v. Meza-Gonzalez, et al \u2014 the same officers and the same November 1, 2024 encounter as Matter 2 (Newanforbi v. Meza-Gonzalez et al., Alameda Sup. Ct. 26CV168913), under the Ngwa Nforbi name form that appears on the DS-367. Matter 2 remains the filed, stayed tort action; Matter 32 holds the Matter 2 docket PDF set under from-02/ and does not plead a separate damages demand. The DS-367 and Arrest Report themselves now live in Matter 33.",
+          "significance": "Matter 32 is captioned Nforbi v. Meza-Gonzalez, et al \u2014 the same officers and the same November 1, 2024 encounter as Matter 2 (Newanforbi v. Meza-Gonzalez et al., Alameda Sup. Ct. 26CV168913), under the Ngwa Nforbi name form that appears on the DS-367. Matter 2 was voluntarily dismissed without prejudice on Aug. 15, 2026; Matter 32 holds the Matter 2 docket PDF set under from-02/ and does not plead a separate damages demand. The DS-367 and Arrest Report themselves now live in Matter 33.",
           "sources": [
             "Matter 33 \u2014 DS-367 (ngwanforbi / F7953179); Arrest Report",
             "Matter 32 \u2014 Matter 2 docket PDFs under from-02/",
@@ -97,7 +97,7 @@
           "kinds": [
             "same_incident"
           ],
-          "significance": "Matter 33 is the document home for the Candelaria / DMV APS record set that Matter 7 litigates: the Nov. 1, 2024 incident evidence, the APS Case 34739340 hearing packet and Decision, the Matter 7 federal complaint/FAC/objections/NSA package, and the June 15, 2026 F&R. Matter 7 remains the live \u00a7 1983 docket (2:26-cv-00983-DC-CSK) and cross-references these paths under matter-33/from-07/, incident/, and opinions/.",
+          "significance": "Matter 33 is the document home for the Candelaria / DMV APS record set that Matter 7 litigated: the Nov. 1, 2024 incident evidence, the APS Case 34739340 hearing packet and Decision, the Matter 7 federal complaint/FAC/objections/NSA package, and the June 15, 2026 F&R. Matter 7 was voluntarily dismissed without prejudice on Aug. 15, 2026 (2:26-cv-00983-DC-CSK). Matter 33 is the live N.D. Cal. successor (3:26-cv-08272-RFL, formerly LJC) and cross-references these paths under matter-33/from-07/, incident/, and opinions/.",
           "sources": [
             "Matter 33 \u2014 FAC Candelaria; DMV Decision; Nov. 1 incident PDFs; June 15, 2026 F&R",
             "Matter 7 \u2014 First Amended Complaint; Objections to F&R"
@@ -142,7 +142,7 @@
           "kinds": [
             "same_incident"
           ],
-          "significance": "Matter 33 holds the DS-367 / Arrest Report / dashcam / DMV APS discovery set for the same November 1, 2024 encounter litigated in Matter 2's stayed Alameda tort action. Matter 2 remains the filed damages vehicle; Matter 33 does not plead a separate demand.",
+          "significance": "Matter 33 holds the DS-367 / Arrest Report / dashcam / DMV APS discovery set for the same November 1, 2024 encounter litigated in Matter 2's Alameda tort action. Matter 2 was voluntarily dismissed without prejudice on Aug. 15, 2026; Matter 33 does not plead a separate demand.",
           "sources": [
             "Matter 33 \u2014 DS-367; Arrest Report; DMV APS discovery packet",
             "Matter 2 \u2014 Complaint for Damages (filed Feb. 4, 2026)"
@@ -571,7 +571,7 @@
         },
         {
           "name": "Diana Candelaria / Steve Gordon (DMV)",
-          "role": "APS hearing officer and DMV Director; sustained the suspension on the repudiated arrest predicate; Matter 33 is the N.D. Cal. refile, Nforbi v. Candelaria et al., No. 3:26-cv-08272-LJC",
+          "role": "APS hearing officer and DMV Director; sustained the suspension on the repudiated arrest predicate; Matter 33 is the N.D. Cal. refile, Nforbi v. Candelaria et al., No. 3:26-cv-08272-RFL (formerly LJC)",
           "defendantIn": [
             7,
             33
