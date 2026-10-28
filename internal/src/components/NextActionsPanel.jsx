@@ -315,7 +315,16 @@ function ActionCard({ item, color, theme }) {
           }}
         >
           <div style={{ flex: 1, minWidth: 200 }}>
-            <div style={{ fontSize: 16, fontWeight: 700, color: theme.heading, marginBottom: 3 }}>
+            <div
+              style={{
+                fontFamily: SANS,
+                fontSize: 14,
+                fontWeight: 600,
+                lineHeight: 1.45,
+                color: theme.heading,
+                marginBottom: 3,
+              }}
+            >
               {clipped}
             </div>
             <div style={{ fontFamily: SANS, fontSize: 12, color: theme.subtleText }}>
@@ -425,7 +434,16 @@ function GapCard({ gap, theme }) {
     >
       <MatterBadge matter={gap.number} color={GOLD} />
       <div style={{ flex: 1, minWidth: 200 }}>
-        <div style={{ fontSize: 16, fontWeight: 700, color: theme.heading, marginBottom: 3 }}>
+        <div
+          style={{
+            fontFamily: SANS,
+            fontSize: 14,
+            fontWeight: 600,
+            lineHeight: 1.45,
+            color: theme.heading,
+            marginBottom: 3,
+          }}
+        >
           {gap.caption}
         </div>
         <div style={{ fontFamily: SANS, fontSize: 12, color: theme.subtleText }}>
