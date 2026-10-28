@@ -340,6 +340,21 @@ const LEAK_VALUE_RES = [
   { id: "final_demand", re: /final demand/i },
 ];
 
+// Settlement / demand figures and payment mechanics that must never reach a
+// public surface (timeline.public.json, the SPA bundle). A dollar figure alone
+// is not a leak (filing fees, statutory floors); a dollar figure in a
+// settlement, demand, offer, or release context is.
+const SETTLEMENT_CONTEXT = String.raw`\b(?:settle\w*|demand\w*|offer\w*|counter-?offer\w*|counter\b|global\b|release\b|rule\s*68|(?:ccp\s*)?§\s*998|ntc\s+of\s+settlement|notice\s+of\s+settlement|payable|wire\b|checks?\b|docusign|evid\.?\s*code\s*§?\s*1152|fre\s*408)`;
+const MONEY = String.raw`\$\s?\d[\d,]*(?:\.\d+)?\s*(?:k\b|m\b|million\b)?`;
+
+export function settlementLeakPatterns() {
+  return [
+    { id: "money_in_settlement_context", re: new RegExp(`(?=[\\s\\S]*${MONEY})(?=[\\s\\S]*${SETTLEMENT_CONTEXT})`, "i") },
+    { id: "pilot_settlement_figure", re: /\$35,000|\$35k\b/i },
+    { id: "final_demand", re: /final demand/i },
+  ];
+}
+
 function distinctiveSnippet(text) {
   if (typeof text !== "string") return null;
   const cleaned = text.replace(/\s+/g, " ").trim();

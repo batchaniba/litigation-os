@@ -31,7 +31,7 @@ const statusLabelOf = (c) => {
   if (c.lifecycle === "abandoned") return "Abandoned";
   if (c.lifecycle === "dismissed") return "Dismissed";
   if (c.lifecycle === "closed") return c.badge === "DENIED" ? "Denied" : "Closed";
-  if (c.lifecycle === "pre_filing" || c.phase === "pre_filing" || c.badge === "PENDING") return "Pending";
+  if (c.badge !== "NONE" && (c.lifecycle === "pre_filing" || c.phase === "pre_filing" || c.badge === "PENDING")) return "Pending";
   // Live matters: prefer procedural phase over generic "Live"
   if (c.phase && c.phase !== "terminal") return phaseLabel(c.phase);
   if (c.badge && BADGE_LABEL[c.badge]) return BADGE_LABEL[c.badge];
@@ -146,7 +146,9 @@ const filingSpanLabel = filingSpanMin !== null
 
 const exposure = outcomes.portfolio_exposure;
 const settledDeals = outcomes.realized.filter(r => r.type === "settlement");
-const settledTotal = settledDeals.reduce((s, r) => s + r.amount, 0);
+// Confidential settlements carry amount: null and are never summed or shown.
+const settledTotal = settledDeals.reduce((s, r) => s + (r.amount || 0), 0);
+const settledConfidential = settledDeals.some(r => r.confidential);
 const demandsTotal = outcomes.active_demands.reduce((s, d) => s + d.demand_amount, 0);
 const demandsResponded = outcomes.active_demands.filter(
   d => d.response_status !== "no response" && d.response_status !== "pending"
@@ -375,7 +377,7 @@ export const CensusTab = ({ setActiveTab, setClusterFilter, setStatusFilter, set
                       <td style={{ ...tdStyle(theme), color: theme.subtleText }}>{vendor}</td>
                       <td style={tdStyle(theme)}>
                         {isSettled
-                          ? <span style={{ fontFamily: MONO, fontSize: 10.5, fontWeight: 700, letterSpacing: "0.06em", textTransform: "uppercase", color: GREEN, border: `1.5px solid ${GREEN}`, borderRadius: 3, padding: "2px 6px" }}>Settled {fmt(settledDeals.find(d => d.matter === matter)?.amount || 0)}</span>
+                          ? <span style={{ fontFamily: MONO, fontSize: 10.5, fontWeight: 700, letterSpacing: "0.06em", textTransform: "uppercase", color: GREEN, border: `1.5px solid ${GREEN}`, borderRadius: 3, padding: "2px 6px" }}>Settled{settledDeals.find(d => d.matter === matter)?.amount ? ` ${fmt(settledDeals.find(d => d.matter === matter).amount)}` : ""}</span>
                           : <span style={{ color: STATUS_COLOR[statusLabel] || theme.subtleText, fontWeight: 600 }}>{statusLabel}</span>}
                       </td>
                     </tr>
@@ -404,7 +406,7 @@ export const CensusTab = ({ setActiveTab, setClusterFilter, setStatusFilter, set
 
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 220px), 1fr))", gap: 14, margin: "16px 0" }}>
           <div style={{ background: theme.cardBg, border: `1px solid ${theme.cardBorder}`, borderLeft: `3px solid ${GREEN}`, borderRadius: 4, padding: "14px 16px" }}>
-            <div style={{ fontFamily: MONO, fontSize: 20, fontWeight: 700, color: theme.heading }}>{fmt(settledTotal)}</div>
+            <div style={{ fontFamily: MONO, fontSize: 20, fontWeight: 700, color: theme.heading }}>{settledConfidential ? "Confidential" : fmt(settledTotal)}</div>
             <div style={{ fontFamily: SANS, fontSize: 11.5, color: theme.subtleText, marginTop: 3 }}>Realized — {settledDeals.length} settlement{settledDeals.length !== 1 ? "s" : ""} to date</div>
           </div>
           <div style={{ background: theme.cardBg, border: `1px solid ${theme.cardBorder}`, borderLeft: `3px solid ${GOLD}`, borderRadius: 4, padding: "14px 16px" }}>

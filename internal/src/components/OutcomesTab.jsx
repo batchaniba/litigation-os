@@ -11,8 +11,9 @@ const GREEN  = "#16a34a";
 const AMBER  = "#d97706";
 const BLUE   = "#0284c7";
 
-const realized   = outcomes.realized.reduce((s, r) => s + r.amount, 0);
-const anticipated = outcomes.anticipated.reduce((s, r) => s + r.amount, 0);
+// Confidential settlements carry amount: null and are never summed or shown.
+const realized   = outcomes.realized.reduce((s, r) => s + (r.amount || 0), 0);
+const anticipated = outcomes.anticipated.reduce((s, r) => s + (r.amount || 0), 0);
 const combined   = realized + anticipated;
 const moderate   = outcomes.portfolio_exposure.moderate;
 const demandTotal = outcomes.active_demands.reduce((s, d) => s + d.demand_amount, 0);
@@ -233,8 +234,8 @@ export function OutcomesTab() {
           fontFamily: "'DM Sans', sans-serif", fontSize: 13,
           color: theme.mutedText, margin: 0, maxWidth: 620,
         }}>
-          {totalMatterCount} matters filed across six jurisdictions. {activeMatterCount} active. The first recovery is in —
-          Matter 22 settled and dismissed; {pendingDemandCount} live demand{pendingDemandCount === 1 ? "" : "s"} outstanding. All pro se.
+          {totalMatterCount} matters filed across six jurisdictions. {activeMatterCount} active. Two recoveries are in —
+          Matters 22 and 27 settled; {pendingDemandCount} live demand{pendingDemandCount === 1 ? "" : "s"} outstanding. All pro se.
         </p>
       </div>
 
@@ -244,7 +245,7 @@ export function OutcomesTab() {
           label="Confirmed — Settled"
           amount={realized}
           color={GREEN}
-          sub="Matter 22 · Pilot Travel Centers · July 14, 2026 · dismissed Aug. 6"
+          sub="Matter 22 · Pilot Travel Centers · July 14, 2026 · Matter 27 · Randstad · Oct. 26, 2026"
           confidential={outcomes.realized.some(r => r.confidential)}
           theme={theme}
         />
@@ -271,7 +272,7 @@ export function OutcomesTab() {
           amount={combined}
           prefix={outcomes.anticipated.length > 0 ? "~" : ""}
           color={BLUE}
-          sub={`vs. ${fmt(moderate)} portfolio exposure (moderate)`}
+          sub={`vs. ${fmt(moderate)} portfolio exposure (moderate) · confidential settlements not counted`}
           theme={theme}
         />
       </div>
@@ -389,9 +390,9 @@ export function OutcomesTab() {
           and the action was dismissed with prejudice on August 6, 2026. Matter 12&apos;s default track closed when
           Diamond and Alpine appeared through counsel on August 12 and disputed service; that case is back on an
           ordinary litigated path (CMC Dec. 11). FedEx (Matter 25) and UPS (Matter 26) are in federal court after
-          removal — the July pre-filing $85,000 demands are no longer live asks. Matter 27 carries the live
-          settlement track: a $55,000 Randstad-only / $85,000 global demand (response Sept. 8) after RK Logistics denied the
-          earlier $85,000 ask through Garcia &amp; Gurney. These outcomes reflect the quality of the underlying
+          removal — the July pre-filing demands are no longer live asks. Matter 27 settled: defense counsel served a
+          Notice of Settlement on October 26, 2026, and dismissal follows. Settlement terms are confidential and are not
+          counted in the figures on this page. These outcomes reflect the quality of the underlying
           record across all {totalMatterCount} matters. The remaining {fmt(moderate - combined)} at moderate estimate
           represents {activeMatterCount} active matters where that same record is still at work.
         </p>
