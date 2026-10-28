@@ -98,6 +98,7 @@ export function isPdfPath(docPath) {
 
 export function isCourtFacingClock(clock) {
   if (!clock || typeof clock !== "object") return false;
+  if (clock.private === true) return false;
   if (!clock.date) return false;
   const kind = String(clock.kind ?? "").toLowerCase();
   if (COURT_FACING_KINDS.has(kind)) return true;

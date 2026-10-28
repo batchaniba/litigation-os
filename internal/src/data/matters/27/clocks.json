@@ -62,9 +62,10 @@
     "date_label": "Oct. 26, 2026",
     "tz": "America/Los_Angeles",
     "kind": "deadline",
-    "status": "open",
+    "status": "vacated",
     "title": "Response deadline for Randstad US, LLC and The RK Logistics Group, Inc., extended by stipulation through Oct. 26, 2026 (no further extensions).",
-    "actor": "opposing"
+    "actor": "opposing",
+    "retired_reason": "Oct. 26, 2026 stipulated response date has passed. Confirm on the Alameda docket whether a response was filed. Do not publish confidential-agreement terms."
   },
   {
     "id": "27-dismissal-after-clearing",

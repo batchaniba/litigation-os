@@ -67,10 +67,11 @@
     "time": "10:30",
     "tz": "America/Los_Angeles",
     "kind": "hearing",
-    "status": "open",
+    "status": "satisfied",
     "source_dkt": 15,
     "title": "Initial CMC (continued) and hearing on Dkt. 15 motion to dismiss — Newanforbi v. Smith / HOPE (3:26-cv-07504-LJC), Oct. 27, 2026, 10:30 a.m., Courtroom G, Hon. Lisa J. Cisneros (ECF No. 29 combined the Oct. 22 CMC with this hearing).",
-    "actor": "you"
+    "actor": "you",
+    "retired_reason": "USER REPORT Oct. 28, 2026: Oct. 27, 2026 combined CMC and Dkt. 15 MTD hearing was held. Order deferred the MTD pending San Joaquin judgment. No order PDF ingested."
   },
   {
     "id": "28-deadline-adr-cert",
@@ -89,11 +90,12 @@
     "date": "2026-10-20",
     "date_label": "Oct. 20, 2026",
     "kind": "deadline",
-    "status": "open",
+    "status": "vacated",
     "source_dkt": 30,
     "actor": "you",
     "source": "/documents/matter-28/Dkt_30-1_-_Defendants_Smith_and_HOPE_Supplemental_Request_for_Judicial_Notice_ISO_MTD__N.D._Cal._3-26-cv-07504-LJC___Filed_Oct_13_2026__3ed9.pdf",
-    "title": "Civil L.R. 7-3(d)(1) objection to new evidence in reply: due within 7 days after the reply is filed (filed Oct. 13 → Oct. 20). LIVE: Dkt. 30-1 Supplemental RFJN Exhibit A attaches a San Joaquin docket screenshot (STK-CV-UF-2026-0001032). Newanforbi v. Smith / HOPE (3:26-cv-07504-LJC)."
+    "title": "Civil L.R. 7-3(d)(1) objection to new evidence in reply: due within 7 days after the reply is filed (filed Oct. 13 → Oct. 20). LIVE: Dkt. 30-1 Supplemental RFJN Exhibit A attaches a San Joaquin docket screenshot (STK-CV-UF-2026-0001032). Newanforbi v. Smith / HOPE (3:26-cv-07504-LJC).",
+    "retired_reason": "Civ. L.R. 7-3(d)(1) window closed Oct. 20, 2026. No objection filing ingested through the Oct. 28 true-up. Hearing held Oct. 27; MTD deferred."
   },
   {
     "id": "28-initial-disclosures",
@@ -112,11 +114,132 @@
     "date": "2026-11-13",
     "date_label": "Nov. 13, 2026",
     "kind": "deadline",
-    "status": "open",
+    "status": "vacated",
     "source_dkt": null,
     "title": "PROPOSED (Plaintiff, Joint CMS Dkt. 28): prior discovery re-production/authorization completed — 3:26-cv-07504-LJC",
     "actor": "you",
     "source": null,
-    "note": "Reconciled from D1 clocks row 158 (Plaintiff's proposed date in Joint CMS Dkt. 28; not court-ordered)."
+    "note": "Reconciled from D1 clocks row 158 (Plaintiff's proposed date in Joint CMS Dkt. 28; not court-ordered).",
+    "retired_reason": "USER REPORT Oct. 28, 2026: discovery stayed pending San Joaquin judgment. Joint CMS proposed Nov. 13 re-production is not a live clock."
+  },
+  {
+    "id": "28-js-2026-11-17",
+    "date": "2026-11-17",
+    "kind": "deadline",
+    "status": "open",
+    "source_dkt": null,
+    "actor": "you",
+    "source": "/documents/matter-28/Dkt 29 - Order Continuing Case Management Conference (Filed Oct 8 2026).pdf",
+    "title": "Joint status conference report due Nov. 17, 2026 (monthly through May 17, 2027) — Newanforbi v. Smith / HOPE (3:26-cv-07504-LJC). USER REPORT of the Oct. 27, 2026 order deferring the MTD pending San Joaquin judgment. No order PDF ingested.",
+    "date_label": "Nov. 17, 2026",
+    "tz": "America/Los_Angeles"
+  },
+  {
+    "id": "28-js-2026-12-17",
+    "date": "2026-12-17",
+    "kind": "deadline",
+    "status": "open",
+    "source_dkt": null,
+    "actor": "you",
+    "source": "/documents/matter-28/Dkt 29 - Order Continuing Case Management Conference (Filed Oct 8 2026).pdf",
+    "title": "Joint status conference report due Dec. 17, 2026 (monthly through May 17, 2027) — Newanforbi v. Smith / HOPE (3:26-cv-07504-LJC). USER REPORT of the Oct. 27, 2026 order deferring the MTD pending San Joaquin judgment. No order PDF ingested.",
+    "date_label": "Dec. 17, 2026",
+    "tz": "America/Los_Angeles"
+  },
+  {
+    "id": "28-js-2027-01-17",
+    "date": "2027-01-17",
+    "kind": "deadline",
+    "status": "open",
+    "source_dkt": null,
+    "actor": "you",
+    "source": "/documents/matter-28/Dkt 29 - Order Continuing Case Management Conference (Filed Oct 8 2026).pdf",
+    "title": "Joint status conference report due Jan. 17, 2027 (monthly through May 17, 2027) — Newanforbi v. Smith / HOPE (3:26-cv-07504-LJC). USER REPORT of the Oct. 27, 2026 order deferring the MTD pending San Joaquin judgment. No order PDF ingested.",
+    "date_label": "Jan. 17, 2027",
+    "tz": "America/Los_Angeles"
+  },
+  {
+    "id": "28-js-2027-02-17",
+    "date": "2027-02-17",
+    "kind": "deadline",
+    "status": "open",
+    "source_dkt": null,
+    "actor": "you",
+    "source": "/documents/matter-28/Dkt 29 - Order Continuing Case Management Conference (Filed Oct 8 2026).pdf",
+    "title": "Joint status conference report due Feb. 17, 2027 (monthly through May 17, 2027) — Newanforbi v. Smith / HOPE (3:26-cv-07504-LJC). USER REPORT of the Oct. 27, 2026 order deferring the MTD pending San Joaquin judgment. No order PDF ingested.",
+    "date_label": "Feb. 17, 2027",
+    "tz": "America/Los_Angeles"
+  },
+  {
+    "id": "28-js-2027-03-17",
+    "date": "2027-03-17",
+    "kind": "deadline",
+    "status": "open",
+    "source_dkt": null,
+    "actor": "you",
+    "source": "/documents/matter-28/Dkt 29 - Order Continuing Case Management Conference (Filed Oct 8 2026).pdf",
+    "title": "Joint status conference report due Mar. 17, 2027 (monthly through May 17, 2027) — Newanforbi v. Smith / HOPE (3:26-cv-07504-LJC). USER REPORT of the Oct. 27, 2026 order deferring the MTD pending San Joaquin judgment. No order PDF ingested.",
+    "date_label": "Mar. 17, 2027",
+    "tz": "America/Los_Angeles"
+  },
+  {
+    "id": "28-js-2027-04-17",
+    "date": "2027-04-17",
+    "kind": "deadline",
+    "status": "open",
+    "source_dkt": null,
+    "actor": "you",
+    "source": "/documents/matter-28/Dkt 29 - Order Continuing Case Management Conference (Filed Oct 8 2026).pdf",
+    "title": "Joint status conference report due Apr. 17, 2027 (monthly through May 17, 2027) — Newanforbi v. Smith / HOPE (3:26-cv-07504-LJC). USER REPORT of the Oct. 27, 2026 order deferring the MTD pending San Joaquin judgment. No order PDF ingested.",
+    "date_label": "Apr. 17, 2027",
+    "tz": "America/Los_Angeles"
+  },
+  {
+    "id": "28-js-2027-05-17",
+    "date": "2027-05-17",
+    "kind": "deadline",
+    "status": "open",
+    "source_dkt": null,
+    "actor": "you",
+    "source": "/documents/matter-28/Dkt 29 - Order Continuing Case Management Conference (Filed Oct 8 2026).pdf",
+    "title": "Joint status conference report due May 17, 2027 (monthly through May 17, 2027) — Newanforbi v. Smith / HOPE (3:26-cv-07504-LJC). USER REPORT of the Oct. 27, 2026 order deferring the MTD pending San Joaquin judgment. No order PDF ingested.",
+    "date_label": "May 17, 2027",
+    "tz": "America/Los_Angeles"
+  },
+  {
+    "id": "28-joint-cms-2027-06-10",
+    "date": "2027-06-10",
+    "kind": "deadline",
+    "status": "open",
+    "source_dkt": null,
+    "actor": "you",
+    "source": "/documents/matter-28/Dkt 29 - Order Continuing Case Management Conference (Filed Oct 8 2026).pdf",
+    "title": "Joint Case Management Conference statement due June 10, 2027 — Newanforbi v. Smith / HOPE (3:26-cv-07504-LJC). USER REPORT of the Oct. 27, 2026 order. No order PDF ingested.",
+    "date_label": "Jun. 10, 2027",
+    "tz": "America/Los_Angeles"
+  },
+  {
+    "id": "28-hearing-cmc-2027-06-17",
+    "date": "2027-06-17",
+    "time": "13:30",
+    "kind": "hearing",
+    "status": "open",
+    "source_dkt": null,
+    "actor": "you",
+    "source": "/documents/matter-28/Dkt 29 - Order Continuing Case Management Conference (Filed Oct 8 2026).pdf",
+    "title": "Case Management Conference — Newanforbi v. Smith / HOPE (3:26-cv-07504-LJC), June 17, 2027, 1:30 p.m., Hon. Lisa J. Cisneros. USER REPORT of the Oct. 27, 2026 order deferring the MTD. No order PDF ingested.",
+    "date_label": "Jun. 17, 2027",
+    "tz": "America/Los_Angeles"
+  },
+  {
+    "id": "28-discovery-stay",
+    "date": null,
+    "kind": "deadline",
+    "status": "contingent",
+    "source_dkt": null,
+    "actor": "court",
+    "source": "/documents/matter-28/Dkt 29 - Order Continuing Case Management Conference (Filed Oct 8 2026).pdf",
+    "title": "Discovery stayed pending San Joaquin judgment — Newanforbi v. Smith / HOPE (3:26-cv-07504-LJC). USER REPORT of the Oct. 27, 2026 order deferring Dkt. 15 MTD. No order PDF ingested.",
+    "note": "Stay is in force per USER REPORT. Undated contingent so it is not derived overdue."
   }
 ]

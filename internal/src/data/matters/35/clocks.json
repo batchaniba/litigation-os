@@ -4,11 +4,12 @@
     "date": "2026-10-21",
     "date_label": "Oct. 21, 2026",
     "kind": "deadline",
-    "status": "open",
+    "status": "vacated",
     "source_dkt": null,
     "title": "OPEN TASK — Matter 35 (26CV501995) meet-and-confer with Ross counsel (Vogl Meredith) re Oct 15 Verified Answer before demurrer/motion to strike (CCP §§ 430.41(a)(2), 435.5).",
     "actor": "you",
-    "source": "/internal/docs/matter-35/answer-workspace/Ross Answer & Discovery Analysis (Oct 15 2026).md"
+    "source": "/internal/docs/matter-35/answer-workspace/Ross Answer & Discovery Analysis (Oct 15 2026).md",
+    "retired_reason": "Oct. 21, 2026 meet-and-confer task date passed. No conferral event logged. Discovery responses remain due Nov. 17 (35-deadline-7)."
   },
   {
     "id": "35-deadline-1",
@@ -26,11 +27,12 @@
     "date": "2026-10-26",
     "date_label": "Oct. 26, 2026",
     "kind": "deadline",
-    "status": "open",
+    "status": "vacated",
     "source_dkt": null,
     "title": "OPEN TASK — Matter 35: demurrer / motion to strike Ross's Oct 15 answer (CCP §§ 430.40(b), 435), OR file § 430.41(a)(2) declaration for automatic 30-day extension (to Nov. 25, 2026).",
     "actor": "you",
-    "source": "/internal/docs/matter-35/answer-workspace/Ross Answer & Discovery Analysis (Oct 15 2026).md"
+    "source": "/internal/docs/matter-35/answer-workspace/Ross Answer & Discovery Analysis (Oct 15 2026).md",
+    "retired_reason": "Oct. 26, 2026 demurrer / § 430.41(a)(2) extension task date passed. No demurrer or extension declaration ingested. Do not invent a Nov. 25 extension."
   },
   {
     "id": "35-deadline-7",

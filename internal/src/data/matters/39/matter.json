@@ -1,6 +1,6 @@
 {
   "number": 39,
-  "last_updated": "2026-10-20",
+  "last_updated": "2026-10-28",
   "caption": "Brendan Ngwa Nforbi v. Best Buy Co., Inc.",
   "case_no": "2:26-cv-03315-DC-CKD (PS)",
   "court": "USDC E.D. Cal. (Sacramento Div.)",
@@ -8,8 +8,8 @@
     "court_id": "caed"
   },
   "claims": "ICRAA § 1786.40 (I&B); CCRAA § 1785.20.5 (alternative); UCL § 17200; Penal Code § 290.46(j) (I&B — report contents and use)",
-  "status": "FILED — E.D. Cal. No. 2:26-cv-03315-DC-CKD (PS), filed Sep. 18, 2026. Complaint (Dkt. 1, with Dkt. 1-1 and 1-2) and AO 239 IFP application (Dkt. 2) on file; IFP ruling / § 1915(e)(2) screening pending. San Joaquin September 8 packet remains LOCKED and unfiled. Do not serve the defendant with the magistrate consent form.",
-  "status_label": "Filed Sep. 18 — IFP application pending",
+  "status": "FILED — E.D. Cal. No. 2:26-cv-03315-DC-CKD (PS), filed Sep. 18, 2026 (Dkt. 1 complaint; Dkt. 2 AO 239). USER REPORT Oct. 28, 2026: $405 fee paid by money order Oct. 27; IFP withdrawn as moot. No receipt or withdrawal PDF ingested. Do not serve the defendant with the magistrate consent form. San Joaquin September 8 packet remains LOCKED and unfiled.",
+  "status_label": "Fee paid Oct. 27; IFP withdrawn as moot",
   "lifecycle": "active",
   "proceeding": "federal_civil",
   "phase": "pleadings",
@@ -20,5 +20,6 @@
   "archived": false,
   "note": "Federal action is on file (2:26-cv-03315-DC-CKD, filed Sep. 18, 2026); the San Joaquin September 8 packet stays LOCKED and unfiled. Do not rewrite pleading prose unless a new Best Buy or First Advantage document appears. Plaintiff accepted the Oct. 17, 2023 offer, completed the drug screening, and on information and belief that screen came back clean; Best Buy then ghosted him. Warehouse is 6653 Hopkins Road, Tracy, CA 95377. Application confirmation recites an arbitration policy; Best Buy will move to compel; the policy PDF is not in this upload. Serve the current SOS agent for Best Buy, not a warehouse. Best Buy Stores, L.P. is a DOE. First Advantage is not a named defendant. § 290.46(j) is the last count on page one.",
   "key_facts": "On Oct. 13, 2023, Best Buy emailed that it had received Plaintiff's application for General Warehouse Worker / 2nd Shift at $22.60, requisition 928556BR. The warehouse is 6653 Hopkins Road, Tracy, CA 95377. On Oct. 17 at 3:47 p.m., Jose Tapia, General Manager, emailed a congratulations offer for that job and required, within 24 hours, Candidate Zone signature, background-check information, and background-check authorization; California disclosure PDFs were attached but are not in this upload. At 4:22 p.m. Best Buy sent a background-authorization confirmation naming First Advantage Consumer Center. At 4:30 p.m. First Advantage ordered a Best Buy drug test (Q09078711; account BEST BUY 11759586; Quest Modesto listed as a collection option, not the worksite). Plaintiff accepted the offer and completed the drug screening. On information and belief, that screen came back clean. Best Buy then ceased communication and ghosted him. At 5:31 p.m. Best Buy HR had written 'Congratulations on accepting your offer' — that sentence is their characterization; Plaintiff independently accepted. No pre-adverse letter, adverse letter, or drug-test result PDF is in the file. The complaint does not attach a Best Buy report and does not allege its contents as a known fact. Report contents and use are I&B, pleaded the same way as Home Depot, on Best Buy's own facts only. Supporting basis: written offer, same-day First Advantage screen, contemporaneous Megan's Law listing, no other basis communicated, and exclusive control of the Best Buy report. Civ. Code §§ 1786.10 / 1786.22 inspection has not yet been demanded.",
-  "procedural_status": "Canonical chronology is clocks.json, docket.json, and events.jsonl. Do not reconstruct dates from README."
+  "procedural_status": "Canonical chronology is clocks.json, docket.json, and events.jsonl. Do not reconstruct dates from README.",
+  "badge": "FEE PAID"
 }

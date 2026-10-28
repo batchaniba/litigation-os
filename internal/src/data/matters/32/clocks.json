@@ -6,20 +6,22 @@
     "kind": "deadline",
     "status": "open",
     "source_dkt": 16,
-    "title": "FILE — signed 415.20(b) declaration + Exhibit A USPS receipt + POS in Nforbi v. Meza-Gonzalez et al. (4:26-cv-08271-ASK) after the September 17 postmark. San…",
+    "title": "FILE — summons return / CCP § 415.20(b) declaration + Exhibit A USPS receipt + POS being refiled in Nforbi v. Meza-Gonzalez et al. (4:26-cv-08271-ASK). USER REPORT Oct. 28, 2026. Sep. 17 mailing executed; prior FILE clock was still open (dkt null). Do not invent a filing.",
     "actor": "you",
-    "source": "/documents/matter-32/ndcal/Declaration of Mailing - CCP 415.20(b) Follow-Up to Dkt 16 - Meza-Gonzalez (N.D. Cal. 4-26-cv-08271-ASK) (September 17, 2026).pdf"
+    "source": "/documents/matter-32/ndcal/Declaration of Mailing - CCP 415.20(b) Follow-Up to Dkt 16 - Meza-Gonzalez (N.D. Cal. 4-26-cv-08271-ASK) (September 17, 2026).pdf",
+    "note": "USER REPORT: refiling in progress. Keep open until a clerk-stamped return is ingested."
   },
   {
     "id": "32-deadline-2",
     "date": "2026-10-19",
     "date_label": "Oct. 19, 2026",
     "kind": "deadline",
-    "status": "open",
+    "status": "vacated",
     "source_dkt": 16,
     "title": "WATCH — Meza-Gonzalez Rule 12(a) responsive deadline (computed from a September 17, 2026 CCP § 415.20(b) mailing) in Nforbi v. Meza-Gonzalez et al.…",
     "actor": "opposing",
-    "source": "/documents/matter-32/ndcal/Declaration of Mailing - CCP 415.20(b) Follow-Up to Dkt 16 - Meza-Gonzalez (N.D. Cal. 4-26-cv-08271-ASK) (September 17, 2026).pdf"
+    "source": "/documents/matter-32/ndcal/Declaration of Mailing - CCP 415.20(b) Follow-Up to Dkt 16 - Meza-Gonzalez (N.D. Cal. 4-26-cv-08271-ASK) (September 17, 2026).pdf",
+    "retired_reason": "Computed Rule 12(a) from the Sep. 17, 2026 CCP § 415.20(b) mailing. USER REPORT Oct. 28, 2026: summons return is being refiled. Open PR #1035 catalogs a Dkt. 22 MTD filed Oct. 26, 2026 (PDFs not on this branch). The Oct. 19 computed watch is not a live clock."
   },
   {
     "id": "32-deadline-3",
@@ -49,11 +51,12 @@
     "date": "2026-09-04",
     "date_label": "Sep. 4, 2026",
     "kind": "deadline",
-    "status": "open",
+    "status": "satisfied",
     "source_dkt": null,
     "title": "OVERDUE — Jose Melano response to operative FAC. Served Aug. 14, 2026; no response on PACER as of Sep. 28, 2026. Default posture; verify docket before seeking Rule 55(a) relief.",
     "actor": "opposing",
-    "source": "/documents/matter-32/ndcal/Proof of Service of Summons - Jose Melano (C&P Process Server original, clerk-stamped Aug 31 2026).pdf"
+    "source": "/documents/matter-32/ndcal/Proof of Service of Summons - Jose Melano (C&P Process Server original, clerk-stamped Aug 31 2026).pdf",
+    "retired_reason": "Open PR #1035 catalogs Dkt. 22 Defendants' Motion to Dismiss and Strike, filed Oct. 26, 2026, plus Dkt. 23 magistrate-jurisdiction declination. PDFs and docket rows are not ingested on this branch (no bytes on main). Treats the Sep. 4 Melano-answer watch as answered by motion. Confirm PACER before relying on a hearing date."
   },
   {
     "id": "32-deadline-cms",
@@ -64,5 +67,16 @@
     "source_dkt": null,
     "title": "Case Management Statement due — Nforbi v. Meza-Gonzalez et al. (4:26-cv-08271-ASK), per Sep. 28 PACER true-up.",
     "actor": "you"
+  },
+  {
+    "id": "32-deadline-mtd-opposition",
+    "date": "2026-11-09",
+    "date_label": "Nov. 9, 2026",
+    "kind": "deadline",
+    "status": "open",
+    "source_dkt": 22,
+    "actor": "you",
+    "title": "COMPUTED — Opposition to Dkt. 22 motion to dismiss/strike due Nov. 9, 2026 (Civ. L.R. 7-3(a): 14 days after Oct. 26 filing) — Nforbi v. Meza-Gonzalez et al. (4:26-cv-08271-ASK). Source: open PR #1035 catalogs the filed PDF; bytes not ingested on this branch. Hearing date not set here. USER REPORT: summons return is being refiled.",
+    "note": "Do not invent a hearing date. Confirm Civil L.R. 7-3(a) against the motion notice once the PDF is on this branch."
   }
 ]

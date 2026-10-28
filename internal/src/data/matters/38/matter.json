@@ -1,6 +1,6 @@
 {
   "number": 38,
-  "last_updated": "2026-10-06",
+  "last_updated": "2026-10-28",
   "caption": "Brendan Ngwa Nforbi v. Swift Transportation Co. of Arizona LLC",
   "case_no": "2:26-cv-03312-DC-SCR",
   "court": "USDC E.D. Cal. (Sacramento Div.)",
@@ -8,8 +8,8 @@
     "court_id": "caed"
   },
   "claims": "ICRAA § 1786.40; CCRAA § 1785.20.5 (alternative); UCL § 17200; Penal Code § 290.46(j) (I&B — preliminary NSOPW / registry)",
-  "status": "FILED in E.D. Cal. as No. 2:26-cv-03312-DC-SCR (filing date: confirm on PACER). Oct. 5, 2026 Order (ECF No. 4, Riordan) DENIED the IFP motion (ECF No. 2) without prejudice as incomplete. Renewed IFP motion or the filing fee due within 21 days (Oct. 26, 2026); otherwise dismissal will be recommended. San Joaquin September 8 packet remains LOCKED and unfiled.",
-  "status_label": "IMPORTANT — IFP denied; renew or pay fee by Oct. 26",
+  "status": "FILED in E.D. Cal. as No. 2:26-cv-03312-DC-SCR. Oct. 5, 2026 Order (ECF No. 4) denied IFP without prejudice; renewed IFP or the filing fee was due Oct. 26, 2026. As of the Oct. 28, 2026 true-up no payment or renewed AO 239 is ingested — clock 38-order-ifp-renewal remains open. Confirm PACER.",
+  "status_label": "IFP-or-fee Oct. 26 — confirm PACER",
   "lifecycle": "active",
   "proceeding": "federal_civil",
   "phase": "pleadings",
