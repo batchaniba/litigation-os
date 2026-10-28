@@ -1,0 +1,4 @@
+* -whitespace
+*.pdf binary
+*.docx binary
+*.jsonl text
