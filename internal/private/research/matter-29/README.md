@@ -29,13 +29,14 @@ No `internal/private/research/matter-29/` path existed on scanned remotes before
 2. **[Deadline list](11-deadlines/DEADLINE-LIST.md)** — live clocks plus statutory watches; this room is not a substitute for `clocks.json`.
 3. **[Open questions](12-open-questions/OPEN-QUESTIONS.md)** — P0/P1/P2 confirmations. Companion: [gaps](08-audit/GAPS-AND-CONFLICTS.md).
 4. **[Oct. 28 reinvestigation analysis](09-merits-analysis/REINVESTIGATION-ANALYSIS.md)** — letter + revised report vs. the Oct. 14 report and the Oct. 14 dispute.
-5. **[Facts](09-evidence-map/FACTS.md)** — FACT / INFERENCE / UNVERIFIED / QUESTION.
-6. **[Chronology](09-evidence-map/TIMELINE.md)**.
-7. **[Claims matrix](09-merits-analysis/CLAIMS-MATRIX.md)**.
-8. **[Record-to-argument map](09-evidence-map/RECORD-TO-ARGUMENT-MAP.md)**.
-9. **[Exhibit / evidence index](09-evidence-map/EXHIBIT-INDEX.md)**.
-10. **[Authority ledger](09-merits-analysis/AUTHORITY-LEDGER.md)** — statutes and repo-verified cases only; no invented citations.
-11. **[Discovery plan](03-discovery-production/DISCOVERY-PLAN.md)**.
+5. **[Amazon / Accurate strategy assessment](09-merits-analysis/DEFENSE-STRATEGY-ASSESSMENT.md)** — separate defense desks, causal tests, first-wave discovery, decision rules.
+6. **[Facts](09-evidence-map/FACTS.md)** — FACT / INFERENCE / UNVERIFIED / QUESTION.
+7. **[Chronology](09-evidence-map/TIMELINE.md)**.
+8. **[Claims matrix](09-merits-analysis/CLAIMS-MATRIX.md)**.
+9. **[Record-to-argument map](09-evidence-map/RECORD-TO-ARGUMENT-MAP.md)**.
+10. **[Exhibit / evidence index](09-evidence-map/EXHIBIT-INDEX.md)**.
+11. **[Authority ledger](09-merits-analysis/AUTHORITY-LEDGER.md)** — statutes and repo-verified cases only; no invented citations.
+12. **[Discovery plan](03-discovery-production/DISCOVERY-PLAN.md)**.
 
 ## Collection structure
 
@@ -51,7 +52,7 @@ No `internal/private/research/matter-29/` path existed on scanned remotes before
 | `07-source-text/` | Extracted text of the Oct. 28 PDF. The PDF controls |
 | `08-audit/` | Inventory, hashes, gaps, verification limits |
 | `09-evidence-map/` | Facts, chronology, exhibit index, record-to-argument map |
-| `09-merits-analysis/` | Claims matrix, authority ledger, reinvestigation analysis |
+| `09-merits-analysis/` | Claims matrix, authority ledger, reinvestigation analysis, defense-strategy assessment |
 | `10-rule26f-prep/` | Nov. 6 conference prep (this room's `10-*` tail, analogous to Matter 28 `10-hearing-prep/`) |
 | `11-deadlines/` | Deadline list for the user |
 | `12-open-questions/` | Open-questions list for the user |
