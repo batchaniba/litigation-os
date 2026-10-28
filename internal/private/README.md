@@ -19,7 +19,7 @@ excluded from every public portfolio projection.
 
 - Parole / federal habeas research
   - Front door: `internal/private/research/parole-habeas/INDEX.md`
-  - Also: `TIMELINE.md`, `HABEAS-OPTIONS.md`
+  - Also: `TIMELINE.md`, `HABEAS-OPTIONS.md`, `coa-6th/` (Sixth District mandate draft — do not file)
   - Classification: private litigation research (CDCR parole, C1761642, 2254/2241)
   - Public projection: prohibited
   - Active litigation: analysis only; does not move clocks

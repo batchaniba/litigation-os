@@ -4,6 +4,8 @@
 
 **Do not file a federal habeas petition from this memo.** Matter 19 is still the live state vehicle. A premature 2254 will be dismissed as unexhausted and can start a successive-petition problem that does not yet exist.
 
+**Immediate state paper (draft only, do not file from this memo):** if Santa Clara still has not ruled on C2604791, the recommended Court of Appeal vehicle is a **petition for writ of mandate** to compel a ruling, not an original Sixth District habeas. See `coa-6th/MEMO.md` and `coa-6th/PETITION-DRAFT.md`.
+
 **Do not cite *In re Leman*, 66 Cal.App.5th 200 (2021).** It is a known fabrication (portfolio negative control). It is already in the Matter 19 petition. Leave it there as a filed-paper fact; do not repeat it.
 
 Authorities used below were checked against CourtListener opinion pages, Cornell LII / U.S. Reports, Ninth Circuit slip opinions, California LegInfo, or the portfolio citation ledger. Anything not pulled in this pass is marked **UNVERIFIED**. See § 9.
@@ -16,7 +18,7 @@ Viability is **legal + record**, not effort. “High” would mean a federal cou
 
 | Rank | Route | Viability | Why |
 |---|---|---|---|
-| **1** | **Stay in state court on Matter 19; if denied, exhaust the California Court of Appeal and California Supreme Court, then 28 U.S.C. § 2254 on the *Dec. 2025 discharge denial*** | **Low–medium as a *state* habeas; low as a *federal* 2254** | Only live discharge vehicle. Custody is satisfied (*Jones*). Exhaustion is not. On the merits, Sacramento already held (Matter 9, May 29, 2026) that PC § 3000(b)(2)(B) imposes a **mandatory 10-year** term, so CDCR had no 3008 duty to do an individualized early discharge. Federal review of that state-law holding is almost certainly barred by *Swarthout* / *Estelle*. The federal remainder is thin process (he got a Form 1502-DR with reasons). |
+| **1** | **Stay in state court on Matter 19; if denied, exhaust the California Court of Appeal and California Supreme Court, then 28 U.S.C. § 2254 on the *Dec. 2025 discharge denial*** | **Low–medium as a *state* habeas; low as a *federal* 2254** | Only live discharge vehicle. Custody is satisfied (*Jones*). Exhaustion is not. Plead **(1) immediate discharge** on futility and **(2)** a new lawful review on a date certain; (1) is weak (*Prather* / *Masoner I* / Matter 9’s 10-year holding); (2) is the real process writ. Sacramento already held (Matter 9, May 29, 2026) that PC § 3000(b)(2)(B) imposes a **mandatory 10-year** term, so CDCR had no 3008 **ministerial** duty to do an individualized early discharge. Federal review of that state-law holding is almost certainly barred by *Swarthout* / *Estelle*. The federal remainder is thin process (he got a Form 1502-DR with reasons). |
 | **2** | **Do not use habeas for the live § 1983 facts (Matters 28, 30, 32, 24, 29, 20).** Keep those as civil rights / writ cases | **This is the strongest federal use of the parole *facts*, but it is not habeas** | *Nettles* / *Wilkinson*: claims that would not *necessarily* produce earlier discharge belong in § 1983. HOPE reporting, Moua transfer, Nov. 1 arrest, Accurate’s parole line, Serrato’s I-918B denial. |
 | **3** | **Pen. Code § 1473.7 *after* CDCR parole actually ends**, to attack C1761642 for immigration legal invalidity or actual innocence | **Low now (unavailable); uncertain later** | Statute requires the movant to be **“no longer in criminal custody.”** Parole **is** criminal custody (Judicial Council CR-187). Even after discharge, § 1473.7(b)(2) lets a court deem the motion untimely if it was not filed with reasonable diligence after a **final removal order** that uses the conviction — and he has a **Feb. 8, 2021** final IJ order. *People v. Perez* (2021) 67 Cal.App.5th 1008 says untimeliness is discretionary — **UNVERIFIED as applied to these facts**; pull the opinion before relying. No plea-colloquy or IAC record is in the repo. |
 | **4** | **§ 2254 attacking the 2018 conviction itself** | **Very low** | AEDPA one-year from finality. If there was no appeal, finality was ~March 2018. The year expired in 2019 unless a rare 2244(d)(1)(B)–(D) trigger exists. No such trigger is in the repo. State exhaustion of conviction claims (Geffon 2025 was a *term-length* claim, not a guilt claim) is incomplete on this record. |
@@ -259,7 +261,7 @@ Apply that cut to this portfolio:
 - Policy 19-03 as an unpublished time bar sitting on top of the statute.
 - LS/CMI 5 vs. retention threshold 11; CSRA 2; technicals handled without revocation.
 - *Dwyer* findings (trial-court, unpublished) + § 3574(d)–(e) decoupling treatment completion from discharge.
-- **Repair before any amendment:** delete *Leman*; stop saying “zero arrests”; quote Eagan as Eagan; do not overclaim *Gadlin* (it is Prop. 57, not earned discharge).
+- **Repair before any amendment:** delete *Leman*; stop saying “zero arrests”; quote Eagan as Eagan; do not overclaim *Gadlin* (it is Prop. 57, not earned discharge). Plead remedies in the alternative: **(1) immediate discharge** on futility; **(2)** a new lawful individualized review within a date certain. Candid ranking: (1) is the asked-for primary and is weak (*Prather*, *Masoner I*, Matter 9); (2) is the remedy California law actually supplies on a first process win. See `coa-6th/MEMO.md` § 2. Do not convert a 2254 into a “discharge me” petition (*Swarthout* / *Wilkinson*).
 
 ### 6.2 Worth a **future 2254** only after full California exhaustion, and only as federal claims
 
@@ -392,7 +394,7 @@ Funnel note: CourtListener’s unauthenticated `citation-lookup` was 401 in this
 
 1. **This week:** Santa Clara clerk for C2604791 (and C2602632, C1761642). Photograph every minute order after Jul. 2, 2026.
 2. **Do not** draft a 2254 until that file is in the repo.
-3. **If Matter 19 is still pending:** leave it. Optional: a second HC-004 only if the Sep. 1 notice is incomplete (CRC 4.551). Do not bombard Hawk.
+3. **If Matter 19 is still pending:** the next **state** paper is a Sixth District **mandate to compel a ruling**, not a second HC-004 and not an original Court of Appeal habeas. Drafts: `coa-6th/`. **Do not file from those drafts** until the live clerk file confirms no 4.551(a)(8) ruling. A second HC-004 is not in the rule unless the Sep. 1 notice was incomplete. Do not bombard Hawk.
 4. **If denied:** California Court of Appeal habeas (Sixth District — **UNVERIFIED venue; confirm**), then California Supreme Court, on **federal** claims as well as state claims, within a short interval (*Carey*/*Chavis*).
 5. **If granted:** get the CDCR discharge papers into Matter 29 (Accurate) immediately. The 2254 for discharge is over.
 6. **Parallel, not instead:** Matter 28 (HOPE), Matter 32 (Nov. 1), Matter 20 (U-visa), Matter 30 (Moua window). Those are the federal cases that can actually move. They are not habeas.

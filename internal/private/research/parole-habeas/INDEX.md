@@ -17,6 +17,7 @@
 | `INDEX.md` (this file) | Every parole-touching matter, court, case no., status, key orders, deadlines, and a document map with repo paths |
 | `TIMELINE.md` | Conviction → sentence → parole → revocations/holds → filings, in date order |
 | `HABEAS-OPTIONS.md` | Federal habeas routes (2254 / 2241 / coram nobis / PC 1473.7 / 1203.4), *Heck* interplay with the § 1983 suits, viability ratings, missing records, citation verification |
+| `coa-6th/` | **Draft only. Do not file.** Sixth District packet to compel a Santa Clara ruling on Matter 19: `MEMO.md` (vehicle), `PETITION-DRAFT.md` (mandate), `CHECKLIST.md` |
 
 Query interface for live status: `npm run q getMatter -- --matter 19` (and 9, 10, 20, 28, 29, 32, 33, 30). Do not rebuild a docket from this memo.
 
@@ -34,6 +35,7 @@ These are **pled or documented** facts, not new findings.
 | CDC No. BF3571. Supervised at various times by Stockton 2 GPS (Moua / Noguchi / Derrick / Rojo / Urrea) and, after July 2, 2026, Santa Clara GPS. | Matters 15, 19, 30 | High |
 | **No federal habeas petition has ever been filed.** Successive-petition bar of 28 U.S.C. § 2244(b) is not yet triggered. | Full matter crawl | High |
 | Matter 19 (C2604791) is the **only live state habeas**. CRC 4.551(a)(6)(B) 30-day calendar from the Sep. 1, 2026 HC-004 ran through **Oct. 1, 2026**. **No ruling PDF ingested as of Oct. 28, 2026.** Status is UNCERTAIN. | Matter 19 `matter.json` (last_updated 2026-10-28); PR #1039 | High as to the gap |
+| Recommended next **state** paper, if the clerk file still shows no ruling: petition for **writ of mandate** in the Court of Appeal, Sixth Appellate District, to compel Santa Clara to rule — **not** an original COA habeas that itself discharges him or orders a new review. The pending habeas prays **(1) immediate discharge** on futility **or (2)** a new lawful review on a date certain; ranking in `coa-6th/MEMO.md` § 2. Drafts are in `coa-6th/`. **Do not file from this INDEX.** | `coa-6th/MEMO.md` | Recommendation only; user must pull the live docket first |
 
 ---
 
@@ -53,9 +55,10 @@ Numbered cluster 4 is the UI bucket (`internal/src/data/clusters.js`). It is not
 | Status | **ACTIVE / under submission.** HC-004 filed in person Sep. 1, 2026. Oct. 1 ruling calendar passed. **No ruling PDF. Do not treat the petition as granted or denied.** |
 | Live clock | `19-deadline-1` 2026-10-01, status `open` (derived overdue). Actor: court. |
 | Key orders | **Jul. 2, 2026** Order Extending Time (CRC 4.551(i)) — ruling deadline **Aug. 1, 2026**, which lapsed with no ruling. Path: `/documents/opinions/Newanforbi Habeas - Santa Clara Sup Ct - Order Extending Time Jul 2 2026.pdf` |
-| What it asks | Vacate the Dec. 1, 2025 Form 1502-DR; discharge effective Dec. 2, 2025 (or the date of the order); declare Policy 19-03 invalid; Form 1502-DR is the wrong instrument after 15 CCR § 3574 (Form 3043) |
+| What it asks | **Primary:** vacate the Dec. 1, 2025 Form 1502-DR and **immediate discharge** on a futility theory (Policy 19-03 blanket bar; boilerplate 1502-DR naming **Eagan**; prior denials; record supporting discharge). **Alternatively:** a new lawful individualized review on Form 3043 / 15 CCR § 3574 within a date certain (suggest 30 days). Declare Policy 19-03 invalid as a ground. **Candid ranking** (*Prather* / *Masoner I* / Matter 9): plead both; expect the court to grant (2) if anything. See `coa-6th/MEMO.md` § 2. |
 | Prior habeas disclosed | Apr./May 2025 petition (3-year abstract vs. 10-year statute), **denied Aug. 27, 2025 by Judge Geffon**. No Geffon order PDF in the repo. |
 | Risk flags in the petition itself | Cites ***In re Leman*, 66 Cal.App.5th 200 (2021)** — **known fabrication; do not reuse.** Claims “without a single arrest” over five years of parole — **in tension with the Nov. 1, 2024 CHP arrest** (Matter 32 / 20 / 33), even though that arrest was later reclassified under PC § 849(b)(1). Supervisor comments on the 1502-DR name **“Eagan”** on the face of the exhibit; some pleadings silently substituted “Newanforbi.” |
+| Court of Appeal next step (draft only) | If the live clerk file still shows no 4.551(a)(8) ruling: **writ of mandate** in the Sixth District to compel a ruling — not original COA habeas. Packet: `coa-6th/`. **Do not file from the draft.** |
 
 ### Matter 10 — closed habeas (treatment length)
 
