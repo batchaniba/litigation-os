@@ -30,32 +30,9 @@ const outcomes_raw = {
   // Matter 12 default track closed Aug. 12, 2026 when Diamond/Alpine appeared through
   // Gulomjon Azimov and disputed service — no near-term recovery is currently booked.
   anticipated: [],
+  // Matter 27 settled (Notice of Settlement Oct. 26, 2026); its demand rows were retired
+  // Oct. 28, 2026. Terms are confidential and are not booked in `realized`.
   active_demands: [
-    {
-      matter: 27,
-      caption: "Newanforbi v. Randstad US, LLC",
-      demand_amount: 55000,
-      sent_date: "August 19, 2026",
-      deadline: "September 8, 2026",
-      deadline_time: "5:00 PM PT",
-      counsel: "Chadwick L. Williams, Esq. (Kabat Chapman & Ozmer LLP)",
-      counsel_email: "cwilliams@kcozlaw.com",
-      response_status: "pending",
-      notes: "Live ask is the Aug. 19 transmitted demand: $55,000.00 Randstad-only, or $85,000.00 globally with The RK Logistics Group, Inc., restated in the Aug. 28 letter. Inclusive, payable within 15 business days after a signed agreement. Response due 5:00 p.m. PT Sept. 8, 2026 (self-imposed; one week before Randstad's Sept. 15 answer date). Williams said Aug. 28 he would attempt to respond by Sept. 4. The unsent Aug. 18 $250,000 letter stays unsent. Pleading clocks: Randstad Sept. 15 (Aug. 18 15-day extension with Williams); RK Logistics Sept. 14 (Garcia request granted; no further). Evid. Code §1152 / FRE 408. Case No. 26CV199902, Hon. Thomas Weathers, Dept. 20, Rene C. Davidson Courthouse (reassigned Aug. 7, 2026 from Hon. Karin Schwartz); CMC Dec. 17, 2026."
-    },
-    {
-      matter: 27,
-      caption: "Newanforbi v. RK Logistics Group, Inc.",
-      demand_amount: 85000,
-      sent_date: "July 20, 2026",
-      deadline: "August 2, 2026",
-      deadline_time: "5:00 PM PT",
-      counsel: "Garcia & Gurney, ALC — Melinda Garcia, Esq. (Shareholder)",
-      counsel_email: "",
-      response_status: "denied",
-      response_date: "July 21, 2026",
-      notes: "Pre-filing $85,000 demand denied July 21 through Garcia & Gurney on (1) Randstad-was-the-employer and (2) MVR/Class A grounds — both in tension with RK's own Transportation Manager email and Plaintiff's Class C license. Not part of the live Aug. 19 $55,000 Randstad-only / $85,000 global ask restated Aug. 28. Responsive pleading extended to Sept. 14, 2026 (single extension; no further). Case No. 26CV199902."
-    }
   ],
   portfolio_exposure: {
     conservative: sumColumn("conservative"),

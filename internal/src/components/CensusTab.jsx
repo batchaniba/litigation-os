@@ -375,7 +375,7 @@ export const CensusTab = ({ setActiveTab, setClusterFilter, setStatusFilter, set
                       <td style={{ ...tdStyle(theme), color: theme.subtleText }}>{vendor}</td>
                       <td style={tdStyle(theme)}>
                         {isSettled
-                          ? <span style={{ fontFamily: MONO, fontSize: 10.5, fontWeight: 700, letterSpacing: "0.06em", textTransform: "uppercase", color: GREEN, border: `1.5px solid ${GREEN}`, borderRadius: 3, padding: "2px 6px" }}>Settled {fmt(settledDeals.find(d => d.matter === matter)?.amount || 0)}</span>
+                          ? <span style={{ fontFamily: MONO, fontSize: 10.5, fontWeight: 700, letterSpacing: "0.06em", textTransform: "uppercase", color: GREEN, border: `1.5px solid ${GREEN}`, borderRadius: 3, padding: "2px 6px" }}>Settled{settledDeals.find(d => d.matter === matter)?.amount ? ` ${fmt(settledDeals.find(d => d.matter === matter).amount)}` : ""}</span>
                           : <span style={{ color: STATUS_COLOR[statusLabel] || theme.subtleText, fontWeight: 600 }}>{statusLabel}</span>}
                       </td>
                     </tr>
