@@ -317,10 +317,10 @@ function ActionCard({ item, color, theme }) {
           <div style={{ flex: 1, minWidth: 200 }}>
             <div
               style={{
-                fontFamily: SERIF,
-                fontSize: 19,
+                fontFamily: SANS,
+                fontSize: 14,
                 fontWeight: 600,
-                lineHeight: 1.3,
+                lineHeight: 1.45,
                 color: theme.heading,
                 marginBottom: 3,
               }}
@@ -436,10 +436,10 @@ function GapCard({ gap, theme }) {
       <div style={{ flex: 1, minWidth: 200 }}>
         <div
           style={{
-            fontFamily: SERIF,
-            fontSize: 19,
+            fontFamily: SANS,
+            fontSize: 14,
             fontWeight: 600,
-            lineHeight: 1.3,
+            lineHeight: 1.45,
             color: theme.heading,
             marginBottom: 3,
           }}
