@@ -1,6 +1,6 @@
 {
   "generated": true,
-  "today": "2026-10-23",
+  "today": "2026-10-28",
   "matters": [
     {
       "number": 1,
@@ -154,9 +154,16 @@
       "lifecycle": "dismissed",
       "proceeding": "state_civil",
       "phase": "terminal",
-      "next_clock": null,
+      "next_clock": {
+        "id": "05-judgment-request",
+        "date": "2026-10-28",
+        "kind": "deadline",
+        "status": "open",
+        "title": "FILE — Request for entry of judgment after the Jul. 15, 2026 WOLA demurrer (STK-CV-UF-2026-0001032 / CV-2026-0001032). Register re-pulls through Sep. 21, 2026 found no CCP § 581d judgment. USER REPORT Oct. 28, 2026: Plaintiff is requesting entry of judgment. No filed request PDF ingested.",
+        "source_dkt": null
+      },
       "overdue": false,
-      "last_updated": "2026-09-20",
+      "last_updated": "2026-10-28",
       "files": [
         "claims.json",
         "clocks.json",
@@ -604,7 +611,7 @@
         "source_dkt": null
       },
       "overdue": true,
-      "last_updated": "2026-09-16",
+      "last_updated": "2026-10-28",
       "files": [
         "claims.json",
         "clocks.json",
@@ -632,17 +639,17 @@
       "same_incident": null,
       "lifecycle": "active",
       "proceeding": "mandate",
-      "phase": "writ_ruling",
+      "phase": "hearing",
       "next_clock": {
-        "id": "20-deadline-7",
-        "date": "2026-10-06",
-        "kind": "deadline",
-        "status": "overdue",
-        "title": "TARGET — File & serve CM-110 with attachments + proof of service (ideal window Oct 6–8; hard deadline Oct 13, 15 calendar days before Oct 28 CMC per CRC 3.725).",
+        "id": "20-hearing-cmc-nov4",
+        "date": "2026-11-04",
+        "kind": "hearing",
+        "status": "open",
+        "title": "Case Management Conference — Newanforbi v. CHP et al. (26CV191136), Nov. 4, 2026, 4:00 p.m., Dept. 25, Rene C. Davidson Courthouse, Hon. Jenna M. Whitman. USER REPORT Oct. 28, 2026: continued from Oct. 28. No continuance order PDF ingested.",
         "source_dkt": null
       },
-      "overdue": true,
-      "last_updated": "2026-09-16",
+      "overdue": false,
+      "last_updated": "2026-10-28",
       "files": [
         "claims.json",
         "clocks.json",
@@ -808,17 +815,17 @@
       "same_incident": null,
       "lifecycle": "active",
       "proceeding": "federal_civil",
-      "phase": "cmc",
+      "phase": "discovery",
       "next_clock": {
-        "id": "25-hearing-2",
-        "date": "2026-10-08",
-        "kind": "hearing",
-        "status": "overdue",
-        "title": "HEARING — Status (Pretrial Scheduling) Conference in Newanforbi v. Federal Express Corporation (E.D. Cal. 2:26-cv-02881-DAD-SCR), Thursday, October 8, 2026,…",
-        "source_dkt": 8
+        "id": "25-fedex-discovery-responses",
+        "date": "2026-11-05",
+        "kind": "deadline",
+        "status": "open",
+        "title": "WATCH — FedEx responses to Plaintiff's Interrogatories, RFAs, and RFPs (Set One) due, Newanforbi v. Federal Express Corporation (E.D. Cal. 2:26-cv-02881-DAD-SCR). Served by email Oct. 6, 2026 → 30 days (FRCP 33(b)(2), 34(b)(2)(A), 36(a)(3); no 3 days added for email service under FRCP 6(d)). Recomputes the earlier mail-based contingent Oct. 29 row, which is left as is.",
+        "source_dkt": null
       },
-      "overdue": true,
-      "last_updated": "2026-10-15",
+      "overdue": false,
+      "last_updated": "2026-10-28",
       "files": [
         "claims.json",
         "clocks.json",
@@ -877,17 +884,17 @@
       "same_incident": null,
       "lifecycle": "active",
       "proceeding": "state_civil",
-      "phase": "responsive_deadline",
+      "phase": "cmc",
       "next_clock": {
-        "id": "27-deadline-5",
-        "date": "2026-10-09",
+        "id": "27-deadline-3",
+        "date": "2026-12-17",
         "kind": "deadline",
-        "status": "overdue",
-        "title": "WATCH — Randstad settlement payment due: 14 calendar days after the Sep. 25, 2026 Effective Date. Checks by tracked overnight courier; tracking number to be emailed on dispatch. Confirm receipt and clearing.",
+        "status": "open",
+        "title": "Case Management Conference, Newanforbi v. Randstad US LLC and RK Logistics Group, Inc. (Matter 27) — Hon. Thomas Weathers, Dept. 20, Rene C. Davidson…",
         "source_dkt": null
       },
-      "overdue": true,
-      "last_updated": "2026-09-25",
+      "overdue": false,
+      "last_updated": "2026-10-28",
       "files": [
         "claims.json",
         "clocks.json",
@@ -915,17 +922,17 @@
       "same_incident": null,
       "lifecycle": "active",
       "proceeding": "federal_civil",
-      "phase": "mtd_briefing",
+      "phase": "stayed",
       "next_clock": {
-        "id": "28-lr73d-objection",
-        "date": "2026-10-20",
+        "id": "28-js-2026-11-17",
+        "date": "2026-11-17",
         "kind": "deadline",
-        "status": "overdue",
-        "title": "Civil L.R. 7-3(d)(1) objection to new evidence in reply: due within 7 days after the reply is filed (filed Oct. 13 → Oct. 20). LIVE: Dkt. 30-1 Supplemental RFJN Exhibit A attaches a San Joaquin docket screenshot (STK-CV-UF-2026-0001032). Newanforbi v. Smith / HOPE (3:26-cv-07504-LJC).",
-        "source_dkt": 30
+        "status": "open",
+        "title": "Joint status conference report due Nov. 17, 2026 (monthly through May 17, 2027) — Newanforbi v. Smith / HOPE (3:26-cv-07504-LJC). USER REPORT of the Oct. 27, 2026 order deferring the MTD pending San Joaquin judgment. No order PDF ingested.",
+        "source_dkt": null
       },
-      "overdue": true,
-      "last_updated": "2026-10-15",
+      "overdue": false,
+      "last_updated": "2026-10-28",
       "files": [
         "claims.json",
         "clocks.json",
@@ -955,15 +962,15 @@
       "proceeding": "federal_civil",
       "phase": "mtd_briefing",
       "next_clock": {
-        "id": "29-deadline-6",
-        "date": "2026-09-30",
-        "kind": "deadline",
-        "status": "overdue",
-        "title": "28 U.S.C. §1447(c) remand window closes (computed) — Newanforbi v. Amazon.com Services, LLC et al., USDC N.D. Cal. No. 3:26-cv-09249-ASK. Thirty days from the…",
-        "source_dkt": 1
+        "id": "29-rule26f-meet-confer",
+        "date": "2026-11-06",
+        "kind": "meet-and-confer",
+        "status": "open",
+        "title": "Rule 26(f) / ADR L.R. 3-5 meet-and-confer, Fri. Nov. 6, 2026, 1:00–1:30 p.m. PT (invite sent as 3:00–3:30 p.m. Central), by Microsoft Teams — Newanforbi v. Amazon.com Services, LLC et al. (4:26-cv-09249-ASK). With Doug Brown and Drew Frederick (Morgan Lewis, for Amazon) and John Drury and Jasmine Stanzick (Seyfarth, for Accurate Background). Satisfies the Dkt. 9 meet-and-confer deadline of Nov. 10. Join details are in the invite email, not the repo.",
+        "source_dkt": 9
       },
-      "overdue": true,
-      "last_updated": "2026-10-15",
+      "overdue": false,
+      "last_updated": "2026-10-28",
       "files": [
         "claims.json",
         "clocks.json",
@@ -1060,17 +1067,17 @@
       "same_incident": null,
       "lifecycle": "active",
       "proceeding": "federal_civil",
-      "phase": "responsive_deadline",
+      "phase": "mtd_briefing",
       "next_clock": {
-        "id": "32-deadline-melano-answer",
-        "date": "2026-09-04",
+        "id": "32-deadline-1",
+        "date": "2026-09-17",
         "kind": "deadline",
         "status": "overdue",
-        "title": "OVERDUE — Jose Melano response to operative FAC. Served Aug. 14, 2026; no response on PACER as of Sep. 28, 2026. Default posture; verify docket before seeking Rule 55(a) relief.",
-        "source_dkt": null
+        "title": "FILE — summons return / CCP § 415.20(b) declaration + Exhibit A USPS receipt + POS being refiled in Nforbi v. Meza-Gonzalez et al. (4:26-cv-08271-ASK). USER REPORT Oct. 28, 2026. Sep. 17 mailing executed; prior FILE clock was still open (dkt null). Do not invent a filing.",
+        "source_dkt": 16
       },
       "overdue": true,
-      "last_updated": "2026-10-15",
+      "last_updated": "2026-10-28",
       "files": [
         "claims.json",
         "clocks.json",
@@ -1103,12 +1110,12 @@
         "id": "33-deadline-7",
         "date": "2026-10-27",
         "kind": "deadline",
-        "status": "open",
+        "status": "overdue",
         "title": "WATCH — Defendants' response to First Amended Complaint (Dkt. 6) due — Nforbi v. Candelaria et al. (3:26-cv-08272-RFL). Set by Dkt. 24 Order Granting Motion to Strike (Oct. 13, 2026), which struck Defendants' Sep. 4 answer (Dkt. 11) to the superseded complaint.",
         "source_dkt": 24
       },
-      "overdue": false,
-      "last_updated": "2026-10-15",
+      "overdue": true,
+      "last_updated": "2026-10-28",
       "files": [
         "claims.json",
         "clocks.json",
@@ -1167,17 +1174,17 @@
       "same_incident": null,
       "lifecycle": "active",
       "proceeding": "state_civil",
-      "phase": "service",
+      "phase": "discovery",
       "next_clock": {
-        "id": "35-deadline-5",
-        "date": "2026-10-21",
+        "id": "35-deadline-7",
+        "date": "2026-11-17",
         "kind": "deadline",
-        "status": "overdue",
-        "title": "OPEN TASK — Matter 35 (26CV501995) meet-and-confer with Ross counsel (Vogl Meredith) re Oct 15 Verified Answer before demurrer/motion to strike (CCP §§ 430.41(a)(2), 435.5).",
+        "status": "open",
+        "title": "OPEN TASK — Matter 35: serve verified responses to Ross Form Interrogatories, Special Interrogatories (27), and RFPs (24), Set One (served Oct 15 by mail + email; 30 days + 2 court days, CCP § 1010.6). Late = objections waived.",
         "source_dkt": null
       },
-      "overdue": true,
-      "last_updated": "2026-10-15",
+      "overdue": false,
+      "last_updated": "2026-10-28",
       "files": [
         "claims.json",
         "clocks.json",
@@ -1276,15 +1283,15 @@
       "proceeding": "federal_civil",
       "phase": "pleadings",
       "next_clock": {
-        "id": "38-deadline-1",
-        "date": "2026-09-26",
-        "kind": "deadline",
+        "id": "38-order-ifp-renewal",
+        "date": "2026-10-26",
+        "kind": "court_order",
         "status": "overdue",
-        "title": "OUTER BOUND — CCP § 338(a) three-year statutory-liability clock on the Swift § 290.46(j) / ICRAA counts if accrual is the Sept. 26, 2023 pre-adverse email.…",
-        "source_dkt": null
+        "title": "IMPORTANT — DUE — Renewed IFP motion (complete AO 239: monthly income, monthly expenses, assets, all money received in the past 12 months) OR pay the filing fee — Brendan Ngwa Nforbi v. Swift Transportation Company (E.D. Cal. 2:26-cv-03312-DC-SCR), per Oct. 5, 2026 Order (ECF No. 4). Missing it means a recommendation of dismissal, and refiling the § 290.46(j) / ICRAA counts would likely be time-barred.",
+        "source_dkt": 4
       },
       "overdue": true,
-      "last_updated": "2026-10-06",
+      "last_updated": "2026-10-28",
       "files": [
         "claims.json",
         "clocks.json",
@@ -1315,7 +1322,7 @@
       "phase": "pleadings",
       "next_clock": null,
       "overdue": false,
-      "last_updated": "2026-10-20",
+      "last_updated": "2026-10-28",
       "files": [
         "claims.json",
         "clocks.json",
@@ -1375,16 +1382,9 @@
       "lifecycle": "pre_filing",
       "proceeding": "state_civil",
       "phase": "pre_filing",
-      "next_clock": {
-        "id": "41-watch-1",
-        "date": "2026-09-25",
-        "kind": "deadline",
-        "status": "overdue",
-        "title": "WATCH — one week post-driving-eval: check for any Checkr background-check authorization/disclosure email from Nuro. None signed as of Sep. 18, 2026. The vendor step is the next event in the sequence.",
-        "source_dkt": null
-      },
-      "overdue": true,
-      "last_updated": "2026-09-18",
+      "next_clock": null,
+      "overdue": false,
+      "last_updated": "2026-10-28",
       "files": [
         "claims.json",
         "clocks.json",
@@ -1413,16 +1413,9 @@
       "lifecycle": "pre_filing",
       "proceeding": "state_civil",
       "phase": "pre_filing",
-      "next_clock": {
-        "id": "42-watch-fadv-report",
-        "date": "2026-10-14",
-        "kind": "watch",
-        "status": "overdue",
-        "title": "WATCH — Staples / First Advantage (Matter 42): First Advantage file requested and received? Staples pre-adverse notice or Fair Chance Act preliminary decision (Gov. Code § 12952) received? If a preliminary decision arrives, the written response is due within 5 business days of receipt (more if disputing accuracy) — address the conviction with rehabilitation evidence; do not raise other litigation.",
-        "source_dkt": null
-      },
-      "overdue": true,
-      "last_updated": "2026-10-07",
+      "next_clock": null,
+      "overdue": false,
+      "last_updated": "2026-10-28",
       "files": [
         "claims.json",
         "clocks.json",

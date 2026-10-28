@@ -195,6 +195,16 @@ describe("isCourtFacingClock", () => {
         title: "Case Management Conference, Dept. 20",
       }),
     ).toBe(true);
+    expect(
+      isCourtFacingClock({
+        date: "2026-10-09",
+        kind: "deadline",
+        source_dkt: null,
+        actor: "opposing",
+        private: true,
+        title: "WATCH — settlement payment due",
+      }),
+    ).toBe(false);
   });
 });
 

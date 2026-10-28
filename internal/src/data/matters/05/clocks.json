@@ -1,1 +1,15 @@
-[]
+[
+  {
+    "id": "05-judgment-request",
+    "date": "2026-10-28",
+    "kind": "deadline",
+    "status": "open",
+    "source_dkt": null,
+    "actor": "you",
+    "source": "/documents/opinions/Newanforbi v Palacios - San Joaquin Sup Ct - Demurrer Sustained WOLA Jul 15 2026.pdf",
+    "title": "FILE — Request for entry of judgment after the Jul. 15, 2026 WOLA demurrer (STK-CV-UF-2026-0001032 / CV-2026-0001032). Register re-pulls through Sep. 21, 2026 found no CCP § 581d judgment. USER REPORT Oct. 28, 2026: Plaintiff is requesting entry of judgment. No filed request PDF ingested.",
+    "note": "USER REPORT. Closed Jul. 15, 2026 is already on the docket. Do not invent a judgment date.",
+    "date_label": "Oct. 28, 2026",
+    "tz": "America/Los_Angeles"
+  }
+]

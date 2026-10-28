@@ -1,1 +1,14 @@
-[{"actor":"you","date":"2026-09-25","date_label":"Sep. 25, 2026","id":"41-watch-1","kind":"deadline","source":"/documents/matter-41/Interview Feedback Survey - Nuro (Sep 18 2026).pdf","source_dkt":null,"status":"open","title":"WATCH — one week post-driving-eval: check for any Checkr background-check authorization/disclosure email from Nuro. None signed as of Sep. 18, 2026. The vendor step is the next event in the sequence."}]
+[
+  {
+    "actor": "you",
+    "date": "2026-09-25",
+    "date_label": "Sep. 25, 2026",
+    "id": "41-watch-1",
+    "kind": "deadline",
+    "source": "/documents/matter-41/Interview Feedback Survey - Nuro (Sep 18 2026).pdf",
+    "source_dkt": null,
+    "status": "satisfied",
+    "title": "WATCH — one week post-driving-eval: check for any Checkr background-check authorization/disclosure email from Nuro. None signed as of Sep. 18, 2026. The vendor step is the next event in the sequence.",
+    "retired_reason": "One-week post-driving-eval watch (Sep. 25, 2026) passed. No Checkr authorization, disclosure, report, or adverse-action PDF ingested as of the Oct. 28, 2026 true-up. Pre-filing matter remains unripened."
+  }
+]
