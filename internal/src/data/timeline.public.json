@@ -21,7 +21,7 @@
       32
     ],
     "type": "deadline",
-    "upcoming": true,
+    "upcoming": false,
     "filed": false,
     "actor": "you",
     "source": "/documents/matter-32/ndcal/Declaration of Mailing - CCP 415.20(b) Follow-Up to Dkt 16 - Meza-Gonzalez (N.D. Cal. 4-26-cv-08271-ASK) (September 16, 2026).pdf",
@@ -36,7 +36,7 @@
       32
     ],
     "type": "deadline",
-    "upcoming": true,
+    "upcoming": false,
     "actor": "opposing",
     "source": "/documents/matter-32/ndcal/Declaration of Mailing - CCP 415.20(b) Follow-Up to Dkt 16 - Meza-Gonzalez (N.D. Cal. 4-26-cv-08271-ASK) (September 16, 2026).pdf",
     "source_type": "portfolio",
@@ -65,7 +65,7 @@
       20
     ],
     "type": "deadline",
-    "upcoming": true,
+    "upcoming": false,
     "actor": "opposing",
     "source": "/documents/matter-20/Request for Production of Documents Set One - CHP with Mail POS (Sep 16 2026).pdf",
     "source_type": "portfolio",
@@ -1853,21 +1853,6 @@
   },
   {
     "date": "Sep. 14, 2026",
-    "event": "RECEIVED — Alexandra Moskow (Kabat Chapman & Ozmer LLP; amoskow@kcozlaw.com; to Plaintiff; cc Nathan Chapman, Chadwick L. Williams, Windy Thor) emailed at 4:37 p.m. in Newanforbi v. Randstad US, LLC et al. (26CV199902), attaching the executed Plaintiff counterpart (filename on the email: 2026.09.14 [Newanforbi] Stipulation and Proposed Order Extending Time for Randstad to Respond.pdf). Diff versus the signed counterpart: terms, Weathers / Dept. 20 caption, CRC 3.110(d) second-shot recital, RK-unchanged, default reserved, and /s/ Brendan Ngehsi Newanforbi match. Chapman wet signature plus handwritten September 14, 2026. Moskow proof of service (page 6): email checked; the Court's Electronic Filing System box unchecked. Proposed order still unsigned by Hon. Thomas Weathers. No clerk stamp. Counterpart paragraph 6 and CRC 3.110(d): September 18 is not an operative deadline until the paper is filed AND the Court enters an order. Do not retire the unfiled counterpart. Do not flip Randstad off September 15. This paper does not move The RK Logistics Group, Inc. and is not an acceptance of the September 12 $25,000 demand. Evid. Code §1152 / FRE 408 as to the demand.",
-    "matters": [
-      27
-    ],
-    "type": "correspondence",
-    "upcoming": false,
-    "filed": false,
-    "actor": "opposing",
-    "source": "/documents/matter-27/Gmail - Moskow Serves Executed Randstad Counterpart (Sep 14 2026).pdf",
-    "source_type": "portfolio",
-    "confidence": "high",
-    "verified_at": "2026-09-14"
-  },
-  {
-    "date": "Sep. 14, 2026",
     "event": "RECEIVED — Karen Tai (Garcia & Gurney, ALC; ktai@garciagurney.com; to Plaintiff; cc Chadwick L. Williams, Melinda Garcia, Nathan Chapman, Tod Gurney, Tai, Pol Minguet, Shinae Kim) emailed at 4:21 p.m. in Newanforbi v. Randstad US, LLC et al. (26CV199902): 'Please see attached.' Attachment named CIV 141-signed.pdf. Tod C. Gurney, SBN 199813, for The RK Logistics Group, Inc. Judicial Council CIV-141 (Rev. January 1, 2019). Item 1: RK was served with a complaint. Item 2: responsive pleading due 9/14/2026; intends a demurrer, motion to strike, or motion for judgment on the pleadings; claims the first automatic 30-day extension under CCP §430.41(a)(2). Explanation: September 9 email that the firm had just been retained, requested a 15-day extension, Plaintiff responded the next day and denied it, and counsel lacked time to meet and confer. That 15-day recitation is off the record — Garcia (10:23 a.m.) and Gurney (4:47 p.m.) on September 10 asked through September 30. Signed Gurney September 14, 2026. Karen Tai proof of service: EMAIL only (mail and overnight unchecked) on Plaintiff and Williams. FOR COURT USE ONLY is empty; no clerk stamp; no docket number. If the clerk accepted it on eCourt today, the statute would carry RK to October 14, 2026 (Wednesday). Do not invent that date as live. Do not CIV-100 RK. Williams's Randstad paper does not move this clock.",
     "matters": [
       27
@@ -1893,51 +1878,6 @@
     "source": "/documents/matter-27/CIV-141 Declaration of Demurring or Moving Party - The RK Logistics Group Inc (Gurney, Sep 14 2026).pdf",
     "source_type": "portfolio",
     "confidence": "medium",
-    "verified_at": "2026-09-14"
-  },
-  {
-    "date": "Sep. 14, 2026",
-    "event": "RECEIVED — Chadwick L. Williams (Kabat Chapman & Ozmer LLP; cc Nathan Chapman) emailed at 2:03 p.m. in Newanforbi v. Randstad US, LLC et al. (26CV199902): thanks for the $25,000 offer; conferring with Randstad; attaches a stipulation and proposed order 'we discussed'; asks permission to add Plaintiff's e-signature and file. Counsel draft is Randstad US, LLC only, through September 18, 2026, to answer, move, or otherwise respond. Caption still names Hon. Karin Schwartz, Dept. 20 (stale — operative assignment is Hon. Thomas Weathers, Dept. 20, Aug. 7). Recites the Aug. 18 15-day to Sept. 15; recites that the parties 'have agreed' to Sept. 18; says no previous requests have been made with the Court (conceals the spent CRC 3.110(d) shot); reserves 'rights or defenses' without Plaintiff's default right; Chapman /s/ already on their Word; Plaintiff's block blank. Proposed order recites 'good cause appearing therein.' DO NOT SIGN. E-sign refused. Plaintiff counterpart pending (generator: internal/scripts/matter27-randstad-extension-stipulation.py). Proposed dates are not operative until a signed counterpart is filed and the Court enters an order. This paper does not move The RK Logistics Group, Inc. Evid. Code §1152 / FRE 408 as to the demand; the stipulation is a clock paper, not an acceptance.",
-    "matters": [
-      27
-    ],
-    "type": "correspondence",
-    "upcoming": false,
-    "filed": false,
-    "actor": "opposing",
-    "source": "/documents/matter-27/Gmail - $25k Global Demand Sent Sep 12 and Williams Stipulation Ask (Sep 14 2026).pdf",
-    "source_type": "portfolio",
-    "confidence": "high",
-    "verified_at": "2026-09-14"
-  },
-  {
-    "date": "Sep. 14, 2026",
-    "event": "PHONE — Chadwick L. Williams and Plaintiff spoke earlier than 2:03 p.m. in Newanforbi v. Randstad US, LLC et al. (26CV199902). Recited in Williams's 2:03 p.m. email: 'As we discussed earlier today, we are conferring with our client and will get back to you as soon as possible. In the meantime, I've attached the stipulation and proposed order we discussed.' Do not treat the call, the attached drafts, or ongoing talks as a further extension. Randstad remains September 15, 2026, until a signed counterpart is filed and the Court orders September 18. RK Logistics is not in that paper.",
-    "matters": [
-      27
-    ],
-    "type": "event",
-    "upcoming": false,
-    "filed": false,
-    "actor": "you",
-    "source": "/documents/matter-27/Gmail - $25k Global Demand Sent Sep 12 and Williams Stipulation Ask (Sep 14 2026).pdf",
-    "source_type": "portfolio",
-    "confidence": "high",
-    "verified_at": "2026-09-14"
-  },
-  {
-    "date": "Sep. 12, 2026",
-    "event": "SENT — Gmail, 8:00 a.m., to Chadwick L. Williams, Melinda Garcia, Nathan Chapman, and Tod Gurney (cc Karen Tai, Pol Minguet, Shinae Kim) in Newanforbi v. Randstad US, LLC et al. (26CV199902). Subject: $25k Global - Newanforbi v. Randstad, et al — 26CV199902. $25,000 to resolve all claims against Randstad US, LLC and The RK Logistics Group, Inc., including all Doe defendants. Wire within seven business days after written acceptance. Both defendants receive an extension to demur or otherwise respond through September 18, 2026. Demand expires automatically at 5:00 p.m. Pacific on September 18, 2026. Attachment named $25K Global Settlement Demand - Sep 11 2026.pdf (letter PDF not in this upload; Gmail print is the cover). This is the text that went out — not the house $40k draft that held the Sept. 14/15 clocks. Evid. Code §1152 / FRE 408. Do not treat the gifted clocks as court-ordered; they are Plaintiff's writing.",
-    "matters": [
-      27
-    ],
-    "type": "settlement",
-    "upcoming": false,
-    "filed": false,
-    "actor": "you",
-    "source": "/documents/matter-27/Gmail - $25k Global Demand Sent Sep 12 and Williams Stipulation Ask (Sep 14 2026).pdf",
-    "source_type": "portfolio",
-    "confidence": "high",
     "verified_at": "2026-09-14"
   },
   {
@@ -1977,7 +1917,7 @@
       25
     ],
     "type": "deadline",
-    "upcoming": true,
+    "upcoming": false,
     "actor": "you",
     "source": "/documents/matter-25/Dkt 08 - Order Setting Status Conference (Filed Sep 8 2026).pdf",
     "source_type": "court_order",
@@ -2143,20 +2083,6 @@
     "verified_at": "2026-09-14"
   },
   {
-    "date": "Sep. 12, 2026",
-    "event": "DRAFT (unsent) — Final early global settlement demand in Newanforbi v. Randstad US, LLC et al. (26CV199902): $40,000.00 to resolve all claims against both named defendants and Does. Wire within seven business days of written joint acceptance. Expires 5:00 p.m. PT Sept. 18, 2026, and may be accepted after a filing. The RK Logistics Group, Inc. remains due Sept. 14; Randstad US, LLC remains due Sept. 15. This draft does not extend either clock and is not a CIV-100 hold. File-if-silent stays Sept. 15 (RK) / Sept. 16 (Randstad) if eCourt is empty. Do not send the Sept. 11 $40k text that gifted both defendants through Sept. 18. Generator: internal/scripts/matter27-global-demand-sep12.py. Evid. Code §1152 / FRE 408.",
-    "matters": [
-      27
-    ],
-    "type": "correspondence",
-    "upcoming": false,
-    "filed": false,
-    "actor": "you",
-    "source_type": "manual",
-    "confidence": "high",
-    "verified_at": "2026-09-12"
-  },
-  {
     "date": "Sep. 11, 2026",
     "event": "FILED — Dkt. 28 Clerk's Notice of Impending Reassignment to a U.S. District Judge in Newanforbi v. Serrato (4:26-cv-05953-ASK). At least one party did not consent to magistrate-judge jurisdiction, so the case leaves Mag. Judge Ajay S. Krishnan for a district judge; the reassignment order to follow. All Krishnan hearing dates vacated, including the Sep. 30 MTD hearing (re-notice to follow); the case-number suffix will change from -ASK.",
     "matters": [
@@ -2184,20 +2110,6 @@
     "source": "/documents/matter-28/Gmail - RE request to stipulate to docket name correction - Martinez (Sep 10 2026).pdf",
     "source_type": "pacer",
     "confidence": "high",
-    "verified_at": "2026-09-11"
-  },
-  {
-    "date": "Sep. 11, 2026",
-    "event": "RECEIVED — Andrew P. Frederick (Morgan Lewis) on the Matter 29 docket-name request (4:26-cv-09249-ASK). Amazon is agreeable to stipulating that the docket identify Plaintiff as Brendan Ngwa Nforbi if Plaintiff confirms that both \"Brendan Ngwa Nforbi\" and \"Brendan Ngehsi Newanforbi\" are names he uses and goes by. Covering email confirming that is drafted. Do not attach the $250k demand. Do not treat as a signed stipulation. September 22 response dates (Dkts. 6 and 7) and the December 1 CMC are unchanged.",
-    "matters": [
-      29
-    ],
-    "type": "correspondence",
-    "upcoming": false,
-    "filed": false,
-    "actor": "opposing",
-    "source_type": "manual",
-    "confidence": "low",
     "verified_at": "2026-09-11"
   },
   {
@@ -2452,7 +2364,7 @@
       25
     ],
     "type": "hearing",
-    "upcoming": true,
+    "upcoming": false,
     "actor": "you",
     "source": "/documents/matter-25/Dkt 08 - Order Setting Status Conference (Filed Sep 8 2026).pdf",
     "source_type": "court_order",
@@ -2480,7 +2392,7 @@
       33
     ],
     "type": "deadline",
-    "upcoming": true,
+    "upcoming": false,
     "actor": "opposing",
     "source": "/documents/matter-33/ndcal/PACER Docket Report - N.D. Cal. 3-26-cv-08272-LJC (Sep 9 2026).pdf",
     "source_type": "pacer",
@@ -2757,36 +2669,6 @@
   },
   {
     "date": "Sep. 9, 2026",
-    "event": "SENT — Gmail to Chadwick L. Williams (cc Nathan Chapman), 2:57 p.m., reply on the settlement-demand thread in Newanforbi v. Randstad US, LLC et al. (26CV199902). Subject as sent: Re: Newanforbi v. Randstad US, LLC et al. — Settlement Demands / Sep. 9 Meet and Confer. Withdraws the Aug. 19 / Aug. 28 $55,000 Randstad-only / $85,000 global demands; those figures are no longer open for acceptance. September 15 remains. No replacement number. Evid. Code §1152 / FRE 408. The unsent Aug. 18 $250,000 letter stays unsent.",
-    "matters": [
-      27
-    ],
-    "type": "correspondence",
-    "upcoming": false,
-    "filed": false,
-    "actor": "you",
-    "source": "/documents/matter-27/Gmail - Williams Withdrawal of 55k 85k Demands (Sep 9 2026).pdf",
-    "source_type": "portfolio",
-    "confidence": "medium",
-    "verified_at": "2026-09-11"
-  },
-  {
-    "date": "Sep. 9, 2026",
-    "event": "SENT — Gmail to Chadwick L. Williams (cc Nathan Chapman), 2:33 p.m., transmitting InfoMart Order No. 15780719 (15780719Final_Profile.PDF) in Newanforbi v. Randstad US, LLC et al. (26CV199902). Evid. Code §1152 / FRE 408. Did not restate the $55,000/$85,000 figures.",
-    "matters": [
-      27
-    ],
-    "type": "correspondence",
-    "upcoming": false,
-    "filed": false,
-    "actor": "you",
-    "source": "/documents/matter-27/Gmail - Williams InfoMart Order 15780719 (Sep 9 2026).pdf",
-    "source_type": "court_order",
-    "confidence": "high",
-    "verified_at": "2026-09-11"
-  },
-  {
-    "date": "Sep. 9, 2026",
     "event": "PHONE — After Williams's 1:56 p.m. email, Plaintiff called. Chadwick L. Williams asked for a further extension of Randstad US, LLC's time to respond in Newanforbi v. Randstad US, LLC et al. (26CV199902). Declined. The Aug. 18 party agreement through and including September 15, 2026 remains the date (CRC 3.110(d) 15-day extension already used). Do not treat the call, his reaction, or further talks as a further extension or as a revival of the withdrawn figures. RK Logistics remains September 14 (no further).",
     "matters": [
       27
@@ -2905,20 +2787,6 @@
   },
   {
     "date": "Sep. 8, 2026",
-    "event": "FILE-READY (optional vs Serrato) — Executed verified complaint against Best Buy Co., Inc. (Matter 39), dated September 8, 2026, with CM-010, SUM-100, and FW-001 (5b / $0, UPS/FedEx grant pattern). First Advantage is not a named defendant. Not yet filed. Plaintiff accepted the Oct. 17, 2023 Tracy warehouse offer at 6653 Hopkins Road, completed the drug screen (I&B clean), and was ghosted. Serve the current SOS agent, not a warehouse. Serrato Rule 26(a)(1) went to Li Sep. 8 at 8:59 p.m. These remain optional unfiled.",
-    "matters": [
-      39
-    ],
-    "type": "deadline",
-    "upcoming": false,
-    "actor": "you",
-    "source": "/documents/matter-39/Verified Complaint - Ngwa Nforbi v Best Buy Co Inc (Sep 8 2026).pdf",
-    "source_type": "portfolio",
-    "confidence": "medium",
-    "verified_at": "2026-09-11"
-  },
-  {
-    "date": "Sep. 8, 2026",
     "event": "FILE-READY (optional vs Serrato) — Executed verified complaint against AT&T Mobility Services LLC (Matter 36), dated September 8, 2026, with CM-010, SUM-100, and FW-001 (5b / $0, UPS/FedEx grant pattern). First Advantage is not a named defendant. Not yet filed. Plaintiff confirmed Workday acceptance, onboarding, reliance, and nonreceipt. Serve the current SOS agent, not a store. Serrato Rule 26(a)(1) went to Li Sep. 8 at 8:59 p.m. These remain optional unfiled. FCRA is pleaded and may permit removal.",
     "matters": [
       36
@@ -2938,7 +2806,7 @@
       38
     ],
     "type": "deadline",
-    "upcoming": true,
+    "upcoming": false,
     "actor": "you",
     "source": "/documents/matter-38/Swift FCRA Email - Pre-Adverse (Sep 26 2023).pdf",
     "source_type": "court_order",
@@ -2952,7 +2820,7 @@
       39
     ],
     "type": "deadline",
-    "upcoming": true,
+    "upcoming": false,
     "actor": "you",
     "source": "/documents/matter-39/Job Offer - Best Buy General Warehouse Worker 2nd Shift (Oct 17 2023).pdf",
     "source_type": "court_order",
@@ -3025,20 +2893,6 @@
     "upcoming": false,
     "actor": "you",
     "source": "/documents/matter-39/Thank You for Your Application - Best Buy 928556BR (Oct 13 2023).pdf",
-    "source_type": "portfolio",
-    "confidence": "medium",
-    "verified_at": "2026-09-11"
-  },
-  {
-    "date": "Oct. 17, 2023",
-    "event": "BEST BUY OFFER AND SAME-DAY SCREEN — At 3:47 p.m. Jose Tapia, General Manager, emailed an offer for General Warehouse Worker / 2nd Shift at $22.60 and required Candidate Zone signature, background-check information, and authorization within 24 hours. At 4:22 p.m. Best Buy sent a background-authorization confirmation naming First Advantage. At 4:30 p.m. First Advantage ordered a Best Buy drug test (Q09078711). At 5:31 p.m. Best Buy HR reminded him to complete the screen. No rejection letter is in the file.",
-    "matters": [
-      39
-    ],
-    "type": "employment",
-    "upcoming": false,
-    "actor": "opposing",
-    "source": "/documents/matter-39/Job Offer - Best Buy General Warehouse Worker 2nd Shift (Oct 17 2023).pdf",
     "source_type": "portfolio",
     "confidence": "medium",
     "verified_at": "2026-09-11"
@@ -3180,7 +3034,7 @@
       26
     ],
     "type": "hearing",
-    "upcoming": true,
+    "upcoming": false,
     "actor": "you",
     "source": "/documents/matter-26/PACER Deadlines-Hearings - E.D. Cal. 2-26-cv-02847-DAD-CKD (Sep 4 2026).pdf",
     "source_type": "pacer",
@@ -3610,7 +3464,7 @@
       29
     ],
     "type": "deadline",
-    "upcoming": true,
+    "upcoming": false,
     "actor": "you",
     "source": "/documents/matter-29/Dkt 09 - Order Setting Initial CMC and ADR Deadlines (Filed Sep 3 2026).pdf",
     "source_type": "court_order",
@@ -3638,7 +3492,7 @@
       29
     ],
     "type": "deadline",
-    "upcoming": true,
+    "upcoming": false,
     "actor": "opposing",
     "source": "/documents/matter-29/Dkt 07 - Stipulation to Extend Time for Accurate Background to Respond (Filed Sep 2 2026).pdf",
     "source_type": "portfolio",
@@ -3742,7 +3596,7 @@
       29
     ],
     "type": "deadline",
-    "upcoming": true,
+    "upcoming": false,
     "actor": "opposing",
     "source": "/documents/matter-29/Dkt 06 - Stipulation to Extend Time for Amazon to Respond (Filed Sep 1 2026).pdf",
     "source_type": "portfolio",
@@ -3760,21 +3614,6 @@
     "filed": true,
     "actor": "you",
     "source": "/documents/matter-29/Dkt 06 - Stipulation to Extend Time for Amazon to Respond (Filed Sep 1 2026).pdf",
-    "source_type": "portfolio",
-    "confidence": "medium",
-    "verified_at": "2026-09-11"
-  },
-  {
-    "date": "Aug. 31, 2026",
-    "event": "EMAIL THREAD — Newanforbi v. Amazon.com Services, LLC (3:26-cv-09249-ASK). 12:58 p.m.: Plaintiff sent Amazon a 14-day state-court extension offer (through September 14, Amazon only) and a $250,000 opening demand (response requested September 11; Evid. Code §1152 / FRE 408). 4:50 p.m.: Andrew P. Frederick (Morgan Lewis) confirmed removal, stated the Rule 81(c) date is September 8, asked to extend Amazon to September 22, consented to e-service, and said he would convey the demand. 6:09 p.m.: Plaintiff agreed — Amazon only, through September 22; e-service at bnn.cdl@gmail.com; state offer moot. 6:46 p.m.: Frederick sent a draft stipulation (.docx) and asked for permission to include Plaintiff's e-signature and file. Permission declined; Plaintiff signs his own counterpart. Not a filing.",
-    "matters": [
-      29
-    ],
-    "type": "correspondence",
-    "upcoming": false,
-    "filed": false,
-    "actor": "you",
-    "source": "/documents/matter-29/Gmail - Amazon Extension Offer Demand and Stipulation Thread (Aug 31 2026).pdf",
     "source_type": "portfolio",
     "confidence": "medium",
     "verified_at": "2026-09-11"
@@ -3801,7 +3640,7 @@
       28
     ],
     "type": "deadline",
-    "upcoming": true,
+    "upcoming": false,
     "actor": "opposing",
     "source": "/documents/matter-28/Proof of Service - SLB Accepted Service for Smith and HOPE (N.D. Cal. 3-26-cv-07504-LJC) (Sep 2 2026).pdf",
     "source_type": "portfolio",
@@ -3950,7 +3789,7 @@
       19
     ],
     "type": "deadline",
-    "upcoming": true,
+    "upcoming": false,
     "actor": "agency",
     "source": "/documents/matter-19/HC-004 Notice and Request for Ruling (Habeas Corpus, Executed Sep 1 2026).pdf",
     "source_type": "portfolio",
@@ -4040,7 +3879,7 @@
       20
     ],
     "type": "hearing",
-    "upcoming": true,
+    "upcoming": false,
     "actor": "you",
     "source": "/documents/matter-32/from-20/Order Sustaining Demurrer In Part - Whitman (Aug 29 2026) (Notice of Entry Aug 31 2026).pdf",
     "source_type": "court_order",
@@ -4054,7 +3893,7 @@
       20
     ],
     "type": "deadline",
-    "upcoming": true,
+    "upcoming": false,
     "actor": "you",
     "source": "/documents/matter-32/from-20/Notice of Case Management Conference.pdf",
     "source_type": "portfolio",
@@ -4068,7 +3907,7 @@
       20
     ],
     "type": "deadline",
-    "upcoming": true,
+    "upcoming": false,
     "actor": "you",
     "source": "/documents/matter-32/from-20/Order Sustaining Demurrer In Part - Whitman (Aug 29 2026) (Notice of Entry Aug 31 2026).pdf",
     "source_type": "court_order",
@@ -4193,20 +4032,6 @@
     "verified_at": "2026-09-11"
   },
   {
-    "date": "Aug. 31, 2026",
-    "event": "SENT — Opening settlement demand as to Amazon.com Services, LLC in Newanforbi v. Amazon.com Services, LLC et al. (N.D. Cal. No. 4:26-cv-09249-ASK): emailed August 31, 2026, 12:58 p.m. Pacific to andrew.frederick@morganlewis.com with the 14-day extension offer. $250,000.00 Amazon-only, matching the operative Aug. 7 CCP §425.115 notice. Frederick replied 4:50 p.m. that he will convey the demand to Amazon. Response asked by 5:00 p.m. PT Sept. 11, 2026 — Plaintiff's date, not a court deadline. Evid. Code §1152 / FRE 408. Accurate Background carved out.",
-    "matters": [
-      29
-    ],
-    "type": "settlement",
-    "upcoming": false,
-    "actor": "you",
-    "source": "/documents/matter-29/Gmail - Amazon Extension Offer Demand and Stipulation Thread (Aug 31 2026).pdf",
-    "source_type": "portfolio",
-    "confidence": "medium",
-    "verified_at": "2026-09-11"
-  },
-  {
     "date": "Sep. 8, 2026",
     "event": "SUPERSEDED — Amazon / Accurate Background responsive pleading deadline (computed) — Newanforbi v. Amazon.com Services, LLC et al. (Matter 29, N.D. Cal. No. 4:26-cv-09249-ASK). The FRCP 81(c)(2) / Labor Day roll to Tuesday, September 8, 2026 is superseded by Dkt. 6 (Amazon through Sep. 22) and Dkt. 7 (Accurate through Sep. 22).",
     "matters": [
@@ -4227,7 +4052,7 @@
       29
     ],
     "type": "deadline",
-    "upcoming": true,
+    "upcoming": false,
     "actor": "you",
     "source": "/documents/matter-29/Dkt 01 - Notice of Removal (Filed Aug 31 2026).pdf",
     "source_type": "portfolio",
@@ -4281,34 +4106,6 @@
   },
   {
     "date": "Aug. 28, 2026",
-    "event": "DECISION — Plaintiff is holding the Aug. 19 opening demands ($55,000 Randstad-only / $85,000 global). Williams asked Aug. 28 for more time; those figures are restated in the Aug. 28 letter, response due 5:00 p.m. PT Sept. 8. The unsent Aug. 18 $250,000 letter stays unsent. Pleading clocks: RK Logistics Sept. 14 (Garcia request granted; no further extension); Randstad Sept. 15. Evid. Code §1152 / FRE 408.",
-    "matters": [
-      27
-    ],
-    "type": "settlement",
-    "upcoming": false,
-    "actor": "you",
-    "source": "/documents/matter-27/Gmail - Williams Request for Time on Opening Demand through Sep 4 (Aug 28 2026).pdf",
-    "source_type": "portfolio",
-    "confidence": "medium",
-    "verified_at": "2026-09-11"
-  },
-  {
-    "date": "Aug. 28, 2026",
-    "event": "WILLIAMS REQUESTS TIME ON OPENING DEMAND — Chadwick L. Williams (Kabat Chapman & Ozmer LLP) emailed Aug. 28, 2026 at 6:49 a.m. (copying Nathan Chapman) that he is still conferring with Randstad US, LLC and requires additional time, and that he will attempt to respond to Plaintiff's opening demand by September 4, 2026. Delay request, not a counteroffer. Plaintiff is holding the Aug. 19 $55,000/$85,000 demands and restated them the same day. Pleading clocks: Randstad Sept. 15; RK Logistics Sept. 14 (Garcia request granted; no further extension). Evid. Code §1152 / FRE 408.",
-    "matters": [
-      27
-    ],
-    "type": "correspondence",
-    "upcoming": false,
-    "actor": "opposing",
-    "source": "/documents/matter-27/Gmail - Williams Request for Time on Opening Demand through Sep 4 (Aug 28 2026).pdf",
-    "source_type": "portfolio",
-    "confidence": "medium",
-    "verified_at": "2026-09-11"
-  },
-  {
-    "date": "Aug. 28, 2026",
     "event": "GRANTED — Plaintiff granted Melinda Garcia's Aug. 21 request for a two-week extension of The RK Logistics Group, Inc.'s responsive pleading, through and including September 14, 2026, so insurance counsel can be sorted. Party agreement only — no stipulation is on file unless Garcia files one. Single extension; no further extension is implied. Plaintiff will remain firm on RK Logistics moving forward: no second continuance, and RK is not a cheap add-on to a Randstad deal. CCP §430.41 meet-and-confer as to RK now runs September 9, 2026 (five calendar days before Sept. 14).",
     "matters": [
       27
@@ -4318,21 +4115,6 @@
     "actor": "you",
     "source_type": "manual",
     "confidence": "low",
-    "verified_at": "2026-09-11"
-  },
-  {
-    "date": "Aug. 28, 2026",
-    "event": "EXECUTED — Letter restating the Aug. 19 opening demands as to Randstad US, LLC: $55,000.00 Randstad-only, or $85,000.00 globally with The RK Logistics Group, Inc., inclusive, payable within 15 business days after a signed agreement. Response due 5:00 p.m. PT Sept. 8, 2026. RK remains Sept. 14 (single extension; no further). The Aug. 18 $250,000 letter remains unsent (internal aggressive ceiling). Evid. Code §1152 / FRE 408.",
-    "matters": [
-      27
-    ],
-    "type": "settlement",
-    "upcoming": false,
-    "filed": false,
-    "actor": "you",
-    "source": "/documents/matter-27/Settlement Demand - Randstad US LLC (Aug 28 2026).pdf",
-    "source_type": "portfolio",
-    "confidence": "medium",
     "verified_at": "2026-09-11"
   },
   {
@@ -4401,39 +4183,12 @@
       27
     ],
     "type": "deadline",
-    "upcoming": true,
+    "upcoming": false,
     "actor": "you",
     "source": "/documents/matter-27/CIV-100 Request for Entry of Default - Randstad US LLC (Default Entered, Filed Sep 16 2026).pdf",
     "source_type": "court_order",
     "confidence": "high",
     "verified_at": "2026-09-16"
-  },
-  {
-    "date": "Aug. 19, 2026",
-    "event": "TRANSMITTED — Opening settlement demand emailed to Chadwick L. Williams (cc Nathan Chapman) at 6:03 a.m.: Randstad US, LLC may resolve Plaintiff's claims against it for $55,000, or Randstad and The RK Logistics Group, Inc. may resolve all claims globally for $85,000. Originally open through 2:00 p.m. PT August 28, 2026; held and restated Aug. 28, response due 5:00 p.m. PT Sept. 8. Evid. Code §1152 / FRE 408.",
-    "matters": [
-      27
-    ],
-    "type": "settlement",
-    "upcoming": false,
-    "actor": "you",
-    "source": "/documents/matter-27/Gmail - Williams Request for Time on Opening Demand through Sep 4 (Aug 28 2026).pdf",
-    "source_type": "portfolio",
-    "confidence": "medium",
-    "verified_at": "2026-09-11"
-  },
-  {
-    "date": "Sep. 4, 2026",
-    "event": "WATCH — Williams said he will attempt to respond by this date. The live ask remains the Aug. 19 $55,000/$85,000, restated Aug. 28, with a Sept. 8 response date. Not a court deadline. Pleading clocks: RK Logistics Sept. 14 (granted; no further); Randstad Sept. 15.",
-    "matters": [
-      27
-    ],
-    "type": "deadline",
-    "actor": "opposing",
-    "source": "/documents/matter-27/Gmail - Williams Request for Time on Opening Demand through Sep 4 (Aug 28 2026).pdf",
-    "source_type": "portfolio",
-    "confidence": "medium",
-    "verified_at": "2026-09-11"
   },
   {
     "date": "Aug. 31, 2026",
@@ -4589,7 +4344,7 @@
       26
     ],
     "type": "deadline",
-    "upcoming": true,
+    "upcoming": false,
     "actor": "you",
     "source": "/documents/matter-26/Dkt 07-3 - Certificate of Service (Filed Aug 26 2026).pdf",
     "source_type": "portfolio",
@@ -4690,7 +4445,7 @@
       35
     ],
     "type": "deadline",
-    "upcoming": true,
+    "upcoming": false,
     "actor": "you",
     "source": "/documents/matter-35/SUM-100 Summons (ISSUED, Filed Aug 26 2026) - 26CV501995.pdf",
     "source_type": "portfolio",
@@ -4783,21 +4538,6 @@
   },
   {
     "date": "Aug. 26, 2026",
-    "event": "EXECUTED — Internal Damages Worksheet for Matter 35 (Ngwa Nforbi v. Ross Stores, Inc., et al.): itemized actual damages $345,000; Unruh Civ. Code §52(a) treble ceiling $1,035,000; CM-010 / demand bottom line exceeds $1,000,000. DO NOT FILE — CCP §425.10(b) / Civ. Code §3294(e) bar pleading personal-injury and punitive amounts. Portfolio analytics updated to conservative $115,000 / moderate $345,000 / aggressive $1,035,000.",
-    "matters": [
-      35
-    ],
-    "type": "filing",
-    "upcoming": false,
-    "filed": false,
-    "actor": "you",
-    "source": "/documents/matter-35/Internal Damages Worksheet - Ngwa Nforbi v Ross Stores Inc et al (Aug 26 2026).pdf",
-    "source_type": "portfolio",
-    "confidence": "medium",
-    "verified_at": "2026-09-11"
-  },
-  {
-    "date": "Aug. 26, 2026",
     "event": "EXECUTED — Verified Complaint for Damages and Injunctive Relief (v9) drafted and portfolio-rendered for Matter 35 (Ngwa Nforbi v. Ross Stores, Inc., et al.): Unruh Civil Rights Act, False Imprisonment, and Negligent Training and Supervision arising from the Aug. 25, 2026 Sunnyvale Ross shopping-while-Black detention (~28 pp. pleading paper). E-filed Aug. 26, 2026 via One Legal (Confirmation #35442871); clerk-accepted as Case No. 26CV501995.",
     "matters": [
       35
@@ -4849,20 +4589,6 @@
     "actor": "you",
     "source_type": "court_order",
     "confidence": "high",
-    "verified_at": "2026-09-11"
-  },
-  {
-    "date": "Aug. 23, 2026",
-    "event": "INTERNAL FRAMING ONLY — Aug. 23 note of an $85,000 global payable within 15 calendar days from August 28, 2026. Does not change the live transmitted ask, which is the Aug. 19 email to Williams ($55,000 Randstad-only / $85,000 global, 15 business days after execution, originally open through 2:00 p.m. PT Aug. 28). The Aug. 18 $250,000 letter remains unsent.",
-    "matters": [
-      27
-    ],
-    "type": "settlement",
-    "upcoming": false,
-    "filed": false,
-    "actor": "you",
-    "source_type": "manual",
-    "confidence": "low",
     "verified_at": "2026-09-11"
   },
   {
@@ -5040,21 +4766,6 @@
     "filed": true,
     "upcoming": false,
     "actor": "opposing",
-    "source_type": "portfolio",
-    "confidence": "medium",
-    "verified_at": "2026-09-11"
-  },
-  {
-    "date": "Aug. 18, 2026",
-    "event": "Letter confirming the 15-day extension of Randstad's time to respond drafted and executed — addressed to Chadwick L. Williams (Kabat Chapman & Ozmer LLP) in reply to his 2:11 p.m. email. Confirms the extension through and including Sept. 15, 2026 and fixes its scope on the face of the document: Randstad US, LLC only; a single 15-day extension with no further extension implied; no waiver of any right, including entry of default after Sept. 15; RK Logistics unaffected and still due Aug. 31, 2026; and an offer to sign a stipulation and proposed order if Randstad prefers the extension on file. Also asks counsel to confirm authority to accept service and consent to electronic service under CCP §1010.6, and notes the accepted $500,000 CCP §425.115 notice as to Randstad. Not yet transmitted.",
-    "matters": [
-      27
-    ],
-    "type": "filing",
-    "source": "/documents/matter-27/Letter Confirming 15-Day Extension of Randstad's Time to Respond (Aug 18 2026).pdf",
-    "filed": false,
-    "upcoming": false,
-    "actor": "you",
     "source_type": "portfolio",
     "confidence": "medium",
     "verified_at": "2026-09-11"
@@ -5367,7 +5078,7 @@
     ],
     "type": "deadline",
     "source": "/documents/matter-33/ndcal/Dkt 04 - Order Setting Initial Case Management Conference and ADR Deadlines (Aug 10 2026).pdf",
-    "upcoming": true,
+    "upcoming": false,
     "actor": "you",
     "source_type": "court_order",
     "confidence": "high",
@@ -5381,7 +5092,7 @@
     ],
     "type": "deadline",
     "source": "/documents/matter-33/ndcal/Dkt 04 - Order Setting Initial Case Management Conference and ADR Deadlines (Aug 10 2026).pdf",
-    "upcoming": true,
+    "upcoming": false,
     "actor": "you",
     "source_type": "court_order",
     "confidence": "high",
@@ -5408,7 +5119,7 @@
     ],
     "type": "hearing",
     "source": "/documents/matter-33/ndcal/Dkt 04 - Order Setting Initial Case Management Conference and ADR Deadlines (Aug 10 2026).pdf",
-    "upcoming": true,
+    "upcoming": false,
     "actor": "you",
     "source_type": "court_order",
     "confidence": "high",
@@ -7775,19 +7486,6 @@
     "verified_at": "2026-09-11"
   },
   {
-    "date": "Jul. 12, 2026",
-    "event": "Pre-filing demand letters transmitted — $85,000 demand per matter; complaint (filed July 15, 2026) enclosed as Exhibit A; Pilot settlement precedent (STK-CV-UWT-2026-0007649) cited; Mendoza v. ADP Screening & Selection Services, Inc. (2010) 182 Cal.App.4th 1644 cited; litigation hold notices issued; response deadline July 26, 2026, 5:00 PM Pacific Time. FedEx counsel: Allison Aguirre Kray, Esq. (Cal. Bar No. 312544; allison.kray@fedex.com), 2061 Main St, Ste 1100, Irvine, CA 92614. UPS counsel: Norman M. Brothers Jr., Esq. (norman.brothers@ups.com), 55 Glenlake Parkway NE, Atlanta, GA 30328.",
-    "matters": [
-      25,
-      26
-    ],
-    "type": "filing",
-    "actor": "you",
-    "source_type": "manual",
-    "confidence": "low",
-    "verified_at": "2026-09-11"
-  },
-  {
     "date": "Jul. 15, 2026",
     "event": "Complaints for Damages filed and assigned — Newanforbi v. United Parcel Service, Inc. (STK-CV-UWT-2026-0009113, Dept. 11B, Hon. Robert T. Waters; CMC Jan. 13, 2027, 8:30 AM — UPS filed first) and Newanforbi v. Federal Express Corporation (STK-CV-UWT-2026-0009118, Dept. 10B, Hon. Blanca Banuelos; CMC Jan. 14, 2027, 8:45 AM) — both San Joaquin Sup. Ct.; PC §290.46(j) failure-to-hire; UPS limitations period preserved 16 days before the July 31, 2026 two-year cutoff; both case assignment notices issued July 15, 2026 by Deputy Clerk Mia Stipe",
     "matters": [
@@ -7856,19 +7554,6 @@
       25
     ],
     "type": "event",
-    "actor": "you",
-    "source_type": "manual",
-    "confidence": "low",
-    "verified_at": "2026-09-11"
-  },
-  {
-    "date": "Jul. 26, 2026",
-    "event": "RESPONSE DEADLINE — Pre-filing demand letters, Newanforbi v. Federal Express Corporation (STK-CV-UWT-2026-0009118) and Newanforbi v. United Parcel Service, Inc. (STK-CV-UWT-2026-0009113); $85,000 per matter ($170,000 combined); 5:00 PM Pacific Time; Pilot settlement (STK-CV-UWT-2026-0007649) cited as precedent — NO RESPONSE received from either FedEx or UPS by the deadline; non-response after complaints are already filed and assigned strengthens settlement posture in both actions; service of process on both defendants continues to proceed per the SER-001 requests already on file",
-    "matters": [
-      25,
-      26
-    ],
-    "type": "deadline",
     "actor": "you",
     "source_type": "manual",
     "confidence": "low",
@@ -8426,18 +8111,6 @@
     "verified_at": "2026-09-11"
   },
   {
-    "date": "Aug. 5, 2026",
-    "event": "PROOF OF SERVICE COMPLETE — Sarah Thompson (L.A. Process Servers, L.A. County Reg. #6679) executed and signed the CM-200 Proof of Service by First-Class Mail under penalty of perjury, confirming she deposited the sealed, postage-prepaid CM-200 envelope with USPS from Los Angeles, CA, addressed to Pilot Travel Centers LLC c/o Jon Yarbrough, Director, Associate General Counsel, Employment Law Legal Department, 5508 Lonas Drive, Knoxville, TN 37909 — corroborated by a USPS Certificate of Mailing (PS Form 3817, $2.45 postage, Sunset Station, CA, postmarked AUG-5-2026). CM-200 packet now complete; CRC 3.1385 dismissal deadline is Aug. 28, 2026 (45 days from the Jul. 14, 2026 settlement date) — Newanforbi v. Pilot Travel Centers LLC (STK-CV-UWT-2026-0007649)",
-    "matters": [
-      22
-    ],
-    "type": "filing",
-    "actor": "you",
-    "source_type": "manual",
-    "confidence": "low",
-    "verified_at": "2026-09-11"
-  },
-  {
     "date": "Jul. 15, 2026",
     "event": "DISMISSED — San Joaquin Superior Court (Hon. George J. Abdallah, Jr.) GRANTS Demurrer to FAC WITHOUT LEAVE TO AMEND — Newanforbi v. Palacios et al. (STK-CV-UF-2026-0001032); exhaustion grounds; tentative confirmed after oral argument; state court action disposed. Dismissal resolves the state-court protective order's scope restriction and supplies the predicate facts for the NDCA complaint against HOPE (Matter 28).",
     "matters": [
@@ -8737,18 +8410,6 @@
       29
     ],
     "type": "milestone",
-    "actor": "you",
-    "source_type": "manual",
-    "confidence": "low",
-    "verified_at": "2026-09-11"
-  },
-  {
-    "date": "Jul. 3, 2026",
-    "event": "Amazon Jobs email (2:09 PM), 'Congratulations on Your Amazon Offer!' — conditional job offer extended for Seasonal XL Warehouse Associate, 44051 Osgood Rd., Fremont, CA; pay range $21.50–$24.00/hour; offer expressly conditioned on 'successful completion of your background check, drug test, and all pre-hire activities'; training dates set for Jul. 28–29 and Aug. 4–5, 2026, 4:30–9:30 AM",
-    "matters": [
-      29
-    ],
-    "type": "event",
     "actor": "you",
     "source_type": "manual",
     "confidence": "low",
@@ -9132,18 +8793,6 @@
     "verified_at": "2026-09-11"
   },
   {
-    "date": "May 28, 2026",
-    "event": "BNN begins employment as Captain Selling & Support at Macy's, Stockton Sherwood store — $21.50/hr; offer letter confirms full-time position. BNN is actively employed at Macy's at the time of the June 29, 2026 retaliatory transfer order.",
-    "matters": [
-      30
-    ],
-    "type": "milestone",
-    "actor": "you",
-    "source_type": "manual",
-    "confidence": "low",
-    "verified_at": "2026-09-11"
-  },
-  {
     "date": "Jun. 11, 2026",
     "event": "Newanforbi v. CDCR, et al. filed — Case No. STK-CV-UPI-2026-0005417 (San Joaquin Superior Court, Judge Jayne Lee, Dept. 10C; CMC December 9, 2026 at 8:30 AM); second protected petition activity that triggers the retaliatory transfer 18 days after service on defendants",
     "matters": [
@@ -9308,7 +8957,7 @@
       30
     ],
     "type": "deadline",
-    "upcoming": true,
+    "upcoming": false,
     "actor": "agency",
     "source": "/documents/matter-30/Complaint v9 Newanforbi v Moua NDCAL.pdf",
     "source_type": "portfolio",
@@ -9350,7 +8999,7 @@
       20
     ],
     "type": "deadline",
-    "upcoming": true,
+    "upcoming": false,
     "actor": "you",
     "source": "/documents/matter-32/from-20/Serrato Notice of Joinder and Demurrer.pdf",
     "source_type": "portfolio",
@@ -9364,7 +9013,7 @@
       20
     ],
     "type": "deadline",
-    "upcoming": true,
+    "upcoming": false,
     "actor": "you",
     "source": "/documents/matter-32/from-20/Dutra Notice of Joinder and Demurrer.pdf",
     "source_type": "portfolio",
@@ -9572,19 +9221,6 @@
   },
   {
     "date": "Aug. 20, 2026",
-    "event": "REMOVED TO FEDERAL COURT — United Parcel Service, Inc. filed a Notice of Removal of Civil Action to Federal Court in USDC E.D. Cal., No. 1:26-at-03195, removing Newanforbi v. United Parcel Service, Inc. (STK-CV-UWT-2026-0009113) from San Joaquin Superior Court under 28 U.S.C. §§ 1332(a) and 1441(a)-(b). Filed on day 29 of the 30-day §1446(b)(1) window — timely. Defense counsel appeared: Vanessa W. Mott (SBN 184606) and Alyssa R. Daskas (SBN 359379), Martenson, Hasbrouck & Simon LLP, 600 Anton Boulevard, Suite 1250, Costa Mesa. Package: Doc. 1 (notice + Exh. 1 complaint, 27 pp.); Doc. 1-1 (JS 44 civil cover sheet); Doc. 1-2 (Decl. of Ashley Felsing, HRBP Director — UPS incorporated in Ohio, principal place of business Atlanta, Georgia); Doc. 1-3 (Rule 7.1 Notice of Interested Parties). UPS demands a jury (Fed. R. Civ. P. 38(b)). Amount in controversy pleaded at $60,144-$88,032 in lost wages ($21/hr x 16 hrs/wk), plus emotional distress, punitive damages, and future attorney's fees.",
-    "matters": [
-      26
-    ],
-    "type": "filing",
-    "actor": "you",
-    "source": "/documents/matter-26/Notice of Removal to Federal Court - United Parcel Service Inc (E.D. Cal. 1-26-at-03195) (Aug 20 2026).pdf",
-    "source_type": "portfolio",
-    "confidence": "medium",
-    "verified_at": "2026-09-11"
-  },
-  {
-    "date": "Aug. 20, 2026",
     "event": "CCP §425.115 PROGRAM MOOT AS TO UPS AND FEDEX — the Aug. 17, 2026 amended Notices of Amount of Punitive Damages Sought ($250,000.00) against United Parcel Service, Inc. (Matter 26, 2:26-cv-02847-DAD-CKD) and Federal Express Corporation (Matter 25, 2:26-cv-02881-DAD-SCR) are dead letters on removal. Section 425.115 is a state pleading device with no federal analogue; in USDC E.D. Cal. the ceiling on relief is governed by Fed. R. Civ. P. 54(c). Do not spend Sheriff service fees on those notices. The parallel notices as to Matter 27 (Randstad US, LLC; The RK Logistics Group, Inc.) remain live while that action remains in state court.",
     "matters": [
       26
@@ -9624,20 +9260,6 @@
     "verified_at": "2026-09-11"
   },
   {
-    "date": "Sep. 21, 2026",
-    "event": "28 U.S.C. §1447(c) remand window closes (computed) — Newanforbi v. United Parcel Service, Inc., USDC E.D. Cal. No. 1:26-at-03195. Thirty days from the Aug. 20, 2026 notice of removal lands on Saturday, Sep. 19, so the deadline rolls to Monday under Fed. R. Civ. P. 6(a)(1)(C). NO REMAND MOTION IS PLANNED: although UPS's own figures concede a conservative wage estimate of $60,144 — below $75,000 — Plaintiff's July 12, 2026 pre-filing demand of $85,000 is evidence of the amount in controversy under Cohn v. PetSmart, Inc., 281 F.3d 837, 840 (9th Cir. 2002), and the Penal Code §290.46(j)(4)(A) statutory floor stacks on top of it. Subject-matter objections survive this date in any event under §1447(c).",
-    "matters": [
-      26
-    ],
-    "type": "deadline",
-    "upcoming": true,
-    "actor": "you",
-    "source": "/documents/matter-26/Dkt 01 - Notice of Removal as Docketed, E.D. Cal. Sacramento (Aug 20 2026).pdf",
-    "source_type": "pacer",
-    "confidence": "high",
-    "verified_at": "2026-09-11"
-  },
-  {
     "date": "Aug. 21, 2026",
     "event": "MOOT, NEVER FILED — EXECUTED — Plaintiff's AMENDED Notice Regarding Caption, and Request for Intradistrict Reassignment to the Sacramento Division, Newanforbi v. United Parcel Service, Inc., USDC E.D. Cal. No. 1:26-at-03195. Supersedes the Aug. 20, 2026 Notice of Errata in its entirety. Part I withdraws paragraph 3 of that notice in full, states that Plaintiff has used the name Brendan Ngwanforbi, and withdraws the objection to Defendant's Rule 7.1 also-known-as recital, which is accurate. The relief sought is unchanged: the caption of a removed action is the caption of the state-court action, and this action was filed and served as BRENDAN NGEHSI NEWANFORBI, so Part II rests on that ground alone rather than on the absence of other names. Part III (L.R. 120(d), (f) reassignment from Fresno to Sacramento) carries over unchanged. Six pages plus certificate of service on Martenson, Hasbrouck & Simon LLP; mailed from San Jose. MOOT: the Sacramento assignment and the correct docket caption granted both requests before filing. Not mailed. The paragraph 3 correction it carried is moot with it — no filing in this action asserts anything about Plaintiff's names.",
     "matters": [
@@ -9661,19 +9283,6 @@
     "source": "/documents/matter-26/Amended Notice Regarding Caption and Request for Intradistrict Reassignment (E.D. Cal. 1-26-at-03195) (Aug 21 2026).pdf",
     "source_type": "portfolio",
     "confidence": "medium",
-    "verified_at": "2026-09-11"
-  },
-  {
-    "date": "Aug. 20, 2026",
-    "event": "CASE ASSIGNED — Newanforbi v. United Parcel Service, Inc. docketed in USDC E.D. Cal., SACRAMENTO Division, as No. 2:26-cv-02847-DAD-CKD (PS): District Judge Dale A. Drozd, Magistrate Judge Carolyn K. Delaney on referral. Under L.R. 302(c)(21) the Magistrate Judge resolves all non-dispositive matters and issues findings and recommendations on dispositive ones. Cause coded 28:1441 Petition for Removal - Civil Rights Act; nature of suit 442 Civil Rights: Jobs; jurisdiction Diversity; jury demand Both. Case in other court recorded as San Joaquin County Superior Court, STK-CV-UWT-26-09113. Docket caption reads BRENDAN NGEHSI NEWANFORBI — the 'NGWANFORBI' misspelling in UPS's Notice of Removal never reached the docket. Dkt. 1 Notice of Removal (fee $405, receipt ACAEDC-13761260); Dkt. 2 Civil New Case Documents; Dkt. 3 certificate of service. Counsel of record for UPS is Vanessa W. Mott alone, at 5800 Armada Drive, Suite 101, Carlsbad, CA 92008 — not the Costa Mesa address on the removal papers; Alyssa R. Daskas is not on the docket.",
-    "matters": [
-      26
-    ],
-    "type": "ruling",
-    "actor": "you",
-    "source": "/documents/matter-26/PACER Docket Report - E.D. Cal. 2-26-cv-02847-DAD-CKD (Aug 20 2026).pdf",
-    "source_type": "pacer",
-    "confidence": "high",
     "verified_at": "2026-09-11"
   },
   {
@@ -9726,19 +9335,6 @@
     "actor": "you",
     "source_type": "manual",
     "confidence": "low",
-    "verified_at": "2026-09-11"
-  },
-  {
-    "date": "Aug. 20, 2026",
-    "event": "USPS PACKAGE INTERCEPT REQUESTED — filed 9:35 PM re Newanforbi v. United Parcel Service, Inc. Order #o2568695706, tracking 4209 3721 1322 9505 5126 3057 6232 346293, request type Hold For Pickup, mail class Priority Mail, estimated total $32.24, status In Progress. Aim is to recall the Aug. 20, 2026 Notice of Errata mailed to the Fresno clerk before it can be processed under the dead 1:26-at-03195 number — that notice, and the Aug. 21 Amended Notice that would have superseded it, were both mooted the same day when the clerk assigned the removal to the Sacramento Division as 2:26-cv-02847-DAD-CKD with the correct docket caption; neither was ever filed. UNVERIFIED: the confirmation's Original Destination field reads 1455 Cat Tail Drive, Stockton (Plaintiff's own address) and Requested Destination reads 2500 Tulare St Ste 1501, Fresno — the reverse of what would be expected if this is the Fresno-bound envelope being recalled. Also unconfirmed against the certificate of service, which declared ordinary first-class mail (no tracking), against a mail class here of Priority. Confirm directly against usps.com/tracking that this order corresponds to the Fresno envelope before treating the notice as recalled. Per USPS, the request cannot be edited or canceled; the card is charged only if actual postage is at or under the $32.24 estimate, otherwise the difference is due in cash, check, or money order on delivery/pickup.",
-    "matters": [
-      26
-    ],
-    "type": "event",
-    "actor": "you",
-    "source": "/documents/matter-26/USPS Package Intercept Confirmation Email - Order o2568695706 (Aug 20 2026).pdf",
-    "source_type": "court_order",
-    "confidence": "high",
     "verified_at": "2026-09-11"
   },
   {
@@ -10068,34 +9664,6 @@
   },
   {
     "date": "Sep. 14, 2026",
-    "event": "PENDING MATTER OPENED — TaskUs, LLC Offer of Temporary Employment signed (Teammate, $22.00/hour, non-exempt, San Jose delivery; anticipated start Sep. 23, 2026 / completion on or around Dec. 4, 2026; $1,000 retention if still employed in good standing Dec. 4). Same-day: United States Background Consent (release of screening information to TaskUs USA LLC), TaskUs Holdings, Inc. NDA/invention-assignment, and Mutual Arbitration Agreement with TaskUs, Inc. (Covered Claims include the background-check form or process; FAA with Texas fallback). First Advantage is named in the California medical-release for drug/alcohol testing (offer p. 9) — that is not a consumer-report authorization. No standalone ICRAA/FCRA disclosure in this packet, no consumer or registry report furnished, no adverse action. Uber AV is the WorkDay campaign (R_2608_10812 / C261051599), not a named defendant. Monitoring for pre-adverse/adverse notices and the Sep. 23 start; prospective PC §290.46(j) / ICRAA / FCRA / UCL if the hiring decision turns on registry information.",
-    "matters": [
-      40
-    ],
-    "type": "intake",
-    "upcoming": false,
-    "actor": "you",
-    "source_type": "manual",
-    "confidence": "high",
-    "verified_at": "2026-09-14",
-    "source": "/documents/matter-40/Offer of Temporary Employment - TaskUs LLC (Sep 14 2026).pdf"
-  },
-  {
-    "date": "Sep. 14, 2026",
-    "event": "PACKET TRUE-UP — Operative 10-page Offer of Temporary Employment (TaskUs, LLC) added to Matter 40. Corrects the Workday one-page stub: hiring employer is TaskUs, LLC; pay is $22/hour; the Mutual Arbitration Agreement is signed; First Advantage appears only as the drug/alcohol lab network, not as a proven Megan's Law consumer-reporting vendor on this packet. Caption is Brendan Ngwa Nforbi v. TaskUs, LLC.",
-    "matters": [
-      40
-    ],
-    "type": "event",
-    "upcoming": false,
-    "actor": "you",
-    "source_type": "manual",
-    "confidence": "high",
-    "verified_at": "2026-09-14",
-    "source": "/documents/matter-40/Offer of Temporary Employment - TaskUs LLC (Sep 14 2026).pdf"
-  },
-  {
-    "date": "Sep. 14, 2026",
     "event": "FIRST ADVANTAGE BACKGROUND CHECK INVITED — TaskUs emailed, from do_not_reply@fadv.com, 'You have been invited to start your background check' (6:50 a.m.). Profile Advantage, powered by First Advantage (pa4.fadv.com; invite key GK5HGWELSS). This is the consumer-report track — same CRA as Matters 25 (FedEx) and 26 (UPS). On information and belief the forthcoming report will be similar if not identical in format to those employment screens. Screening typically up to 5 business days. No report furnished yet; no pre-adverse or adverse notice.",
     "matters": [
       40,
@@ -10130,7 +9698,7 @@
       40
     ],
     "type": "deadline",
-    "upcoming": true,
+    "upcoming": false,
     "actor": "you",
     "source_type": "manual",
     "confidence": "high",
@@ -10144,7 +9712,7 @@
       32
     ],
     "type": "deadline",
-    "upcoming": true,
+    "upcoming": false,
     "actor": "you",
     "source": "/documents/matter-32/ndcal/CCP 415.20(b) Mailing Bundle - Meza-Gonzalez (N.D. Cal. 4-26-cv-08271-ASK) (September 17, 2026).pdf",
     "source_type": "manual",
@@ -10158,7 +9726,7 @@
       40
     ],
     "type": "deadline",
-    "upcoming": true,
+    "upcoming": false,
     "actor": "you",
     "source_type": "manual",
     "confidence": "high",
@@ -10290,5 +9858,55 @@
     "source_type": "manual",
     "confidence": "high",
     "verified_at": "2026-09-18"
+  },
+  {
+    "date": "Oct. 28, 2026",
+    "event": "Portfolio true-up: clocks, statuses, and next-actions reconciled to Oct. 28, 2026 from matter files, user-reported court dates, and open PR #1035/#1036/#1038 catalogs. CourtListener incremental sync was not run (no token in this environment; last ledger sync Sep. 12, 2026). Cloudflare R2 admin credentials were not present; Worker D1 seed remains Oct. 16, 2026. No Randstad settlement figure is published.",
+    "matters": "All",
+    "type": "milestone",
+    "upcoming": false,
+    "filed": false,
+    "actor": "you",
+    "source_type": "manual",
+    "verified_at": "2026-10-28"
+  },
+  {
+    "date": "Nov. 4, 2026",
+    "event": "Case Management Conference — Newanforbi v. CHP et al. (26CV191136), Nov. 4, 2026, 4:00 p.m., Dept. 25, Rene C. Davidson Courthouse, Hon. Jenna M. Whitman. USER REPORT Oct. 28, 2026: continued from Oct. 28. No continuance order PDF ingested.",
+    "matters": [
+      20
+    ],
+    "type": "hearing",
+    "upcoming": true,
+    "actor": "you",
+    "source": "/documents/matter-32/from-20/Notice of Case Management Conference.pdf",
+    "source_type": "manual",
+    "verified_at": "2026-10-28"
+  },
+  {
+    "date": "Nov. 13, 2026",
+    "event": "Opening brief / notice of motion for peremptory writ of mandate due Nov. 13, 2026 (hearing Jan. 8, 2027) — Newanforbi v. CHP et al. (26CV191136). USER REPORT Oct. 28, 2026.",
+    "matters": [
+      20
+    ],
+    "type": "deadline",
+    "upcoming": true,
+    "actor": "you",
+    "source": "/documents/matter-20/01_Motion_for_Peremptory_Writ_MPA_with_CRS_Receipt.pdf",
+    "source_type": "manual",
+    "verified_at": "2026-10-28"
+  },
+  {
+    "date": "Jan. 8, 2027",
+    "event": "HEARING — Motion for peremptory writ of mandate, 9:00 a.m., Dept. 25, Hon. Jenna M. Whitman (Reservation ID 958052306492).",
+    "matters": [
+      20
+    ],
+    "type": "hearing",
+    "upcoming": true,
+    "actor": "you",
+    "source": "/documents/matter-20/01_Motion_for_Peremptory_Writ_MPA_with_CRS_Receipt.pdf",
+    "source_type": "portfolio",
+    "verified_at": "2026-10-28"
   }
 ]

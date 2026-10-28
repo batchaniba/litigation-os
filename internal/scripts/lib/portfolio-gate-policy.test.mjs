@@ -30,6 +30,7 @@ describe("GATE_STEPS", () => {
       "typecheck",
       "validate-portfolio",
       "doc-kind",
+      "public-timeline",
       "golden-damages",
       "unit-suite",
       "citation-gate",

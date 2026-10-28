@@ -104,7 +104,7 @@ Do not add `.github/workflows/`. The spending limit already refuses every job.
 The checks the old CI job ran live in the fail-closed `pre-push` hook (installed
 by `npm run prepare`) and in `npm run gate` (same steps, shared
 `internal/scripts/portfolio-gate.mjs`): lint, typecheck, `validate-portfolio`,
-`check-doc-kind`, golden damages math, the unit suite, and the fabricated-citation gate. Missing
+`check-doc-kind`, the public-timeline settlement-figure check, golden damages math, the unit suite, and the fabricated-citation gate. Missing
 `node_modules` or `python3` refuses the push. `SKIP_PORTFOLIO_GATE=EMERGENCY`
 may skip the hook on a feature branch only — a push that updates
 `refs/heads/main` cannot bypass. Phase 2 remote status is the Cloudflare

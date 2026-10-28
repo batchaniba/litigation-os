@@ -22,6 +22,11 @@ export const GATE_STEPS = [
     argv: ["node", "internal/scripts/check-doc-kind.mjs"],
   },
   {
+    id: "public-timeline",
+    label: "public timeline (settlement figures withheld)",
+    argv: ["node", "internal/scripts/sync-public-timeline.mjs", "--check"],
+  },
+  {
     id: "golden-damages",
     label: "golden damages",
     argv: ["node", "internal/scripts/test-golden.mjs"],

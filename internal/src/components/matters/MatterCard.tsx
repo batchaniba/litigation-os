@@ -62,8 +62,12 @@ function StatusRibbon({ variant }: { variant: RibbonVariant }) {
   );
 }
 
+// badge "NONE" opts a matter out of the status ribbon (and the pending icon)
+// without changing its lifecycle — e.g. an unfiled matter that is no longer
+// waiting on external timing.
 function resolveRibbonVariant(c: MatterSummary & { badge?: string }): RibbonVariant | null {
   if (c.lifecycle === "settled") return "settled";
+  if (c.badge === "NONE") return null;
   if (c.badge === "DEFAULT") return "default";
   if (c.lifecycle === "dismissed" || c.badge === "DISMISSED") return "dismissed";
   if (c.lifecycle === "abandoned" || c.badge === "ABANDONED") return "abandoned";
@@ -78,7 +82,7 @@ function MatterCardImpl({ matter: summary, isOpen, onToggle }: MatterCardProps) 
   const { matter: full, status } = useMatter(isOpen ? summary.number : null);
   const c = (full ?? summary) as Matter;
   const proseLoading = isOpen && status === "loading";
-  const showPending = c.lifecycle === "pre_filing" || c.badge === "PENDING";
+  const showPending = c.badge !== "NONE" && (c.lifecycle === "pre_filing" || c.badge === "PENDING");
   const ribbonVariant = resolveRibbonVariant(c);
 
   return (
