@@ -26,17 +26,19 @@ No `internal/private/research/matter-29/` path existed on scanned remotes before
 ## Start here
 
 1. **[26(f) prep sheet (Nov. 6)](10-rule26f-prep/00-26F-PREP-SHEET.md)** — conference identity, objectives, agenda, what to say, what not to volunteer.
-2. **[Deadline list](11-deadlines/DEADLINE-LIST.md)** — live clocks plus statutory watches; this room is not a substitute for `clocks.json`.
-3. **[Open questions](12-open-questions/OPEN-QUESTIONS.md)** — P0/P1/P2 confirmations. Companion: [gaps](08-audit/GAPS-AND-CONFLICTS.md).
-4. **[Oct. 28 reinvestigation analysis](09-merits-analysis/REINVESTIGATION-ANALYSIS.md)** — letter + revised report vs. the Oct. 14 report and the Oct. 14 dispute.
-5. **[Amazon / Accurate strategy assessment](09-merits-analysis/DEFENSE-STRATEGY-ASSESSMENT.md)** — separate defense desks, causal tests, first-wave discovery, decision rules.
-6. **[Facts](09-evidence-map/FACTS.md)** — FACT / INFERENCE / UNVERIFIED / QUESTION.
-7. **[Chronology](09-evidence-map/TIMELINE.md)**.
-8. **[Claims matrix](09-merits-analysis/CLAIMS-MATRIX.md)**.
-9. **[Record-to-argument map](09-evidence-map/RECORD-TO-ARGUMENT-MAP.md)**.
-10. **[Exhibit / evidence index](09-evidence-map/EXHIBIT-INDEX.md)**.
-11. **[Authority ledger](09-merits-analysis/AUTHORITY-LEDGER.md)** — statutes and repo-verified cases only; no invented citations.
-12. **[Discovery plan](03-discovery-production/DISCOVERY-PLAN.md)**.
+2. **[26(f) tactical sheet](10-rule26f-prep/05-26F-TACTICAL-SHEET.md)** — what to push, concede, and avoid on the 30-minute call.
+3. **[Deadline list](11-deadlines/DEADLINE-LIST.md)** — live clocks plus statutory watches; this room is not a substitute for `clocks.json`.
+4. **[Open questions](12-open-questions/OPEN-QUESTIONS.md)** — P0/P1/P2 confirmations. Companion: [gaps](08-audit/GAPS-AND-CONFLICTS.md).
+5. **[Oct. 28 reinvestigation analysis](09-merits-analysis/REINVESTIGATION-ANALYSIS.md)** — letter + revised report vs. the Oct. 14 report and the Oct. 14 dispute.
+6. **[Amazon / Accurate strategy assessment](09-merits-analysis/DEFENSE-STRATEGY-ASSESSMENT.md)** — separate defense desks, causal tests, first-wave discovery, decision rules.
+7. **[Defense-side stress test](STRESS-TEST.md)** — reconstructed Amazon/Accurate strategy from the actual filings and the Oct. 28 letter; likelihood/danger ratings; plaintiff's counters.
+8. **[Facts](09-evidence-map/FACTS.md)** — FACT / INFERENCE / UNVERIFIED / QUESTION.
+9. **[Chronology](09-evidence-map/TIMELINE.md)**.
+10. **[Claims matrix](09-merits-analysis/CLAIMS-MATRIX.md)**.
+11. **[Record-to-argument map](09-evidence-map/RECORD-TO-ARGUMENT-MAP.md)**.
+12. **[Exhibit / evidence index](09-evidence-map/EXHIBIT-INDEX.md)**.
+13. **[Authority ledger](09-merits-analysis/AUTHORITY-LEDGER.md)** — statutes and repo-verified cases only; no invented citations.
+14. **[Discovery plan](03-discovery-production/DISCOVERY-PLAN.md)**.
 
 ## Collection structure
 
@@ -53,6 +55,7 @@ No `internal/private/research/matter-29/` path existed on scanned remotes before
 | `08-audit/` | Inventory, hashes, gaps, verification limits |
 | `09-evidence-map/` | Facts, chronology, exhibit index, record-to-argument map |
 | `09-merits-analysis/` | Claims matrix, authority ledger, reinvestigation analysis, defense-strategy assessment |
+| `STRESS-TEST.md` | Defense-side red team (filings + Oct. 28 letter). Not a filing |
 | `10-rule26f-prep/` | Nov. 6 conference prep (this room's `10-*` tail, analogous to Matter 28 `10-hearing-prep/`) |
 | `11-deadlines/` | Deadline list for the user |
 | `12-open-questions/` | Open-questions list for the user |
