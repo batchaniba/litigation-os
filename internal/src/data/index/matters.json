@@ -154,14 +154,7 @@
       "lifecycle": "dismissed",
       "proceeding": "state_civil",
       "phase": "terminal",
-      "next_clock": {
-        "id": "05-judgment-request",
-        "date": "2026-10-28",
-        "kind": "deadline",
-        "status": "open",
-        "title": "FILE — Request for entry of judgment after the Jul. 15, 2026 WOLA demurrer (STK-CV-UF-2026-0001032 / CV-2026-0001032). Register re-pulls through Sep. 21, 2026 found no CCP § 581d judgment. USER REPORT Oct. 28, 2026: Plaintiff is requesting entry of judgment. No filed request PDF ingested.",
-        "source_dkt": null
-      },
+      "next_clock": null,
       "overdue": false,
       "last_updated": "2026-10-28",
       "files": [
@@ -928,8 +921,8 @@
         "date": "2026-11-17",
         "kind": "deadline",
         "status": "open",
-        "title": "Joint status conference report due Nov. 17, 2026 (monthly through May 17, 2027) — Newanforbi v. Smith / HOPE (3:26-cv-07504-LJC). USER REPORT of the Oct. 27, 2026 order deferring the MTD pending San Joaquin judgment. No order PDF ingested.",
-        "source_dkt": null
+        "title": "Joint status conference report due Nov. 17, 2026 (monthly through May 17, 2027) — Newanforbi v. Smith / HOPE (3:26-cv-07504-LJC). USER REPORT of the Oct. 27, 2026 order deferring the MTD pending San Joaquin judgment. Order is Dkt. 38 (filed Oct. 27, 2026; minute entry Dkt. 37); PDF not ingested.",
+        "source_dkt": 38
       },
       "overdue": false,
       "last_updated": "2026-10-28",
@@ -1107,14 +1100,14 @@
       "proceeding": "federal_civil",
       "phase": "pleadings",
       "next_clock": {
-        "id": "33-deadline-7",
-        "date": "2026-10-27",
+        "id": "33-deadline-2",
+        "date": "2026-11-18",
         "kind": "deadline",
-        "status": "overdue",
-        "title": "WATCH — Defendants' response to First Amended Complaint (Dkt. 6) due — Nforbi v. Candelaria et al. (3:26-cv-08272-RFL). Set by Dkt. 24 Order Granting Motion to Strike (Oct. 13, 2026), which struck Defendants' Sep. 4 answer (Dkt. 11) to the superseded complaint.",
-        "source_dkt": 24
+        "status": "open",
+        "title": "Deadline to file ADR Certification (ADR L.R. 3) and to meet and confer regarding initial disclosures, early settlement, ADR process selection, and a discovery plan (Rule 26(f)) — Nforbi v. Candelaria et al. (3:26-cv-08272-RFL), Nov. 18, 2026 (21 days before the Dec. 9 CMC; Dkt. 4 / Dkt. 23).",
+        "source_dkt": 4
       },
-      "overdue": true,
+      "overdue": false,
       "last_updated": "2026-10-28",
       "files": [
         "claims.json",

@@ -1,15 +1,26 @@
 [
   {
     "id": "05-judgment-request",
-    "date": "2026-10-28",
+    "date": "2026-10-27",
     "kind": "deadline",
-    "status": "open",
+    "status": "satisfied",
     "source_dkt": null,
     "actor": "you",
     "source": "/documents/opinions/Newanforbi v Palacios - San Joaquin Sup Ct - Demurrer Sustained WOLA Jul 15 2026.pdf",
     "title": "FILE — Request for entry of judgment after the Jul. 15, 2026 WOLA demurrer (STK-CV-UF-2026-0001032 / CV-2026-0001032). Register re-pulls through Sep. 21, 2026 found no CCP § 581d judgment. USER REPORT Oct. 28, 2026: Plaintiff is requesting entry of judgment. No filed request PDF ingested.",
     "note": "USER REPORT. Closed Jul. 15, 2026 is already on the docket. Do not invent a judgment date.",
-    "date_label": "Oct. 28, 2026",
-    "tz": "America/Los_Angeles"
+    "date_label": "Oct. 27, 2026",
+    "tz": "America/Los_Angeles",
+    "retired_reason": "FILED Oct. 27, 2026 — Plaintiff's Request for Entry of Judgment of Dismissal (CCP § 581(f)(1)) with proposed judgment and email proof of service, San Joaquin eFiling order no. 23338459. Source: Plaintiff's Oct. 27, 2026 5:01 p.m. PT courtesy-copy email to Sims Law (M28 counsel). Clerk-stamped copy not ingested."
+  },
+  {
+    "id": "05-judgment-entry-watch",
+    "date": null,
+    "kind": "deadline",
+    "status": "contingent",
+    "source_dkt": null,
+    "actor": "court",
+    "title": "WATCH — Clerk/court entry of judgment of dismissal on Plaintiff's Oct. 27, 2026 CCP § 581(f)(1) request (STK-CV-UF-2026-0001032 / CV-2026-0001032). Entry also feeds Matter 28: the N.D. Cal. Oct. 27 order deferred the Dkt. 15 MTD pending a San Joaquin judgment.",
+    "note": "Undated contingent. Do not invent an entry date. When entered, ingest the judgment and notice of entry; that starts the appeal clock (CRC 8.104)."
   }
 ]

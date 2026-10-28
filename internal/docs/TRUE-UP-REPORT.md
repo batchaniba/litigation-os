@@ -208,3 +208,18 @@ Index derived-overdue `next_clock` rows after this pass (expected, flagged):
 7. Matter 27: payment/outside-date clocks stay private and open until Plaintiff says otherwise.
 8. Matter 29: ingest the Accurate Oct. 28 letter when it is safe to put on the public graph (not the #1036 private room).
 9. Worker D1 is 12 days stale; reseed from laptop after merge if the public `/matters` API should match this graph.
+
+## Addendum — ECF / Gmail pass, Oct. 28, 2026 (4:00 p.m. PT)
+
+Follow-up to PR #1039. Sources are CM/ECF Notices of Electronic Filing received in Plaintiff's Gmail and Plaintiff's own sent mail. No PDFs ingested; no deploy, reseed, or R2 push. Answers open questions 1, 2, and 3 above.
+
+| Matter | Change | Source |
+| --- | --- | --- |
+| 5 | `05-judgment-request` satisfied (filed Oct. 27). New contingent `05-judgment-entry-watch`. | Plaintiff's Oct. 27 courtesy-copy email: CCP § 581(f)(1) request, proposed judgment, POS; eFiling order no. 23338459. |
+| 28 | Order-derived clocks now cite `source_dkt: 38`. Dkt. 37 = motion-hearing minute entry. | NEFs Oct. 27, 3:54 p.m. (Dkt. 37) and 3:58 p.m. (Dkt. 38). NEF emails carry no docket text; contents remain Plaintiff's report. |
+| 32 | Opposition Nov. 9 and reply Nov. 16 now from Dkt. 22 docket text (no longer computed). New `32-mtd-reply` (open) and `32-mtd-hearing` Dec. 9 1:30 p.m. (vacated). New contingent `32-reassignment-watch`. | Dkt. 22 NEF (Oct. 26); Dkt. 25 Clerk's Notice of Impending Reassignment (Oct. 28) vacated all hearing dates before the magistrate judge. |
+| 32 | Opposition **not on ECF**: emailed to DOJ Oct. 27, no NEF through Oct. 28 4:00 p.m. Clock stays open. | Gmail sent + NEF search. |
+| 32 | `32-deadline-1` stays open. Dkt. 21 (Melano return) drew a filing-error notice; refiled as Dkt. 24 Oct. 28. Dkt. 24 is Melano, not the Meza-Gonzalez § 415.20(b) declaration this clock tracks. | NEFs Oct. 26 / Oct. 28. |
+| 33 | `33-deadline-7` satisfied: Dkt. 26 Answer to FAC by Candelaria and Gordon, Oct. 27. | NEF Oct. 27, 3:48 p.m. |
+
+Still open: Matter 19 (no Macomber ruling email found), Matter 25 (no E.D. Cal. NEF since Oct. 1), Matter 38 (an Oct. 20 "Notice of Payment of Filing Fee" PDF for Swift exists only as an email to self — not proof of payment), Matter 32 Meza-Gonzalez return, and the PDFs for Dkt. 37/38 (M28), Dkt. 22–26 (M32), Dkt. 26 (M33).
