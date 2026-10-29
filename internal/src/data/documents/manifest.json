@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "fileCount": 1762,
-  "totalBytes": 1025104690,
+  "fileCount": 1764,
+  "totalBytes": 1026036640,
   "files": [
     {
       "path": "/documents/_form-library/ao239-blank-template.pdf",
@@ -8812,6 +8812,16 @@
       "path": "/documents/README.md",
       "size": 482,
       "sha256": "fd9e068ec788a0c4e54aed9d8a9c38785dd84abb50547253f85eef61c3ecbd9b"
+    },
+    {
+      "path": "/documents/matter-32/ndcal/Dkt 22 - Defendants Motion to Dismiss and Strike (Filed Oct 26 2026).pdf",
+      "size": 302251,
+      "sha256": "360918e1c5e3e313da78885c3c36e1b5d6799593037e147a54764dc0302748c6"
+    },
+    {
+      "path": "/documents/matter-32/ndcal/Dkt 23 - Magistrate Jurisdiction Declination (Filed Oct 26 2026).pdf",
+      "size": 629699,
+      "sha256": "1e7f3f59ab55e02c536fada76348b0ff90abf703752ef66e01de68d11f352b67"
     }
   ]
 }
