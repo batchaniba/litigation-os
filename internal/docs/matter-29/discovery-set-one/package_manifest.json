@@ -1,0 +1,63 @@
+{
+  "matter": 29,
+  "case": "4:26-cv-09249-ASK",
+  "status": "draft-not-delivered-or-served",
+  "counts": {
+    "amazon_rfp": 18,
+    "accurate_rfp": 20,
+    "amazon_interrogatories": 8,
+    "accurate_interrogatories": 9,
+    "amazon_rfa": 8,
+    "accurate_rfa": 8,
+    "total_requests": 71
+  },
+  "files": [
+    "01_Amazon_RFP_Set_One.md",
+    "02_Accurate_RFP_Set_One.md",
+    "03_Amazon_Interrogatories_Set_One.md",
+    "04_Accurate_Interrogatories_Set_One.md",
+    "05_Amazon_RFA_Set_One.md",
+    "06_Accurate_RFA_Set_One.md",
+    "07_Rule_26f_ESI_Proposal.md",
+    "08_Amazon_30b6_Draft_HOLD.md",
+    "09_Accurate_30b6_Draft_HOLD.md",
+    "10_Amazon_Service_Record.md",
+    "11_Accurate_Service_Record.md",
+    "12_Cover_Email_Templates_NOT_SENT.txt"
+  ],
+  "binary_renders_in_pr": true,
+  "first_conference_date": "unconfirmed",
+  "do_not_treat_pr_as_service": true,
+  "generated_docx_count": 10,
+  "generated_pdf_count": 15,
+  "generated_zip_count": 1,
+  "generated_from_markdown_not_identical_to_local_originals": true,
+  "formatter": "internal/scripts/lib/pleading_paper.py",
+  "proof_of_service_template": "internal/scripts/lib/proof_of_service.py",
+  "signature_image": "internal/assets/signature/brendan-newanforbi-signature.png",
+  "signature_date": "2026-10-19",
+  "review_draft_marker": false,
+  "service_records_pdf_only": true,
+  "service_on_all_parties": {
+    "rule": "Fed. R. Civ. P. 5(a)(1)(C)",
+    "rfp_proof_methods": [
+      "email",
+      "first-class U.S. Mail, San Jose, California"
+    ],
+    "rfp_service_date": "2026-10-19",
+    "mail_addresses": {
+      "Morgan, Lewis & Bockius LLP (Amazon)": {
+        "Andrew P. Frederick": "1400 Page Mill Road, Palo Alto, CA 94304",
+        "Douglass G. Brown": "1717 Main Street, Suite 3200, Dallas, TX 75201",
+        "source": "Dkt. 19 counsel block, p. 1"
+      },
+      "Seyfarth Shaw LLP (Accurate)": {
+        "John Drury; Jasmine J. Stanzick": "2029 Century Park East, Suite 3500, Los Angeles, California 90067-3021",
+        "source": "Dkt. 21 counsel block, p. 1 (lists Stanzick only)"
+      }
+    },
+    "email_only": [
+      "suga.ikeda@morganlewis.com"
+    ]
+  }
+}
