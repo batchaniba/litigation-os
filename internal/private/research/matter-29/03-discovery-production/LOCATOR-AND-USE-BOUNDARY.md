@@ -2,18 +2,16 @@
 
 This folder holds **planning**, not produced documents. Matter 29 has no Bates production in this room.
 
-## Existing discovery packet (not on main)
+## Existing discovery packet (on main since Oct. 28, 2026 via PR #1017)
 
-Branch: `origin/matter-29/discovery-set-one-amazon-accurate-2026-10-17`
-
-Path: `internal/docs/matter-29/discovery-set-one/`
+Path on main: `internal/docs/matter-29/discovery-set-one/` (merged from branch `matter-29/discovery-set-one-amazon-accurate-2026-10-17`, merge commit af256f09)
 
 Snapshots in this room (README + ESI proposal only):
 
 - `05-prior-analysis/discovery-set-one-README.snapshot-2026-10-17.md`
 - `05-prior-analysis/07_Rule_26f_ESI_Proposal.snapshot-2026-10-17.md`
 
-That packet is dated **October 19, 2026**, with signature image affixed in generated PDFs. The branch README states: **none filed, delivered, or served by that PR.** Treat service status as **UNVERIFIED** against the live docket and the user's mailbox. Do not cite the packet as served.
+That packet is dated **October 19, 2026**, with signature image affixed in generated PDFs. The packet README states: **none filed, delivered, or served by that PR.** Treat service status as **UNVERIFIED** against the live docket and the user's mailbox. Do not cite the packet as served.
 
 Counts from that README: 18 Amazon RFPs, 20 Accurate RFPs, 8 Amazon ROGs, 9 Accurate ROGs, 8 Amazon RFAs, 8 Accurate RFAs = **71 requests**. Rule 34 sets may be delivered early under FRCP 26(d)(2) and are deemed served at the first actual 26(f) conference. Interrogatories and RFAs are not on the 26(d)(2) early-delivery track.
 

@@ -47,7 +47,7 @@ No `internal/private/research/matter-29/` path existed on scanned remotes before
 | `00-user-inputs/` | This request and the Oct. 28 Accurate letter + enclosed revised report (25 pp.) |
 | `01-portfolio-records/` | Locators to live `documents/matter-29/` pleadings. Bytes are not duplicated. |
 | `02-consumer-reports/` | Oct. 14 vs. Oct. 28 comparison and locators |
-| `03-discovery-production/` | Discovery plan, ESI notes, locator to the Oct. 17 discovery-set-one branch (not on main) |
+| `03-discovery-production/` | Discovery plan, ESI notes, locator to `internal/docs/matter-29/discovery-set-one/` (merged Oct. 28 via #1017; service UNVERIFIED) |
 | `04-drafts-and-working-papers/` | Conference-only drafts. Nothing is certified for filing or service |
 | `05-prior-analysis/` | Snapshots of the Oct. 14 accuracy audit, 60-day calendar, dispute draft, and discovery-set-one README/ESI proposal. Historical; not re-adopted |
 | `06-source-snapshots/` | Frozen Matter 29 graph siblings as of branch creation. Consult live `clocks.json` / `docket.json` for current dates |
@@ -82,5 +82,5 @@ Two `09-*` siblings are intentional (Matter 20 / Matter 28). Parallel `10-*` wor
 | Matter 28 `internal/private/research/matter-28/` | Leaner federal 26(f)/hearing analog (two-defendant N.D. Cal.) |
 | Matter 32 `internal/private/research/matter-32/` | Heavy MTD-opposition workshop; not copied wholesale |
 | `internal/docs/matter-29/` | Accuracy audit, 60-day calendar (snapshot here; some dates stale) |
-| `origin/matter-29/discovery-set-one-amazon-accurate-2026-10-17` | 71-request packet + ESI proposal. **Not on main.** Locator only |
+| `internal/docs/matter-29/discovery-set-one/` | 71-request packet + ESI proposal. On main since Oct. 28 (#1017). Drafts dated Oct. 19; service/delivery **UNVERIFIED** |
 | `internal/docs/counsel/frederick-stanzick/` | Two-desk playbook. Do not send |
