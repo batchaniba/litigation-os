@@ -12,7 +12,7 @@
 #
 # Git-integration build settings live in the Cloudflare dashboard (Pages
 # does not read the build command from this file). Contract:
-#   Node 22  (.nvmrc -> 22.22.2; matches package.json engines + jsdom)
+#   Node 22  (.nvmrc -> 22.23.4; matches package.json engines + jsdom)
 #   Install  npm ci   (SKIP_DEPENDENCY_INSTALL=1 so Pages does not
 #                      also run npm install — see language-support-and-tools)
 #   Build    npm run build   (prebuild runs sync:derived)
@@ -34,4 +34,4 @@ compatibility_date = "2026-09-21"
 SKIP_DEPENDENCY_INSTALL = "1"
 VITE_COPY_DOCUMENTS = "0"
 PORTFOLIO_SKIP_DISK_DOCS = "1"
-NODE_VERSION = "22.22.2"
+NODE_VERSION = "22.23.4"

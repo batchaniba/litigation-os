@@ -31,7 +31,7 @@ Verified in-repo (not assumed):
 
 | Setting | Value | Evidence |
 |---|---|---|
-| Node | **22** (`22.22.2`) | `package.json` `engines.node` is `>=22.22.0`. Pages v3 default is 22.16.0, which is below that floor. jsdom in this lockfile wants `^22.22.2`, so `.nvmrc` pins `22.22.2`. Pages also reads `NODE_VERSION` ([language support](https://developers.cloudflare.com/pages/configuration/language-support-and-tools/)). |
+| Node | **22** (`22.23.4`) | `package.json` `engines.node` is `>=22.23.4`. Pages v3 default is 22.16.0, which is below that floor. `.nvmrc` pins `22.23.4` to match engines. Pages also reads `NODE_VERSION` ([language support](https://developers.cloudflare.com/pages/configuration/language-support-and-tools/)). |
 | Install | `npm ci` | Set dashboard env `SKIP_DEPENDENCY_INSTALL=1` so Pages does **not** also run `npm install` ([same page](https://developers.cloudflare.com/pages/configuration/language-support-and-tools/)). |
 | Build command | `npm ci && npm run build` | `package.json` `build` is `vite build`. `prebuild` runs `sync:derived` (includes `sync:short-links`). |
 | Output directory | `dist` | Vite default. `vite.config.js` has **no** `build.outDir`. Matches the Pages “React (Vite)” preset ([build configuration](https://developers.cloudflare.com/pages/configuration/build-configuration/)). |
@@ -80,7 +80,7 @@ is set because `prebuild` runs it.
    | `SKIP_DEPENDENCY_INSTALL` | `1` |
    | `VITE_COPY_DOCUMENTS` | `0` |
    | `PORTFOLIO_SKIP_DISK_DOCS` | `1` *(same as Vercel — `prebuild` / `sync:short-links` checks catalog sources against the committed manifest. `CF_PAGES=1` also triggers this.)* |
-   | `NODE_VERSION` | `22.22.2` *(belt and suspenders with `.nvmrc`)* |
+   | `NODE_VERSION` | `22.23.4` *(belt and suspenders with `.nvmrc`)* |
 
 6. **Throttle builds before the first flood.** Git integration deploys on
    every push by default ([git integration](https://developers.cloudflare.com/pages/configuration/git-integration/)).
