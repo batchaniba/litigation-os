@@ -1097,6 +1097,11 @@
       "ownerMatter": 20
     },
     {
+      "path": "/documents/matter-20/Stipulation and Order re Briefing Schedule - Signed Whitman (Filed Oct 26 2026).pdf",
+      "label": "Stipulation and Order re Briefing Schedule - Signed Whitman (Filed Oct 26 2026)",
+      "ownerMatter": 20
+    },
+    {
       "path": "/documents/matter-20/Stipulation to Advance Hearing Date.docx",
       "label": "Stipulation to Advance Hearing Date — pre-filing draft with Petitioner's e-signature (superseded by the filed Joint Stipulation above)",
       "ownerMatter": 20
@@ -4692,6 +4697,16 @@
       "ownerMatter": 32
     },
     {
+      "path": "/documents/matter-32/ndcal/Dkt 22 - Defendants Motion to Dismiss and Strike (Filed Oct 26 2026).pdf",
+      "label": "Dkt 22 - Defendants Motion to Dismiss and Strike (Filed Oct 26 2026)",
+      "ownerMatter": 32
+    },
+    {
+      "path": "/documents/matter-32/ndcal/Dkt 23 - Magistrate Jurisdiction Declination (Filed Oct 26 2026).pdf",
+      "label": "Dkt 23 - Magistrate Jurisdiction Declination (Filed Oct 26 2026)",
+      "ownerMatter": 32
+    },
+    {
       "path": "/documents/matter-32/ndcal/DRAFT - Exhibit A Cover Page - Serrato Related-Cases Admin Motion.pdf",
       "label": "DRAFT - Exhibit A Cover Page - Serrato Related-Cases Admin Motion",
       "ownerMatter": 32
@@ -6385,16 +6400,6 @@
       "path": "/documents/opinions/Newanforbi v Smith - USDC NDCal - Order Directing Service Aug 26 2026.pdf",
       "label": "Opinion copy — Mag. Cisneros Order Directing Service (Aug. 26, 2026)",
       "ownerMatter": null
-    },
-    {
-      "path": "/documents/matter-32/ndcal/Dkt 22 - Defendants Motion to Dismiss and Strike (Filed Oct 26 2026).pdf",
-      "label": "Dkt 22 - Defendants Motion to Dismiss and Strike (Filed Oct 26 2026)",
-      "ownerMatter": 32
-    },
-    {
-      "path": "/documents/matter-32/ndcal/Dkt 23 - Magistrate Jurisdiction Declination (Filed Oct 26 2026).pdf",
-      "label": "Dkt 23 - Magistrate Jurisdiction Declination (Filed Oct 26 2026)",
-      "ownerMatter": 32
     }
   ]
 }

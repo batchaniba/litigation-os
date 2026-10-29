@@ -117,10 +117,10 @@
     "kind": "deadline",
     "status": "open",
     "source_dkt": null,
-    "title": "WATCH — CHP opposition to the peremptory-writ motion due Dec. 11, 2026 — Newanforbi v. CHP et al. (26CV191136). USER REPORT Oct. 28, 2026 (replaces the prior CCP § 1005(b) Dec. 24 watch). Confirm against the CMC order once ingested.",
+    "title": "WATCH — Respondents' opposition due Dec. 11, 2026 — Newanforbi v. CHP et al. (26CV191136). Set by the Oct. 26, 2026 Stipulation and Order re Briefing Schedule.",
     "actor": "opposing",
-    "source": "/documents/matter-20/01_Motion_for_Peremptory_Writ_MPA_with_CRS_Receipt.pdf",
-    "note": "USER REPORT briefing schedule. No order PDF ingested."
+    "source": "/documents/matter-20/Stipulation and Order re Briefing Schedule - Signed Whitman (Filed Oct 26 2026).pdf",
+    "note": "Order signed by Hon. Jenna M. Whitman Oct. 26, 2026 on the parties' joint stipulation; filed Oct. 26, clerk e-served Oct. 28."
   },
   {
     "id": "20-deadline-11",
@@ -129,10 +129,10 @@
     "kind": "deadline",
     "status": "open",
     "source_dkt": null,
-    "title": "Reply due Dec. 18, 2026 on the peremptory-writ motion — Newanforbi v. CHP et al. (26CV191136). USER REPORT Oct. 28, 2026 (replaces the prior CCP § 1005(b) Dec. 31 date).",
+    "title": "Reply due Dec. 18, 2026 on the petition for writ of mandate — Newanforbi v. CHP et al. (26CV191136). Set by the Oct. 26, 2026 Stipulation and Order re Briefing Schedule.",
     "actor": "you",
-    "source": "/documents/matter-20/01_Motion_for_Peremptory_Writ_MPA_with_CRS_Receipt.pdf",
-    "note": "USER REPORT briefing schedule. No order PDF ingested."
+    "source": "/documents/matter-20/Stipulation and Order re Briefing Schedule - Signed Whitman (Filed Oct 26 2026).pdf",
+    "note": "Order signed by Hon. Jenna M. Whitman Oct. 26, 2026 on the parties' joint stipulation; filed Oct. 26, clerk e-served Oct. 28. Courtesy copy to Dept. 25 within one court day of filing (see 20-courtesy-reply)."
   },
   {
     "id": "20-deadline-12",
@@ -176,9 +176,36 @@
     "status": "open",
     "source_dkt": null,
     "actor": "you",
-    "source": "/documents/matter-20/01_Motion_for_Peremptory_Writ_MPA_with_CRS_Receipt.pdf",
-    "title": "Opening brief / notice of motion for peremptory writ of mandate due Nov. 13, 2026 (hearing Jan. 8, 2027) — Newanforbi v. CHP et al. (26CV191136). USER REPORT Oct. 28, 2026.",
+    "source": "/documents/matter-20/Stipulation and Order re Briefing Schedule - Signed Whitman (Filed Oct 26 2026).pdf",
+    "title": "Opening memorandum in support of the petition for writ of mandate due Nov. 13, 2026 (hearing Jan. 8, 2027) — Newanforbi v. CHP et al. (26CV191136). Set by the Oct. 26, 2026 Stipulation and Order re Briefing Schedule.",
     "date_label": "Nov. 13, 2026",
+    "tz": "America/Los_Angeles",
+    "note": "Order signed by Hon. Jenna M. Whitman Oct. 26, 2026 on the parties' joint stipulation; filed Oct. 26, clerk e-served Oct. 28. Courtesy copy to Dept. 25 within one court day of filing (see 20-courtesy-opening)."
+  },
+  {
+    "id": "20-courtesy-opening",
+    "date": "2026-11-16",
+    "date_label": "Nov. 16, 2026",
+    "kind": "deadline",
+    "status": "open",
+    "source_dkt": null,
+    "actor": "you",
+    "source": "/documents/matter-20/Stipulation and Order re Briefing Schedule - Signed Whitman (Filed Oct 26 2026).pdf",
+    "title": "Hand-deliver courtesy copy of the opening memorandum to Dept. 25 (Rene C. Davidson Courthouse) within one court day of filing — Newanforbi v. CHP et al. (26CV191136). Order of Oct. 26, 2026.",
+    "note": "Date assumes filing on the deadline; if filed earlier, the courtesy copy is due one court day after the actual filing date. Source: Order re Briefing Schedule, p. 4 (\"Courtesy copies shall be hand delivered to Dept. 25 within one court day of filing.\")",
+    "tz": "America/Los_Angeles"
+  },
+  {
+    "id": "20-courtesy-reply",
+    "date": "2026-12-21",
+    "date_label": "Dec. 21, 2026",
+    "kind": "deadline",
+    "status": "open",
+    "source_dkt": null,
+    "actor": "you",
+    "source": "/documents/matter-20/Stipulation and Order re Briefing Schedule - Signed Whitman (Filed Oct 26 2026).pdf",
+    "title": "Hand-deliver courtesy copy of the reply to Dept. 25 (Rene C. Davidson Courthouse) within one court day of filing — Newanforbi v. CHP et al. (26CV191136). Order of Oct. 26, 2026.",
+    "note": "Date assumes filing on the deadline; if filed earlier, the courtesy copy is due one court day after the actual filing date. Source: Order re Briefing Schedule, p. 4 (\"Courtesy copies shall be hand delivered to Dept. 25 within one court day of filing.\")",
     "tz": "America/Los_Angeles"
   }
 ]

@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "fileCount": 1765,
-  "totalBytes": 1026185738,
+  "fileCount": 1766,
+  "totalBytes": 1026573420,
   "files": [
     {
       "path": "/documents/_form-library/ao239-blank-template.pdf",
@@ -8827,6 +8827,11 @@
       "path": "/documents/matter-32/ndcal/Dkt 23 - Magistrate Jurisdiction Declination (Filed Oct 26 2026).pdf",
       "size": 629699,
       "sha256": "1e7f3f59ab55e02c536fada76348b0ff90abf703752ef66e01de68d11f352b67"
+    },
+    {
+      "path": "/documents/matter-20/Stipulation and Order re Briefing Schedule - Signed Whitman (Filed Oct 26 2026).pdf",
+      "size": 387682,
+      "sha256": "e6799c33860e606533dd4d6e2c25211cc22095502af57da362e17bc8dff2fcfd"
     }
   ]
 }
