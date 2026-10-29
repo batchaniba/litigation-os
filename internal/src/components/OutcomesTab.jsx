@@ -12,9 +12,11 @@ const GREEN  = "#16a34a";
 const AMBER  = "#d97706";
 const BLUE   = "#0284c7";
 
-const publicRealized = outcomes.realized.filter((r) => !r.confidential).reduce((s, r) => s + r.amount, 0);
-const anticipated = outcomes.anticipated.reduce((s, r) => s + r.amount, 0);
+// Confidential settlements carry amount: null and are never summed or shown.
+const publicRealized = outcomes.realized.filter((r) => !r.confidential).reduce((s, r) => s + (r.amount || 0), 0);
+const anticipated = outcomes.anticipated.reduce((s, r) => s + (r.amount || 0), 0);
 const combinedIsConfidential = outcomes.realized.some((r) => r.confidential) && anticipated === 0;
+const realized = publicRealized;
 const combined = publicRealized + anticipated;
 const byNumber = new Map(cases.map((c) => [Number(c.number), c]));
 const liveDamages = damages_table.filter((row) => isActiveExposureRow(row, byNumber));
@@ -221,7 +223,7 @@ export function OutcomesTab() {
         }}>
           {totalMatterCount} tracked matters (filed, closed, prefiling) across six jurisdictions.
           {" "}{activeMatterCount} currently litigating. Matter 22 settled and was dismissed; Matter 27
-          has an executed settlement whose dismissal filing is not verified. No live public demands. All pro se.
+          settled (Notice of Settlement Oct. 26) with dismissal pending. No live public demands. All pro se.
         </p>
       </div>
 
@@ -231,7 +233,7 @@ export function OutcomesTab() {
           label="Confirmed — Settled"
           amount={realized}
           color={GREEN}
-          sub="Matter 22 · Pilot Travel Centers · July 14, 2026 · dismissed Aug. 6"
+          sub="Matter 22 · Pilot Travel Centers · July 14, 2026 · Matter 27 · Randstad · Oct. 26, 2026"
           confidential={outcomes.realized.some(r => r.confidential)}
           theme={theme}
         />
@@ -336,7 +338,7 @@ export function OutcomesTab() {
         borderRadius: 10, padding: "18px 24px", marginBottom: 32,
         fontFamily: "'DM Sans', sans-serif", fontSize: 13, color: theme.mutedText, lineHeight: 1.6,
       }}>
-        No live public demands. Matter 27 settlement is executed; dismissal filing is not verified.
+        No live public demands. Matter 27 settled (Notice of Settlement Oct. 26); dismissal is pending.
         Passed-deadline letters are not counted as active, and defendants in one case are not counted as separate matters.
       </div>
 
@@ -360,11 +362,12 @@ export function OutcomesTab() {
           and the action was dismissed with prejudice on August 6, 2026. Terms are confidential.
           Matter 12&apos;s default track closed when Diamond and Alpine appeared through counsel on August 12
           and disputed service; that case is back on an ordinary litigated path (CMC Dec. 11).
-          FedEx (Matter 25) and UPS (Matter 26) are in federal court after removal. Matter 27 settlement
-          is executed; dismissal filing is not verified. These outcomes reflect the quality of the
-          underlying record across all {totalMatterCount} tracked matters. Live moderate exposure of{" "}
-          {fmt(moderate)} covers {activeMatterCount} litigating matters; settled and historical
-          valuations are kept separate.
+          FedEx (Matter 25) and UPS (Matter 26) are in federal court after removal. Matter 27
+          settled: defense counsel served a Notice of Settlement on October 26, 2026, and dismissal
+          is pending. Settlement terms are confidential and are not counted in the figures on this
+          page. These outcomes reflect the quality of the underlying record across all {totalMatterCount} tracked matters.
+          Live moderate exposure of {fmt(moderate)} covers {activeMatterCount} litigating matters;
+          settled and historical valuations are kept separate.
         </p>
       </div>
     </div>

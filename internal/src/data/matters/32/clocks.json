@@ -9,7 +9,7 @@
     "title": "FILE — summons return / CCP § 415.20(b) declaration + Exhibit A USPS receipt + POS being refiled in Nforbi v. Meza-Gonzalez et al. (4:26-cv-08271-ASK). USER REPORT Oct. 28, 2026. Sep. 17 mailing executed; prior FILE clock was still open (dkt null). Do not invent a filing.",
     "actor": "you",
     "source": "/documents/matter-32/ndcal/Declaration of Mailing - CCP 415.20(b) Follow-Up to Dkt 16 - Meza-Gonzalez (N.D. Cal. 4-26-cv-08271-ASK) (September 17, 2026).pdf",
-    "note": "USER REPORT: refiling in progress. Keep open until a clerk-stamped return is ingested."
+    "note": "Dkt. 21 (Oct. 26) Melano summons return drew a Dkt. 21 electronic-filing-error notice Oct. 28 (no title page, Civ. L.R. 3-4); Plaintiff refiled it as Dkt. 24 (Oct. 28, 9:58 a.m.) with the Melano proof of service attached. Dkt. 24 is the Melano return. This clock tracks the Meza-Gonzalez CCP § 415.20(b) follow-up declaration; no ECF entry for that declaration found through Oct. 28. Plaintiff to confirm whether Meza-Gonzalez's return still needs filing."
   },
   {
     "id": "32-deadline-2",
@@ -67,7 +67,8 @@
     "status": "open",
     "source_dkt": null,
     "title": "Case Management Statement due — Nforbi v. Meza-Gonzalez et al. (4:26-cv-08271-ASK), per Sep. 28 PACER true-up.",
-    "actor": "you"
+    "actor": "you",
+    "note": "Dkt. 25 (Oct. 28) vacated hearing dates before the magistrate judge; the CMC and this statement date may be reset on reassignment. Keep open until the new judge's order issues."
   },
   {
     "id": "32-deadline-mtd-opposition",
@@ -77,7 +78,41 @@
     "status": "open",
     "source_dkt": 22,
     "actor": "you",
-    "title": "COMPUTED — Opposition to Dkt. 22 motion to dismiss/strike due Nov. 9, 2026 (Civ. L.R. 7-3(a): 14 days after Oct. 26 filing) — Nforbi v. Meza-Gonzalez et al. (4:26-cv-08271-ASK). Source: open PR #1035 catalogs the filed PDF; bytes not ingested on this branch. Hearing date not set here. USER REPORT: summons return is being refiled.",
-    "note": "Do not invent a hearing date. Confirm Civil L.R. 7-3(a) against the motion notice once the PDF is on this branch."
+    "title": "Opposition to Dkt. 22 motion to dismiss/strike due Nov. 9, 2026 — Nforbi v. Meza-Gonzalez et al. (4:26-cv-08271-ASK). Date set in the Dkt. 22 docket text (responses due 11/9/2026; replies 11/16/2026). Plaintiff emailed a courtesy copy of the opposition and proof of service to DOJ on Oct. 27, 2026, but no ECF entry for the opposition appears in the NEFs through Oct. 28, 4:00 p.m. PT.",
+    "note": "Keep OPEN until the opposition is on the docket. A courtesy email to counsel is not a filing (Civ. L.R. 5-1). Dkt. 25 reassignment notice vacated the hearing date, not the L.R. 7-3 briefing dates; re-check once the new judge re-notices."
+  },
+  {
+    "id": "32-mtd-reply",
+    "date": "2026-11-16",
+    "date_label": "Nov. 16, 2026",
+    "kind": "deadline",
+    "status": "open",
+    "source_dkt": 22,
+    "actor": "opposing",
+    "title": "WATCH — Defendants' reply in support of Dkt. 22 motion to dismiss/strike due Nov. 16, 2026 per Dkt. 22 docket text — Nforbi v. Meza-Gonzalez et al. (4:26-cv-08271-ASK).",
+    "tz": "America/Los_Angeles"
+  },
+  {
+    "id": "32-mtd-hearing",
+    "date": "2026-12-09",
+    "date_label": "Dec. 9, 2026",
+    "time": "13:30",
+    "tz": "America/Los_Angeles",
+    "kind": "hearing",
+    "status": "vacated",
+    "source_dkt": 25,
+    "actor": "court",
+    "title": "Dkt. 22 motion-to-dismiss hearing originally noticed for Dec. 9, 2026, 1:30 p.m., Oakland, Courtroom 4, 3rd Floor (Dkt. 22 docket text) — VACATED by Dkt. 25 Clerk's Notice of Impending Reassignment (Oct. 28, 2026): all hearing dates before the magistrate judge vacated, to be re-noticed before the assigned district judge.",
+    "retired_reason": "Dkt. 25 (Oct. 28, 2026) vacated all hearing dates before the current magistrate judge. Awaiting separate reassignment notice and re-notice."
+  },
+  {
+    "id": "32-reassignment-watch",
+    "date": null,
+    "kind": "deadline",
+    "status": "contingent",
+    "source_dkt": 25,
+    "actor": "court",
+    "title": "WATCH — Separate clerk's notice naming the district judge on reassignment, then re-noticed Dkt. 22 hearing and any reset CMC/CMS dates — Nforbi v. Meza-Gonzalez et al. (4:26-cv-08271-ASK). Dkt. 25 (Oct. 28, 2026).",
+    "note": "Undated contingent. Do not invent the judge or a hearing date."
   }
 ]

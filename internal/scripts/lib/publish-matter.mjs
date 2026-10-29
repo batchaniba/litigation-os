@@ -95,18 +95,6 @@ const OFFICER_BADGE_RE = /\(#\d{4,6}\)/g;
 const RECEIPT_FILE_RE =
   /\b(?:Confirmation|Filing Order|Court Env\.?|Report ID|eReceipt|File No\.?|Money Order Serial)\s*[:#]?\s*[A-Z0-9-]{6,}\b/gi;
 
-/** Figures and payment mechanics that must never ship in the public timeline. */
-export function settlementLeakPatterns() {
-  return [
-    { re: /\$\s*25,?000\b/ },
-    { re: /\$\s*35,?000\b/ },
-    { re: /\$\s*55,?000\b/ },
-    { re: /\$\s*85,?000\b/ },
-    { re: /\bsettlement (?:payment|check|checks|amount)\b/i },
-    { re: /\bconfidential[- ]agreement\b/i },
-  ];
-}
-
 const isObj = (v) => v !== null && typeof v === "object" && !Array.isArray(v);
 const asArray = (v) => (Array.isArray(v) ? v : []);
 
@@ -385,6 +373,26 @@ const LEAK_VALUE_RES = [
   { id: "pilot_settlement_figure", re: /\$35,000/ },
   { id: "final_demand", re: /final demand/i },
 ];
+
+// Settlement / demand figures and payment mechanics that must never reach a
+// public surface (timeline.public.json, the SPA bundle). A dollar figure alone
+// is not a leak (filing fees, statutory floors); a dollar figure in a
+// settlement, demand, offer, or release context is.
+const SETTLEMENT_CONTEXT = String.raw`\b(?:settle\w*|demand\w*|offer\w*|counter-?offer\w*|counter\b|global\b|release\b|rule\s*68|(?:ccp\s*)?§\s*998|ntc\s+of\s+settlement|notice\s+of\s+settlement|payable|wire\b|checks?\b|docusign|evid\.?\s*code\s*§?\s*1152|fre\s*408)`;
+const MONEY = String.raw`\$\s?\d[\d,]*(?:\.\d+)?\s*(?:k\b|m\b|million\b)?`;
+
+export function settlementLeakPatterns() {
+  return [
+    { id: "money_in_settlement_context", re: new RegExp(`(?=[\\s\\S]*${MONEY})(?=[\\s\\S]*${SETTLEMENT_CONTEXT})`, "i") },
+    { id: "pilot_settlement_figure", re: /\$35,000|\$35k\b/i },
+    { id: "demand_25k", re: /\$\s*25,?000\b/ },
+    { id: "demand_55k", re: /\$\s*55,?000\b/ },
+    { id: "demand_85k", re: /\$\s*85,?000\b/ },
+    { id: "final_demand", re: /final demand/i },
+    { id: "settlement_payment", re: /\bsettlement (?:payment|check|checks|amount)\b/i },
+    { id: "confidential_agreement", re: /\bconfidential[- ]agreement\b/i },
+  ];
+}
 
 function distinctiveSnippet(text) {
   if (typeof text !== "string") return null;

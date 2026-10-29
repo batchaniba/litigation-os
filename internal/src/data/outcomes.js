@@ -19,12 +19,24 @@ const outcomes_raw = {
       type: "settlement",
       status: "SETTLED",
       date: "July 14, 2026",
-      amount: 35000,
+      // Amount withheld: settlement terms are confidential and never ship in the bundle.
+      amount: null,
       confidential: true,
       speed: "Under 6 weeks from filing",
       served: false,
       claims: "PC §290.46(j)(2)(E) Wrongful Termination; Tameny; ICRAA; UCL §17200",
       notes: "Defendant's own Post-Adverse Action Notice named the registry as the sole basis for termination — no ambiguity on liability. Resolved pro se before service was completed. First portfolio matter to reach a negotiated resolution. CIV-110 Request for Dismissal (entire action with prejudice) filed and entered August 6, 2026 — settled action closed. FLAGGED: this settlement's case number and existence have since been cited by name as persuasive precedent in demand letters to other corporate defendants (Matters 25, 26, 27). Only the signature page of the signed release is in the document repository (see Matter 22) — the confidentiality clause's actual scope (amount only, vs. the fact/existence of settlement) has not been confirmed against the full release text. Worth resolving before this case number is cited again."
+    },
+    {
+      matter: 27,
+      type: "settlement",
+      status: "SETTLED",
+      date: "October 26, 2026",
+      amount: null,
+      confidential: true,
+      served: true,
+      claims: "PC §290.46(j)(2)(E) Violation; Wrongful Termination (Tameny); ICRAA; Invasion of Privacy; Negligence Per Se; UCL §17200",
+      notes: "Notice of Settlement served by defense counsel Oct. 26, 2026. Dismissal with prejudice to be filed after the Oct. 26 clerk rejection (previously waived fees due) is cured. Terms confidential."
     }
   ],
   // Matter 12 default track closed Aug. 12, 2026 when Diamond/Alpine appeared through
@@ -32,6 +44,8 @@ const outcomes_raw = {
   // Matter 27 settlement executed; do not publish demand amounts or count defendants
   // as separate matters.
   anticipated: [],
+  // Matter 27 settled (Notice of Settlement Oct. 26, 2026); its demand rows were retired
+  // Oct. 28, 2026. It is booked in `realized` as confidential, with no amount.
   active_demands: [],
   portfolio_exposure: {
     conservative: sumColumn("conservative"),
@@ -105,7 +119,7 @@ const outcomes_raw = {
       outcome: "adverse",
       title: "Order Sustaining Demurrer to First Amended Complaint Without Leave to Amend",
       holding: "Demurrer to the First Amended Complaint SUSTAINED without leave to amend. Court affirmed the July 10, 2026 tentative ruling. Ground: failure to exhaust administrative remedies — exhaustion is a jurisdictional prerequisite and plaintiff failed to satisfy it. Demurrer brought by defendants HOPE Program / Blaze Van Dine, Esq. (Sims, Lawrence & Broghammer). Plaintiff appeared pro se and argued the tentative. Case status updated to Disposed at 1:38 PM; CMC vacated.",
-      significance: "Notable as the matter in which defense counsel Blaze Van Dine (Sims, Lawrence & Broghammer) cited plaintiff's Westlaw-indexed federal opinions (2026 WL 1067541; 2026 WL 1389969) in the demurrer brief — the source of the Westlaw accolade featured in this portfolio. Case fully disposed July 15, 2026 (FullCourt: CASESTAT → Disposed; CMC October 13 vacated). The exhaustion defect is procedural and jurisdictional, not a merits adjudication — the discovery record (Clinical Operational Manual, treatment manuals, collateral notes, homework/audit records) and a $85,000 global settlement offer rejected on May 23, 2026 establish the factual predicate for the N.D. Cal. complaint against HOPE (Matter 28). Note: Minute Order states exhaustion as the ruling ground; defense's proposed order (signed same date) states broader 'failure to state any cause of action' — the Minute Order controls.",
+      significance: "Notable as the matter in which defense counsel Blaze Van Dine (Sims, Lawrence & Broghammer) cited plaintiff's Westlaw-indexed federal opinions (2026 WL 1067541; 2026 WL 1389969) in the demurrer brief — the source of the Westlaw accolade featured in this portfolio. Case fully disposed July 15, 2026 (FullCourt: CASESTAT → Disposed; CMC October 13 vacated). The exhaustion defect is procedural and jurisdictional, not a merits adjudication — the discovery record (Clinical Operational Manual, treatment manuals, collateral notes, homework/audit records) and a global settlement offer rejected on May 23, 2026 establish the factual predicate for the N.D. Cal. complaint against HOPE (Matter 28). Note: Minute Order states exhaustion as the ruling ground; defense's proposed order (signed same date) states broader 'failure to state any cause of action' — the Minute Order controls.",
       document_path: "/documents/opinions/Newanforbi v Palacios - San Joaquin Sup Ct - Demurrer Sustained WOLA Jul 15 2026.pdf"
     },
     {
