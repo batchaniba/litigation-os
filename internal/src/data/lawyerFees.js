@@ -1,12 +1,13 @@
+import summaries from "./matters/summaries.json" with { type: "json" };
 import { withMatterIdentity } from "./matterIdentity.js";
+import { summarizeLawyerFees, withDerivedCost } from "./lawyerFeeMath.js";
 
 // Ground-truth lawyer-fee estimate for the portfolio.
-// Real page counts extracted with pdfinfo from every PDF in public/documents/matter-XX/
-// (poppler-utils), then classified by document type and priced per the methodology in
-// docs/LAWYER_FEES_CALCULATOR.md.
-// Matter identity (caption / case_no / court / status) lives on matter JSON — join via
-// matterIdentity.js at read time. This module stores number + fee analytics only.
-// `type` here is a fee-tab claim shorthand and may differ from matter.type by design.
+// Hours are classified by document type and priced per docs/LAWYER_FEES_CALCULATOR.md.
+// Cost, cluster rollups, and portfolio totals are derived from those hours
+// (lawyerFeeMath.js) so they cannot drift. Matter identity (caption / case_no /
+// court) joins from matter JSON via matterIdentity.js. `type` here is a fee-tab
+// claim shorthand and may differ from matter.type by design.
 const lawyer_fees_raw = [
   {
     number: 1,
@@ -436,70 +437,50 @@ const lawyer_fees_raw = [
   {
     number: 26,
     type: "State — PC §290.46(j) / ICRAA / Wrongful Failure to Hire (removed to E.D. Cal.)",
-    documentsCount: 51,
-    totalPagesReal: 541,
+    documentsCount: 55,
+    totalPagesReal: 556,
     hours: {
-      low: 75,
-      high: 136,
-      mid: 105.5
+      low: 80,
+      high: 147,
+      mid: 113.5
     },
-    cost: {
-      low: 21000,
-      high: 38080,
-      mid: 29540
-    },
-    notes: "Aug. 31 true-up: clerk-stamped Dkt. 10 opposition (Filed Aug. 28, 20 pp.) is the filed counterpart of the already-billed unfiled draft — incremental stamp-review only, not a second briefing. Proposed order remains unfiled (Drozd Standing Order I.E). Aug. 28 true-up of the ECF 7 MTD pack and opposition-pack-10 duplicates carries forward."
+    notes: "Oct. 28 true-up: 6-page opposition to UPS's consent motion for more time to reply (Sep. 4) billed at short-motion 0.6–1.2 hr/page plus POS/tracking at admin rates; Dkt. 14 UPS reply ISO the Rule 12(b)(6) (Sep. 14) at opposing-counsel light review only. Aug. 31 true-up: clerk-stamped Dkt. 10 opposition (Filed Aug. 28, 20 pp.) is the filed counterpart of the already-billed unfiled draft — incremental stamp-review only, not a second briefing. Proposed order remains unfiled (Drozd Standing Order I.E). Aug. 28 true-up of the ECF 7 MTD pack and opposition-pack-10 duplicates carries forward."
   },
   {
     number: 27,
     type: "State — PC §290.46(j) / Wrongful Termination / ICRAA / Negligence Per Se / UCL",
-    documentsCount: 25,
-    totalPagesReal: 110,
+    documentsCount: 32,
+    totalPagesReal: 140,
     hours: {
-      low: 69.7,
-      high: 118.2,
-      mid: 93.95
+      low: 75.7,
+      high: 130.2,
+      mid: 102.95
     },
-    cost: {
-      low: 19516,
-      high: 33096,
-      mid: 26306
-    },
-    notes: "Sep. 14 afternoon increment: Tai Gmail (1 p.) + Gurney CIV-141 (2 pp.) and Moskow Gmail (1 p.) + executed counterpart (6 pp.) billed at opposing-counsel light review only — served papers, not entered orders. Morning increment: Williams/Chapman counsel stipulation and proposed order plus the two-page Gmail print (Sep. 12 settlement email / e-sign ask Sep. 14) billed at opposing-counsel light review only, not drafting rate. Plaintiff counterpart (3-page stipulation + 2-page proposed order) is Plaintiff's own paper. Prior increment: complaint e-filed and RK Logistics responded, plus service confirmed. Thirteen new documents since the pre-filing estimate (25 total, 110 real pages, +52 pages): the e-filing confirmation packet (Civil Case Cover Sheet, Fee Waiver, Order on Fee Waiver, Notice of Confirmation of E-Filing, Notice of Case Assignment, Notice of CMC, and two SUM-100 versions plus the blank template) billed as light administrative/procedural tasks (0.5–2 hr/doc, per methodology); a duplicate filed copy of the 19-page Complaint billed only incrementally per the near-duplicate rule; the 12-page Garcia & Gurney response letter, billed above the standard opposing-counsel light-review rate to account for the substantive rebuttal analysis it required (comparing the SambaSafety Class A/Class C license distinction and the Jack Altares email against the letter's employer-status argument), plus its 1-page Gmail transmittal; and the 2-page Sacramento County Sheriff Civil File Status confirming Jul. 30, 2026 dual service, billed as a light administrative/status document. Prior 12-document, 58-page base (19-page Verified Complaint, two 4-page demand letters, 15-page InfoMart report, CA SOS records, Gmail demand transmittals, onboarding emails, and the 5-page SER-001) carries forward unchanged. Randstad's August 2 demand response remains outstanding; responsive pleadings are now due August 31, 2026, and any demurrer/meet-and-confer practice will add a further increment."
+    notes: "Oct. 28 true-up: Sep. 16 proposed default judgment (JUD-100) at short-motion rates; executed stipulation to set aside the default (Sep. 17) as Plaintiff's counterpart; notice-of-settlement papers at administrative/negotiation rates only — opposing drafts at light review. Duplicate sheriff POS/SER packets stay incremental. Sep. 14 afternoon increment: Tai Gmail (1 p.) + Gurney CIV-141 (2 pp.) and Moskow Gmail (1 p.) + executed counterpart (6 pp.) billed at opposing-counsel light review only — served papers, not entered orders. Morning increment: Williams/Chapman counsel stipulation and proposed order plus the two-page Gmail print (Sep. 12 settlement email / e-sign ask Sep. 14) billed at opposing-counsel light review only, not drafting rate. Plaintiff counterpart (3-page stipulation + 2-page proposed order) is Plaintiff's own paper. Prior increment: complaint e-filed and RK Logistics responded, plus service confirmed. Thirteen new documents since the pre-filing estimate: the e-filing confirmation packet billed as light administrative/procedural tasks (0.5–2 hr/doc); a duplicate filed copy of the 19-page Complaint billed only incrementally; the 12-page Garcia & Gurney response letter, billed above the standard opposing-counsel light-review rate to account for the substantive rebuttal analysis it required, plus its 1-page Gmail transmittal; and the 2-page Sacramento County Sheriff Civil File Status confirming Jul. 30, 2026 dual service. Prior 12-document, 58-page base carries forward."
   },
   {
     number: 28,
     type: "Federal — 42 U.S.C. §1983 (Monell + Individual Capacity); Bane Act §52.1; Fraud/Negligent Misrepresentation; RICO 18 U.S.C. §1962(c)-(d)",
-    documentsCount: 31,
-    totalPagesReal: 704,
+    documentsCount: 39,
+    totalPagesReal: 758,
     hours: {
-      low: 124,
-      high: 219,
-      mid: 171.5
+      low: 142,
+      high: 255,
+      mid: 198.5
     },
-    cost: {
-      low: 34720,
-      high: 61320,
-      mid: 48020
-    },
-    notes: "Aug. 28 true-up (31 PDFs / 704 pages). Complaint + protective-order package carry forward. ~478 pages under HOPE Discovery (Matter 5)/ are Matter 5 production already billed there — $0 here to avoid double-counting. New billable work: Mag. Cisneros Dkt. 11 (IFP moot; directed Rule 4 service) at court-order review; fee-payment / Doc. 8–9 notices at admin rates; QI research memos (~33 pp. finished product plus notes/prompts) at research rather than pleading rates; renewed PO draft billed incrementally on the already-priced motion. Fee-shifting under §1988 and RICO still applies on prevailing."
+    notes: "Oct. 28 true-up: 24-page opposition to the Smith/HOPE MTD (served Sep. 22; sidecar pdfinfo) at motion-briefing 0.6–1.2 hr/page; e-service email at admin; 13-page name-conform packet at Civil L.R. 7-11 administrative rates; Dkt. 30 reply (10 pp.), supplemental RFJN (5 pp.), and certificate of service at opposing-counsel light review only. Aug. 28 true-up carries forward. ~478 pages under HOPE Discovery (Matter 5)/ stay Matter 5 production — $0 here. Fee-shifting under §1988 and RICO still applies on prevailing."
   },
   {
     number: 29,
     type: "State — PC §290.46(j) / FCRA / ICRAA / Failure to Hire",
-    documentsCount: 17,
-    totalPagesReal: 56,
+    documentsCount: 32,
+    totalPagesReal: 180,
     hours: {
-      low: 76.5,
-      high: 128,
-      mid: 102.25
+      low: 98.5,
+      high: 176,
+      mid: 137.25
     },
-    cost: {
-      low: 21420,
-      high: 35840,
-      mid: 28630
-    },
-    notes: "Substantial increment now that the complaint has actually been e-filed. Five new documents since the pre-filing estimate (16 total, 54 real pages, +35 pages): the 27-page Verified Complaint (7 causes of action) is the dominant new cost driver, billed at the standard 2–3 hr/page major-pleading rate ($54–81 hrs alone); the 3-page CM-010 Civil Case Cover Sheet, 1-page SUM-100 Summons, 2-page FW-001 Request to Waive Court Fees, and 2-page One Legal Order Receipt (eFiling Confirmation #35236062, Filing Order #28857032) are billed as light administrative/procedural tasks (0.5–2 hr/doc), consistent with how the equivalent e-filing packet was priced in Matter 27. Prior 11-document, 19-page pre-filing base (Amazon Simple Hire Checklists, BGC-status emails, Equifax reminder, and application/appointment screenshots) carries forward unchanged. Court acceptance, case number assignment, and service (two defendants — Amazon.com Services, LLC via CSC – Lawyers Incorporating Service in Sacramento County, and Accurate Background LLC via CT Corporation System in Los Angeles County, per the Lerma docket) will each add a further increment; two draft SER-001 Sheriff service request forms have been prepared but not yet executed or filed, so they are not yet counted here. Fee-shifting under PC §290.46(j)(4)(A), FCRA, and ICRAA applies upon prevailing."
+    notes: "Oct. 28 true-up: 20-page opposition to Amazon's Dkt. 19 MTD (served Sep. 22–23; sidecar pdfinfo) at 0.6–1.2 hr/page; Amazon MTD (12 pp.) and Oct. 13 reply (6 pp.) at light review; Accurate Answer at light review; Dkt. 01–02 removal notice + 68-page exhibit stack at opposing-counsel review (state complaint inside already billed); 13-page name-conform packet at admin rates; magistrate-consent / conflicts / CMC / extension-stip counterparts at 0.5–2 hr/doc; Oct. 14 FCRA file-dispute letter at short-filing rates. Related-case PACER libraries (Lerma, Carrillo, Santee, Walker, Varela) are research copies — not re-billed as drafting. State-court complaint e-filing increment carries forward. Fee-shifting under PC §290.46(j)(4)(A), FCRA, and ICRAA applies upon prevailing."
   },
   {
     number: 30,
@@ -538,36 +519,26 @@ const lawyer_fees_raw = [
   {
     number: 32,
     type: "Federal — § 1983 (N.D. Cal.) + Nov. 1, 2024 CHP cluster document store",
-    documentsCount: 115,
-    totalPagesReal: 1110,
+    documentsCount: 122,
+    totalPagesReal: 1135,
     hours: {
-      low: 51,
-      high: 78,
-      mid: 64.5
+      low: 57,
+      high: 90,
+      mid: 73.5
     },
-    cost: {
-      low: 14280,
-      high: 21840,
-      mid: 18060
-    },
-    notes: "Aug. 28 true-up (115 PDFs / 1,110 pages). N.D. Cal. ndcal/ filing (complaint / FAC / intake) carries forward. from-01|02|20|24/ PDFs remain attributed to source Matters 1, 2, 20, and 24 at $0 here. New billable work is the Aug. 25 private process-server bundle and cover sheet — assembly of already-drafted FAC/summons, billed at compilation/admin rates (3–6 hrs), not a second complaint draft. 81-page docket-bundle copy is monitoring only. Nov. 1 / Candelaria APS evidence lives in Matter 33."
+    notes: "Oct. 28 true-up: Rule 55(a) clerk-default packet (10 pp., Sep. 18) at short-motion/admin rates; name-conform administrative motion and CCP 415.20(b) mailing declarations at 0.5–2 hr/doc. Dkt. 22 MTD opposition was emailed as a courtesy copy Oct. 27 but is not an ECF entry through Oct. 28 — not billed as a filed opposition. Aug. 28 true-up carries forward. from-01|02|20|24/ PDFs remain attributed to source Matters 1, 2, 20, and 24 at $0 here. Nov. 1 / Candelaria APS evidence lives in Matter 33."
   },
   {
     number: 33,
     type: "Federal — § 1983 APS / N.D. Cal. refile + document store",
-    documentsCount: 30,
-    totalPagesReal: 428,
+    documentsCount: 33,
+    totalPagesReal: 435,
     hours: {
-      low: 50,
-      high: 94,
-      mid: 72
+      low: 52.5,
+      high: 99.5,
+      mid: 76
     },
-    cost: {
-      low: 14000,
-      high: 26320,
-      mid: 20160
-    },
-    notes: "Combines (a) previously transferred Nov. 1 / APS incident evidence-compilation line (18–40 hrs mid 29) with (b) NEW Aug. 7, 2026 N.D. Cal. refile set under ndcal/ (116 pages): operative Complaint v3 (47 pp) billed below full 2–3 hr/page because it substantially reuses Matter 7 theory/work product (adaptation/venue rewrite ~30–50 hrs mid 40) plus intake admin (2–4 hrs). Drafting hours for from-07 / from-08 historical PDFs remain on Matters 7 and 8 — not re-billed here."
+    notes: "Oct. 28 true-up: Dkt. 18 name-correction stipulation and Dkt. 16 certificate of interested entities at administrative rates; Dkt. 24 order granting the motion to strike (2 pp., Oct. 13) at court-order light review. Prior N.D. Cal. refile (Complaint v3 adaptation of Matter 7) and Nov. 1 / APS evidence-compilation line carry forward. from-07 / from-08 drafting stays on Matters 7 and 8."
   },
   {
     number: 34,
@@ -589,104 +560,74 @@ const lawyer_fees_raw = [
   {
     number: 35,
     type: "State — Unruh / False Imprisonment / Negligent Training (Santa Clara Sup. Ct.)",
-    documentsCount: 17,
-    totalPagesReal: 209,
+    documentsCount: 24,
+    totalPagesReal: 250,
     hours: {
-      low: 51,
-      high: 88,
-      mid: 69.5
+      low: 56,
+      high: 100,
+      mid: 78
     },
-    cost: {
-      low: 14280,
-      high: 24640,
-      mid: 19460
-    },
-    notes: "Aug. 28 true-up (17 PDFs / 209 pages). Aug. 26 v9 complaint (28 pp.) and e-filing packet carry forward. Conformed complaint/summons/CM-010 are file-stamped copies of already-billed pages. New work is process-server assembly: CT Corporation 68-page court-docs packet (two defendant sets of already-drafted complaint + summons + CV-5012 + ADR) and two 32-page summons-first packets, billed at compilation rates, plus cover sheet / instructions (5–10 hrs). Blank POS-010 and CV-5003 are forms. Fee-shifting under Civ. Code §52(a) and CCP §1021.5 applies upon prevailing."
+    notes: "Oct. 28 true-up: Ross verified answer and jury-fee notice (served Oct. 15) at opposing-counsel light review; Ross discovery Set One (specials 8 pp. + form interrogatories 9 pp. + RFPs 7 pp.) at review-to-respond rates, not a full drafted response set; Sep. 10 request to correct case title at administrative rates; signed POS-010s at 0.5–2 hr/doc. Aug. 28 true-up of the v9 complaint and CT / summons-first service packets carries forward. Fee-shifting under Civ. Code §52(a) and CCP §1021.5 applies upon prevailing."
   },
   {
     number: 36,
-    type: "State — FCRA / ICRAA / Contract / § 290.46(j) (San Joaquin, executed unfiled)",
-    documentsCount: 33,
-    totalPagesReal: 134,
+    type: "Federal — FCRA / ICRAA / Contract / § 290.46(j) (E.D. Cal. 2:26-cv-03314)",
+    documentsCount: 43,
+    totalPagesReal: 190,
     hours: {
-      low: 40,
-      high: 72,
-      mid: 56
+      low: 52.5,
+      high: 97,
+      mid: 74.8
     },
-    cost: {
-      low: 11200,
-      high: 20160,
-      mid: 15680
-    },
-    notes: "Sep. 6 true-up, then lock: 37-page signed ten-count verified complaint (FCRA willfulness facts, CCRAA alternative, strengthened concealment, UCL unlawful-prong cites). Civil Code § 1786.16 is reserved until the exact authorization package is in hand, not pleaded from the 10:19 task. Packet is 46 pages. Each complaint stands on its own file. San Joaquin walk-up: CM-010 (3), FW-001 (2), FW-003 (3), SUM-100 (1) at 0.5–2 hr/doc administrative rates; Filing Packet billed as assembly. Hiring-record emails, SMS screenshot, findings memorandum, and formal offer carry forward. First Advantage is not a named defendant. Unfiled; no demand or CRD charge."
+    notes: "Oct. 28 true-up: E.D. Cal. filing (2:26-cv-03314-DJC-AC). 23-page intake packet is a venue adaptation of the already-billed 37-page San Joaquin complaint (not a second 2–3 hr/page draft); 24-page CT service packet at compilation; Dkt. 4 IFP/screening order (4 pp.), Dkt. 5 scheduling order (7 pp.), and Dkt. 6 summons (2 pp.) at court-order/admin review. Sep. 6 San Joaquin signed complaint and walk-up forms carry forward. First Advantage is not a named defendant."
   },
   {
     number: 37,
-    type: "State — ICRAA / UCL / § 290.46(j) (San Joaquin, executed unfiled)",
-    documentsCount: 6,
-    totalPagesReal: 60,
+    type: "State — ICRAA / UCL / § 290.46(j) (San Joaquin packet + E.D. Cal. intake, unfiled)",
+    documentsCount: 12,
+    totalPagesReal: 90,
     hours: {
-      low: 14,
-      high: 30,
-      mid: 22
+      low: 22,
+      high: 46,
+      mid: 34
     },
-    cost: {
-      low: 3920,
-      high: 8400,
-      mid: 6160
-    },
-    notes: "Sep. 6 true-up, then lock: 25-page signed four-count verified complaint (ICRAA, CCRAA alternative, UCL, § 290). Report contents and use are I&B, supported by hire, screen, unexplained ghost, contemporaneous Megan's Law listing, and exclusive control of the file. Packet is 34 pages. CM-010, FW-001, FW-003, and SUM-100 remain light administrative tasks. Filing Packet billed as assembly. No offer letter or Home Depot report is in the file. Unfiled; no demand or CRD charge."
+    notes: "Oct. 28 true-up: E.D. Cal. intake packet (complaint / JS 44 / AO 239 / AO 440 / MJ consent / print copy) billed as venue adaptation and assembly of the already-priced 25-page San Joaquin complaint, not a second 2–3 hr/page draft. Sep. 6 San Joaquin signed complaint and walk-up forms carry forward. No demand or CRD charge."
   },
   {
     number: 38,
-    type: "State — ICRAA / UCL / § 290.46(j) I&B (San Joaquin, executed unfiled)",
-    documentsCount: 15,
-    totalPagesReal: 134,
+    type: "State — ICRAA / UCL / § 290.46(j) I&B (San Joaquin packet + E.D. Cal. intake, unfiled)",
+    documentsCount: 22,
+    totalPagesReal: 165,
     hours: {
-      low: 18,
-      high: 38,
-      mid: 28
+      low: 26,
+      high: 54,
+      mid: 40
     },
-    cost: {
-      low: 5040,
-      high: 10640,
-      mid: 7840
-    },
-    notes: "Sep. 6 true-up, then lock: 25-page signed four-count verified complaint. NSOPW remained Processing on every snapshot furnished to Plaintiff; the furnished packet contains neither a completed hit nor a completed no-record. ICRAA § 1786.40 rebuilt around the statutory advice/name-and-address elements; CCRAA pleaded in the alternative. Packet is 34 pages. Intake forms billed as in Matters 36/37. The 17-page Oct. 5 post-adverse letter is evidence compilation (0.3–0.5 hr/page). The 49-page encrypted pre-adverse is billed at a light existence/admin rate only — ciphertext, not a drafting source; the decrypted packet is not in the public folder and is not billed. Recruiting/Clearinghouse emails carry forward. Unfiled; no demand or CRD charge."
+    notes: "Oct. 28 true-up: E.D. Cal. intake packet billed as venue adaptation/assembly of the already-priced 25-page San Joaquin complaint. Sep. 6 true-up carries forward (ICRAA § 1786.40; 17-page Oct. 5 post-adverse at evidence-compilation rates; 49-page encrypted pre-adverse at existence/admin only). No demand or CRD charge."
   },
   {
     number: 39,
-    type: "State — ICRAA / UCL / § 290.46(j) I&B (San Joaquin, executed unfiled)",
-    documentsCount: 11,
-    totalPagesReal: 70,
+    type: "Federal — ICRAA / UCL / § 290.46(j) I&B (E.D. Cal. filed Sep. 18, 2026)",
+    documentsCount: 19,
+    totalPagesReal: 105,
     hours: {
-      low: 11,
-      high: 26,
-      mid: 18.5
+      low: 14,
+      high: 32,
+      mid: 23
     },
-    cost: {
-      low: 3080,
-      high: 7280,
-      mid: 5180
-    },
-    notes: "Sep. 6 true-up, then lock: 25-page signed four-count verified complaint (ICRAA, CCRAA alternative, UCL, § 290). Report contents and use are I&B, pleaded like Home Depot, on Best Buy's own offer, vendor, and screen. Packet is 34 pages. CM-010, FW-001, FW-003, and SUM-100 plus the Filing Packet are billed as in Matters 36/37. Application, $22.60 offer, authorization, and First Advantage drug-test emails carry forward. First Advantage is not a named defendant. Unfiled; no demand or CRD charge."
+    notes: "Oct. 28 true-up: Dkt. 1 complaint packet (14 pp., filed Sep. 18) is the file-stamped counterpart of the already-billed 25-page draft — incremental stamp/assembly only; Dkt. 2 AO 239 IFP (5 pp.) at 0.5–2 hr/doc; 20-page print intake at compilation. Sep. 6 San Joaquin signed complaint and walk-up forms carry forward. First Advantage is not a named defendant."
   },
   {
     number: 40,
-    type: "State — prospective employment monitoring (Uber Technologies, Inc. lead; TaskUs staffing; pre-dispute)",
-    documentsCount: 15,
-    totalPagesReal: 66,
+    type: "Federal — FCRA / ICRAA / § 290.46(j) (N.D. Cal. complaint signed, unfiled)",
+    documentsCount: 22,
+    totalPagesReal: 112,
     hours: {
-      low: 1,
-      high: 2.5,
-      mid: 1.75
+      low: 21,
+      high: 44,
+      mid: 32.5
     },
-    cost: {
-      low: 280,
-      high: 700,
-      mid: 490
-    },
-    notes: "Sep. 14, 2026: 10-page TaskUs, LLC offer + Workday stub + 35-page signatory packet + welcome graphic + 3 WorkDay emails + FA Profile Advantage invite + FA saliva-drug-test notice + 2 Profile Advantage portal screenshots (Order WPS-361214148; PRINSOS still In Progress) + 3 CA SOS bizfile printouts + TA Ops start-date administrative hold (11:24 a.m.; not a denial). Same CRA as Matters 25/26. Report not yet viewable — monitoring file.",
+    notes: "Oct. 28 true-up: 28-page N.D. Cal. complaint draft (Sep. 24 sidecar) billed at employment-cluster template-adaptation rates, not a full 2–3 hr/page first-impression pleading; Sep. 23 29-page version is a near-duplicate (incremental only); 42-page complete filing packet billed as assembly; AO 240 / JS-CAND 44 / three AO 440 summons / MJ consent / conflicts certificate at 0.5–2 hr/doc. Sep. 14 monitoring file (offer, FA screening, CA SOS, TA Ops hold) carries forward at the original 1–2.5 hr band. Unfiled.",
   },
   {
     number: 41,
@@ -704,32 +645,40 @@ const lawyer_fees_raw = [
       mid: 490
     },
     notes: "Sep. 9–18, 2026: Indeed application + Greenhouse auto-reply + GoodTime scheduling flow (Elizabeth Gonzalez) + Sep. 16 Google Meet interview (James Craig) + Sep. 17 driving-eval advance with license-requirements/MVR email (Crystal Garcia) + Sep. 18 driving eval + DocuSign NDA/site-visit waiver (Michelle Nguyen). Checkr vendor is user-stated, unconfirmed. No background-check authorization, no report, no adverse action — monitoring file.",
+  },
+  {
+    number: 42,
+    type: "Federal — FCRA / ICRAA / § 290.46(j) (N.D. Cal. Staples draft, unfiled)",
+    documentsCount: 3,
+    totalPagesReal: 25,
+    hours: {
+      low: 16,
+      high: 34,
+      mid: 25
+    },
+    notes: "Oct. 28 true-up: 21-page N.D. Cal. complaint draft (to-file, Oct. 19) billed at employment-cluster template-adaptation rates, matching Matters 37–40 rather than a full 2–3 hr/page first-impression pleading; two JS-CAND 44 cover-sheet PDFs (2 pp. each) at 0.5–2 hr/doc. First Advantage Oct. 7 public-record notice is not in this priced set. Unfiled; no pre-adverse or adverse action in the record.",
+  },
+  {
+    number: 43,
+    type: "State — prospective employment monitoring (Hertz; HireRight screening; pre-dispute)",
+    documentsCount: 16,
+    totalPagesReal: 70,
+    hours: {
+      low: 1,
+      high: 2.5,
+      mid: 1.75
+    },
+    notes: "Oct. 28: 16-PDF monitoring file (offer, ADP WOTC, HireRight acknowledgments/authorization, MVR Express furnishing notice). Same band as Matter 41 — evidence preservation, not pleading. Page count is estimated from the 16-file inventory (PDFs not on the laptop disk for pdfinfo); sidecar coverage is incomplete. No complaint. No adverse action in the record.",
   }
 ];
 
-export const lawyer_fees = lawyer_fees_raw.map((row) => withMatterIdentity(row));
+export const lawyer_fees = lawyer_fees_raw.map((row) =>
+  withMatterIdentity(withDerivedCost(row)),
+);
 
-export const lawyer_fees_summary = {
-  analysisDate: "2026-09-06",
-  totalMatters: 41,
-  trackedMatters: 43,
-  totalDocumentsAnalyzed: 656,
-  totalPagesReal: 7273,
-  methodology: {
-    blendedHourlyRate: 280,
-    rateRange: { seniorPartner: [350, 450], midAssociate: [250, 350], paralegal: [150, 200] },
-    note: "Every PDF in public/documents/matter-XX/ was measured with pdfinfo for real page counts (poppler-utils), then classified by document type (complaint, motion/opposition/reply, discovery, writ/habeas, declaration, administrative, evidence) and priced using the hours-per-page/per-document conversions in docs/LAWYER_FEES_CALCULATOR.md. Opposing counsel's filings are billed only at a light review rate, never at drafting rate. Duplicate packs (opposition-pack-10, conformed copies, from-* stores) are billed incrementally. Matters with no uploaded PDFs are estimated conservatively from matter JSON status text. Aug. 28, 2026 true-up: Matter 20 Whitman tentative + reply review; Matter 24 Serrato Opp v4 / related-case motions / MTD review; Matter 26 UPS ECF 7 review + 17-page opposition; Matter 28 Dkt. 11 + QI research (HOPE discovery stays on Matter 5); Matter 32 process-server bundle; Matter 35 Ross CT / summons-first service packets. Sep. 5, 2026: Matter 36 adds the AT&T hiring record, formal offer, findings memorandum, and 32-page verified-complaint review draft. Sep. 6, 2026: Matters 36–39 true-up to executed San Joaquin packets (CM-010, FW-001, FW-003, SUM-100, signed complaints, walk-up assemblies). Sep. 14, 2026: Matter 40 — TaskUs, LLC offer + FA Order WPS-361214148 + CA SOS + TA Ops start-date hold (15 files / 66 pages).",
-  },
-  totalEstimatedHours: { low: 3097.8, high: 5205.2, mid: 4144 },
-  totalEstimatedCost: { low: 867384, high: 1457456, mid: 1160320 },
-  // Fee-analysis rollups, not the numbered portfolio buckets in clusters.js.
-  // cluster3 here is a combined billing group (consumer-fraud + employment),
-  // not numbered bucket 3 (Employment Violations).
-  byCluster: {
-    cluster1: { label: "CHP / DUI / DMV", matters: [1, 2, 7, 8, 20, 24, 32, 33], costLow: 172676, costMid: 230272, costHigh: 287868 },
-    cluster2: { label: "Parole Retaliation / HOPE", matters: [3, 4, 5, 6, 11, 13, 14, 15, 16, 17, 18, 21, 28, 30, 34], costLow: 469672, costMid: 619192, costHigh: 772912 },
-    cluster3: { label: "Consumer Fraud / Employment", matters: [12, 22, 23, 25, 26, 27, 29, 31, 36, 37, 38, 39], costLow: 169176, costMid: 233506, costHigh: 297836 },
-    cluster4: { label: "Administrative Writs & Habeas", matters: [9, 10, 19], costLow: 41580, costMid: 57890, costHigh: 74200 },
-    cluster6: { label: "Public Accommodation / Unruh", matters: [35], costLow: 14280, costMid: 19460, costHigh: 24640 },
-  },
-};
+export const lawyer_fees_summary = summarizeLawyerFees(lawyer_fees, {
+  analysisDate: "2026-10-28",
+  trackedMatters: summaries.length,
+  methodologyNote:
+    "Hours are classified by document type and priced using the hours-per-page/per-document conversions in docs/LAWYER_FEES_CALCULATOR.md. Cost, cluster rollups, and portfolio totals are derived from those hours at the blended $280/hr rate (lawyerFeeMath.js). Opposing counsel's filings are billed only at a light review rate, never at drafting rate. Duplicate packs (opposition-pack-10, conformed copies, from-* stores, related-case PACER libraries) are billed incrementally or excluded. Matters with no uploaded PDFs are estimated conservatively from matter JSON status text. Oct. 28, 2026 true-up: M26 UPS extension opposition + Dkt. 14 reply review; M27 default-judgment / set-aside papers; M28 24-page MTD opposition + Dkt. 30 reply review; M29 Amazon MTD opposition and removal-cycle review; M32 Rule 55(a) default packet; M33 name-stip / Dkt. 24; M35 Ross answer and discovery Set One review; M36–M39 E.D. Cal. intake/filing; M40 28-page unfiled N.D. Cal. complaint; M42 Staples draft complaint; M43 Hertz monitoring file.",
+});
