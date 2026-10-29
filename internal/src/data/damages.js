@@ -21,7 +21,7 @@ export const damages_table = [
     { category: "§1983 Retaliation, Due Process, Bane Act & IIED — Moua (Matter 30)", matters: [30], conservative: 90000, moderate: 225000, aggressive: 525000 },
     { category: "Conditional CRA Investigation — First Advantage LLC (Matter 31)", matters: [31], conservative: 0, moderate: 0, aggressive: 0 },
     { category: "N.D. Cal. §1983 Meza-Gonzalez (Matter 32) — pleaded >$214k; $0 here to avoid double-count w/ M1/M2", matters: [32], conservative: 0, moderate: 0, aggressive: 0 },
-    { category: "N.D. Cal. §1983 Nforbi v. Candelaria et al. (Matter 33, 3:26-cv-08272-LJC) — pleaded >$214k; $0 here to avoid double-count w/ M7", matters: [33], conservative: 0, moderate: 0, aggressive: 0 },
+    { category: "N.D. Cal. §1983 Nforbi v. Candelaria et al. (Matter 33, 3:26-cv-08272-RFL, formerly LJC) — pleaded >$214k; $0 here to avoid double-count w/ M7", matters: [33], conservative: 0, moderate: 0, aggressive: 0 },
     { category: "§1983 Monell / Individual + Bane Act — Counseling & Psychotherapy Center (Matter 34)", matters: [34], conservative: 0, moderate: 0, aggressive: 0 },
     { category: "Unruh / False Imprisonment / Negligent Training — Ross Stores (Matter 35)", matters: [35], conservative: 115000, moderate: 345000, aggressive: 1035000 },
     { category: "FCRA / §290 failure-to-hire — AT&T / Home Depot / Swift / Best Buy (36–39)", matters: [36, 37, 38, 39], conservative: 235000, moderate: 360000, aggressive: 485000 }

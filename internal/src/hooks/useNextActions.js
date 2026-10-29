@@ -1,7 +1,7 @@
 import { useMemo } from "react";
 import graph from "../data/crossMatter.json";
 import { cases } from "../data/matters";
-import { buildQueue, yourQueue } from "../../scripts/lib/next-actions.mjs";
+import { buildQueue, nextOnYourDesk, yourQueue } from "../../scripts/lib/next-actions.mjs";
 import { clocksToUpcomingEvents } from "../../scripts/lib/upcoming-from-clocks.mjs";
 
 const publishModules = import.meta.glob("../data/matters/publish/*.json", { eager: true });
@@ -25,6 +25,6 @@ export function useNextActions(horizonDays = 30) {
       horizonDays,
       clusters: graph.clusters,
     });
-    return { queue, mine: yourQueue(queue) };
+    return { queue, mine: yourQueue(queue), nextMine: nextOnYourDesk(queue) };
   }, [horizonDays]);
 }

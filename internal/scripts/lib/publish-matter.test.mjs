@@ -214,6 +214,54 @@ describe("sanitizePublicText", () => {
       "Serve [redacted] at [redacted]",
     );
   });
+
+  it("redacts street addresses, screening-order IDs, DocuSign envelopes, badges, and receipts", () => {
+    expect(sanitizePublicText("Mail to 1455 Cat Tail Drive, Stockton")).toMatch(/\[redacted\]/);
+    expect(sanitizePublicText("with that Cat Tail Drive caption")).toBe("with that [redacted] caption");
+    expect(sanitizePublicText("Profile Advantage Order ID WPS-361214148")).toContain("[redacted]");
+    expect(sanitizePublicText("DocuSign Envelope ID B1019EC0-467E-8D8F-8389-021C270CBC16")).toBe(
+      "[redacted]",
+    );
+    expect(sanitizePublicText("Noguchi (Badge #7284) signed")).toBe("Noguchi (Badge [redacted]) signed");
+    expect(sanitizePublicText("LASD File No. 2026080266 accepted")).toContain("[redacted]");
+  });
+
+  it("keeps vendor misspelling only as a quoted record", () => {
+    expect(sanitizePublicText("portal name Brendan Ngwanforbi")).toBe(
+      "portal name Brendan Ngwanforbi [vendor spelling]",
+    );
+    expect(sanitizePublicText("already Ngwanforbi [vendor spelling]")).toBe(
+      "already Ngwanforbi [vendor spelling]",
+    );
+  });
+});
+
+describe("publishClocks", () => {
+  it("drops vacated clocks even when they are court-facing", () => {
+    const published = publishMatter(
+      fixture({
+        clocks: [
+          {
+            date: "2026-11-01",
+            kind: "deadline",
+            status: "vacated",
+            actor: "you",
+            source_dkt: 16,
+            title: "CCP §335.1 SOL backstop",
+          },
+          {
+            date: "2026-11-09",
+            kind: "deadline",
+            status: "open",
+            actor: "you",
+            source_dkt: 22,
+            title: "Opposition to Dkt. 22",
+          },
+        ],
+      }),
+    );
+    expect(published.clocks.map((c) => c.date)).toEqual(["2026-11-09"]);
+  });
 });
 
 describe("collectPublishStripIssues", () => {

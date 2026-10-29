@@ -711,7 +711,8 @@ export const lawyer_fees = lawyer_fees_raw.map((row) => withMatterIdentity(row))
 
 export const lawyer_fees_summary = {
   analysisDate: "2026-09-06",
-  totalMatters: 40,
+  totalMatters: 41,
+  trackedMatters: 43,
   totalDocumentsAnalyzed: 656,
   totalPagesReal: 7273,
   methodology: {

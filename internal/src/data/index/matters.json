@@ -16,14 +16,7 @@
       "lifecycle": "dismissed",
       "proceeding": "federal_civil",
       "phase": "terminal",
-      "next_clock": {
-        "id": "01-deadline-1",
-        "date": "2026-11-01",
-        "kind": "deadline",
-        "status": "open",
-        "title": "CCP §335.1 two-year statute of limitations (computed) backstop, running from the Nov. 1, 2024 incident. (1) Matter 1's Fourth Amendment §1983 claim (borrowed…",
-        "source_dkt": null
-      },
+      "next_clock": null,
       "overdue": false,
       "last_updated": "2026-09-16",
       "files": [
@@ -154,7 +147,14 @@
       "lifecycle": "dismissed",
       "proceeding": "state_civil",
       "phase": "terminal",
-      "next_clock": null,
+      "next_clock": {
+        "id": "05-hearing-exparte-judgment",
+        "date": "2026-11-02",
+        "kind": "hearing",
+        "status": "open",
+        "title": "EX PARTE HEARING — Application for Order Dismissing First Amended Complaint and Entering Judgment of Dismissal, Newanforbi v. Palacios et al. (San Joaquin Sup. Ct. STK-CV-UF-2026-0001032), Nov. 2, 2026, 9:15 a.m., Dept. 10A. Related Matter 28 (N.D. Cal. 3:26-cv-07504-LJC) Dkt. 15 motion to dismiss is deferred pending the San Joaquin judgment.",
+        "source_dkt": null
+      },
       "overdue": false,
       "last_updated": "2026-10-28",
       "files": [
@@ -917,12 +917,12 @@
       "proceeding": "federal_civil",
       "phase": "stayed",
       "next_clock": {
-        "id": "28-js-2026-11-17",
-        "date": "2026-11-17",
-        "kind": "deadline",
+        "id": "28-hearing-m5-exparte-judgment",
+        "date": "2026-11-02",
+        "kind": "hearing",
         "status": "open",
-        "title": "Joint status conference report due Nov. 17, 2026 (monthly through May 17, 2027) — Newanforbi v. Smith / HOPE (3:26-cv-07504-LJC). USER REPORT of the Oct. 27, 2026 order deferring the MTD pending San Joaquin judgment. Order is Dkt. 38 (filed Oct. 27, 2026; minute entry Dkt. 37); PDF not ingested.",
-        "source_dkt": 38
+        "title": "EX PARTE HEARING — Application for Order Dismissing First Amended Complaint and Entering Judgment of Dismissal, Newanforbi v. Palacios et al. (San Joaquin Sup. Ct. STK-CV-UF-2026-0001032), Nov. 2, 2026, 9:15 a.m., Dept. 10A. Related Matter 28 (N.D. Cal. 3:26-cv-07504-LJC) Dkt. 15 motion to dismiss is deferred pending the San Joaquin judgment.",
+        "source_dkt": null
       },
       "overdue": false,
       "last_updated": "2026-10-28",
@@ -997,7 +997,7 @@
         "date": "2027-03-01",
         "kind": "deadline",
         "status": "open",
-        "title": "OUTER STATUTE OF LIMITATIONS (computed) — Government Claims Act six-month suit-filing window for the Bane Act and IIED state-law claims, Newanforbi v. Moua, et…",
+        "title": "Gov. Code §945.6(a)(2) two-year suit period (computed) — Bane Act and IIED state-law claims, Newanforbi v. Moua, et al. (Matter 30). No written §913 rejection notice is in the file, so the six-month (a)(1) window (which would have run to ~Mar. 1, 2027 from a Sep. 1, 2026 deemed rejection) does not control. Not a hard cutoff.",
         "source_dkt": null
       },
       "overdue": false,
@@ -1053,7 +1053,7 @@
       "layout": "split",
       "caption": "Nforbi v. Meza-Gonzalez, et al",
       "case_no": "4:26-cv-08271-ASK",
-      "court": "USDC N.D. Cal. (Oakland; 4:26-cv-08271-ASK; opened as 3:26-cv-08271-PHK; related Serrato 3:26-cv-05953-CRB and Candelaria 3:26-cv-08272-LJC)",
+      "court": "USDC N.D. Cal. (Oakland; 4:26-cv-08271-ASK, formerly 3:26-cv-08271-PHK; related Serrato 3:26-cv-05953-CRB and Candelaria 3:26-cv-08272-RFL, formerly LJC)",
       "judge": "Hon. Ajay S. Krishnan, U.S. Magistrate Judge (N.D. Cal.) — reassigned Aug. 24, 2026 from Mag. Kang (related to Serrato 3:26-cv-05953-CRB)",
       "cluster": 1,
       "related": [],

@@ -6,68 +6,77 @@ import { damages_table } from "../data/damages";
 import { jurisdictions } from "../data/portfolioMeta";
 import { headline_coverage, formatLimit } from "../data/coverage";
 import { formatCurrency } from "../utils/formatters";
-import { isArchivedMatter, isOpenLifecycle } from "../utils/matterLifecycle";
 import { useNextActions } from "../hooks/useNextActions";
 import { NextActionsPanel } from "./NextActionsPanel";
-import { timeline } from "../data/timeline";
 import syncState from "../data/courtlistener/sync-state.json";
+import indexMeta from "../data/index/matters.json";
+import {
+  countCourts,
+  isActiveExposureRow,
+  litigatingMatters,
+  preFilingMatters,
+  sumExposure,
+} from "../utils/portfolioStats";
 
 const totalMatters = cases.length;
-// "Active Matters" is the open-docket count -- still on the docket, settled
-// included (isOpenLifecycle), not the narrower "currently being litigated"
-// set. A settled-but-not-yet-dismissed matter (e.g. Matter 22) still belongs
-// here; its card carries its own Settled ribbon/badge regardless.
-const activeMatters = cases.filter(c => isOpenLifecycle(c.lifecycle) || (!c.lifecycle && !c.archived)).length;
+const litigating = litigatingMatters(cases);
+const preFiling = preFilingMatters(cases);
+const activeMatters = litigating.length;
+const byNumber = new Map(cases.map((c) => [Number(c.number), c]));
+const liveDamages = damages_table.filter((row) => isActiveExposureRow(row, byNumber));
 const clusterCounts = Object.fromEntries(CLUSTERS.map((cl) => [cl.n, 0]));
 const clusterNumberLists = Object.fromEntries(CLUSTERS.map((cl) => [cl.n, []]));
-const courtCounts = {};
+const courtCounts = countCourts(cases, jurisdictions);
 let federalCount = 0;
 let stateCount = 0;
+for (const c of litigating) {
+  if (c.type === "Federal") federalCount++;
+  else if (c.type === "State") stateCount++;
+}
 for (const c of cases) {
-  if (!isArchivedMatter(c)) {
-    if (c.type === "Federal") federalCount++;
-    else if (c.type === "State") stateCount++;
-  }
   if (clusterCounts[c.cluster] !== undefined) {
     clusterCounts[c.cluster]++;
     clusterNumberLists[c.cluster].push(c.number);
   }
-  courtCounts[c.court] = (courtCounts[c.court] || 0) + 1;
 }
 
 const clusterMattersStr = Object.fromEntries(
   CLUSTERS.map((cl) => [cl.n, formatMatterRanges(clusterNumberLists[cl.n])]),
 );
 
-const moderateExposure = formatCurrency(
-  damages_table.reduce((s, r) => s + r.moderate, 0)
-);
+const moderateExposure = formatCurrency(sumExposure(liveDamages, "moderate"));
 
 export const DashboardTab = ({ setClusterFilter, setActiveTab }) => {
-  const { queue, mine } = useNextActions(30);
+  const { queue, nextMine } = useNextActions(30);
   const [mineOnly, setMineOnly] = useState(false);
-  const nextMine = mine[0];
-  // Data freshness: latest verification across timeline events.
-  const verifiedDates = timeline.map((e) => e.verified_at).filter(Boolean).sort();
-  const dataAsOf = verifiedDates.length ? verifiedDates[verifiedDates.length - 1] : null;
-  const clMatters = syncState?.matters ? Object.keys(syncState.matters).length : 0;
-  const clStatus = clMatters > 0 ? `${clMatters} dockets` : "paused";
+  const dataAsOf = indexMeta?.today || null;
+  const clEntries = Object.values(syncState?.matters ?? {});
+  const clMatters = clEntries.length;
+  const clLast = clEntries
+    .map((row) => row?.last_synced_at)
+    .filter(Boolean)
+    .sort()
+    .at(-1);
+  const clLastDay = typeof clLast === "string" ? clLast.slice(0, 10) : null;
+  const clStatus = clMatters > 0
+    ? `${clMatters} dockets${clLastDay ? `, last ${clLastDay}` : ""}`
+    : "not run";
 
   return (
     <div className="dashboard-view">
       <div className="data-freshness-badge" role="status">
-        {dataAsOf ? <span>Portfolio data as of {dataAsOf}</span> : <span>Portfolio data date unknown</span>}
+        {dataAsOf ? <span>Portfolio clocks as of {dataAsOf}</span> : <span>Portfolio data date unknown</span>}
         <span className="freshness-sep">·</span>
-        <span className={clMatters > 0 ? "freshness-ok" : "freshness-paused"}>
+        <span className={clLastDay ? "freshness-paused" : "freshness-paused"}>
           CourtListener sync: {clStatus}
         </span>
       </div>
       {/* Stats Row */}
       <div className="dashboard-stats">
         {[
-          { label: "Active Matters", value: activeMatters, sub: `${federalCount} Federal · ${stateCount} State · ${totalMatters} total` },
+          { label: "Active Matters", value: activeMatters, sub: `${federalCount} Federal · ${stateCount} State · ${preFiling.length} pre-filing · ${totalMatters} tracked` },
           { label: "Jurisdictions", value: jurisdictions.length, sub: "Courts across CA" },
-          { label: "Aggregate Exposure", value: moderateExposure, sub: "Moderate estimate" },
+          { label: "Aggregate Exposure", value: moderateExposure, sub: "Live moderate (excludes settled)" },
           { label: "Next on your desk", value: nextMine?.date || "—", sub: nextMine ? `M${nextMine.matters[0]} · ${nextMine.action}` : "Nothing dated" }
         ].map((s, i) => (
           <div key={i} className="dashboard-stat-card">

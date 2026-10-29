@@ -28,11 +28,12 @@
     "date": "2026-11-01",
     "date_label": "Nov. 1, 2026",
     "kind": "deadline",
-    "status": "open",
+    "status": "vacated",
     "source_dkt": null,
     "title": "CCP §335.1 two-year statute of limitations (computed) backstop, running from the Nov. 1, 2024 incident. (1) Matter 1's Fourth Amendment §1983 claim (borrowed…",
     "actor": "you",
-    "source": "/documents/matter-33/incident/Arrest Report.pdf"
+    "source": "/documents/matter-33/incident/Arrest Report.pdf",
+    "retired_reason": "Not a Matter 32 next-action clock. Matter 32 is already filed. The Nov. 1, 2026 backstop is historical risk on Matter 2 (unfiled state-law theories after the Aug. 15, 2026 dismissal). See Matter 2 damages.json risk."
   },
   {
     "id": "32-deadline-4",

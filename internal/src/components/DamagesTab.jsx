@@ -8,6 +8,7 @@ import { formatCurrency } from "../utils/formatters";
 import { formatMatterRefs } from "../utils/matterRefs.js";
 import { isArchivedMatter } from "../utils/matterLifecycle";
 import { effectiveStatusLabel } from "../utils/statusLabel";
+import { HISTORICAL_EXPOSURE_MATTERS, isActiveExposureRow } from "../utils/portfolioStats";
 
 // Prefer the derived posture label over any leftover analytic status prose.
 const statusFor = (m) => {
@@ -18,7 +19,11 @@ const statusFor = (m) => {
 const fmt = (n) => formatCurrency(n);
 const VIEWS = ["conservative", "moderate", "aggressive"];
 
-const PORTFOLIO_TOTALS = damages_table.reduce(
+const byNumber = new Map(cases.map((c) => [Number(c.number), c]));
+const liveRows = damages_table.filter((row) => isActiveExposureRow(row, byNumber));
+const historicalRows = damages_table.filter((row) => !isActiveExposureRow(row, byNumber));
+
+const PORTFOLIO_TOTALS = liveRows.reduce(
   (acc, d) => {
     acc.conservative += d.conservative;
     acc.moderate += d.moderate;
@@ -28,12 +33,12 @@ const PORTFOLIO_TOTALS = damages_table.reduce(
   { conservative: 0, moderate: 0, aggressive: 0 }
 );
 
-const MAX_PORTFOLIO_AGGRESSIVE = damages_table.reduce(
-  (m, x) => Math.max(m, x.aggressive), 0
-);
+const MAX_PORTFOLIO_AGGRESSIVE = Math.max(0, ...liveRows.map((x) => x.aggressive));
 
 const ARCHIVED_MATTER_NUMS = new Set(cases.filter(c => isArchivedMatter(c)).map(c => c.number));
-const ACTIVE_MATTER_DAMAGES = matter_damages.filter(m => !ARCHIVED_MATTER_NUMS.has(m.number));
+const ACTIVE_MATTER_DAMAGES = matter_damages.filter(m =>
+  !ARCHIVED_MATTER_NUMS.has(m.number) && !HISTORICAL_EXPOSURE_MATTERS.has(m.number)
+);
 
 const MATTER_TOTALS = ACTIVE_MATTER_DAMAGES.reduce(
   (acc, m) => {
@@ -272,18 +277,18 @@ export const DamagesTab = ({ damagesView, setDamagesView }) => {
         <>
           <div style={{ background: theme.aggregateCardBg, borderRadius: 12, padding: 28, border: `1px solid ${GOLD}30`, marginBottom: 24, textAlign: "center" }}>
             <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, color: GOLD, fontWeight: 700, letterSpacing: 3, textTransform: "uppercase", marginBottom: 8 }}>
-              Aggregate Portfolio Exposure — {damagesView}
+              Live Portfolio Exposure — {damagesView}
             </div>
             <div style={{ fontSize: 48, fontWeight: 700, color: theme.aggregateCardText }}>
               {fmt(portfolioTotal)}{damagesView === "aggressive" && <span style={{ fontSize: 28, color: GOLD }}>+</span>}
             </div>
             <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, color: theme.subtleText, marginTop: 8 }}>
-              Cross-matter total · double-counting removed for shared economic events
+              Litigating matters only · settled/historical valuations (M22, M27) listed separately
             </div>
           </div>
 
           <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
-            {damages_table.map((d, i) => {
+            {liveRows.map((d, i) => {
               const val = d[damagesView];
               const pct = (val / MAX_PORTFOLIO_AGGRESSIVE) * 100;
               return (
@@ -304,6 +309,28 @@ export const DamagesTab = ({ damagesView, setDamagesView }) => {
               );
             })}
           </div>
+
+          {historicalRows.length > 0 && (
+            <div style={{ marginTop: 28 }}>
+              <div style={{
+                fontFamily: "'DM Sans', sans-serif", fontSize: 11, fontWeight: 700,
+                letterSpacing: 2, textTransform: "uppercase", color: GOLD, marginBottom: 12,
+              }}>Settled / historical valuations — not in the live total</div>
+              {historicalRows.map((d, i) => (
+                <div key={`hist-${i}`} style={{ background: theme.cardBg, borderRadius: 8, padding: "16px 20px", border: `1px solid ${theme.cardBorder}`, marginBottom: 8 }}>
+                  <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                    <div>
+                      <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 13, fontWeight: 600, color: theme.secondaryText }}>{d.category}</span>
+                      <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, color: theme.subtleText, marginLeft: 10 }}>Matters {formatMatterRefs(d.matters)}</span>
+                    </div>
+                    <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 13, fontWeight: 600, color: theme.mutedText, fontStyle: "italic" }}>
+                      Not in live total
+                    </span>
+                  </div>
+                </div>
+              ))}
+            </div>
+          )}
 
           <div className="grid-3" style={{ marginTop: 24 }}>
             {VIEWS.map(v => {

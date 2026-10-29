@@ -11,7 +11,7 @@
     "note": "USER REPORT. Closed Jul. 15, 2026 is already on the docket. Do not invent a judgment date.",
     "date_label": "Oct. 27, 2026",
     "tz": "America/Los_Angeles",
-    "retired_reason": "FILED Oct. 27, 2026 — Plaintiff's Request for Entry of Judgment of Dismissal (CCP § 581(f)(1)) with proposed judgment and email proof of service, San Joaquin eFiling order no. 23338459. Source: Plaintiff's Oct. 27, 2026 5:01 p.m. PT courtesy-copy email to Sims Law (M28 counsel). Clerk-stamped copy not ingested."
+    "retired_reason": "FILED Oct. 27, 2026 — Plaintiff's Request for Entry of Judgment of Dismissal (CCP § 581(f)(1)) with proposed judgment and email proof of service. Clerk-stamped copy not ingested. USER REPORT Oct. 28, 2026: defendants (Sims, Lawrence & Broghammer, for Katie Palacios and HOPE Program) then requested an ex parte hearing on their Application for Order Dismissing First Amended Complaint and Entering Judgment of Dismissal. San Joaquin Superior Court set that hearing for Nov. 2, 2026, 9:15 a.m., Dept. 10A. Live appearance is 05-hearing-exparte-judgment. Do not invent a judgment date."
   },
   {
     "id": "05-judgment-entry-watch",
@@ -20,7 +20,21 @@
     "status": "contingent",
     "source_dkt": null,
     "actor": "court",
-    "title": "WATCH — Clerk/court entry of judgment of dismissal on Plaintiff's Oct. 27, 2026 CCP § 581(f)(1) request (STK-CV-UF-2026-0001032 / CV-2026-0001032). Entry also feeds Matter 28: the N.D. Cal. Oct. 27 order deferred the Dkt. 15 MTD pending a San Joaquin judgment.",
+    "title": "WATCH — Clerk/court entry of judgment of dismissal (STK-CV-UF-2026-0001032 / CV-2026-0001032). Plaintiff's Oct. 27 CCP § 581(f)(1) request is on file; defendants' Application for Order Dismissing FAC and Entering Judgment of Dismissal is set ex parte Nov. 2, 2026. Entry also feeds Matter 28: the N.D. Cal. Oct. 27 order deferred the Dkt. 15 MTD pending a San Joaquin judgment.",
     "note": "Undated contingent. Do not invent an entry date. When entered, ingest the judgment and notice of entry; that starts the appeal clock (CRC 8.104)."
+  },
+  {
+    "id": "05-hearing-exparte-judgment",
+    "date": "2026-11-02",
+    "date_label": "Nov. 2, 2026",
+    "time": "09:15",
+    "tz": "America/Los_Angeles",
+    "kind": "hearing",
+    "status": "open",
+    "source_dkt": null,
+    "actor": "you",
+    "source": "/documents/opinions/Newanforbi v Palacios - San Joaquin Sup Ct - Demurrer Sustained WOLA Jul 15 2026.pdf",
+    "title": "EX PARTE HEARING — Application for Order Dismissing First Amended Complaint and Entering Judgment of Dismissal, Newanforbi v. Palacios et al. (San Joaquin Sup. Ct. STK-CV-UF-2026-0001032), Nov. 2, 2026, 9:15 a.m., Dept. 10A. Related Matter 28 (N.D. Cal. 3:26-cv-07504-LJC) Dkt. 15 motion to dismiss is deferred pending the San Joaquin judgment.",
+    "note": "USER REPORT Oct. 28, 2026: San Joaquin Superior Court approved defense counsel's ex parte request the same day. No application PDF ingested. Do not invent a docket number or a judgment date."
   }
 ]

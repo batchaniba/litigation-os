@@ -3,7 +3,7 @@
   "last_updated": "2026-10-28",
   "caption": "Nforbi v. Meza-Gonzalez, et al",
   "case_no": "4:26-cv-08271-ASK",
-  "court": "USDC N.D. Cal. (Oakland; 4:26-cv-08271-ASK; opened as 3:26-cv-08271-PHK; related Serrato 3:26-cv-05953-CRB and Candelaria 3:26-cv-08272-LJC)",
+  "court": "USDC N.D. Cal. (Oakland; 4:26-cv-08271-ASK, formerly 3:26-cv-08271-PHK; related Serrato 3:26-cv-05953-CRB and Candelaria 3:26-cv-08272-RFL, formerly LJC)",
   "courtlistener": {
     "court_id": "cand",
     "docket_id": 74220629,
@@ -21,7 +21,7 @@
   "type": "Federal",
   "badge": "MTD",
   "archived": false,
-  "note": "N.D. Cal. § 1983 action docketed Aug. 10, 2026 as No. 3:26-cv-08271-PHK (ndcal/). Also document store for Matters 1, 2, 20, and 24 under matter-32/from-NN/. Nov. 1 / Candelaria APS evidence in Matter 33.",
+  "note": "N.D. Cal. § 1983 action docketed Aug. 10, 2026 as No. 4:26-cv-08271-ASK (formerly 3:26-cv-08271-PHK) (ndcal/). Also document store for Matters 1, 2, 20, and 24 under matter-32/from-NN/. Nov. 1 / Candelaria APS evidence in Matter 33.",
   "key_facts": "On November 1, 2024 at approximately 12:54 a.m., CHP Officers Santiago Meza-Gonzalez (#023295) and Jose Melano (#023054) contacted Plaintiff on the eastbound I-580 dirt shoulder near Isabel Avenue, Livermore (CHP Case No. RJ68845; CAD No. 241101GG0064). Plaintiff prepared an N.D. Cal. § 1983 complaint (v3, 20 pp., six causes) and a print intake packet under the Ngwa Nforbi name form, demanding compensatory damages >$214,000, then drafted a First Amended Complaint on the same six causes. The court-stamped operative FAC is Dkt. 5 (filed Aug. 17, 2026, 21 pp., dated Aug. 17); Dkt. 6 (filed Aug. 14, dated Aug. 12) is the earlier stamped FAC. The unsigned Aug. 12 draft is retained. Draft versions v1 (31 pp., long-form), v2 (18 pp., five claims, no retaliation), and the Aug. 10/Aug. 11 FAC drafts are retained as superseded. The FAC's ¶36(d) pleads a three-year SR-22 requirement (annual premium $281.28) with a maintenance period extending through approximately May 2029 — the same end date the Candelaria FAC pleads. Matter 32 also remains the portfolio PDF home for Matters 1/2/20/24 under from-NN/; Nov. 1 / APS evidence and Candelaria filings live in Matter 33.",
   "procedural_status": "Canonical chronology is clocks.json, docket.json, and events.jsonl. Do not reconstruct dates from README."
 }

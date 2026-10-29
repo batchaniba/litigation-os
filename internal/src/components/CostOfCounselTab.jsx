@@ -1,7 +1,9 @@
 import { useState } from "react";
+import { cases } from "../data/matters";
 import { damages_table } from "../data/damages";
 import { lawyer_fees, lawyer_fees_summary } from "../data/lawyerFees";
 import { getMatterSummary } from "../data/matters";
+import { isActiveExposureRow, sumExposure } from "../utils/portfolioStats";
 import { GOLD } from "../constants";
 import { useTheme } from "../ThemeContext";
 import { formatCurrency } from "../utils/formatters";
@@ -18,14 +20,12 @@ const VIEWS = ["low", "mid", "high"];
 const VIEW_LABEL = { low: "Conservative", mid: "Mid-Point", high: "High-End" };
 
 const summary = lawyer_fees_summary;
-const PORTFOLIO_DAMAGES_TOTALS = damages_table.reduce(
-  (acc, d) => {
-    acc.conservative += d.conservative;
-    acc.moderate += d.moderate;
-    acc.aggressive += d.aggressive;
-    return acc;
-  },
-  { conservative: 0, moderate: 0, aggressive: 0 }
+const estimatedMatterCount = lawyer_fees.length;
+const trackedMatterCount = cases.length;
+const byNumber = new Map(cases.map((c) => [Number(c.number), c]));
+const liveModerate = sumExposure(
+  damages_table.filter((row) => isActiveExposureRow(row, byNumber)),
+  "moderate",
 );
 
 const MAX_MATTER_COST = Math.max(...lawyer_fees.map((m) => m.cost.high));
@@ -112,7 +112,7 @@ export const CostOfCounselTab = () => {
   const total = summary.totalEstimatedCost[view];
   const totalHours = summary.totalEstimatedHours[view];
 
-  const damagesComparisonBasis = PORTFOLIO_DAMAGES_TOTALS.moderate;
+  const damagesComparisonBasis = liveModerate;
   const ratioPct = ((total / damagesComparisonBasis) * 100).toFixed(0);
 
   return (
@@ -140,7 +140,7 @@ export const CostOfCounselTab = () => {
       {/* Aggregate card */}
       <div style={{ background: theme.aggregateCardBg, borderRadius: 12, padding: 28, border: `1px solid ${GOLD}30`, marginBottom: 24, textAlign: "center" }}>
         <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, color: GOLD, fontWeight: 700, letterSpacing: 3, textTransform: "uppercase", marginBottom: 8 }}>
-          Estimated Lawyer Fees — {summary.totalMatters} Matters — {VIEW_LABEL[view]}
+          Estimated Lawyer Fees — {estimatedMatterCount} of {trackedMatterCount} tracked matters — {VIEW_LABEL[view]}
         </div>
         <div style={{ fontSize: 48, fontWeight: 700, color: theme.aggregateCardText }}>{fmt(total)}</div>
         <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, color: theme.subtleText, marginTop: 8 }}>
@@ -172,8 +172,9 @@ export const CostOfCounselTab = () => {
           Fees vs. Damages Exposure
         </div>
         <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 12, color: theme.secondaryText, lineHeight: 1.7 }}>
-          At the {VIEW_LABEL[view].toLowerCase()} fee estimate ({fmt(total)}), hiring counsel across all {summary.totalMatters} matters
-          would have consumed roughly <strong style={{ color: "#34D399" }}>{ratioPct}%</strong> of the portfolio's moderate-scenario
+          At the {VIEW_LABEL[view].toLowerCase()} fee estimate ({fmt(total)}), hiring counsel across the {estimatedMatterCount} matters
+          with fee rows (M1–M{Math.max(...lawyer_fees.map((r) => r.number))}; M42–M43 not yet estimated)
+          would have consumed roughly <strong style={{ color: "#34D399" }}>{ratioPct}%</strong> of live moderate-scenario
           damages exposure ({fmt(damagesComparisonBasis)}). Pro se representation preserves that difference in full, minus the
           litigant's own time.
         </div>

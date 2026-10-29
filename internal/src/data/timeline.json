@@ -5624,11 +5624,10 @@
   "event": "CCP §335.1 two-year statute of limitations (computed) backstop, running from the Nov. 1, 2024 incident. (1) Matter 1's Fourth Amendment §1983 claim (borrowed two-year period): Matter 1 was voluntarily dismissed without prejudice Aug. 15, 2026, but the claim against Meza-Gonzalez/Melano was already refiled in N.D. Cal. as Matter 32 (docketed Aug. 10, 2026, before the dismissal) — satisfied, no gap. (2) Matter 2's state-law False Imprisonment/Battery/Bane Act claims against Meza-Gonzalez, Melano, and State of California/CHP (direct two-year period, not borrowed): Matter 2 was also dismissed without prejudice Aug. 15, 2026, and unlike the federal claim, these state-law theories and the State/CHP defendant are NOT pled anywhere else in the portfolio as of this writing — this date is a live, unresolved risk for them. Also falls on a Sunday; do not assume CCP §12a's next-court-day extension applies to the federal claim (it already doesn't matter here) or count on it for the state claims without confirming. Tracked per internal/docs/MATTER_01_FORUM_TRANSFER_ANALYSIS.md.",
   "matters": [
    1,
-   2,
-   32
+   2
   ],
   "type": "deadline",
-  "upcoming": true,
+  "upcoming": false,
   "actor": "you",
   "source": "/documents/matter-33/incident/Arrest Report.pdf",
   "source_type": "portfolio",
@@ -9454,7 +9453,7 @@
  },
  {
   "date": "Mar. 1, 2027",
-  "event": "OUTER STATUTE OF LIMITATIONS (computed) — Government Claims Act six-month suit-filing window for the Bane Act and IIED state-law claims, Newanforbi v. Moua, et al. (Matter 30); runs from the anticipated Sep. 1, 2026 deemed rejection under Gov. Code §945.6(a)(1). The §1983 federal claims are not subject to GCA presentment and remain viable beyond this date on the longer two-year personal-injury limitations period, but this is the hard cutoff for the state-law claims if the matter is not filed sooner",
+  "event": "Gov. Code §945.6 window (computed) — Bane Act and IIED state-law claims, Newanforbi v. Moua, et al. (Matter 30). A six-month suit period under §945.6(a)(1) running to ~Mar. 1, 2027 would apply only if a written §913 rejection notice issued. No such notice is in the file, so (a)(2) (two years from accrual) controls. The §1983 federal claims are not subject to GCA presentment. This is not a hard cutoff.",
   "matters": [
    30
   ],
@@ -9468,7 +9467,7 @@
  },
  {
   "date": "Oct. 13, 2026",
-  "event": "Case Management Conference, Newanforbi v. Palacios, et al. (Matter 5) — Hon. George J. Abdallah, Dept. 10A, 8:45 a.m.; setting confirmed on the caption of the served Set Two discovery (SROG/DISC001) to HOPE Program and Palacios — MOOTED: demurrer sustained without leave Jul. 15, 2026; matter dismissed",
+  "event": "VACATED — Case Management Conference, Newanforbi v. Palacios, et al. (Matter 5) — Hon. George J. Abdallah, Dept. 10A, 8:45 a.m.; setting confirmed on the caption of the served Set Two discovery (SROG/DISC001) to HOPE Program and Palacios — MOOTED: demurrer sustained without leave Jul. 15, 2026; matter dismissed",
   "matters": [
    5
   ],
@@ -10517,6 +10516,34 @@
   "actor": "you",
   "source": "/documents/matter-20/01_Motion_for_Peremptory_Writ_MPA_with_CRS_Receipt.pdf",
   "source_type": "portfolio",
+  "verified_at": "2026-10-28"
+ },
+ {
+  "date": "Oct. 28, 2026",
+  "event": "USER REPORT — San Joaquin Superior Court approved defense counsel's request and set an ex parte hearing for Nov. 2, 2026, 9:15 a.m., Dept. 10A, on an Application for Order Dismissing First Amended Complaint and Entering Judgment of Dismissal in Newanforbi v. Palacios et al. (STK-CV-UF-2026-0001032). Counsel Sims, Lawrence & Broghammer (for Katie Palacios and HOPE Program) requested the hearing the same day. The related N.D. Cal. action (Matter 28, 3:26-cv-07504-LJC) Dkt. 15 motion to dismiss is deferred pending the San Joaquin judgment. No application PDF ingested.",
+  "matters": [
+   5,
+   28
+  ],
+  "type": "event",
+  "upcoming": false,
+  "actor": "court",
+  "source": "/documents/opinions/Newanforbi v Palacios - San Joaquin Sup Ct - Demurrer Sustained WOLA Jul 15 2026.pdf",
+  "source_type": "manual",
+  "verified_at": "2026-10-28"
+ },
+ {
+  "date": "Nov. 2, 2026",
+  "event": "EX PARTE HEARING — Application for Order Dismissing First Amended Complaint and Entering Judgment of Dismissal, Newanforbi v. Palacios et al. (San Joaquin Sup. Ct. STK-CV-UF-2026-0001032), Nov. 2, 2026, 9:15 a.m., Dept. 10A. Related Matter 28 (N.D. Cal. 3:26-cv-07504-LJC) Dkt. 15 motion to dismiss is deferred pending the San Joaquin judgment.",
+  "matters": [
+   5,
+   28
+  ],
+  "type": "hearing",
+  "upcoming": true,
+  "actor": "you",
+  "source": "/documents/opinions/Newanforbi v Palacios - San Joaquin Sup Ct - Demurrer Sustained WOLA Jul 15 2026.pdf",
+  "source_type": "manual",
   "verified_at": "2026-10-28"
  }
 ]

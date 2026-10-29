@@ -85,7 +85,7 @@ describe("NextActionsPanel", () => {
     expect(screen.getAllByText("Next 3 days").length).toBeGreaterThan(0);
     expect(screen.getByText(/Initial disclosures/)).toBeTruthy();
     expect(screen.getByText(/UPS reply deadline/)).toBeTruthy();
-    expect(screen.getByText(/opposing/i)).toBeTruthy();
+    expect(screen.getAllByText(/opposing/i).length).toBeGreaterThan(0);
     expect(screen.getByRole("link", { name: "Matter 24" })).toHaveAttribute("href", "/matters/24");
   });
 
