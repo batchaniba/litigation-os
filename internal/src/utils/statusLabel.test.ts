@@ -61,7 +61,7 @@ describe("statusLabel derivation", () => {
     // every time its posture changes. Use a fully synthetic matter + event to
     // isolate the "default" phase + hearing → "Default prove-up — <date>"
     // behavior on its own.
-    const defaultMatter = { ...cases.find((item) => item.number === 12)!, phase: "default" as const };
+    const defaultMatter = { ...cases.find((item) => item.number === 12)!, lifecycle: "active" as const, phase: "default" as const };
     const proveUp = {
       date: "Dec. 1, 2099",
       event: "Default prove-up hearing — Matter 12",

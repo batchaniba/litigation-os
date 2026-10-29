@@ -223,3 +223,16 @@ Follow-up to PR #1039. Sources are CM/ECF Notices of Electronic Filing received 
 | 33 | `33-deadline-7` satisfied: Dkt. 26 Answer to FAC by Candelaria and Gordon, Oct. 27. | NEF Oct. 27, 3:48 p.m. |
 
 Still open: Matter 19 (no Macomber ruling email found), Matter 25 (no E.D. Cal. NEF since Oct. 1), Matter 38 (an Oct. 20 "Notice of Payment of Filing Fee" PDF for Swift exists only as an email to self — not proof of payment), Matter 32 Meza-Gonzalez return, and the PDFs for Dkt. 37/38 (M28), Dkt. 22–26 (M32), Dkt. 26 (M33).
+
+## Addendum — San Joaquin docket pass, Oct. 28, 2026 (evening PT)
+
+Sources: San Joaquin eCourt public portal (checked Oct. 28, 2026) and Plaintiff's AppFile e-filing order status. No PDFs ingested; no deploy, reseed, or R2 push.
+
+| Matter | Change | Source |
+| --- | --- | --- |
+| 5 | Status re-verified: Disposed 07/15/2026; no judgment entered; no new tentative (latest remains Jul. 10, 2026). `05-hearing-exparte-judgment` (Nov. 2, 9:15 a.m., Dept. 10A) verified on calendar. | eCourt portal, Oct. 28. |
+| 5 | New `05-exparte-opposition` (satisfied Oct. 28): Response to ex parte and Objection to proposed judgment, relodged proposed judgment without "with prejudice", POS. `05-judgment-entry-watch` text updated. Two unfiled docket rows added (`filed: false`, no path) for the Oct. 27 and Oct. 28 submissions. | AppFile orders 23338459 (Oct. 27) and 14773399 (Oct. 28), both Awaiting Verification; neither on the public docket yet. |
+| 12 | Lifecycle `active` → `dismissed` (phase `terminal`, badge DISMISSED, label "Dismissal filed Oct. 26 — pending closure"). Filed docket row for Request for Dismissal (entire action), no path. New contingent `12-dismissal-closure-watch`. | AppFile order 83349531 / case order 16776157, accepted and processed Oct. 26. |
+| 12 | `12-hearing-1` Further CMC Dec. 11, 2026, 8:30 a.m., Dept. 11B stays **open**: portal still shows the case Open and the CMC on calendar (likely to be vacated). | eCourt portal, Oct. 28. |
+
+Still open: conformed copies of the M12 dismissal and the M5 Oct. 27/28 submissions; whether the court vacates the M12 Dec. 11 CMC; which proposed judgment (if any) is signed in M5 after the Nov. 2 ex parte.

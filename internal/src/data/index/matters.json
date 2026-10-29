@@ -368,19 +368,19 @@
       "cluster": 5,
       "related": [],
       "same_incident": null,
-      "lifecycle": "active",
+      "lifecycle": "dismissed",
       "proceeding": "state_civil",
-      "phase": "service",
+      "phase": "terminal",
       "next_clock": {
         "id": "12-hearing-1",
         "date": "2026-12-11",
         "kind": "hearing",
         "status": "open",
-        "title": "Further Case Management Conference, 8:30 AM, Dept. 11B, Hon. Robert T. Waters — Ngwa Nforbi v. Diamond Truck Sales, Inc. et al. (STK-CV-UF-2026-0001094), set…",
+        "title": "Further Case Management Conference, 8:30 AM, Dept. 11B, Hon. Robert T. Waters — Ngwa Nforbi v. Diamond Truck Sales, Inc. et al. (STK-CV-UF-2026-0001094). Still on calendar after Plaintiff's Oct. 26, 2026 Request for Dismissal (entire action); likely to be vacated.",
         "source_dkt": null
       },
       "overdue": false,
-      "last_updated": "2026-10-06",
+      "last_updated": "2026-10-28",
       "files": [
         "claims.json",
         "clocks.json",

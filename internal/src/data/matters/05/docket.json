@@ -115,5 +115,25 @@
     "title": "Tentative Ruling on Demurrer RTF - Jul 10 2026",
     "path": "/documents/matter-05/Tentative Ruling on Demurrer RTF - Jul 10 2026.pdf",
     "filed": true
+  },
+  {
+    "dkt": null,
+    "date": "2026-10-27",
+    "filer": "plaintiff",
+    "type": "other",
+    "title": "Request for Court Judgment, Proposed Judgment, and Proof of Service (Submitted Oct 27 2026)",
+    "path": null,
+    "filed": false,
+    "label": "AppFile order 23338459 — Awaiting Verification; not yet on the public docket (portal checked Oct. 28, 2026). No copy published."
+  },
+  {
+    "dkt": null,
+    "date": "2026-10-28",
+    "filer": "plaintiff",
+    "type": "opposition",
+    "title": "Response to Ex Parte Application and Objection to Proposed Judgment, Relodged Proposed Judgment (without 'with prejudice'), and Proof of Service (Submitted Oct 28 2026)",
+    "path": null,
+    "filed": false,
+    "label": "AppFile order 14773399 — Awaiting Verification; not yet on the public docket (portal checked Oct. 28, 2026). No copy published."
   }
 ]
