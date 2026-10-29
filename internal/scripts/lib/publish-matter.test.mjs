@@ -217,6 +217,7 @@ describe("sanitizePublicText", () => {
 
   it("redacts street addresses, screening-order IDs, DocuSign envelopes, badges, and receipts", () => {
     expect(sanitizePublicText("Mail to 1455 Cat Tail Drive, Stockton")).toMatch(/\[redacted\]/);
+    expect(sanitizePublicText("for the Nov. 18 Dkt. 19 MTD hearing. Krishnan Civil Standing Order")).not.toMatch(/\[redacted\]/);
     expect(sanitizePublicText("with that Cat Tail Drive caption")).toBe("with that [redacted] caption");
     expect(sanitizePublicText("Profile Advantage Order ID WPS-361214148")).toContain("[redacted]");
     expect(sanitizePublicText("DocuSign Envelope ID B1019EC0-467E-8D8F-8389-021C270CBC16")).toBe(

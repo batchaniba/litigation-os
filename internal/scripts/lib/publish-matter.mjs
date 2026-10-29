@@ -79,7 +79,7 @@ const US_PHONE_RE =
   /(?<!\d)(?:\+1[-.\s]*)?(?:\(?\d{3}\)?[-.\s]*)\d{3}[-.\s]*\d{4}(?!\d)/g;
 const VAULT_TOKEN_RE = /\[secure value:[^\]]*\]|\bvault_[A-Za-z0-9_-]+\b/gi;
 const STREET_ADDRESS_RE =
-  /\b\d{1,5}\s+(?:[NSEW]\.?\s+)?[A-Z][A-Za-z0-9.'-]*(?:\s+[A-Za-z0-9.']+){0,4}\s+(?:St(?:reet)?|Ave(?:nue)?|Blvd|Boulevard|Dr(?:ive)?|Rd|Road|Ln|Lane|Way|Ct|Court|Hwy|Highway|Pkwy|Parkway)\.?(?:\s*(?:Unit|Apt\.?|Ste\.?|Suite|#)\s*#?\s*[\w-]+)?/gi;
+  /\b\d{1,5}\s+(?:[NSEW]\.?\s+)?[A-Z][A-Za-z0-9.'-]*(?:\s+[A-Za-z0-9.']+){0,4}\s+(?:St(?:reet)?|Ave(?:nue)?|Blvd|Boulevard|Dr(?:ive)?|Rd|Road|Ln|Lane|Way|Ct|Court|Hwy|Highway|Pkwy|Parkway)\b\.?(?:\s*(?:Unit|Apt\.?|Ste\.?|Suite|#)\s*#?\s*[\w-]+)?/gi;
 const HOME_FRAGMENT_RE =
   /\b(?:Cat Tail Drive|S\.?\s*Milpitas Blvd|Stockton, CA 95204|Milpitas, CA 95035|Unit\s*#304)\b/gi;
 const DOCU_SIGN_RE =
