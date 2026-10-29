@@ -9,5 +9,6 @@ This room's `10-*` tail (Matter 28 analog: `10-hearing-prep/`).
 | `02-ESI-PRESERVATION-AND-PO.md` | ESI/PO card |
 | `03-INITIAL-DISCLOSURES-CHECKLIST.md` | Nov. 24 26(a)(1) |
 | `04-JOINT-CMC-STATEMENT-NOTES.md` | JCMS process; not a draft statement |
+| `05-26F-TACTICAL-SHEET.md` | Push / concede / avoid. Red-team companion to `../STRESS-TEST.md` |
 
 Nothing here is to be filed or emailed without a separate drafting pass that uses only what the conference actually produced.
