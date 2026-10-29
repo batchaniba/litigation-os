@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "fileCount": 1764,
-  "totalBytes": 1026036640,
+  "fileCount": 1765,
+  "totalBytes": 1026185738,
   "files": [
     {
       "path": "/documents/_form-library/ao239-blank-template.pdf",
@@ -7632,6 +7632,11 @@
       "path": "/documents/matter-33/opinions/Newanforbi v Candelaria - USDC EDCal - FR Recommending Dismissal Jun 15 2026.pdf",
       "size": 190913,
       "sha256": "cd8fe0be7b6ac5100c47c1a45b4a479a266539de0b3a1936a9ea2a5f8beedebc"
+    },
+    {
+      "path": "/documents/matter-33/research/Research Memo - Nforbi v. Candelaria - Immunity, Preclusion, Remedies & Citation Corrections (Oct 25 2026).pdf",
+      "size": 149098,
+      "sha256": "6bc6bec58fae8d8701dde4c9ec624f675d0f4b167e9fac31c5cbf121df476e8d"
     },
     {
       "path": "/documents/matter-35/[Proposed] Order Correcting Case Title - 26CV501995 (Sep 10 2026).pdf",
