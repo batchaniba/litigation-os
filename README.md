@@ -63,7 +63,9 @@ All current and future matters follow the [Stipulation Defense — Plaintiff-Fir
 
 > **Housing status:** Homeless since July 2, 2026 — a direct consequence of a retaliatory inter-county parole transfer (Stockton → Santa Clara) imposed immediately after filing Matter 15 (*Newanforbi v. CDCR, et al.*). The transfer caused loss of Stockton family housing; Matters 3, 9, and 19 are also potential retaliatory predicate acts.
 >
-> **Cost of self-representation:** All 41 matters are self-litigated. Estimated equivalent private-counsel cost: **$844,144–$1,410,976** (see [Attorney Fees Analysis](#attorney-fees-analysis)).
+<!-- PORTFOLIO:SELF_REP_COST:START -->
+> **Cost of self-representation:** All 43 matters are self-litigated. Estimated equivalent private-counsel cost: **$905,184–$1,536,556** (see [Attorney Fees Analysis](#attorney-fees-analysis)).
+<!-- PORTFOLIO:SELF_REP_COST:END -->
 
 [↑ Contents](#contents)
 
@@ -355,19 +357,19 @@ Standalone retail civil-rights matter arising from an August 25, 2026 consumer r
 ## Attorney Fees Analysis
 
 <!-- PORTFOLIO:ATTORNEY_FEES:START -->
-Plaintiff is representing himself pro se across all 41 matters. The figures below represent what he would have been required to spend on private counsel to litigate this portfolio — costs he has absorbed entirely through self-representation. Based on real page counts extracted from 656 documents / 7,273 pages across matters with uploaded filings (Matter 32: 115 PDFs / 1,110 pages — N.D. Cal. ndcal/ filing billed; from-01|02|20|24/ stay attributed to source matters; Matter 33: 30 PDFs / 428 pages — N.D. Cal. refile + Nov. 1 / APS evidence; from-07/from-08 drafting stays on Matters 7/8; Matter 31 has no uploaded PDFs of its own), classified by document type and priced at a blended rate of **$280/hour** (senior partner $350–$450 / mid-associate $250–$350 / paralegal $150–$200). Opposing-party filings billed at light review rate only. Fee analysis date: September 6, 2026.
+Plaintiff is representing himself pro se across all 43 matters. The figures below represent what he would have been required to spend on private counsel to litigate this portfolio — costs he has absorbed entirely through self-representation. Based on real page counts extracted from 779 documents / 7,900 pages across matters with uploaded filings (Matter 32: 122 PDFs / 1,135 pages — N.D. Cal. ndcal/ filing billed; from-01|02|20|24/ stay attributed to source matters; Matter 33: 33 PDFs / 435 pages — N.D. Cal. refile + Nov. 1 / APS evidence; from-07/from-08 drafting stays on Matters 7/8; Matter 31 has no uploaded PDFs of its own), classified by document type and priced at a blended rate of **$280/hour** (senior partner $350–$450 / mid-associate $250–$350 / paralegal $150–$200). Opposing-party filings billed at light review rate only. Fee analysis date: October 28, 2026.
 
 | Cluster | Matters | Low | Mid | High |
 |---|---|---|---|---|
-| CHP / DUI / DMV | 1, 2, 7, 8, 20, 24, 32, 33 | $172,676 | $230,272 | $287,868 |
-| Parole Retaliation / HOPE | 3, 4, 5, 6, 11, 13, 14, 15, 16, 17, 18, 21, 28, 30, 34 | $469,672 | $619,192 | $772,912 |
-| Consumer Fraud / Employment | 12, 22, 23, 25, 26, 27, 29, 31, 36, 37, 38, 39 | $169,176 | $233,506 | $297,836 |
+| CHP / DUI / DMV | 1, 2, 7, 8, 20, 24, 32, 33 | $175,056 | $233,912 | $292,768 |
+| Parole Retaliation / HOPE | 3, 4, 5, 6, 11, 13, 14, 15, 16, 17, 18, 21, 28, 30, 34 | $474,712 | $626,752 | $782,992 |
+| Consumer Fraud / Employment | 12, 22, 23, 25, 26, 27, 29, 31, 36, 37, 38, 39, 40, 41, 42, 43 | $198,156 | $278,390 | $358,596 |
 | Administrative Writs & Habeas | 9, 10, 19 | $41,580 | $57,890 | $74,200 |
-| Public Accommodation / Unruh | 35 | $14,280 | $19,460 | $24,640 |
-| **Portfolio Total** | **41 matters** | **$867,384** | **$1,160,320** | **$1,457,456** |
-| **Estimated Hours** | | **3,097.8 hrs** | **4,144 hrs** | **5,205.2 hrs** |
+| Public Accommodation / Unruh | 35 | $15,680 | $21,840 | $28,000 |
+| **Portfolio Total** | **43 matters** | **$905,184** | **$1,218,784** | **$1,536,556** |
+| **Estimated Hours** | | **3,232.8 hrs** | **4,352.8 hrs** | **5,487.7 hrs** |
 
-*Plaintiff has litigated all 41 matters pro se, absorbing the full economic equivalent of the above without compensation. Fee-shifting statutes (42 U.S.C. §1988, PC §290.46(j)(4)(A), RICO 18 U.S.C. §1964(c), FCRA, ICRAA) apply across the majority of active matters — mandatory fee recovery upon prevailing substantially offsets or eliminates the above costs.*
+*Plaintiff has litigated all 43 matters pro se, absorbing the full economic equivalent of the above without compensation. Fee-shifting statutes (42 U.S.C. §1988, PC §290.46(j)(4)(A), RICO 18 U.S.C. §1964(c), FCRA, ICRAA) apply across the majority of active matters — mandatory fee recovery upon prevailing substantially offsets or eliminates the above costs.*
 <!-- PORTFOLIO:ATTORNEY_FEES:END -->
 
 [↑ Contents](#contents)

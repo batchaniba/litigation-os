@@ -289,6 +289,8 @@ const feeClusterRows = clusterOrder
     (c) =>
       `| ${escapeCell(c.label)} | ${escapeCell(c.matters.join(", "))} | ${money(c.costLow)} | ${money(c.costMid)} | ${money(c.costHigh)} |`,
   );
+const selfRepCostBlock = `> **Cost of self-representation:** All ${feeSummary.totalMatters} matters are self-litigated. Estimated equivalent private-counsel cost: **${money(feeSummary.totalEstimatedCost.low)}–${money(feeSummary.totalEstimatedCost.high)}** (see [Attorney Fees Analysis](#attorney-fees-analysis)).`;
+
 const attorneyFeesBlock = [
   `Plaintiff is representing himself pro se across all ${feeSummary.totalMatters} matters. The figures below represent what he would have been required to spend on private counsel to litigate this portfolio — costs he has absorbed entirely through self-representation. Based on real page counts extracted from ${feeSummary.totalDocumentsAnalyzed} documents / ${feeSummary.totalPagesReal.toLocaleString("en-US")} pages across matters with uploaded filings (Matter 32: ${m32?.documentsCount ?? "—"} PDFs / ${m32?.totalPagesReal?.toLocaleString("en-US") ?? "—"} pages — N.D. Cal. ndcal/ filing billed; from-01|02|20|24/ stay attributed to source matters; Matter 33: ${m33?.documentsCount ?? "—"} PDFs / ${m33?.totalPagesReal?.toLocaleString("en-US") ?? "—"} pages — N.D. Cal. refile + Nov. 1 / APS evidence; from-07/from-08 drafting stays on Matters 7/8; Matter 31 has no uploaded PDFs of its own), classified by document type and priced at a blended rate of **$${feeSummary.methodology.blendedHourlyRate}/hour** (senior partner $${feeSummary.methodology.rateRange.seniorPartner[0]}–$${feeSummary.methodology.rateRange.seniorPartner[1]} / mid-associate $${feeSummary.methodology.rateRange.midAssociate[0]}–$${feeSummary.methodology.rateRange.midAssociate[1]} / paralegal $${feeSummary.methodology.rateRange.paralegal[0]}–$${feeSummary.methodology.rateRange.paralegal[1]}). Opposing-party filings billed at light review rate only. Fee analysis date: ${feeDateLabel}.`,
   ``,
@@ -343,6 +345,7 @@ const replacements = {
   CLOSED_MATTERS: closedTable,
   UPCOMING_DEADLINES: deadlinesTable,
   DAMAGES_SUMMARY: damagesTable,
+  SELF_REP_COST: selfRepCostBlock,
   ATTORNEY_FEES: attorneyFeesBlock,
   CITATION_SCOREBOARD: citationScoreboard,
   CASE_CLUSTER_TOC: clusterToc,
