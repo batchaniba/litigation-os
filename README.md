@@ -273,8 +273,9 @@ Standalone retail civil-rights matter arising from an August 25, 2026 consumer r
 | Nov. 6, 2026 | 29 | Rule 26(f) / ADR L.R. 3-5 meet-and-confer, Fri. Nov. 6, 2026, 1:00–1:30 p.m. PT (invite sent as 3:00–3:30 p.m. Central), by Microsoft Teams — Newanforbi v. Amazon.com Services, LLC et al. (4:26-cv-09249-ASK). |
 | Nov. 9, 2026 | 32 | Opposition to Dkt. 22 motion to dismiss/strike due Nov. 9, 2026 — Nforbi v. Meza-Gonzalez et al. (4:26-cv-08271-ASK). Date set in the Dkt. 22 docket text (responses due 11/9/2026; replies 11/16/2026). |
 | Nov. 10, 2026 | 29 | Deadline to file ADR Certification (ADR L.R. 3) and to meet and confer regarding initial disclosures, early settlement, ADR process selection, and a discovery… |
-| Nov. 13, 2026 | 20 | Opening brief / notice of motion for peremptory writ of mandate due Nov. 13, 2026 (hearing Jan. 8, 2027) — Newanforbi v. CHP et al. (26CV191136). USER REPORT Oct. 28, 2026. |
+| Nov. 13, 2026 | 20 | Opening memorandum in support of the petition for writ of mandate due Nov. 13, 2026 (hearing Jan. 8, 2027) — Newanforbi v. CHP et al. (26CV191136). Set by the Oct. 26, 2026 Stipulation and Order re Briefing Schedule. |
 | Nov. 13, 2026 | 29 | OPTIONAL: last day to request a Zoom appearance for the Nov. 18 Dkt. 19 MTD hearing. Krishnan Civil Standing Order (8/20/26) p.2: law-and-motion hearings are in person |
+| Nov. 16, 2026 | 20 | Hand-deliver courtesy copy of the opening memorandum to Dept. 25 (Rene C. Davidson Courthouse) within one court day of filing — Newanforbi v. CHP et al. (26CV191136). Order of Oct. 26, 2026. |
 | Nov. 16, 2026 | 24 | Email appearance names to crbcrd@cand.uscourts.gov |
 | Nov. 16, 2026 | 32 | WATCH — Defendants' reply in support of Dkt. 22 motion to dismiss/strike due Nov. 16, 2026 per Dkt. 22 docket text — Nforbi v. Meza-Gonzalez et al. (4:26-cv-08271-ASK). |
 | Nov. 17, 2026 | 28 | Joint status conference report due Nov. 17, 2026 (monthly through May 17, 2027) — Newanforbi v. Smith / HOPE (3:26-cv-07504-LJC). USER REPORT of the Oct. 27, 2026 order deferring the MTD pending San Joaquin judgment. |
@@ -290,10 +291,11 @@ Standalone retail civil-rights matter arising from an August 25, 2026 consumer r
 | Dec. 2, 2026 | 33 | Deadline to make initial disclosures and file the Case Management Statement — Nforbi v. Candelaria et al. (3:26-cv-08272-RFL), per Sep. 28 PACER true-up. |
 | Dec. 9, 2026 | 33 | Initial Case Management Conference, 10:00 a.m. before Hon. Rita F. Lin — Nforbi v. Candelaria et al. (3:26-cv-08272-RFL). |
 | Dec. 11, 2026 | 12 | Further Case Management Conference, 8:30 AM, Dept. 11B, Hon. Robert T. Waters — Ngwa Nforbi v. Diamond Truck Sales, Inc. et al. (STK-CV-UF-2026-0001094), set… |
-| Dec. 11, 2026 | 20 | WATCH — CHP opposition to the peremptory-writ motion due Dec. 11, 2026 — Newanforbi v. CHP et al. (26CV191136). USER REPORT Oct. 28, 2026 (replaces the prior CCP § 1005(b) Dec. 24 watch). |
+| Dec. 11, 2026 | 20 | WATCH — Respondents' opposition due Dec. 11, 2026 — Newanforbi v. CHP et al. (26CV191136). Set by the Oct. 26, 2026 Stipulation and Order re Briefing Schedule. |
 | Dec. 17, 2026 | 27 | Case Management Conference, Newanforbi v. Randstad US LLC and RK Logistics Group, Inc. (Matter 27) — Hon. Thomas Weathers, Dept. 20, Rene C. Davidson… |
 | Dec. 17, 2026 | 28 | Joint status conference report due Dec. 17, 2026 (monthly through May 17, 2027) — Newanforbi v. Smith / HOPE (3:26-cv-07504-LJC). USER REPORT of the Oct. 27, 2026 order deferring the MTD pending San Joaquin judgment. |
-| Dec. 18, 2026 | 20 | Reply due Dec. 18, 2026 on the peremptory-writ motion — Newanforbi v. CHP et al. (26CV191136). USER REPORT Oct. 28, 2026 (replaces the prior CCP § 1005(b) Dec. 31 date). |
+| Dec. 18, 2026 | 20 | Reply due Dec. 18, 2026 on the petition for writ of mandate — Newanforbi v. CHP et al. (26CV191136). Set by the Oct. 26, 2026 Stipulation and Order re Briefing Schedule. |
+| Dec. 21, 2026 | 20 | Hand-deliver courtesy copy of the reply to Dept. 25 (Rene C. Davidson Courthouse) within one court day of filing — Newanforbi v. CHP et al. (26CV191136). Order of Oct. 26, 2026. |
 | Jan. 7, 2027 | 20 | WATCH — Tentative ruling posts (afternoon); read it. To argue, follow Dept. 25 contest procedure. |
 | Jan. 8, 2027 | 20 | HEARING — Motion for peremptory writ of mandate, 9:00 a.m., Dept. 25, Hon. Jenna M. Whitman (Reservation ID 958052306492). |
 | Jan. 12, 2027 | 35 | OPEN TASK — Matter 35 (26CV501995) meet-and-confer with appearing parties at least 30 calendar days before the Feb. 11, 2027 CMC (Santa Clara Civil Lawsuit… |
