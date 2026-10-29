@@ -1,173 +1,396 @@
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import { Link } from "react-router";
 import { cases } from "../data/matters";
-import { CLUSTERS, formatMatterRanges } from "../data/clusters";
-import { damages_table } from "../data/damages";
+import { CLUSTERS, CLUSTER_LABELS } from "../data/clusters";
 import { jurisdictions } from "../data/portfolioMeta";
-import { headline_coverage, formatLimit } from "../data/coverage";
-import { formatCurrency } from "../utils/formatters";
+import { outcomes } from "../data/outcomes";
 import { useNextActions } from "../hooks/useNextActions";
-import { NextActionsPanel } from "./NextActionsPanel";
 import syncState from "../data/courtlistener/sync-state.json";
 import indexMeta from "../data/index/matters.json";
+import { countCourts } from "../utils/portfolioStats";
 import {
-  countCourts,
-  isActiveExposureRow,
-  litigatingMatters,
-  preFilingMatters,
-  sumExposure,
-} from "../utils/portfolioStats";
+  agendaCounts,
+  agendaWeeks,
+  monthStrip,
+  needsAttention,
+  nextCourtDate,
+  shortCourt,
+  shortDate,
+  stageBoard,
+  syncAgeDays,
+} from "./dashboard/dashboardModel";
 
-const totalMatters = cases.length;
-const litigating = litigatingMatters(cases);
-const preFiling = preFilingMatters(cases);
-const activeMatters = litigating.length;
-const byNumber = new Map(cases.map((c) => [Number(c.number), c]));
-const liveDamages = damages_table.filter((row) => isActiveExposureRow(row, byNumber));
-const clusterCounts = Object.fromEntries(CLUSTERS.map((cl) => [cl.n, 0]));
-const clusterNumberLists = Object.fromEntries(CLUSTERS.map((cl) => [cl.n, []]));
+// Static, data-derived figures (no clock dependency).
+const CLUSTER_COLOR = Object.fromEntries(CLUSTERS.map((cl) => [cl.n, cl.color]));
+const clusterCounts = CLUSTERS.map((cl) => ({
+  ...cl,
+  count: cases.filter((c) => c.cluster === cl.n).length,
+}));
 const courtCounts = countCourts(cases, jurisdictions);
-let federalCount = 0;
-let stateCount = 0;
-for (const c of litigating) {
-  if (c.type === "Federal") federalCount++;
-  else if (c.type === "State") stateCount++;
-}
-for (const c of cases) {
-  if (clusterCounts[c.cluster] !== undefined) {
-    clusterCounts[c.cluster]++;
-    clusterNumberLists[c.cluster].push(c.number);
-  }
+const openCounts = {
+  inCourt: cases.filter((c) => c.lifecycle === "active" && !c.archived).length,
+  preFiling: cases.filter((c) => c.lifecycle === "pre_filing" && !c.archived).length,
+  settled: cases.filter((c) => c.lifecycle === "settled").length,
+};
+openCounts.total = openCounts.inCourt + openCounts.preFiling + openCounts.settled;
+const closedCounts = {
+  dismissed: cases.filter((c) => c.lifecycle === "dismissed").length,
+  abandoned: cases.filter((c) => c.lifecycle === "abandoned").length,
+  closed: cases.filter((c) => c.lifecycle === "closed").length,
+};
+closedCounts.total = closedCounts.dismissed + closedCounts.abandoned + closedCounts.closed;
+
+const settlements = (outcomes.realized ?? []).filter((r) => r.type === "settlement");
+const settledCaptions = settlements.map((r) => {
+  const m = cases.find((c) => Number(c.number) === Number(r.matter));
+  return { matter: r.matter, date: r.date, name: m ? m.caption.replace(/^.*?\sv\.\s+/, "").split(",")[0] : `Matter ${r.matter}` };
+});
+const highlightRulings = (outcomes.judicial_opinions ?? [])
+  .filter((j) => j.dashboard_headline)
+  .slice(0, 2);
+
+const TONE_CLASS = { task: "task", court: "court", confer: "confer", theirs: "theirs" };
+const FILTERS = [
+  { key: "all", label: "Everything" },
+  { key: "mine", label: "My moves" },
+  { key: "court", label: "Court dates" },
+];
+
+function MatterChip({ label }) {
+  return <span className="dash-mchip">{label}</span>;
 }
 
-const clusterMattersStr = Object.fromEntries(
-  CLUSTERS.map((cl) => [cl.n, formatMatterRanges(clusterNumberLists[cl.n])]),
-);
+function VerbChip({ verb }) {
+  return <span className={`dash-verb ${TONE_CLASS[verb.tone] ?? "task"}`}>{verb.label}</span>;
+}
 
-const moderateExposure = formatCurrency(sumExposure(liveDamages, "moderate"));
+function matterHref(item) {
+  return item.matters?.length ? `/matters/${item.matters[0]}` : "/matters";
+}
 
 export const DashboardTab = ({ setClusterFilter, setActiveTab }) => {
-  const { queue, nextMine } = useNextActions(30);
-  const [mineOnly, setMineOnly] = useState(false);
-  const dataAsOf = indexMeta?.today || null;
-  const clEntries = Object.values(syncState?.matters ?? {});
-  const clMatters = clEntries.length;
-  const clLast = clEntries
+  const { queue, today } = useNextActions(30);
+  const [filter, setFilter] = useState("all");
+
+  const attention = useMemo(() => needsAttention(queue, cases), [queue]);
+  const weeks = useMemo(() => agendaWeeks(queue, cases, { filter }), [queue, filter]);
+  const counts = useMemo(() => agendaCounts(queue), [queue]);
+  const strip = useMemo(() => monthStrip(queue), [queue]);
+  const board = useMemo(() => stageBoard(cases, queue), [queue]);
+  const court = useMemo(() => nextCourtDate(queue, cases), [queue]);
+
+  const clLast = Object.values(syncState?.matters ?? {})
     .map((row) => row?.last_synced_at)
     .filter(Boolean)
     .sort()
     .at(-1);
   const clLastDay = typeof clLast === "string" ? clLast.slice(0, 10) : null;
-  const clStatus = clMatters > 0
-    ? `${clMatters} dockets${clLastDay ? `, last ${clLastDay}` : ""}`
-    : "not run";
+  const syncAge = syncAgeDays(clLastDay, today);
+  const asOf = indexMeta?.today ?? null;
+  const longToday = new Date(`${today}T12:00:00Z`).toLocaleDateString("en-US", {
+    weekday: "long", month: "long", day: "numeric", year: "numeric", timeZone: "UTC",
+  });
+
+  const pickCluster = (n) => {
+    setClusterFilter(n);
+    setActiveTab?.("Matters");
+  };
+
+  const attnSummary = [
+    attention.overdue ? `${attention.overdue} past due` : null,
+    attention.soon ? `${attention.soon} in the next 3 days` : null,
+    attention.opposingOverdue ? `${attention.opposingOverdue} overdue on their side` : null,
+  ].filter(Boolean).join(" · ");
 
   return (
-    <div className="dashboard-view">
-      <div className="data-freshness-badge" role="status">
-        {dataAsOf ? <span>Portfolio clocks as of {dataAsOf}</span> : <span>Portfolio data date unknown</span>}
-        <span className="freshness-sep">·</span>
-        <span className={clLastDay ? "freshness-paused" : "freshness-paused"}>
-          CourtListener sync: {clStatus}
-        </span>
-      </div>
-      {/* Stats Row */}
-      <div className="dashboard-stats">
-        {[
-          { label: "Active Matters", value: activeMatters, sub: `${federalCount} Federal · ${stateCount} State · ${preFiling.length} pre-filing · ${totalMatters} tracked` },
-          { label: "Jurisdictions", value: jurisdictions.length, sub: "Courts across CA" },
-          { label: "Aggregate Exposure", value: moderateExposure, sub: "Live moderate (excludes settled)" },
-          { label: "Next on your desk", value: nextMine?.date || "—", sub: nextMine ? `M${nextMine.matters[0]} · ${nextMine.action}` : "Nothing dated" }
-        ].map((s, i) => (
-          <div key={i} className="dashboard-stat-card">
-            <div className="dashboard-stat-label">{s.label}</div>
-            <div className="dashboard-stat-value">{s.value}</div>
-            <div className="dashboard-stat-sub">{s.sub}</div>
+    <div className="dash">
+      {/* Title row */}
+      <section className="dash-head">
+        <div>
+          <div className="dash-eyebrow">{longToday}</div>
+          <h1 className="dash-title">Docket at a glance</h1>
+          <p className="dash-lede">
+            What is due, where each case stands, and what the record shows — {openCounts.total} open matters, all pro se.
+          </p>
+        </div>
+        <div className="dash-chips" role="status">
+          <span className={`dash-chip ${asOf ? "ok" : "warn"}`}>
+            {asOf ? `Clocks verified ${shortDate(asOf)}` : "Clock date unknown"}
+          </span>
+          <span className={`dash-chip ${syncAge != null && syncAge <= 14 ? "ok" : "warn"}`}>
+            {syncAge == null
+              ? "Docket sync not run"
+              : syncAge === 0
+                ? "Docket synced today"
+                : `Docket sync ${syncAge} ${syncAge === 1 ? "day" : "days"} old (${shortDate(clLastDay)})`}
+          </span>
+        </div>
+      </section>
+
+      {/* Needs attention + pulse */}
+      <section className="dash-row">
+        <div className="dash-card dash-attn">
+          <div className="dash-card-head">
+            <h2 className="dash-h2">Needs attention</h2>
+            <span className="dash-meta">{attnSummary || "Nothing past due"}</span>
           </div>
-        ))}
-        {headline_coverage && (
-          <Link
-            to={`/matters/${headline_coverage.matter}`}
-            className="dashboard-stat-card dashboard-stat-card-coverage"
-            title={`${headline_coverage.carrier} Policy No. ${headline_coverage.policyNo} — ${headline_coverage.insureds.join(" and ")}`}
-          >
-            <div className="dashboard-stat-label">Insured Exposure</div>
-            <div className="dashboard-stat-value">
-              {formatLimit(headline_coverage.perIncident)} <span className="dashboard-stat-slash">/</span>{" "}
-              {formatLimit(headline_coverage.aggregate)}
+          {attention.items.length === 0 ? (
+            <p className="dash-empty">Nothing on your desk is past due or due in the next three days.</p>
+          ) : (
+            <ul className="dash-attn-list">
+              {attention.items.map((item) => (
+                <li key={item.key}>
+                  <Link to={matterHref(item)} className="dash-attn-row">
+                    <span className="dash-attn-when">
+                      <span className={`dash-attn-rel ${item.tone}`}>{item.relative}</span>
+                      <span className="dash-meta">{shortDate(item.dateKey)}</span>
+                    </span>
+                    <MatterChip label={item.matterLabel} />
+                    <span className="dash-attn-body">
+                      <span className="dash-attn-title">{item.title}</span>
+                      <span className="dash-meta">{item.verb.label} · {item.meta}</span>
+                    </span>
+                    <svg className="dash-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          )}
+        </div>
+
+        <div className="dash-pulse">
+          <div className="dash-card dash-pulse-wide">
+            <div className="dash-card-head">
+              <span className="dash-label">Open matters</span>
+              <Link to="/matters?status=all" className="dash-link">All {cases.length} →</Link>
             </div>
-            <div className="dashboard-stat-sub">
-              {headline_coverage.insureds.join(" · ")} — Matter {headline_coverage.matter}
+            <div className="dash-big">{openCounts.total}</div>
+            <div className="dash-stack" aria-hidden="true">
+              <span style={{ flex: openCounts.inCourt }} className="in-court" />
+              <span style={{ flex: openCounts.preFiling }} className="pre-filing" />
+              <span style={{ flex: openCounts.settled }} className="settled" />
             </div>
-          </Link>
-        )}
-      </div>
+            <div className="dash-legend">
+              <span><i className="in-court" />{openCounts.inCourt} in court</span>
+              <span><i className="pre-filing" />{openCounts.preFiling} pre-filing</span>
+              <span><i className="settled" />{openCounts.settled} settled</span>
+            </div>
+          </div>
+          <div className="dash-card">
+            <span className="dash-label">Next court date</span>
+            <div className="dash-mid">{court ? shortDate(court.dateKey) : "—"}</div>
+            <div className="dash-meta dash-stat-sub">
+              {court ? `${court.title.split(" — ")[0]} · ${court.matterLabel}${court.meta ? ` · ${court.meta.split(" · ").slice(1).join(" · ")}` : ""}` : "None on the calendar"}
+            </div>
+          </div>
+          <div className="dash-card">
+            <span className="dash-label">Recoveries</span>
+            <div className="dash-mid">{settlements.length} settled</div>
+            <div className="dash-meta dash-stat-sub">
+              {settlements.length
+                ? `Matters ${settlements.map((s) => s.matter).join(" and ")} · terms confidential`
+                : "None yet"}
+            </div>
+          </div>
+        </div>
+      </section>
 
-      <NextActionsPanel queue={queue} mineOnly={mineOnly} onMineOnlyChange={setMineOnly} />
+      {/* Next 30 days */}
+      <section className="dash-section">
+        <div className="dash-section-head">
+          <h2 className="dash-h2 lg">Next 30 days</h2>
+          <div className="dash-filters" role="group" aria-label="Filter the agenda">
+            {FILTERS.map((f) => (
+              <button
+                key={f.key}
+                type="button"
+                aria-pressed={filter === f.key}
+                className={`dash-filter${filter === f.key ? " on" : ""}`}
+                onClick={() => setFilter(f.key)}
+              >
+                {f.label} · {counts[f.key]}
+              </button>
+            ))}
+          </div>
+        </div>
 
-      {/* Two-column: Clusters + courts */}
-      <div className="grid-2 dashboard-primary-grid">
-        <section className="dashboard-panel">
-          <h3 className="dashboard-heading">Case Clusters</h3>
-          {CLUSTERS.map(cl => (
-            <button
-              key={cl.n}
-              className="dashboard-cluster"
-              type="button"
-              onClick={() => { setClusterFilter(cl.n); setActiveTab("Matters"); }}
-              aria-label={`Filter matters by cluster: ${cl.label}`}
-            >
-              <div className="dashboard-cluster-header">
-                <span>{cl.label}</span>
-                <span style={{ color: cl.color }}>{clusterCounts[cl.n] || 0} matters</span>
-              </div>
-              <div className="dashboard-cluster-meta">Matters {clusterMattersStr[cl.n] || "—"}</div>
-              <div className="dashboard-cluster-track">
-                <div className="dashboard-cluster-bar" style={{ width: `${((clusterCounts[cl.n] || 0) / totalMatters) * 100}%`, background: cl.color }} />
-              </div>
-            </button>
-          ))}
-          <div className="dashboard-cluster-hint">Click a cluster to filter matters →</div>
-        </section>
+        <div className="dash-row top">
+          <div className="dash-card dash-month">
+            <div className="dash-card-head">
+              <span className="dash-month-label">{strip.label}</span>
+              <span className="dash-meta">5 weeks</span>
+            </div>
+            <div className="dash-month-dow" aria-hidden="true">
+              {["S", "M", "T", "W", "T", "F", "S"].map((d, i) => <span key={i}>{d}</span>)}
+            </div>
+            <div className="dash-month-grid">
+              {strip.days.map((d) => (
+                <div
+                  key={d.key}
+                  className={`dash-day${d.today ? " today" : ""}${d.past ? " past" : ""}`}
+                  aria-label={`${shortDate(d.key)}${d.tones.length ? `, ${d.tones.length} item${d.tones.length === 1 ? "" : "s"}` : ""}`}
+                >
+                  <span className="dash-day-n">{d.label}</span>
+                  <span className="dash-dots">
+                    {d.tones.map((t, i) => <i key={i} className={t} />)}
+                  </span>
+                </div>
+              ))}
+            </div>
+            <div className="dash-legend small">
+              <span><i className="dot task" />File / serve</span>
+              <span><i className="dot court" />Court date</span>
+              <span><i className="dot confer" />Meet &amp; confer</span>
+              <span><i className="dot theirs" />Their move</span>
+            </div>
+          </div>
 
-        <section className="dashboard-panel">
-          <h3 className="dashboard-heading">Jurisdictional Distribution</h3>
-          <div className="dashboard-jurisdictions">
-            {jurisdictions.map(j => (
-              <div key={j} className="dashboard-jurisdiction">
-                <div className="dashboard-jurisdiction-name">{j}</div>
-                <div className="dashboard-jurisdiction-count">{courtCounts[j] || 0}</div>
+          <div className="dash-card dash-agenda">
+            {weeks.length === 0 ? (
+              <p className="dash-empty">Nothing in the next 30 days for this filter.</p>
+            ) : weeks.map((w) => (
+              <div key={w.start} className="dash-week">
+                <div className="dash-week-head">
+                  <span className="dash-eyebrow sm">{w.label}</span>
+                  {w.range ? <span className="dash-meta">{w.range}</span> : null}
+                </div>
+                <ul>
+                  {w.rows.map((r) => (
+                    <li key={r.key} className={`dash-agenda-row${r.verb.tone === "theirs" ? " theirs" : ""}`}>
+                      <span className="dash-agenda-date">
+                        <span className="dow">{r.when.dow}</span>
+                        <span className="md">{r.when.label.split(" ").slice(1).join(" ")}</span>
+                      </span>
+                      <span className="dash-agenda-chips">
+                        <MatterChip label={r.matterLabel} />
+                        <VerbChip verb={r.verb} />
+                      </span>
+                      <Link to={matterHref(r)} className="dash-agenda-title">{r.title}</Link>
+                      <span className="dash-agenda-meta">{r.meta}</span>
+                    </li>
+                  ))}
+                </ul>
               </div>
             ))}
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
 
-      {/* Milestone: First Settlement */}
-      <div className="dashboard-milestone">
-        <div className="dashboard-milestone-inner">
-          <div className="dashboard-milestone-icon">💰</div>
-          <div>
-            <h3 className="dashboard-heading compact">First Case to Settle</h3>
-            <p className="dashboard-milestone-copy">
-              Matter 22 became the first matter in this portfolio to reach a negotiated settlement — resolved pro se, without counsel, in under seven weeks from filing.
-            </p>
+      {/* Stage board */}
+      <section className="dash-section">
+        <div className="dash-section-head">
+          <h2 className="dash-h2 lg">Where every case stands</h2>
+          <span className="dash-meta">{board.total} open matters by stage · amber means nothing dated on the calendar</span>
+        </div>
+        <div className="dash-board" role="list" style={{ "--lanes": board.lanes.length }}>
+          {board.lanes.map((lane) => (
+            <div key={lane.key} className="dash-lane" role="listitem">
+              <div className="dash-lane-head">
+                <span>{lane.name}</span>
+                <span className="dash-meta">{lane.items.length}</span>
+              </div>
+              <div className="dash-lane-items">
+                {lane.items.map((c) => (
+                  <Link key={c.number} to={`/matters/${c.number}`} className="dash-mcard">
+                    <span className="dash-mcard-top">
+                      <i style={{ background: CLUSTER_COLOR[c.cluster] ?? "#94a3b8" }} aria-hidden="true" />
+                      <span className="num">M{c.number}</span>
+                    </span>
+                    <span className="dash-mcard-name">{c.name}</span>
+                    <span className={`dash-mcard-line ${c.tone}`}>{c.line}</span>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+        <div className="dash-board-foot">
+          <div className="dash-legend small">
+            {CLUSTERS.map((cl) => (
+              <span key={cl.n}><i style={{ background: cl.color }} />{CLUSTER_LABELS[cl.n] ?? cl.label}</span>
+            ))}
+          </div>
+          <Link to="/matters?status=archived" className="dash-link">
+            {closedCounts.total} closed matters — {closedCounts.dismissed} dismissed · {closedCounts.abandoned} abandoned · {closedCounts.closed} closed →
+          </Link>
+        </div>
+      </section>
+
+      {/* Record + mix */}
+      <section className="dash-row">
+        <div className="dash-record">
+          <h2 className="dash-h2 lg">The record so far</h2>
+          <div className="dash-record-tiles">
+            <div className="dash-card dash-tile">
+              <span className="dash-label green">Settled</span>
+              <div className="dash-mid">{settlements.length} {settlements.length === 1 ? "matter" : "matters"}</div>
+              <p className="dash-tile-copy">
+                {settledCaptions.map((s) => `${s.name} (M${s.matter}), ${s.date}`).join(". ")}. Terms confidential.
+              </p>
+            </div>
+            {highlightRulings.map((j) => {
+              const m = cases.find((c) => Number(c.number) === Number(j.matter));
+              return (
+                <Link key={`${j.matter}-${j.date}`} to={`/matters/${j.matter}`} className="dash-card dash-tile">
+                  <span className="dash-label blue">{j.dashboard_label}</span>
+                  <div className="dash-mid">{m ? m.caption.replace(/^.*?\sv\.\s+/, "").split(",")[0] : `Matter ${j.matter}`}</div>
+                  <p className="dash-tile-copy">{j.dashboard_headline} (M{j.matter})</p>
+                </Link>
+              );
+            })}
           </div>
         </div>
-      </div>
 
-      {/* Milestone: First Interstate Case */}
-      <div className="dashboard-milestone dashboard-milestone-last">
-        <div className="dashboard-milestone-inner">
-          <div className="dashboard-milestone-icon">🌎</div>
-          <div>
-            <h3 className="dashboard-heading compact">First Interstate Reaching Case</h3>
-            <p className="dashboard-milestone-copy">
-              Matter 22 represents the first litigation matter with interstate service of process. Demand letter sent via Certified Mail to corporate headquarters in Tennessee.
-            </p>
+        <div className="dash-mix">
+          <h2 className="dash-h2 lg">Portfolio mix</h2>
+          <div className="dash-card">
+            <div className="dash-card-head">
+              <span className="dash-meta">{cases.length} matters by cluster — select one to filter</span>
+            </div>
+            <div className="dash-clusterbar">
+              {clusterCounts.map((cl) => (
+                <button
+                  key={cl.n}
+                  type="button"
+                  style={{ flex: Math.max(cl.count, 0.5), background: cl.color }}
+                  onClick={() => pickCluster(cl.n)}
+                  aria-label={`Filter matters by cluster: ${cl.label} (${cl.count})`}
+                  title={`${cl.label} — ${cl.count}`}
+                />
+              ))}
+            </div>
+            <div className="dash-cluster-list">
+              {clusterCounts.map((cl) => (
+                <button key={cl.n} type="button" className="dash-cluster-btn" onClick={() => pickCluster(cl.n)} title={cl.label}>
+                  <i style={{ background: cl.color }} aria-hidden="true" />
+                  <span>{CLUSTER_LABELS[cl.n] ?? cl.label}</span>
+                  <span className="dash-meta">{cl.count}</span>
+                </button>
+              ))}
+            </div>
+            <div className="dash-courts">
+              {jurisdictions.map((j) => (
+                <div key={j} className="dash-court">
+                  <span className="dash-court-n">{courtCounts[j] || 0}</span>
+                  <span className="dash-meta">{shortCourt(j)}</span>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
-      </div>
+      </section>
+
+      <footer className="dash-foot">
+        <span>Dates as recorded in the portfolio. Confirm against the docket before relying on a date.</span>
+        <details>
+          <summary>How dates are counted</summary>
+          <p>
+            Dates come from each matter&apos;s live calendar, bucketed from today&apos;s Pacific date. The week runs Sunday through
+            Saturday. Vacated, satisfied, settled, and archived items are left out. A date the other side owes is marked
+            &ldquo;Their move.&rdquo; Matters with nothing dated show their latest status in amber on the stage board.
+          </p>
+        </details>
+      </footer>
     </div>
   );
 };

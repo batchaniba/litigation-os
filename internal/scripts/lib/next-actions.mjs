@@ -152,11 +152,22 @@ export function inferActor(entry) {
 }
 
 /** Coarse verb for the queue line — what the day actually demands. */
+// Order matters: the head of the text names the task ("Opposition to …",
+// "Joint status conference report …"), so a filing noun there beats a
+// hearing or conference mentioned later in the same line.
+const META_HEAD = /^(?:(?:IMPORTANT|DUE|FILE|WATCH|OPEN TASK|CONTINGENT|OPTIONAL|COMPUTED|DEADLINE)\s*(?:—|–|-|:)\s*)+/i;
+const APPEAR_HEAD = /^(?:ex parte\s+)?(?:hearing|(?:initial\s+|further\s+)?case management conference|status conference|oral argument|trial)\b/i;
+const FILING_NOUN = /\b(?:report|statement|brief|opposition|reply|certification|disclosures|request|motion|application|declaration|notice|answer|complaint)\b/i;
+
 export function inferAction(entry) {
   const text = String(entry?.event ?? "");
-  if (entry?.type === "hearing" || /\b(?:hearing|conference)\b/i.test(text)) return "appear";
+  const head = text.replace(META_HEAD, "").split(/\s+[—–]\s+/)[0].slice(0, 90);
+  if (entry?.type === "hearing" || APPEAR_HEAD.test(head)) return "appear";
+  if (FILING_NOUN.test(head)) return "file";
+  if (/\b(?:proof[-\s]of[-\s]service|service deadline)\b/i.test(text)) return "serve";
   if (/\bmeet[-\s]and[-\s]confer\b/i.test(text)) return "meet & confer";
-  if (/\b(?:proof[-\s]of[-\s]service|service deadline|serve)\b/i.test(text)) return "serve";
+  if (/\b(?:hearing|conference)\b/i.test(text)) return "appear";
+  if (/\bserve\b/i.test(text)) return "serve";
   // "Reply deadline" / "Opposition due" are filing tasks; match before the
   // generic prepare fallback (and ahead of bare "due", which also hits file).
   if (/\b(?:reply|opposition)\b/i.test(text) && /\b(?:deadline|due)\b/i.test(text)) {

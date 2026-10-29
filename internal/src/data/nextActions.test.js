@@ -157,6 +157,17 @@ describe("inferAction", () => {
     expect(inferAction(entry({ event: "Reply deadline — Motion for Protective Order" }))).toBe("file");
     expect(inferAction(entry({ event: "Opposition due — Demurrer" }))).toBe("file");
   });
+
+  it("lets the task named at the head of the line beat a hearing mentioned later", () => {
+    expect(inferAction(entry({ event: "Opposition to Dkt. 22 motion to dismiss/strike due Nov. 9, 2026 — file and serve by 4:00 p.m." }))).toBe("file");
+    expect(inferAction(entry({ event: "Opening brief / notice of motion for peremptory writ of mandate due Nov. 13, 2026 (hearing Jan. 8, 2027)" }))).toBe("file");
+    expect(inferAction(entry({ event: "Joint status conference report due Nov. 17, 2026 (monthly through May 17, 2027)" }))).toBe("file");
+    expect(inferAction(entry({ event: "Deadline to file ADR Certification (ADR L.R. 3) and to meet and confer regarding initial disclosures" }))).toBe("file");
+    expect(inferAction(entry({ event: "Rule 26(f) / ADR L.R. 3-5 meet-and-confer, Fri. Nov. 6, 2026, 1:00–1:30 p.m. PT" }))).toBe("meet & confer");
+    expect(inferAction(entry({ event: "Case Management Conference — Newanforbi v. CHP et al., 4:00 p.m., Dept. 25" }))).toBe("appear");
+    expect(inferAction(entry({ event: "Email appearance names to the courtroom deputy" }))).toBe("prepare");
+    expect(inferAction(entry({ event: "Opposition to Dkt. 22 motion to dismiss — attach proof of service" }))).toBe("file");
+  });
 });
 
 describe("todayKey and PT midnight", () => {
