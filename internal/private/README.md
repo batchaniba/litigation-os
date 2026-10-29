@@ -23,6 +23,12 @@ excluded from every public portfolio projection.
   - Public projection: prohibited
   - Active litigation: yes (workspace only; live docket/clocks stay in `internal/src/data/matters/29/`)
 
+- Matter 28 research room — Newanforbi v. Smith et al. (Cisneros Oct. 27 hearing prep)
+  - Front door: `internal/private/research/matter-28/README.md`
+  - Classification: private litigation research; room-only PDFs (Rule 26 disclosure, Dkt 34, Dkt 36, PACER report) held private pending publication decision
+  - Public projection: prohibited
+  - Active litigation: yes (matter stayed; live docket/clocks stay in `internal/src/data/matters/28/`)
+
 - Parole / federal habeas research
   - Front door: `internal/private/research/parole-habeas/INDEX.md`
   - Also: `TIMELINE.md`, `HABEAS-OPTIONS.md`, `coa-6th/` (Sixth District mandate draft — do not file)
