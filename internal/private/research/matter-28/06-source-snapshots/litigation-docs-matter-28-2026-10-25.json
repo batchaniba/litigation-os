@@ -1,0 +1,287 @@
+{
+  "number": 28,
+  "caption": "Newanforbi v. Shannon Smith, LCSW, CEO, et al.",
+  "case_no": "3:26-cv-07504-LJC",
+  "court": "USDC N.D. Cal.",
+  "phase": "mtd_briefing",
+  "lifecycle": "active",
+  "status_label": "7-3(d) obj. Oct. 20; CMC+MTD hearing Oct. 27",
+  "judge": "Hon. Lisa J. Cisneros",
+  "overdue": true,
+  "next_clock": {
+    "date": "2026-10-20",
+    "title": "Civil L.R. 7-3(d)(1) objection to new evidence in reply: due within 7 days after the reply is filed (filed Oct. 13 → Oct. 20). LIVE: Dkt. 30-1 Supplemental RFJN Exhibit A attaches a San Joaquin docket screenshot (STK-CV-UF-2026-0001032). Newanforbi v. Smith / HOPE (3:26-cv-07504-LJC)."
+  },
+  "clocks": [
+    {
+      "title": "Responsive pleading deadline (computed) — Shannon Smith, LCSW, and HOPE Psychotherapy, Inc., Newanforbi v. Shannon Smith, LCSW, CEO, et al.…",
+      "date": "2026-09-21",
+      "kind": "deadline",
+      "status": "satisfied",
+      "overdue": false
+    },
+    {
+      "title": "FILE ADR Certification by Parties and Counsel (ADR L.R. 3-5(b)) — Newanforbi v. Shannon Smith / HOPE (3:26-cv-07504-LJC). Dkt. 4 sets Oct. 1, 2026 for the ADR Certification and Rule 26(f)/ADR meet-and-confer. The meet-and-confer was scheduled for Sep. 29; the certification filing remains due Oct. 1.",
+      "date": "2026-10-01",
+      "kind": "deadline",
+      "status": "satisfied",
+      "overdue": false
+    },
+    {
+      "title": "Opposition to Dkt. 15 motion to dismiss — Newanforbi v. Smith / HOPE (3:26-cv-07504-LJC).",
+      "date": "2026-10-05",
+      "kind": "deadline",
+      "status": "satisfied",
+      "overdue": false
+    },
+    {
+      "title": "Reply deadline on Dkt. 15 motion to dismiss — Newanforbi v. Smith / HOPE (3:26-cv-07504-LJC).",
+      "date": "2026-10-13",
+      "kind": "deadline",
+      "status": "satisfied",
+      "overdue": false
+    },
+    {
+      "title": "Case Management Statement due — Newanforbi v. Shannon Smith, LCSW, CEO, et al. (3:26-cv-07504), USDC N.D. Cal.",
+      "date": "2026-10-15",
+      "kind": "deadline",
+      "status": "satisfied",
+      "overdue": false
+    },
+    {
+      "title": "Initial disclosures (Rule 26(a)(1)) — both sides to serve by Oct 15 2026 (AGREED in Joint CMS Dkt. 28; not yet court-ordered) — 3:26-cv-07504-LJC",
+      "date": "2026-10-15",
+      "kind": "deadline",
+      "status": "satisfied",
+      "overdue": false
+    },
+    {
+      "title": "Civil L.R. 7-3(d)(1) objection to new evidence in reply: due within 7 days after the reply is filed (filed Oct. 13 → Oct. 20). LIVE: Dkt. 30-1 Supplemental RFJN Exhibit A attaches a San Joaquin docket screenshot (STK-CV-UF-2026-0001032). Newanforbi v. Smith / HOPE (3:26-cv-07504-LJC).",
+      "date": "2026-10-20",
+      "kind": "deadline",
+      "status": "open",
+      "overdue": true
+    },
+    {
+      "title": "Initial Case Management Conference — Newanforbi v. Shannon Smith, LCSW, CEO, et al. (3:26-cv-07504), 1:30 PM, Hon. Lisa J. Cisneros, San Francisco…",
+      "date": "2026-10-22",
+      "kind": "hearing",
+      "status": "vacated",
+      "overdue": false
+    },
+    {
+      "title": "Initial CMC (continued) and hearing on Dkt. 15 motion to dismiss — Newanforbi v. Smith / HOPE (3:26-cv-07504-LJC), Oct. 27, 2026, 10:30 a.m., Courtroom G, Hon. Lisa J. Cisneros (ECF No. 29 combined the Oct. 22 CMC with this hearing).",
+      "date": "2026-10-27",
+      "kind": "hearing",
+      "status": "open",
+      "overdue": false
+    },
+    {
+      "title": "PROPOSED (Plaintiff, Joint CMS Dkt. 28): prior discovery re-production/authorization completed — 3:26-cv-07504-LJC",
+      "date": "2026-11-13",
+      "kind": "deadline",
+      "status": "open",
+      "overdue": false
+    }
+  ],
+  "documents": [
+    {
+      "sha256": "142db5af1515b51d505d4dd832a5435fac056f29fdb9327e70709555403d9e66",
+      "path": "/documents/matter-05/1032_Declaration.pdf",
+      "size": 1036744,
+      "matter_number": 28,
+      "url": "https://litigation-doc-api.ss8sxswwkt.workers.dev/doc/142db5af1515b51d505d4dd832a5435fac056f29fdb9327e70709555403d9e66"
+    },
+    {
+      "sha256": "b284929003754dca1cca22be0b44f20e1b03bdbae53cc91aacb723c3bcc83c93",
+      "path": "/documents/matter-05/1032_Evidentiary_Objection.pdf",
+      "size": 879507,
+      "matter_number": 28,
+      "url": "https://litigation-doc-api.ss8sxswwkt.workers.dev/doc/b284929003754dca1cca22be0b44f20e1b03bdbae53cc91aacb723c3bcc83c93"
+    },
+    {
+      "sha256": "42c79e85e0c4fe49fa1de06c5ca5945580630a9cf8c88d4834aec6ed03f582f2",
+      "path": "/documents/matter-05/1032_Opposition.pdf",
+      "size": 2956810,
+      "matter_number": 28,
+      "url": "https://litigation-doc-api.ss8sxswwkt.workers.dev/doc/42c79e85e0c4fe49fa1de06c5ca5945580630a9cf8c88d4834aec6ed03f582f2"
+    },
+    {
+      "sha256": "4219f41d7017fde661503e36dfb93329d663f5092705e74852c6105abf2ad046",
+      "path": "/documents/matter-05/1032_Plaintiffs_Request_for_Judicial_Notice.pdf",
+      "size": 13486526,
+      "matter_number": 28,
+      "url": "https://litigation-doc-api.ss8sxswwkt.workers.dev/doc/4219f41d7017fde661503e36dfb93329d663f5092705e74852c6105abf2ad046"
+    },
+    {
+      "sha256": "9d45361160a7a611919ac6332e7176afb9cc99e15d1da1dd085194d8f361cde5",
+      "path": "/documents/matter-05/FAC_STKCVUF20261032.pdf",
+      "size": 3441435,
+      "matter_number": 28,
+      "url": "https://litigation-doc-api.ss8sxswwkt.workers.dev/doc/9d45361160a7a611919ac6332e7176afb9cc99e15d1da1dd085194d8f361cde5"
+    },
+    {
+      "sha256": "dba4828e5ce5c795513dcb2bc91e1fd82e55fb062417f5a89daf4233fc4c1d2f",
+      "path": "/documents/matter-28/Amended Certificate of Service (re Dkt 9, dated Jul 31 2026).pdf",
+      "size": 16986,
+      "matter_number": 28,
+      "url": "https://litigation-doc-api.ss8sxswwkt.workers.dev/doc/dba4828e5ce5c795513dcb2bc91e1fd82e55fb062417f5a89daf4233fc4c1d2f"
+    },
+    {
+      "sha256": "169e74d548e450789d820d1f4801513b32543ce49f97d02b062039a4fc7eb47d",
+      "path": "/documents/matter-28/AO 440 Summons Issued - Shannon Smith and HOPE Psychotherapy (N.D. Cal. 3-26-cv-07504-LJC) (Aug 31 2026).pdf",
+      "size": 940850,
+      "matter_number": 28,
+      "url": "https://litigation-doc-api.ss8sxswwkt.workers.dev/doc/169e74d548e450789d820d1f4801513b32543ce49f97d02b062039a4fc7eb47d"
+    },
+    {
+      "sha256": "44b376bf1517f8347099750372fa8a968da50dbbe7d59822d781117dd122da06",
+      "path": "/documents/matter-28/Dkt 03 - Proposed Summons (Filed Jul 20 2026) (scan).pdf",
+      "size": 57224,
+      "matter_number": 28,
+      "url": "https://litigation-doc-api.ss8sxswwkt.workers.dev/doc/44b376bf1517f8347099750372fa8a968da50dbbe7d59822d781117dd122da06"
+    },
+    {
+      "sha256": "1ef8feea410fe7c5bda2d53e8e9ee2a8c12d07300a2875c3ba7dc807824d832a",
+      "path": "/documents/matter-28/Dkt 11 - Order Regarding Filing Fee IFP and Directing Service (Filed Aug 26 2026).pdf",
+      "size": 134726,
+      "matter_number": 28,
+      "url": "https://litigation-doc-api.ss8sxswwkt.workers.dev/doc/1ef8feea410fe7c5bda2d53e8e9ee2a8c12d07300a2875c3ba7dc807824d832a"
+    },
+    {
+      "sha256": "d775ed4ed918f1aadb3d66403014a40ba948fe332666ee81cf6ef6945822eeae",
+      "path": "/documents/matter-28/Dkt 13 - Proof of Service of Rule 4 Packet on SLB (Filed Sep 3 2026).pdf",
+      "size": 683716,
+      "matter_number": 28,
+      "url": "https://litigation-doc-api.ss8sxswwkt.workers.dev/doc/d775ed4ed918f1aadb3d66403014a40ba948fe332666ee81cf6ef6945822eeae"
+    },
+    {
+      "sha256": "b8af72cf0bc4224430262c833b8fa156b932ad2fe04697f0fe039245e0832dac",
+      "path": "/documents/matter-28/Dkt 15 - Defendants Smith and HOPE Motion to Dismiss (Filed Sep 21 2026).pdf",
+      "size": 506291,
+      "matter_number": 28,
+      "url": "https://litigation-doc-api.ss8sxswwkt.workers.dev/doc/b8af72cf0bc4224430262c833b8fa156b932ad2fe04697f0fe039245e0832dac"
+    },
+    {
+      "sha256": "39cfc036dd887ea33ce4105402d9b7d72c72f6d44c712061815f6a58a2b74709",
+      "path": "/documents/matter-28/Dkt 15-1 - Defendants Smith and HOPE Request for Judicial Notice ISO Motion to Dismiss (Filed Sep 21 2026).pdf",
+      "size": 1091580,
+      "matter_number": 28,
+      "url": "https://litigation-doc-api.ss8sxswwkt.workers.dev/doc/39cfc036dd887ea33ce4105402d9b7d72c72f6d44c712061815f6a58a2b74709"
+    },
+    {
+      "sha256": "26363f0e2feb3ff20cd52ef50c69fa61d3ced9fa17f8eb7fe8494ba7c4548c69",
+      "path": "/documents/matter-28/Dkt 15-2 - Proposed Order on Defendants Smith and HOPE Motion to Dismiss (Filed Sep 21 2026).pdf",
+      "size": 91618,
+      "matter_number": 28,
+      "url": "https://litigation-doc-api.ss8sxswwkt.workers.dev/doc/26363f0e2feb3ff20cd52ef50c69fa61d3ced9fa17f8eb7fe8494ba7c4548c69"
+    },
+    {
+      "sha256": "0329c8b773565272695a813ad5a5fc9ee80f8abbdfa3f1a1c95202099b1d0f1b",
+      "path": "/documents/matter-28/Dkt 28 - Joint Case Management Statement (Filed Oct 5 2026).pdf",
+      "size": 231601,
+      "matter_number": 28,
+      "url": "https://litigation-doc-api.ss8sxswwkt.workers.dev/doc/0329c8b773565272695a813ad5a5fc9ee80f8abbdfa3f1a1c95202099b1d0f1b"
+    },
+    {
+      "sha256": "abc170af2789df9dc5686394e6d50031046f46ca52c84b79ec6d84de3b49b6d1",
+      "path": "/documents/matter-28/Dkt 29 - Order Continuing Case Management Conference (Filed Oct 8 2026).pdf",
+      "size": 132113,
+      "matter_number": 28,
+      "url": "https://litigation-doc-api.ss8sxswwkt.workers.dev/doc/abc170af2789df9dc5686394e6d50031046f46ca52c84b79ec6d84de3b49b6d1"
+    },
+    {
+      "sha256": "0bf240f05eff21b580df3923f2c56e834cf1b2145741c8ad61a694af65e1f595",
+      "path": "/documents/matter-28/Dkt_30_-_Defendants_Smith_and_HOPE_Reply_ISO_Motion_to_Dismiss__N.D._Cal._3-26-cv-07504-LJC___Filed_Oct_13_2026__8fc9.pdf",
+      "size": 232419,
+      "matter_number": 28,
+      "url": "https://litigation-doc-api.ss8sxswwkt.workers.dev/doc/0bf240f05eff21b580df3923f2c56e834cf1b2145741c8ad61a694af65e1f595"
+    },
+    {
+      "sha256": "34300b16f443e3303226f87b0f3b6ea7dd7f34c4135553674086fbefd63b4081",
+      "path": "/documents/matter-28/Dkt_30-1_-_Defendants_Smith_and_HOPE_Supplemental_Request_for_Judicial_Notice_ISO_MTD__N.D._Cal._3-26-cv-07504-LJC___Filed_Oct_13_2026__3ed9.pdf",
+      "size": 208497,
+      "matter_number": 28,
+      "url": "https://litigation-doc-api.ss8sxswwkt.workers.dev/doc/34300b16f443e3303226f87b0f3b6ea7dd7f34c4135553674086fbefd63b4081"
+    },
+    {
+      "sha256": "6bbe56b2c933563ebb9055a3d9752f8a3641bea8a7a835113e671b4d60737ea8",
+      "path": "/documents/matter-28/Dkt_30-2_-_Certificate_of_Service_for_Reply_and_Supplemental_RFJN__N.D._Cal._3-26-cv-07504-LJC___Filed_Oct_13_2026__04a3.pdf",
+      "size": 122005,
+      "matter_number": 28,
+      "url": "https://litigation-doc-api.ss8sxswwkt.workers.dev/doc/6bbe56b2c933563ebb9055a3d9752f8a3641bea8a7a835113e671b4d60737ea8"
+    },
+    {
+      "sha256": "09c2aa15eceba61b2f796f73a5c77426884fde29181b5e68354ac514851343e3",
+      "path": "/documents/matter-28/Doc 8 - Notice of Pay.gov Filing Fee Payment (CAND Docket, filed Jul 24 2026).pdf",
+      "size": 511726,
+      "matter_number": 28,
+      "url": "https://litigation-doc-api.ss8sxswwkt.workers.dev/doc/09c2aa15eceba61b2f796f73a5c77426884fde29181b5e68354ac514851343e3"
+    },
+    {
+      "sha256": "95c056cd58ef2d6f9cafb4a0592f139444bebb0cc719ddbee5168ac40c45e0a8",
+      "path": "/documents/matter-28/Doc 9 - Notice of Payment of Filing Fee and Filing of State Court Decision (filed Jul 30 2026).pdf",
+      "size": 1062754,
+      "matter_number": 28,
+      "url": "https://litigation-doc-api.ss8sxswwkt.workers.dev/doc/95c056cd58ef2d6f9cafb4a0592f139444bebb0cc719ddbee5168ac40c45e0a8"
+    },
+    {
+      "sha256": "56656f29e76e4dc805e894da709c11bd67dabd56bfdfe180ee06cdf124052ff7",
+      "path": "/documents/matter-28/evidence/Discharge_Review_Report.meta.json",
+      "size": 449,
+      "matter_number": 28,
+      "url": "https://litigation-doc-api.ss8sxswwkt.workers.dev/doc/56656f29e76e4dc805e894da709c11bd67dabd56bfdfe180ee06cdf124052ff7"
+    },
+    {
+      "sha256": "147bf733e58fd89cbeeb2a78b882c6a9baa3fd2112af9a1853afbc9720e1c8da",
+      "path": "/documents/matter-28/Exhibit A Cover - ECF Help Desk (September 14, 2026).pdf",
+      "size": 2074,
+      "matter_number": 28,
+      "url": "https://litigation-doc-api.ss8sxswwkt.workers.dev/doc/147bf733e58fd89cbeeb2a78b882c6a9baa3fd2112af9a1853afbc9720e1c8da"
+    },
+    {
+      "sha256": "1f25ed355a1a9aaa4c7881f9bb5609105e10cf40ef29a8d0c186318c1a0c615d",
+      "path": "/documents/matter-28/Name Conform Administrative Motion Packet - Smith (N.D. Cal. 3-26-cv-07504-LJC) (September 14, 2026).pdf",
+      "size": 678874,
+      "matter_number": 28,
+      "url": "https://litigation-doc-api.ss8sxswwkt.workers.dev/doc/1f25ed355a1a9aaa4c7881f9bb5609105e10cf40ef29a8d0c186318c1a0c615d"
+    },
+    {
+      "sha256": "237da8fc2e806445318f2ba60808ebd4f4866924d7fcb2c21577cd4eec3847f3",
+      "path": "/documents/matter-28/Plaintiff's Opposition to Defendants' Motion to Dismiss (N.D. Cal. 3-26-cv-07504-LJC) (Served Sep 22 2026).pdf",
+      "size": 477667,
+      "matter_number": 28,
+      "url": "https://litigation-doc-api.ss8sxswwkt.workers.dev/doc/237da8fc2e806445318f2ba60808ebd4f4866924d7fcb2c21577cd4eec3847f3"
+    },
+    {
+      "sha256": "21b08682551549417bbac21b717fb8b8ee20a8500ad3863e8eb50df32cc5f93e",
+      "path": "/documents/matter-28/Plaintiff's Rule 26(a)(1) Initial Disclosures - Nforbi v Smith 3-26-cv-07504-LJC (Signed, Served Oct 14 2026).pdf",
+      "size": 429009,
+      "matter_number": 28,
+      "url": "https://litigation-doc-api.ss8sxswwkt.workers.dev/doc/21b08682551549417bbac21b717fb8b8ee20a8500ad3863e8eb50df32cc5f93e"
+    },
+    {
+      "sha256": "a65f5275c6368efaec9c88c2469258682aa501f1c5685296758f9c227d255254",
+      "path": "/documents/matter-28/research/2024092402EONSOTApproval.meta.json",
+      "size": 416,
+      "matter_number": 28,
+      "url": "https://litigation-doc-api.ss8sxswwkt.workers.dev/doc/a65f5275c6368efaec9c88c2469258682aa501f1c5685296758f9c227d255254"
+    },
+    {
+      "sha256": "c0052806fd822a0d633d971f70d68e6d0585a915b119c26a8bdadf1e94c778a7",
+      "path": "/documents/matter-28/research/AdoptedRegulationsSexOffenderTreatment002.meta.json",
+      "size": 494,
+      "matter_number": 28,
+      "url": "https://litigation-doc-api.ss8sxswwkt.workers.dev/doc/c0052806fd822a0d633d971f70d68e6d0585a915b119c26a8bdadf1e94c778a7"
+    },
+    {
+      "sha256": "79355d28b4741e9e26e2f3d5b89bf37ef4f3af1bbfece3567e83a91778cc7488",
+      "path": "/documents/opinions/Newanforbi v Smith - USDC NDCal - Order Directing Service Aug 26 2026.pdf",
+      "size": 134726,
+      "matter_number": 28,
+      "url": "https://litigation-doc-api.ss8sxswwkt.workers.dev/doc/79355d28b4741e9e26e2f3d5b89bf37ef4f3af1bbfece3567e83a91778cc7488"
+    }
+  ],
+  "document_count": 28
+}
+

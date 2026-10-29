@@ -1,0 +1,1289 @@
+     Case 3:26-cv-07504-LJC             Document 15    Filed 09/21/26     Page 1 of 30
+
+
+
+ 1   CYNTHIA G. LAWRENCE (SBN 148927)
+     BLAZE VAN DINE (SBN 251946)
+ 2   ERIC T. MARTINEZ (SBN 276972)
+     SIMS, LAWRENCE & BROGHAMMER
+ 3   1478 Stone Point Drive, Suite 450
+     Roseville, CA 95661
+ 4   Telephone: (916) 797-8881
+     Facsimile: (916) 253-1544
+ 5   Email: cynthia@sims-law.net
+            blaze@sims-law.net
+ 6          emartinez@sims-law.net
+            SLB@sims-law.net
+ 7
+
+ 8   Attorneys for Defendants
+     SHANNON SMITH AND HOPE PROGRAM, A LICENSED CLINICAL SOCIAL WORKER
+ 9   PROFESSIONAL CORPORATION (sued and served as HOPE PSYCHOTHERAPY, INC.)
+10                               UNITED STATES DISTRICT COURT
+
+11            NORTHERN DISTRICT OF CALIFORNIA – SAN FRANCISCO DIVISION
+
+12
+
+13   BRENDAN NGEHSI NEWANFORBI,                         Case No. 3:26-cv-07504-LJC
+14                         Plaintiff,                   DEFENDANTS SHANNON SMITH AND
+                                                        HOPE PROGRAM, A LICENSED
+15   v.                                                 CLINICAL SOCIAL WORKER
+                                                        PROFESSIONAL CORPORATION’S
+16   SHANNON SMITH, LCSW, Chief                         NOTICE OF MOTION AND MOTION
+     Executive Officer and Founder of HOPE              TO DISMISS; MEMORANDUM OF
+17   Program, an individual; and HOPE                   POINTS AND AUTHORITIES IN
+     PSYCHOTHERAPY, INC., d/b/a HOPE                    SUPPORT
+18   PROGRAM, a California corporation,
+                                                        Hearing Date: October 20, 2026
+19                         Defendants.                  Hearing Time: 10:30 a.m.
+                                                        Court Room: G, 15th Floor
+20                                                      Judge:        Hon. Lisa J. Cisneros
+21          TO THE COURT, ALL PARTIES AND THEIR COUNSEL OF RECORD:
+
+22          PLEASE TAKE NOTICE that on October 20, 2026, at 10:30 a.m., in Courtroom G, 15th
+
+23   Floor, of the above-entitled Court located at 450 Golden Gate Avenue, San Francisco, CA 94102,
+
+24   before the Honorable Lisa J. Cisneros, Defendants Shannon Smith (“Smith”) and HOPE Program,
+
+25   A Licensed Clinical Social Worker Professional Corporation (“Hope”) (collectively “Defendants”)
+
+26   will and hereby do move to dismiss Plaintiff’s complaint pursuant to Rule 12(b)(6) of the Federal
+
+27   Rules of Civil Procedure.
+
+28          Defendants seek dismissal of Plaintiff’s complaint for failure to state a claim upon which
+                                                                                                         -1-
+     DEFENDANTS SMITH AND HOPE PROGRAM’S NOTICE OF MOTION AND MOTION TO DISMISS; MEMORANDUM OF
+     POINTS AND AUTHORITIES IN SUPPORT – Case No. 3:26-cv-07504-LJC
+     Case 3:26-cv-07504-LJC           Document 15        Filed 09/21/26       Page 2 of 30
+
+
+
+ 1   relief can be granted. This motion is based on this Notice and Memorandum of Points and
+ 2   Authorities, all pleadings, filings, and oral argument in this action.
+ 3                               MEET-AND-CONFER CERTIFICATION
+ 4          On September 10, 2026, Defendants’ counsel met and conferred with Plaintiff as to the
+ 5   sufficiency of the Complaint’s allegations and Defendants’ intention to file the instant motion to
+ 6   dismiss. The parties were unable to reach a resolution as to the arguments raised in Defendants’
+ 7   motion. The parties agreed that we have exhausted meet and confer efforts and have been unable to
+ 8   reach an agreement to avoid formal motion practice.
+ 9
+
+10
+
+11
+
+12
+
+13
+
+14
+
+15
+
+16
+
+17
+
+18
+
+19
+20
+
+21
+
+22
+
+23
+
+24
+
+25
+
+26
+
+27
+
+28
+                                                                                                          -2-
+     DEFENDANTS SMITH AND HOPE PROGRAM’S NOTICE OF MOTION AND MOTION TO DISMISS; MEMORANDUM OF
+     POINTS AND AUTHORITIES IN SUPPORT – Case No. 3:26-cv-07504-LJC
+     Case 3:26-cv-07504-LJC                     Document 15                 Filed 09/21/26               Page 3 of 30
+
+
+
+ 1                                                     TABLE OF CONTENTS
+ 2
+
+ 3   I.     Background ........................................................................................................................ 9
+     II.    Legal Standards ................................................................................................................ 10
+ 4
+     III.   Argument .......................................................................................................................... 11
+ 5          A.     Claim Preclusion .................................................................................................. 11
+ 6          B.     The Complaint Fails to Plausible Allege a Viable Claim .................................... 14
+                   1.        42 U.S.C. § 1983 ...................................................................................... 14
+ 7
+                   2.        Bane Act Claim ........................................................................................ 24
+ 8                 3.        Fraud and Negligent Misrepresentation Claim ........................................ 27
+ 9                 4.        Civil RICO Claim..................................................................................... 29
+     IV.    Conclusion ........................................................................................................................ 30
+10
+
+11
+
+12
+
+13
+
+14
+
+15
+
+16
+
+17
+
+18
+
+19
+20
+
+21
+
+22
+
+23
+
+24
+
+25
+
+26
+
+27
+
+28
+                                                                                                                                                     -3-
+     DEFENDANTS SMITH AND HOPE PROGRAM’S NOTICE OF MOTION AND MOTION TO DISMISS; MEMORANDUM OF
+     POINTS AND AUTHORITIES IN SUPPORT – Case No. 3:26-cv-07504-LJC
+     Case 3:26-cv-07504-LJC                          Document 15                 Filed 09/21/26               Page 4 of 30
+
+
+
+ 1                                                       TABLE OF AUTHORITIES
+ 2                                                                      CASES
+     Am. Mfrs. Mut. Ins. Co. v. Sullivan, 526 U.S. 40, 50 (1999) ...................................................... 15
+ 3
+     Arroyo v. LL Folsom, L.P., 630 F. Supp. 3d 1346, 1349 (E.D. Cal. 2022) ................................. 11
+ 4   Ashcroft v. Iqbal, 556 U.S. 662, 678 (2009) ............................................................................... 11
+ 5   Associated Gen. Contractors of Cal., Inc. v. Cal. State Council of Carpenters, 459
+         U.S. 519, 526 (1983) ............................................................................................................. 11
+ 6   Austin B. v. Escondido Union School Dist., 149 Cal. App. 4th 860, 883 (2007) ........................ 25
+ 7   Az. Students’ Ass. v. Ariz. Bd. of Regents, 824 F.3d 858, 867 (9th Cir. 2016) ............................ 20
+     Balistreri v. Pacifica Police Dep’t, 901 F.2d 696, 699 (9th Cir. 1990) ...................................... 10
+ 8
+     Barragan, 32 Cal. 4th at 252-53.................................................................................................. 12
+ 9   Bell Atl. Corp. v. Twombly, 550 U.S. 544, 570 (2007) ............................................................... 11
+10   Blair v. Bethel School Dist., 608 F.3d 540, 544 (9th Cir. 2010) ................................................. 20
+     Blum v. Yaretsky, 457 U.S. 991, 1005 (1982) ............................................................................. 17
+11
+     Bly-Magee v. California, 236 F.3d 1014, 1018 (9th Cir. 2001) .................................................. 29
+12   Boeken v. Philip Morris USA, Inc., 48 Cal. 4th 788, 797 ........................................................... 12
+13   Boeken, 48 Cal. 4th at 797........................................................................................................... 14
+     Brentwood Academy v. Tennessee Secondary School Athletic Ass’n, 531 U.S. 288,
+14       295 (2001) ....................................................................................................................... 16. 19
+15   Brodheim v. Cry, 584 F.3d 1262, 1268 (9th Cir. 2009) .............................................................. 12
+     Campbell v. Feld Ent., Inc., 75 F. Supp. 3d 1193, 1211 (N.D. Cal. 2014) ........................... 25, 26
+16
+     Caviness v. Horizon Cmty. Learning Ctr., Inc., 590 F.3d 806, 816 (9th Cir. 2010) ................... 18
+17   Chang v. Chen, 80 F.3d 1293, 1300-01 (9th Cir. 1996).............................................................. 30
+18   Citizens for Open Access to Sand & Tide, Inc. v. Seadrift Ass’n, 60 Cal. App. 4th
+         1053, 1065 (1998) ................................................................................................................. 12
+19   City of Martinez v. Texaco Trading & Transp., Inc., 353 F.3d 758, 762 (9th Cir.
+         2003)...................................................................................................................................... 12
+20
+     Clark v. Yosemite Community College Dist., 785 F.2d 781, 786 (9th Cir. 1986) ....................... 13
+21   Collins v. Womancare, 878 F.2d 1145, 1154 (9th Cir. 1989) ..................................................... 17
+22   Colliton v. Bunt, 2016 WL 7443171, at *7 (S.D.N.Y. Dec. 27, 2016) ....................................... 17
+     Dawkins v. Biondi Educ. Ctr., 164 F. Supp. 3d 518, 526 (S.D.N.Y. 2016) ................................ 18
+23
+     Doe v. Tandeske, 361 F.3d 594, 596-97 (9th Cir. 2004) ............................................................. 21
+24   Drawsand v. F.F. Properties, L.L.P., 866 F. Supp. 2d 1110, 1227 (N.D. Cal. 2011) ................ 14
+25   DZ Reserve v. Meta Platforms, Inc., 96 F.4th 1223, 1233 (9th Cir. 2024) ................................. 28
+     Edwards v. Marin Park, Inc., 356 F.3d 1058, 1066 (9th Cir. 2004) ..................................... 29, 30
+26
+     Eichman v. Fotomat Corp., 147 Cal. App. 3d 1170. 1174 (1983) .............................................. 12
+27   Engalla v. Permanente Med. Grp., Inc., 15 Cal. 4th 951, 974 (1997) ........................................ 28
+28   Flagg Bros., Inc. v. Brooks, 436 U.S. 149, 156 (1978) ............................................................... 16
+                                                                                                                                                          -4-
+     DEFENDANTS SMITH AND HOPE PROGRAM’S NOTICE OF MOTION AND MOTION TO DISMISS; MEMORANDUM OF
+     POINTS AND AUTHORITIES IN SUPPORT – Case No. 3:26-cv-07504-LJC
+     Case 3:26-cv-07504-LJC                          Document 15                 Filed 09/21/26               Page 5 of 30
+
+
+
+ 1   Fletcher v. Idaho Dep’t of Corr., 2020 WL 7082690, at *6 n.5 (D. Idaho Dec. 3,
+         2020)...................................................................................................................................... 22
+ 2
+     Florer v. Congregation Pidyon Shevuyim, N.A., 639 F.3d 916, 922 (9th Cir. 2011).................. 16
+ 3   Franklin v. Fox, 312 F.3d 423, 445 (9th Cir.2002) ..................................................................... 17
+ 4   Greenholtz v. Inmates of Neb. Penal & Corr. Complex, 442 U.S. 1, 9-10 (1979)...................... 24
+     Hairston v. Parole Division of Bermuda Dunes, CA, 2022 WL 2230717, at *3 (C.D.
+ 5       Cal. Apr. 18, 2022) ................................................................................................................ 27
+ 6   Hartman v. Moore, 547 U.S. 250, 256 (2006) ............................................................................ 19
+     Harvey v. Harvey, 949 F.2d 1127, 1130 (11th Cir. 1992)........................................................... 16
+ 7
+     Herrera v. AllianceOne Receivable Mgmt., Inc., 170 F. Supp. 3d 1282, 1288 (S.D.
+ 8       Cal. 2016) .............................................................................................................................. 27
+     Hishon v. King & Spalding, 467 U.S. 69, 73 (1984) ................................................................... 11
+ 9
+     In re GlenFed, Inc. Sec. Litig., 42 F.3d 1541, 1548 (9th Cir. 1994) ........................................... 30
+10   In re Stac Elec. Sec. Litig., 89 F.3d 1399, 1405 (9th Cir. 1996) ................................................. 29
+11   Iqbal, 556 U.S. at 678.................................................................................................................. 11
+     Jackson v. Metro. Edison Co., 419 U.S. 345, 351 (1974) ........................................................... 16
+12
+     Kearns v. Ford Motor Co., 567 F.3d 1120, 1124 (9th Cir. 2009) ............................................... 30
+13   Kildare v. Saenz, 325 F.3d 1078, 1085 (9th Cir. 2003)............................................................... 21
+14   Kirtley v. Rainey, 326 F.3d 1088, 1092, 1094 (9th Cir. 2003) .............................................. 16, 18
+     Lee v. Katz, 276 F.3d 550, 555 (9th Cir. 2002) ........................................................................... 16
+15
+     Leer v. Murphy, 844 F.2d 628, 632-33 (9th Cir. 1988) ............................................................... 15
+16   Livadas v. Bradshaw, 512 U.S. 107, 132 (1994) ........................................................................ 15
+17   Love v. United States, 915 F.2d 1242, 1245 (9th Cir. 1989) ....................................................... 11
+     Mark v. Borough of Hatboro, 51 F.3d 1137, 1142...................................................................... 16
+18
+     Meeker v. Kercher, 782 F.2d 153, 155 (10th Cir. 1986) ............................................................. 17
+19   Miofsky v. Super. Ct. of Cal., 703 F.2d 332, 336 (9th Cir. 1983) ............................................... 12
+20   Monterey Plaza Hotel Ltd. P’ship v. Local 483 of the Hotel Employees & Rest.
+         Employees Union, AFL-CIO, 215 F.3d 923, 928 (9th Cir. 2000) ......................................... 13
+21   Muhammad v. City of Bakersfield, 671 Fed. App’x 982 (9th Cir. 2016) .................................... 27
+22   Muhammad v. Garrett, 66 F. Supp. 3d 1287, 1296 (E.D. Cal. 2014) ......................................... 27
+     N. Star Int’l v. Ariz. Corp. Comm’n, 720 F.2d 578, 581 (9th Cir. 1983) .................................... 10
+23
+     Neal v. Shimoda, 131 F.3d 818, 830 (9th Cir. 1997)................................................................... 22
+24   Nieves v. Bartlett, 587 U.S. 391, 398 (2019)............................................................................... 21
+25   Nunez v. City of Los Angeles, 147 F.3d 867, 875 (9th Cir. 1998) ............................................... 20
+     Palomar Mobilehome Park Ass’n v. City of San Marcos, 989 F.2d 362, 364 (9th Cir.
+26       1993)...................................................................................................................................... 14
+27   Parks Sch. of Bus., Inc. v. Symington, 51 F.3d 1480, 1486 (9th Cir. 1995) ................................ 17
+     Pasadena Republican Club v. W. Justice Ctr., 985 F.3d 1161, 1167 (9th Cir. 2021)........... 16, 19
+28
+     People v. Barragan, 32 Cal. 4th 236, 252 (2004) ....................................................................... 12
+                                                                                                                                                          -5-
+     DEFENDANTS SMITH AND HOPE PROGRAM’S NOTICE OF MOTION AND MOTION TO DISMISS; MEMORANDUM OF
+     POINTS AND AUTHORITIES IN SUPPORT – Case No. 3:26-cv-07504-LJC
+     Case 3:26-cv-07504-LJC                          Document 15                 Filed 09/21/26               Page 6 of 30
+
+
+
+ 1   Polk County v. Dodson, 454 U.S. 312, 325 (1981) ..................................................................... 17
+ 2   Rawson v. Recovery Innovations, Inc., 975 F.3d 742, 747-48 (9th Cir. 2020)), cert.
+         denied, 142 S. Ct. 347 (2021).......................................................................................... 16, 19
+ 3   Reinhardt v. Kopcow, 65 F. Supp. 3d 1164, 1173 (D. Colo. 2014) ............................................ 17
+ 4   Rendell-Baker v. Kohn, 457 U.S. 830, 841 (1982)...................................................................... 18
+     San Diego Police Officers’ Ass’n v. San Diego City Emps.’ Ret. Sys., 568 F.3d 725,
+ 5       734 (9th Cir. 2009) ................................................................................................................ 12
+ 6   San Francisco Arts & Athletics, Inc. v. U.S. Olympic Comm., 483 U.S. 522, 544
+         (1987) .................................................................................................................................... 18
+ 7   Sanford v. MemberWorks, Inc., 625 F.3d 550, 557, 558 (9th Cir. 2010) .............................. 29, 30
+ 8   Schreiber Distrib. Co. v. Serv-Well Furniture Co., 806 F.2d 1393, 1400-01 (9th Cir.
+         2004)...................................................................................................................................... 30
+ 9   Scott v. Kuhlmann, 746 F.2d 1377, 1378 (9th Cir. 1984) ........................................................... 14
+10   Slater v. Blackwood, 15 Cal. 3d 791, 795 (1975)........................................................................ 12
+     Stilwell v. City of Williams, 831 F.3d 1234, 1240 (9th Cir. 2016) .............................................. 15
+11
+     Styre v. Adams, 645 F.3d 1106, 1108 (9th Cir. 2011) ................................................................. 21
+12   Sullivan, 526 U.S. at 52 ............................................................................................................... 18
+13   Sutton v. Providence St. Joseph Med. Ctr., 192 F.3d 826, 835, 841 (9th Cir. 1999) ............ 15, 19
+     Swarthout v. Cooke, 562 U.S. 216, 220 (2011) ........................................................................... 22
+14
+     Twombly, 550 U.S. at 555 ........................................................................................................... 11
+15   United States ex rel. Chunie v. Ringrose, 788 F.2d 638, 643 n.2 (9th Cir. 1986)....................... 11
+16   Vasquez v. Reece Sch., No. 22-CV-5986 (GHW) (JW), 2023 WL 11992389, at *3
+         (S.D.N.Y. Feb. 6, 2023) ........................................................................................................ 18
+17   West v. Atkins, 487 U.S. 42, 48 (1988)........................................................................................ 15
+18   Wilkinson v. Austin, 545 U.S. 209, 221 (2005) ........................................................................... 22
+     Zetz v. Boston Scientific Corp., 398 F. Supp. 3d 700, 712-713 (E.D. Cal. 2019) ................. 28, 29
+19
+                                                               STATUTES
+20
+     15 Cal. Code Regs. § 3482(a)(2) ................................................................................................. 24
+21   15 Cal. Code Regs. § 3484(a)...................................................................................................... 24
+22   15 Cal. Code Regs. § 3485(l)(5)(A) ............................................................................................ 25
+     15 Cal. Code Regs. § 3720(2) ..................................................................................................... 24
+23
+     15 Cal. Code Regs. § 3721.1 ....................................................................................................... 24
+24   15 Cal. Code Regs. § 3723 .......................................................................................................... 24
+25   15 Cal. Code Regs. § 3574(e)...................................................................................................... 23
+     15 Cal. Code Regs. § 3574(f)(1) ........................................................................................... 23, 26
+26
+     18 U.S.C. § 1962(c) ..................................................................................................................... 30
+27   42 U.S.C. § 1983 ......................................................................................................................... 15
+28   Cal. Civ. Code § 52.1 .................................................................................................................. 25
+                                                                                                                                                          -6-
+     DEFENDANTS SMITH AND HOPE PROGRAM’S NOTICE OF MOTION AND MOTION TO DISMISS; MEMORANDUM OF
+     POINTS AND AUTHORITIES IN SUPPORT – Case No. 3:26-cv-07504-LJC
+     Case 3:26-cv-07504-LJC                        Document 15                Filed 09/21/26              Page 7 of 30
+
+
+
+ 1   Cal. Penal Code § 3000.07(a) ...................................................................................................... 27
+ 2   Cal. Penal Code § 3008(d) .......................................................................................................... 23
+     Cal. Penal Code § 3008(d)(2) .................................................................................................. 8, 25
+ 3
+     Fed. R. Civ. P. 12(b)(6) ............................................................................................................... 10
+ 4   Penal Code § 3008 ....................................................................................................................... 26
+ 5
+
+ 6
+
+ 7
+
+ 8
+
+ 9
+
+10
+
+11
+
+12
+
+13
+
+14
+
+15
+
+16
+
+17
+
+18
+
+19
+20
+
+21
+
+22
+
+23
+
+24
+
+25
+
+26
+
+27
+
+28
+                                                                                                                                                    -7-
+     DEFENDANTS SMITH AND HOPE PROGRAM’S NOTICE OF MOTION AND MOTION TO DISMISS; MEMORANDUM OF
+     POINTS AND AUTHORITIES IN SUPPORT – Case No. 3:26-cv-07504-LJC
+     Case 3:26-cv-07504-LJC            Document 15         Filed 09/21/26      Page 8 of 30
+
+
+
+ 1                         MEMORANDUM OF POINTS AND AUTHORITIES
+ 2            California requires parolees convicted of certain sex offenses to complete, as a condition of
+ 3   parole, a sex offender management program. (Compl.), ECF No. 1 ¶ 14; see Cal. Penal Code
+ 4   § 3008(d)(2). Plaintiff, who is one of these parolees, was referred to Hope for enrollment in sex
+ 5   offender group therapy in accordance with this requirement. Id. ¶¶ 11, 13. Disgruntled over his
+ 6   inability to complete the program, Plaintiff has filed multiple lawsuits against Hope and/or its
+ 7   employees in the past year, each challenging this condition of his parole. One of his lawsuits, filed
+ 8   in the San Joaquin County Superior Court, was recently resolved in Hope’s favor when the court
+ 9   sustained Hope’s demurrer to Plaintiff’s first amended compliant without leave to amend for failure
+10   to allege sufficient facts to state a cause of action. 1 Undeterred, Plaintiff filed the instant action less
+11   than one week after the adverse state court decision. Although Plaintiff now asserts violation of his
+12   federal rights—the San Joaquin Superior Court action advanced only state law claims—the complaint
+13   filed in this case contains essentially the same factual allegations as the one Plaintiff filed in state
+14   court.
+15            The San Joaquin Superior Court correctly held that plaintiff’s claims were subject to dismissal
+16   for failure to state a claim. Because the dismissal of the state court action is entitled to full faith and
+17   credit, Plaintiff’s claims in this action are barred under the doctrine of res judicata. Alternatively,
+18   Plaintiff’s complaint should be dismissed because it fails to include sufficient factual allegations to
+19   state a claim for relief. For these reasons, Defendants’ motion to dismiss should be granted.
+20   ///
+21   ///
+22   ///
+23   1
+       Prior to commencing the state court action on February 10, 2026, Plaintiff filed two factually similar
+     cases in the United States District Court for the Eastern District of California. On January 5, 2026,
+24   he filed a complaint against two parole officials and Hope’s Site Director Katie Palacios, alleging
+     claims under 42 U.S.C. § 1983. See Newanforbi v. Derrick, Case No. 2:26-cv-00004-DJC-JDP (E.D.
+25   Cal. 2026). A little more than two weeks later, he filed in the same district a separate lawsuit against
+     four parole officials, the Secretary of the California Department of Corrections and Rehabilitation,
+26   Katie Palacios, and Hope. See Newanforbi v. Hope Psychotherapy, Inc., Case No. 2:26-cv-00195-
+     TLN-AC (E.D. Cal. 2026). On May 26, 2026, Plaintiff voluntarily dismissed this second case
+27   pursuant to Rule 41(a)(1)(A)(i). See Newanforbi v. Hope Psychotherapy, Inc., Case No. 2:26-cv-
+     00195-TLN-AC (E.D. Cal. 2026). More recently, Plaintiff voluntarily dismissed his other case he
+28   filed in the Eastern District of California.
+                                                                                                             -8-
+     DEFENDANTS SMITH AND HOPE PROGRAM’S NOTICE OF MOTION AND MOTION TO DISMISS; MEMORANDUM OF
+     POINTS AND AUTHORITIES IN SUPPORT – Case No. 3:26-cv-07504-LJC
+     Case 3:26-cv-07504-LJC             Document 15     Filed 09/21/26     Page 9 of 30
+
+
+
+ 1                                        I. BACKGROUND
+ 2          Plaintiff commenced this action on July 20, 2026. ECF No. 1. According to the complaint,
+
+ 3   Plaintiff is a parolee under the supervision of the California Department of Corrections and
+
+ 4   Rehabilitation (“CDCR”). ECF No. 1 ¶ 11. Hope provides sex offender treatment to parolees
+
+ 5   pursuant to a contract with CDCR. Id. ¶¶ 1, 13. Defendant Smith is Hope’s founder and Chief
+
+ 6   Executive Officer. Id. ¶¶ 1, 12.
+
+ 7          Since March 2021, Plaintiff has been enrolled in Hope’s sex offender management program.
+
+ 8   Id. ¶ 26. Plaintiff alleges that he not been able to complete the program because Hope—the sole
+
+ 9   certified sex offender treatment provider in the Stockton region—maintains a blanket policy under
+
+10   which no parolee can ever be found to have completed treatment before discharge from parole,
+
+11   regardless of the individual’s progress.    Id. ¶¶ 20, 26. According to Plaintiff, this policy is
+
+12   documented in Hope’s Clinical Operational Manual, which allegedly bars “discharging a client from
+
+13   treatment for any reason” and prohibits Hope clinicians from providing a Treatment Completion
+
+14   Certificate “directly to clients.” Id. ¶ 3. Although the same manual allegedly describes a six-step
+
+15   graduation process, Plaintiff contends that the pathway to graduation is illusory given Hope’s
+
+16   prohibition on “discharging a client from treatment for any reason.” Id. ¶¶ 3, 21, 42.
+
+17          Plaintiff further alleges that Smith “personally approved, implemented, and enforced” this
+
+18   policy, which provided a financial benefit to Hope by increasing the number of parolees enrolled in
+
+19   its treatment program. Id. ¶¶ 1, 12, 45-47. He also alleges that Hope’s Site Director, Katie Palacios
+
+20   (“Palacios”), made false statements—e.g., mischaracterizing homework as only “partially
+
+21   completed”—in a CDCR Form 3043 that was provided to CDCR. Id. ¶ 35. These false statements
+
+22   were allegedly incorporated into a November 2025 Discharge Review Report that recommended
+
+23   Plaintiff remain in Hope’s treatment program. Id. ¶¶ 25, 31-33. Lastly, Plaintiff contends that after
+
+24   he complained about Hope’s unlawful practices, Palacios retaliated against him by calling him
+
+25   “disruptive,” a “ringleader,” and “abhorrent” in front of his parole agents at an August 19, 2025
+
+26   Containment Team Meeting (“CTM”). Id. ¶¶ 5, 39.
+
+27          Based on these allegations, the complaint alleges five claims styled as: (1) 42 U.S.C. § 1983-
+
+28   Individual Capacity; (2) 42 U.S.C. § 1983-Monell Liability; (3) California Civil Code Section 52.1
+                                                                                                      -9-
+     DEFENDANTS SMITH AND HOPE PROGRAM’S NOTICE OF MOTION AND MOTION TO DISMISS; MEMORANDUM OF
+     POINTS AND AUTHORITIES IN SUPPORT – Case No. 3:26-cv-07504-LJC
+     Case 3:26-cv-07504-LJC          Document 15        Filed 09/21/26      Page 10 of 30
+
+
+
+ 1   (Bane Act); (4) Fraud and Negligent Misrepresentation; and (5) 18 U.S.C. Section 1962(c)-(d)
+ 2   (RICO). Id. at 16-21.
+ 3                                    II. LEGAL STANDARDS
+ 4          Pursuant to Rule 12(b)(6) of the Federal Rules of Civil Procedure (“Rules”), a defendant may
+ 5   move to dismiss a complaint for “failure to state a claim upon which relief can be granted.” Fed. R.
+ 6   Civ. P. 12(b)(6). A Rule 12(b)(6) motion tests the legal sufficiency of the complaint. N. Star Int’l v.
+ 7   Ariz. Corp. Comm’n, 720 F.2d 578, 581 (9th Cir. 1983). “Dismissal can be based on the lack of a
+ 8   cognizable legal theory or the absence of sufficient facts alleged under a cognizable legal theory.”
+ 9   Balistreri v. Pacifica Police Dep’t, 901 F.2d 696, 699 (9th Cir. 1990). A complaint must allege
+10   “enough facts to state a claim to relief that is plausible on its face.” Bell Atl. Corp. v. Twombly, 550
+11   U.S. 544, 570 (2007). “A claim has facial plausibility when the plaintiff pleads factual content that
+12   allows the court to draw the reasonable inference that the defendant is liable for the misconduct
+13   alleged.” Ashcroft v. Iqbal, 556 U.S. 662, 678 (2009). “Where a complaint pleads facts that are
+14   merely consistent with a defendant’s liability, it stops short of the line between possibility and
+15   plausibility of entitlement to relief.” Id. (citations and quotation marks omitted).
+16          When presented with a motion to dismiss pursuant to Rule 12(b)(6), the court accepts as true
+17   the allegations in the complaint and construes them in the light most favorable to the plaintiff. Hishon
+18   v. King & Spalding, 467 U.S. 69, 73 (1984); Love v. United States, 915 F.2d 1242, 1245 (9th Cir.
+19   1989). The court, however, need not assume the truth of legal conclusions cast in the form of factual
+20   allegations. United States ex rel. Chunie v. Ringrose, 788 F.2d 638, 643 n.2 (9th Cir. 1986). Although
+21   Rule 8(a) does not require detailed factual allegations, “it demands more than an unadorned, the-
+22   defendant-unlawfully-harmed-me accusation.” Iqbal, 556 U.S. at 678.
+23          Thus, a complaint is insufficient if it offers mere “labels and conclusions” or “a formulaic
+24   recitation of the elements of a cause of action.” Twombly, 550 U.S. at 555; see also Iqbal, 556 U.S.
+25   at 676 (“Threadbare recitals of the elements of a cause of action, supported by mere conclusory
+26   statements, do not suffice.”). “Moreover, it is inappropriate to assume the plaintiff ‘can prove facts
+27   that it has not alleged or that the defendants have violated the . . . laws in ways that have not been
+28   alleged.” Arroyo v. LL Folsom, L.P., 630 F. Supp. 3d 1346, 1349 (E.D. Cal. 2022) (quoting
+                                                                                                        -10-
+     DEFENDANTS SMITH AND HOPE PROGRAM’S NOTICE OF MOTION AND MOTION TO DISMISS; MEMORANDUM OF
+     POINTS AND AUTHORITIES IN SUPPORT – Case No. 3:26-cv-07504-LJC
+     Case 3:26-cv-07504-LJC            Document 15       Filed 09/21/26       Page 11 of 30
+
+
+
+ 1   Associated Gen. Contractors of Cal., Inc. v. Cal. State Council of Carpenters, 459 U.S. 519, 526
+ 2   (1983)).
+ 3                                          III. ARGUMENT
+ 4           Plaintiff has already had an opportunity to challenge the condition of his parole requiring his
+ 5   continued enrollment in Hope’s sex offender management in the lawsuit he filed in San Joaquin
+ 6   County Superior Court. His present attempt to evade the San Joaquin County Superior Court’s ruling
+ 7   by filing suit in a different forum is foreclosed by the doctrine of res judicata. Alternatively, each of
+ 8   plaintiff’s claims should be dismissed because the complaint fails to provide sufficient factual
+ 9   allegations to state a claim for relief.
+10   A.      Claim Preclusion
+11           “[F]ederal courts are required to give state court judgments the preclusive effects they would
+12   be given by another court of that state.” Brodheim v. Cry, 584 F.3d 1262, 1268 (9th Cir. 2009). This
+13   requires federal courts to apply the relevant state preclusion rules to assess the preclusive effect of
+14   the state court’s decision. Miofsky v. Super. Ct. of Cal., 703 F.2d 332, 336 (9th Cir. 1983). In
+15   California, res judicata “has a double aspect,” encompassing both claim preclusion and collateral
+16   estoppel. People v. Barragan, 32 Cal. 4th 236, 252 (2004). Claim preclusion bars a second lawsuit
+17   between the same parties on the same cause of action, while collateral estoppel, also referred to as
+18   issue preclusion, bars relitigation of an issue that was actually litigated and determined in the first
+19   action. Id. at 252-53. The elements for both claim and issue preclusion “are the same: (1) A claim
+20   or issue raised in the present action is identical to a claim or issue litigated in a prior proceeding; (2)
+21   the prior proceeding resulted in a final judgment on the merits; and (3) the party against whom the
+22   doctrine is being asserted was a party or in privity with a party to the prior proceeding.” Boeken v.
+23   Philip Morris USA, Inc., 48 Cal. 4th 788, 797 (2010) (quoting Barragan, 32 Cal. 4th at 252-53).
+24           Here, each of these elements is satisfied. With respect to the first element—that the present
+25   case is identical to a claim or issue litigated in a prior proceeding—“California courts have
+26   ‘consistently applied the ‘primary rights’ theory.’” Id. (quoting Slater v. Blackwood, 15 Cal. 3d 791,
+27   795 (1975)). Under California’s “primary rights” theory, “a cause of action is (1) a primary right
+28   possessed by the plaintiff, (2) a corresponding primary duty devolving upon the defendant, and (3) a
+                                                                                                           -11-
+     DEFENDANTS SMITH AND HOPE PROGRAM’S NOTICE OF MOTION AND MOTION TO DISMISS; MEMORANDUM OF
+     POINTS AND AUTHORITIES IN SUPPORT – Case No. 3:26-cv-07504-LJC
+     Case 3:26-cv-07504-LJC           Document 15         Filed 09/21/26     Page 12 of 30
+
+
+
+ 1   harm done by the defendant which consists in a breach of such primary right and duty.” City of
+ 2   Martinez v. Texaco Trading & Transp., Inc., 353 F.3d 758, 762 (9th Cir. 2003) (citing Citizens for
+ 3   Open Access to Sand & Tide, Inc. v. Seadrift Ass’n, 60 Cal. App. 4th 1053, 1065 (1998)). “[I]f two
+ 4   actions involve the same injury to the plaintiff and the same wrong by the defendant, then the same
+ 5   primary right is at stake even if in the second suit the plaintiff pleads different theories of recovery,
+ 6   seeks different forms of relief and/or adds new facts supporting recovery.” San Diego Police
+ 7   Officers’ Ass’n v. San Diego City Emps.’ Ret. Sys., 568 F.3d 725, 734 (9th Cir. 2009) (quoting
+ 8   Eichman v. Fotomat Corp., 147 Cal. App. 3d 1170. 1174 (1983)).
+ 9           In the San Joaquin County Superior Court action, Plaintiff alleged causes for action for: (1)
+10   fraud/intentional misrepresentation; (2) negligence; (3) intentional infliction of emotional distress;
+11   (4) intentional interference with prospective economic advantage; (5) violation of the Bane Act; (6)
+12   declaratory relief due; and (7) violation of Business & Professions Code § 17200. Each of these
+13   claims was based on Hope and its employee’s wrongful actions to enforce Hope’s “blanket retention
+14   policy that makes completion [of its sex offender management program] impossible for any
+15   participant prior to parole discharge.” Req. J. Not., Ex A at 2, 4-6, 8, 12, 15-17, 20-22. Plaintiff
+16   alleged that as a result of this blanket policy, he was required to remain in Hope’s sex offender
+17   treatment program, which interfered with his ability work as a long-haul commercial truck driver. Id.
+18   at 12-15, 19.
+19           The instant action involves the same injury to Plaintiff and challenges the same conduct by
+20   HOPE and its employees. Specifically, Plaintiff alleges that Hope and Smith “enforced a blanket
+21   retention policy under which no parolee could ever be determined to have completed sex offender
+22   treatment prior to discharge from parole, regardless of individual clinical progress, compliance, risk
+23   reduction, or homework completion. ECF No. 1 ¶ 1. The federal complaint also alleges that as a
+24   result of this blanket policy, “Plaintiff Brendan Ngehsi Newanforbi has been trapped in mandatory
+25   treatment since March 2021 . . . .” Id. ¶ 5. Thus, the same primary right is at stake in both cases.
+26   Accordingly, under California’s primary rights theory, Plaintiff’s causes of action in this case are
+27   identical to those alleged in his prior state court case.
+28   ///
+                                                                                                         -12-
+     DEFENDANTS SMITH AND HOPE PROGRAM’S NOTICE OF MOTION AND MOTION TO DISMISS; MEMORANDUM OF
+     POINTS AND AUTHORITIES IN SUPPORT – Case No. 3:26-cv-07504-LJC
+     Case 3:26-cv-07504-LJC           Document 15         Filed 09/21/26       Page 13 of 30
+
+
+
+ 1           Although Plaintiff’s state court action did not assert claims for violation of section 1983 and
+ 2   the Racketeer Influenced and Corrupt Organization Act (“RICO”), he is precluded from litigating
+ 3   these claims because he could have litigated them in his state court case. Clark v. Yosemite
+ 4   Community College Dist., 785 F.2d 781, 786 (9th Cir. 1986) (“Although Clark did not raise a section
+ 5   1983 claim in the state proceeding, the doctrine of res judicata applies not only to those claims
+ 6   actually litigated in the first action but also to those which might have been litigated as part of that
+ 7   cause of action.”); Monterey Plaza Hotel Ltd. P’ship v. Local 483 of the Hotel Employees & Rest.
+ 8   Employees Union, AFL-CIO, 215 F.3d 923, 928 (9th Cir. 2000) (“The harm alleged is fundamentally
+ 9   the same injury to business reputation and customer goodwill. This court will not allow these claims
+10   to be relitigated in the RICO context when they were capable of being litigated and decided in the
+11   state court.”).
+12           The second element for preclusion—a final judgment on the merits—is also satisfied. On
+13   July 15, 2026, just five days before Plaintiff commenced this action, the San Joaquin County Superior
+14   Court issued an order sustaining Hope’s demurrer to the first amended complaint with prejudice for
+15   Plaintiff’s failure to allege facts sufficient to state any cause of action. Req. J. Not., Ex. C. See
+16   Palomar Mobilehome Park Ass’n v. City of San Marcos, 989 F.2d 362, 364 (9th Cir. 1993) (“In
+17   California, a judgment entered after the sustaining of a general demurrer is a judgment on the merits,
+18   and, to the extent that it adjudicates that the facts alleged do not establish a cause of action, it will bar
+19   a second action on the same facts.”).
+20           The final element requires that “the party against whom the doctrine [of res judicata] is being
+21   asserted was a party or in privity with a party to the prior proceeding.” Boeken, 48 Cal. 4th at 797.
+22   Plaintiff Newanforbi was the sole plaintiff in the state court action, which is true of the instant case. 2
+23   Thus, this final requirement is also satisfied.
+24
+     2
+       Defendants also note that there is privity between all defendants in the state and federal actions.
+25   Shannon Smith, the individual defendant named in this case, and Katie Palacios, the individual
+     defendant named in the state action, are both Hope employees. See Scott v. Kuhlmann, 746 F.2d
+26   1377, 1378 (9th Cir. 1984) (per curiam) (finding privity for purposes of res judicata in a case where
+     “[d]ifferent individuals [we]re named defendants in the two suits, but all [were] employees of the
+27   FCC who participated in the” challenged conduct that led to the alleged injury); Drawsand v. F.F.
+     Properties, L.L.P., 866 F. Supp. 2d 1110, 1227 (N.D. Cal. 2011) (“An employer-employee
+28   relationship generally satisfies the privity requirement for matters within the scope of employment.”).
+                                                                                                             -13-
+     DEFENDANTS SMITH AND HOPE PROGRAM’S NOTICE OF MOTION AND MOTION TO DISMISS; MEMORANDUM OF
+     POINTS AND AUTHORITIES IN SUPPORT – Case No. 3:26-cv-07504-LJC
+     Case 3:26-cv-07504-LJC          Document 15        Filed 09/21/26       Page 14 of 30
+
+
+
+ 1          Simply put, Plaintiff alleges the Defendants engaged in the same wrongful conduct that
+ 2   resulted in the same injury that formed the basis of his state court action. Although the state court
+ 3   complaint did not allege claims for violation of section 1983 and RICO or include Shannon Smith as
+ 4   a defendant, both cases involve the same parties and causes of action claims under California’s
+ 5   primary rights theory. Lastly, the state court action was decided on the merits in Hope’s favor.
+ 6   Accordingly, the doctrine of res judicata bars Plaintiff from litigating each of his claims.
+ 7   B.     The Complaint Fails to Plausible Allege a Viable Claim
+ 8          Plaintiff’s complaint is also subject to dismissal because it fails to include sufficient factual
+ 9   allegations to state a claim upon which relief may be granted.
+10          1.      42 U.S.C. § 1983
+11          Plaintiff’s first and second claims allege violations of his First and Fourteenth Amendment
+12   rights under 42 U.S.C. § 1983. Both claims are deficient in multiple respects. First, the complaint’s
+13   allegations fail to demonstrate that Defendants are state actors. Second, Plaintiff’s allegations do not
+14   establish a violation of his First and Fourteenth Amendment rights.
+15                  a.      State Actor
+16          A plaintiff does not have a cause of action directly under the United States Constitution.
+17   Livadas v. Bradshaw, 512 U.S. 107, 132 (1994) (affirming 42 U.S.C. § 1983 provides federal cause
+18   of action for the deprivation of rights secured by the United States Constitution). Instead, 42 U.S.C.
+19   § 1983 provides the “mechanism for vindicating federal or constitutional rights.” Stilwell v. City of
+20   Williams, 831 F.3d 1234, 1240 (9th Cir. 2016). To succeed on a section 1983 claim, a plaintiff must
+21   establish “the violation of a right secured by the Constitution and laws of the United States, and . . .
+22   that the . . . deprivation was committed by a person acting under color of state law.” West v. Atkins,
+23   487 U.S. 42, 48 (1988); see Leer v. Murphy, 844 F.2d 628, 632-33 (9th Cir. 1988) (“Section 1983
+24   imposes two essential proof requirements upon a claimant: (1) that a person acting under color of
+25   state law committed the conduct at issue, and (2) that the conduct deprived the claimant of some right,
+26   privilege, or immunity protected by the Constitution or laws of the United States.”).
+27   ///
+28   ///
+                                                                                                          -14-
+     DEFENDANTS SMITH AND HOPE PROGRAM’S NOTICE OF MOTION AND MOTION TO DISMISS; MEMORANDUM OF
+     POINTS AND AUTHORITIES IN SUPPORT – Case No. 3:26-cv-07504-LJC
+     Case 3:26-cv-07504-LJC          Document 15        Filed 09/21/26       Page 15 of 30
+
+
+
+ 1          “When addressing whether a private party acted under color of law, [courts] start with the
+ 2   presumption that private conduct does not constitute governmental action.” Sutton v. Providence St.
+ 3   Joseph Med. Ctr., 192 F.3d 826, 835 (9th Cir. 1999); see also Am. Mfrs. Mut. Ins. Co. v. Sullivan,
+ 4   526 U.S. 40, 50 (1999) (“[T]he under-color-of-state-law element of § 1983 excludes from its reach
+ 5   merely private conduct, no matter how discriminatory or wrongful.”) (quotations omitted). That
+ 6   presumption can be rebutted “if, though only if, there is such a ‘close nexus between the State and
+ 7   the [private entity’s] challenged action’ that seemingly private behavior ‘may be fairly treated as that
+ 8   of the State itself.’” Brentwood Acad. v. Tennessee Secondary Sch. Athletic Ass’n, 531 U.S. 288, 295
+ 9   (2001) (quoting Jackson v. Metro. Edison Co., 419 U.S. 345, 351 (1974)).
+10          Evaluating whether private conduct may be fairly attributable to the State is a fact-intensive
+11   inquiry. Lee v. Katz, 276 F.3d 550, 554 (9th Cir. 2002). “The Supreme Court has developed four
+12   different tests that aid [courts] in identifying state action: (1) public function; (2) joint action; (3)
+13   governmental compulsion or coercion; and (4) governmental nexus.” Pasadena Republican Club v.
+14   Western Just. Ctr., 985 F.3d 1161, 1167 (9th Cir. 2021) (quotations omitted). “‘Satisfaction of any
+15   one test is sufficient to find state action, so long as no countervailing factor exists.’” Rawson v.
+16   Recovery Innovations, Inc., 975 F.3d 742, 747 (9th Cir. 2020) (quoting Kirtley v. Rainey, 326 F.3d
+17   1088, 1092 (9th Cir. 2003)). Importantly, Plaintiff bears the burden of establishing that Defendants
+18   are state actors. See Florer v. Congregation Pidyon Shevuyim, N.A., 639 F.3d 916, 922 (9th Cir.
+19   2011) (citing Flagg Bros., Inc. v. Brooks, 436 U.S. 149, 156 (1978)). “Only in rare circumstances
+20   can a private party be viewed as a ‘state actor’ for § 1983 purposes.” Harvey v. Harvey, 949 F.2d
+21   1127, 1130 (11th Cir. 1992).
+22                          (1)     Public Functions Test
+23          Plaintiff appears to contend that Hope and Smith are state actors under the public functions
+24   test. See ECF No. 1 ¶ 18-19. “Under the public function test, when private individuals or groups are
+25   endowed by the State with powers or functions governmental in nature, they become agencies or
+26   instrumentalities of the State and subject to its constitutional limitations.” Lee, 276 F.3d at 555
+27   (quotations omitted). “The public function test is satisfied only on a showing that the function at
+28   issue is both traditionally and exclusively governmental.” Rawson, 975 F.3d at 747 (quotations
+                                                                                                         -15-
+     DEFENDANTS SMITH AND HOPE PROGRAM’S NOTICE OF MOTION AND MOTION TO DISMISS; MEMORANDUM OF
+     POINTS AND AUTHORITIES IN SUPPORT – Case No. 3:26-cv-07504-LJC
+     Case 3:26-cv-07504-LJC           Document 15         Filed 09/21/26       Page 16 of 30
+
+
+
+ 1   omitted). This rigorous test is rarely satisfied, Mark v. Borough of Hatboro, 51 F.3d 1137, 1142 (3rd.
+ 2   Cir. 1995), for “[w]hile many functions have been traditionally performed by governments, very few
+ 3   have been ‘exclusively reserved to the State,’” Flagg Brothers, 436 U.S. at 158.
+ 4           Plaintiff alleges that “Hope contracts with CDCR to provide mandatory sex offender
+ 5   treatment, a function CDCR is statutorily required to administer under Penal Code Section 3008.”
+ 6   ECF No. 1 ¶ 18. After observing that a private citizen is considered a state actor when providing
+ 7   services that are traditionally and exclusively public functions, Plaintiff alleges that “HOPE’s role as
+ 8   sole certified provider, its submission of clinical reports to CDCR that directly affect parole decisions,
+ 9   and its performance of mandatory state-ordered treatment makes HOPE a state actor.” Id. ¶ 19. At
+10   most, Plaintiff’s allegations reflect that he is required, as a condition of his parole, to participate in a
+11   sex offender management program. Importantly, his allegations do not demonstrate that providing
+12   sex offender management therapy has been “traditionally the exclusive prerogative of the State.”
+13   Blum v. Yaretsky, 457 U.S. 991, 1005 (1982). Indeed, there is nothing prohibiting sex offenders like
+14   Plaintiff from obtaining private treatment on their own accord. See Reinhardt v. Kopcow, 65 F. Supp.
+15   3d 1164, 1173 (D. Colo. 2014) (finding that sex offender treatment was not traditionally and
+16   exclusively a state function); Colliton v. Bunt, 2016 WL 7443171, at *7 (S.D.N.Y. Dec. 27, 2016)
+17   (“Plaintiff has failed to allege that Bunt, in providing sex offender treatment to Plaintiff, was
+18   ‘exercis[ing] powers that are traditionally the exclusive prerogative of the state,’ and thus has not
+19   plausibly alleged that the public function test is met.”).
+20                           (2)     Joint Action Test
+21           Under the joint action test, the court considers whether “the state has so far insinuated itself
+22   into a position of interdependence with the private entity that it must be recognized as a joint
+23   participant in the challenged activity. This occurs when the State knowingly accepts the benefits
+24   derived from unconstitutional behavior.” Parks Sch. of Bus., Inc. v. Symington, 51 F.3d 1480, 1486
+25   (9th Cir. 1995) (internal citations, brackets, and quotation marks omitted).            “A plaintiff may
+26   demonstrate joint action by proving the existence of a conspiracy or by showing that the private party
+27   was ‘a willful participant in joint action with the State or its agents.’” Franklin v. Fox, 312 F.3d 423,
+28   445 (9th Cir. 2002) (quoting Collins v. Womancare, 878 F.2d 1145, 1154 (9th Cir. 1989), cert.
+                                                                                                            -16-
+     DEFENDANTS SMITH AND HOPE PROGRAM’S NOTICE OF MOTION AND MOTION TO DISMISS; MEMORANDUM OF
+     POINTS AND AUTHORITIES IN SUPPORT – Case No. 3:26-cv-07504-LJC
+     Case 3:26-cv-07504-LJC          Document 15        Filed 09/21/26      Page 17 of 30
+
+
+
+ 1   denied). The Ninth Circuit has “been careful to require a substantial degree of cooperation before
+ 2   imposing civil liability for actions by private individuals that impinge on civil rights.” Id.; see Polk
+ 3   County v. Dodson, 454 U.S. 312, 325 (1981) (finding public defender not acting under color of state
+ 4   law when performing advocacy function).
+ 5          Plaintiff’s allegations do not establish that Defendants acted jointly with CDCR in such a way
+ 6   to generate a benefit to the State. Nor do the allegations reflect that Defendants and CDCR shared a
+ 7   common goal of violating Plaintiff’s constitutional rights. See Franklin v. Fox, 312 F.3d 423, 455
+ 8   (9th Cir. 2002) (observing that joint action is established by showing a private defendant shared “with
+ 9   the public entity the goal of violating a plaintiff’s constitutional rights”). Instead, Plaintiff merely
+10   alleges that Defendants had a contract with CDCR to provide sex offender management therapy. That
+11   contract alone is not sufficient to establish joint action. See Rendell-Baker v. Kohn, 457 U.S. 830,
+12   841 (1982) (“[A]cts of . . . private contractors do not become acts of the government by reason of
+13   their significant or even total engagement in performing public contracts.”).
+14                          (3)     Governmental Compulsion Test
+15          The third test—the governmental compulsion or coercion test—considers whether the
+16   coercive influence or “significant encouragement” of the state “effectively converts a private action
+17   into a government action.” Kirtley, 326 F.3d at 1094 (“We have treated a nominally private entity as
+18   a state actor when it is controlled by an ‘agency of the State’”). “Even extensive regulation by the
+19   government does not transform the actions of the regulated entity into those of the government.” San
+20   Francisco Arts & Athletics, Inc. v. U.S. Olympic Comm., 483 U.S. 522, 544 (1987). Instead, a
+21   plaintiff must show “that state regulation ‘evidence[s] governmental coercion or encouragement’
+22   over the particular activity that allegedly caused the constitutional injury.” Vasquez v. Reece Sch.,
+23   No. 22-CV-5986 (GHW) (JW), 2023 WL 11992389, at *3 (S.D.N.Y. Feb. 6, 2023) (quoting Dawkins
+24   v. Biondi Educ. Ctr., 164 F. Supp. 3d 518, 526 (S.D.N.Y. 2016)).
+25          Plaintiff’s allegations do not evidence that state regulation coerced or encouraged Defendants
+26   actions. Instead, the complaint’s allegations merely show that Plaintiff’s participation in the HOPE
+27   Program was mandated by statute and implemented pursuant to CDCR’s regulations. Moreover, there
+28   is no allegation suggesting that the blanket-policy that Defendants allegedly maintained was required
+                                                                                                        -17-
+     DEFENDANTS SMITH AND HOPE PROGRAM’S NOTICE OF MOTION AND MOTION TO DISMISS; MEMORANDUM OF
+     POINTS AND AUTHORITIES IN SUPPORT – Case No. 3:26-cv-07504-LJC
+     Case 3:26-cv-07504-LJC          Document 15       Filed 09/21/26      Page 18 of 30
+
+
+
+ 1   by the State. See Caviness v. Horizon Cmty. Learning Ctr., Inc., 590 F.3d 806, 816 (9th Cir. 2010)
+ 2   (“Even extensive government regulation of a private business is insufficient to make that business a
+ 3   state actor if the challenged conduct was ‘not compelled or even influenced by any state
+ 4   regulation.’”); Sullivan, 526 U.S. at 52 (State action requires “a sufficiently close nexus between the
+ 5   State and the challenged action of the regulated entity so that the action of the latter may be fairly
+ 6   treated as that of the State itself. Whether such a ‘close nexus’ exists, our cases state, depends on
+ 7   whether the State has exercised coercive power or has provided such significant encouragement,
+ 8   either overt or covert, that the choice must in law be deemed to be that of the State.”) (citation and
+ 9   some quotations omitted).
+10                          (4)    Governmental Nexus Test
+11          The governmental nexus test asks whether “there is such a close nexus between the State and
+12   the challenged action that the seemingly private behavior may be fairly treated as that of the State
+13   itself.” Brentwood Academy v. Tennessee Secondary School Athletic Ass’n, 531 U.S. 288, 295 (2001)
+14   (internal quotation marks omitted). “Typically, the nexus has consisted of participation by the state
+15   in an action ostensibly taken by the private entity, through conspiratorial agreement . . . , official
+16   cooperation with the private entity to achieve the private entity’s goal . . . , or enforcement and
+17   ratification of the private entity’s chosen action[.]” Sutton v. Providence St. Joseph Med. Ctr., 192
+18   F.3d 826, 841 (9th Cir. 1999). “[A]t bottom, the inquiry is always whether the defendant has
+19   exercised power possessed by virtue of state law and made possible only because the wrongdoer is
+20   clothed with the authority of state law.” Pasadena Republican Club v. W. Justice Ctr., 985 F.3d 1161,
+21   1167 (9th Cir. 2021) (quoting Rawson v. Recovery Innovations, Inc., 975 F.3d 742, 747-48 (9th Cir.
+22   2020)), cert. denied, 142 S. Ct. 347 (2021).
+23          At most, Plaintiff has alleged that CDCR has contracted with Hope to provide sex offender
+24   management therapy. Again, providing services pursuant to that contract is insufficient to establish
+25   that Hope and its employees, include Defendant Smith, were state actors for purposes of section 1983.
+26   See Rendell-Baker, 457 U.S. at 841.
+27   ///
+28   ///
+                                                                                                       -18-
+     DEFENDANTS SMITH AND HOPE PROGRAM’S NOTICE OF MOTION AND MOTION TO DISMISS; MEMORANDUM OF
+     POINTS AND AUTHORITIES IN SUPPORT – Case No. 3:26-cv-07504-LJC
+     Case 3:26-cv-07504-LJC          Document 15         Filed 09/21/26      Page 19 of 30
+
+
+
+ 1                  b.      Plaintiff Fails to Allege Violations of the First and Fourteenth
+                            Amendments
+ 2
+             Plaintiff’s allegations are also insufficient to state First Amendment retaliation and Fourteenth
+ 3
+     Amendment procedural due process claims.
+ 4
+                            (1)     First Amendment Retaliation Claim
+ 5
+             “The law is settled that as a general matter the First Amendment prohibits government
+ 6
+     officials from subjecting an individual to retaliatory actions . . . for speaking out.” Hartman v. Moore,
+ 7
+     547 U.S. 250, 256 (2006). To state a First Amendment retaliation claim, “the plaintiff must allege
+ 8
+     that (1) it engaged in constitutionally protected activity; (2) the defendant’s actions would ‘chill a
+ 9
+     person of ordinary firmness’ from continuing to engage in the protected activity; and (3) the protected
+10
+     activity was a substantial motivating factor in the defendant’s conduct—i.e., that there was a nexus
+11
+     between the defendant’s actions and an intent to chill speech.” Az. Students’ Ass. v. Ariz. Bd. of
+12
+     Regents, 824 F.3d 858, 867 (9th Cir. 2016). Although Plaintiff is not required to establish that
+13
+     Defendants’ actions actually suppressed his speech, he still must allege facts showing that Defendants
+14
+     “‘intended to interfere’ with [his] First Amendment rights and that [he] suffered some injury as a
+15
+     result.” Id.
+16
+             Plaintiff alleges that prior to August 2025, he “exercised his First Amendment rights by
+17
+     making complaints to HOPE regarding HOPE’s retention policy, loss of homework records, clinician
+18
+     turnover, phase progression, and treatment completion.” ECF No. 1 ¶ 38. He claims that in retaliation
+19
+     for his complaints, Palacios made “statements in the presence of Plaintiffs parole agents, including
+20
+     that Plaintiff was ‘disruptive,’ a ‘ringleader,’ ‘abhorrent,’ ‘often disrespectful,’ and that his demeanor
+21
+     was ‘an acting job’” Id. ¶ 39. Plaintiff further alleges that these statements were made during “a
+22
+     CTM that directly determined Plaintiff’s parole conditions.” Id. ¶ 40.
+23
+             Even assuming Plaintiff’s complaints about Hope constitute protected activity, his allegations
+24
+     still fall woefully short of stating a First Amendment claim. Essentially, Plaintiff alleges that in
+25
+     response to complaints, a Hope employee verbally criticized him. While Plaintiff may believe the
+26
+     alleged statements were harsh and unfounded, the responsive speech does not amount to an
+27
+     infringement of his First Amendment rights. See Nunez v. City of Los Angeles, 147 F.3d 867, 875
+28
+                                                                                                          -19-
+     DEFENDANTS SMITH AND HOPE PROGRAM’S NOTICE OF MOTION AND MOTION TO DISMISS; MEMORANDUM OF
+     POINTS AND AUTHORITIES IN SUPPORT – Case No. 3:26-cv-07504-LJC
+     Case 3:26-cv-07504-LJC           Document 15        Filed 09/21/26      Page 20 of 30
+
+
+
+ 1   (9th Cir. 1998) (“It would be the height of irony, indeed, if mere speech, in response to speech, could
+ 2   constitute a First Amendment violation.”); Blair v. Bethel School Dist., 608 F.3d 540, 544 (9th Cir.
+ 3   2010) (“[D]eminimis deprivations of benefits and privileges on account of one’s speech do not give
+ 4   rise to a First Amendment claim. Rather, for adverse, retaliatory actions to offend the First
+ 5   Amendment, they must be of a nature that would stifle someone from speaking out. The most familiar
+ 6   adverse actions are ‘exercise[s] of governmental power’ that are ‘regulatory, proscriptive, or
+ 7   compulsory in nature’ and have the effect of punishing someone for his or her speech.”).
+ 8           Furthermore, the mere fact that Palacios’s critical statements were allegedly uttered in the
+ 9   presence of parole agents at a Containment Team Meeting “that directly determined Plaintiff’s parole
+10   conditions” is not sufficient to transform Palacios’s speech into a First Amendment violation. See
+11   ECF No. 1 ¶ 40. Significantly, there is no allegation suggesting that Palacios’s statements were made
+12   in an effort to stop Plaintiff from continuing his criticism of Hope or otherwise chill his speech. There
+13   is also nothing in the complaint suggesting that Plaintiff was injured as a result of Palacios’s
+14   statements. Nieves v. Bartlett, 587 U.S. 391, 398 (2019) (observing that a First Amendment
+15   retaliation claim requires a plaintiff to “establish a ‘causal connection’ between defendant’s
+16   ‘retaliatory animus’ and the plaintiff’s ‘subsequent injury’”). Accordingly, Plaintiff fails to state a
+17   First Amendment retaliation claim.
+18                          (2)     Due Process Claim
+19           Plaintiff’s allegations are also insufficient to state a due process claim. As a threshold matter,
+20   Plaintiff does not specify whether he is alleging a substantive or procedural due process claim. To
+21   the extent he is attempting assert a substantive due process claim based on the requirement that he
+22   continue to participate in sex offender therapy as a condition of parole, such a claim fails as a matter
+23   of law. See Styre v. Adams, 645 F.3d 1106, 1108 (9th Cir. 2011) (“[N]o substantive due process right
+24   [is] created by California’s parole scheme.”); see also Doe v. Tandeske, 361 F.3d 594, 596-97 (9th
+25   Cir. 2004) (holding that “persons who have been convicted of serious sex offenses do not have a
+26   fundamental right to be free from the registration and notification requirements” imposed by state
+27   law).
+28
+                                                                                                          -20-
+     DEFENDANTS SMITH AND HOPE PROGRAM’S NOTICE OF MOTION AND MOTION TO DISMISS; MEMORANDUM OF
+     POINTS AND AUTHORITIES IN SUPPORT – Case No. 3:26-cv-07504-LJC
+     Case 3:26-cv-07504-LJC           Document 15        Filed 09/21/26       Page 21 of 30
+
+
+
+ 1            Plaintiff also fails to state a procedural due process claim. To state such a claim, Plaintiff is
+ 2   required to allege: “(1) a deprivation of a constitutionally protected liberty or property interest, and
+ 3   (2) a denial of adequate procedural protections.” Kildare v. Saenz, 325 F.3d 1078, 1085 (9th Cir.
+ 4   2003).
+ 5            Plaintiff alleges that Hope submitted reports to CDCR that falsely represented that: “[He]
+ 6   partially participates in discussion.      [He] has partially completed homework packets.             [He]
+ 7   demonstrates partial understanding of the subject material. [He] is fixated on lawsuits instead of
+ 8   subject material.” ECF No. 1 ¶ 32. He claims that these statements mischaracterized his “status as
+ 9   not having completed sex-offender treatment,” id., and have deprived him of his liberty by requiring
+10   him to continue sex offender therapy, id. ¶ 37.
+11            Plaintiff’s procedural due process claim fails because he does not have a protected liberty in
+12   the discontinuation of his sex offender therapy. “There is no right under the Federal Constitution to
+13   be conditionally released before the expiration of a valid sentence, and the States are under no duty
+14   to offer parole to their prisoners.” Swarthout v. Cooke, 562 U.S. 216, 220 (2011). However, a liberty
+15   interest “may arise from an expectation or interest created by state laws or policies.” Wilkinson v.
+16   Austin, 545 U.S. 209, 221 (2005).
+17            There can be no dispute that an individual has a liberty interest in being free from being
+18   labeled a sex offender and subjected to the consequences that attach to that label, including
+19   registration and sex offender treatment requirements. Neal v. Shimoda, 131 F.3d 818, 830 (9th Cir.
+20   1997) (“The stigmatizing consequences of the attachment of the ‘sex offender’ label coupled with
+21   the subjection of the targeted inmate to a mandatory treatment program whose successful completion
+22   is a precondition for parole eligibility create the kind of deprivations of liberty that require procedural
+23   protections.”). But convicted sex offenders who are subject to mandatory sex offender treatment,
+24   such as Plaintiff, have already received all procedural protections required under the Fourteenth
+25   Amendment. Id. at 131 (“Neal, 131 F.3d at 831 (“An inmate who has been convicted of a sex crime
+26   in a prior adversarial setting, whether as the result of a bench trial, jury trial, or plea agreement, has
+27   received the minimum protections required by due process.”); Fletcher v. Idaho Dep’t of Corr., 2020
+28   WL 7082690, at *6 n.5 (D. Idaho Dec. 3, 2020) (“Although such an individual has a liberty interest
+                                                                                                           -21-
+     DEFENDANTS SMITH AND HOPE PROGRAM’S NOTICE OF MOTION AND MOTION TO DISMISS; MEMORANDUM OF
+     POINTS AND AUTHORITIES IN SUPPORT – Case No. 3:26-cv-07504-LJC
+     Case 3:26-cv-07504-LJC          Document 15        Filed 09/21/26      Page 22 of 30
+
+
+
+ 1   in avoiding mandatory sex offender treatment and registration, that individual—having been
+ 2   convicted in a court of law of a registrable sex offense—has already received all the process to which
+ 3   he is due.”).
+ 4           Importantly, Plaintiff does not contend that the requirement that he complete sex offender
+ 5   therapy as a condition of his parole is unconstitutional. Instead, he only claims that, due to Hope’s
+ 6   false reports, he “remains subject to GPS monitoring, curfew restrictions, mandatory treatment
+ 7   attendance, and parole supervision conditions that would not have been imposed or continued but for
+ 8   HOPE’s false treatment-status reports and blanket retention policy.” ECF No. 1 ¶ 50.
+ 9           Although Plaintiff faults Defendants for the continued imposition of several parole
+10   conditions, Plaintiff does not plausibly allege that Defendants’ conduct bears any relation to the these
+11   conditions, except the requirement he continue sex offender treatment. Indeed, Plaintiff’s allegations
+12   reflect that Hope’s involvement was limited to providing mandated therapy, not formulating the
+13   conditions of his parole, including the mandated curfew and GPS monitoring.
+14           Thus, the only interest as issue, at least as to Defendants, is Plaintiff’s retainment in sex
+15   offender treatment. California law, however, has not created a liberty interest in having this treatment
+16   discontinued. As the Complaint acknowledge, California Penal Code § 3008 requires high-risk sex
+17   offenders, such as Plaintiff, “to participate in a sex offender management program.” ECF No. 1 ¶ 14.
+18   The statute specifically provides that length of treatment shall range between one year and the
+19   remaining term of the individual’s parole, with “[t]he length of the period in the program . . . to be
+20   determined by the certified sex offender management professional in consultation with the parole
+21   officer and as approved by the court.” Cal. Penal Code § 3008(d). Under CDCR’s implementing
+22   regulations, a Containment Team—consisting of the supervised person (i.e., parolee), a parole agent,
+23   the unit supervisor, and the contracted clinician—reviews the supervised person’s program
+24   completion to determine the length of participation in the sex offender management program. Cal.
+25   Code Regs., tit. 15, § 3574(e). The determination to retain a supervised person in a sex offender
+26   management program is documented on CDCR Form 3043 Containment Team Meeting/Earned
+27   Discharge Consideration Committee and is signed by the parole agent. 15 Cal. Code Regs. § 3574(f).
+28
+                                                                                                        -22-
+     DEFENDANTS SMITH AND HOPE PROGRAM’S NOTICE OF MOTION AND MOTION TO DISMISS; MEMORANDUM OF
+     POINTS AND AUTHORITIES IN SUPPORT – Case No. 3:26-cv-07504-LJC
+     Case 3:26-cv-07504-LJC          Document 15        Filed 09/21/26       Page 23 of 30
+
+
+
+ 1          Critically, neither California Penal Code § 3008 nor 15 CCR § 3574(f)(1) create a right or
+ 2   expectation that completion of course work and adequate attendance and participation will result in
+ 3   a decision finding successful completion of the sex offender management program.               Instead,
+ 4   California law simply requires that the decision to retain an individual the program be supported by
+ 5   “good cause.” 3 15 Cal. Code Regs. § 3574(f).
+ 6          At most, Plaintiff has a liberty interest in remaining on parole. He does, however, have a
+ 7   protected interest in modifying the condition of that liberty. See Greenholtz v. Inmates of Neb. Penal
+ 8   & Corr. Complex, 442 U.S. 1, 9-10 (1979) (“There is a crucial distinction between being deprived of
+ 9   a liberty one has, as in parole, and being denied a conditional liberty that one desires.”).
+10          Even assuming Plaintiff has a protected liberty interest in having the conditions of his parole
+11   modified, he has received all the process that he is due. Plaintiff’s allegations strongly suggest that
+12   administrative remedies were available, but that he chose not to peruse them. In that regard, Plaintiff
+13   specifically alleges that Hope “prepared and submitted treatment-status content to CDCR using
+14   CDCR Form 3043 and contributed to CDCR's Discharge Review Report (Form I 502-DR).” ECF
+15   No. 1 ¶ 31.    The determination to retain a supervised person in a sex offender management
+16   program is documented on CDCR Form 3043 Containment Team Meeting/Earned Discharge
+17   Consideration Committee, and is signed by the parole agent. 15 Cal. Code Regs. § 3574(f).
+18   Thereafter, the supervised person is subject to a discharge review by the parole agent, which “means
+19   a review of a supervised person’s criminal history, and their adjustment and/or performance while
+20   under parole supervision for the purpose of rendering a decision as to whether or not a supervised
+21   person should be retained on parole supervision for another year or be discharged from parole
+22   supervision altogether.” 15 Cal. Code Regs. § 3720(2). A discharge review report is prepared on
+23   CDCR Form 1502. 15 Cal. Code Regs. § 3721.1. A supervised person, such as Plaintiff, “may file
+24   a grievance regarding any mistake of fact contained in the discharge review report pursuant to the
+25   administrative remedies procedures provided in section 3480, et seq.” 15 Cal. Code Regs. § 3723.
+26
+     3
+27     Even assuming that there was not “good cause” to retain Plaintiff in Hope’s sex offender
+     management program, the violation of California law does not equate to a violation of Plaintiff’s
+28   due process rights. Swarthout, 532 U.S. at 221 (observing that the Supreme Court has “long
+     recognized that a mere error of state law is not a denial of due process”) (quotations omitted).
+                                                                                                       -23-
+     DEFENDANTS SMITH AND HOPE PROGRAM’S NOTICE OF MOTION AND MOTION TO DISMISS; MEMORANDUM OF
+     POINTS AND AUTHORITIES IN SUPPORT – Case No. 3:26-cv-07504-LJC
+     Case 3:26-cv-07504-LJC           Document 15        Filed 09/21/26       Page 24 of 30
+
+
+
+ 1           Plaintiff, therefore, was authorized to file a written grievance regarding any perceived mistake
+ 2   of fact found in the Discharge Review Report. California law also explicitly provides that a
+ 3   “supervised person who wishes to submit a grievance . . . shall do so in writing to the Office of
+ 4   Grievances in the parole region where they are supervised.” 15 Cal. Code Regs. § 3482(a)(2).
+ 5   Thereafter, a “claimant who wishes to appeal a decision or remedy issued by an Office of Grievances
+ 6   shall do so in writing by submitting a CDCR Form 602-2 . . . directly to the Office of Appeals by
+ 7   regular mail sent to the address indicated on the form or by electronic kiosk or tablet, if available.”
+ 8   15 Cal. Code Regs. § 3484(a). Where the appeal is denied on the merits, the administrative remedies
+ 9   process is exhausted. See 15 Cal. Code Regs. § 3485(l)(5)(A).
+10           Although Plaintiff vaguely claims that he was denied a liberty interest without due process,
+11   ECF No. 1 ¶ 59, procedure safeguards were available; he simply didn’t avail himself of the provided
+12   procedure. Accordingly, Plaintiff does not state a procedural due process claim.
+13           2.      Bane Act Claim
+14           Plaintiff’s third claim alleges violation of California’s Bane Act. ECF No. 1 at 17-18. Section
+15   52.1 of that Act provides a private right of action for damages against any person, “whether or not
+16   acting under color of law,” who “interferes” or “attempts to interfere by threat, intimidation, or
+17   coercion, with the exercise or enjoyment by any individual or individuals of rights secured by the
+18   Constitution or laws of the United States, or of the rights secured by the Constitution or laws [of
+19   California].” Cal. Civ. Code § 52.1 The “essence of a Bane Act claim is that the defendant, by the
+20   specified improper means (i.e., ‘threats, intimidation or coercion’), tried to or did prevent the plaintiff
+21   from doing something he or she had the right to do under the law or to force the plaintiff to do
+22   something that he or she was not required to do under the law.” Austin B. v. Escondido Union School
+23   Dist., 149 Cal. App. 4th 860, 883 (2007).
+24           To state a claim under the Bane Act, a plaintiff must allege that: “(1) Defendants interfered
+25   with Plaintiff[’s] constitutional or statutory rights; and (2) that interference was accompanied by
+26   actual or attempted threats, intimidation, or coercion.” Campbell v. Feld Ent., Inc., 75 F. Supp. 3d
+27   1193, 1211 (N.D. Cal. 2014). If the plaintiff sufficiently alleges that the defendants violated his
+28   constitutional or statutory right, only then will “the Court consider whether such interference was the
+                                                                                                           -24-
+     DEFENDANTS SMITH AND HOPE PROGRAM’S NOTICE OF MOTION AND MOTION TO DISMISS; MEMORANDUM OF
+     POINTS AND AUTHORITIES IN SUPPORT – Case No. 3:26-cv-07504-LJC
+     Case 3:26-cv-07504-LJC           Document 15          Filed 09/21/26   Page 25 of 30
+
+
+
+ 1   product of threats, intimidation, or coercion.” Id.
+ 2             Plaintiff’s Bane Act claim is premised on Defendants violating his rights under California
+ 3   Penal Code § 3008(d)(2), 15 CCR § 3574(f)(1), and the First and Fourteenth Amendments. ECF No.
+ 4   1 ¶ 61.
+ 5             California Penal Code § 3008(d)(2) provides that:
+ 6                    Persons placed on parole on or after July 1, 2012, shall successfully
+                      complete a sex offender management program, following the standards
+ 7                    developed pursuant to Section 9003, as a condition of parole. The
+                      length of the period in the program shall be not less than one year, up
+ 8                    to the entire period of parole, as determined by the certified sex
+                      offender management professional in consultation with the parole
+ 9                    officer and as approved by the court. Participation in this program
+                      applies to every person described without regard to when his or her
+10                    crime or crimes were committed.
+11             15 CCR Section 3574(f)(1) reads:
+12                    When the Containment Team makes a determination to retain a
+                      participant in a sex offender management program, the determination
+13                    shall be supported by good cause, as defined in Section 3000. A
+                      determination to retain a supervised person in a sex offender
+14                    management program shall be stated in writing, signed by the sex
+                      offender treatment provider and parole agent on the CDCR Form 3043
+15                    Containment Team Meeting / Earned Discharge Consideration
+                      Committee (Rev.11/24), which is incorporated by reference. This
+16                    completed form shall be delivered to the supervised person within 30
+                      calendar days of the CTM and maintained in the supervised person’s
+17                    file. Reasons to retain a supervised person in a sex offender
+                      management program may include, but are not limited to:
+18
+                      (1) Pursuant to Section 3573, a Level of Service or Case Management
+19                    Inventory (LS/CMI) score of 11 or higher.
+20
+
+21             Neither Penal Code § 3008 nor 15 CCR § 3574(f)(1) provide Plaintiff with a statutory right.
+22   Instead, § 3008 mandates Plaintiff’s participation in a sex offender management program, while the
+23   cited regulation establishes the standard for retaining a parolee in such a program. Because the cited
+24   statute and regulation do not provide Plaintiff with a statutory right, they cannot properly serve as a
+25   basis for liability under the Bane Act. Cf. Campbell, 75 F. Supp. 3d at 1213 (“Plaintiffs, however,
+26   appear to have invented a statutory right for Bane Act purposes based on the fact that a criminal
+27   prohibition exists in California on the willful and malicious obstruction of another's free movement.
+28   As Plaintiffs have no civil cause of action under section 647c, the Court declines to allow Plaintiffs
+                                                                                                       -25-
+     DEFENDANTS SMITH AND HOPE PROGRAM’S NOTICE OF MOTION AND MOTION TO DISMISS; MEMORANDUM OF
+     POINTS AND AUTHORITIES IN SUPPORT – Case No. 3:26-cv-07504-LJC
+     Case 3:26-cv-07504-LJC          Document 15         Filed 09/21/26      Page 26 of 30
+
+
+
+ 1   to rely on it as a predicate for a separate civil cause of action.”). For the reasons set forth above,
+ 2   Plaintiff has also failed to establish a violation of his First and Fourteenth Amendments.
+ 3          Plaintiff’s Bane Act claim also fails due to the complaint’s failure to allege that Defendants
+ 4   interfered through threats, intimidation, or coercion. Plaintiff alleges that his rights were violated by
+ 5   “the practical coercion exerted through HOPE’s exclusive gatekeeping role as sole CASOMB-
+ 6   certified provider in Stockton, with knowledge that its non-completion characterization would result
+ 7   in continued GPS monitoring, curfew, and threat of parole violation[.]” ECF No. 1 ¶ 62. Maintaining
+ 8   a blanket-policy under which Plaintiff was allegedly precluded from completing sex offender
+ 9   treatment cannot fairly be characterized as a threat or intimidation, nor does it amount to coercion for
+10   purpose of the Bane Act. See Herrera v. AllianceOne Receivable Mgmt., Inc., 170 F. Supp. 3d 1282,
+11   1288 (S.D. Cal. 2016) (“[A] Bane Act claim that relies on a theory of coercion requires allegations
+12   of ‘such force, either physical or moral, as to constrain [the plaintiff] to do against his will something
+13   he would not otherwise have done.’”); see also Muhammad v. Garrett, 66 F. Supp. 3d 1287, 1296
+14   (E.D. Cal. 2014), aff’d sub nom. Muhammad v. City of Bakersfield, 671 Fed. App’x 982 (9th Cir.
+15   2016) (“In evaluating the threatening or coercive conduct, the Court must consider whether a
+16   reasonable person, standing in the shoes of the plaintiff, would have been intimidated by the actions
+17   of the defendants and have perceived a threat of violence.”) (quotations omitted).
+18          Moreover, the Complaint does not, and cannot, plausibly allege that the requirement that
+19   Plaintiff continue to participate in sex offender therapy has any relation to the other conditions of his
+20   parole. See Cal. Penal Code § 3000.07(a) (requiring a parolee convicted of a “registerable sex
+21   offense” to “be monitored by a global positioning system for the term of his or her parole, or for the
+22   duration or any remaining part thereof, whichever period of time is less”); see also Hairston v. Parole
+23   Division of Bermuda Dunes, CA, 2022 WL 2230717, at *3 (C.D. Cal. Apr. 18, 2022) (observing that
+24   petitioner’s “success on his challenge to the GPS monitoring parole condition would not impact any
+25   other condition of his parole . . . .”). There is also no allegation that Defendants Hope or Smith
+26   threatened to report a parole violation. Although Plaintiff does allege that he was required to resign
+27   from his job “after his parole agent threatened a parole violation for a scheduling conflict with
+28   mandatory treatment,” ECF No. 1 ¶ 49, no similar allegation is levied against Hope or Smith.
+                                                                                                          -26-
+     DEFENDANTS SMITH AND HOPE PROGRAM’S NOTICE OF MOTION AND MOTION TO DISMISS; MEMORANDUM OF
+     POINTS AND AUTHORITIES IN SUPPORT – Case No. 3:26-cv-07504-LJC
+     Case 3:26-cv-07504-LJC          Document 15        Filed 09/21/26       Page 27 of 30
+
+
+
+ 1           Plaintiff also contends that his rights were violated by intimidation and coercion based on
+ 2   “Palacios’s . . . statements labeling Plaintiff as ‘disruptive,’ a ‘ringleader,’ and ‘abhorrent,’ made in
+ 3   front of his parole agents, explicitly linking those characterizations to Plaintiffs protected
+ 4   complaints.” ECF No. 1 ¶ 62. Not only do Palacios’s statements fall short of offending the First
+ 5   Amendment, as explained above, but her critiques are not threatening or intimidating in nature. See
+ 6   Muhammad, 66 F. Supp. 3d at 1296. Accordingly, the Complaint’s allegations are insufficient to
+ 7   establish a violation of the Bane Act.
+ 8          3.      Fraud and Negligent Misrepresentation Claim
+ 9          Plaintiff’s fourth cause of action is styled as “Fraud and Negligent Misrepresentation.”
+10   Notwithstanding his inclusion of the word “negligent,” Plaintiff appears to be alleging a claim for
+11   either fraudulent concealment or fraudulent misrepresentation. Plaintiff alleges that Defendants
+12   misrepresented to Plaintiff and CDCR that he “had an individualized path to treatment completion,
+13   and that his non-completion status reflected individualized clinical assessment, and that he had only
+14   ‘partially completed’ homework packets.’” ECF No. 1 ¶ 65. Plaintiff further alleges that Defendants
+15   “concealed: (a) the blanket retention policy; (b) the October 18, 2023 Tassone Treatment Completion
+16   Plan, which was placed in Plaintiff’s file and sent to CDCR but never shown to Plaintiff; and (c) that
+17   HOPE’s internal policy, not Plaintiff's performance, precluded completion.” Id.
+18          Plaintiff’s claim, whether construed as one for fraudulent misrepresentation or fraudulent
+19   concealment claim, fails because Plaintiff does not allege facts showing that Defendants intended to
+20   defraud him or that he justifiably relied on any misrepresentation or omission. To state a claim for
+21   either fraudulent concealment or fraudulent misrepresentation under California law, a plaintiff is
+22   required to allege “‘(a) misrepresentation (false representation, concealment, or nondisclosure); (b)
+23   knowledge of falsity (or ‘scienter’); (c) intent to defraud, i.e. to induce reliance; (d) justifiable
+24   reliance; and (e) resulting damage.’” DZ Reserve v. Meta Platforms, Inc., 96 F.4th 1223, 1233 (9th
+25   Cir. 2024) (quoting Engalla v. Permanente Med. Grp., Inc., 15 Cal. 4th 951, 974 (1997)).
+26          For claims based on fraud, a plaintiff must also satisfy the heightened pleading requirements
+27   imposed by Rule 9(b) of the Federal Rules of Civil Procedure. Zetz v. Boston Scientific Corp., 398
+28   F. Supp. 3d 700, 713 (E.D. Cal. 2019). That rule provides that “[i]n alleging fraud or mistake, a party
+                                                                                                         -27-
+     DEFENDANTS SMITH AND HOPE PROGRAM’S NOTICE OF MOTION AND MOTION TO DISMISS; MEMORANDUM OF
+     POINTS AND AUTHORITIES IN SUPPORT – Case No. 3:26-cv-07504-LJC
+     Case 3:26-cv-07504-LJC          Document 15       Filed 09/21/26      Page 28 of 30
+
+
+
+ 1   must state with particularity the circumstances constituting fraud or mistake.         Malice, intent,
+ 2   knowledge, and other conditions of a person’s mind may be alleged generally.” Fed. R. Civ. P 9(b).
+ 3   “Rule 9(b) serves not only to give notice to defendants of the specific fraudulent conduct against
+ 4   which they must defend, but also ‘to deter the filing of complaints as a pretext for the discovery of
+ 5   unknown wrongs, to protect [defendants] from the harm that comes from being subject to fraud
+ 6   charges, and to prohibit plaintiffs from unilaterally imposing upon the court, the parties and society
+ 7   enormous social and economic costs absent some factual basis.’” Bly-Magee v. California, 236 F.3d
+ 8   1014, 1018 (9th Cir. 2001) (quoting In re Stac Elec. Sec. Litig., 89 F.3d 1399, 1405 (9th Cir. 1996)).
+ 9   Circumstances that must be stated with particularity pursuant to Rule 9(b) include the “time, place,
+10   and specific content of the false representations as well as the identities of the parties to the
+11   misrepresentations.” Sanford v. Memberworks, Inc., 625 F.3d 550, 558 (9th Cir. 2010) (quoting
+12   Edwards v. Marin Park, Inc., 356 F.3d 1058, 1066 (9th Cir. 2004)).
+13          Plaintiff alleges that “Defendants made affirmative misrepresentations to Plaintiff and to
+14   CDCR, including representations that Plaintiff had an individualized path to treatment completion,
+15   that his non-completion status reflected individualized clinical assessment, and that he had only
+16   ‘partially completed’ homework packets.” ECF No. 1 ¶ 65. He further alleges that Defendants
+17   “concealed: (a) the blanket retention policy; (b) the October 18, 2023 Tassone Treatment Completion
+18   Plan, which was placed in Plaintiffs file and sent to CDCR but never shown to Plaintiff; and (c) that
+19   HOPE’s internal policy, not Plaintiffs performance, precluded completion.” Id.
+20          These general allegations fail to comply with Rule 9(b)’s particularity requirement. Critically,
+21   Plaintiff does not identify the specific individual that made each affirmative misrepresentation or
+22   when the misrepresentation occurred. Likewise, he does not specify who was responsible for each
+23   act of concealment or when such concealment occurred.
+24          But more fundamentally, the complaint’s allegations fail to establish each of the required
+25   elements for claims for fraudulent concealment and fraudulent misrepresentation. Specifically,
+26   Plaintiff’s allegations fail to plausibly allege that any information was concealed, or
+27   misrepresentations were made, with the intent to defraud him. Plaintiff’s allegations also fail to
+28   suggest that he justifiable relied on any false statement or omission. At most, Plaintiff’s allegations
+                                                                                                       -28-
+     DEFENDANTS SMITH AND HOPE PROGRAM’S NOTICE OF MOTION AND MOTION TO DISMISS; MEMORANDUM OF
+     POINTS AND AUTHORITIES IN SUPPORT – Case No. 3:26-cv-07504-LJC
+     Case 3:26-cv-07504-LJC            Document 15      Filed 09/21/26      Page 29 of 30
+
+
+
+ 1   indicate Defendants made false statements to CDCR so that the agency would require Plaintiff to
+ 2   remain in sex offender treatment as a condition of his parole—a decision made by CDCR, not
+ 3   Plaintiff. Consequently, Plaintiff has failed to state a claim for both fraudulent concealment and
+ 4   fraudulent misrepresentation. 4
+ 5          4.      Civil RICO Claim
+ 6          Plaintiff’s last claim alleges violation of the Racketeering Influenced and Corrupt
+ 7   Organization Act (“RICO”), 18 U.S.C. § 1962(c). To state a civil RICO claim, plaintiff is required
+ 8   to allege: “a plaintiff must allege (1) conduct (2) of an enterprise (3) through a pattern (4) of
+ 9   racketeering activity.” Sanford v. MemberWorks, Inc., 625 F.3d 550, 557 (9th Cir. 2010). The
+10   alleged enterprise must exist “separate and apart from that inherent in the perpetration of the alleged
+11   [activity].” Chang v. Chen, 80 F.3d 1293, 1300-01 (9th Cir. 1996).
+12          A “pattern of racketeering activity” requires at least two criminal acts proscribed by Title 18
+13   of the United States Code, including, among others, mail fraud, wire fraud, and obstruction of justice.
+14   Id. These so-called predicate acts, if based on fraudulent conduct, must be alleged with specificity
+15   in accordance with Rule(9) of the Federal Rules of Civil Procedure. Schreiber Distrib. Co. v. Serv-
+16   Well Furniture Co., 806 F.2d 1393, 1400-01 (9th Cir. 2004). “To avoid dismissal for inadequacy
+17   under Rule 9(b),” a plaintiff must “state the time, place, and specific content of the false
+18   representations as well as the identities of the parties to the misrepresentation.” Edwards v. Marin
+19   Park, Inc., 356 F.3d 1058, 1066 (9th Cir. 2004). “A party alleging fraud must ‘set forth more than
+20   the neutral facts necessary to identify the transaction.’” Kearns v. Ford Motor Co., 567 F.3d 1120,
+21   1124 (9th Cir. 2009) (citing In re GlenFed, Inc. Sec. Litig., 42 F.3d 1541, 1548 (9th Cir. 1994).
+22          Plaintiff alleges that Defendants engaged in three predicate acts: mail fraud, wire fraud, and
+23   obstruction. ECF No. 1 at 20. With respect to the alleged mail and wire fraud, Plaintiff simply states
+24   that from 2021 to present, Defendants transmitted, both electronically and through the United States
+25   4
+       To the extent Plaintiff did intend to assert a negligent misrepresentation claim, he has failed to do
+     so for the same reason he fails to state claims for fraudulent concealment and fraudulent
+26   misrepresentation. See Zetz, 398 F. Supp. 3d at 712-73 (emphasis added) (“The elements of negligent
+     misrepresentation are: ‘(1) a misrepresentation of a past or existing material fact, (2) without
+27   reasonable grounds for believing it to be true, (3) with intent to induce another’s reliance on the fact
+     misrepresented, (4) ignorance of the truth and justifiable reliance thereon by the party to whom the
+28   misrepresentation was directed, and (5) damages.’”).
+                                                                                                         -29-
+     DEFENDANTS SMITH AND HOPE PROGRAM’S NOTICE OF MOTION AND MOTION TO DISMISS; MEMORANDUM OF
+     POINTS AND AUTHORITIES IN SUPPORT – Case No. 3:26-cv-07504-LJC
+     Case 3:26-cv-07504-LJC          Document 15        Filed 09/21/26        Page 30 of 30
+
+
+
+ 1   mail, false reports to CDCR. He does not specify when these reports were transmitted, who sent
+ 2   them, the “specific content of the false representations[, or] . . . the identities of the parties to the
+ 3   misrepresentation.,” as required under Rule 9(b).          See Edwards, 356 F.3d 1058 at 1066.
+ 4   Consequently, the complaint fails to sufficiently allege that Defendants engaged in “a pattern of
+ 5   racketeering activity,” which is required to state a civil RICO claim.
+ 6                                        IV. CONCLUSION
+ 7   Plaintiff’s is precluded from bringing each of his claims under the doctrine of res judicata.
+ 8   Additionally, the complaint fails to allege facts sufficient to state a claim upon which relief may be
+ 9   granted. For these reasons, Defendants’ motion to dismiss should be granted, and Plaintiff’s
+10   complaint should be dismissed without leave to amend.
+11
+
+12   Dated: September 21, 2026                              Respectfully submitted,
+13                                                          SIMS, LAWRENCE & BROGHAMMER
+14
+                                                           By: _______________________________
+15                                                             CYNTHIA G. LAWRENCE
+                                                               BLAZE VAN DINE
+16                                                             ERIC T. MARTINEZ
+                                                               Attorneys for Defendants,
+17                                                             SHANNON SMITH AND HOPE
+                                                               PROGRAM, A LICENSED CLINICAL
+18                                                             SOCIAL WORKER PROFESSIONAL
+                                                               CORPORATION (sued and served as
+19                                                             HOPE PSYCHOTHERAPY, INC.)
+20
+
+21
+
+22
+
+23
+
+24
+
+25
+
+26
+
+27
+
+28
+                                                                                                         -30-
+     DEFENDANTS SMITH AND HOPE PROGRAM’S NOTICE OF MOTION AND MOTION TO DISMISS; MEMORANDUM OF
+     POINTS AND AUTHORITIES IN SUPPORT – Case No. 3:26-cv-07504-LJC
+

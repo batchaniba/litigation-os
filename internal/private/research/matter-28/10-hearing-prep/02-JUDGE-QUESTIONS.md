@@ -1,0 +1,41 @@
+# Judge-question drill
+
+Proposed responses, not factual certifications. Rehearse each in 20-40 seconds. Use the actual filed version of the complaint and the updated docket before court.
+
+| Likely question | Concise proposed response | Record / next step |
+|---|---|---|
+| Why isn't this just the same case you lost? | There is substantial overlap. I ask for the exact California preclusion elements and the actual final disposition to be identified, rather than assuming new federal labels solve that issue. | M pp.11-14; R pp.2-5; actual state FAC/order/register |
+| The state register says “Case Disposed.” Why does that not end it? | I accept the entry must be addressed. Its legal effect depends on the operative disposition and California law. The signed instrument I have reviewed sustains a demurrer; I ask the Court to identify the final adjudication supporting the broader bar. | R p.3; ECF 30-1 pp.4-5 visually reviewed; it is a summary, not the complete register |
+| Doesn't Griset say substance controls? | Yes. My argument must engage what the order actually decided, not demand a magic title. Griset addressed a complete merits determination of the dispositive issue; Berri addresses the usual demurrer/judgment sequence. | Griset at 698-700; Berri at 859-860 |
+| Are you saying the judge's signature on counsel's proposal is invalid? | No. Signing a proposed order is not the defect I rely on. | State order p.2; R p.4 n.2 |
+| You say exhaustion-only, but the order says failure to state a cause? | That is the language of the signed order. I should not call that instrument exhaustion-only without support from the actual adopted ruling record. | State order p.2; minutes/transcript needed |
+| Can a federal section 1983 case ignore a state judgment? | No. Patsy addresses administrative exhaustion, while section 1738 governs state-judgment preclusion. My opposition must satisfy California preclusion law. | C ¶10; M p.11; authority ledger |
+| Why is Smith different from HOPE for preclusion? | She is sued for her own alleged approval and enforcement. That warrants examination of the actual privity basis; I recognize that officer/employee alignment and derivative liability can support privity. | C ¶¶12, 54-55; R pp.4-5; DKN |
+| Can Smith invoke issue preclusion even if she was not a party? | Potentially yes. That is why I ask the Court to identify the identical issue actually and necessarily decided, separately from claim preclusion. | DKN at 824-827 |
+| What conduct makes this state action? | The alleged treatment-completion/reporting function within the parole process and the specified provider-agent interactions, rather than the contract alone. | C ¶¶18-25, 31-35; R pp.5-6 |
+| Does West decide this outpatient parole case? | It supplies a functional delegation principle, but its prison-medical-care context is different. The analogy depends on the particular authority and interactions pleaded here. | West at 54-57 |
+| What did Smith personally do? | The complaint alleges approval, implementation, and enforcement in paragraph 54 and identifies policy authority in paragraph 12. I recognize that a CEO title alone is insufficient and request leave to particularize supported acts if needed. | C ¶¶12, 54-55; no automatic attribution of Palacios acts |
+| What is the adverse retaliation beyond calling you names? | The claimed wrong is use of reporting/decisionmaking power after protected complaints with material consequences. If the Court finds the report-to-consequence link missing, I ask to plead the particular event and causal facts. | C ¶¶38-40, 50, 57-59, 62; identify actual consequence before hearing |
+| Where is the federal liberty interest? | I need to identify a substantive entitlement or concrete liberty deprivation beyond a state procedural rule. I am not claiming an unconditional federal right to graduate or to early parole discharge. | C ¶¶37, 48-52; see amendment proffer |
+| Neal says your conviction already supplied due process. | I acknowledge the Martinez holding. The proposed distinction concerns a later retention decision, not initial classification; that distinction still requires independent legal and factual support. | R p.7; Neal at 830-831 |
+| Why didn't you grieve the discharge-review errors? | Answer what actually occurred. Patsy removes a general exhaustion prerequisite but does not prove a remedy inadequate; I must explain why the available process did not address the pleaded deprivation. | Do not invent grievance attempts, dates, or futility |
+| Doesn't the parole agent make the decision? | The complaint alleges a reporting and decision chain; it must connect defendants' acts to the identified decision. I recognize that treatment completion, parole discharge, and GPS are legally separate. | C ¶¶18, 25, 31-37, 50; §3574(d)-(f) |
+| What is the coercion under the Bane Act? | Identify the specific threatened parole consequence tied to interference with the asserted right, and the speaker and intent. Routine treatment requirements or unfavorable reporting alone may not suffice. | C ¶62; R p.8; amendment if particulars missing |
+| How could you rely on a statement when attendance was mandatory? | The reliance theory must identify a discretionary decision changed by a particular representation, such as a supported work decision. Mandatory attendance alone is not an adequate answer. | C ¶¶26-30, 65-67; R p.9 |
+| Isn't RICO just conclusory billing rhetoric? | A financial incentive is not a predicate offense. The claim requires supported mail/wire particulars, a money/property fraud scheme and direct economic injury. I request leave if those particulars are deficient. | C ¶¶68-73; O pp.21-22 |
+| Are you conceding fraud/RICO fail? | No. The alternative request for leave addresses possible defects. I am not stipulating to dismissal with prejudice or withdrawing those causes. | O pp.20-22; R p.9 |
+| What exactly would you amend? | The identified communications and decision chain, Smith's own acts, adverse action/causation, the specific liberty interest and denied process, transaction-level fraud/RICO particulars, and the two already-identified legal corrections, only where supported. | 03-AMENDMENT-PROFFER.md |
+| If preclusion bars the claims, how could amendment cure it? | It may not. I ask the Court to distinguish a legal bar from curable pleading gaps and identify the scope of the bar. Any later conduct or distinct injury must be real and properly compared to the prior case. | No manufactured postjudgment theory |
+| Is the November 13 production date already ordered? | No. It is plaintiff's proposal in the joint statement, despite its open clock row. I ask the Court to set a workable date. | J p.7; clocks row note |
+| Can I authorize use of the old confidential documents today? | I ask for a lawful re-production or properly supported authorization path, respecting the state order. Entry of a generic federal order alone does not resolve the earlier use restriction. | J pp.4, 8; PO status and state terms |
+| Are those 542 pages evidence I should decide today? | My Rule 12 response relies on the existing allegations and properly considered materials. The prior production is not automatically before this Court or available for cross-use; I am not asking for factual findings from unfiled restricted records. | Existing complaint; prior-production use boundary |
+| Are you still treating with HOPE? | Give the actual current facts. Any injunction must address present defendant-caused harm that the requested order would redress. | Current status not established by July complaint |
+| Have all parties consented to magistrate jurisdiction? | Refer to the actual consent/declination docket entries; I have not independently verified every party's filing in this collection. | Verify before stating the basis for final disposition |
+
+## Recovery lines
+
+- “Your Honor, may I direct the Court to paragraph __?”
+- “That is an allegation in the complaint, not a finding I am asking the Court to make today.”
+- “I do not have that verified date in front of me.”
+- “If that is the pleading gap the Court identifies, I request leave to address that specific point.”
+- “May I clarify the amendment deadline and which claims the ruling covers?”

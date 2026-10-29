@@ -1,5 +1,25 @@
 [
   {
+    "dkt": 36,
+    "date": "2026-10-19",
+    "filer": "plaintiff",
+    "type": "other",
+    "title": "Dkt 36 - Plaintiff Response to Oct 15 2026 Order (Dated Oct 16, Filed Oct 19 2026)",
+    "path": null,
+    "filed": true,
+    "label": "Filed copy held privately; not yet published."
+  },
+  {
+    "dkt": 34,
+    "date": "2026-10-19",
+    "filer": "defendant",
+    "type": "other",
+    "title": "Dkt 34 - Defendants Response to Oct 15 Order with Redline Protective Order (Filed Oct 19 2026)",
+    "path": null,
+    "filed": true,
+    "label": "Filed copy held privately; not yet published."
+  },
+  {
     "dkt": 30,
     "date": "2026-10-13",
     "filer": "defendant",

@@ -1,0 +1,445 @@
+     Case 3:26-cv-07504-LJC             Document 30     Filed 10/13/26     Page 1 of 10
+
+
+
+ 1   CYNTHIA G. LAWRENCE (SBN 148927)
+     BLAZE VAN DINE (SBN 251946)
+ 2   ERIC T. MARTINEZ (SBN 276972)
+     SIMS, LAWRENCE & BROGHAMMER
+ 3   1478 Stone Point Drive, Suite 450
+     Roseville, CA 95661
+ 4   Telephone: (916) 797-8881
+     Facsimile: (916) 253-1544
+ 5   Email: cynthia@sims-law.net
+            blaze@sims-law.net
+ 6          emartinez@sims-law.net
+            SLB@sims-law.net
+ 7
+
+ 8   Attorneys for Defendants
+     SHANNON SMITH AND HOPE PROGRAM, A LICENSED CLINICAL SOCIAL WORKER
+ 9   PROFESSIONAL CORPORATION (sued and served as HOPE PSYCHOTHERAPY, INC.)
+10                                UNITED STATES DISTRICT COURT
+
+11            NORTHERN DISTRICT OF CALIFORNIA – SAN FRANCISCO DIVISION
+
+12
+
+13   BRENDAN NGEHSI NEWANFORBI,                          Case No. 3:26-cv-07504-LJC
+14                         Plaintiff,                    DEFENDANTS SHANNON SMITH AND
+                                                         HOPE PROGRAM, A LICENSED
+15   v.                                                  CLINICAL SOCIAL WORKER
+                                                         PROFESSIONAL CORPORATION’S
+16   SHANNON SMITH, LCSW, Chief                          REPLY IN SUPPORT OF MOTION TO
+     Executive Officer and Founder of HOPE               DISMISS
+17   Program, an individual; and HOPE
+     PSYCHOTHERAPY, INC., d/b/a HOPE
+18   PROGRAM, a California corporation,                  Hearing Date: October 27, 2026
+                                                         Hearing Time: 10:30 a.m.
+19                         Defendants.                   Court Room: G, 15th Floor
+                                                         Judge:        Hon. Lisa J. Cisneros
+20
+
+21          Defendants Shannon Smith and Hope Program, A Licensed Clinical Social Worker
+
+22   Professional Corporation (“Hope”) submit the following reply in support of their Motion to Dismiss
+
+23   Plaintiff’s complaint pursuant to Rule 12(b)(6) of the Federal Rules of Civil Procedure.
+
+24          Plaintiff’s opposition does not rebut the central point of Defendants’ motion: every claim in
+
+25   this case involves the same primary right—freedom from Hope’s sex-offender-treatment retention
+
+26   policy—at issue in the state court action that Plaintiff already brought, and lost, in the San Joaquin
+
+27   County Superior Court. Instead, Plaintiff asks this Court to disregard the result of his prior case
+
+28   because the state court’s July 15, 2026 order used the word “sustained” rather than “dismissed.”
+                                                                                                       -1-
+     DEFENDANTS SHANNON SMITH AND HOPE PROGRAM, A LICENSED CLINICAL SOCIAL WORKER PROFESSIONAL
+     CORPORATION’S REPLY IN SUPPORT OF MOTION TO DISMISS – Case No. 3:26-cv-07504-LJC
+     Case 3:26-cv-07504-LJC           Document 30        Filed 10/13/26      Page 2 of 10
+
+
+
+ 1   Plaintiff’s argument improperly focuses on labels while ignoring the substance of the order and its
+ 2   result—dismissal of Plaintiff’s state court case without leave to amend. The San Joaquin County
+ 3   Superior Court’s own docket confirms that the case was disposed on the same date the order issued,
+ 4   and that the case has not been reopened.
+ 5          Plaintiff’s arguments addressing the sufficiency of the complaint’s allegations fare no better.
+ 6   With respect to whether Defendants were state actors for purposes of 42 U.S.C. § 1983, the complaint
+ 7   alleges that a contracted treatment provider reported clinical information to a parole agency—
+ 8   information the agency was statutorily required to consider—and that on one occasion a parole agent,
+ 9   not Hope, allegedly directed a record-keeping correction related to Plaintiff’s attendance. Such
+10   conduct is insufficient to establish joint-action or a close nexus between the State and Defendants’
+11   alleged conduct.     Furthermore, Plaintiff’s opposition, rather than identifying specific factual
+12   allegations necessary to establish the elements of his First Amendment, Due Process, Bane Act, fraud,
+13   and RICO claims, merely regurgitates the same conclusory allegations Defendants’ motion already
+14   addressed. Accordingly, Defendants’ motion to dismiss should be granted without leave to amend.
+15   I.     Claim Preclusion
+16          A.      Plaintiff’s Technical Arguments Are Insufficient to Defeat the
+                    Preclusive Effect of the State Court’s Order.
+17
+
+18          Plaintiff attempts to evade the application of claim preclusion by attacking the form, rather
+19   than the substance, of the state court’s July 15, 2026 order. In that regard, Plaintiff contends that the
+20   July 15 order does not constitute a final judgment on the merits due to the order’s “unusual form”
+21   and failure to include “dismissal language” or the word “judgment.” ECF No. 23 at 9. Plaintiff also
+22   notes that in sustaining the defendants’ demurrer, Judge George Abdallah signed a submitted
+23   proposed order, crossing out the word “PROPOSED.”
+24          As the California Supreme Court has explained:
+25                  It is not the form of the decree but the substance and effect of the
+                    adjudication which is determinative. As a general test, which must be
+26                  adapted to the particular circumstances of the individual case, it may
+                    be said that where no issue is left for future consideration except the
+27                  fact of compliance or noncompliance with the terms of the first decree,
+                    that decree is final, but where anything further in the nature of judicial
+28                  action on the part of the court is essential to a final determination of
+                                                                                                          -2-
+     DEFENDANTS SHANNON SMITH AND HOPE PROGRAM, A LICENSED CLINICAL SOCIAL WORKER PROFESSIONAL
+     CORPORATION’S REPLY IN SUPPORT OF MOTION TO DISMISS – Case No. 3:26-cv-07504-LJC
+     Case 3:26-cv-07504-LJC           Document 30        Filed 10/13/26       Page 3 of 10
+
+
+
+ 1                  the rights of the parties, the decree is interlocutory.
+ 2   Lyon v. Goss, 19 Cal. 2d 659, 670 (1942).
+
+ 3          The state court’s July 15 order sustained defendants Hope and Katie Palacios’s demurrer to
+
+ 4   Plaintiff’s first amended complaint “without leave to amend on the grounds that the First Amended
+
+ 5   Complaint fails to allege facts sufficient to state any cause of action.” ECF No. 15-1 at 47. Thus, the
+
+ 6   order adjudicated all claims, leaving no further pleading opportunity or issues unresolved. While the
+
+ 7   July 15 order did not explicitly state that it is a final judgment, or otherwise direct entry of a final
+
+ 8   judgment, the absence of such language does not render the order interlocutory; the order’s substance
+
+ 9   expressly resolved all issues in the case. Accordingly, the order constitutes a final judgment on the
+
+10   merits for purposes of claim preclusion. See Griset v. Fair Political Practices Comm’n, 25 Cal. 4th
+
+11   688, 698 (2001) (“Applying [Lyon’s] test here, we conclude the 1991 superior court ruling that was
+
+12   the subject of appellate review in Griset I, supra, 8 Cal.4th 851, was a final judgment. As we explain
+
+13   below, the Superior Court’s denial of plaintiffs’ petition for a writ of mandate disposed of all issues
+
+14   in the action between plaintiffs and the FPPC, because it completely resolved plaintiffs’ allegation—
+
+15   essential to all of plaintiffs’ causes of action—that section 84305 was unconstitutional.”).
+
+16          The San Joaquin County Superior Court’s own docket confirms as much. As reflected in
+
+17   Defendants’ supplemental request for judicial notice, the Superior Court’s docket for Newanforbi v.
+
+18   Palacios reflects the case’s disposition as “Case Disposed” on July 15, 2026, the same date as the
+
+19   order sustaining the demurrer. Defs.’ Supp. Request J. Not., Ex. A. That entry confirms that nothing
+
+20   remained pending in the state court action as of the date of the order. Under Lyon and Griset, this is
+
+21   sufficient to establish that there was a final judgment on the merits.
+
+22          Plaintiff’s reliance on Valvo v. University of Southern California, 67 Cal. App. 3d 887, 892
+
+23   n.3 (1977), and Berri v. Superior Court, 43 Cal. 2d 856, 860 (1955), does not support a different
+
+24   conclusion. See ECF No. 23 at 9. Both decisions addressed whether an order sustaining a demurrer
+
+25   is independently appealable, or vulnerable to reconsideration, before any further proceeding occurs.
+
+26   Importantly, neither case involved consideration of the substance-over-form test articulated in Lyon
+
+27   and Griset.
+
+28          In Valvo, the trial court sustained the respondent’s demurrer without leave to amend and
+                                                                                                         -3-
+     DEFENDANTS SHANNON SMITH AND HOPE PROGRAM, A LICENSED CLINICAL SOCIAL WORKER PROFESSIONAL
+     CORPORATION’S REPLY IN SUPPORT OF MOTION TO DISMISS – Case No. 3:26-cv-07504-LJC
+     Case 3:26-cv-07504-LJC           Document 30         Filed 10/13/26      Page 4 of 10
+
+
+
+ 1   subsequently issued a separate order of dismissal. 1 67 Cal. App. 3d at 891. The petitioner then moved
+ 2   for reconsideration of the order sustaining the demurrer, which the trial court denied. Id. Plaintiff
+ 3   then appealed: (1) the order sustaining the demurrer, (2) the order of dismissal, and (3) the denial of
+ 4   the motion for reconsideration. Id. The California Court of Appeals dismissed the “purported appeal
+ 5   from the order sustaining the demurrer,” observing that “[a]n order sustaining a demurrer is not
+ 6   appealable; an appeal lies only from the ensuing judgment of dismissal.” Id. Ultimately, the Court
+ 7   of Appeals reversed the judgment of dismissal and directed the trial court “to overrule respondents’
+ 8   demurrer to the second amended petition.” Id. at 898. Contrary to Plaintiff’s suggestion, Valvo did
+ 9   not hold that an order sustaining a demurrer without leave to amend can never constitute a final
+10   judgment on the merits. Instead, the case stands for the proposition that once a final judgment of
+11   dismissal is entered, any appeal lies with the judgment of dismissal rather than the earlier order on
+12   the demurrer.
+13          Berri also did not involve consideration of whether an order sustaining a demurrer without
+14   leave to amend can be considered a final judgment under the substance-over-form test. Instead, Berri
+15   involved consideration of California Code of Civil Procedure §583, which applies to dismissal of
+16   civil actions for trial delays. Simply put, neither case cited by Plaintiff holds that a state court order
+17   disposing of all issues and claims, as confirmed by the court’s own docket, loses its preclusive effect
+18   merely because the court did not enter a separate judgment of dismissal. 2
+19          B.       Smith is in Privity With the Defendants to the State Court Action
+20          Plaintiff also argues that Smith cannot be bound by the state judgment because she was not
+21   named as a party in the state action and her conduct as Hope’s policy-making officer was not
+22   “represented” in that case. ECF No. 23 at 11-12.
+23          Privity does not require that every allegation against a nonparty be litigated verbatim in the
+24          1
+               Valvo involved a petition for writ of mandate that sought to compel respondent University
+25   of Southern California to reinstate the petitioner as a student in good standing at the university’s
+     medical school. 67 Cal. App. 3d at 890.
+26           2
+               There is also no merit to Plaintiff’s contention that the July 15 order cannot serve as a final
+     judgment due to its “unusual form” that included Judge Abdallah striking out the word “PROPOSED”
+27   and hand-signing the order. Rule 3.1312 of the California Rules of Court specifically contemplates
+     the use of a proposed order, explicitly requiring the prevailing party to prepare and submit a proposed
+28   order for the court’s review and signature.
+                                                                                                           -4-
+     DEFENDANTS SHANNON SMITH AND HOPE PROGRAM, A LICENSED CLINICAL SOCIAL WORKER PROFESSIONAL
+     CORPORATION’S REPLY IN SUPPORT OF MOTION TO DISMISS – Case No. 3:26-cv-07504-LJC
+     Case 3:26-cv-07504-LJC           Document 30         Filed 10/13/26      Page 5 of 10
+
+
+
+ 1   prior suit. Instead, for privity between the parties to exist, the nonparty’s interests must be adequately
+ 2   aligned with, and represented by, a party to the earlier suit. DKN Holdings LLC v. Faerber, 61 Cal.
+ 3   4th 813, 826 (2015). As explained in Defendants’ motion, Katie Palacios, the individual defendant
+ 4   named in the state action, and Defendant Smith are both Hope employees, which is sufficient to
+ 5   establish privity between the parties. See Scott v. Kuhlmann, 746 F.2d 1377, 1378 (9th Cir. 1984)
+ 6   (per curiam) (finding privity for purposes of res judicata in a case where “[d]ifferent individuals
+ 7   [we]re named defendants in the two suits, but all [were] employees of the FCC who participated in
+ 8   the” challenged conduct that led to the alleged injury); Drawsand v. F.F. Properties, L.L.P., 866 F.
+ 9   Supp. 2d 1110, 1127 (N.D. Cal. 2011) (“An employer-employee relationship generally satisfies the
+10   privity requirement for matters within the scope of employment.”). 3
+11          There is also no merit to Plaintiff’s suggestion that privity is absent due to his own suing Hope
+12   under a different name in the state court case than the name used to initiate the instant action.
+13   Critically, Plaintiff does not dispute that both cases involve the same corporate defendant. Plaintiff’s
+14   unilateral decision to use alternative names for Hope in the two lawsuits that he filed cannot serve as
+15   a basis to avoid claim preclusion.
+16   II.    The Complaint Fails to Plausibly Allege that Defendants Acted Under Color of State
+            Law.
+17
+
+18          In his opposition, Plaintiff appears to argue that Hope is a state actor merely because state law
+19   required his enrollment in the program, which is governed by an extensive regulatory scheme. ECF
+20   No. 23 at 13-14. In that regard, Plaintiff points to four categories of allegations to support his
+21   contention that Defendants are state actors: (1) the statutory instruction that a certified provider
+22   determine treatment length “in consultation with” a parole officer, Cal. Penal Code § 3008(d)(2); (2)
+23   the regulatory requirement of a jointly signed Form 3043, 15 Cal. Code Regs. § 3574(f)(1); (3) Hope’s
+24   submission of treatment-status content that was cited in CDCR’s discharge-review report; and a
+25   single instance in which a parole agent allegedly told Hope to record Plaintiff’s attendance as a “no
+26   show.” Id.
+27
+            3
+              As Plaintiff notes in his opposition, the pertinent discussion in Drawsand appears at page
+28   1127, not 1227. Defendants apologize for citing the wrong page number in their motion.
+                                                                                                           -5-
+     DEFENDANTS SHANNON SMITH AND HOPE PROGRAM, A LICENSED CLINICAL SOCIAL WORKER PROFESSIONAL
+     CORPORATION’S REPLY IN SUPPORT OF MOTION TO DISMISS – Case No. 3:26-cv-07504-LJC
+     Case 3:26-cv-07504-LJC          Document 30        Filed 10/13/26      Page 6 of 10
+
+
+
+ 1          None of these, alone or together, establishes the “substantial degree of cooperation” this
+ 2   Circuit requires before private conduct becomes state action. Franklin v. Fox, 312 F.3d 423, 445 (9th
+ 3   Cir. 2002). The regulatory requirement for Hope to consult with CDCR and for both entities to sign
+ 4   Form 3043 describe the conditions under which Hope is permitted to operate as a contractor. At
+ 5   most, they require CDCR to exercise some degree of oversight over the parolees it supervises.
+ 6   Importantly, these regulatory requirements do not demonstrate that the State authored, directed, or
+ 7   even influenced the content of Hope’s clinical assessments, which is the specific conduct Plaintiff
+ 8   challenges. Caviness v. Horizon Cmty. Learning Ctr., Inc., 590 F.3d 806, 812 (9th Cir. 2010) (the
+ 9   inquiry asks whether “the specific conduct of which the plaintiff complains” is fairly attributable to
+10   the State). A contract to perform a state-mandated function, without an allegation that the State
+11   authored, dictated, or ratified Hope’s clinical judgments, is not enough. Rendell-Baker v. Kohn, 457
+12   U.S. 830, 841 (1982).
+13          Moreover, a private entity’s participation in a state regulatory or contractual scheme, without
+14   more, does not convert its conduct into state action. Id.; Blum v. Yaretsky, 457 U.S. 991, 1005 (1982).
+15   “Even extensive government regulation of a private business is insufficient to make that business a
+16   state actor if the challenged conduct was not compelled or even influenced by any state regulation.”
+17   Caviness, 590 F.3d at 816 (quotations omitted). Plaintiff’s allegations reflect that Defendants
+18   privately operated a sex offender management program that was regulated by the state. The
+19   complaint’s allegations do not, as Plaintiff contends, “describe coordinated decision-making.” See
+20   ECF No. 23 at 14.
+21   III.   Plaintiff’s Allegations Are Insufficient to State First Amendment and Due Process
+            Claims.
+22
+
+23          Plaintiff’s First Amendment argument does not identify any allegation reflecting that
+24   Palacios’s statements were made to chill Plaintiff’s speech. Nieves v. Bartlett, 587 U.S. 391, 398
+25   (2019) (holding that a causal link between retaliatory animus and injury is required to state a First
+26   Amended retaliation claim); Ariz. Students’ Ass’n v. Ariz. Bd. of Regents, 824 F.3d 858, 867 (9th Cir.
+27   2016). As explained in Defendants’ motion, Plaintiff’s allegations reflect that Palacios’s criticism of
+28   Plaintiff was nothing more than responsive speech, which cannot form the basis of a First Amended
+                                                                                                        -6-
+     DEFENDANTS SHANNON SMITH AND HOPE PROGRAM, A LICENSED CLINICAL SOCIAL WORKER PROFESSIONAL
+     CORPORATION’S REPLY IN SUPPORT OF MOTION TO DISMISS – Case No. 3:26-cv-07504-LJC
+     Case 3:26-cv-07504-LJC           Document 30        Filed 10/13/26      Page 7 of 10
+
+
+
+ 1   retaliation claim. See Nunez v. City of Los Angeles, 147 F.3d 867, 875 (9th Cir. 1998).
+ 2          Plaintiff’s opposition also fails to demonstrate that the complaint states a due process claim.
+ 3   Plaintiff does not dispute that a grievance procedure was available for perceived factual errors in the
+ 4   discharge-review report. See 15 Cal. Code Regs. §§ 3482(a)(2), 3484(a). Instead, Plaintiff argues
+ 5   that the provided safeguards were insufficient because the deprivation here was “systemic” rather
+ 6   than the product of a “random and unauthorized act.” ECF No. 23 at 18. In support of this argument,
+ 7   Plaintiff relies on Zinermon v. Burch, 494 U.S. 113 (1990), which held that the existence of
+ 8   postdeprivation remedies does not necessarily foreclose a due process claim challenging the adequacy
+ 9   of predeprivation procedures. Specifically, Zinermon held that “[i]n situations where the State
+10   feasibly can provide a predeprivation hearing before taking property, it generally must do so
+11   regardless of the adequacy of a postdeprivation tort remedy to compensate for the taking.” Id. at 132.
+12          Plaintiff’s contention that he is entitled to predeprivation safeguards lacks merit. Plaintiff
+13   admits that he does not challenge his original conviction or the initial requirement that he complete
+14   sex offender therapy as a condition of his parole. ECF No. 23 at 17. Instead, he challenges the
+15   requirement that he continue to participate in Hope’s sex offender management program until
+16   termination of his parole. Id. at 17-18. Plaintiff, however, does not have a protected liberty in the
+17   discontinuation of his sex offender therapy. “There is no right under the Federal Constitution to be
+18   conditionally released before the expiration of a valid sentence, and the States are under no duty to
+19   offer parole to their prisoners.” Swarthout v. Cooke, 562 U.S. 216, 220 (2011). Moreover, convicted
+20   sex offenders who are subject to mandatory sex offender treatment, such as Plaintiff, have already
+21   received all procedural protections required under the Fourteenth Amendment. Neal v. Shimoda, 131
+22   F.3d 818, 831 (9th Cir. 1997) (“An inmate who has been convicted of a sex crime in a prior adversarial
+23   setting, whether as the result of a bench trial, jury trial, or plea agreement, has received the minimum
+24   protections required by due process.”); see also Fletcher v. Idaho Dep’t of Corr., 2020 WL 7082690,
+25   at *6 n.5 (D. Idaho Dec. 3, 2020) (“Although such an individual has a liberty interest in avoiding
+26   mandatory sex offender treatment and registration, that individual—having been convicted in a court
+27   ///
+28   ///
+                                                                                                         -7-
+     DEFENDANTS SHANNON SMITH AND HOPE PROGRAM, A LICENSED CLINICAL SOCIAL WORKER PROFESSIONAL
+     CORPORATION’S REPLY IN SUPPORT OF MOTION TO DISMISS – Case No. 3:26-cv-07504-LJC
+     Case 3:26-cv-07504-LJC           Document 30        Filed 10/13/26      Page 8 of 10
+
+
+
+ 1   of law of a registrable sex offense—has already received all the process to which he is due.”). 4
+ 2          Furthermore, Plaintiff’s contention that he is entitled to predeprivation remedies is
+ 3   nonsensical. Requiring Plaintiff to remain in sex offender therapy simply preserves the status-quo.
+ 4   And until a formal decision is made regarding whether he must remain in sex offender therapy, there
+ 5   simply is nothing for Plaintiff to challenge. Consequently, it is not feasible to provide the unspecified
+ 6   predeprivation safeguards that Plaintiff maintains he was entitled to receive.
+ 7   IV.    The Bane Act Claim Still Fails.
+ 8          Plaintiff’s opposition confirms that the complaint does not sufficiently allege interference
+ 9   with Plaintiff’s rights “by threat, intimidation, or coercion” within the meaning of California Civil
+10   Code § 52.1. See Herrera v. AllianceOne Receivable Mgmt., Inc., 170 F. Supp. 3d 1282, 1288 (S.D.
+11   Cal. 2016) (observing that coercion under the Bane Act requires force, physical or moral, constraining
+12   the plaintiff to act against his will). Plaintiff argues that the complaint describes Hope’s “gatekeeping
+13   role” and knowledge that an adverse characterization in its reports would result in parole
+14   consequences is sufficient to establish coercion. ECF No. 23 at 19. These allegations describe the
+15   ordinary operation of Hope’s treatment program, which involved transmitting reports to CDCR. The
+16   mere fact that unfavorable reports could have adverse parole consequences does not, without more,
+17   demonstrate that Hope interfered with Plaintiff’s rights by using threats, intimidation, or coercion.
+18   V.     Plaintiff’s Opposition Confirms That The Fraud and Negligent Misrepresentation
+            Claims Is Inadequately Pled.
+19
+20          Plaintiff’s opposition lists several alleged misrepresentations that, according to Plaintiff, are
+21   sufficient to comply with Rule 9(b)’s heightened pleading standard. ECF No. 23 at 20. None of the
+22   listed allegations identify the specific speaker or explain how attributing each statement to
+23   “Defendants” or “a HOPE clinician” satisfies Rule 9(b)’s particularity requirement. Consequently,
+24   Plaintiff has failed to refute Defendants’ argument that the complaint’s allegations do not comply
+25
+     4
+       The mere fact that Plaintiff is not required to exhaust available administrative remedies prior to
+26   bringing a section 1983 claim does not warrant a different conclusion. Patsy v. Bd. of Regents, 457
+     U.S. 496, 516 (1982) excuses Plaintiff from exhausting administrative remedies prior to filing a
+27   section 1983 action. It does not, however, entitle Plaintiff to additional procedural safeguards.
+     Indeed, Plaintiff specifically acknowledges that the lack of any exhaustion requirement “does not
+28   itself prove the process inadequate.” ECF No. 23 at 18-19.
+                                                                                                          -8-
+     DEFENDANTS SHANNON SMITH AND HOPE PROGRAM, A LICENSED CLINICAL SOCIAL WORKER PROFESSIONAL
+     CORPORATION’S REPLY IN SUPPORT OF MOTION TO DISMISS – Case No. 3:26-cv-07504-LJC
+     Case 3:26-cv-07504-LJC           Document 30        Filed 10/13/26      Page 9 of 10
+
+
+
+ 1   with Rule 9(b). See Sanford v. MemberWorks, Inc., 625 F.3d 550, 558 (9th Cir. 2010) (explaining
+ 2   that the circumstances that must be stated with particularity pursuant to Rule 9(b) include the “time,
+ 3   place, and specific content of the false representations as well as the identities of the parties to the
+ 4   misrepresentations”). Plaintiff’s own statement that “the defect is curable” and that he “can amend
+ 5   to separate each speaker and representation,” ECF No. 23 at 21, confirms that the complaint’s
+ 6   allegations do not conform to Rule 9(b)’s requirements.
+ 7          Plaintiff’s opposition also fails to demonstrate that the complaint sufficiently alleges
+ 8   justifiable reliance on any of the alleged misrepresentations. Plaintiff argues that the complaint
+ 9   “pleads direct reliance: Plaintiff remained enrolled, structured his commercial-driving work around
+10   Hope’s schedule, refrained from seeking another provider, and delayed seeking judicial relief because
+11   he believed completion remained achievable.” ECF No. 23 at 20. Plaintiff’s argument asks the court
+12   to ignore the reality of circumstances. Plaintiff’s continued participation in sex offender therapy was
+13   required as a condition of his parole. His contention that an alleged misrepresentation—as opposed
+14   to his desire not to return to prison—motivated him to continue sex offender therapy is simply not
+15   plausible and need not be accepted by this court.
+16   VI.    Plaintiff Concedes That His RICO Claim is Inadequately Pled
+17          Plaintiff’s opposition also concedes, at least tacitly, that the complaint’s RICO claim suffers
+18   from the same deficiency as his misrepresentation claim. In his opposition, Plaintiff states that he no
+19   longer relies on the obstruction predicate, acknowledging that 18 U.S.C. § 1519 “is not among the
+20   predicate offenses listed in” 18 U.S.C. § 1961(1). ECF No. 23 at 21. That leaves only the mail- and
+21   wire-fraud predicates. With respect to those two predicate acts, the opposition states “an amended
+22   complaint can identify each alleged mailing or wire by date, sender, recipient, document, false
+23   content, and role in the alleged scheme, and can clarify which Defendant is the RICO ‘person’ and
+24   which person and entities compose the enterprise.” Id. at 21. Given that Plaintiff does not dispute
+25   this claim’s deficiencies, Defendants’ motion should be granted as to the complaint’s RICO claim.
+26   VII.   Conclusion
+27          For the foregoing reasons, as well as the reasons set forth in Defendants’ motion, the Court
+28   should grant Defendants’ motion to dismiss Plaintiff’s complaint in its entirety, without leave to
+                                                                                                         -9-
+     DEFENDANTS SHANNON SMITH AND HOPE PROGRAM, A LICENSED CLINICAL SOCIAL WORKER PROFESSIONAL
+     CORPORATION’S REPLY IN SUPPORT OF MOTION TO DISMISS – Case No. 3:26-cv-07504-LJC
+     Case 3:26-cv-07504-LJC      Document 30     Filed 10/13/26    Page 10 of 10
+
+
+
+ 1   amend.
+ 2   Dated: October 13, 2026                        Respectfully submitted,
+ 3                                                  SIMS, LAWRENCE & BROGHAMMER
+ 4
+                                                   By: _______________________________
+ 5                                                     CYNTHIA G. LAWRENCE
+                                                       BLAZE VAN DINE
+ 6                                                     ERIC T. MARTINEZ
+                                                       Attorneys for Defendants,
+ 7                                                     SHANNON SMITH AND HOPE
+                                                       PROGRAM, A LICENSED CLINICAL
+ 8                                                     SOCIAL WORKER PROFESSIONAL
+                                                       CORPORATION (sued and served as
+ 9                                                     HOPE PSYCHOTHERAPY, INC.)
+10
+
+11
+
+12
+
+13
+
+14
+
+15
+
+16
+
+17
+
+18
+
+19
+20
+
+21
+
+22
+
+23
+
+24
+
+25
+
+26
+
+27
+
+28
+                                                                                           -10-
+     DEFENDANTS SHANNON SMITH AND HOPE PROGRAM, A LICENSED CLINICAL SOCIAL WORKER PROFESSIONAL
+     CORPORATION’S REPLY IN SUPPORT OF MOTION TO DISMISS – Case No. 3:26-cv-07504-LJC
+

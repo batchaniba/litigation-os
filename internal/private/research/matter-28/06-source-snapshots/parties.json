@@ -1,0 +1,62 @@
+{
+  "defendants_label": "HOPE Psychotherapy, Inc. (d/b/a HOPE Program), CASOMB-certified LCSW Professional Corporation (principal office: 1245 B Street, Hayward, CA 94541; 16 statewide locations); Shannon Smith, LCSW (CEO and Founder, individually)",
+  "serviceTracking": [
+    {
+      "name": "Shannon Smith, LCSW",
+      "title": "Individual Defendant (CEO / Founder)",
+      "location": "Serve personally under Rule 4(e) — confirm address (HOPE: 1245 B Street, Hayward, CA 94541 or other)",
+      "served": true,
+      "dateServed": "August 31, 2026",
+      "note": "Van Dine accepted service for both defendants effective August 31, 2026. Dkt. 13 POS filed September 3, 2026 (email only to slb-eservice@sims-law.net and blaze@sims-law.net). Rule 4(m) satisfied. Answer due September 21, 2026."
+    },
+    {
+      "name": "HOPE Psychotherapy, Inc. (d/b/a HOPE Program)",
+      "title": "Corporate Defendant",
+      "location": "Serve via officer/agent or registered agent under Rule 4(h) — principal office 1245 B Street, Hayward, CA 94541",
+      "served": true,
+      "dateServed": "August 31, 2026",
+      "note": "Van Dine accepted service for both defendants effective August 31, 2026. Dkt. 13 POS filed September 3, 2026 (email only to slb-eservice@sims-law.net and blaze@sims-law.net). Rule 4(m) satisfied. Answer due September 21, 2026."
+    }
+  ],
+  "serviceList": {
+    "updated": "2026-10-14",
+    "note": "SLB@sims-law.net is INVALID: bounced 550 Rejected on Oct 14, 2026 when the Rule 26(a)(1) initial disclosures were served. Do not use. (Last names for June and Amber from timeline.public.json meet-and-confer CC entry.)",
+    "invalidAddresses": [
+      {
+        "email": "SLB@sims-law.net",
+        "reason": "550 Rejected",
+        "bouncedOn": "2026-10-14"
+      }
+    ],
+    "recipients": [
+      {
+        "name": "Cynthia G. Lawrence, Esq.",
+        "email": "cynthia@sims-law.net"
+      },
+      {
+        "name": "Blaze Van Dine, Esq.",
+        "email": "blaze@sims-law.net"
+      },
+      {
+        "name": "Eric T. Martinez, Esq.",
+        "email": "emartinez@sims-law.net"
+      },
+      {
+        "name": "Kim Schmitt (Legal Secretary)",
+        "email": "kschmitt@sims-law.net"
+      },
+      {
+        "name": "June Meinecke",
+        "email": "june@sims-law.net"
+      },
+      {
+        "name": "Amber Krausse",
+        "email": "Amber@sims-law.net"
+      },
+      {
+        "name": "Sims, Lawrence & Broghammer (e-service)",
+        "email": "slb-eservice@sims-law.net"
+      }
+    ]
+  }
+}

@@ -1,0 +1,1372 @@
+ 1   BRENDAN NGEHSI NEWANFORBI
+     Plaintiff, In Pro Per
+ 2
+     1455 Cat Tail Drive
+ 3   Stockton, CA 95204
+     Telephone: (209) 801-4442
+ 4   E-mail: bnn.cdl@gmail.com
+ 5
+
+ 6                                        UNITED STATES DISTRICT COURT
+
+ 7                                    NORTHERN DISTRICT OF CALIFORNIA
+
+ 8
+
+ 9     BRENDAN NGEHSI NEWANFORBI,                                            Case No. 3:26-cv-07504-LJC
+
+10                       Plaintiff,                                          PLAINTIFF'S OPPOSITION TO
+                                                                             DEFENDANTS' MOTION TO
+11          v.                                                               DISMISS
+
+12
+       SHANNON SMITH, LCSW, Chief                                            Date: October 20, 2026
+       Executive Officer and Founder of                                      Time: 10:30 a.m.
+13
+       HOPE Program, an individual; and                                      Courtroom: G, 15th Floor
+14     HOPE PSYCHOTHERAPY, INC.,                                             Judge: Hon. Lisa J. Cisneros
+       d/b/a HOPE PROGRAM, a California
+15     corporation,
+
+16                       Defendants.
+
+17
+
+18
+
+19   Hearing Date: October 20, 2026, at 10:30 a.m., in Courtroom G, 15th Floor, before the
+
+20   Honorable Lisa J. Cisneros, United States District Court for the Northern District of
+
+21   California.
+
+22
+
+23                                                  TABLE OF CONTENTS
+
+24
+
+25   I. ISSUES PRESENTED . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4
+
+26   II. INTRODUCTION . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5
+
+27   III. RELEVANT ALLEGATIONS AND PROCEDURAL RECORD . . . . . . . . . . . . . . . . 6
+
+28   IV. LEGAL STANDARD AND THE PROPER SCOPE OF JUDICIAL NOTICE . . . . . 7
+
+                                                                 Page 1
+                 PLAINTIFF'S OPPOSITION TO MOTION TO DISMISS -- NEWANFORBI v. SMITH (N.D. Cal.)
+ 1   V. ARGUMENT . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 8
+
+ 2        A. Defendants Have Not Established Claim or Issue Preclusion. . . . . . . . . . . . . . . . . . . . . 8
+
+ 3        B. The Complaint Plausibly Alleges That Defendants Acted Under Color of State
+
+ 4        Law. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .         13
+
+ 5        C. The First Amendment Claim Alleges More Than Offensive Responsive Speech. . . . . 17
+
+ 6        D. The Due-Process Claim Challenges a Systemic, Foreseeable Deprivation, Not
+
+ 7        Merely a Mistake Correctable by Grievance. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17
+
+ 8        E. The Bane Act Claim Pleads Coercion Beyond the Underlying Constitutional
+
+ 9        Violation. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .           19
+
+10        F. The Fraud and Negligent-Misrepresentation Allegations Are Substantial; Any
+
+11        Particularity Gap Is Curable. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                      20
+
+12        G. The RICO Claim Should Not Be Dismissed With Prejudice. . . . . . . . . . . . . . . . . . . . . 21
+
+13        H. Any Dismissal Should Be With Leave to Amend. . . . . . . . . . . . . . . . . . . . . . . . . . . . .                                          22
+
+14   VI. CONCLUSION . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22
+
+15
+
+16                                                         TABLE OF AUTHORITIES
+
+17
+
+18   Cases
+
+19
+
+20      Arizona Students' Ass'n v. Arizona Bd. of Regents, 824 F.3d 858 (9th Cir. 2016) . . . . . . . . . . . . . . 17
+
+21      Ashcroft v. Iqbal, 556 U.S. 662 (2009) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7
+
+22      Berri v. Superior Court, 43 Cal. 2d 856 (1955) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9
+
+23      Boeken v. Philip Morris USA, Inc., 48 Cal. 4th 788 (2010) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 8
+
+24      Caviness v. Horizon Cmty. Learning Ctr., Inc., 590 F.3d 806 (9th Cir. 2010) . . . . . . . . . . . . . . 13, 15
+
+25      Cedric Kushner Promotions, Ltd. v. King, 533 U.S. 158 (2001) . . . . . . . . . . . . . . . . . . . . . . . . . . . . 21
+
+26      DKN Holdings LLC v. Faerber, 61 Cal. 4th 813 (2015) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 8, 10, 11
+
+27      Drawsand v. F.F. Props., L.L.P., 866 F. Supp. 2d 1110 (N.D. Cal. 2011) . . . . . . . . . . . . . . . . . . . .                                     11
+
+28      In re Dwyer . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .   12, 13
+
+                                                                             Page 2
+                  PLAINTIFF'S OPPOSITION TO MOTION TO DISMISS -- NEWANFORBI v. SMITH (N.D. Cal.)
+ 1     Erickson v. Pardus, 551 U.S. 89 (2007) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7
+
+ 2     Florer v. Congregation Pidyon Shevuyim, N.A., 639 F.3d 916 (9th Cir. 2011) . . . . . . . . . . . . . . . . 15
+
+ 3     Franklin v. Fox, 312 F.3d 423 (9th Cir. 2002) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14, 15
+
+ 4     Goddard v. Sec. Title Ins. & Guar. Co., 14 Cal. 2d 47 (1939) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 10
+
+ 5     Greenholtz v. Inmates of Neb. Penal & Corr. Complex, 442 U.S. 1 (1979) . . . . . . . . . . . . . . . . . . . 18
+
+ 6     Heath v. Cleary, 708 F.2d 1376 (9th Cir. 1983) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                10
+
+ 7     Hishon v. King & Spalding, 467 U.S. 69 (1984) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7
+
+ 8     Kearns v. Ford Motor Co., 567 F.3d 1120 (9th Cir. 2009) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                       20
+
+ 9     Khoja v. Orexigen Therapeutics, Inc., 899 F.3d 988 (9th Cir. 2018) . . . . . . . . . . . . . . . . . . . . . . . . .                            8
+
+10     Logan v. Zimmerman Brush Co., 455 U.S. 422 (1982) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 18
+
+11     Lopez v. Smith, 203 F.3d 1122 (9th Cir. 2000) (en banc) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7, 22
+
+12     Neal v. Shimoda, 131 F.3d 818 (9th Cir. 1997) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 18
+
+13     Patsy v. Bd. of Regents, 457 U.S. 496 (1982) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 10, 18
+
+14     Perez v. City of San Bruno, 27 Cal. 3d 875 (1980) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 10
+
+15     Rawson v. Recovery Innovations, Inc., 975 F.3d 742 (9th Cir. 2020) . . . . . . . . . . . . . . . . .                               13, 14, 15
+
+16     Schreiber Distrib. Co. v. Serv-Well Furniture Co., 806 F.2d 1393 (9th Cir. 1986) . . . . . . . . . . . . . . 21
+
+17     Scott v. Kuhlmann, 746 F.2d 1377 (9th Cir. 1984) (per curiam) . . . . . . . . . . . . . . . . . . . . . . . 8, 11, 12
+
+18     Valvo v. Univ. of S. Cal., 67 Cal. App. 3d 887 (1977) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9
+
+19     West v. Atkins, 487 U.S. 42 (1988) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 16
+
+20     Zinermon v. Burch, 494 U.S. 113 (1990) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .              18
+
+21
+
+22   Statutes
+
+23
+
+24     18 U.S.C. § 1519 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 21, 22
+
+25     18 U.S.C. § 1961(1) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 21
+
+26     Cal. Civ. Code § 52.1 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4, 19, 22
+
+27     Cal. Code Civ. Proc. § 581d . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9
+
+28     Cal. Penal Code § 3008(d)(2) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6, 13, 18
+
+                                                                        Page 3
+                PLAINTIFF'S OPPOSITION TO MOTION TO DISMISS -- NEWANFORBI v. SMITH (N.D. Cal.)
+ 1
+
+ 2   Rules
+
+ 3
+
+ 4     Fed. R. Civ. P. 12(b)(6) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4, 7, 22
+
+ 5     Fed. R. Civ. P. 15(a)(2) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7, 22
+
+ 6     Fed. R. Civ. P. 9(b) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .     20, 21
+
+ 7
+
+ 8   Regulations
+
+ 9
+
+10     15 Cal. Code Regs. § 3574(f)(1) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                6, 13, 18
+
+11
+
+12                                                          I. ISSUES PRESENTED
+
+13
+
+14             1. Whether claim preclusion can be decided on a Rule 12(b)(6) motion when
+
+15   Defendants' own judicially noticed packet contains only an order sustaining a demurrer--not a
+
+16   judgment of dismissal--and therefore does not establish a final judgment.
+
+17
+
+18             2. Whether the Complaint plausibly alleges state action where a contracted treatment
+
+19   provider and parole officials jointly generated, signed, transmitted, and relied on
+
+20   treatment-retention records that governed Plaintiff's mandatory treatment and continued parole
+
+21   supervision.
+
+22
+
+23             3. Whether the Complaint's remaining allegations state plausible First Amendment,
+
+24   due-process, Bane Act, fraud, and RICO claims, or at minimum identify defects that can be
+
+25   cured by amendment.
+
+26
+
+27
+
+28
+
+                                                                          Page 4
+                 PLAINTIFF'S OPPOSITION TO MOTION TO DISMISS -- NEWANFORBI v. SMITH (N.D. Cal.)
+ 1                                          II. INTRODUCTION
+
+ 2
+
+ 3          Defendants' threshold defense fails on the record they selected. Their Exhibit C is a
+
+ 4   four-page order sustaining a demurrer without leave to amend. It is not a judgment of
+
+ 5   dismissal. The document was drafted and lodged by the state-court defendants on May 22,
+
+ 6   2026; its caption originally read "[PROPOSED] ORDER," with "PROPOSED" later crossed
+
+ 7   out by hand; and its footer still reads "[PROPOSED] ORDER ON DEFENDANTS KATIE
+
+ 8   PALACIOS AND HOPE PROGRAM'S DEMURRER." Judge George J. Abdallah, Jr. signed
+
+ 9   it, and it was filed July 15, 2026. But it neither dismisses the action nor enters judgment.
+
+10   Under California law, an order sustaining a demurrer is not itself a final judgment and does
+
+11   not acquire claim-preclusive effect before judgment is entered.
+
+12
+
+13          The order also does not adopt any one of the four grounds Defendants presented in
+
+14   their demurrer. It says only that the first amended complaint "fails to allege facts sufficient to
+
+15   state any cause of action." It contains no finding on causation, exhaustion, habeas, or any other
+
+16   disputed issue. Thus, Defendants' exhibits establish neither the final-judgment element of
+
+17   claim preclusion nor the actual-and-necessary decision required for issue preclusion.
+
+18
+
+19          Defendants' separate nonparty theory reaches only Shannon Smith. Smith was not
+
+20   named in the state action, and Defendants have not established privity as a matter of law.
+
+21   Their authorities involve employees or agents sued for the same conduct previously litigated
+
+22   against their employer. The federal Complaint, by contrast, alleges Smith's own post-policy
+
+23   conduct as HOPE's chief executive and sole policy authority: personally approving and
+
+24   maintaining a statewide retention policy, issuing a later manual that continued it, and failing to
+
+25   correct it despite notice. ECF No. 1 ¶¶ 12, 42-44, 54-55. At minimum, whether those personal
+
+26   acts were represented in the state action is a factual question that cannot be resolved against
+
+27   Plaintiff on the pleadings.
+
+28
+
+                                                   Page 5
+              PLAINTIFF'S OPPOSITION TO MOTION TO DISMISS -- NEWANFORBI v. SMITH (N.D. Cal.)
+ 1          On the merits, Defendants reduce the Complaint to a private vendor's independent
+
+ 2   treatment decision. That is not what is pleaded. The Complaint alleges that HOPE is integrated
+
+ 3   into California's parole-supervision machinery; that HOPE and parole personnel jointly create
+
+ 4   and sign the Form 3043 retention determination; that a parole agent directed HOPE to record
+
+ 5   Plaintiff as a "no show" despite acknowledging a technological error; and that CDCR
+
+ 6   expressly relied on HOPE's treatment report when denying discharge. Id. ¶¶ 18-19, 31-37.
+
+ 7   Those allegations plausibly satisfy the joint-action and close-nexus tests. They also make this
+
+ 8   case the opposite of Defendants' cases, where the State had no involvement in the specific
+
+ 9   challenged decision.
+
+10
+
+11          The motion should be denied. If the Court finds any count insufficiently particular, the
+
+12   cure is an amended pleading--not dismissal with prejudice.
+
+13
+
+14               III. RELEVANT ALLEGATIONS AND PROCEDURAL RECORD
+
+15
+
+16          California requires covered parolees to participate in a sex-offender management
+
+17   program. The treatment period runs from at least one year through the remaining parole term
+
+18   and is determined by the certified treatment professional "in consultation with the parole
+
+19   officer and as approved by the court." Cal. Penal Code § 3008(d)(2). The implementing
+
+20   regulation requires good cause for retention and a written Form 3043 signed by both the
+
+21   treatment provider and parole agent. 15 Cal. Code Regs. § 3574(f)(1).
+
+22
+
+23          The Complaint alleges that HOPE contracts with CDCR to perform this mandatory
+
+24   treatment function and was the sole CASOMB-certified provider serving the Stockton region
+
+25   during the relevant period. ECF No. 1 ¶¶ 13, 17-19. It alleges a corporate policy under which
+
+26   no parolee could be deemed to have completed treatment before discharge from parole,
+
+27   regardless of individualized progress. Id. ¶¶ 1-4, 20-25. Smith, HOPE's chief executive and
+
+28   founder, allegedly had exclusive authority to modify company policy and personally
+
+                                                  Page 6
+             PLAINTIFF'S OPPOSITION TO MOTION TO DISMISS -- NEWANFORBI v. SMITH (N.D. Cal.)
+ 1   approved, implemented, and maintained that policy. Id. ¶¶ 12, 42-44.
+
+ 2
+
+ 3          The challenged conduct is concrete. HOPE allegedly supplied CDCR with Form 3043
+
+ 4   treatment-status content stating that Plaintiff only partially completed homework and had not
+
+ 5   completed treatment. Id. ¶¶ 31-33. On March 31, 2026, a parole agent allegedly acknowledged
+
+ 6   a "technological error" yet instructed HOPE to "mark him as a no show." Id. ¶ 34. CDCR's
+
+ 7   November 2025 discharge-review report then expressly cited HOPE's progress assessment and
+
+ 8   recommendation for continued treatment before concluding "Discharge Denied/No Action."
+
+ 9   Id. ¶¶ 35-37. Plaintiff alleges that continued GPS monitoring, curfew restrictions, mandatory
+
+10   attendance, and lost commercial-driving work followed. Id. ¶¶ 37, 48-52.
+
+11
+
+12          Plaintiff previously sued HOPE Psychotherapy, Inc. and Katie Palacios in San Joaquin
+
+13   County Superior Court, Case No. STK-CV-UF-2026-0001032. Defendants' present request for
+
+14   judicial notice repeatedly identifies the year as "2006," but the state-court order confirms
+
+15   "2026." On July 15, 2026, Judge Abdallah filed the order sustaining the demurrer without
+
+16   leave to amend. RJN Ex. C. The packet contains no judgment of dismissal. The proof of
+
+17   service attached to Exhibit C is dated May 22, 2026 and concerns the proposed order as
+
+18   lodged; it is not proof of service of the entered July 15 order.
+
+19
+
+20         IV. LEGAL STANDARD AND THE PROPER SCOPE OF JUDICIAL NOTICE
+
+21
+
+22          A Rule 12(b)(6) motion tests the legal sufficiency of the complaint. The Court accepts
+
+23   well-pleaded factual allegations as true and draws reasonable inferences in Plaintiff's favor.
+
+24   Hishon v. King & Spalding, 467 U.S. 69, 73 (1984); Ashcroft v. Iqbal, 556 U.S. 662, 678
+
+25   (2009). A self-represented pleading is liberally construed, and leave to amend must be granted
+
+26   unless it is absolutely clear the defects cannot be cured. Erickson v. Pardus, 551 U.S. 89, 94
+
+27   (2007); Lopez v. Smith, 203 F.3d 1122, 1130-31 (9th Cir. 2000) (en banc); see Fed. R. Civ. P.
+
+28   15(a)(2) (leave to amend shall be freely given when justice so requires).
+
+                                                   Page 7
+              PLAINTIFF'S OPPOSITION TO MOTION TO DISMISS -- NEWANFORBI v. SMITH (N.D. Cal.)
+ 1
+
+ 2          Preclusion is an affirmative defense that ordinarily is not raised by motion; it may
+
+ 3   support dismissal at the pleading stage only where its elements are established by the
+
+ 4   complaint and judicially noticeable materials with no disputed issue of material fact. Scott v.
+
+ 5   Kuhlmann, 746 F.2d 1377, 1378 (9th Cir. 1984) (per curiam). Plaintiff does not oppose notice
+
+ 6   of the existence, filing dates, and legal effect of the state-court filings. He opposes treating
+
+ 7   allegations and arguments in those papers as true, or treating grounds argued in a demurrer
+
+ 8   memorandum as findings made by the court. See Khoja v. Orexigen Therapeutics, Inc., 899
+
+ 9   F.3d 988, 999 (9th Cir. 2018).
+
+10
+
+11          The Court should therefore notice what Exhibit C actually does--and what it does not
+
+12   do. It sustains a demurrer; it does not dismiss the action, enter judgment, identify the ground
+
+13   adopted, or make a merits finding. Defendants may not transform their own advocacy in
+
+14   Exhibit B into findings absent from Exhibit C.
+
+15
+
+16                                             V. ARGUMENT
+
+17
+
+18   A. Defendants Have Not Established Claim or Issue Preclusion.
+
+19
+
+20          California claim preclusion requires "(1) the same cause of action (2) between the
+
+21   same parties or parties in privity with them (3) after a final judgment on the merits in the first
+
+22   suit." DKN Holdings LLC v. Faerber, 61 Cal. 4th 813, 824 (2015); see Boeken v. Philip
+
+23   Morris USA, Inc., 48 Cal. 4th 788, 797 (2010). The absence of a final judgment defeats claim
+
+24   preclusion as to both Defendants. The separate absence of party identity or established privity
+
+25   independently defeats the defense as to Smith. And because the order identifies no ground
+
+26   actually decided, it cannot establish issue preclusion.
+
+27
+
+28
+
+                                                    Page 8
+              PLAINTIFF'S OPPOSITION TO MOTION TO DISMISS -- NEWANFORBI v. SMITH (N.D. Cal.)
+ 1   1. Exhibit C is not a final judgment and therefore cannot preclude either Defendant.
+
+ 2
+
+ 3          Defendants attach no judgment. Exhibit C is titled as an order, directs that a demurrer
+
+ 4   be sustained without leave to amend, and contains no dismissal language. That distinction is
+
+ 5   dispositive. California requires a dismissal to be entered in writing as a judgment. Cal. Code
+
+ 6   Civ. Proc. § 581d. "Until entry of judgment, a ruling on a demurrer is not res judicata and may
+
+ 7   be reconsidered and changed by the trial court." Valvo v. University of Southern California, 67
+
+ 8   Cal. App. 3d 887, 892 n.3 (1977). Consistently, an order sustaining a demurrer without leave
+
+ 9   to amend is not appealable because it is not the final judgment. Berri v. Superior Court, 43
+
+10   Cal. 2d 856, 860 (1955).
+
+11
+
+12          The unusual form of Exhibit C reinforces rather than changes that result.
+
+13   "PROPOSED" was crossed out in the caption when the judge signed it, but each page still
+
+14   bears the proposed-order footer. The document also bears "FILE BY FAX." Those features
+
+15   may show that the lodged proposal became an entered order; they do not convert the order into
+
+16   a judgment of dismissal. Nor does the May 22 proof of service establish service--or even
+
+17   existence--of a later judgment. On the materials Defendants presented, the state action never
+
+18   reached the final disposition required for claim preclusion.
+
+19
+
+20          This defect applies to both HOPE and Smith. Plaintiff does not argue that every
+
+21   demurrer ruling is forever incapable of preclusive effect. He argues the narrower point
+
+22   established by Defendants' packet: no ensuing judgment is before this Court.
+
+23
+
+24
+
+25
+
+26
+
+27
+
+28
+
+                                                  Page 9
+              PLAINTIFF'S OPPOSITION TO MOTION TO DISMISS -- NEWANFORBI v. SMITH (N.D. Cal.)
+ 1   2. The generic order establishes no issue that was actually and necessarily decided.
+
+ 2
+
+ 3           Issue preclusion requires a determination of the identical issue that was actually
+
+ 4   litigated, necessarily decided, final, and asserted against a party or privy. DKN Holdings, 61
+
+ 5   Cal. 4th at 825. Exhibit C cannot satisfy those requirements. Defendants urged four grounds:
+
+ 6   causation, failure to exhaust, habeas as the asserted vehicle, and failure to state a claim. The
+
+ 7   order adopts none of them. It states only that the first amended complaint "fails to allege facts
+
+ 8   sufficient to state any cause of action." It contains no finding about the truth of Plaintiff's
+
+ 9   allegations, Smith's conduct, the blanket policy, state action, or any federal element.
+
+10
+
+11           Goddard v. Security Title Insurance & Guarantee Co., 14 Cal. 2d 47 (1939), does not
+
+12   supply the missing finding. Goddard explains that the effect of a judgment following a general
+
+13   demurrer depends on the defect adjudicated: a judgment may reach the merits where the
+
+14   pleading establishes an absolute bar, but not where the defect is formal or curable by a
+
+15   different pleading. Id. at 52-53. Here, there is no judgment and no identified basis from which
+
+16   this Court could determine what issue, if any, the state court necessarily resolved.
+
+17
+
+18           Nor may Defendants select exhaustion from their own demurrer brief after the fact. If
+
+19   the state ruling rested on prematurity or a failure to satisfy a precondition, that would not
+
+20   adjudicate the underlying merits. Perez v. City of San Bruno, 27 Cal. 3d 875, 882-83 (1980).
+
+21   And state administrative exhaustion is not a prerequisite to a § 1983 action. Patsy v. Board of
+
+22   Regents, 457 U.S. 496, 516 (1982); see also Heath v. Cleary, 708 F.2d 1376, 1380 & n.4 (9th
+
+23   Cir. 1983) (a prior state disposition based on nonexhaustion did not decide the unadjudicated
+
+24   substantive federal claims). Those authorities are an alternative response if Defendants
+
+25   contend the state court adopted exhaustion--not an invitation to infer a ground the order does
+
+26   not state.
+
+27
+
+28           Defendants' "could have been litigated" argument does not cure the threshold problem.
+
+                                                    Page 10
+              PLAINTIFF'S OPPOSITION TO MOTION TO DISMISS -- NEWANFORBI v. SMITH (N.D. Cal.)
+ 1   New legal labels generally do not avoid California claim preclusion where the same primary
+
+ 2   right was reduced to a final judgment. But without a final judgment, there is no claim
+
+ 3   preclusion to extend.
+
+ 4
+
+ 5   3. Defendants have not established that Smith is in privity with a state-court party for
+
+ 6   the conduct alleged here.
+
+ 7
+
+ 8          Smith was not a party to the state case. Defendants therefore must establish privity,
+
+ 9   which under California law requires more than a relationship label. It requires an identity or
+
+10   community of interest, adequate representation of the nonparty's interest in the first action, and
+
+11   circumstances making it fair to bind the nonparty. DKN Holdings, 61 Cal. 4th at 826. The
+
+12   California Supreme Court has cautioned that jointly liable actors are not automatically privies
+
+13   merely because a plaintiff previously sued one of them. Id. at 824-26.
+
+14
+
+15          Neither of Defendants' principal authorities establishes privity on these pleadings. In
+
+16   Scott, the prior and later defendants were federal employees who all participated in the same
+
+17   challenged agency inquiry; the Ninth Circuit described privity among officers of the same
+
+18   government with respect to the same issue. 746 F.2d at 1378. Here, the Complaint attributes
+
+19   distinct personal conduct to Smith: she allegedly possessed exclusive policy authority,
+
+20   approved and maintained the statewide rule, issued a September 2024 manual perpetuating it,
+
+21   personally assigned work to Plaintiff, received direct notice, and declined to correct the policy.
+
+22   ECF No. 1 ¶¶ 12, 42-44, 54.
+
+23
+
+24          Drawsand v. F.F. Properties, L.L.P., 866 F. Supp. 2d 1110 (N.D. Cal. 2011), is
+
+25   likewise distinguishable. Defendants cite page "1227," but the pertinent discussion appears at
+
+26   page 1127. There, the earlier dismissal with prejudice was a final judgment, the employer and
+
+27   employees were sued over the same property and the same conduct, and the complaint itself
+
+28   alleged that the employees acted within the course and scope of employment. Id. at 1127.
+
+                                                  Page 11
+              PLAINTIFF'S OPPOSITION TO MOTION TO DISMISS -- NEWANFORBI v. SMITH (N.D. Cal.)
+ 1   Here, the necessary final judgment is absent, and whether the prior HOPE defendants
+
+ 2   represented Smith's interests concerning her distinct, individual policy conduct is not
+
+ 3   established by the complaint or RJN.
+
+ 4
+
+ 5          At minimum, privity presents a fact question. It cannot be resolved against Plaintiff
+
+ 6   under the Scott standard where the relevant facts are disputed or undeveloped.
+
+ 7
+
+ 8   4. Defendants' own entity descriptions do not support dismissal.
+
+ 9
+
+10          The federal motion captions "HOPE Program, A Licensed Clinical Social Worker
+
+11   Professional Corporation (sued and served as HOPE Psychotherapy, Inc.)." The state-court
+
+12   caption in Exhibit C identifies "HOPE PSYCHOTHERAPY, INC., d/b/a HOPE PROGRAM,
+
+13   a California corporation." Defendants cannot use the first formulation to suggest a distinct or
+
+14   misnamed federal entity while relying on the second to establish automatic party identity.
+
+15
+
+16          Plaintiff does not ask the Court to resolve corporate identity from captions alone. The
+
+17   narrower point is that Defendants must choose and prove a coherent theory. If the federal
+
+18   HOPE Defendant is the same corporation that appeared in state court, the "sued and served as"
+
+19   parenthetical is immaterial and the no-final-judgment defect still defeats preclusion. If
+
+20   Defendants contend it is a different corporation, party identity or privity cannot be assumed at
+
+21   the pleading stage.
+
+22
+
+23   5. The Complaint does not invoke In re Dwyer as binding precedent.
+
+24
+
+25          The motion attacks the Complaint's description of In re Dwyer. But the present claims
+
+26   do not depend on giving an unpublished trial-court order precedential or preclusive force. The
+
+27   Complaint pleads Dwyer principally as notice: HOPE personnel participated in that
+
+28   proceeding, a court criticized the same alleged blanket policy, and Smith allegedly continued
+
+                                                  Page 12
+              PLAINTIFF'S OPPOSITION TO MOTION TO DISMISS -- NEWANFORBI v. SMITH (N.D. Cal.)
+ 1   the policy afterward. ECF No. 1 ¶¶ 2, 23-24, 44, 54. Whether Dwyer ultimately proves notice,
+
+ 2   knowledge, or intent is a merits question. Its pleaded use does not justify dismissal.
+
+ 3
+
+ 4   B. The Complaint Plausibly Alleges That Defendants Acted Under Color of State Law.
+
+ 5
+
+ 6   1. The inquiry concerns the specific challenged conduct, not HOPE's status in the
+
+ 7   abstract.
+
+ 8
+
+ 9          The question is not whether every act of a private treatment provider is state action. It
+
+10   is whether the conduct challenged here--jointly generating and using mandatory
+
+11   treatment-retention records that affected continued parole supervision--is fairly attributable to
+
+12   the State. Caviness v. Horizon Community Learning Center, Inc., 590 F.3d 806, 812 (9th Cir.
+
+13   2010). State action may be established under any of several related approaches, including joint
+
+14   action and close nexus; the inquiry is necessarily fact-bound. Rawson v. Recovery Innovations,
+
+15   Inc., 975 F.3d 742, 747-48 (9th Cir. 2020).
+
+16
+
+17          The Complaint alleges far more than a government contract:
+
+18
+
+19          - State law requires Plaintiff's participation and assigns the duration decision to the
+
+20          certified provider in consultation with the parole officer and with court approval. Cal.
+
+21          Penal Code § 3008(d)(2); ECF No. 1 ¶¶ 14-16, 18-19.
+
+22
+
+23          - The implementing regulation requires a good-cause retention determination
+
+24          memorialized on a Form 3043 signed by the treatment provider and parole agent. 15
+
+25          Cal. Code Regs. § 3574(f)(1).
+
+26
+
+27          - HOPE allegedly supplied the treatment-status content and recommendations that the
+
+28          containment team and CDCR used. ECF No. 1 ¶¶ 31-37.
+
+                                                   Page 13
+              PLAINTIFF'S OPPOSITION TO MOTION TO DISMISS -- NEWANFORBI v. SMITH (N.D. Cal.)
+ 1
+
+ 2           - A parole agent allegedly directed HOPE to record a no-show despite acknowledging
+
+ 3           the absence resulted from a technological error. Id. ¶ 34.
+
+ 4
+
+ 5           - CDCR's discharge report expressly incorporated HOPE's assessment and
+
+ 6           recommendation before denying discharge. Id. ¶¶ 35-37.
+
+ 7
+
+ 8           Those allegations plausibly describe coordinated decision-making, not parallel private
+
+ 9   and public activity. A private person who is a willful participant in joint action with state
+
+10   officials acts under color of state law. Rawson v. Recovery Innovations, Inc., 975 F.3d 742,
+
+11   747-48 (9th Cir. 2020); see also Franklin v. Fox, 312 F.3d 423, 445 (9th Cir. 2002).
+
+12   Professional judgment does not categorically break attribution; Rawson rejected that shortcut
+
+13   and required a close, fact-intensive assessment of the State's involvement in the challenged
+
+14   conduct. 975 F.3d at 753-54.
+
+15
+
+16           The alleged March 31 directive is particularly concrete. A state agent did not merely
+
+17   acquiesce in a private report; he allegedly instructed the private provider what false attendance
+
+18   result to record, with a supervisor copied. ECF No. 1 ¶ 34. The later CDCR decision allegedly
+
+19   relied on HOPE's treatment information. Id. ¶¶ 35-37. Those facts permit a reasonable
+
+20   inference of willful joint participation.
+
+21
+
+22           That the November 2025 discharge-review report also recites other supervision-related
+
+23   factors--including prior parole-violation history, employment status, time served on parole,
+
+24   and a stability assessment--does not defeat that inference. Those additional factors, even if
+
+25   judicially noticed for their existence, do not render HOPE's Form 3043 participation
+
+26   implausible as joint action; at most they raise a factual question of comparative causation
+
+27   unsuited to resolution on the pleadings, and they do not make amendment futile.
+
+28
+
+                                                   Page 14
+              PLAINTIFF'S OPPOSITION TO MOTION TO DISMISS -- NEWANFORBI v. SMITH (N.D. Cal.)
+ 1   2. Defendants' published authorities are distinguishable on their own terms.
+
+ 2
+
+ 3          Caviness supports focusing on the conduct alleged. There, a charter school's public
+
+ 4   educational role did not make its post-employment statements state action because the
+
+ 5   complaint did not allege state involvement in those employment decisions. 590 F.3d at 812,
+
+ 6   816. Here, the State allegedly participated in the challenged reporting and retention process
+
+ 7   itself: the provider and parole agent consult, sign the prescribed form, and feed the result into
+
+ 8   discharge review. ECF No. 1 ¶¶ 31-37.
+
+ 9
+
+10          Florer v. Congregation Pidyon Shevuyim, N.A., 639 F.3d 916 (9th Cir. 2011), arose
+
+11   from a contract chaplain's ecclesiastical decision that the plaintiff did not qualify for requested
+
+12   Jewish materials and services. The record contained no evidence that corrections officials
+
+13   wanted that result, jointly classified the plaintiff, or deprived him of prison-provided benefits
+
+14   because of it. Id. at 923-26. Here, no ecclesiastical or comparably private professional
+
+15   standard is at issue. The Complaint alleges an administrative, state-prescribed retention
+
+16   process; direct instructions from a parole agent; a jointly signed form; and actual use of
+
+17   HOPE's output in a discharge decision.
+
+18
+
+19          Rawson, not Florer, supplies the closer analytical model. Although the defendants in
+
+20   Rawson were nominally private and exercised medical judgment, the Ninth Circuit held that
+
+21   the totality of their integration into the State's involuntary-commitment process could make
+
+22   their conduct state action. 975 F.3d at 747-54. Plaintiff need not show identical facts. Rawson
+
+23   establishes the relevant point at this stage: professional discretion is not dispositive, no single
+
+24   fact controls, and the relationship must be assessed as a whole.
+
+25
+
+26          Defendants also overread Franklin. Its "meeting of the minds" formulation governs a
+
+27   conspiracy route to joint action. 312 F.3d at 445. Plaintiff also pleads direct willful
+
+28   participation and interdependence in a shared administrative process. He need not allege that
+
+                                                   Page 15
+              PLAINTIFF'S OPPOSITION TO MOTION TO DISMISS -- NEWANFORBI v. SMITH (N.D. Cal.)
+ 1   CDCR and HOPE expressly agreed that their objective was to violate the Constitution. The
+
+ 2   allegations that they jointly generated the disputed inputs and used them to maintain
+
+ 3   mandatory treatment are enough to proceed to a factual record.
+
+ 4
+
+ 5   3. West reinforces the plausibility of attribution.
+
+ 6
+
+ 7          In West v. Atkins, 487 U.S. 42, 54-57 (1988), a contracted physician acted under color
+
+ 8   of law when providing care the State was obligated to furnish to a prisoner. Plaintiff relies on
+
+ 9   West as reinforcement, not as a categorical rule that every public contractor is a state actor.
+
+10   The pleaded circumstances matter: Plaintiff could not opt out of the program; the State
+
+11   designated the certified-provider/parole-agent process; HOPE allegedly occupied the only
+
+12   certified-provider role available in the region; and HOPE's reports were used in the State's
+
+13   exercise of supervisory authority. ECF No. 1 ¶¶ 17-19, 31-37. Taken together, those
+
+14   allegations plausibly show power made possible by state law and joint administration.
+
+15
+
+16   4. The Complaint alleges Smith's personal participation and HOPE's policy.
+
+17
+
+18          The motion treats Smith as though liability rested only on her title. It does not. The
+
+19   Complaint alleges that Smith alone could modify company policy, personally approved and
+
+20   maintained the blanket rule, directed the manual embodying it, personally assigned work to
+
+21   Plaintiff, received notice of the controversy, and failed to correct the policy. ECF No. 1 ¶¶ 12,
+
+22   42-44, 54-55. Those are allegations of personal participation and deliberate indifference, not
+
+23   respondeat superior.
+
+24
+
+25          The claim against HOPE likewise identifies a policy and causal mechanism: the
+
+26   blanket retention policy, allegedly false treatment-status reporting, and retaliatory use of that
+
+27   reporting process. Id. ¶¶ 56-59. At the pleading stage, that is sufficient to identify the
+
+28   challenged policy and its alleged role in the injury.
+
+                                                   Page 16
+              PLAINTIFF'S OPPOSITION TO MOTION TO DISMISS -- NEWANFORBI v. SMITH (N.D. Cal.)
+ 1
+
+ 2   C. The First Amendment Claim Alleges More Than Offensive Responsive Speech.
+
+ 3
+
+ 4          Defendants isolate Palacios's words and characterize the claim as criticism answered
+
+ 5   by criticism. The Complaint alleges a different sequence. Plaintiff complained about HOPE's
+
+ 6   retention policy, missing homework, clinician turnover, phase progression, and treatment
+
+ 7   completion. ECF No. 1 ¶ 38. At a containment-team meeting that affected parole conditions,
+
+ 8   Palacios allegedly called him "disruptive," a "ringleader," and "abhorrent," and expressly
+
+ 9   linked those characterizations to his complaints: "when you start complaining then the other
+
+10   guys chime in." Id. ¶¶ 39-40. The Complaint further alleges that HOPE's adverse reporting
+
+11   was used in treatment-retention and discharge decisions. Id. ¶¶ 31-41.
+
+12
+
+13          Thus, the alleged adverse action is not insult alone. It is the use of derogatory and
+
+14   allegedly false treatment characterizations within an official decision-making channel that
+
+15   could prolong mandatory treatment and supervision. A First Amendment retaliation claim
+
+16   requires protected activity, an adverse action that would chill a person of ordinary firmness,
+
+17   and causation. Arizona Students' Association v. Arizona Board of Regents, 824 F.3d 858, 867
+
+18   (9th Cir. 2016). The explicit reference to Plaintiff's complaining supplies a plausible
+
+19   retaliatory nexus, and the alleged parole consequences supply injury beyond responsive
+
+20   speech. Whether the statements actually affected the outcome is a factual question; dismissal
+
+21   is not warranted merely because Defendants contest causation.
+
+22
+
+23   D. The Due-Process Claim Challenges a Systemic, Foreseeable Deprivation, Not Merely
+
+24   a Mistake Correctable by Grievance.
+
+25
+
+26          Plaintiff does not challenge his original conviction, the initial imposition of
+
+27   sex-offender treatment, or an abstract right to early discharge. He challenges the alleged use of
+
+28   a predetermined corporate policy and fabricated treatment inputs in a process governing the
+
+                                                  Page 17
+              PLAINTIFF'S OPPOSITION TO MOTION TO DISMISS -- NEWANFORBI v. SMITH (N.D. Cal.)
+ 1   duration of mandatory treatment and continued supervision. ECF No. 1 ¶¶ 31-37, 50, 57-59.
+
+ 2
+
+ 3           Defendants' own cited provisions identify substantive and procedural constraints.
+
+ 4   Section 3008(d)(2) assigns the duration determination to an individualized consultation among
+
+ 5   the certified professional, parole officer, and court. Section 3574(f)(1) requires good cause, a
+
+ 6   written reason, and signatures from the provider and parole agent. The Complaint alleges
+
+ 7   those safeguards were hollowed out by a blanket rule and false factual inputs. It further alleges
+
+ 8   concrete restraints--GPS monitoring, curfew, mandatory attendance, and continued parole
+
+ 9   supervision--rather than stigma alone. Id. ¶¶ 37, 48-52. The Ninth Circuit recognizes a
+
+10   protected liberty interest in avoiding the stigmatizing sex-offender label coupled with a
+
+11   mandatory treatment program whose successful completion is a precondition to parole
+
+12   eligibility. Neal v. Shimoda, 131 F.3d 818, 830 (9th Cir. 1997). Greenholtz v. Inmates of
+
+13   Nebraska Penal & Correctional Complex, 442 U.S. 1 (1979), on which Defendants rely,
+
+14   concerns only the discretionary decision whether to grant release on parole; it does not govern
+
+15   the distinct liberty interest, recognized in Neal, that Plaintiff asserts here.
+
+16
+
+17           The availability of a grievance concerning mistakes in a discharge-review report does
+
+18   not defeat the claim on the face of the Complaint. First, Defendants identify a remedy for
+
+19   factual errors in the later Form 1502 report; the Complaint challenges an alleged corporate
+
+20   policy and false inputs originating in HOPE's treatment and Form 3043 process. Second, the
+
+21   random-and-unauthorized-act doctrine does not automatically make postdeprivation relief
+
+22   sufficient where the deprivation is foreseeable, predeprivation safeguards are practicable, and
+
+23   the challenged conduct occurs through an established process. Zinermon v. Burch, 494 U.S.
+
+24   113, 132-39 (1990); see Logan v. Zimmerman Brush Co., 455 U.S. 422, 436 (1982). The
+
+25   alleged blanket policy and recurring reports fit that systemic theory.
+
+26
+
+27           Finally, Patsy means Plaintiff was not required to exhaust state administrative
+
+28   remedies before bringing § 1983 claims. 457 U.S. at 516. That rule does not itself prove the
+
+                                                    Page 18
+              PLAINTIFF'S OPPOSITION TO MOTION TO DISMISS -- NEWANFORBI v. SMITH (N.D. Cal.)
+ 1   process inadequate; it forecloses Defendants' attempt to convert nonexhaustion into a
+
+ 2   jurisdictional or pleading bar. The adequacy of the specific procedures, and whether they
+
+ 3   could remedy the alleged policy-driven deprivation before it occurred, require a developed
+
+ 4   record.
+
+ 5
+
+ 6   E. The Bane Act Claim Pleads Coercion Beyond the Underlying Constitutional
+
+ 7   Violation.
+
+ 8
+
+ 9             The Bane Act applies whether or not the defendant acted under color of law. Cal. Civ.
+
+10   Code § 52.1. The Complaint alleges more than maintenance of a disputed policy. It alleges
+
+11   that Defendants used their gatekeeping role and adverse reporting power to compel continued
+
+12   participation under threat of parole consequences; that Plaintiff was threatened with parole
+
+13   violations for scheduling conflicts; and that Palacios used a containment-team meeting with
+
+14   parole officials to characterize Plaintiff adversely because he complained. ECF No. 1 ¶ 62.
+
+15
+
+16             Those allegations identify the means of coercion separately from the underlying rights:
+
+17   comply with the allegedly predetermined treatment regime and scheduling demands or risk
+
+18   adverse reports, continued restraints, or a parole violation. At minimum, whether that pressure
+
+19   was sufficiently coercive is fact-bound and should not be resolved by recasting the allegations
+
+20   as mere criticism.
+
+21
+
+22             Plaintiff does not rely on the $25,000 civil penalty in section 52.1(b), which is reserved
+
+23   to specified public enforcement actions. If necessary, he can remove that remedy from the
+
+24   prayer without dismissal of the cause of action.
+
+25
+
+26
+
+27
+
+28
+
+                                                    Page 19
+                PLAINTIFF'S OPPOSITION TO MOTION TO DISMISS -- NEWANFORBI v. SMITH (N.D. Cal.)
+ 1   F. The Fraud and Negligent-Misrepresentation Allegations Are Substantial; Any
+
+ 2   Particularity Gap Is Curable.
+
+ 3
+
+ 4             The motion is correct that Rule 9(b) requires the who, what, when, where, and how of
+
+ 5   fraud. Kearns v. Ford Motor Co., 567 F.3d 1120, 1124 (9th Cir. 2009). But the Complaint
+
+ 6   does not merely allege that "Defendants" lied at unspecified times. It identifies, among other
+
+ 7   things:
+
+ 8
+
+ 9             - a HOPE clinician's November 2022 representation that participants who completed
+
+10             assignments and complied could titrate and complete the program, ECF No. 1 ¶ 27;
+
+11
+
+12             - a similar representation during a January 2024 group session, id. ¶ 28;
+
+13
+
+14             - a June 2024 representation that none of Plaintiff's completed homework could be
+
+15             found, despite the allegation that HOPE had lost or mishandled it, id. ¶ 29;
+
+16
+
+17             - Form 3043 content transmitted to CDCR stating that Plaintiff only partially
+
+18             completed homework, id. ¶¶ 31-33; and
+
+19
+
+20             - the omission of an October 18, 2023 individualized plan allegedly placed in his file
+
+21             and sent to CDCR but never shown to him, id. ¶¶ 25(e), 65-66.
+
+22
+
+23             The Complaint also pleads direct reliance: Plaintiff remained enrolled, structured his
+
+24   commercial-driving work around HOPE's schedule, refrained from seeking another provider,
+
+25   and delayed seeking judicial relief because he believed completion remained achievable. Id. ¶¶
+
+26   26-30, 67. Those allegations answer Defendants' assertion that only CDCR relied.
+
+27
+
+28             The Court need not decide now whether every alleged communication satisfies Rule
+
+                                                    Page 20
+                PLAINTIFF'S OPPOSITION TO MOTION TO DISMISS -- NEWANFORBI v. SMITH (N.D. Cal.)
+ 1   9(b). If a speaker's name, transmission date, or medium needs greater precision, the defect is
+
+ 2   curable. Plaintiff can amend to separate each speaker and representation, identify the
+
+ 3   communication and recipient, explain why it was false when made, and plead reliance and
+
+ 4   resulting loss without group pleading. That is the paradigm case for leave to amend, not
+
+ 5   dismissal with prejudice.
+
+ 6
+
+ 7   G. The RICO Claim Should Not Be Dismissed With Prejudice.
+
+ 8
+
+ 9          The motion challenges the enterprise allegations and Rule 9(b) particularity. The
+
+10   Complaint alleges an association-in-fact with a common purpose, ongoing relationships, and
+
+11   longevity, and it identifies recurring mail and electronic transmissions of allegedly false
+
+12   treatment-status reports. ECF No. 1 ¶¶ 68-73. As to Smith, the required person-enterprise
+
+13   distinction is at least plausible because a natural person is legally distinct from the corporation
+
+14   and the broader association through which she allegedly acted. See Cedric Kushner
+
+15   Promotions, Ltd. v. King, 533 U.S. 158, 163 (2001).
+
+16
+
+17          Plaintiff recognizes two pleading points that can be clarified if amendment is ordered.
+
+18   First, 18 U.S.C. § 1519 is not among the predicate offenses listed in 18 U.S.C. § 1961(1);
+
+19   Plaintiff therefore does not rely on paragraph 70(c) as a RICO predicate. The claim instead
+
+20   depends on sufficiently pleaded mail and wire fraud. Second, an amended complaint can
+
+21   identify each alleged mailing or wire by date, sender, recipient, document, false content, and
+
+22   role in the alleged scheme, and can clarify which Defendant is the RICO "person" and which
+
+23   persons and entities compose the enterprise.
+
+24
+
+25          Defendants' own authority demonstrates why prejudice is unwarranted. Schreiber
+
+26   Distributing Co. v. Serv-Well Furniture Co., 806 F.2d 1393, 1400-01 (9th Cir. 1986)--not
+
+27   2004, as the motion states--reversed a RICO dismissal and directed that leave to amend be
+
+28   granted where the fraud allegations lacked particularity. If this Court finds the current mail-
+
+                                                    Page 21
+              PLAINTIFF'S OPPOSITION TO MOTION TO DISMISS -- NEWANFORBI v. SMITH (N.D. Cal.)
+ 1   and wire-fraud allegations too general, the same remedy is appropriate here.
+
+ 2
+
+ 3   H. Any Dismissal Should Be With Leave to Amend.
+
+ 4
+
+ 5          Dismissal without leave is proper only when amendment could not cure the defect.
+
+ 6   Fed. R. Civ. P. 15(a)(2); Lopez, 203 F.3d at 1130-31. Plaintiff can cure any pleading
+
+ 7   deficiency identified by the Court. He can add a transaction-by-transaction fraud and RICO
+
+ 8   schedule; identify each speaker and recipient; allege the precise state-provider interactions
+
+ 9   supporting joint action; clarify the protected interest and unavailable predeprivation safeguard;
+
+10   separate Smith's individual acts from HOPE's policy; remove the nonpredicate § 1519 theory;
+
+11   and correct the Bane Act remedy.
+
+12
+
+13          None of those amendments would contradict the existing pleading. Defendants
+
+14   therefore cannot justify the extraordinary request to terminate every claim with prejudice at
+
+15   the first Rule 12 stage.
+
+16
+
+17                                           VI. CONCLUSION
+
+18
+
+19          Plaintiff respectfully requests that the Court deny Defendants' motion. The state-court
+
+20   materials do not establish a final judgment, issue preclusion, or privity as to Smith. The
+
+21   Complaint plausibly alleges joint state action and constitutional injury. In the alternative, any
+
+22   dismissal should be with leave to amend.
+
+23
+
+24
+
+25
+
+26
+
+27
+
+28
+
+                                                  Page 22
+              PLAINTIFF'S OPPOSITION TO MOTION TO DISMISS -- NEWANFORBI v. SMITH (N.D. Cal.)
+ 1                                                          Dated: September 21, 2026
+
+ 2
+
+ 3                                                              Respectfully submitted,
+
+ 4
+
+ 5
+
+ 6
+
+ 7
+
+ 8                                          ___________________________________
+
+ 9                                                BRENDAN NGEHSI NEWANFORBI
+
+10                                                                  Plaintiff, In Pro Per
+
+11
+
+12
+
+13
+
+14
+
+15
+
+16
+
+17
+
+18
+
+19
+
+20
+
+21
+
+22
+
+23
+
+24
+
+25
+
+26
+
+27
+
+28
+
+                                        Page 23
+     PLAINTIFF'S OPPOSITION TO MOTION TO DISMISS -- NEWANFORBI v. SMITH (N.D. Cal.)
+                                           UNITED STATES DISTRICT COURT
+                                          NORTHERN DISTRICT OF CALIFORNIA
+
+
+BRENDAN NGEHSI NEWANFORBI                                             Case Number: 3:26-cv-07504-LJC
+                              Plaintiff
+V.
+
+SHANNON SMITH, LCSW;
+HOPE PSYCHOTHERAPY, INC.                                              PROOF OF SERVICE
+                  Defendants
+
+                                                      /
+
+
+     I hereby certify that on September 22, 2026, I served a copy of the attached
+
+PLAINTIFF'S OPPOSITION TO DEFENDANTS' MOTION TO DISMISS,
+
+by transmitting a true copy by electronic mail (PDF attachments) to the e-mail address(es) hereinafter listed:
+
+(List Name and E-mail Address of Each Defendant or Attorney Served)
+     Cynthia G. Lawrence, Esq. — cynthia@sims-law.net
+     Blaze Van Dine, Esq. — blaze@sims-law.net
+     Eric T. Martinez, Esq. — emartinez@sims-law.net
+     Sims, Lawrence & Broghammer (e-service) — SLB@sims-law.net; slb-eservice@sims-law.net
+
+     Attorneys for Defendants Shannon Smith, LCSW, and
+     HOPE Psychotherapy, Inc. (d/b/a HOPE Program)
+
+
+I declare under penalty of perjury that the foregoing is true and correct.
+
+
+
+
+                                                                    Brendan Ngehsi Newanforbi, In Propria Persona
+
