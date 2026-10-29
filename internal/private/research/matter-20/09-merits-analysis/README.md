@@ -5,6 +5,7 @@
 ## Included
 
 - [Matter20_Strategic_Writ_Research.md](Matter20_Strategic_Writ_Research.md) — full remedy-focused research memorandum from October 24, 2026, added without substantive edits. It covers 17 requested deliverables: direct-certification requirements, remand and supervised reconsideration, §679.10 victimhood/helpfulness, §236 and §146(a) theories, Vehicle Code §40300.5, CHP's report/transcript conflicts, mandate standards, authentication, anticipated opposition, authority audit, proposed judgment and writ language, and outstanding proof.
+- [2026-10-24_Remedial_Strategy_Memo_Annotated.md](2026-10-24_Remedial_Strategy_Memo_Annotated.md) — a separate October 24 remedial-strategy memorandum (Claude deep research), annotated where the August 29, 2026 demurrer order supersedes it and updated with the October 26 stipulated briefing order (opening brief Nov. 13, opposition Dec. 11, reply Dec. 18, hearing Jan. 8, 2027).
 - The memorandum's citation notation **M** refers to [Matter20_Merged_v3.pdf](../00-user-inputs/Matter20_Merged_v3.pdf) (87 pages), and **W** refers to [Newanforbi_26CV191136_Writ_Motion_Packet.pdf](../00-user-inputs/Newanforbi_26CV191136_Writ_Motion_Packet.pdf) (30 pages). These citations are *PDF page numbers* unless explicitly stated otherwise.
 
 ## How to use without overstating the record
