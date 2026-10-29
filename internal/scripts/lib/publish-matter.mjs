@@ -12,6 +12,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { assembleSplitMatter, loadSplitParts, paddedMatterNumber } from "./matter-layout.mjs";
 import { isPrivateDocument } from "./private-documents.mjs";
+import { isLiveClock } from "./upcoming-from-clocks.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 export const REPO_ROOT = path.resolve(__dirname, "../../..");
@@ -76,6 +77,23 @@ const PERSONAL_EMAIL_RE =
   /[A-Za-z0-9._%+-]+@(?:gmail|yahoo|hotmail|icloud|outlook|me|proton\.me|protonmail)\.[A-Za-z]{2,}/gi;
 const US_PHONE_RE =
   /(?<!\d)(?:\+1[-.\s]*)?(?:\(?\d{3}\)?[-.\s]*)\d{3}[-.\s]*\d{4}(?!\d)/g;
+const VAULT_TOKEN_RE = /\[secure value:[^\]]*\]|\bvault_[A-Za-z0-9_-]+\b/gi;
+const STREET_ADDRESS_RE =
+  /\b\d{1,5}\s+(?:[NSEW]\.?\s+)?[A-Z][A-Za-z0-9.'-]*(?:\s+[A-Za-z0-9.']+){0,4}\s+(?:St(?:reet)?|Ave(?:nue)?|Blvd|Boulevard|Dr(?:ive)?|Rd|Road|Ln|Lane|Way|Ct|Court|Hwy|Highway|Pkwy|Parkway)\.?(?:\s*(?:Unit|Apt\.?|Ste\.?|Suite|#)\s*#?\s*[\w-]+)?/gi;
+const HOME_FRAGMENT_RE =
+  /\b(?:Cat Tail Drive|S\.?\s*Milpitas Blvd|Stockton, CA 95204|Milpitas, CA 95035|Unit\s*#304)\b/gi;
+const DOCU_SIGN_RE =
+  /\b(?:DocuSign\s+)?(?:envelope(?:\s+id)?|E-SignID|ESignID)[:\s#]*[A-Z0-9-]{8,}\b/gi;
+const SCREENING_ORDER_RE =
+  /\b(?:Order(?:\s+ID)?|Profile Advantage Order(?:\s+ID)?)\s*[:#]?\s*WPS-\d+\b/gi;
+const WPS_BARE_RE = /\bWPS-\d+\b/g;
+const SCHEDULE_ID_RE = /\bSchedule ID\s*[:#]?\s*\d+\b/gi;
+const INVITE_KEY_RE = /\binvite key\s*[:#]?\s*[A-Z0-9]{6,}\b/gi;
+const CANDIDATE_ID_RE = /\bcandidate\s+C[\d_]+\b/gi;
+const BADGE_RE = /\bBadge\s*#\s*\d+\b/gi;
+const OFFICER_BADGE_RE = /\(#\d{4,6}\)/g;
+const RECEIPT_FILE_RE =
+  /\b(?:Confirmation|Filing Order|Court Env\.?|Report ID|eReceipt|File No\.?|Money Order Serial)\s*[:#]?\s*[A-Z0-9-]{6,}\b/gi;
 
 const isObj = (v) => v !== null && typeof v === "object" && !Array.isArray(v);
 const asArray = (v) => (Array.isArray(v) ? v : []);
@@ -87,9 +105,25 @@ export function labelFromPublicPath(docPath) {
 
 export function sanitizePublicText(value) {
   if (typeof value !== "string") return value;
-  return value
+  let out = value
     .replace(PERSONAL_EMAIL_RE, "[redacted]")
-    .replace(US_PHONE_RE, "[redacted]");
+    .replace(US_PHONE_RE, "[redacted]")
+    .replace(VAULT_TOKEN_RE, "[redacted]")
+    .replace(STREET_ADDRESS_RE, "[redacted]")
+    .replace(HOME_FRAGMENT_RE, "[redacted]")
+    .replace(DOCU_SIGN_RE, "[redacted]")
+    .replace(SCREENING_ORDER_RE, "screening order [redacted]")
+    .replace(WPS_BARE_RE, "[redacted]")
+    .replace(SCHEDULE_ID_RE, "Schedule ID [redacted]")
+    .replace(INVITE_KEY_RE, "invite key [redacted]")
+    .replace(CANDIDATE_ID_RE, "candidate [redacted]")
+    .replace(BADGE_RE, "Badge [redacted]")
+    .replace(OFFICER_BADGE_RE, "([redacted])")
+    .replace(RECEIPT_FILE_RE, "[redacted]");
+  if (!/\[vendor spelling\]/i.test(out)) {
+    out = out.replace(/\bNgwanforbi\b/g, "Ngwanforbi [vendor spelling]");
+  }
+  return out;
 }
 
 export function isPdfPath(docPath) {
@@ -98,6 +132,7 @@ export function isPdfPath(docPath) {
 
 export function isCourtFacingClock(clock) {
   if (!clock || typeof clock !== "object") return false;
+  if (clock.private === true) return false;
   if (!clock.date) return false;
   const kind = String(clock.kind ?? "").toLowerCase();
   if (COURT_FACING_KINDS.has(kind)) return true;
@@ -187,7 +222,7 @@ function publishDocket(docket) {
 
 function publishClocks(clocks) {
   return asArray(clocks)
-    .filter(isCourtFacingClock)
+    .filter((clock) => isLiveClock(clock) && isCourtFacingClock(clock))
     .map((clock) => {
       const out = {
         date: clock.date,
@@ -338,6 +373,26 @@ const LEAK_VALUE_RES = [
   { id: "pilot_settlement_figure", re: /\$35,000/ },
   { id: "final_demand", re: /final demand/i },
 ];
+
+// Settlement / demand figures and payment mechanics that must never reach a
+// public surface (timeline.public.json, the SPA bundle). A dollar figure alone
+// is not a leak (filing fees, statutory floors); a dollar figure in a
+// settlement, demand, offer, or release context is.
+const SETTLEMENT_CONTEXT = String.raw`\b(?:settle\w*|demand\w*|offer\w*|counter-?offer\w*|counter\b|global\b|release\b|rule\s*68|(?:ccp\s*)?§\s*998|ntc\s+of\s+settlement|notice\s+of\s+settlement|payable|wire\b|checks?\b|docusign|evid\.?\s*code\s*§?\s*1152|fre\s*408)`;
+const MONEY = String.raw`\$\s?\d[\d,]*(?:\.\d+)?\s*(?:k\b|m\b|million\b)?`;
+
+export function settlementLeakPatterns() {
+  return [
+    { id: "money_in_settlement_context", re: new RegExp(`(?=[\\s\\S]*${MONEY})(?=[\\s\\S]*${SETTLEMENT_CONTEXT})`, "i") },
+    { id: "pilot_settlement_figure", re: /\$35,000|\$35k\b/i },
+    { id: "demand_25k", re: /\$\s*25,?000\b/ },
+    { id: "demand_55k", re: /\$\s*55,?000\b/ },
+    { id: "demand_85k", re: /\$\s*85,?000\b/ },
+    { id: "final_demand", re: /final demand/i },
+    { id: "settlement_payment", re: /\bsettlement (?:payment|check|checks|amount)\b/i },
+    { id: "confidential_agreement", re: /\bconfidential[- ]agreement\b/i },
+  ];
+}
 
 function distinctiveSnippet(text) {
   if (typeof text !== "string") return null;

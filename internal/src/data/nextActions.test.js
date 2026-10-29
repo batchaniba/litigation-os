@@ -1,14 +1,24 @@
 import { describe, expect, it } from "vitest";
 import {
+  addDaysToKey,
   buildQueue,
   dateKeyFromLabel,
   dateLabelFromKey,
   daysBetween,
   inferAction,
   inferActor,
+  isInCurrentWeek,
+  isRetiredEventText,
+  msUntilNextMidnight,
+  nextOnYourDesk,
+  PORTFOLIO_TZ,
   precedentPeers,
+  queueBands,
+  todayKey,
   touchesActiveMatter,
   urgencyFor,
+  weekEndKey,
+  weekStartKey,
   yourQueue,
 } from "../../scripts/lib/next-actions.mjs";
 import { clocksToUpcomingEvents, nextFromClocks } from "../../scripts/lib/upcoming-from-clocks.mjs";
@@ -149,14 +159,157 @@ describe("inferAction", () => {
   });
 });
 
+describe("todayKey and PT midnight", () => {
+  it("uses America/Los_Angeles, not the host timezone or UTC", () => {
+    // 01:00 UTC Thursday Oct 29 is still Wednesday Oct 28 in PDT (UTC-7).
+    expect(todayKey(PORTFOLIO_TZ, new Date("2026-10-29T01:00:00.000Z"))).toBe("2026-10-28");
+    expect(todayKey(PORTFOLIO_TZ, new Date("2026-10-29T07:00:00.000Z"))).toBe("2026-10-29");
+  });
+
+  it("rolls the civil date at Pacific midnight, including the November DST fallback", () => {
+    const beforePdt = new Date("2026-10-29T06:59:59.000Z"); // 23:59:59 PDT Oct 28
+    const afterPdt = new Date("2026-10-29T07:00:00.000Z"); // 00:00:00 PDT Oct 29
+    expect(todayKey(PORTFOLIO_TZ, beforePdt)).toBe("2026-10-28");
+    expect(todayKey(PORTFOLIO_TZ, afterPdt)).toBe("2026-10-29");
+    expect(msUntilNextMidnight(PORTFOLIO_TZ, beforePdt)).toBeLessThanOrEqual(1000);
+    expect(msUntilNextMidnight(PORTFOLIO_TZ, beforePdt)).toBeGreaterThan(0);
+
+    // First Sunday of Nov 2026: clocks back at 2:00 a.m. Midnight is still PDT.
+    const beforeFall = new Date("2026-11-01T06:59:59.000Z");
+    const afterFall = new Date("2026-11-01T07:00:00.000Z");
+    expect(todayKey(PORTFOLIO_TZ, beforeFall)).toBe("2026-10-31");
+    expect(todayKey(PORTFOLIO_TZ, afterFall)).toBe("2026-11-01");
+  });
+});
+
+describe("week bounds", () => {
+  it("treats the week as Sunday–Saturday", () => {
+    expect(weekStartKey("2026-10-28")).toBe("2026-10-25"); // Wednesday → Sunday
+    expect(weekEndKey("2026-10-28")).toBe("2026-10-31");
+    expect(isInCurrentWeek("2026-10-29", "2026-10-28")).toBe(true);
+    expect(isInCurrentWeek("2026-11-01", "2026-10-28")).toBe(false); // Sunday is next week
+    expect(addDaysToKey("2026-10-28", 3)).toBe("2026-10-31");
+  });
+});
+
 describe("urgencyFor", () => {
   it("bands by days out", () => {
     expect(urgencyFor(-1, 30)).toBe("overdue");
     expect(urgencyFor(0, 30)).toBe("critical");
     expect(urgencyFor(3, 30)).toBe("critical");
-    expect(urgencyFor(7, 30)).toBe("soon");
+    expect(urgencyFor(7, 30)).toBe("upcoming");
     expect(urgencyFor(30, 30)).toBe("upcoming");
     expect(urgencyFor(31, 30)).toBe("later");
+  });
+
+  it("treats 'soon' as the rest of the current Sunday–Saturday week", () => {
+    // Monday 2026-08-10: weekLeft = 5 (through Saturday). Day 5 is soon; day 6 is next week.
+    expect(urgencyFor(5, 30, "2026-08-10")).toBe("soon");
+    expect(urgencyFor(6, 30, "2026-08-10")).toBe("upcoming");
+    // Saturday: nothing left in the week beyond today (already covered as critical if ≤3).
+    expect(urgencyFor(1, 30, "2026-08-08")).toBe("critical");
+    expect(urgencyFor(4, 30, "2026-08-08")).toBe("upcoming");
+  });
+});
+
+describe("queueBands — inclusive counts, exclusive lists", () => {
+  const summaries = [
+    { number: 5, caption: "Palacios", lifecycle: "dismissed", archived: true },
+    { number: 28, caption: "Smith / HOPE", lifecycle: "active" },
+    { number: 32, caption: "Meza", lifecycle: "active" },
+    { number: 36, caption: "AT&T", lifecycle: "active" },
+    { number: 38, caption: "Swift", lifecycle: "active" },
+  ];
+
+  const screenshotTimeline = [
+    entry({
+      date: "Sep. 17, 2026",
+      event: "FILE — summons return",
+      matters: [32],
+    }),
+    entry({
+      date: "Oct. 26, 2026",
+      event: "IMPORTANT — DUE — Renewed IFP",
+      matters: [38],
+    }),
+    entry({
+      date: "Oct. 29, 2026",
+      event: "DEADLINE — USM service packet",
+      matters: [36],
+    }),
+    entry({
+      date: "Nov. 2, 2026",
+      event: "EX PARTE HEARING — judgment of dismissal",
+      matters: [28],
+      type: "hearing",
+    }),
+  ];
+
+  it("on Wednesday Oct 28, This week includes the Next 3 days item (screenshot regression)", () => {
+    const queue = buildQueue(screenshotTimeline, summaries, {
+      today: "2026-10-28",
+      horizonDays: 30,
+    });
+    const bands = queueBands(queue.items, { today: queue.today, horizonDays: 30 });
+    const byKey = Object.fromEntries(bands.map((b) => [b.key, b]));
+
+    expect(byKey.overdue.count).toBe(2);
+    expect(byKey.critical.count).toBe(1);
+    expect(byKey.critical.items[0].dateKey).toBe("2026-10-29");
+    // Exclusive This week remainder is empty (Wed–Sat is already inside +3),
+    // but the pill counts the Oct 29 item so This week is not 0.
+    expect(byKey.soon.items).toEqual([]);
+    expect(byKey.soon.count).toBe(1);
+    expect(byKey.upcoming.items.some((i) => i.dateKey === "2026-11-02")).toBe(true);
+    expect(byKey.upcoming.count).toBe(byKey.critical.count + byKey.soon.items.length + byKey.upcoming.items.length);
+  });
+
+  it("keeps Next 3 days items that fall after Saturday out of This week", () => {
+    // Saturday Oct 31: Oct 29 is overdue; Nov 2 (Monday, +2) is next 3 days but next week.
+    const queue = buildQueue(screenshotTimeline, summaries, {
+      today: "2026-10-31",
+      horizonDays: 30,
+    });
+    const bands = queueBands(queue.items, { today: queue.today, horizonDays: 30 });
+    const byKey = Object.fromEntries(bands.map((b) => [b.key, b]));
+    expect(byKey.critical.items.map((i) => i.dateKey)).toEqual(["2026-11-02"]);
+    expect(byKey.soon.count).toBe(0);
+    expect(byKey.soon.items).toEqual([]);
+  });
+
+  it("re-buckets at PT midnight from Oct 28 to Oct 29", () => {
+    const before = buildQueue(screenshotTimeline, summaries, {
+      today: todayKey(PORTFOLIO_TZ, new Date("2026-10-29T06:59:59.000Z")),
+      horizonDays: 30,
+    });
+    const after = buildQueue(screenshotTimeline, summaries, {
+      today: todayKey(PORTFOLIO_TZ, new Date("2026-10-29T07:00:00.000Z")),
+      horizonDays: 30,
+    });
+    expect(before.today).toBe("2026-10-28");
+    expect(after.today).toBe("2026-10-29");
+
+    const usmBefore = before.items.find((i) => i.matters.includes(36));
+    const usmAfter = after.items.find((i) => i.matters.includes(36));
+    expect(usmBefore.daysOut).toBe(1);
+    expect(usmBefore.urgency).toBe("critical");
+    expect(usmAfter.daysOut).toBe(0);
+    expect(usmAfter.urgency).toBe("critical");
+
+    const ifpBefore = before.items.find((i) => i.matters.includes(38));
+    const ifpAfter = after.items.find((i) => i.matters.includes(38));
+    expect(ifpBefore.daysOut).toBe(-2);
+    expect(ifpAfter.daysOut).toBe(-3);
+  });
+
+  it("does not list a row in two exclusive bands", () => {
+    const queue = buildQueue(screenshotTimeline, summaries, {
+      today: "2026-10-28",
+      horizonDays: 30,
+    });
+    const bands = queueBands(queue.items, { today: queue.today, horizonDays: 30 });
+    const listed = bands.flatMap((b) => b.items.map((i) => `${b.key}:${i.dateKey}:${i.matters[0]}`));
+    expect(listed).toEqual([...new Set(listed)]);
   });
 });
 
@@ -222,9 +375,9 @@ describe("buildQueue", () => {
   });
 
   it("puts past-due items first and counts the days negatively", () => {
-    // With the abandoned Matter 3 entry retired, the opposition brief is first.
+    // TODAY is Saturday 2026-08-08; Aug. 14 is 6 days out, which is next week → upcoming.
     expect(queue.items[0].event).toBe("Deadline — file opposition brief");
-    expect(queue.items[0].urgency).toBe("soon");
+    expect(queue.items[0].urgency).toBe("upcoming");
     expect(queue.items[0].daysOut).toBe(6);
   });
 
@@ -264,6 +417,34 @@ describe("buildQueue", () => {
       "Deadline — file opposition brief",
       "Deadline — ADR certification",
     ]);
+  });
+
+  it("drops titles already marked vacated, mooted, or done", () => {
+    expect(isRetiredEventText("VACATED — Oct. 13 CMC")).toBe(true);
+    expect(isRetiredEventText("SETTLED — dismissal pending")).toBe(true);
+    const withDead = buildQueue(
+      [
+        entry({ date: "Aug. 14, 2026", event: "VACATED — old CMC", matters: [20] }),
+        entry({ date: "Aug. 14, 2026", event: "Deadline — file opposition brief", matters: [20] }),
+      ],
+      fixtureSummaries,
+      { today: TODAY, horizonDays: 30 },
+    );
+    expect(withDead.retired.map((i) => i.event)).toEqual(["VACATED — old CMC"]);
+    expect(withDead.items.map((i) => i.event)).toEqual(["Deadline — file opposition brief"]);
+  });
+
+  it("nextOnYourDesk skips overdue and returns the next upcoming item that is yours", () => {
+    const withOverdue = buildQueue(
+      [
+        entry({ date: "Aug. 1, 2026", event: "Deadline — file opposition (late)", matters: [20] }),
+        entry({ date: "Aug. 14, 2026", event: "Deadline — file opposition brief", matters: [20] }),
+      ],
+      fixtureSummaries,
+      { today: TODAY, horizonDays: 30 },
+    );
+    expect(nextOnYourDesk(withOverdue).event).toBe("Deadline — file opposition brief");
+    expect(nextOnYourDesk(withOverdue).urgency).not.toBe("overdue");
   });
 
   it("copies a /documents/ source onto the queue row", () => {

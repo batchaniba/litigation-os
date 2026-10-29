@@ -50,9 +50,9 @@ describe("statusLabel derivation", () => {
   it("uses the next live calendar date after a held demurrer hearing", () => {
     const matter = cases.find((item) => item.number === 20)!;
     const events = eventsFor(20);
-    expect(matter.status_label).toMatch(/amend Count 4.*Sep\. 20/i);
-    expect(effectiveStatusLabel(matter, { events })).toMatch(/amend Count 4.*Sep\. 20/i);
-    expect(pickPostureEvent(events, matter.phase)?.date).toBe("Oct. 28, 2026");
+    expect(matter.status_label).toMatch(/CMC Nov\. 4.*writ brief Nov\. 13.*hearing Jan\. 8/i);
+    expect(effectiveStatusLabel(matter, { events })).toMatch(/CMC Nov\. 4.*writ brief Nov\. 13.*hearing Jan\. 8/i);
+    expect(pickPostureEvent(events, matter.phase)?.date).toBe("Nov. 4, 2026");
   });
 
   it("derives default prove-up and CMC dates from upcoming hearings", () => {

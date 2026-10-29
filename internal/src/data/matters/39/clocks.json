@@ -9,5 +9,28 @@
     "title": "OUTER BOUND — CCP § 338(a) three-year statutory-liability clock on the Best Buy § 290.46(j) count if accrual is the Oct. 17, 2023 offer / same-day screen week.…",
     "actor": "you",
     "source": "/documents/matter-39/Job Offer - Best Buy General Warehouse Worker 2nd Shift (Oct 17 2023).pdf"
+  },
+  {
+    "id": "39-fee-paid",
+    "date": "2026-10-27",
+    "kind": "filing",
+    "status": "satisfied",
+    "source_dkt": null,
+    "actor": "you",
+    "title": "USER REPORT — $405 filing fee paid by money order Oct. 27, 2026 in Brendan Ngwa Nforbi v. Best Buy Co., Inc. (E.D. Cal. 2:26-cv-03315-DC-CKD (PS)). No Pay.gov / money-order receipt PDF ingested.",
+    "date_label": "Oct. 27, 2026",
+    "tz": "America/Los_Angeles"
+  },
+  {
+    "id": "39-ifp-withdrawn",
+    "date": "2026-10-27",
+    "kind": "filing",
+    "status": "satisfied",
+    "source_dkt": 2,
+    "actor": "you",
+    "source": "/documents/matter-39/edca/Dkt 02 - AO 239 Application to Proceed IFP (Long Form) (Filed Sep 18 2026).pdf",
+    "title": "USER REPORT — AO 239 IFP application (Dkt. 2) withdrawn as moot after the Oct. 27, 2026 fee payment — Brendan Ngwa Nforbi v. Best Buy Co., Inc. (E.D. Cal. 2:26-cv-03315-DC-CKD (PS)). No withdrawal motion/order PDF ingested.",
+    "date_label": "Oct. 27, 2026",
+    "tz": "America/Los_Angeles"
   }
 ]

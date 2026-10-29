@@ -231,7 +231,10 @@ const closedTable = [
   ),
 ].join("\n");
 
-const upcoming = clocksToUpcomingEvents(loadAllClocks(MATTERS_DIR), { today: todayKey() })
+const upcoming = clocksToUpcomingEvents(loadAllClocks(MATTERS_DIR), {
+  today: todayKey(),
+  excludePrivate: true,
+})
   .map((t, i) => ({ ...t, _i: i, _d: parsePortfolioDate(t.date) }))
   .sort((a, b) => {
     if (a._d && b._d) return a._d - b._d || a._i - b._i;

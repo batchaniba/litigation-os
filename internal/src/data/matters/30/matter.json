@@ -8,8 +8,8 @@
     "court_id": "cand"
   },
   "claims": "42 U.S.C. §1983 First Amendment Retaliation, §1983 Fourteenth Amendment Due Process, Bane Act Cal. Civ. Code §52.1, IIED",
-  "status": "Pre-complaint — verified Complaint v9 (Moua + DOES) ready. Jul. 18 Government Claims Act claim is deemed rejected ~Sep. 1, 2026; the six-month suit window for state-law claims runs to ~Mar. 1, 2027. Anticipated N.D. Cal. filing date of Sep. 16 has not been confirmed as filed. Noguchi/Rojo dropped from the operative pleading by design.",
-  "status_label": "Pre-filing — Moua v9 ready; GCA window open",
+  "status": "Pre-complaint — verified Complaint v9 (Moua + DOES) ready. Jul. 18 Government Claims Act claim is deemed rejected ~Sep. 1, 2026. The six-month suit window under Gov. Code §945.6(a)(1) would run to ~Mar. 1, 2027 only if a written §913 rejection notice issued; no such notice is in the file, so the (a)(2) two-year period from accrual controls the state-law claims. Anticipated N.D. Cal. filing date of Sep. 16 has not been confirmed as filed. Noguchi/Rojo dropped from the operative pleading by design.",
+  "status_label": "Pre-filing — Moua v9 ready; GCA (a)(2) window",
   "lifecycle": "pre_filing",
   "proceeding": "federal_civil",
   "phase": "pre_filing",

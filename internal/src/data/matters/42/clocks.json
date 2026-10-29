@@ -1,11 +1,12 @@
 [
   {
     "id": "42-watch-fadv-report",
-    "date": "2026-10-14",
+    "date": null,
     "tz": "America/Los_Angeles",
     "kind": "watch",
-    "status": "open",
+    "status": "contingent",
     "title": "WATCH — Staples / First Advantage (Matter 42): First Advantage file requested and received? Staples pre-adverse notice or Fair Chance Act preliminary decision (Gov. Code § 12952) received? If a preliminary decision arrives, the written response is due within 5 business days of receipt (more if disputing accuracy) — address the conviction with rehabilitation evidence; do not raise other litigation.",
-    "actor": "you"
+    "actor": "you",
+    "note": "Oct. 14, 2026 was an internal check date. Keep watching for the First Advantage file and any Staples Fair Chance preliminary decision. Undated contingent so it is not derived overdue. No new paper ingested as of Oct. 28, 2026."
   }
 ]

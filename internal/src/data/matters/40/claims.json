@@ -1,5 +1,5 @@
 {
-  "summary": "PC §290.46(j)(2)(E) (prospective — use of registry info in hiring); ICRAA §§1786.16, 1786.40 (prospective); FCRA §§1681b(b)(3), 1681d (prospective); UCL §17200 (prospective)",
+  "summary": "PC §290.46(j)(2)(E) (prospective — use of registry info in hiring); ICRAA §§1786.16, 1786.40 (prospective); FCRA §1681b(b)(3) pre-adverse, §1681d investigative reports, §1681m(a) final adverse-action notice (prospective); UCL §17200 (prospective)",
   "counts": [
     {
       "id": 1,
@@ -17,7 +17,7 @@
       "id": 3,
       "status": "live",
       "theory_ids": [],
-      "title": "[PROSPECTIVE] FCRA, 15 U.S.C. §§1681b(b)(3) and 1681d — pre-adverse/adverse notice duties if a consumer report drives the decision"
+      "title": "[PROSPECTIVE] FCRA, 15 U.S.C. §1681b(b)(3) (pre-adverse), §1681d (investigative reports), and §1681m(a) (final adverse-action notice) if a consumer report drives the decision"
     },
     {
       "id": 4,

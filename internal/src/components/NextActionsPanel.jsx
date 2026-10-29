@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router";
 import { GOLD } from "../constants";
 import { useTheme } from "../ThemeContext";
+import { queueBands } from "../../scripts/lib/next-actions.mjs";
 import { clipEvent, daysLabel } from "../utils/nextActionsView";
 import {
   BodyText,
@@ -23,12 +24,13 @@ const BLUE = "#0284c7";
 const SLATE = "#64748b";
 const GREEN = "#16a34a";
 
-const BANDS = [
-  ["overdue", "Past due", RED],
-  ["critical", "Next 3 days", AMBER],
-  ["soon", "This week", BLUE],
-  ["upcoming", "Next 30 days", SLATE],
-];
+const BAND_COLORS = {
+  overdue: RED,
+  opposing_overdue: SLATE,
+  critical: AMBER,
+  soon: BLUE,
+  upcoming: SLATE,
+};
 
 const ACTOR_PILL = {
   you: { color: GREEN, label: "Your desk" },
@@ -38,27 +40,17 @@ const ACTOR_PILL = {
   court: { color: SLATE, label: "Court / agency" },
 };
 
-function groupVisible(items, mineOnly) {
-  const visible = items.filter((item) => {
-    if (item.urgency === "later") return false;
-    if (!mineOnly) return true;
-    return item.actor === "you" || item.actor === "unknown";
-  });
-  return BANDS.map(([key, label, color]) => ({
-    key,
-    label,
-    color,
-    items: visible.filter((item) => item.urgency === key),
-  }));
-}
-
 function isYours(item) {
   return item.actor === "you" || item.actor === "unknown";
 }
 
 export function NextActionsPanel({ queue, mineOnly, onMineOnlyChange }) {
   const theme = useTheme();
-  const bands = groupVisible(queue.items, mineOnly);
+  const bands = queueBands(queue.items, {
+    today: queue.today,
+    horizonDays: queue.horizonDays,
+    mineOnly,
+  }).map((band) => ({ ...band, color: BAND_COLORS[band.key] ?? SLATE }));
   const populated = bands.filter((band) => band.items.length > 0);
   const gaps = queue.gaps ?? [];
   const undated = (queue.undated ?? []).filter((item) => (mineOnly ? isYours(item) : true));
@@ -93,8 +85,8 @@ export function NextActionsPanel({ queue, mineOnly, onMineOnlyChange }) {
               maxWidth: 620,
             }}
           >
-            Past due first, then the next {queue.horizonDays} days. Confirm against the docket
-            before relying on a date.
+            Past due first, then the next {queue.horizonDays} days from today in Pacific time.
+            Confirm against the docket before relying on a date.
           </p>
         </div>
         <label
@@ -125,7 +117,7 @@ export function NextActionsPanel({ queue, mineOnly, onMineOnlyChange }) {
           <SummaryPill
             key={band.key}
             label={band.label}
-            count={band.items.length}
+            count={band.count}
             color={band.color}
             theme={theme}
           />
@@ -215,8 +207,12 @@ export function NextActionsPanel({ queue, mineOnly, onMineOnlyChange }) {
       ) : null}
 
       <ContextNote theme={theme} title="On the calendar">
-        Dates as recorded in the portfolio. Confirm against the docket before relying on one.
-        Same ranking as <code style={{ fontSize: "0.95em" }}>npm run next</code>.
+        Dates as recorded in the portfolio, bucketed from the viewer’s current Pacific date.
+        Next 3 days is today through +3. This week is the current Sunday–Saturday and includes
+        those next-3-days items. Next 30 days includes this week. Each row is listed once,
+        most urgent first. Vacated, satisfied, settled, and archived items are omitted.
+        Confirm against the docket before relying on a date. Same ranking as{" "}
+        <code style={{ fontSize: "0.95em" }}>npm run next</code>.
       </ContextNote>
     </section>
   );
@@ -315,7 +311,16 @@ function ActionCard({ item, color, theme }) {
           }}
         >
           <div style={{ flex: 1, minWidth: 200 }}>
-            <div style={{ fontSize: 16, fontWeight: 700, color: theme.heading, marginBottom: 3 }}>
+            <div
+              style={{
+                fontFamily: SANS,
+                fontSize: 14,
+                fontWeight: 600,
+                lineHeight: 1.45,
+                color: theme.heading,
+                marginBottom: 3,
+              }}
+            >
               {clipped}
             </div>
             <div style={{ fontFamily: SANS, fontSize: 12, color: theme.subtleText }}>
@@ -425,7 +430,16 @@ function GapCard({ gap, theme }) {
     >
       <MatterBadge matter={gap.number} color={GOLD} />
       <div style={{ flex: 1, minWidth: 200 }}>
-        <div style={{ fontSize: 16, fontWeight: 700, color: theme.heading, marginBottom: 3 }}>
+        <div
+          style={{
+            fontFamily: SANS,
+            fontSize: 14,
+            fontWeight: 600,
+            lineHeight: 1.45,
+            color: theme.heading,
+            marginBottom: 3,
+          }}
+        >
           {gap.caption}
         </div>
         <div style={{ fontFamily: SANS, fontSize: 12, color: theme.subtleText }}>

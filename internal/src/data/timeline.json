@@ -21,7 +21,7 @@
    32
   ],
   "type": "deadline",
-  "upcoming": true,
+  "upcoming": false,
   "filed": false,
   "actor": "you",
   "source": "/documents/matter-32/ndcal/Declaration of Mailing - CCP 415.20(b) Follow-Up to Dkt 16 - Meza-Gonzalez (N.D. Cal. 4-26-cv-08271-ASK) (September 16, 2026).pdf",
@@ -36,7 +36,7 @@
    32
   ],
   "type": "deadline",
-  "upcoming": true,
+  "upcoming": false,
   "actor": "opposing",
   "source": "/documents/matter-32/ndcal/Declaration of Mailing - CCP 415.20(b) Follow-Up to Dkt 16 - Meza-Gonzalez (N.D. Cal. 4-26-cv-08271-ASK) (September 16, 2026).pdf",
   "source_type": "portfolio",
@@ -65,7 +65,7 @@
    20
   ],
   "type": "deadline",
-  "upcoming": true,
+  "upcoming": false,
   "actor": "opposing",
   "source": "/documents/matter-20/Request for Production of Documents Set One - CHP with Mail POS (Sep 16 2026).pdf",
   "source_type": "portfolio",
@@ -1947,7 +1947,7 @@
    27
   ],
   "type": "deadline",
-  "upcoming": true,
+  "upcoming": false,
   "actor": "you",
   "source": "/documents/matter-27/Gmail - $25k Global Demand Sent Sep 12 and Williams Stipulation Ask (Sep 14 2026).pdf",
   "source_type": "portfolio",
@@ -2005,7 +2005,7 @@
    25
   ],
   "type": "deadline",
-  "upcoming": true,
+  "upcoming": false,
   "actor": "you",
   "source": "/documents/matter-25/Dkt 08 - Order Setting Status Conference (Filed Sep 8 2026).pdf",
   "source_type": "court_order",
@@ -2480,7 +2480,7 @@
    25
   ],
   "type": "hearing",
-  "upcoming": true,
+  "upcoming": false,
   "actor": "you",
   "source": "/documents/matter-25/Dkt 08 - Order Setting Status Conference (Filed Sep 8 2026).pdf",
   "source_type": "court_order",
@@ -2508,7 +2508,7 @@
    33
   ],
   "type": "deadline",
-  "upcoming": true,
+  "upcoming": false,
   "actor": "opposing",
   "source": "/documents/matter-33/ndcal/PACER Docket Report - N.D. Cal. 3-26-cv-08272-LJC (Sep 9 2026).pdf",
   "source_type": "pacer",
@@ -2966,7 +2966,7 @@
    38
   ],
   "type": "deadline",
-  "upcoming": true,
+  "upcoming": false,
   "actor": "you",
   "source": "/documents/matter-38/Swift FCRA Email - Pre-Adverse (Sep 26 2023).pdf",
   "source_type": "court_order",
@@ -2980,7 +2980,7 @@
    39
   ],
   "type": "deadline",
-  "upcoming": true,
+  "upcoming": false,
   "actor": "you",
   "source": "/documents/matter-39/Job Offer - Best Buy General Warehouse Worker 2nd Shift (Oct 17 2023).pdf",
   "source_type": "court_order",
@@ -3208,7 +3208,7 @@
    26
   ],
   "type": "hearing",
-  "upcoming": true,
+  "upcoming": false,
   "actor": "you",
   "source": "/documents/matter-26/PACER Deadlines-Hearings - E.D. Cal. 2-26-cv-02847-DAD-CKD (Sep 4 2026).pdf",
   "source_type": "pacer",
@@ -3653,7 +3653,7 @@
    29
   ],
   "type": "deadline",
-  "upcoming": true,
+  "upcoming": false,
   "actor": "you",
   "source": "/documents/matter-29/Dkt 09 - Order Setting Initial CMC and ADR Deadlines (Filed Sep 3 2026).pdf",
   "source_type": "court_order",
@@ -3681,7 +3681,7 @@
    29
   ],
   "type": "deadline",
-  "upcoming": true,
+  "upcoming": false,
   "actor": "opposing",
   "source": "/documents/matter-29/Dkt 07 - Stipulation to Extend Time for Accurate Background to Respond (Filed Sep 2 2026).pdf",
   "source_type": "portfolio",
@@ -3785,7 +3785,7 @@
    29
   ],
   "type": "deadline",
-  "upcoming": true,
+  "upcoming": false,
   "actor": "opposing",
   "source": "/documents/matter-29/Dkt 06 - Stipulation to Extend Time for Amazon to Respond (Filed Sep 1 2026).pdf",
   "source_type": "portfolio",
@@ -3844,7 +3844,7 @@
    28
   ],
   "type": "deadline",
-  "upcoming": true,
+  "upcoming": false,
   "actor": "opposing",
   "source": "/documents/matter-28/Proof of Service - SLB Accepted Service for Smith and HOPE (N.D. Cal. 3-26-cv-07504-LJC) (Sep 2 2026).pdf",
   "source_type": "portfolio",
@@ -3993,7 +3993,7 @@
    19
   ],
   "type": "deadline",
-  "upcoming": true,
+  "upcoming": false,
   "actor": "agency",
   "source": "/documents/matter-19/HC-004 Notice and Request for Ruling (Habeas Corpus, Executed Sep 1 2026).pdf",
   "source_type": "portfolio",
@@ -4083,7 +4083,7 @@
    20
   ],
   "type": "hearing",
-  "upcoming": true,
+  "upcoming": false,
   "actor": "you",
   "source": "/documents/matter-32/from-20/Order Sustaining Demurrer In Part - Whitman (Aug 29 2026) (Notice of Entry Aug 31 2026).pdf",
   "source_type": "court_order",
@@ -4097,7 +4097,7 @@
    20
   ],
   "type": "deadline",
-  "upcoming": true,
+  "upcoming": false,
   "actor": "you",
   "source": "/documents/matter-32/from-20/Notice of Case Management Conference.pdf",
   "source_type": "portfolio",
@@ -4111,7 +4111,7 @@
    20
   ],
   "type": "deadline",
-  "upcoming": true,
+  "upcoming": false,
   "actor": "you",
   "source": "/documents/matter-32/from-20/Order Sustaining Demurrer In Part - Whitman (Aug 29 2026) (Notice of Entry Aug 31 2026).pdf",
   "source_type": "court_order",
@@ -4270,7 +4270,7 @@
    29
   ],
   "type": "deadline",
-  "upcoming": true,
+  "upcoming": false,
   "actor": "you",
   "source": "/documents/matter-29/Dkt 01 - Notice of Removal (Filed Aug 31 2026).pdf",
   "source_type": "portfolio",
@@ -4458,7 +4458,7 @@
    27
   ],
   "type": "deadline",
-  "upcoming": true,
+  "upcoming": false,
   "actor": "you",
   "source": "/documents/matter-27/CIV-100 Request for Entry of Default - Randstad US LLC (Default Entered, Filed Sep 16 2026).pdf",
   "source_type": "court_order",
@@ -4646,7 +4646,7 @@
    26
   ],
   "type": "deadline",
-  "upcoming": true,
+  "upcoming": false,
   "actor": "you",
   "source": "/documents/matter-26/Dkt 07-3 - Certificate of Service (Filed Aug 26 2026).pdf",
   "source_type": "portfolio",
@@ -4747,7 +4747,7 @@
    35
   ],
   "type": "deadline",
-  "upcoming": true,
+  "upcoming": false,
   "actor": "you",
   "source": "/documents/matter-35/SUM-100 Summons (ISSUED, Filed Aug 26 2026) - 26CV501995.pdf",
   "source_type": "portfolio",
@@ -5466,7 +5466,7 @@
   ],
   "type": "deadline",
   "source": "/documents/matter-33/ndcal/Dkt 04 - Order Setting Initial Case Management Conference and ADR Deadlines (Aug 10 2026).pdf",
-  "upcoming": true,
+  "upcoming": false,
   "actor": "you",
   "source_type": "court_order",
   "confidence": "high",
@@ -5480,7 +5480,7 @@
   ],
   "type": "deadline",
   "source": "/documents/matter-33/ndcal/Dkt 04 - Order Setting Initial Case Management Conference and ADR Deadlines (Aug 10 2026).pdf",
-  "upcoming": true,
+  "upcoming": false,
   "actor": "you",
   "source_type": "court_order",
   "confidence": "high",
@@ -5507,7 +5507,7 @@
   ],
   "type": "hearing",
   "source": "/documents/matter-33/ndcal/Dkt 04 - Order Setting Initial Case Management Conference and ADR Deadlines (Aug 10 2026).pdf",
-  "upcoming": true,
+  "upcoming": false,
   "actor": "you",
   "source_type": "court_order",
   "confidence": "high",
@@ -5624,11 +5624,10 @@
   "event": "CCP §335.1 two-year statute of limitations (computed) backstop, running from the Nov. 1, 2024 incident. (1) Matter 1's Fourth Amendment §1983 claim (borrowed two-year period): Matter 1 was voluntarily dismissed without prejudice Aug. 15, 2026, but the claim against Meza-Gonzalez/Melano was already refiled in N.D. Cal. as Matter 32 (docketed Aug. 10, 2026, before the dismissal) — satisfied, no gap. (2) Matter 2's state-law False Imprisonment/Battery/Bane Act claims against Meza-Gonzalez, Melano, and State of California/CHP (direct two-year period, not borrowed): Matter 2 was also dismissed without prejudice Aug. 15, 2026, and unlike the federal claim, these state-law theories and the State/CHP defendant are NOT pled anywhere else in the portfolio as of this writing — this date is a live, unresolved risk for them. Also falls on a Sunday; do not assume CCP §12a's next-court-day extension applies to the federal claim (it already doesn't matter here) or count on it for the state claims without confirming. Tracked per internal/docs/MATTER_01_FORUM_TRANSFER_ANALYSIS.md.",
   "matters": [
    1,
-   2,
-   32
+   2
   ],
   "type": "deadline",
-  "upcoming": true,
+  "upcoming": false,
   "actor": "you",
   "source": "/documents/matter-33/incident/Arrest Report.pdf",
   "source_type": "portfolio",
@@ -9445,7 +9444,7 @@
    30
   ],
   "type": "deadline",
-  "upcoming": true,
+  "upcoming": false,
   "actor": "agency",
   "source": "/documents/matter-30/Complaint v9 Newanforbi v Moua NDCAL.pdf",
   "source_type": "portfolio",
@@ -9454,7 +9453,7 @@
  },
  {
   "date": "Mar. 1, 2027",
-  "event": "OUTER STATUTE OF LIMITATIONS (computed) — Government Claims Act six-month suit-filing window for the Bane Act and IIED state-law claims, Newanforbi v. Moua, et al. (Matter 30); runs from the anticipated Sep. 1, 2026 deemed rejection under Gov. Code §945.6(a)(1). The §1983 federal claims are not subject to GCA presentment and remain viable beyond this date on the longer two-year personal-injury limitations period, but this is the hard cutoff for the state-law claims if the matter is not filed sooner",
+  "event": "Gov. Code §945.6 window (computed) — Bane Act and IIED state-law claims, Newanforbi v. Moua, et al. (Matter 30). A six-month suit period under §945.6(a)(1) running to ~Mar. 1, 2027 would apply only if a written §913 rejection notice issued. No such notice is in the file, so (a)(2) (two years from accrual) controls. The §1983 federal claims are not subject to GCA presentment. This is not a hard cutoff.",
   "matters": [
    30
   ],
@@ -9468,7 +9467,7 @@
  },
  {
   "date": "Oct. 13, 2026",
-  "event": "Case Management Conference, Newanforbi v. Palacios, et al. (Matter 5) — Hon. George J. Abdallah, Dept. 10A, 8:45 a.m.; setting confirmed on the caption of the served Set Two discovery (SROG/DISC001) to HOPE Program and Palacios — MOOTED: demurrer sustained without leave Jul. 15, 2026; matter dismissed",
+  "event": "VACATED — Case Management Conference, Newanforbi v. Palacios, et al. (Matter 5) — Hon. George J. Abdallah, Dept. 10A, 8:45 a.m.; setting confirmed on the caption of the served Set Two discovery (SROG/DISC001) to HOPE Program and Palacios — MOOTED: demurrer sustained without leave Jul. 15, 2026; matter dismissed",
   "matters": [
    5
   ],
@@ -9487,7 +9486,7 @@
    20
   ],
   "type": "deadline",
-  "upcoming": true,
+  "upcoming": false,
   "actor": "you",
   "source": "/documents/matter-32/from-20/Serrato Notice of Joinder and Demurrer.pdf",
   "source_type": "portfolio",
@@ -9501,7 +9500,7 @@
    20
   ],
   "type": "deadline",
-  "upcoming": true,
+  "upcoming": false,
   "actor": "you",
   "source": "/documents/matter-32/from-20/Dutra Notice of Joinder and Demurrer.pdf",
   "source_type": "portfolio",
@@ -9767,7 +9766,7 @@
    26
   ],
   "type": "deadline",
-  "upcoming": true,
+  "upcoming": false,
   "actor": "you",
   "source": "/documents/matter-26/Dkt 01 - Notice of Removal as Docketed, E.D. Cal. Sacramento (Aug 20 2026).pdf",
   "source_type": "pacer",
@@ -10294,7 +10293,7 @@
    40
   ],
   "type": "deadline",
-  "upcoming": true,
+  "upcoming": false,
   "actor": "you",
   "source_type": "manual",
   "confidence": "high",
@@ -10308,7 +10307,7 @@
    32
   ],
   "type": "deadline",
-  "upcoming": true,
+  "upcoming": false,
   "actor": "you",
   "source": "/documents/matter-32/ndcal/CCP 415.20(b) Mailing Bundle - Meza-Gonzalez (N.D. Cal. 4-26-cv-08271-ASK) (September 17, 2026).pdf",
   "source_type": "manual",
@@ -10322,7 +10321,7 @@
    40
   ],
   "type": "deadline",
-  "upcoming": true,
+  "upcoming": false,
   "actor": "you",
   "source_type": "manual",
   "confidence": "high",
@@ -10468,5 +10467,83 @@
   "source_type": "manual",
   "confidence": "high",
   "verified_at": "2026-09-18"
+ },
+ {
+  "date": "Oct. 28, 2026",
+  "event": "Portfolio true-up: clocks, statuses, and next-actions reconciled to Oct. 28, 2026 from matter files, user-reported court dates, and open PR #1035/#1036/#1038 catalogs. CourtListener incremental sync was not run (no token in this environment; last ledger sync Sep. 12, 2026). Cloudflare R2 admin credentials were not present; Worker D1 seed remains Oct. 16, 2026. No Randstad settlement figure is published.",
+  "matters": "All",
+  "type": "milestone",
+  "upcoming": false,
+  "filed": false,
+  "actor": "you",
+  "source_type": "manual",
+  "verified_at": "2026-10-28"
+ },
+ {
+  "date": "Nov. 4, 2026",
+  "event": "Case Management Conference — Newanforbi v. CHP et al. (26CV191136), Nov. 4, 2026, 4:00 p.m., Dept. 25, Rene C. Davidson Courthouse, Hon. Jenna M. Whitman. USER REPORT Oct. 28, 2026: continued from Oct. 28. No continuance order PDF ingested.",
+  "matters": [
+   20
+  ],
+  "type": "hearing",
+  "upcoming": true,
+  "actor": "you",
+  "source": "/documents/matter-32/from-20/Notice of Case Management Conference.pdf",
+  "source_type": "manual",
+  "verified_at": "2026-10-28"
+ },
+ {
+  "date": "Nov. 13, 2026",
+  "event": "Opening brief / notice of motion for peremptory writ of mandate due Nov. 13, 2026 (hearing Jan. 8, 2027) — Newanforbi v. CHP et al. (26CV191136). USER REPORT Oct. 28, 2026.",
+  "matters": [
+   20
+  ],
+  "type": "deadline",
+  "upcoming": true,
+  "actor": "you",
+  "source": "/documents/matter-20/01_Motion_for_Peremptory_Writ_MPA_with_CRS_Receipt.pdf",
+  "source_type": "manual",
+  "verified_at": "2026-10-28"
+ },
+ {
+  "date": "Jan. 8, 2027",
+  "event": "HEARING — Motion for peremptory writ of mandate, 9:00 a.m., Dept. 25, Hon. Jenna M. Whitman (Reservation ID 958052306492).",
+  "matters": [
+   20
+  ],
+  "type": "hearing",
+  "upcoming": true,
+  "actor": "you",
+  "source": "/documents/matter-20/01_Motion_for_Peremptory_Writ_MPA_with_CRS_Receipt.pdf",
+  "source_type": "portfolio",
+  "verified_at": "2026-10-28"
+ },
+ {
+  "date": "Oct. 28, 2026",
+  "event": "USER REPORT — San Joaquin Superior Court approved defense counsel's request and set an ex parte hearing for Nov. 2, 2026, 9:15 a.m., Dept. 10A, on an Application for Order Dismissing First Amended Complaint and Entering Judgment of Dismissal in Newanforbi v. Palacios et al. (STK-CV-UF-2026-0001032). Counsel Sims, Lawrence & Broghammer (for Katie Palacios and HOPE Program) requested the hearing the same day. The related N.D. Cal. action (Matter 28, 3:26-cv-07504-LJC) Dkt. 15 motion to dismiss is deferred pending the San Joaquin judgment. No application PDF ingested.",
+  "matters": [
+   5,
+   28
+  ],
+  "type": "event",
+  "upcoming": false,
+  "actor": "court",
+  "source": "/documents/opinions/Newanforbi v Palacios - San Joaquin Sup Ct - Demurrer Sustained WOLA Jul 15 2026.pdf",
+  "source_type": "manual",
+  "verified_at": "2026-10-28"
+ },
+ {
+  "date": "Nov. 2, 2026",
+  "event": "EX PARTE HEARING — Application for Order Dismissing First Amended Complaint and Entering Judgment of Dismissal, Newanforbi v. Palacios et al. (San Joaquin Sup. Ct. STK-CV-UF-2026-0001032), Nov. 2, 2026, 9:15 a.m., Dept. 10A. Related Matter 28 (N.D. Cal. 3:26-cv-07504-LJC) Dkt. 15 motion to dismiss is deferred pending the San Joaquin judgment.",
+  "matters": [
+   5,
+   28
+  ],
+  "type": "hearing",
+  "upcoming": true,
+  "actor": "you",
+  "source": "/documents/opinions/Newanforbi v Palacios - San Joaquin Sup Ct - Demurrer Sustained WOLA Jul 15 2026.pdf",
+  "source_type": "manual",
+  "verified_at": "2026-10-28"
  }
 ]

@@ -53,8 +53,10 @@ export function dateLabelFromKey(key) {
   return `${month}. ${Number(match[3])}, ${match[1]}`;
 }
 
+export const PORTFOLIO_TZ = "America/Los_Angeles";
+
 /** Today in a given IANA zone as an ISO day key. Portfolio dates are all PT. */
-export function todayKey(timeZone = "America/Los_Angeles", now = new Date()) {
+export function todayKey(timeZone = PORTFOLIO_TZ, now = new Date()) {
   const parts = new Intl.DateTimeFormat("en-CA", {
     timeZone,
     year: "numeric",
@@ -63,6 +65,32 @@ export function todayKey(timeZone = "America/Los_Angeles", now = new Date()) {
   }).formatToParts(now);
   const value = Object.fromEntries(parts.map(({ type, value: v }) => [type, v]));
   return `${value.year}-${value.month}-${value.day}`;
+}
+
+/** Shift an ISO day key by a whole number of calendar days. */
+export function addDaysToKey(key, days) {
+  const [y, m, d] = String(key).split("-").map(Number);
+  if (!y || !m || !d) return null;
+  const shifted = new Date(Date.UTC(y, m - 1, d + Number(days)));
+  return `${shifted.getUTCFullYear()}-${String(shifted.getUTCMonth() + 1).padStart(2, "0")}-${String(shifted.getUTCDate()).padStart(2, "0")}`;
+}
+
+/**
+ * Milliseconds until the next civil midnight in `timeZone`.
+ * Binary-searches the instant so DST fall-back (25-hour days) is covered.
+ */
+export function msUntilNextMidnight(timeZone = PORTFOLIO_TZ, now = new Date()) {
+  const today = todayKey(timeZone, now);
+  let lo = now.getTime();
+  let hi = lo + 36 * 3_600_000;
+  if (todayKey(timeZone, new Date(hi)) === today) hi += 12 * 3_600_000;
+  while (hi - lo > 1) {
+    const mid = Math.floor((lo + hi) / 2);
+    if (todayKey(timeZone, new Date(mid)) === today) lo = mid;
+    else hi = mid;
+  }
+  while (todayKey(timeZone, new Date(hi)) === today) hi += 1;
+  return Math.max(1, hi - now.getTime());
 }
 
 /** Whole calendar days from `fromKey` to `toKey`; negative means already past. */
@@ -96,6 +124,13 @@ const AGENCY_PATTERNS = [
 ];
 
 const ACTIVE_LIFECYCLES = new Set(["active", "pre_filing"]);
+const RETIRED_EVENT_RE =
+  /^(?:VACATED|MOOTED|SUPERSEDED|SATISFIED|DONE|SETTLED)\b/i;
+
+/** Title already marked finished — keep out of the live queue even if a clock leaked. */
+export function isRetiredEventText(text) {
+  return RETIRED_EVENT_RE.test(String(text ?? "").trim());
+}
 
 export const ACTORS = ["you", "opposing", "agency", "court", "unknown"];
 const ACTOR_ALIASES = { plaintiff: "you" };
@@ -142,13 +177,104 @@ export function touchesActiveMatter(matters, byNumber) {
   });
 }
 
-/** Urgency band. Overdue first, then a 3/7/30-day ladder. */
-export function urgencyFor(daysOut, horizonDays) {
+/** Whole days remaining in the current Sunday–Saturday week (PT civil date). */
+export function daysUntilSaturday(fromKey) {
+  const [y, m, d] = String(fromKey).split("-").map(Number);
+  if (!y || !m || !d) return 6;
+  const dow = new Date(Date.UTC(y, m - 1, d)).getUTCDay(); // 0 Sun … 6 Sat
+  return 6 - dow;
+}
+
+/** Sunday of the Sunday–Saturday week that contains `fromKey`. */
+export function weekStartKey(fromKey) {
+  const [y, m, d] = String(fromKey).split("-").map(Number);
+  if (!y || !m || !d) return null;
+  const dow = new Date(Date.UTC(y, m - 1, d)).getUTCDay();
+  return addDaysToKey(fromKey, -dow);
+}
+
+/** Saturday of the Sunday–Saturday week that contains `fromKey`. */
+export function weekEndKey(fromKey) {
+  const [y, m, d] = String(fromKey).split("-").map(Number);
+  if (!y || !m || !d) return null;
+  const dow = new Date(Date.UTC(y, m - 1, d)).getUTCDay();
+  return addDaysToKey(fromKey, 6 - dow);
+}
+
+/** True when `dateKey` falls in the Sunday–Saturday week that contains `today`. */
+export function isInCurrentWeek(dateKey, today) {
+  if (!dateKey || !today) return false;
+  const start = weekStartKey(today);
+  const end = weekEndKey(today);
+  return Boolean(start && end && dateKey >= start && dateKey <= end);
+}
+
+/**
+ * Exclusive list band. Overdue first, then next 3 days, then the rest of this
+ * Sunday–Saturday week, then the rest of the horizon.
+ *
+ * Pill counts for This week / Next 30 days are inclusive — see queueBands().
+ */
+export function urgencyFor(daysOut, horizonDays, todayKey) {
   if (daysOut < 0) return "overdue";
   if (daysOut <= 3) return "critical";
-  if (daysOut <= 7) return "soon";
+  const weekLeft = todayKey ? daysUntilSaturday(todayKey) : 6;
+  if (daysOut <= weekLeft) return "soon";
   if (daysOut <= horizonDays) return "upcoming";
   return "later";
+}
+
+export function isYours(item) {
+  return item?.actor === "you" || item?.actor === "unknown";
+}
+
+function exclusiveBandKey(item) {
+  if (item.urgency === "overdue") return isYours(item) ? "overdue" : "opposing_overdue";
+  return item.urgency;
+}
+
+function inferTodayFromItems(items) {
+  const sample = (items ?? []).find((item) => item?.dateKey && Number.isFinite(item.daysOut));
+  if (!sample) return null;
+  return addDaysToKey(sample.dateKey, -sample.daysOut);
+}
+
+export const QUEUE_BANDS = [
+  { key: "overdue", label: "Past due" },
+  { key: "opposing_overdue", label: "Opposing overdue" },
+  { key: "critical", label: "Next 3 days" },
+  { key: "soon", label: "This week" },
+  { key: "upcoming", label: "Next 30 days" },
+];
+
+/**
+ * Dashboard buckets.
+ *
+ * List rows are exclusive (each item once, most urgent band).
+ * Pill counts for This week and Next 30 days are inclusive of nearer
+ * upcoming items so "Next 3 days = 1, This week = 0" cannot happen when
+ * that item still falls in the current Sunday–Saturday week.
+ */
+export function queueBands(items, options = {}) {
+  const horizonDays = options.horizonDays ?? 30;
+  const today = options.today ?? inferTodayFromItems(items);
+  const mineOnly = options.mineOnly === true;
+  const visible = (items ?? []).filter((item) => {
+    if (item.urgency === "later") return false;
+    if (mineOnly && !isYours(item)) return false;
+    return true;
+  });
+
+  return QUEUE_BANDS.map((band) => {
+    const exclusive = visible.filter((item) => exclusiveBandKey(item) === band.key);
+    let count = exclusive.length;
+    if (band.key === "soon") {
+      count = visible.filter((item) => item.daysOut >= 0 && isInCurrentWeek(item.dateKey, today)).length;
+    } else if (band.key === "upcoming") {
+      count = visible.filter((item) => item.daysOut >= 0 && item.daysOut <= horizonDays).length;
+    }
+    return { key: band.key, label: band.label, items: exclusive, count };
+  });
 }
 
 const URGENCY_RANK = new Map([
@@ -222,10 +348,10 @@ export function buildQueue(timeline, summaries, options = {}) {
       ...inferActor(entry),
     };
 
-    // Abandoned / dismissed / closed matters still carrying upcoming: true are
-    // data debt for validate-portfolio — not tasks. Keep them out of the queue
-    // so a lapsed leave-to-amend on an abandoned case never leads PAST DUE.
-    if (!touchesActiveMatter(matters, byNumber)) {
+    // Abandoned / dismissed / settled / closed matters, and titles already
+    // marked vacated / mooted / done, are not tasks. Keep them out of the queue
+    // so a lapsed leave-to-amend on an archived case never leads PAST DUE.
+    if (isRetiredEventText(shared.event) || !touchesActiveMatter(matters, byNumber)) {
       retired.push(shared);
       continue;
     }
@@ -238,7 +364,7 @@ export function buildQueue(timeline, summaries, options = {}) {
     }
 
     const daysOut = daysBetween(today, dateKey);
-    items.push({ ...shared, dateKey, daysOut, urgency: urgencyFor(daysOut, horizonDays) });
+    items.push({ ...shared, dateKey, daysOut, urgency: urgencyFor(daysOut, horizonDays, today) });
   }
 
   items.sort((a, b) => {
@@ -271,4 +397,9 @@ export function yourQueue(queue) {
   return queue.items.filter(
     (i) => i.urgency !== "later" && (i.actor === "you" || i.actor === "unknown"),
   );
+}
+
+/** Next dated obligation on the litigant's desk that is not already overdue. */
+export function nextOnYourDesk(queue) {
+  return yourQueue(queue).find((i) => i.urgency !== "overdue") ?? null;
 }

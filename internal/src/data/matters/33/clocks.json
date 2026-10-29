@@ -6,7 +6,7 @@
     "kind": "deadline",
     "status": "satisfied",
     "source_dkt": 12,
-    "title": "WATCH \u2014 Defendants' consent or declination to magistrate-judge jurisdiction due in Nforbi v. Candelaria et al. (3:26-cv-08272-LJC). Set by Dkt. 12 (Sep. 8,\u2026",
+    "title": "WATCH — Defendants' consent or declination to magistrate-judge jurisdiction due in Nforbi v. Candelaria et al. (3:26-cv-08272-LJC). Set by Dkt. 12 (Sep. 8,…",
     "actor": "opposing",
     "source": "/documents/matter-33/ndcal/PACER Docket Report - N.D. Cal. 3-26-cv-08272-LJC (Sep 9 2026).pdf",
     "retired_reason": "Defendants declined magistrate-judge jurisdiction; matter reassigned to Hon. Rita F. Lin as 3:26-cv-08272-RFL."
@@ -18,7 +18,7 @@
     "kind": "deadline",
     "status": "satisfied",
     "source_dkt": 17,
-    "title": "WATCH \u2014 Opposition to Dkt. 17 motion to strike due in Nforbi v. Candelaria et al. (3:26-cv-08272-LJC). PACER Deadlines/Hearings Sep. 18 sets Response (Mandatory) 2026-09-23. Civil L.R. 7-3(a). Not enlarged.",
+    "title": "WATCH — Opposition to Dkt. 17 motion to strike due in Nforbi v. Candelaria et al. (3:26-cv-08272-LJC). PACER Deadlines/Hearings Sep. 18 sets Response (Mandatory) 2026-09-23. Civil L.R. 7-3(a). Not enlarged.",
     "actor": "opposing",
     "retired_reason": "Sep. 23 opposition deadline has passed and is no longer a live action clock. Sep. 28 PACER true-up carries the next motion clock as Plaintiff's Sep. 30 reply."
   },
@@ -29,7 +29,7 @@
     "kind": "deadline",
     "status": "satisfied",
     "source_dkt": 17,
-    "title": "Plaintiff's reply due in support of Dkt. 17 motion to strike \u2014 Nforbi v. Candelaria et al. (3:26-cv-08272-RFL), Sep. 30, 2026.",
+    "title": "Plaintiff's reply due in support of Dkt. 17 motion to strike — Nforbi v. Candelaria et al. (3:26-cv-08272-RFL), Sep. 30, 2026.",
     "actor": "you",
     "retired_reason": "Moot: Dkt. 24 (Oct. 13, 2026) granted the Dkt. 17 motion to strike without a hearing; struck Dkt. 11 answer and Dkt. 5."
   },
@@ -38,11 +38,12 @@
     "date": "2026-10-27",
     "date_label": "Oct. 27, 2026",
     "kind": "deadline",
-    "status": "open",
+    "status": "satisfied",
     "source_dkt": 24,
-    "title": "WATCH \u2014 Defendants' response to First Amended Complaint (Dkt. 6) due \u2014 Nforbi v. Candelaria et al. (3:26-cv-08272-RFL). Set by Dkt. 24 Order Granting Motion to Strike (Oct. 13, 2026), which struck Defendants' Sep. 4 answer (Dkt. 11) to the superseded complaint.",
+    "title": "WATCH — Defendants' response to First Amended Complaint (Dkt. 6) due — Nforbi v. Candelaria et al. (3:26-cv-08272-RFL). Set by Dkt. 24 Order Granting Motion to Strike (Oct. 13, 2026), which struck Defendants' Sep. 4 answer (Dkt. 11) to the superseded complaint.",
     "actor": "opposing",
-    "source": "/documents/matter-33/ndcal/Dkt 24 - Order Granting Motion to Strike (Filed Oct 13 2026).pdf"
+    "source": "/documents/matter-33/ndcal/Dkt 24 - Order Granting Motion to Strike (Filed Oct 13 2026).pdf",
+    "retired_reason": "Dkt. 26 ANSWER to Amended Complaint by Diana Candelaria and Steve Gordon, filed Oct. 27, 2026, 3:48 p.m. (William J. McMahon III). Source: ECF NEF. PDF not ingested."
   },
   {
     "id": "33-deadline-2",
@@ -51,7 +52,7 @@
     "kind": "deadline",
     "status": "open",
     "source_dkt": 4,
-    "title": "Deadline to file ADR Certification (ADR L.R. 3) and to meet and confer regarding initial disclosures, early settlement, ADR process selection, and a discovery\u2026 (adjusted to Dec 9 CMC per Dkt. 4/Dkt. 23)",
+    "title": "Deadline to file ADR Certification (ADR L.R. 3) and to meet and confer regarding initial disclosures, early settlement, ADR process selection, and a discovery plan (Rule 26(f)) — Nforbi v. Candelaria et al. (3:26-cv-08272-RFL), Nov. 18, 2026 (21 days before the Dec. 9 CMC; Dkt. 4 / Dkt. 23).",
     "actor": "you",
     "source": "/documents/matter-33/ndcal/Dkt 04 - Order Setting Initial Case Management Conference and ADR Deadlines (Aug 10 2026).pdf",
     "note": "Moved from Oct. 22 to Nov. 18 (21 days before Dec. 9 CMC) per Dkt. 4 (deadlines adjust with CMC) and Dkt. 23 clerk's notice."
@@ -63,7 +64,7 @@
     "kind": "deadline",
     "status": "open",
     "source_dkt": 4,
-    "title": "Deadline to make initial disclosures and file the Case Management Statement \u2014 Nforbi v. Candelaria et al. (3:26-cv-08272-RFL), per Sep. 28 PACER true-up.",
+    "title": "Deadline to make initial disclosures and file the Case Management Statement — Nforbi v. Candelaria et al. (3:26-cv-08272-RFL), per Sep. 28 PACER true-up.",
     "actor": "you",
     "source": "/documents/matter-33/ndcal/Dkt 04 - Order Setting Initial Case Management Conference and ADR Deadlines (Aug 10 2026).pdf"
   },
@@ -76,7 +77,7 @@
     "kind": "hearing",
     "status": "open",
     "source_dkt": 4,
-    "title": "Initial Case Management Conference, 10:00 a.m. before Hon. Rita F. Lin \u2014 Nforbi v. Candelaria et al. (3:26-cv-08272-RFL).",
+    "title": "Initial Case Management Conference, 10:00 a.m. before Hon. Rita F. Lin — Nforbi v. Candelaria et al. (3:26-cv-08272-RFL).",
     "actor": "you",
     "source": "/documents/matter-33/ndcal/Dkt 04 - Order Setting Initial Case Management Conference and ADR Deadlines (Aug 10 2026).pdf",
     "note": "Dkt. 17 motion-to-strike hearing removed: motion granted without hearing by Dkt. 24 (Oct. 13, 2026). CMC unchanged."
@@ -88,7 +89,7 @@
     "kind": "deadline",
     "status": "vacated",
     "source_dkt": null,
-    "title": "Deadline to make initial disclosures (Fed. R. Civ. P. 26(a)(1)) and to file the Joint Case Management Statement (Standing Order for All Judges of the Northern\u2026",
+    "title": "Deadline to make initial disclosures (Fed. R. Civ. P. 26(a)(1)) and to file the Joint Case Management Statement (Standing Order for All Judges of the Northern…",
     "actor": "you",
     "source": null,
     "note": "Reconciled from D1 clocks row 128. Cisneros-era date superseded by reassignment to Judge Lin (see 33-deadline-3, Dec. 2, 2026)."
@@ -100,7 +101,7 @@
     "kind": "hearing",
     "status": "vacated",
     "source_dkt": null,
-    "title": "Initial Case Management Conference and Dkt. 17 motion-to-strike hearing, 1:30 p.m. by Zoom (cand.uscourts.gov/ljc) before Magistrate Judge Lisa J. Cisneros \u2014 Nforbi v. Candelaria et al. (3:26-cv-08272-LJC). Same slot (PACER Sep. 18).",
+    "title": "Initial Case Management Conference and Dkt. 17 motion-to-strike hearing, 1:30 p.m. by Zoom (cand.uscourts.gov/ljc) before Magistrate Judge Lisa J. Cisneros — Nforbi v. Candelaria et al. (3:26-cv-08272-LJC). Same slot (PACER Sep. 18).",
     "actor": "court",
     "source": null,
     "note": "Reconciled from D1 clocks row 129. Cisneros-era CMC superseded by reassignment to Judge Lin (see 33-hearing-4, Dec. 9, 2026)."

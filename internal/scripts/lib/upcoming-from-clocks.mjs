@@ -64,6 +64,7 @@ export function clocksToUpcomingEvents(clocksByMatter, options = {}) {
     if (!Number.isInteger(matter)) continue;
     for (const clock of clocks ?? []) {
       if (!isLiveClock(clock)) continue;
+      if (options.excludePrivate === true && clock.private === true) continue;
       const dated = Boolean(clock.date);
       if (!dated && !includeUndated) continue;
       const key = mergeKey(clock);
@@ -106,13 +107,18 @@ function clockSortDate(clock) {
   return clock.date || clock.date_label || "9999-99-99";
 }
 
-export function liveClocks(clocks) {
-  return (clocks ?? []).filter((c) => isLiveClock(c));
+export function liveClocks(clocks, options = {}) {
+  return (clocks ?? []).filter((c) => {
+    if (!isLiveClock(c)) return false;
+    if (options.excludePrivate === true && c.private === true) return false;
+    return true;
+  });
 }
 
 /** Prefer a dated live clock. Overdue is a fact on the index row, not a schema fail. */
 export function nextFromClocks(clocks, today) {
-  const live = liveClocks(clocks)
+  // Public index / SPA: skip private:true clocks (settlement payment rows).
+  const live = liveClocks(clocks, { excludePrivate: true })
     .slice()
     .sort((a, b) => {
       const rank = (CLOCK_RANK[a.status] ?? 5) - (CLOCK_RANK[b.status] ?? 5);

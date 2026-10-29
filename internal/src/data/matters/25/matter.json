@@ -1,6 +1,6 @@
 {
   "number": 25,
-  "last_updated": "2026-10-15",
+  "last_updated": "2026-10-28",
   "caption": "Newanforbi v. Federal Express Corporation",
   "case_no": "2:26-cv-02881-DAD-SCR",
   "court": "USDC E.D. Cal. (Sacramento Div.)",
@@ -10,11 +10,11 @@
     "docket_url": "/docket/74699765/ps-newanforbi-v-federal-express-corp/"
   },
   "claims": "PC §290.46(j)(2)(E) Violation, Failure to Hire (Tameny), ICRAA, Invasion of Privacy, Negligence Per Se, UCL §17200",
-  "status": "FedEx filed its status report Sep. 24 (Dkt. 10): fact cutoff Jun. 25, 2027; trial Oct. 26, 2027; asks for a bench trial (Plaintiff demanded a jury); settlement conference only after discovery and before a judge other than Riordan; defense theme is material misrepresentation on the application. Plaintiff mailed his report Sep. 14 (confirm docket number). Answer is Dkt. 4. Zoom Oct. 8, 11:00 a.m. Roadmap: internal/docs/matter-25/.",
-  "status_label": "Both reports in; Zoom Oct. 8 (Riordan)",
+  "status": "Last confirmed docket event: FedEx status report filed Sep. 24 (Dkt. 10). Plaintiff's mailed Sep. 14 report: confirm docket number. Oct. 8, 2026 status conference outcome not verified — no minute order ingested as of Oct. 28, 2026. Written discovery Set One served by email Oct. 6; FedEx responses watch Nov. 5, 2026.",
+  "status_label": "Dkt. 10 Sep. 24 — Oct. 8 outcome not verified",
   "lifecycle": "active",
   "proceeding": "federal_civil",
-  "phase": "cmc",
+  "phase": "discovery",
   "filed": "July 15, 2026 (state); removed Aug. 24, 2026",
   "judge": "Hon. Dale A. Drozd, D.J.; Hon. Sean C. Riordan, M.J.",
   "cluster": 3,

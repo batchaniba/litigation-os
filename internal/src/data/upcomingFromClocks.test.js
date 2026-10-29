@@ -97,4 +97,32 @@ describe("upcoming from clocks", () => {
     expect(next_clock.status).toBe("overdue");
     expect(next_clock.date).toBe("2026-09-01");
   });
+
+  it("keeps private clocks off the public index and the SPA upcoming snapshot", () => {
+    const rows = [
+      {
+        id: "pay",
+        date: "2026-10-09",
+        kind: "deadline",
+        status: "open",
+        title: "WATCH — settlement payment due",
+        actor: "opposing",
+        private: true,
+      },
+      {
+        id: "cmc",
+        date: "2026-12-17",
+        kind: "hearing",
+        status: "open",
+        title: "Case Management Conference",
+        actor: "you",
+      },
+    ];
+    const { next_clock } = nextFromClocks(rows, "2026-10-28");
+    expect(next_clock.id).toBe("cmc");
+    const spa = clocksToUpcomingEvents({ 27: rows }, { today: "2026-10-28", excludePrivate: true });
+    expect(spa.map((r) => r.event)).toEqual(["Case Management Conference"]);
+    const desk = clocksToUpcomingEvents({ 27: rows }, { today: "2026-10-28" });
+    expect(desk.some((r) => r.event.includes("settlement payment"))).toBe(true);
+  });
 });

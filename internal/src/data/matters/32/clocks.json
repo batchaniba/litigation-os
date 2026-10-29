@@ -6,31 +6,34 @@
     "kind": "deadline",
     "status": "open",
     "source_dkt": 16,
-    "title": "FILE — signed 415.20(b) declaration + Exhibit A USPS receipt + POS in Nforbi v. Meza-Gonzalez et al. (4:26-cv-08271-ASK) after the September 17 postmark. San…",
+    "title": "FILE — summons return / CCP § 415.20(b) declaration + Exhibit A USPS receipt + POS being refiled in Nforbi v. Meza-Gonzalez et al. (4:26-cv-08271-ASK). USER REPORT Oct. 28, 2026. Sep. 17 mailing executed; prior FILE clock was still open (dkt null). Do not invent a filing.",
     "actor": "you",
-    "source": "/documents/matter-32/ndcal/Declaration of Mailing - CCP 415.20(b) Follow-Up to Dkt 16 - Meza-Gonzalez (N.D. Cal. 4-26-cv-08271-ASK) (September 17, 2026).pdf"
+    "source": "/documents/matter-32/ndcal/Declaration of Mailing - CCP 415.20(b) Follow-Up to Dkt 16 - Meza-Gonzalez (N.D. Cal. 4-26-cv-08271-ASK) (September 17, 2026).pdf",
+    "note": "Dkt. 21 (Oct. 26) Melano summons return drew a Dkt. 21 electronic-filing-error notice Oct. 28 (no title page, Civ. L.R. 3-4); Plaintiff refiled it as Dkt. 24 (Oct. 28, 9:58 a.m.) with the Melano proof of service attached. Dkt. 24 is the Melano return. This clock tracks the Meza-Gonzalez CCP § 415.20(b) follow-up declaration; no ECF entry for that declaration found through Oct. 28. Plaintiff to confirm whether Meza-Gonzalez's return still needs filing."
   },
   {
     "id": "32-deadline-2",
     "date": "2026-10-19",
     "date_label": "Oct. 19, 2026",
     "kind": "deadline",
-    "status": "open",
+    "status": "vacated",
     "source_dkt": 16,
     "title": "WATCH — Meza-Gonzalez Rule 12(a) responsive deadline (computed from a September 17, 2026 CCP § 415.20(b) mailing) in Nforbi v. Meza-Gonzalez et al.…",
     "actor": "opposing",
-    "source": "/documents/matter-32/ndcal/Declaration of Mailing - CCP 415.20(b) Follow-Up to Dkt 16 - Meza-Gonzalez (N.D. Cal. 4-26-cv-08271-ASK) (September 17, 2026).pdf"
+    "source": "/documents/matter-32/ndcal/Declaration of Mailing - CCP 415.20(b) Follow-Up to Dkt 16 - Meza-Gonzalez (N.D. Cal. 4-26-cv-08271-ASK) (September 17, 2026).pdf",
+    "retired_reason": "Computed Rule 12(a) from the Sep. 17, 2026 CCP § 415.20(b) mailing. USER REPORT Oct. 28, 2026: summons return is being refiled. Open PR #1035 catalogs a Dkt. 22 MTD filed Oct. 26, 2026 (PDFs not on this branch). The Oct. 19 computed watch is not a live clock."
   },
   {
     "id": "32-deadline-3",
     "date": "2026-11-01",
     "date_label": "Nov. 1, 2026",
     "kind": "deadline",
-    "status": "open",
+    "status": "vacated",
     "source_dkt": null,
     "title": "CCP §335.1 two-year statute of limitations (computed) backstop, running from the Nov. 1, 2024 incident. (1) Matter 1's Fourth Amendment §1983 claim (borrowed…",
     "actor": "you",
-    "source": "/documents/matter-33/incident/Arrest Report.pdf"
+    "source": "/documents/matter-33/incident/Arrest Report.pdf",
+    "retired_reason": "Not a Matter 32 next-action clock. Matter 32 is already filed. The Nov. 1, 2026 backstop is historical risk on Matter 2 (unfiled state-law theories after the Aug. 15, 2026 dismissal). See Matter 2 damages.json risk."
   },
   {
     "id": "32-deadline-4",
@@ -49,11 +52,12 @@
     "date": "2026-09-04",
     "date_label": "Sep. 4, 2026",
     "kind": "deadline",
-    "status": "open",
+    "status": "satisfied",
     "source_dkt": null,
     "title": "OVERDUE — Jose Melano response to operative FAC. Served Aug. 14, 2026; no response on PACER as of Sep. 28, 2026. Default posture; verify docket before seeking Rule 55(a) relief.",
     "actor": "opposing",
-    "source": "/documents/matter-32/ndcal/Proof of Service of Summons - Jose Melano (C&P Process Server original, clerk-stamped Aug 31 2026).pdf"
+    "source": "/documents/matter-32/ndcal/Proof of Service of Summons - Jose Melano (C&P Process Server original, clerk-stamped Aug 31 2026).pdf",
+    "retired_reason": "Open PR #1035 catalogs Dkt. 22 Defendants' Motion to Dismiss and Strike, filed Oct. 26, 2026, plus Dkt. 23 magistrate-jurisdiction declination. PDFs and docket rows are not ingested on this branch (no bytes on main). Treats the Sep. 4 Melano-answer watch as answered by motion. Confirm PACER before relying on a hearing date."
   },
   {
     "id": "32-deadline-cms",
@@ -63,6 +67,52 @@
     "status": "open",
     "source_dkt": null,
     "title": "Case Management Statement due — Nforbi v. Meza-Gonzalez et al. (4:26-cv-08271-ASK), per Sep. 28 PACER true-up.",
-    "actor": "you"
+    "actor": "you",
+    "note": "Dkt. 25 (Oct. 28) vacated hearing dates before the magistrate judge; the CMC and this statement date may be reset on reassignment. Keep open until the new judge's order issues."
+  },
+  {
+    "id": "32-deadline-mtd-opposition",
+    "date": "2026-11-09",
+    "date_label": "Nov. 9, 2026",
+    "kind": "deadline",
+    "status": "open",
+    "source_dkt": 22,
+    "actor": "you",
+    "title": "Opposition to Dkt. 22 motion to dismiss/strike due Nov. 9, 2026 — Nforbi v. Meza-Gonzalez et al. (4:26-cv-08271-ASK). Date set in the Dkt. 22 docket text (responses due 11/9/2026; replies 11/16/2026). Plaintiff emailed a courtesy copy of the opposition and proof of service to DOJ on Oct. 27, 2026, but no ECF entry for the opposition appears in the NEFs through Oct. 28, 4:00 p.m. PT.",
+    "note": "Keep OPEN until the opposition is on the docket. A courtesy email to counsel is not a filing (Civ. L.R. 5-1). Dkt. 25 reassignment notice vacated the hearing date, not the L.R. 7-3 briefing dates; re-check once the new judge re-notices."
+  },
+  {
+    "id": "32-mtd-reply",
+    "date": "2026-11-16",
+    "date_label": "Nov. 16, 2026",
+    "kind": "deadline",
+    "status": "open",
+    "source_dkt": 22,
+    "actor": "opposing",
+    "title": "WATCH — Defendants' reply in support of Dkt. 22 motion to dismiss/strike due Nov. 16, 2026 per Dkt. 22 docket text — Nforbi v. Meza-Gonzalez et al. (4:26-cv-08271-ASK).",
+    "tz": "America/Los_Angeles"
+  },
+  {
+    "id": "32-mtd-hearing",
+    "date": "2026-12-09",
+    "date_label": "Dec. 9, 2026",
+    "time": "13:30",
+    "tz": "America/Los_Angeles",
+    "kind": "hearing",
+    "status": "vacated",
+    "source_dkt": 25,
+    "actor": "court",
+    "title": "Dkt. 22 motion-to-dismiss hearing originally noticed for Dec. 9, 2026, 1:30 p.m., Oakland, Courtroom 4, 3rd Floor (Dkt. 22 docket text) — VACATED by Dkt. 25 Clerk's Notice of Impending Reassignment (Oct. 28, 2026): all hearing dates before the magistrate judge vacated, to be re-noticed before the assigned district judge.",
+    "retired_reason": "Dkt. 25 (Oct. 28, 2026) vacated all hearing dates before the current magistrate judge. Awaiting separate reassignment notice and re-notice."
+  },
+  {
+    "id": "32-reassignment-watch",
+    "date": null,
+    "kind": "deadline",
+    "status": "contingent",
+    "source_dkt": 25,
+    "actor": "court",
+    "title": "WATCH — Separate clerk's notice naming the district judge on reassignment, then re-noticed Dkt. 22 hearing and any reset CMC/CMS dates — Nforbi v. Meza-Gonzalez et al. (4:26-cv-08271-ASK). Dkt. 25 (Oct. 28, 2026).",
+    "note": "Undated contingent. Do not invent the judge or a hearing date."
   }
 ]

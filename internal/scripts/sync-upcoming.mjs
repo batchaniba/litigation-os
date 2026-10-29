@@ -23,7 +23,10 @@ const DATA_DIR = path.resolve(__dirname, "../src/data");
 const OUT = path.join(DATA_DIR, "upcoming.json");
 const checkOnly = process.argv.includes("--check");
 
-const upcoming = clocksToUpcomingEvents(loadAllClocks(MATTERS_DIR), { today: todayKey() });
+const upcoming = clocksToUpcomingEvents(loadAllClocks(MATTERS_DIR), {
+  today: todayKey(),
+  excludePrivate: true,
+});
 const payload = `${JSON.stringify(upcoming, null, 2)}\n`;
 
 if (checkOnly) {

@@ -51,10 +51,11 @@
     "date_label": "Oct. 9, 2026",
     "tz": "America/Los_Angeles",
     "kind": "deadline",
-    "status": "open",
+    "status": "satisfied",
     "title": "WATCH — Randstad settlement payment due: 14 calendar days after the Sep. 25, 2026 Effective Date. Checks by tracked overnight courier; tracking number to be emailed on dispatch. Confirm receipt and clearing.",
     "actor": "opposing",
-    "private": true
+    "private": true,
+    "retired_reason": "USER REPORT Oct. 28, 2026: settlement payment has processed."
   },
   {
     "id": "27-deadline-6",
@@ -62,19 +63,21 @@
     "date_label": "Oct. 26, 2026",
     "tz": "America/Los_Angeles",
     "kind": "deadline",
-    "status": "open",
+    "status": "vacated",
     "title": "Response deadline for Randstad US, LLC and The RK Logistics Group, Inc., extended by stipulation through Oct. 26, 2026 (no further extensions).",
-    "actor": "opposing"
+    "actor": "opposing",
+    "retired_reason": "Oct. 26, 2026 stipulated response date has passed. Confirm on the Alameda docket whether a response was filed. Do not publish confidential-agreement terms."
   },
   {
     "id": "27-dismissal-after-clearing",
     "date": null,
     "tz": "America/Los_Angeles",
     "kind": "filing",
-    "status": "contingent",
+    "status": "open",
     "title": "FILE request for dismissal with prejudice (Randstad, RK, and Does) within 5 business days after the settlement checks are delivered and have cleared (Para. 2). Consider asking the court to retain jurisdiction under CCP 664.6.",
     "actor": "you",
-    "private": true
+    "private": true,
+    "note": "USER REPORT Oct. 28, 2026: settlement payment has processed. Dismissal is now due under Para. 2 (5 business days after clearing; clearing date not recorded). Submitted Oct. 24 via One Legal (order 29628225); rejected Oct. 26 (previously waived fees due); additional fee mailed Oct. 26. Re-submit as soon as the fee posts. Public twin: 27-dismissal-refile."
   },
   {
     "id": "27-outside-date",
@@ -82,9 +85,20 @@
     "date_label": "Oct. 26, 2026",
     "tz": "America/Los_Angeles",
     "kind": "deadline",
-    "status": "open",
+    "status": "satisfied",
     "title": "PRIVATE — outside date under the confidential agreement: if the checks are not delivered by today or any check is dishonored, Plaintiff may proceed with the case or enforce the agreement (Paras. 2, 21).",
     "actor": "you",
-    "private": true
+    "private": true,
+    "retired_reason": "USER REPORT Oct. 28, 2026: settlement payment has processed. The outside-date remedy was not triggered."
+  },
+  {
+    "id": "27-dismissal-refile",
+    "date": null,
+    "kind": "deadline",
+    "status": "contingent",
+    "source_dkt": null,
+    "actor": "you",
+    "title": "FILE — Re-submit the Request for Dismissal in Newanforbi v. Randstad US, LLC et al. (26CV199902) once the clerk posts the Oct. 26, 2026 additional-fee payment. Oct. 24 submission (One Legal order 29628225) was rejected Oct. 26: previously waived fees due.",
+    "note": "Undated contingent. CRC 3.1385 dismissal deadline depends on the Oct. 26 Notice of Settlement (conditional vs. unconditional box and any stated date) — PDF not ingested; set that date from the notice, do not compute it from prose."
   }
 ]

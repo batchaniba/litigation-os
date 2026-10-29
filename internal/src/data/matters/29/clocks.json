@@ -61,11 +61,12 @@
     "date": "2026-09-30",
     "date_label": "Sep. 30, 2026",
     "kind": "deadline",
-    "status": "open",
+    "status": "satisfied",
     "source_dkt": 1,
     "title": "28 U.S.C. §1447(c) remand window closes (computed) — Newanforbi v. Amazon.com Services, LLC et al., USDC N.D. Cal. No. 3:26-cv-09249-ASK. Thirty days from the…",
     "actor": "you",
-    "source": "/documents/matter-29/Dkt 01 - Notice of Removal (Filed Aug 31 2026).pdf"
+    "source": "/documents/matter-29/Dkt 01 - Notice of Removal (Filed Aug 31 2026).pdf",
+    "retired_reason": "28 U.S.C. § 1447(c) remand window closed Sep. 30, 2026. No remand motion was filed, as with Matter 26. Not a live clock."
   },
   {
     "id": "29-deadline-mtd-opposition",
@@ -109,22 +110,24 @@
     "date": "2026-11-13",
     "date_label": "Nov. 13, 2026",
     "kind": "deadline",
-    "status": "open",
+    "status": "satisfied",
     "source_dkt": null,
     "title": "WATCH — Accurate Background reinvestigation due (15 U.S.C. §1681i(a)(1)(A) / Civ. Code §1786.24: 30 days from Plaintiff's Oct. 14, 2026 dispute of ref 496623722 — NEWANSORBI alias and National Sex Offender Database Search 'No Record Found'). Accurate SR 20261014-15421955 (acknowledged 2:03 p.m.). Watch also for the §1681g / §1786.10 full-file disclosure.",
     "actor": "opposing",
-    "source": "/documents/matter-29/Gmail - Dispute of Accuracy and Request for Complete File to Accurate Background, Ref 496623722 (Sent Oct 14 2026).pdf"
+    "source": "/documents/matter-29/Gmail - Dispute of Accuracy and Request for Complete File to Accurate Background, Ref 496623722 (Sent Oct 14 2026).pdf",
+    "retired_reason": "USER REPORT Oct. 28, 2026: Accurate reinvestigation removed the 'Newansorbi' alias. Statutory 30-day clock from the Oct. 14 dispute is no longer the live watch. Completeness of the NSOR component is not independently verified in this true-up (no letter PDF ingested on main)."
   },
   {
     "id": "29-lr73d-objection",
     "date": "2026-10-20",
     "date_label": "Oct. 20, 2026",
     "kind": "deadline",
-    "status": "contingent",
+    "status": "vacated",
     "source_dkt": 19,
     "actor": "you",
     "source": "/documents/matter-29/Amazon Reply ISO Motion to Dismiss (Dkt 19) - Served Copy, Not File-Stamped (N.D. Cal. 4-26-cv-09249-ASK) (Served Oct 13 2026).pdf",
-    "title": "Civil L.R. 7-3(d)(1) objection to new evidence in reply: due within 7 days after the reply is filed (served Oct. 13 → Oct. 20). NOT NEEDED: Amazon's 6-page reply attaches no declarations, exhibits, or RJN. Newanforbi v. Amazon.com Services, LLC et al. (4:26-cv-09249-ASK)."
+    "title": "Civil L.R. 7-3(d)(1) objection to new evidence in reply: due within 7 days after the reply is filed (served Oct. 13 → Oct. 20). NOT NEEDED: Amazon's 6-page reply attaches no declarations, exhibits, or RJN. Newanforbi v. Amazon.com Services, LLC et al. (4:26-cv-09249-ASK).",
+    "retired_reason": "Amazon's Oct. 13 reply attached no new evidence. Civil L.R. 7-3(d)(1) objection was not needed; window closed Oct. 20."
   },
   {
     "id": "29-zoom-request-mtd",
@@ -172,14 +175,15 @@
   },
   {
     "id": "29-crd-right-to-sue-watch",
-    "date": "2026-10-14",
-    "date_label": "Oct. 14, 2026",
+    "date": null,
+    "date_label": null,
     "kind": "deadline",
-    "status": "open",
+    "status": "contingent",
     "source_dkt": null,
     "actor": "you",
     "source": "/documents/matter-29/",
-    "title": "WATCH — CRD right-to-sue GAP for Claim 2 (Fair Chance Act, Gov. Code §12952). No CRD complaint or right-to-sue notice found in the repo, matter.json, the complaint, or Gmail, and the complaint pleads no exhaustion. Consider filing a CRD intake with an immediate right-to-sue request and supplementing. Outer CRD filing limit is 3 years from the July 2026 acts (Gov. Code §12960(e)); the right-to-sue notice then opens a 1-year window to sue (§12965(c))."
+    "title": "WATCH — CRD right-to-sue GAP for Claim 2 (Fair Chance Act, Gov. Code §12952). No CRD complaint or right-to-sue notice found in the repo, matter.json, the complaint, or Gmail, and the complaint pleads no exhaustion. Consider filing a CRD intake with an immediate right-to-sue request and supplementing. Outer CRD filing limit is 3 years from the July 2026 acts (Gov. Code §12960(e)); the right-to-sue notice then opens a 1-year window to sue (§12965(c)).",
+    "note": "CRD exhaustion gap remains. Oct. 14, 2026 was an internal watch date, not a court deadline. Outer CRD filing limit is 3 years from the July 2026 acts (Gov. Code §12960(e)). Undated contingent so it does not steal next_clock from the Nov. 6 Rule 26(f)."
   },
   {
     "id": "29-rule26f-meet-confer",

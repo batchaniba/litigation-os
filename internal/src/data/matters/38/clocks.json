@@ -4,11 +4,12 @@
     "date": "2026-09-26",
     "date_label": "Sep. 26, 2026",
     "kind": "deadline",
-    "status": "open",
+    "status": "satisfied",
     "source_dkt": null,
     "title": "OUTER BOUND — CCP § 338(a) three-year statutory-liability clock on the Swift § 290.46(j) / ICRAA counts if accrual is the Sept. 26, 2023 pre-adverse email.…",
     "actor": "you",
-    "source": "/documents/matter-38/Swift FCRA Email - Pre-Adverse (Sep 26 2023).pdf"
+    "source": "/documents/matter-38/Swift FCRA Email - Pre-Adverse (Sep 26 2023).pdf",
+    "retired_reason": "E.D. Cal. action 2:26-cv-03312-DC-SCR is on file. The CCP § 338(a) outer-bound filing clock is no longer live. IFP-or-fee clock 38-order-ifp-renewal remains open pending PACER confirmation."
   },
   {
     "id": "38-order-ifp-renewal",

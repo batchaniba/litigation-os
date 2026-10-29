@@ -70,7 +70,7 @@ export function MatterDetailPage() {
     return <RouteLoading label={`Loading matter ${number}`} />;
   }
 
-  const activity = matterActivity(matter.number);
+  const activity = matterActivity(matter.number, { clocks: matter.clocks });
   const documentGroups = groupDocuments(matter.documents);
   // CrossMatterPanel renders null without a cluster, so the rail has to ask the
   // same question before advertising a link to it.
