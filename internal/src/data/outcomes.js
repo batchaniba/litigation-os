@@ -54,6 +54,70 @@ const outcomes_raw = {
   },
   judicial_opinions: [
     {
+      matter: 36,
+      judge: "Magistrate Judge Allison Claire",
+      date: "October 14, 2026",
+      type: "merits",
+      outcome: "favorable",
+      title: "Order Granting IFP; Complaint Cognizable on § 1915(e)(2) Screening; U.S. Marshal Directed to Serve (ECF No. 4)",
+      holding: "IFP application (ECF No. 2) GRANTED. On screening under 28 U.S.C. § 1915(e)(2), the court found the complaint sufficiently cognizable for screening purposes, and found service appropriate on AT&T Mobility Services LLC. The Clerk is to issue process and the U.S. Marshal is to serve within 90 days, without prepayment of costs. Plaintiff must supply the Marshal with the service documents within 15 days and file a statement that he has done so; failure to comply may result in a recommendation of dismissal.",
+      significance: "The second favorable § 1915 screening in the portfolio, after Matter 24 (June 29, 2026). The case clears the screening step that went against Plaintiff in Matters 7 and 18 and moves to U.S. Marshal service; the Initial Scheduling Order (ECF No. 5) issued the same day.",
+      document_path: "/documents/matter-36/edca/Dkt 04 - Order Granting IFP, Screening, and Directing USM Service (Filed Oct 14 2026).pdf"
+    },
+    {
+      matter: 33,
+      judge: "Hon. Rita F. Lin",
+      date: "October 13, 2026",
+      type: "procedural",
+      outcome: "favorable",
+      title: "Order Granting Motion to Strike (Re: Dkt. No. 17)",
+      holding: "The First Amended Complaint (Dkt. 6), filed within the Rule 15(a)(1)(B) window, became the operative complaint on filing. Because Defendants' September 4 Answer (Dkt. 11) addressed only the superseded original Complaint, Plaintiff's unopposed motion to strike it was GRANTED. The Court also treated the August 14 filing (Dkt. 5) as technical error and struck it from the docket, and ordered Defendants to respond to the First Amended Complaint by October 27, 2026.",
+      significance: "A Plaintiff-filed motion granted in full. Defendants Candelaria and Gordon answered the First Amended Complaint on October 27, 2026 (Dkt. 26), putting the case on the Rule 26(f) and initial CMC track before Judge Lin (CMC December 9, 2026).",
+      document_path: "/documents/matter-33/ndcal/Dkt 24 - Order Granting Motion to Strike (Filed Oct 13 2026).pdf"
+    },
+    {
+      matter: 38,
+      judge: "Magistrate Judge Sean C. Riordan",
+      date: "October 5, 2026",
+      type: "procedural",
+      outcome: "adverse",
+      title: "Order Denying Motion to Proceed In Forma Pauperis Without Prejudice (ECF No. 4)",
+      holding: "IFP motion (ECF No. 2) DENIED without prejudice because the application did not give enough information about income, expenses, and assets to make an IFP determination (citing Escobedo v. Applebees, 787 F.3d 1226, 1234 (9th Cir. 2015)). Plaintiff may file a fully completed renewed IFP motion within 21 days or pay the filing fee; otherwise the court will recommend dismissal.",
+      significance: "Not a merits ruling — a filing-fee gate. The 21-day window ran October 26, 2026. Separate from Best Buy (Matter 39), where the filing fee was paid October 27.",
+      document_path: "/documents/matter-38/edca/Dkt 04 - Order Denying IFP Motion Without Prejudice (Filed Oct 5 2026).pdf"
+    },
+    {
+      matter: 26,
+      judge: "Chief Magistrate Judge Carolyn K. Delaney",
+      date: "September 24, 2026",
+      type: "procedural",
+      outcome: "procedural",
+      title: "Minute Order Vacating October 7 Hearing; Motion to Dismiss Taken Under Submission (Text Only)",
+      holding: "On the court's own motion, the October 7, 2026 hearing on UPS's fully briefed Rule 12(b)(6) motion to dismiss (ECF Nos. 9, 10, 14) was VACATED and the motion taken under submission without appearance or argument under E.D. Cal. L.R. 230(g). The court will set a hearing if it later needs argument or supplemental briefing.",
+      significance: "UPS's motion will be decided on the papers; no ruling has issued yet."
+    },
+    {
+      matter: 24,
+      judge: "Hon. Charles R. Breyer (on reassignment)",
+      date: "September 14, 2026",
+      type: "procedural",
+      outcome: "procedural",
+      title: "Order Reassigning Case (Dkt. 29, Text Only)",
+      holding: "The case was reassigned at random under General Order No. 44 to U.S. District Judge Charles R. Breyer, San Francisco Division; Magistrate Judge Ajay S. Krishnan is no longer assigned. The case number is now 3:26-cv-05953-CRB.",
+      significance: "Judge Breyer now decides Defendant's motion to dismiss the First Amended Complaint (Dkt. 18)."
+    },
+    {
+      matter: 24,
+      judge: "Magistrate Judge Ajay S. Krishnan",
+      date: "September 8, 2026",
+      type: "procedural",
+      outcome: "adverse",
+      title: "Related Case Order — Nforbi v. Candelaria Not Related (Dkt. 23)",
+      holding: "On Plaintiff's administrative motion (Dkt. 19), the Court found Nforbi v. Candelaria, No. 26-cv-08272, not related to this case: the actions do not concern substantially the same parties or nucleus of facts. This case concerns the CHP officers and the November 2024 detention; Candelaria concerns a DMV Driver Safety hearing officer's February 2025 written order sustaining a one-year suspension of Plaintiff's Class A license.",
+      significance: "Candelaria (Matter 33) stays on its own track before Judge Lin instead of joining the CHP cases related on August 24 (Serrato and Meza-Gonzalez).",
+      document_path: "/documents/matter-24/Dkt 23 - Related Case Order - Candelaria Not Related (Filed Sep 8 2026).pdf"
+    },
+    {
       matter: 20,
       judge: "Hon. Jenna M. Whitman",
       date: "August 29, 2026",

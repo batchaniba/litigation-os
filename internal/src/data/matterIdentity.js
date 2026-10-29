@@ -20,6 +20,7 @@ export function getMatterIdentity(number) {
     court: matter.court,
     claims: matter.claims,
     type: matter.type,
+    cluster: matter.cluster,
   };
 }
 
@@ -41,5 +42,6 @@ export function withMatterIdentity(row, { numberKey = "number" } = {}) {
     caseNumber: caseNo,
     caseNo,
     court: row.court ?? identity.court,
+    cluster: row.cluster ?? identity.cluster,
   };
 }

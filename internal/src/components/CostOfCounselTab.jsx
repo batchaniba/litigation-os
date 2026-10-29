@@ -2,6 +2,7 @@ import { useState } from "react";
 import { cases } from "../data/matters";
 import { damages_table } from "../data/damages";
 import { lawyer_fees, lawyer_fees_summary } from "../data/lawyerFees";
+import { BLENDED_HOURLY_RATE } from "../data/lawyerFeeMath";
 import { getMatterSummary } from "../data/matters";
 import { isActiveExposureRow, sumExposure } from "../utils/portfolioStats";
 import { GOLD } from "../constants";
@@ -144,7 +145,7 @@ export const CostOfCounselTab = () => {
         </div>
         <div style={{ fontSize: 48, fontWeight: 700, color: theme.aggregateCardText }}>{fmt(total)}</div>
         <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, color: theme.subtleText, marginTop: 8 }}>
-          {totalHours.toFixed(0)} hours at a $280/hr blended rate · {summary.totalDocumentsAnalyzed} documents, {summary.totalPagesReal.toLocaleString()} real pages measured with pdfinfo
+          {totalHours.toFixed(0)} hours at a ${BLENDED_HOURLY_RATE}/hr blended rate · {summary.totalDocumentsAnalyzed} documents, {summary.totalPagesReal.toLocaleString()} real pages measured with pdfinfo
         </div>
       </div>
 
@@ -172,8 +173,7 @@ export const CostOfCounselTab = () => {
           Fees vs. Damages Exposure
         </div>
         <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 12, color: theme.secondaryText, lineHeight: 1.7 }}>
-          At the {VIEW_LABEL[view].toLowerCase()} fee estimate ({fmt(total)}), hiring counsel across the {estimatedMatterCount} matters
-          with fee rows (M1–M{Math.max(...lawyer_fees.map((r) => r.number))}; M42–M43 not yet estimated)
+          At the {VIEW_LABEL[view].toLowerCase()} fee estimate ({fmt(total)}), hiring counsel across all {estimatedMatterCount} tracked matters
           would have consumed roughly <strong style={{ color: "#34D399" }}>{ratioPct}%</strong> of live moderate-scenario
           damages exposure ({fmt(damagesComparisonBasis)}). Pro se representation preserves that difference in full, minus the
           litigant's own time.
