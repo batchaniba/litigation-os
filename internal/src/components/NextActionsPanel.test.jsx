@@ -42,6 +42,7 @@ describe("clipEvent / daysLabel", () => {
 
 describe("NextActionsPanel", () => {
   const queue = {
+    today: "2026-09-05",
     horizonDays: 30,
     items: [
       item(),
@@ -109,6 +110,32 @@ describe("NextActionsPanel", () => {
     );
     await user.click(screen.getByLabelText("My desk only"));
     expect(seen).toEqual([true]);
+  });
+
+  it("This week pill includes a Next 3 days item that still falls in the Sunday–Saturday week", () => {
+    const wed = {
+      today: "2026-10-28",
+      horizonDays: 30,
+      items: [
+        item({
+          date: "Oct. 29, 2026",
+          dateKey: "2026-10-29",
+          daysOut: 1,
+          urgency: "critical",
+          event: "DEADLINE — USM service packet",
+          matters: [36],
+        }),
+      ],
+      undated: [],
+      gaps: [],
+    };
+    renderPanel(wed);
+    const weekPills = screen.getAllByText("This week");
+    expect(weekPills.length).toBeGreaterThan(0);
+    // Inclusive count is 1; exclusive list is empty so the This week section is omitted.
+    expect(screen.queryByRole("heading", { name: /This week/i })).toBeNull();
+    expect(screen.getAllByText("1").length).toBeGreaterThan(0);
+    expect(screen.getByText(/USM service packet/)).toBeTruthy();
   });
 
   it("empty state when nothing is dated, undated, or drifting", () => {
