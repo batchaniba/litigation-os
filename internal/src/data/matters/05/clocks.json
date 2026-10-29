@@ -20,8 +20,8 @@
     "status": "contingent",
     "source_dkt": null,
     "actor": "court",
-    "title": "WATCH — Clerk/court entry of judgment of dismissal (STK-CV-UF-2026-0001032 / CV-2026-0001032). Plaintiff's Oct. 27 CCP § 581(f)(1) request is on file; defendants' Application for Order Dismissing FAC and Entering Judgment of Dismissal is set ex parte Nov. 2, 2026. Entry also feeds Matter 28: the N.D. Cal. Oct. 27 order deferred the Dkt. 15 MTD pending a San Joaquin judgment.",
-    "note": "Undated contingent. Do not invent an entry date. When entered, ingest the judgment and notice of entry; that starts the appeal clock (CRC 8.104)."
+    "title": "WATCH — Court entry of judgment of dismissal (STK-CV-UF-2026-0001032 / CV-2026-0001032). Portal Oct. 28, 2026: Disposed 07/15/2026, no judgment entered. Defendants' Application for Order Dismissing FAC and Entering Judgment of Dismissal is set ex parte Nov. 2, 2026. Plaintiff's Oct. 27 Request for Court Judgment and Oct. 28 Response/Objection with relodged proposed judgment (no 'with prejudice') are awaiting clerk verification. Entry also feeds Matter 28: the N.D. Cal. Oct. 27 order deferred the Dkt. 15 MTD pending a San Joaquin judgment.",
+    "note": "Undated contingent. Do not invent an entry date. Watch which proposed judgment is signed (defendants' vs. Plaintiff's relodged form without 'with prejudice'). When entered, ingest the judgment and notice of entry; that starts the appeal clock (CRC 8.104)."
   },
   {
     "id": "05-hearing-exparte-judgment",
@@ -35,6 +35,19 @@
     "actor": "you",
     "source": "/documents/opinions/Newanforbi v Palacios - San Joaquin Sup Ct - Demurrer Sustained WOLA Jul 15 2026.pdf",
     "title": "EX PARTE HEARING — Application for Order Dismissing First Amended Complaint and Entering Judgment of Dismissal, Newanforbi v. Palacios et al. (San Joaquin Sup. Ct. STK-CV-UF-2026-0001032), Nov. 2, 2026, 9:15 a.m., Dept. 10A. Related Matter 28 (N.D. Cal. 3:26-cv-07504-LJC) Dkt. 15 motion to dismiss is deferred pending the San Joaquin judgment.",
-    "note": "USER REPORT Oct. 28, 2026: San Joaquin Superior Court approved defense counsel's ex parte request the same day. No application PDF ingested. Do not invent a docket number or a judgment date."
+    "note": "VERIFIED on the San Joaquin eCourt portal Oct. 28, 2026 (hearing on calendar, Dept. 10A, 9:15 a.m.). Plaintiff's Oct. 28 Response and Objection to defendants' proposed judgment, with a relodged proposed judgment omitting 'with prejudice', was submitted the same day and is awaiting clerk verification. No new tentative ruling posted. Do not invent a docket number or a judgment date."
+  },
+  {
+    "id": "05-exparte-opposition",
+    "date": "2026-10-28",
+    "date_label": "Oct. 28, 2026",
+    "tz": "America/Los_Angeles",
+    "kind": "deadline",
+    "status": "satisfied",
+    "source_dkt": null,
+    "actor": "you",
+    "title": "FILE — Plaintiff's Response to defendants' ex parte application and Objection to proposed judgment, with relodged proposed judgment (omitting 'with prejudice') and proof of service, ahead of the Nov. 2, 2026 ex parte (Dept. 10A).",
+    "note": "Submitted Oct. 28, 2026 via AppFile; status Awaiting Verification, not yet on the public docket as of Oct. 28. Conformed copy not ingested.",
+    "retired_reason": "SUBMITTED Oct. 28, 2026 (AppFile order 14773399) — awaiting clerk verification."
   }
 ]

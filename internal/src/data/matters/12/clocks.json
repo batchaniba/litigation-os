@@ -6,8 +6,21 @@
     "kind": "hearing",
     "status": "open",
     "source_dkt": null,
-    "title": "Further Case Management Conference, 8:30 AM, Dept. 11B, Hon. Robert T. Waters — Ngwa Nforbi v. Diamond Truck Sales, Inc. et al. (STK-CV-UF-2026-0001094), set…",
+    "title": "Further Case Management Conference, 8:30 AM, Dept. 11B, Hon. Robert T. Waters — Ngwa Nforbi v. Diamond Truck Sales, Inc. et al. (STK-CV-UF-2026-0001094). Still on calendar after Plaintiff's Oct. 26, 2026 Request for Dismissal (entire action); likely to be vacated.",
     "actor": "you",
-    "source": "/documents/matter-12/Minute Order - Case Management Conference (Aug 12 2026).pdf"
+    "source": "/documents/matter-12/Minute Order - Case Management Conference (Aug 12 2026).pdf",
+    "time": "08:30",
+    "tz": "America/Los_Angeles",
+    "note": "Portal checked Oct. 28, 2026: CMC still calendared and case still Open. Mark vacated once the court vacates it or closes the case; do not assume."
+  },
+  {
+    "id": "12-dismissal-closure-watch",
+    "date": null,
+    "kind": "deadline",
+    "status": "contingent",
+    "source_dkt": null,
+    "actor": "court",
+    "title": "WATCH — Clerk closure of STK-CV-UF-2026-0001094 after Plaintiff's Oct. 26, 2026 Request for Dismissal (entire action), and vacatur of the Dec. 11, 2026 Further CMC.",
+    "note": "Undated contingent. Portal Oct. 28, 2026 still shows Open. Do not invent a closure date; ingest the conformed dismissal when available."
   }
 ]
