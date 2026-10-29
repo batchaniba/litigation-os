@@ -1,0 +1,33 @@
+{
+  "matter": 29,
+  "caption": "Newanforbi v. Amazon.com Services, LLC et al.",
+  "case_no": "4:26-cv-09249-ASK",
+  "room": "internal/private/research/matter-29",
+  "created": "2026-10-28",
+  "note": "Research collection. Live clocks/docket remain in internal/src/data/matters/29/. Copying a Git blob or writing extracted text is not independent page-by-page certification of every PDF outside this room.",
+  "assets": [
+    {
+      "storage_path": "00-user-inputs/accurate-reinvestigation-2026-10-28.pdf",
+      "kind": "user_input_pdf",
+      "pages": 25,
+      "bytes": 525268,
+      "sha256": "862f953d69751cadbdf55af29369e2bee4e4f41bd1eeb2a8646a710c667a7316",
+      "description": "Accurate Background reinvestigation letter dated Oct. 28, 2026, plus enclosed revised consumer report Y94611404 and form notices.",
+      "sources": [
+        {
+          "method": "user_upload",
+          "original_name": "accurate-reinvestigation-2026-10-28_8a97.pdf"
+        }
+      ],
+      "r2": null
+    },
+    {
+      "storage_path": "07-source-text/accurate-reinvestigation-2026-10-28.txt",
+      "kind": "generated_text",
+      "bytes": 50012,
+      "sha256": "1d85610dd91f842f52899a8a62d289ee0d2202a7285f2bfa4cea59dd5e04c7a2",
+      "description": "pypdf extract of the Oct. 28 packet. PDF controls.",
+      "extractor": "pypdf"
+    }
+  ]
+}
