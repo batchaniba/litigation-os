@@ -16,10 +16,10 @@ The original Accurate file-disclosure PDF is about **34 MB / 202 pages**. It was
 
 What the extract is useful for (see `00-ANALYSIS.md`):
 
-- Recipients: Amazon July 7, 2026; Target March 19, 2025.
+- Requests received, not furnishing dates: Amazon July 7, 2026; Target March 19, 2025. The Amazon report is identified as Y94611404 on October 14, 2026.
 - Sex-offender vendor for the Amazon report: **Tauxbe Data Inc.** (NSOPW).
 - Santa Clara vendor: **InformData - SJV & Associates, LLC**. The Santa Clara request used first name **NEWANSORBI**, last name **NGWA**.
-- San Joaquin vendor: **Infinity Court Research & Retrieval**. Two NEWANFORBI cases (2020, 2025) returned on a DOB-only match and were not reported.
+- San Joaquin vendor: **Infinity Court Research & Retrieval**. Three NEWANFORBI entries (two filed in 2020, one in 2025), each `identified_by_dob` true and `identified_by_name` false, reported as no record. Charge text in the JSON is `N/A`.
 - 2025 Target sex-offender search: no records.
 
 Still missing from the disclosure on the face of the analysis: 2026 SO search **#496623723** names/identifiers; Amazon intake data; audit/version logs; furnishing/access logs; disclosure and authorization forms.

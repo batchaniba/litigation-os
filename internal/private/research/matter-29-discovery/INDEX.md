@@ -14,6 +14,10 @@ Companion: [`README.md`](README.md) (identity and rules) · [`00-ANALYSIS.md`](0
 | [`README.md`](README.md) | Case identity, posture, key dates, working rules, how an outside model should read this folder |
 | [`INDEX.md`](INDEX.md) | This file map and the suggested follow-up questions |
 | [`00-ANALYSIS.md`](00-ANALYSIS.md) | Oct. 31 foundation analysis, verbatim, plus a short workspace header |
+| [`SYNTHESIS-3-MODEL.md`](SYNTHESIS-3-MODEL.md) | **Consolidated plan** after the ChatGPT, Claude, and Grok reviews. Controls where they differ |
+| [`review-2026-10-31/00-START-HERE.md`](review-2026-10-31/00-START-HERE.md) | ChatGPT review: re-ratings, redlines, Set Two RFPs 21–44, ROGs, RFAs, Rule 15, subpoenas, 26(f) |
+| [`claude-review-2026-10-31/claude-work-response.md`](claude-review-2026-10-31/claude-work-response.md) | Claude review, copied from the Oct. 31 upload, not edited |
+| [`grok-review-2026-10-31/00-START-HERE.md`](grok-review-2026-10-31/00-START-HERE.md) | Grok review, written from the sources before the other two reviews were opened |
 | [`sources/README.md`](sources/README.md) | What was newly attached on Oct. 31, including the missing 34 MB file-disclosure PDF |
 | [`sources/RFP_Accurate_Set1.pdf`](sources/RFP_Accurate_Set1.pdf) | Served Plaintiff's First RFPs to Accurate, Set One (Oct. 19, 2026; 9 pp.) |
 | [`sources/RFP_Accurate_Set1.txt`](sources/RFP_Accurate_Set1.txt) | Text of the served Accurate RFP set |

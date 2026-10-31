@@ -38,7 +38,7 @@ Against Accurate, the pleaded FCRA theory is **§ 1681b(b)(1)** (furnishing with
 
 Accurate answered (Dkt. 21, Sept. 22) with twelve defenses. Amazon moved to dismiss only Claims 5–7 (Dkt. 19). Claims 1–4 are live as to both defendants.
 
-Oct. 14, 2026: Accurate issued a completed consumer report that included a **NEWANSORBI** alias (labeled "Provided by Applicant") and a National Sex Offender Database Search result of **NO RECORD FOUND**. Plaintiff disputed both and requested the complete file. Oct. 28: Accurate closed the reinvestigation, removed the alias, confirmed no reported sex-offender information, and said it sent an amended report to Amazon. Oct. 30: Seyfarth transmitted a 202-page file disclosure dated Oct. 27. The original 34 MB PDF is in Plaintiff's Gmail from Seyfarth (Oct. 30, 2026); only the text extract is in this room.
+Oct. 14, 2026: Accurate issued a completed consumer report that included a **NEWANSORBI** alias (labeled "Provided by Applicant") and a National Sex Offender Database Search result of **NO RECORD FOUND**. Plaintiff disputed both and requested the complete file. Oct. 28: Accurate closed the reinvestigation, removed the alias, confirmed no reported sex-offender information, and said it sent an amended report to Amazon. Oct. 30: Seyfarth transmitted a 202-page file disclosure dated Oct. 27. The cover says Accurate **received a request** for Amazon on July 7, 2026. That sentence is the order date, not proof the report was furnished that day. The original 34 MB PDF is in Plaintiff's Gmail from Seyfarth (Oct. 30, 2026); only the text extract is in this room. The text extract includes an October 28 letter near the end. Whether the PDF bytes do is unchecked.
 
 ## Posture and key dates
 
@@ -101,4 +101,14 @@ Copy a question from [`INDEX.md` § Questions for further analysis](INDEX.md#que
 
 ## Independent critical review and proposed next wave (Oct. 31)
 
-Start with [`review-2026-10-31/00-START-HERE.md`](review-2026-10-31/00-START-HERE.md). It includes an independent re-rating of all twenty RFPs, four exact proposed redlines, supplemental RFPs 21–44, twenty-two interrogatories, thirty-six RFAs, a Rule 15 amendment analysis, three vendor subpoena outlines, a timed Rule 26(f) agenda, and a source/verification register. It expressly corrects parts of the foundation analysis, which remains unchanged. These are private, unserved drafts; some authentication RFAs require the absent original disclosure PDF before service.
+Three private reviews, none served or filed. The consolidated plan is [`SYNTHESIS-3-MODEL.md`](SYNTHESIS-3-MODEL.md). Where a review and the synthesis differ, follow the synthesis.
+
+| Review | Start here |
+|---|---|
+| Foundation (unchanged) | [`00-ANALYSIS.md`](00-ANALYSIS.md) |
+| ChatGPT | [`review-2026-10-31/00-START-HERE.md`](review-2026-10-31/00-START-HERE.md) |
+| Claude (uploaded work product, copied in) | [`claude-review-2026-10-31/claude-work-response.md`](claude-review-2026-10-31/claude-work-response.md) |
+| Grok (written before the other two were opened) | [`grok-review-2026-10-31/00-START-HERE.md`](grok-review-2026-10-31/00-START-HERE.md) |
+| **Consolidated plan** | [`SYNTHESIS-3-MODEL.md`](SYNTHESIS-3-MODEL.md) |
+
+ChatGPT's package re-rates all twenty RFPs, with supplemental RFPs 21–44, twenty-two interrogatories, thirty-six RFAs, a Rule 15 analysis, vendor subpoenas, and a timed Rule 26(f) agenda. Some authentication RFAs require the absent original disclosure PDF before service. The synthesis narrows Set Two to requests 21–33, holds a duplicate ICRAA accuracy count because of Civil Code § 1786.52(a), and treats "did not re-run" as an inference rather than a fact.
