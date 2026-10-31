@@ -1,0 +1,210 @@
+Delivered-To: bnn.cdl@gmail.com
+Received: by 2002:a05:7300:a994:b0:368:94e3:9216 with SMTP id cl20csp20687dyb;
+        Fri, 23 Oct 2026 15:05:03 -0700 (PDT)
+X-Received: by 2002:a05:6870:2493:b0:48f:e137:dc80 with SMTP id 586e51a60fabf-4a83f5a290bmr474367fac.57.1792793102805;
+        Fri, 23 Oct 2026 15:05:02 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1792793102; cv=none;
+        d=google.com; s=arc-20260327;
+        b=QJUlR3WAHg2JOQLUmnVDHZIwtWhCPNyZDaGJPhvyyklHTKkMyzzGG93QVuBK6ZVxCO
+         LbzbhFMbPYiFxNBS3LgG3YByQbkODILWq6J23b9VV095q5jvrUr5CgMabPIoyY5HBQ0I
+         b/DYvFIQQ4EZzWjLPDdh524RSLmcdc5RHrR+BBopgDO+4QAKgPJFYurz4KwNg5DD0Kx2
+         K+7qGG9Aov/UOYq/Bnt8Xom8ITP45FW85Qx3fwzrLz6NbPpgRTeTiQe2lv/pKgoG5Ouq
+         37wYHHGZ7XDfonPMjy9UuAcrMDSDTIuVVEEAyqfOHiYGezappC2WBHbfar2JOlwTNxHm
+         VxPQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20260327;
+        h=subject:message-id:to:from:date:mime-version:dkim-signature
+         :dkim-signature;
+        bh=kAsdEBZO/aiac2wyypEjhuK3KXWAf5CEFq//Fbi5w8U=;
+        fh=ZK9td0TKs6EqDck48ITpkm5yl2e9I36emvizxlZY7iM=;
+        b=A5TnmFyFhWIsOQTA+zm9S416lmD1BAj4+AZmmqlcJkJ9qmEoSCmQtS6KKKvl4o0NEd
+         G4+123cp+MnL2xQAS+aXSGAJ6i6Ht9GSanCiwqf9xuTf1vki1EQoX98u0qtznl6vaLrI
+         NVCqDXmRKxeUcI1QVtXoCwngPHLE4drRhYWcr56PUHK4REhLFE8Mee8fmibi7p1st7Pi
+         A+H+DSGIsNEs7xNebkMfPMwfmx71KNzOaSjVfGfeuGY+ssQroUHkPow1ALinDN0pGtOO
+         aOmSYylIYXOfnmQGYlnHYjii//B8ntkQDTTiqiygqvEhuxEwfzR3sJI6042cR5qd2B/p
+         VwXw==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@hireright.com header.s=mimecast20230202 header.b=mB31X9S1;
+       dkim=pass header.i=@dkim.mimecast.org header.s=201912 header.b="j/2FQI0Z";
+       spf=pass (google.com: domain of noreply@hireright.com designates 170.10.153.232 as permitted sender) smtp.mailfrom=noreply@hireright.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=hireright.com
+Return-Path: <noreply@hireright.com>
+Received: from usb-smtp-delivery-232.mimecast.com (usb-smtp-delivery-232.mimecast.com. [170.10.153.232])
+        by mx.google.com with ESMTPS id 586e51a60fabf-4a8432e8b0asi358555fac.198.2026.10.23.15.05.02
+        for <bnn.cdl@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
+        Fri, 23 Oct 2026 15:05:02 -0700 (PDT)
+Received-SPF: pass (google.com: domain of noreply@hireright.com designates 170.10.153.232 as permitted sender) client-ip=170.10.153.232;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@hireright.com header.s=mimecast20230202 header.b=mB31X9S1;
+       dkim=pass header.i=@dkim.mimecast.org header.s=201912 header.b="j/2FQI0Z";
+       spf=pass (google.com: domain of noreply@hireright.com designates 170.10.153.232 as permitted sender) smtp.mailfrom=noreply@hireright.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=hireright.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=hireright.com;
+	s=mimecast20230202; t=1792793102;
+	h=from:from:reply-to:subject:subject:date:date:message-id:message-id:
+	 to:to:cc:mime-version:mime-version:content-type:content-type;
+	bh=kAsdEBZO/aiac2wyypEjhuK3KXWAf5CEFq//Fbi5w8U=;
+	b=mB31X9S1cTHCMOCXJKQdzlsmpF9dfx/wmLURXernKJ0j+XngsYZSLYnaIg2kFMJdFQhyHy
+	kAG9qI11khcICsT7F5Tx1/zgZcK4lHq0dwNbURndgdrmQcPLvdRxkZgzbHQwRWem5t0ukW
+	r4GtzS8Z6HpXgnbFUjJbNHn3svXahUw=
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=dkim.mimecast.org;
+	s=201912; t=1792793102;
+	h=from:from:reply-to:subject:subject:date:date:message-id:message-id:
+	 to:to:cc:mime-version:mime-version:content-type:content-type;
+	bh=kAsdEBZO/aiac2wyypEjhuK3KXWAf5CEFq//Fbi5w8U=;
+	b=j/2FQI0ZXR5xGFl4jfEFN31f1XK56UeFcaGqS5izaZe+XeZVqfvtRTzcZcfKZ6u/WnuAAO
+	qI4QJY0g5JQ1zODsxRTq8huTTaDeW8DWruxnDHJmjIgE/F1jVV2Gw73gSmdpfnpO7QWzVH
+	4jTFdaao15CBTb8AYVcPCQZwFeclnqgdjCdY8P/3Pb1BYHCzld89DFE6RDC01KjmzITHk+
+	WyATiVUn+gI01GGPNAsknrWlz6SQ3LnEmRaa5/W6PEmUzk9EM5ejd80OHVzxf5uD0v3N6q
+	C+vC5cesnyQwR3bL+UuFqByf0b+8qCASIgp3qoYQFEa5TKXT/aieYZZfg8rZpw==
+Received: from us01wrly01p.data.hireright.com (199.255.140.91
+ [199.255.140.91]) by relay.mimecast.com with ESMTP with STARTTLS
+ (version=TLSv1.2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ usb-mta-36-JcS0q7pVORO4-NPd56qNug-3; Fri, 23 Oct 2026 15:04:59 -0700
+X-MC-Unique: JcS0q7pVORO4-NPd56qNug-3
+X-Mimecast-MFC-AGG-ID: JcS0q7pVORO4-NPd56qNug_1792793099
+Received: from us01legw121p.data.hireright.com ([10.130.20.12]) by us01wrly01p.data.hireright.com with Microsoft SMTPSVC(10.0.14393.4169);
+	 Fri, 23 Oct 2026 15:04:58 -0700
+MIME-Version: 1.0
+Received: from 10.130.20.12 ([10.130.20.12])
+          by us01legw121p.data.hireright.com (JAMES SMTP Server 2.3.2) with SMTP ID 191
+          for <bnn.cdl@gmail.com>;
+          Fri, 23 Oct 2026 15:04:58 -0700 (PDT)
+Date: Fri, 23 Oct 2026 15:04:58 -0700 (PDT)
+From: HireRight Customer Support <noreply@hireright.com>
+To: "bnn.cdl@gmail.com" <bnn.cdl@gmail.com>
+Message-ID: <999030815.1529477.1792793098326.JavaMail.karaf@us01lkrf124p.data.hireright.com>
+Subject: MVR Express report provided to The Hertz Corporation
+Return-Path: noreply@hireright.com
+X-OriginalArrivalTime: 23 Oct 2026 22:04:58.0335 (UTC) FILETIME=[8B107EF0:01DD633A]
+X-Mimecast-Spam-Score: 0
+X-Mimecast-MFC-PROC-ID: pyF-beNSx8Rf2QltikUpjyiOdGN0WIwL_MeM8rYMCvU_1792793099
+X-Mimecast-Originator: hireright.com
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_1529476_1211578920.1792793098326"
+
+------=_Part_1529476_1211578920.1792793098326
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: Quoted-Printable
+
+<html>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+"/>
+    <title>New Application Center Email</title>
+    <link href=3D"https://ows01.hireright.com/3rd_party/fonts/Open-Sans/fon=
+t-face.css" rel=3D"stylesheet" type=3D"text/css"/>
+    <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=
+=3D1"/>
+    <style>
+        .spfont { font-family: 'Open Sans', Arial, sans-serif; }
+        .button { background-color: #038abf; border: 0; border-radius: 5px;=
+ }
+        a { color: #038abf; }
+        /* */ @media only screen and (max-width: 800px) {
+            body, table, td, span, a, li, blockquote { -webkit-text-size-ad=
+just: none !important; font-family: 'Open Sans', Arial, sans-serif !importa=
+nt; }
+            body { padding: 0px !important; }
+            table[class=3D"full"] { width: 100% !important; padding: 0 !imp=
+ortant; margin: 0 !important; }
+            td[class=3D"align-center"] { text-align: center !important; mar=
+gin: 0px auto !important; }
+        }
+    </style>
+    <!--[if mso]>
+    <style type=3D"text/css">
+        body, table, td, span, a, li, blockquote { font-family: Arial, sans=
+-serif !important; }
+    </style>
+    <![endif]-->
+</head>
+<body style=3D"background-color: #ffffff">
+    <table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0=
+" class=3D"full" width=3D"600">
+        <tbody>
+            <tr style=3D"background-color: rgb(255,255,255);">
+                <td align=3D"center" style=3D"padding: 10.0px;">
+                    <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0"=
+ class=3D"full" width=3D"100%">
+                        <tbody>
+                            <tr>
+                                <td align=3D"left" valign=3D"middle">
+                                    <img alt=3D"HireRight" src=3D"https://o=
+ws01.hireright.com/designs/daisy/base/images/logo.gif"/>
+                                </td>
+                                <td align=3D"right" valign=3D"middle"/>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr style=3D"background-color: rgb(3,138,191);">
+                <td align=3D"center" class=3D"spfont" style=3D"font-size: 1=
+4.0px; color: rgb(255,255,255); padding: 20.0px;"></td>
+            </tr>
+            <tr style=3D"background-color: rgb(222,222,222);">
+                <td align=3D"center" style=3D"padding: 30.0px 20.0px;">
+                    <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0"=
+ class=3D"full" width=3D"540">
+                        <tbody>
+                            <tr style=3D"background-color: rgb(255,255,255)=
+;">
+                                <td align=3D"left" class=3D"spfont" style=
+=3D"font-size: 14.0px; color: rgb(104,104,104); padding: 20.0px 25.0px;">
+                                    <p>Dear Brendan Ngwanforbi:<br/>
+=09=09=09=09=09=09=09=09=09<p>This is to notify you that HireRight has prov=
+ided, for employment purposes, a copy of your MVR Express report to the fol=
+lowing HireRight customer who recently ordered it:<br/><br/>
+=09=09=09=09=09=09=09=09=09Gloria Williams<br/>
+                                    The Hertz Corporation<br/>
+                                    8501 Williams Rd<br/>
+                                    Estero, FL 33928</br>
+=09=09=09=09=09=09=09=09=09OR-102326-NH87V</p>
+                                    <p>The report contained public record i=
+nformation.<br/>
+                                    If you wish to access a copy of your re=
+port, you may use the following link:<br/><br/>
+                                    <table align=3D"center" border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0" width=3D"230">
+                                        <tbody>
+                                            <tr>
+                                                <td align=3D"center" bgcolo=
+r=3D"#038abf" class=3D"button spfont" style=3D"color: rgb(255,255,255); fon=
+t-size: 14.0px; font-weight: 400; padding: 10.0px; background-color: rgb(3,=
+138,191); border: 0;" valign=3D"middle">
+                                                    <a href=3D"https://ows0=
+1.hireright.com/ac2.html?key=3D98D39E7612B6156B38A4BD1D3E6261B5&referrer=3D=
+email" style=3D"color: rgb(255,255,255); text-decoration: none;">Login</a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table><br/>
+=09=09=09=09=09=09=09=09=09You will need to sign in with your username and =
+password or be asked to provide information as a means of verification to h=
+elp us confirm your identity and grant access to view the report.
+=09=09=09=09=09=09=09=09=09</p>
+                                    <p>If you need any assistance in obtain=
+ing a copy of your report or to initiate a dispute regarding the accuracy o=
+f your report information, please contact HireRight at (866) 521-6995, (949=
+) 428-5804 or at support.hireright.com.</p>
+                                    <p>
+                                    Sincerely,<br/>
+                                    HireRight</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td height=3D"25">&nbsp;</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
+
+------=_Part_1529476_1211578920.1792793098326--
+

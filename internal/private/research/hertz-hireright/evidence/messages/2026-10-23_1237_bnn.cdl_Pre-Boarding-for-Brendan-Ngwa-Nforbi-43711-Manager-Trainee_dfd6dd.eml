@@ -1,0 +1,141 @@
+Delivered-To: bnn.cdl@gmail.com
+Received: by 2002:a05:7301:2394:b0:368:94e3:9216 with SMTP id gw20csp3171211dyb;
+        Fri, 23 Oct 2026 12:37:24 -0700 (PDT)
+X-Received: by 2002:a05:620a:172a:b0:93f:3e45:a419 with SMTP id af79cd13be357-940ef8f007dmr8265585a.38.1792784244648;
+        Fri, 23 Oct 2026 12:37:24 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1792784244; cv=none;
+        d=google.com; s=arc-20260327;
+        b=aRAyunQbGM90/b1E1riUNxpy9Bxd3TSyXp1YwyA4ForSA43RATz78V4d4HChwmGMbQ
+         4zJGWVvNZVWeTXZMxxYUyqVxFHVnQqgAvtsdtArCrS1bPoL62o/b9uTZymVVV3hUI0iD
+         YioO5roKSC6xikWL55v2YI93LlgNSkEjS16BaDNtNsKspLg8TT+czhAWeC93QxUYge+T
+         0edlIPuL0NEKXvu4Hp9WZy48ATVosgWdMRCoKq6UR/d7GLAotE3p33zyjPFz3YPzn8j1
+         +nbJLAySNuYW6+Vuy8dHAjBKF4MxZSfhbc/xQqVZUibjX0oelk7OGlUGUq0EJwOpVgdG
+         ebCQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20260327;
+        h=content-transfer-encoding:mime-version:subject:message-id:to:from
+         :date:dkim-signature;
+        bh=LIaYSKdM1454Ye1O750D38dK3Be1pdSDovE9/tVOfvM=;
+        fh=7NRtKjVjuX5TGvUihACjXU0C9OPCs+3WLjzU1r5hQbI=;
+        b=MaZK71b5gZNap9L3EJWH1E9KqbWUrbkhCpYL4ilZ2zITo12Lqbvo52Ak//d69NofLy
+         UCAGiv+0+p3qcuG8tvzjKvnFM2HD4HWHI7dG5iKf2xwOuRnaSqerWkKPg0gxPLfSF6O5
+         SBxY0bI4J1iuoFVA5fuQK18yrInbabGdMwub9DQPCDdTCnpRq2HMtvxEKbS7FWzkeFC4
+         KBLmsRdPerKrhfev/BcXM9Byp+9kNm062C8fq/klQ+oruyFG2XTLSe5PrAPsUPXwEhQE
+         gmIHUWiYQM63NsybmnSD9jWSktilH0Bo8bVWUkc+/GwbRv7tNppxAv1zJdDyXpXaS4ST
+         3ElA==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@hertz.com header.s=dkfusion251117ju1 header.b=z4FyHric;
+       spf=pass (google.com: domain of careers@hertz.com designates 147.154.59.194 as permitted sender) smtp.mailfrom=careers@hertz.com;
+       dmarc=pass (p=QUARANTINE sp=QUARANTINE dis=NONE) header.from=hertz.com
+Return-Path: <careers@hertz.com>
+Received: from smtp3.email.us-ashburn-1.ocs.oraclecloud.com (smtp3.email.us-ashburn-1.ocs.oraclecloud.com. [147.154.59.194])
+        by mx.google.com with ESMTPS id af79cd13be357-94047b78d77si115112185a.197.2026.10.23.12.37.24
+        for <bnn.cdl@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Fri, 23 Oct 2026 12:37:24 -0700 (PDT)
+Received-SPF: pass (google.com: domain of careers@hertz.com designates 147.154.59.194 as permitted sender) client-ip=147.154.59.194;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@hertz.com header.s=dkfusion251117ju1 header.b=z4FyHric;
+       spf=pass (google.com: domain of careers@hertz.com designates 147.154.59.194 as permitted sender) smtp.mailfrom=careers@hertz.com;
+       dmarc=pass (p=QUARANTINE sp=QUARANTINE dis=NONE) header.from=hertz.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=dkfusion251117ju1;
+ d=hertz.com;
+ h=Date:To:From:Subject:Message-Id:MIME-Version:Sender:List-Unsubscribe:List-Unsubscribe-Post;
+ bh=LIaYSKdM1454Ye1O750D38dK3Be1pdSDovE9/tVOfvM=;
+ b=z4FyHric5kn4SW/OveOoxVEjjEujku9eHmLAX07VYSPcNmIPnLOXQnDjddPL0sKEa4NzaqVQlmNA
+   4JyGd608omZ25v91iBUXeYU67scsKOo9zU6xcH3urn9783X5qPkl78Fq9onq4rlwEO7DVp1T45pl
+   TwW8gYvGJTodjohacLAT5wvmPqWw1K/h6S0mw8aydmv166/bguYiF7yFHJVrk2vQjYt35C0FwWLR
+   9gQXQlyAvM6ZcFZhd2HKU8Xj3oapylPadTYrnhudbEKKNsjk/NKtKPF5eEMpg+sZn0XDBdOCrxKe
+   dbSxBvDRresJSoXnLUgL7bEsrYIR4YYw52JOjQ==
+Received: from dkim-sign.oraclecloud.com by
+ smtp3.email.us-ashburn-1.ocs.oraclecloud.com
+ (Oracle Communications Messaging Server 8.1.0.1.20250220 64bit (built Feb 20
+ 2025)) id <0TND04L00L65QH00@smtp3.email.us-ashburn-1.ocs.oraclecloud.com> for
+ bnn.cdl@gmail.com; Fri, 23 Oct 2026 19:37:24 +0000 (GMT)
+Received: from evlf-auxvm13.evlf1.mdt03iad01prd.oraclevcn.com
+ (nlb-outbound-smtp.mta.email.oraclevcn.com [10.32.0.46])
+ by smtp3.email.us-ashburn-1.ocs.oraclecloud.com
+ (Oracle Communications Messaging Server 8.1.0.1.20250220 64bit (built Feb 20
+ 2025))
+ with ESMTPSA id <0TND04FYFL6C9T50@smtp3.email.us-ashburn-1.ocs.oraclecloud.com> for
+ bnn.cdl@gmail.com; Fri, 23 Oct 2026 19:37:24 +0000 (GMT)
+Date: Fri, 23 Oct 2026 19:37:24 +0000 (UTC)
+From: Gloria Williams <careers@hertz.com>
+To: bnn.cdl@gmail.com
+Message-id: <6a449d1cac1c38c91543c161fa6cb1da.ums@oracle.com>
+Subject: Pre-Boarding for Brendan Ngwa Nforbi - 43711 Manager Trainee
+MIME-version: 1.0
+Content-type: text/html; charset=utf-8
+Content-transfer-encoding: quoted-printable
+X-Priority: 3
+X-EmailDriver-Message-ID: 6a449e03ac1c38d57a4ed9aa64ca1602
+
+<html xmlns=3D"http://www.w3.org/1999/xhtml">
+ <head></head>
+ <body>
+  <p>&nbsp;</p>
+  <p><span style=3D"font-family: " aptos narrow_, sans-serif;_><span style=
+=3D"font-size: 11pt;">Dear&nbsp;<strong>Brendan</strong>&nbsp;<strong>Ngwa =
+Nforbi,</strong></span></span></p>
+  <p><span style=3D"font-family: " aptos narrow_, sans-serif;_><span style=
+=3D"font-size: 11pt;">&nbsp;</span></span></p>
+  <p><span style=3D"font-family: " aptos narrow_, sans-serif;_><span style=
+=3D"font-size: 11pt;">We are excited you are joining the winning team!&nbsp=
+; I will be assisting your through our onboarding process.&nbsp;</span></sp=
+an></p>
+  <p><span style=3D"font-family: " aptos narrow_, sans-serif;_><span style=
+=3D"font-size: 11pt;">&nbsp;</span></span></p>
+  <p><span style=3D"font-family: " aptos narrow_, sans-serif;_><span style=
+=3D"font-size: 11pt;">You will be receiving two important tasks that need y=
+our attention:</span></span></p>
+  <p><span style=3D"font-family: " aptos narrow_, sans-serif;_><span style=
+=3D"font-size: 11pt;">&nbsp;</span></span></p>
+  <ol style=3D"margin-top: 0in;">
+   <li><span style=3D"font-family: " aptos narrow_, sans-serif;_><i><span s=
+tyle=3D"font-size: 11pt;"><strong>Additional Information is Required&nbsp;<=
+/strong></span></i><span style=3D"font-size: 11pt;">=E2=80=93&nbsp;This wil=
+l come from Oracle. If you have not already completed this step, please fol=
+low the link embedded in the Oracle email/text to provide required informat=
+ion.</span></span></li>
+   <li><span style=3D"font-family: " aptos narrow_, sans-serif;_><i><span s=
+tyle=3D"font-size: 11pt;"><strong>Background Request from HireRight</strong=
+>&nbsp;</span></i><span style=3D"font-size: 11pt;">=E2=80=93 You will immed=
+iately be sent an email from this email address: </span></span><a href=3D"m=
+ailto:customersupport@hireright.com" target=3D"_blank"><span style=3D"font-=
+family: " aptos narrow_, sans-serif;_><span style=3D"font-size: 11pt;">cust=
+omersupport@hireright.com</span></span></a><span style=3D"font-family: " ap=
+tos narrow_, sans-serif;_><span style=3D"font-size: 11pt;">. Please follow =
+the link embedded in the email to initiate your screening.</span></span></l=
+i>
+  </ol>
+  <p><span style=3D"font-family: " aptos narrow_, sans-serif;_><span style=
+=3D"font-size: 11pt;">&nbsp;</span></span></p>
+  <p><span style=3D"font-family: " aptos narrow_, sans-serif;_><span style=
+=3D"font-size: 11pt;">&nbsp;As you are completing these items, please feel =
+free to reach out with any questions you might have!</span></span></p>
+  <p><span style=3D"font-family: " aptos narrow_, sans-serif;_><span style=
+=3D"font-size: 11pt;">&nbsp;</span></span></p>
+  <p><span style=3D"font-family: " aptos narrow_, sans-serif;_><span style=
+=3D"font-size: 11pt;">Congratulations and welcome to Hertz, where life is n=
+ever in neutral!&nbsp;</span></span></p>
+  <p><span style=3D"font-family: " aptos narrow_, sans-serif;_><span style=
+=3D"font-size: 11pt;">&nbsp;</span></span></p>
+  <p style=3D"background-color: white;"><span style=3D"color: rgb(37, 36, 3=
+5); font-family: " segoe ui_, sans-serif;_><span style=3D"font-size: 12pt;"=
+><strong>Gloria Williams</strong></span></span></p>
+  <p style=3D"background-color: white;"><span style=3D"color: rgb(37, 36, 3=
+5); font-family: " segoe ui_, sans-serif;_><span style=3D"font-size: 10pt;"=
+>Talent Acquisition Partner, Western Region (SPAC, NPAC, WCEN)</span></span=
+></p>
+  <p style=3D"background-color: white;"><span style=3D"color: rgb(37, 36, 3=
+5); font-family: " segoe ui_, sans-serif;_><span style=3D"font-size: 10pt;"=
+>M: (279)203-9771</span></span></p>
+  <p style=3D"background-color: white;"><a href=3D"mailto:Gloria.Williams@h=
+ertz.com"><span style=3D"color: black; font-family: " segoe ui_, sans-serif=
+;_><span style=3D"font-size: 12pt;">Gloria.Williams@hertz.com</span></span>=
+</a><span style=3D"color: rgb(37, 36, 35); font-family: " segoe ui_, sans-s=
+erif;_><span style=3D"font-size: 12pt;">&nbsp;</span></span></p>
+  <p><br>
+    &nbsp;</p>
+ </body>
+</html>

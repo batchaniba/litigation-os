@@ -1,0 +1,115 @@
+Delivered-To: bnn.cdl@gmail.com
+Received: by 2002:a05:7301:2394:b0:368:94e3:9216 with SMTP id gw20csp1972856dyb;
+        Thu, 22 Oct 2026 17:00:15 -0700 (PDT)
+X-Received: by 2002:a05:620a:a982:10b0:93f:6fd6:fbf9 with SMTP id af79cd13be357-93f6fd6fc7dmr115566185a.66.1792713614781;
+        Thu, 22 Oct 2026 17:00:14 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1792713614; cv=none;
+        d=google.com; s=arc-20260327;
+        b=kRSO+F3/8fHwA2oQCDI6zT3M6H2v3iuwiPRYBWAxONprJP6cgz9hFqqeiaXoSxbbIT
+         bL99Uzw+OAovNmik7Ike5X5cPvcyH2YLU8dgaz7cjAYibBUymMFdJeLJN1xycKGiAoPM
+         X6fsOfbTevefht05X+FaLLI9ZMjbkccBlAyHoCPsldGysvnH0V9Uc53tOmHRWePYO9bg
+         4iC00M3+v3qX5WPXXJzHkAP9CilFdFc7zBohtC4gOAQEMp/HS54lKMe9RmfUiqJxHshO
+         QNUPS2wEhoGxI9UNq7cZwSHdahaRCd99ibK/FZcSJbJTIfnZK4ClXbF8wfvvuWc4SjEh
+         uZEA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20260327;
+        h=mime-version:date:content-transfer-encoding:message-id:subject:to
+         :from:dkim-signature;
+        bh=SUaTbWSZS5mI/+TKJV6W7zcszcMPCljuG4QN5w6QTxg=;
+        fh=7NRtKjVjuX5TGvUihACjXU0C9OPCs+3WLjzU1r5hQbI=;
+        b=oEkzXX20/DPryZzR9Mow8Kx8XkMqd0b4GJ4Vzdi8857DFAeahIH78XKH7OSu/4m3Zr
+         7Lrgc5qdLPy6tOs78KIAEKsXe3/6pIxBs/HGyLT7tS3G6Y3dyP+zii5ldhWEPA8dhI6O
+         ro623H9yIJJVqGcWu8YYlREgdJBY/NucYfBCHbTSkUerrB3EuDIgeJlklEdGc13pYcrz
+         meb1wZW/OHi63Jib8Rq440P/0sQsvWpQ8ni5W5ebrtn39eLADz7D6amWZpfT6KEP3ZiA
+         QmmGtn2nOCLLgmDyAjCm5JiRD4ggi5KqnxRFq+1oTzvAWfRtrsiAg7/7JNYV9VNl5P5H
+         noyw==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@adp.com header.s=2020-07 header.b=DCXt4oar;
+       spf=pass (google.com: domain of prvs=4756a53fb6=hertz+noreply@adp.com designates 170.146.220.100 as permitted sender) smtp.mailfrom="prvs=4756a53fb6=hertz+noreply@adp.com";
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=adp.com
+Return-Path: <prvs=4756a53fb6=hertz+noreply@adp.com>
+Received: from mail3-1.adp.com (ff.adp.com. [170.146.220.100])
+        by mx.google.com with ESMTPS id af79cd13be357-93f71091f3esi39760385a.323.2026.10.22.17.00.14
+        for <bnn.cdl@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Thu, 22 Oct 2026 17:00:14 -0700 (PDT)
+Received-SPF: pass (google.com: domain of prvs=4756a53fb6=hertz+noreply@adp.com designates 170.146.220.100 as permitted sender) client-ip=170.146.220.100;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@adp.com header.s=2020-07 header.b=DCXt4oar;
+       spf=pass (google.com: domain of prvs=4756a53fb6=hertz+noreply@adp.com designates 170.146.220.100 as permitted sender) smtp.mailfrom="prvs=4756a53fb6=hertz+noreply@adp.com";
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=adp.com
+Received: from pps.filterd (dc1prppedgevm01.ga.adp.com [127.0.0.1])
+	by dc1prppedgevm01.ga.adp.com (8.18.1.7/8.18.1.7) with ESMTP id 69MNoIDC001411
+	for <bnn.cdl@gmail.com>; Thu, 22 Oct 2026 20:00:14 -0400
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=adp.com; h=
+	content-transfer-encoding:content-type:date:from:message-id
+	:mime-version:subject:to; s=2020-07; bh=SUaTbWSZS5mI/+TKJV6W7zcs
+	zcMPCljuG4QN5w6QTxg=; b=DCXt4oarWbAYgay19D/3gJAwjlTOyPtDRvi1Qm6r
+	bnok4asyjA5TyQDJrKxbudon82s8UHwM2NmxhWji9wDmLukHSfAjY0s5RK7Xqv49
+	0mNb+6zAFWJ1FKnzB8l0ipY44TU5385PxuYhpNH7LH5LoTR9OwM4T2O0Tl9bUT2M
+	ejq7SwV9vtxg24Kdv1JIL2s/EKlwe4Zr2p+2yUem7kW6wDISjonhVG2HZBSCBUrG
+	84WfVVrRvIlYR+8w8rEbCFhGF1A/IgcfHBGmjZ2rtH2JuU4BllGLzzMpmfkA+XW+
+	anEMUN1ildHwgaZQgLeWf+wcsVVI0gPxaHOxfC5XCAoANA==
+Received: from dc1prppmr08.es.ad.adp.com ([11.6.80.147])
+	by dc1prppedgevm01.ga.adp.com (PPS) with ESMTP id 4hdw611ym8-1
+	for <bnn.cdl@gmail.com>; Thu, 22 Oct 2026 20:00:14 -0400 (EDT)
+Received: from pps.filterd (dc1prppmr08.es.ad.adp.com [127.0.0.1])
+	by dc1prppmr08.es.ad.adp.com (8.18.1.7/8.18.1.7) with ESMTP id 69MNrxsC001693
+	for <bnn.cdl@gmail.com>; Thu, 22 Oct 2026 20:00:14 -0400
+Received: from [169.254.80.125] ([10.222.131.57])
+	by dc1prppmr08.es.ad.adp.com (PPS) with ESMTP id 4hf4ck7uf0-1
+	for <bnn.cdl@gmail.com>; Thu, 22 Oct 2026 20:00:14 -0400 (EDT)
+From: hertz+noreply@adp.com
+To: bnn.cdl@gmail.com
+Subject: =?UTF-8?Q?Action_Required_=E2=80=93_Complete_WOTC_?=
+ =?UTF-8?Q?screening_for_your_application_with_=3Cb?=
+ =?UTF-8?Q?=3E_=3ACOMPANY=5FNAME=3A_=3C/b=3E?=
+Message-ID: <934a0225-73de-f19f-5deb-145b3e09a839@adp.com>
+Content-Transfer-Encoding: quoted-printable
+Date: Fri, 23 Oct 2026 00:00:14 +0000
+MIME-Version: 1.0
+X-Proofpoint-Virus-Version: vendor=baseguard
+ engine=ICAP:2.0.293,Aquarius:18.0.1176,Hydra:6.1.138,FMLib:17.12.100.49
+ definitions=2026-10-22_07,2026-10-21_02,2025-10-01_01
+Content-Type: text/html; charset="utf-8"
+
+<div style=3D"border:1px solid black;max-width:580px; margin:0 auto;"><div =
+style=3D"margin:20px 10px 10px 10px;"><h3 style=3D"color:#ee5291;">Action R=
+equired<h3><p style=3D"font-size: 12px; font-weight: normal;color:#000;">He=
+llo Brendan Ngwa Nforbi,</p><p style=3D"font-size: 12px; font-weight: norma=
+l;color:#000;"></p><p style=3D"font-size: 12px; font-weight: normal;color:#=
+000;">Along with your recently submitted job application with <b> Hertz Glo=
+bal Holdings, Inc. </b>, this company requests that you complete Work Oppor=
+tunity Tax Credit Questionnaire, provided by ADP.<p style=3D"font-size: 12p=
+x; font-weight: normal;color:#000;"></p><p style=3D"font-size: 12px; font-w=
+eight: normal;color:#000;">Thank you,</p><p style=3D"font-size: 12px; font-=
+weight: normal;color:#000;"></p><p style=3D"font-size: 12px; font-weight: n=
+ormal;color:#000;">ADP</p> <p style=3D"font-size: 12px; font-weight: normal=
+;color:#000;">If you have any trouble using the link above, you can also co=
+py and paste this address into your web browser: [https://tcs.adp.com/scree=
+n/index.html?cc=3Dhertz&stoken=3D4AFDC372-9678-426E-95DC-BFF59A6CC5C9]</p> =
+<b class=3D"note" style=3D"font-size: 12px; font-style: italic; color:#000;=
+">NOTE</b> <span style=3D"font-size: 12px; font-weight: normal;color:#000;"=
+>: This email is from an unattended mailbox, please do not reply</span></h3=
+></h3></div><div style=3D"background:green; border: 1px solid black">&nbsp;=
+</div><div style=3D"padding-left:15px"><div class=3D"footer" style=3D"font-=
+size: 9px; font-weight: normal;margin:5px 5px 5px 5px;">This mail is intend=
+ed solely for the use of the individual to whom it is addressed and may con=
+tain information  that is privileged, confidential or otherwise exempt from=
+ disclosure. If the reader of this mail is not the intended  recipient or t=
+he employee or agent responsible for delivering the message to the intended=
+ recipient, you are hereby  notified that any dissemination, distribution, =
+or copying of this communication is strictly prohibited. If you have receiv=
+ed this notification in error, please disregard.<br>  ADP and the ADP logo =
+are registered trademarks of ADP, LLC. ADP A more human resource. is a serv=
+ice mark of ADP, LLC.  All other marks are the property of their respective=
+ owners. Copyright =C2=A9 2019 ADP, LLC. All rights reserved </div><div></d=
+iv></div></div>
+
+<HR>This message and any attachments are intended only for the use of the a=
+ddressee and may contain information that is privileged and confidential. I=
+f the reader of the message is not the intended recipient or an authorized =
+representative of the intended recipient, you are hereby notified that any =
+dissemination of this communication is strictly prohibited. If you have rec=
+eived this communication in error, notify the sender immediately by return =
+email and delete the message and any attachments from your system.<BR>

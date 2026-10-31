@@ -1,0 +1,257 @@
+Delivered-To: bnn.cdl@gmail.com
+Received: by 2002:a05:7301:2394:b0:368:94e3:9216 with SMTP id gw20csp3171636dyb;
+        Fri, 23 Oct 2026 12:37:53 -0700 (PDT)
+X-Received: by 2002:a05:6a00:391c:b0:891:3e34:e06f with SMTP id d2e1a72fcca58-8a36782a912mr194375b3a.44.1792784272909;
+        Fri, 23 Oct 2026 12:37:52 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1792784272; cv=none;
+        d=google.com; s=arc-20260327;
+        b=PY7JGRi85a1KnwOnNtlMi0x5LDvYvZJRblXk+2okhi1GlUSJgluD4sJS845mS9dVZ7
+         hdQfYS+miPIlPvtcoTDxUDb3KUrxchVgEzYoviblIZ8dXcfCGGyItNdrqxX2hOGelXZ7
+         rvG7SEIWpJ+XQlf57LZdNrJNrgf6eLUzxlIL5UbgXKZcouqdUWdA9wgkfOY390gWRHAY
+         kCiYceqRZ6bB2gu5lytcyRTf/QztOlt+2NpqGcheLfyQl7ovn2FtCy/v8xvS2wYT2sDK
+         VhBoCk+8KbOxYMfD+TkT77NZdlBv7fHGtShvt09HOl1Xw1n3kLfl1l9dfca48DoOAk+v
+         mvxQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20260327;
+        h=subject:message-id:to:from:date:mime-version:dkim-signature
+         :dkim-signature;
+        bh=5xXOGxd40hyrzK3Ctjuj4Vl8kTP4NYueZM/XO0fH8TU=;
+        fh=dJVQdI74hJLc4+GLP++skiMHQMdkmQpUbkDbJeSbCrw=;
+        b=TZqX60JwePkxGCS2cn97qguTX1pH/CxCd5qMOJfq1b1fhlXr7OEho64BKPNiCa8XjE
+         bPXAiZMbmq64+lgo2u0pG4BHrnffC9dbT3sHPmAuacwouXgrnfWgEg6wvBxbka9lBZ6L
+         qSlGHs/9ZLUpZ6s4PbbFYTX3ri+3zr9n072AO3DoxvzttjobxFDzoh4SwzLqzZYRA3i+
+         j9a0urytdctwbFjjOKVeCIsOXhtHjexQe0IFlrGZK+aGRj+LRgz1keGuKkDFxFeQfS/n
+         HMixShWF5aiFpyqsRU7OWUXRKepyzRMOhNOIm/tzKTNQYWghQzyTszJVc17AKav3Azn2
+         Xjrg==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@hireright.com header.s=mimecast20230202 header.b=a65X4Ita;
+       dkim=pass header.i=@dkim.mimecast.org header.s=201912 header.b=SYKeRuFD;
+       spf=pass (google.com: domain of noreply@hireright.com designates 170.10.151.232 as permitted sender) smtp.mailfrom=noreply@hireright.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=hireright.com
+Return-Path: <noreply@hireright.com>
+Received: from usb-smtp-delivery-232.mimecast.com (usb-smtp-delivery-232.mimecast.com. [170.10.151.232])
+        by mx.google.com with ESMTPS id d2e1a72fcca58-8a3694506a3si409761b3a.197.2026.10.23.12.37.52
+        for <bnn.cdl@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
+        Fri, 23 Oct 2026 12:37:52 -0700 (PDT)
+Received-SPF: pass (google.com: domain of noreply@hireright.com designates 170.10.151.232 as permitted sender) client-ip=170.10.151.232;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@hireright.com header.s=mimecast20230202 header.b=a65X4Ita;
+       dkim=pass header.i=@dkim.mimecast.org header.s=201912 header.b=SYKeRuFD;
+       spf=pass (google.com: domain of noreply@hireright.com designates 170.10.151.232 as permitted sender) smtp.mailfrom=noreply@hireright.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=hireright.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=hireright.com;
+	s=mimecast20230202; t=1792784272;
+	h=from:from:reply-to:subject:subject:date:date:message-id:message-id:
+	 to:to:cc:mime-version:mime-version:content-type:content-type;
+	bh=5xXOGxd40hyrzK3Ctjuj4Vl8kTP4NYueZM/XO0fH8TU=;
+	b=a65X4ItaXgdNFu3FyiuHCuhvOwK01W0beG6H7M9cphQhf5VLt6GTFfJHRleQCc3jfNnHGO
+	T3ca+WKuRpRytpdc4EIGWS6uvSy38rlLm3rDfV6JWcFbShwc1t1SKLnkdGwzhc7OezS6lX
+	FHbcnCIF9tFqAUxgPsTXkzREUH350co=
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=dkim.mimecast.org;
+	s=201912; t=1792784272;
+	h=from:from:reply-to:subject:subject:date:date:message-id:message-id:
+	 to:to:cc:mime-version:mime-version:content-type:content-type;
+	bh=5xXOGxd40hyrzK3Ctjuj4Vl8kTP4NYueZM/XO0fH8TU=;
+	b=SYKeRuFDOs7yhAZo6DLds9pOQOyCmzAMALJhCoFJVVs8VwMsS1O1PpK25vGEJwmGzNhQDs
+	Cc8HrJxtDfvwqTh5VWQE/E0rwu4tMMa6Gl/LCCrhw0oXAi52mBc0vuFaS748oYgDDQjRG7
+	xuB1x27TntVvgOSzamvZo88K9o81Zk+UsY14Py55yuUKI9WWskg9SGtPA9uBvA17LWt2Lf
+	kW9L2raTl8EmUDBJ+90n7azZ2gU+JLCqpA/JHFRC7VuchItwozEPvq00CIblbhbOTzELBO
+	2LCj6/DxANOlJgZmppCS3sA4N/N0hyiGzP3FxazSniyqPLLz7GsBXbfoItVFwA==
+Received: from us01wrly03p.data.hireright.com (199.255.140.91
+ [199.255.140.91]) by relay.mimecast.com with ESMTP with STARTTLS
+ (version=TLSv1.2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ usb-mta-71-lAOlwQ14P-eUgxaGHXar3A-5; Fri, 23 Oct 2026 12:37:50 -0700
+X-MC-Unique: lAOlwQ14P-eUgxaGHXar3A-5
+X-Mimecast-MFC-AGG-ID: lAOlwQ14P-eUgxaGHXar3A_1792784269
+Received: from us01legw122p.data.hireright.com ([10.130.20.12]) by us01wrly03p.data.hireright.com with Microsoft SMTPSVC(10.0.14393.4169);
+	 Fri, 23 Oct 2026 12:37:48 -0700
+MIME-Version: 1.0
+Received: from 10.130.20.12 ([10.130.20.12])
+          by us01legw122p.data.hireright.com (JAMES SMTP Server 2.3.2) with SMTP ID 685
+          for <bnn.cdl@gmail.com>;
+          Fri, 23 Oct 2026 12:37:48 -0700 (PDT)
+Date: Fri, 23 Oct 2026 12:37:48 -0700 (PDT)
+From: HireRight Customer Support <noreply@hireright.com>
+To: Brendan Ngwa Nforbi <bnn.cdl@gmail.com>
+Message-ID: <909677228.1504757.1792784268131.JavaMail.karaf@us01lkrf123p.data.hireright.com>
+Subject: The Hertz Corporation Background Verification Request for Brendan
+ Ngwa Nforbi
+Return-Path: noreply@hireright.com
+X-OriginalArrivalTime: 23 Oct 2026 19:37:48.0141 (UTC) FILETIME=[FBDBD1D0:01DD6325]
+X-Mimecast-Spam-Score: 0
+X-Mimecast-MFC-PROC-ID: D5EHxNGR4RPZsdbn3-3V2Xz49s4Gey1878deULIdg5c_1792784269
+X-Mimecast-Originator: hireright.com
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_1504756_1952527398.1792784268131"
+
+------=_Part_1504756_1952527398.1792784268131
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: Quoted-Printable
+
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8">
+<title>New Application Center Email</title>
+
+<link href=3D'https://ows01.hireright.com/3rd_party/fonts/Open-Sans/font-fa=
+ce.css' rel=3D'stylesheet' type=3D'text/css'>
+
+<meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=3D1"=
+/>
+   <style>
+=09 .spfont {font-family: 'Open Sans', Arial, sans-serif;}
+=20
+=09.button {
+=09=09background-color:#038abf; border:0; border-radius:5px;
+=09}=20
+=09
+=09.spfont {font-family: 'Open Sans', Arial, sans-serif;}
+=09 a {
+      color: #038abf;
+    }
+   =20
+    @media only screen and (max-width: 800px) {
+      body, table, td, span, a, li, blockquote {
+        -webkit-text-size-adjust: none !important;
+        font-family:  'Open Sans', Arial, sans-serif !important;
+      }
+    =20
+      body {
+        padding: 0px !important;=20
+      }
+    =20
+      table[class=3D"full"] {
+        width: 100% !important;
+        padding: 0 !important;
+        margin: 0 !important;
+      }=20
+  =20
+      td[class=3D"align-center"] {
+        text-align:center !important;
+        margin:0px auto !important;
+      }
+    }
+  </style>
+  <!--[if mso]>
+    <style type=3D=E2=80=9Dtext/css=E2=80=9D>
+      body, table, td, span, a, li, blockquote {
+        font-family: Arial, sans-serif !important;
+      }
+    </style>
+  <![endif]-->
+</head>
+
+<body style=3D"background-color: #ffffff">
+  <table width=3D"600" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" cla=
+ss=3D"full" align=3D"center">
+    <tbody>
+      <tr style=3D"background-color: #ffffff">
+        <td align=3D"center" style=3D"padding:10px;">
+          <table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0" class=3D"full">
+            <tbody>
+              <tr>
+                <td align=3D"left" valign=3D"middle">
+                  <img src=3D"https://ows01.hireright.com/designs/daisy/bas=
+e/images/logo.gif" alt=3D"HireRight">
+                </td>
+                 <td align=3D"right" valign=3D"middle">
+=09=09=09=09    <img src=3D"https://ows01.hireright.com/cabinet/logo/b516c4=
+c2-ebfa-41fc-ac62-f51eae5abbbf"  style=3D"max-width: 170px; max-height: 70p=
+x;" alt=3D"Customer logo"/>
+                 </td>
+               </tr>
+             </tbody>
+           </table>
+        </td>
+      </tr>
+      <tr style=3D"background-color: #038abf">
+        <td align=3D"center" class=3D"spfont" style=3D"font-size:14px; colo=
+r:#ffffff; padding:20px;">
+           <p><strong style=3D"font-size:24px;">We are here to help you get=
+ hired.</strong><br>
+           Let's start your Background Verification now.</p>
+        </td>
+      </tr>
+      <tr style=3D"background-color: #dedede">
+        <td align=3D"center" style=3D"padding:30px 20px;">
+          <table width=3D"540" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0" class=3D"full">
+            <tbody>
+              <tr style=3D"background-color: #ffffff">
+                <td align=3D"left" class=3D"spfont" style=3D" font-size:14p=
+x; color:#686868; padding:20px 25px;">
+                  <p><span style=3D"color:#000000; font-weight:700;">Dear <=
+span class=3D"mceNonEditable">Brendan</span>,</span></p>
+                  <p style=3D"text-align: justify;"><span style=3D"color:#0=
+00000; font-weight:700;"><span class=3D"mceNonEditable"><span style=3D"colo=
+r:#000000; font-weight:700;">The Hertz Corporation</span></span></span> has=
+ partnered with HireRight to conduct your Background Verification.  Please =
+use our online portal to provide your information.  Disclosures from <span =
+style=3D"color:#000000; font-weight:700;">The Hertz Corporation</span> rega=
+rding this Background Verification will be provided, and your consent will =
+be required before HireRight can begin processing your Background Verificat=
+ion.</p>
+=09=09=09=09  <p><span style=3D"color:#000000; font-weight:700;">Please mak=
+e sure to save this email. It contains the link to access the online portal=
+.</span></p>
+                  <table align=3D"center" border=3D"0" cellpadding=3D"0" ce=
+llspacing=3D"0" width=3D"230">
+                    <tr>
+                      <td align=3D"center" valign=3D"middle" style=3D"color=
+:#ffffff; font-size:14px; font-weight:400; padding:10px; background-color:#=
+038abf; border:0; border-radius:5px;" bgcolor=3D"#038abf" class=3D"button s=
+pfont">
+                        <a href=3D"https://ows01.hireright.com/ac2.html?key=
+=3D98D39E7612B6156B38A4BD1D3E6261B5&referrer=3Demail" style=3D"color:#fffff=
+f; text-decoration:none;">Login</a>
+                      </td>
+                    </tr>
+                  </table>
+
+                </td>
+              </tr>
+              <tr>
+                <td height=3D"25">&nbsp;</td>
+              </tr>
+              <tr style=3D"background-color: #ffffff">
+                <td align=3D"left" class=3D"spfont" style=3D" font-size:14p=
+x; color:#686868; padding:20px 25px;">
+                  <p><span style=3D"color:#000000; font-weight:700;">Questi=
+ons about Background Verifications?</span></p>
+                 <p>You may have questions about how Background Verificatio=
+ns work. To learn more and view many frequently asked questions, please acc=
+ess the page for your region:</p>
+<b><a target=3D"_blank" href=3D"https://support.hireright.com">Americas </a=
+></b><br />
+<b><a target=3D"_blank" href=3D"https://www.hireright.com/apac/background-c=
+heck-faq">Asia Pacific </a></b><br />
+<b><a target=3D"_blank" href=3D"https://www.hireright.com/emea/background-c=
+heck-faq">Europe, Middle East and Africa </a></b><br />
+
+<p>&nbsp;</p>
+<p>Need assistance? HireRight is happy to help. Please login to your Applic=
+ant Center account or visit our Candidate Support Center: <a href=3D"https:=
+//support.hireright.com/">https://support.hireright.com/</a>.<br/><br/>Stil=
+l require assistance? Please contact: <br/><br/>HireRight Customer Service =
+by phone (toll free in the U.S.) at (888) 990-4473 from Sunday 3 p.m. until=
+ Friday 7 p.m. Pacific Standard Time.<br/><br/><br/><br/><br/></p>
+
+                  <hr style=3D"border-style: solid; border-color:#d4d4d4; b=
+order-width: 1px; margin: 30px 0px;">
+                  <p><span style=3D"color:#000000; font-weight:700;">Sincer=
+ely,<br>HireRight Customer Support</span></p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
+
+------=_Part_1504756_1952527398.1792784268131--
+

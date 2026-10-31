@@ -1,0 +1,122 @@
+Delivered-To: bnn.cdl@gmail.com
+Received: by 2002:a05:7300:a994:b0:368:94e3:9216 with SMTP id cl20csp20481dyb;
+        Fri, 23 Oct 2026 15:04:52 -0700 (PDT)
+X-Received: by 2002:a05:6871:8a8:b0:493:5dc4:e58e with SMTP id 586e51a60fabf-4a83f593d09mr504531fac.37.1792793092104;
+        Fri, 23 Oct 2026 15:04:52 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1792793092; cv=none;
+        d=google.com; s=arc-20260327;
+        b=rSDVf+65rDDjj3pFk35elEjUObMoYDtIe4yV0EhNzahuOG6u9EtSrXrFM2LDJSur6Q
+         +ORUZhN+Ovzreg0j72Oa3g9SRX1Kon93lAw2P1q2GX1xrLaGcuPd77fq4cpH5q0xmH6l
+         3hmOzBNh/ZX0WLg+QCqMQm0sOlIa5G7Ka0u7/6nWzP+6sLyM/xdv9BINzD7oZR+m7YdU
+         e2QDiP49ibpJ4HAsWDFZpYuc7lKtN94XWsnDqCnVhYeGOfwEmc/zZ4vIjRTNieLcbiLV
+         rJvCV5bMxGhzD1YLhjnJ6m9/KQfYYxZ1VrKWNQK8PLzEURnseSI63VQBtjLLfdi3WS1X
+         KflA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20260327;
+        h=subject:message-id:to:from:date:mime-version:dkim-signature
+         :dkim-signature;
+        bh=diRmdT9VXWZMUcs/ObWXvO9ZxUj8/k+yexnbuXJEm24=;
+        fh=7NRtKjVjuX5TGvUihACjXU0C9OPCs+3WLjzU1r5hQbI=;
+        b=kTuBWcFpJA+tVXiY2Jlzr3/8s9J+GqSazKDPK6CgJ1szekMd9NJbSPIu6t6+mSX/nF
+         zjs1SXoXeoJ6M4WPlR3TMHkI9D5rMJjJ7yuKi3I1/MqO9Wz1sRdxchjg4BxD92+yiwUx
+         KmmPz1KD5qg93PVoSIPVzlZdE41pU4TV1nMVy+StopSvEe9JZ5Mg+COqGpUYj1gec8Gw
+         PsAruidYcG8X54rsox/P3mnQh6Lt1odsZ91TW1sv3DZ+Kk9JtLZ/xqbIiQNfTY2iv2Ho
+         cEQs5KfgzPYANDZemWFYXLGJEqs/2qbTgznU+CcO3tnTtc2YhOUXPgqPpFc3tQscs0x+
+         c/9w==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@hireright.com header.s=mimecast20230202 header.b=Ji90VP8j;
+       dkim=pass header.i=@dkim.mimecast.org header.s=201912 header.b=ih2lZx9h;
+       spf=pass (google.com: domain of noreply@hireright.com designates 170.10.153.232 as permitted sender) smtp.mailfrom=noreply@hireright.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=hireright.com
+Return-Path: <noreply@hireright.com>
+Received: from usb-smtp-delivery-232.mimecast.com (usb-smtp-delivery-232.mimecast.com. [170.10.153.232])
+        by mx.google.com with ESMTPS id 586e51a60fabf-4a84320675dsi358861fac.61.2026.10.23.15.04.51
+        for <bnn.cdl@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
+        Fri, 23 Oct 2026 15:04:52 -0700 (PDT)
+Received-SPF: pass (google.com: domain of noreply@hireright.com designates 170.10.153.232 as permitted sender) client-ip=170.10.153.232;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@hireright.com header.s=mimecast20230202 header.b=Ji90VP8j;
+       dkim=pass header.i=@dkim.mimecast.org header.s=201912 header.b=ih2lZx9h;
+       spf=pass (google.com: domain of noreply@hireright.com designates 170.10.153.232 as permitted sender) smtp.mailfrom=noreply@hireright.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=hireright.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=hireright.com;
+	s=mimecast20230202; t=1792793091;
+	h=from:from:reply-to:subject:subject:date:date:message-id:message-id:
+	 to:to:cc:mime-version:mime-version:content-type:content-type;
+	bh=diRmdT9VXWZMUcs/ObWXvO9ZxUj8/k+yexnbuXJEm24=;
+	b=Ji90VP8j1LGPLWqV8ewK6jmPpOWWQrPbdaJ7SHQzacbs1+7EwcwBRNjczKSittYGqGFkO5
+	GwTParTMd6ZQsovFzpOpDOU0jjrAJFFzjccpa0KLEyTPrO0gUVuL6B4cDsRcYKHaD3sM0f
+	F8aB0sPKtWH+0/7zWUMPDjCzLdmYWrM=
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=dkim.mimecast.org;
+	s=201912; t=1792793091;
+	h=from:from:reply-to:subject:subject:date:date:message-id:message-id:
+	 to:to:cc:mime-version:mime-version:content-type:content-type;
+	bh=diRmdT9VXWZMUcs/ObWXvO9ZxUj8/k+yexnbuXJEm24=;
+	b=ih2lZx9hDKX8C6dolm3T8m6zpBugKaUu95HYQAvePP+rF91tCtbsyvvZq7IkVe0tE8PCIJ
+	5S8DSQhyMWjvv0gpN0hQeTGsXHtNz/rhyCu9x/GNIqnSM/SSSqXdM9bdfguJTfxnEeRqAr
+	ZgOZCGR2DxiFKc3nxVN/BZELmB8q9eoF0xHzARpZonSlJnDvywYCeHF4+kDCqN+axOgapo
+	BgZAvv8qRCnOrSOw0Pe3fVT8EKh7IoPY8HF3WuKNs4CpEzU77H/AfDgmhMg+RXkojbz/KP
+	GWEXld09gLBJ0axF5Vf8i03ErDekk+6bYufmULTCHORSsKIkUkSqEFrkg/d3Pw==
+Received: from us01wrly01p.data.hireright.com (199.255.140.91
+ [199.255.140.91]) by relay.mimecast.com with ESMTP with STARTTLS
+ (version=TLSv1.2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ usb-mta-14-CwPW-1x9MWu63k9_E0o2xw-1; Fri, 23 Oct 2026 15:04:47 -0700
+X-MC-Unique: CwPW-1x9MWu63k9_E0o2xw-1
+X-Mimecast-MFC-AGG-ID: CwPW-1x9MWu63k9_E0o2xw_1792793086
+Received: from us01legw122p.data.hireright.com ([10.130.20.12]) by us01wrly01p.data.hireright.com with Microsoft SMTPSVC(10.0.14393.4169);
+	 Fri, 23 Oct 2026 15:04:46 -0700
+MIME-Version: 1.0
+Received: from 10.130.20.12 ([10.130.20.12])
+          by us01legw122p.data.hireright.com (JAMES SMTP Server 2.3.2) with SMTP ID 753
+          for <bnn.cdl@gmail.com>;
+          Fri, 23 Oct 2026 15:04:46 -0700 (PDT)
+Date: Fri, 23 Oct 2026 15:04:46 -0700 (PDT)
+From: HireRight Customer Support <noreply@hireright.com>
+To: bnn.cdl@gmail.com
+Message-ID: <538327757.1529913.1792793086632.JavaMail.karaf@us01lkrf122p.data.hireright.com>
+Subject: =?UTF-8?Q?We've_received_your_information?=
+ =?UTF-8?Q?_=E2=80=93_further_steps_may_be_required?=
+Return-Path: noreply@hireright.com
+X-OriginalArrivalTime: 23 Oct 2026 22:04:46.0644 (UTC) FILETIME=[84189740:01DD633A]
+X-Mimecast-Spam-Score: 0
+X-Mimecast-MFC-PROC-ID: qUcUCHUja6lpGC4BycrPbdxqlAoB7g9n7Hn5cktHo_o_1792793086
+X-Mimecast-Originator: hireright.com
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_1529912_1951913931.1792793086631"
+
+------=_Part_1529912_1951913931.1792793086631
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: Quoted-Printable
+
+Hi Brendan,
+
+Thank you for submitting your information to HireRight. We've received your=
+ forms and started processing your submission.
+
+In some cases, additional information or documentation may still be require=
+d. To help avoid delays, please log in to the Applicant Center to review yo=
+ur status and confirm whether further action is needed. If we need anything=
+ else, we'll also notify you directly.
+
+Request ID: OR-102326-NH87V=20
+
+Need assistance? HireRight is happy to help. Please login to your Applicant=
+ Center account or visit our Candidate Support Center: https://support.hire=
+right.com/.
+
+Still require assistance? Please contact:=20
+
+HireRight Customer Service by phone (toll free in the U.S.) at (888) 990-44=
+73 from Sunday 3 p.m. until Friday 7 p.m. Pacific Standard Time.
+
+
+
+
+
+
+Best regards,
+The HireRight team
+
+------=_Part_1529912_1951913931.1792793086631--
+

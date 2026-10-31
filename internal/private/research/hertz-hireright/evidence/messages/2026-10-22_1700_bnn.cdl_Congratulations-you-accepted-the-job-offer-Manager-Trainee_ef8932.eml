@@ -1,0 +1,73 @@
+Delivered-To: bnn.cdl@gmail.com
+Received: by 2002:a05:7301:2394:b0:368:94e3:9216 with SMTP id gw20csp1973012dyb;
+        Thu, 22 Oct 2026 17:00:22 -0700 (PDT)
+X-Received: by 2002:a05:622a:514c:b0:535:a5fc:3b58 with SMTP id d75a77b69052e-536c29b8fe6mr6793721cf.68.1792713621990;
+        Thu, 22 Oct 2026 17:00:21 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1792713621; cv=none;
+        d=google.com; s=arc-20260327;
+        b=U4fvarSf5An16+zYbN5xm57ynSWUt32P2nGmP0o7jYRIvT92XtQ2xrlsJ0WyH+b75H
+         PHp9aYDd/X0/GeiVZ7Cv8MQ9ZtOZM1UYdsgfNio6y3GflSZabbTQkyqQLgrgnsu1ovy6
+         KA3rJc+h6kK7j9LGTKBQfRsS4J96sECjXagkCAatrCNg5TIXyZqjuXuKdel/Mw95opry
+         cejIa/uDIIcFpNvleTD7aJk+IDfAnP0lHhO6Ert33yYjrr6w2tLvjVSlhksdRE9Bl94G
+         u76nbOHYTE0VvxbAyq1bPCchLUDQpP7f/f4yt0y0xzniLoZBXtL6P/J2dYi4rNdXtGB5
+         VUbQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20260327;
+        h=content-transfer-encoding:mime-version:subject:message-id:to:from
+         :date:dkim-signature;
+        bh=AKnh94voAX1p0WY8zCCGzawSMZ0FAYT5zDMclNcxjPs=;
+        fh=7NRtKjVjuX5TGvUihACjXU0C9OPCs+3WLjzU1r5hQbI=;
+        b=jD25UKROi/8Wf7ePU/OxIlZXmCzJdX+W9dLbLfRJWxoFWSxaEEe+itHHeutLY1asFJ
+         tHJmhqkT+HneZAIWyKt2yUFp9j9kJtrmvWLIDzp+cMMYsloy02zFsTLwXK7kAEVfW2gS
+         KdIEO7Rvp3zXNM4+dhTeKbJnaPqpepWA+7ZZr/o6iz0pUwtdyPnfS5hSNHiF9F9ntOpB
+         koOVd4XHfMxHFt3X3o77pRGJJa8PNnARXGH2+EnGA3+I532kSQr1OfnEQ0ZqjjdBhQ63
+         lSpevVOEBnXaoE+TVHqBUOsN6o2r1ba+vCqv0BbQQJ3sqsrSd0V+EIYpM86hWUNL9nFm
+         ZEoQ==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@hertz.com header.s=dkfusion251117ju1 header.b="x7kTFt/H";
+       spf=pass (google.com: domain of careers@hertz.com designates 147.154.59.193 as permitted sender) smtp.mailfrom=careers@hertz.com;
+       dmarc=pass (p=QUARANTINE sp=QUARANTINE dis=NONE) header.from=hertz.com
+Return-Path: <careers@hertz.com>
+Received: from smtp2.email.us-ashburn-1.ocs.oraclecloud.com (smtp2.email.us-ashburn-1.ocs.oraclecloud.com. [147.154.59.193])
+        by mx.google.com with ESMTPS id 6a1803df08f44-91c397d0221si6969846d6.616.2026.10.22.17.00.21
+        for <bnn.cdl@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Thu, 22 Oct 2026 17:00:21 -0700 (PDT)
+Received-SPF: pass (google.com: domain of careers@hertz.com designates 147.154.59.193 as permitted sender) client-ip=147.154.59.193;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@hertz.com header.s=dkfusion251117ju1 header.b="x7kTFt/H";
+       spf=pass (google.com: domain of careers@hertz.com designates 147.154.59.193 as permitted sender) smtp.mailfrom=careers@hertz.com;
+       dmarc=pass (p=QUARANTINE sp=QUARANTINE dis=NONE) header.from=hertz.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=dkfusion251117ju1;
+ d=hertz.com;
+ h=Date:To:From:Subject:Message-Id:MIME-Version:Sender:List-Unsubscribe:List-Unsubscribe-Post;
+ bh=AKnh94voAX1p0WY8zCCGzawSMZ0FAYT5zDMclNcxjPs=;
+ b=x7kTFt/H2f0+XSWCTF2mkP7vW/zCeZkdNw/KGImDATE9tq3V+XHCuHlLQIj8q9BjP8TJmY7y05yC
+   /9yWeCHhnZDl//ZtSDuGpkSb5zVr2P24Nwnc5aNknBNXNJC3fhwHy0tFdH2M3k9tmexckKP1Jc4h
+   xeb2so1FGVkthWR31jaROBNNL+JX/tp2V+tgjwhtUUlQQ8z+C6DlQWsl2YARpMNA7XZY8UTREjix
+   Fl5wL+0yTOGR86VGQ9rPIN9Tzsl7bMRmXipV0caPyQamNtwS/hun+OnHXgyUAa6pZy16vihaRKGO
+   lUNdBtSrz4fwfEohOYcul4CF7n/OLjfRr5JWeg==
+Received: from dkim-sign.oraclecloud.com by
+ smtp2.email.us-ashburn-1.ocs.oraclecloud.com
+ (Oracle Communications Messaging Server 8.1.0.1.20250220 64bit (built Feb 20
+ 2025)) id <0TNC2HV002NZY500@smtp2.email.us-ashburn-1.ocs.oraclecloud.com> for
+ bnn.cdl@gmail.com; Fri, 23 Oct 2026 00:00:17 +0000 (GMT)
+Received: from evlf-auxvm13.evlf1.mdt03iad01prd.oraclevcn.com
+ (nlb-outbound-smtp.mta.email.oraclevcn.com [10.32.0.46])
+ by smtp2.email.us-ashburn-1.ocs.oraclecloud.com
+ (Oracle Communications Messaging Server 8.1.0.1.20250220 64bit (built Feb 20
+ 2025))
+ with ESMTPSA id <0TNC2HT932OFQH20@smtp2.email.us-ashburn-1.ocs.oraclecloud.com> for
+ bnn.cdl@gmail.com; Fri, 23 Oct 2026 00:00:15 +0000 (GMT)
+Date: Fri, 23 Oct 2026 00:00:15 +0000 (UTC)
+From: Hertz Careers <careers@hertz.com>
+To: bnn.cdl@gmail.com
+Message-id: <660ee748ac1c38cc5cbc8378e21a4db7.ums@oracle.com>
+Subject: Congratulations, you accepted the job offer Manager Trainee!
+MIME-version: 1.0
+Content-type: text/html; charset=utf-8
+Content-transfer-encoding: 7bit
+X-Priority: 3
+X-EmailDriver-Message-ID: 660ee7e3ac1c38d57a4ed9aaeab7ced2
+
+Hello Brendan,<br/><br/>Congratulations, you just accepted the job offer Manager Trainee.<br/><br/>We look forward to you joining this team. Let's go!<br/><br/>Sincerely,<br/>Hertz Recruiting Team
