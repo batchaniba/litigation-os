@@ -97,3 +97,8 @@ Two-desk research (do not email counsel about it; not Civil L.R. 3-12 related ca
 ## Suggested first prompts
 
 Copy a question from [`INDEX.md` § Questions for further analysis](INDEX.md#questions-for-further-analysis). Typical first asks: strengthen RFPs 8 / 16 / 19; draft RFP Set Two; ROGs and RFAs after Nov. 6; Rule 15 amendment theories; Rule 45 subpoenas to Tauxbe / InformData-SJV / Infinity Court Research; the Nov. 6 26(f) agenda; willfulness / punitive discovery that does not recite settlement numbers.
+
+
+## Independent critical review and proposed next wave (Oct. 31)
+
+Start with [`review-2026-10-31/00-START-HERE.md`](review-2026-10-31/00-START-HERE.md). It includes an independent re-rating of all twenty RFPs, four exact proposed redlines, supplemental RFPs 21–44, twenty-two interrogatories, thirty-six RFAs, a Rule 15 amendment analysis, three vendor subpoena outlines, a timed Rule 26(f) agenda, and a source/verification register. It expressly corrects parts of the foundation analysis, which remains unchanged. These are private, unserved drafts; some authentication RFAs require the absent original disclosure PDF before service.
