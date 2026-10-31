@@ -340,7 +340,7 @@ This is issue-spotting for counsel, not legal advice. Citations to statutes desc
    - HireRight reported "APPLICANT IS LISTED ON THE SEX OFFENDER REGISTRY IN THE STATE OF CA" to Hertz twice (Satish Kumar R, Oct 30 9:17 AM; Kumar Dilip, Oct 30 12:45 PM; p. 8).
    - In the same comment blocks, HireRight acknowledged: "Information from the California Sex Offenders' Registry may not be used for employment purposes except to protect a person at risk. See CA Penal Code Section 290.46. Only use this information to make an employment decision as expressly allowed by CA law." (p. 8 at 9:17 AM; p. 9 at 12:46 PM).
    - The search is described as run "through the United States Department of Justice" (NSOPW), but the notes attribute the listing to the California registry (pp. 8-9).
-   - Questions: (a) did HireRight obtain the information from the Megan's Law website covered by § 290.46, and is its furnishing for an employment purpose itself a "use" covered by § 290.46(j) or (l)? (b) Why was it furnished for a Manager Trainee / driver role with no stated "person at risk" basis? (Report pp. 3, 8.) Relevant to the client's parallel UPS § 290.46(j) theory.
+   - Questions: (a) did HireRight obtain the information from the Megan's Law website covered by § 290.46, and is its furnishing for an employment purpose itself a "use" covered by § 290.46(j) or (l)? (b) Why was it furnished for a Manager Trainee / driver role with no stated "person at risk" basis? (Report pp. 3, 8.) Watch whether Hertz cites these lines in any later employment decision.
 
 4. **"Past 7 Years Search" label vs. reported dates; the 7-year rule (Civ. Code § 1786.18(a)(7); FCRA § 1681c).**
    - Santa Clara #5 is titled "(Past 7 Years Search)" but reports an offense date of Feb 26, 2017, a file date of Oct 25, 2017 and a disposition date of Jan 12, 2018 (p. 11). The disposition is about 8 years 9 months before the Oct 30, 2026 report.
@@ -408,7 +408,7 @@ This is issue-spotting for counsel, not legal advice. Citations to statutes desc
 - HireRight's written procedures for: registry searches in California (PC § 290.46 compliance); name-only or name+DOB matching; the 7-year filters (ICRAA § 1786.18, FCRA § 1681c); § 1681k(a) compliance (notice or strict procedures); and § 1681e(b) / § 1786.20(b) accuracy procedures.
 - Copies of every notice sent to the consumer: § 1681k notice, ICRAA § 1786.16 disclosure, authorization and box-check, report copy, and the FCRA summary of rights. Also Hertz's FCRA § 1681b(b)(1) certification and the HireRight-Hertz service agreement provisions on registry data.
 - The raw Experian FileOne SSN trace and the raw CA DMV MVR record (including the code-level data behind "CMV", the SUSP dates, and the name spelling on file).
-- Any dispute history, prior reports on this consumer (any client), and any reinvestigation file, especially if Accurate Background or another CRA reported the same registry or court data.
+- Any dispute history, prior versions of report OR-102326-NH87V, and any reinvestigation file for this Hertz request.
 
 ---
 *Appendix: rendered pages `/workspace/evidence/hertz/pages/p-01.png … p-16.png` (200 dpi); 300 dpi rechecks in `pages/z/`; RapidOCR cross-check text in `/workspace/evidence/hertz/ocr/`.*

@@ -73,7 +73,7 @@ Other evidence: `2026-10-31_HireRight_Report_to_Hertz_OR-102326-NH87V.pdf` (copi
 ## Scope notes
 
 - Searched: hertz, hertz.com, hireright, hirerightjobs, "Gloria Williams", 43711, OR-102326-NH87V, 2847550, "Manager Trainee", hertzcareers, nlopez, "Ankit Joshi", pre-adverse, "adverse action", registry, Estero, Gloria.Williams, from:adp.com.
-- Left out as not about Hertz: hits on generic words or attachments (Accurate/Seyfarth dispute thread, Staples/Amazon/Smith/Swift/AT&T matter emails, Macy's HireRight emails, ZipRecruiter/Glassdoor job alerts with "Manager Trainee", Namecheap).
+- Left out as not about Hertz: hits on generic words, unrelated attachments, job-board alerts that only shared the phrase "Manager Trainee", and other non-Hertz mail in the same account.
 - No email in this account found with: pre-adverse or adverse action notice, the word "registry" tied to Hertz, Oracle candidate number 2847550, or an offer letter document.
 - user-Gmail--newanforbi account was not searched (out of scope per instruction).
 - Message #25: Gmail RAW export capped at 200,000 characters; saved as .md (full headers + body) plus partial .eml; attachment fetched in full separately.

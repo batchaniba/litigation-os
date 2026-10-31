@@ -52,7 +52,7 @@ The later offer is requisition **43711**, not 42537/42544. The September series 
 | PT time | Event | Evidence | In live graph? |
 |---|---|---|---|
 | Oct 21 ~12:27 p.m. (screenshot “Yesterday”) | Kathleen HERTZ iMessage: interview at Hertz Ridder Park, 725 Ridder Park Dr., San Jose. Text says “Thursday 10/21 at 1pm” — **weekday/date conflict in 2026; do not silently correct.** | Matter 43 e01 / `events.jsonl` first row. **Not in the email dump.** | Yes |
-| Oct 22, 10:14:44 | Applicant emails Hertz Generalist resume to FedEx Print & Go (no subject). Not a Hertz decision. | `…1014…ec398b.eml` + `attachments/…/Brendan_Nforbi_Hertz_Generalist_Resume.pdf` | No |
+| Oct 22, 10:14:44 | Applicant emails the Hertz Generalist resume to a print shop (no subject). Not a Hertz decision. | `…1014…ec398b.eml` + `attachments/…/Brendan_Nforbi_Hertz_Generalist_Resume.pdf` | No |
 | Oct 22, 13:03 | Applicant iMessage: rain/traffic delay. | e01 / events.jsonl | Yes |
 | **Oct 22, 15:38:34** | **Gloria Williams offer forecast** (key fact 1). | `…1538…2e133c.eml` | Yes (15:38) |
 | Oct 22, 15:39:03 | Hertz Careers: “the job offer Manager Trainee is extended to you!” | `…1539…57d832.eml` | Yes |
