@@ -84,3 +84,4 @@ Two `09-*` siblings are intentional (Matter 20 / Matter 28). Parallel `10-*` wor
 | `internal/docs/matter-29/` | Accuracy audit, 60-day calendar (snapshot here; some dates stale) |
 | `internal/docs/matter-29/discovery-set-one/` | 71-request packet + ESI proposal. On main since Oct. 28 (#1017). Drafts dated Oct. 19; service/delivery **UNVERIFIED** |
 | `internal/docs/counsel/frederick-stanzick/` | Two-desk playbook. Do not send |
+| [`../matter-29-discovery/`](../matter-29-discovery/) | Oct. 31, 2026 Accurate discovery room (served RFP Set One, Oct. 28 closing letter, Oct. 27 file-disclosure text). Start at its README |

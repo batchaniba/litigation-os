@@ -1,0 +1,3 @@
+* -whitespace
+*.pdf binary
+*.jsonl text
