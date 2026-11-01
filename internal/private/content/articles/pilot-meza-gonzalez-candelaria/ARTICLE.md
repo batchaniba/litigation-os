@@ -3,14 +3,14 @@ status: PILOT_DRAFT
 published: false
 do_not_publish: true
 draft_date: 2026-11-01
-record_cutoff: 2026-10-28
+record_cutoff: 2026-10-28 (portfolio graph); 2026-10-31 (user: Meza-Gonzalez reassigned to Breyer)
 subject: Brendan Ngehsi Newanforbi
 slug: two-cases-after-livermore-chp-stop
 ---
 
 # PILOT DRAFT — NOT FOR PUBLICATION
 
-This file is an unpublished working draft. It is not a court paper, not a press release, and not authorized for posting, syndication, or service on any party. Facts below are limited to filed pleadings, public administrative papers described in those pleadings, and public docket orders as recorded in the portfolio through October 28, 2026. Allegations are stated as allegations. No outcome is predicted.
+This file is an unpublished working draft. It is not a court paper, not a press release, and not authorized for posting, syndication, or service on any party. Facts below are limited to filed pleadings, public administrative papers described in those pleadings, and public docket orders as recorded in the portfolio through October 28, 2026, plus the October 31, 2026 user report that *Nforbi v. Meza-Gonzalez* was reassigned to Senior District Judge Charles R. Breyer. The portfolio graph still lists that action as No. 4:26-cv-08271-ASK. **TODO:** confirm the clerk’s suffix (whether `-CRB`) and division prefix on PACER before any public use. Allegations are stated as allegations. No outcome is predicted.
 
 ---
 
@@ -36,7 +36,7 @@ A November 2024 California Highway Patrol contact on Interstate 580 produced two
 
 Brendan Ngehsi Newanforbi, proceeding without a lawyer, has carried those questions through state court, the Eastern District of California, and the Northern District of California. Court captions use both *Newanforbi* and *Nforbi*. This article uses the party name as it appears on each caption.
 
-The live federal dockets, as of the October 28, 2026 portfolio update, are *Nforbi v. Meza-Gonzalez, et al*, No. 4:26-cv-08271-ASK (N.D. Cal., Oakland), and *Nforbi v. Candelaria et al.*, No. 3:26-cv-08272-RFL (N.D. Cal., San Francisco). Earlier captions in Alameda County, Sacramento County, and the Eastern District were dismissed without prejudice or were not pursued. Those closings are not rulings on the November 2024 encounter or the February 2025 administrative decision.
+The live federal dockets are *Nforbi v. Meza-Gonzalez, et al*, last numbered in the portfolio as No. 4:26-cv-08271-ASK (N.D. Cal.), now before Senior District Judge Charles R. Breyer, and *Nforbi v. Candelaria et al.*, No. 3:26-cv-08272-RFL (N.D. Cal., San Francisco), which remains with District Judge Rita F. Lin. The Breyer assignment is a user report of October 31, 2026; the October 28 graph still shows the `-ASK` suffix after Magistrate Judge Ajay S. Krishnan. **TODO:** confirm on PACER whether the clerk recaptioned the Meza-Gonzalez action `-CRB` (and whether the `4:` Oakland prefix moved). Earlier captions in Alameda County, Sacramento County, and the Eastern District were dismissed without prejudice or were not pursued. Those closings are not rulings on the November 2024 encounter or the February 2025 administrative decision.
 
 What follows is a record of the filed papers and the public orders. It is not a finding that anyone violated the Constitution, and it does not forecast either case.
 
@@ -108,15 +108,15 @@ On September 8 the same magistrate judge declined to relate *Nforbi v. Candelari
 
 In Candelaria, defendants answered on September 4, 2026 (Dkt. 11). Plaintiff moved to strike that answer as directed to a superseded complaint (Dkt. 17). On October 13 the court granted the motion without a hearing (Dkt. 24), struck the September 4 answer, and required a response to the operative amended complaint. Defendants answered that pleading on October 27 (Dkt. 26). The answer PDF was not yet ingested as of October 28. The docket fact is that an answer to the operative complaint is on file.
 
-In Meza-Gonzalez, defendants filed a motion to dismiss and strike on October 26 (Dkt. 22) and a magistrate-jurisdiction declination the same day (Dkt. 23). The Dkt. 22 docket text set responses for November 9 and replies for November 16, and noticed a December 9 hearing. On October 28 the clerk issued a Notice of Impending Reassignment (Dkt. 25) and vacated hearing dates before the magistrate judge. The new district judge and a re-noticed hearing were not yet in the portfolio. A courtesy email of an opposition is not a filing. As of October 28, no ECF entry for the opposition appeared in the notices of electronic filing.
+In Meza-Gonzalez, defendants filed a motion to dismiss and strike on October 26 (Dkt. 22) and a magistrate-jurisdiction declination the same day (Dkt. 23). The Dkt. 22 docket text set responses for November 9 and replies for November 16, and noticed a December 9 hearing. On October 28 the clerk issued a Notice of Impending Reassignment (Dkt. 25) and vacated hearing dates before the magistrate judge. On October 31, 2026, the plaintiff reported that the action had been reassigned to Senior District Judge Charles R. Breyer — the same district judge already assigned to the related Serrato action, No. 3:26-cv-05953-CRB. The portfolio graph has not yet ingested a clerk notice naming Judge Breyer or changing the `-ASK` suffix. **TODO:** confirm the recaptioned number on PACER. A courtesy email of an opposition is not a filing. As of October 28, no ECF entry for the opposition appeared in the notices of electronic filing.
 
 Those are the rulings this draft can state. There is no judgment, no finding of liability, and no finding that the complaints fail.
 
 ## Current status
 
-**Meza-Gonzalez (live).** *Nforbi v. Meza-Gonzalez, et al*, N.D. Cal. No. 4:26-cv-08271-ASK. Motion-to-dismiss briefing. Dkt. 5 is operative. Dkt. 22 is pending. Dkt. 25 vacated magistrate-judge hearing dates. A November 25, 2026 case-management statement remains on the clock list and may reset on reassignment.
+**Meza-Gonzalez (live).** *Nforbi v. Meza-Gonzalez, et al*, N.D. Cal. No. 4:26-cv-08271-ASK (last graph-supported number), Senior District Judge Charles R. Breyer (user report, Oct. 31, 2026). **TODO:** confirm whether the clerk suffix is now `-CRB`. Motion-to-dismiss briefing. Dkt. 5 is operative. Dkt. 22 is pending. Dkt. 25 vacated magistrate-judge hearing dates. A November 25, 2026 case-management statement remains on the clock list and may reset before Judge Breyer.
 
-**Candelaria (live).** *Nforbi v. Candelaria et al.*, N.D. Cal. No. 3:26-cv-08272-RFL, Hon. Rita F. Lin. Pleadings. Dkt. 6 is operative. Dkt. 26 is an answer. Open clocks: Rule 26(f) / ADR certification November 18, 2026; initial disclosures and case-management statement December 2; initial case-management conference December 9, 2026, 10:00 a.m.
+**Candelaria (live).** *Nforbi v. Candelaria et al.*, N.D. Cal. No. 3:26-cv-08272-RFL, Hon. Rita F. Lin. Unchanged. Pleadings. Dkt. 6 is operative. Dkt. 26 is an answer. Open clocks: Rule 26(f) / ADR certification November 18, 2026; initial disclosures and case-management statement December 2; initial case-management conference December 9, 2026, 10:00 a.m.
 
 **Predecessors.** *Newanforbi v. CHP et al.*, E.D. Cal. No. 2:25-cv-01460-DC-CSK, dismissed without prejudice August 15, 2026. *Newanforbi v. Meza-Gonzalez et al.*, Alameda Super. Ct. No. 26CV168913, dismissed without prejudice the same day. *Newanforbi v. Candelaria*, E.D. Cal. No. 2:26-cv-00983-DC-CSK, dismissed without prejudice the same day. *Newanforbi v. Candelaria, et al.*, Sacramento Super. Ct. No. 26WM000135, not pursued after the July 2026 fee-waiver sequence.
 
@@ -184,7 +184,7 @@ Filed papers and public orders only. Portfolio identity files are listed so a la
 
 | Item | Citation | Portfolio pointer |
 |---|---|---|
-| Live Meza-Gonzalez identity | *Nforbi v. Meza-Gonzalez, et al*, N.D. Cal. No. 4:26-cv-08271-ASK (formerly 3:26-cv-08271-PHK) | `internal/src/data/matters/32/matter.json` |
+| Live Meza-Gonzalez identity | *Nforbi v. Meza-Gonzalez, et al*, N.D. Cal. No. 4:26-cv-08271-ASK (formerly 3:26-cv-08271-PHK). **TODO:** confirm `-CRB` suffix after Breyer reassignment | `internal/src/data/matters/32/matter.json` (still `-ASK` / Krishnan as of Oct. 28) |
 | Operative Meza-Gonzalez FAC | N.D. Cal. 4:26-cv-08271-ASK, Dkt. 5 (filed Aug. 17, 2026) | `/documents/matter-32/ndcal/Dkt 05 - First Amended Complaint (CONFORMED, Filed Aug 17 2026).pdf` |
 | Meza-Gonzalez complaint (original) | Dkt. 1 (docketed Aug. 10, 2026) | `/documents/matter-32/ndcal/Dkt 01 - Complaint (CONFORMED, Filed Aug 10 2026).pdf` |
 | Meza-Gonzalez CMC / ADR order | Dkt. 4 (Aug. 10, 2026) | `/documents/matter-32/ndcal/Dkt 04 - Order Setting Initial Case Management Conference and ADR Deadlines (Aug 10 2026).pdf` |
@@ -192,8 +192,9 @@ Filed papers and public orders only. Portfolio identity files are listed so a la
 | Meza-Gonzalez related-case order | Order relating Serrato and Meza-Gonzalez (Aug. 24, 2026) | `/documents/matter-24/Order Granting Administrative Motion to Relate Cases - Serrato and Meza (Aug 24 2026).pdf` |
 | Motion to dismiss / strike | Dkt. 22 (filed Oct. 26, 2026) | `/documents/matter-32/ndcal/Dkt 22 - Defendants Motion to Dismiss and Strike (Filed Oct 26 2026).pdf` |
 | Magistrate declination | Dkt. 23 (filed Oct. 26, 2026) | `/documents/matter-32/ndcal/Dkt 23 - Magistrate Jurisdiction Declination (Filed Oct 26 2026).pdf` |
-| Impending reassignment | Dkt. 25 (Oct. 28, 2026, text-only clerk notice) | `internal/src/data/matters/32/clocks.json` (`32-mtd-hearing`, `32-reassignment-watch`); `events.jsonl` Oct. 28 PACER entries |
-| Live Candelaria identity | *Nforbi v. Candelaria et al.*, N.D. Cal. No. 3:26-cv-08272-RFL (formerly 3:26-cv-08272-LJC) | `internal/src/data/matters/33/matter.json` |
+| Impending reassignment | Dkt. 25 (Oct. 28, 2026, text-only clerk notice) vacated magistrate hearing dates | `internal/src/data/matters/32/clocks.json` (`32-mtd-hearing`, `32-reassignment-watch`); `32/events.jsonl` Oct. 28 PACER entries |
+| Reassignment to Judge Breyer | Senior District Judge Charles R. Breyer; suffix not yet in the graph. **TODO:** confirm clerk number (`-CRB` / division prefix) | User statement Oct. 31, 2026; precursor Dkt. 25; related Serrato already 3:26-cv-05953-CRB (`24/matter.json`) |
+| Live Candelaria identity | *Nforbi v. Candelaria et al.*, N.D. Cal. No. 3:26-cv-08272-RFL (formerly 3:26-cv-08272-LJC), Hon. Rita F. Lin (unchanged) | `internal/src/data/matters/33/matter.json` |
 | Operative Candelaria FAC | Dkt. 6 (filed Aug. 17, 2026) | `/documents/matter-33/ndcal/Dkt 06 - First Amended Complaint (CONFORMED, Filed Aug 17 2026).pdf` |
 | Candelaria original complaint | Dkt. 1 (docketed Aug. 10, 2026) | `/documents/matter-33/ndcal/Dkt 01 - Complaint (CONFORMED, Filed Aug 10 2026).pdf` |
 | Candelaria CMC / ADR order | Dkt. 4 (Aug. 10, 2026) | `/documents/matter-33/ndcal/Dkt 04 - Order Setting Initial Case Management Conference and ADR Deadlines (Aug 10 2026).pdf` |
@@ -236,7 +237,8 @@ Do not put a GitHub, `raw.githubusercontent.com`, or document-store URL in any v
         {
           "@type": "CreativeWork",
           "name": "Nforbi v. Meza-Gonzalez, et al",
-          "identifier": "4:26-cv-08271-ASK"
+          "identifier": "4:26-cv-08271-ASK",
+          "description": "Last portfolio number 4:26-cv-08271-ASK. User report Oct. 31, 2026: reassigned to Senior District Judge Charles R. Breyer. TODO: confirm whether the clerk suffix is now -CRB."
         },
         {
           "@type": "CreativeWork",

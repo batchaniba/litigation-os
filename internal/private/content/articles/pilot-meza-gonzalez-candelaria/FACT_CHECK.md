@@ -1,8 +1,8 @@
 # FACT_CHECK — pilot Meza-Gonzalez / Candelaria article
 
 **Draft:** `ARTICLE.md` (PILOT, not published).
-**Checked:** 2026-11-01.
-**Record cutoff in the article:** portfolio `last_updated` 2026-10-28 for Matters 32 and 33; identity files for Matters 1, 2, 7, and 8 last updated 2026-09-16.
+**Checked:** 2026-11-01 (updated same day for Breyer reassignment).
+**Record cutoff in the article:** portfolio `last_updated` 2026-10-28 for Matters 32 and 33; identity files for Matters 1, 2, 7, and 8 last updated 2026-09-16; user statement Oct. 31, 2026 that Matter 32 was reassigned to Senior District Judge Charles R. Breyer.
 **Rule:** every factual sentence in the article maps to a filed paper, a public order, or a graph row that itself cites those papers. Advocacy, settlement numbers, sealed material, and excluded topics are out of the article and listed in RISK_NOTES if they sat nearby in the repo.
 
 Status key:
@@ -12,6 +12,7 @@ Status key:
 | SUPPORTED | Filed paper or public order in the repo, or a graph field that restates one |
 | ALLEGATION | True that the complaint/petition alleges it; not an adjudicated fact |
 | GRAPH-ONLY | Portfolio identity / clocks / events; no independent PDF quote in this check |
+| USER REPORT | Plaintiff’s statement in this chat; not yet a clerk PDF in the graph |
 | GAP | Article avoided the claim, or stated the gap |
 
 ---
@@ -21,9 +22,9 @@ Status key:
 | # | Claim in ARTICLE.md | Source file(s) | Status | Notes |
 |---|---|---|---|---|
 | 1 | Subject is Brendan Ngehsi Newanforbi; captions use Newanforbi and Nforbi | `internal/private/research/jurisdictions/NGEHSI_NEWANFORBI_JURISDICTIONS.md` (branch `cursor/ngehsi-newanforbi-jurisdictions-7b3e`); `internal/src/data/matters/01/matter.json`; `02/matter.json`; `07/matter.json`; `08/matter.json`; `32/matter.json`; `33/matter.json` | SUPPORTED | Catalog treats 32/33 as Nforbi-form captions; 1/2/7/8 as Newanforbi-form |
-| 2 | Live Meza-Gonzalez docket is N.D. Cal. 4:26-cv-08271-ASK (formerly 3:26-cv-08271-PHK), Oakland | `internal/src/data/matters/32/matter.json`; `internal/src/data/index/matters.json` (number 32) | SUPPORTED | CourtListener object `nforbi-v-meza-gonzalez` |
-| 3 | Live Candelaria docket is N.D. Cal. 3:26-cv-08272-RFL (formerly LJC), San Francisco, Hon. Rita F. Lin | `internal/src/data/matters/33/matter.json`; index row 33 | SUPPORTED | |
-| 4 | Record cutoff / last_updated October 28, 2026 for the live matters | `32/matter.json` `last_updated`; `33/matter.json` `last_updated`; index `today` 2026-10-28 | SUPPORTED | |
+| 2 | Last graph-supported Meza-Gonzalez number is N.D. Cal. 4:26-cv-08271-ASK (formerly 3:26-cv-08271-PHK) | `internal/src/data/matters/32/matter.json`; `internal/src/data/index/matters.json` (number 32) | SUPPORTED | CourtListener object `nforbi-v-meza-gonzalez`. Graph still `-ASK` / Krishnan as of Oct. 28. `-CRB` is **not** written because no clerk notice is in the repo |
+| 3 | Live Candelaria docket is N.D. Cal. 3:26-cv-08272-RFL (formerly LJC), San Francisco, Hon. Rita F. Lin (unchanged) | `internal/src/data/matters/33/matter.json`; index row 33 | SUPPORTED | User confirmed Candelaria stays with Judge Lin |
+| 4 | Portfolio last_updated October 28, 2026 for Matters 32/33; Breyer assignment is an Oct. 31 user report layered on that cutoff | `32/matter.json` `last_updated`; `33/matter.json` `last_updated`; index `today` 2026-10-28; this chat, Oct. 31, 2026 | SUPPORTED (cutoff) / USER REPORT (judge) | |
 | 5 | Officers Santiago Meza-Gonzalez (023295) and Jose Melano (023054) contacted plaintiff Nov. 1, 2024, I-580 East shoulder near Isabel Avenue, Livermore; CHP RJ68845 / CAD 241101GG0064 | `32/matter.json` `key_facts`; `33/matter.json` `key_facts`; `32/claims.json`; operative FACs Dkt. 5 / Dkt. 6 | ALLEGATION | Stated in the article as what the FACs allege |
 | 6 | Stationary vehicle, engine off; treated as DUI investigation | `07/matter.json` `key_facts`; `32/prose.json` `key_facts` | ALLEGATION | Drawn from FAC/key_facts, not from an officer admission |
 | 7 | Warrantless door opening, interior search, arrest under Veh. Code § 23152(a) | `32/claims.json` counts 1–3; `07/matter.json` `key_facts` | ALLEGATION | |
@@ -63,10 +64,11 @@ Status key:
 | 41 | Candelaria Dkt. 11 answer Sep. 4; Dkt. 17 motion to strike; Dkt. 24 granted Oct. 13 without hearing; struck Dkt. 11; required response to FAC | `33/docket.json`; `33/clocks.json` `33-deadline-6`, `33-deadline-7`; `/documents/matter-33/ndcal/Dkt 24 - Order Granting Motion to Strike (Filed Oct 13 2026).pdf` | SUPPORTED | PDF exists; text not extracted in this environment |
 | 42 | Candelaria Dkt. 26 answer to amended complaint filed Oct. 27, 2026 | `33/clocks.json` `33-deadline-7` retired_reason; `33/events.jsonl` Oct. 28 PACER row | GRAPH-ONLY | PDF not ingested as of Oct. 28 — article says so |
 | 43 | Meza Dkt. 22 MTD/strike filed Oct. 26; Dkt. 23 declination same day; responses Nov. 9, replies Nov. 16; Dec. 9 hearing later vacated | `32/docket.json` Dkts. 22–23; `32/clocks.json` `32-deadline-mtd-opposition`, `32-mtd-reply`, `32-mtd-hearing` | SUPPORTED | Article does not characterize MTD grounds (motion PDF not quoted) |
-| 44 | Dkt. 25 clerk notice of impending reassignment Oct. 28 vacated magistrate hearing dates | `32/clocks.json` `32-mtd-hearing`, `32-reassignment-watch`; `32/events.jsonl` Oct. 28 | GRAPH-ONLY | Text-only NEF; PDF not stored |
+| 44 | Dkt. 25 clerk notice of impending reassignment Oct. 28 vacated magistrate hearing dates | `32/clocks.json` `32-mtd-hearing`, `32-reassignment-watch`; `32/events.jsonl` Oct. 28 | GRAPH-ONLY | Text-only NEF; PDF not stored. Precursor to the Oct. 31 Breyer report |
+| 44a | Meza-Gonzalez reassigned to Senior District Judge Charles R. Breyer | User statement Oct. 31, 2026; Dkt. 25 impending-reassignment watch; related Serrato already before Breyer as 3:26-cv-05953-CRB (`24/matter.json`, Dkt. 29) | USER REPORT + GRAPH precursor | Article keeps `4:26-cv-08271-ASK` and TODOs the `-CRB` suffix. No `08271-CRB` string exists in the matter graph. The “new judge not in graph” gap is closed as to the judge’s name |
 | 45 | Courtesy email of a Meza opposition is not an ECF filing; no opposition on NEFs through Oct. 28 | `32/clocks.json` `32-deadline-mtd-opposition`; `32/events.jsonl` Oct. 28 | GRAPH-ONLY | |
 | 46 | Open Candelaria clocks: 26(f)/ADR Nov. 18; CMS/disclosures Dec. 2; CMC Dec. 9, 2026, 10:00 a.m. | `33/clocks.json` `33-deadline-2`, `33-deadline-3`, `33-hearing-4`; index `next_clock` | SUPPORTED | |
-| 47 | Meza CMS Nov. 25 may reset on reassignment | `32/clocks.json` `32-deadline-cms` | SUPPORTED | |
+| 47 | Meza CMS Nov. 25 may reset before Judge Breyer | `32/clocks.json` `32-deadline-cms` | SUPPORTED | Clock note still says “until the new judge's order issues” |
 | 48 | CourtListener slugs listed in the sources table | `01`, `07`, `32`, `33` `matter.json` `courtlistener` | SUPPORTED | |
 | 49 | *California DUI Lawyers* / *Knudsen* existence | Standard published reporters; also recited in `07/matter.json` | SUPPORTED as published law | Not independently re-pulled from CourtListener in this draft |
 | 50 | No settlement amounts, sealed files, registry, criminal history, Hertz/HireRight/other non-party employers, or strategy memos appear in ARTICLE.md | This FACT_CHECK; grep of ARTICLE.md | SUPPORTED by exclusion | See RISK_NOTES |
@@ -79,7 +81,8 @@ Status key:
 |---|---|
 | Grounds of Dkt. 22 (Meza MTD/strike) | PDF is on disk; this draft does not quote defense arguments |
 | Text of Dkt. 24 (Candelaria strike order) | PDF is on disk; `pdftotext` / pypdf were unavailable in this environment. Substance taken from `clocks.json` / events |
-| Text of Dkt. 25 and Dkt. 26 | Dkt. 25 is a text-only clerk notice; Dkt. 26 PDF not ingested as of Oct. 28 |
+| Clerk suffix / division after the Breyer reassignment | User named Judge Breyer on Oct. 31, 2026. The graph still has `4:26-cv-08271-ASK`. Article TODOs `-CRB` and the `4:` prefix; it does **not** invent `08271-CRB`. This is not a “new judge unknown” gap |
+| Text of Dkt. 26 | Answer PDF not ingested as of Oct. 28. Dkt. 25 remains a text-only clerk notice (impending reassignment) |
 | E.D. Cal. Candelaria F&R (June 15, 2026) wording | Identity files summarize Mag. Kim’s recommendation (IFP denial / dismissal). Article states that an F&R issued and was mooted; it does not quote it |
 | Alameda stay-stipulation PDF | Events and `prose.json` record the Apr. 14, 2026 filing; the stipulation PDF was not re-read here |
 | Exact E.D. Cal. Candelaria initiation date | Identity says Apr. 27, 2026; jurisdictions catalog says the dismissal paper recites Mar. 19, 2026. Article flags both |
@@ -108,7 +111,7 @@ These cases are pending. The article is an unpublished internal draft. The follo
 11. **Serrato merits.** Related-case orders necessarily name *Newanforbi v. Serrato*. The article names the caption and the relate/not-relate results only.
 12. **Defamation / character.** Officers and the hearing officer are described by badge, title, and what the complaints allege. No motive adjectives. “Fabrication” appears only as the name of a pleaded count.
 13. **Name-form confusion.** Publishing both *Newanforbi* and *Nforbi* is accurate and also makes the person easier to search. A public version should keep the caption rule and the draft banner.
-14. **Docket drift.** Matter 32 was awaiting district-judge reassignment as of Oct. 28. Matter 33 clocks run in November–December 2026. Any public version must be re-cut against PACER before posting.
+14. **Docket drift.** Matter 32: user reports reassignment to Senior District Judge Charles R. Breyer (Oct. 31, 2026); the graph still lists `-ASK`. Confirm the clerk suffix and any reset hearing/CMS dates on PACER before a public version. Matter 33 stays with Judge Lin; clocks run in November–December 2026.
 15. **No GitHub / document-store URLs** in any outbound version (standing lock). Internal `/documents/...` paths in the sources table are for editors, not for a public page.
 
 ---
