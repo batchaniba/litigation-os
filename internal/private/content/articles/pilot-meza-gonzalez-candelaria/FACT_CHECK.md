@@ -1,9 +1,9 @@
 # FACT_CHECK — pilot Meza-Gonzalez / Candelaria article
 
 **Draft:** `ARTICLE.md` (PILOT, not published).
-**Checked:** 2026-11-01 (updated same day after Dkt. 29 NEF).
-**Record cutoff in the article:** Meza-Gonzalez Dkt. 29 NEF filed Oct. 30, 2026; portfolio `last_updated` 2026-10-28 for other Matter 32/33 graph fields; identity files for Matters 1, 2, 7, and 8 last updated 2026-09-16.
-**Rule:** every factual sentence in the article maps to a filed paper, a public order, or a graph row that itself cites those papers. Advocacy, settlement numbers, sealed material, and excluded topics are out of the article and listed in RISK_NOTES if they sat nearby in the repo.
+**Checked:** 2026-11-01 (updated same day after integrating `CLAUDE_NARRATIVE_PROPOSAL.md` passages A–E and prose fixes P1–P14).
+**Record cutoff in the article:** Meza-Gonzalez Dkt. 29 NEF filed Oct. 30, 2026; portfolio `last_updated` 2026-10-28 for other Matter 32/33 graph fields; identity files for Matters 1, 2, 7, and 8 last updated 2026-09-16. Narrative of the stop follows Exhibit A (00:54:36–01:57:10).
+**Rule:** every factual sentence in the article maps to a filed paper, a public order, Exhibit A (timestamp and internal page), or a graph row that itself cites those papers. Advocacy, settlement numbers, sealed material, and excluded topics are out of the article and listed in RISK_NOTES if they sat nearby in the repo. User decision 2026-11-01: KEEP the drinking questions, the denials, the empty can, and Melano's "This is pee" quote verbatim.
 
 Status key:
 
@@ -11,7 +11,9 @@ Status key:
 |---|---|
 | SUPPORTED | Filed paper or public order in the repo, or a graph field that restates one |
 | ALLEGATION | True that the complaint/petition alleges it; not an adjudicated fact |
+| RECORDING | Plaintiff's Exhibit A transcript (not a stipulated CHP transcript); timestamp and internal "Page N of 19" cited |
 | GRAPH-ONLY | Portfolio identity / clocks / events; no independent PDF quote in this check |
+| UNVERIFIED | Could not re-open the cited PDF or native video in this pass; flagged, not deleted |
 | GAP | Article avoided the claim, or stated the gap |
 
 ---
@@ -27,7 +29,7 @@ Status key:
 | 5 | Officers Santiago Meza-Gonzalez (023295) and Jose Melano (023054) contacted plaintiff Nov. 1, 2024, I-580 East shoulder near Isabel Avenue, Livermore; CHP RJ68845 / CAD 241101GG0064 | `32/matter.json` `key_facts`; `33/matter.json` `key_facts`; `32/claims.json`; operative FACs Dkt. 5 / Dkt. 6 | ALLEGATION | Stated in the article as what the FACs allege |
 | 6 | Stationary vehicle, engine off; treated as DUI investigation | `07/matter.json` `key_facts`; `32/prose.json` `key_facts` | ALLEGATION | Drawn from FAC/key_facts, not from an officer admission |
 | 7 | Warrantless door opening, interior search, arrest under Veh. Code § 23152(a) | `32/claims.json` counts 1–3; `07/matter.json` `key_facts` | ALLEGATION | |
-| 8 | On-scene audio identified the only liquid as urine, not alcohol; no contemporaneous alcohol-odor statement | `07/matter.json` `key_facts`; `08/matter.json` `key_facts` | ALLEGATION | Article does not use crude transcript quotes |
+| 8 | Officers identified the only liquid as urine; Melano quoted verbatim: "Is it water? No this is piss. This is pee." / "I'm telling you it's piss. It smells like piss." | Ex. A 00:58:49–00:58:59 (p. 3); M-FAC 5:28–6:4 (¶17); C-FAC 10:24–25 | RECORDING / ALLEGATION | P14 decided KEEP verbatim. Brand of the empty can, 21+ wristband, and any test result remain out |
 | 9 | Blood-draw warrant later obtained and blood drawn; later form designated a chemical-test refusal | `07/matter.json` `key_facts`; `33/matter.json` `key_facts` (DS-367) | ALLEGATION | Warrant number WAR913372 and phlebotomist name omitted from article as unnecessary |
 | 10 | Nov. 5, 2024 Detention Certificate, Pen. Code § 849(b)(1), Dublin CHP-01991 / File 202400898, “detention only, not an arrest” | `07/matter.json` `key_facts`; `08/matter.json` `key_facts`; `33/matter.json` `key_facts` | ALLEGATION | Certificate is described in the pleadings; article does not call it a judicial finding |
 | 11 | Alameda County DA declined to file charges | `07/matter.json` `key_facts`; `01/matter.json` `key_facts` | ALLEGATION | No DA declination letter independently quoted in this check |
@@ -70,7 +72,84 @@ Status key:
 | 47 | Meza CMS Nov. 25 remains on the clock list; Dkt. 29 leaves other deadlines (ADR, discovery cutoff) unchanged and vacates hearing/trial dates | `32/clocks.json` `32-deadline-cms`; Dkt. 29 NEF docket text | SUPPORTED | |
 | 48 | CourtListener slugs listed in the sources table | `01`, `07`, `32`, `33` `matter.json` `courtlistener` | SUPPORTED | |
 | 49 | *California DUI Lawyers* / *Knudsen* existence | Standard published reporters; also recited in `07/matter.json` | SUPPORTED as published law | Not independently re-pulled from CourtListener in this draft |
-| 50 | No settlement amounts, sealed files, registry, criminal history, Hertz/HireRight/other non-party employers, or strategy memos appear in ARTICLE.md | This FACT_CHECK; grep of ARTICLE.md | SUPPORTED by exclusion | See RISK_NOTES |
+| 50 | No settlement amounts, sealed files, registry, criminal history, Hertz/HireRight/other non-party employers, or strategy memos appear in ARTICLE.md | This FACT_CHECK; grep of ARTICLE.md | SUPPORTED by exclusion | See RISK_NOTES. Drinking questions, denials, empty can, and the "This is pee" quote are in by user decision |
+
+---
+
+## Narrative claims (Passages A–E)
+
+Exhibit A page numbers are the internal "Page N of 19" stamp. Complaint cites are page:line on the conformed N.D. Cal. FACs. This environment could not re-open `Exhibit_A_CHP_Video_Transcript.pdf` (sha256 `3750927a…1b6660`) or `DMV Decision.pdf` on the public Worker; recording rows below rest on the approved proposal's line-by-line read of that PDF, cross-checked against M-FAC / C-FAC where those papers quote the same lines.
+
+| # | Claim in ARTICLE.md | Source (timestamp, page, line) | Status | Notes |
+|---|---|---|---|---|
+| N1 | Nov. 1, 2024, early morning, eastbound I-580, Livermore | Ex. A p. 1 caption; Ex. A 00:54:36 (p. 2) "heading eastbound on I-580" | RECORDING | |
+| N2 | Cruiser stopped at 00:55:37; "12:55" | Ex. A 00:55:25, 00:55:37 (p. 2); APS Dec. p. 1 ("on 11/01/2024 at 12:55 AM") | RECORDING / UNVERIFIED | APS page not re-opened here |
+| N3 | Dirt shoulder; gray Tesla Model Y | Ex. A 00:55:57 (p. 2, "dirt shoulder"); 01:07:12 (p. 9, "Tesla Model Y"); M-FAC 4:15–16 | RECORDING / ALLEGATION (color) | Rental owner / Hertz excluded |
+| N4 | Commercial truck driver; pulled off to rest | Ex. A 01:01:21 (p. 7); 01:07:33 (p. 9) ("I do drive a semi truck… Class A license."); M-FAC 4:15–19 | RECORDING / ALLEGATION | No employer named |
+| N5 | "It's a rental. Huh." before the officers exited | Ex. A 00:55:53; exit at 00:55:57 (p. 2); M-FAC 5:3–4 (¶14) | RECORDING | |
+| N6 | Handcuffed in the back seat within twenty minutes | Ex. A 00:55:37 (stop); 01:11:33 (cuffs, p. 12); 01:15:06 (back seat, p. 13) | RECORDING | 00:55:37 → 01:11:33 is 15 min 56 sec to cuffs; back-seat stamp is later |
+| N7 | Suspension began Feb. 20, 2025 (within four months) | APS Dec. p. 1; C-FAC 2:24–3:1 (¶3) | ALLEGATION / UNVERIFIED | Decision date confirmed in C-FAC; APS PDF not re-opened |
+| N8 | Alleges suspension ended his work as a driver | C-FAC 4:18–20 (¶6); 27:14–20 (¶79) | ALLEGATION | No employer named |
+| N9 | Camera recorded about 62 minutes (00:54:36–01:57:10), not two hours | Ex. A p. 1 ("Recording Duration: 00:54:36 – 01:57:10"); conflicts M-FAC 2:3, 6:22 and C-FAC 11:12 | RECORDING | Article follows Ex. A |
+| N10 | Plaintiff prepared and signed the transcript; speaker IDs and brackets are his | Ex. A p. 1 Certificate of Accuracy; p. 19 Declaration of Authenticity (executed Mar. 21, 2026) | UNVERIFIED | Certificate/declaration pages not re-opened here |
+| N11 | Filed as Exhibit A in his cases | Supp. Decl. ¶10 (6:13–15); Ex. A p. 1 caption (E.D. Cal. 2:25-cv-01460); 26CV168913 Reply 5:1 ("Motion, Exh. A") | UNVERIFIED | Face of the PDF does not prove it is the Fickes lodge. See Open flags |
+| N12 | Times are the recording's clock; Tesla dash 12:57 a.m. | Ex. A p. 1; Ex. A 00:57:51 (p. 3) | RECORDING | Lodging Decl. is Matter 20 — not cited in the article |
+| N13 | Passenger side, flashlights, shining through windows | Ex. A 00:55:57, 00:56:00, 00:56:05 (p. 2) | RECORDING | Bracket "appearing to search the interior" not used |
+| N14 | "I think it's booze." / "It wasn't here earlier when we passed by." | Ex. A 00:56:09; 00:56:07 (p. 2); M-FAC 5:5–10 (¶¶14–15) | RECORDING | Source lists 00:56:09 before 00:56:07 |
+| N15 | Meza-Gonzalez knocked and kept knocking | Ex. A 00:56:07, 00:56:30 (p. 2) | RECORDING | |
+| N16 | "Oh look at this." / "Open the window." at 00:56:40 | Ex. A 00:56:30, 00:56:40 (p. 2) | RECORDING | |
+| N17 | Door opened at 00:56:43 by Melano | Ex. A 00:56:43 (p. 2) bracket; M-FAC 5:16–17 (¶16) | RECORDING (bracket) | Ex. A bracket says "Joselyn Melano" — treated as typo; article says Officer Melano. FAC "still asleep" not used |
+| N18 | "Hello." / "Uh-huh." / "Are you okay?" / "Yeah, we good." | Ex. A 00:56:46–00:56:48 (p. 2) | RECORDING | |
+| N19 | "We're coming from uh, uh, a party." | Ex. A 00:57:05–00:57:11 (pp. 2–3) | RECORDING | |
+| N20 | "This is not a parking lot."; dash 12:57 a.m.; "like 5-7 minutes" | Ex. A 00:57:46, 00:57:51, 00:58:06 (p. 3) | RECORDING | |
+| N21 | "How much have you had to drink…" / "Zero." | Ex. A 00:58:30–00:58:36 (p. 3) | RECORDING | Kept by user decision |
+| N22 | "What's in that cup right there?" / "Don't drink it. Yeah don't drink it." | Ex. A 00:58:34, 00:58:46 (p. 3) | RECORDING | |
+| N23 | Melano cup quotes, including "This is pee." | Ex. A 00:58:49–00:58:59 (p. 3); M-FAC 5:28–6:4 | RECORDING | Kept verbatim |
+| N24 | Meza-Gonzalez: "No I'm not gonna smell that." | Ex. A 00:58:59 bracket (p. 3); 00:59:02 (p. 4) | RECORDING | |
+| N25 | "OK. Leave it there. Put it back." Step-out at 00:59:12 | Ex. A 00:59:07, 00:59:12 (p. 4) | RECORDING | |
+| N26 | Walked to patrol car; spelled "NEW-WAN-FOR-BI" | Ex. A 00:59:40, 00:59:53, 00:59:57 (p. 4) | RECORDING | |
+| N27 | Melano opened a rear passenger door and searched during the escort | Ex. A 00:59:46 bracket (p. 5) | RECORDING (bracket) | Bracketed action is Plaintiff's description |
+| N28 | Empty can at 01:00:06, before the arrest; "Did you drink that?" "No."; "You haven't drank anything since you've been parked?" "No." | Ex. A 01:00:06–01:00:14 (p. 5) | RECORDING | Contradicts Ala. Compl. 7:2–8 (can after arrest). Brand at 01:00:09 withheld |
+| N29 | "Right now, Livermore."; sign "Isabella Avenue, Portola Avenue"; "Correct." | Ex. A 01:00:40–01:00:46 (pp. 5–6); bracket at 01:00:44 ("about 50 yards away") | RECORDING | |
+| N30 | "I was in the driver's seat, yes sir." | Ex. A 01:03:47–01:03:50 (p. 8) | RECORDING | Bears on DMV "admission to driving" (N51) |
+| N31 | Truck-driver fatigue explanation (verbatim, with ellipsis) | Ex. A 01:01:16–01:01:21 (pp. 6–7) | RECORDING | |
+| N32 | Eye test; head-back / eyes-closed 30-second estimate, administered by Meza-Gonzalez | Ex. A 01:05:22–01:07:04 (p. 9); 01:07:42–01:08:45 (p. 10) | RECORDING | Contradicts M-FAC 16:10–11 (¶53) that Melano administered FSTs. Romberg timer 01:08:02–01:08:40 (~38s) not characterized in prose |
+| N33 | "It seems as though I'm passing them…I just wanna know if I've passed your test." | Ex. A 01:08:58, 01:09:14, 01:09:23 (p. 10) | RECORDING | |
+| N34 | Melano: "Yeah there's not pass or fail." Meza-Gonzalez: "I go through all of them regardless…" | Ex. A 01:09:52 (p. 10); 01:09:58 (p. 11) | RECORDING | Contradicts Ala. Compl. 6:3–5 (attributes the remark to Meza-Gonzalez at 01:08:20–40) |
+| N35 | Balance doubt; "It's fine if you don't. You don't have to." | Ex. A 01:09:20 (p. 10); 01:10:12 (p. 11) | RECORDING | Plaintiff said "one knee"; prose says "one leg" without quotation marks |
+| N36 | "I mean I think we can do that." / "It's kind of sketch here bro." / "uneven ground. I wouldn't do that one." / "Alright then." | Ex. A 01:10:14–01:10:30 (p. 11) | RECORDING | |
+| N37 | PAS request at 01:10:33; "You may refuse to take this test" | Ex. A 01:10:33 (p. 12) | RECORDING | |
+| N38 | Required/not required exchange; "up to my discretion whether I put you under arrest for DUI or not" | Ex. A 01:10:51–01:11:03 (p. 12); M-FAC 7:2–5 (¶22) | RECORDING | |
+| N39 | "Yes or no?"; "I don't consent to that." at 01:11:15 | Ex. A 01:11:11 bracket, 01:11:13, 01:11:15 (p. 12) | RECORDING | |
+| N40 | "OK. Brendan. Alright then. I'm gonna have you just turn around please…" at 01:11:16; cuffs by 01:11:33 | Ex. A 01:11:16, 01:11:31, 01:11:33 (p. 12); M-FAC 7:11–13 (¶24) | RECORDING | |
+| N41 | Search of person; back seat; cuffs attached to vehicle frame | Ex. A 01:12:54 (p. 12); 01:13:14 (p. 13); 01:15:06 bracket (p. 13) | RECORDING (bracket on frame) | |
+| N42 | Breath-or-blood question; "I don't know. It seems like torture." | Ex. A 01:15:54, 01:16:04, 01:16:19 (p. 13) | RECORDING | |
+| N43 | "Right now you're not refusing…don't want to choose"; one-year-at-least admonition, "even if" sober | Ex. A 01:16:37, 01:16:59 (p. 14); 01:19:18 bracket; 01:20:49 (p. 14) | RECORDING | "Even if" paraphrases 01:20:49 |
+| N44 | "Even as a truck commercial driver…force the DMV's hand?" / "I'm not forcing the DMV to do it, that's their rule." | Ex. A 01:21:41, 01:21:50 (p. 14) | RECORDING | |
+| N45 | "So you're refusing to take a test?" at 01:22:15, then "OK." with no answer recorded | Ex. A 01:22:15, 01:22:21 (p. 15) | UNVERIFIED | Silence is an absence in the transcript, not a confirmed absence on the audio |
+| N46 | "We just have to write what time we last passed him…" / "But he said he was here for seven minutes." / "you want to start your warrant?" | Ex. A 01:23:11, 01:23:16, 01:23:33 (p. 15) | RECORDING | 01:23:20 omitted (supervision status — excluded) |
+| N47 | Implied-consent advisement at 01:36:47; Miranda exchange; "We already have everything we need right?" | Ex. A 01:36:47–01:37:08, 01:37:45 (p. 16) | RECORDING | |
+| N48 | Warrant / lose-license line; "Neither?" "Yep."; "OK so we're getting a warrant" | Ex. A 01:37:36 (p. 16); 01:38:06 (p. 16); 01:38:08–01:38:10 (p. 17) | RECORDING | |
+| N49 | Alternator exchange; "I don't think electric vehicles have alternators" / "Just like your phone gets charged." | Ex. A 01:44:21–01:45:01 (p. 17) | RECORDING | |
+| N50 | Left at 01:52:05; arrived at 01:57:10, "Dublin CHP transfer" | Ex. A 01:52:05, 01:57:10 brackets (p. 18) | RECORDING (bracket) | Bracket also says "Santa Rita Jail"; article uses only "Dublin CHP transfer" |
+| N51 | Officer's account in the DMV decision: asleep; knock; open right passenger door; slurred / red-watery eyes / odor; odor in front of the patrol vehicle; HGN and modified Romberg unsatisfactory; arrest 1:12 a.m.; "admission to driving" | APS Dec. p. 1 (Lawful Contact; Lawful Arrest; Probable Cause); p. 2 (FSTs; Additional factors) | UNVERIFIED | APS PDF 404 on the public Worker in this pass. Wristband on p. 2 withheld |
+| N52 | DS-367 and arrest report signed under penalty of perjury; used for warrant, APS, DA referral | M-FAC 2:11–15 (¶2); 7:18–21 (¶25) | ALLEGATION | |
+| N53 | Four entries: odor, "slurred," "very confused and disoriented," "Beverage Present: Yes" | M-FAC 7:23–8:15 (¶26(a)–(d)); C-FAC 12:2–20 (¶29) | ALLEGATION | DS-367 itself not opened. Quote variances across papers — see Open flags |
+| N54 | Complaint concedes odor, speech, and orientation are "experiential observations"; alleges the recording contradicts them | M-FAC 8:22–27 (¶28) | ALLEGATION | Confirmed on FAC sidecar |
+| N55 | Magistrate issued warrant; blood drawn at CHP Dublin Area office | M-FAC 9:3–5 (¶29) | ALLEGATION | Not verified against the warrant or booking records |
+| N56 | MTD Dkt. 22 pending; no admission | ARTICLE current-status; FACT_CHECK row 43 | SUPPORTED | |
+| N57 | Temporary license "through the outcome of hearing," barring "driving commercially" | C-FAC 16:12–18 (¶42) (quoting DS 2030/2030A) | ALLEGATION | Forms themselves not opened |
+| N58 | Dec. 9, 2024 five-page response; certificate and transcript offered | C-FAC 17:6–15 (¶45); 17:17–20 (¶46) | ALLEGATION | |
+| N59 | "The Hearing Officer will develop the facts and render a final decision on your matter." | C-FAC 16:25–28 (¶44); 3:14–15 (quoting Form DS 2304) | ALLEGATION | Form itself not opened |
+| N60 | Teams, 9:00 a.m., Jan. 24, 2025; testified under penalty of perjury | C-FAC 16:16–18 (¶42); 18:4–7 (¶48); APS Dec. p. 1 | ALLEGATION / UNVERIFIED | Hearing time confirmed in C-FAC; APS PDF not re-opened |
+| N61 | Marshaled/offered exhibits, ruled on objections, decided; "from neutral fact development into advocacy" | C-FAC 22:25–23:4 (¶65); 18:18–23 (¶50) | ALLEGATION | Confirmed on C-FAC Worker text |
+| N62 | Decision summarizes odor "from the passenger side of the vehicle" as "highly implausible"; "It is presumed official duty has been regularly performed. No evidence was presented to the contrary." | APS Dec. p. 2; C-FAC 20:4–7 (¶55); 22:9–13 (¶63) quotes "no evidence was presented to the contrary" | ALLEGATION / UNVERIFIED | "Highly implausible" / presumption sentences not re-read from the APS PDF |
+| N63 | Decision does not mention the Detention Certificate or the dashcam contradictions | C-FAC 19:27–20:3 (¶55); proposal's read of APS Dec. pp. 1–3 | ALLEGATION / UNVERIFIED | Consistent with C-FAC; APS pages not re-opened |
+| N64 | Suspension Feb. 20, 2025 – Feb. 19, 2026 | C-FAC 2:24–3:1 (¶3); APS Dec. p. 1 | ALLEGATION | C-FAC confirmed |
+| N65 | Dkt. 26 answer filed; not ingested | ARTICLE.md; FACT_CHECK row 42 | GRAPH-ONLY | |
+| N66 | Two federal judges (Breyer; Lin) | Dkt. 29 NEF; `33/matter.json` | SUPPORTED | |
+| N67 | Detention Certificate dated Nov. 5, 2024 | M-FAC 9:26 (¶32); C-FAC 2:14–17 (¶2); 13:17. Ala. Compl. 3:7–9 says May 12, 2025 | ALLEGATION | Article follows Nov. 5. Certificate itself not reviewed |
+| N68 | State is not a defendant in live Meza | `32/parties.json`; M-FAC caption | SUPPORTED | P6 |
 
 ---
 
@@ -88,6 +167,12 @@ Status key:
 | Whether default was entered on Meza Dkt. 17 | A Rule 55(a) request was filed Sep. 18; defendants later appeared by Dkt. 22. Article does not discuss default |
 | Blood-alcohol number, medical condition, vehicle owner, employer, wage rates | Present in some `key_facts` fields; excluded as unnecessary or as non-party employer / medical detail |
 | Any dollar demand, SR-22 premium, or settlement figure | Hard exclusion |
+| Can brand / "source alcohol" at Ex. A 01:00:09 | Alcohol-product exclusion. The empty can itself is in |
+| Orange 21-and-over wristband (APS Dec. p. 2) | Alcohol-detail exclusion |
+| Toxicology / blood-test results | None in the reviewed papers; excluded if they appear later |
+| "Still asleep" at the door opening (M-FAC ¶¶16, 56) | Ex. A does not say when he woke. Article states only the knock, "Open the window," and the door three seconds later |
+| Locked-door allegation (Ala. Compl. 4:27–5:3) | Ex. A is silent on a lock |
+| Cup-explanation allegation (Ala. Compl. 5:14–16) | Ex. A records only "Don't drink it" and "I don't know what that is" |
 
 Private-matters front door `internal/private/matters/` has no Meza-Gonzalez or Candelaria workspace. Matter 0 is unrelated and was not used.
 
@@ -112,6 +197,26 @@ These cases are pending. The article is an unpublished internal draft. The follo
 13. **Name-form confusion.** Publishing both *Newanforbi* and *Nforbi* is accurate and also makes the person easier to search. A public version should keep the caption rule and the draft banner.
 14. **Docket drift.** Matter 32 is 4:26-cv-08271-CRB before Judge Breyer (Dkt. 29). Hearing/trial dates are vacated; Dkt. 22 must be renoticed; briefing dates unchanged. The Oct. 28 graph row is stale (`-ASK` / Krishnan). Matter 33 stays with Judge Lin; clocks run in November–December 2026.
 15. **No GitHub / document-store URLs** in any outbound version (standing lock). Internal `/documents/...` paths in the sources table are for editors, not for a public page.
+16. **Crude transcript language.** Melano's "piss" / "This is pee" lines are now in the article by express user decision (P14 KEEP). Do not expand into other excluded audio (registry, medical, brand).
+17. **Exhibit A is the plaintiff's transcription.** Speaker labels and bracketed actions are his. Native video was not replayed in this pass.
+
+---
+
+## Open verification flags
+
+These are not article deletions. They are the items still unverified after this integration.
+
+1. **Native video not reviewed.** Every recording-based detail rests on Plaintiff's Exhibit A. Spot-check 00:55:50–00:57:05, 00:59:40–01:00:20, 01:11:10–01:11:40, and 01:22:00–01:22:30 before publication. The silence after "So you're refusing to take a test?" (N45) is transcript silence.
+2. **Exhibit A PDF not re-opened in this environment.** Public Worker returned 404 for sha256 `3750927a…1b6660`. Citations follow the approved proposal's read of that file, cross-checked against M-FAC quotes.
+3. **Fickes-lodge identity.** The repo copy is captioned E.D. Cal. 2:25-cv-01460 and declared March 21, 2026. The Alameda U-visa Motion with its Exhibit A is not in the repo. Dialogue matches the June 18, 2026 alternate copy line for line. Pull the file-stamped 26CV168913 Motion Exhibit A to confirm the hash.
+4. **APS Decision PDF not re-opened** (sha256 `2bdd43b6…aac90c8`, Worker 404). Officer-account quotes in Passage C and the presumption sentence in Passage D are from the proposal's read plus C-FAC.
+5. **DS-367 and arrest report not read directly.** The four contested entries are quoted as M-FAC pleads them. Supp. Decl. / Ala. Compl. / APS Dec. have small odor-quote variances.
+6. **Detention Certificate itself not reviewed.** Article uses November 5, 2024 (M-FAC 9:26; C-FAC 2:14–17). Ala. Compl. 3:7–9 says May 12, 2025.
+7. **Blood-draw location and booking.** Passage C attributes the Dublin Area office to the complaint. Passage B ends at "Dublin CHP transfer." Warrant and booking records not reviewed.
+8. **"Joselyn Melano"** in the Ex. A 00:56:43 bracket — treated as a typo.
+9. **DMV forms DS 2030A and DS 2304** quoted from C-FAC, not from the forms.
+10. **Dkt. 22, Dkt. 23, and Dkt. 26** not read for a competing door-opening or odor account.
+11. **Matter 32 graph** still lists `-ASK` / Krishnan as of Oct. 28.
 
 ---
 
@@ -124,5 +229,7 @@ These cases are pending. The article is an unpublished internal draft. The follo
 | Hertz / HireRight / Centerline / PV Holding / Accurate / Amazon / FedEx / UPS | No |
 | U-visa / I-918 / immigration court | No |
 | Home address / phone / email | No |
-| GitHub / raw.githubusercontent | No |
+| GitHub / raw.githubusercontent | No (sources-table warning only) |
 | Immunity prediction / “will win” / “should lose” | No |
+| Mike's / brand of the empty can / 21+ wristband / BAC figure | No |
+| Melano "This is pee" / drinking questions / denials / empty can | Yes — kept by user decision |
