@@ -134,9 +134,15 @@ describe("statusLabel derivation", () => {
       upcoming: false,
     } as TimelineEvent;
     expect(deriveStatusLabel(frPendingMatter, { events: [filedEvent] })).toBe("F&R pending");
-    expect(deriveStatusLabel(cases.find((item) => item.number === 19)!, { events: eventsFor(19) })).toBe(
-      "Under submission",
-    );
+    // Synthetic — Matter 19 (Macomber) was reported no longer active on Nov. 2, 2026
+    // and is lifecycle "closed". Pin the waiting-phase label so it does not rot
+    // when that habeas leaves under_submission.
+    const underSubmission = {
+      number: 19,
+      lifecycle: "active" as const,
+      phase: "under_submission" as const,
+    };
+    expect(deriveStatusLabel(underSubmission, { events: [filedEvent] })).toBe("Under submission");
   });
 
   it("uses status_label overrides when present", () => {

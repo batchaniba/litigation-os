@@ -1,27 +1,29 @@
 {
   "number": 32,
-  "last_updated": "2026-10-28",
+  "last_updated": "2026-11-02",
   "caption": "Nforbi v. Meza-Gonzalez, et al",
-  "case_no": "4:26-cv-08271-ASK",
-  "court": "USDC N.D. Cal. (Oakland; 4:26-cv-08271-ASK, formerly 3:26-cv-08271-PHK; related Serrato 3:26-cv-05953-CRB and Candelaria 3:26-cv-08272-RFL, formerly LJC)",
+  "case_no": "4:26-cv-08271-CRB",
+  "court": "USDC N.D. Cal. (Oakland prefix; 4:26-cv-08271-CRB, formerly ASK / 3:26-cv-08271-PHK; related Serrato 3:26-cv-05953-CRB and Candelaria 3:26-cv-08272-RFL)",
   "courtlistener": {
     "court_id": "cand",
     "docket_id": 74220629,
     "docket_url": "/docket/74220629/nforbi-v-meza-gonzalez/"
   },
   "claims": "42 U.S.C. § 1983 — Fourth/Fourteenth/First Amendment (unlawful entry, search, arrest, Franks/judicial deception, fabrication, First Amendment retaliation) — Dkt. 5 (FAC filed Aug. 17, 2026) is the court pleading of record; also CHP-cluster PDF home for Matters 1/2/20/24",
-  "status": "4:26-cv-08271-ASK. Dkt. 22 MTD/strike (Oct. 26): responses due Nov. 9, replies Nov. 16 (docket text). Dkt. 23 declination. Dkt. 24 (Oct. 28) Melano summons return refiled after a Dkt. 21 filing-error notice. Dkt. 25 (Oct. 28) Clerk's Notice of Impending Reassignment to a district judge vacated the Dec. 9 MTD hearing; re-notice pending. Plaintiff's opposition was emailed to DOJ Oct. 27 but is not on ECF as of Oct. 28. CMS Nov. 25 may reset.",
-  "status_label": "Reassigning; Dkt 22 opp. Nov. 9 (not on ECF)",
+  "status": "Dkt. 29 (Oct. 30, 2:26 p.m.) assigned the case to Judge Charles R. Breyer. Case number is now 4:26-cv-08271-CRB (was 4:26-cv-08271-ASK; earlier 3:26-cv-08271-PHK). The order names Judge Araceli Martinez-Olguin as no longer assigned. Hearings and trial dates are vacated. Dkt. 22 briefing is unchanged (opposition Nov. 9, reply Nov. 16). Motions, including Dkt. 22, must be renoticed before Judge Breyer. The opposition emailed to the Department of Justice on Oct. 27 was not on ECF as of Oct. 28.",
+  "status_label": "Breyer (CRB); Dkt 22 opp. Nov. 9; re-notice MTD",
   "lifecycle": "active",
   "proceeding": "federal_civil",
   "phase": "mtd_briefing",
   "filed": "August 10, 2026 (docketed; intake packet signed Aug. 7, 2026)",
-  "judge": "Hon. Ajay S. Krishnan, U.S. Magistrate Judge (N.D. Cal.) — reassigned Aug. 24, 2026 from Mag. Kang (related to Serrato 3:26-cv-05953-CRB)",
+  "judge": "Hon. Charles R. Breyer",
   "cluster": 1,
   "type": "Federal",
   "badge": "MTD",
   "archived": false,
-  "note": "N.D. Cal. § 1983 action docketed Aug. 10, 2026 as No. 4:26-cv-08271-ASK (formerly 3:26-cv-08271-PHK) (ndcal/). Also document store for Matters 1, 2, 20, and 24 under matter-32/from-NN/. Nov. 1 / Candelaria APS evidence in Matter 33.",
+  "note": "N.D. Cal. § 1983 action now 4:26-cv-08271-CRB after Dkt. 29 (Oct. 30, 2026); formerly 4:26-cv-08271-ASK and 3:26-cv-08271-PHK (ndcal/). Also document store for Matters 1, 2, 20, and 24 under matter-32/from-NN/. Nov. 1 / Candelaria APS evidence in Matter 33.",
   "key_facts": "On November 1, 2024 at approximately 12:54 a.m., CHP Officers Santiago Meza-Gonzalez (#023295) and Jose Melano (#023054) contacted Plaintiff on the eastbound I-580 dirt shoulder near Isabel Avenue, Livermore (CHP Case No. RJ68845; CAD No. 241101GG0064). Plaintiff prepared an N.D. Cal. § 1983 complaint (v3, 20 pp., six causes) and a print intake packet under the Ngwa Nforbi name form, demanding compensatory damages >$214,000, then drafted a First Amended Complaint on the same six causes. The court-stamped operative FAC is Dkt. 5 (filed Aug. 17, 2026, 21 pp., dated Aug. 17); Dkt. 6 (filed Aug. 14, dated Aug. 12) is the earlier stamped FAC. The unsigned Aug. 12 draft is retained. Draft versions v1 (31 pp., long-form), v2 (18 pp., five claims, no retaliation), and the Aug. 10/Aug. 11 FAC drafts are retained as superseded. The FAC's ¶36(d) pleads a three-year SR-22 requirement (annual premium $281.28) with a maintenance period extending through approximately May 2029 — the same end date the Candelaria FAC pleads. Matter 32 also remains the portfolio PDF home for Matters 1/2/20/24 under from-NN/; Nov. 1 / APS evidence and Candelaria filings live in Matter 33.",
-  "procedural_status": "Canonical chronology is clocks.json, docket.json, and events.jsonl. Do not reconstruct dates from README."
+  "procedural_status": "Canonical chronology is clocks.json, docket.json, and events.jsonl. Do not reconstruct dates from README.",
+  "former_case_no": "4:26-cv-08271-ASK",
+  "judge_id": "charles-r-breyer"
 }

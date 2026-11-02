@@ -1,6 +1,6 @@
 {
   "generated": true,
-  "today": "2026-10-28",
+  "today": "2026-11-02",
   "matters": [
     {
       "number": 1,
@@ -51,11 +51,11 @@
         "id": "02-deadline-1",
         "date": "2026-11-01",
         "kind": "deadline",
-        "status": "open",
+        "status": "overdue",
         "title": "CCP §335.1 two-year statute of limitations (computed) backstop, running from the Nov. 1, 2024 incident. (1) Matter 1's Fourth Amendment §1983 claim (borrowed…",
         "source_dkt": null
       },
-      "overdue": false,
+      "overdue": true,
       "last_updated": "2026-09-16",
       "files": [
         "claims.json",
@@ -592,19 +592,12 @@
       "cluster": 4,
       "related": [],
       "same_incident": null,
-      "lifecycle": "active",
+      "lifecycle": "closed",
       "proceeding": "habeas",
-      "phase": "under_submission",
-      "next_clock": {
-        "id": "19-deadline-1",
-        "date": "2026-10-01",
-        "kind": "deadline",
-        "status": "overdue",
-        "title": "Habeas ruling calendar (computed) — Newanforbi v. Macomber (C2604791). CRC 4.551(a)(6)(B) runs 30 days from the September 1, 2026 in-person filing of the…",
-        "source_dkt": null
-      },
-      "overdue": true,
-      "last_updated": "2026-10-28",
+      "phase": "terminal",
+      "next_clock": null,
+      "overdue": false,
+      "last_updated": "2026-11-02",
       "files": [
         "claims.json",
         "clocks.json",
@@ -1052,9 +1045,9 @@
       "path": "internal/src/data/matters/32/",
       "layout": "split",
       "caption": "Nforbi v. Meza-Gonzalez, et al",
-      "case_no": "4:26-cv-08271-ASK",
-      "court": "USDC N.D. Cal. (Oakland; 4:26-cv-08271-ASK, formerly 3:26-cv-08271-PHK; related Serrato 3:26-cv-05953-CRB and Candelaria 3:26-cv-08272-RFL, formerly LJC)",
-      "judge": "Hon. Ajay S. Krishnan, U.S. Magistrate Judge (N.D. Cal.) — reassigned Aug. 24, 2026 from Mag. Kang (related to Serrato 3:26-cv-05953-CRB)",
+      "case_no": "4:26-cv-08271-CRB",
+      "court": "USDC N.D. Cal. (Oakland prefix; 4:26-cv-08271-CRB, formerly ASK / 3:26-cv-08271-PHK; related Serrato 3:26-cv-05953-CRB and Candelaria 3:26-cv-08272-RFL)",
+      "judge": "Hon. Charles R. Breyer",
       "cluster": 1,
       "related": [],
       "same_incident": null,
@@ -1066,11 +1059,11 @@
         "date": "2026-09-17",
         "kind": "deadline",
         "status": "overdue",
-        "title": "FILE — summons return / CCP § 415.20(b) declaration + Exhibit A USPS receipt + POS being refiled in Nforbi v. Meza-Gonzalez et al. (4:26-cv-08271-ASK). USER REPORT Oct. 28, 2026. Sep. 17 mailing executed; prior FILE clock was still open (dkt null). Do not invent a filing.",
+        "title": "FILE — summons return / CCP § 415.20(b) declaration + Exhibit A USPS receipt + POS being refiled in Nforbi v. Meza-Gonzalez et al. (4:26-cv-08271-CRB). USER REPORT Oct. 28, 2026. Sep. 17 mailing executed; prior FILE clock was still open (dkt null). Do not invent a filing.",
         "source_dkt": 16
       },
       "overdue": true,
-      "last_updated": "2026-10-28",
+      "last_updated": "2026-11-02",
       "files": [
         "claims.json",
         "clocks.json",
@@ -1210,11 +1203,11 @@
         "id": "36-usm-packet-and-notice",
         "date": "2026-10-29",
         "kind": "deadline",
-        "status": "open",
+        "status": "overdue",
         "title": "DEADLINE — USM service packet and Notice of Submission in Brendan Ngwa Nforbi v. AT&T Mobility Services LLC (E.D. Cal. 2:26-cv-03314-DJC-AC (PS)). Within 15 days of Dkt. 4 (Oct. 14): deliver to the U.S. Marshal (501 I Street, Sacramento) one completed USM-285 for AT&T Mobility Services LLC, the summons (Dkt. 6), copies of the complaint, a copy of Dkt. 4, and the magistrate consent form; AND file a Notice of Submission of Documents with the Clerk.",
         "source_dkt": 4
       },
-      "overdue": false,
+      "overdue": true,
       "last_updated": "2026-10-14",
       "files": [
         "claims.json",
@@ -1244,7 +1237,14 @@
       "lifecycle": "pre_filing",
       "proceeding": "federal_civil",
       "phase": "pre_filing",
-      "next_clock": null,
+      "next_clock": {
+        "id": "37-home-depot-answer-deadline",
+        "date": "2026-11-04",
+        "kind": "deadline",
+        "status": "open",
+        "title": "WATCH — Home Depot answer or Rule 12 motion due, Ngwa Nforbi v. Home Depot U.S.A., Inc. (E.D. Cal. 2:26-cv-03310-TLN-AC). Served Oct. 14, 2026 → 21 days (Rule 12(a)(1)(A)(i)). A Rule 12 motion tolls the answer to 14 days after ruling (Rule 12(a)(4)). If nothing appears, the Rule 55 default track opens — check the docket, don't assume.",
+        "source_dkt": 8
+      },
       "overdue": false,
       "last_updated": "2026-10-28",
       "files": [

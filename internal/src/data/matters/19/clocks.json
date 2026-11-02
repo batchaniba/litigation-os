@@ -4,10 +4,11 @@
     "date": "2026-10-01",
     "date_label": "Oct. 1, 2026",
     "kind": "deadline",
-    "status": "open",
+    "status": "vacated",
     "source_dkt": null,
     "title": "Habeas ruling calendar (computed) — Newanforbi v. Macomber (C2604791). CRC 4.551(a)(6)(B) runs 30 days from the September 1, 2026 in-person filing of the…",
     "actor": "agency",
-    "source": "/documents/matter-19/HC-004 Notice and Request for Ruling (Habeas Corpus, Executed Sep 1 2026).pdf"
+    "source": "/documents/matter-19/HC-004 Notice and Request for Ruling (Habeas Corpus, Executed Sep 1 2026).pdf",
+    "retired_reason": "USER REPORT November 2, 2026: Newanforbi v. Macomber (C2604791) is no longer active. No ruling was provided. The computed CRC 4.551 ruling calendar is vacated, not satisfied."
   }
 ]
