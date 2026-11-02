@@ -130,9 +130,10 @@ The other criminal subrequests on the report (San Joaquin, the other Santa Clara
 
 ## Adjacent procedures the notice itself opens
 
-These are not pleaded counts. They are on the face of the November 2 packet:
+The pleading decision on these facts is `CLAIMS_FOUNDATION.md`. That memo is the claims plan. It is not a filed complaint and not a settlement demand.
 
-- The packet includes the report and the federal Summary of Rights, which is what a pre-adverse notice is supposed to enclose.
-- The letter asks for a dispute to HireRight and for mitigation to the company before a final decision.
-- Government Code section 12952 (Fair Chance) may bear on what a preliminary notice has to contain and on an individualized assessment. Not analyzed as a count here.
-- The consumer-reporting statutes (FCRA; California Investigative Consumer Reporting Agencies Act, Civil Code section 1786 and following) may bear on accuracy, the alcohol-versus-"criminal" label, and the age of case C1761642. Not analyzed as a count here.
+- The packet includes the report and the federal Summary of Rights, which is what a pre-adverse notice is supposed to enclose. A count that says no notice was sent contradicts the exhibit.
+- The letter asks for a dispute to HireRight and for mitigation to the company before a final decision. The response draft in the claims foundation has not been sent.
+- Government Code section 12952 is Count 1 in the claims foundation: the notice does not identify a conviction, the deadline line is unfilled, and "Does not meet" is a category rather than an individualized assessment. It is not filed until the Civil Rights Department issues a right-to-sue notice.
+- Penal Code section 290.46(j) is Count 2, against The Hertz Corporation only, and it is the count a demurrer will test because the report also says the search ran through the Department of Justice.
+- A seven-year reporting count is not pleaded. The report prints a parole/release date of December 2, 2020.

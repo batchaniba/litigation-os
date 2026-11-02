@@ -1,5 +1,5 @@
 # Matter 43 — Verified pleading spine, conditional allegations, immediate response
-**November 2, 2026 | NON-FILING WORK PRODUCT.** This is a structured draft **not a complaint** and must not be presented as verified allegations until each material fact and filing prerequisite has been confirmed. See [Claims audit](./LITIGATION_CLAIMS_AUDIT_2026-11-02.md) and [original evidence map](./PC29046_EVIDENCE.md).
+**November 2, 2026 | NON-FILING WORK PRODUCT.** This is a structured draft **not a complaint** and must not be presented as verified allegations until each material fact and filing prerequisite has been confirmed. See [Claims audit](./LITIGATION_CLAIMS_AUDIT_2026-11-02.md), [original evidence map](./PC29046_EVIDENCE.md), and the complaint decision in [CLAIMS_FOUNDATION.md](./CLAIMS_FOUNDATION.md). The response in section D stays neutral. Do not put a registry theory or a Penal Code section 290.46 citation into it.
 
 ## A. Verified-fact chronology for a future complaint (after rechecking source PDFs)
 The following language deliberately avoids saying Hertz made a final adverse decision.

@@ -1,6 +1,6 @@
 # Matter 43 — Hertz/HireRight litigation claims audit and Rule 12(b)(6) architecture
 **Research cut-off:** November 2, 2026 | **Status:** pre-filing; **not a complaint, demand, or finding of liability**.  
-**Evidentiary anchor:** [PC29046_EVIDENCE.md](./PC29046_EVIDENCE.md), exhibits e01–e27; the actual PDFs and screenshots govern if the index differs. No substantive claim should be pleaded solely from a secondary exhibit summary.
+**Evidentiary anchor:** [PC29046_EVIDENCE.md](./PC29046_EVIDENCE.md), exhibits e01–e27; the actual PDFs and screenshots govern if the index differs. No substantive claim should be pleaded solely from a secondary exhibit summary. The complaint decision, including which counts are filed and which are held, is [CLAIMS_FOUNDATION.md](./CLAIMS_FOUNDATION.md).
 
 ## Executive position
 The strongest evidence is the **accepted conditional $23/hour full-time Palo Alto Manager Trainee offer (Oct. 22)**, the **HireRight report delivered to Hertz (Nov. 2; client review required)**, the **California registry hits bearing an express employment-use warning**, and the **Hertz pre-adverse notice dated Nov. 2**. The notice, however, specifies only `[Criminal Information] Alcohols related offenses-Does not meet`; it does **not** say that the offer has been rescinded or that the sex-offender entry caused the preliminary decision. Do not assert a completed denial or a lost start date.
