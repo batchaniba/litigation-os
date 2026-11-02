@@ -216,7 +216,7 @@ Standalone retail civil-rights matter arising from an August 25, 2026 consumer r
 | 40 | Brendan Ngwa Nforbi v. Uber Technologies, Inc. | TBD | TBD (pre-dispute — offer received Sep. 14, 2026) | State | Start withheld — complaint signed, not filed |
 | 41 | Brendan Ngwa Nforbi v. Nuro, Inc. | TBD | TBD (pre-dispute — application Sep. 9, 2026) | State | Pending — no Checkr paper ingested |
 | 42 | Brendan Ngwa Nforbi v. Staples Retail et al. | TBD | TBD (pre-dispute — onboarding Sep. 29–30, 2026) | State | FADV notice Oct. 7; no pre-adverse |
-| 43 | Brendan Ngwa Nforbi v. Hertz Global Holdings, Inc. | TBD | TBD — no action filed | State | Offer accepted — HireRight screening active |
+| 43 | Brendan Ngwa Nforbi v. Hertz Global Holdings, Inc. | TBD | TBD — no action filed | State | Pre-adverse notice — Nov. 2, 2026 |
 <!-- PORTFOLIO:ACTIVE_MATTERS:END -->
 
 *Settled matters stay in the table above until dismissal is entered — a settlement resolves the merits, but the matter is still open on the docket. Their Status column reads "Settled" (see the Overview count above for which ones).*
@@ -269,6 +269,7 @@ Standalone retail civil-rights matter arising from an August 25, 2026 consumer r
 | Nov. 1, 2026 | 2 | CCP §335.1 two-year statute of limitations (computed) backstop, running from the Nov. 1, 2024 incident. (1) Matter 1's Fourth Amendment §1983 claim (borrowed… |
 | Nov. 2, 2026 | 5, 28 | EX PARTE HEARING — Application for Order Dismissing First Amended Complaint and Entering Judgment of Dismissal, Newanforbi v. Palacios et al. (San Joaquin Sup. Ct. |
 | Nov. 4, 2026 | 20 | Case Management Conference — Newanforbi v. CHP et al. (26CV191136), Nov. 4, 2026, 4:00 p.m., Dept. 25, Rene C. Davidson Courthouse, Hon. Jenna M. Whitman. USER REPORT Oct. 28, 2026: continued from Oct. 28. |
+| Nov. 4, 2026 | 37 | WATCH — Home Depot answer or Rule 12 motion due, Ngwa Nforbi v. Home Depot U.S.A., Inc. (E.D. Cal. 2:26-cv-03310-TLN-AC). Served Oct. 14, 2026 → 21 days (Rule 12(a)(1)(A)(i)). |
 | Nov. 5, 2026 | 25 | WATCH — FedEx responses to Plaintiff's Interrogatories, RFAs, and RFPs (Set One) due, Newanforbi v. Federal Express Corporation (E.D. Cal. 2:26-cv-02881-DAD-SCR). |
 | Nov. 6, 2026 | 29 | Rule 26(f) / ADR L.R. 3-5 meet-and-confer, Fri. Nov. 6, 2026, 1:00–1:30 p.m. PT (invite sent as 3:00–3:30 p.m. Central), by Microsoft Teams — Newanforbi v. Amazon.com Services, LLC et al. (4:26-cv-09249-ASK). |
 | Nov. 9, 2026 | 32 | Opposition to Dkt. 22 motion to dismiss/strike due Nov. 9, 2026 — Nforbi v. Meza-Gonzalez et al. (4:26-cv-08271-ASK). Date set in the Dkt. 22 docket text (responses due 11/9/2026; replies 11/16/2026). |
