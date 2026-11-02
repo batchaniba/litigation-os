@@ -5,8 +5,94 @@
     "tz": "America/Los_Angeles",
     "kind": "watch",
     "status": "contingent",
-    "title": "WATCH — Staples / First Advantage (Matter 42): First Advantage file requested and received? Staples pre-adverse notice or Fair Chance Act preliminary decision (Gov. Code § 12952) received? If a preliminary decision arrives, the written response is due within 5 business days of receipt (more if disputing accuracy) — address the conviction with rehabilitation evidence; do not raise other litigation.",
+    "title": "WATCH \u2014 Staples / First Advantage (Matter 42): First Advantage file requested and received? Staples pre-adverse notice or Fair Chance Act preliminary decision (Gov. Code \u00a7 12952) received? If a preliminary decision arrives, the written response is due within 5 business days of receipt (more if disputing accuracy) \u2014 address the conviction with rehabilitation evidence; do not raise other litigation.",
     "actor": "you",
-    "note": "Oct. 14, 2026 was an internal check date. Keep watching for the First Advantage file and any Staples Fair Chance preliminary decision. Undated contingent so it is not derived overdue. No new paper ingested as of Oct. 28, 2026."
+    "note": "Oct. 14, 2026 was an internal check date. Keep watching for the First Advantage file and any Staples Fair Chance preliminary decision. Undated contingent so it is not derived overdue. No new paper ingested as of Oct. 28, 2026. Complaint filed Oct. 29, 2026 (N.D. Cal. 5:26-cv-12781-NW); keep the First Advantage file request live \u2014 the report goes to initial disclosures and discovery."
+  },
+  {
+    "id": "42-service-4m",
+    "date": "2027-01-27",
+    "tz": "America/Los_Angeles",
+    "kind": "deadline",
+    "status": "open",
+    "source": "/documents/matter-42/Summons Issued - Staples The Office Superstore, LLC (N.D. Cal. 5-26-cv-12781-NW) (Issued Oct 29 2026).pdf",
+    "title": "SERVE Staples \u2014 FRCP 4(m) 90-day service deadline (computed: complaint filed Oct. 29, 2026 + 90 days), Ngwa Nforbi v. Staples The Office Superstore, LLC (N.D. Cal. 5:26-cv-12781-NW). Serve summons + complaint + Dkt. 5 Order + Civil L.R. 4-2 supplementary material on CSC - Lawyers Incorporating Service, 2710 Gateway Oaks Dr., Ste. 150N, Sacramento, CA 95833; file proof of service. Serve now, not at the deadline: the Jan. 12 / Jan. 26 Order dates assume Staples has appeared.",
+    "actor": "you"
+  },
+  {
+    "id": "42-answer-due",
+    "date": null,
+    "tz": "America/Los_Angeles",
+    "kind": "deadline",
+    "status": "contingent",
+    "source": "/documents/matter-42/Summons Issued - Staples The Office Superstore, LLC (N.D. Cal. 5-26-cv-12781-NW) (Issued Oct 29 2026).pdf",
+    "title": "Staples answer or Rule 12 motion due 21 days after service (FRCP 12(a)(1)(A)(i)); 60 days after the request is sent if Staples waives service under FRCP 4(d) (FRCP 12(a)(1)(A)(ii)). Date when served \u2014 Ngwa Nforbi v. Staples The Office Superstore, LLC (N.D. Cal. 5:26-cv-12781-NW).",
+    "actor": "opposing"
+  },
+  {
+    "id": "42-lr315-cert",
+    "date": null,
+    "tz": "America/Los_Angeles",
+    "kind": "filing",
+    "status": "open",
+    "source": "/documents/matter-42/Certification of Conflicts and Interested Entities or Persons - Ngwa Nforbi v. Staples (N.D. Cal.) (Signed Oct 26 2026).pdf",
+    "title": "CONFIRM Civil L.R. 3-15 Certification of Conflicts (signed Oct. 26, 2026) is on the ECF docket \u2014 Dkt. 5 requires it \"upon first appearance.\" The copy on file has no case number or file stamp; if it is not docketed, file it with the case number filled in \u2014 Ngwa Nforbi v. Staples The Office Superstore, LLC (N.D. Cal. 5:26-cv-12781-NW).",
+    "actor": "you"
+  },
+  {
+    "id": "42-rule26f-meet-confer",
+    "date": "2027-01-12",
+    "tz": "America/Los_Angeles",
+    "kind": "meet-and-confer",
+    "status": "open",
+    "source_dkt": 5,
+    "source": "/documents/matter-42/Dkt 05 - Order Setting Initial Case Management Conference and ADR Deadlines (Filed Oct 29 2026).pdf",
+    "title": "Last day to meet and confer re initial disclosures, early settlement, ADR process selection, and discovery plan (FRCP 26(f)) \u2014 Dkt. 5 Order, Ngwa Nforbi v. Staples The Office Superstore, LLC (N.D. Cal. 5:26-cv-12781-NW).",
+    "actor": "you"
+  },
+  {
+    "id": "42-adr-cert",
+    "date": "2027-01-12",
+    "tz": "America/Los_Angeles",
+    "kind": "filing",
+    "status": "open",
+    "source_dkt": 5,
+    "source": "/documents/matter-42/Dkt 05 - Order Setting Initial Case Management Conference and ADR Deadlines (Filed Oct 29 2026).pdf",
+    "title": "File ADR Certification (ADR L.R. 3-5) \u2014 Dkt. 5 Order, Ngwa Nforbi v. Staples The Office Superstore, LLC (N.D. Cal. 5:26-cv-12781-NW). ADR Multi-Option Program (ADR L.R. 3); read \"Dispute Resolution Procedures in the Northern District of California\" first.",
+    "actor": "you"
+  },
+  {
+    "id": "42-initial-disclosures",
+    "date": "2027-01-26",
+    "tz": "America/Los_Angeles",
+    "kind": "deadline",
+    "status": "open",
+    "source_dkt": 5,
+    "source": "/documents/matter-42/Dkt 05 - Order Setting Initial Case Management Conference and ADR Deadlines (Filed Oct 29 2026).pdf",
+    "title": "Serve FRCP 26(a)(1) initial disclosures \u2014 Dkt. 5 Order, Ngwa Nforbi v. Staples The Office Superstore, LLC (N.D. Cal. 5:26-cv-12781-NW).",
+    "actor": "you"
+  },
+  {
+    "id": "42-joint-cmc-statement",
+    "date": "2027-01-26",
+    "tz": "America/Los_Angeles",
+    "kind": "filing",
+    "status": "open",
+    "source_dkt": 5,
+    "source": "/documents/matter-42/Dkt 05 - Order Setting Initial Case Management Conference and ADR Deadlines (Filed Oct 29 2026).pdf",
+    "title": "File Joint Case Management Statement (Standing Order for All Judges of the N.D. Cal.) \u2014 Dkt. 5 Order, Ngwa Nforbi v. Staples The Office Superstore, LLC (N.D. Cal. 5:26-cv-12781-NW).",
+    "actor": "you"
+  },
+  {
+    "id": "42-initial-cmc",
+    "date": "2027-02-02",
+    "time": "09:00",
+    "tz": "America/Los_Angeles",
+    "kind": "cmc",
+    "status": "set",
+    "source_dkt": 5,
+    "source": "/documents/matter-42/Dkt 05 - Order Setting Initial Case Management Conference and ADR Deadlines (Filed Oct 29 2026).pdf",
+    "title": "INITIAL CASE MANAGEMENT CONFERENCE, 9:00 a.m., Courtroom 3, Hon. Noel Wise \u2014 Ngwa Nforbi v. Staples The Office Superstore, LLC (N.D. Cal. 5:26-cv-12781-NW). If the CMC moves, all Dkt. 5 deadlines move with it unless otherwise ordered.",
+    "actor": "you"
   }
 ]
