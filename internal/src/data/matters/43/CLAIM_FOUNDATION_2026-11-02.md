@@ -10,6 +10,22 @@ Citation status tags: **[V]** checked this session against a primary or reliable
 
 ---
 
+## 0. Reconciliation with `CLAIMS_FOUNDATION.md` (concurrent commit 9702b28)
+
+A second memo landed on this branch while this one was being written. It is careful and mostly consistent with this one: Santa Clara Superior Court, The Hertz Corporation as the core defendant, the Fair Chance Act as the lead count, § 290.46 kept separable, HireRight out, and no dollar figures. Where the two memos differ, here is what controls, and why.
+
+| Point | `CLAIMS_FOUNDATION.md` | This memo | Resolution |
+|---|---|---|---|
+| Offer letter | "Its bytes are not in this checkout"; told not to plead its terms | Read from R2 (sha256 a52a2598…) | **This memo.** The letter is in hand. It says "Manager Trainee (Full time)" with **no weekly hours and no start date**, so back pay will need the hours from Hertz's records. Its contingency clause (W1), "company standards" rescission clause (W2), and non-compete term (W4) are now pleadable. |
+| License status | "Not an allegation that the license is currently valid. Only the report's printed dates are in the file." | Report p. 8 prints "C, issued Jul 21, 2026, expires May 12, 2027, **VALID**" | **This memo.** It's on the face of the report. |
+| ICRAA § 1786.16 | "No specific missing item yet ... not pleaded on a hunch" | Specific defect identified: the California disclosure sits outside the signed document, and the signed document bundles five other states' notices and the LA ordinance (W18–W19, page-mapped) | **This memo.** It's a page-level fact, not a hunch. Plead in state court. |
+| Response letter | Send the neutral draft (PLEADING_ARCHITECTURE §D): no § 290.46 mention; asks Hertz to identify every item and conviction | Revised draft (§ 9): disputes the alcohol label, invokes the § 12952(c)(3) extension, objects to registry use, does **not** invite Hertz to name a conviction | **Plaintiff's call. Real disagreement, both defensible.** The other memo's worry is that naming § 290.46 invites a *Donaleski* "independent decision" memo. This memo's worry is that asking Hertz to "identify each conviction" invites a clean re-notice on C1761642, Hertz's strongest lawful ground. Middle option: send the § 9 draft without the § 290.46 paragraph. That keeps both risks low and loses only the willfulness notice. |
+| Hertz Global Holdings | Off the complaint | Name it with entity-specific facts; dismiss voluntarily if discovery shows no role | **Plaintiff's call.** The WOTC/ADP facts (W21) are real but thin. Naming HGH costs a likely motion. Leaving it off loses nothing that can't be added by amendment. If the caption must read "v. Hertz Global Holdings, Inc.," plead agency and integrated-enterprise facts separately for each entity. |
+| Labor Code § 432.7 / § 12952(a)(3)(A) | Out: license actions aren't arrests | Alternative only (Exit A), flagged contested | Keep as an **alternative paragraph inside the Fair Chance count**, not a standalone lead count. Both memos agree it isn't load-bearing. |
+| CRD timing | Open the charge now; request an immediate right-to-sue | After the final decision | Either works. A right-to-sue notice starts the deadline to file the civil action (confirm the current period in Gov. Code § 12965), so getting it early only shortens the runway. Prefer waiting until the final decision is in hand. |
+
+---
+
 ## 1. Bottom line
 
 1. **The best case against Hertz is a trap with two exits, and both are violations.** The November 2 pre-adverse letter names one ground: "[Criminal Information] Alcohols related offenses-Does not meet." The report Hertz reviewed contains **no alcohol-related criminal conviction**. The only alcohol items are DMV administrative actions: a refusal suspension (ended May 19, 2026) and a commercial-license disqualification (ended Nov. 30, 2025). The only criminal conviction flagged for review is the 2018 Santa Clara case (C1761642).
