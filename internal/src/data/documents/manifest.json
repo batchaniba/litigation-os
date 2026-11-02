@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "fileCount": 1767,
-  "totalBytes": 1026749504,
+  "fileCount": 1784,
+  "totalBytes": 1028240563,
   "files": [
     {
       "path": "/documents/_form-library/ao239-blank-template.pdf",
@@ -8837,6 +8837,91 @@
       "path": "/documents/matter-20/Stipulation and Order re Briefing Schedule - Signed Whitman (Filed Oct 26 2026).pdf",
       "size": 387682,
       "sha256": "e6799c33860e606533dd4d6e2c25211cc22095502af57da362e17bc8dff2fcfd"
+    },
+    {
+      "path": "/documents/matter-43/HireRight - CA Pre-Adverse Letter (Nov 2 2026).pdf",
+      "size": 20364,
+      "sha256": "26d293a949dc5b822ed07b61647f804e13ab299bff22e359fd73fd33da8aaa79"
+    },
+    {
+      "path": "/documents/matter-43/HireRight - Urgent Attention Email with Pre-Adverse Attachments (Nov 2 2026).pdf",
+      "size": 42217,
+      "sha256": "0506dd6e9935d067a78c031bf324f298d3df295503462cb7c239dccc6e28a52f"
+    },
+    {
+      "path": "/documents/matter-43/HireRight - FCRA Summary of Consumer Rights (enclosed Nov 2 2026).pdf",
+      "size": 66665,
+      "sha256": "6268bbb43817457889f1df7dab7fe019913d729f59b39203e72f7fa3da5049a0"
+    },
+    {
+      "path": "/documents/matter-43/HireRight - Consumer Report Cover Letter (Nov 2 2026).pdf",
+      "size": 40173,
+      "sha256": "745b4fedf8b829cbc933991ac15fcc71afefc0440ece4f5f54b9ce2b3b0cc3ad"
+    },
+    {
+      "path": "/documents/matter-43/HireRight - Complete Background Report to Hertz (OR-102326-NH87V, Nov 2 2026).pdf",
+      "size": 269923,
+      "sha256": "60aaa70e9496042d8fc8cc43e4af89621fdc41e436a3fdd2541e8a08ab75d011"
+    },
+    {
+      "path": "/documents/matter-43/HireRight - Background Report Delivery Email (Nov 2 2026).pdf",
+      "size": 34477,
+      "sha256": "c12994eb50c4e39426b49b5169672efdd8103d5217edb9da55e784e7c68f7c74"
+    },
+    {
+      "path": "/documents/matter-43/ADP - WOTC Screening Request (Hertz Global Holdings, Oct 22 2026) - Nov 2 file copy.pdf",
+      "size": 39797,
+      "sha256": "2bbc2053de5dc16ab7bc5c71856bedafcfcd09ec83f8d10894385cdca3cabdfe"
+    },
+    {
+      "path": "/documents/matter-43/Hertz Careers - Additional Application Information Request (Oct 22 2026) - Nov 2 file copy.pdf",
+      "size": 46306,
+      "sha256": "01568d48073461ab4a328db7391c8d77d14ae78edabe5f1a0f931770999434ca"
+    },
+    {
+      "path": "/documents/matter-43/Hertz Careers - Manager Trainee Offer Extended (Oct 22 2026) - Nov 2 file copy.pdf",
+      "size": 33273,
+      "sha256": "621d7baaa8cf3a2cee595a93e4fc5be5329a5d3daeda18ff7847396b34d7b0ba"
+    },
+    {
+      "path": "/documents/matter-43/Hertz Careers - Offer Acceptance Confirmation (Oct 22 2026) - Nov 2 file copy.pdf",
+      "size": 32955,
+      "sha256": "005a71683d8ea8229970f26f595f029482838cf475996592030398613d05a155"
+    },
+    {
+      "path": "/documents/matter-43/Hertz Talent Acquisition - Offer Follow-Up (Oct 22 2026) - Nov 2 file copy.pdf",
+      "size": 35020,
+      "sha256": "e7a181288386812dad454a92a6bfe72557fcf4f5c0d1241772755c3e8243b6c1"
+    },
+    {
+      "path": "/documents/matter-43/HireRight - MVR Express Furnishing Notice to Hertz (Oct 23 2026) - Nov 2 file copy.pdf",
+      "size": 37086,
+      "sha256": "1c9dc23150a65cc3e9b9df03973ca18611ab719429cec4cacf9f19d06e8074f5"
+    },
+    {
+      "path": "/documents/matter-43/Hertz - Pre-Boarding Instructions (Req 43711, Oct 23 2026) - Nov 2 file copy.pdf",
+      "size": 41562,
+      "sha256": "8d75c673072e88f35d72c7be6a1fd6fa9ea943df7a78d5ffd93afc25975a5c75"
+    },
+    {
+      "path": "/documents/matter-43/HireRight - Background Verification Request (Oct 23 2026) - Nov 2 file copy.pdf",
+      "size": 46716,
+      "sha256": "154e47d577194d77828f07263e5dcb862af2c2f0581ed188412be00392a6502a"
+    },
+    {
+      "path": "/documents/matter-43/HireRight - Background Verification Consent Forms Email (Oct 23 2026) - Nov 2 file copy.pdf",
+      "size": 35316,
+      "sha256": "ee94d5e83178653dd9ffbc0e36cd8d61b200501dfcbf93eeadb8dc5572a4df7a"
+    },
+    {
+      "path": "/documents/matter-43/iMessage - Kathleen Hertz Interview and Travel Delay (Oct 21-22 2026).jpg",
+      "size": 460898,
+      "sha256": "f90dba7af56441d6676adff2082a220f6ec1f4fa902bb30898d29b1e906b1ee7"
+    },
+    {
+      "path": "/documents/matter-43/iMessage - Kathleen Hertz Palo Alto Offer (Oct 22 2026).jpg",
+      "size": 208311,
+      "sha256": "b15db2a97280d863064fad846457e5133a61b268e9a4cdca7faa4a7161311554"
     }
   ]
 }

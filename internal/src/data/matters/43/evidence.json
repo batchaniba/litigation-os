@@ -1,17 +1,17 @@
 [
   {
     "id": "e01",
-    "label": "Interview invitation and applicant's Oct. 22 travel-delay text; message says 'Thursday 10/21' (calendar conflict). [source: IMG_8701.jpeg]",
-    "path": null,
+    "label": "Interview invitation and the Oct. 22 rain-and-traffic text. Header reads Kathleen Williams. The message says Thursday 10/21 (weekday/date conflict retained). [source: iMessage screenshot]",
+    "path": "/documents/matter-43/iMessage - Kathleen Hertz Interview and Travel Delay (Oct 21-22 2026).jpg",
     "transcript_path": null,
-    "what_it_proves": "iMessage screenshot establishes Kathleen HERTZ contact, interview location 725 Ridder Park Drive, and applicant's traffic message."
+    "what_it_proves": "Screenshot shows the Ridder Park interview address, 725 Ridder Park Drive, San Jose 95131, and the applicant's delay text. It does not show an employment decision."
   },
   {
     "id": "e02",
-    "label": "Kathleen HERTZ's Oct. 22 3:40 p.m. Manager Trainee offer forecast. [source: IMG_8702.jpeg]",
-    "path": null,
+    "label": "Kathleen Williams's Oct. 22, 3:40 p.m. Palo Alto offer forecast, the applicant's reply, and her 'You're welcome.' [source: iMessage screenshot]",
+    "path": "/documents/matter-43/iMessage - Kathleen Hertz Palo Alto Offer (Oct 22 2026).jpg",
     "transcript_path": null,
-    "what_it_proves": "iMessage screenshot states that an offer for the Palo Alto location should arrive."
+    "what_it_proves": "Screenshot states that an offer for Manager Trainee at the Palo Alto location should arrive. Read receipt on the screenshot is 10/22/26."
   },
   {
     "id": "e03",
@@ -50,7 +50,7 @@
   },
   {
     "id": "e08",
-    "label": "ADP October 22 WOTC questionnaire request. [source: Action Required – Complete WOTC screening for your application with <b> -COMPANY.pdf]",
+    "label": "ADP October 22 WOTC questionnaire request. [source: Action Required \u2013 Complete WOTC screening for your application with <b> -COMPANY.pdf]",
     "path": "/documents/matter-43/ADP - WOTC Screening Request (Hertz Global Holdings, Oct 22 2026).pdf",
     "transcript_path": null,
     "what_it_proves": "Hertz Global Holdings, Inc. requested Work Opportunity Tax Credit screening; this is distinct from HireRight employment background screening."
@@ -85,14 +85,14 @@
   },
   {
     "id": "e13",
-    "label": "HireRight submission-received email, Oct. 23 3:04 p.m. [source: We've received your information – further steps may be required.pdf]",
+    "label": "HireRight submission-received email, Oct. 23 3:04 p.m. [source: We've received your information \u2013 further steps may be required.pdf]",
     "path": "/documents/matter-43/HireRight - Submission Received (Request OR-102326-NH87V, Oct 23 2026).pdf",
     "transcript_path": null,
     "what_it_proves": "HireRight confirmed receipt and processing of submitted forms and advised that further information might be required."
   },
   {
     "id": "e14",
-    "label": "HireRight consent-form delivery email thread, Oct. 23 3:03–3:04 p.m. [source: Your The Hertz Corporation Background Verification Consent Form.pdf]",
+    "label": "HireRight consent-form delivery email thread, Oct. 23 3:03\u20133:04 p.m. [source: Your The Hertz Corporation Background Verification Consent Form.pdf]",
     "path": "/documents/matter-43/HireRight - Background Verification Consent Forms Email (Oct 23 2026).pdf",
     "transcript_path": null,
     "what_it_proves": "HireRight sent copies of the screening disclosure, other disclosures, and acknowledgment/authorization and stated a copy of the signed consent went to the requesting organization."
@@ -124,5 +124,68 @@
     "path": "/documents/matter-43/HireRight - MVR Express Furnishing Notice to Hertz (Oct 23 2026).pdf",
     "transcript_path": null,
     "what_it_proves": "HireRight notified applicant that an MVR Express report containing public-record information was provided to Gloria Williams at The Hertz Corporation. The attached PDF is the furnishing notice, not the underlying MVR report contents."
+  },
+  {
+    "id": "e19",
+    "label": "HireRight complete report to Hertz, order OR-102326-NH87V, completed Nov. 2, 2026, 2:29 a.m. Pacific. Adjudication: Client Review Required. [source: HireRight complete report]",
+    "path": "/documents/matter-43/HireRight - Complete Background Report to Hertz (OR-102326-NH87V, Nov 2 2026).pdf",
+    "transcript_path": null,
+    "what_it_proves": "Report was prepared for Kesha Nedio-Casey, Hertz pre-employment, on requisition 43711, Manager Trainee, Palo Alto, package Field (Driver Required). Overall adjudication is Client Review Required. This is the report, not a furnishing notice."
+  },
+  {
+    "id": "e20",
+    "label": "National Sex Offender Registry portion of the Nov. 2 complete report, including the Oct. 30 researcher notes. [source: HireRight complete report]",
+    "path": "/documents/matter-43/HireRight - Complete Background Report to Hertz (OR-102326-NH87V, Nov 2 2026).pdf",
+    "transcript_path": null,
+    "what_it_proves": "Search line says the registry search was performed through the United States Department of Justice. Two Newanforbi name-form subrequests are In Registry and Client Review Required. The Brendan Ngwa subrequest is Not in Registry and meets company standards. Researcher notes say the applicant is listed on the California registry, say the hit was verified by name and date of birth, and quote Penal Code section 290.46's limit on employment use. The report does not say the hit was taken from the Megan's Law website."
+  },
+  {
+    "id": "e21",
+    "label": "MVR section of the Nov. 2 complete report. [source: HireRight complete report]",
+    "path": "/documents/matter-43/HireRight - Complete Background Report to Hertz (OR-102326-NH87V, Nov 2 2026).pdf",
+    "transcript_path": null,
+    "what_it_proves": "MVR Express result is MVR Record Found, Client Review Required. Printed items include a Feb. 20, 2025 chemical-test refusal suspension through May 19, 2026, a Dec. 1, 2024 alcohol implied-consent / CMV test refusal disqualification through Nov. 30, 2025, and a July 3, 2024 unregistered-vehicle conviction that is not an alcohol offense. License number is masked on the report."
+  },
+  {
+    "id": "e22",
+    "label": "Santa Clara court-record section of the Nov. 2 complete report, case C1761642. [source: HireRight complete report]",
+    "path": "/documents/matter-43/HireRight - Complete Background Report to Hertz (OR-102326-NH87V, Nov 2 2026).pdf",
+    "transcript_path": null,
+    "what_it_proves": "One past-seven-years search on Newanforbi, Brendan Ngehsi returned case C1761642, two no-contest felony counts with a Jan. 12, 2018 disposition and a Dec. 2, 2020 parole/release date, adjudication Client Review Required. Other criminal and federal searches on the report are no-record. The pre-adverse letter does not cite this case."
+  },
+  {
+    "id": "e23",
+    "label": "The Hertz Corporation California pre-adverse letter dated Nov. 2, 2026, order OR-102326-NH87V. [source: CA Pre-Adverse Letter]",
+    "path": "/documents/matter-43/HireRight - CA Pre-Adverse Letter (Nov 2 2026).pdf",
+    "transcript_path": null,
+    "what_it_proves": "Hertz says information in the HireRight report may result in no offer. The only ground specified is '[Criminal Information] Alcohols related offenses-Does not meet.' The letter says the decision is preliminary, will not be final for at least five business days from the letter date, and leaves the deadline line as unfilled boilerplate. It does not mention a registry. Addressed to Brendan Ngwanforbi."
+  },
+  {
+    "id": "e24",
+    "label": "HireRight urgent email, Nov. 2, 2026, 10:19 a.m. Pacific, transmitting the pre-adverse letter and the FCRA summary. [source: Urgent Attention email]",
+    "path": "/documents/matter-43/HireRight - Urgent Attention Email with Pre-Adverse Attachments (Nov 2 2026).pdf",
+    "transcript_path": null,
+    "what_it_proves": "HireRight told the applicant that The Hertz Corporation had information about the background check and listed the Summary of Consumer Rights and the CA Pre-Adverse Letter as the files provided."
+  },
+  {
+    "id": "e25",
+    "label": "FCRA Summary of Your Rights enclosed with the Nov. 2 pre-adverse email. [source: Summary of Consumer Rights]",
+    "path": "/documents/matter-43/HireRight - FCRA Summary of Consumer Rights (enclosed Nov 2 2026).pdf",
+    "transcript_path": null,
+    "what_it_proves": "The summary enclosed with the pre-adverse packet is the standard federal summary. It is not a statement of what Hertz found."
+  },
+  {
+    "id": "e26",
+    "label": "Nov. 2, 2026 cover letter from The Hertz Corporation transmitting the consumer report. [source: CoverLetter]",
+    "path": "/documents/matter-43/HireRight - Consumer Report Cover Letter (Nov 2 2026).pdf",
+    "transcript_path": null,
+    "what_it_proves": "Hertz says sending the report does not mean a final employment decision. The letter uses the name Brendan Ngehsi Ngwanforbi and says the copy was sent because the applicant requested it or because company policy is to send a completed copy."
+  },
+  {
+    "id": "e27",
+    "label": "HireRight report-delivery email, Nov. 2, 2026, 2:29 a.m. Pacific. [source: Background Verification Report email]",
+    "path": "/documents/matter-43/HireRight - Background Report Delivery Email (Nov 2 2026).pdf",
+    "transcript_path": null,
+    "what_it_proves": "HireRight emailed a copy of the background report and said The Hertz Corporation had not made a final employment decision. The timestamp matches the report's completion time."
   }
 ]
