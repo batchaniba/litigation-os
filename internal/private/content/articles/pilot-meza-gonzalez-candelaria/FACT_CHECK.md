@@ -103,7 +103,7 @@ Exhibit A page numbers are the internal "Page N of 19" stamp. Complaint cites ar
 | N19 | "We're coming from uh, uh, a party." | Ex. A 00:57:05–00:57:11 (pp. 2–3) | RECORDING | |
 | N20 | "This is not a parking lot."; dash 12:57 a.m.; "like 5-7 minutes" | Ex. A 00:57:46, 00:57:51, 00:58:06 (p. 3) | RECORDING | |
 | N21 | "How much have you had to drink…" / "Zero." | Ex. A 00:58:30–00:58:36 (p. 3) | RECORDING | Kept by user decision |
-| N22 | "What's in that cup right there?" / "Don't drink it. Yeah don't drink it." | Ex. A 00:58:34, 00:58:46 (p. 3) | RECORDING | |
+| N22 | "What's in that cup right there?" / "Don't drink it. Yeah don't drink it," spoken by Newanforbi | Ex. A 00:58:34, 00:58:46 (p. 3) | RECORDING | Both lines attributed to Newanforbi |
 | N23 | Melano cup quotes, including "This is pee." | Ex. A 00:58:49–00:58:59 (p. 3); M-FAC 5:28–6:4 | RECORDING | Kept verbatim |
 | N24 | Meza-Gonzalez: "No I'm not gonna smell that." | Ex. A 00:58:59 bracket (p. 3); 00:59:02 (p. 4) | RECORDING | |
 | N25 | "OK. Leave it there. Put it back." Step-out at 00:59:12 | Ex. A 00:59:07, 00:59:12 (p. 4) | RECORDING | |
@@ -124,7 +124,7 @@ Exhibit A page numbers are the internal "Page N of 19" stamp. Complaint cites ar
 | N40 | "OK. Brendan. Alright then. I'm gonna have you just turn around please…" at 01:11:16; cuffs by 01:11:33 | Ex. A 01:11:16, 01:11:31, 01:11:33 (p. 12); M-FAC 7:11–13 (¶24) | RECORDING | |
 | N41 | Search of person; back seat; cuffs attached to vehicle frame | Ex. A 01:12:54 (p. 12); 01:13:14 (p. 13); 01:15:06 bracket (p. 13) | RECORDING (bracket on frame) | |
 | N42 | Breath-or-blood question; "I don't know. It seems like torture." | Ex. A 01:15:54, 01:16:04, 01:16:19 (p. 13) | RECORDING | |
-| N43 | "Right now you're not refusing…don't want to choose"; one-year-at-least admonition, "even if" sober | Ex. A 01:16:37, 01:16:59 (p. 14); 01:19:18 bracket; 01:20:49 (p. 14) | RECORDING | "Even if" paraphrases 01:20:49 |
+| N43 | "Right now you're not refusing…don't want to choose"; one-year-at-least admonition, even if sober | Ex. A 01:16:37, 01:16:59 (p. 14); 01:19:18 bracket; 01:20:49 (p. 14) | RECORDING | Scare quotes removed from the paraphrase |
 | N44 | "Even as a truck commercial driver…force the DMV's hand?" / "I'm not forcing the DMV to do it, that's their rule." | Ex. A 01:21:41, 01:21:50 (p. 14) | RECORDING | |
 | N45 | Exhibit A transcribes no audible response between "So you're refusing to take a test?" and "OK." | Ex. A 01:22:15, 01:22:21 (p. 15) | UNVERIFIED | Qualified as transcript silence |
 | N46 | "We just have to write what time we last passed him…" / "But he said he was here for seven minutes." / "you want to start your warrant?" | Ex. A 01:23:11, 01:23:16, 01:23:33 (p. 15) | RECORDING | 01:23:20 omitted (supervision status — excluded) |
