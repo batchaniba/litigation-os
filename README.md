@@ -48,9 +48,9 @@ All current and future matters follow the [Stipulation Defense — Plaintiff-Fir
 | Representation | Pro Se / In Propria Persona |
 | Jurisdictions | USDC E.D. Cal., USDC N.D. Cal., San Joaquin Sup. Ct., Alameda Sup. Ct., Sacramento Sup. Ct., Santa Clara Sup. Ct. |
 | Total Matters | 43 |
-| Active / Open | 23 |
+| Active / Open | 22 |
 | — of which Settled | 2 (Matter 22 — Newanforbi v. Pilot Travel Centers LLC, Jul. 14, 2026; 27 — Newanforbi v. Randstad, et al., Notice of Settlement Oct. 26, 2026) |
-| Dismissed / Closed / Abandoned | 20 |
+| Dismissed / Closed / Abandoned | 21 |
 | Aggregate Exposure (Conservative) | ~$1,456,000+ |
 | Aggregate Exposure (Moderate) | ~$3,523,000+ |
 | Aggregate Exposure (Aggressive) | ~$7,793,000+ |
@@ -58,7 +58,7 @@ All current and future matters follow the [Stipulation Defense — Plaintiff-Fir
 <!-- PORTFOLIO:OVERVIEW_TABLE:END -->
 
 <!-- PORTFOLIO:CLOSED_COUNT_NOTE:START -->
-*Of the 20 dismissed/closed/abandoned matters: 7 abandoned, 11 dismissed, 2 otherwise closed (structured `lifecycle` on each matter JSON). See [All Matters](#all-matters) below for the full disposition table. Pre-filing matters stay in the Active table.*
+*Of the 21 dismissed/closed/abandoned matters: 7 abandoned, 11 dismissed, 3 otherwise closed (structured `lifecycle` on each matter JSON). See [All Matters](#all-matters) below for the full disposition table. Pre-filing matters stay in the Active table.*
 <!-- PORTFOLIO:CLOSED_COUNT_NOTE:END -->
 
 > **Housing status:** Homeless since July 2, 2026 — a direct consequence of a retaliatory inter-county parole transfer (Stockton → Santa Clara) imposed immediately after filing Matter 15 (*Newanforbi v. CDCR, et al.*). The transfer caused loss of Stockton family housing; Matters 3, 9, and 19 are also potential retaliatory predicate acts.
@@ -84,12 +84,12 @@ Arising from a November 1, 2024 CHP encounter on I-580. Officers arrested Plaint
 
 - **Matter 1** (USDC E.D. Cal.): Federal §1983 against CHP officers; adverse F&R issued April 20, 2026 (Magistrate CSK recommends MTD GRANTED WOLA — 4th/14th Amendment, qualified immunity); District Judge DC adoption pending. If adopted, Matter 2 (Alameda, stayed) and the new Matter 32 N.D. Cal. filing become the primary vehicles.
 - **Matter 2** (Alameda Sup. Ct.): Parallel state tort action (False Imprisonment, Battery, Bane Act); STAYED pending Matter 1 District Judge ruling.
-- **Matter 7** (USDC E.D. Cal.): Federal §1983 against DMV Hearing Officer Candelaria and DMV Director Gordon; **DISMISSED WITHOUT PREJUDICE** by notice filed August 15, 2026 (FRCP 41(a)(1)(A)(i)), mooting the June 15 F&R and any objections. Claims were refiled as Matter 33 (N.D. Cal. 3:26-cv-08272-LJC).
+- **Matter 7** (USDC E.D. Cal.): Federal §1983 against DMV Hearing Officer Candelaria and DMV Director Gordon; **DISMISSED WITHOUT PREJUDICE** by notice filed August 15, 2026 (FRCP 41(a)(1)(A)(i)), mooting the June 15 F&R and any objections. Claims were refiled as Matter 33 (N.D. Cal. 3:26-cv-08272-RFL, formerly LJC).
 - **Matter 8** (Sacramento Sup. Ct.): State Writ of Administrative Mandate challenging the same void APS decision — **ABANDONED** after the July 17, 2026 fee-waiver hearing (non-appearance) and the ~July 27, 2026 fee-payment deadline lapsed. PDFs live under Matter 33 (`matter-33/from-08/`).
-- **Matter 20** (Alameda Sup. Ct.): State Writ of Mandate against CHP. After the August 28, 2026 hearing, Judge Whitman entered an August 29 order (notice of entry August 31): Count 1 overruled and proceeds; Counts 2–3 out without leave; Count 4 optional leave to amend by September 20, 2026. Dutra and Paul were dismissed by stipulation; live respondents are CHP and Serrato. CMC is October 28, 2026, 4:00 p.m., Dept. 25.
-- **Matter 24** (USDC N.D. Cal.): §1983 against CHP Captain G. Serrato for arbitrary U Visa certification denial and retaliation; IFP granted June 29, 2026 (Krishnan screening order, now cited across the cluster). Sep. 11, 2026: Clerk's Notice of Impending Reassignment (Dkt. 28) — the case leaves Mag. Krishnan for a district judge; all Krishnan hearing dates vacated, including the Sep. 30 MTD hearing (Dkt. 21) — re-notice to follow; case-number suffix will change from -ASK. CMC continued per Dkt. 25 (no new date). Listed as related case on the Matter 32/33 JS-44s.
-- **Matter 32** (USDC N.D. Cal.): *Nforbi v. Meza-Gonzalez & Melano*, **3:26-cv-08271-PHK** (related/reassigned as **4:26-cv-08271-ASK**); docketed August 10, 2026. Operative pleading is the August 17 FAC (Dkt. 5). Melano has been served. Signed Meza substituted-service return is in hand (Fischer / Run With It, Aug. 27 on Kim S. - H.R. at CHP Modesto) and still needs to be filed. A Civil L.R. 7-11 motion asking DAG Li to accept service was filed September 3 (Dkt. 13). Also owns the Meza-Gonzalez / CHP-cluster docket PDFs from Matters 1, 2, 20, and 24 under `matter-32/from-01|02|20|24/` and the new N.D. Cal. filing set under `matter-32/ndcal/`.
-- **Matter 33** (USDC N.D. Cal.): *Nforbi v. Candelaria, et al.*, **3:26-cv-08272-LJC**; docketed August 10, 2026. Operative pleading is the August 17 FAC (Dkt. 6). Fiel Dizon Tigno (Supervising DAG) is PACER lead; William J. McMahon signed the September 4 answer to superseded Dkt. 1 (ECF No. 11). Plaintiff's motion to strike that answer is on file as Dkt. 17 (PACER Event Filed Sep. 9; CL entered Sep. 10). Opposition due September 23; reply September 30; hearing stacked on the November 12 1:30 p.m. CMC. McMahon asked five extra opposition days on September 18; Plaintiff remains silent — September 23 is not enlarged. Dkt. 12 sets defendants' magistrate consent/declination for September 22 (Dkt. 14 is a misfile — disregard). Name-conform granted Dkt. 19 (September 16) on the Dkt. 18 stipulation (filed September 14). Krishnan declined to relate the case to Serrato (Dkt. 13). Also owns the Nov. 1 / APS incident evidence (`matter-33/incident/`), Matter 7 PDFs (`from-07/`), Matter 8 PDFs (`from-08/`), the June 15, 2026 Candelaria F&R (`opinions/`), and the N.D. Cal. filing set under `matter-33/ndcal/`.
+- **Matter 20** (Alameda Sup. Ct.): State Writ of Mandate against CHP. After the August 28, 2026 hearing, Judge Whitman entered an August 29 order (notice of entry August 31): Count 1 overruled and proceeds; Counts 2–3 out without leave; Count 4 optional leave to amend by September 20, 2026. Dutra and Paul were dismissed by stipulation; live respondents are CHP and Serrato. CMC is November 4, 2026, 4:00 p.m., Dept. 25 (continued from October 28). Opening writ brief is due November 13, 2026; hearing January 8, 2027.
+- **Matter 24** (USDC N.D. Cal.): §1983 against CHP Captain G. Serrato for arbitrary U Visa certification denial and retaliation; IFP granted June 29, 2026 (Krishnan screening order, now cited across the cluster). **3:26-cv-05953-CRB**, Judge Charles R. Breyer (Dkt. 29, September 14, 2026; formerly 4:26-cv-05953-ASK). Motion to dismiss November 20, 2026, 10:00 a.m. Zoom (Dkt. 30). CMC continued per Dkt. 25. Listed as a related case on the Matter 32 and 33 civil cover sheets.
+- **Matter 32** (USDC N.D. Cal.): *Nforbi v. Meza-Gonzalez & Melano*, **4:26-cv-08271-CRB** (Dkt. 29, October 30, 2026; formerly 4:26-cv-08271-ASK and 3:26-cv-08271-PHK), Judge Charles R. Breyer. Docketed August 10, 2026. Operative pleading is the August 17 FAC (Dkt. 5). Hearings and trial dates are vacated. Dkt. 22 briefing is unchanged (opposition November 9, reply November 16). Motions must be renoticed before Judge Breyer. Also owns the Meza-Gonzalez / CHP-cluster docket PDFs from Matters 1, 2, 20, and 24 under `matter-32/from-01|02|20|24/` and the N.D. Cal. filing set under `matter-32/ndcal/`.
+- **Matter 33** (USDC N.D. Cal.): *Nforbi v. Candelaria, et al.*, **3:26-cv-08272-RFL** (formerly 3:26-cv-08272-LJC), Judge Rita F. Lin. Docketed August 10, 2026. Operative pleading is the August 17 FAC (Dkt. 6). Defendants answered the FAC on October 27, 2026 (Dkt. 26). Rule 26(f) / ADR deadline November 18; case-management statement December 2; CMC December 9, 2026. Also owns the Nov. 1 / APS incident evidence (`matter-33/incident/`), Matter 7 PDFs (`from-07/`), Matter 8 PDFs (`from-08/`), the June 15, 2026 Candelaria F&R (`opinions/`), and the N.D. Cal. filing set under `matter-33/ndcal/`.
 
 <!-- PORTFOLIO:CLUSTER_HEADING_2:START -->
 <a id="cluster-2"></a>
@@ -132,11 +132,11 @@ Cluster 3 centers on employer-side Penal Code § 290.46(j)(2)(E) claims and rela
 ### Cluster 4 — Administrative Writs & Habeas Corpus (Matters 9–10, 19)
 <!-- PORTFOLIO:CLUSTER_HEADING_4:END -->
 
-Three equitable proceedings seeking court orders directing CDCR to act — no tort damages sought. Two are now closed; one remains active:
+Three equitable proceedings seeking court orders directing CDCR to act — no tort damages sought. Matters 9 and 10 closed on orders. Matter 19 was reported no longer active on November 2, 2026; no closing order is in the file.
 
-- **Matter 9** (Sacramento Sup. Ct., 26WM000028): Writ of Mandate — **CLOSED**. Demurrer sustained without leave to amend May 29, 2026 (Hon. James P. Arguelles, Dept. 13A): CDCR has no duty under Pen. Code §3008 to conduct an individualized EDC assessment where §3000(b)(2)(B) mandates a 10-year parole term; habeas corpus is the correct vehicle. The substantive claim is live in Matter 19.
+- **Matter 9** (Sacramento Sup. Ct., 26WM000028): Writ of Mandate — **CLOSED**. Demurrer sustained without leave to amend May 29, 2026 (Hon. James P. Arguelles, Dept. 13A): CDCR has no duty under Pen. Code §3008 to conduct an individualized EDC assessment where §3000(b)(2)(B) mandates a 10-year parole term; habeas corpus is the correct vehicle. That claim was carried in Matter 19. USER REPORT November 2, 2026: Matter 19 is no longer active, and no C2604791 order is in the file.
 - **Matter 10** (Santa Clara Sup. Ct., C2602632): Habeas Corpus — **CLOSED**. Petition denied without prejudice April 27, 2026 (exhaustion; PC §3008(d)(2) certification required).
-- **Matter 19** (Santa Clara Sup. Ct., C2604791): Habeas Corpus — **ACTIVE**. Seeks immediate and unconditional discharge from parole; filed April 3, 2026; Order Extending Time issued July 2, 2026 (Hon. Robert Hawk) setting a ruling deadline of August 1, 2026. **That deadline lapsed without a ruling** — as of August 7, 2026 Judge Hawk has not ruled and no further extension order has issued. The petition remains pending and under submission; it has not been denied, dismissed, or set for an Order to Show Cause. An HC-004 request-for-ruling packet was prepared August 7, 2026 and is ready to file.
+- **Matter 19** (Santa Clara Sup. Ct., C2604791): Habeas Corpus — **NO LONGER ACTIVE**. Seeks immediate and unconditional discharge from parole; filed April 3, 2026; Order Extending Time issued July 2, 2026 (Hon. Robert Hawk) setting a ruling deadline of August 1, 2026. The HC-004 notice was filed in person September 1, 2026. USER REPORT November 2, 2026: the matter is no longer active. No grant, denial, dismissal, or withdrawal order is in the file, so the disposition is not recorded.
 
 <!-- PORTFOLIO:CLUSTER_HEADING_5:START -->
 <a id="cluster-5"></a>
@@ -194,7 +194,6 @@ Standalone retail civil-rights matter arising from an August 25, 2026 consumer r
 <!-- PORTFOLIO:ACTIVE_MATTERS:START -->
 | # | Caption | Case No. | Court | Type | Status |
 |---|---|---|---|---|---|
-| 19 | Newanforbi v. Macomber | C2604791 | Santa Clara Sup. Ct. | State | HC-004 filed Sep. 1 — ruling not verified |
 | 20 | Newanforbi v. California Highway Patrol, et al. | 26CV191136 | Alameda Sup. Ct. | State | CMC Nov. 4; writ brief Nov. 13; hearing Jan. 8 |
 | 22 | Newanforbi v. Pilot Travel Centers LLC | STK-CV-UWT-2026-0007649 | San Joaquin Sup. Ct. | State | Settled Jul. 14, 2026 — terms confidential |
 | 24 | Newanforbi v. Serrato | 3:26-cv-05953-CRB | USDC N.D. Cal. (San Francisco Division) | Federal | MTD Nov. 20 10:00 a.m. Zoom (Breyer); CMC continued |
@@ -205,7 +204,7 @@ Standalone retail civil-rights matter arising from an August 25, 2026 consumer r
 | 29 | Newanforbi v. Amazon.com Services, LLC | 4:26-cv-09249-ASK | USDC N.D. Cal. (Oakland; formerly 3:26-cv-09249-ASK) | Federal | 26(f) Nov. 6; MTD Nov. 18; CMC Dec. 1 |
 | 30 | Newanforbi v. Moua, et al. | TBD | USDC N.D. Cal. | Federal | Pre-filing — Moua v9 ready; GCA (a)(2) window |
 | 31 | Newanforbi v. First Advantage LLC | TBD | San Joaquin Sup. Ct. (anticipated) | State | Pre-filing — no demand or complaint yet |
-| 32 | Nforbi v. Meza-Gonzalez, et al | 4:26-cv-08271-ASK | USDC N.D. Cal. (Oakland; 4:26-cv-08271-ASK, formerly 3:26-cv-08271-PHK; related Serrato 3:26-cv-05953-CRB and Candelaria 3:26-cv-08272-RFL, formerly LJC) | Federal | Reassigning; Dkt 22 opp. Nov. 9 (not on ECF) |
+| 32 | Nforbi v. Meza-Gonzalez, et al | 4:26-cv-08271-CRB | USDC N.D. Cal. (Oakland prefix; 4:26-cv-08271-CRB, formerly ASK / 3:26-cv-08271-PHK; related Serrato 3:26-cv-05953-CRB and Candelaria 3:26-cv-08272-RFL) | Federal | Breyer (CRB); Dkt 22 opp. Nov. 9; re-notice MTD |
 | 33 | Nforbi v. Candelaria et al. | 3:26-cv-08272-RFL | USDC N.D. Cal. (San Francisco Div.) | Federal | FAC answered (Dkt 26); 26(f) Nov. 18; CMC Dec. 9 |
 | 34 | Newanforbi v. Counseling and Psychotherapy Center, Inc., et al. | TBD | USDC N.D. Cal. (San Jose Div.) / Santa Clara Sup. Ct. | Federal | Pre-filing — intake & compliance monitoring |
 | 35 | Ngwa Nforbi v. Ross Stores, Inc., et al. | 26CV501995 | Santa Clara Sup. Ct. (Downtown / First Street) | State | Ross answered; discovery responses Nov. 17 |
@@ -246,6 +245,7 @@ Standalone retail civil-rights matter arising from an August 25, 2026 consumer r
 | 16 | Newanforbi v. Rojo | TBD (San Joaquin Sup. Ct.) | San Joaquin Sup. Ct. | Abandoned — voluntarily dismissed |
 | 17 | Newanforbi v. Maloney et al. | 2:26-cv-00194-DAD-SCR | USDC E.D. Cal. | Dismissed with prejudice — Jun. 29, 2026 |
 | 18 | Newanforbi v. Barocio | 2:26-cv-00191-DJC-CSK (PC) | USDC E.D. Cal. | Dismissed with prejudice — Jun. 29, 2026 |
+| 19 | Newanforbi v. Macomber | C2604791 | Santa Clara Sup. Ct. | Closed — no longer active (report Nov. 2) |
 | 21 | Newanforbi v. Rojo et al. | 2:26-cv-00193-DC-CKD | USDC E.D. Cal. | Dismissed with prejudice — Jun. 29, 2026 |
 | 23 | Newanforbi v. Macy's Inc. et al. | TBD | San Joaquin Sup. Ct. | Abandoned — no adverse action occurred |
 <!-- PORTFOLIO:CLOSED_MATTERS:END -->
@@ -261,23 +261,23 @@ Standalone retail civil-rights matter arising from an August 25, 2026 consumer r
 <!-- PORTFOLIO:UPCOMING_DEADLINES:START -->
 | Date | Matter | Event |
 |---|---|---|
-| Sep. 17, 2026 | 32 | FILE — summons return / CCP § 415.20(b) declaration + Exhibit A USPS receipt + POS being refiled in Nforbi v. Meza-Gonzalez et al. (4:26-cv-08271-ASK). USER REPORT Oct. 28, 2026. Sep. 17 mailing executed |
-| Oct. 1, 2026 | 19 | Habeas ruling calendar (computed) — Newanforbi v. Macomber (C2604791). CRC 4.551(a)(6)(B) runs 30 days from the September 1, 2026 in-person filing of the… |
+| Sep. 17, 2026 | 32 | FILE — summons return / CCP § 415.20(b) declaration + Exhibit A USPS receipt + POS being refiled in Nforbi v. Meza-Gonzalez et al. (4:26-cv-08271-CRB). USER REPORT Oct. 28, 2026. Sep. 17 mailing executed |
 | Oct. 26, 2026 | 38 | IMPORTANT — DUE — Renewed IFP motion (complete AO 239: monthly income, monthly expenses, assets, all money received in the past 12 months) OR pay the filing fee — Brendan Ngwa Nforbi v. Swift Transportation Company (E.D. |
 | Oct. 29, 2026 | 25 | CONTINGENT — FedEx responses to Plaintiff's Interrogatories, RFAs, and RFPs (Set One). Not yet served by mail as of Sep. 25, 2026. |
 | Oct. 29, 2026 | 36 | DEADLINE — USM service packet and Notice of Submission in Brendan Ngwa Nforbi v. AT&T Mobility Services LLC (E.D. Cal. 2:26-cv-03314-DJC-AC (PS)). Within 15 days of Dkt. 4 (Oct. 14): deliver to the U.S. |
 | Nov. 1, 2026 | 2 | CCP §335.1 two-year statute of limitations (computed) backstop, running from the Nov. 1, 2024 incident. (1) Matter 1's Fourth Amendment §1983 claim (borrowed… |
 | Nov. 2, 2026 | 5, 28 | EX PARTE HEARING — Application for Order Dismissing First Amended Complaint and Entering Judgment of Dismissal, Newanforbi v. Palacios et al. (San Joaquin Sup. Ct. |
 | Nov. 4, 2026 | 20 | Case Management Conference — Newanforbi v. CHP et al. (26CV191136), Nov. 4, 2026, 4:00 p.m., Dept. 25, Rene C. Davidson Courthouse, Hon. Jenna M. Whitman. USER REPORT Oct. 28, 2026: continued from Oct. 28. |
+| Nov. 4, 2026 | 37 | WATCH — Home Depot answer or Rule 12 motion due, Ngwa Nforbi v. Home Depot U.S.A., Inc. (E.D. Cal. 2:26-cv-03310-TLN-AC). Served Oct. 14, 2026 → 21 days (Rule 12(a)(1)(A)(i)). |
 | Nov. 5, 2026 | 25 | WATCH — FedEx responses to Plaintiff's Interrogatories, RFAs, and RFPs (Set One) due, Newanforbi v. Federal Express Corporation (E.D. Cal. 2:26-cv-02881-DAD-SCR). |
 | Nov. 6, 2026 | 29 | Rule 26(f) / ADR L.R. 3-5 meet-and-confer, Fri. Nov. 6, 2026, 1:00–1:30 p.m. PT (invite sent as 3:00–3:30 p.m. Central), by Microsoft Teams — Newanforbi v. Amazon.com Services, LLC et al. (4:26-cv-09249-ASK). |
-| Nov. 9, 2026 | 32 | Opposition to Dkt. 22 motion to dismiss/strike due Nov. 9, 2026 — Nforbi v. Meza-Gonzalez et al. (4:26-cv-08271-ASK). Date set in the Dkt. 22 docket text (responses due 11/9/2026; replies 11/16/2026). |
+| Nov. 9, 2026 | 32 | Opposition to Dkt. 22 motion to dismiss/strike due Nov. 9, 2026 — Nforbi v. Meza-Gonzalez et al. (4:26-cv-08271-CRB). Date set in the Dkt. 22 docket text (responses due 11/9/2026; replies 11/16/2026). |
 | Nov. 10, 2026 | 29 | Deadline to file ADR Certification (ADR L.R. 3) and to meet and confer regarding initial disclosures, early settlement, ADR process selection, and a discovery… |
 | Nov. 13, 2026 | 20 | Opening memorandum in support of the petition for writ of mandate due Nov. 13, 2026 (hearing Jan. 8, 2027) — Newanforbi v. CHP et al. (26CV191136). Set by the Oct. 26, 2026 Stipulation and Order re Briefing Schedule. |
 | Nov. 13, 2026 | 29 | OPTIONAL: last day to request a Zoom appearance for the Nov. 18 Dkt. 19 MTD hearing. Krishnan Civil Standing Order (8/20/26) p.2: law-and-motion hearings are in person |
 | Nov. 16, 2026 | 20 | Hand-deliver courtesy copy of the opening memorandum to Dept. 25 (Rene C. Davidson Courthouse) within one court day of filing — Newanforbi v. CHP et al. (26CV191136). Order of Oct. 26, 2026. |
 | Nov. 16, 2026 | 24 | Email appearance names to crbcrd@cand.uscourts.gov |
-| Nov. 16, 2026 | 32 | WATCH — Defendants' reply in support of Dkt. 22 motion to dismiss/strike due Nov. 16, 2026 per Dkt. 22 docket text — Nforbi v. Meza-Gonzalez et al. (4:26-cv-08271-ASK). |
+| Nov. 16, 2026 | 32 | WATCH — Defendants' reply in support of Dkt. 22 motion to dismiss/strike due Nov. 16, 2026 per Dkt. 22 docket text — Nforbi v. Meza-Gonzalez et al. (4:26-cv-08271-CRB). |
 | Nov. 17, 2026 | 28 | Joint status conference report due Nov. 17, 2026 (monthly through May 17, 2027) — Newanforbi v. Smith / HOPE (3:26-cv-07504-LJC). USER REPORT of the Oct. 27, 2026 order deferring the MTD pending San Joaquin judgment. |
 | Nov. 17, 2026 | 35 | OPEN TASK — Matter 35: serve verified responses to Ross Form Interrogatories, Special Interrogatories (27), and RFPs (24), Set One (served Oct 15 by mail + email; 30 days + 2 court days, CCP § 1010.6). |
 | Nov. 18, 2026 | 29 | Hearing on Dkt. 19 motion to dismiss — Newanforbi v. Amazon.com Services, LLC et al. (4:26-cv-09249-ASK), Nov. 18, 2026, 1:30 p.m., Courtroom 4, 3rd Floor, Hon. Ajay S. Krishnan. |
@@ -285,7 +285,7 @@ Standalone retail civil-rights matter arising from an August 25, 2026 consumer r
 | Nov. 20, 2026 | 24 | MTD FAC (Dkt. 18) Zoom before Judge Breyer |
 | Nov. 24, 2026 | 29 | Deadline to make initial disclosures (Fed. R. Civ. P. 26(a)(1)) and to file the Joint Case Management Statement (Standing Order for All Judges of the Northern… |
 | Nov. 24, 2026 | 29 | OPTIONAL: request that the Dec. 1 initial CMC be held in person (in the Joint CMC Statement or a separate filing no later than seven days before the conference). Krishnan Civil Standing Order (8/20/26) p.4. |
-| Nov. 25, 2026 | 32 | Case Management Statement due — Nforbi v. Meza-Gonzalez et al. (4:26-cv-08271-ASK), per Sep. 28 PACER true-up. |
+| Nov. 25, 2026 | 32 | Case Management Statement due — Nforbi v. Meza-Gonzalez et al. (4:26-cv-08271-CRB), per Sep. 28 PACER true-up. |
 | Nov. 28, 2026 | 29 | WATCH: Amazon CCPA request-to-know response due (Civ. Code §1798.130(a)(2)(A): 45 calendar days from receipt; extendable once by 45 days with notice). Letter 3 emailed Oct. 14, 2026, 2:48 p.m. |
 | Dec. 1, 2026 | 29 | Initial Case Management Conference, 1:30 p.m. by Zoom (cand.uscourts.gov/ask) before Magistrate Judge Ajay S. Krishnan — Newanforbi v. Amazon.com Services, LLC… |
 | Dec. 2, 2026 | 33 | Deadline to make initial disclosures and file the Case Management Statement — Nforbi v. Candelaria et al. (3:26-cv-08272-RFL), per Sep. 28 PACER true-up. |
@@ -402,7 +402,7 @@ Plaintiff is representing himself pro se across all 43 matters. The figures belo
 
 11. **Consumer Reporting Agency Liability for Registry-Flagged Reports (Matter 31)** — First Advantage LLC generated and transmitted the registry-flagged background reports and every pre-adverse/adverse notice underlying both Matter 25 (FedEx, March 2025) and Matter 26 (UPS, July 2024) — an identical notice template and cadence, eight months apart, for two different employers — yet was never itself joined as a defendant in either matter, unlike the comparable vendors elsewhere in the same cluster (Accurate Background, Matter 29; HireRight, the abandoned Matter 23). This theory targets the vendor's own furnishing conduct under FCRA §§1681b(b) and 1681e(b) and ICRAA, rather than the employers' use of the reports, and is pled as additive to — not duplicative of — Matters 25 and 26.
 
-12. **N.D. Cal. Refile of the Nov. 1 / APS Cluster (Matters 32 & 33)** — Both matters were docketed August 10, 2026 as **3:26-cv-08271-PHK** (Matter 32; related/reassigned as 4:26-cv-08271-ASK) and **3:26-cv-08272-LJC** (Matter 33). Matter 7 was dismissed without prejudice on August 15, 2026. Matter 32 brings six §1983 counts against the arresting CHP officers under the Ngwa Nforbi name form on the DS-367; Matter 33 brings the APS structural-bias / vacatur theory against Candelaria and Gordon. Both plead compensatory damages exceeding $214,000. Portfolio damages rows for 32/33 remain $0 so the shared CDL wage-loss period is not triple-counted against Matters 1, 2, and 7.
+12. **N.D. Cal. Refile of the Nov. 1 / APS Cluster (Matters 32 & 33)** — Both matters were docketed August 10, 2026. Matter 32 is now **4:26-cv-08271-CRB** (Judge Breyer; Dkt. 29, October 30, 2026; formerly ASK / 3:26-cv-08271-PHK). Matter 33 is now **3:26-cv-08272-RFL** (Judge Rita F. Lin; formerly LJC). Matter 7 was dismissed without prejudice on August 15, 2026. Matter 32 brings six §1983 counts against the arresting CHP officers under the Ngwa Nforbi name form on the DS-367; Matter 33 brings the APS structural-bias / vacatur theory against Candelaria and Gordon. Both plead compensatory damages exceeding $214,000. Portfolio damages rows for 32/33 remain $0 so the shared CDL wage-loss period is not triple-counted against Matters 1, 2, and 7.
 
 [↑ Contents](#contents)
 

@@ -6,7 +6,7 @@
     "kind": "deadline",
     "status": "open",
     "source_dkt": 16,
-    "title": "FILE — summons return / CCP § 415.20(b) declaration + Exhibit A USPS receipt + POS being refiled in Nforbi v. Meza-Gonzalez et al. (4:26-cv-08271-ASK). USER REPORT Oct. 28, 2026. Sep. 17 mailing executed; prior FILE clock was still open (dkt null). Do not invent a filing.",
+    "title": "FILE — summons return / CCP § 415.20(b) declaration + Exhibit A USPS receipt + POS being refiled in Nforbi v. Meza-Gonzalez et al. (4:26-cv-08271-CRB). USER REPORT Oct. 28, 2026. Sep. 17 mailing executed; prior FILE clock was still open (dkt null). Do not invent a filing.",
     "actor": "you",
     "source": "/documents/matter-32/ndcal/Declaration of Mailing - CCP 415.20(b) Follow-Up to Dkt 16 - Meza-Gonzalez (N.D. Cal. 4-26-cv-08271-ASK) (September 17, 2026).pdf",
     "note": "Dkt. 21 (Oct. 26) Melano summons return drew a Dkt. 21 electronic-filing-error notice Oct. 28 (no title page, Civ. L.R. 3-4); Plaintiff refiled it as Dkt. 24 (Oct. 28, 9:58 a.m.) with the Melano proof of service attached. Dkt. 24 is the Melano return. This clock tracks the Meza-Gonzalez CCP § 415.20(b) follow-up declaration; no ECF entry for that declaration found through Oct. 28. Plaintiff to confirm whether Meza-Gonzalez's return still needs filing."
@@ -66,9 +66,9 @@
     "kind": "deadline",
     "status": "open",
     "source_dkt": null,
-    "title": "Case Management Statement due — Nforbi v. Meza-Gonzalez et al. (4:26-cv-08271-ASK), per Sep. 28 PACER true-up.",
+    "title": "Case Management Statement due — Nforbi v. Meza-Gonzalez et al. (4:26-cv-08271-CRB), per Sep. 28 PACER true-up.",
     "actor": "you",
-    "note": "Dkt. 25 (Oct. 28) vacated hearing dates before the magistrate judge; the CMC and this statement date may be reset on reassignment. Keep open until the new judge's order issues."
+    "note": "Dkt. 29 (Oct. 30) vacated hearings and trial dates but left ADR and discovery-cutoff deadlines unchanged. The case-management statement is a filing deadline, not a hearing. Keep it open unless a later Breyer order resets it."
   },
   {
     "id": "32-deadline-mtd-opposition",
@@ -78,8 +78,8 @@
     "status": "open",
     "source_dkt": 22,
     "actor": "you",
-    "title": "Opposition to Dkt. 22 motion to dismiss/strike due Nov. 9, 2026 — Nforbi v. Meza-Gonzalez et al. (4:26-cv-08271-ASK). Date set in the Dkt. 22 docket text (responses due 11/9/2026; replies 11/16/2026). Plaintiff emailed a courtesy copy of the opposition and proof of service to DOJ on Oct. 27, 2026, but no ECF entry for the opposition appears in the NEFs through Oct. 28, 4:00 p.m. PT.",
-    "note": "Keep OPEN until the opposition is on the docket. A courtesy email to counsel is not a filing (Civ. L.R. 5-1). Dkt. 25 reassignment notice vacated the hearing date, not the L.R. 7-3 briefing dates; re-check once the new judge re-notices."
+    "title": "Opposition to Dkt. 22 motion to dismiss/strike due Nov. 9, 2026 — Nforbi v. Meza-Gonzalez et al. (4:26-cv-08271-CRB). Date set in the Dkt. 22 docket text (responses due 11/9/2026; replies 11/16/2026). Plaintiff emailed a courtesy copy of the opposition and proof of service to DOJ on Oct. 27, 2026, but no ECF entry for the opposition appears in the NEFs through Oct. 28, 4:00 p.m. PT.",
+    "note": "Keep OPEN until the opposition is on the docket. A courtesy email to counsel is not a filing (Civ. L.R. 5-1). Dkt. 29 left existing motion briefing unchanged. The hearing must be renoticed before Judge Breyer."
   },
   {
     "id": "32-mtd-reply",
@@ -89,7 +89,7 @@
     "status": "open",
     "source_dkt": 22,
     "actor": "opposing",
-    "title": "WATCH — Defendants' reply in support of Dkt. 22 motion to dismiss/strike due Nov. 16, 2026 per Dkt. 22 docket text — Nforbi v. Meza-Gonzalez et al. (4:26-cv-08271-ASK).",
+    "title": "WATCH — Defendants' reply in support of Dkt. 22 motion to dismiss/strike due Nov. 16, 2026 per Dkt. 22 docket text — Nforbi v. Meza-Gonzalez et al. (4:26-cv-08271-CRB).",
     "tz": "America/Los_Angeles"
   },
   {
@@ -103,16 +103,27 @@
     "source_dkt": 25,
     "actor": "court",
     "title": "Dkt. 22 motion-to-dismiss hearing originally noticed for Dec. 9, 2026, 1:30 p.m., Oakland, Courtroom 4, 3rd Floor (Dkt. 22 docket text) — VACATED by Dkt. 25 Clerk's Notice of Impending Reassignment (Oct. 28, 2026): all hearing dates before the magistrate judge vacated, to be re-noticed before the assigned district judge.",
-    "retired_reason": "Dkt. 25 (Oct. 28, 2026) vacated all hearing dates before the current magistrate judge. Awaiting separate reassignment notice and re-notice."
+    "retired_reason": "Vacated by Dkt. 25 (Oct. 28, 2026) and again by Dkt. 29 (Oct. 30, 2026). Motions must be renoticed before Judge Breyer."
   },
   {
     "id": "32-reassignment-watch",
     "date": null,
     "kind": "deadline",
-    "status": "contingent",
-    "source_dkt": 25,
+    "status": "satisfied",
+    "source_dkt": 29,
     "actor": "court",
-    "title": "WATCH — Separate clerk's notice naming the district judge on reassignment, then re-noticed Dkt. 22 hearing and any reset CMC/CMS dates — Nforbi v. Meza-Gonzalez et al. (4:26-cv-08271-ASK). Dkt. 25 (Oct. 28, 2026).",
-    "note": "Undated contingent. Do not invent the judge or a hearing date."
+    "title": "WATCH — Separate clerk's notice naming the district judge on reassignment, then re-noticed Dkt. 22 hearing and any reset CMC/CMS dates — Nforbi v. Meza-Gonzalez et al. (4:26-cv-08271-CRB). Dkt. 29 (Oct. 30, 2026).",
+    "note": "Satisfied by Dkt. 29: case assigned to Judge Charles R. Breyer as 4:26-cv-08271-CRB. The order names Judge Araceli Martinez-Olguin as the outgoing judge; the live case number before this order was ASK / Krishnan. Recorded the NEF as written.",
+    "retired_reason": "Dkt. 29 (Oct. 30, 2026, 2:26 p.m.) named Judge Charles R. Breyer and changed the case number to 4:26-cv-08271-CRB."
+  },
+  {
+    "id": "32-mtd-renotice",
+    "date": null,
+    "kind": "deadline",
+    "status": "contingent",
+    "source_dkt": 29,
+    "actor": "court",
+    "title": "WATCH — Dkt. 22 motion (and any other pending motion) must be renoticed for hearing before Judge Charles R. Breyer — Nforbi v. Meza-Gonzalez et al. (4:26-cv-08271-CRB). Dkt. 29 (Oct. 30, 2026). Briefing dates unchanged.",
+    "note": "Undated contingent. Do not invent a Breyer hearing date."
   }
 ]
