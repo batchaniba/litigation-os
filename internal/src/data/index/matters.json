@@ -1,6 +1,6 @@
 {
   "generated": true,
-  "today": "2026-10-28",
+  "today": "2026-11-02",
   "matters": [
     {
       "number": 1,
@@ -51,11 +51,11 @@
         "id": "02-deadline-1",
         "date": "2026-11-01",
         "kind": "deadline",
-        "status": "open",
+        "status": "overdue",
         "title": "CCP §335.1 two-year statute of limitations (computed) backstop, running from the Nov. 1, 2024 incident. (1) Matter 1's Fourth Amendment §1983 claim (borrowed…",
         "source_dkt": null
       },
-      "overdue": false,
+      "overdue": true,
       "last_updated": "2026-09-16",
       "files": [
         "claims.json",
@@ -1210,11 +1210,11 @@
         "id": "36-usm-packet-and-notice",
         "date": "2026-10-29",
         "kind": "deadline",
-        "status": "open",
+        "status": "overdue",
         "title": "DEADLINE — USM service packet and Notice of Submission in Brendan Ngwa Nforbi v. AT&T Mobility Services LLC (E.D. Cal. 2:26-cv-03314-DJC-AC (PS)). Within 15 days of Dkt. 4 (Oct. 14): deliver to the U.S. Marshal (501 I Street, Sacramento) one completed USM-285 for AT&T Mobility Services LLC, the summons (Dkt. 6), copies of the complaint, a copy of Dkt. 4, and the magistrate consent form; AND file a Notice of Submission of Documents with the Clerk.",
         "source_dkt": 4
       },
-      "overdue": false,
+      "overdue": true,
       "last_updated": "2026-10-14",
       "files": [
         "claims.json",
@@ -1244,7 +1244,14 @@
       "lifecycle": "pre_filing",
       "proceeding": "federal_civil",
       "phase": "pre_filing",
-      "next_clock": null,
+      "next_clock": {
+        "id": "37-home-depot-answer-deadline",
+        "date": "2026-11-04",
+        "kind": "deadline",
+        "status": "open",
+        "title": "WATCH — Home Depot answer or Rule 12 motion due, Ngwa Nforbi v. Home Depot U.S.A., Inc. (E.D. Cal. 2:26-cv-03310-TLN-AC). Served Oct. 14, 2026 → 21 days (Rule 12(a)(1)(A)(i)). A Rule 12 motion tolls the answer to 14 days after ruling (Rule 12(a)(4)). If nothing appears, the Rule 55 default track opens — check the docket, don't assume.",
+        "source_dkt": 8
+      },
       "overdue": false,
       "last_updated": "2026-10-28",
       "files": [
@@ -1396,19 +1403,26 @@
       "number": 42,
       "path": "internal/src/data/matters/42/",
       "layout": "split",
-      "caption": "Brendan Ngwa Nforbi v. Staples Retail et al.",
-      "case_no": "TBD",
-      "court": "TBD (pre-dispute — onboarding Sep. 29–30, 2026)",
-      "judge": "TBD",
+      "caption": "Brendan Ngwa Nforbi v. Staples The Office Superstore, LLC",
+      "case_no": "5:26-cv-12781-NW",
+      "court": "USDC N.D. Cal. (San Jose Div.)",
+      "judge": "Hon. Noel Wise, D.J. (magistrate jurisdiction declined Oct. 29, 2026)",
       "cluster": 3,
       "related": [],
       "same_incident": null,
-      "lifecycle": "pre_filing",
-      "proceeding": "state_civil",
-      "phase": "pre_filing",
-      "next_clock": null,
+      "lifecycle": "active",
+      "proceeding": "federal_civil",
+      "phase": "service",
+      "next_clock": {
+        "id": "42-rule26f-meet-confer",
+        "date": "2027-01-12",
+        "kind": "meet-and-confer",
+        "status": "open",
+        "title": "Last day to meet and confer re initial disclosures, early settlement, ADR process selection, and discovery plan (FRCP 26(f)) — Dkt. 5 Order, Ngwa Nforbi v. Staples The Office Superstore, LLC (N.D. Cal. 5:26-cv-12781-NW).",
+        "source_dkt": 5
+      },
       "overdue": false,
-      "last_updated": "2026-10-28",
+      "last_updated": "2026-11-02",
       "files": [
         "claims.json",
         "clocks.json",

@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "fileCount": 1767,
-  "totalBytes": 1026749504,
+  "fileCount": 1772,
+  "totalBytes": 1030652237,
   "files": [
     {
       "path": "/documents/_form-library/ao239-blank-template.pdf",
@@ -8837,6 +8837,31 @@
       "path": "/documents/matter-20/Stipulation and Order re Briefing Schedule - Signed Whitman (Filed Oct 26 2026).pdf",
       "size": 387682,
       "sha256": "e6799c33860e606533dd4d6e2c25211cc22095502af57da362e17bc8dff2fcfd"
+    },
+    {
+      "path": "/documents/matter-42/Complaint - Ngwa Nforbi v. Staples The Office Superstore, LLC (N.D. Cal. 5-26-cv-12781-NW) (Filed Oct 29 2026).pdf",
+      "size": 3274540,
+      "sha256": "5f6b2553208fe301e7029744a861b92acca689b44b78845845d55b554c0a7b30"
+    },
+    {
+      "path": "/documents/matter-42/Certification of Conflicts and Interested Entities or Persons - Ngwa Nforbi v. Staples (N.D. Cal.) (Signed Oct 26 2026).pdf",
+      "size": 122485,
+      "sha256": "24812190d2f0691cbb9bc8228a14287c185173c7d22c2773aec11794a4da36e1"
+    },
+    {
+      "path": "/documents/matter-42/Declination to Magistrate Judge Jurisdiction - Ngwa Nforbi v. Staples (N.D. Cal. 5-26-cv-12781-NW) (Filed Oct 29 2026).pdf",
+      "size": 279969,
+      "sha256": "660aca5366f9d8b82b3805a0f9f96f16b0ba964076068354f2f4d5d873d17610"
+    },
+    {
+      "path": "/documents/matter-42/Summons Issued - Staples The Office Superstore, LLC (N.D. Cal. 5-26-cv-12781-NW) (Issued Oct 29 2026).pdf",
+      "size": 145323,
+      "sha256": "2a98f7b815b1e6944d2ac3f4789d4026a183945744049ebd5777319f4674e4e6"
+    },
+    {
+      "path": "/documents/matter-42/Dkt 05 - Order Setting Initial Case Management Conference and ADR Deadlines (Filed Oct 29 2026).pdf",
+      "size": 80416,
+      "sha256": "89377aa7be26c0594f59cb52d3e230f85aacb0334b332f3f182082b2dc87a111"
     }
   ]
 }
