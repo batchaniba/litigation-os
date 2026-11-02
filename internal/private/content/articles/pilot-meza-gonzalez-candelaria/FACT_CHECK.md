@@ -1,9 +1,9 @@
 # FACT_CHECK — pilot Meza-Gonzalez / Candelaria article
 
 **Draft:** `ARTICLE.md` (PILOT, not published). **Hold: do not publish before the Nov 9 Meza opposition is filed.**
-**Checked:** 2026-11-02 (ChatGPT 27 edits + Claude line edits; more protective version on overlap).
+**Checked:** 2026-11-02 (cup recast: ARTICLE.md does not say the cup held pee or urine).
 **Record cutoff in the article:** Meza-Gonzalez Dkt. 29 NEF filed Oct. 30, 2026; portfolio `last_updated` 2026-10-28 for other Matter 32/33 graph fields; identity files for Matters 1, 2, 7, and 8 last updated 2026-09-16. Narrative of the stop follows Exhibit A (00:54:36–01:57:10) without announcing conflicts with the FACs.
-**Rule:** every factual sentence in the article maps to a filed paper, a public order, Exhibit A (timestamp and internal page), or a graph row that itself cites those papers. Advocacy, settlement numbers, sealed material, and excluded topics are out of the article and listed in RISK_NOTES if they sat nearby in the repo. User decision 2026-11-01 (still in force): KEEP the drinking questions, the denials, the empty can, and Melano's "This is pee" quote verbatim. User decision 2026-11-02: apply both critiques; delete the "Neither?"/"Yep." exchange; do not publish Exhibit A vs. FAC contradictions.
+**Rule:** every factual sentence in the article maps to a filed paper, a public order, Exhibit A (timestamp and internal page), or a graph row that itself cites those papers. Advocacy, settlement numbers, sealed material, and excluded topics are out of the article and listed in RISK_NOTES if they sat nearby in the repo. User decision 2026-11-01 (still in force for drinking questions, denials, and the empty can): KEEP those items. User decision 2026-11-02 (supersedes the 2026-11-01 KEEP of Melano's urine quotes): recast the cup so the article does not say the cup held pee or urine; the officer examined the cup; its contents were not an alcoholic beverage; keep "Don't drink it", Meza-Gonzalez declining to smell it, and "Put it back". User decision 2026-11-02 (critiques): apply both critiques; delete the "Neither?"/"Yep." exchange; do not publish Exhibit A vs. FAC contradictions.
 
 Status key:
 
@@ -29,7 +29,7 @@ Status key:
 | 5 | Officers Santiago Meza-Gonzalez and Jose Melano identified as the officers in the Nov. 1, 2024 Livermore encounter; CHP RJ68845 / CAD 241101GG0064 | Operative FACs Dkt. 5 / Dkt. 6; `32/claims.json` | ALLEGATION | Badge numbers removed from the article |
 | 6 | Stationary vehicle, engine off; treated as DUI investigation | `07/matter.json` `key_facts`; `32/prose.json` `key_facts` | ALLEGATION | Drawn from FAC/key_facts, not from an officer admission |
 | 7 | Warrantless door opening, interior search, arrest under Veh. Code § 23152(a) | `32/claims.json` counts 1–3; `07/matter.json` `key_facts` | ALLEGATION | |
-| 8 | Officers identified the contents of a cup as urine; Melano quoted verbatim: "Is it water? No this is piss. This is pee." / "I'm telling you it's piss. It smells like piss." | Ex. A 00:58:49–00:58:59 (p. 3); M-FAC 5:28–6:4 (¶17); C-FAC 10:24–25 | RECORDING / ALLEGATION | KEEP verbatim. Article no longer says "only liquid." Brand of the empty can, 21+ wristband, and any test result remain out |
+| 8 | Melano examined the cup; its contents were not an alcoholic beverage. Complaints section uses the same recast ("a cup whose contents were not an alcoholic beverage"), not "identified as urine" | Ex. A 00:58:49–00:58:59 (p. 3); M-FAC 5:28–6:4 (¶17); C-FAC 10:24–25 | RECORDING / ALLEGATION | Recast 2026-11-02. Quotes "Is it water? No this is piss. This is pee." and "I'm telling you it's piss. It smells like piss." are out of ARTICLE.md, including FAQ and JSON-LD. Keep "Don't drink it", Meza-Gonzalez declining to smell it, and "Put it back". Brand of the empty can, 21+ wristband, and any test result remain out |
 | 9 | Blood-draw warrant later obtained and blood drawn; later form designated a chemical-test refusal | `07/matter.json` `key_facts`; `33/matter.json` `key_facts` (DS-367) | ALLEGATION | Warrant number WAR913372 and phlebotomist name omitted from article as unnecessary |
 | 10 | Nov. 5, 2024 Detention Certificate, Pen. Code § 849(b)(1), Dublin CHP-01991 / File 202400898, “detention only, not an arrest” | `07/matter.json` `key_facts`; `08/matter.json` `key_facts`; `33/matter.json` `key_facts` | ALLEGATION | Certificate is described in the pleadings; article does not call it a judicial finding |
 | 11 | Alameda County DA declined to file charges | `07/matter.json` `key_facts`; `01/matter.json` `key_facts` | ALLEGATION | No DA declination letter independently quoted in this check |
@@ -72,7 +72,7 @@ Status key:
 | 47 | Dkt. 29 vacates hearing/trial dates; other deadlines unchanged | Dkt. 29 NEF docket text | SUPPORTED | Article no longer cites a Nov. 25 CMS "clock list" |
 | 48 | CourtListener slugs listed in the sources table | `01`, `07`, `32`, `33` `matter.json` `courtlistener` | SUPPORTED | |
 | 49 | *California DUI Lawyers* / *Knudsen* existence | Standard published reporters; also recited in `07/matter.json` | SUPPORTED as published law | Knudsen opinion confirmed; 101 Cal. App. 5th 186 pinpoint UNVERIFIED |
-| 50 | No settlement amounts, sealed files, registry, criminal history, Hertz/HireRight/other non-party employers, or strategy memos appear in ARTICLE.md | This FACT_CHECK; grep of ARTICLE.md | SUPPORTED by exclusion | See RISK_NOTES. Drinking questions, denials, empty can, and the "This is pee" quote are in by user decision |
+| 50 | No settlement amounts, sealed files, registry, criminal history, Hertz/HireRight/other non-party employers, or strategy memos appear in ARTICLE.md | This FACT_CHECK; grep of ARTICLE.md | SUPPORTED by exclusion | See RISK_NOTES. Drinking questions, denials, and empty can remain in by user decision. Melano urine quotes recast 2026-11-02 |
 
 ---
 
@@ -104,7 +104,7 @@ Exhibit A page numbers are the internal "Page N of 19" stamp. Complaint cites ar
 | N20 | "This is not a parking lot."; dash 12:57 a.m.; "like 5-7 minutes" | Ex. A 00:57:46, 00:57:51, 00:58:06 (p. 3) | RECORDING | |
 | N21 | "How much have you had to drink…" / "Zero." | Ex. A 00:58:30–00:58:36 (p. 3) | RECORDING | Kept by user decision |
 | N22 | "What's in that cup right there?" / "Don't drink it. Yeah don't drink it," spoken by Newanforbi | Ex. A 00:58:34, 00:58:46 (p. 3) | RECORDING | Both lines attributed to Newanforbi |
-| N23 | Melano cup quotes, including "This is pee." | Ex. A 00:58:49–00:58:59 (p. 3); M-FAC 5:28–6:4 | RECORDING | Kept verbatim |
+| N23 | Melano examined the cup; its contents were not an alcoholic beverage. Newanforbi: "I don't know what that is." | Ex. A 00:58:49–00:58:59 (p. 3); M-FAC 5:28–6:4 | RECORDING | Recast 2026-11-02. Verbatim urine quotes removed from ARTICLE.md |
 | N24 | Meza-Gonzalez: "No I'm not gonna smell that." | Ex. A 00:58:59 bracket (p. 3); 00:59:02 (p. 4) | RECORDING | |
 | N25 | "OK. Leave it there. Put it back." Step-out at 00:59:12 | Ex. A 00:59:07, 00:59:12 (p. 4) | RECORDING | |
 | N26 | Walked to patrol car; spelled "NEW-WAN-FOR-BI" | Ex. A 00:59:40, 00:59:53, 00:59:57 (p. 4) | RECORDING | |
@@ -135,7 +135,7 @@ Exhibit A page numbers are the internal "Page N of 19" stamp. Complaint cites ar
 | N51 | Officer's account as quoted and characterized in the Candelaria complaint | C-FAC quotations of APS Dec.; APS Dec. not re-opened | ALLEGATION / UNVERIFIED | Article no longer presents the decision's contents as independently verified |
 | N52 | DS-367 and arrest report signed under penalty of perjury; used for warrant, APS, DA referral | M-FAC 2:11–15 (¶2); 7:18–21 (¶25) | ALLEGATION | |
 | N53 | Four entries the complaint alleges are unsupported, including "Beverage Present: Yes," which the complaint disputes | M-FAC 7:23–8:15 (¶26(a)–(d)); C-FAC 12:2–20 (¶29) | ALLEGATION | Narrator no longer vouches that the recording "does not support" the entries. Empty can remains in the transcript section |
-| N54 | Complaint acknowledges odor, speech, and orientation are "experiential observations"; alleges the recording is inconsistent with those entries | M-FAC 8:22–27 (¶28) | ALLEGATION | "Concedes" removed |
+| N54 | Complaint acknowledges odor, speech, and orientation are "experiential observations"; alleges the recording is inconsistent with those entries | M-FAC 8:22–27 (¶28) | ALLEGATION | "Concedes" removed. Article recasts the cup as "whose contents were not an alcoholic beverage" rather than "identified as urine" |
 | N55 | The complaint alleges that a magistrate issued the warrant and that blood was drawn at the CHP Dublin Area office | M-FAC 9:3–5 (¶29) | ALLEGATION | Both facts attributed to the complaint |
 | N56 | MTD Dkt. 22 pending; no admission | ARTICLE current-status; FACT_CHECK row 43 | SUPPORTED | |
 | N57 | Temporary license "through the outcome of hearing," barring "driving commercially" | C-FAC 16:12–18 (¶42) (quoting DS 2030/2030A) | ALLEGATION | Forms themselves not opened |
@@ -201,7 +201,7 @@ These cases are pending. The article is an unpublished internal draft. The follo
 13. **Name-form confusion.** Publishing both *Newanforbi* and *Nforbi* is accurate and also makes the person easier to search. A public version should keep the caption rule and the draft banner.
 14. **Docket drift.** Matter 32 is 4:26-cv-08271-CRB before Judge Breyer (Dkt. 29). Hearing/trial dates are vacated; Dkt. 22 must be renoticed; briefing dates unchanged. The Oct. 28 graph row is stale (`-ASK` / Krishnan). Matter 33 stays with Judge Lin; clocks run in November–December 2026.
 15. **No GitHub / document-store URLs** in any outbound version (standing lock). Internal `/documents/...` paths in the sources table are for editors, not for a public page.
-16. **Crude transcript language.** Melano's "piss" / "This is pee" lines are now in the article by express user decision (P14 KEEP). Do not expand into other excluded audio (registry, medical, brand).
+16. **Crude transcript language.** User decision 2026-11-02 recasts the cup: ARTICLE.md does not quote Melano's urine identification or otherwise say the cup held pee or urine. It states that the officer examined the cup and its contents were not an alcoholic beverage, and keeps "Don't drink it", Meza-Gonzalez declining to smell it, and "Put it back". Ex. A 00:58:49–00:58:59 remains the source of that recast. Do not expand into other excluded audio (registry, medical, brand).
 17. **Exhibit A is the plaintiff's transcription.** Speaker labels and bracketed actions are his. Native video was not replayed in this pass.
 
 ---
@@ -236,7 +236,8 @@ These are not article deletions. They are the items still unverified after this 
 | GitHub / raw.githubusercontent | No (sources-table warning only) |
 | Immunity prediction / “will win” / “should lose” | No |
 | Mike's / brand of the empty can / 21+ wristband / BAC figure | No |
-| Melano "This is pee" / drinking questions / denials / empty can | Yes — kept by user decision |
+| Melano urine / piss / pee wording | No — recast 2026-11-02 |
+| Drinking questions / denials / empty can | Yes — kept by user decision |
 | Officers' names in title / H1 / JSON-LD headline | No |
 | Badge numbers | No |
 | "Neither?" / "Yep." | No |
