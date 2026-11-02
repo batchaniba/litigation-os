@@ -68,7 +68,7 @@ These are **templates for proof collection**, not paragraphs to paste in uncondi
 >
 > If any conviction history is the basis, in whole or part, for a proposed rescission, please identify each disqualifying conviction and confirm the Fair Chance Act response deadline and process. The date/deadline field in the copy I received appears incomplete. Please preserve the full response period prescribed by California law and consider any responsive evidence before a final decision.
 >
-> Please also confirm whether the pre-adverse decision used any California sex-offender public-website information, as distinct from authorized court records. The report itself contains a warning about California Penal Code §290.46's employment-use restriction.
+> Please identify all specific background-report items that Hertz currently considers disqualifying and confirm whether each is a criminal conviction, a DMV licensing action, or another type of record. Please identify the criteria applied to each item.
 >
 > Please confirm receipt and the appropriate contact to send current driving-status evidence, any corrections to the report, and rehabilitation/mitigation materials. I am requesting reconsideration before any final decision and am not withdrawing from the hiring process.
 >
