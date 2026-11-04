@@ -1,13 +1,13 @@
 [
   {
     "id": "mtd-hearing",
-    "date": "2026-11-20",
+    "date": "2026-12-18",
     "time": "10:00",
     "tz": "America/Los_Angeles",
     "kind": "hearing",
     "status": "set",
-    "source_dkt": 30,
-    "title": "MTD FAC (Dkt. 18) Zoom before Judge Breyer",
+    "source_dkt": 33,
+    "title": "MTD FAC (Dkt. 18) Zoom before Judge Breyer — Dec. 18, 2026, 10:00 a.m. PT (Dkt. 33)",
     "actor": "you"
   },
   {
@@ -47,5 +47,17 @@
     "source_dkt": 28,
     "title": "Krishnan Sep. 30 MTD hearing vacated by Dkt. 28/29. Do not treat as live.",
     "actor": "court"
+  },
+  {
+    "id": "mtd-hearing-nov20",
+    "date": "2026-11-20",
+    "time": "10:00",
+    "tz": "America/Los_Angeles",
+    "kind": "hearing",
+    "status": "vacated",
+    "source_dkt": 33,
+    "title": "Nov. 20, 2026, 10:00 a.m. MTD Zoom (Dkt. 30) reset by Dkt. 33 to Dec. 18, 2026, 10:00 a.m. PT.",
+    "actor": "court",
+    "retired_reason": "Dkt. 33 reset the Dkt. 18 motion hearing from Nov. 20, 2026, 10:00 a.m. to Dec. 18, 2026, 10:00 a.m. PT by Zoom before Judge Breyer."
   }
 ]

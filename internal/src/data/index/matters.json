@@ -1,6 +1,6 @@
 {
   "generated": true,
-  "today": "2026-11-02",
+  "today": "2026-11-04",
   "matters": [
     {
       "number": 1,
@@ -151,11 +151,11 @@
         "id": "05-hearing-exparte-judgment",
         "date": "2026-11-02",
         "kind": "hearing",
-        "status": "open",
+        "status": "overdue",
         "title": "EX PARTE HEARING — Application for Order Dismissing First Amended Complaint and Entering Judgment of Dismissal, Newanforbi v. Palacios et al. (San Joaquin Sup. Ct. STK-CV-UF-2026-0001032), Nov. 2, 2026, 9:15 a.m., Dept. 10A. Related Matter 28 (N.D. Cal. 3:26-cv-07504-LJC) Dkt. 15 motion to dismiss is deferred pending the San Joaquin judgment.",
         "source_dkt": null
       },
-      "overdue": false,
+      "overdue": true,
       "last_updated": "2026-10-28",
       "files": [
         "claims.json",
@@ -780,7 +780,7 @@
         "source_dkt": 30
       },
       "overdue": false,
-      "last_updated": "2026-10-15",
+      "last_updated": "2026-11-04",
       "files": [
         "claims.json",
         "clocks.json",
@@ -920,11 +920,11 @@
         "id": "28-hearing-m5-exparte-judgment",
         "date": "2026-11-02",
         "kind": "hearing",
-        "status": "open",
+        "status": "overdue",
         "title": "EX PARTE HEARING — Application for Order Dismissing First Amended Complaint and Entering Judgment of Dismissal, Newanforbi v. Palacios et al. (San Joaquin Sup. Ct. STK-CV-UF-2026-0001032), Nov. 2, 2026, 9:15 a.m., Dept. 10A. Related Matter 28 (N.D. Cal. 3:26-cv-07504-LJC) Dkt. 15 motion to dismiss is deferred pending the San Joaquin judgment.",
         "source_dkt": null
       },
-      "overdue": false,
+      "overdue": true,
       "last_updated": "2026-10-28",
       "files": [
         "claims.json",
@@ -1052,9 +1052,9 @@
       "path": "internal/src/data/matters/32/",
       "layout": "split",
       "caption": "Nforbi v. Meza-Gonzalez, et al",
-      "case_no": "4:26-cv-08271-ASK",
-      "court": "USDC N.D. Cal. (Oakland; 4:26-cv-08271-ASK, formerly 3:26-cv-08271-PHK; related Serrato 3:26-cv-05953-CRB and Candelaria 3:26-cv-08272-RFL, formerly LJC)",
-      "judge": "Hon. Ajay S. Krishnan, U.S. Magistrate Judge (N.D. Cal.) — reassigned Aug. 24, 2026 from Mag. Kang (related to Serrato 3:26-cv-05953-CRB)",
+      "case_no": "4:26-cv-08271-CRB",
+      "court": "USDC N.D. Cal. (4:26-cv-08271-CRB; formerly 26-cv-08271-AMO, 4:26-cv-08271-ASK, and 3:26-cv-08271-PHK; related to Serrato 3:26-cv-05953-CRB)",
+      "judge": "Hon. Charles R. Breyer — reassigned Nov. 3, 2026 by Serrato Dkt. 34 from 26-cv-08271-AMO",
       "cluster": 1,
       "related": [],
       "same_incident": null,
@@ -1066,11 +1066,11 @@
         "date": "2026-09-17",
         "kind": "deadline",
         "status": "overdue",
-        "title": "FILE — summons return / CCP § 415.20(b) declaration + Exhibit A USPS receipt + POS being refiled in Nforbi v. Meza-Gonzalez et al. (4:26-cv-08271-ASK). USER REPORT Oct. 28, 2026. Sep. 17 mailing executed; prior FILE clock was still open (dkt null). Do not invent a filing.",
+        "title": "FILE — summons return / CCP § 415.20(b) declaration + Exhibit A USPS receipt + POS being refiled in Brendan Ngwa Nforbi v. Meza-Gonzalez et al. (4:26-cv-08271-CRB). USER REPORT Oct. 28, 2026. Sep. 17 mailing executed; prior FILE clock was still open (dkt null). Do not invent a filing.",
         "source_dkt": 16
       },
       "overdue": true,
-      "last_updated": "2026-10-28",
+      "last_updated": "2026-11-04",
       "files": [
         "claims.json",
         "clocks.json",
