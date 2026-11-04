@@ -25,8 +25,12 @@ describe("machine-first matter graph", () => {
     const liveHearing = clocks.find((c) => c.id === "mtd-hearing");
     const vacated = clocks.find((c) => c.id === "mtd-hearing-sep30");
     expect(liveHearing.status).toBe("set");
-    expect(liveHearing.date).toBe("2026-11-20");
+    expect(liveHearing.date).toBe("2026-12-18");
+    expect(liveHearing.time).toBe("10:00");
+    expect(liveHearing.source_dkt).toBe(33);
     expect(vacated.status).toBe("vacated");
+    const reset = clocks.find((c) => c.id === "mtd-hearing-nov20");
+    expect(reset.status).toBe("vacated");
     const docket = JSON.parse(fs.readFileSync(path.join(dir, "docket.json"), "utf8"));
     const fac = docket.find((row) => row.operative === true);
     expect(fac.dkt).toBe(10);

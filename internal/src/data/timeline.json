@@ -74,7 +74,7 @@
  },
  {
   "date": "Sep. 16, 2026",
-  "event": "SERVED — Haiyang A. Li served the reply in support of the Dkt. 18 motion to dismiss the FAC in Newanforbi v. Serrato (3:26-cv-05953-CRB), about 4:36 p.m. Pacific. Timely under the Dkt. 21 briefing schedule (reply September 16). Briefing is closed. No sur-reply (Civ. L.R. 7-3(d)). Hearing remains November 20, 2026, 10:00 a.m. Zoom before Judge Breyer (Dkt. 30).",
+  "event": "SERVED — Haiyang A. Li served the reply in support of the Dkt. 18 motion to dismiss the FAC in Newanforbi v. Serrato (3:26-cv-05953-CRB), about 4:36 p.m. Pacific. Timely under the Dkt. 21 briefing schedule (reply September 16). Briefing is closed. No sur-reply (Civ. L.R. 7-3(d)). Dkt. 30 had set the hearing for November 20, 2026, 10:00 a.m. Zoom. Dkt. 33 reset it to December 18, 2026, 10:00 a.m. PT by Zoom before Judge Breyer.",
   "matters": [
    24
   ],
@@ -89,7 +89,7 @@
  },
  {
   "date": "Nov. 16, 2026",
-  "event": "DEADLINE — Appearance list for the Nov. 20, 2026 Serrato MTD Zoom (Dkt. 18 / Dkt. 30) is due to crbcrd@cand.uscourts.gov by 3:00 p.m. Pacific. Names and emails. Newanforbi v. Serrato (3:26-cv-05953-CRB).",
+  "event": "DEADLINE — Appearance list noticed by Dkt. 30 for the former Nov. 20, 2026 Serrato MTD Zoom (Dkt. 18) is due to crbcrd@cand.uscourts.gov by 3:00 p.m. Pacific on this date. Names and emails. Ngehsi Newanforbi v. Serrato (3:26-cv-05953-CRB). Dkt. 33 reset the hearing to December 18, 2026, 10:00 a.m. PT by Zoom.",
   "matters": [
    24
   ],
@@ -1768,7 +1768,7 @@
  },
  {
   "date": "Sep. 30, 2026",
-  "event": "VACATED — Hearing on Defendant Serrato's Motion to Dismiss FAC (Dkt. 18) — 1:30 p.m., Mag. Ajay S. Krishnan, Oakland Courtroom 4, 3rd Floor — Newanforbi v. Serrato (4:26-cv-05953-ASK). Reset from Sep. 16 by Clerk's Notice Dkt. 21 (filed Aug. 28) because the motion was noticed on less than 35 days (Civil L.R. 7-2(a)). Dkt. 28/29 vacated Krishnan hearings; live date is Nov. 20, 2026, 10:00 a.m. Zoom (Dkt. 30).",
+  "event": "VACATED — Hearing on Defendant Serrato's Motion to Dismiss FAC (Dkt. 18) — 1:30 p.m., Mag. Ajay S. Krishnan, Oakland Courtroom 4, 3rd Floor — Newanforbi v. Serrato (4:26-cv-05953-ASK). Reset from Sep. 16 by Clerk's Notice Dkt. 21 (filed Aug. 28) because the motion was noticed on less than 35 days (Civil L.R. 7-2(a)). Dkt. 28/29 vacated Krishnan hearings. Dkt. 30 set Nov. 20, 2026, 10:00 a.m. Zoom. Dkt. 33 reset the hearing to December 18, 2026, 10:00 a.m. PT by Zoom.",
   "source": "/documents/matter-24/Clerk's Notice Resetting Hearing on Motion to Dismiss (Dkt 21, Filed Aug 28 2026).pdf",
   "upcoming": false,
   "actor": "you",
@@ -1778,8 +1778,8 @@
   ]
  },
  {
-  "date": "Nov. 20, 2026",
-  "event": "HEARING — Defendant Serrato's Motion to Dismiss FAC (Dkt. 18) — 10:00 a.m., Zoom webinar, San Francisco, Hon. Charles R. Breyer — Newanforbi v. Serrato (3:26-cv-05953-CRB). Set by Clerk's Notice Dkt. 30 (filed Sep. 14) after Dkt. 29 reassignment. Appearance list to crbcrd@cand.uscourts.gov by Nov. 16, 2026, 3:00 p.m. Opposition is Dkt. 20 (filed Aug. 27). Do not treat the vacated Sep. 30 Krishnan date as live.",
+  "date": "Dec. 18, 2026",
+  "event": "HEARING — Defendant Serrato's Motion to Dismiss FAC (Dkt. 18) — December 18, 2026, 10:00 a.m. PT, Zoom, before Hon. Charles R. Breyer — Ngehsi Newanforbi v. Serrato (3:26-cv-05953-CRB). Dkt. 33 reset the hearing from the Nov. 20, 2026, 10:00 a.m. setting in Dkt. 30. Opposition is Dkt. 20 (filed Aug. 27). Do not appear on Nov. 20.",
   "matters": [
    24
   ],
@@ -1794,7 +1794,7 @@
  },
  {
   "date": "Sep. 15, 2026",
-  "event": "DRAFTED (unfiled) — Civil L.R. 7-11 administrative motion to conform Plaintiff's docket name from Brendan Ngehsi Newanforbi to Brendan Ngwa Nforbi in Newanforbi v. Serrato (3:26-cv-05953-CRB). Caption now San Francisco / Judge Breyer after Dkt. 29. Same person; PACER bngwanforbi; Help Desk Sep. 1 is Exhibit A. Li will not oppose if Nforbi and Newanforbi are the same person; no 7-12 stipulation. Nothing else moves, including the Nov. 20, 2026 MTD hearing (Dkt. 30) and Dkt. 20 opposition. Supersedes the Sep. 14 ASK packet for this action only. Do not treat as filed. After entry, re-ask the ECF Help Desk to link bngwanforbi.",
+  "event": "DRAFTED (unfiled) — Civil L.R. 7-11 administrative motion to conform Plaintiff's docket name from Brendan Ngehsi Newanforbi to Brendan Ngwa Nforbi in Newanforbi v. Serrato (3:26-cv-05953-CRB). Caption now San Francisco / Judge Breyer after Dkt. 29. Same person; PACER bngwanforbi; Help Desk Sep. 1 is Exhibit A. Li will not oppose if Nforbi and Newanforbi are the same person; no 7-12 stipulation. Nothing else on that draft moved the then-set Nov. 20, 2026 MTD hearing (Dkt. 30) or the Dkt. 20 opposition. Dkt. 33 later reset the hearing to December 18, 2026, 10:00 a.m. PT by Zoom. Supersedes the Sep. 14 ASK packet for this action only. Do not treat as filed. After entry, re-ask the ECF Help Desk to link bngwanforbi.",
   "matters": [
    24
   ],
@@ -1824,7 +1824,7 @@
  },
  {
   "date": "Sep. 14, 2026",
-  "event": "FILED — Dkt. 30 Clerk's Notice (text-only) in Newanforbi v. Serrato (3:26-cv-05953-CRB). Motion to Dismiss (Dkt. 18) hearing set for November 20, 2026, 10:00 a.m., San Francisco Zoom webinar before Judge Charles R. Breyer. Access at cand.uscourts.gov/crb. Appearance names/emails to crbcrd@cand.uscourts.gov by November 16, 2026, 3:00 p.m. Photographing, recording, and rebroadcasting prohibited (Civ. L.R. 77-3(d)).",
+  "event": "FILED — Dkt. 30 Clerk's Notice (text-only) in Newanforbi v. Serrato (3:26-cv-05953-CRB). Motion to Dismiss (Dkt. 18) hearing set by this notice for November 20, 2026, 10:00 a.m., San Francisco Zoom webinar before Judge Charles R. Breyer. Dkt. 33 later reset the hearing to December 18, 2026, 10:00 a.m. PT by Zoom. Access at cand.uscourts.gov/crb. Appearance names/emails to crbcrd@cand.uscourts.gov by November 16, 2026, 3:00 p.m. Photographing, recording, and rebroadcasting prohibited (Civ. L.R. 77-3(d)).",
   "matters": [
    24
   ],
@@ -1839,7 +1839,7 @@
  },
  {
   "date": "After MTD order",
-  "event": "WATCH — Reset initial CMC in Newanforbi v. Serrato (3:26-cv-05953-CRB). Dkt. 25 sets it fourteen (14) days after the final order on Defendant's motion to dismiss (Dkt. 18; hearing Nov. 20, 2026, 10:00 a.m. Zoom before Judge Breyer per Dkt. 30). No date certain. Disclosure, JCMS, and ADR-certification dates run from that conference. Do not invent a calendar date.",
+  "event": "WATCH — Reset initial CMC in Newanforbi v. Serrato (3:26-cv-05953-CRB). Dkt. 25 sets it fourteen (14) days after the final order on Defendant's motion to dismiss (Dkt. 18; hearing December 18, 2026, 10:00 a.m. PT by Zoom before Judge Breyer per Dkt. 33 (reset from the Nov. 20, 2026 Dkt. 30 setting)). No date certain. Disclosure, JCMS, and ADR-certification dates run from that conference. Do not invent a calendar date.",
   "matters": [
    24
   ],
@@ -2143,7 +2143,7 @@
  },
  {
   "date": "Sep. 14, 2026",
-  "event": "FILED — Dkt. 30 CLERK'S NOTICE in Newanforbi v. Serrato (3:26-cv-05953-CRB): hearing on Defendant Serrato's Motion to Dismiss FAC (Dkt. 18) set for Nov. 20, 2026, 10:00 a.m., San Francisco — videoconference only (Zoom webinar) before Judge Charles R. Breyer. Advance appearance notice (names + emails) to crbcrd@cand.uscourts.gov by Nov. 16, 2026, 3:00 p.m. Text-only entry; no document associated.",
+  "event": "FILED — Dkt. 30 CLERK'S NOTICE in Newanforbi v. Serrato (3:26-cv-05953-CRB): hearing on Defendant Serrato's Motion to Dismiss FAC (Dkt. 18) set by this notice for Nov. 20, 2026, 10:00 a.m., San Francisco — videoconference only (Zoom webinar) before Judge Charles R. Breyer. Dkt. 33 later reset the hearing to December 18, 2026, 10:00 a.m. PT by Zoom. Advance appearance notice (names + emails) to crbcrd@cand.uscourts.gov by Nov. 16, 2026, 3:00 p.m. Text-only entry; no document associated.",
   "matters": [
    24
   ],
@@ -2157,8 +2157,8 @@
   "verified_at": "2026-09-14"
  },
  {
-  "date": "Nov. 20, 2026",
-  "event": "MERGED — duplicate of the live Nov. 20 Breyer hearing entry. HEARING — Motion to Dismiss FAC (Dkt. 18) in Newanforbi v. Serrato (3:26-cv-05953-CRB), 10:00 a.m., San Francisco videoconference only (Zoom webinar) before Hon. Charles R. Breyer. Re-noticed by Clerk's Notice Dkt. 30 (filed Sep. 14, 2026) after reassignment from Mag. Krishnan; Sep. 30 hearing vacated by Dkt. 28. Appearance notice to crbcrd@cand.uscourts.gov by Nov. 16, 2026, 3:00 p.m.",
+  "date": "Dec. 18, 2026",
+  "event": "SUPERSEDED — duplicate of the former Nov. 20, 2026 hearing entry. Dkt. 33 reset the Dkt. 18 motion hearing to December 18, 2026, 10:00 a.m. PT by Zoom before Hon. Charles R. Breyer. Do not appear on Nov. 20.",
   "matters": [
    24
   ],
@@ -10058,7 +10058,7 @@
  },
  {
   "date": "Sep. 30, 2026",
-  "event": "VACATED — Hearing on Defendant Serrato's Motion to Dismiss FAC (Dkt. 18) — 1:30 p.m., Mag. Ajay S. Krishnan, Oakland Courtroom 4, 3rd Floor — Newanforbi v. Serrato (4:26-cv-05953-ASK). Reset from Sep. 16 by Clerk's Notice Dkt. 21 (filed Aug. 28) because the motion was noticed on less than 35 days (Civil L.R. 7-2(a)). Dkt. 28 (Clerk's Notice of Impending Reassignment, filed Sep. 11, 2026) vacated all hearings before Mag. Krishnan; the hearing must be re-noticed before the newly assigned district judge. Re-noticed for Nov. 20, 2026, 10:00 a.m., San Francisco videoconference (Zoom) before Judge Charles R. Breyer by Clerk's Notice Dkt. 30 (filed Sep. 14, 2026); case number now 3:26-cv-05953-CRB.",
+  "event": "VACATED — Hearing on Defendant Serrato's Motion to Dismiss FAC (Dkt. 18) — 1:30 p.m., Mag. Ajay S. Krishnan, Oakland Courtroom 4, 3rd Floor — Newanforbi v. Serrato (4:26-cv-05953-ASK). Reset from Sep. 16 by Clerk's Notice Dkt. 21 (filed Aug. 28) because the motion was noticed on less than 35 days (Civil L.R. 7-2(a)). Dkt. 28 (Clerk's Notice of Impending Reassignment, filed Sep. 11, 2026) vacated all hearings before Mag. Krishnan; the hearing must be re-noticed before the newly assigned district judge. Re-noticed for Nov. 20, 2026, 10:00 a.m., San Francisco videoconference (Zoom) before Judge Charles R. Breyer by Clerk's Notice Dkt. 30 (filed Sep. 14, 2026); case number now 3:26-cv-05953-CRB. Dkt. 33 reset that hearing to December 18, 2026, 10:00 a.m. PT by Zoom.",
   "source": "/documents/matter-24/Clerk's Notice Resetting Hearing on Motion to Dismiss (Dkt 21, Filed Aug 28 2026).pdf",
   "upcoming": false,
   "actor": "you",
@@ -10548,7 +10548,7 @@
  },
  {
   "date": "Nov. 3, 2026",
-  "event": "ORDER — Related Case Order (Serrato Dkt. 34). Hon. Charles R. Breyer finds Brendan Ngwa Nforbi v. Meza-Gonzalez, No. 26-cv-08271 (formerly AMO), related to Ngehsi Newanforbi v. Serrato, No. 3:26-cv-05953-CRB, and reassigns it to himself. Future filings in the reassigned case bear CRB (4:26-cv-08271-CRB). Noticed motion dates are vacated and must be re-noticed before Judge Breyer. ADR Local Rule deadlines remain in effect. Case-management-order deadlines continue, except dates for appearance in court. The parties adjust the FRCP 16 and 26 conference, disclosure, and report dates to the rescheduled conference. Ministerial order. Serrato's Nov. 20 motion hearing is unchanged.",
+  "event": "ORDER — Related Case Order (Serrato Dkt. 34). Hon. Charles R. Breyer finds Brendan Ngwa Nforbi v. Meza-Gonzalez, No. 26-cv-08271 (formerly AMO), related to Ngehsi Newanforbi v. Serrato, No. 3:26-cv-05953-CRB, and reassigns it to himself. Future filings in the reassigned case bear CRB (4:26-cv-08271-CRB). Noticed motion dates are vacated and must be re-noticed before Judge Breyer. ADR Local Rule deadlines remain in effect. Case-management-order deadlines continue, except dates for appearance in court. The parties adjust the FRCP 16 and 26 conference, disclosure, and report dates to the rescheduled conference. Ministerial order. Serrato's Dkt. 18 motion hearing is December 18, 2026, 10:00 a.m. PT by Zoom (Dkt. 33).",
   "matters": [
    24,
    32

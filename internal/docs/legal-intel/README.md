@@ -19,7 +19,7 @@ Research input for briefs. Not a brief. If a page does not change a sentence abo
 | 12 Diamond / Alpine | [12](matters/12.md) | — | Re-serve Saliman Osmani; Alpine Kern; CMC Dec. 11 |
 | 19 (if open) | *not yet* | [02](clusters/02-hope-parole-locked-facts.md) | Eagan quote rule |
 | 20 CHP writ | [20](matters/20.md) | [01](clusters/01-nov1-locked-facts.md) | Count 4 optional amend Sep. 20; CMC Oct. 28 |
-| 24 Serrato | [24](matters/24.md) | [01](clusters/01-nov1-locked-facts.md) | MTD Nov. 20, 10:00 a.m. Zoom (Breyer); opposition is Dkt. 20 |
+| 24 Serrato | [24](matters/24.md) | [01](clusters/01-nov1-locked-facts.md) | MTD Dec. 18, 10:00 a.m. PT Zoom (Breyer, Dkt. 33); opposition is Dkt. 20 |
 | 25 FedEx | *not yet* | [05](clusters/05-screening-locked-facts.md) | No UPS Exhibit A language |
 | 26 UPS | [26](matters/26.md) | [05](clusters/05-screening-locked-facts.md) | MTD hearing Oct. 7 |
 | 27 Randstad / RK | [27](matters/27.md) | [05](clusters/05-screening-locked-facts.md) | Randstad answer Sep. 25; $25k demand lapsed Sep. 18 |
