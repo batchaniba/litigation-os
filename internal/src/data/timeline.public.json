@@ -9877,5 +9877,21 @@
     "source": "/documents/opinions/Newanforbi v Palacios - San Joaquin Sup Ct - Demurrer Sustained WOLA Jul 15 2026.pdf",
     "source_type": "manual",
     "verified_at": "2026-10-28"
+  },
+  {
+    "date": "Nov. 3, 2026",
+    "event": "ORDER — Related Case Order (Serrato Dkt. 34). Hon. Charles R. Breyer finds Brendan Ngwa Nforbi v. Meza-Gonzalez, No. 26-cv-08271 (formerly AMO), related to Ngehsi Newanforbi v. Serrato, No. 3:26-cv-05953-CRB, and reassigns it to himself. Future filings in the reassigned case bear CRB (4:26-cv-08271-CRB). Noticed motion dates are vacated and must be re-noticed before Judge Breyer. ADR Local Rule deadlines remain in effect. Case-management-order deadlines continue, except dates for appearance in court. The parties adjust the FRCP 16 and 26 conference, disclosure, and report dates to the rescheduled conference. Ministerial order. Serrato's Nov. 20 motion hearing is unchanged.",
+    "matters": [
+      24,
+      32
+    ],
+    "type": "order",
+    "upcoming": false,
+    "filed": true,
+    "actor": "court",
+    "source": "/documents/matter-24/Related Case Order - Serrato Dkt 34 - Meza-Gonzalez Reassigned to Judge Breyer (Filed Nov 3 2026).pdf",
+    "source_type": "court_order",
+    "confidence": "high",
+    "verified_at": "2026-11-04"
   }
 ]

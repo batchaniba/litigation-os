@@ -43,7 +43,7 @@ Use both facts. Do not pick only *Dunaway* “custodial arrest” in one caption
 
 - Matter 20 (filed May 29, 2026) names CHP and Serrato and challenges the April 20, 2026 I-918B denial.
 - Matter 24 must list Matter 20. Risk-index finding #6 (Jul. 11) is still the candor problem if 24’s related-actions paragraph was not amended.
-- 32 and 33 list Serrato on the JS-44. Keep the numbers current: 4:26-cv-08271-ASK (32), 3:26-cv-08272-LJC (33).
+- 32 and 33 list Serrato on the JS-44. Keep the numbers current: 4:26-cv-08271-CRB (32; Serrato Dkt. 34, Nov. 3, 2026; formerly 26-cv-08271-AMO), 3:26-cv-08272-LJC (33).
 
 ## Roadside narrative
 
