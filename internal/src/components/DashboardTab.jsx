@@ -11,7 +11,10 @@ import { countCourts } from "../utils/portfolioStats";
 import {
   agendaCounts,
   agendaWeeks,
+  DASHBOARD_HORIZON_DAYS,
+  horizonEndKey,
   monthStrip,
+  weeksToCover,
   needsAttention,
   nextCourtDate,
   shortCourt,
@@ -69,13 +72,16 @@ function matterHref(item) {
 }
 
 export const DashboardTab = ({ setClusterFilter, setActiveTab }) => {
-  const { queue, today } = useNextActions(30);
+  const { queue, today } = useNextActions(DASHBOARD_HORIZON_DAYS);
   const [filter, setFilter] = useState("all");
 
   const attention = useMemo(() => needsAttention(queue, cases), [queue]);
-  const weeks = useMemo(() => agendaWeeks(queue, cases, { filter }), [queue, filter]);
-  const counts = useMemo(() => agendaCounts(queue), [queue]);
-  const strip = useMemo(() => monthStrip(queue), [queue]);
+  const horizonDays = DASHBOARD_HORIZON_DAYS;
+  const horizonEnd = shortDate(horizonEndKey(today, horizonDays));
+  const stripWeeks = weeksToCover(today, horizonDays);
+  const weeks = useMemo(() => agendaWeeks(queue, cases, { filter, horizonDays }), [queue, filter, horizonDays]);
+  const counts = useMemo(() => agendaCounts(queue, horizonDays), [queue, horizonDays]);
+  const strip = useMemo(() => monthStrip(queue, stripWeeks), [queue, stripWeeks]);
   const board = useMemo(() => stageBoard(cases, queue), [queue]);
   const court = useMemo(() => nextCourtDate(queue, cases), [queue]);
 
@@ -195,10 +201,10 @@ export const DashboardTab = ({ setClusterFilter, setActiveTab }) => {
         </div>
       </section>
 
-      {/* Next 30 days */}
+      {/* Look-ahead through the horizon end */}
       <section className="dash-section">
         <div className="dash-section-head">
-          <h2 className="dash-h2 lg">Next 30 days</h2>
+          <h2 className="dash-h2 lg">Through {horizonEnd}</h2>
           <div className="dash-filters" role="group" aria-label="Filter the agenda">
             {FILTERS.map((f) => (
               <button
@@ -218,7 +224,7 @@ export const DashboardTab = ({ setClusterFilter, setActiveTab }) => {
           <div className="dash-card dash-month">
             <div className="dash-card-head">
               <span className="dash-month-label">{strip.label}</span>
-              <span className="dash-meta">5 weeks</span>
+              <span className="dash-meta">{stripWeeks} weeks</span>
             </div>
             <div className="dash-month-dow" aria-hidden="true">
               {["S", "M", "T", "W", "T", "F", "S"].map((d, i) => <span key={i}>{d}</span>)}
@@ -247,7 +253,7 @@ export const DashboardTab = ({ setClusterFilter, setActiveTab }) => {
 
           <div className="dash-card dash-agenda">
             {weeks.length === 0 ? (
-              <p className="dash-empty">Nothing in the next 30 days for this filter.</p>
+              <p className="dash-empty">Nothing through {horizonEnd} for this filter.</p>
             ) : weeks.map((w) => (
               <div key={w.start} className="dash-week">
                 <div className="dash-week-head">

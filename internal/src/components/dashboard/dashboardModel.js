@@ -179,7 +179,24 @@ export function needsAttention(queue, cases, limit = 5) {
   return { items: sorted, overdue, soon, opposingOverdue };
 }
 
-/** Next 30 days, in date order, grouped Sunday–Saturday. */
+/**
+ * Dashboard look-ahead, in days from today. 64 days from Nov. 5, 2026 reaches
+ * Jan. 8, 2027, past the year-end holidays; it rolls forward with the date.
+ */
+export const DASHBOARD_HORIZON_DAYS = 64;
+
+/** Last day (YYYY-MM-DD) inside the look-ahead window. */
+export function horizonEndKey(todayKey, horizonDays = DASHBOARD_HORIZON_DAYS) {
+  return addDaysToKey(todayKey, horizonDays);
+}
+
+/** Whole Sunday–Saturday weeks needed for the strip to reach the horizon end. */
+export function weeksToCover(todayKey, horizonDays = DASHBOARD_HORIZON_DAYS) {
+  const span = daysBetween(weekStartKey(todayKey), horizonEndKey(todayKey, horizonDays)) + 1;
+  return Math.max(1, Math.ceil(span / 7));
+}
+
+/** Upcoming items within the horizon, in date order, grouped Sunday–Saturday. */
 export function agendaWeeks(queue, cases, { filter = "all", horizonDays = 30 } = {}) {
   const byNumber = new Map(cases.map((c) => [Number(c.number), c]));
   const thisWeek = weekStartKey(queue.today);
@@ -216,7 +233,7 @@ export function agendaCounts(queue, horizonDays = 30) {
   };
 }
 
-/** 5-week strip starting this Sunday; each day lists the tones of its items. */
+/** Week strip (default 5 weeks) starting this Sunday; each day lists the tones of its items. */
 export function monthStrip(queue, weeksShown = 5) {
   const start = weekStartKey(queue.today);
   const byDay = new Map();
