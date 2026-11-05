@@ -3,6 +3,8 @@ import { buildQueue } from "../../../scripts/lib/next-actions.mjs";
 import {
   agendaCounts,
   agendaWeeks,
+  DASHBOARD_HORIZON_DAYS,
+  horizonEndKey,
   laneStatus,
   monthStrip,
   needsAttention,
@@ -13,6 +15,7 @@ import {
   stageBoard,
   syncAgeDays,
   weekRangeLabel,
+  weeksToCover,
 } from "./dashboardModel";
 
 const TODAY = "2026-10-28"; // Wednesday
@@ -129,6 +132,30 @@ describe("monthStrip", () => {
     expect(strip.days.find((d) => d.key === "2026-11-04").tones).toEqual(["court"]);
     expect(strip.days.find((d) => d.key === "2026-11-16").tones).toEqual(["theirs"]);
     expect(strip.label).toBe("Oct. 25 – Nov. 28");
+  });
+});
+
+describe("dashboard horizon", () => {
+  it("reaches Jan. 8, 2027 from Nov. 5, 2026", () => {
+    expect(horizonEndKey("2026-11-05")).toBe("2027-01-08");
+    expect(DASHBOARD_HORIZON_DAYS).toBe(64);
+  });
+
+  it("sizes the week strip to cover the horizon end", () => {
+    const weeksShown = weeksToCover("2026-11-05");
+    expect(weeksShown).toBe(10);
+    const strip = monthStrip({ ...queue, today: "2026-11-05" }, weeksShown);
+    expect(strip.days[0].key).toBe("2026-11-01");
+    expect(strip.days.at(-1).key).toBe("2027-01-09");
+    expect(strip.days.some((d) => d.key === "2027-01-08")).toBe(true);
+  });
+
+  it("keeps agenda items past 30 days when the horizon is extended", () => {
+    const far = { ...queue.items[0], key: "far", dateKey: "2027-01-08", daysOut: 64 };
+    const q = { ...queue, today: "2026-11-05", items: [...queue.items, far] };
+    const rows = agendaWeeks(q, cases, { horizonDays: DASHBOARD_HORIZON_DAYS }).flatMap((w) => w.rows);
+    expect(rows.map((r) => r.dateKey)).toContain("2027-01-08");
+    expect(agendaWeeks(q, cases).flatMap((w) => w.rows).map((r) => r.dateKey)).not.toContain("2027-01-08");
   });
 });
 
