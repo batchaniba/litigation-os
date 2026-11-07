@@ -14,20 +14,42 @@
     "date": "2027-01-27",
     "tz": "America/Los_Angeles",
     "kind": "deadline",
-    "status": "open",
+    "status": "satisfied",
     "source": "/documents/matter-42/Summons Issued - Staples The Office Superstore, LLC (N.D. Cal. 5-26-cv-12781-NW) (Issued Oct 29 2026).pdf",
     "title": "SERVE Staples \u2014 FRCP 4(m) 90-day service deadline (computed: complaint filed Oct. 29, 2026 + 90 days), Ngwa Nforbi v. Staples The Office Superstore, LLC (N.D. Cal. 5:26-cv-12781-NW). Serve summons + complaint + Dkt. 5 Order + Civil L.R. 4-2 supplementary material on CSC - Lawyers Incorporating Service, 2710 Gateway Oaks Dr., Ste. 150N, Sacramento, CA 95833; file proof of service. Serve now, not at the deadline: the Jan. 12 / Jan. 26 Order dates assume Staples has appeared.",
-    "actor": "you"
+    "actor": "you",
+    "note": "SERVED Fri. Nov. 6, 2026, 1:58 p.m. PST \u2014 personal delivery to Rebecca Vang, CSC Lawyers Incorporating Service (registered agent for service), 2710 Gateway Oaks Dr., Ste. 150N, Sacramento, CA 95833 (FRCP 4(h)(1)(B)). Served: Summons, Complaint, Civil Cover Sheet, Dkt. 5 Order, Declination to Magistrate Judge, L.R. 3-15 Certification, ADR Handbook, Judge Wise Civil and Civil Jury Trial Standing Orders, N.D. Cal. Joint CMC Statement Standing Order. Source: ServeManager Job #17284549 service notification (Rubio's Attorney Services, Robert Rubio, Sacramento Co. RPS 2010-28), Nov. 6, 2026. 82 days inside the Jan. 27, 2027 Rule 4(m) deadline."
   },
   {
     "id": "42-answer-due",
-    "date": null,
+    "date": "2026-11-27",
     "tz": "America/Los_Angeles",
     "kind": "deadline",
+    "status": "open",
+    "source": "ServeManager Job #17284549 service notification (Rubio's Attorney Services, Robert Rubio, Sacramento Co. RPS 2010-28), Nov. 6, 2026",
+    "title": "Staples answer or Rule 12 motion DUE Fri. Nov. 27, 2026 \u2014 21 days after Nov. 6, 2026 service on CSC (FRCP 12(a)(1)(A)(i); counted under FRCP 6(a)(1); Nov. 27 is not an N.D. Cal. holiday, so no roll). Ngwa Nforbi v. Staples The Office Superstore, LLC (N.D. Cal. 5:26-cv-12781-NW). Any extension request goes through stipulation-defense; Civil L.R. 6-1(a) lets parties stipulate without order only if it does not alter a court-set date.",
+    "actor": "opposing",
+    "note": "If the Court or a General Order closes the clerk's office Nov. 27, FRCP 6(a)(3) rolls the day to Mon. Nov. 30, 2026; check the N.D. Cal. calendar the week of Nov. 23."
+  },
+  {
+    "id": "42-file-proof-of-service",
+    "date": null,
+    "tz": "America/Los_Angeles",
+    "kind": "filing",
+    "status": "open",
+    "source": "ServeManager Job #17284549 service notification (Rubio's Attorney Services, Robert Rubio, Sacramento Co. RPS 2010-28), Nov. 6, 2026",
+    "title": "FILE proof of service on Staples (FRCP 4(l)(1)) \u2014 get Robert Rubio's signed server declaration (AO 440 p. 2 / Proof of Service) for the Nov. 6, 2026 service on CSC, then e-file it. FRCP 4(l) sets no fixed day, but file before Nov. 27: entry of default under FRCP 55(a) needs service on the docket. Ngwa Nforbi v. Staples (N.D. Cal. 5:26-cv-12781-NW).",
+    "actor": "you"
+  },
+  {
+    "id": "42-default-request",
+    "date": "2026-11-30",
+    "tz": "America/Los_Angeles",
+    "kind": "filing",
     "status": "contingent",
-    "source": "/documents/matter-42/Summons Issued - Staples The Office Superstore, LLC (N.D. Cal. 5-26-cv-12781-NW) (Issued Oct 29 2026).pdf",
-    "title": "Staples answer or Rule 12 motion due 21 days after service (FRCP 12(a)(1)(A)(i)); 60 days after the request is sent if Staples waives service under FRCP 4(d) (FRCP 12(a)(1)(A)(ii)). Date when served \u2014 Ngwa Nforbi v. Staples The Office Superstore, LLC (N.D. Cal. 5:26-cv-12781-NW).",
-    "actor": "opposing"
+    "source": "ServeManager Job #17284549 service notification (Rubio's Attorney Services, Robert Rubio, Sacramento Co. RPS 2010-28), Nov. 6, 2026",
+    "title": "IF Staples has not answered, moved, or obtained an extension by Fri. Nov. 27, 2026: request Clerk's entry of default (FRCP 55(a)) with a declaration showing service and non-response. Earliest filing Mon. Nov. 30, 2026. Ngwa Nforbi v. Staples (N.D. Cal. 5:26-cv-12781-NW).",
+    "actor": "you"
   },
   {
     "id": "42-lr315-cert",

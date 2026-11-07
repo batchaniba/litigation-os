@@ -1,6 +1,6 @@
 {
   "generated": true,
-  "today": "2026-11-04",
+  "today": "2026-11-06",
   "matters": [
     {
       "number": 1,
@@ -637,11 +637,11 @@
         "id": "20-hearing-cmc-nov4",
         "date": "2026-11-04",
         "kind": "hearing",
-        "status": "open",
+        "status": "overdue",
         "title": "Case Management Conference — Newanforbi v. CHP et al. (26CV191136), Nov. 4, 2026, 4:00 p.m., Dept. 25, Rene C. Davidson Courthouse, Hon. Jenna M. Whitman. USER REPORT Oct. 28, 2026: continued from Oct. 28. No continuance order PDF ingested.",
         "source_dkt": null
       },
-      "overdue": false,
+      "overdue": true,
       "last_updated": "2026-10-28",
       "files": [
         "claims.json",
@@ -813,11 +813,11 @@
         "id": "25-fedex-discovery-responses",
         "date": "2026-11-05",
         "kind": "deadline",
-        "status": "open",
+        "status": "overdue",
         "title": "WATCH — FedEx responses to Plaintiff's Interrogatories, RFAs, and RFPs (Set One) due, Newanforbi v. Federal Express Corporation (E.D. Cal. 2:26-cv-02881-DAD-SCR). Served by email Oct. 6, 2026 → 30 days (FRCP 33(b)(2), 34(b)(2)(A), 36(a)(3); no 3 days added for email service under FRCP 6(d)). Recomputes the earlier mail-based contingent Oct. 29 row, which is left as is.",
         "source_dkt": null
       },
-      "overdue": false,
+      "overdue": true,
       "last_updated": "2026-10-28",
       "files": [
         "claims.json",
@@ -1248,11 +1248,11 @@
         "id": "37-home-depot-answer-deadline",
         "date": "2026-11-04",
         "kind": "deadline",
-        "status": "open",
+        "status": "overdue",
         "title": "WATCH — Home Depot answer or Rule 12 motion due, Ngwa Nforbi v. Home Depot U.S.A., Inc. (E.D. Cal. 2:26-cv-03310-TLN-AC). Served Oct. 14, 2026 → 21 days (Rule 12(a)(1)(A)(i)). A Rule 12 motion tolls the answer to 14 days after ruling (Rule 12(a)(4)). If nothing appears, the Rule 55 default track opens — check the docket, don't assume.",
         "source_dkt": 8
       },
-      "overdue": false,
+      "overdue": true,
       "last_updated": "2026-10-28",
       "files": [
         "claims.json",
@@ -1412,17 +1412,17 @@
       "same_incident": null,
       "lifecycle": "active",
       "proceeding": "federal_civil",
-      "phase": "service",
+      "phase": "responsive_deadline",
       "next_clock": {
-        "id": "42-rule26f-meet-confer",
-        "date": "2027-01-12",
-        "kind": "meet-and-confer",
+        "id": "42-answer-due",
+        "date": "2026-11-27",
+        "kind": "deadline",
         "status": "open",
-        "title": "Last day to meet and confer re initial disclosures, early settlement, ADR process selection, and discovery plan (FRCP 26(f)) — Dkt. 5 Order, Ngwa Nforbi v. Staples The Office Superstore, LLC (N.D. Cal. 5:26-cv-12781-NW).",
-        "source_dkt": 5
+        "title": "Staples answer or Rule 12 motion DUE Fri. Nov. 27, 2026 — 21 days after Nov. 6, 2026 service on CSC (FRCP 12(a)(1)(A)(i); counted under FRCP 6(a)(1); Nov. 27 is not an N.D. Cal. holiday, so no roll). Ngwa Nforbi v. Staples The Office Superstore, LLC (N.D. Cal. 5:26-cv-12781-NW). Any extension request goes through stipulation-defense; Civil L.R. 6-1(a) lets parties stipulate without order only if it does not alter a court-set date.",
+        "source_dkt": null
       },
       "overdue": false,
-      "last_updated": "2026-11-02",
+      "last_updated": "2026-11-07",
       "files": [
         "claims.json",
         "clocks.json",

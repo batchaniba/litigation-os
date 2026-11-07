@@ -1,4 +1,12 @@
 {
   "defendants_label": "Staples Retail (employer — entity named in all disclosure and authorization documents). First Advantage (CRA — P.O. Box 105292, Atlanta, GA 30348; 1.800.845.6004).",
-  "serviceTracking": []
+  "serviceTracking": [
+    {
+      "name": "Staples The Office Superstore, LLC",
+      "title": "Defendant",
+      "location": "c/o CSC Lawyers Incorporating Service (registered agent), 2710 Gateway Oaks Dr., Ste. 150N, Sacramento, CA 95833",
+      "served": true,
+      "dateServed": "November 6, 2026, 1:58 p.m. PST (Robert Rubio, Rubio's Attorney Services, RPS 2010-28; delivered to Rebecca Vang, CSC; ServeManager Job #17284549)"
+    }
+  ]
 }
